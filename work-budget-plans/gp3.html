@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP3 - Work & Budget Plans - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .hero-small { background: linear-gradient(135deg, var(--cost-teal), var(--cost-blue)); color: white; padding: 3rem 2rem; text-align: center; }
+        .hero-small h1 { font-size: 2rem; }
+        .hero-small .period { font-size: 1.1rem; opacity: 0.9; margin-top: 0.5rem; }
+        section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: center; }
+        .stat-box { background: white; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; min-width: 150px; }
+        .stat-box .num { font-size: 2rem; font-weight: 700; color: var(--cost-teal); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .card h3 { font-size: 1.1rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: var(--cost-teal); color: white; padding: 10px; text-align: left; font-size: 0.85rem; }
+        td { padding: 10px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        tr:hover { background: rgba(0, 160, 176, 0.05); }
+        .amount { font-weight: 600; color: var(--cost-teal); }
+        .progress-bar { background: #e0e0e0; border-radius: 10px; height: 20px; overflow: hidden; margin-top: 0.5rem; }
+        .progress-fill { background: linear-gradient(90deg, var(--cost-teal), var(--cost-green)); height: 100%; border-radius: 10px; }
+        .gp-nav { display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .gp-nav a { padding: 0.5rem 1rem; background: white; border-radius: 8px; text-decoration: none; color: var(--cost-purple); box-shadow: 0 2px 10px rgba(0,0,0,0.08); font-weight: 500; }
+        .gp-nav a:hover, .gp-nav a.active { background: var(--cost-teal); color: white; }
+        .highlight { background: rgba(0, 160, 176, 0.1); border-left: 4px solid var(--cost-teal); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Work & Budget</a></li>
+                <li><a href="../financial-reports/index.html">Financial Reports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Work & Budget Plans</a> / <span>GP3</span>
+    </div>
+
+    <header class="hero-small">
+        <h1>Grant Period 3</h1>
+        <p class="period">June 2022 - October 2022</p>
+    </header>
+
+    <section>
+        <div class="gp-nav">
+            <a href="gp1.html">GP1</a>
+            <a href="gp2.html">GP2</a>
+            <a href="gp3.html" class="active">GP3</a>
+            <a href="gp4.html">GP4</a>
+            <a href="gp5.html">GP5</a>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num">169,821</div><div class="label">Budget EUR</div></div>
+            <div class="stat-box"><div class="num">166,262</div><div class="label">Actual EUR</div></div>
+            <div class="stat-box"><div class="num">98%</div><div class="label">Utilization</div></div>
+            <div class="stat-box"><div class="num">10</div><div class="label">STSMs</div></div>
+        </div>
+
+        <div class="highlight">
+            <strong>Peak Activity Period:</strong> GP3 saw the highest activity intensity with 98% budget utilization in just 5 months. Post-pandemic recovery enabled extensive in-person meetings and STSMs.
+        </div>
+
+        <div class="card">
+            <h3>Budget Utilization</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 98%;"></div>
+            </div>
+            <p style="text-align: center; margin-top: 0.5rem; color: var(--gray);">166,262 EUR of 169,821 EUR budget utilized - exceptional performance</p>
+        </div>
+
+        <div class="card">
+            <h3>Expenditure Breakdown</h3>
+            <table>
+                <thead>
+                    <tr><th>Category</th><th>Amount (EUR)</th><th>% of Total</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Meetings</td><td class="amount">111,588</td><td>67.1%</td></tr>
+                    <tr><td>STSMs</td><td class="amount">24,140</td><td>14.5%</td></tr>
+                    <tr><td>FSAC (Financial & Scientific Admin)</td><td class="amount">21,651</td><td>13.0%</td></tr>
+                    <tr><td>Virtual Networking</td><td class="amount">6,000</td><td>3.6%</td></tr>
+                    <tr><td>ITC Grants</td><td class="amount">2,343</td><td>1.4%</td></tr>
+                    <tr><td>Dissemination</td><td class="amount">540</td><td>0.3%</td></tr>
+                    <tr><td><strong>Total</strong></td><td class="amount"><strong>166,262</strong></td><td><strong>100%</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>Key Activities</h3>
+            <ul style="padding-left: 1.5rem;">
+                <li><strong>Major Meetings:</strong> Multiple in-person conferences and workshops as COVID restrictions lifted</li>
+                <li><strong>10 STSMs:</strong> Intensive period of researcher mobility across Europe</li>
+                <li><strong>Working Group Growth:</strong> WG1: 50 members, WG2: 57 members, WG3: 41 members</li>
+                <li><strong>Deliverables Completed:</strong> D3-D6 (databases, back-testing framework, time series data)</li>
+                <li><strong>ITC Engagement:</strong> Strong participation from ITC countries</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>STSMs in GP3</h3>
+            <table>
+                <thead>
+                    <tr><th>Grantee</th><th>Home</th><th>Host</th><th>Duration</th><th>Amount</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Daniel Traian Pele</td><td>RO</td><td>DE</td><td>10 days</td><td class="amount">1,800</td></tr>
+                    <tr><td>Cathy Yi-Hsuan Chen</td><td>GB</td><td>HR</td><td>32 days</td><td class="amount">3,200</td></tr>
+                    <tr><td>Luciana Dalla Valle</td><td>GB</td><td>IT</td><td>9 days</td><td class="amount">1,440</td></tr>
+                    <tr><td>Jose Muniz Martinez</td><td>CH</td><td>GB</td><td>11 days</td><td class="amount">1,900</td></tr>
+                    <tr><td>Alla Petukhina</td><td>IT</td><td>DE</td><td>10 days</td><td class="amount">2,000</td></tr>
+                    <tr><td>Ioana Coita</td><td>CH</td><td>RO</td><td>11 days</td><td class="amount">2,500</td></tr>
+                    <tr><td>Stefana Belbe</td><td>CH</td><td>RO</td><td>12 days</td><td class="amount">2,700</td></tr>
+                    <tr><td>Tomas Plihal</td><td>CH</td><td>CZ</td><td>13 days</td><td class="amount">4,000</td></tr>
+                    <tr><td>Karel Kozmik</td><td>DE</td><td>CZ</td><td>23 days</td><td class="amount">3,000</td></tr>
+                    <tr><td>Xinwen Ni</td><td>GB</td><td>DE</td><td>9 days</td><td class="amount">1,600</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Context</h2>
+        <div class="card">
+            <p>Grant Period 3 marked the turning point for the Action, with near-complete budget utilization (98%) achieved in just 5 months. This was the period of peak activity following the lifting of COVID-19 restrictions.</p>
+            <p style="margin-top: 1rem;">Key achievements:</p>
+            <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                <li>Highest number of STSMs in a single grant period (10)</li>
+                <li>Major in-person conferences resumed across Europe</li>
+                <li>Significant working group membership growth</li>
+                <li>Multiple deliverables completed on schedule</li>
+                <li>Strong ITC country participation established</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="gp2.html"><- Previous: GP2</a> | <a href="index.html">Back to Work & Budget Plans</a> | <a href="gp4.html">Next: GP4 -></a></p>
+    </footer>
+</body>
+</html>

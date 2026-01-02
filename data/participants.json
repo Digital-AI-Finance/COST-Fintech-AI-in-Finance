@@ -1,0 +1,2085 @@
+{
+  "participants": [
+    {
+      "name": "Baka, Dea",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Bekteshi, Erisa",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Cokaj, Mentor",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Halilaj, Malvina",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Ilma, Lili",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Kosta, Anxhela",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Maxhelaku Vasil, Suela",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Maxhelaku, Armela",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Metani, Fiona",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Metushi, Emirjan",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Papajorgji, Petraq",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Sauli, Gerta",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Seci, Drita",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Shkurti Perri, Rezarta",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Xhina, Endrit",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Xhumari, Elda",
+      "country_code": "AL",
+      "country_name": "Albania",
+      "itc": true
+    },
+    {
+      "name": "Hochreiter, Ronald",
+      "country_code": "AT",
+      "country_name": "Austria",
+      "itc": false
+    },
+    {
+      "name": "Hafner, Christian",
+      "country_code": "BE",
+      "country_name": "Belgium",
+      "itc": false
+    },
+    {
+      "name": "Mishev, Stoyan",
+      "country_code": "BG",
+      "country_name": "Bulgaria",
+      "itc": true
+    },
+    {
+      "name": "Ivanisevic Hernaus, Ana",
+      "country_code": "HR",
+      "country_name": "Croatia",
+      "itc": true
+    },
+    {
+      "name": "Palic, Petra",
+      "country_code": "HR",
+      "country_name": "Croatia",
+      "itc": true
+    },
+    {
+      "name": "Simurina, Nika",
+      "country_code": "HR",
+      "country_name": "Croatia",
+      "itc": true
+    },
+    {
+      "name": "Antoniou",
+      "country_code": "CY",
+      "country_name": "Cyprus",
+      "itc": true
+    },
+    {
+      "name": "Gregoriades, Andreas",
+      "country_code": "CY",
+      "country_name": "Cyprus",
+      "itc": true
+    },
+    {
+      "name": "Themistocleous, Christos",
+      "country_code": "CY",
+      "country_name": "Cyprus",
+      "itc": true
+    },
+    {
+      "name": "Deev, Oleg",
+      "country_code": "CZ",
+      "country_name": "Czech Republic",
+      "itc": true
+    },
+    {
+      "name": "Hajek, Petr",
+      "country_code": "CZ",
+      "country_name": "Czech Republic",
+      "itc": true
+    },
+    {
+      "name": "Kozmik, Karel",
+      "country_code": "CZ",
+      "country_name": "Czech Republic",
+      "itc": true
+    },
+    {
+      "name": "Plihal, Tomas",
+      "country_code": "CZ",
+      "country_name": "Czech Republic",
+      "itc": true
+    },
+    {
+      "name": "Vagnerova Linnertova, Dagmar",
+      "country_code": "CZ",
+      "country_name": "Czech Republic",
+      "itc": true
+    },
+    {
+      "name": "Zlatosova, Silvie",
+      "country_code": "CZ",
+      "country_name": "Czech Republic",
+      "itc": true
+    },
+    {
+      "name": "Liiv, Innar",
+      "country_code": "EE",
+      "country_name": "Estonia",
+      "itc": true
+    },
+    {
+      "name": "Guerrero, Esteban",
+      "country_code": "FI",
+      "country_name": "Finland",
+      "itc": false
+    },
+    {
+      "name": "Apolosolu, Apostolos",
+      "country_code": "FR",
+      "country_name": "France",
+      "itc": false
+    },
+    {
+      "name": "Chalkis, Apostolos",
+      "country_code": "FR",
+      "country_name": "France",
+      "itc": false
+    },
+    {
+      "name": "Matkovskyy, Roman",
+      "country_code": "FR",
+      "country_name": "France",
+      "itc": false
+    },
+    {
+      "name": "Pisoni, Galena",
+      "country_code": "FR",
+      "country_name": "France",
+      "itc": false
+    },
+    {
+      "name": "Ben Amor, Souhir",
+      "country_code": "DE",
+      "country_name": "Germany",
+      "itc": false
+    },
+    {
+      "name": "Hardle, Wolfgang",
+      "country_code": "DE",
+      "country_name": "Germany",
+      "itc": false
+    },
+    {
+      "name": "Khowaja, Kainat",
+      "country_code": "DE",
+      "country_name": "Germany",
+      "itc": false
+    },
+    {
+      "name": "Li, Wei",
+      "country_code": "DE",
+      "country_name": "Germany",
+      "itc": false
+    },
+    {
+      "name": "Petukhina, Alla",
+      "country_code": "DE",
+      "country_name": "Germany",
+      "itc": false
+    },
+    {
+      "name": "Reule, Raphael",
+      "country_code": "DE",
+      "country_name": "Germany",
+      "itc": false
+    },
+    {
+      "name": "Saef, Danial",
+      "country_code": "DE",
+      "country_name": "Germany",
+      "itc": false
+    },
+    {
+      "name": "Wenzlaff, Karsten",
+      "country_code": "DE",
+      "country_name": "Germany",
+      "itc": false
+    },
+    {
+      "name": "Arakelian, Veni",
+      "country_code": "EL",
+      "country_name": "Greece",
+      "itc": true
+    },
+    {
+      "name": "Moukas, Alexios Ioannis",
+      "country_code": "EL",
+      "country_name": "Greece",
+      "itc": true
+    },
+    {
+      "name": "Paschalidou, Eleftheria",
+      "country_code": "EL",
+      "country_name": "Greece",
+      "itc": true
+    },
+    {
+      "name": "Thomaidis, Nikolaos S.",
+      "country_code": "EL",
+      "country_name": "Greece",
+      "itc": true
+    },
+    {
+      "name": "Trinh, Anh Tuan",
+      "country_code": "HU",
+      "country_name": "Hungary",
+      "itc": true
+    },
+    {
+      "name": "Zuo, RongLin",
+      "country_code": "HU",
+      "country_name": "Hungary",
+      "itc": true
+    },
+    {
+      "name": "Skaftadottir, Hanna Kristin",
+      "country_code": "IS",
+      "country_name": "Iceland",
+      "itc": false
+    },
+    {
+      "name": "Abdul Nasir, Jamal",
+      "country_code": "IE",
+      "country_name": "Ireland",
+      "itc": false
+    },
+    {
+      "name": "Abrol, Manmeet",
+      "country_code": "IE",
+      "country_name": "Ireland",
+      "itc": false
+    },
+    {
+      "name": "Mirzaei, Mahsa",
+      "country_code": "IE",
+      "country_name": "Ireland",
+      "itc": false
+    },
+    {
+      "name": "Moloney, Maria",
+      "country_code": "IE",
+      "country_name": "Ireland",
+      "itc": false
+    },
+    {
+      "name": "Muckley, Cal",
+      "country_code": "IE",
+      "country_name": "Ireland",
+      "itc": false
+    },
+    {
+      "name": "Paccagnini, Alessia",
+      "country_code": "IE",
+      "country_name": "Ireland",
+      "itc": false
+    },
+    {
+      "name": "Piot, Valerio",
+      "country_code": "IE",
+      "country_name": "Ireland",
+      "itc": false
+    },
+    {
+      "name": "Poti, Valerio",
+      "country_code": "IE",
+      "country_name": "Ireland",
+      "itc": false
+    },
+    {
+      "name": "Zhu, Laqiqige",
+      "country_code": "IE",
+      "country_name": "Ireland",
+      "itc": false
+    },
+    {
+      "name": "Keller, Yosi",
+      "country_code": "IL",
+      "country_name": "Israel",
+      "itc": false
+    },
+    {
+      "name": "Citterio, Alberto",
+      "country_code": "IT",
+      "country_name": "Italy",
+      "itc": false
+    },
+    {
+      "name": "D'Elia, Samuele",
+      "country_code": "IT",
+      "country_name": "Italy",
+      "itc": false
+    },
+    {
+      "name": "Dalla Valle, Luciana",
+      "country_code": "IT",
+      "country_name": "Italy",
+      "itc": false
+    },
+    {
+      "name": "De Giuli, Maria Elena",
+      "country_code": "IT",
+      "country_name": "Italy",
+      "itc": false
+    },
+    {
+      "name": "Giordano, Sabrina",
+      "country_code": "IT",
+      "country_name": "Italy",
+      "itc": false
+    },
+    {
+      "name": "Iannario, Maria",
+      "country_code": "IT",
+      "country_name": "Italy",
+      "itc": false
+    },
+    {
+      "name": "Marazzina, Daniele",
+      "country_code": "IT",
+      "country_name": "Italy",
+      "itc": false
+    },
+    {
+      "name": "Raeli, Fabrizio",
+      "country_code": "IT",
+      "country_name": "Italy",
+      "itc": false
+    },
+    {
+      "name": "Tanda, Alessandra",
+      "country_code": "IT",
+      "country_name": "Italy",
+      "itc": false
+    },
+    {
+      "name": "Tarantola, Claudia",
+      "country_code": "IT",
+      "country_name": "Italy",
+      "itc": false
+    },
+    {
+      "name": "Shala, Albulena",
+      "country_code": "KV",
+      "country_name": "Kosovo",
+      "itc": false
+    },
+    {
+      "name": "Girvica, Olga",
+      "country_code": "LV",
+      "country_name": "Latvia",
+      "itc": true
+    },
+    {
+      "name": "Rupeika-Apoga, Ramona",
+      "country_code": "LV",
+      "country_name": "Latvia",
+      "itc": true
+    },
+    {
+      "name": "Sutiene, Kristina",
+      "country_code": "LT",
+      "country_name": "Lithuania",
+      "itc": true
+    },
+    {
+      "name": "Svedas, Dominykas",
+      "country_code": "LT",
+      "country_name": "Lithuania",
+      "itc": true
+    },
+    {
+      "name": "Bernard, Frederik Sinan",
+      "country_code": "NL",
+      "country_name": "Netherlands",
+      "itc": false
+    },
+    {
+      "name": "Kleverlaan, Ronald",
+      "country_code": "NL",
+      "country_name": "Netherlands",
+      "itc": false
+    },
+    {
+      "name": "Machado, Marcos",
+      "country_code": "NL",
+      "country_name": "Netherlands",
+      "itc": false
+    },
+    {
+      "name": "Marisetty, Vijay",
+      "country_code": "NL",
+      "country_name": "Netherlands",
+      "itc": false
+    },
+    {
+      "name": "Oosterlee, Cornelis",
+      "country_code": "NL",
+      "country_name": "Netherlands",
+      "itc": false
+    },
+    {
+      "name": "Svetlova, Ekaterina",
+      "country_code": "NL",
+      "country_name": "Netherlands",
+      "itc": false
+    },
+    {
+      "name": "van Heeswijk, Wouter",
+      "country_code": "NL",
+      "country_name": "Netherlands",
+      "itc": false
+    },
+    {
+      "name": "Atanasova-Pachemska, Tatjana",
+      "country_code": "MK",
+      "country_name": "North Macedonia",
+      "itc": true
+    },
+    {
+      "name": "Dzurovski, Anastas",
+      "country_code": "MK",
+      "country_name": "North Macedonia",
+      "itc": true
+    },
+    {
+      "name": "Lameski, Petre",
+      "country_code": "MK",
+      "country_name": "North Macedonia",
+      "itc": true
+    },
+    {
+      "name": "Mirchev, Miroslav",
+      "country_code": "MK",
+      "country_name": "North Macedonia",
+      "itc": true
+    },
+    {
+      "name": "Temkov, Slave",
+      "country_code": "MK",
+      "country_name": "North Macedonia",
+      "itc": true
+    },
+    {
+      "name": "Zdravevski, Eftim",
+      "country_code": "MK",
+      "country_name": "North Macedonia",
+      "itc": true
+    },
+    {
+      "name": "Agotnes, Thomas",
+      "country_code": "NO",
+      "country_name": "Norway",
+      "itc": false
+    },
+    {
+      "name": "Solibakke, Per B",
+      "country_code": "NO",
+      "country_name": "Norway",
+      "itc": false
+    },
+    {
+      "name": "Bedowska-Sojka, Barbara",
+      "country_code": "PL",
+      "country_name": "Poland",
+      "itc": true
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country_code": "PL",
+      "country_name": "Poland",
+      "itc": true
+    },
+    {
+      "name": "Wojcik, Piotr",
+      "country_code": "PL",
+      "country_name": "Poland",
+      "itc": true
+    },
+    {
+      "name": "Dias, Joana",
+      "country_code": "PT",
+      "country_name": "Portugal",
+      "itc": true
+    },
+    {
+      "name": "Silva, Catarina",
+      "country_code": "PT",
+      "country_name": "Portugal",
+      "itc": true
+    },
+    {
+      "name": "Achim, Monica Violeta",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Apostol, Elena Simona",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Bag, Raul",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Chis, Laviniu",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Coita, Ioana",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Costea, Adrian",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Curticapean, Cosmin",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Mare, Codruta",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Pele, Daniel Traian",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Popa, Diana",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Sandulescu, Magda",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Stanca, Liana",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Strat, Vasile",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Tiron-Tudor, Adriana",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Truica, Ciprian-Octavian",
+      "country_code": "RO",
+      "country_name": "Romania",
+      "itc": true
+    },
+    {
+      "name": "Vucetic, Miljan",
+      "country_code": "RS",
+      "country_name": "Serbia",
+      "itc": true
+    },
+    {
+      "name": "Hudec, Miroslav",
+      "country_code": "SK",
+      "country_name": "Slovakia",
+      "itc": true
+    },
+    {
+      "name": "Peliova, Jana",
+      "country_code": "SK",
+      "country_name": "Slovakia",
+      "itc": true
+    },
+    {
+      "name": "Vojtasova, Maria",
+      "country_code": "SK",
+      "country_name": "Slovakia",
+      "itc": true
+    },
+    {
+      "name": "Domingo Vilar, Albert",
+      "country_code": "ES",
+      "country_name": "Spain",
+      "itc": false
+    },
+    {
+      "name": "Pelegrina Jimenez, Antonio",
+      "country_code": "ES",
+      "country_name": "Spain",
+      "itc": false
+    },
+    {
+      "name": "Baals, Lennart John",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "De Meer Pardo, Fernando",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "Demolli, Erlind",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "Gomez Teijeiro, Lucia",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "Hadji Misheva, Branka",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "Jevtic, Danijel",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "Klein, Marius",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "Koenigstein, Nicole",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "Liu, Yiting",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "Osterrieder, Jorg",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "Schwendner, Peter",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "Spindler, Christian",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "Taibi, Gabin",
+      "country_code": "CH",
+      "country_name": "Switzerland",
+      "itc": false
+    },
+    {
+      "name": "Akar, Mutlu",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "itc": true
+    },
+    {
+      "name": "Aydin, Nadi Serhan",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "itc": true
+    },
+    {
+      "name": "Cakir, Enis",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "itc": true
+    },
+    {
+      "name": "Cetintav, Bekir",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "itc": true
+    },
+    {
+      "name": "Citci, Sadettin Haluk",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "itc": true
+    },
+    {
+      "name": "Daver, Gizay",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "itc": true
+    },
+    {
+      "name": "Kabaklarli, Esra",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "itc": true
+    },
+    {
+      "name": "Kayis, Enis",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "itc": true
+    },
+    {
+      "name": "Nur, Pinar",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "itc": true
+    },
+    {
+      "name": "Ozturkkal, Belma",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "itc": true
+    },
+    {
+      "name": "Yildirim, Ozgur",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "itc": true
+    },
+    {
+      "name": "Yilmaz, Gokce Nur",
+      "country_code": "TR",
+      "country_name": "Turkey",
+      "itc": true
+    },
+    {
+      "name": "Borodenko, Vladyslav",
+      "country_code": "UA",
+      "country_name": "Ukraine",
+      "itc": true
+    },
+    {
+      "name": "Klochko, Alona",
+      "country_code": "UA",
+      "country_name": "Ukraine",
+      "itc": true
+    },
+    {
+      "name": "Chen, Cathy Yi-Hsuan",
+      "country_code": "UK",
+      "country_name": "United Kingdom",
+      "itc": false
+    },
+    {
+      "name": "Dellaportas, Petros",
+      "country_code": "UK",
+      "country_name": "United Kingdom",
+      "itc": false
+    },
+    {
+      "name": "Muniz Martinez, Jose Antonio",
+      "country_code": "UK",
+      "country_name": "United Kingdom",
+      "itc": false
+    },
+    {
+      "name": "Nadini, Matthieu",
+      "country_code": "UK",
+      "country_name": "United Kingdom",
+      "itc": false
+    },
+    {
+      "name": "Ni, Xinwen",
+      "country_code": "GB",
+      "country_name": "United Kingdom",
+      "itc": false
+    },
+    {
+      "name": "Chakravorti, Sujit",
+      "country_code": "US",
+      "country_name": "United States",
+      "itc": false
+    },
+    {
+      "name": "Hirsa, Ali",
+      "country_code": "US",
+      "country_name": "United States",
+      "itc": false
+    }
+  ],
+  "total_participants": 153,
+  "by_country": {
+    "Albania": [
+      {
+        "name": "Baka, Dea",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Bekteshi, Erisa",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Cokaj, Mentor",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Halilaj, Malvina",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Ilma, Lili",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Kosta, Anxhela",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Maxhelaku Vasil, Suela",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Maxhelaku, Armela",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Metani, Fiona",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Metushi, Emirjan",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Papajorgji, Petraq",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Sauli, Gerta",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Seci, Drita",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Shkurti Perri, Rezarta",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Xhina, Endrit",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      },
+      {
+        "name": "Xhumari, Elda",
+        "country_code": "AL",
+        "country_name": "Albania",
+        "itc": true
+      }
+    ],
+    "Austria": [
+      {
+        "name": "Hochreiter, Ronald",
+        "country_code": "AT",
+        "country_name": "Austria",
+        "itc": false
+      }
+    ],
+    "Belgium": [
+      {
+        "name": "Hafner, Christian",
+        "country_code": "BE",
+        "country_name": "Belgium",
+        "itc": false
+      }
+    ],
+    "Bulgaria": [
+      {
+        "name": "Mishev, Stoyan",
+        "country_code": "BG",
+        "country_name": "Bulgaria",
+        "itc": true
+      }
+    ],
+    "Croatia": [
+      {
+        "name": "Ivanisevic Hernaus, Ana",
+        "country_code": "HR",
+        "country_name": "Croatia",
+        "itc": true
+      },
+      {
+        "name": "Palic, Petra",
+        "country_code": "HR",
+        "country_name": "Croatia",
+        "itc": true
+      },
+      {
+        "name": "Simurina, Nika",
+        "country_code": "HR",
+        "country_name": "Croatia",
+        "itc": true
+      }
+    ],
+    "Cyprus": [
+      {
+        "name": "Antoniou",
+        "country_code": "CY",
+        "country_name": "Cyprus",
+        "itc": true
+      },
+      {
+        "name": "Gregoriades, Andreas",
+        "country_code": "CY",
+        "country_name": "Cyprus",
+        "itc": true
+      },
+      {
+        "name": "Themistocleous, Christos",
+        "country_code": "CY",
+        "country_name": "Cyprus",
+        "itc": true
+      }
+    ],
+    "Czech Republic": [
+      {
+        "name": "Deev, Oleg",
+        "country_code": "CZ",
+        "country_name": "Czech Republic",
+        "itc": true
+      },
+      {
+        "name": "Hajek, Petr",
+        "country_code": "CZ",
+        "country_name": "Czech Republic",
+        "itc": true
+      },
+      {
+        "name": "Kozmik, Karel",
+        "country_code": "CZ",
+        "country_name": "Czech Republic",
+        "itc": true
+      },
+      {
+        "name": "Plihal, Tomas",
+        "country_code": "CZ",
+        "country_name": "Czech Republic",
+        "itc": true
+      },
+      {
+        "name": "Vagnerova Linnertova, Dagmar",
+        "country_code": "CZ",
+        "country_name": "Czech Republic",
+        "itc": true
+      },
+      {
+        "name": "Zlatosova, Silvie",
+        "country_code": "CZ",
+        "country_name": "Czech Republic",
+        "itc": true
+      }
+    ],
+    "Estonia": [
+      {
+        "name": "Liiv, Innar",
+        "country_code": "EE",
+        "country_name": "Estonia",
+        "itc": true
+      }
+    ],
+    "Finland": [
+      {
+        "name": "Guerrero, Esteban",
+        "country_code": "FI",
+        "country_name": "Finland",
+        "itc": false
+      }
+    ],
+    "France": [
+      {
+        "name": "Apolosolu, Apostolos",
+        "country_code": "FR",
+        "country_name": "France",
+        "itc": false
+      },
+      {
+        "name": "Chalkis, Apostolos",
+        "country_code": "FR",
+        "country_name": "France",
+        "itc": false
+      },
+      {
+        "name": "Matkovskyy, Roman",
+        "country_code": "FR",
+        "country_name": "France",
+        "itc": false
+      },
+      {
+        "name": "Pisoni, Galena",
+        "country_code": "FR",
+        "country_name": "France",
+        "itc": false
+      }
+    ],
+    "Germany": [
+      {
+        "name": "Ben Amor, Souhir",
+        "country_code": "DE",
+        "country_name": "Germany",
+        "itc": false
+      },
+      {
+        "name": "Hardle, Wolfgang",
+        "country_code": "DE",
+        "country_name": "Germany",
+        "itc": false
+      },
+      {
+        "name": "Khowaja, Kainat",
+        "country_code": "DE",
+        "country_name": "Germany",
+        "itc": false
+      },
+      {
+        "name": "Li, Wei",
+        "country_code": "DE",
+        "country_name": "Germany",
+        "itc": false
+      },
+      {
+        "name": "Petukhina, Alla",
+        "country_code": "DE",
+        "country_name": "Germany",
+        "itc": false
+      },
+      {
+        "name": "Reule, Raphael",
+        "country_code": "DE",
+        "country_name": "Germany",
+        "itc": false
+      },
+      {
+        "name": "Saef, Danial",
+        "country_code": "DE",
+        "country_name": "Germany",
+        "itc": false
+      },
+      {
+        "name": "Wenzlaff, Karsten",
+        "country_code": "DE",
+        "country_name": "Germany",
+        "itc": false
+      }
+    ],
+    "Greece": [
+      {
+        "name": "Arakelian, Veni",
+        "country_code": "EL",
+        "country_name": "Greece",
+        "itc": true
+      },
+      {
+        "name": "Moukas, Alexios Ioannis",
+        "country_code": "EL",
+        "country_name": "Greece",
+        "itc": true
+      },
+      {
+        "name": "Paschalidou, Eleftheria",
+        "country_code": "EL",
+        "country_name": "Greece",
+        "itc": true
+      },
+      {
+        "name": "Thomaidis, Nikolaos S.",
+        "country_code": "EL",
+        "country_name": "Greece",
+        "itc": true
+      }
+    ],
+    "Hungary": [
+      {
+        "name": "Trinh, Anh Tuan",
+        "country_code": "HU",
+        "country_name": "Hungary",
+        "itc": true
+      },
+      {
+        "name": "Zuo, RongLin",
+        "country_code": "HU",
+        "country_name": "Hungary",
+        "itc": true
+      }
+    ],
+    "Iceland": [
+      {
+        "name": "Skaftadottir, Hanna Kristin",
+        "country_code": "IS",
+        "country_name": "Iceland",
+        "itc": false
+      }
+    ],
+    "Ireland": [
+      {
+        "name": "Abdul Nasir, Jamal",
+        "country_code": "IE",
+        "country_name": "Ireland",
+        "itc": false
+      },
+      {
+        "name": "Abrol, Manmeet",
+        "country_code": "IE",
+        "country_name": "Ireland",
+        "itc": false
+      },
+      {
+        "name": "Mirzaei, Mahsa",
+        "country_code": "IE",
+        "country_name": "Ireland",
+        "itc": false
+      },
+      {
+        "name": "Moloney, Maria",
+        "country_code": "IE",
+        "country_name": "Ireland",
+        "itc": false
+      },
+      {
+        "name": "Muckley, Cal",
+        "country_code": "IE",
+        "country_name": "Ireland",
+        "itc": false
+      },
+      {
+        "name": "Paccagnini, Alessia",
+        "country_code": "IE",
+        "country_name": "Ireland",
+        "itc": false
+      },
+      {
+        "name": "Piot, Valerio",
+        "country_code": "IE",
+        "country_name": "Ireland",
+        "itc": false
+      },
+      {
+        "name": "Poti, Valerio",
+        "country_code": "IE",
+        "country_name": "Ireland",
+        "itc": false
+      },
+      {
+        "name": "Zhu, Laqiqige",
+        "country_code": "IE",
+        "country_name": "Ireland",
+        "itc": false
+      }
+    ],
+    "Israel": [
+      {
+        "name": "Keller, Yosi",
+        "country_code": "IL",
+        "country_name": "Israel",
+        "itc": false
+      }
+    ],
+    "Italy": [
+      {
+        "name": "Citterio, Alberto",
+        "country_code": "IT",
+        "country_name": "Italy",
+        "itc": false
+      },
+      {
+        "name": "D'Elia, Samuele",
+        "country_code": "IT",
+        "country_name": "Italy",
+        "itc": false
+      },
+      {
+        "name": "Dalla Valle, Luciana",
+        "country_code": "IT",
+        "country_name": "Italy",
+        "itc": false
+      },
+      {
+        "name": "De Giuli, Maria Elena",
+        "country_code": "IT",
+        "country_name": "Italy",
+        "itc": false
+      },
+      {
+        "name": "Giordano, Sabrina",
+        "country_code": "IT",
+        "country_name": "Italy",
+        "itc": false
+      },
+      {
+        "name": "Iannario, Maria",
+        "country_code": "IT",
+        "country_name": "Italy",
+        "itc": false
+      },
+      {
+        "name": "Marazzina, Daniele",
+        "country_code": "IT",
+        "country_name": "Italy",
+        "itc": false
+      },
+      {
+        "name": "Raeli, Fabrizio",
+        "country_code": "IT",
+        "country_name": "Italy",
+        "itc": false
+      },
+      {
+        "name": "Tanda, Alessandra",
+        "country_code": "IT",
+        "country_name": "Italy",
+        "itc": false
+      },
+      {
+        "name": "Tarantola, Claudia",
+        "country_code": "IT",
+        "country_name": "Italy",
+        "itc": false
+      }
+    ],
+    "Kosovo": [
+      {
+        "name": "Shala, Albulena",
+        "country_code": "KV",
+        "country_name": "Kosovo",
+        "itc": false
+      }
+    ],
+    "Latvia": [
+      {
+        "name": "Girvica, Olga",
+        "country_code": "LV",
+        "country_name": "Latvia",
+        "itc": true
+      },
+      {
+        "name": "Rupeika-Apoga, Ramona",
+        "country_code": "LV",
+        "country_name": "Latvia",
+        "itc": true
+      }
+    ],
+    "Lithuania": [
+      {
+        "name": "Sutiene, Kristina",
+        "country_code": "LT",
+        "country_name": "Lithuania",
+        "itc": true
+      },
+      {
+        "name": "Svedas, Dominykas",
+        "country_code": "LT",
+        "country_name": "Lithuania",
+        "itc": true
+      }
+    ],
+    "Netherlands": [
+      {
+        "name": "Bernard, Frederik Sinan",
+        "country_code": "NL",
+        "country_name": "Netherlands",
+        "itc": false
+      },
+      {
+        "name": "Kleverlaan, Ronald",
+        "country_code": "NL",
+        "country_name": "Netherlands",
+        "itc": false
+      },
+      {
+        "name": "Machado, Marcos",
+        "country_code": "NL",
+        "country_name": "Netherlands",
+        "itc": false
+      },
+      {
+        "name": "Marisetty, Vijay",
+        "country_code": "NL",
+        "country_name": "Netherlands",
+        "itc": false
+      },
+      {
+        "name": "Oosterlee, Cornelis",
+        "country_code": "NL",
+        "country_name": "Netherlands",
+        "itc": false
+      },
+      {
+        "name": "Svetlova, Ekaterina",
+        "country_code": "NL",
+        "country_name": "Netherlands",
+        "itc": false
+      },
+      {
+        "name": "van Heeswijk, Wouter",
+        "country_code": "NL",
+        "country_name": "Netherlands",
+        "itc": false
+      }
+    ],
+    "North Macedonia": [
+      {
+        "name": "Atanasova-Pachemska, Tatjana",
+        "country_code": "MK",
+        "country_name": "North Macedonia",
+        "itc": true
+      },
+      {
+        "name": "Dzurovski, Anastas",
+        "country_code": "MK",
+        "country_name": "North Macedonia",
+        "itc": true
+      },
+      {
+        "name": "Lameski, Petre",
+        "country_code": "MK",
+        "country_name": "North Macedonia",
+        "itc": true
+      },
+      {
+        "name": "Mirchev, Miroslav",
+        "country_code": "MK",
+        "country_name": "North Macedonia",
+        "itc": true
+      },
+      {
+        "name": "Temkov, Slave",
+        "country_code": "MK",
+        "country_name": "North Macedonia",
+        "itc": true
+      },
+      {
+        "name": "Zdravevski, Eftim",
+        "country_code": "MK",
+        "country_name": "North Macedonia",
+        "itc": true
+      }
+    ],
+    "Norway": [
+      {
+        "name": "Agotnes, Thomas",
+        "country_code": "NO",
+        "country_name": "Norway",
+        "itc": false
+      },
+      {
+        "name": "Solibakke, Per B",
+        "country_code": "NO",
+        "country_name": "Norway",
+        "itc": false
+      }
+    ],
+    "Poland": [
+      {
+        "name": "Bedowska-Sojka, Barbara",
+        "country_code": "PL",
+        "country_name": "Poland",
+        "itc": true
+      },
+      {
+        "name": "Bolesta, Karolina",
+        "country_code": "PL",
+        "country_name": "Poland",
+        "itc": true
+      },
+      {
+        "name": "Wojcik, Piotr",
+        "country_code": "PL",
+        "country_name": "Poland",
+        "itc": true
+      }
+    ],
+    "Portugal": [
+      {
+        "name": "Dias, Joana",
+        "country_code": "PT",
+        "country_name": "Portugal",
+        "itc": true
+      },
+      {
+        "name": "Silva, Catarina",
+        "country_code": "PT",
+        "country_name": "Portugal",
+        "itc": true
+      }
+    ],
+    "Romania": [
+      {
+        "name": "Achim, Monica Violeta",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Apostol, Elena Simona",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Bag, Raul",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Belbe, Stefana",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Chis, Laviniu",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Coita, Ioana",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Costea, Adrian",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Curticapean, Cosmin",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Mare, Codruta",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Pele, Daniel Traian",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Popa, Diana",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Sandulescu, Magda",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Stanca, Liana",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Strat, Vasile",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Tiron-Tudor, Adriana",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      },
+      {
+        "name": "Truica, Ciprian-Octavian",
+        "country_code": "RO",
+        "country_name": "Romania",
+        "itc": true
+      }
+    ],
+    "Serbia": [
+      {
+        "name": "Vucetic, Miljan",
+        "country_code": "RS",
+        "country_name": "Serbia",
+        "itc": true
+      }
+    ],
+    "Slovakia": [
+      {
+        "name": "Hudec, Miroslav",
+        "country_code": "SK",
+        "country_name": "Slovakia",
+        "itc": true
+      },
+      {
+        "name": "Peliova, Jana",
+        "country_code": "SK",
+        "country_name": "Slovakia",
+        "itc": true
+      },
+      {
+        "name": "Vojtasova, Maria",
+        "country_code": "SK",
+        "country_name": "Slovakia",
+        "itc": true
+      }
+    ],
+    "Spain": [
+      {
+        "name": "Domingo Vilar, Albert",
+        "country_code": "ES",
+        "country_name": "Spain",
+        "itc": false
+      },
+      {
+        "name": "Pelegrina Jimenez, Antonio",
+        "country_code": "ES",
+        "country_name": "Spain",
+        "itc": false
+      }
+    ],
+    "Switzerland": [
+      {
+        "name": "Baals, Lennart John",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      },
+      {
+        "name": "De Meer Pardo, Fernando",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      },
+      {
+        "name": "Demolli, Erlind",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      },
+      {
+        "name": "Gomez Teijeiro, Lucia",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      },
+      {
+        "name": "Hadji Misheva, Branka",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      },
+      {
+        "name": "Jevtic, Danijel",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      },
+      {
+        "name": "Klein, Marius",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      },
+      {
+        "name": "Koenigstein, Nicole",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      },
+      {
+        "name": "Liu, Yiting",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      },
+      {
+        "name": "Osterrieder, Jorg",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      },
+      {
+        "name": "Schwendner, Peter",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      },
+      {
+        "name": "Spindler, Christian",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      },
+      {
+        "name": "Taibi, Gabin",
+        "country_code": "CH",
+        "country_name": "Switzerland",
+        "itc": false
+      }
+    ],
+    "Turkey": [
+      {
+        "name": "Akar, Mutlu",
+        "country_code": "TR",
+        "country_name": "Turkey",
+        "itc": true
+      },
+      {
+        "name": "Aydin, Nadi Serhan",
+        "country_code": "TR",
+        "country_name": "Turkey",
+        "itc": true
+      },
+      {
+        "name": "Cakir, Enis",
+        "country_code": "TR",
+        "country_name": "Turkey",
+        "itc": true
+      },
+      {
+        "name": "Cetintav, Bekir",
+        "country_code": "TR",
+        "country_name": "Turkey",
+        "itc": true
+      },
+      {
+        "name": "Citci, Sadettin Haluk",
+        "country_code": "TR",
+        "country_name": "Turkey",
+        "itc": true
+      },
+      {
+        "name": "Daver, Gizay",
+        "country_code": "TR",
+        "country_name": "Turkey",
+        "itc": true
+      },
+      {
+        "name": "Kabaklarli, Esra",
+        "country_code": "TR",
+        "country_name": "Turkey",
+        "itc": true
+      },
+      {
+        "name": "Kayis, Enis",
+        "country_code": "TR",
+        "country_name": "Turkey",
+        "itc": true
+      },
+      {
+        "name": "Nur, Pinar",
+        "country_code": "TR",
+        "country_name": "Turkey",
+        "itc": true
+      },
+      {
+        "name": "Ozturkkal, Belma",
+        "country_code": "TR",
+        "country_name": "Turkey",
+        "itc": true
+      },
+      {
+        "name": "Yildirim, Ozgur",
+        "country_code": "TR",
+        "country_name": "Turkey",
+        "itc": true
+      },
+      {
+        "name": "Yilmaz, Gokce Nur",
+        "country_code": "TR",
+        "country_name": "Turkey",
+        "itc": true
+      }
+    ],
+    "Ukraine": [
+      {
+        "name": "Borodenko, Vladyslav",
+        "country_code": "UA",
+        "country_name": "Ukraine",
+        "itc": true
+      },
+      {
+        "name": "Klochko, Alona",
+        "country_code": "UA",
+        "country_name": "Ukraine",
+        "itc": true
+      }
+    ],
+    "United Kingdom": [
+      {
+        "name": "Chen, Cathy Yi-Hsuan",
+        "country_code": "UK",
+        "country_name": "United Kingdom",
+        "itc": false
+      },
+      {
+        "name": "Dellaportas, Petros",
+        "country_code": "UK",
+        "country_name": "United Kingdom",
+        "itc": false
+      },
+      {
+        "name": "Muniz Martinez, Jose Antonio",
+        "country_code": "UK",
+        "country_name": "United Kingdom",
+        "itc": false
+      },
+      {
+        "name": "Nadini, Matthieu",
+        "country_code": "UK",
+        "country_name": "United Kingdom",
+        "itc": false
+      },
+      {
+        "name": "Ni, Xinwen",
+        "country_code": "GB",
+        "country_name": "United Kingdom",
+        "itc": false
+      }
+    ],
+    "United States": [
+      {
+        "name": "Chakravorti, Sujit",
+        "country_code": "US",
+        "country_name": "United States",
+        "itc": false
+      },
+      {
+        "name": "Hirsa, Ali",
+        "country_code": "US",
+        "country_name": "United States",
+        "itc": false
+      }
+    ]
+  },
+  "country_stats": [
+    {
+      "country": "Albania",
+      "count": 16,
+      "itc": true
+    },
+    {
+      "country": "Romania",
+      "count": 16,
+      "itc": true
+    },
+    {
+      "country": "Switzerland",
+      "count": 13,
+      "itc": false
+    },
+    {
+      "country": "Turkey",
+      "count": 12,
+      "itc": true
+    },
+    {
+      "country": "Italy",
+      "count": 10,
+      "itc": false
+    },
+    {
+      "country": "Ireland",
+      "count": 9,
+      "itc": false
+    },
+    {
+      "country": "Germany",
+      "count": 8,
+      "itc": false
+    },
+    {
+      "country": "Netherlands",
+      "count": 7,
+      "itc": false
+    },
+    {
+      "country": "Czech Republic",
+      "count": 6,
+      "itc": true
+    },
+    {
+      "country": "North Macedonia",
+      "count": 6,
+      "itc": true
+    },
+    {
+      "country": "United Kingdom",
+      "count": 5,
+      "itc": false
+    },
+    {
+      "country": "France",
+      "count": 4,
+      "itc": false
+    },
+    {
+      "country": "Greece",
+      "count": 4,
+      "itc": true
+    },
+    {
+      "country": "Croatia",
+      "count": 3,
+      "itc": true
+    },
+    {
+      "country": "Cyprus",
+      "count": 3,
+      "itc": true
+    },
+    {
+      "country": "Poland",
+      "count": 3,
+      "itc": true
+    },
+    {
+      "country": "Slovakia",
+      "count": 3,
+      "itc": true
+    },
+    {
+      "country": "Hungary",
+      "count": 2,
+      "itc": true
+    },
+    {
+      "country": "Latvia",
+      "count": 2,
+      "itc": true
+    },
+    {
+      "country": "Lithuania",
+      "count": 2,
+      "itc": true
+    },
+    {
+      "country": "Norway",
+      "count": 2,
+      "itc": false
+    },
+    {
+      "country": "Portugal",
+      "count": 2,
+      "itc": true
+    },
+    {
+      "country": "Spain",
+      "count": 2,
+      "itc": false
+    },
+    {
+      "country": "Ukraine",
+      "count": 2,
+      "itc": true
+    },
+    {
+      "country": "United States",
+      "count": 2,
+      "itc": false
+    },
+    {
+      "country": "Austria",
+      "count": 1,
+      "itc": false
+    },
+    {
+      "country": "Belgium",
+      "count": 1,
+      "itc": false
+    },
+    {
+      "country": "Bulgaria",
+      "count": 1,
+      "itc": true
+    },
+    {
+      "country": "Estonia",
+      "count": 1,
+      "itc": true
+    },
+    {
+      "country": "Finland",
+      "count": 1,
+      "itc": false
+    },
+    {
+      "country": "Iceland",
+      "count": 1,
+      "itc": false
+    },
+    {
+      "country": "Israel",
+      "count": 1,
+      "itc": false
+    },
+    {
+      "country": "Kosovo",
+      "count": 1,
+      "itc": false
+    },
+    {
+      "country": "Serbia",
+      "count": 1,
+      "itc": true
+    }
+  ],
+  "itc_count": 85,
+  "non_itc_count": 68
+}

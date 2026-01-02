@@ -1,0 +1,52 @@
+{
+  "working_groups": [
+    {
+      "id": "WG1",
+      "name": "Transparency in FinTech",
+      "leader": "Prof. Wolfgang Hardle",
+      "description": "Investigating transparency in blockchain, cryptocurrencies, NFTs, digital assets, and innovative financial services using ML methods. Focus on prediction of operational fragility and fraudulent behavior.",
+      "members_gp1": 30,
+      "members_gp3": 50,
+      "members_gp5": 277,
+      "topics": [
+        "Blockchain",
+        "Cryptocurrencies",
+        "NFTs",
+        "Digital Assets",
+        "Fraud Detection"
+      ]
+    },
+    {
+      "id": "WG2",
+      "name": "Transparent vs Black Box Decision-Support Models",
+      "leader": "Dr. Petre Lameski",
+      "description": "Development of conceptual and methodological tools for making black-box models transparent or interpretable/explainable. Focus on XAI approaches, credit risk modeling, and ML model robustness.",
+      "members_gp1": 30,
+      "members_gp3": 57,
+      "members_gp5": 248,
+      "topics": [
+        "Explainable AI",
+        "Credit Risk",
+        "Model Interpretability",
+        "Decision Support",
+        "ML Robustness"
+      ]
+    },
+    {
+      "id": "WG3",
+      "name": "Investment Product Performance Transparency",
+      "leader": "Prof. Peter Schwendner",
+      "description": "Investment product performance evaluation, sustainable investments, stress testing AI/ML models, digital asset investments, performance attribution, and false discovery rate reduction.",
+      "members_gp1": 30,
+      "members_gp3": 41,
+      "members_gp5": 218,
+      "topics": [
+        "Investment Performance",
+        "ESG",
+        "Stress Testing",
+        "Digital Assets",
+        "Performance Attribution"
+      ]
+    }
+  ]
+}

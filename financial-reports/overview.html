@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Overview - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        section { padding: 2rem; max-width: 1400px; margin: 0 auto; }
+        h1 { font-size: 2rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .stat-box { background: white; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; flex: 1; min-width: 180px; }
+        .stat-box .num { font-size: 2rem; font-weight: 700; color: var(--cost-blue); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .chart-container { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin: 2rem 0; }
+        .chart-container h3 { font-size: 1rem; color: var(--cost-purple); margin-bottom: 1rem; text-align: center; }
+        .chart-container img { width: 100%; max-width: 800px; display: block; margin: 0 auto; }
+        .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 12px 8px; text-align: left; font-size: 0.85rem; }
+        td { padding: 10px 8px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        tr:hover { background: rgba(91, 45, 138, 0.05); }
+        .amount { font-weight: 600; color: var(--cost-purple); }
+        .positive { color: var(--cost-green); }
+        .negative { color: var(--cost-orange); }
+        .progress-container { background: #e0e0e0; border-radius: 10px; height: 12px; overflow: hidden; }
+        .progress-bar { height: 100%; border-radius: 10px; }
+        .summary-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .summary-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); border-left: 4px solid var(--cost-purple); }
+        .summary-card h4 { color: var(--cost-purple); font-size: 1rem; margin-bottom: 0.5rem; }
+        .summary-card .value { font-size: 1.8rem; font-weight: 700; color: var(--cost-blue); }
+        .summary-card .detail { font-size: 0.85rem; color: var(--gray); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .chart-grid { grid-template-columns: 1fr; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="../work-budget-plans/index.html">Work & Budget</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>Overview</span>
+    </div>
+
+    <section>
+        <h1>Financial Overview</h1>
+        <p>Aggregated financial summary across all 5 grant periods of COST Action CA19130 (November 2020 - September 2024)</p>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num">963,654</div><div class="label">Total Budget EUR</div></div>
+            <div class="stat-box"><div class="num">774,662</div><div class="label">Total Actual EUR</div></div>
+            <div class="stat-box"><div class="num">80.4%</div><div class="label">Overall Utilization</div></div>
+            <div class="stat-box"><div class="num">188,992</div><div class="label">Variance EUR</div></div>
+        </div>
+
+        <div class="chart-grid">
+            <div class="chart-container">
+                <h3>Budget vs Actual by Grant Period</h3>
+                <img src="charts/01_actual_vs_budget/chart.png" alt="Budget vs Actual">
+            </div>
+            <div class="chart-container">
+                <h3>Expenditure by Category</h3>
+                <img src="charts/02_expenditure_breakdown/chart.png" alt="Expenditure Breakdown">
+            </div>
+        </div>
+
+        <h2>Grant Period Comparison</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Grant Period</th>
+                        <th>Duration</th>
+                        <th>Budget EUR</th>
+                        <th>Actual EUR</th>
+                        <th>Utilization</th>
+                        <th>Variance EUR</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><a href="ffr1.html" style="color: var(--cost-purple); text-decoration: none; font-weight: 500;">GP1 (FFR1)</a></td>
+                        <td>Nov 2020 - Oct 2021</td>
+                        <td class="amount">62,986</td>
+                        <td class="amount">47,460</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 75%; background: var(--cost-blue);"></div>
+                            </div>
+                            <small>75%</small>
+                        </td>
+                        <td class="negative">-15,526</td>
+                    </tr>
+                    <tr>
+                        <td>GP2</td>
+                        <td>Nov 2021 - May 2022</td>
+                        <td class="amount">202,607</td>
+                        <td class="amount">33,770</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 17%; background: var(--cost-orange);"></div>
+                            </div>
+                            <small>17%</small>
+                        </td>
+                        <td class="negative">-168,837</td>
+                    </tr>
+                    <tr>
+                        <td><a href="ffr3.html" style="color: var(--cost-purple); text-decoration: none; font-weight: 500;">GP3 (FFR3)</a></td>
+                        <td>Jun 2022 - Oct 2022</td>
+                        <td class="amount">169,821</td>
+                        <td class="amount">166,262</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 98%; background: var(--cost-green);"></div>
+                            </div>
+                            <small>98%</small>
+                        </td>
+                        <td class="negative">-3,558</td>
+                    </tr>
+                    <tr>
+                        <td>GP4</td>
+                        <td>Nov 2022 - Oct 2023</td>
+                        <td class="amount">257,926</td>
+                        <td class="amount">256,854</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 99.6%; background: var(--cost-green);"></div>
+                            </div>
+                            <small>99.6%</small>
+                        </td>
+                        <td class="negative">-1,072</td>
+                    </tr>
+                    <tr>
+                        <td><a href="ffr5.html" style="color: var(--cost-purple); text-decoration: none; font-weight: 500;">GP5 (FFR5)</a></td>
+                        <td>Nov 2023 - Sep 2024</td>
+                        <td class="amount">270,315</td>
+                        <td class="amount">270,315</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 100%; background: var(--cost-green);"></div>
+                            </div>
+                            <small>100%</small>
+                        </td>
+                        <td class="positive">0</td>
+                    </tr>
+                    <tr style="background: rgba(91, 45, 138, 0.1); font-weight: 600;">
+                        <td>TOTAL</td>
+                        <td>48 Months</td>
+                        <td class="amount">963,654</td>
+                        <td class="amount">774,662</td>
+                        <td>
+                            <div class="progress-container">
+                                <div class="progress-bar" style="width: 80.4%; background: var(--cost-purple);"></div>
+                            </div>
+                            <small>80.4%</small>
+                        </td>
+                        <td class="negative">-188,992</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Expenditure by Category</h2>
+        <div class="summary-cards">
+            <div class="summary-card">
+                <h4>Meetings & Workshops</h4>
+                <div class="value">376,060</div>
+                <div class="detail">48.5% of total - 40+ events</div>
+            </div>
+            <div class="summary-card">
+                <h4>Training Schools</h4>
+                <div class="value">108,816</div>
+                <div class="detail">14.0% of total - 7 schools, 98 trainees</div>
+            </div>
+            <div class="summary-card">
+                <h4>Virtual Mobility</h4>
+                <div class="value">95,276</div>
+                <div class="detail">12.3% of total - Remote collaboration</div>
+            </div>
+            <div class="summary-card">
+                <h4>FSAC</h4>
+                <div class="value">100,585</div>
+                <div class="detail">13.0% of total - Administration</div>
+            </div>
+            <div class="summary-card">
+                <h4>STSMs</h4>
+                <div class="value">60,082</div>
+                <div class="detail">7.8% of total - 27 missions</div>
+            </div>
+            <div class="summary-card">
+                <h4>Dissemination & Other</h4>
+                <div class="value">33,843</div>
+                <div class="detail">4.4% of total - Outreach</div>
+            </div>
+        </div>
+
+        <h2>Category Breakdown</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Total EUR</th>
+                        <th>% of Total</th>
+                        <th>Key Metrics</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Meetings & Workshops</td>
+                        <td class="amount">376,060</td>
+                        <td>48.5%</td>
+                        <td>40+ events across Europe</td>
+                    </tr>
+                    <tr>
+                        <td>Training Schools</td>
+                        <td class="amount">108,816</td>
+                        <td>14.0%</td>
+                        <td>7 schools, 98 PhD/ECR trainees</td>
+                    </tr>
+                    <tr>
+                        <td>FSAC (Admin)</td>
+                        <td class="amount">100,585</td>
+                        <td>13.0%</td>
+                        <td>Financial & Scientific Admin</td>
+                    </tr>
+                    <tr>
+                        <td>Virtual Mobility</td>
+                        <td class="amount">95,276</td>
+                        <td>12.3%</td>
+                        <td>Remote collaboration grants</td>
+                    </tr>
+                    <tr>
+                        <td>STSMs</td>
+                        <td class="amount">60,082</td>
+                        <td>7.8%</td>
+                        <td>27 research missions</td>
+                    </tr>
+                    <tr>
+                        <td>Dissemination</td>
+                        <td class="amount">16,125</td>
+                        <td>2.1%</td>
+                        <td>Publications, outreach</td>
+                    </tr>
+                    <tr>
+                        <td>ITC Grants</td>
+                        <td class="amount">9,218</td>
+                        <td>1.2%</td>
+                        <td>ITC country support</td>
+                    </tr>
+                    <tr>
+                        <td>OERSA</td>
+                        <td class="amount">8,500</td>
+                        <td>1.1%</td>
+                        <td>Open Educational Resources</td>
+                    </tr>
+                    <tr style="background: rgba(91, 45, 138, 0.1); font-weight: 600;">
+                        <td>TOTAL</td>
+                        <td class="amount">774,662</td>
+                        <td>100%</td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="chart-grid">
+            <div class="chart-container">
+                <h3>Cumulative Funding Flow</h3>
+                <img src="charts/07_funding_flow/chart.png" alt="Funding Flow">
+            </div>
+            <div class="chart-container">
+                <h3>ITC Participation</h3>
+                <img src="charts/06_itc_participation/chart.png" alt="ITC Participation">
+            </div>
+        </div>
+
+        <h2>Key Observations</h2>
+        <div class="card">
+            <ul style="padding-left: 1.5rem;">
+                <li><strong>Budget Utilization Improved Over Time:</strong> From 75% in GP1 to 100% in GP5, demonstrating enhanced planning and execution.</li>
+                <li><strong>GP2 Anomaly:</strong> The 17% utilization in GP2 was due to the shortened 7-month transition period and COVID-19 restrictions. Funds were carried forward.</li>
+                <li><strong>Meetings Dominated Spending:</strong> Nearly half (48.5%) of total expenditure went to organizing 40+ meetings and workshops across Europe.</li>
+                <li><strong>Training Schools Success:</strong> 98 PhD students and early-career researchers trained through 7 schools, representing 14% of budget.</li>
+                <li><strong>Strong STSM Program:</strong> 27 Short-Term Scientific Missions enabled researcher mobility across 15 countries.</li>
+                <li><strong>Virtual Mobility Adoption:</strong> Introduced in GP4 and grew to 15.7% of budget in GP5, adapting to hybrid collaboration models.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Financial Reports</a> | <a href="meetings.html">All Meetings</a> | <a href="stsm.html">STSMs</a></p>
+    </footer>
+</body>
+</html>

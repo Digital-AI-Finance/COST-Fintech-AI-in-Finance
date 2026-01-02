@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Schools - Financial Reports - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        h1 { font-size: 2rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .stat-box { background: white; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        .stat-box .num { font-size: 1.8rem; font-weight: 700; color: var(--cost-blue); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .chart-container { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin: 2rem 0; }
+        .chart-container img { width: 100%; max-width: 800px; display: block; margin: 0 auto; }
+        .school-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; border-left: 4px solid var(--cost-blue); }
+        .school-card.itc { border-left-color: var(--cost-orange); }
+        .school-card h3 { font-size: 1.1rem; color: var(--cost-purple); margin-bottom: 0.5rem; }
+        .school-meta { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; font-size: 0.9rem; color: var(--gray); }
+        .school-meta span { display: flex; align-items: center; gap: 0.3rem; }
+        .school-stats { display: flex; gap: 2rem; flex-wrap: wrap; }
+        .school-stat { text-align: center; padding: 0.5rem 1rem; background: var(--light); border-radius: 8px; }
+        .school-stat .value { font-size: 1.3rem; font-weight: 700; color: var(--cost-blue); }
+        .school-stat .label { font-size: 0.75rem; color: var(--gray); }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 500; background: var(--cost-orange); color: white; margin-left: 0.5rem; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="meetings.html">Meetings</a></li>
+                <li><a href="stsm.html">STSMs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>Training Schools</span>
+    </div>
+
+    <section>
+        <h1>Training Schools</h1>
+        <p>COST Action CA19130 organized 7 training schools across 4 countries, training 98 PhD students and early-career researchers in Fintech and AI.</p>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num">7</div><div class="label">Training Schools</div></div>
+            <div class="stat-box"><div class="num">98</div><div class="label">Trainees</div></div>
+            <div class="stat-box"><div class="num">108.8K</div><div class="label">Total EUR</div></div>
+            <div class="stat-box"><div class="num">4</div><div class="label">Countries</div></div>
+        </div>
+
+        <div class="chart-container">
+            <img src="charts/05_training_school_costs/chart.png" alt="Training School Costs">
+        </div>
+
+        <h2>Grant Period 4 (2022-2023)</h2>
+
+        <div class="school-card itc">
+            <h3>Fintech & AI - Latest Technologies & Upcoming Challenges<span class="badge">ITC</span></h3>
+            <div class="school-meta">
+                <span>University of Tirana, Albania</span>
+                <span>April 26-28, 2023</span>
+            </div>
+            <div class="school-stats">
+                <div class="school-stat"><div class="value">5</div><div class="label">Trainers</div></div>
+                <div class="school-stat"><div class="value">15</div><div class="label">Trainees</div></div>
+                <div class="school-stat"><div class="value">7,415</div><div class="label">EUR Cost</div></div>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <h3>Fintech & AI: Current State-of-the-art & Future Challenges</h3>
+            <div class="school-meta">
+                <span>University of Twente, Netherlands</span>
+                <span>June 12-16, 2023</span>
+            </div>
+            <div class="school-stats">
+                <div class="school-stat"><div class="value">6</div><div class="label">Trainers</div></div>
+                <div class="school-stat"><div class="value">14</div><div class="label">Trainees</div></div>
+                <div class="school-stat"><div class="value">22,354</div><div class="label">EUR Cost</div></div>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <h3>Data Science for Sustainable Economics & Finance</h3>
+            <div class="school-meta">
+                <span>HTW Berlin, Germany</span>
+                <span>August 28 - September 1, 2023</span>
+            </div>
+            <div class="school-stats">
+                <div class="school-stat"><div class="value">5</div><div class="label">Trainers</div></div>
+                <div class="school-stat"><div class="value">11</div><div class="label">Trainees</div></div>
+                <div class="school-stat"><div class="value">8,690</div><div class="label">EUR Cost</div></div>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <h3>AFFINE - Advanced Statistical Modelling for Fintech</h3>
+            <div class="school-meta">
+                <span>University of Naples Federico II, Italy</span>
+                <span>September 13-15, 2023</span>
+            </div>
+            <div class="school-stats">
+                <div class="school-stat"><div class="value">4</div><div class="label">Trainers</div></div>
+                <div class="school-stat"><div class="value">10</div><div class="label">Trainees</div></div>
+                <div class="school-stat"><div class="value">10,942</div><div class="label">EUR Cost</div></div>
+            </div>
+        </div>
+
+        <h2>Grant Period 5 (2023-2024)</h2>
+
+        <div class="school-card">
+            <h3>Data Science & AI for Finance: Academia & Industry Bridge</h3>
+            <div class="school-meta">
+                <span>University of Calabria (UNICAL), Italy</span>
+                <span>June 3-4, 2024</span>
+            </div>
+            <div class="school-stats">
+                <div class="school-stat"><div class="value">4</div><div class="label">Trainers</div></div>
+                <div class="school-stat"><div class="value">11</div><div class="label">Trainees</div></div>
+                <div class="school-stat"><div class="value">11,340</div><div class="label">EUR Cost</div></div>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <h3>COST FinAI PhD School on Fintech & AI</h3>
+            <div class="school-meta">
+                <span>University of Twente, Netherlands</span>
+                <span>June 10-14, 2024</span>
+            </div>
+            <div class="school-stats">
+                <div class="school-stat"><div class="value">6</div><div class="label">Trainers</div></div>
+                <div class="school-stat"><div class="value">15</div><div class="label">Trainees</div></div>
+                <div class="school-stat"><div class="value">22,902</div><div class="label">EUR Cost</div></div>
+            </div>
+        </div>
+
+        <div class="school-card">
+            <h3>AFFINE 2024 - Advanced Statistical Modelling for Fintech</h3>
+            <div class="school-meta">
+                <span>University of Naples Federico II, Italy</span>
+                <span>September 5-7, 2024</span>
+            </div>
+            <div class="school-stats">
+                <div class="school-stat"><div class="value">5</div><div class="label">Trainers</div></div>
+                <div class="school-stat"><div class="value">22</div><div class="label">Trainees</div></div>
+                <div class="school-stat"><div class="value">25,173</div><div class="label">EUR Cost</div></div>
+            </div>
+        </div>
+
+        <div class="school-card" style="background: rgba(91, 45, 138, 0.05); border-left-color: var(--cost-purple);">
+            <h3>Training School Summary</h3>
+            <div class="school-stats" style="justify-content: space-around;">
+                <div class="school-stat"><div class="value">7</div><div class="label">Total Schools</div></div>
+                <div class="school-stat"><div class="value">35</div><div class="label">Total Trainers</div></div>
+                <div class="school-stat"><div class="value">98</div><div class="label">Total Trainees</div></div>
+                <div class="school-stat"><div class="value">108,816</div><div class="label">Total EUR</div></div>
+                <div class="school-stat"><div class="value">1,110</div><div class="label">EUR/Trainee</div></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Financial Reports</a> | <a href="meetings.html">Meetings</a> | <a href="stsm.html">STSMs</a></p>
+    </footer>
+</body>
+</html>

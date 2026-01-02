@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Meetings - Financial Reports - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        section { padding: 2rem; max-width: 1600px; margin: 0 auto; }
+        h1 { font-size: 2rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .stat-box { background: white; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        .stat-box .num { font-size: 1.8rem; font-weight: 700; color: var(--cost-purple); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; min-width: 1000px; }
+        th { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 12px 8px; text-align: left; font-size: 0.85rem; position: sticky; top: 0; }
+        td { padding: 10px 8px; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+        tr:hover { background: rgba(91, 45, 138, 0.05); }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 500; }
+        .badge-mc { background: var(--cost-purple); color: white; }
+        .badge-wg { background: var(--cost-blue); color: white; }
+        .badge-workshop { background: var(--cost-teal); color: white; }
+        .badge-conference { background: var(--cost-orange); color: white; }
+        .badge-itc { background: rgba(232, 119, 34, 0.2); color: #b35c10; }
+        .chart-container { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin: 2rem 0; }
+        .chart-container img { width: 100%; max-width: 900px; display: block; margin: 0 auto; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="stsm.html">STSMs</a></li>
+                <li><a href="participants.html">Participants</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>All Meetings</span>
+    </div>
+
+    <section>
+        <h1>All Meetings, Workshops & Conferences</h1>
+        <p>Complete database of 40 events held during COST Action CA19130 (2020-2024)</p>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num">40</div><div class="label">Total Meetings</div></div>
+            <div class="stat-box"><div class="num">9</div><div class="label">MC Meetings</div></div>
+            <div class="stat-box"><div class="num">7</div><div class="label">WG Meetings</div></div>
+            <div class="stat-box"><div class="num">20</div><div class="label">Workshops</div></div>
+            <div class="stat-box"><div class="num">5</div><div class="label">Conferences</div></div>
+            <div class="stat-box"><div class="num">18</div><div class="label">ITC Locations</div></div>
+        </div>
+
+        <div class="chart-container">
+            <img src="charts/05_meetings_timeline/chart.png" alt="Meetings Timeline" style="max-width: 100%;">
+        </div>
+
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>GP</th>
+                        <th>Date</th>
+                        <th>Title</th>
+                        <th>Type</th>
+                        <th>Location</th>
+                        <th>Country</th>
+                        <th>Participants</th>
+                        <th>Reimbursed</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>GP1</td><td>2020-11-01</td><td>1st Management Committee Meeting</td><td><span class="badge badge-mc">MC</span></td><td>Online</td><td>CH</td><td>69</td><td>0</td></tr>
+                    <tr><td>GP1</td><td>2020-11-12</td><td>2nd Management Committee Meeting</td><td><span class="badge badge-mc">MC</span></td><td>Online</td><td>CH</td><td>69</td><td>0</td></tr>
+                    <tr><td>GP1</td><td>2021-01-27</td><td>Brainstorming - Science Communication</td><td><span class="badge badge-workshop">Workshop</span></td><td>Online</td><td>CH</td><td>119</td><td>0</td></tr>
+                    <tr><td>GP1</td><td>2021-02-02</td><td>Brainstorming - Diversity</td><td><span class="badge badge-workshop">Workshop</span></td><td>Online</td><td>CH</td><td>119</td><td>0</td></tr>
+                    <tr><td>GP1</td><td>2021-02-17</td><td>3rd Management Committee Meeting</td><td><span class="badge badge-mc">MC</span></td><td>Online</td><td>CH</td><td>115</td><td>0</td></tr>
+                    <tr><td>GP1</td><td>2021-05-17</td><td>4th Management Committee Meeting</td><td><span class="badge badge-mc">MC</span></td><td>Online</td><td>CH</td><td>69</td><td>0</td></tr>
+                    <tr><td>GP1</td><td>2021-09-09</td><td>6th European COST Conference on AI in Finance</td><td><span class="badge badge-conference">Conference</span></td><td>Winterthur</td><td>CH</td><td>197</td><td>0</td></tr>
+                    <tr><td>GP1</td><td>2021-10-15</td><td>WG2 Workshop</td><td><span class="badge badge-wg">WG</span></td><td>Skopje</td><td>MK <span class="badge badge-itc">ITC</span></td><td>137</td><td>7</td></tr>
+                    <tr><td>GP1</td><td>2021-10-28</td><td>Annual Meeting</td><td><span class="badge badge-mc">MC</span></td><td>Bucharest</td><td>RO <span class="badge badge-itc">ITC</span></td><td>198</td><td>9</td></tr>
+                    <tr><td>GP2</td><td>2022-03-24</td><td>ML Approaches in Finance</td><td><span class="badge badge-workshop">Workshop</span></td><td>Berlin</td><td>DE</td><td>238</td><td>4</td></tr>
+                    <tr><td>GP2</td><td>2022-04-08</td><td>WG1 Meeting</td><td><span class="badge badge-wg">WG</span></td><td>Rennes</td><td>FR</td><td>254</td><td>3</td></tr>
+                    <tr><td>GP2</td><td>2022-05-05</td><td>TINFIN Conference</td><td><span class="badge badge-conference">Conference</span></td><td>Zagreb</td><td>HR <span class="badge badge-itc">ITC</span></td><td>315</td><td>7</td></tr>
+                    <tr><td>GP2</td><td>2022-05-16</td><td>Diversity Workshop</td><td><span class="badge badge-workshop">Workshop</span></td><td>Naples</td><td>IT</td><td>225</td><td>13</td></tr>
+                    <tr><td>GP3</td><td>2022-06-16</td><td>5th International Conference</td><td><span class="badge badge-conference">Conference</span></td><td>Bucharest</td><td>RO <span class="badge badge-itc">ITC</span></td><td>313</td><td>3</td></tr>
+                    <tr><td>GP3</td><td>2022-07-06</td><td>WG3 Meeting</td><td><span class="badge badge-wg">WG</span></td><td>Espoo</td><td>FI</td><td>317</td><td>4</td></tr>
+                    <tr><td>GP3</td><td>2022-08-22</td><td>Research Workshop on Transparency</td><td><span class="badge badge-workshop">Workshop</span></td><td>Enschede</td><td>NL</td><td>317</td><td>15</td></tr>
+                    <tr><td>GP3</td><td>2022-09-21</td><td>Women in Fintech & AI</td><td><span class="badge badge-workshop">Workshop</span></td><td>Tirana</td><td>AL <span class="badge badge-itc">ITC</span></td><td>316</td><td>13</td></tr>
+                    <tr><td>GP3</td><td>2022-09-30</td><td>European COST Conference on AI in Finance</td><td><span class="badge badge-conference">Conference</span></td><td>Bern</td><td>CH</td><td>590</td><td>11</td></tr>
+                    <tr><td>GP3</td><td>2022-10-05</td><td>Transparency in Finance</td><td><span class="badge badge-mc">MC</span></td><td>Utrecht</td><td>NL</td><td>316</td><td>31</td></tr>
+                    <tr><td>GP3</td><td>2022-10-10</td><td>Working Group Meeting</td><td><span class="badge badge-wg">WG</span></td><td>Skopje</td><td>MK <span class="badge badge-itc">ITC</span></td><td>612</td><td>6</td></tr>
+                    <tr><td>GP3</td><td>2022-10-21</td><td>AI in Finance Workshop</td><td><span class="badge badge-workshop">Workshop</span></td><td>Brno</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>613</td><td>3</td></tr>
+                    <tr><td>GP3</td><td>2022-10-28</td><td>Fintech across Europe</td><td><span class="badge badge-wg">WG</span></td><td>Bucharest</td><td>RO <span class="badge badge-itc">ITC</span></td><td>290</td><td>11</td></tr>
+                    <tr><td>GP4</td><td>2023-02-01</td><td>Diversity & Stakeholders</td><td><span class="badge badge-workshop">Workshop</span></td><td>Cluj-Napoca</td><td>RO <span class="badge badge-itc">ITC</span></td><td>570</td><td>16</td></tr>
+                    <tr><td>GP4</td><td>2023-04-13</td><td>Diversity for Sustainable</td><td><span class="badge badge-workshop">Workshop</span></td><td>Pavia</td><td>IT</td><td>540</td><td>14</td></tr>
+                    <tr><td>GP4</td><td>2023-05-15</td><td>Fintech and AI - Policy</td><td><span class="badge badge-workshop">Workshop</span></td><td>Brussels</td><td>BE</td><td>288</td><td>25</td></tr>
+                    <tr><td>GP4</td><td>2023-06-01</td><td>Women in Fintech III</td><td><span class="badge badge-workshop">Workshop</span></td><td>Lisbon</td><td>PT <span class="badge badge-itc">ITC</span></td><td>305</td><td>17</td></tr>
+                    <tr><td>GP4</td><td>2023-07-10</td><td>Nordic AI & Fintech</td><td><span class="badge badge-workshop">Workshop</span></td><td>Helsinki</td><td>FI</td><td>12</td><td>11</td></tr>
+                    <tr><td>GP4</td><td>2023-09-03</td><td>ML & AI & Data Protection</td><td><span class="badge badge-workshop">Workshop</span></td><td>Horta Faial Azores</td><td>PT <span class="badge badge-itc">ITC</span></td><td>318</td><td>7</td></tr>
+                    <tr><td>GP4</td><td>2023-09-27</td><td>Fintech & AI in Finance Annual</td><td><span class="badge badge-mc">MC</span></td><td>Bern</td><td>CH</td><td>312</td><td>29</td></tr>
+                    <tr><td>GP4</td><td>2023-10-30</td><td>AI Innovations</td><td><span class="badge badge-wg">WG</span></td><td>Barcelona</td><td>ES</td><td>15</td><td>15</td></tr>
+                    <tr><td>GP5</td><td>2024-04-24</td><td>Core/WG Meeting</td><td><span class="badge badge-wg">WG</span></td><td>Cluj-Napoca</td><td>RO <span class="badge badge-itc">ITC</span></td><td>280</td><td>18</td></tr>
+                    <tr><td>GP5</td><td>2024-05-14</td><td>COST FinAI meets Brussels</td><td><span class="badge badge-workshop">Workshop</span></td><td>Brussels</td><td>BE</td><td>31</td><td>27</td></tr>
+                    <tr><td>GP5</td><td>2024-05-16</td><td>Models for Data Analysis</td><td><span class="badge badge-workshop">Workshop</span></td><td>Naples</td><td>IT</td><td>38</td><td>1</td></tr>
+                    <tr><td>GP5</td><td>2024-05-17</td><td>Empowering Transformations</td><td><span class="badge badge-workshop">Workshop</span></td><td>Bucharest</td><td>RO <span class="badge badge-itc">ITC</span></td><td>19</td><td>6</td></tr>
+                    <tr><td>GP5</td><td>2024-05-20</td><td>COST FinAI meets Istanbul</td><td><span class="badge badge-workshop">Workshop</span></td><td>Istanbul</td><td>TR <span class="badge badge-itc">ITC</span></td><td>30</td><td>25</td></tr>
+                    <tr><td>GP5</td><td>2024-06-27</td><td>Women in Fintech & AI 4th Edition</td><td><span class="badge badge-workshop">Workshop</span></td><td>Rethymno</td><td>EL <span class="badge badge-itc">ITC</span></td><td>39</td><td>21</td></tr>
+                    <tr><td>GP5</td><td>2024-07-10</td><td>COST FinAI meets Coimbra</td><td><span class="badge badge-workshop">Workshop</span></td><td>Coimbra</td><td>PT <span class="badge badge-itc">ITC</span></td><td>20</td><td>15</td></tr>
+                    <tr><td>GP5</td><td>2024-07-18</td><td>AI in Finance & Society</td><td><span class="badge badge-workshop">Workshop</span></td><td>Gran Canaria</td><td>ES</td><td>35</td><td>19</td></tr>
+                    <tr><td>GP5</td><td>2024-08-27</td><td>COST FinAI meets Iceland</td><td><span class="badge badge-workshop">Workshop</span></td><td>Reykjavik</td><td>IS</td><td>20</td><td>17</td></tr>
+                    <tr><td>GP5</td><td>2024-09-06</td><td>Final MC Meeting</td><td><span class="badge badge-mc">MC</span></td><td>Online</td><td>CH</td><td>73</td><td>0</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Financial Reports</a> | <a href="stsm.html">STSMs</a> | <a href="participants.html">Participants</a></p>
+    </footer>
+</body>
+</html>

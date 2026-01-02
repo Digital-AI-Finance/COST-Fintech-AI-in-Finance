@@ -1,0 +1,105 @@
+{
+  "grant_periods": [
+    {
+      "id": "GP1",
+      "name": "Grant Period 1",
+      "start": "2020-11-01",
+      "end": "2021-10-31",
+      "budget": 62985.5,
+      "actual": 47459.83,
+      "breakdown": {
+        "meetings": 10300.3,
+        "stsm": 20800.0,
+        "itc_grants": 375.0,
+        "virtual_networking": 4000.0,
+        "dissemination": 294.12,
+        "oersa": 5500.0,
+        "fsac": 6190.41
+      }
+    },
+    {
+      "id": "GP2",
+      "name": "Grant Period 2",
+      "start": "2021-11-01",
+      "end": "2022-05-31",
+      "budget": 202607.0,
+      "actual": 33770.46,
+      "breakdown": {
+        "meetings": 22058.77,
+        "stsm": 0.0,
+        "itc_grants": 0.0,
+        "virtual_networking": 6775.52,
+        "dissemination": 541.0,
+        "oersa": 0.0,
+        "fsac": 4395.17
+      }
+    },
+    {
+      "id": "GP3",
+      "name": "Grant Period 3",
+      "start": "2022-06-01",
+      "end": "2022-10-31",
+      "budget": 169820.5,
+      "actual": 166262.38,
+      "breakdown": {
+        "meetings": 111588.2,
+        "stsm": 24140.0,
+        "itc_grants": 2343.0,
+        "virtual_networking": 6000.0,
+        "dissemination": 540.0,
+        "oersa": 0.0,
+        "fsac": 21651.18
+      }
+    },
+    {
+      "id": "GP4",
+      "name": "Grant Period 4",
+      "start": "2022-11-01",
+      "end": "2023-10-31",
+      "budget": 257925.91,
+      "actual": 256854.39,
+      "breakdown": {
+        "meetings": 111299.53,
+        "training_schools": 49401.09,
+        "stsm": 10500.0,
+        "virtual_mobility": 36000.0,
+        "itc_grants": 3000.0,
+        "dissemination": 10500.0,
+        "oersa": 2500.0,
+        "fsac": 33653.77
+      }
+    },
+    {
+      "id": "GP5",
+      "name": "Grant Period 5",
+      "start": "2023-11-01",
+      "end": "2024-09-13",
+      "budget": 270315.26,
+      "actual": 270315.26,
+      "breakdown": {
+        "meetings": 120813.67,
+        "training_schools": 59414.96,
+        "stsm": 4642.0,
+        "virtual_mobility": 42500.0,
+        "itc_grants": 3500.0,
+        "dissemination": 4250.0,
+        "oersa": 500.0,
+        "fsac": 34694.63
+      }
+    }
+  ],
+  "totals": {
+    "total_budget": 963654.17,
+    "total_actual": 774662.32,
+    "by_category": {
+      "meetings": 376060.47,
+      "training_schools": 108816.05,
+      "stsm": 60082.0,
+      "virtual_mobility": 95275.52,
+      "itc_grants": 9218.0,
+      "dissemination": 16125.12,
+      "oersa": 8500.0,
+      "fsac": 100585.16
+    }
+  }
+}

@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFR1 - Grant Period 1 - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .hero-small { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 3rem 2rem; text-align: center; }
+        .hero-small h1 { font-size: 2rem; }
+        .hero-small .period { font-size: 1.1rem; opacity: 0.9; margin-top: 0.5rem; }
+        section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: center; }
+        .stat-box { background: white; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; min-width: 150px; }
+        .stat-box .num { font-size: 2rem; font-weight: 700; color: var(--cost-blue); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; overflow-x: auto; }
+        .card h3 { font-size: 1.1rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: var(--cost-purple); color: white; padding: 10px; text-align: left; font-size: 0.85rem; }
+        td { padding: 10px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        tr:hover { background: rgba(91, 45, 138, 0.05); }
+        .amount { font-weight: 600; color: var(--cost-blue); }
+        .progress-bar { background: #e0e0e0; border-radius: 10px; height: 20px; overflow: hidden; margin-top: 0.5rem; }
+        .progress-fill { background: linear-gradient(90deg, var(--cost-purple), var(--cost-blue)); height: 100%; border-radius: 10px; }
+        .ffr-nav { display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .ffr-nav a { padding: 0.5rem 1rem; background: white; border-radius: 8px; text-decoration: none; color: var(--cost-purple); box-shadow: 0 2px 10px rgba(0,0,0,0.08); font-weight: 500; }
+        .ffr-nav a:hover, .ffr-nav a.active { background: var(--cost-purple); color: white; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 500; }
+        .badge-yri { background: var(--cost-green); color: white; }
+        .badge-itc { background: rgba(232, 119, 34, 0.2); color: #b35c10; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="overview.html">Overview</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>FFR1</span>
+    </div>
+
+    <header class="hero-small">
+        <h1>Final Financial Report 1 (FFR1)</h1>
+        <p class="period">Grant Period 1: November 2020 - October 2021</p>
+    </header>
+
+    <section>
+        <div class="ffr-nav">
+            <a href="ffr1.html" class="active">FFR1</a>
+            <a href="ffr3.html">FFR3</a>
+            <a href="ffr5.html">FFR5</a>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num">62,986</div><div class="label">Budget EUR</div></div>
+            <div class="stat-box"><div class="num">47,460</div><div class="label">Actual EUR</div></div>
+            <div class="stat-box"><div class="num">75%</div><div class="label">Utilization</div></div>
+            <div class="stat-box"><div class="num">9</div><div class="label">STSMs</div></div>
+        </div>
+
+        <div class="card">
+            <h3>Budget Utilization</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+            <p style="text-align: center; margin-top: 0.5rem; color: var(--gray);">47,460 EUR of 62,986 EUR budget utilized</p>
+        </div>
+
+        <h2>Expenditure Breakdown</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr><th>Category</th><th>Budget EUR</th><th>Actual EUR</th><th>% Used</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Meetings</td><td class="amount">15,000</td><td class="amount">10,300</td><td>68.7%</td></tr>
+                    <tr><td>STSMs</td><td class="amount">25,000</td><td class="amount">20,800</td><td>83.2%</td></tr>
+                    <tr><td>ITC Conference Grants</td><td class="amount">1,000</td><td class="amount">375</td><td>37.5%</td></tr>
+                    <tr><td>Virtual Networking Support</td><td class="amount">5,000</td><td class="amount">4,000</td><td>80.0%</td></tr>
+                    <tr><td>Dissemination</td><td class="amount">1,000</td><td class="amount">294</td><td>29.4%</td></tr>
+                    <tr><td>OERSA</td><td class="amount">6,000</td><td class="amount">5,500</td><td>91.7%</td></tr>
+                    <tr><td>FSAC</td><td class="amount">9,986</td><td class="amount">6,190</td><td>62.0%</td></tr>
+                    <tr style="background: rgba(91, 45, 138, 0.1); font-weight: 600;">
+                        <td>TOTAL</td><td class="amount">62,986</td><td class="amount">47,460</td><td>75.3%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>STSMs Funded in GP1</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr><th>Grantee</th><th>YRI</th><th>Home</th><th>Host</th><th>Start</th><th>End</th><th>Days</th><th>Amount</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Stjepan Picek</td><td><span class="badge badge-yri">YRI</span></td><td>HR <span class="badge badge-itc">ITC</span></td><td>NL</td><td>2021-01-11</td><td>2021-01-26</td><td>16</td><td class="amount">1,520</td></tr>
+                    <tr><td>Wei Li</td><td></td><td>NO</td><td>DE</td><td>2021-02-01</td><td>2021-05-31</td><td>120</td><td class="amount">3,500</td></tr>
+                    <tr><td>Luciana Dalla Valle</td><td></td><td>IT</td><td>UK</td><td>2021-06-14</td><td>2021-06-19</td><td>6</td><td class="amount">1,260</td></tr>
+                    <tr><td>Danial Saef</td><td></td><td>UK</td><td>DE</td><td>2021-09-24</td><td>2021-10-23</td><td>30</td><td class="amount">3,500</td></tr>
+                    <tr><td>Apostolos Chalkis</td><td></td><td>FR</td><td>EL <span class="badge badge-itc">ITC</span></td><td>2021-10-10</td><td>2021-10-23</td><td>14</td><td class="amount">2,450</td></tr>
+                    <tr><td>Jasone Ramirez-Ayerbe</td><td></td><td>DK</td><td>ES</td><td>2021-10-13</td><td>2021-10-26</td><td>14</td><td class="amount">2,540</td></tr>
+                    <tr><td>Alla Petukhina</td><td><span class="badge badge-yri">YRI</span></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2021-10-20</td><td>2021-10-31</td><td>12</td><td class="amount">1,500</td></tr>
+                    <tr><td>Ioana Coita</td><td><span class="badge badge-yri">YRI</span></td><td>DE</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2021-10-22</td><td>2021-10-31</td><td>10</td><td class="amount">2,500</td></tr>
+                    <tr><td>Galena Pisoni</td><td></td><td>NO</td><td>FR</td><td>2021-10-24</td><td>2021-10-31</td><td>8</td><td class="amount">2,030</td></tr>
+                    <tr style="background: rgba(91, 45, 138, 0.1); font-weight: 600;">
+                        <td colspan="6">TOTAL</td><td>230</td><td class="amount">20,800</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Key Activities</h2>
+        <div class="card">
+            <ul style="padding-left: 1.5rem;">
+                <li><strong>Action Launch:</strong> Official start of COST Action CA19130 - Fintech and Artificial Intelligence in Finance</li>
+                <li><strong>Working Groups Established:</strong> WG1, WG2, and WG3 each launched with 30 initial members</li>
+                <li><strong>9 STSMs:</strong> First wave of Short-Term Scientific Missions enabling researcher mobility</li>
+                <li><strong>COVID-19 Impact:</strong> Pandemic restrictions limited in-person activities, leading to lower budget utilization</li>
+                <li><strong>Virtual Networking:</strong> Adapted to online collaboration tools and virtual meetings</li>
+                <li><strong>Deliverable D1:</strong> Strategy to engage stakeholders completed</li>
+            </ul>
+        </div>
+
+        <h2>STSM Statistics</h2>
+        <div class="card">
+            <ul style="padding-left: 1.5rem;">
+                <li><strong>Young Researcher STSMs:</strong> 3 of 9 (33%)</li>
+                <li><strong>ITC Country Involvement:</strong> 4 STSMs involved ITC countries</li>
+                <li><strong>Longest Mission:</strong> Wei Li - 120 days (Norway to Germany)</li>
+                <li><strong>Average Duration:</strong> 25.6 days</li>
+                <li><strong>Average Grant:</strong> 2,311 EUR</li>
+                <li><strong>Countries Involved:</strong> HR, NO, IT, UK, FR, DK, RO, DE, NL, EL, ES</li>
+            </ul>
+        </div>
+
+        <h2>Context</h2>
+        <div class="card">
+            <p>Grant Period 1 was significantly impacted by the COVID-19 pandemic. Despite travel restrictions and the shift to virtual collaboration, the Action successfully:</p>
+            <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>Launched all three working groups with strong initial membership</li>
+                <li>Funded 9 STSMs totaling 20,800 EUR and 230 researcher-days</li>
+                <li>Established virtual networking infrastructure</li>
+                <li>Completed the first deliverable on stakeholder engagement</li>
+            </ul>
+            <p style="margin-top: 1rem;">The 75% budget utilization reflects pandemic-related constraints rather than planning issues. The unspent funds were carried forward to support future activities.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="overview.html">Financial Overview</a> | <a href="index.html">Back to Financial Reports</a> | <a href="ffr3.html">Next: FFR3 -></a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP2 - Work & Budget Plans - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .hero-small { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 3rem 2rem; text-align: center; }
+        .hero-small h1 { font-size: 2rem; }
+        .hero-small .period { font-size: 1.1rem; opacity: 0.9; margin-top: 0.5rem; }
+        section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: center; }
+        .stat-box { background: white; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; min-width: 150px; }
+        .stat-box .num { font-size: 2rem; font-weight: 700; color: var(--cost-blue); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .card h3 { font-size: 1.1rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: var(--cost-purple); color: white; padding: 10px; text-align: left; font-size: 0.85rem; }
+        td { padding: 10px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        tr:hover { background: rgba(91, 45, 138, 0.05); }
+        .amount { font-weight: 600; color: var(--cost-blue); }
+        .progress-bar { background: #e0e0e0; border-radius: 10px; height: 20px; overflow: hidden; margin-top: 0.5rem; }
+        .progress-fill { background: linear-gradient(90deg, var(--cost-orange), var(--cost-teal)); height: 100%; border-radius: 10px; }
+        .gp-nav { display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .gp-nav a { padding: 0.5rem 1rem; background: white; border-radius: 8px; text-decoration: none; color: var(--cost-purple); box-shadow: 0 2px 10px rgba(0,0,0,0.08); font-weight: 500; }
+        .gp-nav a:hover, .gp-nav a.active { background: var(--cost-purple); color: white; }
+        .alert { background: rgba(232, 119, 34, 0.1); border-left: 4px solid var(--cost-orange); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Work & Budget</a></li>
+                <li><a href="../financial-reports/index.html">Financial Reports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Work & Budget Plans</a> / <span>GP2</span>
+    </div>
+
+    <header class="hero-small">
+        <h1>Grant Period 2</h1>
+        <p class="period">November 2021 - May 2022</p>
+    </header>
+
+    <section>
+        <div class="gp-nav">
+            <a href="gp1.html">GP1</a>
+            <a href="gp2.html" class="active">GP2</a>
+            <a href="gp3.html">GP3</a>
+            <a href="gp4.html">GP4</a>
+            <a href="gp5.html">GP5</a>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num">202,607</div><div class="label">Budget EUR</div></div>
+            <div class="stat-box"><div class="num">33,770</div><div class="label">Actual EUR</div></div>
+            <div class="stat-box"><div class="num">17%</div><div class="label">Utilization</div></div>
+            <div class="stat-box"><div class="num">7</div><div class="label">Months</div></div>
+        </div>
+
+        <div class="alert">
+            <strong>Note:</strong> GP2 was a shortened transition period (7 months instead of 12) as COST restructured grant periods. Budget was carried forward to GP3.
+        </div>
+
+        <div class="card">
+            <h3>Budget Utilization</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 17%;"></div>
+            </div>
+            <p style="text-align: center; margin-top: 0.5rem; color: var(--gray);">33,770 EUR of 202,607 EUR budget utilized (remaining carried forward)</p>
+        </div>
+
+        <div class="card">
+            <h3>Expenditure Breakdown</h3>
+            <table>
+                <thead>
+                    <tr><th>Category</th><th>Amount (EUR)</th><th>% of Total</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Meetings</td><td class="amount">22,059</td><td>65.3%</td></tr>
+                    <tr><td>Virtual Networking</td><td class="amount">6,776</td><td>20.1%</td></tr>
+                    <tr><td>FSAC (Financial & Scientific Admin)</td><td class="amount">4,395</td><td>13.0%</td></tr>
+                    <tr><td>Dissemination</td><td class="amount">541</td><td>1.6%</td></tr>
+                    <tr><td>STSMs</td><td class="amount">0</td><td>0%</td></tr>
+                    <tr><td>ITC Grants</td><td class="amount">0</td><td>0%</td></tr>
+                    <tr><td><strong>Total</strong></td><td class="amount"><strong>33,770</strong></td><td><strong>100%</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>Key Activities</h3>
+            <ul style="padding-left: 1.5rem;">
+                <li><strong>Transition Period:</strong> Shortened grant period due to COST administrative restructuring</li>
+                <li><strong>Meetings Focus:</strong> Primary expenditure on organizing network meetings</li>
+                <li><strong>Virtual Networking Continued:</strong> Sustained online collaboration activities</li>
+                <li><strong>Deliverable Progress:</strong> Work continued on Deliverable 2 - Report on best practices for transparent finance</li>
+                <li><strong>Budget Carry-Forward:</strong> Unspent funds transferred to GP3 for intensive activities</li>
+            </ul>
+        </div>
+
+        <h2>Context</h2>
+        <div class="card">
+            <p>Grant Period 2 was an abbreviated period of only 7 months, serving as a transition between the pandemic-affected GP1 and the more active GP3. The low utilization rate (17%) is primarily due to:</p>
+            <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>Shortened period (Nov 2021 - May 2022)</li>
+                <li>Continued COVID-19 travel restrictions in early 2022</li>
+                <li>Strategic decision to carry budget forward for larger activities</li>
+                <li>No STSMs processed during this transition period</li>
+            </ul>
+            <p style="margin-top: 1rem;">The unspent budget was successfully carried over to GP3, where it enabled the most intensive period of Action activities.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="gp1.html"><- Previous: GP1</a> | <a href="index.html">Back to Work & Budget Plans</a> | <a href="gp3.html">Next: GP3 -></a></p>
+    </footer>
+</body>
+</html>

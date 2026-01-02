@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Work & Budget Plans - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; transition: color 0.3s; }
+        nav a:hover { color: white; }
+        .hero { background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 50%, var(--cost-teal) 100%); color: white; padding: 8rem 2rem 4rem; text-align: center; }
+        .hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .hero .subtitle { font-size: 1.2rem; opacity: 0.95; max-width: 700px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .stats-banner { background: white; padding: 2rem; display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2.5rem; font-weight: 700; color: var(--cost-purple); }
+        .stat-label { font-size: 0.85rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.05em; }
+        section { padding: 4rem 2rem; max-width: 1400px; margin: 0 auto; }
+        section h2 { font-size: 2rem; color: var(--cost-purple); margin-bottom: 1.5rem; text-align: center; }
+        section h2::after { content: ''; display: block; width: 60px; height: 3px; background: var(--cost-orange); margin: 0.8rem auto 0; }
+        .nav-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .nav-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s, box-shadow 0.3s; text-decoration: none; color: var(--dark); border-left: 4px solid var(--cost-teal); }
+        .nav-card:hover { transform: translateY(-4px); box-shadow: 0 8px 30px rgba(0,0,0,0.12); }
+        .nav-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--cost-purple); }
+        .nav-card p { font-size: 0.9rem; color: var(--gray); }
+        .nav-card .arrow { color: var(--cost-orange); font-weight: bold; margin-top: 1rem; display: block; }
+        .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .chart-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .chart-card h3 { font-size: 1rem; color: var(--dark); margin-bottom: 1rem; text-align: center; }
+        .chart-card img { width: 100%; height: auto; border-radius: 8px; }
+        footer { background: var(--dark); color: white; padding: 3rem 2rem; text-align: center; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .hero h1 { font-size: 1.8rem; } .stats-banner { gap: 2rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Work & Budget</a></li>
+                <li><a href="../financial-reports/index.html">Financial Reports</a></li>
+                <li><a href="../mc-members.html">MC</a></li>
+                <li><a href="../wg-members.html">WG</a></li>
+                <li><a href="../publications.html">Publications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Work & Budget Plans</h1>
+        <p class="subtitle">Comprehensive overview of COST Action CA19130 planning, objectives, and budget allocation across 5 grant periods (2020-2024)</p>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> <span>/ Work & Budget Plans</span>
+    </div>
+
+    <div class="stats-banner">
+        <div class="stat-item">
+            <div class="stat-number">5</div>
+            <div class="stat-label">Grant Periods</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">964K</div>
+            <div class="stat-label">Total Budget (EUR)</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">50</div>
+            <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">15</div>
+            <div class="stat-label">Deliverables</div>
+        </div>
+    </div>
+
+    <section>
+        <h2>Navigate</h2>
+        <div class="nav-cards">
+            <a href="overview.html" class="nav-card">
+                <h3>Overview</h3>
+                <p>Summary of all 5 grant periods with budget progression and key milestones achieved.</p>
+                <span class="arrow">View Overview -></span>
+            </a>
+            <a href="gp1.html" class="nav-card">
+                <h3>Grant Period 1</h3>
+                <p>Nov 2020 - Oct 2021. Action start, first meetings, initial STSMs. Budget: 63K EUR.</p>
+                <span class="arrow">View GP1 -></span>
+            </a>
+            <a href="gp2.html" class="nav-card">
+                <h3>Grant Period 2</h3>
+                <p>Nov 2021 - May 2022. Expansion phase with major conferences. Budget: 203K EUR.</p>
+                <span class="arrow">View GP2 -></span>
+            </a>
+            <a href="gp3.html" class="nav-card">
+                <h3>Grant Period 3</h3>
+                <p>Jun 2022 - Oct 2022. Peak activity with 9 meetings. Budget: 170K EUR.</p>
+                <span class="arrow">View GP3 -></span>
+            </a>
+            <a href="gp4.html" class="nav-card">
+                <h3>Grant Period 4</h3>
+                <p>Nov 2022 - Oct 2023. First training schools launched. Budget: 258K EUR.</p>
+                <span class="arrow">View GP4 -></span>
+            </a>
+            <a href="gp5.html" class="nav-card">
+                <h3>Grant Period 5</h3>
+                <p>Nov 2023 - Sep 2024. Final period, action conclusion. Budget: 270K EUR.</p>
+                <span class="arrow">View GP5 -></span>
+            </a>
+            <a href="deliverables.html" class="nav-card">
+                <h3>Deliverables</h3>
+                <p>Track all 15 planned deliverables from the MoU with completion status.</p>
+                <span class="arrow">View Deliverables -></span>
+            </a>
+            <a href="working-groups.html" class="nav-card">
+                <h3>Working Groups</h3>
+                <p>Details on WG1, WG2, WG3 objectives, leadership, and membership growth.</p>
+                <span class="arrow">View WGs -></span>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Visualizations</h2>
+        <div class="chart-grid">
+            <div class="chart-card">
+                <h3>Budget by Grant Period</h3>
+                <img src="charts/01_budget_by_year/chart.png" alt="Budget by Year">
+            </div>
+            <div class="chart-card">
+                <h3>Working Group Growth</h3>
+                <img src="charts/03_wg_membership_growth/chart.png" alt="WG Membership Growth">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="../index.html">Home</a> | <a href="../financial-reports/index.html">Financial Reports</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Official</a></p>
+    </footer>
+</body>
+</html>

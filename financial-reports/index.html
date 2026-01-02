@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Reports - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        .hero { background: linear-gradient(135deg, var(--cost-blue) 0%, var(--cost-teal) 100%); color: white; padding: 8rem 2rem 4rem; text-align: center; }
+        .hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .hero .subtitle { font-size: 1.2rem; opacity: 0.95; max-width: 700px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .stats-banner { background: white; padding: 2rem; display: flex; justify-content: center; gap: 4rem; flex-wrap: wrap; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2.5rem; font-weight: 700; color: var(--cost-blue); }
+        .stat-label { font-size: 0.85rem; color: var(--gray); text-transform: uppercase; }
+        section { padding: 4rem 2rem; max-width: 1400px; margin: 0 auto; }
+        section h2 { font-size: 2rem; color: var(--cost-purple); margin-bottom: 1.5rem; text-align: center; }
+        section h2::after { content: ''; display: block; width: 60px; height: 3px; background: var(--cost-orange); margin: 0.8rem auto 0; }
+        .nav-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin-top: 2rem; }
+        .nav-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); transition: transform 0.3s; text-decoration: none; color: var(--dark); border-left: 4px solid var(--cost-blue); }
+        .nav-card:hover { transform: translateY(-4px); }
+        .nav-card h3 { font-size: 1.1rem; margin-bottom: 0.5rem; color: var(--cost-blue); }
+        .nav-card p { font-size: 0.9rem; color: var(--gray); }
+        .nav-card .arrow { color: var(--cost-orange); font-weight: bold; margin-top: 1rem; display: block; }
+        .chart-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 2rem; margin-top: 2rem; }
+        .chart-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .chart-card h3 { font-size: 1rem; color: var(--dark); margin-bottom: 1rem; text-align: center; }
+        .chart-card img { width: 100%; height: auto; border-radius: 8px; }
+        footer { background: var(--dark); color: white; padding: 3rem 2rem; text-align: center; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../work-budget-plans/index.html">Work & Budget</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="../mc-members.html">MC</a></li>
+                <li><a href="../wg-members.html">WG</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Financial Reports</h1>
+        <p class="subtitle">Detailed financial data from all 5 Final Financial Reports (FFR), including meetings, STSMs, training schools, and participant information</p>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> <span>/ Financial Reports</span>
+    </div>
+
+    <div class="stats-banner">
+        <div class="stat-item">
+            <div class="stat-number">775K</div>
+            <div class="stat-label">Total Expenditure (EUR)</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">40</div>
+            <div class="stat-label">Meetings</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">27</div>
+            <div class="stat-label">STSMs Funded</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">7</div>
+            <div class="stat-label">Training Schools</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">153</div>
+            <div class="stat-label">Participants</div>
+        </div>
+    </div>
+
+    <section>
+        <h2>Navigate</h2>
+        <div class="nav-cards">
+            <a href="overview.html" class="nav-card">
+                <h3>Financial Overview</h3>
+                <p>Aggregated financial summary across all grant periods with budget vs actual analysis.</p>
+                <span class="arrow">View Overview -></span>
+            </a>
+            <a href="meetings.html" class="nav-card">
+                <h3>All Meetings</h3>
+                <p>Complete database of 40 meetings, workshops, and conferences with dates, locations, and attendance.</p>
+                <span class="arrow">View Meetings -></span>
+            </a>
+            <a href="stsm.html" class="nav-card">
+                <h3>STSMs</h3>
+                <p>All 27 Short-Term Scientific Missions with grantee details, countries, and funding amounts.</p>
+                <span class="arrow">View STSMs -></span>
+            </a>
+            <a href="training-schools.html" class="nav-card">
+                <h3>Training Schools</h3>
+                <p>Details on all 7 training schools including locations, dates, and trainee counts.</p>
+                <span class="arrow">View Schools -></span>
+            </a>
+            <a href="participants.html" class="nav-card">
+                <h3>Participants</h3>
+                <p>Full list of 153+ participants organized by country with ITC indicators.</p>
+                <span class="arrow">View Participants -></span>
+            </a>
+            <a href="ffr1.html" class="nav-card">
+                <h3>FFR1 (GP1)</h3>
+                <p>First financial report covering Nov 2020 - Oct 2021.</p>
+                <span class="arrow">View FFR1 -></span>
+            </a>
+            <a href="ffr3.html" class="nav-card">
+                <h3>FFR3 (GP3)</h3>
+                <p>Third financial report covering Jun 2022 - Oct 2022.</p>
+                <span class="arrow">View FFR3 -></span>
+            </a>
+            <a href="ffr5.html" class="nav-card">
+                <h3>FFR5 (GP5)</h3>
+                <p>Final financial report covering Nov 2023 - Sep 2024.</p>
+                <span class="arrow">View FFR5 -></span>
+            </a>
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Visualizations</h2>
+        <div class="chart-grid">
+            <div class="chart-card">
+                <h3>Budget vs Actual Expenditure</h3>
+                <img src="charts/01_actual_vs_budget/chart.png" alt="Budget vs Actual">
+            </div>
+            <div class="chart-card">
+                <h3>Expenditure by Category</h3>
+                <img src="charts/02_expenditure_breakdown/chart.png" alt="Expenditure Breakdown">
+            </div>
+            <div class="chart-card">
+                <h3>ITC Participation</h3>
+                <img src="charts/06_itc_participation/chart.png" alt="ITC Participation">
+            </div>
+            <div class="chart-card">
+                <h3>Cumulative Funding Flow</h3>
+                <img src="charts/07_funding_flow/chart.png" alt="Funding Flow">
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="../index.html">Home</a> | <a href="../work-budget-plans/index.html">Work & Budget Plans</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Official</a></p>
+    </footer>
+</body>
+</html>

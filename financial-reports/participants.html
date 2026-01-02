@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participants - Financial Reports - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        section { padding: 2rem; max-width: 1400px; margin: 0 auto; }
+        h1 { font-size: 2rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .stat-box { background: white; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        .stat-box .num { font-size: 1.8rem; font-weight: 700; color: var(--cost-purple); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .chart-container { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin: 2rem 0; }
+        .chart-container img { width: 100%; max-width: 800px; display: block; margin: 0 auto; }
+        .country-section { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .country-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; padding-bottom: 0.5rem; border-bottom: 2px solid var(--border); }
+        .country-header h3 { font-size: 1.1rem; color: var(--cost-purple); }
+        .country-header .count { background: var(--cost-purple); color: white; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem; }
+        .country-header.itc h3 { color: var(--cost-orange); }
+        .country-header.itc .count { background: var(--cost-orange); }
+        .participants-list { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 0.5rem; }
+        .participant { font-size: 0.9rem; color: var(--dark); padding: 0.3rem 0; }
+        .countries-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="meetings.html">Meetings</a></li>
+                <li><a href="stsm.html">STSMs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>Participants</span>
+    </div>
+
+    <section>
+        <h1>Participants by Country</h1>
+        <p>Complete list of 153 unique participants from the Financial Reports, organized by country. ITC (Inclusiveness Target Countries) are highlighted.</p>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num">153</div><div class="label">Total Participants</div></div>
+            <div class="stat-box"><div class="num">33</div><div class="label">Countries</div></div>
+            <div class="stat-box"><div class="num">87</div><div class="label">ITC Participants (57%)</div></div>
+            <div class="stat-box"><div class="num">66</div><div class="label">Non-ITC Participants</div></div>
+        </div>
+
+        <div class="chart-container">
+            <img src="../work-budget-plans/charts/04_country_participation/chart.png" alt="Country Participation">
+        </div>
+
+        <h2>Participants by Country</h2>
+        <div class="countries-grid">
+            <div class="country-section">
+                <div class="country-header itc"><h3>Romania (ITC)</h3><span class="count">18</span></div>
+                <div class="participants-list">
+                    <div class="participant">Achim, Monica Violeta</div>
+                    <div class="participant">Apostol, Elena Simona</div>
+                    <div class="participant">Bag, Raul</div>
+                    <div class="participant">Belbe, Stefana</div>
+                    <div class="participant">Chis, Laviniu</div>
+                    <div class="participant">Coita, Ioana</div>
+                    <div class="participant">Costea, Adrian</div>
+                    <div class="participant">Curticapean, Cosmin</div>
+                    <div class="participant">Mare, Codruta</div>
+                    <div class="participant">Pele, Daniel Traian</div>
+                    <div class="participant">Popa, Diana</div>
+                    <div class="participant">Sandulescu, Magda</div>
+                    <div class="participant">Stanca, Liana</div>
+                    <div class="participant">Strat, Vasile</div>
+                    <div class="participant">Tiron-Tudor, Adriana</div>
+                    <div class="participant">Truica, Ciprian-Octavian</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Albania (ITC)</h3><span class="count">15</span></div>
+                <div class="participants-list">
+                    <div class="participant">Baka, Dea</div>
+                    <div class="participant">Bekteshi, Erisa</div>
+                    <div class="participant">Cokaj, Mentor</div>
+                    <div class="participant">Halilaj, Malvina</div>
+                    <div class="participant">Ilma, Lili</div>
+                    <div class="participant">Kosta, Anxhela</div>
+                    <div class="participant">Maxhelaku, Armela</div>
+                    <div class="participant">Maxhelaku Vasil, Suela</div>
+                    <div class="participant">Metani, Fiona</div>
+                    <div class="participant">Metushi, Emirjan</div>
+                    <div class="participant">Papajorgji, Petraq</div>
+                    <div class="participant">Sauli, Gerta</div>
+                    <div class="participant">Seci, Drita</div>
+                    <div class="participant">Shkurti Perri, Rezarta</div>
+                    <div class="participant">Xhumari, Elda</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Turkey (ITC)</h3><span class="count">12</span></div>
+                <div class="participants-list">
+                    <div class="participant">Akar, Mutlu</div>
+                    <div class="participant">Aydin, Nadi Serhan</div>
+                    <div class="participant">Cakir, Enis</div>
+                    <div class="participant">Cetintav, Bekir</div>
+                    <div class="participant">Citci, Sadettin Haluk</div>
+                    <div class="participant">Daver, Gizay</div>
+                    <div class="participant">Kabaklarli, Esra</div>
+                    <div class="participant">Kayis, Enis</div>
+                    <div class="participant">Nur, Pinar</div>
+                    <div class="participant">Ozturkkal, Belma</div>
+                    <div class="participant">Yildirim, Ozgur</div>
+                    <div class="participant">Yilmaz, Gokce Nur</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header"><h3>Germany</h3><span class="count">11</span></div>
+                <div class="participants-list">
+                    <div class="participant">Ben Amor, Souhir</div>
+                    <div class="participant">Hardle, Wolfgang</div>
+                    <div class="participant">Khowaja, Kainat</div>
+                    <div class="participant">Li, Wei</div>
+                    <div class="participant">Moukas, Alexios Ioannis</div>
+                    <div class="participant">Ni, Xinwen</div>
+                    <div class="participant">Petukhina, Alla</div>
+                    <div class="participant">Reule, Raphael</div>
+                    <div class="participant">Saef, Danial</div>
+                    <div class="participant">Wenzlaff, Karsten</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header"><h3>Italy</h3><span class="count">10</span></div>
+                <div class="participants-list">
+                    <div class="participant">Citterio, Alberto</div>
+                    <div class="participant">D'Elia, Samuele</div>
+                    <div class="participant">Dalla Valle, Luciana</div>
+                    <div class="participant">De Giuli, Maria Elena</div>
+                    <div class="participant">Giordano, Sabrina</div>
+                    <div class="participant">Iannario, Maria</div>
+                    <div class="participant">Marazzina, Daniele</div>
+                    <div class="participant">Raeli, Fabrizio</div>
+                    <div class="participant">Tanda, Alessandra</div>
+                    <div class="participant">Tarantola, Claudia</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header"><h3>Switzerland</h3><span class="count">10</span></div>
+                <div class="participants-list">
+                    <div class="participant">Baals, Lennart John</div>
+                    <div class="participant">De Meer Pardo, Fernando</div>
+                    <div class="participant">Demolli, Erlind</div>
+                    <div class="participant">Gomez Teijeiro, Lucia</div>
+                    <div class="participant">Hadji Misheva, Branka</div>
+                    <div class="participant">Jevtic, Danijel</div>
+                    <div class="participant">Klein, Marius</div>
+                    <div class="participant">Koenigstein, Nicole</div>
+                    <div class="participant">Liu, Yiting</div>
+                    <div class="participant">Osterrieder, Jorg</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Czech Republic (ITC)</h3><span class="count">7</span></div>
+                <div class="participants-list">
+                    <div class="participant">Deev, Oleg</div>
+                    <div class="participant">Hajek, Petr</div>
+                    <div class="participant">Kozmik, Karel</div>
+                    <div class="participant">Plihal, Tomas</div>
+                    <div class="participant">Vagnerova Linnertova, Dagmar</div>
+                    <div class="participant">Zlatosova, Silvie</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header"><h3>Netherlands</h3><span class="count">7</span></div>
+                <div class="participants-list">
+                    <div class="participant">Bernard, Frederik Sinan</div>
+                    <div class="participant">Kleverlaan, Ronald</div>
+                    <div class="participant">Machado, Marcos</div>
+                    <div class="participant">Marisetty, Vijay</div>
+                    <div class="participant">Oosterlee, Cornelis</div>
+                    <div class="participant">Svetlova, Ekaterina</div>
+                    <div class="participant">van Heeswijk, Wouter</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>North Macedonia (ITC)</h3><span class="count">6</span></div>
+                <div class="participants-list">
+                    <div class="participant">Atanasova-Pachemska, Tatjana</div>
+                    <div class="participant">Dzurovski, Anastas</div>
+                    <div class="participant">Lameski, Petre</div>
+                    <div class="participant">Mirchev, Miroslav</div>
+                    <div class="participant">Temkov, Slave</div>
+                    <div class="participant">Zdravevski, Eftim</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header"><h3>Ireland</h3><span class="count">6</span></div>
+                <div class="participants-list">
+                    <div class="participant">Abdul Nasir, Jamal</div>
+                    <div class="participant">Abrol, Manmeet</div>
+                    <div class="participant">Mirzaei, Mahsa</div>
+                    <div class="participant">Moloney, Maria</div>
+                    <div class="participant">Muckley, Cal</div>
+                    <div class="participant">Paccagnini, Alessia</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header"><h3>United Kingdom</h3><span class="count">5</span></div>
+                <div class="participants-list">
+                    <div class="participant">Chen, Cathy Yi-Hsuan</div>
+                    <div class="participant">Dellaportas, Petros</div>
+                    <div class="participant">Muniz Martinez, Jose Antonio</div>
+                    <div class="participant">Nadini, Matthieu</div>
+                    <div class="participant">Poti, Valerio</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header"><h3>France</h3><span class="count">4</span></div>
+                <div class="participants-list">
+                    <div class="participant">Apolosolu, Apostolos</div>
+                    <div class="participant">Chalkis, Apostolos</div>
+                    <div class="participant">Matkovskyy, Roman</div>
+                    <div class="participant">Pisoni, Galena</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Poland (ITC)</h3><span class="count">4</span></div>
+                <div class="participants-list">
+                    <div class="participant">Bedowska-Sojka, Barbara</div>
+                    <div class="participant">Bolesta, Karolina</div>
+                    <div class="participant">Wojcik, Piotr</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Greece (ITC)</h3><span class="count">4</span></div>
+                <div class="participants-list">
+                    <div class="participant">Arakelian, Veni</div>
+                    <div class="participant">Paschalidou, Eleftheria</div>
+                    <div class="participant">Thomaidis, Nikolaos S.</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Latvia (ITC)</h3><span class="count">3</span></div>
+                <div class="participants-list">
+                    <div class="participant">Girvica, Olga</div>
+                    <div class="participant">Rupeika-Apoga, Ramona</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Croatia (ITC)</h3><span class="count">3</span></div>
+                <div class="participants-list">
+                    <div class="participant">Ivanisevic Hernaus, Ana</div>
+                    <div class="participant">Palic, Petra</div>
+                    <div class="participant">Simurina, Nika</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Slovakia (ITC)</h3><span class="count">3</span></div>
+                <div class="participants-list">
+                    <div class="participant">Hudec, Miroslav</div>
+                    <div class="participant">Peliova, Jana</div>
+                    <div class="participant">Vojtasova, Maria</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Cyprus (ITC)</h3><span class="count">3</span></div>
+                <div class="participants-list">
+                    <div class="participant">Antoniou</div>
+                    <div class="participant">Gregoriades, Andreas</div>
+                    <div class="participant">Themistocleous, Christos</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Portugal (ITC)</h3><span class="count">3</span></div>
+                <div class="participants-list">
+                    <div class="participant">Dias, Joana</div>
+                    <div class="participant">Silva, Catarina</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header"><h3>Spain</h3><span class="count">3</span></div>
+                <div class="participants-list">
+                    <div class="participant">Domingo Vilar, Albert</div>
+                    <div class="participant">Ortiz, Cristina</div>
+                    <div class="participant">Pelegrina Jimenez, Antonio</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Lithuania (ITC)</h3><span class="count">3</span></div>
+                <div class="participants-list">
+                    <div class="participant">Sutiene, Kristina</div>
+                    <div class="participant">Svedas, Dominykas</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Hungary (ITC)</h3><span class="count">3</span></div>
+                <div class="participants-list">
+                    <div class="participant">Trinh, Anh Tuan</div>
+                    <div class="participant">Zuo, RongLin</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header"><h3>Finland</h3><span class="count">2</span></div>
+                <div class="participants-list">
+                    <div class="participant">Guerrero, Esteban</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header itc"><h3>Ukraine (ITC)</h3><span class="count">2</span></div>
+                <div class="participants-list">
+                    <div class="participant">Borodenko, Vladyslav</div>
+                    <div class="participant">Klochko, Alona</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header"><h3>Belgium</h3><span class="count">2</span></div>
+                <div class="participants-list">
+                    <div class="participant">Hafner, Christian</div>
+                </div>
+            </div>
+            <div class="country-section">
+                <div class="country-header"><h3>Norway</h3><span class="count">2</span></div>
+                <div class="participants-list">
+                    <div class="participant">Agotnes, Thomas</div>
+                    <div class="participant">Solibakke, Per B</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="country-section" style="margin-top: 2rem;">
+            <h2>Other Countries (1 participant each)</h2>
+            <div class="participants-list" style="grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));">
+                <div class="participant"><strong>Estonia (ITC):</strong> Liiv, Innar</div>
+                <div class="participant"><strong>Israel:</strong> Keller, Yosi</div>
+                <div class="participant"><strong>Iceland:</strong> Skaftadottir, Hanna Kristin</div>
+                <div class="participant"><strong>Austria:</strong> Hochreiter, Ronald</div>
+                <div class="participant"><strong>Bulgaria (ITC):</strong> Mishev, Stoyan</div>
+                <div class="participant"><strong>Serbia (ITC):</strong> Vucetic, Miljan</div>
+                <div class="participant"><strong>United States:</strong> Chakravorti, Sujit; Hirsa, Ali</div>
+                <div class="participant"><strong>Kosovo (ITC):</strong> Shala, Albulena</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Financial Reports</a> | <a href="meetings.html">Meetings</a> | <a href="stsm.html">STSMs</a></p>
+    </footer>
+</body>
+</html>

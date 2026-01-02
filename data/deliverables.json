@@ -1,0 +1,111 @@
+{
+  "deliverables": [
+    {
+      "id": 1,
+      "title": "Strategy to engage stakeholders",
+      "month": 6,
+      "status": "completed",
+      "description": "Comprehensive stakeholder engagement strategy with revisions at months 24 and 36"
+    },
+    {
+      "id": 2,
+      "title": "Report on best practices for transparent finance",
+      "month": 12,
+      "status": "completed",
+      "description": "Report with 12 guidelines on good examples and best practices"
+    },
+    {
+      "id": 3,
+      "title": "Database with pre-ICO documentation",
+      "month": 24,
+      "status": "completed",
+      "description": "Database linking pre-ICO documentation to post-ICO performance"
+    },
+    {
+      "id": 4,
+      "title": "Database with crowdfunding/P2P platform features",
+      "month": 24,
+      "status": "completed",
+      "description": "Database for fraud prediction in crowdfunding platforms"
+    },
+    {
+      "id": 5,
+      "title": "Discussion paper on back-testing framework",
+      "month": 24,
+      "status": "completed",
+      "description": "Statistically valid back-testing framework for investment strategies"
+    },
+    {
+      "id": 6,
+      "title": "Internal database of financial time series",
+      "month": 24,
+      "status": "completed",
+      "description": "Data from exchanges for research purposes"
+    },
+    {
+      "id": 7,
+      "title": "Discussion papers on ICO/crowdfunding methodology",
+      "month": 36,
+      "status": "completed",
+      "description": "Methodology for evaluating ICOs and crowdfunding platforms"
+    },
+    {
+      "id": 8,
+      "title": "Position papers for regulators on AI testing",
+      "month": 36,
+      "status": "completed",
+      "description": "Methodology with formal criteria for testing AI techniques in real-time"
+    },
+    {
+      "id": 9,
+      "title": "Handbook on risk management",
+      "month": 36,
+      "status": "completed",
+      "description": "Wiki/handbook on risk management for blockchain and P2P lending"
+    },
+    {
+      "id": 10,
+      "title": "Position paper on digital asset risks",
+      "month": 48,
+      "status": "completed",
+      "description": "Roadmap on mitigating risks with digital assets"
+    },
+    {
+      "id": 11,
+      "title": "Methodology on stress tests for AI/ML",
+      "month": 48,
+      "status": "completed",
+      "description": "Discussion paper on stress testing AI/ML models"
+    },
+    {
+      "id": 12,
+      "title": "AI models for failed trials analysis",
+      "month": 48,
+      "status": "completed",
+      "description": "Discussion papers on AI models for network data analysis"
+    },
+    {
+      "id": 13,
+      "title": "Four annual reports for lay audience",
+      "month": 48,
+      "status": "completed",
+      "description": "Annual reports via media channels"
+    },
+    {
+      "id": 14,
+      "title": "Key software/codes/packages",
+      "month": 48,
+      "status": "completed",
+      "description": "Open source software contributions from working groups"
+    },
+    {
+      "id": 15,
+      "title": "Edited volume on scientific achievements",
+      "month": 48,
+      "status": "completed",
+      "description": "Comprehensive edited volume documenting action achievements"
+    }
+  ],
+  "total": 15,
+  "completed": 15
+}
