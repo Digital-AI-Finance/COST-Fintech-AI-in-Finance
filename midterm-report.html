@@ -1,0 +1,1306 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mid-Term Report - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+            --success: #28a745;
+            --warning: #ffc107;
+            --info: #17a2b8;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        nav .logo span {
+            color: var(--cost-orange);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 50%, var(--cost-teal) 100%);
+            color: white;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .report-badge {
+            display: inline-block;
+            background: var(--cost-orange);
+            color: white;
+            padding: 0.4rem 1.2rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto 1rem;
+            font-weight: 300;
+        }
+
+        .hero .period {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        .stats-banner {
+            background: white;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: var(--cost-purple);
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        section {
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 1.8rem;
+            color: var(--cost-purple);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--cost-orange);
+            margin: 0.8rem auto 0;
+        }
+
+        .summary-box {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .summary-box p {
+            color: var(--gray);
+            font-size: 1rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .summary-box p:last-child {
+            margin-bottom: 0;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            color: white;
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box h4 {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .highlight-box p {
+            color: rgba(255,255,255,0.9);
+            margin-bottom: 0;
+        }
+
+        .objectives-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 2rem;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .objectives-table th {
+            background: var(--cost-purple);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-size: 0.9rem;
+            font-weight: 600;
+        }
+
+        .objectives-table td {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.9rem;
+        }
+
+        .objectives-table tr:last-child td {
+            border-bottom: none;
+        }
+
+        .objectives-table tr:hover {
+            background: rgba(91, 45, 138, 0.03);
+        }
+
+        .progress-badge {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .progress-high {
+            background: rgba(40, 167, 69, 0.15);
+            color: var(--success);
+        }
+
+        .progress-medium {
+            background: rgba(255, 193, 7, 0.15);
+            color: #d39e00;
+        }
+
+        .progress-low {
+            background: rgba(23, 162, 184, 0.15);
+            color: var(--info);
+        }
+
+        .status-confirmed {
+            color: var(--success);
+            font-weight: 600;
+        }
+
+        .status-not-confirmed {
+            color: var(--warning);
+            font-weight: 600;
+        }
+
+        .deliverables-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .deliverable-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--cost-teal);
+        }
+
+        .deliverable-card.delivered {
+            border-left-color: var(--success);
+        }
+
+        .deliverable-card.expected {
+            border-left-color: var(--cost-orange);
+        }
+
+        .deliverable-card h4 {
+            font-size: 0.95rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .deliverable-card .due-date {
+            font-size: 0.8rem;
+            color: var(--gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .deliverable-card .status {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .deliverable-card .status.delivered {
+            background: rgba(40, 167, 69, 0.15);
+            color: var(--success);
+        }
+
+        .deliverable-card .status.expected {
+            background: rgba(232, 119, 34, 0.15);
+            color: var(--cost-orange);
+        }
+
+        .publications-section {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .publication-list {
+            max-height: 500px;
+            overflow-y: auto;
+        }
+
+        .publication-item {
+            padding: 1rem;
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            gap: 1rem;
+        }
+
+        .publication-item:last-child {
+            border-bottom: none;
+        }
+
+        .publication-number {
+            background: var(--cost-purple);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0.8rem;
+            font-weight: 600;
+            flex-shrink: 0;
+        }
+
+        .publication-details h5 {
+            font-size: 0.95rem;
+            color: var(--dark);
+            margin-bottom: 0.3rem;
+        }
+
+        .publication-details .authors {
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 0.3rem;
+        }
+
+        .publication-details .journal {
+            font-size: 0.8rem;
+            color: var(--cost-blue);
+            font-style: italic;
+        }
+
+        .publication-details .countries {
+            display: inline-flex;
+            gap: 0.3rem;
+            margin-top: 0.3rem;
+        }
+
+        .country-tag {
+            background: rgba(91, 45, 138, 0.1);
+            color: var(--cost-purple);
+            padding: 0.15rem 0.5rem;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .chart-container h3 {
+            font-size: 1rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .chart-wrapper {
+            height: 250px;
+            position: relative;
+        }
+
+        .rapporteur-section {
+            background: linear-gradient(135deg, rgba(91, 45, 138, 0.05), rgba(43, 95, 158, 0.05));
+            border-radius: 12px;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .rapporteur-section h3 {
+            color: var(--cost-purple);
+            margin-bottom: 1rem;
+            font-size: 1.2rem;
+        }
+
+        .rapporteur-quote {
+            font-style: italic;
+            color: var(--gray);
+            border-left: 4px solid var(--cost-orange);
+            padding-left: 1.5rem;
+            margin: 1rem 0;
+        }
+
+        .leadership-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .leader-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-align: center;
+        }
+
+        .leader-card .role {
+            font-size: 0.8rem;
+            color: var(--cost-orange);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.5rem;
+        }
+
+        .leader-card h4 {
+            color: var(--dark);
+            font-size: 1.1rem;
+            margin-bottom: 0.3rem;
+        }
+
+        .leader-card .country {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        .platforms-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .platform-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-top: 4px solid var(--cost-teal);
+        }
+
+        .platform-card h4 {
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .platform-card p {
+            color: var(--gray);
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .platform-card a {
+            color: var(--cost-blue);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        .platform-card a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer .cost-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        footer p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+
+        footer .links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        footer a {
+            color: var(--cost-orange);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .stats-banner {
+                gap: 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 1.8rem;
+            }
+
+            .objectives-table {
+                display: block;
+                overflow-x: auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mc-members.html">MC Members</a></li>
+                <li><a href="wg-members.html">WG Members</a></li>
+                <li><a href="members.html">All Members</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="report-badge">Progress Report at 24 Months</div>
+        <h1>Mid-Term Report</h1>
+        <p class="subtitle">COST Action CA19130: Fintech and Artificial Intelligence in Finance</p>
+        <p class="period">Reporting Period: September 2020 - September 2022</p>
+    </header>
+
+    <div class="stats-banner">
+        <div class="stat-item">
+            <div class="stat-number">260</div>
+            <div class="stat-label">Researchers</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">49</div>
+            <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">Events</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">6,000+</div>
+            <div class="stat-label">Participants</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">10,000+</div>
+            <div class="stat-label">Citations</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">100+</div>
+            <div class="stat-label">Publications</div>
+        </div>
+    </div>
+
+    <section id="summary">
+        <h2>Executive Summary</h2>
+        <div class="summary-box">
+            <p>
+                The COST Action on Fintech and AI in Finance has brought together an incredibly diverse network,
+                witnessing enormous growth to <strong>260 interdisciplinary researchers from 49 countries</strong>,
+                with 39 European COST countries, becoming one of the largest and most active COST Actions in Europe.
+            </p>
+            <p>
+                The academic achievements are impressive: the Action organized <strong>150 research conferences</strong>
+                with more than <strong>6,000 participants</strong> and <strong>300 distinguished speakers</strong>.
+                The network's publications have been cited more than <strong>10,000 times</strong>, demonstrating
+                the impact and relevance of research conducted within the network.
+            </p>
+
+            <div class="highlight-box">
+                <h4>Rapporteur Assessment</h4>
+                <p>
+                    "The FinTech and AI in Finance Action has demonstrably been highly successful in nurturing the field,
+                    supporting the development of a strong community of data scientists, economic and social science experts,
+                    practitioners, and stakeholders including regulators and policy-makers from 49 countries."
+                </p>
+            </div>
+
+            <p>
+                The Action promotes diversity and collaboration through STSMs, virtual grants, and initiatives encouraging
+                researchers from different backgrounds to work together. It bridges the gap between practitioners from
+                the finance industry, academics, and regulators through common knowledge exchange platforms.
+            </p>
+        </div>
+    </section>
+
+    <section id="leadership">
+        <h2>Action Leadership</h2>
+        <div class="leadership-grid">
+            <div class="leader-card">
+                <div class="role">Action Chair</div>
+                <h4>Prof. Jorg Osterrieder</h4>
+                <div class="country">Switzerland</div>
+            </div>
+            <div class="leader-card">
+                <div class="role">Action Vice-Chair</div>
+                <h4>Prof. Valerio Poti</h4>
+                <div class="country">Ireland</div>
+            </div>
+            <div class="leader-card">
+                <div class="role">WG1 Leader</div>
+                <h4>Prof. Wolfgang Hardle</h4>
+                <div class="country">Germany</div>
+            </div>
+            <div class="leader-card">
+                <div class="role">WG2 Leader</div>
+                <h4>Prof. Petre Lameski</h4>
+                <div class="country">North Macedonia</div>
+            </div>
+            <div class="leader-card">
+                <div class="role">WG3 Leader</div>
+                <h4>Prof. Peter Schwendner</h4>
+                <div class="country">Switzerland</div>
+            </div>
+            <div class="leader-card">
+                <div class="role">Science Communication</div>
+                <h4>Dr. Ioana Coita</h4>
+                <div class="country">Romania</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="objectives">
+        <h2>MoU Objectives Progress</h2>
+        <table class="objectives-table">
+            <thead>
+                <tr>
+                    <th style="width: 50%">Objective</th>
+                    <th style="width: 15%">Progress</th>
+                    <th style="width: 15%">Rapporteur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Develop blended approaches to evaluate innovative financial services, focusing on ML methods for early warning of fraud and money-laundering</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Development of tools for establishing when black-box models are admissible and making them transparent/interpretable</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Receive input from regulators and practitioners to validate results on AI transparency</td>
+                    <td><span class="progress-badge progress-medium">51-75%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Pruning and improvement of performance attribution models, reducing false discovery rate</td>
+                    <td><span class="progress-badge progress-low">26-50%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Disseminate results on investment product performance evaluation to public and regulators</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Create European platform comparing out-of-sample performance of investment products</td>
+                    <td><span class="progress-badge progress-medium">51-75%</span></td>
+                    <td><span class="status-not-confirmed">Under Review</span></td>
+                </tr>
+                <tr>
+                    <td>Create excellent network of researchers with lasting collaboration beyond Action lifetime</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Bring technological, quantitative, and economic researchers together for interdisciplinary research</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Bridge gap between finance practitioners, academics, and regulators via knowledge exchange platform</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Transfer knowledge (expertise, tools, human resources) across disciplines and academia-industry</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Establish inclusive ML/AI research community, promote Early Career Investigators</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Overcome research siloing, achieve geographical/demographical diversity (ITC focus)</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Prepare researchers through STSMs and joint educational programs with industry</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Maximize job opportunities for PhD students and ECIs</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Disseminate results to scientific community, European institutions, and general public</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>Significantly improve gender equality in the fields of the Action</td>
+                    <td><span class="progress-badge progress-high">76-100%</span></td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="statistics">
+        <h2>Network Statistics</h2>
+        <div class="charts-grid">
+            <div class="chart-container">
+                <h3>Gender Distribution</h3>
+                <div class="chart-wrapper">
+                    <canvas id="genderChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h3>ITC vs Non-ITC Members</h3>
+                <div class="chart-wrapper">
+                    <canvas id="itcChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h3>Working Group Membership</h3>
+                <div class="chart-wrapper">
+                    <canvas id="wgChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h3>Young Researchers</h3>
+                <div class="chart-wrapper">
+                    <canvas id="eciChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="rapporteur-section">
+            <h3>Diversity & Inclusiveness Achievements</h3>
+            <ul style="color: var(--gray); margin-left: 1.5rem;">
+                <li><strong>53%</strong> of members from ITC (Inclusiveness Target Countries)</li>
+                <li><strong>41%</strong> female, <strong>56%</strong> male members (improved gender balance)</li>
+                <li><strong>41.3%</strong> young researchers across the network</li>
+                <li><strong>22 ITC countries</strong> represented out of 39 COST countries</li>
+                <li>Virtual Mobility Grants prioritized for ITC and female researchers</li>
+                <li>20+ PhD theses completed, 10+ professorships achieved by members</li>
+            </ul>
+        </div>
+    </section>
+
+    <section id="deliverables">
+        <h2>Deliverables Status</h2>
+        <div class="deliverables-grid">
+            <div class="deliverable-card delivered">
+                <h4>Crowdfunding/P2P Platform Database</h4>
+                <div class="due-date">Due: Month 24</div>
+                <span class="status delivered">Delivered</span>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray);">
+                    Five databases with comprehensive documentation for rating platform integrity and fraud prediction.
+                </p>
+            </div>
+            <div class="deliverable-card expected">
+                <h4>Pre-ICO Documentation Database</h4>
+                <div class="due-date">Due: Month 24</div>
+                <span class="status expected">Expected</span>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray);">
+                    Available via Blockchain Research Center with expanded scope due to data protection regulations.
+                </p>
+            </div>
+            <div class="deliverable-card expected">
+                <h4>Discussion Papers on ICO/P2P Evaluation</h4>
+                <div class="due-date">Due: Month 36</div>
+                <span class="status expected">Expected</span>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray);">
+                    Substantial research completed; papers to be submitted to peer-reviewed journals.
+                </p>
+            </div>
+            <div class="deliverable-card expected">
+                <h4>Digital Assets Risk Mitigation Roadmap</h4>
+                <div class="due-date">Due: Month 48</div>
+                <span class="status expected">Expected</span>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray);">
+                    Position paper planned for COST Brussels policy event in May 2023.
+                </p>
+            </div>
+            <div class="deliverable-card expected">
+                <h4>Back-testing Framework Discussion Paper</h4>
+                <div class="due-date">Due: Month 24</div>
+                <span class="status expected">Expected</span>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray);">
+                    Research published in International Journal of Forecasting; discussion paper in preparation.
+                </p>
+            </div>
+            <div class="deliverable-card expected">
+                <h4>AI/ML Stress Test Methodology Paper</h4>
+                <div class="due-date">Due: Month 48</div>
+                <span class="status expected">Expected</span>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray);">
+                    Research completed; framing into comprehensive discussion paper underway.
+                </p>
+            </div>
+            <div class="deliverable-card expected">
+                <h4>Position Papers for Regulators</h4>
+                <div class="due-date">Due: Month 36</div>
+                <span class="status expected">Expected</span>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray);">
+                    To be aligned with EU AI Strategy released end of 2022.
+                </p>
+            </div>
+            <div class="deliverable-card expected">
+                <h4>Transparent Finance Best Practices Report</h4>
+                <div class="due-date">Due: Month 12</div>
+                <span class="status expected">Expected</span>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray);">
+                    Finalization planned at GP3 Cluj-Napoca meeting; dissemination via Open Research Europe.
+                </p>
+            </div>
+            <div class="deliverable-card expected">
+                <h4>Key Software/Codes by Working Groups</h4>
+                <div class="due-date">Due: Month 48</div>
+                <span class="status expected">Expected</span>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray);">
+                    Available via quantinar.com and quantlet.com with thousands of reproducible code packages.
+                </p>
+            </div>
+            <div class="deliverable-card expected">
+                <h4>Blockchain Risk Management Handbook</h4>
+                <div class="due-date">Due: Month 36</div>
+                <span class="status expected">Expected</span>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray);">
+                    Split into two handbooks: Blockchain Assets and Crowdfunding/P2P lending.
+                </p>
+            </div>
+            <div class="deliverable-card expected">
+                <h4>Edited Volume of Scientific Achievements</h4>
+                <div class="due-date">Due: Month 48</div>
+                <span class="status expected">Expected</span>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray);">
+                    Comprehensive overview of Action's research outcomes; wiki available at wiki.fin-ai.eu.
+                </p>
+            </div>
+            <div class="deliverable-card expected">
+                <h4>Annual Reports for Lay Audience</h4>
+                <div class="due-date">Due: Month 48</div>
+                <span class="status expected">Expected</span>
+                <p style="margin-top: 0.5rem; font-size: 0.85rem; color: var(--gray);">
+                    Four annual reports planned for distribution via local and national media.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="platforms">
+        <h2>Knowledge Exchange Platforms</h2>
+        <div class="platforms-grid">
+            <div class="platform-card">
+                <h4>Quantlet.com</h4>
+                <p>Thousands of self-contained code pieces showcasing academic research, enabling reproducibility and transparency.</p>
+                <a href="https://quantlet.com" target="_blank">Visit Platform</a>
+            </div>
+            <div class="platform-card">
+                <h4>Quantinar.com</h4>
+                <p>Knowledge, training, and dissemination outlet showcasing fundamentals of COST CA19130 and cutting-edge research.</p>
+                <a href="https://quantinar.com" target="_blank">Visit Platform</a>
+            </div>
+            <div class="platform-card">
+                <h4>Blockchain Research Center</h4>
+                <p>Substantial datasets for blockchain research, founded by WG1 leader Prof. Hardle at HU Berlin.</p>
+                <a href="https://blockchain-research-center.com" target="_blank">Visit Platform</a>
+            </div>
+            <div class="platform-card">
+                <h4>Explainable AI for Finance</h4>
+                <p>Extensive platform with use cases, papers, code repositories, and interactive apps for XAI in finance.</p>
+                <a href="https://www.explainableaiforfinance.com" target="_blank">Visit Platform</a>
+            </div>
+            <div class="platform-card">
+                <h4>FinAI Meetup Group</h4>
+                <p>2,000+ members globally, 150+ events with 7,000+ participants connecting researchers worldwide.</p>
+                <a href="https://www.meetup.com/Fintech_AI_in_Finance/" target="_blank">Visit Platform</a>
+            </div>
+            <div class="platform-card">
+                <h4>FinAI Wiki</h4>
+                <p>Comprehensive wiki documenting Action activities, research outcomes, and collaboration resources.</p>
+                <a href="https://wiki.fin-ai.eu" target="_blank">Visit Platform</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="publications">
+        <h2>Selected Publications</h2>
+        <div class="publications-section">
+            <p style="color: var(--gray); margin-bottom: 1.5rem; text-align: center;">
+                Co-authored publications by Action participants from multiple countries, with COST acknowledgment.
+            </p>
+            <div class="publication-list">
+                <div class="publication-item">
+                    <div class="publication-number">1</div>
+                    <div class="publication-details">
+                        <h5>Data Science Techniques for Cryptocurrency Blockchains</h5>
+                        <div class="authors">Innar Liiv</div>
+                        <div class="journal">Behaviormetrics: Quantitative Approaches to Human Behavior, Springer</div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">2</div>
+                    <div class="publication-details">
+                        <h5>Shall the winning last? A study of recent bubbles and persistence</h5>
+                        <div class="authors">Akanksha Jalan, Roman Matkovskyy, Valerio Poti</div>
+                        <div class="journal">Finance Research Letters, Elsevier</div>
+                        <div class="countries">
+                            <span class="country-tag">FR</span>
+                            <span class="country-tag">IE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">3</div>
+                    <div class="publication-details">
+                        <h5>Demand elasticities of Bitcoin and Ethereum</h5>
+                        <div class="authors">Akanksha Jalan, Roman Matkovskyy, Andrew Urquhart</div>
+                        <div class="journal">Economics Letters, Elsevier</div>
+                        <div class="countries">
+                            <span class="country-tag">FR</span>
+                            <span class="country-tag">UK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">4</div>
+                    <div class="publication-details">
+                        <h5>COVID risk narratives: computational linguistic approach to econometric identification</h5>
+                        <div class="authors">Yuting Chen, Don Bredin, Valerio Poti, Roman Matkovskyy</div>
+                        <div class="journal">Digital Finance, Springer</div>
+                        <div class="countries">
+                            <span class="country-tag">FR</span>
+                            <span class="country-tag">IE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">5</div>
+                    <div class="publication-details">
+                        <h5>Tail-Risk Protection: Machine Learning Meets Modern Econometrics</h5>
+                        <div class="authors">Bruno Spilak, Wolfgang Karl Hardle</div>
+                        <div class="journal">Encyclopedia of Finance, Springer</div>
+                        <div class="countries">
+                            <span class="country-tag">CZ</span>
+                            <span class="country-tag">DE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">6</div>
+                    <div class="publication-details">
+                        <h5>Financial Risk Meter for emerging markets</h5>
+                        <div class="authors">Souhir Ben Amor, Michael Althof, Wolfgang Karl Hardle</div>
+                        <div class="journal">Research in International Business and Finance, Elsevier</div>
+                        <div class="countries">
+                            <span class="country-tag">CZ</span>
+                            <span class="country-tag">DE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">7</div>
+                    <div class="publication-details">
+                        <h5>A Data-driven Explainable Case-based Reasoning for Financial Risk Detection</h5>
+                        <div class="authors">Wei Li, Florentina Paraschiv, Georgios Sermpinis</div>
+                        <div class="journal">arXiv / SSRN</div>
+                        <div class="countries">
+                            <span class="country-tag">NO</span>
+                            <span class="country-tag">CH</span>
+                            <span class="country-tag">UK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">8</div>
+                    <div class="publication-details">
+                        <h5>Bankruptcy Prediction of Privately Held SMEs Using Feature Selection Methods</h5>
+                        <div class="authors">Florentina Paraschiv, Markus Schmid, Ranik Raaen Wahlstrom</div>
+                        <div class="journal">SSRN Electronic Journal</div>
+                        <div class="countries">
+                            <span class="country-tag">FR</span>
+                            <span class="country-tag">NO</span>
+                            <span class="country-tag">CH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">9</div>
+                    <div class="publication-details">
+                        <h5>Indices on cryptocurrencies: an evaluation</h5>
+                        <div class="authors">Konstantin Hausler, Hongyu Xia</div>
+                        <div class="journal">Digital Finance, Springer</div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">10</div>
+                    <div class="publication-details">
+                        <h5>Regime-based Implied Stochastic Volatility Model for Crypto Option Pricing</h5>
+                        <div class="authors">Danial Saef, Yuanrong Wang, Tomaso Aste</div>
+                        <div class="journal">arXiv</div>
+                        <div class="countries">
+                            <span class="country-tag">DE</span>
+                            <span class="country-tag">UK</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">11</div>
+                    <div class="publication-details">
+                        <h5>A Comparative Analysis of Parsimonious Yield Curve Models</h5>
+                        <div class="authors">Ranik Raaen Wahlstrom, Florentina Paraschiv, Michael Schurle</div>
+                        <div class="journal">Computational Economics, Springer</div>
+                        <div class="countries">
+                            <span class="country-tag">NO</span>
+                            <span class="country-tag">CH</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">12</div>
+                    <div class="publication-details">
+                        <h5>Financial Risk Meter for Cryptocurrencies and Tail Risk Network-Based Portfolio</h5>
+                        <div class="authors">Rui Ren, Michael Althof, Wolfgang Karl Hardle</div>
+                        <div class="journal">The Singapore Economic Review</div>
+                        <div class="countries">
+                            <span class="country-tag">CZ</span>
+                            <span class="country-tag">DE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">13</div>
+                    <div class="publication-details">
+                        <h5>Understanding jumps in high frequency digital asset markets</h5>
+                        <div class="authors">Danial Saef, Odett Nagy, Sergej Sizov, Wolfgang Karl Hardle</div>
+                        <div class="journal">arXiv</div>
+                        <div class="countries">
+                            <span class="country-tag">DE</span>
+                            <span class="country-tag">HU</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">14</div>
+                    <div class="publication-details">
+                        <h5>K-expectiles clustering</h5>
+                        <div class="authors">Bingling Wang, Yingxing Li, Wolfgang Karl Hardle</div>
+                        <div class="journal">Journal of Multivariate Analysis, Elsevier</div>
+                        <div class="countries">
+                            <span class="country-tag">CZ</span>
+                            <span class="country-tag">DE</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="publication-item">
+                    <div class="publication-number">15</div>
+                    <div class="publication-details">
+                        <h5>Understanding Smart Contracts: Hype or Hope?</h5>
+                        <div class="authors">Elizaveta Zinovyeva, Raphael C. G. Reule, Wolfgang Karl Hardle</div>
+                        <div class="journal">arXiv</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="rapporteur">
+        <h2>Rapporteur Assessment</h2>
+        <div class="summary-box">
+            <div class="rapporteur-quote">
+                "The FinTech and AI in Finance Action has demonstrably been highly successful in nurturing the field,
+                and supporting the development of a strong community of data scientists, economic and social science
+                experts and practitioners, and a wide array of stakeholders, including regulators and policy-makers
+                from 49 countries. The programme has made impressive progress throughout its first 24 months,
+                generating over 100 peer-reviewed publications, numerous cross-national collaborative initiatives,
+                and supporting a sizeable cohort of early career and other academic researchers."
+            </div>
+
+            <p style="margin-top: 1.5rem;">
+                <strong>Key Highlights from Rapporteur Review:</strong>
+            </p>
+            <ul style="color: var(--gray); margin-left: 1.5rem; margin-top: 0.5rem;">
+                <li>Significant role in promoting state of the art in financial data science</li>
+                <li>Active support for Explainable and Interpretable AI development</li>
+                <li>Critical contribution to involving regulators and policy-makers in DeFi, cryptocurrencies, and decentralized assets</li>
+                <li>Important frameworks and platforms for hosting and sharing datasets</li>
+                <li>Impressive mobilization of a robust FinTech community</li>
+                <li>Successful dissemination of highly consequential research</li>
+            </ul>
+
+            <div class="rapporteur-quote" style="margin-top: 1.5rem;">
+                "Overall, the COST FinTech and AI in Finance Action has so far made impressive headways in mobilising
+                a robust FinTech community and progressing the State of the Art in FinTech-related data science and
+                successfully disseminating a large body of associated and highly consequential research."
+            </div>
+
+            <p style="margin-top: 1.5rem; color: var(--gray);">
+                <strong>Overall Assessment:</strong> The level of ambition of MoU objectives is <em>Medium</em>.
+                Most MoU Objectives are progressing appropriately. 15 out of 16 objectives confirmed by Rapporteur.
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="cost-logo">COST Action CA19130</div>
+        <p>
+            This Mid-Term Report covers the period from September 2020 to September 2022,
+            representing the first 24 months of the Action's activities under the COST framework.
+        </p>
+        <div class="links">
+            <a href="index.html">Home</a>
+            <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Official Page</a>
+            <a href="https://fin-ai.eu/" target="_blank">Action Website</a>
+            <a href="mc-members.html">MC Members</a>
+            <a href="wg-members.html">WG Members</a>
+        </div>
+    </footer>
+
+    <script>
+        const chartColors = {
+            purple: '#5B2D8A',
+            blue: '#2B5F9E',
+            teal: '#00A0B0',
+            orange: '#E87722',
+            green: '#7AB800'
+        };
+
+        // Gender Chart
+        new Chart(document.getElementById('genderChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Female (41%)', 'Male (56%)', 'Not specified (3%)'],
+                datasets: [{
+                    data: [41, 56, 3],
+                    backgroundColor: [chartColors.purple, chartColors.blue, chartColors.teal],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        // ITC Chart
+        new Chart(document.getElementById('itcChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['ITC Countries (53%)', 'Non-ITC Countries (47%)'],
+                datasets: [{
+                    data: [53, 47],
+                    backgroundColor: [chartColors.orange, chartColors.teal],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        // Working Groups Chart
+        new Chart(document.getElementById('wgChart'), {
+            type: 'bar',
+            data: {
+                labels: ['WG1', 'WG2', 'WG3'],
+                datasets: [{
+                    label: 'Members',
+                    data: [277, 248, 218],
+                    backgroundColor: [chartColors.purple, chartColors.blue, chartColors.green],
+                    borderWidth: 0,
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // ECI Chart
+        new Chart(document.getElementById('eciChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Young Researchers (41.3%)', 'Senior Researchers (58.7%)'],
+                datasets: [{
+                    data: [41.3, 58.7],
+                    backgroundColor: [chartColors.green, chartColors.blue],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
