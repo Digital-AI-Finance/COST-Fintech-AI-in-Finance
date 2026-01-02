@@ -192,6 +192,7 @@ def main():
                 'doi': p['doi'],
                 'year': p['year'],
                 'author': p['author'],
+                'author_orcid': p['author_orcid'],  # Include ORCID for verification
                 'type': p['type']
             }
             for p in combined

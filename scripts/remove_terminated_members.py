@@ -92,8 +92,46 @@ def main():
     else:
         print("\nStep 2: validated_orcids.json not found, skipping")
 
-    # 3. Clean publications_apa.json
-    print("\nStep 3: Cleaning publications_apa.json...")
+    # 3. Clean publications.json (full version)
+    print("\nStep 3: Cleaning publications.json...")
+    full_pub_file = data_dir / 'publications.json'
+    if full_pub_file.exists():
+        with open(full_pub_file, 'r', encoding='utf-8') as f:
+            full_pub_data = json.load(f)
+
+        full_pubs = full_pub_data['publications']
+        orig_full = len(full_pubs)
+
+        # Filter using ORCID for more accurate matching
+        full_filtered = [p for p in full_pubs if p.get('author_orcid', '') not in ORCIDS_TO_REMOVE]
+
+        full_pub_data['publications'] = full_filtered
+        full_pub_data['metadata']['total_publications'] = len(full_filtered)
+        full_pub_data['metadata']['total_authors'] = len(orcid_list)
+
+        # Recalculate statistics for full version
+        by_year_full = Counter()
+        by_type_full = Counter()
+        by_author_full = Counter()
+
+        for pub in full_filtered:
+            year = pub.get('year')
+            if year:
+                by_year_full[year] = by_year_full.get(year, 0) + 1
+            by_type_full[pub.get('type', 'unknown')] += 1
+            by_author_full[pub.get('author', '')] += 1
+
+        full_pub_data['statistics']['by_year'] = dict(sorted(by_year_full.items(), key=lambda x: -x[0] if isinstance(x[0], int) else 0))
+        full_pub_data['statistics']['by_type'] = dict(sorted(by_type_full.items(), key=lambda x: -x[1]))
+        full_pub_data['statistics']['top_authors'] = dict(sorted(by_author_full.items(), key=lambda x: -x[1])[:50])
+
+        with open(full_pub_file, 'w', encoding='utf-8') as f:
+            json.dump(full_pub_data, f, indent=2, ensure_ascii=False)
+
+        print(f"  Original: {orig_full}, After: {len(full_filtered)}, Removed: {orig_full - len(full_filtered)}")
+
+    # 4. Clean publications_apa.json
+    print("\nStep 4: Cleaning publications_apa.json...")
     pub_file = data_dir / 'publications_apa.json'
     with open(pub_file, 'r', encoding='utf-8') as f:
         pub_data = json.load(f)
@@ -101,12 +139,14 @@ def main():
     pubs = pub_data['publications']
     original_pubs = len(pubs)
 
-    # Remove publications from terminated members
+    # Remove publications from terminated members (using ORCID for accuracy)
     removed_pubs_details = []
     filtered_pubs = []
     for pub in pubs:
         author = pub.get('author', '')
-        if author in NAMES_TO_REMOVE:
+        author_orcid = pub.get('author_orcid', '')
+        # Check both ORCID and name for matching
+        if author_orcid in ORCIDS_TO_REMOVE or author in NAMES_TO_REMOVE:
             removed_pubs_details.append({'author': author, 'doi': pub.get('doi', 'N/A')})
         else:
             filtered_pubs.append(pub)
