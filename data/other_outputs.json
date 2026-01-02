@@ -1,0 +1,2840 @@
+{
+  "metadata": {
+    "generated": "2026-01-02T22:08:39.378739",
+    "category": "Other Outputs",
+    "total_publications": 306,
+    "unique_dois": 159,
+    "total_authors": 86
+  },
+  "statistics": {
+    "by_year": {
+      "2025": 31,
+      "2024": 39,
+      "2023": 48,
+      "2022": 54,
+      "2021": 66,
+      "2020": 68
+    },
+    "by_type": {
+      "other": 181,
+      "paratext": 54,
+      "peer-review": 22,
+      "erratum": 22,
+      "conference-abstract": 8,
+      "journal-issue": 6,
+      "conference-poster": 5,
+      "standards-and-policy": 3,
+      "retraction": 2,
+      "conference-presentation": 2,
+      "license": 1
+    },
+    "top_authors": {
+      "Alexandros Iosifidis": 76,
+      "Dervis Kirikkaleli": 11,
+      "Jörg Osterrieder": 11,
+      "Jan-Alexander Posth": 11,
+      "KIRAN SOOD": 10,
+      "Ana Isabel Azevedo": 10,
+      "German Rodrigo": 10,
+      "Iryna Mihus": 8,
+      "Ciprian-Octavian Truică": 6,
+      "Bálint Molnár": 6,
+      "María Óskarsdóttir": 6,
+      "Sam Goundar": 5,
+      "Mike Tsionas": 5,
+      "Lucía Gómez Teijeiro": 5,
+      "Susanne Durst": 5,
+      "Valerio Poti": 5,
+      "Cuong Nguyen": 5,
+      "Simona Cosma": 5,
+      "Petros Dellaportas": 5,
+      "Ioana Coita": 4,
+      "Natalie Packham": 4,
+      "Luca Di Persio": 3,
+      "Maria Moloney": 3,
+      "Ladislav Krištoufek": 3,
+      "Luciana Dalla Valle": 3,
+      "Maria Iannario": 3,
+      "Elena Simona Apostol": 2,
+      "Apostolos Chalkis": 2,
+      "Jewel Kumar Roy": 2,
+      "David Bevan": 2,
+      "Mehmet Yasin Ulukuş": 2,
+      "Sabine Dörry": 2,
+      "Chemseddine TIDJANI": 2,
+      "Xiaohong Huang": 2,
+      "Petre Lameski": 2,
+      "Eftim Zdravevski": 2,
+      "Luis Lorenzo": 2,
+      "Vassilios Papavassiliou": 2,
+      "Ivan Nikolic": 2,
+      "Nuray Bayar Muluk": 2,
+      "Adriana Tiron-Tudor": 2,
+      "Thomas Walther": 2,
+      "Catarina Silva": 2,
+      "Sašo Karakatič": 2,
+      "Bekir Cetintav": 1,
+      "Piotr Wójcik": 1,
+      "Jana Peliova": 1,
+      "Jasmina Djordjevic": 1,
+      "Cesario Mateus": 1,
+      "Miljan Vučetić": 1
+    }
+  },
+  "publications": [
+    {
+      "id": 1,
+      "apa": "Bhardwaj, A. & Goundar, S. (2025). ATP the New‐Age Threat Vector and Cyberattack Trends. https://doi.org/10.1002/9781394242177.ch4",
+      "doi": "https://doi.org/10.1002/9781394242177.ch4",
+      "year": 2025,
+      "author": "Sam Goundar",
+      "author_orcid": "0000-0001-6465-1097",
+      "type": "other"
+    },
+    {
+      "id": 2,
+      "apa": "Apostol, E., Truică, C., Damova, M., Silvano, P., Oleškevičienė, G. V., Liebeskind, C., Trajanov, D., Bączkowska, A., Montecchiari, E. A., & Chiarcos, C. (2025). Author response for \"Multiword Discourse Markers Across Languages: A Linguistic and Computational Perspective\". https://doi.org/10.1111/ijal.12755/v2/response1",
+      "doi": "https://doi.org/10.1111/ijal.12755/v2/response1",
+      "year": 2025,
+      "author": "Ciprian-Octavian Truică",
+      "author_orcid": "0000-0001-7292-4462",
+      "type": "peer-review"
+    },
+    {
+      "id": 3,
+      "apa": "Apostol, E., Truică, C., Damova, M., Silvano, P., Oleškevičienė, G. V., Liebeskind, C., Trajanov, D., Bączkowska, A., Montecchiari, E. A., & Chiarcos, C. (2025). Author response for \"Multiword Discourse Markers Across Languages: A Linguistic and Computational Perspective\". https://doi.org/10.1111/ijal.12755/v3/response1",
+      "doi": "https://doi.org/10.1111/ijal.12755/v3/response1",
+      "year": 2025,
+      "author": "Ciprian-Octavian Truică",
+      "author_orcid": "0000-0001-7292-4462",
+      "type": "peer-review"
+    },
+    {
+      "id": 4,
+      "apa": "Apostol, E., Truică, C., Damova, M., Silvano, P., Oleškevičienė, G. V., Liebeskind, C., Trajanov, D., Bączkowska, A., Montecchiari, E. A., & Chiarcos, C. (2025). Author response for \"Multiword Discourse Markers Across Languages: A Linguistic and Computational Perspective\". https://doi.org/10.1111/ijal.12755/v2/response1",
+      "doi": "https://doi.org/10.1111/ijal.12755/v2/response1",
+      "year": 2025,
+      "author": "Elena Simona Apostol",
+      "author_orcid": "0000-0001-6397-4951",
+      "type": "peer-review"
+    },
+    {
+      "id": 5,
+      "apa": "Apostol, E., Truică, C., Damova, M., Silvano, P., Oleškevičienė, G. V., Liebeskind, C., Trajanov, D., Bączkowska, A., Montecchiari, E. A., & Chiarcos, C. (2025). Author response for \"Multiword Discourse Markers Across Languages: A Linguistic and Computational Perspective\". https://doi.org/10.1111/ijal.12755/v3/response1",
+      "doi": "https://doi.org/10.1111/ijal.12755/v3/response1",
+      "year": 2025,
+      "author": "Elena Simona Apostol",
+      "author_orcid": "0000-0001-6397-4951",
+      "type": "peer-review"
+    },
+    {
+      "id": 6,
+      "apa": "Küçük, A., Yıldırım, Y., & Çetintav, B. (2025). Author response for \"Assessment of Risk Factors Related to Environmental Factors and Herd Management for Bovine Respiratory Syncytial Virus and Bovine Parainfluenza Virus‐3 Infections Frequently Observed in Beef and Dairy Cattle\". https://doi.org/10.1002/vms3.70299/v2/response1",
+      "doi": "https://doi.org/10.1002/vms3.70299/v2/response1",
+      "year": 2025,
+      "author": "Bekir Cetintav",
+      "author_orcid": "0000-0001-7251-1211",
+      "type": "peer-review"
+    },
+    {
+      "id": 7,
+      "apa": "Przemysław, G., Piotr, W., & Stefan, L. (2025). Algorithmic crypto trading using information-driven bars, triple barrier labeling and deep learning. https://doi.org/10.6084/m9.figshare.c.8204572",
+      "doi": "https://doi.org/10.6084/m9.figshare.c.8204572",
+      "year": 2025,
+      "author": "Piotr Wójcik",
+      "author_orcid": "0000-0003-1853-8784",
+      "type": "other"
+    },
+    {
+      "id": 8,
+      "apa": "Coita, I. F. & Peliova, J. (2025). Neurocognitive Pathways to Risk: Affective Priming and Prediction Error in Dynamic Credit Simulation. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2025,
+      "author": "Jana Peliova",
+      "author_orcid": "0000-0002-0305-0906",
+      "type": "other"
+    },
+    {
+      "id": 9,
+      "apa": "Ðorđević, J. & Jovanović, B. (2025). Corrigendum to \"Dynamical analysis of a stochastic delayed epidemic model with Lévy jumps and regime switching\" [Journal of the Franklin Institute 360 (2023) 1252–1283]. *Journal of the Franklin Institute*. https://doi.org/10.1016/j.jfranklin.2025.107582",
+      "doi": "https://doi.org/10.1016/j.jfranklin.2025.107582",
+      "year": 2025,
+      "author": "Jasmina Djordjevic",
+      "author_orcid": "0000-0001-6204-1789",
+      "type": "erratum"
+    },
+    {
+      "id": 10,
+      "apa": "Bernstein, D., Parmeter, C. F., & Tsionas, E. G. (2025). Erratum to “On the performance of the United States nuclear power sector: A Bayesian approach” [Energy Economics Volume 125, September 2023, 106,884]. *Energy Economics*. https://doi.org/10.1016/j.eneco.2025.108265",
+      "doi": "https://doi.org/10.1016/j.eneco.2025.108265",
+      "year": 2025,
+      "author": "Mike Tsionas",
+      "author_orcid": "0000-0003-3761-8106",
+      "type": "erratum"
+    },
+    {
+      "id": 11,
+      "apa": "Rajanen, D., Barakova, E., Albers, N., Vaitonyté, J., Belhassein, K., Beun, R., Li, F., Torre, I., Chollet, M., Heyselaar, E., He, Y., Ranjbartabar, M. H., Ding, D., Hall, L., Waterschoot, J. v., Zibrek, K., Jonell, P., Berghe, R. v. d., Abdulrahman, A., ... Biancardi, B. (2025). Study 5: Collecting Prototypical ASAs. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2025,
+      "author": "Bálint Molnár",
+      "author_orcid": "0000-0001-5015-8883",
+      "type": "other"
+    },
+    {
+      "id": 12,
+      "apa": "Lucas, G., Ortega‐Ochoa, E., Jonker, C., Zhou, J., yacoubi, A., Li, F., Ligthart, M., Browne, J., Ochs, Cox, S., Ehret, J., Magyar, G., Albers, N., McCoy, J., Hartmann, T., Wang, I., Beinema, T., Sabry, S., Gilmartin, E., ... Yalçın, Ö. N. (2025). Artificial Social Agent Evaluation Instrument. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2025,
+      "author": "Bálint Molnár",
+      "author_orcid": "0000-0001-5015-8883",
+      "type": "other"
+    },
+    {
+      "id": 13,
+      "apa": "Vossen, P., Norouzi, N., Charrier, L., Abdulrahman, A., Belhassein, K., Heyselaar, E., Ranjbartabar, M. H., Bruijnes, M., Hashemian, M., Lun, W., Zalake, M., Richards, D., Curtis, C., Lindner, F., Baraka, K., Kim, K., Cox, S., Cowan, B., Wächter, L., ... Wolfert, P. (2025). Study 1: Defining Categories. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2025,
+      "author": "Bálint Molnár",
+      "author_orcid": "0000-0001-5015-8883",
+      "type": "other"
+    },
+    {
+      "id": 14,
+      "apa": "Carnell, S., Silvervarg, A., Norouzi, N., Richards, D., Kocaballi, A. B., Foerster, F., Berghe, R. v. d., Biancardi, B., Simoens, P., Krause, L., Vossen, P., Brandt, M., Torre, I., yacoubi, A., Miltenburg, E. v., McCoy, J., Jingar, M., Morgan, J., Linssen, J., ... Kucherenko, T. (2025). Study 4: Define Questionnaire Items. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2025,
+      "author": "Bálint Molnár",
+      "author_orcid": "0000-0001-5015-8883",
+      "type": "other"
+    },
+    {
+      "id": 15,
+      "apa": "Zaga;Zaga, C., Borrmann, M., Heyselaar, E., Wang, I., Rosero, E. G., Carnell, S., Gunson, N., Albers, N., Waterschoot, J. v., Wicke, P., yacoubi, A., Ligthart, M., Guerrieri, V., Molnar, B., Ochs, Martin, V. P., Neff, M., Bruijnes, M., Clark, L., ... Beun, R. (2025). Study 7: Construct Validity: Convergent and Discriminant Validity analysis. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2025,
+      "author": "Bálint Molnár",
+      "author_orcid": "0000-0001-5015-8883",
+      "type": "other"
+    },
+    {
+      "id": 16,
+      "apa": "Gilmartin, E., Ranjbartabar, M. H., Vilhjálmsson, H. H., Bosse, T., Ólafsson, S., Beun, R., Rodriguez-Lera, F., Theune, M., Sabry, S., Parthemore, J., Sirocki, J., Berghe, R. v. d., Zibrek, K., Hartmann, T., Neff, M., Koelle, M., McCoy, J., Richards, D., Roper, A., ... Bruijnes, M. (2025). Questionnaire Development. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2025,
+      "author": "Bálint Molnár",
+      "author_orcid": "0000-0001-5015-8883",
+      "type": "other"
+    },
+    {
+      "id": 17,
+      "apa": "Coita, I. F. & Peliova, J. (2025). Neurocognitive Pathways to Risk: Affective Priming and Prediction Error in Dynamic Credit Simulation. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2025,
+      "author": "Ioana Coita",
+      "author_orcid": "0000-0002-0782-2790",
+      "type": "other"
+    },
+    {
+      "id": 18,
+      "apa": "Coita, I. F. (2025). Automated Financial Analysis Laura. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2025,
+      "author": "Ioana Coita",
+      "author_orcid": "0000-0002-0782-2790",
+      "type": "other"
+    },
+    {
+      "id": 19,
+      "apa": "dhendryc, Besançon, M., Pokutta, S., hannahtro, Chalkis, A., BlueorangeTREE, LeChStan, & Xiao, W. (2025). ZIB-IOL/Boscia.jl: v0.2.2. *Zenodo (CERN European Organization for Nuclear Research)*. https://doi.org/10.5281/zenodo.17588969",
+      "doi": "https://doi.org/10.5281/zenodo.17588969",
+      "year": 2025,
+      "author": "Apostolos Chalkis",
+      "author_orcid": "0000-0002-4628-1907",
+      "type": "other"
+    },
+    {
+      "id": 20,
+      "apa": "dhendryc, Besançon, M., Pokutta, S., hannahtro, Chalkis, A., BlueorangeTREE, LeChStan, & Xiao, W. (2025). ZIB-IOL/Boscia.jl: v0.2.3. *Zenodo (CERN European Organization for Nuclear Research)*. https://doi.org/10.5281/zenodo.17720568",
+      "doi": "https://doi.org/10.5281/zenodo.17720568",
+      "year": 2025,
+      "author": "Apostolos Chalkis",
+      "author_orcid": "0000-0002-4628-1907",
+      "type": "other"
+    },
+    {
+      "id": 21,
+      "apa": "Mateus, C. & Bagirov, M. (2025). Online Appendix to the paper \"Volatility transmissions and hedging between petroleum and equity market sectors: Insights from petroleum exporters and importers\". *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2025,
+      "author": "Cesario Mateus",
+      "author_orcid": "0000-0003-0336-5219",
+      "type": "other"
+    },
+    {
+      "id": 22,
+      "apa": "Bamidele, R. O., Adepoju, A. P., Kırıkkaleli, D., & Olanrewaju, V. O. (2025). Author response for \"From Waste-Wise to Watt-Smart: Can Material Productivity, Efficiency Gains, and Renewables Turn the Tide for the Planet?\". https://doi.org/10.1002/gj.70140/v2/response1",
+      "doi": "https://doi.org/10.1002/gj.70140/v2/response1",
+      "year": 2025,
+      "author": "Dervis Kirikkaleli",
+      "author_orcid": "0000-0001-5733-5045",
+      "type": "peer-review"
+    },
+    {
+      "id": 23,
+      "apa": "Roy, J. K. (2025). Review of: \"A FinTech Clustering Framework: Technology, Model, and Stakeholder Perspectives\". https://doi.org/10.32388/2p068o",
+      "doi": "https://doi.org/10.32388/2p068o",
+      "year": 2025,
+      "author": "Jewel Kumar Roy",
+      "author_orcid": "0000-0002-9881-5915",
+      "type": "peer-review"
+    },
+    {
+      "id": 24,
+      "apa": "Littel, M., McDonnell, D., George, L., Feldman, G., Cleveland, W., Furneaux, C., Chapman, C. M., Kottasz, R., Ma, J., Fiennes, C., Hung, C., Nowakowska, I., Ugazio, G., Mawanda, J., Shekhtman, L., Gómez, L., Bushe, J., Matre, J. C. V., Lindkvist, A. M., ... Erlandsson, A. (2025). Transparency in Nonprofit and Philanthropy Research. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2025,
+      "author": "Lucía Gómez Teijeiro",
+      "author_orcid": "0000-0002-3914-8868",
+      "type": "other"
+    },
+    {
+      "id": 25,
+      "apa": "Durst, S., Temel, S., & Ferenhof, H. A. (2025). BACK MATTER. https://doi.org/10.1142/9789819807994_bmatter",
+      "doi": "https://doi.org/10.1142/9789819807994_bmatter",
+      "year": 2025,
+      "author": "Susanne Durst",
+      "author_orcid": "0000-0001-8469-2427",
+      "type": "paratext"
+    },
+    {
+      "id": 26,
+      "apa": "Durst, S., Temel, S., & Ferenhof, H. A. (2025). FRONT MATTER. https://doi.org/10.1142/9789819807994_fmatter",
+      "doi": "https://doi.org/10.1142/9789819807994_fmatter",
+      "year": 2025,
+      "author": "Susanne Durst",
+      "author_orcid": "0000-0001-8469-2427",
+      "type": "paratext"
+    },
+    {
+      "id": 27,
+      "apa": "Durst, S., Mbena, J. Y., & Viala, C. (2025). Contents. *Edward Elgar Publishing eBooks*. https://doi.org/10.4337/9781035343546.fm3",
+      "doi": "https://doi.org/10.4337/9781035343546.fm3",
+      "year": 2025,
+      "author": "Susanne Durst",
+      "author_orcid": "0000-0001-8469-2427",
+      "type": "paratext"
+    },
+    {
+      "id": 28,
+      "apa": "Iosifidis, A. (2025). Deep Reinforcement Learning-based Video-Haptic Radio Resource Slicing in Tactile Internet. *arXiv*. https://doi.org/10.48550/arXiv.2503.14066",
+      "doi": "https://doi.org/10.48550/arXiv.2503.14066",
+      "year": 2025,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 29,
+      "apa": "Vučetić, M. (2025). Softversko rešenje za samo-kalibraciju kamera zasnovano na veštačkoj intelegenciji i primenjeno u heterogenim mrežama fiksnih i mobilnih nodova, Tehničko rešenje M81.",
+      "doi": null,
+      "year": 2025,
+      "author": "Miljan Vučetić",
+      "author_orcid": "0000-0002-4362-6201",
+      "type": "license"
+    },
+    {
+      "id": 30,
+      "apa": "Bevan, D. (2025). Alasdair Chalmers MacIntyre (1929-2025): a Memorial/Commemorative Issue. *Philosophy of Management*.",
+      "doi": null,
+      "year": 2025,
+      "author": "David Bevan",
+      "author_orcid": "0000-0003-2973-9098",
+      "type": "journal-issue"
+    },
+    {
+      "id": 31,
+      "apa": "Ulukuş, M. Y. (2025). Predicting Stress in Automobile Drivers Using Lstms with Feature Engineering. *Ssrn*. https://doi.org/10.2139/ssrn.5080386",
+      "doi": "https://doi.org/10.2139/ssrn.5080386",
+      "year": 2025,
+      "author": "Mehmet Yasin Ulukuş",
+      "author_orcid": "0000-0002-1574-733X",
+      "type": "other"
+    },
+    {
+      "id": 32,
+      "apa": "Artacho, F. J. A., Censor, Y., Gibali, A., & Torregrosa-Belén, D. (2024). Corrigendum to: “The superiorization method with restarted perturbations for split minimization problems with an application to radiotherapy treatment planning” [Appl. Math. Comput. 440 (2023) 127627]. *Applied Mathematics and Computation*. https://doi.org/10.1016/j.amc.2024.128788",
+      "doi": "https://doi.org/10.1016/j.amc.2024.128788",
+      "year": 2024,
+      "author": "Aviv Gibali",
+      "author_orcid": "0000-0002-2150-553X",
+      "type": "erratum"
+    },
+    {
+      "id": 33,
+      "apa": "Będowska-Sójka, B., Tarantola, C., Mare, C., Paccagnini, A., Öztürkkal, B., Pisoni, G., Shala, A., Shkurti, R., & Skaftadótti, H. K. (2024). Editorial Boards of Finance Journals: The Gender Gap and Social Networks. *Journal of Business Ethics*. https://doi.org/10.1007/s10551-024-05830-9",
+      "doi": "https://doi.org/10.1007/s10551-024-05830-9",
+      "year": 2024,
+      "author": "Codruta MARE",
+      "author_orcid": "0000-0002-4920-7462",
+      "type": "paratext"
+    },
+    {
+      "id": 34,
+      "apa": "Będowska-Sójka, B., Tarantola, C., Mare, C., Paccagnini, A., Öztürkkal, B., Pisoni, G., Shala, A., Shkurti, R., & Skaftadótti, H. K. (2024). Editorial Boards of Finance Journals: The Gender Gap and Social Networks. *Journal of Business Ethics*. https://doi.org/10.1007/s10551-024-05830-9",
+      "doi": "https://doi.org/10.1007/s10551-024-05830-9",
+      "year": 2024,
+      "author": "Claudia Tarantola",
+      "author_orcid": "0000-0002-5963-3756",
+      "type": "paratext"
+    },
+    {
+      "id": 35,
+      "apa": "Będowska-Sójka, B., Tarantola, C., Mare, C., Paccagnini, A., Öztürkkal, B., Pisoni, G., Shala, A., Shkurti, R., & Skaftadótti, H. K. (2024). Editorial Boards of Finance Journals: The Gender Gap and Social Networks. *Journal of Business Ethics*. https://doi.org/10.1007/s10551-024-05830-9",
+      "doi": "https://doi.org/10.1007/s10551-024-05830-9",
+      "year": 2024,
+      "author": "Rezarta Shkurti (Perri)",
+      "author_orcid": "0000-0002-2126-2339",
+      "type": "paratext"
+    },
+    {
+      "id": 36,
+      "apa": "Giannopoulos, P. G., Dasaklis, T. K., & Rachaniotis, N. P. (2024). Publisher Correction: Development and evaluation of a novel framework to enhance k-NN algorithm’s accuracy in data sparsity contexts. *Scientific Reports*. https://doi.org/10.1038/s41598-024-79198-1",
+      "doi": "https://doi.org/10.1038/s41598-024-79198-1",
+      "year": 2024,
+      "author": "Thomas DASAKLIS",
+      "author_orcid": "0000-0003-1240-4822",
+      "type": "erratum"
+    },
+    {
+      "id": 37,
+      "apa": "Będowska-Sójka, B., Tarantola, C., Mare, C., Paccagnini, A., Öztürkkal, B., Pisoni, G., Shala, A., Shkurti, R., & Skaftadótti, H. K. (2024). Editorial Boards of Finance Journals: The Gender Gap and Social Networks. *Journal of Business Ethics*. https://doi.org/10.1007/s10551-024-05830-9",
+      "doi": "https://doi.org/10.1007/s10551-024-05830-9",
+      "year": 2024,
+      "author": "Barbara Będowska-Sójka",
+      "author_orcid": "0000-0001-5193-8304",
+      "type": "paratext"
+    },
+    {
+      "id": 38,
+      "apa": "Będowska-Sójka, B., Tarantola, C., Mare, C., Paccagnini, A., Öztürkkal, B., Pisoni, G., Shala, A., Shkurti, R., & Skaftadótti, H. K. (2024). Editorial Boards of Finance Journals: The Gender Gap and Social Networks. *Journal of Business Ethics*. https://doi.org/10.1007/s10551-024-05830-9",
+      "doi": "https://doi.org/10.1007/s10551-024-05830-9",
+      "year": 2024,
+      "author": "Galena Pisoni",
+      "author_orcid": "0000-0002-3266-1773",
+      "type": "paratext"
+    },
+    {
+      "id": 39,
+      "apa": "Będowska-Sójka, B., Tarantola, C., Mare, C., Paccagnini, A., Öztürkkal, B., Pisoni, G., Shala, A., Shkurti, R., & Skaftadótti, H. K. (2024). Editorial Boards of Finance Journals: The Gender Gap and Social Networks. *Journal of Business Ethics*. https://doi.org/10.1007/s10551-024-05830-9",
+      "doi": "https://doi.org/10.1007/s10551-024-05830-9",
+      "year": 2024,
+      "author": "Albulena Shala",
+      "author_orcid": "0000-0002-8403-4536",
+      "type": "paratext"
+    },
+    {
+      "id": 40,
+      "apa": "Kırbaş, İ. (2024). Review of: \"A VAR Framework of Exchange Rates, Interest Rates, and Inflation Through COVID-19 in Turkey: Empirical Evidence From Linear Cointegration and Causality Analysis\". https://doi.org/10.32388/r19lx8",
+      "doi": "https://doi.org/10.32388/r19lx8",
+      "year": 2024,
+      "author": "Ismail Kirbas",
+      "author_orcid": "0000-0002-1206-8294",
+      "type": "peer-review"
+    },
+    {
+      "id": 41,
+      "apa": "Machado, M., Coita, I. F., Filipovska, O., Wenzlaff, K., Gómez, L., Bolesta, K., Yilmaz, G. N., & Themistocleous, C. (2024). Crowdfunding Systematic Literature Review. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2024,
+      "author": "Gokce Nur Yilmaz",
+      "author_orcid": "0000-0002-0015-9519",
+      "type": "other"
+    },
+    {
+      "id": 42,
+      "apa": "Leitao-Rodríguez, Á. & Vázquez, C. (2024). Corrigendum to “article: A stochastic theta-SEIHRD model: adding randomness to covid-19 spread,” [Communications in Nonlinear Science and Numerical Simulation, 115 (2022), 106731]. *Communications in Nonlinear Science and Numerical Simulation*. https://doi.org/10.1016/j.cnsns.2024.107997",
+      "doi": "https://doi.org/10.1016/j.cnsns.2024.107997",
+      "year": 2024,
+      "author": "Carlos Vazquez",
+      "author_orcid": "0000-0001-6591-2252",
+      "type": "erratum"
+    },
+    {
+      "id": 43,
+      "apa": "Martino, G., Miglietta, F., & Potì, V. (2024). Corrigendum to “The impact of ESG scores on the value relevance of fair value hierarchy of financial instruments: Evidence from European banks” [Res. Int. Bus. Financ. 71 (2024) 102451]. *Research in International Business and Finance*. https://doi.org/10.1016/j.ribaf.2024.102518",
+      "doi": "https://doi.org/10.1016/j.ribaf.2024.102518",
+      "year": 2024,
+      "author": "Valerio Poti",
+      "author_orcid": "0000-0003-1156-5616",
+      "type": "erratum"
+    },
+    {
+      "id": 44,
+      "apa": "Dörry, S. (2024). Future Finance. https://doi.org/10.46692/9781529220599.030",
+      "doi": "https://doi.org/10.46692/9781529220599.030",
+      "year": 2024,
+      "author": "Sabine Dörry",
+      "author_orcid": "0000-0002-3599-8371",
+      "type": "other"
+    },
+    {
+      "id": 45,
+      "apa": "Machado, M., Coita, I. F., Filipovska, O., Wenzlaff, K., Gómez, L., Bolesta, K., Yilmaz, G. N., & Themistocleous, C. (2024). Crowdfunding Systematic Literature Review. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2024,
+      "author": "Ioana Coita",
+      "author_orcid": "0000-0002-0782-2790",
+      "type": "other"
+    },
+    {
+      "id": 46,
+      "apa": "Coita, I. F. & Machado, M. (2024). P2P lending Systematic literature review. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2024,
+      "author": "Ioana Coita",
+      "author_orcid": "0000-0002-0782-2790",
+      "type": "other"
+    },
+    {
+      "id": 47,
+      "apa": "Tidjani, C. & Madouri, A. (2024). Corrigendum: Fintech, financial inclusion, and sustainable development in the African region. *Frontiers in Applied Mathematics and Statistics*. https://doi.org/10.3389/fams.2024.1463262",
+      "doi": "https://doi.org/10.3389/fams.2024.1463262",
+      "year": 2024,
+      "author": "Chemseddine TIDJANI",
+      "author_orcid": "0000-0002-1058-9520",
+      "type": "erratum"
+    },
+    {
+      "id": 48,
+      "apa": "Nguyen, C., Hoàng, K., & Gan, C. (2024). FRONT MATTER. *Transformations in banking, finance and regulation*. https://doi.org/10.1142/9781800614604_fmatter",
+      "doi": "https://doi.org/10.1142/9781800614604_fmatter",
+      "year": 2024,
+      "author": "Cuong Nguyen",
+      "author_orcid": "0000-0002-7563-2374",
+      "type": "paratext"
+    },
+    {
+      "id": 49,
+      "apa": "Nguyen, C., Hoàng, K., & Gan, C. (2024). BACK MATTER. *Transformations in banking, finance and regulation*. https://doi.org/10.1142/9781800614604_bmatter",
+      "doi": "https://doi.org/10.1142/9781800614604_bmatter",
+      "year": 2024,
+      "author": "Cuong Nguyen",
+      "author_orcid": "0000-0002-7563-2374",
+      "type": "paratext"
+    },
+    {
+      "id": 50,
+      "apa": "Machado, M., Coita, I. F., Filipovska, O., Wenzlaff, K., Gómez, L., Bolesta, K., Yilmaz, G. N., & Themistocleous, C. (2024). Crowdfunding Systematic Literature Review. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2024,
+      "author": "Karolina Bolesta",
+      "author_orcid": "0000-0002-9668-5782",
+      "type": "other"
+    },
+    {
+      "id": 51,
+      "apa": "Abatecola, G., Al, Q., Ashta, A., Ayoko, R., Bagchi‐Sen, S., Bal, P. M., Baldacchino, L., Basco, R., Bonini, S., Capurro, R., Casprini, E., Chowdhury, S., Ciampi, F., Cosma, S., Cumming, D. J., Czakon, W., Dalli, D., Dana, L., Davies, P., ... Manesh, M. F. (2024). Issue Information ‐ TOC. *Strategic Change*. https://doi.org/10.1002/jsc.2541",
+      "doi": "https://doi.org/10.1002/jsc.2541",
+      "year": 2024,
+      "author": "Simona Cosma",
+      "author_orcid": "0000-0002-9167-2237",
+      "type": "paratext"
+    },
+    {
+      "id": 52,
+      "apa": "Abatecola, G., Al, Q., Ashta, A., Ayoko, R., Bagchi‐Sen, S., Bal, P. M., Baldacchino, L., Basco, R., Bonini, S., Capurro, R., Casprini, E., Chowdhury, S., Ciampi, F., Cosma, S., Cumming, D. J., Czakon, W., Dalli, D., Dana, L., Davies, P., ... Manesh, M. F. (2024). Issue Information ‐ TOC. *Strategic Change*. https://doi.org/10.1002/jsc.2542",
+      "doi": "https://doi.org/10.1002/jsc.2542",
+      "year": 2024,
+      "author": "Simona Cosma",
+      "author_orcid": "0000-0002-9167-2237",
+      "type": "paratext"
+    },
+    {
+      "id": 53,
+      "apa": "Guerrero, E., Svärd, P., Balugon, T., Saurombe, N., Hentonnen, P., & Jacobs, L. (2024). The Africa-Europe Gaps of AI Regulations for Managing Public Records. *HAL (Le Centre pour la Communication Scientifique Directe)*.",
+      "doi": null,
+      "year": 2024,
+      "author": "Esteban Guerrero",
+      "author_orcid": "0000-0002-6035-800X",
+      "type": "other"
+    },
+    {
+      "id": 54,
+      "apa": "Fiocchi, F., Ladopoulou, D., & Δελλαπόρτας, Π. (2024). Author response for \"Probabilistic Multilayer Perceptrons for Wind Farm Condition Monitoring\". https://doi.org/10.1002/we.70012/v2/response1",
+      "doi": "https://doi.org/10.1002/we.70012/v2/response1",
+      "year": 2024,
+      "author": "Petros Dellaportas",
+      "author_orcid": "0000-0002-0117-8447",
+      "type": "peer-review"
+    },
+    {
+      "id": 55,
+      "apa": "Pešović, M. (2024). Review of: \"Additive and Multiplicative Operations on Set of Polygonal Numbers\". https://doi.org/10.32388/titool",
+      "doi": "https://doi.org/10.32388/titool",
+      "year": 2024,
+      "author": "Marko Pešović",
+      "author_orcid": "0000-0002-9655-6825",
+      "type": "peer-review"
+    },
+    {
+      "id": 56,
+      "apa": "Kanat, O., Yan, Z., Asghar, M. M., Ahmed, Z., Mahmood, H., Kırıkkaleli, D., & Murshed, M. (2024). Retraction Note: Do natural gas, oil, and coal consumption ameliorate environmental quality? Empirical evidence from Russia. *Environmental Science and Pollution Research*. https://doi.org/10.1007/s11356-024-34307-5",
+      "doi": "https://doi.org/10.1007/s11356-024-34307-5",
+      "year": 2024,
+      "author": "Dervis Kirikkaleli",
+      "author_orcid": "0000-0001-5733-5045",
+      "type": "retraction"
+    },
+    {
+      "id": 57,
+      "apa": "Adebayo, T. S., Adedoyin, F. F., & Kırıkkaleli, D. (2024). Retraction Note: Toward a sustainable environment: nexus between consumption-based carbon emissions, economic growth, renewable energy and technological innovation in Brazil. *Environmental Science and Pollution Research*. https://doi.org/10.1007/s11356-024-34259-w",
+      "doi": "https://doi.org/10.1007/s11356-024-34259-w",
+      "year": 2024,
+      "author": "Dervis Kirikkaleli",
+      "author_orcid": "0000-0001-5733-5045",
+      "type": "retraction"
+    },
+    {
+      "id": 58,
+      "apa": "Topalcık, O. & Kırıkkaleli, D. (2024). Corrigendum: Financial stability and environment degradation in Turkey: evidence from fourier ARDL approach. *Frontiers in Environmental Science*. https://doi.org/10.3389/fenvs.2024.1479279",
+      "doi": "https://doi.org/10.3389/fenvs.2024.1479279",
+      "year": 2024,
+      "author": "Dervis Kirikkaleli",
+      "author_orcid": "0000-0001-5733-5045",
+      "type": "erratum"
+    },
+    {
+      "id": 59,
+      "apa": "Aleksandrova, T., Aykurt-Buchwalter, S., Oliveira, K. B. d., Felce, C., Gómez, L., & Eddine, A. N. (2024). L’écrit en langue seconde en contexte universitaire : l’apport des recherches basées sur les corpus d’apprenants. *Lidil*. https://doi.org/10.4000/12lmm",
+      "doi": "https://doi.org/10.4000/12lmm",
+      "year": 2024,
+      "author": "Lucía Gómez Teijeiro",
+      "author_orcid": "0000-0002-3914-8868",
+      "type": "paratext"
+    },
+    {
+      "id": 60,
+      "apa": "Aleksandrova, T., Aykurt-Buchwalter, S., Oliveira, K. B. d., Felce, C., Gómez, L., & Eddine, A. N. (2024). : Second Language (L2) Writing in University Settings: Insights from Learner Corpus Research. *HAL (Le Centre pour la Communication Scientifique Directe)*.",
+      "doi": null,
+      "year": 2024,
+      "author": "Lucía Gómez Teijeiro",
+      "author_orcid": "0000-0002-3914-8868",
+      "type": "other"
+    },
+    {
+      "id": 61,
+      "apa": "Ma, J., Meier, D., Bekkers, R., & Gómez, L. (2024). Transparency Research in Philanthropy. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2024,
+      "author": "Lucía Gómez Teijeiro",
+      "author_orcid": "0000-0002-3914-8868",
+      "type": "other"
+    },
+    {
+      "id": 62,
+      "apa": "Machado, M., Coita, I. F., Filipovska, O., Wenzlaff, K., Gómez, L., Bolesta, K., Yilmaz, G. N., & Themistocleous, C. (2024). Crowdfunding Systematic Literature Review. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2024,
+      "author": "Lucía Gómez Teijeiro",
+      "author_orcid": "0000-0002-3914-8868",
+      "type": "other"
+    },
+    {
+      "id": 63,
+      "apa": "Machado, M., Coita, I. F., Filipovska, O., Wenzlaff, K., Gómez, L., Bolesta, K., Yilmaz, G. N., & Themistocleous, C. (2024). Crowdfunding Systematic Literature Review. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2024,
+      "author": "Christos Themistocleous",
+      "author_orcid": "0000-0001-9074-7711",
+      "type": "other"
+    },
+    {
+      "id": 64,
+      "apa": "Wang, K., Tang, Y., & Huang, X. (2024). Author response for \"Keep Up With the Joneses: Founders and Family Business Philanthropy\". https://doi.org/10.1111/beer.12794/v3/response1",
+      "doi": "https://doi.org/10.1111/beer.12794/v3/response1",
+      "year": 2024,
+      "author": "Xiaohong Huang",
+      "author_orcid": "0000-0003-0532-2773",
+      "type": "peer-review"
+    },
+    {
+      "id": 65,
+      "apa": "Wang, K., Tang, Y., & Huang, X. (2024). Author response for \"Keep Up With the Joneses: Founders and Family Business Philanthropy\". https://doi.org/10.1111/beer.12794/v2/response1",
+      "doi": "https://doi.org/10.1111/beer.12794/v2/response1",
+      "year": 2024,
+      "author": "Xiaohong Huang",
+      "author_orcid": "0000-0003-0532-2773",
+      "type": "peer-review"
+    },
+    {
+      "id": 66,
+      "apa": "Osterrieder, J. (2024). Visual XAI tool. https://doi.org/10.5281/zenodo.10934115",
+      "doi": "https://doi.org/10.5281/zenodo.10934115",
+      "year": 2024,
+      "author": "Jörg Osterrieder",
+      "author_orcid": "0000-0003-0189-8636",
+      "type": "other"
+    },
+    {
+      "id": 67,
+      "apa": "Óskarsdóttir, M. (2024). Encoding Methods Comparison for Stress Detection. *3rd AIxIA Workshop on Artificial Intelligence For Healthcare, HC@AIxIA 2024, Bolzano, Italy, 27/11/24*.",
+      "doi": null,
+      "year": 2024,
+      "author": "María Óskarsdóttir",
+      "author_orcid": "0000-0001-5095-5356",
+      "type": "conference-presentation"
+    },
+    {
+      "id": 68,
+      "apa": "Óskarsdóttir, M. (2024). Introduction to the Minitrack on Learning Analytics 2024. *Proceedings of the Annual Hawaii International Conference on System Sciences*.",
+      "doi": null,
+      "year": 2024,
+      "author": "María Óskarsdóttir",
+      "author_orcid": "0000-0001-5095-5356",
+      "type": "other"
+    },
+    {
+      "id": 69,
+      "apa": "Nguyen, C. (2024). Geopolitical risks and oil production in the Middle East and Africa: connectedness and predictability using machine learning ©.",
+      "doi": null,
+      "year": 2024,
+      "author": "Cuong Nguyen",
+      "author_orcid": "0000-0002-7563-2374",
+      "type": "conference-poster"
+    },
+    {
+      "id": 70,
+      "apa": "Ulukuş, M. Y. (2024). A Simulation Based Analysis of Electric Vehicle Charging Load Variability. *Ssrn*. https://doi.org/10.2139/ssrn.4854884",
+      "doi": "https://doi.org/10.2139/ssrn.4854884",
+      "year": 2024,
+      "author": "Mehmet Yasin Ulukuş",
+      "author_orcid": "0000-0002-1574-733X",
+      "type": "other"
+    },
+    {
+      "id": 71,
+      "apa": "Kaur, H., Sood, K., Yadav, U. S., & Grima, S. (2023). Sustainable Solutions for Insurance and Risk Management. https://doi.org/10.1002/9781394167944.ch23",
+      "doi": "https://doi.org/10.1002/9781394167944.ch23",
+      "year": 2023,
+      "author": "KIRAN SOOD",
+      "author_orcid": "0000-0001-6177-5318",
+      "type": "other"
+    },
+    {
+      "id": 72,
+      "apa": "Singla, N., Sood, K., Grima, S., & Yadav, U. S. (2023). Target 8.8. https://doi.org/10.1002/9781394167944.ch24",
+      "doi": "https://doi.org/10.1002/9781394167944.ch24",
+      "year": 2023,
+      "author": "KIRAN SOOD",
+      "author_orcid": "0000-0001-6177-5318",
+      "type": "other"
+    },
+    {
+      "id": 73,
+      "apa": "Kumar, S., Pundhir, S., Kumar, S., Agrawal, A., Ravikumar, S., Bhat, B. J., Nur, N., Jamaluddin, N., Alias, M., Mohd, A. H., Naldo, R., Widuri, R., Doddy, M., Fariza, A., Aisyah, W. N., Adnan, W. I. W., Razana, J., Johari, A., Jamaluddin, T., ... Hassaneen, I. (2023). None. *Economic Affairs*. https://doi.org/10.46852/0424-2513.4.2023",
+      "doi": "https://doi.org/10.46852/0424-2513.4.2023",
+      "year": 2023,
+      "author": "Iryna Mihus",
+      "author_orcid": "0000-0001-6939-9097",
+      "type": "paratext"
+    },
+    {
+      "id": 74,
+      "apa": "Ouma, S., Stenmanns, J., Dannenberg, P., Follmann, A., Derudder, B., Dörry, S., Kleibert, J. M., Meeteren, M. v., & Scholvin, S. (2023). Spaces of Global Production. *International Encyclopedia of Geography*. https://doi.org/10.1002/9781118786352.wbieg2171",
+      "doi": "https://doi.org/10.1002/9781118786352.wbieg2171",
+      "year": 2023,
+      "author": "Sabine Dörry",
+      "author_orcid": "0000-0002-3599-8371",
+      "type": "other"
+    },
+    {
+      "id": 75,
+      "apa": "Chakravarty, A. K., Wang, L., Huang, N., Hong, Y., Liu, L., Guo, X., Chen, G., Jay, J., -, L., Jung, H. L., Park, H., Chuang, T., Zargoush, M., Ghazalbash, S., Samiedaluie, S., Kuluski, K., Guilcher, S. J. T., Hu, W., Skowronski, K., ... Dong, Y. (2023). Issue Information. *Production and Operations Management*. https://doi.org/10.1111/poms.13757",
+      "doi": "https://doi.org/10.1111/poms.13757",
+      "year": 2023,
+      "author": "Maria Dolores Romero Morales",
+      "author_orcid": "0000-0001-7945-1469",
+      "type": "paratext"
+    },
+    {
+      "id": 76,
+      "apa": "Kırıkkaleli, D., Shah, M. I., Adebayo, T. S., & Altuntaş, M. (2023). Correction to: Does political risk spur environmental issues in China?. *Environmental Science and Pollution Research*. https://doi.org/10.1007/s11356-023-25362-5",
+      "doi": "https://doi.org/10.1007/s11356-023-25362-5",
+      "year": 2023,
+      "author": "Dervis Kirikkaleli",
+      "author_orcid": "0000-0001-5733-5045",
+      "type": "erratum"
+    },
+    {
+      "id": 77,
+      "apa": "Yadav, U. S., Yadav, N., Tripathi, R., & Sood, K. (2023). Motor Vehicle Insurance Industry in India. https://doi.org/10.1002/9781394167944.ch2",
+      "doi": "https://doi.org/10.1002/9781394167944.ch2",
+      "year": 2023,
+      "author": "KIRAN SOOD",
+      "author_orcid": "0000-0001-6177-5318",
+      "type": "other"
+    },
+    {
+      "id": 78,
+      "apa": "Duarte, R. P., Marinho, F. A., Bastos, E. S., Pinto, R. J., Silva, P. M., Fermino, A., Denysyuk, H. V., Gouveia, A. J., Gonçalves, N. J., Coelho, P. J., Zdravevski, E., Lameski, P., Tripunovski, T., García, N. M., & Pires, I. M. (2023). Corrigendum to “Extraction of notable points from ECG data: A description of a dataset related to 30-s seated and 30-s stand up” [Data in Brief, volume 46 (2023) 108874]. *Data in Brief*. https://doi.org/10.1016/j.dib.2023.108994",
+      "doi": "https://doi.org/10.1016/j.dib.2023.108994",
+      "year": 2023,
+      "author": "Petre Lameski",
+      "author_orcid": "0000-0002-5336-1796",
+      "type": "erratum"
+    },
+    {
+      "id": 79,
+      "apa": "Gere, A., Bíró, B., Radványi, D., Zemel, R., Papajorgji, P., & Moskowitz, H. (2023). Sensory Analysis and Consumer Mind‐Sets and Emotions for Dairy Products. https://doi.org/10.1002/9781119619383.ch1",
+      "doi": "https://doi.org/10.1002/9781119619383.ch1",
+      "year": 2023,
+      "author": "Petraq Papajorgji",
+      "author_orcid": "0000-0002-3833-5215",
+      "type": "other"
+    },
+    {
+      "id": 80,
+      "apa": "Duarte, R. P., Marinho, F. A., Bastos, E. S., Pinto, R. J., Silva, P. M., Fermino, A., Denysyuk, H. V., Gouveia, A. J., Gonçalves, N. J., Coelho, P. J., Zdravevski, E., Lameski, P., Tripunovski, T., García, N. M., & Pires, I. M. (2023). Corrigendum to “Extraction of notable points from ECG data: A description of a dataset related to 30-s seated and 30-s stand up” [Data in Brief, volume 46 (2023) 108874]. *Data in Brief*. https://doi.org/10.1016/j.dib.2023.108994",
+      "doi": "https://doi.org/10.1016/j.dib.2023.108994",
+      "year": 2023,
+      "author": "Eftim Zdravevski",
+      "author_orcid": "0000-0001-7664-0168",
+      "type": "erratum"
+    },
+    {
+      "id": 81,
+      "apa": "Laakom, F., Raitoharju, J., Iosifidis, A., & Gabbouj, M. (2023). Learning distinct features helps, provably. *Zenodo (CERN European Organization for Nuclear Research)*. https://doi.org/10.5281/zenodo.8086882",
+      "doi": "https://doi.org/10.5281/zenodo.8086882",
+      "year": 2023,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "paratext"
+    },
+    {
+      "id": 82,
+      "apa": "Bakhtiarnia, A., Zhang, Q., & Iosifidis, A. (2023). PromptMix: Textto-image diffusion models enhance the performance of lightweight networks. *Zenodo (CERN European Organization for Nuclear Research)*. https://doi.org/10.5281/zenodo.8086752",
+      "doi": "https://doi.org/10.5281/zenodo.8086752",
+      "year": 2023,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "paratext"
+    },
+    {
+      "id": 83,
+      "apa": "Arif, M., Persio, L. D., Kumam, P., Watthayu, W., & Akgül, A. (2023). Author Correction: Heat transfer analysis of fractional model of couple stress Casson tri-hybrid nanofluid using dissimilar shape nanoparticles in blood with biomedical applications. *Scientific Reports*. https://doi.org/10.1038/s41598-023-35419-7",
+      "doi": "https://doi.org/10.1038/s41598-023-35419-7",
+      "year": 2023,
+      "author": "Luca Di Persio",
+      "author_orcid": "0000-0002-0317-4351",
+      "type": "erratum"
+    },
+    {
+      "id": 84,
+      "apa": "Abukhalaf, S., Hamdaqa, M., & Khomh, F. (2023). On Codex Prompt Engineering for OCL Generation: An Empirical Study. *Zenodo (CERN European Organization for Nuclear Research)*. https://doi.org/10.5281/zenodo.7749795",
+      "doi": "https://doi.org/10.5281/zenodo.7749795",
+      "year": 2023,
+      "author": "Mohammad Hamdaqa",
+      "author_orcid": "0000-0003-4927-2755",
+      "type": "paratext"
+    },
+    {
+      "id": 85,
+      "apa": "Gorbounov, Y., Bekyarov, Y., & Lakoв, N. (2023). CONTROL ELEMENTS OF A DELTA ROBOT LABORATORY MODEL. *Zenodo (CERN European Organization for Nuclear Research)*. https://doi.org/10.5281/zenodo.8335325",
+      "doi": "https://doi.org/10.5281/zenodo.8335325",
+      "year": 2023,
+      "author": "Yassen Gorbounov",
+      "author_orcid": "0000-0002-2936-951X",
+      "type": "paratext"
+    },
+    {
+      "id": 86,
+      "apa": "Lorenzo, L. (2023). Review of: \"Risk-Return Analysis of Select Crypto Currencies: During 2018-2022\". https://doi.org/10.32388/vby8z4",
+      "doi": "https://doi.org/10.32388/vby8z4",
+      "year": 2023,
+      "author": "Luis Lorenzo",
+      "author_orcid": "0000-0001-9059-0021",
+      "type": "peer-review"
+    },
+    {
+      "id": 87,
+      "apa": "Lorenzo, L. (2023). Datasets. *Arabixiv (OSF Preprints)*.",
+      "doi": null,
+      "year": 2023,
+      "author": "Luis Lorenzo",
+      "author_orcid": "0000-0001-9059-0021",
+      "type": "other"
+    },
+    {
+      "id": 88,
+      "apa": "Caputo, A., Arendt, F., Dabić, M., Marzi, G., Massimiliano, A. N., Pellegrini, M., Pizzi, S., Abatecola, G., Al, Q., Ashta, A., Ayoko, R., Bagchi‐Sen, S., Bal, P. M., Baldacchino, L., Basco, R., Bonini, S., Capurro, R., Casprini, E., Chowdhury, S., ... Ciampi, F. (2023). Issue Information ‐ TOC. *Strategic Change*. https://doi.org/10.1002/jsc.2548",
+      "doi": "https://doi.org/10.1002/jsc.2548",
+      "year": 2023,
+      "author": "Simona Cosma",
+      "author_orcid": "0000-0002-9167-2237",
+      "type": "paratext"
+    },
+    {
+      "id": 89,
+      "apa": "Chou, H., O’Sullivan, C., & Papavassiliou, V. G. (2023). FRONT MATTER. *Transformations in banking, finance and regulation*. https://doi.org/10.1142/9781800612723_fmatter",
+      "doi": "https://doi.org/10.1142/9781800612723_fmatter",
+      "year": 2023,
+      "author": "Vassilios Papavassiliou",
+      "author_orcid": "0000-0003-4915-3297",
+      "type": "paratext"
+    },
+    {
+      "id": 90,
+      "apa": "Chou, H., O’Sullivan, C., & Papavassiliou, V. G. (2023). BACK MATTER. *Transformations in banking, finance and regulation*. https://doi.org/10.1142/9781800612723_bmatter",
+      "doi": "https://doi.org/10.1142/9781800612723_bmatter",
+      "year": 2023,
+      "author": "Vassilios Papavassiliou",
+      "author_orcid": "0000-0003-4915-3297",
+      "type": "paratext"
+    },
+    {
+      "id": 91,
+      "apa": "Stanca, L. (2023). Review of: \"The Nexus between corporate social responsibility and corporate social performance in the Service-Based Enterprises Sector: Insights from Zimbabwe\". https://doi.org/10.32388/uuu3uh",
+      "doi": "https://doi.org/10.32388/uuu3uh",
+      "year": 2023,
+      "author": "Stanca Liana",
+      "author_orcid": "0000-0003-2453-1511",
+      "type": "peer-review"
+    },
+    {
+      "id": 92,
+      "apa": "Adebayo, T. S., AbdulKareem, H. K. K., Bilal, B., Kırıkkaleli, D., Shah, M. I., & Abbas, S. (2023). Corrigendum to “CO2 behavior amidst the COVID-19 pandemic in the United Kingdom: The role of renewable and non-renewable energy development” [Renew. Energy 189 (2022) 492–501]. *Renewable Energy*. https://doi.org/10.1016/j.renene.2023.03.033",
+      "doi": "https://doi.org/10.1016/j.renene.2023.03.033",
+      "year": 2023,
+      "author": "Dervis Kirikkaleli",
+      "author_orcid": "0000-0001-5733-5045",
+      "type": "erratum"
+    },
+    {
+      "id": 93,
+      "apa": "Zauner, K. G., Zhang, Q., Pılbeam, K., Liu, H., Yang, X., Huang, C., Fakir, A. E., Fairchild, R. L., Tkiouat, M., Taamouti, A., Kartal, M. T., Kırıkkaleli, D., Ayhan, F., Durango, M. d. P. P., Vo, X. V., Belay, M. A., Neway, M. M., Zeng, K., Mills, E., ... Jenkins, H. A. (2023). Issue Information. *International Journal of Finance & Economics*. https://doi.org/10.1002/ijfe.2645",
+      "doi": "https://doi.org/10.1002/ijfe.2645",
+      "year": 2023,
+      "author": "Dervis Kirikkaleli",
+      "author_orcid": "0000-0001-5733-5045",
+      "type": "paratext"
+    },
+    {
+      "id": 94,
+      "apa": "Han, J., Xie, D., Ahmed, Z., Khan, S., & Kırıkkaleli, D. (2023). Correction to: Green technologies, government stability, and green energy transition in a globalized world: evidence from E‑7 nations. *Environmental Science and Pollution Research*. https://doi.org/10.1007/s11356-023-29072-w",
+      "doi": "https://doi.org/10.1007/s11356-023-29072-w",
+      "year": 2023,
+      "author": "Dervis Kirikkaleli",
+      "author_orcid": "0000-0001-5733-5045",
+      "type": "erratum"
+    },
+    {
+      "id": 95,
+      "apa": "Sood, K., Grima, S., Young, P., Özen, E., & Balusamy, B. (2023). Index. https://doi.org/10.1002/9781394167944.index",
+      "doi": "https://doi.org/10.1002/9781394167944.index",
+      "year": 2023,
+      "author": "KIRAN SOOD",
+      "author_orcid": "0000-0001-6177-5318",
+      "type": "paratext"
+    },
+    {
+      "id": 96,
+      "apa": "Kaur, K., Sood, K., & Grima, S. (2023). Impact of Climate‐Disruptive Industries on the Global Insurance and Risk Management Scenario. https://doi.org/10.1002/9781394167944.ch16",
+      "doi": "https://doi.org/10.1002/9781394167944.ch16",
+      "year": 2023,
+      "author": "KIRAN SOOD",
+      "author_orcid": "0000-0001-6177-5318",
+      "type": "other"
+    },
+    {
+      "id": 97,
+      "apa": "Roy, J. K. (2023). Review of: \"Exploring machine learning techniques to develop predictive models to address unemployment rates in the implementation of Industry 4.0\". https://doi.org/10.32388/8g17ll",
+      "doi": "https://doi.org/10.32388/8g17ll",
+      "year": 2023,
+      "author": "Jewel Kumar Roy",
+      "author_orcid": "0000-0002-9881-5915",
+      "type": "peer-review"
+    },
+    {
+      "id": 98,
+      "apa": "Durst, S. & Pevkur, A. (2023). BACK MATTER. https://doi.org/10.1142/9789811270178_bmatter",
+      "doi": "https://doi.org/10.1142/9789811270178_bmatter",
+      "year": 2023,
+      "author": "Susanne Durst",
+      "author_orcid": "0000-0001-8469-2427",
+      "type": "paratext"
+    },
+    {
+      "id": 99,
+      "apa": "Durst, S. & Pevkur, A. (2023). FRONT MATTER. https://doi.org/10.1142/9789811270178_fmatter",
+      "doi": "https://doi.org/10.1142/9789811270178_fmatter",
+      "year": 2023,
+      "author": "Susanne Durst",
+      "author_orcid": "0000-0001-8469-2427",
+      "type": "paratext"
+    },
+    {
+      "id": 100,
+      "apa": "Truică, C. (2023). Towards a Conversational Web? A Benchmark for Analysing Semantic Change with Conversational Knowledge Bots and Linked Open Data. *Zenodo*. https://doi.org/10.5281/zenodo.11069104",
+      "doi": "https://doi.org/10.5281/zenodo.11069104",
+      "year": 2023,
+      "author": "Ciprian-Octavian Truică",
+      "author_orcid": "0000-0001-7292-4462",
+      "type": "other"
+    },
+    {
+      "id": 101,
+      "apa": "Truică, C. (2023). Towards a Conversational Web? A Benchmark for Analysing Semantic Change with Conversational Knowledge Bots and Linked Open Data. *Zenodo*. https://doi.org/10.5281/zenodo.11069103",
+      "doi": "https://doi.org/10.5281/zenodo.11069103",
+      "year": 2023,
+      "author": "Ciprian-Octavian Truică",
+      "author_orcid": "0000-0001-7292-4462",
+      "type": "other"
+    },
+    {
+      "id": 102,
+      "apa": "Truică, C. (2023). Workflow Reversal and Data Wrangling in Multilingual Diachronic Analysis and Linguistic Linked Open Data Modelling. *Zenodo*. https://doi.org/10.5281/zenodo.11069129",
+      "doi": "https://doi.org/10.5281/zenodo.11069129",
+      "year": 2023,
+      "author": "Ciprian-Octavian Truică",
+      "author_orcid": "0000-0001-7292-4462",
+      "type": "other"
+    },
+    {
+      "id": 103,
+      "apa": "Truică, C. (2023). Workflow Reversal and Data Wrangling in Multilingual Diachronic Analysis and Linguistic Linked Open Data Modelling. *Zenodo*. https://doi.org/10.5281/zenodo.11069128",
+      "doi": "https://doi.org/10.5281/zenodo.11069128",
+      "year": 2023,
+      "author": "Ciprian-Octavian Truică",
+      "author_orcid": "0000-0001-7292-4462",
+      "type": "other"
+    },
+    {
+      "id": 104,
+      "apa": "Osterrieder, J. (2023). Artificial Intelligence in Finance and Industry : highlights from 6 European COST conferences.",
+      "doi": null,
+      "year": 2023,
+      "author": "Jörg Osterrieder",
+      "author_orcid": "0000-0003-0189-8636",
+      "type": "other"
+    },
+    {
+      "id": 105,
+      "apa": "Osterrieder, J. (2023). Navigating the Environmental, Social, and Governance (ESG) landscape: constructing a robust and reliable scoring engine. https://doi.org/10.17605/osf.io/4epxj",
+      "doi": "https://doi.org/10.17605/osf.io/4epxj",
+      "year": 2023,
+      "author": "Jörg Osterrieder",
+      "author_orcid": "0000-0003-0189-8636",
+      "type": "other"
+    },
+    {
+      "id": 106,
+      "apa": "Osterrieder, J. (2023). Wie Geschlechtervielfalt und KI die Fintech-Branche verändern. https://doi.org/10.24451/arbor.20103",
+      "doi": "https://doi.org/10.24451/arbor.20103",
+      "year": 2023,
+      "author": "Jörg Osterrieder",
+      "author_orcid": "0000-0003-0189-8636",
+      "type": "other"
+    },
+    {
+      "id": 107,
+      "apa": "Osterrieder, J. (2023). The Great Deception: A Comprehensive Study of Execution Strategies in Corporate Share Buy-Backs. *arXiv*.",
+      "doi": null,
+      "year": 2023,
+      "author": "Jörg Osterrieder",
+      "author_orcid": "0000-0003-0189-8636",
+      "type": "other"
+    },
+    {
+      "id": 108,
+      "apa": "Iosifidis, A. (2023). Accurate Gigapixel Crowd Counting by Iterative Zooming and Refinement. *arXiv*.",
+      "doi": null,
+      "year": 2023,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 109,
+      "apa": "Iosifidis, A. (2023). On Feature Diversity in Energy-based Models. *arXiv*.",
+      "doi": null,
+      "year": 2023,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 110,
+      "apa": "Moloney, M. (2023). CEDPO AI Working Group Paper on AI and Data: A Guide for DPOs  . *Confederation of European data Protection Organisations (CEDPO).*.",
+      "doi": null,
+      "year": 2023,
+      "author": "Maria Moloney",
+      "author_orcid": "0000-0001-6811-8177",
+      "type": "standards-and-policy"
+    },
+    {
+      "id": 111,
+      "apa": "Moloney, M. (2023).  Ethical Artificial Intelligence, Fintech and Data Protection A Path Forward for Training in Europe. *COST Action Fin-AI*.",
+      "doi": null,
+      "year": 2023,
+      "author": "Maria Moloney",
+      "author_orcid": "0000-0001-6811-8177",
+      "type": "standards-and-policy"
+    },
+    {
+      "id": 112,
+      "apa": "Nikolic, I. (2023). Perspectives of Enhancing  Cooperation: Can Rapid  Acceleration of Bilateral  Merchandise Trade and Chinese  FDI Inflows into Serbia Be  Sustained?. *The Great Silk Road Conference: Challenges and Opportunities for the Development  of Eurasia*.",
+      "doi": null,
+      "year": 2023,
+      "author": "Ivan Nikolic",
+      "author_orcid": "0000-0002-1897-9152",
+      "type": "conference-abstract"
+    },
+    {
+      "id": 113,
+      "apa": "Nikolic, I. (2023). Why do regional disparities persist in Serbia?. *Evaluation on Rural and Territorial Development, Urban Development*.",
+      "doi": null,
+      "year": 2023,
+      "author": "Ivan Nikolic",
+      "author_orcid": "0000-0002-1897-9152",
+      "type": "conference-abstract"
+    },
+    {
+      "id": 114,
+      "apa": "Muluk, N. B. (2023). Evaluation of the Nasolacrimal Canal by Computed Tomography in Patients with Septal Deviation. *Research Square*. https://doi.org/10.21203/rs.3.rs-3139649",
+      "doi": "https://doi.org/10.21203/rs.3.rs-3139649",
+      "year": 2023,
+      "author": "Nuray Bayar Muluk",
+      "author_orcid": "0000-0003-3602-9289",
+      "type": "other"
+    },
+    {
+      "id": 115,
+      "apa": "Azevedo, A. I. (2023). Sustentabilidade e digitalização nas organizações sociais na sequência da Pandemia COVID-19? Um estudo às Cooperativas de Solidariedade Social. *XVI Congresso RulesCOOP*. https://doi.org/10.56002/ceos.0082b",
+      "doi": "https://doi.org/10.56002/ceos.0082b",
+      "year": 2023,
+      "author": "Ana Isabel Azevedo",
+      "author_orcid": "0000-0003-0882-3426",
+      "type": "conference-abstract"
+    },
+    {
+      "id": 116,
+      "apa": "Azevedo, A. I. (2023). A Digital Transformation Model for Cooperatives of Services. *Dia do Investigador CEOS.PP | DICEOS23*. https://doi.org/10.56002/ceos.0084b",
+      "doi": "https://doi.org/10.56002/ceos.0084b",
+      "year": 2023,
+      "author": "Ana Isabel Azevedo",
+      "author_orcid": "0000-0003-0882-3426",
+      "type": "conference-abstract"
+    },
+    {
+      "id": 117,
+      "apa": "Azevedo, A. I. (2023). Regular Issue: Volume 14. *International Jornal of Business Intelligence Research*.",
+      "doi": null,
+      "year": 2023,
+      "author": "Ana Isabel Azevedo",
+      "author_orcid": "0000-0003-0882-3426",
+      "type": "journal-issue"
+    },
+    {
+      "id": 118,
+      "apa": "Kitzler, S. (2023). The 11th International Conference on Complex Networks and their Applications - Book of Abstracts. https://doi.org/10.5281/ZENODO.7593062",
+      "doi": "https://doi.org/10.5281/ZENODO.7593062",
+      "year": 2023,
+      "author": "Stefan Kitzler",
+      "author_orcid": "0000-0001-8454-167X",
+      "type": "conference-abstract"
+    },
+    {
+      "id": 119,
+      "apa": "Udemba, E. N., Bekun, F. V., Kırıkkaleli, D., & Döngül, E. S. (2022). New Perspective to Management, Economic Growth and Debt Nexus Analysis. https://doi.org/10.1002/9781119792826.ch5",
+      "doi": "https://doi.org/10.1002/9781119792826.ch5",
+      "year": 2022,
+      "author": "Dervis Kirikkaleli",
+      "author_orcid": "0000-0001-5733-5045",
+      "type": "other"
+    },
+    {
+      "id": 120,
+      "apa": "Jindal, P., Kaur, J., & Sood, K. (2022). Process Innovation and Unification of KYC Document Management System with Blockchain in Banking. https://doi.org/10.1002/9781119865247.ch9",
+      "doi": "https://doi.org/10.1002/9781119865247.ch9",
+      "year": 2022,
+      "author": "KIRAN SOOD",
+      "author_orcid": "0000-0001-6177-5318",
+      "type": "other"
+    },
+    {
+      "id": 121,
+      "apa": "Jovanovic, M., Mitrov, G., Zdravevski, E., Lameski, P., Colantonio, S., Kampel, M., Tellioğlu, H., & Flórez‐Revuelta, F. (2022). Correction: Ambient Assisted Living: Scoping Review of Artificial Intelligence Models, Domains, Technology, and Concerns. *Journal of Medical Internet Research*. https://doi.org/10.2196/45081",
+      "doi": "https://doi.org/10.2196/45081",
+      "year": 2022,
+      "author": "Petre Lameski",
+      "author_orcid": "0000-0002-5336-1796",
+      "type": "erratum"
+    },
+    {
+      "id": 122,
+      "apa": "Jovanovic, M., Mitrov, G., Zdravevski, E., Lameski, P., Colantonio, S., Kampel, M., Tellioğlu, H., & Flórez‐Revuelta, F. (2022). Correction: Ambient Assisted Living: Scoping Review of Artificial Intelligence Models, Domains, Technology, and Concerns. *Journal of Medical Internet Research*. https://doi.org/10.2196/45081",
+      "doi": "https://doi.org/10.2196/45081",
+      "year": 2022,
+      "author": "Eftim Zdravevski",
+      "author_orcid": "0000-0001-7664-0168",
+      "type": "erratum"
+    },
+    {
+      "id": 123,
+      "apa": "Kaswan, K. S., Dhatterwal, J. S., Sood, K., & Balusamy, B. (2022). Role of Blockchain Technology in the Modern Era. https://doi.org/10.1002/9781119865247.ch1",
+      "doi": "https://doi.org/10.1002/9781119865247.ch1",
+      "year": 2022,
+      "author": "KIRAN SOOD",
+      "author_orcid": "0000-0001-6177-5318",
+      "type": "other"
+    },
+    {
+      "id": 124,
+      "apa": "CORDOS, A. & Tiron‐Tudor, A. (2022). Incremental redesign of the accounting profession in the context of digitalisation and industry 4.0. https://doi.org/10.5281/zenodo.6700811",
+      "doi": "https://doi.org/10.5281/zenodo.6700811",
+      "year": 2022,
+      "author": "Adriana Tiron-Tudor",
+      "author_orcid": "0000-0001-5530-5635",
+      "type": "paratext"
+    },
+    {
+      "id": 125,
+      "apa": "Mekacher, A., Bracci, A., Nadini, M., Martino, M., Alessandretti, L., Aiello, L. M., & Baronchelli, A. (2022). Author Correction: Heterogeneous rarity patterns drive price dynamics in NFT collections. *Scientific Reports*. https://doi.org/10.1038/s41598-022-20027-8",
+      "doi": "https://doi.org/10.1038/s41598-022-20027-8",
+      "year": 2022,
+      "author": "Matthieu Nadini",
+      "author_orcid": "0000-0003-4542-7481",
+      "type": "erratum"
+    },
+    {
+      "id": 126,
+      "apa": "Oyebanji, M. O. & Kırıkkaleli, D. (2022). Correction to: Energy productivity and environmental degradation: the case of Greece. *Environmental Science and Pollution Research*. https://doi.org/10.1007/s11356-022-21874-8",
+      "doi": "https://doi.org/10.1007/s11356-022-21874-8",
+      "year": 2022,
+      "author": "Dervis Kirikkaleli",
+      "author_orcid": "0000-0001-5733-5045",
+      "type": "erratum"
+    },
+    {
+      "id": 127,
+      "apa": "Kaur, J., Jindal, P., & Sood, K. (2022). Applying Blockchain Technology to Address NPA Issues During the COVID‐19 Pandemic. https://doi.org/10.1002/9781119865247.ch10",
+      "doi": "https://doi.org/10.1002/9781119865247.ch10",
+      "year": 2022,
+      "author": "KIRAN SOOD",
+      "author_orcid": "0000-0001-6177-5318",
+      "type": "other"
+    },
+    {
+      "id": 128,
+      "apa": "Abbasi, M., Santos, B. P., Pereira, T. C., Sofa, R., Monteiro, N. R. C., Simões, C. J. V., Brito, R. M. M., Ribeiro, B., Oliveira, J. L., & Arrais, J. P. (2022). Correction to: Designing optimized drug candidates with Generative Adversarial Network. *Journal of Cheminformatics*. https://doi.org/10.1186/s13321-022-00631-6",
+      "doi": "https://doi.org/10.1186/s13321-022-00631-6",
+      "year": 2022,
+      "author": "Bernardete Ribeiro",
+      "author_orcid": "0000-0002-9770-7672",
+      "type": "erratum"
+    },
+    {
+      "id": 129,
+      "apa": "MIERLIȚĂ-PANTEA, Ș. & Tiron‐Tudor, A. (2022). Cryptocurrencies - trends and challenges of accounting and auditing. https://doi.org/10.5281/zenodo.6718045",
+      "doi": "https://doi.org/10.5281/zenodo.6718045",
+      "year": 2022,
+      "author": "Adriana Tiron-Tudor",
+      "author_orcid": "0000-0001-5530-5635",
+      "type": "paratext"
+    },
+    {
+      "id": 130,
+      "apa": "Bakhtiarnia, A., Milošević, N., Zhang, Q., Bajović, D., & Iosifidis, A. (2022). Dynamic Split Computing for Efficient Deep Edge Intelligence. *Zenodo (CERN European Organization for Nuclear Research)*. https://doi.org/10.5281/zenodo.6737212",
+      "doi": "https://doi.org/10.5281/zenodo.6737212",
+      "year": 2022,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "paratext"
+    },
+    {
+      "id": 131,
+      "apa": "Chumachenko, K., Iosifidis, A., & Gabbouj, M. (2022). Weighted Edit Distance for Country Code Recognition in License Plates. *Zenodo (CERN European Organization for Nuclear Research)*. https://doi.org/10.5281/zenodo.6736842",
+      "doi": "https://doi.org/10.5281/zenodo.6736842",
+      "year": 2022,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "paratext"
+    },
+    {
+      "id": 132,
+      "apa": "Carlos, T. M. J. & Demirbilek, M. (2022). CONCEPT DESIGN AND VISUALIZATION OF AN INTERACTIVE 3D VIRTUAL FOREIGN LANGUAGE LEARNING ENVIRONMENT. *Zenodo (CERN European Organization for Nuclear Research)*. https://doi.org/10.5281/zenodo.7489492",
+      "doi": "https://doi.org/10.5281/zenodo.7489492",
+      "year": 2022,
+      "author": "Muhammet Demirbilek",
+      "author_orcid": "0000-0001-7448-9206",
+      "type": "paratext"
+    },
+    {
+      "id": 133,
+      "apa": "Tsionas, E. G. (2022). Bayesian Data Envelopment Analysis. *Wiley StatsRef: Statistics Reference Online*. https://doi.org/10.1002/9781118445112.stat08381",
+      "doi": "https://doi.org/10.1002/9781118445112.stat08381",
+      "year": 2022,
+      "author": "Mike Tsionas",
+      "author_orcid": "0000-0003-3761-8106",
+      "type": "other"
+    },
+    {
+      "id": 134,
+      "apa": "Klein, T., Loßagk, S., Straßberger, M., & Walther, T. (2022). FRONT MATTER. *Transformations in banking, finance and regulation*. https://doi.org/10.1142/9781800611917_fmatter",
+      "doi": "https://doi.org/10.1142/9781800611917_fmatter",
+      "year": 2022,
+      "author": "Thomas Walther",
+      "author_orcid": "0000-0003-4359-987X",
+      "type": "paratext"
+    },
+    {
+      "id": 135,
+      "apa": "Klein, T., Loßagk, S., Straßberger, M., & Walther, T. (2022). BACK MATTER. *Transformations in banking, finance and regulation*. https://doi.org/10.1142/9781800611917_bmatter",
+      "doi": "https://doi.org/10.1142/9781800611917_bmatter",
+      "year": 2022,
+      "author": "Thomas Walther",
+      "author_orcid": "0000-0003-4359-987X",
+      "type": "paratext"
+    },
+    {
+      "id": 136,
+      "apa": "Goundar, S., Suseendran, G., & Anandan, R. (2022). FRONT MATTER. https://doi.org/10.1142/9789811225079_fmatter",
+      "doi": "https://doi.org/10.1142/9789811225079_fmatter",
+      "year": 2022,
+      "author": "Sam Goundar",
+      "author_orcid": "0000-0001-6465-1097",
+      "type": "paratext"
+    },
+    {
+      "id": 137,
+      "apa": "Goundar, S., Suseendran, G., & Anandan, R. (2022). BACK MATTER. https://doi.org/10.1142/9789811225079_bmatter",
+      "doi": "https://doi.org/10.1142/9789811225079_bmatter",
+      "year": 2022,
+      "author": "Sam Goundar",
+      "author_orcid": "0000-0001-6465-1097",
+      "type": "paratext"
+    },
+    {
+      "id": 138,
+      "apa": "Somerville, I. D., Dong, Y., Anilkumar, Y., Armstrong-Altrin, J., Bayet‐Goll, A., Bozkurt, E., Cao, H., Rao, N., Chandrakala, K., Chen, Z., Frassi, C., He, X., Jang, Y., Kırıkkaleli, D., Liu, Y., Manikyamba, C., Radwan, A. E., Ramkumar, M., Santosh, M., ... Singh, A. K. (2022). Issue Information. *Geological Journal*. https://doi.org/10.1002/gj.4180",
+      "doi": "https://doi.org/10.1002/gj.4180",
+      "year": 2022,
+      "author": "Dervis Kirikkaleli",
+      "author_orcid": "0000-0001-5733-5045",
+      "type": "paratext"
+    },
+    {
+      "id": 139,
+      "apa": "Sood, K., Dhanaraj, R. K., Balusamy, B., & Kadry, S. (2022). Front Matter. https://doi.org/10.1002/9781119865247.fmatter",
+      "doi": "https://doi.org/10.1002/9781119865247.fmatter",
+      "year": 2022,
+      "author": "KIRAN SOOD",
+      "author_orcid": "0000-0001-6177-5318",
+      "type": "paratext"
+    },
+    {
+      "id": 140,
+      "apa": "Sood, K., Dhanaraj, R. K., Balusamy, B., & Kadry, S. (2022). Index. https://doi.org/10.1002/9781119865247.index",
+      "doi": "https://doi.org/10.1002/9781119865247.index",
+      "year": 2022,
+      "author": "KIRAN SOOD",
+      "author_orcid": "0000-0001-6177-5318",
+      "type": "paratext"
+    },
+    {
+      "id": 141,
+      "apa": "Ari, A. A. A., Adamou, A., Ele, A., Acevedo, V., Adel, M., Naiara, A., Zeeshan, M., Ahvar, S., Dahmad, A., Cheikh, A., Ambard, M., Amin, F., Aski, V., Augello, A., Ayad, H., Azar, J., Bakass, A., Banga, V., Barsotti, A., ... Benassi, A. (2022). Author Index. https://doi.org/10.1109/sitis57111.2022.00103",
+      "doi": "https://doi.org/10.1109/sitis57111.2022.00103",
+      "year": 2022,
+      "author": "Levent CARKACIOGLU",
+      "author_orcid": "0000-0001-8973-5705",
+      "type": "paratext"
+    },
+    {
+      "id": 142,
+      "apa": "Rodrigo, G. (2022). Quantum clustering and jet reconstruction at the LHC. *arXiv*. https://doi.org/10.48550/arXiv.2204.06496",
+      "doi": "https://doi.org/10.48550/arXiv.2204.06496",
+      "year": 2022,
+      "author": "German Rodrigo",
+      "author_orcid": "0000-0003-0451-0529",
+      "type": "other"
+    },
+    {
+      "id": 143,
+      "apa": "Rodrigo, G. (2022). Quantum computing for data analysis in high energy physics. *arXiv*. https://doi.org/10.48550/arXiv.2203.08805",
+      "doi": "https://doi.org/10.48550/arXiv.2203.08805",
+      "year": 2022,
+      "author": "German Rodrigo",
+      "author_orcid": "0000-0003-0451-0529",
+      "type": "other"
+    },
+    {
+      "id": 144,
+      "apa": "Rodrigo, G. (2022). Variational quantum eigensolver for causal loop Feynman diagrams and directed acyclic graphs. *arXiv*. https://doi.org/10.48550/arXiv.2210.13240",
+      "doi": "https://doi.org/10.48550/arXiv.2210.13240",
+      "year": 2022,
+      "author": "German Rodrigo",
+      "author_orcid": "0000-0003-0451-0529",
+      "type": "other"
+    },
+    {
+      "id": 145,
+      "apa": "Osterrieder, J. (2022). High-Frequency Causality between Stochastic Volatility Time Series: Empirical Evidence. https://doi.org/10.24451/arbor.17429",
+      "doi": "https://doi.org/10.24451/arbor.17429",
+      "year": 2022,
+      "author": "Jörg Osterrieder",
+      "author_orcid": "0000-0003-0189-8636",
+      "type": "other"
+    },
+    {
+      "id": 146,
+      "apa": "Iosifidis, A. (2022). Data-driven fluid mechanics of wind farms: A review. *arXiv*. https://doi.org/10.48550/arxiv.2203.13289",
+      "doi": "https://doi.org/10.48550/arxiv.2203.13289",
+      "year": 2022,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 147,
+      "apa": "Iosifidis, A. (2022). OpenDR: An Open Toolkit for Enabling High Performance, Low Footprint Deep Learning for Robotics. *arXiv*. https://doi.org/10.48550/arxiv.2203.00403",
+      "doi": "https://doi.org/10.48550/arxiv.2203.00403",
+      "year": 2022,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 148,
+      "apa": "Persio, L. D. (2022). Diffusion Approximation for Transport Equations with Dissipative Drifts. *arXiv*.",
+      "doi": null,
+      "year": 2022,
+      "author": "Luca Di Persio",
+      "author_orcid": "0000-0002-0317-4351",
+      "type": "other"
+    },
+    {
+      "id": 149,
+      "apa": "Poti, V. (2022). Commodity Futures Return Predictability and Intertemporal Asset Pricing. *SSRN*.",
+      "doi": null,
+      "year": 2022,
+      "author": "Valerio Poti",
+      "author_orcid": "0000-0003-1156-5616",
+      "type": "other"
+    },
+    {
+      "id": 150,
+      "apa": "Poti, V. (2022). Crypto-Market Network In-Formation and Bitcoin Price Dynamics and Tail Behaviour. *SSRN*.",
+      "doi": null,
+      "year": 2022,
+      "author": "Valerio Poti",
+      "author_orcid": "0000-0003-1156-5616",
+      "type": "other"
+    },
+    {
+      "id": 151,
+      "apa": "Poti, V. (2022). Revisiting The Hunt Brothers Case. *SSRN*.",
+      "doi": null,
+      "year": 2022,
+      "author": "Valerio Poti",
+      "author_orcid": "0000-0003-1156-5616",
+      "type": "other"
+    },
+    {
+      "id": 152,
+      "apa": "Poti, V. (2022). Revisiting the Silver Crisis. *SSRN*.",
+      "doi": null,
+      "year": 2022,
+      "author": "Valerio Poti",
+      "author_orcid": "0000-0003-1156-5616",
+      "type": "other"
+    },
+    {
+      "id": 153,
+      "apa": "Moloney, M. (2022). CEDPO Opinion on the potential impact of the EU’s proposed Artificial Intelligence Act (AI Act) on the role of the data protection officer. *Confederation of European data Protection Organisations (CEDPO).*.",
+      "doi": null,
+      "year": 2022,
+      "author": "Maria Moloney",
+      "author_orcid": "0000-0001-6811-8177",
+      "type": "standards-and-policy"
+    },
+    {
+      "id": 154,
+      "apa": "Posth, J. (2022). A modular framework for reinforcement learning optimal execution.",
+      "doi": null,
+      "year": 2022,
+      "author": "Jan-Alexander Posth",
+      "author_orcid": "0000-0002-5898-0676",
+      "type": "other"
+    },
+    {
+      "id": 155,
+      "apa": "Posth, J. (2022). Green Innovation und Patente im Energiesektor : von Greenwashing zu Evidenz-basierten Investment-Entscheidungen.",
+      "doi": null,
+      "year": 2022,
+      "author": "Jan-Alexander Posth",
+      "author_orcid": "0000-0002-5898-0676",
+      "type": "other"
+    },
+    {
+      "id": 156,
+      "apa": "Posth, J. (2022). Patentindikatoren, Patentanalytik und Patentbewertung : von Innovation über SDGs bis hin zu Investitionsentscheidungen.",
+      "doi": null,
+      "year": 2022,
+      "author": "Jan-Alexander Posth",
+      "author_orcid": "0000-0002-5898-0676",
+      "type": "other"
+    },
+    {
+      "id": 157,
+      "apa": "Posth, J. (2022). Reinforcement learning in finance.",
+      "doi": null,
+      "year": 2022,
+      "author": "Jan-Alexander Posth",
+      "author_orcid": "0000-0002-5898-0676",
+      "type": "other"
+    },
+    {
+      "id": 158,
+      "apa": "Posth, J. (2022). Wie kann KI nachhaltiges Finanzieren fördern?.",
+      "doi": null,
+      "year": 2022,
+      "author": "Jan-Alexander Posth",
+      "author_orcid": "0000-0002-5898-0676",
+      "type": "other"
+    },
+    {
+      "id": 159,
+      "apa": "Tsionas, M. (2022). Tourism during and after COVID-19. *Journal of Travel Research*. https://doi.org/10.1177/00472875211017237",
+      "doi": "https://doi.org/10.1177/00472875211017237",
+      "year": 2022,
+      "author": "Mike Tsionas",
+      "author_orcid": "0000-0003-3761-8106",
+      "type": "other"
+    },
+    {
+      "id": 160,
+      "apa": "Silva, C. (2022). Can we rely on clustering for approximating intents and dialog acts?. *28th Portuguese Conference on Pattern Recognition*.",
+      "doi": null,
+      "year": 2022,
+      "author": "Catarina Silva",
+      "author_orcid": "0000-0002-5656-0061",
+      "type": "conference-poster"
+    },
+    {
+      "id": 161,
+      "apa": "Silva, C. (2022). Natural Language Processing in the Classification of Dialog Act. *28th Portuguese Conference on Pattern Recognition*.",
+      "doi": null,
+      "year": 2022,
+      "author": "Catarina Silva",
+      "author_orcid": "0000-0002-5656-0061",
+      "type": "conference-poster"
+    },
+    {
+      "id": 162,
+      "apa": "Óskarsdóttir, M. (2022). Analysis of Discussion Forum Interactions for Different Teaching Modalities based on Temporal Social Networks. *NetSciLA 2022 Workshop \"Networks and Learning Analytics: Addressing Educational Challenges\", NetSciLA 2022, Virtual, Online, 22/03/22*.",
+      "doi": null,
+      "year": 2022,
+      "author": "María Óskarsdóttir",
+      "author_orcid": "0000-0001-5095-5356",
+      "type": "conference-presentation"
+    },
+    {
+      "id": 163,
+      "apa": "Óskarsdóttir, M. (2022). Introduction to the Minitrack on Learning Analytics at HICCS 2022. *Proceedings of the Annual Hawaii International Conference on System Sciences*.",
+      "doi": null,
+      "year": 2022,
+      "author": "María Óskarsdóttir",
+      "author_orcid": "0000-0001-5095-5356",
+      "type": "other"
+    },
+    {
+      "id": 164,
+      "apa": "Óskarsdóttir, M. (2022). Introduction to the minitrack on fraud detection using machine learning at HICCS 2022. *Proceedings of the Annual Hawaii International Conference on System Sciences*.",
+      "doi": null,
+      "year": 2022,
+      "author": "María Óskarsdóttir",
+      "author_orcid": "0000-0001-5095-5356",
+      "type": "other"
+    },
+    {
+      "id": 165,
+      "apa": "Nguyen, C. (2022). Climate disasters and earnings management.",
+      "doi": null,
+      "year": 2022,
+      "author": "Cuong Nguyen",
+      "author_orcid": "0000-0002-7563-2374",
+      "type": "conference-poster"
+    },
+    {
+      "id": 166,
+      "apa": "Bevan, D. (2022). Decolonializing The Political Responsibilities Of Global Corporations. *The Political Responsibility of Business*.",
+      "doi": null,
+      "year": 2022,
+      "author": "David Bevan",
+      "author_orcid": "0000-0003-2973-9098",
+      "type": "conference-abstract"
+    },
+    {
+      "id": 167,
+      "apa": "Muresan, G. M. (2022). Financial Crime: A Literature Review. *SSRN*.",
+      "doi": null,
+      "year": 2022,
+      "author": "Gabriela Mihaela Muresan",
+      "author_orcid": "0000-0001-6715-7406",
+      "type": "other"
+    },
+    {
+      "id": 168,
+      "apa": "Azevedo, A. I. (2022). Regular Issue: Volume 13. *International Jornal of Business Intelligence Research*.",
+      "doi": null,
+      "year": 2022,
+      "author": "Ana Isabel Azevedo",
+      "author_orcid": "0000-0003-0882-3426",
+      "type": "journal-issue"
+    },
+    {
+      "id": 169,
+      "apa": "Azevedo, A. I. (2022). Special Issue on Analytics and Big Data. *Mathematics*.",
+      "doi": null,
+      "year": 2022,
+      "author": "Ana Isabel Azevedo",
+      "author_orcid": "0000-0003-0882-3426",
+      "type": "journal-issue"
+    },
+    {
+      "id": 170,
+      "apa": "Dellaportas, P. (2022). Reservoir Computing for Macroeconomic Forecasting with Mixed Frequency Data. *arXiv*.",
+      "doi": null,
+      "year": 2022,
+      "author": "Petros Dellaportas",
+      "author_orcid": "0000-0002-0117-8447",
+      "type": "other"
+    },
+    {
+      "id": 171,
+      "apa": "Dellaportas, P. (2022). Variance Reduction for Metropolis-Hastings Samplers. *arXiv*. https://doi.org/10.48550/arxiv.2203.02268",
+      "doi": "https://doi.org/10.48550/arxiv.2203.02268",
+      "year": 2022,
+      "author": "Petros Dellaportas",
+      "author_orcid": "0000-0002-0117-8447",
+      "type": "other"
+    },
+    {
+      "id": 172,
+      "apa": "Sahin, C. O. (2022). Informal Economy and ICO Issuance.",
+      "doi": null,
+      "year": 2022,
+      "author": "Ceylan Onay Sahin",
+      "author_orcid": "0000-0002-2039-5930",
+      "type": "other"
+    },
+    {
+      "id": 173,
+      "apa": "Laakom, F., Raitoharju, J., Iosifidis, A., & Gabbouj, M. (2021). Within-layer Diversity Reduces Generalization Gap. *Zenodo (CERN European Organization for Nuclear Research)*. https://doi.org/10.5281/zenodo.5772760",
+      "doi": "https://doi.org/10.5281/zenodo.5772760",
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "paratext"
+    },
+    {
+      "id": 174,
+      "apa": "Bakhtiarnia, A., Zhang, Q., & Iosifidis, A. (2021). Improving the Accuracy of Early Exits in Multi-Exit Architectures via Curriculum Learning. *Zenodo (CERN European Organization for Nuclear Research)*. https://doi.org/10.5281/zenodo.5196119",
+      "doi": "https://doi.org/10.5281/zenodo.5196119",
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "paratext"
+    },
+    {
+      "id": 175,
+      "apa": "Salvador, B. & Oosterlee, C. W. (2021). Corrigendum to ``Total value adjustment for a stochastic volatility model. A comparison with the Black–Scholes model''. *Applied Mathematics and Computation*. https://doi.org/10.1016/j.amc.2021.125999",
+      "doi": "https://doi.org/10.1016/j.amc.2021.125999",
+      "year": 2021,
+      "author": "Cornelis Oosterlee",
+      "author_orcid": "0000-0002-7322-4094",
+      "type": "erratum"
+    },
+    {
+      "id": 176,
+      "apa": "Ärje, J., Raitoharju, J., Iosifidis, A., Tirronen, V., Meissner, K., Gabbouj, M., Kıranyaz, S., & Kärkkäinen, S. (2021). Decision letter for \"Robust ecological analysis of camera trap data labelled by a machine learning model\". https://doi.org/10.1111/2041-210x.13576/v3/decision1",
+      "doi": "https://doi.org/10.1111/2041-210x.13576/v3/decision1",
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "peer-review"
+    },
+    {
+      "id": 177,
+      "apa": "Tsionas, E. G. & Kumbhakar, S. C. (2021). Corrigendum to “Stochastic frontier models with time-varying conditional variances” [European Journal of Operational Research 292 (2021) 1115–1132]. *European Journal of Operational Research*. https://doi.org/10.1016/j.ejor.2021.12.003",
+      "doi": "https://doi.org/10.1016/j.ejor.2021.12.003",
+      "year": 2021,
+      "author": "Mike Tsionas",
+      "author_orcid": "0000-0003-3761-8106",
+      "type": "erratum"
+    },
+    {
+      "id": 178,
+      "apa": "Karakatič, S. (2021). Peer Review #1 of \"Evaluation of Rust code verbosity, understandability and complexity (v0.1)\". https://doi.org/10.7287/peerj-cs.406v0.1/reviews/1",
+      "doi": "https://doi.org/10.7287/peerj-cs.406v0.1/reviews/1",
+      "year": 2021,
+      "author": "Sašo Karakatič",
+      "author_orcid": "0000-0003-4441-9690",
+      "type": "peer-review"
+    },
+    {
+      "id": 179,
+      "apa": "Karakatič, S. (2021). Peer Review #1 of \"Evaluation of Rust code verbosity, understandability and complexity (v0.2)\". https://doi.org/10.7287/peerj-cs.406v0.2/reviews/1",
+      "doi": "https://doi.org/10.7287/peerj-cs.406v0.2/reviews/1",
+      "year": 2021,
+      "author": "Sašo Karakatič",
+      "author_orcid": "0000-0003-4441-9690",
+      "type": "peer-review"
+    },
+    {
+      "id": 180,
+      "apa": "Hoang, H. V., Nguyen, C., & Hoàng, K. (2021). Author response for \"Does the second wave of COVID-19 undermine corporate immunity? International evidence\". https://doi.org/10.1108/ijse-11-2020-0769/v2/response1",
+      "doi": "https://doi.org/10.1108/ijse-11-2020-0769/v2/response1",
+      "year": 2021,
+      "author": "Cuong Nguyen",
+      "author_orcid": "0000-0002-7563-2374",
+      "type": "peer-review"
+    },
+    {
+      "id": 181,
+      "apa": "Mihus, I. (2021). Book of abstracts. https://doi.org/10.36690/iceaf-2021",
+      "doi": "https://doi.org/10.36690/iceaf-2021",
+      "year": 2021,
+      "author": "Iryna Mihus",
+      "author_orcid": "0000-0001-6939-9097",
+      "type": "paratext"
+    },
+    {
+      "id": 182,
+      "apa": "Mihus, I. (2021). Book of abstracts. https://doi.org/10.36690/rpabm-2021",
+      "doi": "https://doi.org/10.36690/rpabm-2021",
+      "year": 2021,
+      "author": "Iryna Mihus",
+      "author_orcid": "0000-0001-6939-9097",
+      "type": "paratext"
+    },
+    {
+      "id": 183,
+      "apa": "Şengür, A. (2021). Peer Review #1 of \"Otitis media detection using tympanic membrane images with a novel multi-class machine learning algorithm (v0.1)\". https://doi.org/10.7287/peerj-cs.405v0.1/reviews/1",
+      "doi": "https://doi.org/10.7287/peerj-cs.405v0.1/reviews/1",
+      "year": 2021,
+      "author": "Abdulkadir Sengur",
+      "author_orcid": "0000-0003-1614-2639",
+      "type": "peer-review"
+    },
+    {
+      "id": 184,
+      "apa": "Rodrigo, G. (2021). Quantum algorithm for Feynman loop integrals. *arXiv*. https://doi.org/10.48550/arXiv.2105.08703",
+      "doi": "https://doi.org/10.48550/arXiv.2105.08703",
+      "year": 2021,
+      "author": "German Rodrigo",
+      "author_orcid": "0000-0003-0451-0529",
+      "type": "other"
+    },
+    {
+      "id": 185,
+      "apa": "Osterrieder, J. (2021). Audience-Dependent Explanations for AI-Based Risk Management Tools: A Survey. https://doi.org/10.24451/arbor.17289",
+      "doi": "https://doi.org/10.24451/arbor.17289",
+      "year": 2021,
+      "author": "Jörg Osterrieder",
+      "author_orcid": "0000-0003-0189-8636",
+      "type": "other"
+    },
+    {
+      "id": 186,
+      "apa": "Osterrieder, J. (2021). Explainable AI in Credit Risk Management. https://doi.org/10.24451/arbor.17292",
+      "doi": "https://doi.org/10.24451/arbor.17292",
+      "year": 2021,
+      "author": "Jörg Osterrieder",
+      "author_orcid": "0000-0003-0189-8636",
+      "type": "other"
+    },
+    {
+      "id": 187,
+      "apa": "Osterrieder, J. (2021). Deep reinforcement learning on a multi-asset environment for trading. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Jörg Osterrieder",
+      "author_orcid": "0000-0003-0189-8636",
+      "type": "other"
+    },
+    {
+      "id": 188,
+      "apa": "Osterrieder, J. (2021). Generative adversarial networks in finance: An overview. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Jörg Osterrieder",
+      "author_orcid": "0000-0003-0189-8636",
+      "type": "other"
+    },
+    {
+      "id": 189,
+      "apa": "Osterrieder, J. (2021). Wasserstein gan: Deep generation applied on financial time series. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Jörg Osterrieder",
+      "author_orcid": "0000-0003-0189-8636",
+      "type": "other"
+    },
+    {
+      "id": 190,
+      "apa": "Iosifidis, A. (2021). AURSAD: Universal robot screwdriving anomaly detection dataset. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 191,
+      "apa": "Iosifidis, A. (2021). Adaptive Weighting Scheme for Automatic Time-Series Data Augmentation. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 192,
+      "apa": "Iosifidis, A. (2021). Analysis of voxel-based 3D object detection methods efficiency for real-time embedded systems. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 193,
+      "apa": "Iosifidis, A. (2021). Approximate Bayes factors for unit root testing. *arXiv*. https://doi.org/10.48550/arxiv.2102.10048",
+      "doi": "https://doi.org/10.48550/arxiv.2102.10048",
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 194,
+      "apa": "Iosifidis, A. (2021). Approximate Bayes factors for unit root testing. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 195,
+      "apa": "Iosifidis, A. (2021). Automatic Social Distance Estimation from Images: Performance Evaluation, Test Benchmark, and Algorithm. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 196,
+      "apa": "Iosifidis, A. (2021). Automatic main character recognition for photographic studies. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 197,
+      "apa": "Iosifidis, A. (2021). Bilinear input normalization for neural networks in financial forecasting. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 198,
+      "apa": "Iosifidis, A. (2021). Continual 3D convolutional neural networks for real-time processing of videos. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 199,
+      "apa": "Iosifidis, A. (2021). DeeptimeanomalyViz: A tool for visualizing and post-processing deep learning anomaly detection results for industrial time-series. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 200,
+      "apa": "Iosifidis, A. (2021). Detecting faults during automatic screwdriving: A dataset and use case of anomaly detection for automatic screwdriving. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 201,
+      "apa": "Iosifidis, A. (2021). ECINN: Efficient counterfactuals from invertible neural networks. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 202,
+      "apa": "Iosifidis, A. (2021). Ensembling object detectors for image and video data analysis. *arXiv*. https://doi.org/10.48550/arxiv.2102.04798",
+      "doi": "https://doi.org/10.48550/arxiv.2102.04798",
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 203,
+      "apa": "Iosifidis, A. (2021). Ensembling object detectors for image and video data analysis. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 204,
+      "apa": "Iosifidis, A. (2021). Graph-embedded subspace support vector data description. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 205,
+      "apa": "Iosifidis, A. (2021). Improving the accuracy of early exits in multi-exit architectures via curriculum learning. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 206,
+      "apa": "Iosifidis, A. (2021). Knowledge distillation by sparse representation matching. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 207,
+      "apa": "Iosifidis, A. (2021). Low-rank temporal attention-augmented bilinear network for financial time-series forecasting. *arXiv*. https://doi.org/10.48550/arxiv.2107.06995",
+      "doi": "https://doi.org/10.48550/arxiv.2107.06995",
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 208,
+      "apa": "Iosifidis, A. (2021). Low-rank temporal attention-augmented bilinear network for financial time-series forecasting. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 209,
+      "apa": "Iosifidis, A. (2021). Multi-exit vision transformer for dynamic inference. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 210,
+      "apa": "Iosifidis, A. (2021). Progressive Spatio-temporal Bilinear network with Monte Carlo dropout for landmark-based facial expression recognition with uncertainty estimation. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 211,
+      "apa": "Iosifidis, A. (2021). Remote multilinear compressive learning with adaptive compression. *arXiv*. https://doi.org/10.48550/arxiv.2109.01184",
+      "doi": "https://doi.org/10.48550/arxiv.2109.01184",
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 212,
+      "apa": "Iosifidis, A. (2021). Remote multilinear compressive learning with adaptive compression. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 213,
+      "apa": "Iosifidis, A. (2021). Single-layer vision transformers for more accurate early exits with less overhead. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 214,
+      "apa": "Iosifidis, A. (2021). Visualising deep network’s time-series representations. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 215,
+      "apa": "Iosifidis, A. (2021). Within-layer diversity reduces generalization gap. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 216,
+      "apa": "Posth, J. (2021). AI & sustainable investing : the green tech revolution enabling sustainable and responsible investment leveraging AI and Big Data.",
+      "doi": null,
+      "year": 2021,
+      "author": "Jan-Alexander Posth",
+      "author_orcid": "0000-0002-5898-0676",
+      "type": "other"
+    },
+    {
+      "id": 217,
+      "apa": "Posth, J. (2021). Audience-Dependent Explanations for AI-Based Risk Management Tools: A Survey .... https://doi.org/10.24451/arbor.17289",
+      "doi": "https://doi.org/10.24451/arbor.17289",
+      "year": 2021,
+      "author": "Jan-Alexander Posth",
+      "author_orcid": "0000-0002-5898-0676",
+      "type": "other"
+    },
+    {
+      "id": 218,
+      "apa": "Posth, J. (2021). Thematic investing in GreenTech : patent-data-driven identification of green technology trends and sustainable investment oportunities.",
+      "doi": null,
+      "year": 2021,
+      "author": "Jan-Alexander Posth",
+      "author_orcid": "0000-0002-5898-0676",
+      "type": "other"
+    },
+    {
+      "id": 219,
+      "apa": "Packham, N. (2021). Correlation scenarios and correlation stress testing. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Natalie Packham",
+      "author_orcid": "0000-0002-8065-747X",
+      "type": "other"
+    },
+    {
+      "id": 220,
+      "apa": "Packham, N. (2021). Hedging Cryptocurrency options. *arXiv*. https://doi.org/10.48550/arXiv.2112.06807",
+      "doi": "https://doi.org/10.48550/arXiv.2112.06807",
+      "year": 2021,
+      "author": "Natalie Packham",
+      "author_orcid": "0000-0002-8065-747X",
+      "type": "other"
+    },
+    {
+      "id": 221,
+      "apa": "Packham, N. (2021). Hedging cryptocurrency options. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Natalie Packham",
+      "author_orcid": "0000-0002-8065-747X",
+      "type": "other"
+    },
+    {
+      "id": 222,
+      "apa": "Chlebus, M. (2021). Enabling machine learning algorithms for credit scoring - Explainable artificial intelligence (XAI) methods for clear understanding complex predictive models. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Marcin Chlebus",
+      "author_orcid": "0000-0002-9149-1065",
+      "type": "other"
+    },
+    {
+      "id": 223,
+      "apa": "Sousa, S. M. A. d. (2021). Artificial Intelligence in the Economic Sector: Prevention and Responsability. https://doi.org/DOI: 10.47907/livro2021_4",
+      "doi": "https://doi.org/DOI: 10.47907/livro2021_4",
+      "year": 2021,
+      "author": "Susana Maria Aires de Sousa",
+      "author_orcid": "0000-0003-4808-2466",
+      "type": "other"
+    },
+    {
+      "id": 224,
+      "apa": "Krištoufek, L. (2021). Diversification Among Cryptoassets: Bitcoin Maximalism, Active Portfolio Management, and Survival Bias.",
+      "doi": null,
+      "year": 2021,
+      "author": "Ladislav Krištoufek",
+      "author_orcid": "0000-0003-4843-9373",
+      "type": "other"
+    },
+    {
+      "id": 225,
+      "apa": "Krištoufek, L. (2021). Return and Volatility Spillovers between Chinese and U.S. Clean Energy Related Stocks: Evidence from Var-Mgarch Estimations. *SSRN*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Ladislav Krištoufek",
+      "author_orcid": "0000-0003-4843-9373",
+      "type": "other"
+    },
+    {
+      "id": 226,
+      "apa": "Óskarsdóttir, M. (2021). The past, present and future of learning analytics. *Proceedings of the Annual Hawaii International Conference on System Sciences*.",
+      "doi": null,
+      "year": 2021,
+      "author": "María Óskarsdóttir",
+      "author_orcid": "0000-0001-5095-5356",
+      "type": "other"
+    },
+    {
+      "id": 227,
+      "apa": "Valle, L. D. (2021). A new data integration framework for covid-19 social media information. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Luciana Dalla Valle",
+      "author_orcid": "0000-0001-7506-5712",
+      "type": "other"
+    },
+    {
+      "id": 228,
+      "apa": "Valle, L. D. (2021). Approximate Bayesian conditional copulas. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Luciana Dalla Valle",
+      "author_orcid": "0000-0001-7506-5712",
+      "type": "other"
+    },
+    {
+      "id": 229,
+      "apa": "Valle, L. D. (2021). Social media integration of flood data: A vine copula-based approach. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Luciana Dalla Valle",
+      "author_orcid": "0000-0001-7506-5712",
+      "type": "other"
+    },
+    {
+      "id": 230,
+      "apa": "Mihus, I. (2021). Імплементація моделі інноваційного туристичного продукту в Україні: фінансово-економічні аспекти.",
+      "doi": null,
+      "year": 2021,
+      "author": "Iryna Mihus",
+      "author_orcid": "0000-0001-6939-9097",
+      "type": "other"
+    },
+    {
+      "id": 231,
+      "apa": "Plihal, T. (2021). Non-Standard Errors. *SSRN*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Tomas Plihal",
+      "author_orcid": "0000-0002-2578-488X",
+      "type": "other"
+    },
+    {
+      "id": 232,
+      "apa": "Azevedo, A. I. (2021). Escola de Verão em Transformação Digital -Dimensões Organizacionais e Societais. *Fórum Interno P.PORTO*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Ana Isabel Azevedo",
+      "author_orcid": "0000-0003-0882-3426",
+      "type": "conference-poster"
+    },
+    {
+      "id": 233,
+      "apa": "Azevedo, A. I. (2021). Preface (Advancing the Power of Learning Analytics and Big Data in Education).",
+      "doi": null,
+      "year": 2021,
+      "author": "Ana Isabel Azevedo",
+      "author_orcid": "0000-0003-0882-3426",
+      "type": "other"
+    },
+    {
+      "id": 234,
+      "apa": "Azevedo, A. I. (2021). Preface (Integration Challenges for Analytics, Business Intelligence, and Data Mining).",
+      "doi": null,
+      "year": 2021,
+      "author": "Ana Isabel Azevedo",
+      "author_orcid": "0000-0003-0882-3426",
+      "type": "other"
+    },
+    {
+      "id": 235,
+      "apa": "Azevedo, A. I. (2021). Regular Issue: Volume  12, Issue 2. *International Jornal of Business Intelligence Research*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Ana Isabel Azevedo",
+      "author_orcid": "0000-0003-0882-3426",
+      "type": "journal-issue"
+    },
+    {
+      "id": 236,
+      "apa": "Azevedo, A. I. (2021). Special Issue: Learning Analytics: Understanding, Optimizing and Impacts. *International Journal of Information and Learning Technology*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Ana Isabel Azevedo",
+      "author_orcid": "0000-0003-0882-3426",
+      "type": "journal-issue"
+    },
+    {
+      "id": 237,
+      "apa": "Dellaportas, P. (2021). Detecting anomalies in heterogeneous population-scale VAT networks. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Petros Dellaportas",
+      "author_orcid": "0000-0002-0117-8447",
+      "type": "other"
+    },
+    {
+      "id": 238,
+      "apa": "Dellaportas, P. (2021). Entropy-based adaptive Hamiltonian Monte Carlo. *arXiv*.",
+      "doi": null,
+      "year": 2021,
+      "author": "Petros Dellaportas",
+      "author_orcid": "0000-0002-0117-8447",
+      "type": "other"
+    },
+    {
+      "id": 239,
+      "apa": "Türk, S. & Sahin, G. (2020). Corrigendum to “Multi-criteria decision-making in the location selection for a solar PV power plant using AHP” [Measurement 129 (2018) 218–226]. *Measurement*. https://doi.org/10.1016/j.measurement.2019.107384",
+      "doi": "https://doi.org/10.1016/j.measurement.2019.107384",
+      "year": 2020,
+      "author": "Seda AKTURK",
+      "author_orcid": "0000-0001-9045-0694",
+      "type": "erratum"
+    },
+    {
+      "id": 240,
+      "apa": "Mihus, I. (2020). Book of abstracts. https://doi.org/10.36690/apaei.2020.80",
+      "doi": "https://doi.org/10.36690/apaei.2020.80",
+      "year": 2020,
+      "author": "Iryna Mihus",
+      "author_orcid": "0000-0001-6939-9097",
+      "type": "paratext"
+    },
+    {
+      "id": 241,
+      "apa": "Ärje, J., Melvad, C., Jeppesen, M. R., Madsen, S. A., Raitoharju, J., Rasmussen, M. S., Iosifidis, A., Tirronen, V., Gabbouj, M., Meissner, K., & Høye, T. T. (2020). Author response for \"Automatic image‐based identification and biomass estimation of invertebrates\". https://doi.org/10.1111/2041-210x.13428/v2/response1",
+      "doi": "https://doi.org/10.1111/2041-210x.13428/v2/response1",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "peer-review"
+    },
+    {
+      "id": 242,
+      "apa": "Schwendner, P. (2020). Convergence and divergence in European sovereign bonds. *Zürcher Hochschule für Angewandte Wissenschaften digital collection (Zurich University of Applied Sciences)*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Peter Schwendner",
+      "author_orcid": "0000-0001-9366-3564",
+      "type": "other"
+    },
+    {
+      "id": 243,
+      "apa": "Gramespacher, T. & Posth, J. (2020). P2P lending : employing explainable AI to optimize the return target function of a loan portfolio. *Zürcher Hochschule für Angewandte Wissenschaften digital collection (Zurich University of Applied Sciences)*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Jan-Alexander Posth",
+      "author_orcid": "0000-0002-5898-0676",
+      "type": "other"
+    },
+    {
+      "id": 244,
+      "apa": "Hájek, P. & Vít, O. (2020). Front Matter: Volume 1. *Proceedings of CBU in Social Sciences*. https://doi.org/10.12955/pss.v1.131",
+      "doi": "https://doi.org/10.12955/pss.v1.131",
+      "year": 2020,
+      "author": "Petr Hajek",
+      "author_orcid": "0000-0001-5579-1215",
+      "type": "paratext"
+    },
+    {
+      "id": 245,
+      "apa": "Saunders, C. L., Treasurer, H., Shepherd, Dwyer, J., Ang, F., Davis, J., Legg, W., Butler, A., Siettou, C., Davies, G., Chalmers, N., Bayley, B., Roberts, D. F., Brooks, J. D., Gadanakis, Y., Curnow, J., Adenuga, A. H., Bourne, M., Patton, M., ... Ramsden, S. J. (2020). Issue Information. *Journal of Agricultural Economics*. https://doi.org/10.1111/1477-9552.12348",
+      "doi": "https://doi.org/10.1111/1477-9552.12348",
+      "year": 2020,
+      "author": "Mike Tsionas",
+      "author_orcid": "0000-0003-3761-8106",
+      "type": "paratext"
+    },
+    {
+      "id": 246,
+      "apa": "Goundar, S. (2020). FRONT MATTER. https://doi.org/10.1142/9789811205279_fmatter",
+      "doi": "https://doi.org/10.1142/9789811205279_fmatter",
+      "year": 2020,
+      "author": "Sam Goundar",
+      "author_orcid": "0000-0001-6465-1097",
+      "type": "paratext"
+    },
+    {
+      "id": 247,
+      "apa": "Goundar, S. (2020). BACK MATTER. https://doi.org/10.1142/9789811205279_bmatter",
+      "doi": "https://doi.org/10.1142/9789811205279_bmatter",
+      "year": 2020,
+      "author": "Sam Goundar",
+      "author_orcid": "0000-0001-6465-1097",
+      "type": "paratext"
+    },
+    {
+      "id": 248,
+      "apa": "Friel, N., Smith, P., Canale, A., Demiris, N., Fan, Y., Gaetan, C., Huang, X., Iannario, M., Jaki, T., Jermyn, I. H., Καλογερόπουλος, Κ., Latouche, P., Liverani, S., Marra, G., Mateu, J., Menezes, R. X. D., Ntzoufras, I., Oberski, D. L., Paparmarkou, T., ... Prangle, D. (2020). Issue Information. *Journal of the Royal Statistical Society Series C (Applied Statistics)*. https://doi.org/10.1111/rssc.12359",
+      "doi": "https://doi.org/10.1111/rssc.12359",
+      "year": 2020,
+      "author": "Maria Iannario",
+      "author_orcid": "0000-0002-2646-9937",
+      "type": "paratext"
+    },
+    {
+      "id": 249,
+      "apa": "Friel, N., Smith, P., Canale, A., Demiris, N., Fan, Y., Gaetan, C., Huang, X., Iannario, M., Jaki, T., Jermyn, I. H., Καλογερόπουλος, Κ., Latouche, P., Liverani, S., Marra, G., Mateu, J., Menezes, R. X. D., Ntzoufras, I., Oberski, D. L., Papamarkou, T., ... Prangle, D. (2020). Issue Information. *Journal of the Royal Statistical Society Series C (Applied Statistics)*. https://doi.org/10.1111/rssc.12361",
+      "doi": "https://doi.org/10.1111/rssc.12361",
+      "year": 2020,
+      "author": "Maria Iannario",
+      "author_orcid": "0000-0002-2646-9937",
+      "type": "paratext"
+    },
+    {
+      "id": 250,
+      "apa": "Friel, N., Smith, P., Canale, A., Demiris, N., Fan, Y., Gaetan, C., Huang, X., Iannario, M., Jaki, T., Jermyn, I. H., Καλογερόπουλος, Κ., Latouche, P., Liverani, S., Marra, G., Mateu, J., Menezes, R. X. D., Ntzoufras, I., Oberski, D. L., Paparmarkou, T., ... Prangle, D. (2020). Issue Information. *Journal of the Royal Statistical Society Series C (Applied Statistics)*. https://doi.org/10.1111/rssc.12362",
+      "doi": "https://doi.org/10.1111/rssc.12362",
+      "year": 2020,
+      "author": "Maria Iannario",
+      "author_orcid": "0000-0002-2646-9937",
+      "type": "paratext"
+    },
+    {
+      "id": 251,
+      "apa": "Masera, D., Laurentis, D. D., Pavanati, C., Salis, F., Compagnoni, G., Andreatta, C., Consiglio, A., Zenios, S. A., Di, G., Zanoni, D., Decherchi, C., Giribone, P. G., Vallino, M., Corrado, C., Consiglio, M., Giampaolo, S., Direttore, G., Consiglio, D., Bertelli, R., ... Bongini, P. (2020). None. *Risk Management Magazine*. https://doi.org/10.47473/2020rrm0001",
+      "doi": "https://doi.org/10.47473/2020rrm0001",
+      "year": 2020,
+      "author": "Simona Cosma",
+      "author_orcid": "0000-0002-9167-2237",
+      "type": "paratext"
+    },
+    {
+      "id": 252,
+      "apa": "Frazzei, C., Bonini, G., Burigo, M., Ciarambino, F., Brogi, M., Sartor, L., Quaranta, A. G., Lagasio, V., Pinto, M., Pentola, A., Verachi, F., Trussoni, L., Lanzi, L., Fabbri, D., Giribone, P. G., Mazzeo, R., Gianfrancesco, I., Colnago, D., Vallino, M., ... Corrado, C. (2020). None. *Risk Management Magazine*. https://doi.org/10.47473/2020rmm0010",
+      "doi": "https://doi.org/10.47473/2020rmm0010",
+      "year": 2020,
+      "author": "Simona Cosma",
+      "author_orcid": "0000-0002-9167-2237",
+      "type": "paratext"
+    },
+    {
+      "id": 253,
+      "apa": "Muluk, N. B. (2020). Review for \"The assessment of the balance system in cranial artery stenosis\". https://doi.org/10.1002/brb3.1695/v1/review3",
+      "doi": "https://doi.org/10.1002/brb3.1695/v1/review3",
+      "year": 2020,
+      "author": "Nuray Bayar Muluk",
+      "author_orcid": "0000-0003-3602-9289",
+      "type": "peer-review"
+    },
+    {
+      "id": 254,
+      "apa": "Rodrigo, G. (2020). Asymptotic expansions through the loop-tree duality. *arXiv*. https://doi.org/10.48550/arxiv.2005.02119",
+      "doi": "https://doi.org/10.48550/arxiv.2005.02119",
+      "year": 2020,
+      "author": "German Rodrigo",
+      "author_orcid": "0000-0003-0451-0529",
+      "type": "other"
+    },
+    {
+      "id": 255,
+      "apa": "Rodrigo, G. (2020). Causal representation of multi-loop amplitudes within the loop-tree duality. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "German Rodrigo",
+      "author_orcid": "0000-0003-0451-0529",
+      "type": "other"
+    },
+    {
+      "id": 256,
+      "apa": "Rodrigo, G. (2020). Mathematical properties of nested residues and their application to multi-loop scattering amplitudes. *arXiv*. https://doi.org/10.48550/arxiv.2010.12971",
+      "doi": "https://doi.org/10.48550/arxiv.2010.12971",
+      "year": 2020,
+      "author": "German Rodrigo",
+      "author_orcid": "0000-0003-0451-0529",
+      "type": "other"
+    },
+    {
+      "id": 257,
+      "apa": "Rodrigo, G. (2020). May the four be with you: Novel IR-subtraction methods to tackle NNLO calculations. *arXiv*. https://doi.org/10.48550/arxiv.2012.02567",
+      "doi": "https://doi.org/10.48550/arxiv.2012.02567",
+      "year": 2020,
+      "author": "German Rodrigo",
+      "author_orcid": "0000-0003-0451-0529",
+      "type": "other"
+    },
+    {
+      "id": 258,
+      "apa": "Rodrigo, G. (2020). Open loop amplitudes and causality to all orders and powers from the loop-tree duality. *arXiv*. https://doi.org/10.48550/arxiv.2001.03564",
+      "doi": "https://doi.org/10.48550/arxiv.2001.03564",
+      "year": 2020,
+      "author": "German Rodrigo",
+      "author_orcid": "0000-0003-0451-0529",
+      "type": "other"
+    },
+    {
+      "id": 259,
+      "apa": "Rodrigo, G. (2020). Universal opening of four-loop scattering amplitudes to trees. *arXiv*. https://doi.org/10.48550/arxiv.2006.13818",
+      "doi": "https://doi.org/10.48550/arxiv.2006.13818",
+      "year": 2020,
+      "author": "German Rodrigo",
+      "author_orcid": "0000-0003-0451-0529",
+      "type": "other"
+    },
+    {
+      "id": 260,
+      "apa": "Iosifidis, A. (2020). Attention-based neural bag-of-features learning for sequence data. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 261,
+      "apa": "Iosifidis, A. (2020). Augmenting transferred representations for stock classification. *arXiv*. https://doi.org/10.48550/arxiv.2011.04545",
+      "doi": "https://doi.org/10.48550/arxiv.2011.04545",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 262,
+      "apa": "Iosifidis, A. (2020). Augmenting transferred representations for stock classification. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 263,
+      "apa": "Iosifidis, A. (2020). Automatic image-based identification and biomass estimation of invertebrates. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 264,
+      "apa": "Iosifidis, A. (2020). CloudCast: A satellite-based dataset and baseline for forecasting clouds. *arXiv*. https://doi.org/10.48550/arxiv.2007.07978",
+      "doi": "https://doi.org/10.48550/arxiv.2007.07978",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 265,
+      "apa": "Iosifidis, A. (2020). CloudCast: A satellite-based dataset and baseline for forecasting clouds. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 266,
+      "apa": "Iosifidis, A. (2020). Data normalization for bilinear structures in high-frequency financial time-series. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 267,
+      "apa": "Iosifidis, A. (2020). Ellipsoidal subspace support vector data description. *arXiv*. https://doi.org/10.48550/arxiv.2003.09504",
+      "doi": "https://doi.org/10.48550/arxiv.2003.09504",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 268,
+      "apa": "Iosifidis, A. (2020). Ellipsoidal subspace support vector data description. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 269,
+      "apa": "Iosifidis, A. (2020). Exploiting heterogeneity in operational neural networks by synaptic plasticity. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 270,
+      "apa": "Iosifidis, A. (2020). Graph embedding with data uncertainty. *arXiv*. https://doi.org/10.48550/arxiv.2009.00505",
+      "doi": "https://doi.org/10.48550/arxiv.2009.00505",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 271,
+      "apa": "Iosifidis, A. (2020). Graph embedding with data uncertainty. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 272,
+      "apa": "Iosifidis, A. (2020). Incremental fast subclass discriminant analysis. *arXiv*. https://doi.org/10.48550/arxiv.2002.04348",
+      "doi": "https://doi.org/10.48550/arxiv.2002.04348",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 273,
+      "apa": "Iosifidis, A. (2020). Incremental fast subclass discriminant analysis. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 274,
+      "apa": "Iosifidis, A. (2020). Monte Carlo Dropout Ensembles for Robust Illumination Estimation. *arXiv*. https://doi.org/10.48550/arxiv.2007.10114",
+      "doi": "https://doi.org/10.48550/arxiv.2007.10114",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 275,
+      "apa": "Iosifidis, A. (2020). Monte Carlo Dropout Ensembles for Robust Illumination Estimation. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 276,
+      "apa": "Iosifidis, A. (2020). Multilinear compressive learning with prior knowledge. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 277,
+      "apa": "Iosifidis, A. (2020). Not all domains are equally complex: Adaptive multi-domain learning. *arXiv*. https://doi.org/10.48550/arxiv.2003.11504",
+      "doi": "https://doi.org/10.48550/arxiv.2003.11504",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 278,
+      "apa": "Iosifidis, A. (2020). Not all domains are equally complex: Adaptive multi-domain learning. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 279,
+      "apa": "Iosifidis, A. (2020). On the spatial attention in spatio-temporal graph convolutional networks for skeleton-based human action recognition. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 280,
+      "apa": "Iosifidis, A. (2020). Performance indicator in multilinear compressive learning. *arXiv*. https://doi.org/10.48550/arxiv.2009.10456",
+      "doi": "https://doi.org/10.48550/arxiv.2009.10456",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 281,
+      "apa": "Iosifidis, A. (2020). Performance indicator in multilinear compressive learning. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 282,
+      "apa": "Iosifidis, A. (2020). Probabilistic color constancy. *arXiv*. https://doi.org/10.48550/arxiv.2005.02730",
+      "doi": "https://doi.org/10.48550/arxiv.2005.02730",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 283,
+      "apa": "Iosifidis, A. (2020). Probabilistic color constancy. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 284,
+      "apa": "Iosifidis, A. (2020). Progressive Graph Convolutional Networks for Semi-Supervised Node Classification. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 285,
+      "apa": "Iosifidis, A. (2020). Progressive Spatio-Temporal Graph Convolutional Network for Skeleton-Based Human Action Recognition. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 286,
+      "apa": "Iosifidis, A. (2020). Saliency-based Weighted Multi-label Linear Discriminant Analysis. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 287,
+      "apa": "Iosifidis, A. (2020). Self-organized operational neural networks with generative neurons. *arXiv*. https://doi.org/10.48550/arxiv.2004.11778",
+      "doi": "https://doi.org/10.48550/arxiv.2004.11778",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 288,
+      "apa": "Iosifidis, A. (2020). Self-organized operational neural networks with generative neurons. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 289,
+      "apa": "Iosifidis, A. (2020). Speech command recognition in computationally constrained environments with a quadratic self-organized operational layer. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 290,
+      "apa": "Iosifidis, A. (2020). Subset sampling for progressive neural network learning. *arXiv*. https://doi.org/10.48550/arxiv.2002.07141",
+      "doi": "https://doi.org/10.48550/arxiv.2002.07141",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 291,
+      "apa": "Iosifidis, A. (2020). Subset sampling for progressive neural network learning. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 292,
+      "apa": "Iosifidis, A. (2020). Supervised Domain Adaptation using Graph Embedding. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 293,
+      "apa": "Iosifidis, A. (2020). Supervised domain adaptation using graph embedding. *arXiv*. https://doi.org/10.48550/arxiv.2003.04063",
+      "doi": "https://doi.org/10.48550/arxiv.2003.04063",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 294,
+      "apa": "Iosifidis, A. (2020). Supervised domain adaptation: A graph embedding perspective and a rectified experimental protocol. *arXiv*. https://doi.org/10.48550/arxiv.2004.11262",
+      "doi": "https://doi.org/10.48550/arxiv.2004.11262",
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 295,
+      "apa": "Iosifidis, A. (2020). Supervised domain adaptation: A graph embedding perspective and a rectified experimental protocol. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 296,
+      "apa": "Iosifidis, A. (2020). Temporal attention-augmented graph convolutional network for efficient skeleton-based human action recognition. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Alexandros Iosifidis",
+      "author_orcid": "0000-0003-4807-1345",
+      "type": "other"
+    },
+    {
+      "id": 297,
+      "apa": "Persio, L. D. (2020). The continuous-time frog model can spread arbitrarily fast. *arXiv*. https://doi.org/10.48550/arxiv.2005.12970",
+      "doi": "https://doi.org/10.48550/arxiv.2005.12970",
+      "year": 2020,
+      "author": "Luca Di Persio",
+      "author_orcid": "0000-0002-0317-4351",
+      "type": "other"
+    },
+    {
+      "id": 298,
+      "apa": "Pele, D. T. (2020). Phenotypic Convergence of Cryptocurrencies. *SSRN*. https://doi.org/10.2139/ssrn.3658082",
+      "doi": "https://doi.org/10.2139/ssrn.3658082",
+      "year": 2020,
+      "author": "Daniel Traian Pele",
+      "author_orcid": "0000-0002-5891-5495",
+      "type": "other"
+    },
+    {
+      "id": 299,
+      "apa": "Posth, J. (2020). Climate indices for listed equity : comparing different methods to minimise climate risk exposure.",
+      "doi": null,
+      "year": 2020,
+      "author": "Jan-Alexander Posth",
+      "author_orcid": "0000-0002-5898-0676",
+      "type": "other"
+    },
+    {
+      "id": 300,
+      "apa": "Posth, J. (2020). ESG 4.0 : enabling sustainable and responsible investment leveraging AI and big data.",
+      "doi": null,
+      "year": 2020,
+      "author": "Jan-Alexander Posth",
+      "author_orcid": "0000-0002-5898-0676",
+      "type": "other"
+    },
+    {
+      "id": 301,
+      "apa": "Packham, N. (2020). Structured climate financing: valuation of CDOs on inhomogeneous asset pools. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Natalie Packham",
+      "author_orcid": "0000-0002-8065-747X",
+      "type": "other"
+    },
+    {
+      "id": 302,
+      "apa": "Krištoufek, L. (2020). Grandpa, grandpa, tell me the one about Bitcoin being a safe haven: Evidence from the COVID-19 pandemics. *arXiv*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Ladislav Krištoufek",
+      "author_orcid": "0000-0003-4843-9373",
+      "type": "other"
+    },
+    {
+      "id": 303,
+      "apa": "TIDJANI, C. (2020). قطاع تكنولوجيا المعلومات والاتصال كأحد الخيارات الاستراتيجية المساهمة في نمو الاقتصاد الجزائري أيّ مقومات، وأي تحديات وما هي المتطلبات المستقبلية ؟. *Numérisation et innovation: Quels défis pour l’économie Algérienne*. https://doi.org/10.13140/RG.2.2.19221.68322",
+      "doi": "https://doi.org/10.13140/RG.2.2.19221.68322",
+      "year": 2020,
+      "author": "Chemseddine TIDJANI",
+      "author_orcid": "0000-0002-1058-9520",
+      "type": "conference-abstract"
+    },
+    {
+      "id": 304,
+      "apa": "Mihus, I. (2020). Взаємозв’язок  антикризового управління із системою економічної безпеки банків . *Менеджмент і безпека: теоретичні та прикладні аспекти*.",
+      "doi": null,
+      "year": 2020,
+      "author": "Iryna Mihus",
+      "author_orcid": "0000-0001-6939-9097",
+      "type": "conference-abstract"
+    },
+    {
+      "id": 305,
+      "apa": "Mihus, I. (2020). ЗАСТОСУВАННЯ МОДЕЛІ НАСКРІЗНОЇ ОПТИМІЗАЦІЇ ФІНАНСОВИХ І МАТЕРІАЛЬНИХ ПОТОКІВ У МЕХАНІЗМІ ЗАБЕЗПЕЧЕННЯ ФІНАНСОВОЇ БЕЗПЕКИ НА ПІДПРИЄМСТВАХ ОБОРОННОЇ ПРОМИСЛОВОСТ.",
+      "doi": null,
+      "year": 2020,
+      "author": "Iryna Mihus",
+      "author_orcid": "0000-0001-6939-9097",
+      "type": "other"
+    },
+    {
+      "id": 306,
+      "apa": "Mihus, I. (2020). УДОСКОНАЛЕННЯ МЕТОДОЛОГІЧНОГО ПІДХОДУ ДО ОЦІНЮВАННЯ ВПЛИВУ ДЕРЖАВНОГО УПРАВЛІННЯ НА ЗАБЕЗПЕЧЕННЯ ЕКОНОМІЧНОЇ БЕЗПЕКИ ДЕРЖАВИ.",
+      "doi": null,
+      "year": 2020,
+      "author": "Iryna Mihus",
+      "author_orcid": "0000-0001-6939-9097",
+      "type": "other"
+    }
+  ]
+}

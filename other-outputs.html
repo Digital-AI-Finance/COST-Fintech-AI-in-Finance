@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Publications - COST Action CA19130</title>
+    <title>Other Outputs - COST Action CA19130</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <style>
@@ -70,7 +70,7 @@
         nav a:hover { color: white; }
 
         .header {
-            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%);
+            background: linear-gradient(135deg, var(--cost-orange) 0%, var(--cost-purple) 100%);
             color: white;
             padding: 6rem 2rem 2rem;
             text-align: center;
@@ -114,12 +114,31 @@
         }
 
         .nav-pills a:hover { background: rgba(255,255,255,0.3); }
-        .nav-pills a.active { background: white; color: var(--cost-purple); }
+        .nav-pills a.active { background: white; color: var(--cost-orange); }
 
         .container {
             max-width: 1200px;
             margin: 0 auto;
             padding: 2rem;
+        }
+
+        .info-box {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+        }
+
+        .info-box h3 {
+            font-size: 1rem;
+            color: var(--cost-orange);
+            margin-bottom: 0.5rem;
+        }
+
+        .info-box p {
+            font-size: 0.9rem;
+            color: var(--gray);
         }
 
         .charts-section {
@@ -177,7 +196,7 @@
 
         .filters input:focus, .filters select:focus {
             outline: none;
-            border-color: var(--cost-purple);
+            border-color: var(--cost-orange);
         }
 
         .results-info {
@@ -190,18 +209,6 @@
             flex-wrap: wrap;
             gap: 0.5rem;
         }
-
-        .export-btn {
-            background: var(--cost-purple);
-            color: white;
-            border: none;
-            padding: 0.5rem 1rem;
-            border-radius: 6px;
-            font-size: 0.85rem;
-            cursor: pointer;
-        }
-
-        .export-btn:hover { background: var(--cost-blue); }
 
         .publications-list {
             background: white;
@@ -217,7 +224,7 @@
 
         .pub-item:last-child { border-bottom: none; }
 
-        .pub-item:hover { background: rgba(91, 45, 138, 0.02); }
+        .pub-item:hover { background: rgba(232, 119, 34, 0.02); }
 
         .pub-citation {
             font-size: 0.9rem;
@@ -248,18 +255,18 @@
         }
 
         .pub-badge.year {
+            background: rgba(232, 119, 34, 0.1);
+            color: var(--cost-orange);
+        }
+
+        .pub-badge.type {
             background: rgba(91, 45, 138, 0.1);
             color: var(--cost-purple);
         }
 
-        .pub-badge.type {
+        .pub-badge.author {
             background: rgba(43, 95, 158, 0.1);
             color: var(--cost-blue);
-        }
-
-        .pub-badge.author {
-            background: rgba(0, 160, 176, 0.1);
-            color: var(--cost-teal);
         }
 
         .pagination {
@@ -281,9 +288,9 @@
 
         .pagination button:hover,
         .pagination button.active {
-            background: var(--cost-purple);
+            background: var(--cost-orange);
             color: white;
-            border-color: var(--cost-purple);
+            border-color: var(--cost-orange);
         }
 
         .pagination button:disabled {
@@ -326,51 +333,49 @@
             <ul>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="leadership.html">Leadership</a></li>
-                <li><a href="mc-members.html">MC</a></li>
-                <li><a href="wg-members.html">WG</a></li>
-                <li><a href="publications.html" style="color: white; font-weight: 600;">Publications</a></li>
-                <li><a href="midterm-report.html">Mid-Term</a></li>
-                <li><a href="progress-reports.html">Progress</a></li>
-                <li><a href="final-report.html">Final</a></li>
+                <li><a href="mc-members.html">MC Members</a></li>
+                <li><a href="wg-members.html">WG Members</a></li>
+                <li><a href="publications.html">Publications</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="header">
-        <h1>Publications</h1>
-        <p>Research output by COST Action CA19130 members (2020-2025)</p>
+        <h1>Other Outputs</h1>
+        <p>Additional scholarly outputs by COST Action CA19130 members</p>
         <div class="stats-row">
             <div class="stat-item">
                 <div class="stat-number" id="totalPubs">-</div>
-                <div class="stat-label">Publications</div>
+                <div class="stat-label">Items</div>
             </div>
             <div class="stat-item">
                 <div class="stat-number" id="totalAuthors">-</div>
-                <div class="stat-label">Authors</div>
-            </div>
-            <div class="stat-item">
-                <div class="stat-number" id="totalDOIs">-</div>
-                <div class="stat-label">With DOI</div>
+                <div class="stat-label">Contributors</div>
             </div>
         </div>
         <div class="nav-pills">
-            <a href="publications.html" class="active">Publications</a>
+            <a href="publications.html">Publications</a>
             <a href="preprints.html">Preprints</a>
             <a href="datasets.html">Datasets</a>
-            <a href="other-outputs.html">Other</a>
+            <a href="other-outputs.html" class="active">Other</a>
         </div>
     </header>
 
     <div class="container">
+        <div class="info-box">
+            <h3>About This Category</h3>
+            <p>This page contains scholarly outputs that don't fit into the main categories: peer-review reports, errata/corrections, paratext (front/back matter), conference posters and abstracts, and other miscellaneous academic contributions.</p>
+        </div>
+
         <div class="charts-section">
             <div class="chart-card">
-                <h3>Publications by Year</h3>
+                <h3>By Year</h3>
                 <div class="chart-wrapper">
                     <canvas id="yearChart"></canvas>
                 </div>
             </div>
             <div class="chart-card">
-                <h3>Publications by Type</h3>
+                <h3>By Type</h3>
                 <div class="chart-wrapper">
                     <canvas id="typeChart"></canvas>
                 </div>
@@ -381,12 +386,6 @@
             <input type="text" id="searchInput" placeholder="Search title, author, or DOI...">
             <select id="yearFilter">
                 <option value="">All Years</option>
-                <option value="2025">2025</option>
-                <option value="2024">2024</option>
-                <option value="2023">2023</option>
-                <option value="2022">2022</option>
-                <option value="2021">2021</option>
-                <option value="2020">2020</option>
             </select>
             <select id="typeFilter">
                 <option value="">All Types</option>
@@ -397,12 +396,11 @@
         </div>
 
         <div class="results-info">
-            <span id="resultsInfo">Loading publications...</span>
-            <button class="export-btn" onclick="exportBibTeX()">Export BibTeX</button>
+            <span id="resultsInfo">Loading...</span>
         </div>
 
         <div class="publications-list" id="pubsList">
-            <div class="loading">Loading publications...</div>
+            <div class="loading">Loading...</div>
         </div>
 
         <div class="pagination" id="pagination"></div>
@@ -419,38 +417,40 @@
         let currentPage = 1;
         const itemsPerPage = 25;
 
-        // Load publications
-        fetch('data/publications_main.json')
+        fetch('data/other_outputs.json')
             .then(r => r.json())
             .then(data => {
                 pubData = data;
                 filteredPubs = [...data.publications];
 
-                // Update header stats
                 document.getElementById('totalPubs').textContent = data.metadata.total_publications.toLocaleString();
                 document.getElementById('totalAuthors').textContent = data.metadata.total_authors;
-                document.getElementById('totalDOIs').textContent = data.metadata.unique_dois.toLocaleString();
 
-                // Populate filters
                 populateFilters();
-
-                // Render charts
                 renderCharts();
-
-                // Render list
                 renderList();
             })
             .catch(err => {
                 console.error(err);
-                document.getElementById('pubsList').innerHTML = '<div class="loading">Error loading publications.</div>';
+                document.getElementById('pubsList').innerHTML = '<div class="loading">Error loading data.</div>';
             });
 
         function populateFilters() {
+            // Years
+            const years = Object.keys(pubData.statistics.by_year).sort().reverse();
+            const yearSelect = document.getElementById('yearFilter');
+            years.forEach(y => {
+                const opt = document.createElement('option');
+                opt.value = y;
+                opt.textContent = `${y} (${pubData.statistics.by_year[y]})`;
+                yearSelect.appendChild(opt);
+            });
+
             // Types
             const types = Object.keys(pubData.statistics.by_type).sort((a, b) =>
                 pubData.statistics.by_type[b] - pubData.statistics.by_type[a]);
             const typeSelect = document.getElementById('typeFilter');
-            types.slice(0, 15).forEach(t => {
+            types.forEach(t => {
                 const opt = document.createElement('option');
                 opt.value = t;
                 opt.textContent = `${t} (${pubData.statistics.by_type[t]})`;
@@ -469,7 +469,7 @@
         }
 
         function renderCharts() {
-            const colors = ['#5B2D8A', '#2B5F9E', '#00A0B0', '#E87722', '#7AB800', '#D4A5A5'];
+            const colors = ['#E87722', '#5B2D8A', '#2B5F9E', '#00A0B0', '#7AB800', '#D4A5A5'];
 
             // Year chart
             const years = Object.entries(pubData.statistics.by_year)
@@ -549,17 +549,16 @@
             const pagePubs = filteredPubs.slice(start, end);
 
             if (filteredPubs.length === 0) {
-                list.innerHTML = '<div class="loading">No publications match your filters.</div>';
+                list.innerHTML = '<div class="loading">No items match your filters.</div>';
                 document.getElementById('resultsInfo').textContent = 'No results';
                 document.getElementById('pagination').innerHTML = '';
                 return;
             }
 
             document.getElementById('resultsInfo').innerHTML =
-                `<span>Showing ${start + 1}-${Math.min(end, filteredPubs.length)} of ${filteredPubs.length.toLocaleString()} publications</span>`;
+                `<span>Showing ${start + 1}-${Math.min(end, filteredPubs.length)} of ${filteredPubs.length.toLocaleString()} items</span>`;
 
             list.innerHTML = pagePubs.map(p => {
-                // Make DOI clickable in APA citation
                 let apa = p.apa || '';
                 if (p.doi) {
                     const doiUrl = p.doi.startsWith('http') ? p.doi : `https://doi.org/${p.doi}`;
@@ -627,27 +626,6 @@
             }
         }
 
-        function exportBibTeX() {
-            // Simple BibTeX export
-            let bibtex = '';
-            filteredPubs.slice(0, 100).forEach((p, i) => {
-                const key = `pub${p.id || i}`;
-                bibtex += `@article{${key},\n`;
-                bibtex += `  title = {${(p.apa || '').split('.')[1] || 'Unknown'}},\n`;
-                bibtex += `  author = {${p.author || 'Unknown'}},\n`;
-                bibtex += `  year = {${p.year || 'n.d.'}},\n`;
-                if (p.doi) bibtex += `  doi = {${p.doi}},\n`;
-                bibtex += `}\n\n`;
-            });
-
-            const blob = new Blob([bibtex], { type: 'text/plain' });
-            const a = document.createElement('a');
-            a.href = URL.createObjectURL(blob);
-            a.download = 'cost_ca19130_publications.bib';
-            a.click();
-        }
-
-        // Event listeners
         document.getElementById('searchInput').addEventListener('input', filterPubs);
         document.getElementById('yearFilter').addEventListener('change', filterPubs);
         document.getElementById('typeFilter').addEventListener('change', filterPubs);
