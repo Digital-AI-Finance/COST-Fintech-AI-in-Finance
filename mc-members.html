@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Members - COST Action CA19130</title>
+    <title>Management Committee - COST Action CA19130</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -93,6 +93,30 @@
             opacity: 0.9;
         }
 
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
         .container {
             max-width: 1400px;
             margin: 0 auto;
@@ -126,7 +150,7 @@
             border-radius: 8px;
             font-size: 0.95rem;
             background: white;
-            min-width: 150px;
+            min-width: 180px;
         }
 
         .filters input:focus,
@@ -167,10 +191,19 @@
             text-transform: uppercase;
             letter-spacing: 0.05em;
             cursor: pointer;
+            user-select: none;
         }
 
         th:hover {
             background: var(--cost-blue);
+        }
+
+        th.sorted-asc::after {
+            content: ' ^';
+        }
+
+        th.sorted-desc::after {
+            content: ' v';
         }
 
         tr:hover {
@@ -186,46 +219,57 @@
             color: var(--dark);
         }
 
+        .name-cell a {
+            color: var(--cost-purple);
+            text-decoration: none;
+        }
+
+        .name-cell a:hover {
+            text-decoration: underline;
+        }
+
         .affiliation-cell {
             color: var(--gray);
             font-size: 0.85rem;
+            max-width: 300px;
         }
 
         .country-cell {
             color: var(--cost-blue);
+            white-space: nowrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            margin-left: 0.3rem;
+        }
+
+        .badge-itc {
+            background: rgba(232, 119, 34, 0.1);
+            color: var(--cost-orange);
+        }
+
+        .wg-badges {
+            display: flex;
+            gap: 0.3rem;
+            flex-wrap: wrap;
         }
 
         .wg-badge {
             display: inline-block;
-            padding: 0.2rem 0.5rem;
+            padding: 0.2rem 0.4rem;
             border-radius: 4px;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 500;
-            margin-right: 0.3rem;
-            margin-bottom: 0.2rem;
         }
 
         .wg-badge.wg1 { background: rgba(91, 45, 138, 0.1); color: var(--cost-purple); }
         .wg-badge.wg2 { background: rgba(43, 95, 158, 0.1); color: var(--cost-blue); }
         .wg-badge.wg3 { background: rgba(122, 184, 0, 0.1); color: var(--cost-green); }
-
-        .mc-badge {
-            background: var(--cost-orange);
-            color: white;
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.7rem;
-            font-weight: 500;
-        }
-
-        .itc-badge {
-            background: rgba(232, 119, 34, 0.1);
-            color: var(--cost-orange);
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.7rem;
-            font-weight: 500;
-        }
 
         .orcid-link {
             color: var(--cost-green);
@@ -237,32 +281,10 @@
             text-decoration: underline;
         }
 
-        .pagination {
-            display: flex;
-            justify-content: center;
-            gap: 0.5rem;
-            margin-top: 2rem;
-        }
-
-        .pagination button {
-            padding: 0.5rem 1rem;
-            border: 1px solid var(--border);
-            background: white;
-            border-radius: 6px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-
-        .pagination button:hover,
-        .pagination button.active {
-            background: var(--cost-purple);
-            color: white;
-            border-color: var(--cost-purple);
-        }
-
-        .pagination button:disabled {
-            opacity: 0.5;
-            cursor: not-allowed;
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--gray);
         }
 
         footer {
@@ -278,11 +300,17 @@
             text-decoration: none;
         }
 
+        footer a:hover {
+            text-decoration: underline;
+        }
+
         @media (max-width: 900px) {
             nav ul { display: none; }
             .filters { flex-direction: column; }
-            .filters input[type="text"] { width: 100%; }
+            .filters input[type="text"],
+            .filters select { width: 100%; }
             th, td { padding: 0.75rem 0.5rem; font-size: 0.8rem; }
+            .stats-row { gap: 1.5rem; }
         }
     </style>
 </head>
@@ -292,16 +320,30 @@
             <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">COST <span>CA19130</span></a></div>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="mc-members.html">MC Members</a></li>
+                <li><a href="mc-members.html" style="color: white; font-weight: 600;">MC Members</a></li>
                 <li><a href="wg-members.html">WG Members</a></li>
-                <li><a href="members.html" style="color: white; font-weight: 600;">All Members</a></li>
+                <li><a href="members.html">All Members</a></li>
             </ul>
         </div>
     </nav>
 
     <header class="header">
-        <h1>Action Members</h1>
-        <p>426 researchers from 48 countries</p>
+        <h1>Management Committee</h1>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <div class="stats-row">
+            <div class="stat-item">
+                <div class="stat-number" id="totalMembers">-</div>
+                <div class="stat-label">MC Members</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalCountries">-</div>
+                <div class="stat-label">Countries</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="itcCount">-</div>
+                <div class="stat-label">ITC Members</div>
+            </div>
+        </div>
     </header>
 
     <div class="container">
@@ -312,74 +354,76 @@
             </select>
             <select id="wgFilter">
                 <option value="">All Working Groups</option>
-                <option value="WG1">WG1 - Transparency in FinTech</option>
-                <option value="WG2">WG2 - Decision-Support Models</option>
-                <option value="WG3">WG3 - Investment Products</option>
-            </select>
-            <select id="roleFilter">
-                <option value="">All Roles</option>
-                <option value="MC">MC Members</option>
-                <option value="ITC">ITC Countries</option>
+                <option value="wg1">WG1 - Transparency in FinTech</option>
+                <option value="wg2">WG2 - Decision-Support Models</option>
+                <option value="wg3">WG3 - Investment Products</option>
             </select>
         </div>
 
-        <div class="results-info" id="resultsInfo">Showing all members</div>
+        <div class="results-info" id="resultsInfo">Loading...</div>
 
         <div class="members-table">
             <table>
                 <thead>
                     <tr>
-                        <th onclick="sortTable('name')">Name</th>
-                        <th onclick="sortTable('affiliation')">Affiliation</th>
-                        <th onclick="sortTable('country')">Country</th>
+                        <th data-sort="name">Name</th>
+                        <th data-sort="affiliation">Affiliation</th>
+                        <th data-sort="country">Country</th>
                         <th>Working Groups</th>
                         <th>ORCID</th>
                     </tr>
                 </thead>
                 <tbody id="membersBody">
+                    <tr><td colspan="5" class="loading">Loading MC members...</td></tr>
                 </tbody>
             </table>
         </div>
-
-        <div class="pagination" id="pagination"></div>
     </div>
 
     <footer>
-        <p><a href="index.html">Back to Home</a> | COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="index.html">Home</a> | <a href="wg-members.html">Working Groups</a> | <a href="members.html">All Members</a></p>
+        <p style="margin-top: 1rem; opacity: 0.7;">COST Action CA19130 - Fintech and AI in Finance</p>
     </footer>
 
     <script>
-        // Member data will be loaded from members.json
-        let members = [];
+        let mcData = null;
         let filteredMembers = [];
-        let currentPage = 1;
-        const itemsPerPage = 25;
-        let sortColumn = 'name';
+        let sortColumn = 'country';
         let sortDirection = 'asc';
 
-        // Load member data
-        fetch('data/members.json')
+        // Load MC members data
+        fetch('data/mc_members.json')
             .then(response => response.json())
             .then(data => {
-                members = data;
-                filteredMembers = [...members];
-                populateFilters();
+                mcData = data;
+                filteredMembers = [...data.members];
+
+                // Update header stats
+                document.getElementById('totalMembers').textContent = data.metadata.totalMembers;
+                document.getElementById('totalCountries').textContent = data.metadata.countries;
+                document.getElementById('itcCount').textContent = data.members.filter(m => m.itc).length;
+
+                // Populate country filter
+                populateCountryFilter();
+
+                // Initial render
+                sortMembers();
                 renderTable();
             })
             .catch(err => {
-                console.error('Error loading members:', err);
+                console.error('Error loading MC members:', err);
                 document.getElementById('membersBody').innerHTML =
-                    '<tr><td colspan="5" style="text-align: center; padding: 2rem; color: var(--gray);">Unable to load member data. Please check back later.</td></tr>';
+                    '<tr><td colspan="5" class="loading">Unable to load MC member data.</td></tr>';
             });
 
-        function populateFilters() {
-            const countries = [...new Set(members.map(m => m.country))].sort();
-            const countrySelect = document.getElementById('countryFilter');
+        function populateCountryFilter() {
+            const countries = [...new Set(mcData.members.map(m => m.country))].sort();
+            const select = document.getElementById('countryFilter');
             countries.forEach(country => {
                 const option = document.createElement('option');
                 option.value = country;
                 option.textContent = country;
-                countrySelect.appendChild(option);
+                select.appendChild(option);
             });
         }
 
@@ -387,9 +431,8 @@
             const search = document.getElementById('searchInput').value.toLowerCase();
             const country = document.getElementById('countryFilter').value;
             const wg = document.getElementById('wgFilter').value;
-            const role = document.getElementById('roleFilter').value;
 
-            filteredMembers = members.filter(m => {
+            filteredMembers = mcData.members.filter(m => {
                 const matchesSearch = !search ||
                     m.name.toLowerCase().includes(search) ||
                     (m.affiliation && m.affiliation.toLowerCase().includes(search)) ||
@@ -398,29 +441,13 @@
                 const matchesCountry = !country || m.country === country;
 
                 const matchesWG = !wg ||
-                    (wg === 'WG1' && m.wg1) ||
-                    (wg === 'WG2' && m.wg2) ||
-                    (wg === 'WG3' && m.wg3);
+                    (wg === 'wg1' && m.wg1) ||
+                    (wg === 'wg2' && m.wg2) ||
+                    (wg === 'wg3' && m.wg3);
 
-                const matchesRole = !role ||
-                    (role === 'MC' && m.mc) ||
-                    (role === 'ITC' && m.itc);
-
-                return matchesSearch && matchesCountry && matchesWG && matchesRole;
+                return matchesSearch && matchesCountry && matchesWG;
             });
 
-            currentPage = 1;
-            sortMembers();
-            renderTable();
-        }
-
-        function sortTable(column) {
-            if (sortColumn === column) {
-                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
-            } else {
-                sortColumn = column;
-                sortDirection = 'asc';
-            }
             sortMembers();
             renderTable();
         }
@@ -437,83 +464,79 @@
             });
         }
 
+        function handleSort(column) {
+            if (sortColumn === column) {
+                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortColumn = column;
+                sortDirection = 'asc';
+            }
+
+            // Update header indicators
+            document.querySelectorAll('th').forEach(th => {
+                th.classList.remove('sorted-asc', 'sorted-desc');
+                if (th.dataset.sort === sortColumn) {
+                    th.classList.add(sortDirection === 'asc' ? 'sorted-asc' : 'sorted-desc');
+                }
+            });
+
+            sortMembers();
+            renderTable();
+        }
+
         function renderTable() {
             const tbody = document.getElementById('membersBody');
-            const start = (currentPage - 1) * itemsPerPage;
-            const end = start + itemsPerPage;
-            const pageMembers = filteredMembers.slice(start, end);
 
-            tbody.innerHTML = pageMembers.map(m => {
+            if (filteredMembers.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" class="loading">No members match your filters.</td></tr>';
+                document.getElementById('resultsInfo').textContent = 'No results';
+                return;
+            }
+
+            document.getElementById('resultsInfo').textContent =
+                `Showing ${filteredMembers.length} of ${mcData.members.length} MC members`;
+
+            tbody.innerHTML = filteredMembers.map(m => {
+                // WG badges
                 const wgBadges = [];
                 if (m.wg1) wgBadges.push('<span class="wg-badge wg1">WG1</span>');
                 if (m.wg2) wgBadges.push('<span class="wg-badge wg2">WG2</span>');
                 if (m.wg3) wgBadges.push('<span class="wg-badge wg3">WG3</span>');
 
-                const badges = [];
-                if (m.mc) badges.push('<span class="mc-badge">MC</span>');
-                if (m.itc) badges.push('<span class="itc-badge">ITC</span>');
+                // Name with optional ITC badge
+                const itcBadge = m.itc ? '<span class="badge badge-itc">ITC</span>' : '';
 
+                // ORCID link
                 const orcidHtml = m.orcid ?
                     `<a href="https://orcid.org/${m.orcid}" target="_blank" class="orcid-link">${m.orcid}</a>` :
                     '-';
 
+                // Name with optional homepage link
+                const nameHtml = m.homepage ?
+                    `<a href="${m.homepage}" target="_blank">${m.name}</a>` :
+                    m.name;
+
                 return `
                     <tr>
-                        <td class="name-cell">${m.name} ${badges.join(' ')}</td>
+                        <td class="name-cell">${nameHtml}${itcBadge}</td>
                         <td class="affiliation-cell">${m.affiliation || '-'}</td>
                         <td class="country-cell">${m.country}</td>
-                        <td>${wgBadges.join('') || '-'}</td>
+                        <td><div class="wg-badges">${wgBadges.join('') || '-'}</div></td>
                         <td>${orcidHtml}</td>
                     </tr>
                 `;
             }).join('');
-
-            // Update results info
-            document.getElementById('resultsInfo').textContent =
-                `Showing ${start + 1}-${Math.min(end, filteredMembers.length)} of ${filteredMembers.length} members`;
-
-            renderPagination();
-        }
-
-        function renderPagination() {
-            const totalPages = Math.ceil(filteredMembers.length / itemsPerPage);
-            const pagination = document.getElementById('pagination');
-
-            if (totalPages <= 1) {
-                pagination.innerHTML = '';
-                return;
-            }
-
-            let html = '';
-            html += `<button onclick="goToPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>Prev</button>`;
-
-            for (let i = 1; i <= totalPages; i++) {
-                if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
-                    html += `<button onclick="goToPage(${i})" class="${i === currentPage ? 'active' : ''}">${i}</button>`;
-                } else if (i === currentPage - 3 || i === currentPage + 3) {
-                    html += '<button disabled>...</button>';
-                }
-            }
-
-            html += `<button onclick="goToPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next</button>`;
-
-            pagination.innerHTML = html;
-        }
-
-        function goToPage(page) {
-            const totalPages = Math.ceil(filteredMembers.length / itemsPerPage);
-            if (page >= 1 && page <= totalPages) {
-                currentPage = page;
-                renderTable();
-                window.scrollTo({top: 0, behavior: 'smooth'});
-            }
         }
 
         // Event listeners
         document.getElementById('searchInput').addEventListener('input', filterMembers);
         document.getElementById('countryFilter').addEventListener('change', filterMembers);
         document.getElementById('wgFilter').addEventListener('change', filterMembers);
-        document.getElementById('roleFilter').addEventListener('change', filterMembers);
+
+        // Sort on header click
+        document.querySelectorAll('th[data-sort]').forEach(th => {
+            th.addEventListener('click', () => handleSort(th.dataset.sort));
+        });
     </script>
 </body>
 </html>
