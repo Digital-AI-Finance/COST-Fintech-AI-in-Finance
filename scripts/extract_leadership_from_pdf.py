@@ -184,12 +184,9 @@ def extract_leadership_data(pdf_path: Path) -> dict:
             }
         },
 
-        # MC Observers (Page 6)
-        "mc_observers": [
-            {"name": "Prof Panayotis Alexakis", "country": "Greece"},
-            {"name": "Mr Michael Fruhmann", "country": "Austria"},
-            {"name": "Prof Henning Schulzrinne", "country": "United States"}
-        ],
+        # MC Observers - NOT in this PDF (Leadership Positions only shows leadership roles)
+        # MC Observers would need to come from a different source (e.g., MC Members page)
+        "mc_observers": [],
 
         # Grant Periods (Page 6)
         "grant_periods": [

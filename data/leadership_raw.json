@@ -5,7 +5,7 @@
     "action_status": "Complete",
     "source": "COST e-services portal",
     "source_url": "https://e-services.cost.eu/action/CA19130/leadership-positions",
-    "extracted_date": "2026-01-02T20:14:59.488177",
+    "extracted_date": "2026-01-02T20:36:06.574440",
     "pdf_file": "Leadership_Positions.pdf"
   },
   "core_leadership": {
@@ -294,20 +294,7 @@
       ]
     }
   },
-  "mc_observers": [
-    {
-      "name": "Prof Panayotis Alexakis",
-      "country": "Greece"
-    },
-    {
-      "name": "Mr Michael Fruhmann",
-      "country": "Austria"
-    },
-    {
-      "name": "Prof Henning Schulzrinne",
-      "country": "United States"
-    }
-  ],
+  "mc_observers": [],
   "grant_periods": [
     {
       "period": 1,

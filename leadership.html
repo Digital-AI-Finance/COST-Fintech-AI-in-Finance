@@ -597,8 +597,8 @@
             </div>
         </div>
 
-        <!-- MC Observers -->
-        <div class="section">
+        <!-- MC Observers (only shown if data exists) -->
+        <div class="section" id="observersSection" style="display: none;">
             <div class="section-header">MC Observers</div>
             <div class="section-content">
                 <div class="observers-grid" id="observers"></div>
@@ -784,7 +784,12 @@
                 renderWorkingGroups(data.working_groups);
                 renderCoordinators(data.coordinators);
                 renderOtherPositions(data.other_positions);
-                renderObservers(data.mc_observers);
+
+                // Only show MC Observers if data exists
+                if (data.mc_observers && data.mc_observers.length > 0) {
+                    document.getElementById('observersSection').style.display = 'block';
+                    renderObservers(data.mc_observers);
+                }
             })
             .catch(err => {
                 console.error('Error loading leadership data:', err);
