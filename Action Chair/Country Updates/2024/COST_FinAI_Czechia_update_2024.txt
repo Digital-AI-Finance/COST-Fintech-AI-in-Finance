@@ -1,0 +1,88 @@
+--- Page 1 ---
+FinAI: Fintech and Artificial Intelligence in Finance - Towards a 
+transparent financial industry
+Fintech and Artificial Intelligence in Finance 
+Towards a transparent financial industry
+COST Action 19130
+MC Meeting
+CZECHIA update
+
+
+--- Page 2 ---
+FinAI: Fintech and Artificial Intelligence in Finance - Towards a 
+transparent financial industry
+Czech Management Commitee
+2
+Oleg Deev
+Dagmar Vágnerová Linnertová (Masaryk University)
+Silvie Káfková – Masaryk University
+Martin Řehák – Resistant AI
+Tomáš Plíhal – Masaryk University
+Petr Hájek – University of Pardubice
+Ladislav Krištoufek – Charles University
+Karel Kozmík – Charles University
+
+
+--- Page 3 ---
+FinAI: Fintech and Artificial Intelligence in Finance - Towards a 
+transparent financial industry
+Publications (with acknowledgement)
+Yang, F., Abedin, M. Z., & Hajek, P. (2024). An explainable federated learning and blockchain based 
+secure credit modeling method. European Journal of Operational Research, 317(2). 449-467.
+Yang, C., Abedin, M. Z., Zhang, H., Weng, F., & Hajek, P. (2023). An interpretable system for predicting 
+the impact of COVID-19 government interventions on stock market sectors. Annals of Operations 
+Research. 
+Bouteska, A., Hajek, P., Fisher, B., & Abedin, M. Z. (2023). Nonlinearity in forecasting energy commodity 
+prices: Evidence from a focused time-delayed neural network. Research in International Business and 
+Finance, 64, 101863. 
+Hampl, F. and Vágnerová Linnertová, D. and Horváth, M. (2024) Crypto Havens During War Times? 
+Evidence from the Russian Invasion of Ukraine. The North American Journal of Economics and 
+Finance, 71, 102093. 
+Agakishiev, I. and Härdle, W.K. and Kozmik, K. and Kopa, M. and Petukhina, A., Multivariate 
+Probabilistic Forecasting of Electricity Prices With Trading Applications. Available at SSRN: 
+https://ssrn.com/abstract=4527675
+3
+
+
+--- Page 4 ---
+FinAI: Fintech and Artificial Intelligence in Finance - Towards a 
+transparent financial industry
+STSM
+Tomáš Plíhal (Masaryk University) – Bern University of Applied 
+Sciences – autumn 2022
+Karel Kozmík (Charles University) – Humboldt University, Berlin –
+autumn 2022
+4
+
+
+--- Page 5 ---
+FinAI: Fintech and Artificial Intelligence in Finance - Towards a 
+transparent financial industry
+Organized Events
+Statistics of Machine Learning – September 30, 2024 (in cooperation 
+with Germany)
+Statistics of Machine Learning – October 5-6, 2023 (in cooperation 
+with Germany)
+FinAI COST workshop in Brno – October 21-22, 2022 (in cooperation 
+with Poland and Slovakia)
+Statistics of Machine Learning – October 6-7, 2022 (in cooperation 
+with Germany)
+Statistics of Machine Learning – October 7-8, 2021 (in cooperation 
+with Germany)
+5
+
+
+--- Page 6 ---
+FinAI: Fintech and Artificial Intelligence in Finance - Towards a 
+transparent financial industry
+Funded Projects
+Network-based credit risk models on P2P lending markets (in 
+cooperation with Switzerland) – founded by the Czech Science 
+Foundation and Swiss National Science Foundation – 2022-2025
+Analytical Platform 2.0. – automated portfolio management with AI 
+(in cooperation with CCF Research, s.r.o.) – funded by the Czech 
+Ministry of Industry and Trade – 2023-2025
+Finance education for AI revolution and ESG responsibility
+(educational project) – funded by the Czech Ministry of Industry 
+and Trade – 2023-2024
+6

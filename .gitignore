@@ -1,0 +1,14 @@
+# Claude
+.claude/
+CLAUDE.md
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Temp files
+temp/
+*.tmp
+*.log
+nul

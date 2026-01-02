@@ -1,0 +1,73 @@
+--- Page 1 ---
+ 
+ www.ibas.world   ◌   Digital Payments   ◌   Remittances   ◌   Loans   ◌   Investment adviser                       Pg 1 / 2   
+ 
+ 
+To: CIG Decision-Making Committee 
+Action Chair COST Action CA19130 
+Submitter CIG Grant Application 
+ 
+Institute for Applied Data Science & Finance 
+Bern University of Applied Sciences 
+3005 Bern, Switzerland 
+ 
+ 
+Letter of support for COST Innovators Grant (CIG): “VisionXAI: Pioneering Visual analytics for Establishing XAI 
+Standards in European Finance with a Policy-Focused Impact”  
+ 
+Dear members of the CIG committee, 
+ 
+IBAS was born in 2019, brought to life by a passionate group of visionaries determined to revolutionize the 
+financial landscape, worldwide, starting from Kosovo. With unwavering ambition and dedication, we obtained 
+a license from the Central Bank, establishing ourselves as a premier electronic money issuer and credit provider 
+for payments. Later on we expanded our license with Investment Adviser for buying oe selling shares, bonds 
+and convertible bonds. From the very beginning, IBAS has been a pioneer in cutting-edge technology, 
+trailblazing disruptive innovations that redefine payment transfers, money transfers, and credit services. Our 
+relentless pursuit of innovation and excellence culminated in a resounding victory at the esteemed ICT Awards 
+in 2021 for innovation, where we proudly claimed the top prize. 
+At IBAS, we firmly believe in shaping a brighter future for finance, where accessibility, convenience, and 
+efficiency know no bounds (https://ibas.world/about-us/)  
+We are aware of the application submitted by Prof. Dr. Jörg Osterrieder from Bern Business School for the 
+COST Innovator Grant with the title "VisionXAI: Pioneering Visual Analytics for Establishing XAI Standards in 
+European Finance with a Policy-Focused Impact," which aligns with our business goals and current activities. 
+On the project's aim and scope, we have been informed that: 
+• 
+VisionXAI seeks to create a visual analytics tool that enhances the interpretability and standards of XAI 
+in the European financial sector. 
+• 
+The project is geared towards meeting regulatory requirements and policy impacts, ensuring alignment 
+with EU directives. 
+• 
+It is designed to be a scalable solution that bridges the gap between technical XAI approaches and 
+practical financial applications. 
+• 
+VisionXAI aims to foster trust and transparency in AI-driven financial decisions by offering clear, user-
+friendly interpretations. 
+
+
+--- Page 2 ---
+ 
+ www.ibas.world   ◌   Digital Payments   ◌   Remittances   ◌   Loans   ◌   Investment adviser                       Pg 2 / 2   
+• 
+The initiative also intends to address bias detection and mitigation within AI systems, promoting fairness 
+and data integrity. 
+IBAS WORLD 
+As a company, it is essential to support the next generation. Kosovo has a large part of the young population, and the 
+ICT indicators show it better than other countries in the region, so we are always looking for and supporting young 
+talents and researchers. The support of Public universities is always within the framework of our priorities; therefore, you 
+have our support in this application. As a company, we expect in the future various collaborations with COST ACTION 
+19130, offering the experiences of our staff both in terms of technology and finance. 
+We wholeheartedly endorse the COST Innovator Grant application for VisionXAI, recognizing the significant 
+role such a tool will play in the financial sector. This tool's importance is underscored by its potential to bring 
+clarity and accountability to AI-driven financial decisions, aligning with our dedication to responsible and 
+transparent business practices.  
+ 
+With this letter, we confirm that we are very interested in the proposed solution, and we look forward to 
+assessing the results of the project revenant for our business activities. 
+ 
+Sincerely,  
+Gazmend Selmani, Founder and Solution Architect 
+ 
+ 
+Digitally signed by 'C=SI, SN=Selmani, G=Gazmend, SERIALNUMBER=1004187039, CN=Gazmend Selmani [SIG]'
+Date: 2024.05.09 18:43:23 +02:00

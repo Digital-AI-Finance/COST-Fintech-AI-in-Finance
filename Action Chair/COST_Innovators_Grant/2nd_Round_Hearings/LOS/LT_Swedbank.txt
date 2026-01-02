@@ -1,0 +1,59 @@
+--- Page 1 ---
+ 
+ 
+ 
+„Swedbank“, AB 
+Konstitucijos pr. 20A, 03502 , Vilnius, 
+Lithuania 
+Tel. +370 5 268 4444 
+S.W.I.F.T. HABALT22 
+The Bank is registered with and data on it 
+stored at Lithuanian legal person‘s registry, 
+whose keeper is VĮ Registrų centras 
+Company code 112029651 
+VAT payment code LT120296515 
+www.swedbank.lt 
+   info@swedbank.lt 
+ 
+To: CIG decision making committee 
+From: Swedbank, AB 
+Date: 2024-04-30 
+ 
+ 
+Letter of Support for VisionXAI: Pioneering Visual Analytics for Establishing XAI 
+Standards in European Finance 
+ 
+ 
+Dear members of the CIG committee, 
+ 
+Swedbank, AB wishes to express strong support for the VisionXAI project, a Consortium 
+application submitted under the COST action CA19130 – CIG program. We believe this project 
+holds immense potential to boost the European financial sector by fostering explainable 
+Artificial Intelligence (XAI) and establishing critical standards for its responsible use. 
+ 
+The increasing reliance on AI in financial decision-making necessitates solutions to address the 
+inherent opacity of these systems. This lack of transparency hinders trust among stakeholders, 
+including financial analysts, regulators, and the general public. VisionXAI's proposed visual 
+analytics tool is a compelling answer to this challenge. Regulators can ensure compliance with 
+financial policies, analysts can gain deeper insights, and end-users can comprehend the rationale 
+behind AI-driven results. This fosters trust and strengthens governance in the use of AI. 
+ 
+Furthermore, VisionXAI's focus on policy integration throughout the development cycle – from 
+data collection to model output – is particularly noteworthy. This standardized approach will 
+enhance transparency, address bias, and optimize decision-making processes within the financial 
+industry. We believe VisionXAI has the potential to become an essential component of AI-
+driven finance, facilitating broader adoption across institutions, regulatory bodies, and 
+individuals. 
+ 
+Swedbank is committed to fostering innovative solutions that promote ethical and responsible AI 
+practices within the financial sector. We firmly believe the VisionXAI project aligns with this 
+commitment. We urge the CIG committee to view this project favorably and grant it the 
+necessary support to move forward. 
+ 
+Sincerely, 
+ 
+ 
+Sincerely, 
+Aidas Malakauskas 
+Head of Omnichannel Solutions  
+ 

@@ -1,0 +1,639 @@
+--- Page 1 ---
+ 
+ 
+ 
+ 
+ 
+COST Association AISBL 
+Avenue du Boulevard – Bolwerklaan 21 | 1210 Brussels, Belgium  
+ 
+T +32 (0)2 533 3800 | office@cost.eu | www.cost.eu 
+23 March 2023 
+COST 098/21 
+Version 1.1 
+RULES FOR COST INNOVATORS GRANTS 
+(Level B – COST Innovators Grant (CIG)) 
+The COST Committee of Senior Officials (“CSO”) having regard to:  
+The CSO Decision “Rules and Principles for COST activities”,  
+In accordance with its role as General Assembly of the COST Association, 
+Whereas 
+ 
+ 
+The Rules and Principles for COST activities lay down the principles and general rules for COST 
+activities; 
+ 
+The COST Innovators Grant aims at enhancing the pace and success of breakthrough 
+innovations (see the definition of Innovation in the Glossary), building bridges between the 
+scientific research performed in COST Actions and the applications in the market and in society; 
+ 
+COST shall adopt a set of stable, minimal, and user-friendly rules to ensure efficient, effective, 
+and impactful implementation of CIGs. 
+ 
+Adopts the present Rules for CIGs in accordance with the Rules and Principles for COST activities, 
+which shall apply to COST Members, COST Governance, COST Administration and to participants to 
+the CIGs. 
+The present Rules for CIGs shall be subordinated to and shall not contravene the “Rules and Principles 
+for COST activities”. In case of any contradiction, the Rules and Principles for COST activities shall 
+prevail. 
+The present Rules for CIGs shall lay down the general rules applicable to CIGs deriving from the Rules 
+and Principles for COST activities and govern:  
+ The CIG approval and objectives, 
+ The CIG starting date and duration, 
+ The CIG management, 
+ The Participation of individuals in CIGs, 
+ The Business Plan, 
+ The Financial support to CIGs: networking activities and other expenses, 
+ The CIGs funding and administration, 
+ The CIGs final assessment. 
+Throughout the present Rules for COST Innovators Grants, the term “shall” implies an obligation to 
+comply with the set requirement whilst the term “may” implies an authorisation to act. Other terms used 
+in the present rules are defined in the list of Definitions and abbreviations contained in the Annex II to 
+the Rules and Principles for COST activities (see Glossary). 
+Non-compliance with the present rules may lead to the measures for Breach of COST Rules and 
+Principles as per Rules and Principles for COST activities, Article 6.  
+ 
+ 
+
+
+--- Page 2 ---
+ 
+Document Change History 
+Version number Release date 
+Summary of changes 
+COST 098/21 
+Version 1.1 
+ 
+23 March 2023 
+Minor changes: 
+1. To avoid repetitions about the composition of the CIG Team
+throughout the document, Article 3 (1st paragraph) has been 
+simplified. The description of the CIG Team is already 
+mentioned in Article 3.1  
+2. Clarification of grant awarding criteria to be established by the 
+CIG team (Article 6.2, last bullet point). 
+3. Article 8: 
+- 
+Deviation of the timeline for the Rapporteurs to provide their 
+final assessment subject to the COST Association approval.
+- 
+For simplification, the description of the Final Assessment
+report has been removed as it is already included in the Final 
+Assessment Report template. 
+COST 098/21 - 
+Design of the CIG 
+(Pilot) 
+29 October 
+2021 
+First release of the COST 098/21 Rules for COST Innovators Grants  
+ 
+ 
+ 
+
+
+--- Page 3 ---
+ 
+ 
+ 
+TABLE OF CONTENTS 
+1. 
+CIGS APPROVAL AND OBJECTIVES ......................................................................................................... 4 
+1.1. 
+Approval of CIGs ................................................................................................................................... 4 
+1.2. 
+Objectives of CIGs ................................................................................................................................. 4 
+2. 
+CIG START DATE AND DURATION ............................................................................................................ 4 
+3. 
+CIG MANAGEMENT ..................................................................................................................................... 4 
+3.2 
+The CIG Team .......................................................................................................................................... 4 
+3.1.1. Composition ........................................................................................................................................ 4 
+3.1.2. Role, rights and powers, and decision making ................................................................................ 5 
+3.1.3. Duties .................................................................................................................................................. 5 
+3.2 
+Access to leadership positions .................................................................................................................. 5 
+4. 
+PARTICIPATION OF INDIVIDUALS IN CIGS ............................................................................................... 6 
+4.1 
+Participation modalities, rights, and duties ................................................. Error! Bookmark not defined. 
+4.2 
+Incompatibilities ......................................................................................................................................... 7 
+5. 
+THE CIG BUSINESS PLAN .......................................................................................................................... 7 
+6. 
+FINANCIAL SUPPORT TO THE CIGS: NETWORKING ACTIVITIES AND OTHER EXPENSES ................ 7 
+6.1 
+Scope of the financial support to CIGs ...................................................................................................... 7 
+6.2 
+Financial management by the CIG Team .................................................................................................. 8 
+6.4 
+Location of CIG networking activities ........................................................................................................ 8 
+6.4 
+Eligibility to receive financial support ......................................................................................................... 9 
+7. 
+CIG FUNDING AND ADMINISTRATION .................................................................................................... 10 
+7.1. 
+Funding of a CIG – The COST Grant .................................................................................................. 10 
+7.2. 
+The COST Grant budget ...................................................................................................................... 11 
+7.3. 
+CIG Grant Agreement .......................................................................................................................... 11 
+7.4. 
+Grant Holder ........................................................................................................................................ 11 
+7.5. 
+Reporting on the use of the COST Grant ............................................................................................. 12 
+8. 
+CIG FINAL ASSESSMENT ......................................................................................................................... 12 
+
+
+--- Page 4 ---
+ 
+ 
+ 
+ 
+4 
+ 
+1. CIGS APPROVAL AND OBJECTIVES 
+1.1. Approval of CIGs 
+CIGs are approved by the Committee of Senior Officials (CSO) as described in the CIG Submission 
+Guidelines (http://www.cost.eu/innovators_grant). 
+1.2. Objectives of CIGs 
+The CIG Terms of Reference, constituting the addendum to the Memorandum of Understanding (MoU) 
+of the Action, shall describe the aims and objectives of the CIGs as approved by the CSO.  
+2. CIG START DATE AND DURATION 
+A CIG shall start at the beginning of the Grant Period following the CSO approval and shall have a 
+duration of 12 months.  
+No extension shall be granted, unless the COST Executive Board decides to offer an extension to CIGs 
+affected by a case of force majeure (see the definition of force majeure in the Glossary), which resulted 
+in a delay in the implementation of the CIG’s aims and objectives. The EB of the COST Association 
+shall in such case determine the duration of the extension based on the Rules of Procedures defined 
+by the EB. Those Rules of Procedures shall be published. 
+ 
+The CSO may terminate a CIG in case of:  
+ 
+Circumstances that from a Science and Technology or network activities point of view make the 
+benefit of continuing the CIG questionable. Those circumstances shall be duly justified following 
+the breach of COST Action rules and principles by the CIG Team as per Rules and Principles 
+for COST activities, Article 6. 
+3. CIG MANAGEMENT 
+CIGs shall be managed by the CIG Team. The CIG Team composition is detailed in the CIG application 
+and approved by the CSO upon approval of the CIG applications to be funded. 
+3.1 The CIG Team 
+3.1.1. Composition 
+The CIG Team is composed at the time of submission by the applicants, and its members must stem 
+from the COST Full or Cooperating Members.  
+The CIG Team is specified in the CIG application and approved by the Management Committee of the 
+Action and its composition shall not change after the CIG application has been submitted. 
+The CIG Team is led by the CIG Chair and the CIG Vice-Chair as specified in the CIG application.  
+Should CIG Team Members leave the CIG during its lifetime, they may either be replaced by another 
+expert from a COST Full or Cooperating Members capable of fulfilling their role (e.g., same expertise), 
+or the CIG Team takes over their role, and a clear justification and rationale for the choice shall be 
+provided. 
+
+
+--- Page 5 ---
+ 
+3.1.2. Role, rights and powers, and decision making 
+The CIG Team is the decision-making body and shall formally establish their decision-making procedure 
+The CIG Team shall have the required decision powers for governing the CIG to implement the activities 
+and manage the budget in view of achieving the CIG objectives.  
+Taking due account of the CIG Team Duties as per Article 3.1.3. hereunder, the CIG Team rights and 
+powers shall include, but not be limited to:  
+ 
+Within the applicable legal and financial framework, make any necessary decisions to meet the 
+aims and objectives of the CIG; 
+ 
+Be informed of the progress in the CIG and act accordingly; 
+ 
+Select or replace the Grant Holder in compliance with the rules for Grant Holder as per Article 
+7.4;  
+ 
+Decide on any confidentiality clause and Intellectual Property Rights Agreement as deemed 
+required; 
+ 
+Negotiate and approve the Work and Budget Plan and where required, reallocate budget within 
+the frame of the approved Work and Budget Plan, in compliance with the rules for CIG funding 
+and administration as per Article 7, with regard to financial support to CIG, implement the 
+financial support to CIG in compliance with the rules for Financial management by the CIG 
+Team as per Article 6.2; 
+ 
+Deliver the Business Plan. 
+3.1.3. Duties 
+The CIG Team shall: 
+ 
+Use English as working language in all documents and correspondence with the COST 
+Association; 
+ 
+Abide by the COST Rules and Principles for COST activities; 
+ 
+Avoid Conflicts of Interests and report them to the COST Administration if any (see Rules and 
+Principles for COST activities, Article 5);  
+ 
+Inform the COST Administration of the CIG’s progress upon request; 
+ 
+Attend the final event organised by COST; 
+ 
+In case of conflict with the Grant Holder on implementation of decisions of the CIG Team 
+regarding financial support to CIG, report to the COST Administration for conflict resolution in 
+compliance with the rules for Grant Holder as per Article 7.4; 
+ 
+Adopt required reports in the frame of CIG budget and administration in compliance with the 
+rules for Reporting on the use of the COST Grant as per Article 7.5; 
+ 
+Establish the Final Achievement report, which includes the Business Plan, and actively 
+participate in the process of CIG final assessment in compliance with the rules for CIG final 
+assessment as per Article 8.  
+3.2 Access to leadership positions 
+Leadership positions are positions in a CIG held by individuals to guide and coordinate the tasks 
+required for the implementation of the CIG. 
+Some positions in the CIG management are to be considered as mandatory leadership positions. The 
+mandatory leadership positions are needed to assure the minimal needs of a CIG. They are the 
+following: Chair, Vice Chair and Grant Holder Scientific Representative (GH SR). 
+CIGs are furthermore free to establish any other leadership positions according to their own needs.  
+Access to leadership positions shall be as shown in Table 1. 
+ 
+ 
+ 
+ 
+
+
+--- Page 6 ---
+ 
+Table 1: This table shows the access to leadership positions within the CIG. 
+ 
+Further to the conditions shown in Table 1, the Chair and Vice Chair positions shall be established in 
+the CIG application.  
+Similarly, the Grant Holder Scientific Representative (GH SR) position shall be reserved to an 
+individual who is a CIG Team Member in compliance with the rules for Grant Holder as per Article 7.4. 
+Shall the CIG Chair or Vice Chair, change their affiliation to an International Organisation, a COST 
+Partner Member, NNC or IPC, the CIG Team shall be informed. When allowed under the conditions 
+specified in the table above, the CIG Team may decide to keep the individual in the position if it is 
+deemed beneficial to the CIG.  
+When a Grant Holder Scientific Representative changes their affiliation, the Grant Holder Scientific 
+Representative shall be replaced by a CIG Team Member having an affiliation with the Grant Holder in 
+place, or the Grant Holder shall be replaced. 
+4. PARTICIPATION OF INDIVIDUALS IN CIGS 
+4.1 Participation modalities, rights, and duties 
+Participation to the CIG activities is open to all researchers and innovators as from the start date of the 
+CIG and subject to the approval of the CIG Team as per Article 6.2. Participation to CIG activities shall 
+Affiliation to 
+Mandatory positions 
+Other leadership positions 
+Chair/Vice Chair,  
+GH SR 
+Grant 
+Awarding 
+Coordinator 
+Other 
+e.g., 
+International advisor 
+Legal entity in a 
+COST 
+Full 
+or 
+Cooperating 
+Member 
+ 
+ 
+ 
+Legal entity in a 
+COST 
+Partner 
+Member 
+ 
+ 
+ 
+The EC, EU bodies, 
+offices, 
+and 
+agencies (EC/EU) 
+ 
+ 
+ 
+A 
+European 
+RTD 
+Organisation 
+ 
+ 
+ 
+An 
+International 
+Organisation 
+ 
+ 
+ 
+Legal entity in an 
+NNC 
+ 
+ 
+ 
+Legal entity in an 
+IPC/Third State 
+ 
+ 
+ 
+
+
+--- Page 7 ---
+ 
+be open to any individual affiliated in a legal entity wherever in the world, except in cases listed under 
+Article 4.2. 
+Participation in a CIG does not entitle the concerned individual to be reimbursed of their expenses for 
+participating in CIG activities. The reimbursement shall be subject to the decision of the CIG Team 
+regarding the Financial management by the CIG Team as per Article 6.2 and the rules for Eligibility to 
+receive financial support as per Article 6.3. 
+Individuals participating in a CIG shall be bound by the present rules, the COST Rules and Principles 
+for COST activities and any applicable rule for funding as per Article 6.  
+4.2 Incompatibilities 
+Some functions at COST or in an evaluation, selection, or approval procedure of a CIG application or in 
+the final assessment of a CIG shall be incompatible with a participation in a CIG. Those incompatibilities 
+shall be as follows: 
+ 
+Active CSO Delegates, COST National Coordinators and Scientific Committee Members and 
+personnel of the COST Administration may not be CIG Team Members, be reimbursed for their 
+attendance to a CIG activity nor be Rapporteur in any CIG; 
+ 
+A former CSO Delegate or Scientific Committee Member may not be CIG Team Member, be 
+reimbursed for their attendance to a CIG activity, nor be Rapporteur in any CIG selected or 
+approved during their mandate;   
+ 
+CIG Committee Members having been involved in the evaluation of an application may not be 
+CIG Team Members in the CIG deriving from that application, they however may be invited for 
+an ad-hoc contribution or be Rapporteur for that CIG; 
+ 
+Rapporteurs may not be CIG Team Members, CIG participants neither be invited for a 
+contribution in the CIG they are reviewing. 
+5. THE CIG BUSINESS PLAN 
+The Business Plan is a mandatory deliverable of a CIG. For the purposes of the CIG the definition of 
+Business Plan given in the Glossary applies. 
+ 
+The CIG Chair shall submit a Final Achievement Report (see Article 8) on behalf of the CIG Team, using 
+the template provided by COST and shall contain the Business Plan.  
+The Business Plan will be treated as CONFIDENTIAL information by the COST Association and by any 
+person involved in the CIG evaluation, selection, approval process, and final assessment. 
+6. FINANCIAL SUPPORT TO THE CIGS: NETWORKING 
+ACTIVITIES AND OTHER EXPENSES 
+The approved CIGs shall be granted a budget to carry out the CIG activities. The Annexes to the 
+Annotated Rules for COST Actions (level C) shall apply to the CIGs with regard to the activities, eligibility 
+and reimbursement rules. 
+6.1 Scope of the financial support to CIGs 
+Funding provided by COST supports networking activities, namely:  
+ Meetings (CIG Team or other meetings); 
+ Training Schools; 
+ Mobility of researchers and innovators;  
+ Presentation at conferences organised by third parties for: 
+o Capacity building (limited to young researchers and innovators from ITC or NNC);  
+
+
+--- Page 8 ---
+ 
+o Dissemination of CIGs’ work and results.  
+ 
+Other expenses specifically supporting the CIG shall include:  
+ Dissemination and communication products; 
+ Financial and Scientific Administration and Coordination (FSAC); 
+ Expenses incurred for the benefit of the network.  
+6.2 
+Financial management by the CIG Team 
+The CIG Team shall implement the networking activities and make decisions regarding the other 
+expenses specifically supporting the CIG in compliance with COST Principles and within the frame of 
+the present rules as complemented by the Annexes to the Annotated Rules for COST Actions. 
+This shall imply the following: 
+ Decide whether the invitation to a meeting or training school shall imply reimbursement of the 
+expenses carried out to participate in the concerned CIG networking activity; 
+ Decide whether to cap to a certain amount the reimbursement of expenses for participating in 
+a CIG networking activity duly taking into account the COST Principles as per Rules and 
+Principles for COST activities, Article 3; 
+ Award the grants for networking activities based on criteria and processes priorly decided by 
+the CIG Team.  
+ 
+6.3 Location of CIG networking activities 
+CIG networking activities may take place in the locations shown in Table 2. 
+ 
+ 
+
+
+--- Page 9 ---
+ 
+Table 2: Locations where CIG networking activities can take place. 
+Location 
+Meetings  
+Training Schools and other networking activities 
+Virtual Environment 
+ 
+ 
+COST 
+Members 
+Full 
+or 
+Cooperating 
+Member 
+ 
+ 
+Partner 
+Member 
+ 
+ 
+NNC 
+ 
+ 
+IPC/Third State 
+ 
+ 
+Specific Organisations 
+Rule applicable to territory where it is vested 
+ 
+6.4 
+Eligibility to receive financial support 
+Individuals invited as per Article 6.2 and, where applicable, legal entities, participating in a CIG 
+networking activity shall be eligible to receive financial support to cover part or all of their expenses 
+carried out to participate in or to organise a CIG networking activity as defined in Table 3. .
+
+
+--- Page 10 ---
+ 
+ 
+ 
+ 
+ 
+Table 3: This table defines the eligibility conditions to receive financial support to cover part or all of their expenses 
+carried out to participate in or to organise a CIG networking activity (* ITC Conference Grants are limited to Young 
+Researchers and Innovators from COST Inclusiveness Target Countries and NNC; ** F/C Member = Full or 
+Cooperating Member; *** CPM = COST Partner Member). 
+Affiliation to 
+Meetings 
+Training Schools 
+Other 
+networking 
+activities 
+Invited 
+individual 
+Local 
+Organis
+er 
+Trainer 
+Trainee 
+Local 
+Organiser 
+ITC 
+Conf 
+Grant* 
+All 
+others 
+COST Members 
+Legal 
+entity in 
+COST 
+F/C** 
+Member 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Legal 
+entity in 
+CPM*** 
+At COST Partner Member’s costs 
+Specific Organisations 
+EC/EU 
+At EC, EU body, office or agency costs  
+Eur. 
+RTD 
+Org. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IO 
+Once in 
+the 
+lifetime of 
+the CIG 
+ 
+ 
+ 
+ 
+ 
+ 
+NNC 
+Legal 
+entity in 
+an NNC 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+IPC/Third 
+State 
+Legal 
+entity in 
+an IPC 
+Once in 
+the 
+lifetime of 
+the CIG 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+7. CIG FUNDING AND ADMINISTRATION 
+ 
+7.1. Funding of a CIG – The COST Grant 
+CIGs shall be funded and administered through the COST decentralised management scheme, the 
+COST Grant System (CGS), which is provided by the COST Association.  
+The COST Grant shall only be used to support CIG networking activities and other expenses specifically 
+supporting the CIG as per Article 6.1. 
+
+
+--- Page 11 ---
+ 
+7.2. The COST Grant budget 
+The COST Administration shall grant to each CIG a budget for its whole duration, hereinafter referred 
+to as COST Grant budget, subject to available funds, in compliance with COST Principles and in strict 
+abidance with the legal and contractual framework applicable to COST.  
+The COST Grant budget shall be the maximum financial contribution of COST towards the CIG for its 
+entire duration.  
+The COST Grant budget shall vary depending on: 
+ 
+Budget available to the COST Association; 
+ 
+Budget requested in the CIG application. 
+ 
+The COST Grant budget shall be defined in the COST CIG Grant Agreement (Article 7.3). Allocation of 
+the COST Grant budget in CIG networking activities and other expenses specifically supporting the CIG 
+shall be included in the Work and Budget Plan annexed to the CIG Grant Agreement. Allocation of 
+budget in the Work and Budget Plan shall maximise budget for networking activities.  
+During the duration of the CIG, the CIG Team may reallocate budget within the frame of the approved 
+Work and Budget Plan, subject, where applicable as described in the Annotated Rules for COST 
+Actions, to pre-approval of the COST Administration. 
+At the end of the CIG, unspent budget shall be returned to the COST Association.  
+7.3. CIG Grant Agreement 
+The COST Grant shall be formalised by a CIG Grant Agreement concluded between the COST 
+Association represented by its Director and the CIG Grant Holder.  
+The CIG Grant Agreement sets the contractual framework under which the COST Grant shall be used 
+and administered for the benefit of the accomplishment of CIG’s aims and objectives. The CIG Grant 
+Agreement shall be compliant with the present rules and COST Principles.  
+The CIG Grant Agreement shall detail the present CIG Rules regarding:  
+ 
+The COST Grant maximum budget; 
+ 
+The CIG duration, start and end date; 
+ 
+The rights and obligations, tasks and responsibilities of the parties in terms of financial 
+management and administration of a CIG, including financial reporting and their timelines, 
+access to archived documents, controls and audits, rejection of expenses; 
+ 
+The Work and Budget Plan; 
+ 
+The payment modalities of the COST Grant and the return of unspent funds; 
+ 
+The consequences of non-compliance with the CIG Grant Agreement obligations. 
+Any other provisions as required following the legal and contractual framework applicable to COST. 
+The CIG Grant Agreement may be amended at any time.  
+7.4. Grant Holder 
+The Grant Holder shall be a legal entity vested in a COST Full or Cooperating Member or the EC, EU 
+bodies, offices, and agencies (EC/EU) or a European RTD Organisation (see Table 1). The Grant Holder 
+shall be appointed among the Institutions to which CIG Team Members are affiliated. The Grant Holder 
+shall be represented in the CIG Team by the Grant Holder Scientific Representative.  
+The Grant Holder shall be defined in the CIG application and is subject to approval of the COST 
+Administration.  
+In compliance with the rules on Access to leadership positions as per Article -408502000.3.2, when a 
+Grant Holder Scientific Representative changes their affiliation, the Grant Holder Scientific 
+
+
+--- Page 12 ---
+ 
+Representative shall be replaced. They may be replaced by a CIG Team Member having an affiliation 
+with the Grant Holder in place otherwise the Grant Holder shall be replaced. 
+When administering the COST Grant, the Grant Holder shall act under supervision of the CIG Team. 
+However, the Grant Holder shall oppose to any CIG Team decision that would be taken against the 
+present rules and the Rules and Principles for COST activities and report to the COST Administration 
+in case of issue for seeking resolution.  
+7.5. 
+Reporting on the use of the COST Grant 
+The CIG Grant Agreement shall detail the reporting obligations of the CIG towards the COST 
+Association with regard to the use of the COST Grant. The reporting shall occur in the timeframes 
+mentioned in the CIG Grant Agreement. The CIG Team shall support the Grant Holder in the fulfilment 
+of those obligations and adopt the established reports before their submission to the COST Association.  
+8. CIG FINAL ASSESSMENT 
+Each CIG shall submit a Final Achievement Report within forty-five calendar days. The assessment is 
+carried out by an independent external expert (Rapporteur).  
+The Rapporteur shall prepare a Final Assessment Report evaluating the degree of realisation of the CIG 
+towards its stated objectives and its potential impact after completion, including the soundness of the 
+Business Plan and the exploitation of the CIG outputs. Rapporteurs shall provide their final assessment 
+review within 30 (thirty) days from the receipt of the CIG’s Final Achievement Report to the CIG Team 
+and the COST Association, unless otherwise agreed by the COST Association.  
+ 

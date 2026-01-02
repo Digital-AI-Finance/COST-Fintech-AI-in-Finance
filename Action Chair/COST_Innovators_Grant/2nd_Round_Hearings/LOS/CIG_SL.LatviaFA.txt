@@ -1,0 +1,41 @@
+--- Page 1 ---
+To: CIG Decision-Making Committee
+From: Finance Latvia Association
+Date: 2024-05-07
+No: 1-27/38
+Subject: Letter of Support for COST Innovators Grant (CIG) Proposal: "VisionXAI: 
+Pioneering Visual Analytics for Establishing XAI Standards in European Finance with 
+a Policy-Focused Impact"
+The Finance Latvia Association (FLA) is pleased to submit a letter of support for the 
+COST Innovators Grant (CIG) proposal "VisionXAI: Pioneering Visual Analytics for 
+Establishing XAI Standards in European Finance with a Policy-Focused Impact."
+The FLA, representing a broad spectrum of financial institutions and market 
+participants in Latvia, actively champions innovation and responsible development 
+within the Latvian financial sector.
+The burgeoning use of Artificial Intelligence (AI) in finance presents exciting 
+opportunities alongside crucial considerations. The growing recognition of the need 
+for explainable AI (XAI) underscores its importance in fostering transparency and 
+trust in AI-powered financial services.
+We view VisionXAI's proposal as a highly valuable contribution to the critical effort 
+of developing XAI standards in European finance. Their focus on regulatory 
+compliance aligns perfectly with the sector's pressing need for AI applications that 
+adhere to existing financial regulations.
+Furthermore, the development of XAI standards has the potential to significantly 
+facilitate the implementation of responsible AI use cases in the financial sector. 
+This would not only benefit the industry but also provide a clear framework for 
+effective regulatory oversight.
+The FLA is confident that VisionXAI's research holds great promise for the European 
+financial landscape. We strongly encourage the CIG committee to give their 
+proposal thorough consideration.
+Sincerely,
+Sanita Bajāre
+CEO
+THIS DOCUMENT IS ELECTRONICALLY SIGNED BY
+SECURE ELECTRONIC SIGNATURE AND CONTAINS A TIME STAMP
+Roberta Hirša iela 1, Riga, Latvia, LV-
+1045
+Reg. no 40008002175
+Phone: +371 28718175
+info@financelatvia.eu
+www.financelatvia.eu
+RIGA

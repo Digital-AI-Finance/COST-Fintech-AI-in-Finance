@@ -1,0 +1,1482 @@
+--- Page 1 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+COST Association AISBL 
+Avenue du Boulevard – Bolwerklaan 21 | 1210 Brussels, Belgium  
+ 
+T +32 (0)2 533 3800 | office@cost.eu | www.cost.eu 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+COST Innovators Grant 
+(CIG) Application Form 
+ 
+VisionXAI: Pioneering Visual Analytics for 
+Establishing XAI Standards in European Finance 
+with a Policy-Focused Impact 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+November 2023 
+ 
+
+
+--- Page 2 ---
+ 
+ 
+ 2 
+Application title 
+VisionXAI: Pioneering Visual Analytics for Establishing XAI 
+Standards in European Finance with a Policy-Focused Impact 
+Application acronym  
+VisionXAI 
+Code of COST Action 
+from which the CIG 
+application originates 
+CA19130 
+Submitter (must be 
+Action Chair/ Vice Chair) 
+Joerg Osterrieder, joerg.osterrieder@utwente.nl 
+Origin of CIG application 
+in the Action  
+Since its inception in September 2020, the COST Action CA19130 
+focusing on transparency in European finance has rapidly become one 
+of the most active, with over 34 official meetings and a network 
+exceeding 380 working group members. With 40 COST countries 
+participating, a dissemination platform with more than 3500 members 
+and activities exceeding 6000 participants, this COST Action has had a 
+substantial impact on the theoretical and practical foundations of 
+explainable Artificial Intelligence. As an example for the outreach 
+activities, we mention a two-day policy workshop on the premises of 
+COST, with senior speakers from the European Commission and 
+Parliament. 
+Over the past three years, the Action has laid a robust theoretical 
+foundation in Artificial Intelligence, particularly in explainable AI, 
+evidenced by over 6000 annual citations of its academic papers. 
+Through extensive outreach, it has made vital connections with industry 
+leaders, regulators, and other stakeholders.  
+During those interactions, it became evident that a visual analytics tool 
+for showing the explainability of Artificial Intelligence computations is 
+needed both to satisfy the requirements of the European regulators 
+(among them the ECB, EBA, ESMA, EIOPA, European Data Protection 
+Board EDPB, SSM, European Systemic Risk Board ESRB), answering 
+to pressing needs of the industry as well as the end-users of the 
+products. 
+Therefore, VisionXAI represents a natural evolution of the COST 
+CA19130 Action’s objectives, transforming theoretical AI research into 
+a tangible visual analytics tool that adheres to EU regulatory standards. 
+The project’s aim to develop a visual analytics tool for explainable AI in 
+the financial sector directly addresses the need for greater transparency 
+and policy alignment in FinTech. It encapsulates the Action's 
+commitment to bridging academia and industry, fostering innovation, 
+and driving strategic development in the financial technology domain. 
+VisionXAI is not just a product but a proof of CA19130’s interdisciplinary 
+approach, setting a new standard for products leveraging Artificial 
+Intelligence in alignment with European financial policies and 
+regulations. 
+CIG Grant Holder  
+Bern Business School, Christian Hopp, christian.hopp@bfh.ch 
+Summary (for 
+publication if the 
+application is approved) 
+It is advised that the Action Grant Holder continues. If this is not 
+possible, the new Grant Holder institution shall be the affiliation of one 
+of the CIG Team members. 
+Our CIG project centres on the development of VisionXAI, a visual 
+analytics tool designed for the European financial sector to make 
+Artificial Intelligence (AI) more transparent and understandable. In 
+today's financial landscape, AI plays a pivotal role in decision-making 
+processes. However, the complex nature of AI systems often makes 
+their decisions opaque, leading to a lack of trust among users, including 
+financial analysts, regulators, and the general public. This gap in 
+understanding and trust poses a significant challenge, especially 
+considering the stringent regulatory environment of the European 
+Union. 
+VisionXAI aims to bridge this gap by providing clear, visual 
+interpretations of AI decisions, thereby demystifying complex AI models 
+and making them more accessible and accountable. The tool is 
+specifically tailored to meet the diverse needs of various stakeholders 
+
+
+--- Page 3 ---
+ 
+ 
+ 3 
+in the financial sector. Whether it's a regulator requiring compliance with 
+financial policies, a financial analyst seeking deeper insights, or an end-
+user needing clarity on AI-driven decisions, VisionXAI delivers 
+audience-specific outputs to cater to these varied explainability 
+requirements. 
+A key feature of VisionXAI is its emphasis on policy implications. The 
+tool is designed to ensure that the AI-driven insights it provides align 
+with European financial policies and regulations, aiding in compliance 
+and informed decision-making. Moreover, VisionXAI addresses 
+explainability comprehensively by considering it at every stage of the AI 
+model development, including the data collection phase. This approach 
+helps in identifying and mitigating potential biases in the underlying 
+data, promoting fairness and integrity in AI-driven financial decisions. 
+The expected outcome of the VisionXAI project is multi-fold. Primarily, 
+it will be a business plan for a visual analytics tool for explainable AI 
+(XAI). The tool aims to set a standard for explainable AI in the European 
+financial sector, enhancing transparency and trust in AI applications. 
+This is crucial for reducing biases in AI-driven financial decisions and 
+aligning these decisions with regulatory standards. The broader 
+adoption and standardisation of VisionXAI across European financial 
+institutions and regulatory bodies are anticipated, establishing it as an 
+essential component of the AI systems used in finance. This not only 
+enhances transparency and compliance but also improves the overall 
+decision-making process in finance. 
+ 
+ 
+
+
+--- Page 4 ---
+ 
+ 
+ 4 
+Composition of the CIG Team 
+Name 
+and 
+email 
+Institution Co
+unt
+ry 
+of 
+affil
+iati
+on 
+Role 
+in the 
+CIG 
+Relevant expertise and expected contribution in 
+the CIG 
+Jörg 
+Osterrieder, 
+joerg.osterrieder
+@utwente.nl 
+University 
+of Twente 
+NL 
+CIG 
+Chair 
+(JO) 
+Action Chair CA19130 
+Coordinator MSCA Doctoral Network DIGITAL 
+Coordination, Organise Meeting 1 and 3 (M1, M3) 
+Stakeholder Relationships 
+Branka Hadji 
+Misheva, 
+heb1@bfh.ch 
+Bern 
+Business 
+School 
+CH 
+CIG 
+Vice-
+Chair 
+(BHM) 
+Lead of large industry-academia projects 
+Scientific Grant Holder CA19130 
+Research lead XAI, organize meetings WG1, WG4 
+Design the concept for the prototype 
+Christian Hopp, 
+christian.hopp@
+bfh.ch 
+Bern 
+Business 
+School 
+CH 
+CIG 
+Team 
+(CH)  
+Top 10 researcher in Switzerland, academic output  
+Leads two SNF projects (around 1 Mio. CHF) 
+Contribute AI expertise 
+Develop XAI business case 
+Gabin Taibi, 
+gabin.taibi@bfh.
+ch 
+Bern 
+Business 
+School 
+CH 
+CIG 
+Team 
+(GT) 
+Quantitative finance, data science and AI 
+Blockchain and cryptocurrency markets 
+Complete XAI tool development 
+Optimize technology and UX 
+Armela Baka, 
+armela.maxhela
+ku@fdut.edu.al 
+University 
+of Tirana 
+AL 
+CIG 
+Team 
+(AM) 
+Pursuing PhD in digital assets and property law 
+Consultant role: EU, GIZ, UNDP, UNIDO 
+Contribute to the business plan development 
+Create regulatory use cases 
+Suela 
+Maxhelaku, 
+suela.maxhelak
+u@fshn.edu.al 
+University 
+of Tirana 
+AL 
+CIG 
+Team 
+(SM)  
+Lecturer and researcher: data science, AI, ML 
+Coordinated national and international projects 
+Ensure the IP compliance of the AI tool  
+Engage with EU regulatory bodies  
+Rezarta Perri, 
+rezartaperri@fe
+ut.edu.al 
+University 
+of Tirana 
+AL 
+CIG 
+Team  
+(RP) 
+Expertise in financial analysis and use of financial 
+information in company/ business evaluation 
+Contribute AI expertise to XAI development 
+Contribute to the XAI VA development 
+Stoyan Mishev, 
+stoyan.mishev
+@vfu.bg 
+Varna 
+Free 
+University 
+BG 
+CIG 
+Team 
+(STM)  
+Four years teaching university courses in ML 
+Authored papers at the frontier of ML and physics 
+Develop XAI business case (for industry) 
+Apply EU data insights 
+Catarina Silva, 
+catarina@dei.uc
+.pt 
+University 
+of Coimbra 
+PT 
+CIG 
+Team 
+(CS)  
+Member of the Center for Responsible AI 
+COST STSM co-coordinator 
+Engage EU regulatory bodies 
+Develop XAI business case (for regulators) 
+Loizos Michael, 
+loizos@ouc.ac.c
+y 
+Open 
+University 
+of Cyprus 
+CY 
+CIG 
+Team 
+(LM) 
+Collaborated with a bank on prototype AI system 
+Development for compliance testing of new clients 
+Develop XAI business case (for AI developers) 
+Ensure regulatory compliance of XAI VA 
+
+
+--- Page 5 ---
+ 
+ 
+ 5 
+Roman 
+Matkvovskyy, 
+r.matkovskyy@r
+ennes-sb.com 
+Rennes 
+School of 
+Business 
+FR 
+CIG 
+Team 
+(RM) 
+Founder and co-director of a research center 
+Leads a research group 
+Co-organize final meeting M3 
+Help in the design of user-specific visual analytics  
+Galena Pisoni, 
+galena.pisoni@
+gmail.com 
+Université 
+Côte 
+d'Azur 
+FR 
+CIG 
+Team  
+(GP) 
+10 years of experience in academia 
+Expertise in data analytics, AI for Finance, XAI 
+Contribute to the deployment of XAI methods 
+Co-organize mid-term meeting (M2) 
+Bálint Molnár, 
+molnarba@inf.el
+te.hu 
+Eötvös 
+Loránd 
+University 
+HU 
+CIG 
+Team 
+(BM)  
+Informations Systems, Business Processes 
+Application of Data Science, AI, Blockchain, NLP 
+Develop bias detection and mitigation methods 
+Track tech milestones. Co-organize meeting. M2 
+Hanna Kristin 
+Skaftadottir, 
+hks7@hi.is 
+University 
+of Iceland 
+IS 
+CIG 
+Team  
+(HS) 
+15 years of industry experience 
+Board member: IS Blockchain Fdt., CARLab, NSG 
+Contribute AI expertise 
+Engage EU regulatory bodies (co-lead WG2) 
+Jamal Nasir, 
+jamal.nasir@uni
+versityofgalway.
+ie 
+University 
+of Galway 
+IE 
+CIG 
+Team  
+(JN) 
+Partner in a €4.8 million project, investigator for SFI 
+COST Actions CA19130 and CA21131 
+Lead data collection for the business case (WG1) 
+Define market strategy 
+Cal Muckley, 
+cal.muckley@uc
+d.ie 
+University 
+College 
+Dublin 
+IE 
+CIG 
+Team  
+(CM) 
+Experience in AI, ML, Ethics, Financial services 
+Recent papers on AI and financial services 
+Responsible for organizing the pilot test of the XAI 
+VA with different stakeholders. (WG3 lead) 
+Maria Iannario, 
+maria.iannario
+@unina.it 
+Unversity 
+of 
+Naple 
+Federico II 
+IT 
+CIG 
+Team 
+(MI)  
+Chair of datathon contests 
+COST Action CA19130, MSCA DN Digital Finance 
+Co-lead on XAI research (WG1) 
+Lead for AI/UIX issues of XAI VA tool 
+Sabrina 
+Giordano, 
+sabrina.giordan
+o@unical.it 
+University 
+of Calabria 
+IT 
+CIG 
+Team  
+(SG) 
+Created algorithms for fair decision support 
+Research on data-driven algorithms 
+Contribute AI expertise 
+Evaluate XAI user feedback (WG3) 
+Alessandra 
+Tanda, 
+alessandra.tand
+a@unipv.it 
+University 
+of Pavia 
+IT 
+CIG 
+Team 
+(AT)  
+Conducted research in the area of XAI for finance 
+COST Action CA19130, FINTECH HO2020, IRM 
+Define market strategy 
+Implement business plan 
+Claudia 
+Tarantola, 
+claudia.tarantol
+a@unipv.it 
+University 
+of Pavia 
+IT 
+CIG 
+Team  
+(CT) 
+Member of the Italian managing committee for 
+COST Action CA19130, associated editor for JASA 
+Engage EU regulatory bodies 
+Develop XAI business case, organize M3 
+Albulena Shala, 
+albulena.shala
+@uni-pr.edu 
+University 
+of 
+Prishtina 
+XK 
+CIG 
+Team  
+(AS) 
+Banking and finance background 
+10 years university experience 
+Contribute AI expertise 
+Create regulatory use cases, contribute to WG2 
+Vlora Berisha 
+Dranqolli, 
+vlora.berisha@u
+nhz.eu 
+University 
+of 
+Peja-
+Haxhi 
+Zeka 
+XK 
+CIG 
+Team  
+(VB) 
+FinTech and societal issues 
+Multidisciplinary researcher 
+Engage EU regulatory bodies 
+Develop novel bias detection approaches  
+
+
+--- Page 6 ---
+ 
+ 
+ 6 
+Ramona 
+Rupeika-Apoga, 
+rr@edu.lu.lv 
+University 
+of Latvia 
+LV 
+CIG 
+Team  
+(RR) 
+Cryptocurrency & fintech research 
+Digital transformation understanding 
+Co-Organize mid-term meeting M2  
+Engage EU regulatory bodies 
+Audrius 
+Kabašinskas, 
+audrius.kabasin
+skas@ktu.lt 
+Kaunas 
+Uni 
+of 
+Technolog
+y 
+LT 
+CIG 
+Team  
+(AK) 
+Financial mathematics expert (15+ years) 
+XAI researcher, coordinator of CA19130 
+Lead of the user engagement feedback (WG2) 
+Engage EU regulatory bodies 
+Eftim 
+Zdravevski, 
+eftim@finki.uki
+m.mk 
+Ssh. Cyril 
+and 
+Methodius 
+University 
+MK 
+CIG 
+Team  
+(EZ) 
+Founder of Magix.AI with 120+ publications 
+17+ years in research & software development 
+Develop XAI business case 
+Innovate XAI feature set 
+Petre Lameski, 
+petre.lameski@f
+inki.ukim.mk 
+Ssh. Cyril 
+and 
+Methodius 
+University 
+MK 
+CIG 
+Team  
+(PL) 
+WG2 leader CA19130, AI & ML expert 
+17+ years of academic & industry experience 
+Track technological milestones.  
+Contribute AI expertise 
+Anastas 
+Dzurovski, 
+anastas.dzurovs
+ki@uklo.edu.mk 
+University 
+St.Kliment 
+Ohridski 
+Bitola 
+MK 
+CIG 
+Team 
+(AD)  
+Financial and banking regulation 
+AI regulation 
+Analyze market trends 
+Co-organize working group meetings M3 and M6 
+Olivija 
+Filipovska, 
+olivijaf@gmail.c
+om 
+Komercijal
+na Banka 
+MK 
+CIG 
+Team  
+(OF) 
+Finance research projects 
+Corporate role and background 
+Co-organize mid-term meeting. M2 
+Develop XAI business case 
+Karolina 
+Bolesta, 
+kbolesta96@gm
+ail.com 
+Warsaw 
+School of 
+Economic
+s 
+PL 
+CIG 
+Team  
+(KB) 
+AI model building & validation 
+Model transparency & insights 
+Ensure AI tool IP compliance. Organize M1. 
+Lead virtual grant VG1 
+Piotr Wójcik, 
+pwojcik@wne.u
+w.edu.pl 
+Warsaw 
+School of 
+Economic
+s 
+PL 
+CIG 
+Team  
+(PW) 
+Research in XAI tools in finance and economics 
+Understanding algorithms for trust in AI 
+Lead virtual grant VG3 
+Develop XAI business case 
+Będowska-
+Sójka, 
+bedowska 
+@ue.poznan.pl 
+Poznan 
+University 
+of 
+Business 
+PL 
+CIG 
+Team 
+(BB)  
+Financial modelling, data analysis 
+Green finance, machine learning 
+Co-organize WG1 and WG4 
+Evaluate XAI user impact 
+Susana Aires 
+de Sousa, 
+susanaas@fd.u
+c.pt 
+University 
+of Coimbra 
+PT 
+CIG 
+Team 
+(SDS)  
+Law and regulation expert 
+AI responsibility focus 
+Analyze market trends 
+Co-organize WG2 and WG5 
+Joana Dias, 
+joana@fe.uc.pt 
+University 
+of Coimbra 
+PT 
+CIG 
+Team 
+(JD) 
+Operations research and quantitative finance 
+Expert in explainable AI for finance 
+Emphasize model transparency 
+Develop XAI business case 
+Ioana Coita, 
+coita.iflorina@g
+mail.com 
+University 
+of Oradea 
+RO 
+CIG 
+Team 
+(IF)  
+Quantitative & behavioural finance expert 
+Tax research & consultancy specialist 
+Contribute AI expertise 
+Co-organize kick-off meeting M1 
+
+
+--- Page 7 ---
+ 
+ 
+ 7 
+Codruta Mare, 
+codruta.mare@
+econ.ubbcluj.ro 
+Babes-
+Bolyai 
+University 
+RO 
+CIG 
+Team 
+(CM) 
+Econometrics, Data Analysis, Visualization 
+NLP, AI, FinTech, Ethics in AI 
+Navigate EU AI regulations 
+Engage EU regulatory bodies 
+Liana Stanca, 
+liana.stanca@e
+con.ubbcluj.ro 
+Babes-
+Bolyai 
+University 
+RO 
+CIG 
+Team 
+(LS)  
+AI and Data Science specialist 
+Extensive experience in NLP 
+Develop XAI business case 
+Ensure AI tool IP compliance 
+Stefana Belbe, 
+stefanacioban@
+yahoo.com 
+Babes-
+Bolyai 
+University 
+RO 
+CIG 
+Team  
+(SB) 
+Data Science Consultant, cloud analysis 
+PhD in Cybernetics and Statistics 
+Co-lead the application process for V1 
+Engage EU regulatory bodies 
+Jana Peliova, 
+jana.peliova@e
+uba.sk 
+University 
+of 
+Economic 
+Bratislava 
+SK 
+CIG 
+Team  
+(JP) 
+Behavioral science in finance 
+Fintech and Insuretech expertise 
+Design visual analytics tool for regulators 
+Co-organize WG2 and WG5 
+Luis Vicente, 
+lavicent@unizar
+.es 
+University 
+of 
+Zaragoza 
+ES 
+CIG 
+Team 
+(LV) 
+Portfolio Mgmt & Behavioural Finance 
+Performance Evaluation & AI Decisions 
+Analyze EU AI regulations 
+Co-organize WG3 and WG6 
+Peter 
+Schwendner, 
+scwp@zhaw.ch 
+ZHAW 
+CH 
+CIG 
+Team 
+(PS) 
+Financial industry experience 
+Published papers on Explainable AI 
+Develop XAI business case 
+Conduct financial study 
+Nadi Serhan 
+Aydin, 
+serhan.aydin@i
+stinye.edu.tr 
+Istinye 
+University 
+TR 
+CIG 
+Team 
+(SA) 
+Quant. Finance, Math. Optimization, ML, Risk Mgmt 
+Holds an FRM certificate by GARP 
+Apply EU data insights 
+Co-lead virtual grant VG2 
+Gizay Daver, 
+gizaydaver@gm
+ail.com 
+Zonguldak 
+Bulent 
+Ecevit 
+University 
+TR 
+CIG 
+Team 
+(GD)  
+Banking and finance expert 
+Developing AI model for banking 
+Contribute AI expertise 
+Develop XAI business case 
+Mutlu Akar, 
+makar@yildiz.e
+du.tr 
+Yildiz 
+Technical 
+University 
+TR 
+CIG 
+Team  
+(MA) 
+AI, ML, Data Science modelling, Data Analysis 
+Authored articles on predicting outcomes using AI 
+Pilot test for feedback 
+Process user feedback 
+Bekir Çetintav, 
+bekircetintav@
+mehmetakif.edu
+.tr 
+Burdur 
+Mehmet 
+Akif Ersoy 
+University 
+TR 
+CIG 
+Team 
+(BC) 
+Manages more than 10 industrial projects 
+Experience in real-world fintech applications 
+Plan XAI business strategy 
+Develop XAI business case 
+Enis Kayış, 
+enis.kayis@ozy
+egin.edu.tr 
+Ozyegin 
+University 
+TR 
+CIG 
+Team 
+(EK) 
+Expertise in XAI Optimization  
+10+ years in human-centric AI  
+Innovate XAI feature set 
+Plan XAI business strategy 
+Gokce Nur 
+Yilmaz, 
+nur.gkc@gmail.
+com 
+TED 
+University 
+TR 
+CIG 
+Team 
+(GY) 
+AI and ML research for 5+ years 
+Data Science: 15+ years of experience 
+Optimize technology and UX 
+Innovate XAI feature set 
+
+
+--- Page 8 ---
+ 
+ 
+ 8 
+Haluk Citci, 
+halukcitci@gmai
+l.com 
+Gebze 
+Technical 
+University 
+TR 
+CIG 
+Team 
+(HC) 
+15+ years of expertise in finance 
+COST Actions 19130 and 22101 
+Complete XAI tool development 
+Track tech milestones 
+Ania Zalewska, 
+a.zalewska@le.
+ac.uk 
+University 
+of 
+Leicester 
+UK 
+CIG 
+Team 
+(AZ) 
+Co-founder of the Finance Research Consortium 
+Director of CFGE, COST Action 19130 
+Engage EU regulatory bodies 
+Apply EU data insights. Co-Organize M3  
+Lu Liu, 
+l.liu@leicester.a
+c.uk 
+University 
+of 
+Leicester 
+UK 
+CIG 
+Team  
+(LL) 
+AI & FinTech expert, real-time anomaly detection 
+Leading AI for financial risk & health projects 
+Plan XAI business strategy 
+Co-organize WG1 and WG4. 
+Esra Kabaklarlı, 
+etalasli@selcuk.
+edu.tr 
+Selcuk 
+University 
+TR 
+CIG 
+Team 
+(EK) 
+Expertise in economics, econometrics, finance 
+Developing XAI policy tools for finance 
+Evaluate XAI user impact.  
+Co-organize WG2 and WG5.  
+The CIG team members agree to commit to their contribution as described above and in Part B - 
+Implementation. 
+ 
+ 
+
+
+--- Page 9 ---
+ 
+ 
+ 9 
+1. INNOVATION POTENTIAL 
+1.1  WHAT IS THE PRACTICAL CHALLENGE AND TARGET GROUP THAT YOU WILL ADDRESS 
+Artificial intelligence (AI) is revolutionising technology-driven fields, offering significant innovation 
+opportunities in finance (Dingli et al., 2017, Di Persio et al. 2017, Sen et al., 2021, Yang, 2021, Shi et 
+al., 2022). Yet, its widespread adoption hinges on trust in its outputs (Doshi-Velez and Kim, 2017, 
+Miller, 2018, Moscatelli et al., 2019, Cascarino et al., 2022, Madabu et al., 2022). Despite the growing 
+popularity of the topic, a key gap in explainable AI within the finance sector is the lack of 
+methodologies for interpreting complex, high-dimensional financial models in a way that is both 
+accessible to non-experts (Hadji Misheva, 2021 and Weber, 2023) and compliant with evolving 
+regulatory standards, presenting a prime opportunity for an innovative project aimed at bridging this 
+divide. Building on the identified gap, the project will focus on creating a visual analytics (VA) 
+tool that not only demystifies complex financial models for non-experts but also adheres to 
+European regulatory requirements, setting a new standard for explainable AI, providing a 
+clear, interactive, and user-friendly interface to understand AI-driven financial insights. 
+The gap in explainable AI (XAI) in finance can be attributed to a variety of practical challenges. A 
+primary issue is the suitability of existing XAI methods for the diverse stakeholders within the financial 
+value chain, including model developers, risk experts, model auditors, and end-users. Each group 
+requires different levels of explainability and forms of visualisations that can convey complex AI-driven 
+insights in a comprehensible and actionable manner (Holstein et al., 2019, Bhatt et al., 2020 and 
+Hadji Misheva et al. 2021). We need to create visual tools that can cater to these varied requirements, 
+with accessible explanations, for all. There is a mismatch between theoretical XAI approaches and 
+the practical needs of the industry. Models fail to address the specific, real-world complexities of 
+financial applications (i.e. scalability issues (Bertossi et al., 2021) or feature dependence issues 
+(Molnar, 2019 and Kumar, 2020)). Bias, fairness and data integrity in ML models pose significant 
+hurdles (Grupa et al. 2021). Though numerous bias detection and mitigation techniques are available 
+in the literature (Prakhar et al., 2023), there is a gap targeting financial data, with its high-dimensional 
+input spaces (Ali et al., 2023). Aligning AI systems with EU AI regulations, such as the GDPR, EBA 
+guidelines, ECB standards, and the proposed EU AI Act, adds another layer of complexity.  
+We have confirmed interest from several banks, government organisations and Fintechs: 
+European Financial Institutions such as banks, investment, and insurance companies. The 
+research team has established connections with Deloitte, Swedbank, Raiffeisen Bank, Vontobel, ING, 
+all of which have confirmed their interest with us and are integrating AI within the stringent EU 
+regulatory framework. They can access comprehensive documentation and examples on the end-to-
+end process of training ML and deep learning (DL) models on risk management use cases. They will 
+also access novel context-specific bias mitigation and explainability methods.  
+European Regulatory Bodies, like the ECB (Department on Risk Management and Supervision 
+team on AI methodologies), ESMA, the BIS (Department on Risk Methodologies, Department of IT), 
+all of which need tools to effectively evaluate and monitor AI applications in finance. With the CIG 
+solution, these agents will have a better understanding on how complex models are built and what 
+type of processes are in place to ensure fairness and explainability standards.  
+AI Developers and Data Scientists, who are required to align AI models with EU financial 
+regulations and standards, will benefit from the CIG visual analytics solution as it will provide them 
+with a functional AI playground and detailed access to code, scripts and data to replicate novel 
+methods and visualisations developed by the consortium. 
+Policy Makers and Legislators, like the European Commision and the team leading the AI Act 
+involved in formulating and refining AI regulation in the financial sector, will benefit as it will help them 
+further specify regulation on explainability requirements for different audiences.  
+End-Users in the EU Finance Sector at large (like the European Consumers Union (ECU)), who 
+require transparent and understandable AI tools for decision-making. The solution's user-friendly 
+interface and comprehensive documentation provide valuable insights into how AI decisions are 
+made and the potential biases involved, leading to an informed dialogue about AI use in society. 
+1.2  WHAT IS YOUR PROPOSED SOLUTION AND THE MAIN OUTCOMES OF THE CIG 
+The proposed solution is the development of a visual analytics tool for explainable AI, specifically 
+tailored to the needs of the European financial sector. The features of the VA tool are outlined below:  
+User-specific interpretations and visualizations. The VA will: (i) customizes explanations and 
+visualizations to meet the specific explainability needs of various user groups, (ii) provide an overall 
+score indicating the degree to which the AI model aligns with expert financial reasoning and (iii) offer 
+insights into the key features driving the model’s outputs. 
+Data & algorithmic bias score. The VA will also incorporate a quantitative measure to assess the 
+level of bias within the dataset or algorithm and helps users understand and address potential 
+skewness in data or decision-making processes. 
+
+
+--- Page 10 ---
+ 
+ 
+ 10 
+Regulatory compliance score. The VA will help users evaluate how well the data, model, and 
+interpretations adhere to current financial regulations. 
+In addition, the tool will also allow users to drill down to any level of detail concerning the deployment 
+of the tool and all documentation related with the data used, code developed, and novel analytical 
+and visualisation tools proposed. 
+In terms of main outcomes, the VA tool will serve as a cornerstone in establishing a XAI standard in 
+the European financial sector, enhancing policy compliance and alignment with European financial 
+regulations. It will significantly improve the transparency and trustworthiness of AI applications 
+in finance, effectively reducing biases in AI-driven financial decisions. Additionally, this tool will 
+contribute valuable insights to XAI research, particularly in visual analytics, and will be supported by 
+a comprehensive business plan detailing strategies for implementation, market penetration, 
+and growth in the financial sector. The primary endpoint of the project is to achieve broad 
+adoption and standardisation of explainability practices across European financial 
+institutions and regulatory bodies, establishing it as a standard practice within the industry. 
+1.3 OBJECTIVES OF THE CIG 
+Primary objective 1: The main goal of this project is the development of a SaaS-based visual 
+analytics tool, accessible in a Cloud Computing environment, specifically designed for 
+explainable AI in the European finance sector that will be compliant with evolving European 
+regulatory standards, and accessible to audiences of different explainability requirements and 
+levels of technical knowledge, together with an appropriate business plan. The specificity of the 
+project lies in its targeted design for financial AI applications, addressing a clear market need. In 
+terms of measurability, the goal is to complete the development of this tool and begin user testing 
+within six months, setting a clear timeline for progress assessment. The project is achievable as it 
+builds upon existing XAI frameworks, adapting and integrating new features tailored to the intricacies 
+of financial data. Its relevance is underscored by the increasing demand for transparency in AI 
+decision-making processes within the stringent regulatory environment of EU finance. The topic is 
+timely, aiming to deliver a complete, market-ready version of the tool within 12 months. The outcomes 
+are aligned with the European Union’s strategies on Digital Finance and AI. 
+Secondary objective 1: To map out and match various XAI methods with the diverse explainability 
+needs in the European finance sector, highlighting the gaps between theoretical interpretability and 
+practical requirements. The aim is to create more intuitive and user-friendly visualisations that can 
+convey complex AI decisions effectively. 
+Secondary objective 2: To identify and address any deployment issues associated with the identified 
+XAI methods. The CIG will aim to integrate XAI methods that are easily scalable and valid even under 
+the assumption of correlated input features. 
+Secondary objective 3: To identify and incorporate all European financial policies and regulations 
+that impact AI deployment in the finance sector.  
+Secondary objective 4: To define a framework for robust bias detection and mitigation applicable to 
+high-dimensional, correlated financial data. 
+Secondary objective 5: To operationalize the VA tool, i.e. build a SaaS-based solution that offers 
+intuitive, customizable visualization tools for varied expertise levels, ensures regulatory compliance, 
+provides plain-language interpretability reports, and ensures data security, all while being scalable 
+and user-friendly with robust support and training resources. 
+Primary objective 2: To develop a comprehensive business plan outlining the strategy for 
+implementing, scaling, and commercialising the visual analytics tool within the finance sector. This 
+plan encompasses market analysis, deployment strategies, potential revenue models, and 
+sustainability measures, ensuring the tool's long-term impact and viability in the financial industry. 
+1.4 WHAT IS INNOVATIVE ABOUT YOUR SOLUTION 
+The innovative tool for XAI in finance stands out due to its comprehensive features and compliance-
+focused design, which are not present in existing solutions: 
+1. Business-Oriented Prototype: Converts academic research to spark the development of 
+successful business plans and products using XAI. 
+2. User-Centric Explanations: Tailors XAI methods to the specific needs of different user groups 
+within the financial sector. 
+3. Specialized Visual Analytics: Features audience-dependent visual analytics that are scalable 
+and maintain validity even with feature dependence. 
+4. Data & Algorithmic Bias Score: Provides users with a quantitative measure to assess and 
+articulate the bias within financial datasets and models. 
+5. Regulatory Compliance: Assures that data, models, and interpretations align with current 
+regulations, satisfying the diverse explainability needs of financial stakeholders. The solution will 
+be specifically tailored for the European financial market, ensuring adherence to GDPR, EBA 
+guidelines, and the EU AI Act. 
+
+
+--- Page 11 ---
+ 
+ 
+ 11 
+6. High level report: Enables non-technical audiences to have high-level conclusions concerning 
+the degree to which the AI model aligns with expert financial reasoning and relevant regulations.  
+7. Detailed Documentation: Allows users comprehensive access to documentation regarding data 
+usage, code development, and innovative analytical and visualization tools. 
+This tool significantly advances the field of XAI by integrating state-of-the-art techniques that 
+effectively manage complex data and address bias, areas where existing methods often fall short. 
+2. EXPECTED IMPACT 
+2.1  DESCRIBE WHO AND/ OR WHAT WILL BENEFIT, HOW, WHEN AND TO WHICH EXTENT 
+The CIG will have a major impact in all of the nine primary scientific, economic/technological and 
+societal Key-Impact Pathways of Europe, both in the short and long run. It will impactall larger 
+European banks, Fintechs across the EU, government agencies (ECB, BIS) and the end-user. We 
+have substantial preliminary interest specifically from the ECB and BIS on such a tool and will work 
+with them over the next three years. 
+Economic and technological Impact 
+Short-Term Perspective (within 12 months): 
+Novel, audience-specific visualisations of explanations. (BIS IT team, ECB AI team)  
+Scalable application deployment. The CIG will integrate XAI methods that are scalable and can 
+handle correlated input features (European Fintechs, Banks, e.g. ING). 
+Technical advancements. The open-source nature of the toolkit will facilitate knowledge sharing 
+and collaboration among researchers, developers, and practitioners, leading to the development of 
+innovative XAI techniques. 
+Visual Analytics Framework. The VA tool will enable different users to understand: the data pre-
+processing, the bias mitigation strategies, the feature selection process, and ultimately the training 
+and testing of the AI-based system.  
+Long-Term Perspective (within 24 - 36 month): Sustained and Expansive Impacts in Finance 
+Setting New XAI Standards: The guidelines and models developed for fairness, and explainability 
+will likely become industry standards. Financial technology firms will adhere to these models, ensuring 
+a consistent level of AI transparency across the sector. 
+Novel, domain-specific bias detection and mitigation techniques. Defining a framework for bias 
+detection and mitigation in AI-driven decisions is to ensure fairness and integrity. Financial data is 
+influenced by a myriad of socio-economic factors that need to be unbiased.  
+Innovative Financial Tools: We anticipate 15 new AI-driven financial tools and 10 sustainable digital 
+finance tools within three by the end of the Action as well as five potential IPR applications for unique 
+methodologies in AI and sustainable finance. 
+Investment Mobilization: The CIG will draw several millions in PPIs within five years.  
+Cost Savings in Compliance and Risk Management: Financial institutions spend a significant 
+portion of their budget on compliance, estimated to be around 15-20% of their total operational costs. 
+Implementing XAI can reduce these costs by improving the efficiency of compliance processes. For 
+instance, if XAI reduces these costs by even 5%, for a bank with $1 billion in operational costs, this 
+would mean savings of $50 million to $100 million. 
+B. Societal Impact 
+Enhanced trust and transparency in the financial sector: The toolkit will facilitate informed 
+decision-making among users, for a more trustworthy and transparent financial ecosystem. 
+Compliance with regulations. The toolkit will provide clear guidance and tools for ensuring 
+compliance with AI regulations, such as the EU AI Act. 
+Accountability and transparency in AI. XAI will promote a culture of accountability and 
+transparency in the use of AI, ensuring that AI systems are used responsibly and ethically. 
+Fairness and Bias Mitigation. Higher transparency facilitated by XAI contributes to increased 
+awareness of potential biases, reinforcing a commitment to fairness in AI applications.  
+C. Scientific Impact  
+Addressing EU Policy Priorities and Global Challenges through Research and Innovation: By 
+emphasising XAI and digital transformation, our Action directly aligns with Europe's strategic priorities 
+to establish itself as a frontrunner in digital innovation while addressing environmental and ethical 
+considerations (EU Digital Finance Package, EU Green Deal, European Approach to Artificial 
+Intelligence). 
+Scientific output: The CIG will produce several scientific papers on XAI and their implementation in 
+the industry. A target journal is e.g. The Journal of Financial Innovation. 
+These benefits will realise progressively with immediate impacts seen in the form of enhanced 
+regulatory compliance and increased confidence in AI-driven financial tools. Long-term benefits will 
+include more robust financial markets, informed regulatory frameworks, and a more AI-literate society. 
+ 
+
+
+--- Page 12 ---
+ 
+ 
+ 12 
+2.2 PLAN FOR EXPLOITATION 
+Our network has substantial connections with industry, such as the Global Analytics and market 
+risk teams at ING, the AI supervisory team at the European Central Bank, the IT team at BIS, the risk 
+analytics teams at UBS and Deutsche Bank, and is well integrated into the European academia-
+industry networks, such as a European MSCA PhD and Research Programme on Digital Finance, 
+the European Consortium on Mathematics for Industry, EIT Digital, and European industry and 
+consumer associations such as several national Fintech and financial consumer association. Over 
+the last year, a majority of them have expressed the need and desire for the prototype of a XAI tool 
+we are proposing. Those companies and end-user representatives will be invited to the kick-off 
+meeting, to collect early feedback and input as well as the two main follow-up meetings to ensure 
+suitability for them. Besides large companies, we have been working with a few Fintech companies 
+(in Germany, Switzerland, Italy) that have shown interest to commercially exploit a prototype. 
+Dissemination of research results and the XAI tool. Using the synergies of other European 
+research consortia, the CIG members will organise their own large conference to showcase the 
+technological advancements on the XAI tool, a policy event in Brussels for the regulatory results and 
+requirements and the annual open science festival in Amsterdam to reach the end-user. We also use 
+standard channels such as our website, LinkedIn, blog, and Twitter. Newspapers, social media, and 
+public demonstrations will be utilised to reach the public (e.g., one lab day and several public talks). 
+Members of CIG have organised over 120 research and industry-focused conferences, 
+workshops, and roundtable sessions, which were attended by over 6,000 individuals from 
+academia, 
+industry, 
+the 
+regulatory 
+community, 
+and 
+the 
+general 
+public 
+(https://www.meetup.com/Fintech AI in Finance/ with 2000 participants). We will use 
+https://www.alphagalileo.org/en-gb/ to disseminate significant findings to 5,000 journalists and 
+potentially 2 million consumers.  
+Through use case presentations at various industry-focused meetings, workshops, and roundtable 
+sessions, as well as media releases, news articles, and blog posts published on our website, 
+LinkedIn, and similar channels, the industry community will be reached. 
+Exploitation of results. The topics within this CIG are crucial for the European Finance industry to 
+be able to compete on a global scale within the next decade hence the exploitation methods 
+envisioned are: 
+Further internal research. Results will feed into subsequent research in the fields of ML for industry 
+and computer science, also outside Finance. 
+Collaborative research. The results will help shape future collaborative research, such as via an 
+Eureka application, a new COST Action and an EU H2020 Widening application, as agreed upon by 
+all CIG members. 
+Collaborative, industry-focused projects. Our findings result in a prototype and multiple use 
+cases. In the sequel, they will need to be refined and adapted to the industry's shifting requirements. 
+Together with industry, CIG members will seek international funding for additional projects. 
+Product development. The CIG will result in one proof-of-concept solution for the industry-
+specific requirements for a domain-specific XAI tool. These will be transformed into actual 
+products by industry, which necessitates ongoing cooperation. 
+Education. The output of research will feed back into education, e.g. via the MSCA Doctoral 
+network on Digital Finance and EIT Digital.  
+Standardisation. The CIG research will produce a standardised framework for a XAI tool tailored to 
+EU regulatory needs based on the Data Hub of the EU Digital Finance Platform.  
+Exploitation across industries. Due to the fundamental methods and techniques (ML, AI, RL) we 
+employ, our outcomes will not only benefit the Finance industry, but also a number of other 
+industries. A Policy paper will be beneficial to regulators (e.g. ECB). Over the past years, members 
+of CIG have organised training and demonstrations for non-technical audiences (regulators, 
+supervisors, and the general public, including all 28 European regulatory authorities) through EU-
+funded projects (https://fintech-ho2020.eu/). These contacts will be actively maintained. 
+Barriers to exploitation and how we address them. Barriers to exploitation exist: Inadequate 
+financing to go from prototype to business product. Given the substantial amount of VC funding 
+that goes into XAI, this is extremely unlikely. We will begin with a minimum viable product and then 
+scale up. All IP issues will be discussed well in advance of any new discoveries or 
+commercializations. Industry and academia collaborate from day one, and all research is 
+continuously validated by industry. 
+ 
+ 
+ 
+
+
+--- Page 13 ---
+ 
+ 
+ 13 
+3. PLAN FOR IMPLEMENTING THE CIG 
+3.1 WORK PLAN 
+What will be done 
+Which COST 
+Networking 
+Tool(s) will be 
+used 
+Expertise required 
+CIG Team 
+Members 
+committed 
+to this 
+activity 
+Bud- 
+get  
+re-
+quired 
+M1. Kick-Off 
+Meeting, Strategic 
+Plan and 
+distribution of 
+work. Technical 
+Roadmap, Concept 
+of the XAI Tool, 
+Stakeholder 
+Engagement and 
+Dissemination 
+Strategy, Develop IP 
+policy 
+Meeting, two 
+days, Brussels, 
+November 2024 
+Deep understanding of AI, Machine 
+Learning, and Visual Analytics to 
+outline the technological foundation and 
+developmental milestones.  
+IP knowledge for AI tools for the 
+industry with regulatory components. 
+Engagement with EU regulators, 
+industry and the end-user 
+Business: Convert explainable AI tools in 
+the form of a prototype and visual 
+analytics platform to a business case 
+JO, BHM, 
+CS, JN, VB 
+OF, IF, PS, 
+GY, GT, all 
+20k 
+WG1. XAI Tool 
+Development and 
+Technological 
+Innovation. 
+WG Meeting, 
+Berlin, January 
+2025 
+Design knowledge for visual analytics 
+products to finalize the design 
+specifications for the XAI tool and identify 
+key technological challenges 
+BHM, AM, 
+GP, SG, 
+EZ, BB, 
+SB, MA, LL 
+7k 
+WG2. Policy 
+Alignment and 
+Regulatory 
+Compliance. 
+WG Meeting, 
+Bern,  February 
+2025 
+ 
+Understand the EU regulatory 
+frameworks relevant to AI tools (AI Act, 
+GDPR, EU Digital Strategy), and develop 
+strategies for compliance 
+SM, BM, 
+AT, PL, 
+SDS, JP, 
+BC, EK 
+7k 
+WG3. User 
+Engagement, 
+Feedback, and 
+Market Strategy. 
+WG Meeting, 
+Vienna, March 
+2025 
+ 
+Business and user knowledge for 
+technical products to define target 
+markets, gather user feedback, and draft 
+initial marketing strategies 
+JO, CH, 
+RP, HS, 
+CT, AD, 
+JD, LV, EK 
+7k 
+M2. Mid-term 
+Progress 
+evaluation. Allow 
+end-users to test the 
+prototype and collect 
+feedback. 
+Meeting, two 
+days, Strasbourg, 
+May 2025 
+Data, Technology and end-user 
+experience. Use Case from the EU Data 
+platform presented. Pilot test carried out 
+(different users will interact with the tool 
+and provide feedback on the utility of the 
+available features and visualisation 
+techniques).  
+JO, BHM, 
+LM, CM, 
+RR, KB, 
+CM, SA, 
+HC, GT, all 
+20k 
+WG4. XAI Tool 
+Development and 
+Technological 
+Innovation  
+WG Meeting, 
+Kaunas, June 
+2025  
+Deep AI and UIX knowledge to solve 
+outstanding issues on algorithmic 
+complexity, data integration challenges, 
+and user interface design problems 
+BHM, AM, 
+GP, SG, 
+EZ, BB, 
+SB, MA, LL 
+7k 
+WG5. Policy 
+Alignment and 
+Regulatory 
+Compliance 
+WG Meeting, 
+Bucharest, July 
+2025 
+Combined technical, regulatory and 
+business to define relevant regulatory 
+use cases 
+SM, BM, 
+AT, PL, 
+SDS, JP, 
+BC, EK 
+7k 
+WG6. User 
+Engagement, 
+Feedback, and 
+Market Strategy 
+WG Meeting, 
+Helsinki, August 
+2025 
+Market knowledge to analyse the market 
+research findings and market trends 
+relevant to the XAI tool. End-user 
+knowledge to analyze user feedback 
+collected from two user testing sessions 
+and one survey 
+JO, CH, 
+RP, HS, 
+CT, AD, 
+JD, LV, EK 
+7k 
+M3. Final Meeting. 
+Delivery of Business 
+plan. Presentation of 
+prototype. Outreach 
+to stakeholders, EU 
+regulators, industry 
+and citizens 
+Meeting, two 
+days, Brussels, 
+October 2025 
+Business knowledge to finalise the 
+business plan with market analysis, XAI 
+Tool overview, marketing strategy, 
+operational plan, financial projections, and 
+risk assessment. Outline the 
+implementation of the business plan. 
+Deep technical knowledge to finalise the 
+XAI Tool, its further development process, 
+technological innovation, features, and 
+JO, BHM, 
+RM, MI, 
+AK, PW, 
+LS, GD, 
+AZ, GT, all 
+20k 
+
+
+--- Page 14 ---
+ 
+ 
+ 14 
+user benefits. 
+VG1. Innovation 
+Group.  
+Virtual Grant 
+Technical experts to develop new, 
+innovative features and improvements in 
+the XAI Tool. 
+CS, JN, 
+VB, OF, IF, 
+PS, GY 
+1.5k 
+VG2. Impact Study.  Virtual Grant 
+User experts and industry to conduct a 
+study to assess the impact of the XAI Tool 
+on users. 
+LM, CM, 
+RR, KB, 
+CM, SA, 
+HC 
+1.5k 
+VG3. Foundations 
+for Business Plan.  
+Virtual Grant 
+Industry and business experts to 
+undertake a financial feasibility study to 
+assess the financial viability of the project. 
+RM, MI, 
+AK, PW, 
+LS, GD, AZ 
+1.5k 
+Subtotal 
+ 
+ 
+ 
+106. 
+5k 
+FSAC (15% of 
+Subtotal) 
+ 
+ 
+ 
+15. 
+975 
+Total 
+ 
+ 
+ 
+122. 
+475 
+ 
+3.2 INTELLECTUAL PROPERTY RIGHTS CONSIDERATIONS 
+The main goal of this CIG is to achieve sustainable business success via the technological 
+implementation of the research results into a visual analytics tool for explainable Artificial 
+Intelligence, that will be commercially exploited by industry and the CIG members as a foundation for 
+future products. We estimate the likelihood of IP topics to arise during the CIG as very high. Therefore, 
+an IP strategy is a must.  
+In our case, specifically the unique algorithms and the user interfaces of our AI tool will need 
+an appropriate IP protection, via patents for algorithms and trademarks for user interfaces. 
+The CIG will follow the agreement of COST with the European Commission to implement the 
+principles set out in the Code of Practice annexed to the Commission’s Recommendation on IP 
+management and will therefore develop an IP policy. Many of the CIG members are well 
+experienced with IP rules and this consortium has, in various EU H2020 and Horizon Europe 
+settings, already implemented several IP agreements, lastly as part of a new MSCA Industrial 
+Doctoral Network on Digital Finance, following the HE IP regulations. 
+Our CIG network has agreed to implement an IP strategy before the start of the CIG and revise it 
+as needed. Specifically: 
+Before the start of the CIG: All CIG members have existing IP regulations in place as part of their 
+long-term strategy to exploit publicly-funded research results in line with European regulations. All 
+partners will provide their pre-existing knowledge, which will undergo a detailed pre-audit. Each team 
+member has agreed to undergo an IP knowledge and training course, offered by members of our 
+CIG. 
+The CIG will develop the specifics of the IP policy, the dissemination and knowledge transfer strategy 
+in a pre-meeting. The underlying principles have already been agreed to by all. 
+During the Action: We will work together with the European IPR Helpdesk to create the IP contract. 
+The legal teams of each institution, well experienced in academia-industry IP regulations via many 
+EU H2020 projects and industry spin-offs, will be available, should any issues arise. The IP 
+regulations will define the access rights and the sharing of revenues, proportional to the contribution 
+of each member, measured via the technological and time contributions.The Action will actively work 
+towards one commercial spin-off from this project as well as at least two industrial collaborations with 
+a clearly defined IP regulation. All partners have agreed to follow the following dispute management, 
+in line with public procurement rules: Any dispute shall be submitted to mediation in accordance with 
+the WIPO Mediation Rules. The place of mediation shall be Brussels (Belgium). If the dispute cannot 
+be solved by the help of mediation, it shall be finally settled by the courts of Brussels. Should new 
+technological results or opportunities for exploitation arise, IP considerations will be taken into 
+account during the research. We will adapt to the project's evolving nature. 
+After the Action: The IP regulations will stay in place and the members will continue to actively 
+exploit the research outcome to transfer them to economically viable products and business models 
+Partners will continue to work together on those topics in various settings, such as further Horizon 
+Europe projects. Using the EUREKA scheme, CIG members will work with industry to further exploit 
+the results. IP Rights are fundamental for safeguarding the innovative algorithms and user 
+interfaces of our visual analytics tool for the European Finance Industry and European 
+Government Agencies, ensuring that the ideas, technologies, and methodologies developed are 
+properly attributed, protected and converted to successful economic products. 
+ 

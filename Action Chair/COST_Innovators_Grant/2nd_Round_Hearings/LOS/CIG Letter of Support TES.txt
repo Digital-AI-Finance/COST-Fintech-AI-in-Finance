@@ -1,0 +1,72 @@
+--- Page 1 ---
+Truway Holdings Ltd t/a The Entrepreneur Studio, Adamstown, Lucan Co Dublin, Ireland 
+T: +353 860 300400 E: .hello@tes.team  W: https://theentrepreneur.studio/  
+ 
+ 
+ 
+ 
+To: Prof. Dr. Joerg Osterrieder 
+Action Chair COST Action CA19130 
+Submitter CIG Grant Application 
+ 
+Institute for Applied Data Science & Finance 
+Bern University of Applied Sciences 
+3005 Bern, Switzerland 
+ 
+Subject: Letter of Support for the VisionXAI Project 
+Dear Prof. Dr. Joerg Osterrieder, 
+The Entrepreneur Studio (TES) is pleased to endorse the VisionXAI project, an 
+innovative initiative under the COST Action CA19130 aimed at enhancing the 
+standards of Explainable Artificial Intelligence within the European financial sector. 
+TES works with the Entrepreneurs and investors who are involved in building 
+different applications and investments respectively, we recognize the significant 
+value that VisionXAI proposes to bring to the AI industry. 
+ 
+The increasing integration of AI technologies in financial and other services has 
+presented unique challenges, particularly in the realms of transparency and 
+accountability for Al-assisted decision-making. VisionXAI's development of a visual 
+analytics tool to enhance interpretability addresses a critical need for clear, 
+comprehensible insights into Al-driven financial decisions. This tool is not only vital 
+for maintaining the trust to services offered by our members in the finance sector, 
+but also for ensuring their rigorous adherence to evolving EU regulatory standards, 
+thus making it highly relevant to their operations. 
+ 
+Our support for VisionXAI is driven by the potential we see in its application to 
+specific use cases in our members' operations. These include improved risk 
+assessment models, enhanced support for our members' clients through more 
+personalized AI interactions, and more robust compliance tools that can predict and 
+mitigate potential breaches of standards before they occur. By integrating VisionXAI 
+into their operations, our members will set new benchmarks for operational 
+excellence and customer satisfaction. 
+ 
+Furthermore, TES is keen to contribute to the VisionXAI project by assessing the 
+outcomes of the project that are relevant to our members' business activities, and 
+providing the necessary interaction and feedback for the refinement and adoption
+
+
+--- Page 2 ---
+Truway Holdings Ltd t/a The Entrepreneur Studio, Adamstown, Lucan Co Dublin, Ireland 
+T: +353 860 300400 E: .hello@tes.team  W: https://theentrepreneur.studio/  
+ 
+ 
+ 
+ 
+of these outcomes. In particular, we would be open to bringing you in contact with 
+members of TES that could potentially offer technical expertise and real-world testing 
+environments to assist in refining the tool's functionalities, or access to anonymized 
+financial datasets that could further the development and testing phases of the project. 
+ 
+In conclusion, TES fully supports the VisionXAI project and its objectives. We are excited 
+about the potential transformations this tool can bring to the landscape of European 
+finance and to our members in particular, driving forward our commitment to innovation, 
+transparency, and regulatory compliance in the private business sector. We urge the 
+CIG committee to provide the necessary support for this initiative. 
+ 
+Sincerely,  
+ 
+ 
+Manmeet Abroll 
+Founder & CEO 
+The Entrepreneur Studio 
+ 
+ 

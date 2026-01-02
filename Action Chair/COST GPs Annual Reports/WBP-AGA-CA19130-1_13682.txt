@@ -1,0 +1,586 @@
+--- Page 1 ---
+Work And Budget Plan
+CA19130 Grant Agreement Period 1
+01/11/2020 to 31/10/2021
+Action Profile
+Action General Information
+Action Code
+CA19130
+MC Chair
+  Prof Jörg Osterrieder
+Action Title
+CA19130 - Fintech and Artificial Intelligence in Finance - Towards a
+transparent financial industry
+MOU
+033/20
+Draft MOU
+OC-2019-1-24059
+CSO Approval Date
+2020-03-31
+Action Start Date
+2020-09-14
+Action End Date
+2024-09-13
+Science Officer
+Dr Ralph Stuebner
+Administrative Officer
+Ms Rose Cruz Santos
+Participating COST Members: 
+ITC
+Non-ITC
+Total
+COST Members (countries) having
+accepted the MoU
+Number
+18
+Number
+15
+33
+% of ITC in
+Action
+54.55%
+% of non-
+ITC in
+Action
+45.45%
+% of all ITC
+81.82%
+% of all non-
+ITC
+88.24%
+Number of Action MC members
+32
+31
+63
+ COST Member and Acceptance Date
+  AL 13/05/2020
+  AT 30/04/2020
+  BA 30/04/2020
+  BG 04/09/2020
+  HR 02/06/2020
+  DK 28/05/2020
+  EE 04/05/2020
+  FR 05/05/2020
+  DE 08/05/2020
+  EL 22/05/2020
+  HU 13/05/2020
+  IS 05/05/2020
+  IE 29/04/2020
+  IL 11/05/2020
+  IT 12/06/2020
+  LT 17/05/2020
+  LU 30/04/2020
+  MD 17/10/2020
+  ME 19/05/2020
+  NL 25/06/2020
+  MK 07/05/2020
+  NO 06/05/2020
+  PL 30/04/2020
+  PT 28/05/2020
+  RO 10/06/2020
+  RS 27/06/2020
+  SK 29/04/2020
+  SI 27/05/2020
+  ES 18/06/2020
+  SE 26/05/2020
+  CH 20/05/2020
+  TR 04/05/2020
+  UK 30/04/2020
+
+
+--- Page 2 ---
+Submitted : 2020-11-30 at 12:50 PM
+Generated : 2020-11-30 at 12:50 PM
+2
+
+
+--- Page 3 ---
+International cooperation
+NNC
+IPC
+Specific 
+Organis
+ation
+Total
+Number of entities formally approved to join Action
+0
+0
+0
+0
+Number of countries
+0
+0
+0
+  0
+Working Groups
+WG Title
+WG Leader
+Number of
+WG members
+WG1
+Transparency in FinTech
+  Prof Wolfgang Härdle
+30
+WG2
+Transparent versus Black Box Decision-
+Support Models in the Financial Industry
+  Dr Petre Lameski
+30
+WG3
+Transparency into Investment Product
+Performance for Clients
+  Prof Peter Schwendner
+30
+3
+
+
+--- Page 4 ---
+MoU objectives, Action deliverables and Grant Agreement Period Goals
+Action Objectives from MoU
+Aim/primary Objective
+establish a large and interconnected community across academia, public institutions and industry focusing
+on Financial Technology and Artificial Intelligence, improving transparency in financial services, especially
+in and through FinTech, in financial modelling and investment performance evaluation
+Secondary objectives
+1.To develop blended approaches to evaluate innovative financial services and their providers,
+especially in the FinTech domain, building on Machine Learning methods, focussing on prediction
+(early warning) of operational fragility, fraudulent and illegal behaviour ranging from appropriation
+of loaned funds to money-laundering activities.
+2.The development of conceptual and methodological tools for establishing when black-box models
+are admissible and, to the extent possible, making them more transparent and/or replacing them
+with interpretable and explainable models.
+3.To receive input from regulators and practitioners' communities and to validate results with regard
+to increasing transparency of artificial intelligence applications.
+4.Pruning and improvement of the vast array of performance attribution models by contributing to the
+development of methodologies for reducing the false discovery rate in financial research and
+applied financial investment management.
+5.Disseminate to the public and share with regulators the results on investment product performance
+evaluation.
+6.Creation of the first European platform comparing the out-of-sample performance of banks'
+investment products, insurance-linked investment products and asset management products
+available to the general public.
+7.Create an excellent network of researchers in Europe with lasting collaboration beyond the lifetime
+of the Action.
+8.Bringing technological, quantitative and economic researchers together, to tackle future research
+that can only be done in an interdisciplinary setting, and getting actively involved in the blockchain
+and FinTech communities across Europe, to constantly monitor developments, get input and
+disseminate results.
+9.Bridging the gap between practitioners from the finance industry, academics and regulators by
+setting up a common knowledge exchange platform.
+10.Transfer knowledge in terms of expertise, scientific tools and human resources across the different
+disciplines and between academia and industry.
+11.Establish an inclusive community of researchers on methodological and technological themes in
+Machine Learning and Artificial Intelligence, to promote Early Career Investigators and increase
+their visibility.
+12.Overcome the siloing of research topics by country and achieve geographical and demographical
+diversity, with special attention to COST Inclusiveness Target countries.
+13.Prepare competitive European researchers for a fruitful career in an international environment
+through intensive use of Short Term Scientific Missions (STSM) and joint educational programs
+with industrial partners.
+14.Maximize the job opportunities for PhD students and Early Career Investigators.
+15.Disseminate the results of the Action's activities to the scientific community, European institutions
+and to the general public.
+16.Significantly improve the gender equality in the fields of the Action.
+4
+
+
+--- Page 5 ---
+Action Deliverables
+Deliverable
+Month
+1. Strategy to engage stakeholders in the Action (including revisions in month 24 and 36)
+  6
+2. Report on good examples and best practices for a transparent finance industry with
+guidelines to improve transparency
+  12
+3. A database which contains pre-ICO documentation and post-ICO performance (ROI and
+lifespan)
+  24
+4. A database which contains data on crowdfunding/P2P platform features useful for rating
+platform integrity and to predict fraud
+  24
+5. A discussion paper for possible approaches to building a statistically valid back-testing
+framework
+  24
+6. An internal database of collected (scraped) financial time series from exchanges and regional
+consolidation platforms optimised for accessibility to all partners
+  24
+7. Discussion papers (DP) on the methodology for evaluating/rating ICOs and
+crowdfunding/P2P platforms and for detection/early warning about fraud/illegal behaviour with
+emphasis on the application of AI tools
+  36
+8. Position papers, aimed at regulators and policy-makers, on methodology (with examples of
+formal criteria) for testing AI techniques in real-time
+  36
+9. Handbook and/or wiki page describing potential approaches to tackle risk management
+issues related to blockchain assets and crowdfunding/P2P lending
+  36
+10. A position paper and roadmap on mitigating risks connected with the increased use of
+digital assets
+  48
+11. Methodological discussion paper on the design of stress tests for the evaluation of AI and
+ML models under shifting financial conditions to improve the robustness of models
+  48
+12. Methodological discussion papers on AI models to generate “failed trials” of investment
+product producers and on quantitative strategies with the usage of the promising field of
+network data analysis
+  48
+13. Four annual reports (for lay audience) distributed via local and national media
+  48
+14. Key software (codes, packages) developed by each of the Working Groups in line with their
+objectives
+  48
+15. An edited volume containing scientific achievements of the Action (dummy text to delete)
+  48
+5
+
+
+--- Page 6 ---
+Grant Agreement Period
+Grant Agreement Period Start
+Date
+01/11/2020
+Grant Agreement Period End
+Date
+31/10/2021
+Grant Agreement Period Goals
+Number
+Grant Agreement Period Goal
+MoU Objective(s) it relates to
+GAPG 1
+Acquiring an overview of methodologies, knowledge
+and approaches to blockchain, ICOs and P2P
+lending in Finance
+Secondary objective 3
+GAPG 2
+Set up a plan for dissemination of the results
+Challenge
+Secondary objective 16
+GAPG 3
+Comparing the efficiency of different methodological
+approaches in measuring transparency in Finance 
+Challenge
+Secondary objective 4
+GAPG 4
+Regional market studies regarding investment
+product vendors, product range, regulation and
+marketing have been performed
+Secondary objective 5
+GAPG 5
+Strategy to engage stakeholders in the Action
+Secondary objective 8
+Secondary objective 9
+GAPG 6
+Specification document for the knowledge exchange
+platform
+Secondary objective 10
+Secondary objective 11
+GAPG 7
+Strategy to ensure and improve COST diversity
+(gender balance, ECI participation, ITC involvement)
+Secondary objective 12
+Secondary objective 13
+Secondary objective 14
+Secondary objective 15
+Secondary objective 16
+GAPG 8
+At least 50% of STSMs have been hosted/ orginated
+in ITC
+Secondary objective 13
+GAPG 9
+Set up process for deciding on how to award STMS
+applications, conference support, other financial
+support
+Secondary objective 1
+GAPG 10 Co-coordination of PhD programmes
+Secondary objective 12
+Secondary objective 15
+GAPG 11 Encouraging partnerships with private entities
+Secondary objective 10
+Secondary objective 11
+Secondary objective 14
+GAPG 12 Strategy paper on how to obtain additional funding
+Secondary objective 3
+Secondary objective 4
+Secondary objective 5
+6
+
+
+--- Page 7 ---
+Work and Budget Plan for the Grant Agreement Period
+Work and Budget Plan Summary
+A. COST Networking Tools
+EUR
+(1) Meetings
+37,200.00
+(2) Training Schools
+0.00
+(3) Short Term Scientific Missions (STSM)
+10,730.00
+(4) ITC Conference Grant
+3,000.00
+(5) COST Action Dissemination
+3,840.00
+(6) Other Expenses Related to Scientific Activities
+(OERSA)
+0.00
+B. Total Science Expenditure (sum of (1) to (6))
+54,770.00
+  C. Financial and Scientific Administration and
+Coordination (FSAC) (max. of 15% of B)
+8,215.50
+Total Grant (B+C)
+62,985.50
+7
+
+
+--- Page 8 ---
+Meetings
+Overview
+Meeting Title
+Meeting Type
+Dates
+Location
+ITC
+Total Cost(EUR)
+The darkness of
+Finance -
+making it
+transparent
+Core Group
+Meeting,
+Working Group
+Meeting,
+Management
+Committee
+Meeting
+18/03/2021 -
+19/03/2021
+Bukarest
+(Romania)
+Yes
+37,200.00
+Total
+37,200.00
+Details
+  Meeting Type
+Core Group Meeting,Working Group Meeting,Management Committee Meeting
+Title of the Meeting
+The darkness of Finance - making it transparent
+Grant Period Goal(s) it
+will address
+Acquiring an overview of methodologies, knowledge and approaches to
+blockchain, ICOs and P2P lending in Finance,Set up a plan for dissemination of
+the results,Comparing the efficiency of different methodological approaches in
+measuring transparency in Finance ,Regional market studies regarding
+investment product vendors, product range, regulation and marketing have
+been performed,Strategy to engage stakeholders in the Action,Specification
+document for the knowledge exchange platform,Strategy to ensure and improve
+COST diversity (gender balance, ECI participation, ITC involvement),At least
+50% of STSMs have been hosted/ orginated in ITC,Set up process for deciding
+on how to award STMS applications, conference support, other financial
+support,Co-coordination of PhD programmes,Encouraging partnerships with
+private entities,Strategy paper on how to obtain additional funding
+Description
+Annual Management committee meeting joint with working group and core
+group meetings.
+Output(s)
+Status report on the progress of the Action (diversity, deliverables, goals,
+achievements); Strategic plan for the next grant period; Working group status,
+progress and outlook; Core group status, progress and outlook; Planning of
+next work and budget plan; Country and leadership updates; Foundation for
+further joint research and joint research applications
+Location
+Bukarest (Romania)
+ITC
+Yes
+Start Date
+2021-03-18 09:00:00
+End Date
+2021-03-19 18:00:00
+Duration
+  2 days
+Number of expected total
+participants
+45
+Number of participants to
+be reimbursed from
+COST funds
+45
+Average
+reimbursement(per
+participant)(EUR)
+800.00
+Total Reimbursement
+costs (EUR)
+36,000.00
+Local Organiser Support
+(EUR)
+1,200.00
+Total cost of the meeting
+(EUR)
+37,200.00
+8
+
+
+--- Page 9 ---
+Short Term Scientific Missions (STSM)
+Number
+Average cost per STSM(EUR)
+Total cost(EUR)
+8
+1,341.25
+10,730.00
+Grant Period Goal(s) it
+will address
+Acquiring an overview of methodologies, knowledge and approaches to
+blockchain, ICOs and P2P lending in Finance,Comparing the efficiency of
+different methodological approaches in measuring transparency in
+Finance ,Regional market studies regarding investment product vendors,
+product range, regulation and marketing have been performed,At least 50% of
+STSMs have been hosted/ orginated in ITC,Set up process for deciding on how
+to award STMS applications, conference support, other financial support,Co-
+coordination of PhD programmes
+Description
+Short-term scientific missions to advance the research output of the Action
+Output(s)
+Scientific exchanges, collaborations and visits. Contribution to the goals of each
+working group for the first grant period Academic papers, new research
+collaborations, support of researchers that fall into COST diversity categories
+(ECI, ITC, gender)
+9
+
+
+--- Page 10 ---
+ITC Conference Grant
+Number
+Average cost per Grant(EUR)
+Total cost(EUR)
+2
+1,500.00
+3,000.00
+Grant Period Goal(s) it
+will address
+Strategy to ensure and improve COST diversity (gender balance, ECI
+participation, ITC involvement),Set up process for deciding on how to award
+STMS applications, conference support, other financial support,Co-coordination
+of PhD programmes
+Description
+Provide ITC Grants to PhD students and ECIs from ITC for attending
+conferences that are not organised by a COST Action
+Output(s)
+Support of COST diversity goals; Dissemination of academic results; Increase
+visibility for young scientists from ITC countries; Conference talks, papers and
+poster presentations;
+10
+
+
+--- Page 11 ---
+COST Action Dissemination
+  Title
+Type
+Publisher/provider
+Expected date
+of Release
+Cost(EUR)
+Website for FinAI
+Action Website to be determined
+01/12/2020
+1,790.00
+Grant Period Goal(s) it
+will address
+Strategy to engage stakeholders in the Action,Encouraging partnerships with
+private entities
+Description
+Create a professional website to share the results of the Action, future events
+and main news.
+Output(s)
+Website: Disseminate the Action goals and achievements to a wide audience,
+get a visibility of the results and the possibilities for the network extension
+  Title
+Type
+Publisher/provider
+Expected date
+of Release
+Cost(EUR)
+Brochure for COST Fintech and AI
+in Finance
+Brochures,
+flyers, posters,
+infographics
+to be determined
+31/12/2020
+1,000.00
+Grant Period Goal(s) it
+will address
+Set up a plan for dissemination of the results
+Description
+Create an Action brochure with an overview of the Action
+Output(s)
+Brochure of the Cost Action for dissemination purposes
+  Title
+Type
+Publisher/provider
+Expected date
+of Release
+Cost(EUR)
+Magazine publication about COST
+CA 19130
+Publication
+expenses
+to be determined
+30/11/2020
+600.00
+Grant Period Goal(s) it
+will address
+Set up a plan for dissemination of the results,Strategy to engage stakeholders
+in the Action
+Description
+Publication costs for publishing the start of the Action as well as the first results/
+thoughts in a magazine
+Output(s)
+Publication to connect with stakeholders and to extend our network
+  Title
+Type
+Publisher/provider
+Expected date
+of Release
+Cost(EUR)
+Graphics for FinAI
+Graphic design
+(max EUR
+1000 Action
+lifetime)
+to be determined
+11/01/2021
+350.00
+Grant Period Goal(s) it
+will address
+Set up a plan for dissemination of the results,Strategy to engage stakeholders
+in the Action,Encouraging partnerships with private entities
+Description
+Graphic design for logo, brochures, etc.
+Output(s)
+Action Logo; design for our dissemination material
+  Title
+Type
+Publisher/provider
+Expected date
+of Release
+Cost(EUR)
+test
+Action Website test
+02/12/2020
+100.00
+Grant Period Goal(s) it
+11
+
+
+--- Page 12 ---
+will address
+Description
+Output(s)
+  Total Disseminations
+3,840.00
+Powered by TCPDF (www.tcpdf.org)
+12

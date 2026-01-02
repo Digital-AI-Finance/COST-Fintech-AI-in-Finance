@@ -1,0 +1,195 @@
+--- Page 1 ---
+Ladislaus von Bortkiewicz Professor of Statistics 
+Blockchain Research Center 
+Humboldt-Universität zu Berlin 
+lvb.wiwi.hu-berlin.de 
+University of Applied Sciences for Engineering and 
+Economics (HTW Berlin) 
+Wolfgang Karl Härdle 
+Alla Petukhina
+20230927 Hae Pet FinAI Germany update.key
+
+
+--- Page 2 ---
+2
+Events
+COST action FinAI Annual MC meeting, Oct 2023  WG1 Transparency in FinTech
+Members Germany
+⊡Wolfgang K Härdle (WG1 Leader)
+⊡Alla Petukhina 
+⊡Florentina Paraschiv (former NO) 
+⊡Natalie Packham
+⊡Danial Saef
+⊡Rui Ren
+⊡Min-Bin Lin
+⊡Xinwen Ni
+⊡Kainat Khowaja
+⊡Christina Erlwein-Sayer
+⊡Natalia Togobytska
+
+
+--- Page 3 ---
+3
+Events
+COST action FinAI Annual MC meeting, Sep 2023, Country update Germany
+Events organised in Germany and by German members
+⊡STAT for ML 2023 (WK Härdle, HU Berlin together with J Barunik, 
+Charles U, Prague), 5-6 October 2022
+⊡COST FinAI Summer School 2023 Data Science For Sustainable 
+Finance And Economics (A Petukhina, N Packham, C Erlwein-
+Sayer together with N Thomaidis, A Posth, D Pele, A Tanda, P 
+Schwendner)
+⊡ML Approaches Finance and Management, 24-25.03.2022 (R 
+Ren&WK Härdle (HU Berlin), A Petukhina (HTW Berlin); R 
+Hochraider (WU); P Schwendner, B Hadji-Mischeva (ZHAW); V Poti 
+(UCD), P Lameski)
+⊡STAT for ML 2022 (WK Härdle, HU Berlin together with J Barunik, 
+Charles U, Prague), 6-7 October 2022
+
+
+--- Page 4 ---
+4
+COST action FinAI Annual MC meeting, Sep 2023, Country update Germany
+Events organised in Germany and by German members
+⊡CCC3 “Cryptocurrencies in a digital economy” (WK Härdle (HU 
+Berlin) and HTW Berlin (A Petukhina)  together with UCD (V Poti), 
+UZH, ABC Research), 16-17 November 2021
+⊡STAT for ML 2021  (WK Härdle, HU Berlin together with J Barunik, 
+Charles U, Prague), 5-6 October 2021
+⊡Digital Finance Journal (DFIN) Online Paper Discussion 
+(30.09.2021)
+⊡Victoria Peak Conference, 26-27.04.2021, online (together with 
+HUST)
+⊡The 2nd Yushan Conference: FinTech & RegTech Fundamentals 
+Techs Apps (10-11.12.2020)
+⊡ COST Fin AI Academic Sponsor “Quant Insights Conference” 
+(12-13.11.2020, N Packham HWR Berlin)
+Events
+
+
+--- Page 5 ---
+5
+COST action FinAI Annual MC meeting, Sep 2023, Country update Germany
+COST FinAI Summer School 2023 Data Science For 
+Sustainable Finance And Economics
+⊡5 days: 28.08-01.09.2023
+⊡30 students (13 with scholarships) 
+and 11 lecturers from 7 countries
+⊡9 Partner universities: HTW Berlin, 
+ZHAW, U of the Aegean, UniPav, 
+HWR Berlin, ASE Bucuresti, 
+POLIMI, Oles Honchar Dnipro 
+National U, Dniprovsky State 
+Technical U
+⊡3 industry partners: Foundation 
+combat climate change, Ifesca 
+GmbH (DE), Sustainaccount (CH)
+Events
+
+
+--- Page 6 ---
+6
+Events
+COST action FinAI Annual MC meeting, Sep 2023, Country update Germany
+Talks of FinAI members at other COST FinAI events
+⊡Artificial Intelligence in Industry and Finance (7th European COST 
+Conference on AI in Industry and Finance in Switzerland), Bern, 
+September 2022
+⊡FinanceCom 2022 at the University of Twente, Netherlands,  
+August 2022
+⊡CryptoAssets and Digital Asset Investment Conference, Rennes, 
+April 2022
+⊡AI in Finance, from Black-Box to Explainable Models, Statistics of 
+Machine Learning in Finance, Bucharest, October 2021
+
+
+--- Page 7 ---
+7
+Joint Grant applications
+COST action FinAI Annual MC meeting, Sep 2023, Country update Germany
+Joint Grant applications with other FinAI members
+⊡2022 DIGITAL, EU MSCA Doctoral Network application (funded), 
+WK Härdle together with B Hadji-Misheva, J Osterrieder, R 
+Hochreiter, D Pele, C Mare
+⊡2022 REFIND Robust Ethical FINancial Data science, EU MSCA 
+Doctoral Network application (declined, no funding), A Petukhina, 
+C Erlwein-Sayer 
+⊡2022 Explainable AI methods (XAI) for FinTech risk management, 
+IFAF Project 2023-25 (funded), A Petukhina, C Erlwein-Sayer 
+together with N Packham
+
+
+--- Page 8 ---
+8
+Joint Grant applications
+COST action FinAI Annual MC meeting, Sep 2023, Country update Germany
+Joint Grant applications with other FinAI members
+⊡2022 IDA Institute of Digital Assets, application for the EU grant in 
+the framework of program "Recovery and resilience plan for 
+Romania" (funded), WK Härdle (PI),  A Petukhina together with  D 
+Pele, V Strat
+⊡2022 AI4EFIN - AI for Energy finance, application for the EU grant 
+in the framework of program "Recovery and resilience plan for 
+Romania" (funded),  A Petukhina together with  D Pele, V Strat
+
+
+--- Page 9 ---
+9
+COST action FinAI Annual MC meeting, Sep 2023, Country update Germany
+Q2 Quantinar + Quantlet Ecosystem
+Scientific communication 
+⊡Transparency and reproducibility in research and education
+⊡Interaction with data, algorithms and community members
+⊡   ode and data with     uantlets
+⊡Open peer review; rewards, certificates
+⊡280 Courselets
+
+
+--- Page 10 ---
+10
+Scientific communication 
+COST action FinAI Annual MC meeting, Sep 2023, Country update Germany
+Publications and Working papers  
+⊡ 61  papers, 42 with acknowledgment
+⊡Journals:
+▶Journal of Econometrics
+▶Digital finance
+▶Quantitative finance
+▶Encyclopedia of Finance
+▶Research in International Business and Finance
+▶Journal of Multivariate Analysis
+▶The Singapore Economic Review
+▶Journal of European finance
+▶Journal of Commodity Markets
+▶Computational Economics …
+
+
+--- Page 11 ---
+11
+STSM
+COST action FinAI Annual MC meeting, Sep 2023, Country update Germany
+STSM
+⊡STSM out-coming:
+▶D Saef (HU Berlin) at UCL, Host T Aste, Sep-Oct, 2021
+▶A Petukhina (HTW Berlin) at ASE Bucharest, Host DT Pele, 
+October 2021
+▶A Petukhina (HTW Berlin) at U Milan, Host L Anderloni, Sep 
+2022
+▶X Ni (HU Berlin) at U Glasgow, Host CYH Chen, Oct 2022
+▶YCH Chen (U Glasgow  &HU Berlin) at U Rijeka, Host S Zikovic, 
+October 2022
+
+
+--- Page 12 ---
+12
+STSM
+COST action FinAI Annual MC meeting, Sep 2023, Country update Germany
+STSM
+⊡STSM host: 
+▶W Li (NTNU) at HU Berlin, Host WK Härdle, Feb2021-May2021, 
+October 2021
+▶DT Pele (ASE Bucharest) at HTW Berlin, Host A Petukhina, 
+Sept2022
+▶K Kozmyk (Charles U) at HU Berlin, Host WK Härdle, Oct 2022
+▶E Kabaklarlı (Selcuk U) at HTW Berlin, Host A Petukhina, Aug 
+2023 

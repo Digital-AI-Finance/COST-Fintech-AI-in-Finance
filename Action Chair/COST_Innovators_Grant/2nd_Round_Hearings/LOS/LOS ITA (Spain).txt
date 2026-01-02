@@ -1,0 +1,74 @@
+--- Page 1 ---
+ 
+ 
+ANA ESTER BORAO 
+DIRECTOR 
+INSTITUTO TECNOLÓGICO DE ARAGÓN 
+CL MARÍA DE LUNA, 7-8 
+50018 ZARAGOZA - SPAIN 
+ 
+Letter of Support: COST Innovators Grant (CIG) Application 
+VisionXAI: Pioneering Visual Analytics for Establishing XAI Standards in 
+European Finance with a Policy-Focused Impact 
+ 
+ 
+Dear Members of the COST Innovators Grant (CIG) Selection Committee, 
+ 
+The Aragon Institute of Technology (ITA) is a public Technological Center, dependent 
+on the Department of Economy, Employment and Industry of the Government of 
+Aragon, whose mission is to promote research, innovation and technological 
+development in companies and promote the technological possibilities of this region, to 
+develop new products and processes, with the purpose of boosting the competitiveness 
+of Aragón. 
+ 
+We are aware of the application for the COST Innovator Grant with the title "VisionXAI: 
+Pioneering Visual Analytics for Establishing XAI Standards in European Finance with a 
+Policy-Focused Impact".  
+ 
+On the project's aim and scope, we have been informed that: 
+• 
+VisionXAI seeks to create a visual analytics tool that enhances the interpretability 
+and standards of XAI in the European financial sector. 
+• 
+The project is geared towards meeting regulatory requirements and policy impacts, 
+ensuring alignment with EU directives. 
+• 
+It is designed to be a scalable solution that bridges the gap between technical XAI 
+approaches and practical financial applications. 
+• 
+VisionXAI aims to foster trust and transparency in AI-driven financial decisions by 
+offering clear, user-friendly interpretations. 
+• 
+The initiative also intends to address bias detection and mitigation within AI 
+systems, promoting fairness and data integrity. 
+ 
+Given the expertise and dedication of the project team, we are confident that VisionXAI 
+has the potential to make significant strides in advancing XAI standards and promoting 
+ethical AI practices across the European finance sector.  
+ 
+The VisionXAI project addresses a critical need for establishing standards in XAI within 
+the finance industry, aligning with the European Union's objectives of promoting 
+transparency, accountability, and ethical AI practices. By leveraging visual analytics 
+techniques, the project aims to enhance the interpretability and trustworthiness of AI 
+models used in financial decision-making processes. 
+ 
+We wholeheartedly endorse the COST Innovator Grant application for VisionXAI, 
+recognizing the significant role such a tool will play in the financial sector.  
+With this letter, we confirm that we are very interested in the proposed solution, and we 
+look forward to assessing the results of the project revenant for our business activities. 
+ 
+ 
+Sincerely,  
+ 
+ 
+ 
+73004644E 
+ANA ESTER 
+BORAO (R: 
+Q5095008H)
+Firmado digitalmente 
+por 73004644E ANA 
+ESTER BORAO (R: 
+Q5095008H) 
+Fecha: 2024.05.14 
+14:30:03 +02'00'

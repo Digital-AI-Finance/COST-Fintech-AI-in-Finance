@@ -1,0 +1,47 @@
+--- Page 1 ---
+ 
+ 
+To: CIG Decision-Making Committee 
+ 
+Date: May 13, 2024 
+Letter of support for COST Innovators Grant (CIG): “VisionXAI: Pioneering Visual 
+analytics for Establishing XAI Standards in European Finance with a Policy-Focused 
+Impact” 
+Dear members of the CIG committee,  
+SGH Warsaw School of Economics is one of the leading Polish universities. SGH offers courses 
+leading to bachelor's or master's degrees. It also provides programs for doctoral and 
+postgraduate degrees. SGH has always been open to exchanging knowledge and sharing 
+educational and research experience with other academic centers. SGH cooperates with over 
+300 universities all over the world and takes part in research activities conducted in 
+collaboration with centers abroad. Each year academics from various countries visit SGH to 
+attend seminars and conferences, give lectures and participate in joint research projects. 
+ 
+We are aware of the submitted application for the COST Innovator Grant entitled "VisionXAI: 
+Pioneering Visual Analytics for Establishing XAI Standards in European Finance with a Policy-
+Focused Impact," which aligns with our goals and current activities. 
+ 
+On the project's aim and scope, we have been informed that: 
+• VisionXAI endeavors to develop a visual analytics platform aimed at elevating the 
+interpretability and benchmarks of eXplainable Artificial Intelligence (XAI) within the 
+European financial domain. 
+• With a focus on compliance with regulatory standards and policy implications in line 
+with EU directives, the project strives to address these requirements effectively. 
+• By offering a scalable solution, VisionXAI aims to bridge the divide between complex 
+technical XAI methodologies and their implementation in real-world financial 
+scenarios. 
+• The overarching goal is to cultivate trust and transparency in AI-powered financial 
+decision-making by providing lucid and accessible interpretations for users. 
+ 
+SGH Warsaw School of Economics is teaching the future leaders in the field of economics and 
+finance. We strongly support the proposed project and recommend CIG committee to grant the 
+project its full support, allowing it to move forward. 
+ 
+Sincerely, 
+Professor Agnieszka Chłoń-Domińczak 
+Vice Rector for Research at SGH Warsaw School of Economics 
+Agnieszka Chłoń-
+Domińczak
+Elektronicznie podpisany przez 
+Agnieszka Chłoń-Domińczak 
+Data: 2024.05.13 22:20:29 
++02'00'

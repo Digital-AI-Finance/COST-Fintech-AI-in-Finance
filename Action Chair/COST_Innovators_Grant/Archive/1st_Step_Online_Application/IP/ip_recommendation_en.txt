@@ -1,0 +1,419 @@
+--- Page 1 ---
+EN 
+ 
+  EN 
+ 
+COMMISSION OF THE EUROPEAN COMMUNITIES 
+Brussels, 10.4.2008 
+C(2008)1329 
+  
+COMMISSION RECOMMENDATION 
+on the management of intellectual property in knowledge transfer activities 
+and Code of Practice for universities and other public research organisations 
+ 
+(Text with EEA relevance) 
+EN 
+
+
+--- Page 2 ---
+EN 
+2 
+  EN 
+COMMISSION RECOMMENDATION 
+on the management of intellectual property in knowledge transfer activities 
+and Code of Practice for universities and other public research organisations 
+THE COMMISSION OF THE EUROPEAN COMMUNITIES, 
+Having regard to the Treaty establishing the European Community, and in particular Article 
+165 thereof, 
+Whereas: 
+(1) 
+When re-launching the Lisbon Strategy in 2005, the Heads of State or Government 
+stressed the key role that better links between public research organisations, including 
+universities, and industry can play in facilitating the circulation and use of ideas in a 
+dynamic knowledge society and in enhancing competitiveness and welfare. 
+(2) 
+An effort should be made to better convert knowledge into socio-economic benefits. 
+Therefore, public research organisations need to disseminate and to more effectively 
+exploit publicly-funded research results with a view to translating them into new 
+products and services. Means to realise this include in particular academia-industry 
+collaborations – collaborative or contract research conducted or funded jointly with the 
+private sector –, licensing and the creation of spin-offs. 
+(3) 
+Effectively exploiting publicly-funded research results depends on the proper 
+management of intellectual property (i.e. knowledge in the broadest sense, 
+encompassing e.g. inventions, software, databases and micro-organisms, whether or 
+not they are protected by legal instruments such as patents), on the development of an 
+entrepreneurial culture and associated skills within public research organisations, as 
+well as on better communication and interaction between the public and private sector. 
+(4) 
+The active engagement of public research organisations in intellectual property 
+management and knowledge transfer is essential for generating socio-economic 
+benefits, and for attracting students, scientists and further research funding. 
+(5) 
+Member States have in recent years taken initiatives to facilitate knowledge transfer at 
+national level, but significant discrepancies between national regulatory frameworks, 
+policies and practices, as well as varying standards in the management of intellectual 
+property within public research organisations, prevent or hamper trans-national 
+knowledge transfer across Europe and the realisation of the European Research Area. 
+(6) 
+Following the 2007 Commission Communication1, setting out approaches for a 
+common European framework for knowledge transfer, the European Council therefore 
+invited the Commission, in June 2007, to develop guidance on the management of 
+                                                 
+1 
+COM(2007) 182 final 
+
+
+--- Page 3 ---
+EN 
+3 
+  EN 
+intellectual property by public research organisations in the form of a 
+Recommendation to Member States. 
+(7) 
+This Recommendation seeks to provide Member States and their regions with policy 
+guidelines for the development or updating of national guidelines and frameworks, and 
+public research organisations with a Code of Practice, in order to improve the way 
+public research organisations manage intellectual property and knowledge transfer. 
+(8) 
+Collaboration in the field of research and development as well as knowledge transfer 
+activities between the Community and third countries should be based on clear and 
+uniform recommendations and practices that ensure equitable and fair access to 
+intellectual property generated through international research collaborations, to the 
+mutual benefit of all partners involved. The attached Code of Practice should be used 
+as a reference in that context. 
+(9) 
+A number of good practices have been identified that should help Member States to 
+implement this Recommendation. It is for each Member State to choose the 
+procedures and practices best designed to ensure that the principles of this 
+Recommendation are followed, having regard to what would be most effective in the 
+context of that Member State, since practices that are effective in one Member State 
+may not be as effective in another. Existing guidance provided at Community and 
+OECD level should also be taken into account. 
+(10) 
+The Commission and the Member States should monitor the implementation of this 
+Recommendation and its impact, and foster the exchange of good practices regarding 
+knowledge transfer. 
+HEREBY RECOMMENDS THAT MEMBER STATES SHOULD: 
+1. 
+Ensure that all public research organisations define knowledge transfer as a strategic 
+mission; 
+2. 
+Encourage public research organisations to establish and publicise policies and 
+procedures for the management of intellectual property in line with the Code of 
+Practice set out in Annex I; 
+3. 
+Support the development of knowledge transfer capacity and skills in public research 
+organisations, as well as measures to raise the awareness and skills of students – in 
+particular in the area of science and technology – regarding intellectual property, 
+knowledge transfer and entrepreneurship; 
+4. 
+Promote the broad dissemination of knowledge created with public funds, by taking 
+steps to encourage open access to research results, while enabling, where 
+appropriate, the related intellectual property to be protected; 
+5. 
+Cooperate and take steps to improve the coherence of their respective ownership 
+regimes as regards intellectual property rights in such a way as to facilitate cross-
+border collaborations and knowledge transfer in the field of research and 
+development; 
+6. 
+Use the principles outlined in this Recommendation as a basis for introducing or 
+adapting national guidelines and legislation concerning the management of 
+
+
+--- Page 4 ---
+EN 
+4 
+  EN 
+intellectual property and knowledge transfer by public research organisations, as well 
+as for concluding agreements concerning research cooperation with third countries, 
+or for any other measures to promote knowledge transfer, or when creating new 
+related policies or funding schemes, while observing State aid rules; 
+7. 
+Take steps to ensure the widest possible implementation of the Code of Practice, 
+whether directly or through the rules laid down by national and regional research 
+funding bodies; 
+8. 
+Ensure equitable and fair treatment of participants from Member States and third 
+countries in international research projects regarding the ownership of and access to 
+intellectual property rights, to the mutual benefit of all partners involved;  
+9. 
+Designate a national contact point, the tasks of which should include the coordination 
+of measures regarding knowledge transfer between public research organisations and 
+the private sector, including tackling trans-national issues, in liaison with similar 
+contact points in other Member States; 
+10. 
+Examine and make use of the best practices set out in Annex II, taking into account 
+the national context; 
+11. 
+Inform the Commission by 15 July 2010 and every two years thereafter of measures 
+taken on the basis of this Recommendation, as well as their impact. 
+Done at Brussels, […] 
+For the Commission 
+Günter Verheugen 
+Janez Potočnik 
+Member of the Commission 
+Member of the Commission 
+
+
+--- Page 5 ---
+EN 
+5 
+  EN 
+ANNEX I  
+Code of Practice for universities and other public research organisations concerning the 
+management of intellectual property in knowledge transfer activities  
+This Code of Practice consists of three main sets of principles. 
+The principles for an internal intellectual property (hereinafter “IP”) policy constitute the 
+basic set of principles which public research organisations should implement in order to 
+effectively manage the intellectual property resulting from their – own or collaborative – 
+activities in the field of research and development.  
+The principles for a knowledge transfer (hereinafter “KT”) policy complement those 
+relating to IP policy by focusing more specifically on the active transfer and exploitation of 
+such intellectual property, regardless of whether or not it is protected by IP rights. 
+The principles for collaborative and contract research are meant to concern all kinds of 
+research activities conducted or funded jointly by a public research organisation and the 
+private sector, including in particular collaborative research (where all parties carry out R&D 
+tasks) and contract research (where R&D is contracted out to a public research organisation 
+by a private company). 
+1. 
+PRINCIPLES FOR AN INTERNAL INTELLECTUAL PROPERTY POLICY 
+1. 
+Develop an IP policy as part of the long-term strategy and mission of the public 
+research organisation, and publicise it internally and externally, while establishing a 
+single responsible contact point. 
+2. 
+That policy should provide clear rules for staff and students regarding in particular 
+the disclosure of new ideas with potential commercial interest, the ownership of 
+research results, record keeping, the management of conflicts of interest and 
+engagement with third parties. 
+3. 
+Promote the identification, exploitation and, where appropriate, protection of 
+intellectual property, in line with the strategy and mission of the public research 
+organisation and with a view to maximising socio-economic benefits. To this end, 
+different strategies may be adopted – possibly differentiated in the respective 
+scientific/technical areas –, for instance the "public domain" approach or the "open 
+innovation" approach. 
+4. 
+Provide appropriate incentives to ensure that all relevant staff play an active role in 
+the implementation of the IP policy. Such incentives should not only be of a financial 
+nature but should also promote career progression, by considering intellectual 
+property and knowledge transfer aspects in appraisal procedures, in addition to 
+academic criteria. 
+5. 
+Consider the creation of coherent portfolios of intellectual property by the public 
+research organisation – e.g. in specific technological areas – and, where appropriate, 
+the setting-up of patent/IP pools including intellectual property of other public 
+research organisations. This could ease exploitation, through critical mass and 
+reduced transaction costs for third parties. 
+
+
+--- Page 6 ---
+EN 
+6 
+  EN 
+6. 
+Raise awareness and basic skills regarding intellectual property and knowledge 
+transfer through training actions for students as well as research staff, and ensure 
+that the staff responsible for the management of IP/KT have the required skills and 
+receive adequate training. 
+7. 
+Develop and publicise a publication/dissemination policy promoting the broad 
+dissemination of research and development results (e.g. through open access 
+publication), while accepting possible delay where the protection of intellectual 
+property is envisaged, although this should be kept to a minimum. 
+2. 
+PRINCIPLES FOR A KNOWLEDGE TRANSFER POLICY 
+8. 
+In order to promote the use of publicly-funded research results and maximise their 
+socio-economic impact, consider all types of possible exploitation mechanisms 
+(such as licensing or spin-off creation) and all possible exploitation partners (such 
+as spin-offs or existing companies, other public research organisations, investors, or 
+innovation support services or agencies), and select the most appropriate ones. 
+9. 
+While proactive IP/KT policy may generate additional revenues for the public 
+research organisation, this should not be considered the prime objective. 
+10. 
+Ensure that the public research organisation has access to or possesses professional 
+knowledge transfer services including legal, financial, commercial as well as 
+intellectual property protection and enforcement advisors, in addition to staff with 
+technical background. 
+11. 
+Develop and publicise a licensing policy, in order to harmonise practices within the 
+public research organisation and ensure fairness in all deals. In particular, transfers of 
+ownership of intellectual property owned by the public research organisation and the 
+granting of exclusive licences2 should be carefully assessed, especially with respect 
+to non-European third parties. Licences for exploitation purposes should involve 
+adequate compensation, financial or otherwise. 
+12. 
+Develop and publicise a policy for the creation of spin-offs, allowing and 
+encouraging the public research organisation's staff to engage in the creation of spin-
+offs where appropriate, and clarifying long-term relations between spin-offs and the 
+public research organisation. 
+13. 
+Establish clear principles regarding the sharing of financial returns from 
+knowledge transfer revenues between the public research organisation, the 
+department and the inventors. 
+14. 
+Monitor intellectual property protection and knowledge transfer activities and 
+related achievements, and publicise these regularly. The research results of the public 
+research organisation, any related expertise and intellectual property rights should be 
+made more visible to the private sector, in order to promote their exploitation. 
+                                                 
+2 
+With regard to R&D results having several possible application fields, exclusive licences granted 
+without any limitation to a specific field of use should be avoided. Moreover, as a rule, the PRO should 
+reserve adequate rights to facilitate dissemination and further research. 
+
+
+--- Page 7 ---
+EN 
+7 
+  EN 
+3. 
+PRINCIPLES REGARDING COLLABORATIVE AND CONTRACT RESEARCH 3 
+15. 
+The rules governing collaborative and contract research activities should be 
+compatible with the mission of each party. They should take into account the level 
+of private funding and be in accordance with the objectives of the research activities, 
+in particular to maximise the commercial and socio-economic impact of the research, 
+to support the public research organisation's objective to attract private research 
+funding, to maintain an intellectual property position that allows further academic 
+and collaborative research, and avoid impeding the dissemination of the R&D 
+results. 
+16. 
+IP-related issues should be clarified at management level and as early as possible 
+in the research project, ideally before it starts. IP-related issues include allocation of 
+the ownership of intellectual property which is generated in the framework of the 
+project (hereinafter “foreground”), identification of the intellectual property which is 
+possessed by the parties before starting the project (hereinafter “background”) and 
+which is necessary for project execution or exploitation purposes, access rights4 to 
+foreground and background for these purposes, and the sharing of revenues. 
+17. 
+In a collaborative research project, ownership of the foreground should stay with the 
+party that has generated it, but can be allocated to the different parties on the basis of 
+a contractual agreement concluded in advance, adequately reflecting the parties' 
+respective interests, tasks and financial or other contributions to the project. In the 
+case of contract research the foreground generated by the public research 
+organisation is owned by the private-sector party. The ownership of background 
+should not be affected by the project. 
+18. 
+Access rights4 should be clarified by the parties as early as possible in the research 
+project, ideally before it starts. Where necessary for the purpose of conducting the 
+research project, or for the exploitation of foreground of a party, access rights to 
+other parties' foreground and background should be available, under conditions 
+which should adequately reflect the parties' respective interests, tasks, and financial 
+and other contributions to the project. 
+                                                 
+3 
+When a PRO engages in contract or collaborative research with an industrial partner, the Commission 
+will automatically (i.e. without any notification requirement) consider that no indirect State aid is 
+granted to the industrial partner through the PRO if the conditions set out in the Community Framework 
+for State Aid for R&D&I (OJ No C323 of 30.12.2006 – in particular points 3.2.1 and 3.2.2 thereof) are 
+fulfilled. 
+4 
+Access rights refer to rights granted by the parties to each other, as opposed to licences to third parties. 
+They should determine which parties can use which pieces of foreground/background, for research 
+purposes and/or for exploitation purposes, and on what conditions. 
+
+
+--- Page 8 ---
+EN 
+8 
+  EN 
+ANNEX II  
+Identified practices of public authorities that facilitate the management of intellectual 
+property in knowledge transfer activities by universities and other public research 
+organisations 
+Knowledge Transfer as a strategic mission of public research organisations 
+1. 
+Knowledge transfer between universities and industry is made a permanent political 
+and operational priority for all public research funding bodies within a Member 
+State, at both national and regional level. 
+2. 
+The subject clearly falls within the responsibility of a ministry, which is charged with 
+coordinating knowledge transfer promotion initiatives with other ministries. 
+3. 
+Each ministry and regional government body that carries out knowledge transfer 
+activities designates an official responsible for monitoring their impact. They meet 
+regularly in order to exchange information and discuss ways to improve knowledge 
+transfer. 
+Policies for managing Intellectual Property 
+4. 
+The proper management of intellectual property resulting from public funding is 
+promoted, requiring that it be carried out according to established principles taking 
+into account the legitimate interests of industry (e.g. temporary confidentiality 
+constraints). 
+5. 
+Research policy promotes reliance on the private sector to help identify technological 
+needs and to foster private investment in research and encourage the exploitation of 
+publicly-funded research results.  
+Knowledge transfer capacities and skills 
+6. 
+Sufficient resources and incentives are available to public research organisations and 
+their staff to engage in knowledge transfer activities. 
+7. 
+Measures are taken to ensure the availability and facilitate the recruitment of trained 
+staff (such as technology transfer officers) by public research organisations. 
+8. 
+A set of model contracts is made available, as well as a decision-making tool helping 
+the most appropriate model contract to be selected, depending on a number of 
+parameters. 
+9. 
+Before establishing new mechanisms to promote knowledge transfer (such as 
+mobility or funding schemes), relevant stakeholder groups, including SMEs and 
+large industry as well as public research organisations, are consulted. 
+10. 
+The pooling of resources between public research organisations at local or regional 
+level is promoted where these do not have the critical mass of research spending to 
+justify having their own knowledge transfer office or intellectual property manager. 
+
+
+--- Page 9 ---
+EN 
+9 
+  EN 
+11. 
+Programmes 
+supporting 
+research 
+spin-offs 
+are 
+launched, 
+incorporating 
+entrepreneurship training and featuring strong interaction of public research 
+organisations with local incubators, financiers, business support agencies, etc.  
+12. 
+Government funding is made available to support knowledge transfer and business 
+engagement at public research organisations, including through hiring experts. 
+Coherence in trans-national cooperation 
+13. 
+In order to promote transnational knowledge transfer and facilitate cooperation with 
+parties from other countries, the owner of intellectual property from publicly-funded 
+research is defined by clear rules and this information, together with any funding 
+conditions which may affect the transfer of knowledge, is made easily available. 
+Institutional ownership – as opposed to the "professor's privilege" regime – is 
+considered the default legal regime for intellectual property ownership at public 
+research organisations in most EU Member States. 
+14. 
+When signing international research cooperation agreements, the terms and 
+conditions relating to projects funded under both countries' schemes provide all 
+participants with similar rights, especially as regards access to intellectual property 
+rights and related use restrictions. 
+Dissemination of knowledge  
+15. 
+Open access is implemented by public research funding bodies with regard to peer-
+reviewed scientific publications resulting from publicly-funded research. 
+16. 
+Open access to research data is promoted, in line with the OECD Principles and 
+Guidelines for Access to Research Data from Public Funding, taking into account 
+restrictions linked to commercial exploitation. 
+17. 
+Archival facilities for research results (such as internet-based repositories) are 
+developed with public funding in connection with open access policies. 
+Monitoring implementation  
+18. 
+The necessary mechanisms are put in place to monitor and review progress made by 
+national public research organisations in knowledge transfer activities, e.g. through 
+annual reports of the individual public research organisations. This information, 
+together with best practices, is also made available to other Member States. 

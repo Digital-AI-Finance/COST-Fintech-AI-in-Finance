@@ -1,0 +1,37 @@
+--- Page 1 ---
+To: CIG Decision-Making Committee 
+From: Altero 
+Date:  
+Subject: Letter of Support for COST Innovators Grant (CIG) Proposal: "VisionXAI: 
+Pioneering Visual Analytics for Establishing XAI Standards in European Finance with a 
+Policy-Focused Impact" 
+Altero, a leading financial comparison platform in Latvia with over 75,000 customers, is 
+thrilled to submit a letter of strong support for the COST project proposal titled "VisionXAI: 
+Pioneering Visual Analytics for Establishing XAI Standards in European Finance with a 
+Policy-Focused Impact ."  This project, exploring the application of explainable artificial 
+intelligence (XAI) in the financial sector, aligns perfectly with Altero's mission to promote 
+financial transparency, simplicity, and security. 
+As a trusted financial comparison platform, Altero recognizes the immense potential of AI to 
+revolutionize the financial landscape. We are committed to fostering responsible AI 
+development and ensuring that AI-powered financial services are transparent, understandable, 
+and accessible to all. 
+The project proposal directly addresses these critical objectives by focusing on developing 
+explainable AI (XAI) standards for the European financial sector. Altero strongly believes 
+that XAI is essential for building trust and confidence in AI-driven financial decisions. 
+We are particularly impressed by the project's emphasis on regulatory compliance, which 
+aligns with Altero's commitment to upholding the highest ethical standards in our operations. 
+The development of clear and effective XAI standards will be crucial for ensuring that AI 
+applications adhere to existing financial regulations and protect consumer interests. 
+Furthermore, Altero believes that this project has the potential to significantly enhance the 
+efficiency and effectiveness of AI implementation in the financial sector. This would not only 
+benefit financial institutions but also empower consumers to make informed financial choices. 
+In conclusion, Altero wholeheartedly endorses this proposal and urges the COST Decision-
+Making Committee to grant the necessary support to bring this vital initiative to fruition. We 
+are confident that this project will make significant contributions to the responsible and 
+beneficial development of AI in the European financial sector. 
+Sincerely, 
+Arturs Kostins 
+Altero 
+ 
+25.04.2024
+CO-Founder and CEO

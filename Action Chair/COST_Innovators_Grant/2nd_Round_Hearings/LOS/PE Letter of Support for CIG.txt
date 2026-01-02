@@ -1,0 +1,72 @@
+--- Page 1 ---
+ 
+ 
+To: Prof. Dr. Joerg Osterrieder 
+Action Chair COST Action CA19130 
+Submitting to: CIG Grant Application 
+ 
+From: PrivacyEngine Ltd 
+Date: 02/05/2024 
+ 
+ 
+Letter of Support for VisionXAI: Pioneering Visual Analytics for Establishing XAI Standards in European 
+Finance 
+ 
+Dear members of the CIG committee, 
+PrivacyEngine wishes to express strong support for the VisionXAI project, a Consortium application 
+submitted under the COST action CA19130 – CIG program.  
+We are an Irish-based company dedicated to empowering small and medium-sized enterprises (SMEs) with 
+user-friendly solutions for data privacy, security and more recently Artificial Intelligence (AI) compliance. 
+Understanding and adhering to European regulations can be a daunting task for SMEs across Europe. 
+PrivacyEngine offers a comprehensive suite of tools and resources designed to simplify the compliance 
+process. Our solutions include: 
+• 
+Automated compliance tools: Streamline data mapping, risk assessments, and policy development. 
+• 
+Expert guidance: Access to data privacy and security professionals for personalized support and 
+advice. 
+• 
+Educational resources: Gain insights and practical knowledge through webinars, workshops, and 
+online materials. 
+We are aware of the application submitted by Prof. Jörg Osterrieder from Bern Business School for the COST 
+Innovator Grant with the title "VisionXAI: Pioneering Visual Analytics for Establishing XAI Standards in 
+European Finance with a Policy-Focused Impact," which aligns with our business goals and current activities 
+as we have a number of financial and Fintech customers. We have witnessed our customers struggle with 
+complex compliance challenges especially around transparency and due diligence regarding their AI 
+systems. We want to help them. 
+We believe this project holds immense potential to boost the European financial sector by fostering 
+explainable Artificial Intelligence (XAI) and establishing critical standards for its responsible use. By being 
+involved, we are excited to work with the COST Action to move the research on XAI forward in Europe. By 
+providing increased transparency in AI decision-making, our clients can proactively identify and address 
+potential non-compliance issues, reducing risk and minimizing the likelihood of regulatory penalties. This 
+strengthens their position as responsible AI users, fostering trust and confidence with their stakeholders. 
+VisionXAI's proposed visual analytics tool is a compelling answer to this challenge. Regulators, like the data 
+protection supervisory authorities, would be able to ensure compliance with financial policies, our clients 
+would gain deeper insights, and data subjects would comprehend the rationale behind AI-driven results 
+better. This tool has the potential to foster trust and strengthen governance in the use of AI. 
+ 
+
+
+--- Page 2 ---
+ 
+We urge the CIG committee to view this project favourably and grant it the 
+necessary support to move it forward. 
+Yours sincerely, 
+Dr Maria Moloney 
+Chief Researcher and AI Specialist  
+ 
+ 
+ 
+ 
+ 
++353 (0) 1-517-6258 
+ 
+ 
+Maria.Moloney@privacyengine.io 
+ 
+ 
+www.privacyengine.io  
+ 
+ 
+77 Sir John Rogerson's Quay, Dublin 2, D02 F540 
+ 

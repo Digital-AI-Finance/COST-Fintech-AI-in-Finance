@@ -1,0 +1,34 @@
+--- Page 1 ---
+To: CIG decision-making committee 
+From: Cardo S.R.L. (Cardo AI)
+Date: 7/5/2024
+Letter of support for COST Innovators Grant (CIG): “VisionXAI: Pioneering Visual analytics for  
+Establishing XAI Standards in European Finance with a Policy-Focused Impact” 
+Dear members of the CIG committee, 
+On behalf of Cardo AI, I am writing to express our support for the VisionXAI project, 
+"Pioneering Visual Analytics for Establishing XAI Standards in European Finance with a 
+Policy-Focused Impact." As a leading disruptor and provider of data-driven investment 
+management solutions, Cardo AI recognizes the critical need for increased transparency and 
+trust in artificial intelligence (AI) models, particularly in the European financial sector.
+The VisionXAI project promises to address the challenges of explainable AI (XAI) by 
+developing a comprehensive visual analytics tool tailored to the specific needs of financial 
+institutions, regulators, and end-users. This initiative aligns with Cardo AI’s commitment to 
+responsible AI and data ethics. We believe that the project's focus on policy implications 
+and regulatory compliance will make VisionXAI a valuable tool for enhancing transparency 
+and accountability in our industry.
+VisionXAI’s objectives to bridge the gap in explainable AI, making it accessible and 
+understandable across various stakeholders, directly complement our efforts to foster trust 
+and reliability in financial AI applications. Furthermore, the regulatory compliance aspect of 
+VisionXAI will be instrumental in navigating the complex landscape of EU financial 
+regulations. As these standards evolve, having a tool that ensures adherence while offering 
+clear visual interpretations of AI decisions will be invaluable in maintaining and expanding 
+our market presence across Europe.
+By supporting this project, Cardo AI anticipates not only a mutual technological 
+advancement, but also an opportunity to co-develop industry standards for XAI. This 
+collaboration will enable us to share expertise, leverage groundbreaking research, and 
+ultimately deliver enhanced value to our clients and stakeholders.
+Sincerely, 
+Altin Kadareja
+CEO
+Cardo S.R.L. (VAT Number 10357440964)
+Via San Francesco d'Assisi 15, 20122, Milan, Italy

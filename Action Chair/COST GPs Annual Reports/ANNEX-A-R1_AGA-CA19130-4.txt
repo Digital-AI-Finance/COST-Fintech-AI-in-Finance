@@ -1,0 +1,330 @@
+--- Page 1 ---
+WORKPLAN
+Annex A - Work And Budget plan - R I
+CA19130
+Fintech and Artificial Intelligence in Finance - Towards a transparent financial industry
+Grant Period from 01/11/2022 to 31/10/2023
+ 
+Summary Budget
+ 
+Networking Tool
+Quant.
+Budget
+Meetings
+9
+EUR 117 889.40
+Training Schools
+4
+EUR 58 594.00
+Mobility of Researchers and Innovators
+tbd.
+EUR 43 300.00
+Presentation at Conferences organised by Third Parties
+tbd.
+EUR 2 000.00
+Dissemination and Communication Products
+1
+EUR 2 500.00
+Other Expenses Related to Scientific Activities (OERSA)
+0
+EUR 0.00
+SCIENCE EXPENDITURE : EUR 224 283.40
+Financial and Scientific Administration and Coordination (FSAC) - MAX. 15% 15%
+EUR 33 642.51
+TOTAL GRANT : EUR 257 925.91
+
+
+--- Page 2 ---
+Indicative Information
+Details for Meetings
+Meeting 1
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+Diversity challenges and stakeholders' engagement
+Attendance Type :
+Hybrid
+Location :
+Cluj Napoca (Romania)
+Date :
+01/02/2023 - 02/02/2023
+Total Participants :
+40
+Total Reimbursed :
+15
+Travel Costs :
+EUR 10 331.40
+Local Organiser Support :
+EUR 2 000.00
+Meeting 2
+Type :
+Core Group Meeting, Workshops/Conferences
+Title :
+Diversity challenges for a sustainable Fintech
+Attendance Type :
+Hybrid
+Location :
+Pavia (Italy)
+Date :
+13/04/2023 - 14/04/2023
+Total Participants :
+40
+Total Reimbursed :
+8
+Travel Costs :
+EUR 8 024.00
+Local Organiser Support :
+EUR 1 000.00
+Meeting 3
+Type :
+Workshops/Conferences
+Title :
+COST FinAI - Fintech and AI in Finance - Policy implications
+Attendance Type :
+Hybrid
+Location :
+Brussels (Belgium)
+Date :
+15/05/2023 - 16/05/2023
+Total Participants :
+50
+Total Reimbursed :
+14
+Travel Costs :
+EUR 15 148.00
+Local Organiser Support :
+EUR 0.00
+Meeting 4
+Type :
+Working Group Meeting
+Title :
+COST FinAI WG3: Transparency of Digital Asset Investments
+Attendance Type :
+Hybrid
+Location :
+Winterthur (Switzerland)
+Date :
+26/05/2023 - 26/05/2023
+Total Participants :
+40
+Total Reimbursed :
+6
+Travel Costs :
+EUR 5 322.00
+Local Organiser Support :
+EUR 0.00
+2
+
+
+--- Page 3 ---
+Meeting 5
+Type :
+Workshops/Conferences
+Title :
+Women in Fintech III - Portugal
+Attendance Type :
+Hybrid
+Location :
+Lisbon (Portugal)
+Date :
+01/06/2023 - 02/06/2023
+Total Participants :
+40
+Total Reimbursed :
+11
+Travel Costs :
+EUR 10 835.00
+Local Organiser Support :
+EUR 1 000.00
+Meeting 6
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+COST FinAI meets Romania
+Attendance Type :
+Virtual
+Location :
+N/A
+Date :
+16/06/2023 - 16/06/2023
+Total Participants :
+100
+Total Reimbursed :
+0
+Travel Costs :
+EUR 0.00
+Local Organiser Support :
+EUR 500.00
+Meeting 7
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+Machine Learning, Artificial Intelligence and Data Protection in Fintech
+Conference WG1, WG2, CG
+Attendance Type :
+Hybrid
+Location :
+Dublin (Ireland)
+Date :
+06/07/2023 - 07/07/2023
+Total Participants :
+40
+Total Reimbursed :
+8
+Travel Costs :
+EUR 8 424.00
+Local Organiser Support :
+EUR 1 000.00
+Meeting 8
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+Nordic AI and Fintech
+Attendance Type :
+Hybrid
+Location :
+Helsinki (Finland)
+Date :
+10/07/2023 - 11/07/2023
+Total Participants :
+40
+Total Reimbursed :
+12
+Travel Costs :
+EUR 12 252.00
+Local Organiser Support :
+EUR 1 000.00
+3
+
+
+--- Page 4 ---
+Meeting 9
+Type :
+Core Group Meeting, Management Committee Meeting, Working Group
+Meeting
+Title :
+COST FinAI - Fintech and AI in Finance - MC, WG and Core group
+meeting
+Attendance Type :
+Hybrid
+Location :
+Bern (Switzerland)
+Date :
+27/09/2023 - 28/09/2023
+Total Participants :
+120
+Total Reimbursed :
+39
+Travel Costs :
+EUR 40 053.00
+Local Organiser Support :
+EUR 1 000.00
+Details for Training Schools
+Training School 1
+Title :
+COST FinAI Training school Data science for sustainable economics
+and finance
+Attendance Type :
+Hybrid
+Location :
+Berlin (Germany)
+Date :
+20/02/2023 - 24/02/2023
+Number of Trainers :
+10
+Number of Trainees :
+10
+Travel Costs Trainers :
+EUR 3 344.00
+Travel Costs Trainees :
+EUR 3 344.00
+Local Organiser Support :
+EUR 1 000.00
+Training School 2
+Title :
+COST FinAI - Fintech and AI in Finance - Training School for the latest
+technologies and upcoming challenges
+Attendance Type :
+Hybrid
+Location :
+Tirana (Albania)
+Date :
+26/04/2023 - 28/04/2023
+Number of Trainers :
+10
+Number of Trainees :
+40
+Travel Costs Trainers :
+EUR 8 050.00
+Travel Costs Trainees :
+EUR 6 900.00
+Local Organiser Support :
+EUR 1 000.00
+Training School 3
+Title :
+COST FinAI - Fintech and AI in Finance - Training School on current
+state-of-the-art and future challenges - Risks and Digital A
+Attendance Type :
+Hybrid
+Location :
+Enschede (Netherlands)
+Date :
+19/06/2023 - 23/06/2023
+Number of Trainers :
+10
+Number of Trainees :
+15
+Travel Costs Trainers :
+EUR 8 330.00
+Travel Costs Trainees :
+EUR 8 330.00
+Local Organiser Support :
+EUR 1 000.00
+4
+
+
+--- Page 5 ---
+Training School 4
+Title :
+Advanced Statistical Modelling for Fintech, financial inclusion and
+inequality (AFFINE)
+Attendance Type :
+Hybrid
+Location :
+Naples (Italy)
+Date :
+13/09/2023 - 15/09/2023
+Number of Trainers :
+10
+Number of Trainees :
+20
+Travel Costs Trainers :
+EUR 8 148.00
+Travel Costs Trainees :
+EUR 8 148.00
+Local Organiser Support :
+EUR 1 000.00
+Details of Grants
+Mobility of Researchers and Innovators
+Total budget for Short Term Scientific Mission grants (STSM):
+EUR 14 000.00
+Total budget for Virtual Mobility grants (VM):
+EUR 29 300.00
+Presentation at Conferences
+Total budget for ITC Conference grants:
+EUR 0.00
+Total budget for Dissemination Conference grants:
+EUR 2 000.00
+Details for Dissemination and Communication Products
+Item 1
+Title :
+Website improvement
+Dissemination and Communication
+Product :
+Action Website
+Amount :
+EUR 2 500.00
+Details for Other Expenses Related to Scientific Activities (OERSA)
+You have no Other Expenditures Related to Scientific Activities.
+Powered by TCPDF (www.tcpdf.org)
+5

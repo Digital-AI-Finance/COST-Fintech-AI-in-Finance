@@ -1,0 +1,53 @@
+--- Page 1 ---
+Center for Digital and Decentralized Finance (C2DF) 
+Research center hosted by Institut Louis Bachelier 
+Palais Brongniart - 28, place de la bourse 
+Paris, France 
+ 
+ 
+To: CIG decision making committee 
+From: Center for Digital and Decentralized Finance (C2DF)  
+@ Institut Louis Bachelier 
+Date: 2024-05-02 
+ 
+ 
+Letter of support for COST Innovators Grant (CIG): “VisionXAI: Pioneering Visual analytics for 
+Establishing XAI Standards in European Finance with a Policy-Focused Impact” 
+ 
+ 
+Dear members of the CIG committee, 
+ 
+The Institut Louis Bachelier (ILB) is a French association, created in 2008 at the instigation of 
+the French Treasury and Caisse des Dépôts. The DNA of the Louis Bachelier Network, 
+comprising the ILB and two associated foundations (Fondation du Risque and Institut 
+Europlace de Finance), is scientific research that promotes sustainable development in 
+Economics and Finance. The Center for Digital and Decentralized Finance (C2DF) is an 
+applied research center hosted by ILB since 2024. Its purpose is to foster research in 
+mathematics and finance directed toward digital finance and blockchain/DeFi. It aims to 
+position itself at the intersection of academic research, public authorities as well as startups 
+and financial institutions. 
+ 
+Artificial Intelligence is being increasingly used in Finance with applications such as risk 
+management, investment decision, customer relationship management and service 
+automation in general. The need for explainable AI has been demonstrated over the recent 
+years but we are yet to see widely adopted standards in compliance with the data and 
+financial regulations. 
+ 
+VisionXAI’s proposal is perfectly aligned with the challenge outlined previously. Its focus on 
+regulatory compliance is important asset. Indeed, we believe that promising use cases of AI 
+should not be implemented without compliance with existing regulations. 
+ 
+Furthermore, standards are a must-have in an increasingly complex financial system. They 
+would facilitate the implementation of use cases while simultaneously help regulators 
+conduct compliance audits. 
+ 
+The C2DF research center is committed to advanced research on the topic of the new 
+finance, including AI applications in finance. As we witness the accelerating digitization of 
+financial services, the importance of responsible AI use cannot be overstated. Therefore, we 
+enthusiastically endorse the CIG application put forth by VisionXAI as an integral component 
+of our collective efforts to shape the future of finance. 
+ 
+Sincerely, 
+Louis Bertucci 
+Head of C2DF at ILB 
+ 

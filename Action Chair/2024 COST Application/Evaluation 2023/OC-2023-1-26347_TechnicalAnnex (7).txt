@@ -1,0 +1,1207 @@
+--- Page 1 ---
+TECHNICAL ANNEX
+1. S&T EXCELLENCE
+1.1 SOUNDNESS OF THE CHALLENGE
+1.1.1 DESCRIPTION OF THE STATE OF THE ART
+The Action will develop a research framework that will address the key challenges associated with
+integrating cutting-edge digital technologies in the finance sector. In achieving this aim, the Action will
+drive forward the digitalization of finance while ensuring that core policy objectives, such as consumer
+and investor protection, fair competition and stability continue to be met as the digital transformation of
+the financial sector continues.
+In recent years, we have seen the emergence of new technologies, products and business models at
+an unprecedented speed, all summarised under the label Digital Finance. The digitalisation of the
+financial industry holds great promise. It offers the opportunity to make quick and cost-effective
+payments, enable the development of innovative financial products and services and foster wider
+access to financial services thus incorporating previously “unbanked” areas. Put simply, digital
+technologies are expected to fundamentally transform the financial service industry. Some
+examples of the practitioners’ perspective in terms of the topic’s relevance come from an extensive
+analysis done by the World Economic Forum (WEF) (2020), which provides a comprehensive picture
+of how digital technologies are applied in financial services by both incumbents and Fintechs. The
+study finds that:
+●
+77% of practitioners anticipate innovative technologies to possess high or very high overall
+importance to their businesses in the future
+●
+Approximately 64% of practitioners anticipate employing innovative digital technologies in all
+of the following categories – generating new revenue potential through new products and
+processes, process automation, risk management, customer service and client acquisition
+●
+Overwhelmingly, practitioners expect that digital technologies will become a key success
+factor for specific financial service sectors
+Despite promises, the fast adoption of innovative technologies in finance poses challenges and risks,
+encompassing legal issues like disclosure and oversight, technology-related concerns such as poor
+data quality, protection and privacy, lack of sufficient explainability, algorithmic bias, and inconsistency
+in ESG assessment. The European Commission has taken steps in addressing some challenges
+through GDPR, the AI strategy (European Commission., 2023), and the digital finance package
+(European Commission., 2020b). These issues align with UN Sustainable Development Goals
+(Department of Economic and Social Affairs, Sustainable Development, 2023) and are increasingly
+relevant for financial service companies, as per the 2020 WEF study. To this point, the study done by
+WEF (2020) finds that:
+●
+91% of the surveyed practitioners consider data quality issues to be a key hurdle to deploying
+innovative digital technologies like machine learning in practice
+●
+64% of practitioners consider deficits in trust and user adoption to be another major hindrance
+of the adoption of digital technologies in finance
+●
+Complex models are often developed and evaluated within closed environments which do not
+match the conditions of real-world applications
+●
+Firms are particularly wary of the potential for complex models to entrench biases in
+decision-making
+Having
+in
+mind
+this
+gap
+between
+the
+theoretical
+capabilities
+of
+technology
+and its actual
+implementation in real-world scenarios, the Action will develop a research framework that addresses
+the key technology-related huddles of implementing state-of-art technologies in finance applications
+and enable the transition to a digital finance ecosystem that is sustainable, transparent and inclusive.
+Specifically, the action will: (i) bolster the EU's digital data market by enhancing data quality, protection
+and privacy; (ii) establish clear guidelines for integrating generative AI in finance by developing
+innovative solutions for risk management, market trend prediction, and personalized financial products
+that take into consideration challenges related to data security, ethical considerations and regulatory
+compliance; (iii) develop domain-driven XAI solutions for the finance sector by solving some of the key
+challenges of deploying explainability to machine learning (ML) and deep learning (DL) models applied
+to financial use cases; and (iv) propose data-driven ESG scoring methods.
+As a result, the Action’s research framework will lead to more, better, and more inclusive
+ﬁnancial innovations that accelerate the digital and green transition of Europe, in line with
+Europe’s key strategic priorities such as the development of key digital, enabling and emerging
+technologies (DG Research and Innovation, 2021), the European Green Deal, the Digital Finance
+Package and the European Approach to AI (European Commission 2023).
+oc-2023-1
+1/15
+
+
+--- Page 2 ---
+We elaborate in more detail on the four key technology-related pillars of the future function of finance,
+which in turn define the research objectives of the Action:
+●
+Ensuring data protection, privacy and fairness in financial data (WG1). The distinctive
+trait of the emerging new financial ecosystem is the increasing availability of data. Data is in
+the centre of the digital transformation and more is to come (EC, A European strategy for data,
+2020). Both academia and industry are increasingly faced with data characterised with
+staggeringly high number of dimensions, high variability and high veracity. Utilising such data
+is accompanied by many challenges among which: How do we ensure that all dimensions
+(accuracy, consistency, completeness, currency, volatility and timeliness) of data quality are
+satisfied to a necessary extent? What are the key challenges and opportunities in developing
+a unified data privacy framework, including clear definitions and methods, for ensuring the
+security and compliance of financial applications through the integration of differential privacy
+and federated learning techniques? What are the most effective methods and techniques for
+assessing and mitigating biases in large financial datasets to achieve data fairness, and how
+do these methods impact decision-making processes and outcomes in various finance use
+cases?
+●
+Develop and deploy end-to-end use cases of generative AI's applications in finance
+(WG2). Generative AI holds transformative potential for the finance sector, offering capabilities
+that span from the simulation of intricate financial scenarios and the creation of novel
+investment strategies, to the generation of synthetic financial data for enhanced analytics. By
+leveraging these models, financial institutions can potentially devise innovative solutions that
+enhance risk management and portfolio optimization processes, predict market trends, and
+offer personalized financial products tailored to individual consumer preferences. However, the
+journey to integrate generative AI into finance is riddled with challenges: How can sensitive
+ﬁnancial data be processed by generative AI models without risking unintentional disclosures?
+What are the potential applications and limitations of large language models (LLM) in
+predicting ﬁnancial market movements, and how can these models be effectively integrated
+into existing ﬁnancial forecasting methodologies? How do we assess the suitability and
+effectiveness of LLM in the speciﬁc applications of portfolio optimization and risk
+management? How can the potential of generative AI be fully harnessed in the ﬁnance sector
+while ensuring no compromises on security, ethics, or regulatory compliance?
+●
+Ensure explainability and fairness of AI-based systems in finance (WG3). In order to
+address the “black box” challenge of AI solutions, the concept of eXplainable AI (XAI)
+emerged, introducing a suite of techniques attempting to explain to users how complex
+models arrived at certain decisions. For the most part, these techniques, introduced primarily
+through academic efforts, are not tailored to ﬁnancial use cases and datasets and, as such,
+their ability to bring forward robust and stable explanations concerning the inner-working of
+complex models applied in ﬁnance, is limited. In this context, pending research questions are:
+To what extent existing XAI tools address the explainability needs of different stakeholders
+within
+the
+ﬁnancial
+value
+chain?
+–How
+can
+we
+build
+XAI
+methods that are not
+perturbation-based and thus maintain the natural time ordering and dependence structures of
+the data? How can we make sure that algorithmic systems do not yield socially-biassed
+outcomes, thereby compounding inequalities? How can we deal with the persisting latency in
+computing and showing explanations in real time? How can XAI platforms enhance ethics in
+the use of AI predictive models and ensure compliance with GDPR?
+●
+Streamlining ESG assessment and reporting (WG4). Sustainable finance will have a key
+role to play in the future function of finance as climate change and environmental degradation
+are becoming an existential threat to Europe and the world (EC, European green deal, 2019).
+As clearly stated in the European Green Deal strategy, sustainable finance and investment will
+be key to fostering sustainable global development. Though inevitable, transitioning to a
+sustainable future with inclusive, green economies and resilient ecosystems is associated with
+many challenges. With the Action, we will answer the following research questions: What are
+the key components and methodological considerations in developing a real-time, data-driven
+ESG (Environmental, Social, and Governance) scoring model that integrates sentiment
+analysis obtained through the utilisation of LLM? How can the resulting model be effectively
+disseminated, either as an open-source tool or as a policy recommendation, to enhance
+sustainability assessments and regulatory oversight in the financial sector? How do different
+data-driven ESG measurement techniques, incorporating LLM for sentiment analysis and
+news report analysis, compare in terms of accuracy, reliability, and suitability for assessing the
+sustainability performance of organizations, and what are the implications for informed
+decision-making by investors and stakeholders?
+oc-2023-1
+2/15
+
+
+--- Page 3 ---
+In this context, the Action will ensure that the European finance industry will stay globally competitive,
+give
+European
+consumers
+access to innovative financial products, while ensuring consumer
+protection, financial stability and contribute to ESG and European Green Deal goals.
+A research initiative aimed at overcoming the obstacles associated with AI deployment in finance
+demands a transdisciplinary, gender-balanced, international research network with a strong
+focus on young researchers and innovators for several compelling reasons. First, financial
+systems are by design intricately interconnected and globally interdependent, influenced by an array of
+factors that transcend national boundaries. Researchers from different regions bring valuable
+perspectives to the table, shedding light on regional nuances and providing a comprehensive
+understanding of the global financial landscape. Second, addressing these challenges goes beyond
+the confines of single disciplines. It involves a blend of expertise from computer science, economics,
+law, ethics, regulation, and cybersecurity. A transdisciplinary approach ensures that all aspects of the
+problem are thoroughly explored and integrated into potential solutions. Thirdly, financial data is
+diverse and subject to regional regulations. Collaboration on an international scale facilitates the
+aggregation of heterogeneous datasets, addresses data privacy concerns, and establishes common
+data standards crucial for the development and training of AI models. Fourth, financial regulations vary
+across countries, and ethical considerations are essential. An international research network can
+facilitate the exchange of regulatory insights and ethical best practices, ensuring that AI systems are
+compliant with international standards. Lastly, collaboration on an international scale accelerates the
+development of AI solutions for finance. By pooling resources, knowledge, and expertise from
+researchers and institutions across Europe, collaborative efforts can drive innovation, leading to more
+effective and globally applicable solutions.
+1.1.2. DESCRIPTION OF THE CHALLENGE (MAIN AIM)
+The Action will establish a cross-border network of professionals across finance, mathematics,
+statistics, computer sciences, law and ethics, focusing on solving the main hurdles of integrating AI
+systems into the different functions of finance. The main goal is to develop a collaborative platform that
+derives
+AI-driven,
+robust,
+explainable
+and
+sustainable
+systems
+that
+will
+support
+the
+digital
+transformation of finance. Currently, there exists a significant gap between the theoretical
+possibilities of AI-based systems and the actual feasibility of implementing these capabilities
+in real-world scenarios in finance. While numerous researchers have established the effectiveness
+of AI-based systems across diverse predictive tasks (Dingli and Fournier, 2017, Di Persio and
+Honchar, 2017, Sen and Mehtab, 2021, Cao, 2022), there remains a critical need for research focused
+on identifying (and addressing) the key barriers hindering their widespread adoption in real-world
+financial use cases, thus leading to sustained and expansive impacts in Finance, ensuring a green
+and digital transition. Specifically, through joint international efforts and interdisciplinary expertise, the
+Action will address hurdles related with the different stages of building and deploying AI-based
+systems. In order to ensure that all dimensions of data quality are satisfied, the COST action will:
+develop a comprehensive data quality assessment framework, establish a unified data privacy
+framework for financial applications, and identify effective methods for assessing and mitigating biases
+in large financial datasets. Looking at the model deployment hurdles that industry is faced with, the
+Action will: prototype and deploy end-to-end generative AI use cases in finance, propose guidelines for
+sensitive financial data processing by AI models, introduce novel metrics for evaluating the utility of
+LLM for financial market prediction, and run an assessment of their suitability for portfolio optimization
+and risk management. For the purpose of bringing suitable level of explainability and trust into
+deployed AI systems in finance, the Action will: evaluate existing XAI tools, propose novel
+finance-specific XAI methods, train and test strategies for preventing socially-biassed outcomes in
+AI-based risk management systems, and research into real-time solutions for reducing latency in AI
+explanations. Finally, in order to ensure a data-driven assessment of sustainability, the Action will:
+create a real-time, data-driven ESG scoring model integrating sentiment analysis, document methods
+for effective dissemination (either as an open-source tool or policy recommendations), and conduct a
+comparative analysis of data-driven ESG measurement techniques, including the utilization of LLM for
+enhanced sustainability assessments and regulatory oversight in finance.
+The ultimate goal of the Action is to blend diverse expertise that allows us to optimally use
+high-dimensional data and state-of-art AI systems to push forward the digitalization of the functions of
+finance. Emerging AI technologies, distinct from conventional methods, present clear benefits for the
+financial sector. The effectiveness of these methods will be measured and contextualised in terms of
+their practicality and challenges of real-world implementation. While the focus is on financial
+applications, the outcomes will be applicable to wider fields, and efforts will be made to share insights
+across different industry domains.
+oc-2023-1
+3/15
+
+
+--- Page 4 ---
+1.2 PROGRESS BEYOND THE STATE OF THE ART
+1.2.1 APPROACH TO THE CHALLENGE AND PROGRESS BEYOND THE STATE OF THE ART
+From a methodological perspective, the Action will focus on bringing forward several contributions to
+the literature. In the context of ensuring data quality, privacy and protection, the Action will test
+different state-of-art techniques proposed in the literature for tackling privacy issues in deep and
+federated learning (FL). Particularly, we will focus on differential privacy (DP). The primary aim of
+differential privacy (DP) is to enable the examination of dataset characteristics related to a population
+as a whole, all while safeguarding individual privacy (Dwork, 2006, Dwork 2008, Ouadrhiri et al.,
+2022). In simpler terms, DP involves introducing perturbations, either in statistical inquiries or the
+original dataset, to prevent an adversary from determining whether a specific individual is part of the
+dataset or not. This approach is considered a de facto standard for protecting users’ privacy in
+statistical computations. The Action will run and compare several applications of DP for financial data
+sets and time series. Moreover, the network will also tackle the challenges evolving in algorithmic bias.
+Many financial services, such as mortgage or loan approvals, are algorithmically aided decisions.
+Such techniques, including supervised and unsupervised learning methods, are not inherently biassed
+but often oblivious to sensitive parameters. This can be a result of bias introduced at any step in the
+life cycle (Davidson et al., 2023) including, e.g., socio-historical bias in the data generation process,
+Simpson’s Paradox as an example of aggregation bias (Prost et al., 2023) or the choice of
+optimization functions, regularizations that can contribute to biassed algorithmic decisions. Within the
+COST Action, researchers will explore a wide variety of methods to debias algorithmic solutions for
+financial applications. Since many fair learning algorithms have already been implemented (like IBM
+(2023) AI Fairness 360 toolkit), the researchers within COST will analyze the possibility of adjusting
+and extending those methods for problems arising in the financial sector. Moreover, much of the
+attention will be focused on developing new approaches to fight against bias both on the data and
+methods side. On the algorithmic side, the researchers will investigate the approach based on
+disparate learning processes (DLPs) that allows the sensitive attributes during the learning phase but
+not during the prediction time (Lipton et al., 2018) or Variational Fair Autoencoder, which treats
+protected attributes as the nuisance variables (Louizos, 2015). On the data debiasing side, a very
+interesting approach is Fair Adversarial Networks (FairGAN), whose goal is to create synthetic data of
+similar quality as real data, not discriminatory toward certain demographic groups (Wu, 2022).
+Considering the application of generative AI in finance, the Action will develop end-to-end use cases
+which will detail the entire pipeline of building AI-systems incorporating LLMs for financial applications.
+LLM have been shown to be very effective on a variety of language tasks (information and knowledge
+queries, analysing text data, generating briefs and reports) (Wu et al., 2023, Xie et al., 2023, Zhao et
+al., 2023, Hadi et al., 2023). However, most of the implementations available in the literature do not
+take into consideration the practical constraints (like regulatory compliance, scalability, privacy
+concerns, etc.) in which the financial sector operates. To this end, the Action will assess the potential
+and limitations of LLM for various financial applications (i.e. predicting financial markets, enhancing
+risk management and portfolio optimization processes) and propose guidelines for effectively
+integrating their outputs into classic methodologies for classification and prediction.
+Furthermore, the Action will also aim at proposing solutions for the growing “trust” issues with complex
+models. The introduction of complex ML and DL methods for financial use cases (i.e. time series
+forecasting or credit scoring), potentially enables higher predictive accuracy but this comes at the cost
+of higher complexity and thus lower interpretability (Hulsen, 2023),. ML models are referred to as
+“black boxes” because it is often difficult to understand how variables are jointly related to arrive at a
+certain output (Arrieta et al., 2019). This reduced ability to understand the inner workings and
+mechanisms of complex models unavoidably affects their trustworthiness and the willingness among
+practitioners to deploy such methods in sensitive domains such as finance. As a result, the scientific
+interest in the field of eXplainable artificial intelligence (XAI) has grown tremendously within the last
+few years (Gunning et al., 2019, Linardatos et al., 2021, Dazeley et al., 2021 and Saeed and Omlin,
+2023). XAI aims at introducing a suite of techniques attempting to communicate understandable
+information about how an already developed model produces its predictions for any given input
+(Arrieta et al., 2019). The growing popularity of the topic notwithstanding, research on XAI in finance
+remains limited and most of the existing explainability techniques are not suited for financial data
+which are characterised with dependence of features and non-stationarity. Many state-of-the-art XAI
+methods are originally tailored for certain input types such as images (ex. Saliency Maps) or text (ex.
+LRP) and have later been adjusted to suit tabular data as well. However, temporal dimensions and
+features' dependence are often omitted, and the literature currently offers only a limited consideration
+of the topic. Notable examples are interpretable decision trees for time series classification (Hidasi and
+Gáspár-Papanek, 2011) and using attention mechanisms (Hsu et al., 2019, Schockaert, 2020) with
+none of the applications looking specifically at explainability for financial data. To address this gap in
+oc-2023-1
+4/15
+
+
+--- Page 5 ---
+the literature as well as in the considered application field, the Action will focus on investigating the
+utility of existing state-of-art XAI methods and proposing novel methods for financial applications.
+Finally, the Action will also focus on tackling several methodological challenges related to the
+sustainable
+finance
+domain.
+Numerous
+organisations
+are assessing businesses' non-financial
+endeavours by employing environmental, social, and governance (ESG) metrics as assessment
+criteria (Almeyda and Darmansya, 2019 and Bassen and Kovacs, 2020). Nevertheless, the reliability
+of existing ESG ratings is constrained by variations in criteria among assessment bodies, resulting in
+significant discrepancies in a company's ESG rating when assessed by different organisations (Lee
+and Kim, 2023). Thus, a data-driven approach to ESG estimation is needed, and the studies that focus
+on the need for automatic and direct extraction and classification of ESG information are limited. The
+Action will investigate the utility of LLM in effectively analyzing and extracting insights from vast
+amounts of sustainability-related textual data, such as news articles, to gain deeper insights into
+companies’ ESG performance and their societal impact.
+1.2.2 OBJECTIVES
+1.2.2.1 Research Coordination Objectives
+The scientific progress will be pursued by capitalising on the COST research coordination tools. The
+specific objectives in this respect are shown below.
+RC1. Unified Data Protection Framework (WG1): Develop a common framework and definitions for
+data privacy methods, specifically focused on differential privacy and federated learning techniques.
+RC2. Data Sourcing Standardization for LLM (WG2): Coordinate the collection and curation of
+financial datasets, and establish a standard set of performance metrics specifically for Transformer
+Neural Networks used in portfolio optimization and risk management.
+RC3. Harmonized Protocols for XAI (WG3): Develop standardized protocols for experimentation and
+data collection XAI, focused on non-perturbative XAI methods applicable to financial time-series data.
+RC4. Comparative Assessment of ESG Measurement (WG4): Conduct a comparative analysis of
+data-driven ESG techniques, including the use of LLMs for sentiment and news analysis.
+RC5. Shared Resource Portal (All WGs): Establish a centralized digital portal where resources like
+datasets, software tools, and methodological guidelines can be shared across all WGs to accelerate
+research in data-driven processes, generative AI, XAI, and sustainable digital finance.
+RC6. International Coordination for Fairness Models (WG1): Coordinate with international bodies
+and standardization agencies to establish guidelines that ensure fairness and data protection in
+financial algorithms, leveraging differential privacy and federated learning methodologies.
+RC7. Stakeholder Input for Algorithmic Bias Mitigation (WG3): Engage with policymakers and
+regulatory bodies to translate the WG's findings on algorithmic bias mitigation into actionable policies.
+RC8. Tangible Output for Real-Time ESG Scoring (WG4): Develop a real-time, data-driven ESG
+scoring model that leverages sentiment analysis and other language model-based techniques, to be
+shared as an open-source tool or as a policy recommendation for financial regulatory bodies.
+1.2.2.2 Capacity-building Objectives
+The focus of capacity-building goals, achieved through the facilitation of knowledge exchange and
+collaborative research agenda development, will be centred around the following subject areas:
+CB1. Joint Research Agenda on Data Protection (D1): Foster knowledge exchange between legal
+experts, data scientists, and policymakers to develop a joint research agenda focused on creating
+comprehensive data privacy guidelines for financial applications.
+CB2: Interdisciplinary Collaboration for Fairness in Financial Algorithms (D2, D9): Bridge the
+gap between ethics, data science, and finance to facilitate interdisciplinary research aimed at fairness
+models and algorithmic bias mitigation in financial algorithms.
+CB3. Young Researchers in Federated Learning (D3): Engage young researchers and innovators to
+contribute to the report on federated learning techniques and protocols, thereby building their capacity.
+CB4. Stakeholder Platform for Generative AI in Finance (D4, D5, D6): Act as a trans-national
+practice community involving financial institutions, AI researchers, and regulators to foster the
+adoption of Generative AI models for portfolio optimization, risk, and personalized financial advice.
+CB5. Inclusive XAI Methods (D7, D8): Involve under-represented genders and teams from
+countries/regions with less capacity in the field to contribute to the development of scalable XAI
+methods and transparent Transformer Neural Networks.
+CB6. Sustainability Focus in Digital Finance (D10, D11, D12): Develop a joint research agenda that
+includes environmental scientists, financial analysts, and data scientists to advance sustainable digital
+finance, particularly in ESG sentiment analysis and real-time scoring models.
+CB7. Comprehensive Capacity-building Through Overall Action Deliverables (D13-D19): Utilize
+the online presence, data collection, publication plan, training materials, and gender balance reports
+as tools for ongoing capacity-building across all research groups and stakeholder communities.
+oc-2023-1
+5/15
+
+
+--- Page 6 ---
+2. NETWORKING EXCELLENCE
+2.1 ADDED VALUE OF NETWORKING IN S&T EXCELLENCE
+2.1.1
+ADDED
+VALUE
+IN
+RELATION
+TO
+EXISTING
+EFFORTS
+AT
+EUROPEAN
+AND/OR
+INTERNATIONAL LEVEL
+The proposed Action distinctively positions itself within a number of prior and ongoing European and
+international projects and initiatives. To highlight its added value, we systematically contrast it with
+previous efforts across multiple platforms:
+Marie Skłodowska-Curie Actions (MSCA):
+TraDE-OPT, REBOOT.AI, BigDataFinance, DEDS, BehindAI, and AIFocus have made valuable
+contributions in specialized areas such as big data analytics, regulatory sandboxes for AI, and the
+impact of AI on firm strategy. However, these actions focus on segmented expertise, lacking a holistic
+framework that combines these elements. Our Action integrates these specialized insights into a
+multidisciplinary dialogue.
+COST Actions:
+While COST CA19130 Fintech and AI in Finance and COST CA21163 HiTEc Text have initiated
+discussions on fintech and econometrics, they have not sufficiently explored the intersectionality
+between technological, regulatory, and ethical dimensions in finance. Our Action fills this gap by
+synergizing these aspects.
+Horizon 2020 and Horizon Europe:
+Projects like TANGO, FAME, AI for Alpha, HACID, FINTECH, SINGULARITY, Great.Power.Finance,
+and
+FINE
+offer
+essential
+technological
+advancements
+and
+insights.
+Yet,
+they
+often
+fail
+to
+comprehensively address the coordination between technology, ethics, and regulations. Our Action
+aims to meld these disparate threads into a unified framework.
+EU Initiatives and Collaborations:
+European Blockchain Partnership (EBP), European Fintech Association, the European Green Deal,
+the European Digital Finance Package, the European Data Governance Act, AI4EU, and ELISE have
+made strides in their respective domains. However, these platforms typically focus on specific facets of
+finance or technology. Our Action expands on this by offering an integrative strategy that aligns with
+EU priorities, thereby ensuring Europe's competitive position on the global stage.
+Key Differentiators and added value
+●
+Interdisciplinary Convergence in WG1 to WG4: Across all our work packages, our platform
+uniquely brings together professionals from computer science, finance, sociology, and
+regulatory bodies. This integrative approach allows us to tackle issues such as data privacy
+(WG1), generative AI (WG2), explainable AI and bias (WG3), and sustainability (WG4).
+●
+Holistic Approach to Regulatory Compliance in WG3 and WG4: Unlike prior initiatives that
+either focus on technological feasibility or regulatory challenges, our Action harmonizes these
+by incorporating ethical and regulatory considerations, particularly in WG3 and WG4.
+●
+Future-proofing the Financial Sector in WG2: While previous efforts like AI for Alpha and
+TANGO
+have
+addressed
+some
+aspects
+of
+market
+adaptability,
+our
+WG2
+aims
+to
+comprehensively understand how AI models can adapt to evolving market conditions.
+●
+Operationalizing Ethical Governance in WG3: We move beyond theoretical discussions of
+ethical considerations to actualize them, especially in WG3 where we tackle explainable AI
+and algorithmic bias, ensuring these methods align with societal norms and values.
+●
+Inclusivity of Stakeholder Perspectives in WG1 and WG4: WG1 focuses on user trust and
+experience,
+and
+WG4
+addresses
+sustainability across sectors. This ensures a more
+democratic approach to finance, incorporating a broad range of stakeholder perspectives.
+●
+Global Competitive Positioning in WG1 to WG4: In line with EU policy agendas, our Action's
+objectives
+strategically
+align
+Europe's
+financial
+technologies
+with
+global
+competitive
+requirements. This is particularly emphasized in our cross-WG challenges on interdisciplinary
+approaches, fostering collaboration, and navigating regulatory landscapes.
+It becomes evident that our Action provides a comprehensive, multidisciplinary, and future-oriented
+roadmap for advancements in the field of finance and technology. It not only builds upon but
+significantly extends the existing body of work, targeting a balanced, actionable, and forward-looking
+approach to complex challenges in the financial sector.
+oc-2023-1
+6/15
+
+
+--- Page 7 ---
+2.2 ADDED VALUE OF NETWORKING IN IMPACT
+2.2.1 SECURING THE CRITICAL MASS, EXPERTISE AND GEOGRAPHICAL BALANCE WITHIN
+THE COST MEMBERS AND BEYOND
+Our team brings together a wide array of scientific disciplines including computer science, finance,
+cybersecurity, data privacy, artificial intelligence, regulatory compliance, sustainability studies, ethics,
+user
+experience
+design,
+algorithmic development, socio-economic studies, legal studies, and
+cross-cultural communication, ensuring a rich, comprehensive approach to tackling the complexities
+and challenges in advancing financial technologies through data-driven processes and sustainable,
+ethical AI implementation across diverse European financial ecosystems.
+That is needed in view of our objectives and challenges:
+Interdisciplinary Synergy: Our interdisciplinary approach ensures that every aspect, from data-driven
+processes
+and
+AI
+model development to ethical and sustainable technology deployment, is
+underpinned by authoritative knowledge and innovative thinking.
+Practical and Theoretical Knowledge: The combination of both academic researchers and industry
+professionals ensures a balanced blend of theoretical insight and practical know-how. Our academic
+experts bring forth the latest research and theoretical frameworks, while our industry professionals
+provide real-world application insights, thereby ensuring solutions are both innovative and applicable.
+Regulatory insights: With specialists experienced in the financial regulatory landscapes across
+Europe, our network is acutely aware of the varied and often complex regulatory environments in
+different countries. This expertise is crucial to develop and implement financial technologies that are
+not only innovative but also compliant with regional and international standards.
+Technological Proficiency: Inclusion of experts in AI and FinTech provides a solid foundation to
+explore, develop, and validate cutting-edge technologies that align with the evolving needs of the
+financial industry, ensuring that our solutions are not just current but also future-ready.
+Sustainability Insight: Engaging with specialists in sustainability, especially within the financial sector,
+ensures that our network can innovatively combine financial technologies with sustainability goals,
+creating solutions that are both economically and environmentally viable.
+Data Privacy Expertise: With authorities in data privacy and protection, our network will create
+solutions that are not only efficient and innovative but also stringently adhere to data protection laws,
+safeguarding user information and building user trust.
+Geographical and Cultural Awareness: Having experts from different geographical and cultural
+backgrounds ensures a wide perspective, enabling the development of solutions that are mindful of
+cultural, social, and regional nuances, thereby ensuring wider applicability and acceptability of the
+devised technologies and strategies.
+Economic and Financial Insight: Experts in economics and finance within our network ensure a
+thorough understanding of market dynamics, providing crucial insights into creating technologies and
+strategies that are not only innovative but also economically viable and market-ready.
+Furthermore, we have variation across socio-economic factors:
+●
+Regulatory Divergence: Our experts are from countries that have different financial rules,
+helping
+us
+build
+technologies
+that
+work
+across
+various legal frameworks, especially
+considering the different ways countries implement rules like the GDPR, AI regulations and
+Fintech sandboxes.
+●
+Economic Variation: Our network has participants from all sorts of economies, from big
+financial hubs like Frankfurt and London to growing markets in Eastern Europe, ensuring our
+solutions work everywhere and can scale according to different economic contexts.
+●
+Technology Adoption: Our network includes countries at different stages of adopting
+FinTech, like tech-forward Sweden and others that are just starting their digital finance journey,
+helping us understand and plan for varied tech landscapes.
+●
+Cultural and Social Differences: We have professionals and academics from areas with
+diverse attitudes toward finance and data privacy, ensuring our solutions are sensitive to
+different cultural norms and can be adopted widely.
+●
+Environmental Priorities: Our countries have different approaches and progress levels
+toward sustainability in finance, ensuring our solutions are comprehensive and mindful of
+varied green finance initiatives and policies.
+oc-2023-1
+7/15
+
+
+--- Page 8 ---
+With our COST members, our network strategically encompasses seasoned fintech innovators from
+nations with rigorous data protection regulations, data scientists experienced in dealing with multiple
+economic climates, and AI specialists who've formulated models adaptable to multiple financial
+scenarios; synergistically, collaborations with NNC provide insights from emerging markets, while our
+affiliations with IPC ensure that the developed technologies are globally relevant and adaptable, and
+engagement with Specific Organisations like international fintech forums and regulatory bodies
+strengthen our initiative with a global, industry-relevant, and regulatory-compliant perspective, thereby
+increasing our capacity to enhance financial technologies
+2.2.2 INVOLVEMENT OF STAKEHOLDERS
+In the Action, relevant stakeholders have been identified as:
+●
+Financial Institutions: This encompasses a wide range of entities such as banks, insurance
+companies, credit unions, microfinance institutions, fintech startups, and investment firms, all
+integral to the evolving financial technologies landscape.
+●
+Regulatory and Compliance Entities: Bodies ensuring that financial technologies adhere to
+legal and ethical guidelines.
+●
+Technology Providers and Developers: Entities that create and innovate data-driven solutions
+and AI technologies.
+●
+Academic Researchers: Institutions and academics focusing on finance, sustainability, and
+technology research.
+●
+Sustainability Organizations: Advocates for environmentally responsible practices in financial
+technologies.
+●
+Consumer Advocacy Groups: Organizations protecting and promoting consumer interests.
+●
+Global Partners: This includes entities from Non-COST countries and Third States (IPC),
+particularly focusing on key players from countries like the USA, Singapore, Hong Kong,
+Japan and the UAE, enriching our understanding and ensuring a global perspective.
+It’s noteworthy that we have successfully onboarded representatives from each of these stakeholder
+categories, ensuring that a wide spectrum of expertise and perspectives is embedded from the outset.
+Stakeholder Involvement Plan:
+●
+Inclusive Initiating Workshop: Establish a foundational understanding, initial stakeholder input,
+and network cohesiveness by convening a workshop with virtual and in-person participation
+options to initiate collaborative action. The outcome will be a consolidated document capturing
+an initial roadmap, main challenges identified, and strategies to address them
+●
+Continuous Collaboration and Communication: Ensure a sustained dialogue and cooperation
+by
+implementing
+a
+digital
+platform
+for
+continual
+discussion, knowledge sharing, and
+collaboration among stakeholders.
+●
+Regular Stakeholder Check-Ins: Ensure consistent feedback and iterative development by
+implementing bi-annual meetings for updates, inputs, and collaborative efforts.
+●
+Thematic Working Groups: Achieve in-depth progress in specialized areas by focussing on
+various
+aspects
+like
+technological
+development and sustainability, inviting stakeholder
+participation through open calls.
+●
+Capacity Building and Dissemination: Enhance stakeholder capacity and disseminate insights
+by conducting workshops and webinars to share findings and build capacity.
+●
+Continuous Feedback and Improvement: Ensure that the Action is consistently refined based
+on stakeholder feedback by implementing bi-annual surveys and feedback tools, integrating
+insights into ongoing Action adaptations.
+●
+Policy Dialogue and Aligning Outputs: Ensure findings and outputs align with and influence
+policy by organizing annual forums with policy-makers, e.g. in Brussels, to ensure findings are
+policy-relevant and contribute to policy evolution.
+●
+Final Evaluation and Future Planning Workshop: Assess impact and a plan for future
+sustainability by hosting a concluding workshop to evaluate impacts, understand shortfalls,
+and plan future trajectories.
+Through this approach, we cement a bi-directional, ongoing dialogue between the Action and its
+stakeholders, ensuring our research is not only grounded in scientific and technological excellence but
+also remains tightly connected with real-world applications, challenges, and policy landscapes. Our
+cross-sectoral
+and
+interdisciplinary
+stakeholder
+base fortifies the Action’s potential to realize
+meaningful, practical, and transformative impacts across the financial technology landscape.
+oc-2023-1
+8/15
+
+
+--- Page 9 ---
+3. IMPACT
+3.1 IMPACT TO SCIENCE, SOCIETY AND COMPETITIVENESS, AND POTENTIAL FOR
+INNOVATION/BREAKTHROUGHS
+3.1.1
+SCIENTIFIC,
+TECHNOLOGICAL,
+AND/OR
+SOCIOECONOMIC
+IMPACTS
+(INCLUDING
+POTENTIAL INNOVATIONS AND/OR BREAKTHROUGHS)
+The Action will have a major impact in all of the nine primary scientific, economic/technological and
+societal Key-Impact Pathways of Europe.
+A. Scientific Impact
+Short-Term Perspective: Immediate Research Outcomes
+The proposal's immediate scientific impact is based on the advancement of financial technologies
+through data-driven methodologies and AI. In the short term:
+●
+Enhanced Data Privacy and Protection: The emphasis on differential privacy methods and
+federated learning will lead to immediate improvements in data protection. It will set a
+benchmark for how financial data should be handled in the digital age.
+●
+AI-driven Financial Models: With the deployment of Transformer Neural Networks in portfolio
+management and risk assessment, financial entities can expect models that are more
+accurate, leading to safer financial decisions and strategies.
+●
+Introduction of Explainable AI: In a field where AI decisions can have significant monetary
+implications, introducing XAI ensures that stakeholders can understand and trust AI outputs.
+This transparency is crucial for regulatory compliance and building user trust.
+Long-Term Perspective: Sustained and Expansive Impacts in Finance
+●
+Setting New Industry Standards: The guidelines and models developed for data privacy,
+fairness, and explainability will likely become industry standards. Financial technology firms
+will adhere to these models, ensuring a consistent level of data protection and AI transparency
+across the sector.
+●
+Algorithmic Bias Mitigation: The focus on identifying and mitigating algorithmic bias will
+have a long-standing impact on ensuring fairness in AI-driven financial decisions. This will
+lead to more equitable financial systems, minimizing the risk of systematic biases in lending,
+insuring, and other financial services.
+●
+Sustainable Financial Decisions: The emphasis on data-driven ESG scoring models is a
+step towards sustainable financial decisions. In the future, these dynamic scoring models will
+shape the investment strategies of big financial players, driving capital towards more
+sustainable businesses.
+A.1 Creating high-quality new knowledge
+We will publish 20 peer-reviewed articles in recognized journals (e.g. Journal of Finance, Journal of
+Financial Innovation) within the first two years and will monitor the field-weighted Citation Index of
+peer-reviewed publications in the medium term ultimately reaching a significant number and share of
+peer-reviewed publications that are core contributions within Sustainable Digital Finance.
+A.2 Strengthening human capital in research and innovation
+Our Action will strengthen human capital in research and innovation. Consequently, 100 researchers
+will benefit from extensive upskilling activities, including training, mobility, and access to vital
+infrastructures. Additionally, we will work towards ensuring that 50 of these researchers gain
+substantially more influence in the Sustainable Digital Finance field, resulting in improved working
+conditions for them, both in academia and industry. Simultaneously, our goal is to elevate Europe's
+standing on the global stage by increasing its share of top-tier Digital Finance researchers.
+A.3 Fostering diffusion of knowledge and Open source
+100% of our research output, including open data, publications, and software, will be disseminated
+through open knowledge infrastructures and frequently cited. Platforms such as Arxiv.org, osf.io,
+github.com/,
+https://protocolexchange.researchsquare.com/,
+zenodo.org,
+https://eosc-portal.eu,
+https://opensource.org/licenses, and https://open-research-europe.ec.europa.eu will be used in our
+distribution efforts. Moreover, a significant 30% of COST members, through the benefits of the
+network, will forge new transdisciplinary and trans-sectoral collaborations, partnering with users to
+maximize the potential of their open R&I outputs. Overall, we will ensure that scientific results are
+made openly accessible to bolster Europe's standing in scientific competitiveness.
+oc-2023-1
+9/15
+
+
+--- Page 10 ---
+B. Societal Impact
+B.1 Addressing EU Policy Priorities and Global Challenges through Research and Innovation
+Digital
+Transformation
+aligned
+with
+EU
+Strategy:
+By
+emphasizing
+sustainable
+digital
+transformation, our Action directly aligns with Europe's strategic priorities to establish itself as a
+frontrunner in digital innovation while addressing environmental and ethical considerations (EU Digital
+Finance Package, EU Green Deal, European Approach to Artificial Intelligence).
+Data Privacy and Fairness as global challenges: By setting data privacy and fairness at the core of
+our actions (WP1), we are tackling worldwide concerns about data misuse and inequity. Additionally,
+our focus on sustainable digital finance (WP4) resonates with global sustainability goals, aiming to
+make the financial sector more responsive and responsible in the face of environmental, social, and
+governance challenges.
+B.2 Delivering Benefits and Impact through Research and Innovation Missions:
+Generative AI will revolutionize the financial sector: The Action's emphasis on Generative AI in
+finance (WP2) promises to redefine areas like portfolio optimization, risk management, and fraud
+detection, leading to more efficient and secure financial systems.
+Promotion of Ethical AI: Our dedicated effort on explainable AI and algorithmic bias mitigation (WP3)
+not only drives technological advancements but also ensures the ethical deployment of AI in finance.
+This paves the way for more transparent, accountable, and unbiased financial decision-making.
+B.3 Strengthening the Uptake of Research and Innovation in Society:
+Explainable AI will promote transparent technologies: Through the Action´s work on explainable
+AI (WP3), we are enabling society to understand and trust AI-driven financial solutions better. This
+transparency is pivotal in fostering public trust and encouraging the broader adoption of AI
+technologies.
+The Action will have substantial educational outreach: By producing easy-to-implement models
+and guidelines, the COST Action serves as a resource for educational institutions, facilitating the
+integration of cutting-edge AI and financial tech knowledge into curricula. This ensures the next
+generation of financial professionals is equipped with both the skills and ethical considerations vital for
+the industry's future.
+All WPs prioritise an enhanced stakeholder engagement: The actionable outcomes from our
+research missions, such as the data-driven ESG scoring models (WP4), provide tangible tools for
+stakeholders ranging from policymakers to financial institutions. This strengthens the bond between
+research,
+innovation,
+and
+its real-world applications, driving societal progress and European
+competitiveness.
+C. Socioeconomic Impact
+C.1 Generating Innovation-based Growth:
+Innovative Financial Tools: We anticipate 15 new AI-driven financial tools and 10 sustainable digital
+finance tools by the end of the Action as well as five potential IPR applications for unique
+methodologies in AI and sustainable finance.
+Generative AI Innovations: Forecasting the emergence of 12 standout innovations from the Action.
+Four of these will stem directly from awarded IPRs, particularly in the area of generative AI.
+Economic Growth and Startups: Expectation of a 10% growth in market share for companies
+integrating our AI and sustainable digital finance tools. Three new startups could emerge, focusing
+exclusively on WP3 and WP4 innovations.
+C.2 Creating More and Better Jobs:
+Supported Employment: The Action will directly lead to the creation of 320 FTE jobs by the end of
+the Action, predominantly in AI, data management, and sustainable finance roles.
+Sustained Employment: 400+ FTE roles are anticipated post-project, focusing on the maintenance,
+scalability, and continuous improvement of the developed tools and methodologies. This figure also
+includes positions in academic research and high-profile R&D positions in collaborating industries
+Total Employment: The diffusion of the Action's outcomes will indirectly generate or sustain an
+additional 600 jobs across sectors that will leverage these innovations.
+C.3 Leveraging Investment in Research and Innovation:
+Investment Mobilization: The work of the Action will draw €3+ million in public and private
+investments during its life-time. Post-project innovations are expected to attract an additional €7 million
+for scaling up and widespread application.
+EU GDP Target Progress: The Action's initiatives are set to contribute towards the EU's ambitious 3%
+GDP target, spurred by the adoption and diffusion of the generated technologies.
+D. The Action’s key indicators
+80% of the output will be aimed at directly addressing EU policy priorities, with a prominent focus on
+SDGs 9 (Industry, Innovation, and Infrastructure) and SDG 13 (Climate Action). In the medium to
+oc-2023-1
+10/15
+
+
+--- Page 11 ---
+long-term, 10 innovations and scientific results will address EU policy priorities, in particular the EU
+Digital Finance Package, EU Artificial Intelligence programme and the Green Deal, leading to a
+substantial advancement of EU policies on Digital Finance and the European single digital market.
+40 outputs (research articles, white papers and prototypes) will span sustainable energy, climate
+action, and reducing inequalities, i.e. EU missions.
+In terms of Engagement and Societal Uptake, 20% of our projects will actively involve EU citizens in
+co-creation, which will lead to substantial societal uptake in the long-run, impacting over 100,000
+European citizens directly, via industry-academia generated products and regulations.
+E. Potential Innovations and Breakthroughs
+E.1 Scientific Breakthroughs:
+●
+Dynamic Data Privacy Protocols: Harnessing differential privacy methods combined with
+federated learning will establish new benchmarks in data science, particularly in financial data
+protection. This will drive a paradigm shift in how financial data is handled, balancing between
+utility and privacy.
+●
+Universal Framework for AI Transparency: The advancement of non-perturbative XAI
+methods will result in a universally accepted scientific framework for AI transparency. This will
+lay the foundation for standardized methodologies and measurements across AI applications
+in the financial domain.
+E.2 Technological Innovations:
+●
+Generative AI in Financial Systems: Integration of Transformer Neural Networks into
+portfolio optimization, risk assessment, and fraud detection will pave the way for more
+advanced financial technologies. These tools will not only optimize current processes but will
+also create novel avenues for financial decision-making.
+●
+Real-time Sustainability Metrics: Utilizing large language models to drive real-time ESG
+scoring will set a new technological standard. By providing instantaneous updates, financial
+entities will enhance their responsiveness to rapidly changing global events and sustainability
+trends.
+E.3 Socioeconomic Breakthroughs:
+●
+Economic Growth through AI: The deployment and broader acceptance of AI tools, backed
+by trust and transparency, will spur economic growth. Enhanced financial decision-making
+tools can optimize investments, resulting in substantial economic gains.
+●
+Inclusive Financial Systems: By addressing and mitigating algorithmic biases, the financial
+ecosystem will be shaped into a more equitable platform. This paves the way for fairer
+financial outcomes, ensuring a broader segment of society benefits from financial growth and
+stability.
+●
+Sustainable Finance as Norm: The emphasis on real-time sustainability metrics and their
+adoption will drive the entire financial sector towards more sustainable operations, aligning
+financial growth with global sustainability goals.
+3.2
+MEASURES TO MAXIMISE IMPACT
+3.2.1 KNOWLEDGE CREATION, TRANSFER OF KNOWLEDGE AND CAREER DEVELOPMENT
+A. Maximizing Impact through Knowledge Creation with COST Tools
+The Action will lead to groundbreaking research in European sustainable digital finance, leveraging
+data-driven processes, artificial intelligence, and sustainability insights. We will use the COST Action's
+synergies as follows:
+Strategic Meetings for Overall Research Direction: Our biannual hybrid MC meetings set the
+overarching research directions. These directions are then refined and explored in our quarterly
+working group meetings, ensuring a focused and collaborative approach. The core group oversees
+these efforts, setting tangible implementation goals to ensure cohesiveness across work packages.
+Advanced Research Through Short-Term Scientific Missions: These missions will ensure practical
+engagement, facilitating knowledge transfer and hands-on training across all work packages.
+Empowering the Next Generation: Our commitment to involving young researchers to a large extent
+is about creating knowledge with fresh perspectives and innovative methodologies
+Hands-on Collaborative Research via Virtual Mobility Grants: Our joint hybrid paper-writing
+workshops are planned as knowledge creation sessions, where the Action creates new knowledge.
+B. Maximizing Impact through Transfer of Knowledge
+In the framework of the Action, we will implement a systematic approach for knowledge transfer. We
+facilitate PhD Training Schools, targeting doctoral candidates with intensive research methodologies.
+Our STSMs enable researchers to collaborate and gain insights into varied practices across different
+oc-2023-1
+11/15
+
+
+--- Page 12 ---
+institutions. To bolster remote collaborations, we utilize Virtual Grants. Structured Mentoring Sessions
+are in place, with seasoned researchers guiding newcomers. Furthermore, through academic talks
+and conferences, we not only share our advancements with the academic community but also engage
+with other key stakeholders in the industry and government organisations.
+C. Contribution to Career Development
+The Action integrates core domains: data-driven processes, generative AI in finance, explainable AI,
+and sustainable digital finance. By advancing methodologies like differential privacy, Transformer
+Neural Networks, and Large Language Models for ESG evaluations, participants equip themselves
+with skills highly demanded in contemporary financial research and applications.
+The vast stakeholder network within our Action provides significant networking opportunities,
+facilitating transitions into multiple sectors. Participation in decision-making roles during the Action
+fosters essential management capabilities. Direct contributions to tangible research outcomes further
+solidify the credentials of researchers, improving their academic and industry prospects.
+3.2.2
+PLAN
+FOR
+DISSEMINATION
+AND/OR
+EXPLOITATION
+AND
+DIALOGUE
+WITH
+THE
+GENERAL PUBLIC OR POLICY
+In our Action's first MC meeting, a comprehensive science communication plan will be laid out.
+Science Communication Plan: This plan is grounded on three core principles:
+●
+Transparency: Ensuring all communications are clear, open, and understandable.
+●
+Continuous Outreach: A pledge to maintain persistent engagement with all stakeholders.
+●
+Engagement: Fostering connections across diverse fields, from academia to industry.
+Academic Seminars: Every partner institution will host at least one academic seminar annually.
+Conference Presence: COST members will participate in high-quality international conferences
+across Europe, ensuring our research and innovations are showcased on leading platforms.
+Publications: Our strategy includes aiming for publications in reputable journals recognized for their
+robust impact metrics.
+Industry Engagements: Seminars designed for industry experts are planned in hybrid formats. The
+objective: to captivate a minimum of 100 participants and spur subsequent collaborative projects.
+Multimedia Outreach: For every Action activity, an informational video will be produced targeting the
+wider public. Our digital strategy will also encompass the creation of a dedicated website, active social
+media engagement, and insightful blog posts.
+Intellectual Property Management: Our approach here is two-fold:
+●
+Encouraging collaborations and external research initiatives.
+●
+Channeling resources into product evolution and development.
+Community Engagement:Twice annually, we will connect with communities, the general public, and
+end users (Open Lab Days, Open Science Festivals). Our findings and innovations will also be
+presented to a comprehensive audience, including regulators and policymakers. Additionally, the focus
+remains on the pragmatic aspect: transitioning from research prototypes to tangible financial tools.
+Dissemination Oversight by CG: The CG will act as the custodian of our dissemination activities.
+Their mandate will encompass ensuring that our output is not just communicated but will follow
+stringent
+standards.
+Resource
+optimization
+strategies
+include
+synchronizing
+Working
+Group
+discussions with standout conferences like the Computational and Financial Econometrics (CFE) and
+Computational Statistics (COMPSTAT) conferences. During these conferences, dedicated sessions
+will be chaired by COST members to amplify our research visibility.
+Multi-Channel Engagement:Our strategy is to adopt a multi-channel approach for engagement. This
+involves: 1. A dedicated website; 2. Active social media channels like Facebook and Twitter; 3.
+Circulation of newsletters within academic and professional circles; 4. Prioritizing publications in
+prestigious journals; 5. Both virtual and in-person scientific discourses
+Outreach: Leveraging the media contacts of select Action members, our outreach initiatives will be
+amplified to capture a broader public audience.
+Exploitation Plan: The Action will generate results that can successfully be exploited academically
+and economically. Key elements of this plan include:
+●
+Commercialization: Transitioning research prototypes into market-ready products.
+●
+Collaborations: Engaging with industry leaders for potential partnerships or licensing deals.
+●
+Education: Offering training programs and workshops based on our findings, catering to both
+academia and industry.
+●
+Policy Influence: Using our research to inform and shape regulatory frameworks and policies
+●
+Repository Updates: Ensuring that our database remains updated, reflecting the latest findings
+and innovations.
+oc-2023-1
+12/15
+
+
+--- Page 13 ---
+4. IMPLEMENTATION
+4.1 COHERENCE AND EFFECTIVENESS OF THE WORK PLAN
+4.1.1 DESCRIPTION OF WORKING GROUPS, TASKS AND ACTIVITIES
+The work plan is divided into four specialised WGs and 18 tasks, for the 48-month duration, designed
+to ensure alignment with the research coordination and capacity-building objectives.
+WG1: Data-driven processes
+WG1 focuses on safeguarding data privacy, data protection, and ensuring fairness in finance. The
+interdisciplinary group lays the foundation for the other WGs and employs advanced methodologies
+such as differential privacy and federated learning to develop guidelines for data privacy and fairness.
+T1. Develop Comprehensive Data Privacy Guidelines: Create a set of comprehensive data privacy
+guidelines tailored to the unique challenges of financial applications
+T2. Fairness Models for Financial Algorithms: Develop fairness models and metrics designed for
+financial algorithms to mitigate biases and ensure equitable outcomes.
+T3. Implementation of Federated Learning: Implement techniques to enable collaborative model
+training across distributed financial data sources while preserving data privacy.
+WG2: Generative AI in Finance
+WG2 is dedicated to enhancing portfolio optimization, risk management, and personalized financial
+advice through advanced Generative AI techniques. The group leverages recent Transformer Neural
+Networks to improve models for optimal portfolios, assessing risks, and detecting fraudulent activities.
+T4. Advanced Portfolio Optimization: Develop advanced portfolio optimization models using
+Transformer Neural Networks to improve investment strategies and maximize returns.
+T5.
+Enhanced Risk Assessment: Create advanced risk management models that leverage
+Generative AI to identify and assess financial risks in real-time.
+T6. Personalized Financial Advice: Develop personalized financial advice models that consider
+investor preferences and financial goals, leading to tailored recommendations.
+WG3: Explainable AI and Algorithmic Bias in Finance
+WG3 will make AI models in finance more transparent and accountable while addressing algorithmic
+bias. The group pioneers the development of novel, non-perturbative XAI methods for financial data
+and Transformer Neural Networks. They also work on mitigation strategies for algorithmic bias.
+T7. Scalable XAI Methods: Develop scalable XAI methods tailored for financial time series data,
+allowing stakeholders to understand AI-driven decisions.
+T8. Transparent Transformer Neural Networks: Create transparent Transformer Neural Networks by
+devising interpretable architectures and visualization techniques.
+T9. Algorithmic Bias Mitigation Strategies: Design and implement effective strategies for measuring
+and mitigating algorithmic bias in financial applications, ensuring fairness.
+WG4: Sustainable Digital Finance
+WG4 will advance sustainable digital finance through data-driven ESG measurement. The group
+employs Large Language Models to perform sentiment analysis, analyze news and reports, and
+develop real-time, data-driven ESG scoring models, contributing to sustainable finance.
+T10. ESG Sentiment Analysis: Utilize Large Language Models to perform sentiment analysis on
+news articles, financial reports, and social media data to improve ESG factors.
+T11. News and Reports Analysis: Develop algorithms for comprehensive analysis of news and
+financial reports to extract relevant ESG-related information.
+T12. Real-time ESG Scoring Models: Build dynamic ESG scoring models that provide ongoing
+assessment and scoring of ESG performance for financial products and companies.
+Overall Action Tasks:
+T13. Cross-WG Collaboration: Foster collaboration and knowledge exchange among all WGs to
+ensure interdisciplinary insights using tools such as Git, Jira and Slack channels.
+T14. Dissemination and Impact: Implement a comprehensive dissemination strategy to share
+research outcomes, engage with stakeholders, and maximize the impact of the Action.
+T15. Ethical and Regulatory Compliance: Ensure all ethical guidelines and regulatory rules, in
+relation to data privacy, algorithmic fairness, and financial industry standards.
+T16. Science Communication Plan: Develop and implement a science communication plan to
+disseminate the Action findings to both the scientific community and the general public.
+T17. Quarterly CG meetings; T18. Annual MC meetings
+oc-2023-1
+13/15
+
+
+--- Page 14 ---
+4.1.2 DESCRIPTION OF DELIVERABLES AND TIMEFRAME
+The Action's major deliverables and timeframe are designed to achieve the research coordination and
+capacity-building objectives effectively. These deliverables span a period of 48 months and will make
+impactful contributions to the areas of data privacy, generative AI, XAI, and sustainable digital finance.
+Data-Driven Processes
+D1: Data Privacy Guidelines for Financial Applications: A comprehensive report outlining best
+practices for data privacy in financial applications.
+D2: Fairness Models for Financial Algorithms: Models and metrics to ensure fairness in algorithms.
+D3: Federated Learning Implementation: A report on the techniques and protocols for implementing
+federated learning in financial applications.
+Generative AI in Finance
+D4: Advanced Portfolio Optimization Models: A document detailing advanced portfolio optimization
+techniques using Transformer Neural Networks.
+D5: Enhanced Risk Assessment Models: Models and algorithms that leverage generative AI for
+real-time financial risk assessment.
+D6: Personalized Financial Advice Models: Models that provide tailored financial advice.
+Explainable AI and Algorithmic Bias in Finance
+D7: Scalable XAI Methods: A report on scalable XAI methods tailored for financial time-series data.
+D8: Transparent Transformer Neural Networks: Documentation and code for transparent and
+interpretable Transformer Neural Network architectures.
+D9: Algorithmic Bias Mitigation Strategies: A report outlining strategies for measuring and mitigating
+algorithmic bias in financial applications.
+Sustainable Digital Finance
+D10: ESG Sentiment Analysis: Models and findings on sentiment analysis related to Environmental,
+Social, and Governance factors.
+D11: News and Reports Analysis: Algorithms for analyzing news to extract ESG-related information.
+D12: Real-Time ESG Scoring Models: A real-time scoring system for assessing the ESG performance.
+Overall Action Deliverables
+D13: Online Presence and Social Media: A website and LinkedIn, Facebook and Twitter accounts.
+D14: Data Collection: 20 datasets to be used for research, publicly accessible.
+D15: Publication Plan: A green open-access repository featuring 80 papers, and 4 special issues.
+D16: Training Materials: Slides and video material from at least two PhD training schools per year.
+D17: Research Proposals: Submission of at least 40 research proposals, both national and European.
+D18: Award: An award for the best Young Researcher presentation at the annual MC meeting.
+D19: Gender Balance Reports: Periodic reports tracking gender balance and other inclusivity metrics.
+4.1.3 RISK ANALYSIS AND CONTINGENCY PLANS
+Description of the Risk
+Contingency Measure
+Risks for Research coordination objectives
+Inconsistency in Data Privacy Regulations
+(RC1, RC6): The changing privacy regulations
+can introduce inconsistencies, making it difficult
+to create a unified framework for data privacy.
+Monitor
+ongoing
+changes
+in
+regulations
+and
+maintain flexibility in the framework to adapt to
+new guidelines. Collaborate with legal advisors to
+ensure alignment with international standards.
+Data Quality and Standardization (RC2): Poor
+data
+quality
+or
+lack
+of
+data
+standardization
+impacts the effectiveness of AI models.
+Develop
+robust
+data
+validation
+and cleansing
+processes.
+Implement
+mechanisms
+for
+data
+governance to ensure data quality.
+Limited Adoption of XAI Protocols (RC3, RC7)
+Non-adherence to standardized protocols for XAI
+by stakeholders and research communities may
+result in fragmented and non-scalable solutions.
+Actively promote the protocols through webinars,
+publications,
+and
+partnerships
+with
+key
+stakeholders. Create incentives for the adoption of
+standardized practices
+Inaccurate ESG Measurements (RC4, RC8)
+The rapidly evolving field of ESG can result in
+outdated or inaccurate measurements.
+Regularly
+review
+and
+adapt methodologies to
+ensure they align with current ESG norms and
+standards.
+Resource Portal Mismanagement (RC5): The
+shared resource portal can become disorganized
+or outdated, affecting all Working Groups.
+Implement automated quality checks and periodic
+manual reviews to maintain the accuracy and
+relevance of shared resources.
+oc-2023-1
+14/15
+
+
+--- Page 15 ---
+Risks for Capacity building objectives
+Inadequate Stakeholder Participation (CB1,
+CB4): Lack of interest or participation from key
+stakeholders, such as legal experts or financial
+institutions, undermines the effectiveness of the
+joint agendas and stakeholder platforms.
+Establish fallback collaborations with academic
+institutions
+and
+NGOs.
+Use
+incentives
+like
+whitepapers
+or
+industry
+reports
+to
+entice
+stakeholder participation.
+Interdisciplinary
+Collaboration
+Challenges
+(CB2, CB6): Difficulties may arise in achieving
+interdisciplinary collaboration, given the diverse
+fields of ethics, data science, and finance.
+Employ a dedicated interdisciplinary coordinator to
+facilitate communication and project management
+between
+various
+disciplines.
+Conduct
+regular
+interdisciplinary workshops.
+Limited
+Engagement
+from
+Young
+Researchers (CB3): Low participation rates from
+young researchers may hinder capacity-building
+in the emerging field of federated learning.
+Introduce mentorship programs and competitive
+grants
+targeted
+at
+young
+researchers
+to
+encourage their active participation.
+Lack of Diversity and Inclusion (CB5)
+Failure to adequately involve under-represented
+genders and marginalized communities could
+result in a lack of diversity for XAI methods.
+Create targeted outreach programs and provide
+scholarships or stipends to facilitate the inclusion
+of under-represented groups.
+Insufficient
+Resources
+for
+Comprehensive
+Capacity-building (CB7): Resource constraints
+may hamper the achievement of overall action
+deliverables like training materials, publications,
+and gender balance reports.
+Prioritize deliverables based on their impact and
+availability of resources. In the case of budget
+limitations,
+seek
+additional
+external
+funding
+through grants or partnerships.
+4.1.4 GANTT DIAGRAM
+oc-2023-1
+15/15

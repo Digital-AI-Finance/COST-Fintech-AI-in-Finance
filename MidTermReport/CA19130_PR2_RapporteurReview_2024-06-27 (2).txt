@@ -1,0 +1,4356 @@
+--- Page 1 ---
+COST Action
+Progress Review at 24 months
+(14/09/2020 to 14/09/2022)
+CA19130: Fintech and Artificial Intelligence
+in Finance - Towards a transparent financial
+industry
+This report is submitted by the Action Rapporteur in fulfilment of the requirements of the
+rules for COST Action Management, Monitoring and Final Assessment and is confidential
+to the COST Association and the Management Committee of the Action.
+
+
+--- Page 2 ---
+Summaries
+ 
+The main aim and objective of the Action is to
+establish a large and interconnected community across academia, public institutions and industry focusing
+on Financial Technology and Artificial Intelligence, improving transparency in financial services, especially
+in and through FinTech, in financial modelling and investment performance evaluation
+During its first two years the Action progressed the achievement of this as
+described below
+The COST Action on Fintech and AI in Finance has brought together an incredibly diverse network and we
+have witnessed an enormous growth of our Action to 260 interdisciplinary researchers from 49 countries,
+with 39 of those countries being European COST countries, to become one of the largest and most active
+COST Actions in Europe. This diversity of the network ensures that the research is inclusive and addresses
+the needs of a global audience.
+The academic achievements of the network are impressive. The COST Action has organized 150 research
+conferences with more than 6,000 participants and 300 distinguished speakers. These events have
+provided a platform for researchers to present their latest findings, share ideas and collaborate on new
+projects. 
+The network's publications have been cited more than 10,000 times, demonstrating the impact and
+relevance of the research being conducted within the network.
+The COST Action on Fintech and AI in Finance is also focused on promoting collaboration and knowledge
+sharing between researchers and practitioners in the field. By fostering a close working relationship
+between academia and industry, the network aims to ensure that the latest research findings are put into
+practice, which is not only beneficial to the researchers, but also to the wider community.
+The objectives of the COST Action were to advance the field of fintech and AI in finance in research,
+education, and practice. To achieve this, the network has launched many research projects, which are
+focused on specific areas of fintech and AI in finance. These projects provide opportunities for researchers
+to collaborate and share their expertise, leading to new insights and discoveries in the field. The COST
+Action has also produced a very large number of publications and other output, which have been widely
+distributed and disseminated to the wider community.
+The COST Action has promoted diversity and collaboration by using STSMs, virtual grants and many
+initiatives to encourage researchers from different backgrounds to work together, creating an inclusive
+environment for all.
+In addition to these activities, the COST Action has also launched initiatives to promote knowledge transfer
+and collaboration. For example, it has established a number of working groups and task forces, which are
+focused on specific areas of fintech and AI in finance.
+Overall, the COST Action on Fintech and AI in Finance has made significant progress in advancing the field
+of fintech and AI in finance in research, education, and practice. The network has brought together a
+diverse group of researchers, who have collaborated on a wide range of projects and initiatives, and have
+produced a significant amount of output which have been widely disseminated and have achieved a high
+citation count. The COST Action is also focused on promoting collaboration and knowledge sharing
+between researchers and practitioners in the field, to ensure that the latest research findings are put into
+practice, which is not only beneficial to the researchers, but also to the wider community.
+The Rapporteur summarised the Action’s major outcomes, impacts and successes
+as follows
+The FinTech and AI in Finance Action has demonstrably been highly successful in nurturing the field, and
+2
+
+
+--- Page 3 ---
+supporting the development of a strong community of data scientists, economic and social science experts
+and practitioners, and a wide array of stakeholders, including regulators and policy-makers from 49
+countries. The programme has made impressive progress throughout its first 24 months, generating over
+100 peer-reviewed publications, numerous cross-national collaborative initiatives, and supporting a sizeable
+cohort of early career and other academic researchers. 
+The Action has furthermore supported the development of a vibrant and diverse scientific community
+through
+a
+significant
+number
+of
+initiatives,
+not
+excluding
+academic
+and
+practitioner
+workshops,
+conferences, meetups, 'datathons' and other activities aiming to engage researchers and practitioners
+associated with FinTech. 
+Operating within a highly challenging field, the COST Action FinTech and AI in Finance appears to already
+play a significant role in promoting the state of the art in financial data science and actively support
+developments in Explainable and Interpretable AI, a field which is crucially important in financial services,
+especially with reference to end-user and citizen privacy, personal data custody and associated regulatory
+policy developments in Europe and beyond.
+Of critical significance is the Action's contribution to involving, informing and educating the wider
+stakeholder population, especially regulators and policy decision-makers around many nascent but highly
+impactful
+technological
+developments
+in
+DeFi,
+cryptocurrencies,
+decentralised
+assets
+and
+related
+innovations. Of similar importance has been the Action's contribution in establishing frameworks and
+platforms for hosting and sharing datasets for use-case development and testing, a contribution of very high
+impact, particularly due to the longevity it introduces. 
+Overall, the COST FinTech and AI in Finance Action has so far made impressive headways in mobilising a
+robust FinTech community and progressing the State of the Art in FinTech-related data science and
+successfully disseminating a large body of associated and highly consequential research.
+The Action Chair has described their plans for addressing issues identified in their
+report as follows
+We are pleased to report that our Action, COST Action CA19130 Fintech and Artificial Intelligence, has
+experienced significant growth and success. Our collective output and achievements have exceeded our
+initial objectives, and we do not currently see any issues that could potentially endanger our progress. In
+the grant period, we aim to complete the majority of our objectives in GP3, and we are excited to use GP4
+to extend and improve upon our work, as well as to incorporate new challenges and research topics that
+have arisen as a result of our research efforts.
+The only exception is MoU Objective 6. Due to the changing regulatory landscape in Europe, enhanced
+privacy, data protection and regulatory requirements, it is not possible anymore to proceed with this
+objective. We are proposing to replace it with a related objective, with a substantially higher impact and
+importance for the purposes and outcome of our COST CA19130 Action.
+The Rapporteur summarised the Actions's plans for addressing issues identified in
+the report
+The plan proposed is satisfactory, also given the sizeable progress recorded throughout the lifespan of the
+project.
+3
+
+
+--- Page 4 ---
+Achievement of MoU objectives, deliverables and additional
+outputs/ achievements
+ 
+MoU objectives
+The Action reported progress of the following objectives.
+MoU objective
+Level of progress
+Rapporteur assessment
+To develop blended approaches to evaluate innovative
+financial services and their providers, especially in the
+FinTech domain, building on Machine Learning methods,
+focussing on prediction (early warning) of operational fragility,
+fraudulent and illegal behaviour ranging from appropriation of
+loaned funds to money-laundering activities.
+76 - 100%
+CONFIRMED
+The development of conceptual and methodological tools for
+establishing when black-box models are admissible and, to
+the extent possible, making them more transparent and/or
+replacing them with interpretable and explainable models.
+76 - 100%
+CONFIRMED
+To receive input from regulators and practitioners'
+communities and to validate results with regard to increasing
+transparency of artificial intelligence applications.
+51 - 75%
+CONFIRMED
+Pruning and improvement of the vast array of performance
+attribution models by contributing to the development of
+methodologies for reducing the false discovery rate in financial
+research and applied financial investment management.
+26 - 50%
+CONFIRMED
+Disseminate to the public and share with regulators the results
+on investment product performance evaluation.
+76 - 100%
+CONFIRMED
+Creation of the first European platform comparing the out-of-
+sample performance of banks' investment products, insurance-
+linked investment products and asset management products
+available to the general public.
+51 - 75%
+NOT confirmed
+Create an excellent network of researchers in Europe with
+lasting collaboration beyond the lifetime of the Action.
+76 - 100%
+CONFIRMED
+Bringing technological, quantitative and economic researchers
+together, to tackle future research that can only be done in an
+interdisciplinary setting, and getting actively involved in the
+blockchain and FinTech communities across Europe, to
+constantly monitor developments, get input and disseminate
+results.
+76 - 100%
+CONFIRMED
+Bridging the gap between practitioners from the finance
+industry, academics and regulators by setting up a common
+knowledge exchange platform.
+76 - 100%
+CONFIRMED
+Transfer knowledge in terms of expertise, scientific tools and
+human resources across the different disciplines and between
+academia and industry.
+76 - 100%
+CONFIRMED
+Establish an inclusive community of researchers on
+methodological and technological themes in Machine Learning
+and Artificial Intelligence, to promote Early Career
+Investigators and increase their visibility.
+76 - 100%
+CONFIRMED
+Overcome the siloing of research topics by country and
+achieve geographical and demographical diversity, with
+special attention to COST Inclusiveness Target countries.
+76 - 100%
+CONFIRMED
+4
+
+
+--- Page 5 ---
+Prepare competitive European researchers for a fruitful career
+in an international environment through intensive use of Short
+Term Scientific Missions (STSM) and joint educational
+programs with industrial partners.
+76 - 100%
+CONFIRMED
+Maximize the job opportunities for PhD students and Early
+Career Investigators.
+76 - 100%
+CONFIRMED
+Disseminate the results of the Action's activities to the
+scientific community, European institutions and to the general
+public.
+76 - 100%
+CONFIRMED
+Significantly improve the gender equality in the fields of the
+Action.
+76 - 100%
+CONFIRMED
+Rapporteur assessment of the level of progress reported by the Action.
+The Rapporteur did not confirm the level of progress reported by the Action for the following objectives as
+explained below.
+MoU objective
+Level of progress
+reported
+Rapporteur's explanation
+Creation of the first European platform comparing the out-of-
+sample performance of banks' investment products, insurance-
+linked investment products and asset management products
+available to the general public.
+51 - 75%
+Despite providing a reasoned
+level of alignment, the team is
+proposing a new objective in
+replacement of the original set in
+the MOU; a decision as to
+whether the new objective is
+suitable or not, does not fully fall
+into the reviewer's remit.
+Relevant funder agreement will
+need to be sought to ascertain
+progress. Having said that, the
+reported progress and
+documentation does fall in line
+with the newly proposed objective
+in both scope and level of
+achievement (51-75% as
+reported).
+Action explanation regarding MoU objectives reported as 25% or less achieved
+The table below shows the Action's explanation and the Rapporteur's analysis thereof for any MoU
+objectives that the Action reported as 25% or less achieved.
+MoU Objective that was reported as
+25% or less achieved
+Action's explanation
+Rapporteur's analysis
+The Action did not report any objectives as 25% or less achieved.
+General Assessment of MoU objectives
+The level of ambition of the MoU objectives is Medium.
+Overall, most MoU Objectives are progressing appropriately.
+5
+
+
+--- Page 6 ---
+Deliverables
+The table below shows, for each deliverable, the delivery status reported by the Action and the
+Rapporteur’s comment.
+Deliverable
+Month
+deliverable
+due
+Delivery status
+Rapporteur Comment
+A database which contains pre-ICO
+documentation and post-ICO performance
+(ROI and lifespan)
+24
+Not delivered, but
+expected before
+end of Action
+There is solid indication of
+progress to the direction outlined.
+Access to data could be more
+straightforward as the landing
+page provided does require login
+- there are secondary links
+provided, however attempting to
+signup to the Data Platform via
+GitHub does not work.
+A database which contains data on
+crowdfunding/P2P platform features useful
+for rating platform integrity and to predict
+fraud
+24
+Delivered
+There are five such databases
+and the documentation provided
+offers a comprehensive guided
+description. The quality of the
+provision is suitable and
+commensurate with relevant
+MOU and deliverable
+requirements.
+Discussion papers (DP) on the methodology
+for evaluating/rating ICOs and
+crowdfunding/P2P platforms and for
+detection/early warning about fraud/illegal
+behaviour with emphasis on the application of
+AI tools
+36
+Not delivered, but
+expected before
+end of Action
+The Action has delivered a large
+number of academic publication
+outputs so far and there is solid
+indication of planning a significant
+number of forthcoming meetings
+to that effect. It is therefore
+expected that the deliverable will
+be complete by the end of this
+Action.
+A position paper and roadmap on mitigating
+risks connected with the increased use of
+digital assets
+48
+Not delivered, but
+expected before
+end of Action
+Given the evidenced substantial
+research that the Action has
+delivered so far, the plan outlined
+is sufficient to warrant completion
+of the Position Paper and risk
+mitigation roadmap.
+A discussion paper for possible approaches
+to building a statistically valid back-testing
+framework
+24
+Not delivered, but
+expected before
+end of Action
+The evidence provided
+demonstrates substantial
+research delivered so far, the
+plan outlined is sufficient to
+warrant completion of a
+discussion paper on back-testing.
+Sufficient evidence is also
+available to suggest regular
+meetings to that effect.
+Methodological discussion paper on the
+design of stress tests for the evaluation of AI
+and ML models under shifting financial
+conditions to improve the robustness of
+models
+48
+Not delivered, but
+expected before
+end of Action
+The evidence provided
+demonstrates substantial AI/ML
+evaluation research was
+conducted towards the desired
+discussion paper; the progress
+outlined is sufficient to warrant
+completion before the end of the
+Action. Sufficient evidence is also
+available to suggest suitable
+datasets and other material for
+6
+
+
+--- Page 7 ---
+stress-tests is available.
+Position papers, aimed at regulators and
+policy-makers, on methodology (with
+examples of formal criteria) for testing AI
+techniques in real-time
+36
+Not delivered, but
+expected before
+end of Action
+The breadth and scope of
+academic research and
+disseminated outputs indicates
+that position papers addressing
+regulatory and policy-making
+matters are well within the scope
+and timelines suggested. The
+schedules of Action meetings
+also testify to that effect.
+Report on good examples and best practices
+for a transparent finance industry with
+guidelines to improve transparency
+12
+Not delivered, but
+expected before
+end of Action
+Some inconsistency is identified
+in this narrative, as the Action
+meeting mentioned (GP3 in Cluj-
+Napoca in February 2023) has
+taken place 12 months ago and
+thus dissemination should
+normally have already happened.
+More clarification is required as to
+the specific deliverable.
+An internal database of collected (scraped)
+financial time series from exchanges and
+regional consolidation platforms optimised for
+accessibility to all partners
+24
+Not delivered, but
+expected before
+end of Action
+As is the case with DLV1, there is
+solid indication of progress to the
+direction outlined. Access to data
+could be more straightforward as
+the landing page provided does
+require login - there are
+secondary links provided,
+however attempting to signup to
+the Data Platform via GitHub
+does not work. Indeed the PII
+policies in the EU provide a
+convoluted space to navigate and
+this is a challenging task, as also
+indicated by significant efforts
+being placed on research for
+synthetic data modelling and
+generation.
+Methodological discussion papers on AI
+models to generate “failed trials” of
+investment product producers and on
+quantitative strategies with the usage of the
+promising field of network data analysis
+48
+Not delivered, but
+expected before
+end of Action
+As in previous deliverables (see
+DLV6,7 for instance), the breadth
+and scope of academic research
+and disseminated outputs
+indicates that methodological
+discussion papers for failed trials
+are well within the scope and
+timelines suggested. A schedule
+for a specific Action meeting to
+address dissemination of these
+papers is also in place.
+Four annual reports (for lay audience)
+distributed via local and national media
+48
+Not delivered, but
+expected before
+end of Action
+While significant indications exist
+to suggest progress in finalising
+the annual reports, and a
+relatively comfortable plan for
+public dissemination, more
+information could be made
+available (and pointers to files
+and materials in the submission)
+relating to contacting national
+media, and the Action plan and
+timeline for that dissemination,
+including more information on the
+format.
+7
+
+
+--- Page 8 ---
+Key software (codes, packages) developed
+by each of the Working Groups in line with
+their objectives
+48
+Not delivered, but
+expected before
+end of Action
+There is a well-curated set of
+resources and codebase through
+Quantinar and Quantlet and all
+indications are that the DLV12
+requirements will be
+straightforwardly met within the
+timeline suggested.
+Handbook and/or wiki page describing
+potential approaches to tackle risk
+management issues related to blockchain
+assets and crowdfunding/P2P lending
+36
+Not delivered, but
+expected before
+end of Action
+More information and pointers to
+the right resources is required to
+demonstrate progress. It is
+unclear at what stage of
+development / delivery the
+handbook is at (for instance,
+drafts or delivery plans coudl be
+helpful in outlining this).
+An edited volume containing scientific
+achievements of the Action (dummy text to
+delete)
+48
+Not delivered, but
+expected within 2
+years after the end
+of the Action
+This deliverable is largely down
+to an editorial effort leveraging
+work already carried out and
+including forthcoming outputs.
+The plan for dissemination and
+timeframe proposed is
+reasonable and information
+provided is sufficient. Since the
+Action well-advanced, the team
+shoudl consider outlining and
+scoping this publication (edited
+volume) through, for instance,
+identifying themes and cross-
+cutting areas.
+Strategy to engage stakeholders in the Action
+(including revisions in month 24 and 36)
+6
+Not delivered, but
+expected before
+end of Action
+There is good indication for the
+development of a stakeholder
+strategy where also specific
+stakeholders are identified; it will
+be useful for relevant working
+groups to propose a specific
+engagement timeline, especially
+given the multinational nature
+and complexity of the Action.
+General Assessment of deliverables
+The level of ambition of the deliverables is medium.
+Overall, most deliverables are progressing appropriately.
+8
+
+
+--- Page 9 ---
+Additional outputs / achievements
+ 
+Co-authored Action publications
+The Action reported 100 publications on the topic of the Action, co-authored by at least two Action
+participants from two countries participating in the Action. The full list of publications appears in Annex I. 
+The:
+Quality of the Action’s co-authored publications is very good.
+Based on a review the significance and requirements of publication venues, the topics and
+methodologies covered and publication citation indices, the vast majority of peer-reviewed outputs
+provided here are of significant quality and indicate concrete contribution to the associated fields.
+Significance of the Action’s co-authored publications is excellent.
+A review on the topics covered, novelty of approaches outlined and relevant citation metrics indicate
+high significance of the majority of peer-review publications provided in the list.
+Relevance to the Action of the Action’s co-authored publications is excellent.
+The 100 publications range suitably across the entire thematic spectrum of the Action and address
+highly relevant topics in the FinTech AI space.
+Quantity of the Action’s co-authored publications is excellent.
+There are 100 peer-reviewed publications as outputs of the Action, which rates exceptionally high.
+This is also a good reflection of the collaborative nature of the work, as the vast majority is multi-
+author (3 or more academics).
+Projects and proposals resulting from Action activities
+The Action reported the following projects resulting from Action activities involving at least one Action
+participant.
+Title
+Main proposer name
+Funder
+Crypto Currencies and Nordic Youth
+Roman Matkovskyy
+  Trans-national - This research has
+been provided via an academia-
+industry collaboration with Nasdaq.
+Network-based credit risk models on
+P2p lending markets
+Eduard Baumöhl
+  Trans-national - The research is
+jointly supported by the Czech
+Science Foundation and SNSF Lead
+Agency.
+Blockchain and Fraud Detection
+Joerg Osterrieder
+  Trans-national - SNF
+Network-based credit risk models on
+P2P lending markets
+Branka Hadji Misheva
+  Trans-national - SNSF Lead Agency
+Digital Finance and Reinforcement
+Learning
+Joerg Osterrieder
+  National
+Narrative Digital Finance: a tale of
+structural breaks, bubbles & market
+narratives
+Joerg Osterrieder
+  National
+Blockchain
+Joerg Osterrieder
+  National
+DataInc - Intelligent Data Integration
+and Cleaning
+Branka Hadji Misheva
+  National
+IRTG 1792 extension 2022.10-2023.3
+WK Härdle
+  National
+9
+
+
+--- Page 10 ---
+XAI in credit risk management
+Branka Hadji Misheva
+  National
+In addition the Action reported 10 proposals resulting from Action activities involving at least one Action
+participant, and for which the Action networking was necessary.
+Relevance of the Action’s proposals and/ or projects is excellent.
+Quantity of the Action’s proposals and/ or projects is excellent.
+Other outputs / achievements
+The table below shows the other outputs / achievements.
+Other Output / Achievement reported by Action
+Significance of the output
+The Croatian team gave a contribution to the organisation
+of a COST FinAI event – International Scientific
+Conference Technology, Innovation and Stability: New
+Directions in Finance (TINFIN), May 5-6, 2022: 
+The Conference, held in Zagreb and online, was
+organised by the Faculty of Economics and Business of
+the University of Zagreb, Croatian Academy of Sciences
+and Arts and COST Action - Fintech and Artificial
+Intelligence in Finance - Towards a Transparent Financial
+Industry. The Programme Committee and the Organising
+Committee of the Conference was formed dominantly by
+COST FinAI Action’s participants, where special attention
+was payed to diversity regarding their gender and
+experience as well as inclusion of ITC. The event was
+devoted to topics of current challenges for the financial
+industry, focusing on fintech and artificial intelligence in
+finance, and the participants interested in more traditional
+framework of finance and economics also found their
+place. The event hosted several different activities,
+including:
+keynote session titled "Manifold destiny: Unsupervised
+machine learning for the social sciences" by professor
+James Ming Chen, Michigan State University, College of
+Law, USA; 
+COST session with invited talk on "Overview of COST
+Action CA19130 FinAI - Fintech and Artificial Intelligence
+in Finance - Towards a Transparent Financial Industry"
+by the Action Chair – professor Jörg Osterrieder, Zurich
+University of Applied Sciences - ZHAW, School of
+Engineering, Switzerland / Bern Business School,
+Institute of Applied Data Science and Finance,
+Switzerland;
+meeting of the COST FinAI WG 2 with research
+presentations of WG 2 members;
+additional parallel tracks of research presentations of
+other authors; and
+panel discussion titled „FinTech in 2022 and beyond:
+Possibilities and new regulatory challenges“, gathering
+various stakeholders in the FinTech field, including
+industry professionals and regulators. 
+The Conference hosted around 60 participants, coming
+from over 15 countries. Conference proceedings are
+planned to be published.
+High
+10
+
+
+--- Page 11 ---
+ 
+Organised WG1 meeting at Rennes School of Business
+jointly with the Crypto-currency investment conference
+(April 2022) contributed to mutual knowledge exchange
+and  knowledge  dissemination as well as to a network
+extension and launching new projects.
+ 
+Medium
+Maria Moloney has been accepted onto the CEDPO AI
+WG, (Working Group for Artificial Intelligence of the
+Confederation of European Data Protection
+Organisations) based in Brussels. We will be working on
+advising policy regarding AI from the perspective of data
+protection.
+ 
+Medium
+We have expanded substantially our academic base on
+quantlet.com, founded by WG1 leader, Prof Härdle, HU
+Berlin. This is the foundation of hundreds of academic
+papers.
+High
+We have founded quantinar.com, WG1 leader, Prof
+Härdle, HU Berlin. This is the foundation of a substantial
+number of data sources, academic training and teaching
+materials and research dissemination.
+High
+We build up a research and development (R&D)
+relationship with the OTP, the largest Hungarian retail
+bank, in the area of financial services technologies that
+could involve a number of different research initiatives
+and activities. Some potential areas of focus could
+include:
+- Blockchain application in financial business processes:
+This could involve researching and developing ways in
+which blockchain technology can be used to streamline
+and improve various financial processes, such as
+payments, clearing, and settlement.
+- NFT (non-fungible token): This could involve
+researching and developing ways in which NFTs can be
+used to represent and trade digital assets, such as art,
+collectibles, and virtual real estate.
+Digital money, currencies, assets: This could involve
+researching and developing ways to use digital
+currencies and assets in financial transactions, including
+the use of central bank digital currencies (CBDCs) and
+stablecoins. 
+- Participating as members in the Hungarian Blockchain
+coalition: This involves joining a group of industry
+participants working together to advance the use of
+blockchain technology in Hungary, through the logistics
+workgroup, legal group and financial institutions group.
+High
+Condruta Mare, Alessandra Tanda, and Vasil Strat
+conceptualized a strategy for engaging stakeholders in
+the COST Action AI in Finance research network under
+consideration of the input from various COST members.
+The authors created a strategy based on the following
+building blocks:
+Identifying key stakeholders: Under the premise of
+High
+11
+
+
+--- Page 12 ---
+engaging with stakeholders, it is important to identify who
+they are and what their interests and concerns are. This
+involved identifying relevant industry associations,
+financial regulators, academics, and other organizations
+involved in AI and finance with a European country focus.
+Building relationships: Once key stakeholders have been
+identified, the strategy considers subsequent steps to
+build relationships. This involved reaching out to
+stakeholders directly and inviting them to participate in
+the network's activities and events, such as workshops,
+conferences, and webinars.
+Communication and Transparency: Considerable
+emphasis was placed on open communication by
+providing regular updates on the network's activities and
+progress, as well as sharing research findings and
+publications. A central objective is to encourage
+stakeholders to ask questions and provide feedback.
+Creating opportunities for collaboration: Creating
+opportunities for stakeholders to collaborate on research
+projects, pilot studies, and other activities was considered
+a crucial strategic pillar. This could include providing
+funding or other resources to support joint projects, or
+creating a platform where stakeholders can share data
+and collaborate on research.
+Luisa Anderloni and Alessandra Tanda cooperated with
+other COST Action members from different EU countries
+to retrieve credit information on P2P lending platforms. In
+a first attempt, a process was developed to collect
+information on the portfolio of a platform. The following
+steps were executed:
+Gather publicly available information: Initial data on a
+P2P lending platform was gathered by focusing on any
+publicly available information. This included information
+on the platform's website, such as loan origination
+statistics, default rates, and performance metrics. Other
+sources of publicly available information included
+regulatory filings, press releases, and financial reports.
+Analyze loan data: In the following step, the collected
+publicly available information was analyzed to obtain
+preliminary insights into the loan data provided by the
+platform. The information accounted for loan amounts,
+interest rates, loan terms, borrower credit scores, and
+other metrics. Thereafter, it was further analyzed how the
+portfolio composition and diversification; the loan
+distribution across different loan types, terms, credit
+scores, and geographies differed across the sample.
+Compare with industry data: The insights from the
+analysis were then compared with information from
+industry data; this information included average interest
+rates, default rates, loan terms, and other metrics for P2P
+lending platforms.
+Perform due diligence: Once the information has been
+collected and analyzed, it is possible to perform due
+diligence on the platform. This will involve assessing the
+platform's risk management practices, its financial
+position, and its regulatory compliance.
+High
+Marcin Chlebus delivered a research seminar with the
+topic "XAI Tools in Model Selection for Business Decision
+Modeling" and discussed the use of explainable artificial
+intelligence (XAI) tools in the context of business decision
+modeling. XAI is a field of AI research that aims to
+develop algorithms and methods that can provide
+High
+12
+
+
+--- Page 13 ---
+explanations for the decisions made by AI systems. In the
+context of business decision modeling, XAI tools are
+used to improve the transparency and interpretability of
+financial models, and to facilitate the model selection
+process.
+The seminar covered several key topics, including:
+- The limitations of traditional AI models, which may be
+opaque and difficult to interpret,
+- The benefits of using XAI tools in business decision
+modeling, such as improved transparency and
+accountability,
+- The impact of XAI on the model selection process is that
+it provides better understanding of the model's
+performance, its predictions, and its ability to generalize.
+- Practical examples of how XAI tools are being used in
+industry for business decision modeling, such as fraud
+detection, credit risk assessment, and algorithmic trading.
+Furthermore, the seminar discovered significant practical
+examples of how XAI tools may not only improve
+transparency for financial models, but also impact the
+model selection process itself. These examples included,
+but were not limited to:
+- Fraud detection, in which XAI can provide explanations
+for why a transaction was flagged as potentially
+fraudulent, allowing analysts to make more informed
+decisions about whether to pursue further investigation.
+- Credit risk assessment, where XAI can provide insights
+into the factors that are most important in determining a
+borrower's creditworthiness. - Algorithmic trading, in
+which XAI can explain why a particular trade was
+executed, allowing traders to make more informed
+decisions about which trades to execute in the future and
+improve risk management processes.
+We constructed an ICO database as part of the published
+work from the COST Action members Karimov Bedil and
+Wójcik Piotr (2021),
+(https://doi.org/10.3389/frai.2021.718450). The ICO
+database was constructed as a comprehensive and user-
+friendly tool for researchers in order to enhance future
+research efforts in the area.
+The database includes public information on the
+respective ICO, such as the name, the date it was
+conducted, the amount of money raised, the tokens being
+sold, and the team behind the ICO. To construct the
+database, the following steps were taken:
+Data gathering: Data was collected on all the ICOs that
+have been conducted or are currently in the process of
+being conducted. The information included the name of
+the ICO, the date it was conducted, the amount of money
+raised, the tokens being sold, and the team behind the
+ICO.
+Data organization: The data was organized into a logical
+format that is easy to navigate. This included creating
+categories for different types of information, such as date,
+amount raised, and team.
+Database creation: The database management system,
+was based on MySQL to adequately store the collected
+data. This will allow for easy searching and filtering of the
+data.
+High
+13
+
+
+--- Page 14 ---
+Database population: The collected data was inserted by
+several COST members into the database and checked
+for accuracy and consistency.
+User interface creation: The user interface was designed
+to include a search function and the ability to filter the
+data by different categories in order to make it appealing
+for users to quickly navigate within the tool.
+Update procedures: Regular updates of the database
+with new ICOs are conducted to ensure that the data
+remains accurate and up-to-date.
+Alessandra Tanda currently leads an interactive database
+project with several COST Action researchers from
+Portugal to collect and organize information on the past
+fees and price performance of the most traded ETFs in
+Europe. The project is currently in the development
+phase, with a focus on using text mining techniques to
+extract information from Key Investor Information
+Documents (KIIDs) of European ETFs. This information
+includes details about the ETF's performance, fees, and
+risks, which will be used to create a comprehensive
+database of European ETFs. Once completed, the
+database will be made available to COST Action
+members. This will provide researchers with an easy-to-
+use resource for researching and investing in European
+ETFs. The database will be regularly updated with new
+ETFs as they become available, and it will be accessible
+online for easy searching and filtering of the data.
+Overall, the goal is to create a valuable resource for
+researchers and investors interested in the European
+ETF market, providing them with a wealth of information
+on the past performance and fees of the most traded
+ETFs in Europe.
+High
+Jeric Vlah led two research seminars at two independent
+COST Action FinAI events named the 29th Symposium of
+the Society for Nonlinear Dynamics & Econometrics and
+conference event "Technology, Innovation and Stability:
+New Directions in Finance (TINFIN)", Zagreb, Croatia
+with a focus on investigating time interval choices in
+technical indicator-based stock price forecasting. His
+research work discussed the effect of time interval
+choices on the accuracy of technical indicator-based
+stock price forecasting. The seminar presentation
+covered the following key points:
+- Introduction to technical indicators and their importance
+in stock price forecasting
+- The problem of time interval choices and its impact on
+the accuracy of technical indicator-based predictions
+- Description of the dataset and methods used in the
+study
+- Results of the study and its comparison with other time
+intervals
+- Implications and recommendations for practitioners
+- Conclusion and future work
+The author outlined the use of a large dataset of historical
+stock prices and technical indicators that were calculated
+at different time intervals. Various machine learning
+algorithms were then used to predict the direction of stock
+price changes using the technical indicators as input
+parameters. The performance of the predictions was
+High
+14
+
+
+--- Page 15 ---
+subsequently evaluated using metrics such as accuracy,
+precision, and recall indicators. The results of the study
+indicate that the choice of time interval can have a
+significant impact on the accuracy of the predictions and
+that the optimal time interval depends on the specific
+stock and the technical indicator used. The study
+concludes that the choice of time interval is an important
+aspect to consider in technical indicator-based stock price
+forecasting.
+A. Ivanisevic Hernaus, J. Kristo, and R. Rako gave a
+research seminar on the topic "ESG-Related Challenges
+in the Insurance Industry: A Multi-stakeholder
+Perspective" at the COST Action FinAI event
+"Technology, Innovation, and Stability: New Directions in
+Finance (TINFIN)" in Zagreb, Croatia. The seminar
+presentation scientifically outlined the challenges faced
+by the insurance industry in integrating environmental,
+social, and governance (ESG) factors into their
+operations and investment decisions. With increasing
+public and regulatory awareness, insurance companies
+are facing pressure to align their strategies and activities
+with sustainable development goals. The authors adopt a
+multi-stakeholder approach to examine the challenges
+faced by insurers, policyholders, and regulators in
+integrating ESG considerations. It was also analyzed
+what the current state of ESG integration in the insurance
+industry is, the drivers and barriers to this integration, and
+the potential solutions for addressing these challenges.
+The research presentation covered the following key
+points:
+- Overview of ESG and its importance in the insurance
+industry
+- Examination of the current state of ESG integration in
+the insurance industry
+- Analysis of the challenges faced by insurers,
+policyholders, and regulators in integrating ESG
+- Identification of drivers and barriers for ESG integration
+in the insurance industry
+- Discussion of potential solutions for addressing the
+challenges and recommendations for the industry
+High
+P. Dzelalija and A. Ivanisevic Hernaus presented a
+research paper with the title "From perceived mobility to
+the intention to use mobile payments: A moderated
+mediation analysis" at the COST Action FinAI supported
+event FinanceCom 2022: International Workshop
+Enterprise Applications, Markets, and Services in the
+Finance Industry, University of Twente, the Netherlands.
+The presentation described factors that influence
+consumers' intention to use mobile payments. The study
+adopted a multi-disciplinary approach by combining
+theories from information systems, marketing, and
+psychology to explore how perceived mobility and trust,
+influence the intention to use mobile payments. A
+moderated mediation analysis was discussed, to examine
+the direct and indirect effects of perceived mobility and
+trust on the intention to use mobile payments. In addition,
+the research examined the moderating effect of
+demographic factors such as age and gender on the
+relationship between perceived mobility, trust, and the
+intention to use mobile payments. Thereby, the study
+aimed to facilitate the understanding of the complex
+High
+15
+
+
+--- Page 16 ---
+relationships among the factors being studied, and also
+provide further insight into the aspects that influence the
+intention to use mobile payments.
+The presentation covered the following key points:
+- Introduction and background on mobile payments and
+its increasing importance
+- Theoretical framework: an overview of perceived
+mobility, trust, and their relationship with the intention to
+use mobile payments
+- Research design and methods, including data
+collection, analysis techniques, and sample
+characteristics
+- Results and findings: examination of the direct and
+indirect effects of perceived mobility, trust, and
+demographic factors on the intention to use mobile
+payments
+- Implications and recommendations for practitioners,
+policymakers, and researchers.
+- Conclusion and future work.
+Branka Hadji Misheva designed, as part of the research
+work for the COST Action FinAI, an explainable webpage
+(explainableaiforfinance.com) on visual analytics (VA)
+tools tailored to financial applications. This webpage
+provides information and proposes VA tools that include
+several key features to make them useful for both model
+developers and evaluators. For model developers, the VA
+tools include interactive visualizations that allow them to
+explore and analyze the data used to train their models.
+Visualizations such as scatter plots, heat maps, and
+decision trees are recommended to help interested
+programmers understand the relationships and patterns
+in the data. Additionally, the tools also include interactive
+controls that allow the developers to explore different
+aspects of the data, such as filtering by certain variables
+or changing the granularity of the analysis.
+On the other hand, for model evaluators, the VA tools
+also offer visualizations that provide transparency into the
+inner workings of the models, such as feature importance
+plots and partial dependence plots. These types of
+visualizations support evaluators in understanding how
+the model is making its predictions and identifying any
+potential issues or biases in the model.
+Furthermore, the description of VA tools was also
+expanded to include a section for evaluating the
+performance of the models, such as accuracy and AUC-
+ROC plots, which assist evaluators to better understand
+how well the model is performing and identify any areas
+where improvements could be made. In this context, the
+webpage also provides detailed information about the
+feature importances, like variable importance and
+variable interactions, that help understand what the most
+important features are in a dataset.
+High
+Jörg Osterrieder provided a presentation as part of a
+panel on the digital transformation of the EU's financial
+markets at the 11th European Financial Regulation
+Conference in Brussels in October 2022. The
+presentation was data-driven and provided facts and
+figures to back up the statements, including the benefits
+and drawbacks of the digital transformation and the
+High
+16
+
+
+--- Page 17 ---
+expected impact on consumers and the market as a
+whole. It also addressed the role of the EU and its
+regulators in shaping the digital financial landscape and
+ways to ensure the protection of consumers while
+promoting innovation.
+In total, the talk covered a wide range of topics related to
+the use of technology in the European financial sector.
+The general outline for the presentation covered the
+following points:
+- Introduction and overview: The panel addressed the
+current state of the digital transformation within the EU's
+financial markets and the importance of the topic to the
+conference.
+- Overview of the EU's digital landscape: Focus on a high-
+level overview of the EU's current digital landscape in the
+financial sector, including the current state of technology
+adoption and the regulatory environment.
+- Case studies of digital transformation in action: Specific
+examples were presented of how different financial
+institutions in the EU have implemented digital
+transformation. It was highlighted which cases provided
+insights into the digital transformation's successes,
+challenges, and lessons learned.
+- The role of technology in financial regulation: A specific
+focus was placed on the investigation of how technology
+is impacting financial regulation and the implications for
+regulatory bodies. The presenters discussed some of the
+emerging technologies and the ways in which they are
+transforming the financial sector.
+- Panel discussion: Subsequently, the floor was opened
+for a panel discussion, where attendees had the
+opportunity to ask questions and engage in a dialogue
+with the presentors about the topics covered in the
+presentation.
+- Conclusion: The key takeaways from the presentations
+were summarized, and the sessions were closed by
+highlighting some of the key challenges and opportunities
+that lie ahead for the EU's effort to digitally transform its
+financial markets.
+Several scholars from the COST Action FinAI, among
+them Wolfgang Härdle, Vasile Strat, and Alla Petukhina,
+founded the Blockchain Research Center (BRC)
+(blockchain-research-center.com) together with other
+international researchers from leading European
+universities. The BRC is an organization that aims to
+promote the study and use of blockchain technology in a
+variety of applications, including financial services. The
+BRC aims to support the growth of the blockchain
+industry by providing a range of tools to researchers,
+companies, and financial institutions. Some of the key
+services the BRC provides include:
+- Customized independent solutions: The BRC provides
+bespoke solutions that are tailored to the specific needs
+of its clients.
+- Scientific support: The BRC offers scientific support to
+High
+17
+
+
+--- Page 18 ---
+its clients to help them understand and apply blockchain
+technology in their research or business operations.
+- High-level academic lectures: The organization of
+lectures and other educational events by the BRC help to
+promote the understanding of blockchain technology
+among researchers and industry professionals.
+- Globally intertwined blockchain forums: The BRC hosts
+forums and other networking events to promote academic
+exchange and commercial cooperation among blockchain
+researchers and industry practitioners.
+In order to provide these services, the BRC relies on a
+team of experts with a wide range of skills and
+experience in academia, finance, law, investment, and
+blockchain. This diverse background enables the institute
+to provide clients with a comprehensive range of services
+that will help drive academic and industrial development
+in the blockchain field.
+The quality and quantity of the other outputs/ achievements was assessed as follows.
+The evidence provided indicated that there has been a sufficient in quantity ad quality engagement of members
+delivering additional outputs which clearly assist in expanding the scope and impact of the Action significantly. Of the
+17 outputs outlined, the vast majority are deemed of high impact, bringing together diverse international audiences
+and addressing critical novel FinTech topics. Of particular value have been the establishment of databases and
+hosting of suitable datasets; such activities provide workable platforms for hosting usable data for future research and
+analysis, guaranteeing long-term impact for the project. Similarly, many dissemination activities and presentations
+have been instrumental in socialising otherwise previously obscure topics (particularly these associated with DeFi) to
+audiences that are not necessarily technology-savvy, but which are very close to policy and regulation in these areas.
+18
+
+
+--- Page 19 ---
+Impacts
+ 
+The Action reported the following impacts (the short- to long-term scientific, technological, and / or
+socioeconomic changes produced by a COST Action, directly or indirectly, intended or unintended) that
+have resulted, or might result, from the Action.
+Description of the impact
+Type of impact
+Timing of impact
+The COST Action FinAI was also involved, with the support of several
+members, in the establishment of the EIT Digital Summer School on
+Artificial Intelligence in Financial Services (https://summerschool.eitdi
+gital.eu/artificial-intelligence-in-financial-services). The program
+focuses on the intersection of artificial intelligence and financial
+services and covers topics such as machine learning, deep learning,
+natural language processing, and its applications in finance. Students
+were aimed at being provided with a deep understanding of the digital
+financial landscape and how artificial intelligence is changing it, while
+also achieving the necessary skills to become successful
+entrepreneurs in the field.
+The program is organized in a way that combines lectures,
+workshops, and hands-on experience with real-world projects,
+allowing students to apply the concepts they have learned in a
+practical context. The program also includes guest lectures from
+leading experts in the field, as well as visits to financial institutions
+and startups to learn about the latest trends and developments in the
+field.
+The COST Action FinAI also contributed to the EIT Digital Summer
+School on Disrupting Finance by Digital Technologies (https://summe
+rschool.eitdigital.eu/disrupting-finance-with-digital-technologies). The
+specifically developed program focuses on the intersection of finance
+and digital technologies and covers topics such as blockchain, digital
+currencies, digital identity, and its applications in finance. The
+program is organized interactively through lectures, workshops, and
+hands-on experience with real-world projects, allowing students to
+apply the concepts they have learned in a practical setting as well.
+Guest lectures as well as on-site visits to financial institutions and
+start-ups were also incorporated to provide students with the latest
+trends and developments in the field.
+Overall, the EIT Digital Summer School programs provide students
+with an intensive and immersive experience in a specific area of
+digital technology. Both summer schools also provide opportunities
+for students to work on projects, participate in competitions and
+hackathons, and engage with a wide range of stakeholders, including
+top European corporations, SMEs, startups, universities, and
+research institutes.
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action: As
+with I6, the described contribution (summer school) is considered of high S, E and S/T impact, promoting augmented
+knowledge and expertise in the intersection between finance and data science. The initiative further supports
+entrepreneurship in the field and nurtures a new generation of tech-savvy Finance professionals. Clear and significant
+impact is demonstrated through this initiative.
+The objective of the VMG is to support collaboration and the
+exchange of ideas, data, methods, and other resources among
+researchers in order to increase the visibility and awareness of the
+COST Action and in the same time to support the advancement of the
+research in the fields covered by the Action. The supported VMG
+have also ensured that the research outcomes and their results have
+wider applicability and dissemination inside and outside the network.
+The supported VMG have also ensured that the research outcomes
+and their results are more broadly applicable and disseminated within
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+19
+
+
+--- Page 20 ---
+and beyond the network. By increasing the visibility of the Action
+members' activities and the results they have achieved, the VMGs
+will also contribute to the Action's increased impact. Thus, the Virtual
+Mobility Grants have contributed to a large array of sub-topics of the
+COST Action contributing mainly to the increase of the awareness of
+the Action. Among the 12 virtual mobility grants supported during the
+second grant period 3 have directly contributed to deliverables of the
+Action and 9 have touched on topics ranging from involvement of
+females in FinTech to creation of video materials for facilitating the
+understanding of various data science and AI topics. Belma’s VMG
+performed a bibliometric review on the topic of Venture Capital (VC)
+in order to improve the understanding of the VC environment that
+contributes strongly to the development and success of the FinTech
+industry. Alessandra’s VMG proposed a survey to investigate basic
+perceived knowledge of FinTech innovations and of STEM and
+mathematical aptitude for different demographics. Wolfgang’s VMG
+has improved the library of the Quantinar platform. Ioana’s VMG has
+investigated the challenges of FinTech from both a regulatory and
+technology point of view. Codruta’s VMG has supported the
+realization of the first FinTech report for Romania providing an
+overview of the sector. Maria’s VMG focused on financial inclusion
+and on analyzing FinTech gender diversity in different EU countries.
+Barbara’s VMG proposed an analysis of the gender and social
+connectedness of the editorial boards of finance journals. Shala’s
+VMG supported the Datathon initiative developed in our Action
+bringing together students, academics and industry representatives
+around FinTech and AI topics. Esra’s VMG analyzed the relationship
+between cashless economy and green growth within the framework
+of FinTech.
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action: As
+with Imp14, the VMG initiative is also considered of high impact (S/T, E, S) promoting resource and idea exchange
+across research communities by funding novel ideas and research mobility. There are also clear tangible outputs
+from the initiative so far, also demonstrating the effectiveness of the initiative to date.
+The STSM (Short Term Scientific Mission) grant, developed by the
+COST Action FinAI is a program designed to encourage collaboration
+and the exchange of ideas, data, methods, and other resources
+among researchers in order to further advance research in specific
+fields. It helps to ensure that research outcomes are more widely
+applicable and widely disseminated throughout Europe, leading to
+more impactful outcomes. The grant has been significant in
+increasing international collaboration, publications, and result
+dissemination, and the quality of research outcomes has been
+increasing. The recent STSM grants have contributed to several
+specific research areas, such as the development of new algorithmic
+tools for anomaly detection in stock markets. This research, led by
+Apostolos Chalkis, contributes to a better understanding of risks and
+their causes in portfolio optimization, and also stimulates long-term
+scientific collaboration among universities and research institutions.
+Additionally, the computational tools developed as part of this
+research have been implemented in open-source packages, making
+them widely available to researchers and practitioners.
+Another recent STSM grant led to the development of efficient
+geometric and computational tools based on semidefinite
+programming and random walks for studying Bayesian inference of
+systemic risk interlinkages. This research, led by Elias Tsigaridas,
+introduces advanced geometric, algebraic, algorithmic, and
+computational tools in computational finance and develops highly
+efficient mathematical software for various tasks, with the long-term
+goal of tackling problems that are currently intractable with available
+techniques. A prototype implementation in MATLAB with the
+corresponding algorithms has been developed.
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+20
+
+
+--- Page 21 ---
+Lastly, the STSM grant was used to evaluate sustainability goals at
+the European level from a spatial perspective using taxpayers'
+perception and sentiment analysis. This research, led by Coita Ioana-
+Florina and Belbe Stefana, contributes to structuring the research
+topic, methodology and extending the database of evaluations of
+sustainability goals at the European level from a spatial perspective
+using taxpayers' perceptions and sentiment analysis. This research
+aims at assessing sustainability at the institutional level in the
+financial domain using AI models that support transparency and help
+authorities discover fraudulent activities in a more efficient manner.
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action:
+Establishment of the referenced grants as parts of the Action are considered of high impact (S/T, E, S) as they
+promote resource and idea exchange across research communities by funding novel ideas and research mobility.
+There are clear tangible documented outputs from the initiative so far, also demonstrating the effectiveness of the
+initiative to date.
+The COST Action FinAI, represented by its member Dolores Romeo
+Morales, co-organized the online seminar series "Machine Learning
+NeEDS Mathematical Optimization" (
+https://congreso.us.es/mlneedsmo/) with Emilio Carrizosa from IMUS-
+Instituto de Matemáticas de la Universidad de Sevilla, in collaboration
+with PhD Students Kseniia Kurishchenko from CBS, Cristina Molero
+Rio from IMUS, Jasone Ramrez-Ayerbe from IMUS, and Thomas
+Halskov from CBS. The seminar series is designed to provide an
+impactful platform for leading academics in the field of data science
+and analytics to share their latest research findings and
+developments, with a focus on the integration of machine learning
+and mathematical optimization.
+The seminar series includes a number of presentations from experts
+in the field who will cover important topics such as explainability,
+fairness, fraud, privacy, etc. Mathematical modeling and
+mathematical optimization will be at the core of their presentations.
+Additionally, the seminar series includes a YOUNG online seminar
+series on "Machine Learning NeEDS Mathematical Optimization",
+where in each session, three junior academics will show their latest
+results in this burgeoning area.
+The format of the seminar series is a weekly session that will take
+place every Monday at 16.30 (CET), starting on January 11, 2021.
+The seminar series is 100% online, and it will have speakers from
+around the globe. The seminar series is free thanks to the funding the
+EU gives to the H2020 MSCA NeEDS project, as well as the support
+given by IMUS-Instituto de Matemáticas de la Universidad de Sevilla.
+Shortly after each seminar, its video recording will be available at
+both the IMUS YouTube channel, as well as the NeEDS YouTube
+channel.
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action: The
+seminar series ("Machine Learning NeEDS Mathematical Optimization") is deemed of significant impact across all
+impact areas to the research community as it clearly supports and promotes a platform for dissemination and
+research progress on topics which are critical to FinTech areas. Given their purely online nature the seminar appear
+to support high accessibility for the materials and insights, further attending to the openness and breadth the the
+Action aims to.
+Dolores Romeo Morales, as member of the COST Action FinAI, is a
+member of the conference organization committee of the European
+Conference on Operational Research (EURO) 2024)
+(https://euro2024cph.dk), which will take place in Copenhagen,
+Denmark, from June 30 to July 4, 2024.
+The event is a well-established conference that covers a wide range
+of topics within the field of operational research, including:
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+21
+
+
+--- Page 22 ---
+mathematical modeling, optimization, decision support systems,
+simulation, logistics and transportation, production management,
+finance and economics, and many others. The conference will likely
+feature keynote speeches, panel discussions, and paper
+presentations given by leading experts in the field. The topics
+presented in the conference will likely include recent advances and
+challenges in the field of operational research, as well as the potential
+applications and implications of these developments in various
+industries and domains.
+As a member of the conference organization committee for EURO
+2024, Dolores Romeo Morales supported the conference committee
+in the following aspects:
+Helping to plan and organize the conference, including determining
+the theme and format of the conference, selecting keynote speakers,
+and planning the scientific program.Recruiting attendees and
+presenters, by reaching out to researchers and academics in the field
+of operational research and encouraging them to submit papers,
+make proposals, or attend the conference.Assisting in the selection of
+paper submissions and presentations, and ensuring that the
+conference's scientific program is of high quality and covers a broad
+range of topics within the field of operational research.
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action:
+Solid impact is demonstrated here due to the infuence the Action carries on participating in the organisation of
+forthcoming events of high visibility, affording the opportunity to inform future agendas with research-informed
+priorities as these may materialse through the Action. This outcome is of solid impact particularly on S/T and E
+dimensions.
+The organization of the workshop "Making Sense of Interpretable
+Machine Learning" was a collaborative effort between the COST
+Action FinAI and the Lorentz Center in Leiden, the Netherlands. The
+workshop was held on October 17–21, 2022, and was localized at the
+Lorentz Center. The event was also a part of the stream on machine
+learning and mathematical optimization at EURO2022, which was
+held in Espoo, Finland, on July 3–6, 2022 (
+https://euro2022espoo.com/).
+The workshop was designed to provide a platform for experts in the
+field of interpretable machine learning to share their latest research
+findings and developments. To achieve this goal, the workshop
+consisted of 24 sessions, comprising a total of 95 presentations
+delivered by leading researchers in the field. These sessions were
+carefully curated to encompass a diverse range of topics related to
+interpretable machine learning, thus catering to the interests of a wide
+audience. As a result, the participants got valuable insights into
+cutting-edge research in the field of interpretable machine learning
+and had the opportunity to network with experts in the field.
+Additionally, the variety of topics covered allowed participants to
+broaden their understanding of interpretable machine learning and its
+applications. The selection of speakers for the workshop was done
+based on the evaluation of their expertise, research contributions,
+and relevance to the workshop's theme. The organizing team took
+care of promoting the workshop through various channels, such as
+the COST FinAI meet-up group, email, and the workshop's official
+website. The overall goal of the workshop was to create an
+intellectually stimulating environment where attendees could learn,
+share, and network with their peers.
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action: The
+initiative carries clear and significant impact in buttressing a community of expert researchers around XAI as a critical
+field for FinTech especially, and in line with regulatory prerogatives in the EU. The extent and focus of the workshop
+indicates a highly valuable contribution to that effect and is considered therefore of high S/T and E significance, while
+its importance for societal progress is equally high, given the critical role of interpretability and explainability in ML
+22
+
+
+--- Page 23 ---
+model use (in FinTech and all industry fields alike).
+The COST Action FinAI country team from Croatia around Ana
+Ivanisevic Hernaus actively contributed to the organization of the
+EURO PhD School "Data Driven Decision Making and Optimization" (
+https://congreso.us.es/epsdata/), a doctoral training school organized
+by the IMUS-Mathematical Institute of the University of Seville, Spain.
+The school was scheduled to take place from June 13–22, 2022, and
+was delivered to 26 students. 21 invited speakers from academia and
+industry joined the event.
+The school was organized to provide students with in-depth
+knowledge and understanding of the latest research and
+developments in the fields of data-driven decision making and
+optimization. The program covered a wide range of topics, including
+mathematical modeling, machine learning, optimization techniques,
+and their applications in various fields, such as finance, healthcare,
+and engineering.
+A combination of lectures, workshops, and hands-on exercises were
+delivered by the invited speakers from academia and industry. The
+speakers shared their expertise and experiences with the students,
+providing them with a broad perspective on the research field.
+Additionally, the school also provided opportunities for students to
+interact with and learn from each other through group work and
+discussions. Opportunities were also provided for students to present
+their own research and receive feedback from the invited speakers
+and other attendees.
+In this sense, the school was designed to provide students with a
+comprehensive and in-depth understanding of the latest research and
+represented a valuable opportunity for PhD students and early-career
+researchers to learn from experts in the field, network with peers, and
+further develop their research skills.
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action: The
+described outcome's contribution in training and education of new researchers demonstrates high societal and
+scientific significance, as it elevates the state of the art in AI/ML in FinTech-related education, through deepening
+data science understanding. The initiative is well tied-into the Action's priorities.
+ 
+The COST Action CA19130 joins program committees, executive
+committees, and management committees for a series of events.
+These events include: 
+Member of the Scientific Committee of ISMP 2024, Montreal
+(Canada), July 21-26, 2024.
+Member of the Program Committee of FinanceCom2022, University
+of Twente (The Netherlands), August 23-24, 2022.                              
+                                                                                                 
+Chair of the Program Committee of EURO 2022, Espoo (Finland),
+July 3-6, 2022.
+Member of the Program Committee of EURO 2021, Athens (Greece),
+July 11-14, 2021.
+Selected keynote events are or will be attended:
+Keynote Speaker at IFORS2023, Santiago de Chile (Chile), July
+10-14, 2023.
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+23
+
+
+--- Page 24 ---
+Keynote Speaker at ISF2023, Charlottesville (Virginia), June 25-28,
+2023.
+Plenary Speaker at the 19th Workshop on Advances in Continuous
+Optimization, EUROPT 2022, SST NOVA (Portugal), July 29-30,
+2022.
+Plenary Speaker at International Conference on Optimization and
+Decision Science 2021 (ODS2021), 50th Annual Meeting of AIRO,
+Rome (Italy), September 14-17, 2021.
+Keynote Speaker at IEEE CASE 2021 on Data-Driven Automation,
+Lyon (France), August 23-27, 2021.
+ 
+Holding these events and providing keynote addresses increases the
+association's influence in many nations and the European Union. It
+allows academics, industry practitioners, and politicians to further
+trace the association's contribution to financial research. Moreover,
+more financial-related groups are willing to participate in association
+activities.
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action:
+Significant impact is carried by this class of activities in supporting cohesion of research initiatives as outlined here.
+There is a significantly positive contribution of the described participation of Action members to the reported sessions
+especially for the Action's networking and dissemination part. The described outcomes further critically support cross-
+fertilisation of FinTech research strands towards problem-based research approaches and the development of
+pragmatic and usable solutions.
+The COST Action FinAI helped in the establishment of an internal
+research network, specifically focused on crypto-market studies. The
+new network aims to bring together technological, quantitative, and
+economic researchers from across Europe to tackle future research
+that requires an interdisciplinary setting. The network is actively
+involved in the blockchain and FinTech communities, and focuses on
+enhancing capacity building, the transfer of knowledge, and the
+inclusion of early-career investigators.
+The network achieves its goals by organizing conferences and
+seminars where researchers can share their findings and collaborate
+on new research. By bringing researchers from different disciplines
+and backgrounds together, the network aims to enhance the transfer
+of knowledge in terms of crypto-market expertise and scientific tools
+across different disciplines and between academia and industry.
+Furthermore, the network members aimed to establish an inclusive
+community of crypto researchers on methodological and
+technological themes. This includes involving early-career
+investigators and increasing their visibility in the field. Additionally,
+through the support of the COST Action FinAI, the network further
+enforces gender equality by actively aiming to involve female
+researchers in fintech and crypto studies. One example is the female
+scholar "Akanksha Jalan," who is actively contributing in the field.
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action:
+Establishment of diverse research networks is critical for progress in FinTech, especially given the underlying
+inherent interdisciplinary nature of associated fields. The Action documentation provides ample evidence of sessions
+organised within such active networks. Furthermore the thematic focus on cryptocurrency research and its support for
+gender balance in research participants speaks to a crucial societal role in engaging stakeholders holistically. Overall,
+this is an outcome of high significance in all accounts (S/T, E, S).
+Realization of a short-term teaching visit within the Erasmus+
+teaching mobility programme, of the Action’s participant and WG 2
+Co-leader – associate professor Kristina Sutiene, PhD (F, ITC) from
+Scientific /
+Technological
+Economic
+Achieved
+24
+
+
+--- Page 25 ---
+Kaunas University of Technology, Department of Mathematical
+Modelling, Lithuania to the Action’s partner University of Zagreb,
+Faculty of Economics and Business, Department of Mathematics
+(ITC), in the period of May 2-6, 2022. Delivered topics included:
+Applications of stochastic dominance in decision making (mainly
+theory and examples of applications)
+Network analysis of financial markets (theory + examples with R)
+The visit was an opportunity to widen teaching practice in an
+international setting, with a group of students specializing in the field
+of economics and business, as well as to strengthen the existing, up-
+to-then online only, networking and to discuss possible cooperation in
+the future period. From the point of view of the host university,
+students had an opportunity to advance their knowledge and the
+faculty members benefitted as well from new approaches to subject
+matter.
+Societal
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action:
+Teaching mobility opportunities generated as part of the Action is important and the outcome has clearly
+demonstrated relevant impact. It is expected that such initiatives are broader and widened, especially given the
+extent of the network that the Action has successfully established.
+Several members of the COST Action FinAI contributed to the EIT
+Digital's Master School on Digital Finance (FinTech)
+(https://masterschool.eitdigital.eu/fintech), where a two-year program
+focusing on the intersection of finance and technology was
+designed.The program covers topics such as digital finance, financial
+innovation, and FinTech entrepreneurship. The program was created
+to give students a deep understanding of the digital financial
+landscape, while also providing them with the skills they need to
+become successful entrepreneurs in the FinTech space.
+Reachout activities for the EIT Digital Master School on Digital
+Finance (FinTech) included the following:
+- Industry events and networking opportunities where students can
+connect with FinTech professionals and learn about the latest trends
+and     developments in the field.- Guest lectures from leading
+FinTech experts and entrepreneurs share their insights and
+experiences with students.- Field trips to FinTech startups and
+financial institutions, where students can learn about the day-to-day
+operations of these organizations and gain insights into the FinTech
+ecosystem.
+Furthermore, the COST Action also contributed to the EIT Digital
+Master School on Data Science
+(https://masterschool.eitdigital.eu/data-science) and supported the
+establishment of a two-year program that focuses on the intersection
+of data science and technology. The program covers topics such as
+data science, machine learning, and data-driven entrepreneurship. It
+was aimed at giving students a deep understanding of the digital data
+landscape, while also providing them with the skills they need to
+become successful entrepreneurs in the data science space.
+Reachout activities for the EIT Digital Master School on Data Science
+included the following:
+- Industry events and networking opportunities where students can
+connect with data science professionals and learn about the latest
+trends and developments in the field.- Guest lectures from leading
+data science experts and entrepreneurs share their insights and
+experiences with students.- Field trips to data science startups and
+companies, where students can learn about the day-to-day
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+25
+
+
+--- Page 26 ---
+operations of these organizations and gain insights into the data
+science ecosystem.
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action: The
+described contribution is considered of high S, E and S/T impact, particularly as it promoted expertise-informed
+education on critical and nascent fields in FinTech, promotes entrepreneurship in the field and nurtures a new
+generation of tech-savvy Finance professionals. There is clear and significant contribution demonstrated through this
+initiative.
+Our research and knowledge dissemination
+platform, https://www.meetup.com/Fintech_AI_in_Finance/, has
+reached a substantial number of academics, professionals and the
+general public. With more than 150 events, more than 6000
+participants and 2000 members, we have build a very large
+community around the topics of the COST Action CA19130.
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action: The
+activity carries high significance on all types of impact, primarily through building networking frameworks and
+capability to host, also in the mid to long-term a community of expertise and establish a platform for sharing research
+and industry outputs and bring together experts form diverse fields around FinTech and AI.
+Several researchers received active promotions since the start of the
+Action, and the COST Action FinAI research network had a significant
+impact on their scientific output as well as their academic
+achievements:
+Simon Trimborn was promoted to assistant professor at the
+Amsterdam School of Economics, University of Amsterdam, in 2022 
+ Wolfgang Karl Härdle was promoted to visiting scholar and YuShan
+scholar at the department of information management and finance at
+the National Yang Ming Chiao Tung University (NYCU) in 2022.
+Jörg Osterrieder was promoted to an associate professorship in the
+area of finance and artificial intelligence at the University of Twente in
+Enschede, the Netherlands.
+In addition, Jörg Osterrieder could initiate a new cooperation between
+the University of Twente and the ING Group, Global Analytics team
+on advanced quantitative, data-driven research projects, both
+relevant to academia and industry.
+Furthermore, Jörg Osterrieder was also appointed Professor of
+Sustainable Business at the Bern University of Applied Science in
+Bern, Switzerland.
+Branka Hadji Misheva was promoted to associate professor of
+applied data science and finance at the Bern University of Applied
+Science in Bern, Switzerland.
+Alla Petukhina was promoted to lecturer and researcher at the
+Hochschule für Technik und Wirtschaft Berlin (HTW) in 2021.
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action:
+This wider-range outcome demonstrates an effective and significant S/T, E and S impact through its capacity to
+harness research and knowledge exchange to support academic career progression and promotion of a sizeable
+cohort of academic researchers.
+Professor Tom Pilhal is currently undergoing the habilitation process
+in order to be promoted to the rank of Associate Professor. The
+committee and referees responsible for evaluating his qualifications
+have been primarily selected from within the COST Action. This
+indicates that his academic achievements have a strong connection
+to the research being conducted within the COST Action.
+Furthermore, he has also received financial support in the form of a
+Short-term Scientific Mission (STSM) grant. These factors
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+26
+
+
+--- Page 27 ---
+demonstrate a clear alignment between Professor Pilhal's work and
+the objectives of the COST Action.
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action: The
+reported outcome is of significance to the action and project, as it demonstrates timely contribution of the COST
+network to the career progression of academic members active in COST research. Focus is primarily on S/T and E
+impact; S-impact is addressed secondarily by this outcome.
+Roman Matkovskyy's participation in the COST Action FinAI has
+been instrumental in shaping the trajectory of the Financial Market
+and Corporate Outcomes research center that he established and
+currently leads at Rennes School of Business. Through his
+involvement in the FinAI program, he was able to gain a deeper
+understanding of the financial industry and formulate a more
+comprehensive strategy for the center's research endeavors.
+Furthermore, his participation in the COST academy training
+“Understanding EU decision making process - how to advocate your
+interests”, has been beneficial for the development of a research
+project. The knowledge and skills acquired during the training have
+enabled him to create more finely-tuned research proposals, which
+have been submitted to various funding organizations with a higher
+likelihood of success. In other words, The combination of Roman
+Matkovskyy's participation in Cost actions FinAI and COST academy
+training has been a catalyst for the center's research output and
+funding opportunities.
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action:
+Since development of participant members' research capability is critical for outputs, this particular engagement
+appears to have led to augmented research proposal submissions; it is therefore considered of adequate impact for
+the FinAI Action.
+Barbara Będowska-Sójka's participation in the COST Action has
+been instrumental in securing funding from the Polish National
+Science Center (NCN) for her research project entitled “Properties of
+a cross-section of rates of return in the cryptocurrency markets”
+(NCN, nr 2021/41/B/HS4/02443). The funding competition placed a
+significant emphasis on participation in international projects, with
+20% of the total points allocated towards this criterion. As such, the
+involvement in the COST Action played an important role in this
+success.
+The project is planned to last for a duration of 3 years, starting in
+January 2022, and has been allocated a budget of 483 212 PLN
+(approximately 100 euros). The focus of the project is to study the
+properties of the cross-section of rates of return in the cryptocurrency
+markets, which is an area of research that has seen increasing
+interest in recent years due to the growing popularity and importance
+of cryptocurrencies. By utilizing the opportunities and resources
+provided by the COST Action, the research project aims to make
+significant contributions to this field of study.
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action: The
+secured funding of EUR 112,000 (see typographical error in original submission above) is directly relevant to the
+Action's projected outputs and is expected to contribute directly to the COST outcomes.
+Elias Tsigaridas, through his research project "Efficient geometric and
+computational tools based on semidefinite programming and random
+walks for studying Bayesian inference of systemic risk interlinkages,"
+utilized the Short-Term Scientific Missions (STSM) program to further
+collaborate with the team of Dr. Veni Arakelian and Dr. Apostolos
+Chalkis in the field of computational finance. The focus of this
+collaboration was to explore advanced techniques for geometric,
+algebraic, algorithmic, and computational tools, and to use these
+tools to develop highly efficient mathematical software for various
+tasks. The ultimate goal of this research was to address problems
+Scientific /
+Technological
+Economic
+Societal
+Achieved
+27
+
+
+--- Page 28 ---
+related to systemic risk interlinkages which are currently considered
+intractable using traditional techniques.
+During this STSM visit, the team focused on the problem of efficient
+Bayesian inference for Gaussian copula regression models. They
+employed semidefinite programming (SDP) and random walk
+techniques, and specifically the M1 and M2 algorithms, to improve
+the computational efficiency of their solutions. They also implemented
+a prototype of their developed algorithm in the Matlab programming
+language. This work aimed to not only improve the understanding of
+the underlying models but also provide a general framework that can
+be applied to other similar problems in the field of computational
+finance.
+Validity, relevance and significance (in particular importance and timeliness) of the impact reported by the Action:
+This is a clear S/T impact featuring cross-institution collaboration supported by the grant scheme that the Action
+established. It is a clear example where the impact path of the grant is demonstrated.
+The extent to which the Action has advanced the careers, skills and networks of researchers including ECIs
+(as described by the Action) is very good.
+Stakeholder engagement
+The COST Action FinAI has taken steps to engage a variety of stakeholders including researchers, policy makers,
+industry players, and NGOs. This has been done through measures such as joint research projects, policy maker
+engagement, training schools, conferences and workshops, stakeholder surveys and interviews, active engagement
+through social media and the website, and involving Early Career Investigators. The Action plans to continue this
+engagement by regularly updating and involving stakeholders in the progress of the Action and its research output,
+and by updating and maintaining the stakeholder engagement strategy on an annual basis, identifying target
+stakeholder groups and preparing an engagement plan for them, extending the network to remaining European
+countries, and involving citizens engaged in science and citizen science organizations. The Action will strive for an
+inter-disciplinary and inclusive engagement strategy.
+The Rapporteur recommended that the following stakeholders should also be engaged by the Action.
+General assessment of impacts
+The Action’s impacts are best described as follows:
+Multiple highly significant impacts are reasonably foreseen, at least one of which is already observed
+[Excellent]
+28
+
+
+--- Page 29 ---
+Dissemination and exploitation of Action results (other than
+co-authored Action publications listed previously)
+ 
+Dissemination
+Dissemination meetings funded by the Action (possible only until 31st October 2021)
+Action website
+https://fin-ai.eu/  
+The:
+openness and user-friendliness of the Action website are very good
+content of the Action website (programmes and minutes of all events present, all outputs/
+deliverables accessible from website) is very good
+The Action website was an effective means of disseminating the Action.
+Rapporteur's comment on the website
+The website is efficient however a number of improvements may be sought, especially in its interactivity. It seems
+quite content-heavy but it is not always straightforward how the user can efficiently interact wiht it, or access the right
+information by navigating through it.
+Other dissemination activities
+The following other dissemination activities reported by the Action were effective and added value
+Item/activity
+Organizing the BlackSeaChain 2022 conference, which took place September 1–2, 2022, in
+Varna, Bulgaria. It covered topics such as: the present and future of the decentralized
+economy and finance; the challenges in front of regulation; an introduction to Web 3.0; new
+crypto wallets and their future; the new craze in the world of cryptocurrencies—NFTs;
+innovative solutions with smart contracts; and integrations between blockchain technologies,
+the IoT, and AI. The main organizer of BlackSeaChain 2022 is the company Quanterall,
+owned by COST action member Anton Andonov. Partners are LimeChain, Nexo, Ambire,
+INDUSTRIA Tech, Hack.bg, ReCheck, Bithope, Motion Software, and WeiChain.
+Target Audience
+The target audience would be people from academia, industry, and practitioners in the field.
+Outcome of the
+activity
+We received multiple submissions, of which 43 were presented at the conference. The
+conference was organized as an in-person event on September 1–2, 2022, in Varna,
+Bulgaria.
+Hyperlink
+https://www.blackseachain.com/
+Item/activity
+Organization of a special session in the International Joint Conference on Neural Networks
+from the 18th of June to the 23rd of June 2023, hosted by the International Neural Networks
+Society with the title "Deep Learning for Financial Data Analysis." The session will likely
+feature presentations and discussions from experts in the fields of deep learning and financial
+data analysis who will share their research, insights, and perspectives on how deep learning
+techniques can be applied to analyze financial data. The session may also include
+demonstrations, interactive discussions, and opportunities for attendees to network with other
+researchers and practitioners in the field.
+Target Audience
+The target audience would be researchers, practitioners, and academicians who are
+interested in the application of deep learning techniques to financial data analysis. This would
+include individuals from fields such as computer science, statistics, finance, and economics,
+29
+
+
+--- Page 30 ---
+who are working in academia, industry, or government.
+Outcome of the
+activity
+We received multiple submissions. The conference will be organized as a virtual conference.
+Hyperlink
+https://2023.ijcnn.org/
+Item/activity
+Organizing collaboration activities between the New Bulgarian University (NBU) and
+Management Financial Group (MFG), Bulgaria. MFG is a group of leading European
+companies that specialize in non-banking financial services. New Bulgarian University
+collaborates with MFG in a joint effort to solve some of the most challenging tasks in FinTech
+using state-of-the-art AI techniques. Students from the Master's program "Knowledge
+Discovery and Big Data Analytics" are heavily involved in the majority of these activities. 
+Target Audience
+The target audience would be academics, industry, and practitioners in this field.
+Outcome of the
+activity
+Topical tasks in the FinAI field were given to students of the Master's program "Knowledge
+Discovery and Big Data Analytics." It was negotiated to continue the collaboration to achieve
+several main goals: - provide internship opportunities to the best students; - participate in the
+upcoming Black Sea Chain 2023; - expand academic activities at NBU.
+Hyperlink
+https://managementfinancialgroup.com/
+Item/activity
+A workshop called "Environmental Finance for the Common Good." More details are
+summarized in the "Result" part.
+Target Audience
+The target audience would be academics, industry, practitioners in this field, policymakers,
+and civil society.
+Outcome of the
+activity
+The workshop, co-organized by the Money, Macro, and Finance Society (UK) and the
+Department of Management, Birkbeck College, University of London, with the support of
+CA19130, saw a roundtable discussion on current challenges in environmental finance, open
+to the public. It acted as an evening public event featuring perspectives from industry,
+academia, and faith communities, and public lectures by Naoyuki Yoshino and Will Goodhart.
+Additionally, research papers were presented, and one was awarded the best paper by an
+ECI on fintech and AI topics.
+Hyperlink
+https://efcg2022.sciencesconf.org/
+Item/activity
+Workshop: Diversity Challenges and Opportunities in FinTech (NAPLES) The workshop
+aimed to bridge academics and policymakers by discussing the novel challenges and
+opportunities in FinTech and AI, particularly in STEM, to deal with diversity. Among the main
+contributions: "A first step towards financial inclusion: assessing the role of digital payments
+during the pandemic using single item latent trait response models" (A. Di Iorio (Bank of Italy),
+M. Iannario (University of Naples Federico II), A. Nobili (Bank of Italy), and G. Rocco (Bank of
+Italy).
+Target Audience
+Academics, practitioners in this field, university students, and civil society.
+Outcome of the
+activity
+The following results were achieved: - Working paper presentation: The inclusion of
+explainable AI approaches for well-being: theory and applications (M. Hudec, University of
+Bratislava) - Working paper presentation: A Bayesian network approach to statistical
+measuring and prediction of gender gaps: P. Vicard (Roma Tre University), L. Giammei
+(Sapienza University), F. Mecatti (Milano Bicocca University), F. Musella (Link Campus
+University, Rome), and S. Romio (Milano Bicocca University). - Keynote speech: "AI: Why
+diversity matters for an inclusive future" (R. Johri, Head of R&D at HSBC and Founder of
+London Women in Machine Learning) - Seminar session: "Financial knowledge and the use
+of old and new financial instruments - M. Albanese (University of Naples Federico); V. Vitale
+(University of Naples Federico): Master students from the University of Naples Federico II
+presented the results of their research about the impact of gender stereotypes on the self-
+concept of female students in STEM. A technical session illustrated the latest research about
+financial inclusion and methods to improve diversity in FinTech, while the role of higher
+education in supporting diversity and allowing for inclusion in STEM fields was discussed
+during a round table. During the conference, a kick-off event for the "woman in fintech"
+datathon was also accomplished (https://fin-ai.eu/datathon/).
+30
+
+
+--- Page 31 ---
+Hyperlink
+https://fin-ai.eu/diversity-workshop-naples2022/
+Item/activity
+Organisation of the Lake of Como School as an educational event that focused on the topic of
+neural networks and nets applied to finance. The goal of the school was to provide attendees
+with an in-depth understanding of cutting-edge methodologies and the applications of these
+technologies in the field of finance. Participants are expected to attend the school, which
+provides them with an opportunity to gain knowledge and insights from experts in the field,
+and to expand their understanding of the latest trends and developments in this area. The
+school includes lectures, seminars, hands-on workshops, and opportunities for attendees to
+network with other researchers and practitioners in the field.
+Target Audience
+The audience is primarily made up of PhD students and early-career researchers in this field. 
+Outcome of the
+activity
+This summer school provided training for 25 young researchers, and successfully reached its
+aim.
+Hyperlink
+https://nnnf.lakecomoschool.org/
+Item/activity
+The International Fintech Research Conference from October 27–28, 2022, hosted by
+Politecnico di Milano and supported by the COST Action FinAI, brought together researchers
+in the field of Fintech from various areas such as banking, asset management, insurance,
+payments, capital markets, and the internet of things. The conference welcomed papers on a
+wide range of Fintech research topics, including theoretical analysis of finance and
+economics, machine learning applications to finance, cryptocurrencies, digital currency,
+cybersecurity, neural networks, smart contracts, peer-to-peer finance, big data analysis,
+nowcasting, text analysis in finance, blockchain technologies, network analysis in finance,
+and behavioral finance.
+Target Audience
+The target audiences were researchers and industries in the respective field with a strong
+background in finance, economics, and computer science. Additionally, industry professionals
+and practitioners who were interested in the latest developments and research in the field of
+Fintech were also targeted by this conference.
+Outcome of the
+activity
+The conference received a total of 35 paper submissions, of which 24 were accepted for
+presentation at the conference. In addition to this accomplishment, the conference also
+served as an opportunity for researchers to submit their work for consideration in a special
+issue of Springer Digital Finance.
+Hyperlink
+https://www.fintechlab.it/fintech_conference2022/
+Item/activity
+The "Woman in Fintech Datathon" is an event organized by the Women in Fintech
+Conference Committee, in collaboration with the University of Tirana and the University of
+Naples Federico II with the support of the COST Action FinAI. The event is a data mining and
+analysis competition, with the goal of promoting the analysis of data related to the goals of
+the Women in Fintech Conference. The goal of the Datathon is to encourage the use of data
+analysis to understand and promote the goals of the conference and the field of Cost Action
+FinAI. The participating teams were from Albania, China, Germany, Ghana, Greece, Italy,
+India, Kosovo, Lithuania, and Romania. 
+Target Audience
+Master and/or PhD students in early stages of their career with an interest and background in
+data analysis, specifically in the field of Fintech and Artificial Intelligence in Finance. Female
+researchers working in the field of Fintech and Artificial Intelligence in Finance are especially
+targeted.
+Outcome of the
+activity
+The event attracted a total of 18 teams, comprising 46 participants, of whom 33% were male.
+The participants were tasked with utilizing quantitative approaches to produce written reports
+on the topic of financial inclusion. The reports were based on an analysis of data from the
+Global Findex database, maintained by the World Bank, with the goal of uncovering various
+financial characteristics of a global sample of individuals. The event aimed to provide
+valuable insights into the field of financial inclusion, utilizing a rigorous data-driven approach
+to generate meaningful results.
+Hyperlink
+https://fin-ai.eu/datathon/
+31
+
+
+--- Page 32 ---
+Item/activity
+Organisation of a special issue in the journal "Digital Finance." The issue aimed to explore
+the impact of new technologies on the financial industry, which is experiencing a significant
+disruptive moment referred to as the "fintech revolution." The journal invited submissions that
+use various research methods and theoretical frameworks to better understand the fintech
+phenomenon, with a focus on topics such as the use of artificial intelligence in finance,
+cryptoassets, blockchain technologies, smart contracts, and more. The special issue is in line
+with an "International Fintech Research Conference" that will be held in Milan in October
+2022.
+Target Audience
+The target audience is academics with a particular interest in finance, economics, computer
+science, and related fields.
+Outcome of the
+activity
+Issuance of a call for papers on the theme of fintech, specifically exploring the intersection of
+digital finance, emerging technologies, and innovative methodologies. Submissions were
+seeded that offer rigorous, in-depth examination of the various facets of the fintech
+landscape, including but not limited to topics such as: - The impact of digital technologies on
+financial service delivery and the customer experience - The emergence of new players and
+business models in the financial sector - The application of Artificial Intelligence and machine
+learning techniques to financial problem-solving - The analysis of cryptoassets as a new class
+of financial instruments - The implications of smart contract technology and decentralized
+finance - The use of big data analytics, nowcasting and text analysis in finance - The role of
+network analysis in understanding financial systems - The examination of behavioral finance
+in the digital age.
+Hyperlink
+https://www.springer.com/journal/42521/updates/23290068
+Item/activity
+Organization of a monthly series of open seminars conducted by the Data Science Lab
+(headed by Piotr Wójcik) in cooperation with the Quantitative Finance Research Group. Both
+organizational bodies are hosted in the Faculty of Economic Sciences at the University of
+Warsaw. The achieved research output was related to applications of machine learning and
+artificial intelligence in finance.
+Target Audience
+The target audience would be for academics, industry, and practitioners in the field.
+Outcome of the
+activity
+Informing a wide audience about our COST action, increasing action visibility, and increasing
+understanding of XAI tools among financial practitioners (e.g., 2021-04-19: Chlebus Marcin,
+"XAI Tools as a Part of the Best Practices in Model Selection for Business Decision
+Modeling"); – related to MoU objectives 9 (Capacity Building 3), 10 (Capacity Building 4) and
+15 (Capacity Building 9).
+Hyperlink
+https://qfrg.wne.uw.edu.pl/?p=1102
+Exploitation activities
+The following activities to ensure exploitation (use, in particular in a commercial context) of the Action’s
+achievements reported by the Action were effective and added value
+Item/activity
+Application of knowledge about specific XAI tools gained on WG2 seminars in daily business
+practice of Marcin Chlebus, vice CEO in Data Juice Lab, consulting company operating
+mainly in financial sector, application of XAI methods in FinTech projects in the area of Risk
+Modelling, Marketing campaigns, Human Resources and CRM.
+https://www.datajuicelab.com/
+Target Audience
+Companies operating in Risk Modelling, Marketing campaigns, Human Resources and CRM
+Outcome of the
+activity
+Thanks to regularly organised COST action research seminars and meetings current
+knowledge about XAI in Finance has been acquired. The findings were effectively
+implemented in commercial projects. Usage of XAI methods led to the improvement of the
+quality of created models and to better understanding by business users of how the
+algorithms make decisions.
+32
+
+
+--- Page 33 ---
+Item/activity
+Development of Quantinar (Quantinar.com): Quantinar is a platform that focuses on providing
+data science education through a lecture-based approach, allowing learners to apply their
+skills through the execution of real-world projects. The platform is developed by several
+COST Action FinAI members, centered around Wolfgang Karl Härdle and his research team
+from Humboldt University Berlin.  Researchers as well as students have the option to acquire
+course materials about statistical and programming-related tasks, including lecture material,
+mostly for free. The course-lets are designed according to different difficulty levels and
+provide a good starting point for students with non-technical backgrounds, as well as
+advanced training options for more experienced scholars.
+Target Audience
+The target audience is aimed at research students as well as young researchers, but also
+accounts for more experienced scholars in terms of the variety of offered course-lets.
+Outcome of the
+activity
+The output of the platform resulted in a huge amount of open-access course-lets that span
+across the fields of machine learning, fintech, cryptocurrencies, data science, blockchain, and
+statistics.
+Item/activity
+Several members of the COST Action FinAI under the lead of Wolfgang Karl Härdle
+developed the platform Quantlet (www.quantlet.de): Quantlet is designed as a web-interface
+to freely exchange numerical methods, called Quantlets. Quantlet aims to introduce a
+centralized system that is constituted by documents from different scientific areas, submitted
+by various authors from professional researchers to university students. As part of the
+Collaborative Research Center, the Center for Applied Statistics and Economics and the
+International Research Training Group (IRTG) 1792, Quantlet contributes to the goal of
+strengthening and improving empirical economic research in Germany. At present Quantlet
+contains source code written mainly in: Python, R, C++, Solidity, Matlab, SAS
+Target Audience
+The main target audience for Quantlet lies in researchers and academics who are interested
+to share and retrieve programming code for specific statistical use cases and model
+conceptualization.
+Outcome of the
+activity
+- Open access to all research and teaching related codes and programs, - Reproducibility of
+research results increases its accountability and reliability, - Full integration with GitHub,
+implemented with PyGithub package available on PyPI - Text Mining Pipeline providing
+Information Retrieval, document clustering and visualizations realized with a "GitHub API
+based Quantlet Mining infrastructure in R" - Ease of discovery and use of your technology
+and research results, everything in a single GitHub Markdown page - Standardized audit of
+your codes based on the StyleGuide
+Item/activity
+As part of the dissemination of the research output done within the COST Action FinAI and in
+order to further raise the attention on the scientific matter of investigating the use cases of
+artificial intelligence in finance, we also organized a meetup group
+(https://www.meetup.com/fintech_ai_in_finance/) that regularly updates all group participants
+with news on talks, seminal paper presentations, conference events, and working group
+meetings. The meetup-group currently circumvents around 2080 participants and provides
+the COST Action FinAI with an interactive platform to connect with researchers as well as
+interested individuals to discuss ongoing scholarly matters in the field of finance and AI.
+Target Audience
+Interested scholars as well as private individuals are free to join the meet-up group and
+receive the latest notifications on the research output generated by the COST Action FinAI.
+Outcome of the
+activity
+Over hundreds of organized meet-up events including research seminars delivered by the
+core working groups WG1, WG2, and WG3 as well as interactive online break events have
+produced a rich community of interested and active scholars that regularly participate in the
+action.
+Item/activity
+The formation of the fintech community: fintech.mk
+(https://www.linkedin.com/company/fintech-mk?viewAsMember=true). This is the first fintech
+community in North Macedonia that intends to develop and facilitate the regional Fintech
+Ecosystem. It is a non-profit organization that provides IT and consulting services. The
+community routinely publishes fintech-related articles. Members of the Action from North
+Macedonia (Petre Lameski, Olivija Filipovska, Tatjana A. Pachemska, Eftim Zdravevski,
+33
+
+
+--- Page 34 ---
+Goran Petkovski, and Miroslav Mirchev) actively contributed to the website's construction and
+article writing.
+Target Audience
+Researchers interested in Fintech, Financial Companies, Investors, and Readers who are
+curious about the application of AI in Finance.
+Outcome of the
+activity
+The community routinely publishes Fintech-related articles at: https://fintech-mk.medium.com.
+Currently, the community has 28 members and has authored thirteen articles in English and
+Macedonian.
+Assessment of Action dissemination and exploitation activities
+The effectiveness of the Action’s dissemination and exploitation approach (other than co-authored
+publications) is assessed as follows
+The points addressed above clearly and fully reflect the exploitation approach which also appears to adequately
+engage industry and academic inputs and contributions, building a concrete stakeholder ecosystem.
+Assessment of Action dissemination and exploitation activities
+  There were many highly effective Action activities focusing on dissemination of Action results [Excellent]
+There were many highly effective Action activities focusing on exploitation of Action results [Excellent]
+34
+
+
+--- Page 35 ---
+Other matters
+ 
+Difficulties in implementing the Action
+The Action Rapporteur made the following observations regarding difficulties in implementing the Action:
+This rapporteur has commented similarly on the objective in question, highlighting that there is not enough
+information available to assess it, and agreeing that the newly proposed objective is commensurate with the Action's
+requirements, as well as realistic for the timeline proposed.
+Emerging topics / developments in the field of the Action
+The Action reported the following emerging topics / developments in the field of the Action.
+During the COST Action FinAI, several emerging topics have been identified in the field of Fintech
+and AI in finance. The increasing use of Artificial Intelligence and Machine Learning in financial
+institutions and fintech companies to optimize business operations and decision making is one of
+the most notable areas. This includes the use of AI to improve financial forecasting, portfolio
+management, fraud detection, and customer service, as well as to develop new financial products
+and services. Another emerging topic is the increasing use of blockchain technology in finance,
+particularly in the areas of digital currencies, smart contracts, and decentralized finance (DeFi). The
+use of blockchain technology has the potential to revolutionize traditional financial services, by
+creating new forms of digital assets, as well as new forms of financial intermediation. Additionally,
+Explainable AI (XAI) is becoming increasingly important as a regulatory and societal requirement in
+order to understand, trust and explain the functioning of AI-based decision-making systems.
+Furthermore, there is growing concern of privacy and data protection in financial AI and fintech
+which also important. Future COST activities such as Actions, S&T Conferences, or Exploratory
+Workshops can focus on these areas in fintech and AI in finance.
+The Action Rapporteur made the following comment on the emerging topics / developments in the field
+reported by the Action.
+The report on Emerging Topics identifies the majority of new developments in FinTech and adjacent fields. Driven
+from the exponential growth in Generative AI in the past 9-12 months, it is strongly suggested that the research
+directions are adjusted to clearly incorporate the impacts in areas such as synthetic ID fraud, PETs, GenAI-resilience
+in KYC/CDD and other relevant AI/ML developments especially with reference to their impact on privacy and policy.
+Action Rapporteur
+This Second Progress Report was submitted on 2024-03-07 by:
+Prof GEORGIOS SAMAKOVITIS
+University of Greenwich
+United Kingdom
+35
+
+
+--- Page 36 ---
+Annex 1: List of publications
+ 
+The Action reported 100 publications on the topic of the Action, co-authored by at least two Action
+participants from two countries participating in the Action.
+Co-authored Action publications - peer-reviewed
+Title
+Data Science Techniques for Cryptocurrency
+Blockchains
+Author
+Innar Liiv
+DOI
+doi:10.1007/978-981-16-2418-6
+Type
+Book
+Published in
+Behaviormetrics: Quantitative Approaches to
+Human Behavior
+Published by
+Springer Singapore
+ISSNs
+2524-4027; 2524-4035
+Links
+https://link.springer.com/content/pdf/10.1007/978-
+981-16-2418-6.pdf; 
+https://link.springer.com/content/pdf/10.1007/978-
+981-16-2418-6
+Title
+Shall the winning last? A study of recent bubbles
+and persistence
+Authors
+Akanksha Jalan; Roman Matkovskyy; Valerio Potì
+DOI
+doi:10.1016/j.frl.2021.102162
+Type
+Journal article
+Published in
+Finance Research Letters
+Published by
+Elsevier BV
+ISSN
+1544-6123
+Subject
+Finance
+Links
+https://api.elsevier.com/content/article/PII:S15446
+12321002415?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S15446
+12321002415?httpAccept=text/plain
+Title
+Demand elasticities of Bitcoin and Ethereum
+Authors
+Akanksha Jalan; Roman Matkovskyy; Andrew
+Urquhart
+DOI
+doi:10.1016/j.econlet.2022.110877
+Type
+Journal article
+Published in
+Economics Letters
+Published by
+Elsevier BV
+ISSN
+0165-1765
+Subjects
+Economics and Econometrics; Finance
+Links
+https://api.elsevier.com/content/article/PII:S01651
+76522003512?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S01651
+76522003512?httpAccept=text/plain
+Title
+COVID risk narratives: a computational linguistic
+approach to the econometric identification of
+narrative risk during a pandemic
+Authors
+Yuting Chen; Don Bredin; Valerio Potì; Roman
+Matkovskyy
+DOI
+doi:10.1007/s42521-021-00045-3
+Type
+Journal article
+Published in
+Digital Finance
+36
+
+
+--- Page 37 ---
+Published by
+Springer Science and Business Media LLC
+ISSNs
+2524-6984; 2524-6186
+Subject
+General Engineering
+Links
+https://link.springer.com/content/pdf/10.1007/s425
+21-021-00045-3.pdf; 
+https://link.springer.com/article/10.1007/s42521-0
+21-00045-3/fulltext.html
+Title
+Tail-Risk Protection: Machine Learning Meets
+Modern Econometrics
+Authors
+Bruno Spilak; Wolfgang Karl Härdle
+DOI
+doi:10.1007/978-3-030-73443-5_94-1
+Type
+Book chapter
+Published in
+Encyclopedia of Finance
+Published by
+Springer International Publishing
+Link
+https://link.springer.com/content/pdf/10.1007/978-
+3-030-73443-5_94-1
+Title
+Regime-based Implied Stochastic Volatility Model
+for Crypto Option Pricing
+Authors
+Danial Saef; Yuanrong Wang; Tomaso Aste
+DOI
+doi:10.48550/arXiv.2208.12614
+Type
+Article
+Published by
+arXiv
+Title
+Financial Risk Meter for emerging markets
+Authors
+Souhir Ben Amor; Michael Althof; Wolfgang Karl
+Härdle
+DOI
+doi:10.1016/j.ribaf.2021.101594
+Type
+Journal article
+Published in
+Research in International Business and Finance
+Published by
+Elsevier BV
+ISSN
+0275-5319
+Subjects
+Finance; Business, Management and Accounting
+(miscellaneous)
+Links
+https://api.elsevier.com/content/article/PII:S02755
+31921002154?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S02755
+31921002154?httpAccept=text/plain
+Title
+Financial Risk Meter Based on Expectiles
+Authors
+Rui Ren; Meng-Jou Lu; Yingxing Li; Wolfgang K.
+Härdle
+DOI
+doi:10.2139/ssrn.3809329
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+A Data-driven Explainable Case-based
+Reasoning Approach for Financial Risk Detection
+Authors
+Wei Li; Florentina Paraschiv; Georgios Sermpinis
+DOI
+doi:10.48550/arXiv.2107.08808
+Type
+Article
+Published by
+arXiv
+Title
+Bankruptcy Prediction of Privately Held SMEs
+Using Feature Selection Methods
+37
+
+
+--- Page 38 ---
+Authors
+Florentina Paraschiv; Markus Schmid; Ranik
+Raaen Wahlstrøm
+DOI
+doi:10.2139/ssrn.3911490
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+Indices on cryptocurrencies: an evaluation
+Authors
+Konstantin Häusler; Hongyu Xia
+DOI
+doi:10.1007/s42521-022-00048-8
+Type
+Journal article
+Published in
+Digital Finance
+Published by
+Springer Science and Business Media LLC
+ISSNs
+2524-6984; 2524-6186
+Subject
+General Engineering
+Links
+https://link.springer.com/content/pdf/10.1007/s425
+21-022-00048-8.pdf; 
+https://link.springer.com/article/10.1007/s42521-0
+22-00048-8/fulltext.html
+Title
+A Comparative Analysis of Parsimonious Yield
+Curve Models with Focus on the Nelson-Siegel,
+Svensson and Bliss Versions
+Authors
+Ranik Raaen Wahlstrøm; Florentina Paraschiv;
+Michael Schürle
+DOI
+doi:10.1007/s10614-021-10113-w
+Type
+Journal article
+Published in
+Computational Economics
+Published by
+Springer Science and Business Media LLC
+ISSNs
+0927-7099; 1572-9974
+Subjects
+Computer Science Applications; Economics,
+Econometrics and Finance (miscellaneous)
+Links
+https://link.springer.com/content/pdf/10.1007/s106
+14-021-10113-w.pdf; 
+https://link.springer.com/article/10.1007/s10614-0
+21-10113-w/fulltext.html
+Title
+Robustifying Markowitz
+Authors
+Yegor Klochkov; Alla Petukhina; Wolfgang K.
+Härdle; Nikita Zhivotovskiy
+DOI
+doi:10.2139/ssrn.3987941
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+FINANCIAL RISK METER FOR
+CRYPTOCURRENCIES AND TAIL RISK
+NETWORK-BASED PORTFOLIO
+CONSTRUCTION
+Authors
+RUI REN; MICHAEL ALTHOF; WOLFGANG
+KARL HÄRDLE
+DOI
+doi:10.1142/S0217590822480010
+Type
+Journal article
+Published in
+The Singapore Economic Review
+Published by
+World Scientific Pub Co Pte Ltd
+ISSNs
+0217-5908; 1793-6837
+38
+
+
+--- Page 39 ---
+Subject
+Economics and Econometrics
+Link
+https://www.worldscientific.com/doi/pdf/10.1142/S
+0217590822480010
+Title
+Networks of News and Cross-Sectional Returns
+Authors
+Junjie Hu; Wolfgang Karl Härdle
+DOI
+doi:10.48550/arXiv.2108.05721
+Type
+Article
+Published by
+arXiv
+Title
+K-expectiles clustering
+Authors
+Bingling Wang; Yingxing Li; Wolfgang Karl Härdle
+DOI
+doi:10.1016/j.jmva.2021.104869
+Type
+Journal article
+Published in
+Journal of Multivariate Analysis
+Published by
+Elsevier BV
+ISSN
+0047-259X
+Subjects
+Statistics, Probability and Uncertainty; Numerical
+Analysis; Statistics and Probability
+Links
+https://api.elsevier.com/content/article/PII:S00472
+59X21001470?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S00472
+59X21001470?httpAccept=text/plain
+Title
+Uniform Confidence Bands for Generalized
+Random Forests
+Authors
+Kainat Khowaja; Chen Huang; Wolfgang K.
+Härdle
+DOI
+doi:10.2139/ssrn.4079006
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+Does non-linear factorization of financial returns
+help build better and stabler portfolios?
+Authors
+Bruno Spilak; Wolfgang Karl Härdle
+DOI
+doi:10.48550/arXiv.2204.02757
+Type
+Article
+Published by
+arXiv
+Title
+The common and specific components of inflation
+expectations across European countries
+Authors
+Shi Chen; Wolfgang Karl Härdle; Weining Wang
+DOI
+doi:10.1007/s00181-021-02027-1
+Type
+Journal article
+Published in
+Empirical Economics
+Published by
+Springer Science and Business Media LLC
+ISSNs
+0377-7332; 1435-8921
+Subjects
+Economics and Econometrics; Social Sciences
+(miscellaneous); Mathematics (miscellaneous);
+Statistics and Probability
+Links
+https://link.springer.com/content/pdf/10.1007/s001
+81-021-02027-1.pdf; 
+https://link.springer.com/article/10.1007/s00181-0
+21-02027-1/fulltext.html
+Title
+Hedging Cryptos with Bitcoin Futures
+39
+
+
+--- Page 40 ---
+Authors
+Francis Liu; Natalie Packham; Meng-Jou Lu;
+Wolfgang K. Härdle
+DOI
+doi:10.2139/ssrn.4150849
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+Understanding jumps in high frequency digital
+asset markets
+Authors
+Danial Saef; Odett Nagy; Sergej Sizov; Wolfgang
+Karl Härdle
+DOI
+doi:10.48550/arXiv.2110.09429
+Type
+Article
+Published by
+arXiv
+Title
+A Time-Varying Network for Cryptocurrencies
+Authors
+Li Guo; Wolfgang Karl Härdle; Yubo Tao
+DOI
+doi:10.48550/arXiv.2108.11921
+Type
+Article
+Published by
+arXiv
+Title
+BLOCKCHAIN MECHANISM AND
+DISTRIBUTIONAL CHARACTERISTICS OF
+CRYPTOS
+Authors
+Min-Bin Lin; Kainat Khowaja; Cathy Yi-Hsuan
+Chen; Wolfgang Karl Härdle
+DOI
+doi:10.6293/AQAFA.202112_(18).0006
+Type
+Journal article
+Published in
+Advances in Quantitative Analysis of Finance and
+Accounting
+Title
+A Data-driven Explainable Case-based
+Reasoning Approach for Financial Risk Detection
+Authors
+Wei Li; Florentina Paraschiv; Georgios Sermpinis
+DOI
+doi:10.2139/ssrn.3912753
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+Understanding Smart Contracts: Hype or Hope?
+Authors
+Elizaveta Zinovyeva; Raphael C. G. Reule;
+Wolfgang Karl Härdle
+DOI
+doi:10.48550/arXiv.2103.08447
+Type
+Article
+Published by
+arXiv
+Title
+Discussion on: “Programmable money: next
+generation blockchain-based conditional
+payments” by Ingo Weber and Mark Staples
+Author
+Michael C. Burda
+DOI
+doi:10.1007/s42521-022-00064-8
+Type
+Journal article
+Published in
+Digital Finance
+Published by
+Springer Science and Business Media LLC
+ISSNs
+2524-6984; 2524-6186
+Subject
+General Engineering
+40
+
+
+--- Page 41 ---
+Links
+https://link.springer.com/content/pdf/10.1007/s425
+21-022-00064-8.pdf; 
+https://link.springer.com/article/10.1007/s42521-0
+22-00064-8/fulltext.html
+Title
+Modelling the evolution of wind and solar power
+infeed forecasts
+Authors
+Wei Li; Florentina Paraschiv
+DOI
+doi:10.1016/j.jcomm.2021.100189
+Type
+Journal article
+Published in
+Journal of Commodity Markets
+Published by
+Elsevier BV
+ISSN
+2405-8513
+Subjects
+Economics and Econometrics; Finance
+Links
+https://api.elsevier.com/content/article/PII:S24058
+51321000234?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S24058
+51321000234?httpAccept=text/plain
+Title
+Surrogate Models for Optimization of Dynamical
+Systems
+Authors
+Kainat Khowaja; Mykhaylo Shcherbatyy;
+Wolfgang Karl Härdle
+DOI
+doi:10.48550/arXiv.2101.10189
+Type
+Article
+Published by
+arXiv
+Title
+Cooling Measures and Housing Wealth: Evidence
+from Singapore
+Authors
+Wolfgang Karl Härdle; Rainer Schulz; Taojun Sie
+DOI
+doi:10.48550/arXiv.2108.11915
+Type
+Article
+Published by
+arXiv
+Title
+Financial Risk Meter FRM based on Expectiles
+Authors
+Rui Ren; Meng-Jou Lu; Yingxing Li; Wolfgang
+Karl Härdle
+DOI
+doi:10.1016/j.jmva.2021.104881
+Type
+Journal article
+Published in
+Journal of Multivariate Analysis
+Published by
+Elsevier BV
+ISSN
+0047-259X
+Subjects
+Statistics, Probability and Uncertainty; Numerical
+Analysis; Statistics and Probability
+Links
+https://api.elsevier.com/content/article/PII:S00472
+59X21001597?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S00472
+59X21001597?httpAccept=text/plain
+Title
+A Machine Learning Based Regulatory Risk Index
+for Cryptocurrencies
+Author
+Xinwen Ni
+DOI
+doi:10.2139/ssrn.3699345
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+41
+
+
+--- Page 42 ---
+Title
+Are cryptos becoming alternative assets?
+Authors
+Daniel Traian Pele; Niels Wesselhöfft; Wolfgang
+Karl Härdle; Michalis Kolossiatis; Yannis G.
+Yatracos
+DOI
+doi:10.1080/1351847X.2021.1960403
+Type
+Journal article
+Published in
+The European Journal of Finance
+Published by
+Informa UK Limited
+ISSNs
+1351-847X; 1466-4364
+Subject
+Economics, Econometrics and Finance
+(miscellaneous)
+Link
+https://www.tandfonline.com/doi/pdf/10.1080/135
+1847X.2021.1960403
+Title
+The Use of M2P in Business Process
+Improvement and Optimization
+Authors
+Meriem Kherbouche; Yossra Zghal; Bálint Molnár;
+András Benczúr
+DOI
+doi:10.1007/978-3-031-15743-1_11
+Type
+Book chapter
+Published in
+New Trends in Database and Information
+Systems
+Published by
+Springer International Publishing
+ISSNs
+1865-0929; 1865-0937
+Link
+https://link.springer.com/content/pdf/10.1007/978-
+3-031-15743-1_11
+Title
+Forecasting: theory and practice
+Authors
+Fotios Petropoulos; Daniele Apiletti; Vassilios
+Assimakopoulos; Mohamed Zied Babai; Devon K.
+Barrow; Souhaib Ben Taieb; Christoph Bergmeir;
+Ricardo J. Bessa; Jakub Bijak; John E. Boylan;
+Jethro Browell; Claudio Carnevale; Jennifer L.
+Castle; Pasquale Cirillo; Michael P. Clements; 
+Clara Cordeiro; Fernando Luiz Cyrino Oliveira;
+Shari De Baets; Alexander Dokumentov; Joanne
+Ellison; Piotr Fiszeder; Philip Hans Franses;
+David T. Frazier; Michael Gilliland; M. Sinan
+Gönül; Paul Goodwin; Luigi Grossi; Yael Grushka-
+Cockayne; Mariangela Guidolin; Massimo
+Guidolin; Ulrich Gunter; Xiaojia Guo; Renato
+Guseo; Nigel Harvey; David F. Hendry; Ross
+Hollyman; Tim Januschowski; Jooyoung Jeon;
+Victor Richmond R. Jose; Yanfei Kang; Anne B.
+Koehler; Stephan Kolassa; Nikolaos Kourentzes;
+Sonia Leva; Feng Li; Konstantia Litsiou; Spyros
+Makridakis; Gael M. Martin; Andrew B. Martinez;
+Sheik Meeran; Theodore Modis; Konstantinos
+Nikolopoulos; Dilek Önkal; Alessia Paccagnini; 
+Anastasios Panagiotelis; Ioannis Panapakidis; 
+Jose M. Pavía; Manuela Pedio; Diego J. Pedregal
+; Pierre Pinson; Patrícia Ramos; David E.
+Rapach; J. James Reade; Bahman Rostami-
+Tabar; Michał Rubaszek; Georgios Sermpinis; 
+Han Lin Shang; Evangelos Spiliotis; Aris A.
+Syntetos; Priyanga Dilini Talagala; Thiyanga S.
+Talagala; Len Tashman; Dimitrios Thomakos;
+Thordis Thorarinsdottir; Ezio Todini; Juan Ramón
+42
+
+
+--- Page 43 ---
+Trapero Arenas; Xiaoqian Wang; Robert L.
+Winkler; Alisa Yusupova; Florian Ziel
+DOI
+doi:10.1016/j.ijforecast.2021.11.001
+Type
+Journal article
+Published in
+International Journal of Forecasting
+Published by
+Elsevier BV
+ISSN
+0169-2070
+Subject
+Business and International Management
+Links
+https://api.elsevier.com/content/article/PII:S01692
+07021001758?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S01692
+07021001758?httpAccept=text/plain
+Title
+Editorial for Special Issue “New Frontiers in
+Forecasting the Business Cycle and Financial
+Markets”
+Author
+Alessia Paccagnini
+DOI
+doi:10.3390/forecast3030030
+Type
+Journal article
+Published in
+Forecasting
+Published by
+MDPI AG
+ISSN
+2571-9394
+Subject
+General Medicine
+Link
+https://www.mdpi.com/2571-9394/3/3/30/pdf
+Title
+Food Prices, Ethics and Forms of Speculation
+Authors
+Don Bredin; Valerio Potì; Enrique Salvador
+DOI
+doi:10.1007/s10551-021-04842-z
+Type
+Journal article
+Published in
+Journal of Business Ethics
+Published by
+Springer Science and Business Media LLC
+ISSNs
+0167-4544; 1573-0697
+Subjects
+Law; Economics and Econometrics; Arts and
+Humanities (miscellaneous); General Business,
+Management and Accounting; Business and
+International Management
+Links
+https://link.springer.com/content/pdf/10.1007/s105
+51-021-04842-z.pdf; 
+https://link.springer.com/article/10.1007/s10551-0
+21-04842-z/fulltext.html
+Title
+Crypto-environment network connectivity and
+Bitcoin returns distribution tail behaviour
+Authors
+Rocco Caferra; Andrea Morone; Valerio Potì
+DOI
+doi:10.1016/j.econlet.2022.110734
+Type
+Journal article
+Published in
+Economics Letters
+Published by
+Elsevier BV
+ISSN
+0165-1765
+Subjects
+Economics and Econometrics; Finance
+Links
+https://api.elsevier.com/content/article/PII:S01651
+76522002555?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S01651
+76522002555?httpAccept=text/plain
+Title
+Discussion on: “Programmable money: next
+generation blockchain based conditional
+payments” by Ingo Weber and Mark Staples
+43
+
+
+--- Page 44 ---
+Author
+Valerio Poti
+DOI
+doi:10.1007/s42521-022-00060-y
+Type
+Journal article
+Published in
+Digital Finance
+Published by
+Springer Science and Business Media LLC
+ISSNs
+2524-6984; 2524-6186
+Subject
+General Engineering
+Links
+https://link.springer.com/content/pdf/10.1007/s425
+21-022-00060-y.pdf; 
+https://link.springer.com/article/10.1007/s42521-0
+22-00060-y/fulltext.html
+Title
+Can ESG Shape Cost of Capital? A Bibliometric
+Review and Empirical Analysis Through ML
+Authors
+Niklas Bussmann; Alessandra Tanda; Ellen Pei-yi
+Yu
+DOI
+doi:10.2139/ssrn.4173890
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+The role of Environmental, Social, and
+Governance (ESG) in predicting bank financial
+distress
+Authors
+Alberto Citterio; Timothy King
+DOI
+doi:10.1016/j.frl.2022.103411
+Type
+Journal article
+Published in
+Finance Research Letters
+Published by
+Elsevier BV
+ISSN
+1544-6123
+Subject
+Finance
+Links
+https://api.elsevier.com/content/article/PII:S15446
+12322005888?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S15446
+12322005888?httpAccept=text/plain
+Title
+Cryptocurrencies and stablecoins: a high-
+frequency analysis
+Authors
+Emilio Barucci; Giancarlo Giuffra Moncayo; 
+Daniele Marazzina
+DOI
+doi:10.1007/s42521-022-00055-9
+Type
+Journal article
+Published in
+Digital Finance
+Published by
+Springer Science and Business Media LLC
+ISSNs
+2524-6984; 2524-6186
+Subject
+General Engineering
+Links
+https://link.springer.com/content/pdf/10.1007/s425
+21-022-00055-9.pdf; 
+https://link.springer.com/article/10.1007/s42521-0
+22-00055-9/fulltext.html
+Title
+A machine learning model for lapse prediction in
+life insurance contracts
+Authors
+Michele Azzone; Emilio Barucci; Giancarlo Giuffra
+Moncayo; Daniele Marazzina
+DOI
+doi:10.1016/j.eswa.2021.116261
+Type
+Journal article
+44
+
+
+--- Page 45 ---
+Published in
+Expert Systems with Applications
+Published by
+Elsevier BV
+ISSN
+0957-4174
+Subjects
+Artificial Intelligence; Computer Science
+Applications; General Engineering
+Links
+https://api.elsevier.com/content/article/PII:S09574
+17421015700?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S09574
+17421015700?httpAccept=text/plain
+Title
+Explainable artificial intelligence for crypto asset
+allocation
+Authors
+Golnoosh Babaei; Paolo Giudici; Emanuela
+Raffinetti
+DOI
+doi:10.1016/j.frl.2022.102941
+Type
+Journal article
+Published in
+Finance Research Letters
+Published by
+Elsevier BV
+ISSN
+1544-6123
+Subject
+Finance
+Links
+https://api.elsevier.com/content/article/PII:S15446
+12322002021?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S15446
+12322002021?httpAccept=text/plain
+Title
+Shapley-Lorenz eXplainable Artificial Intelligence
+Authors
+Paolo Giudici; Emanuela Raffinetti
+DOI
+doi:10.1016/j.eswa.2020.114104
+Type
+Journal article
+Published in
+Expert Systems with Applications
+Published by
+Elsevier BV
+ISSN
+0957-4174
+Subjects
+Artificial Intelligence; Computer Science
+Applications; General Engineering
+Links
+https://api.elsevier.com/content/article/PII:S09574
+17420308575?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S09574
+17420308575?httpAccept=text/plain
+Title
+Discussion on: “Programmable money: next
+generation blockchain based conditional
+payments” by Ingo Weber and Mark Staples
+Author
+Audrius Kabasinskas
+DOI
+doi:10.1007/s42521-022-00062-w
+Type
+Journal article
+Published in
+Digital Finance
+Published by
+Springer Science and Business Media LLC
+ISSNs
+2524-6984; 2524-6186
+Subject
+General Engineering
+Links
+https://link.springer.com/content/pdf/10.1007/s425
+21-022-00062-w.pdf; 
+https://link.springer.com/article/10.1007/s42521-0
+22-00062-w/fulltext.html
+Title
+Clustering of Latvian Pension Funds Using
+Convolutional Neural Network Extracted Features
+Authors
+Vitalija Serapinaitė; Audrius Kabašinskas
+DOI
+doi:10.3390/math9172086
+45
+
+
+--- Page 46 ---
+Type
+Journal article
+Published in
+Mathematics
+Published by
+MDPI AG
+ISSN
+2227-7390
+Subjects
+General Mathematics; Engineering
+(miscellaneous); Computer Science
+(miscellaneous)
+Link
+https://www.mdpi.com/2227-7390/9/17/2086/pdf
+Title
+Review of Multi-Criteria Decision-Making Methods
+in Finance Using Explainable Artificial Intelligence
+Authors
+Jurgita Černevičienė; Audrius Kabašinskas
+DOI
+doi:10.3389/frai.2022.827584
+Type
+Journal article
+Published in
+Frontiers in Artificial Intelligence
+Published by
+Frontiers Media SA
+ISSN
+2624-8212
+Link
+https://www.frontiersin.org/articles/10.3389/frai.20
+22.827584/full
+Title
+Discussion on: “Programmable money: next
+generation blockchain based conditional
+payments” by Ingo Weber and Mark Staples
+Author
+Olivija Filipovska
+DOI
+doi:10.1007/s42521-022-00065-7
+Type
+Journal article
+Published in
+Digital Finance
+Published by
+Springer Science and Business Media LLC
+ISSNs
+2524-6984; 2524-6186
+Subject
+General Engineering
+Links
+https://link.springer.com/content/pdf/10.1007/s425
+21-022-00065-7.pdf; 
+https://link.springer.com/article/10.1007/s42521-0
+22-00065-7/fulltext.html
+Title
+Empirical study of day-ahead electricity spot-price
+forecasting: Insights into a novel loss function for
+training neural networks
+Authors
+Ahmad Amine Loutfi; Mengtao Sun; Ijlal Loutfi;
+Per Bjarte Solibakke
+DOI
+doi:10.1016/j.apenergy.2022.119182
+Type
+Journal article
+Published in
+Applied Energy
+Published by
+Elsevier BV
+ISSN
+0306-2619
+Subjects
+Management, Monitoring, Policy and Law;
+Mechanical Engineering; General Energy;
+Building and Construction
+Links
+https://api.elsevier.com/content/article/PII:S03062
+61922005542?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S03062
+61922005542?httpAccept=text/plain
+Title
+Projecting and Forecasting the Latent Volatility for
+the Nasdaq OMX Nordic/Baltic Financial
+Electricity Market Applying Stochastic Volatility
+Market Characteristics
+Author
+Per Bjarte Solibakke
+46
+
+
+--- Page 47 ---
+DOI
+doi:10.3390/en15103839
+Type
+Journal article
+Published in
+Energies
+Published by
+MDPI AG
+ISSN
+1996-1073
+Subjects
+Energy (miscellaneous); Energy Engineering and
+Power Technology; Renewable Energy,
+Sustainability and the Environment; Electrical and
+Electronic Engineering; Control and Optimization;
+Engineering (miscellaneous)
+Link
+https://www.mdpi.com/1996-1073/15/10/3839/pdf
+Title
+Bootstrapped nonlinear impulse-response
+analysis: the FTSE100 (UK) and the NDX100
+(US) indices 2012-2021
+Author
+Per Bjarte Solibakke
+DOI
+doi:10.1504/IJCEE.2021.10043332
+Type
+Journal article
+Published in
+International Journal of Computational Economics
+and Econometrics
+Published by
+Inderscience Publishers
+ISSNs
+1757-1170; 1757-1189
+Subjects
+Computer Science Applications; Economics and
+Econometrics
+Link
+http://www.inderscienceonline.com/doi/full/10.150
+4/IJCEE.2022.120531
+Title
+Stochastic Volatility Models Predictive Relevance
+for Equity Markets
+Author
+Per Bjarte Solibakke
+DOI
+doi:10.1007/978-3-030-56219-9_9
+Type
+Book chapter
+Published in
+Contributions to Statistics
+Published by
+Springer International Publishing
+ISSN
+1431-1968
+Link
+http://link.springer.com/content/pdf/10.1007/978-3
+-030-56219-9_9
+Title
+Identification of Scams in Initial Coin Offerings
+With Machine Learning
+Authors
+Bedil Karimov; Piotr Wójcik
+DOI
+doi:10.3389/frai.2021.718450
+Type
+Journal article
+Published in
+Frontiers in Artificial Intelligence
+Published by
+Frontiers Media SA
+ISSN
+2624-8212
+Subject
+General Medicine
+Link
+https://www.frontiersin.org/articles/10.3389/frai.20
+21.718450/full
+Title
+A Generic Approach to Extend Interpretability
+of Deep Networks
+Authors
+Catarina Silva; António Morais; Bernardete
+Ribeiro
+DOI
+doi:10.1007/978-3-031-16474-3_40
+Type
+Book chapter
+Published in
+Progress in Artificial Intelligence
+Published by
+Springer International Publishing
+47
+
+
+--- Page 48 ---
+ISSNs
+0302-9743; 1611-3349
+Link
+https://link.springer.com/content/pdf/10.1007/978-
+3-031-16474-3_40
+Title
+Is Trust a Valid Indicator of Tax Compliance
+Behaviour? A Study on Taxpayers’ Public
+Perception Using Sentiment Analysis Tools
+Authors
+Coita Ioana-Florina; Cioban Ștefana; Mare
+Codruța
+DOI
+doi:10.1007/978-3-030-93286-2_7
+Type
+Book chapter
+Published in
+Digitalization and Big Data for Resilience and
+Economic Intelligence
+Published by
+Springer International Publishing
+ISSNs
+2198-7246; 2198-7254
+Link
+https://link.springer.com/content/pdf/10.1007/978-
+3-030-93286-2_7
+Title
+The Utility of Neural Model in Predicting Tax
+Avoidance Behavior
+Authors
+Coita Ioana-Florina; Codruţa Mare
+DOI
+doi:10.1007/978-981-16-2765-1_6
+Type
+Book chapter
+Published in
+Intelligent Decision Technologies
+Published by
+Springer Singapore
+ISSNs
+2190-3018; 2190-3026
+Link
+https://link.springer.com/content/pdf/10.1007/978-
+981-16-2765-1_6
+Title
+A Statistical Model of Fraud Risk in Financial
+Statements. Case for Romania Companies
+Authors
+Andrada-Ioana Sabău (Popa); Codruța Mare; 
+Ioana Lavinia Safta
+DOI
+doi:10.3390/risks9060116
+Type
+Journal article
+Published in
+Risks
+Published by
+MDPI AG
+ISSN
+2227-9091
+Subjects
+Strategy and Management; Economics,
+Econometrics and Finance (miscellaneous);
+Accounting
+Link
+https://www.mdpi.com/2227-9091/9/6/116/pdf
+Title
+Privacy Intrusiveness in Financial-Banking Fraud
+Detection
+Authors
+Larisa Găbudeanu; Iulia Brici; Codruța Mare; Ioan
+Cosmin Mihai; Mircea Constantin Șcheau
+DOI
+doi:10.3390/risks9060104
+Type
+Journal article
+Published in
+Risks
+Published by
+MDPI AG
+ISSN
+2227-9091
+Subjects
+Strategy and Management; Economics,
+Econometrics and Finance (miscellaneous);
+Accounting
+Link
+https://www.mdpi.com/2227-9091/9/6/104/pdf
+Title
+Machine Learning Models for Predicting
+48
+
+
+--- Page 49 ---
+Romanian Farmers’ Purchase of Crop Insurance
+Authors
+Codruţa Mare; Daniela Manaţe; Gabriela-Mihaela
+Mureşan; Simona Laura Dragoş; Cristian Mihai
+Dragoş; Alexandra-Anca Purcel
+DOI
+doi:10.3390/math10193625
+Type
+Journal article
+Published in
+Mathematics
+Published by
+MDPI AG
+ISSN
+2227-7390
+Subjects
+General Mathematics; Engineering
+(miscellaneous); Computer Science
+(miscellaneous)
+Link
+https://www.mdpi.com/2227-7390/10/19/3625/pdf
+Title
+Echo State Networks Usage for Stock Price
+Predictions
+Authors
+Lidija Barjaktarović; Marko Barjaktarović;
+Snežana Konjikušić
+DOI
+doi:10.15308/finiz-2020-97-102
+Type
+Proceedings article
+Published in
+Proceedings of the 7th International Scientific
+Conference - FINIZ 2020
+Published by
+Singidunum University
+Link
+http://portal.finiz.singidunum.ac.rs/Media/files/202
+0/97-102.pdf
+Title
+Financial literacy and psychological disaster
+preparedness: applicability of approach based on
+fuzzy functional dependencies
+Authors
+Miljan Vučetić; Zuzana Brokešová; Miroslav
+Hudec; Erika Pastoráková
+DOI
+doi:10.1016/j.ipm.2021.102848
+Type
+Journal article
+Published in
+Information Processing & Management
+Published by
+Elsevier BV
+ISSN
+0306-4573
+Subjects
+Library and Information Sciences; Management
+Science and Operations Research; Computer
+Science Applications; Media Technology;
+Information Systems
+Links
+https://api.elsevier.com/content/article/PII:S03064
+57321003204?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S03064
+57321003204?httpAccept=text/plain
+Title
+Risk-return modelling in the p2p lending market:
+Trends, gaps, recommendations and future
+directions
+Authors
+Miller-Janny Ariza-Garzón; María-Del-Mar
+Camacho-Miñano; María-Jesús Segovia-Vargas;
+Javier Arroyo
+DOI
+doi:10.1016/j.elerap.2021.101079
+Type
+Journal article
+Published in
+Electronic Commerce Research and Applications
+Published by
+Elsevier BV
+ISSN
+1567-4223
+Subjects
+Management of Technology and Innovation;
+Marketing; Computer Networks and
+49
+
+
+--- Page 50 ---
+Communications; Computer Science Applications
+Links
+https://api.elsevier.com/content/article/PII:S15674
+2232100051X?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S15674
+2232100051X?httpAccept=text/plain
+Title
+Analysis of the cryptocurrency market using
+different prototype-based clustering techniques
+Authors
+Luis Lorenzo; Javier Arroyo
+DOI
+doi:10.1186/s40854-021-00310-9
+Type
+Journal article
+Published in
+Financial Innovation
+Published by
+Springer Science and Business Media LLC
+ISSN
+2199-4730
+Subjects
+Management of Technology and Innovation;
+Finance
+Links
+https://link.springer.com/content/pdf/10.1186/s408
+54-021-00310-9.pdf; 
+https://link.springer.com/article/10.1186/s40854-0
+21-00310-9/fulltext.html
+Title
+Discussion on: “Programmable money: next
+generation blockchain based conditional
+payments” by Ingo Weber and Mark Staples
+Author
+Joerg Osterrieder
+DOI
+doi:10.1007/s42521-022-00063-9
+Type
+Journal article
+Published in
+Digital Finance
+Published by
+Springer Science and Business Media LLC
+ISSNs
+2524-6984; 2524-6186
+Subject
+General Engineering
+Links
+https://link.springer.com/content/pdf/10.1007/s425
+21-022-00063-9.pdf; 
+https://link.springer.com/article/10.1007/s42521-0
+22-00063-9/fulltext.html
+Title
+THE VIX INDEX UNDER SCRUTINY OF
+MACHINE LEARNING TECHNIQUES AND
+NEURAL NETWORKS
+Authors
+Ali Hirsa; Branka Hadji Misheva; Joerg
+Osterrieder; Wenxin Cao; Yiwen Fu; Hanze Sun;
+Kin Wai Wong
+DOI
+doi:10.2139/ssrn.3796351
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+The Applicability of Self-Play Algorithms to
+Trading and Forecasting Financial Markets
+Authors
+Jan-Alexander Posth; Piotr Kotlarz; Branka Hadji
+Misheva; Joerg Osterrieder; Peter Schwendner
+DOI
+doi:10.3389/frai.2021.668465
+Type
+Journal article
+Published in
+Frontiers in Artificial Intelligence
+Published by
+Frontiers Media SA
+ISSN
+2624-8212
+Subject
+General Medicine
+50
+
+
+--- Page 51 ---
+Link
+https://www.frontiersin.org/articles/10.3389/frai.20
+21.668465/full
+Title
+Deep Reinforcement Learning for Finance and
+the Efficient Market Hypothesis
+Authors
+Leander Odermatt; Jetmir Beqiraj; Joerg
+Osterrieder
+DOI
+doi:10.2139/ssrn.3865019
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+Deep Reinforcement Learning on a Multi-Asset
+Environment for Trading
+Authors
+Ali Hirsa; Branka Hadji Misheva; Joerg
+Osterrieder; Jan-Alexander Posth
+DOI
+doi:10.2139/ssrn.3867800
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+Generative Adversarial Networks in finance: an
+overview
+Author
+Florian Eckerli
+DOI
+doi:10.2139/ssrn.3864965
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+Generative Adversarial Network For synthetic
+data on Bitcoin returns
+Author
+Moritz Pfenninger
+DOI
+doi:10.2139/ssrn.3864867
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+Analyzing Deep Generated Financial Time Series
+for Various Asset Classes
+Authors
+Antonio Rosolia; Joerg Osterrieder
+DOI
+doi:10.2139/ssrn.3898792
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+Audience-Dependent Explanations for AI-Based
+Risk Management Tools: A Survey
+Authors
+Branka Hadji Misheva; David Jaggi; Jan-
+Alexander Posth; Thomas Gramespacher; Joerg
+Osterrieder
+DOI
+doi:10.3389/frai.2021.794996
+Type
+Journal article
+Published in
+Frontiers in Artificial Intelligence
+51
+
+
+--- Page 52 ---
+Published by
+Frontiers Media SA
+ISSN
+2624-8212
+Subject
+General Medicine
+Link
+https://www.frontiersin.org/articles/10.3389/frai.20
+21.794996/full
+Title
+Risk Parity for Multi-Asset Futures Allocation – A
+Practical Analysis of the Equal Risk Contribution
+Portfolio
+Authors
+Chris Bucher; Joerg Osterrieder
+DOI
+doi:10.2139/ssrn.3858730
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+High-Frequency Causality between Stochastic
+Volatility Time Series: Empirical Evidence
+Authors
+Kia Farokhnia; Joerg Osterrieder
+DOI
+doi:10.2139/ssrn.4087569
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+Tackling the Exponential Scaling of Signature-
+Based Generative Adversarial Networks for High-
+Dimensional Financial Time-Series Generation
+Authors
+Fernando de Meer Pardo; Peter Schwendner;
+Marcus Wunsch
+DOI
+doi:10.3905/jfds.2022.1.109
+Type
+Journal article
+Published in
+The Journal of Financial Data Science
+Published by
+Pageant Media US
+ISSN
+2640-3943
+Subject
+General Medicine
+Link
+https://syndication.highwire.org/content/doi/10.39
+05/jfds.2022.1.109
+Title
+Adaptive Seriational Risk Parity and Other
+Extensions for Heuristic Portfolio Construction
+Using Machine Learning and Graph Theory
+Authors
+Peter Schwendner; Jochen Papenbrock; Markus
+Jaeger; Stephan Krügel
+DOI
+doi:10.3905/jfds.2021.1.078
+Type
+Journal article
+Published in
+The Journal of Financial Data Science
+Published by
+Pageant Media US
+ISSN
+2640-3943
+Link
+https://syndication.highwire.org/content/doi/10.39
+05/jfds.2021.1.078
+Title
+Bankers' remuneration reforms and new
+challenges
+Author
+Anna (Ania) Zalewska
+DOI
+doi:10.1111/corg.12454
+Type
+Journal article
+Published in
+Corporate Governance: An International Review
+52
+
+
+--- Page 53 ---
+Published by
+Wiley
+ISSNs
+0964-8410; 1467-8683
+Subjects
+Management of Technology and Innovation;
+Strategy and Management; General Business,
+Management and Accounting
+Links
+https://onlinelibrary.wiley.com/doi/pdf/10.1111/cor
+g.12454; https://onlinelibrary.wiley.com/doi/full-
+xml/10.1111/corg.12454
+Title
+The impact of machine learning and big data on
+credit markets
+Authors
+Peter Eccles; Paul Grout; Paolo Siciliani; Anna
+Zalewska
+DOI
+doi:10.2139/ssrn.3890364
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+To Bao or Not to Bao? Payment Innovation and
+Money Market Mutual Funds
+Authors
+Anna Zalewska; Yue Zhang; Zhe Zong
+DOI
+doi:10.2139/ssrn.4227111
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Subjects
+General Earth and Planetary Sciences; General
+Environmental Science
+Title
+Investor Demand in Syndicated Bond Issuances:
+Stylised Facts
+Authors
+Martin Hillebrand; Marko Mravlak; Peter
+Schwendner
+DOI
+doi:10.2139/ssrn.4002279
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Title
+Financial Risk Management for Cryptocurrencies
+Authors
+Eline Van der Auwera; Wim Schoutens; Marco
+Petracco Giudici; Lucia Alessi
+DOI
+doi:10.1007/978-3-030-51093-0
+Type
+Book
+Published in
+SpringerBriefs in Finance
+Published by
+Springer International Publishing
+ISSNs
+2193-1720; 2193-1739
+Links
+http://link.springer.com/content/pdf/10.1007/978-3
+-030-51093-0.pdf; 
+http://link.springer.com/content/pdf/10.1007/978-3
+-030-51093-0
+Title
+On mathematical optimization for clustering
+categories in contingency tables
+Authors
+Emilio Carrizosa; Vanesa Guerrero; Dolores
+Romero Morales
+DOI
+doi:10.1007/s11634-022-00508-4
+53
+
+
+--- Page 54 ---
+Type
+Journal article
+Published in
+Advances in Data Analysis and Classification
+Published by
+Springer Science and Business Media LLC
+ISSNs
+1862-5347; 1862-5355
+Subjects
+Applied Mathematics; Computer Science
+Applications; Statistics and Probability
+Links
+https://link.springer.com/content/pdf/10.1007/s116
+34-022-00508-4.pdf; 
+https://link.springer.com/article/10.1007/s11634-0
+22-00508-4/fulltext.html
+Title
+The tree based linear regression model for
+hierarchical categorical variables
+Authors
+Emilio Carrizosa; Laust Hvas Mortensen; Dolores
+Romero Morales; M. Remedios Sillero-Denamiel
+DOI
+doi:10.1016/j.eswa.2022.117423
+Type
+Journal article
+Published in
+Expert Systems with Applications
+Published by
+Elsevier BV
+ISSN
+0957-4174
+Subjects
+Artificial Intelligence; Computer Science
+Applications; General Engineering
+Links
+https://api.elsevier.com/content/article/PII:S09574
+1742200762X?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S09574
+1742200762X?httpAccept=text/plain
+Title
+On sparse optimal regression trees
+Authors
+Rafael Blanquero; Emilio Carrizosa; Cristina
+Molero-Río; Dolores Romero Morales
+DOI
+doi:10.1016/j.ejor.2021.12.022
+Type
+Journal article
+Published in
+European Journal of Operational Research
+Published by
+Elsevier BV
+ISSN
+0377-2217
+Subjects
+Information Systems and Management;
+Management Science and Operations Research;
+Modeling and Simulation; General Computer
+Science; Industrial and Manufacturing
+Engineering
+Links
+https://api.elsevier.com/content/article/PII:S03772
+21721010626?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S03772
+21721010626?httpAccept=text/plain
+Title
+Interpreting clusters via prototype optimization
+Authors
+Emilio Carrizosa; Kseniia Kurishchenko; Alfredo
+Marín; Dolores Romero Morales
+DOI
+doi:10.1016/j.omega.2021.102543
+Type
+Journal article
+Published in
+Omega
+Published by
+Elsevier BV
+ISSN
+0305-0483
+Subjects
+Information Systems and Management;
+Management Science and Operations Research;
+Strategy and Management
+Links
+https://api.elsevier.com/content/article/PII:S03050
+48321001523?httpAccept=text/xml; 
+54
+
+
+--- Page 55 ---
+https://api.elsevier.com/content/article/PII:S03050
+48321001523?httpAccept=text/plain
+Title
+On clustering categories of categorical predictors
+in generalized linear models
+Authors
+Emilio Carrizosa; Marcela Galvis Restrepo;
+Dolores Romero Morales
+DOI
+doi:10.1016/j.eswa.2021.115245
+Type
+Journal article
+Published in
+Expert Systems with Applications
+Published by
+Elsevier BV
+ISSN
+0957-4174
+Subjects
+Artificial Intelligence; Computer Science
+Applications; General Engineering
+Links
+https://api.elsevier.com/content/article/PII:S09574
+17421006771?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S09574
+17421006771?httpAccept=text/plain
+Title
+On sparse ensemble methods: An application to
+short-term predictions of the evolution of
+COVID-19
+Authors
+Sandra Benítez-Peña; Emilio Carrizosa; Vanesa
+Guerrero; M. Dolores Jiménez-Gamero; Belén
+Martín-Barragán; Cristina Molero-Río; Pepa
+Ramírez-Cobo; Dolores Romero Morales; M.
+Remedios Sillero-Denamiel
+DOI
+doi:10.1016/j.ejor.2021.04.016
+Type
+Journal article
+Published in
+European Journal of Operational Research
+Published by
+Elsevier BV
+ISSN
+0377-2217
+Subjects
+Information Systems and Management;
+Management Science and Operations Research;
+Modeling and Simulation; General Computer
+Science; Industrial and Manufacturing
+Engineering
+Links
+https://api.elsevier.com/content/article/PII:S03772
+21721003283?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S03772
+21721003283?httpAccept=text/plain
+Title
+Optimal randomized classification trees
+Authors
+Rafael Blanquero; Emilio Carrizosa; Cristina
+Molero-Río; Dolores Romero Morales
+DOI
+doi:10.1016/j.cor.2021.105281
+Type
+Journal article
+Published in
+Computers & Operations Research
+Published by
+Elsevier BV
+ISSN
+0305-0548
+Subjects
+Management Science and Operations Research;
+Modeling and Simulation; General Computer
+Science
+Links
+https://api.elsevier.com/content/article/PII:S03050
+54821000733?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S03050
+54821000733?httpAccept=text/plain
+55
+
+
+--- Page 56 ---
+Title
+Mathematical optimization in classification and
+regression trees
+Authors
+Emilio Carrizosa; Cristina Molero-Río; Dolores
+Romero Morales
+DOI
+doi:10.1007/s11750-021-00594-1
+Type
+Journal article
+Published in
+TOP
+Published by
+Springer Science and Business Media LLC
+ISSNs
+1134-5764; 1863-8279
+Subjects
+Discrete Mathematics and Combinatorics;
+Statistics and Probability; Management Science
+and Operations Research; Information Systems
+and Management; Modeling and Simulation
+Links
+http://link.springer.com/content/pdf/10.1007/s117
+50-021-00594-1.pdf; 
+http://link.springer.com/article/10.1007/s11750-02
+1-00594-1/fulltext.html
+Title
+Feature Selection in Data Envelopment Analysis:
+A Mathematical Optimization approach
+Authors
+Sandra Benítez-Peña; Peter Bogetoft; Dolores
+Romero Morales
+DOI
+doi:10.1016/j.omega.2019.05.004
+Type
+Journal article
+Published in
+Omega
+Published by
+Elsevier BV
+ISSN
+0305-0483
+Subjects
+Information Systems and Management;
+Management Science and Operations Research;
+Strategy and Management
+Links
+https://api.elsevier.com/content/article/PII:S03050
+48318312131?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S03050
+48318312131?httpAccept=text/plain
+Title
+Sparsity in optimal randomized classification trees
+Authors
+Rafael Blanquero; Emilio Carrizosa; Cristina
+Molero-Río; Dolores Romero Morales
+DOI
+doi:10.1016/j.ejor.2019.12.002
+Type
+Journal article
+Published in
+European Journal of Operational Research
+Published by
+Elsevier BV
+ISSN
+0377-2217
+Subjects
+Information Systems and Management;
+Management Science and Operations Research;
+Modeling and Simulation; General Computer
+Science; Industrial and Manufacturing
+Engineering
+Links
+https://api.elsevier.com/content/article/PII:S03772
+21719309865?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S03772
+21719309865?httpAccept=text/plain
+Title
+The effects of a “black swan” event (COVID-19)
+on herding behavior in cryptocurrency markets
+Authors
+Larisa Yarovaya; Roman Matkovskyy; Akanksha
+Jalan
+DOI
+doi:10.1016/j.intfin.2021.101321
+56
+
+
+--- Page 57 ---
+Type
+Journal article
+Published in
+Journal of International Financial Markets,
+Institutions and Money
+Published by
+Elsevier BV
+ISSN
+1042-4431
+Subjects
+Economics and Econometrics; Finance
+Links
+https://api.elsevier.com/content/article/PII:S10424
+43121000408?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S10424
+43121000408?httpAccept=text/plain
+Title
+“Shiny” crypto assets: A systemic look at gold-
+backed cryptocurrencies during the COVID-19
+pandemic
+Authors
+Akanksha Jalan; Roman Matkovskyy; Larisa
+Yarovaya
+DOI
+doi:10.1016/j.irfa.2021.101958
+Type
+Journal article
+Published in
+International Review of Financial Analysis
+Published by
+Elsevier BV
+ISSN
+1057-5219
+Subjects
+Economics and Econometrics; Finance
+Links
+https://api.elsevier.com/content/article/PII:S10575
+21921002787?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S10575
+21921002787?httpAccept=text/plain
+Title
+What effect did the introduction of Bitcoin futures
+have on the Bitcoin spot market?
+Authors
+Akanksha Jalan; Roman Matkovskyy; Andrew
+Urquhart
+DOI
+doi:10.1080/1351847X.2020.1869992
+Type
+Journal article
+Published in
+The European Journal of Finance
+Published by
+Informa UK Limited
+ISSNs
+1351-847X; 1466-4364
+Subject
+Economics, Econometrics and Finance
+(miscellaneous)
+Link
+https://www.tandfonline.com/doi/pdf/10.1080/135
+1847X.2020.1869992
+Title
+LASSO-driven inference in time and space
+Authors
+Victor Chernozhukov; Wolfgang Karl Härdle;
+Chen Huang; Weining Wang
+DOI
+doi:10.1214/20-AOS2019
+Type
+Journal article
+Published in
+The Annals of Statistics
+Published by
+Institute of Mathematical Statistics
+ISSN
+0090-5364
+Subjects
+Statistics, Probability and Uncertainty; Statistics
+and Probability
+Title
+Investing with cryptocurrencies – evaluating their
+potential for portfolio allocation strategies
+Authors
+Alla Petukhina; Simon Trimborn; Wolfgang Karl
+Härdle; Hermann Elendner
+DOI
+doi:10.1080/14697688.2021.1880023
+Type
+Journal article
+57
+
+
+--- Page 58 ---
+Published in
+Quantitative Finance
+Published by
+Informa UK Limited
+ISSNs
+1469-7688; 1469-7696
+Subjects
+General Economics, Econometrics and Finance;
+Finance
+Link
+https://www.tandfonline.com/doi/pdf/10.1080/146
+97688.2021.1880023
+Title
+Media-expressed tone, option characteristics, and
+stock return predictability
+Authors
+Cathy Yi-Hsuan Chen; Matthias R. Fengler;
+Wolfgang Karl Härdle; Yanchu Liu
+DOI
+doi:10.1016/j.jedc.2021.104290
+Type
+Journal article
+Published in
+Journal of Economic Dynamics and Control
+Published by
+Elsevier BV
+ISSN
+0165-1889
+Subjects
+Applied Mathematics; Control and Optimization;
+Economics and Econometrics
+Links
+https://api.elsevier.com/content/article/PII:S01651
+88921002256?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S01651
+88921002256?httpAccept=text/plain
+Title
+VCRIX — A volatility index for crypto-currencies
+Authors
+Alisa Kim; Simon Trimborn; Wolfgang Karl Härdle
+DOI
+doi:10.1016/j.irfa.2021.101915
+Type
+Journal article
+Published in
+International Review of Financial Analysis
+Published by
+Elsevier BV
+ISSN
+1057-5219
+Subjects
+Economics and Econometrics; Finance
+Links
+https://api.elsevier.com/content/article/PII:S10575
+21921002416?httpAccept=text/xml; 
+https://api.elsevier.com/content/article/PII:S10575
+21921002416?httpAccept=text/plain
+Title: Forecasting: theory and practice
+Authors: Fotios Petropoulos, Daniele Apiletti, Vassilios Assimakopoulos, Mohamed Zied Babai,
+Devon K. Barrow, Souhaib Ben Taieb, Christoph Bergmeir, Ricardo J. Bessa, Jakub Bijak, John E.
+Boylan, Jethro Browell, Claudio Carnevale, Jennifer L. Castle, Pasquale Cirillo, Michael P.
+Clements, Clara Cordeiro, Fernando Luiz Cyrino Oliveira, Shari De Baets, Alexander Dokumentov,
+Joanne Ellison, Piotr Fiszeder, Philip Hans Franses, David T. Frazier, Michael Gilliland, M. Sinan
+Gönül, Paul Goodwin, Luigi Grossi, Yael Grushka-Cockayne, Mariangela Guidolin, Massimo
+Guidolin, Ulrich Gunter, Xiaojia Guo, Renato Guseo, Nigel Harvey, David F. Hendry, Ross
+Hollyman, Tim Januschowski, Jooyoung Jeon, Victor Richmond R. Jose, Yanfei Kang, Anne B.
+Koehler, Stephan Kolassa, Nikolaos Kourentzes, Sonia Leva, Feng Li, Konstantia Litsiou, Spyros
+Makridakis, Gael M. Martin, Andrew B. Martinez, Sheik Meeran, Theodore Modis, Konstantinos
+Nikolopoulos, Dilek Önkal, Alessia Paccagnini, Anastasios Panagiotelis, Ioannis Panapakidis, Jose
+M. Pavía, Manuela Pedio, Diego J. Pedregal, Pierre Pinson, Patrícia Ramos, David E. Rapach, J.
+James Reade, Bahman Rostami-Tabar, Michał Rubaszek, Georgios Sermpinis, Han Lin Shang,
+Evangelos Spiliotis, Aris A. Syntetos, Priyanga Dilini Talagala, Thiyanga S. Talagala, Len Tashman,
+Dimitrios Thomakos, Thordis Thorarinsdottir, Ezio Todini, Juan Ramón Trapero Arenas, Xiaoqian
+Wang, Robert L. Winkler, Alisa Yusupova, Florian Ziel
+58
+
+
+--- Page 59 ---
+Title of the periodical: International Journal of Forecasting
+Volume 38, Issue 3
+Year of publication: 2022
+Pages 705-871
+Co-authored Action publications - other
+Title
+A Data-driven Case-based Reasoning in
+Bankruptcy Prediction
+Authors
+Wei Li; Wolfgang K. Härdle; Stefan Lessmann
+DOI
+doi:10.2139/ssrn.4209433
+Type
+Journal article
+Published in
+SSRN Electronic Journal
+Published by
+Elsevier BV
+ISSN
+1556-5068
+Subjects
+General Earth and Planetary Sciences; General
+Environmental Science
+Powered by TCPDF (www.tcpdf.org)
+59

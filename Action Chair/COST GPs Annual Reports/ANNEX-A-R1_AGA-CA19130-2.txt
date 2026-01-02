@@ -1,0 +1,281 @@
+--- Page 1 ---
+WORKPLAN
+Annex A - Work And Budget plan - R I
+CA19130
+Fintech and Artificial Intelligence in Finance - Towards a transparent financial industry
+Grant Period from 01/11/2021 to 31/05/2022
+ 
+Summary Budget
+ 
+Networking Tool
+Quant.
+Budget
+Meetings
+10
+EUR 123 906.66
+Training Schools
+0
+EUR 0.00
+Short Term Scientific Missions (STSM)
+16
+EUR 39 680.00
+ITC Conference Grant
+5
+EUR 7 500.00
+Dissemination and Communication Products
+1
+EUR 5 093.34
+Other Expenses Related to Scientific Activities (OERSA)
+0
+EUR 0.00
+SCIENCE EXPENDITURE : EUR 176 180.00
+Financial and Scientific Administration and Coordination (FSAC) - MAX. 15% 15%
+EUR 26 427.00
+TOTAL GRANT : EUR 202 607.00
+
+
+--- Page 2 ---
+Indicative Information
+Details for Meetings
+Meeting 1
+Type :
+Workshops/Conferences, Working Group Meeting
+Title :
+ML approaches Finance and Management
+Attendance Type :
+N/A
+Location :
+Berlin (Germany)
+Date :
+24/03/2022 - 25/03/2022
+Total Participants :
+51
+Total Reimbursed :
+3
+Travel Costs :
+EUR 1 927.98
+Local Organiser Support :
+EUR 2 000.00
+Meeting 2
+Type :
+Working Group Meeting
+Title :
+WG1 meeting
+Attendance Type :
+N/A
+Location :
+Rennes (France)
+Date :
+08/04/2022 - 08/04/2022
+Total Participants :
+51
+Total Reimbursed :
+2
+Travel Costs :
+EUR 1 456.92
+Local Organiser Support :
+EUR 2 000.00
+Meeting 3
+Type :
+Workshops/Conferences, Working Group Meeting
+Title :
+Technology, Innovation and Stability: New Directions in Finance
+(TINFIN)
+Attendance Type :
+N/A
+Location :
+Zagreb (Croatia)
+Date :
+05/05/2022 - 06/05/2022
+Total Participants :
+51
+Total Reimbursed :
+6
+Travel Costs :
+EUR 5 234.16
+Local Organiser Support :
+EUR 3 000.00
+Meeting 4
+Type :
+Workshops/Conferences
+Title :
+COST FinAI Diversity research workshop
+Attendance Type :
+N/A
+Location :
+Naples (Italy)
+Date :
+16/05/2022 - 17/05/2022
+Total Participants :
+51
+Total Reimbursed :
+12
+Travel Costs :
+EUR 10 047.60
+Local Organiser Support :
+EUR 3 000.00
+2
+
+
+--- Page 3 ---
+Meeting 5
+Type :
+Workshops/Conferences
+Title :
+COST FinAI - The 5th International conference on economics and
+social sciences
+Attendance Type :
+N/A
+Location :
+Bucharest (Romania)
+Date :
+16/06/2022 - 17/06/2022
+Total Participants :
+50
+Total Reimbursed :
+10
+Travel Costs :
+EUR 9 170.00
+Local Organiser Support :
+EUR 1 000.00
+Meeting 6
+Type :
+Working Group Meeting, Core Group Meeting
+Title :
+COST FinAI Transparency in Finance - Core group and WG3 meeting
+Attendance Type :
+N/A
+Location :
+Espoo (Finland)
+Date :
+06/07/2022 - 06/07/2022
+Total Participants :
+51
+Total Reimbursed :
+10
+Travel Costs :
+EUR 8 920.00
+Local Organiser Support :
+EUR 2 000.00
+Meeting 7
+Type :
+Core Group Meeting, Working Group Meeting, Workshops/Conferences
+Title :
+COST FinAI Research Workshop on Transparency in Financial
+Markets, Core group and WG2 meeting
+Attendance Type :
+N/A
+Location :
+Enschede (Netherlands)
+Date :
+22/08/2022 - 24/08/2022
+Total Participants :
+60
+Total Reimbursed :
+10
+Travel Costs :
+EUR 9 140.00
+Local Organiser Support :
+EUR 4 250.00
+Meeting 8
+Type :
+Workshops/Conferences
+Title :
+Women in Fintech and Artificial Intelligence
+Attendance Type :
+N/A
+Location :
+Tirana (Albania)
+Date :
+21/09/2022 - 22/09/2022
+Total Participants :
+50
+Total Reimbursed :
+10
+Travel Costs :
+EUR 8 550.00
+Local Organiser Support :
+EUR 2 000.00
+3
+
+
+--- Page 4 ---
+Meeting 9
+Type :
+Workshops/Conferences
+Title :
+COST FinAI Conference on Transparency
+Attendance Type :
+N/A
+Location :
+Zurich (Switzerland)
+Date :
+30/09/2022 - 30/09/2022
+Total Participants :
+60
+Total Reimbursed :
+0
+Travel Costs :
+EUR 0.00
+Local Organiser Support :
+EUR 1 250.00
+Meeting 10
+Type :
+Management Committee Meeting, Workshops/Conferences, Core
+Group Meeting, Working Group Meeting
+Title :
+COST FinAI Transparency in Finance
+Attendance Type :
+N/A
+Location :
+Utrecht (Netherlands)
+Date :
+05/10/2022 - 07/10/2022
+Total Participants :
+120
+Total Reimbursed :
+40
+Travel Costs :
+EUR 42 960.00
+Local Organiser Support :
+EUR 6 000.00
+Details for Training Schools
+You have no Training Schools.
+Details for Short Term Scientific Missions (STSM)
+STSM Summary
+Number of STSMs :
+16
+Amount per STSM :
+2 480.00
+Total Budget for STSMs :
+39 680.00
+Details for ITC Conference Grant
+ITC Conference Grant Summary
+Number of Grants :
+16
+Amount per Grant :
+2 480.00
+Total Budget for Grants :
+39 680.00
+Details for Dissemination and Communication Products
+4
+
+
+--- Page 5 ---
+Item 1
+Title :
+Website
+Expected Release Date :
+31/05/2022
+Publisher or Supplier :
+tbd
+Type :
+Action Website
+Amount :
+EUR 5 093.34
+Derogation :
+Derogations requested: Web Site Overspend. Justification
+Details for Other Expenses Related to Scientific Activities (OERSA)
+You have no Other Expenditures Related to Scientific Activities.
+Powered by TCPDF (www.tcpdf.org)
+5

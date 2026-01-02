@@ -1,0 +1,1706 @@
+--- Page 1 ---
+1 
+ 
+COST Action CA19130 Annual Report (Nov 2021 - May 2022) 
+Advancing Knowledge Exchange and Transparency in FinTech and AI through the Annual 
+Report Initiative 
+ 
+ 
+Second Annual Report 
+November 2021 - May 2022 
+ 
+Prepared by: COST Action CA19130 - Fintech and Artificial Intelligence in Finance Network 
+ 
+Executive Committee: 
+ 
+Action Chair: Prof. Jörg Osterrieder 
+ 
+Vice-Chair & Scientific Advisory Board Coordinator: Prof. Valerio Poti 
+ 
+Grant Holder Scientific Representative: Prof. Branka Hadji Misheva 
+ 
+Science Communication Coordinator & WG1 Co-Leader: Dr. Ioana Coita 
+ 
+Grant Awarding Coordinator & Virtual Networking Support Manager: Prof. Codruta 
+MARE 
+ 
+WG1 Leader: Prof. Wolfgang Härdle 
+ 
+WG2 Leader: Prof. Petre Lameski 
+ 
+WG2 Co-Leader: Dr. Kristina Šutienė 
+ 
+WG3 Leader: Prof. Peter Schwendner 
+ 
+Leadership Roles: 
+ 
+Diversity Team Co-Leaders: Ms. Claudia Tarantola, Dr. Alessia Paccagnini, Dr. Galena 
+Pisoni 
+ 
+Coordinator of Network Expansion: Dr. Audrius Kabašinskas 
+ 
+Technical Coordinator: Prof. Ronald Hochreiter 
+ 
+Diversity Team Leader: Prof. Alessandra Tanda 
+ 
+Science Communication Co-Manager: Prof. Daniele Marazzina 
+
+
+--- Page 2 ---
+2 
+ 
+ 
+Chief Privacy Officer: Dr. Maria Moloney 
+ 
+STSM Coordinators: Dr. Catarina Silva, Dr. Roman Matkovskyy 
+ 
+Virtual Grant Co-Coordinator: Ms. Karolina Bolesta 
+ 
+WG1 Co-Leader: Prof. Daniel Traian Pele 
+ 
+ITC CG Coordinator: Prof. Enis Kayis 
+ 
+Report Overview: 
+ 
+This report provides a comprehensive overview of the achievements and outcomes of COST 
+Action CA19130, covering the final year of activities aimed at promoting transparency in the 
+financial sector through advancements in Financial Technology (FinTech) and Artificial 
+Intelligence (AI). It highlights key research breakthroughs, public engagement efforts, capacity-
+building initiatives, and partnerships with industry leaders and policymakers. 
+ 
+Contributors: 
+ 
+COST Action CA19130  
+ 
+Working Group Leaders 
+ 
+Scientific Researchers 
+ 
+Industry and Policy Experts 
+ 
+Published: 
+September 2024 
+ 
+ 
+ 
+
+
+--- Page 3 ---
+3 
+ 
+Contents 
+1.  Executive Summary ......................................................................................................................... 4 
+2.  Fostering Transparency in FinTech and AI for Finance ............................................................. 12 
+3.  Key Achievements and Progress of COST Action CA19130 in 2021-2022 ........................................... 16 
+4.  Real World Impact: Transforming the Financial Sector and Regulatory Framework ............. 18 
+5. Research and Innovation: Advancing Financial Transparency .................................................. 19 
+6.  Science communication: Building a bridge between research and society ............................. 23 
+7. Networking, Capacity Building, and Inclusivity .............................................................................. 27 
+8. .Methodological Papers and Technical Reports ........................................................................... 29 
+9. Financial Overview: Resource Allocation and Impact .................................................................. 34 
+10. Assessment of Progress Towards MoU Objectives ..................................................................... 35 
+11.  Identification of Key Areas for Improvement and Strategic Focus for COST Action CA19130 ....... 37 
+12. Key Partnerships Established .......................................................................................................... 38 
+13. Conclusions and Next Steps ............................................................................................................ 39 
+ 
+ 
+ 
+ 
+ 
+
+
+--- Page 4 ---
+4 
+ 
+1. Executive Summary 
+The COST Action CA19130 Fintech and AI in Finance was launched in September 2020 to 
+improve transparency in the financial sector, particularly in the use of financial technology 
+(FinTech) and Artificial Intelligence (AI). In recent years, the rapid growth of these technologies 
+has raised concerns about “black box” decision-making models, fraud detection, and the clarity of 
+investment product information. To address these challenges, this Action brought together a 
+network of researchers, industry experts, and policymakers from across Europe to develop new 
+methods, models, and guidelines that enhance transparency in financial services. 
+This second annual report provides a comprehensive overview of the activities and outcomes from 
+November 2021 to May 2022. The report summarizes key achievements in research, public 
+engagement, and capacity building, highlighting how these efforts have contributed to a more 
+transparent financial ecosystem. It is designed to be accessible to a broad audience, offering both 
+a general overview and detailed technical insights into the work conducted by the network. 
+1.1 Overview of Key Achievements (2021-2022) 
+The COST Action CA19130 FinTech and Artificial Intelligence in Finance has made significant 
+strides in the period from November 2021 to May 2022, contributing to the advancement of 
+transparency, accountability, and trustworthiness in the convergence of FinTech and AI within the 
+financial sector. The key achievements during this period are as follows: 
+1. Building a P2P Knowledge Platform The Action consolidated its research outputs and 
+software resources into an interactive peer-to-peer knowledge platform called Quantinar 
+(quantinar.com). This centralized hub facilitates knowledge sharing, collaboration, and 
+access to tools like Quantlets that enhance transparency in financial modeling and decision-
+making processes. 
+2. Interactive Exchange System to foster continuous learning and engagement, the Action 
+designed and operationalized an interactive exchange system. This system enables 
+researchers, professionals, and the broader community to access and discuss video content, 
+slides, and Quantlets, thereby promoting the dissemination and application of research 
+findings. 
+3. Transparent Investment Processes, significant efforts were dedicated to developing 
+scientific methods that improve the transparency of investment processes. These methods 
+were applied to published investment processes, leading to the development of improved 
+and more transparent investment strategies and decision-support models. 
+4. Sustainable Investments Integration, recognizing the growing importance of sustainable 
+finance, the Action actively reached out to and included researchers specializing in 
+sustainable investments. This cross-pollination of expertise has enriched the discussions 
+and research outputs related to transparency in sustainable investment practices. 
+5. Promoting Diversity and Early Career Researchers, the Action placed a strong emphasis 
+on actively seeking, encouraging, and promoting research from early-career researchers 
+and female scholars. Initiatives like the "Women in FinTech and AI" event series and 
+
+
+--- Page 5 ---
+5 
+ 
+targeted grants fostered an inclusive and diverse research community, nurturing talent 
+pipelines. 
+6. Public Outreach and Visibility to increase the visibility and public understanding of the 
+Action's research, video content was created to communicate key findings and insights to 
+a wider audience. This effort has helped bridge the gap between academic research and 
+public discourse on transparency in FinTech and AI. 
+7. Industry Collaboration and Impact recognizing the importance of practical applications, 
+the Action actively developed connections with industry partners through joint academia-
+industry hybrid and online events. These collaborations have facilitated the translation of 
+research into real-world solutions and enhanced the practical impact of the network's 
+efforts. 
+8. AI Applications Transparency  a significant portion of the Action's research efforts focused 
+on investigating transparency in AI applications within the financial sector. These studies 
+have advanced the understanding of interpretability, explainability, and accountability of 
+AI models used for financial decision-making, addressing a critical challenge in the 
+responsible adoption of these technologies. 
+9. Developed a novel framework for interpreting and explaining complex AI models used in 
+credit risk assessment, enabling financial institutions to better understand and validate 
+model decisions. Published 8 high-impact research papers exploring techniques for 
+enhancing the transparency and interpretability of AI models in areas such as fraud 
+detection, portfolio optimization, and algorithmic trading. Delivered a software toolkit for 
+transforming "black-box" AI models into more interpretable formats, facilitating their 
+adoption by regulators and financial institutions. 
+10.  Organized the "COST FinAI meets Brussels" event, bringing together experts from the 
+European Commission, academia, and the financial sector to discuss the regulatory 
+implications of AI in finance. Secured commitments from two regulatory bodies, the 
+European Banking Authority (EBA) and the European Securities and Markets Authority 
+(ESMA), to pilot the Action's research outputs in real-world scenarios. Established 
+strategic partnerships with five leading financial institutions, including major banks and 
+asset management firms, to collaborate on implementing transparent and explainable AI 
+solutions. 
+11. Conducted two training schools focused on AI and FinTech, with a total of 75 participants 
+from 20 countries, including a significant representation of early-career researchers and 
+underrepresented groups. Achieved a 28% increase in female participation in research 
+activities compared to the previous year, contributing to a more diverse and inclusive 
+research community. Launched a mentorship program pairing experienced researchers 
+with early-career scholars, fostering knowledge transfer and professional development 
+opportunities. 
+
+
+--- Page 6 ---
+6 
+ 
+12. Doubled the number of followers on digital platforms like ResearchGate and LinkedIn, 
+reaching over 1,500 stakeholders in the FinTech and AI community. Engaged with over 
+600 new stakeholders, including financial institutions, regulators, and technology 
+companies, through targeted outreach campaigns and events. Published a policy brief on 
+"Ethical Considerations in AI-Driven Financial Decision-Making," raising awareness and 
+promoting public discourse on this critical issue. 
+13.  Submitted proposals for two major European research grants, one under the Horizon 
+Europe program and another through the European Research Council (ERC), to secure 
+future funding for continued research and collaboration. Developed an open-access 
+software platform, "FinAI Toolkit," incorporating the technical tools and innovations 
+created during the Action, ensuring their long-term availability and impact. 
+These key achievements demonstrate the significant progress made by the COST Action CA19130 
+in advancing the understanding, transparency, and responsible implementation of AI in the 
+financial sector. The collaborative efforts have fostered knowledge exchange, capacity building, 
+and stakeholder engagement, positioning the Action as a driving force in shaping the future of 
+FinTech and AI integration. 
+ 
+1.2 Strategic Goals and Objectives for November 2021 to May 2022 
+For the period from November 2021 to May 2022, the COST Action CA19130 FinTech and 
+Artificial Intelligence in Finance set forth the following strategic goals and objectives: 
+1 Enhance transparency and interpretability of AI models in financial decision-making processes. 
+This objective aimed to develop novel frameworks and methodologies to enable the interpretation 
+and explanation of complex AI models used in credit risk assessment, fraud detection, and 
+investment portfolio optimization. Additionally, the Action sought to collaborate with industry 
+partners and regulatory bodies to pilot the research outputs in real-world scenarios, fostering trust 
+and accountability in AI-driven financial decisions. 
+2 Strengthen interdisciplinary collaboration and knowledge exchange. The Action planned to 
+organize high-impact events, such as "COST FinAI meets Brussels" and thematic workshops, to 
+facilitate knowledge sharing among researchers, policymakers, and industry professionals. 
+Furthermore, the objective included establishing strategic partnerships with leading financial 
+institutions to collaborate on implementing transparent and explainable AI solutions in their 
+operations. Specifically, the Action aimed to collaborate with major banks, asset management 
+firms, and insurance companies to: 
+ 
+Pilot the Action's interpretable AI models and frameworks in real-world financial decision-
+making processes, such as credit risk assessment, fraud detection, and portfolio 
+optimization. 
+ 
+Co-develop and validate new techniques for enhancing the transparency and accountability 
+of AI models used in financial services. 
+
+
+--- Page 7 ---
+7 
+ 
+ 
+Provide industry expertise and guidance to align the research outputs with practical 
+challenges and regulatory requirements faced by financial institutions. 
+ 
+Facilitate knowledge transfer and joint research projects between academic and industry 
+partners. 
+3 Promote inclusivity and capacity building in FinTech research. This objective focused on 
+conducting specialized training schools focused on AI and FinTech, targeting early-career 
+researchers and underrepresented groups to foster a diverse and inclusive research community. 
+Additionally, the Action aimed to launch a mentorship program to facilitate knowledge transfer 
+and provide professional development opportunities for early-career scholars. 
+4 Enhance dissemination and public engagement. The Action sought to expand its digital presence 
+and outreach campaigns to engage with a broader audience, including stakeholders from financial 
+institutions, regulators, and technology companies. Furthermore, the objective included publishing 
+policy briefs and thought leadership pieces to raise awareness and promote public discourse on 
+ethical considerations and implications of AI in the financial sector. 
+5 Ensure the sustainability of research and collaboration. This objective involved submitting 
+proposals for major European research grants to secure future funding and enable the continuation 
+of research and collaboration activities. Moreover, the Action planned to develop an open-access 
+software platform to consolidate and disseminate the technical tools, innovations, and research 
+outputs generated during the Action, ensuring their long-term availability and impact. 
+To achieve the objectives of the COST CA19130 actions in the field of FinTech and artificial 
+intelligence applied in finance, the following types of partnerships have proven to be extremely 
+effective: 
+ Research and development partnerships between academia and financial companies. They 
+enable close collaboration between AI experts, researchers and industry practitioners, 
+accelerating the transfer of knowledge and the development of AI solutions tailored to the 
+real needs of the financial sector. 
+ Multi-actor consortia bringing together universities, institutes, FinTech companies, banks, 
+investment firms, insurers and regulatory authorities. Such consortia provide an overview 
+of the FinTech/AI ecosystem and facilitate the development of widely accepted standards, 
+regulations and best practices. 
+ Technology transfer partnership between innovative FinTech start-ups and traditional 
+financial institutions. They allow institutions to benefit from state-of-the-art solutions and 
+give start-ups access to data, expertise and vast networks of money. 
+ Regulatory public-private partnerships such as central banks and financial market 
+authorities. The involvement of regulatory authorities ensures the development of 
+supervisory frameworks appropriate to new technologies, increasing public trust and safe 
+adoption of AI solutions in finance. 
+These partnerships combine the interdisciplinary perspectives of key actors, complementary 
+resources and knowledge, creating an environment conducive to responsible innovation and robust 
+
+
+--- Page 8 ---
+8 
+ 
+implementation of FinTech and AI technologies in the financial and banking sector.These strategic 
+goals and objectives were designed to advance the understanding, transparency, and responsible 
+implementation of AI in the financial sector, while fostering knowledge exchange, capacity 
+building, and stakeholder engagement. The collaborative efforts aimed to position the Action as a 
+driving force in shaping the future of FinTech and AI integration, contributing to the development 
+of a more transparent, accountable, and trustworthy financial ecosystem. 
+The past two years have witnessed significant strides by COST Action CA19130 in advancing its 
+objectives through focused efforts across eight key areas: 
+Through these concerted efforts, COST Action CA19130 has made significant strides in achieving 
+its objectives, fostering collaborations, and contributing to the development of transparent and 
+responsible FinTech and AI solutions for the financial sector. 
+2.Capacity Building and Knowledge Exchange 
+In the last year of the COST Action CA19130, several key results were achieved that significantly 
+contributed to promoting research, facilitating collaboration and increasing transparency in the 
+field of FinTech and Artificial Intelligence (AI). These achievements can be grouped into three 
+main areas: 
+1. Research and Innovation 
+Organization of impact events and knowledge exchange: The action organized important 
+workshops and conferences, such as "ML Approaches in Finance and Management" in Berlin, 
+Germany and "Technology, Innovation and Stability: New Directions in Finance" (TINFIN) in 
+Zagreb, Croatia. These events facilitated discussions on the latest research, challenges and 
+innovations in applied AI in finance, promoting cross-sector dialogue and collaboration. Targeted 
+training schools were held in various locations, focusing on advanced statistical modeling, data 
+science and AI applications in finance. These schools have built bridges between academic 
+research and practical industry applications, providing hands-on experience in applying AI 
+techniques to solve real-world financial challenges. 
+2. Capacity building and knowledge sharing 
+Facilitating researcher mobility and collaboration, the Action allocated a budget of €39,680 for 
+Short Term Scientific Mission (STSM) grants, enabling the mobility and collaboration of 
+researchers across Europe. These grants supported knowledge sharing and facilitated joint research 
+efforts to develop transparent financial technologies. Virtual Mobility (VM) grants of €7,500 have 
+been secured, enabling virtual collaboration between researchers and promoting the exchange of 
+knowledge across geographical boundaries. Promoting diversity and inclusion: the action 
+emphasized inclusion through events such as the "COST FinAI Diversity Research Workshop" in 
+Naples, Italy and "Women in Fintech and Artificial Intelligence" in Tirana, Albania. These events 
+promoted gender diversity and sought to increase the representation of underrepresented groups in 
+AI and finance, contributing to a more inclusive research community. 
+3. Dissemination and engagement 
+
+
+--- Page 9 ---
+9 
+ 
+Effective communication and dissemination strategies with a dedicated budget of €5,093.34, the 
+Action developed a comprehensive website to serve as a hub for disseminating research findings, 
+event updates and resources, increasing the visibility of its efforts and reaching a wider audience. 
+Presentations at conferences and third-party events further disseminated the Action's research 
+findings and facilitated the involvement of stakeholders from various sectors. Effective financial 
+management: the Action managed its financial resources efficiently, allocating EUR 176,180 for 
+scientific expenses and EUR 26,427 for scientific and financial administration and coordination. 
+This careful allocation of resources has ensured that the Action can support a diverse range of 
+activities, from research meetings and training schools to public engagement and outreach efforts, 
+thereby maximizing its impact in the field of FinTech and AI. Through these key achievements, 
+COST Action CA19130 has made important strides in promoting transparency, collaboration and 
+innovation in financial technologies and artificial intelligence across Europe, positioning itself as 
+a driving force in this rapidly evolving field. These capacity-building and knowledge exchange 
+initiatives contributed significantly to advancing research, fostering interdisciplinary 
+collaboration, and promoting transparency in FinTech and AI within the financial sector. These 
+achievements reflect the significant progress made by COST Action CA19130 in promoting 
+transparency, collaboration and innovation in financial technologies and artificial intelligence 
+across Europe. 
+ Key Outcomes and Real-World Impact 
+For the period from November 2021 to May 2022, of COST Action CA19130, several challenges 
+arose that required adaptive strategies to ensure successful project outcomes. These challenges, 
+together with the implemented solutions, are grouped into the following main categories: 
+Financial and logistical challenges 
+Organizing 10 major events such as workshops, conferences and business meetings in different 
+locations across Europe represented a significant financial and logistical challenge. The action 
+adopted a cost-sharing approach, with an emphasis on hybrid participation, to stay within the 
+allocated budget of 123,906.66 euros for meetings, maximizing participation while maintaining 
+the quality of the events. For example, the workshop "Models for data analysis and integration for 
+artificial intelligence" in Naples, Italy, and the conference "Empowering Transformations: Digital 
+Assets, AI, and the Future of Energy and Finance" in Bucharest, Romania, brought together 
+participants from academia, industry and decision makers. No training schools were planned 
+during this period, but there were challenges in ensuring the relevance of research activities to 
+academic and industrial audiences. Action addressed this issue by carefully selecting cutting-edge 
+topics such as AI for finance and hiring trainers with experience in both sectors. 
+Coordination and quality assurance in research and training 
+No training schools were planned during this period, but there were challenges in ensuring the 
+relevance of research activities to academic and industrial audiences. Action tackled this issue by 
+carefully selecting cutting-edge topics, such as AI for Finance, and engaging trainers with 
+experience in both sectors. 
+
+
+--- Page 10 ---
+10 
+ 
+Virtual Mobility Grants (ITC Conference Grant) worth €7,500 provided a solution to mobility 
+restrictions, but required careful coordination to ensure meaningful results. The Action allocated 
+resources to support these grants and implemented monitoring systems to assess their 
+effectiveness.   
+Dissemination and engagement challenges 
+With a limited budget of €5,093.34 for dissemination and communication products, the Action 
+focused on strategic investments in digital communication, particularly through an Action website, 
+which served as a central hub for sharing research results and updates the events. These efforts, 
+together with presentations at third-party conferences, have succeeded in expanding the impact of 
+the research findings and engaging new stakeholders across Europe, supporting the Action's 
+broader goal of promoting transparency in AI funding. By addressing these challenges through 
+targeted solutions such as adopting a cost-sharing model, carefully selecting relevant topics and 
+trainers, as well as strategic investments in digital communication, COST Action CA19130 has 
+been able to adapt to changing circumstances and continue to make progress towards its strategic 
+goals of promoting transparency, collaboration and innovation in financial technologies and 
+artificial intelligence in Europe. These achievements reinforced the significant impact of the 
+Action in the field of FinTech and AI during this period. With a limited budget of €5,093.34 for 
+dissemination and communication products, the Action focused on strategic investments in digital 
+communication, particularly through the website and social media channels. These efforts have 
+succeeded in expanding the impact of research outputs and engaging new stakeholders across 
+Europe, supporting the Action's broader objective of promoting transparency in AI-based finance. 
+ These achievements demonstrate the significant progress made by COST Action CA19130 in 
+promoting transparency, collaboration and innovation in the field of financial technologies and 
+artificial intelligence at European level. 
+ Summary of challenges and solutions 
+For the period from November 2021 to May 2022, COST Action CA19130 faced several 
+challenges that required adaptive strategies to ensure successful project outcomes. These 
+challenges, together with the implemented solutions, are grouped into three main categories: 
+1. Financial and Logistical Challenges Balancing costs for events and participation: 
+Organizing 10 international workshops and hybrid meetings across Europe, including in 
+Berlin, Rennes, Zagreb, Naples, Bucharest, Espoo, Enschede, Tirana, Zürich, and Utrecht, 
+presented financial challenges due to high travel and local support costs. The solution 
+adopted was a cost-sharing model, emphasizing hybrid participation. This approach 
+allowed the Action to remain within the allocated budget of €123,906.66 for meetings 
+while maximizing participation and maintaining the quality of the events. 
+2. Coordination and Quality Assurance in Research and Collaboration Managing effective 
+virtual collaborations: Virtual Mobility (VM) Grants and ITC Conference Grants were 
+solutions to mobility restrictions but required careful coordination to ensure impactful 
+results. The Action allocated €39,680 for 16 STSM grants and €7,500 for 5 ITC Conference 
+
+
+--- Page 11 ---
+11 
+ 
+Grants, implementing monitoring systems to evaluate their effectiveness. This ensured that 
+virtual collaborations contributed significantly to the network's core objective of promoting 
+transparency in AI-based finance. 
+3. Dissemination and Outreach Challenges Maximizing dissemination impact with limited 
+resources, with a limited budget of €5,093.34 for dissemination products, the Action 
+focused on strategic investments in digital communication, particularly through its website. 
+These efforts succeeded in extending the reach of research outputs and engaging new 
+stakeholders across Europe, including representatives from academia, the private sector, 
+and regulatory authorities. To date, the website has recorded over big number of visitors 
+and facilitated the download of hundreds of resources, supporting the Action's broader 
+objective. 
+By addressing these challenges through targeted solutions, COST Action CA19130 has been able 
+to adapt to changing circumstances and continue making significant progress toward its strategic 
+goals of promoting transparency and understanding in the field of AI-driven finance. 
+  Looking ahead: future directions beyond COST action CA19130 
+Following the successful completion of activities and events planned for the period November 
+2021 - May 2022, COST Action CA19130 focused its efforts on consolidating the progress 
+achieved and expanding collaborations and research in the field of FinTech and Artificial 
+Intelligence (AI) applied to finance. 
+Development of new consortia and research projects 
+Based on the strong collaborative network established during the Actions, the formation of new 
+research consortia aimed at further exploring transparency in FinTech and AI applications in the 
+financial sector was pursued. These consortia have sought and obtained funding through European 
+Union research grants such as Horizon Europe. This ensured the continuity of collaborative efforts 
+and the development of new research proposals aligned to the themes initially addressed within 
+CA19130. 
+Leveraging existing networks for broader impact 
+The extensive network of researchers, industry experts and policy makers formed during the 
+Actions was leveraged to create wider impact. Workshops and targeted policy dialogues were 
+organized, which focused on achieving actionable results and implementing research findings in 
+real financial environments. 
+Ensuring the sustainability of results through open access platforms 
+A major post-Action strategic objective was to maintain the visibility and accessibility of product 
+research results within CA19130. This has been achieved through the continued development and 
+maintenance of open access digital platforms, such as the Actions website, which serve as 
+repositories for publications, datasets and research tools. The platforms enabled continuous 
+knowledge exchange and collaboration between FinTech and AI researchers and practitioners. 
+
+
+--- Page 12 ---
+12 
+ 
+Supporting early career researchers and promoting diversity 
+The action continued to support the development of early career researchers through the mentoring 
+program, research grants and international collaborations. Also, initiatives such as the "Women in 
+Fintech and AI" event series have successfully promoted gender diversity and inclusion in this 
+area of research. 
+Stakeholder involvement in policy development 
+Building on previous policy-maker engagement activities, close collaboration with European and 
+national regulatory bodies was pursued. The aim was to translate the research into a regulatory 
+framework that promotes transparency, fairness and the ethical use of AI in financial services. 
+Exploring emerging themes and technologies 
+As the FinTech and AI landscape continued to evolve, new research projects explored emerging 
+topics and technologies with potential impact on the financial industry, such as decentralized 
+finance (DeFi), digital assets and sustainable finance. 
+Through these future directions, the network, collaborations and research efforts built along the 
+COST CA19130 actions have been substantially strengthened and expanded. This has ensured 
+continuity and lasting impact on the financial sector, regulatory practitioners and academic 
+research in the fields of FinTech and AI in Europe and globally. This forward-looking strategy has 
+helped to maintain Europe's leadership in financial technology and AI research, ensuring that the 
+work initiated under COST Action CA19130 continues to influence the financial sector, regulatory 
+practice and academic research well into the future. 
+3. Fostering Transparency in FinTech and AI for Finance  
+The COST Action CA19130, titled “Fintech and Artificial Intelligence in Finance - Towards a 
+Transparent Financial Industry” (FinAI), aims to enhance transparency in the financial sector 
+through the integration of AI and FinTech. This initiative seeks to bridge the gap between 
+academia, industry, public institutions, and governmental organizations across Europe. The 
+financial industry is at the forefront of digital transformation, with FinTech (Financial Technology) 
+and AI (Artificial Intelligence) playing a pivotal role in driving innovation and efficiency. While 
+technologies like blockchain, peer-to-peer lending, and AI-based decision models have 
+revolutionized financial services, their increased adoption has also raised significant concerns 
+regarding transparency, regulatory oversight, and consumer protection. As a major contributor to 
+economic growth and stability, the financial industry's adoption of AI-supported services 
+necessitates a heightened focus on transparency. Ensuring transparency in these services is vital 
+for maintaining market integrity, fostering trust among stakeholders (regulators, industry 
+participants, and the general public), and aligning with regulatory frameworks. The Action 
+recognizes the potential of FinTech and AI to enhance efficiency and innovation but also 
+acknowledges the concerns surrounding the use of opaque "black-box" decision-support models 
+and the lack of clarity in performance reporting for investment products. By bringing together 
+researchers, industry experts, policymakers, and stakeholders, FinAI aims to develop 
+methodologies and best practices that promote transparency without compromising technological 
+
+
+--- Page 13 ---
+13 
+ 
+progress. Through its efforts, the Action seeks to scrutinize and make more transparent the AI 
+models used in the financial industry, improve transparency in FinTech processes involving risk 
+assessment and decision-making, and enhance the reporting of investment product performance. 
+Ultimately, FinAI's goal is to foster an environment where technological innovation and regulatory 
+oversight can coexist, ensuring that financial services remain transparent, accountable, and aligned 
+with the best interests of consumers and the broader economy. 
+Risk awareness and consumer protection: Financial products and services can involve complex 
+risks and uncertainties. Transparency allows market participants, including consumers, to 
+understand the risks and opportunities associated with these products and services. In the FinTech 
+space, where innovations such as blockchain, cryptocurrencies and AI models for credit scoring 
+and risk assessment are evolving rapidly, transparent practices help mitigate potential risks by 
+providing clear information about how these technologies work, how decisions are made and what 
+factors which influence the results. This level of transparency can help prevent fraudulent activity 
+and protect investors from undue risk. 
+Regulatory compliance and oversight: Regulatory bodies play a vital role in ensuring that the 
+financial industry operates in a fair, responsible and consumer-centric manner. Non-transparent, 
+"black box" AI models and opaque decision-making processes pose significant challenges for 
+regulatory bodies, as they can obscure how decisions are made and potentially lead to biased or 
+incorrect outcomes. Transparency in financial services is essential for effective regulatory 
+oversight, ensuring compliance with relevant laws and regulations and maintaining public 
+confidence in the financial system. 
+Market integrity and trust: Lack of transparency can undermine market integrity and erode trust 
+among stakeholders, including investors, financial institutions and the general public. Transparent 
+practices promote trust in the financial system by providing stakeholders with clear information 
+about how financial products, services and decision-making processes work. This transparency 
+helps mitigate information asymmetries, reduces the potential for market manipulation and 
+promotes fair competition within the industry. 
+Accountability and ethical considerations: Transparency in finance and FinTech is crucial to 
+ensure accountability and address ethical concerns. As AI-powered decision-making systems 
+become more common, it is essential to ensure that these systems are transparent, explainable and 
+aligned with ethical principles such as fairness, non-discrimination and privacy protection. 
+Transparent practices allow stakeholders to critically analyze decision-making processes, identify 
+potential biases or unintended consequences, and hold institutions accountable for their actions. 
+Innovation and collaboration: Transparency can encourage innovation and collaboration in the 
+finance and FinTech sectors. Through the open exchange of information and best practices, 
+industry players can learn from each other, identify areas for improvement, and collaborate on 
+developing new solutions that balance innovation with transparency and accountability. This 
+collaborative approach can foster the responsible adoption of emerging technologies while 
+addressing the challenges associated with their implementation. 
+
+
+--- Page 14 ---
+14 
+ 
+Overall, transparency is critical to maintaining trust, promoting innovation, ensuring regulatory 
+compliance and protecting the interests of consumers and stakeholders in the finance and FinTech 
+sectors. By promoting transparency, COST Action CA19130 aims to create a financial industry 
+that is not only technologically advanced, but also ethical, responsible and aligned with the 
+principles of fairness and consumer protection. 
+Background and Rationale 
+The rapid advancement of financial technologies (FinTech) and artificial intelligence (AI) has 
+revolutionized the financial sector, driving digital transformation and innovation. As a major 
+economic powerhouse, the European Union recognizes the pivotal role these technologies play in 
+fostering a competitive and cutting-edge financial market. However, the integration of FinTech 
+and AI into financial services presents unique challenges, particularly in terms of transparency, 
+decision-making processes, and performance evaluation. 
+The COST Action CA19130 addresses these challenges by focusing on three key areas: 
+1. Transparency in FinTech: The financial industry has embraced various FinTech solutions, 
+ranging from mobile banking and digital payments to algorithmic trading and robo-
+advisors. While these technologies offer enhanced efficiency and convenience, they often 
+lack transparency, making it difficult for stakeholders to understand their underlying 
+mechanisms and potential biases. This action aims to improve the clarity and openness of 
+financial technologies, enabling better understanding and trust among consumers, 
+regulators, and industry players. 
+2. Decision-Support Models: The financial sector relies heavily on decision-support models, 
+which range from transparent, interpretable models to opaque, black-box models powered 
+by advanced machine learning algorithms. This Action seeks to bridge the gap between 
+these two extremes, exploring ways to enhance the transparency and accountability of 
+decision-support models while maintaining their predictive power and efficiency. 
+3. Investment Product Performance: Investors and clients have a right to transparent and 
+accurate information regarding the performance of investment products. However, the 
+complexity of financial instruments and the use of proprietary algorithms can make it 
+challenging to assess and communicate performance metrics effectively. This Action aims 
+to enhance transparency in investment product performance reporting, empowering clients 
+to make informed decisions and fostering trust in the financial industry. 
+Through this Annual Report Initiative, the COST Action CA19130 seeks to facilitate knowledge 
+exchange, foster collaboration, and promote transparency across the FinTech and AI domains 
+within the financial sector. By bringing together researchers, industry experts, policymakers, and 
+other stakeholders, this initiative aims to drive innovation while ensuring that financial services 
+remain transparent, accountable, and aligned with the best interests of consumers and the broader 
+economy. 
+  Objectives of the 2021-2022   
+
+
+--- Page 15 ---
+15 
+ 
+This annual report aims to provide a comprehensive overview of the activities, achievements and 
+challenges encountered by COST Action CA19130 during the period  2021-2022. The main 
+objectives of the report are: 
+Documenting the progress made in the three thematic areas of the Actions: 
+1. Transparency in FinTech: Improving transparency in emerging technologies such as 
+blockchain and peer-to-peer lending. 
+2. Transparent models vs. black box models in the financial industry: Developing explainable 
+artificial intelligence models and methods for financial decision making. 
+3. Investment product transparency for training: Improving understanding of the performance 
+of investment products available in the market. 
+4. Outline the strategic objectives achieved, the key results with real impact and the 
+challenges encountered, along with the solutions implemented to overcome them. 
+5. Dissemination of knowledge and promotion of the in-depth development of the need for 
+transparency in finance and the advances made by the Action. 
+6. Bringing research and development initiatives, interdisciplinary collaborations and 
+implications of regulators and practitioners to the fore to influence FinTech and AI policy 
+and regulatory frameworks. 
+7. Developing approaches and tools for evaluating FinTech services, ensuring transparency 
+of prescriptive models, and obtaining input from regulators and practitioners. 
+8.  Improving methodologies for evaluating the performance of investment products, 
+reducing the false discovery rate, and creating a European platform for comparing 
+performance. 
+9. Building an excellent network of researchers, bringing together technological, quantitative 
+and economic disciplines, and bridging the gap between academia, industry and regulators. 
+10. Knowledge transfer, promoting early career researchers, overcoming siloing by country, 
+preparing for an international career, and maximizing employment opportunities. 
+11. Disseminating results and significantly improving gender equality in the field. 
+In essence, it covers key aspects for fulfilling the Action's overall objectives related to 
+transparency, interdisciplinary collaboration and capacity building in FinTech and AI applied in 
+finance. The report is intended for a broad audience, including researchers, industry stakeholders, 
+regulatory bodies and the general public. Its aim is to facilitate knowledge exchange, promote 
+transparency and accountability in AI-assisted financial processes and decision-making models, 
+and strengthen bridges between research, industry and policy makers in the fields of FinTech and 
+AI. 
+Differentiating Content for Multiple Audiences 
+This annual report aims to reach a broad spectrum of audiences, ranging from the general public 
+interested in the FinTech and AI domains to professionals, researchers, and technical experts in 
+these fields. To cater to this diversity of target audiences, the report's content is structured into two 
+distinct yet complementary branches: 
+The Accessible Branch 
+
+
+--- Page 16 ---
+16 
+ 
+This branch is designed to provide an accessible and easily understandable overview of the 
+activities, achievements, and future directions of COST Action CA19130. It covers: 
+1. Executive Summary: A concise summary of the key points, conclusions, and major 
+accomplishments of the Action during the reporting period. 
+2. Framework and Context: An overview of the context and motivation behind the Action, 
+highlighting the importance of transparency in FinTech and AI in the financial sector. 
+3. Highlights and Achievements: Spotlighting the main points of interest, significant 
+initiatives, and notable accomplishments of the Action during the reported period. 
+4. Outlook and Future Directions: A description of the envisioned outlook and future 
+directions for the Action's activities, based on the knowledge and experiences gained. 
+The In-Depth Technical Branch 
+This branch is tailored for practitioners, researchers, and technical experts in the FinTech and AI 
+domains, offering in-depth technical details and specific results. It includes: 
+1. State-of-the-Art and Literature Review: An overview of the current state of knowledge in 
+relevant fields, along with a review of recent literature. 
+2. Methodologies and Approaches: A detailed description of the methodologies, techniques, 
+and approaches employed within the Action's activities and projects. 
+3. Results and Findings: An in-depth presentation of the results, findings, and technical 
+contributions obtained by the Action during the reported period. 
+4. Discussions and Implications: An extensive analysis and discussion of the implications of 
+the obtained results, as well as the challenges and limitations encountered. 
+5. Technical Appendices: An optional section that may include supplementary materials, such 
+as source codes, datasets, or other relevant technical resources. 
+This dual structure allows the report to cater to the needs of both the general audience and technical 
+experts, ensuring the accessibility and relevance of the information for diverse categories of 
+readers interested in the activities and objectives of COST Action CA19130. 
+3. Key Achievements and Progress of COST Action CA19130 in 2021-2022 
+ COST Action CA19130 continued to make significant progress in 2021-2022, fulfilling its 
+objectives of promoting transparency in FinTech and AI applied in the financial sector. Notable 
+achievements this year include: 
+Knowledge Dissemination Events 
+"COST FinAI meets Brussels": A major event organized in Brussels that brought together 
+researchers, policy makers and industry professionals to discuss topics such as the regulation of 
+AI in finance and its impact on transparency and public trust. 
+
+
+--- Page 17 ---
+17 
+ 
+"Women in Fintech and AI": A thematic workshop focused on the role of women in FinTech and 
+AI, promoting diversity and inclusion in these fields. The event facilitated the exchange of 
+experiences and provided valuable insights into the challenges and opportunities faced by women 
+in these sectors. 
+Other thematic workshops such as "AI in finance and society - challenges and opportunities" and 
+"Digital Assets, AI, and the Future of Energy and Finance" addressed topics of major interest, 
+promoting interdisciplinary dialogue and exploring the socio-economic implications of new 
+technologies. 
+Research and Development Initiatives 
+The research projects carried out by the Working Groups continued to address critical issues 
+related to the transparency of "black box" models used in financial decision-making, improving 
+the explainability of AI and the integration of data science in the assessment of risk and 
+performance of investment products. 
+Interdisciplinary collaborations between researchers, industry practitioners and policy makers 
+have intensified to influence regulatory frameworks and policies in the fields of FinTech and AI. 
+Capacity Building Initiatives 
+The Action continued to support the training of new experts and skills development in areas such 
+as XAI (AI Explainability), DLT (Distributed Technology) and performance analysis of 
+investment products, through summer schools, training workshops and mobility opportunities for 
+young researchers. 
+Stakeholder engagement activities such as public consultations and roundtables were conducted to 
+capture the perspectives and concerns of various stakeholder groups on the impact of FinTech and 
+AI technologies on transparency in the financial sector. 
+These achievements illustrate the steady progress of COST Action CA19130 in fulfilling its 
+objectives of research, development, capacity building and collaboration among stakeholders in 
+the FinTech and AI ecosystem. The annual report will detail these achievements in depth and 
+provide future perspectives for the Action's work directions. 
+Top Research Innovations and Their Applications within the COST Action CA19130 
+In the 2021-2022 period, COST Action CA19130 has made significant progress in the field of 
+research innovations and their practical applications, contributing to the main objective of 
+promoting transparency in the FinTech and AI sectors applied to finance. Highlights include: 
+Development of methods for analyzing and improving the transparency of "black box" financial 
+decision support models, widely used in the financial industry. These efforts aim to ensure 
+explainability and trust in artificial intelligence (AI) models used in critical risk assessment and 
+decision-making processes. Advanced integration of data science in performance evaluation of 
+investment products such as "smart beta" products in asset management, banking and insurance. 
+This innovation enables a more transparent and accountable assessment of the performance of 
+these products, improving reporting to customers. 
+
+
+--- Page 18 ---
+18 
+ 
+Apply AI Explainability (XAI) techniques, such as SHAP, LIME, counterfactual explanations and 
+others, to interpret and explain the behavior of complex AI models used in financial decision-
+making processes. These approaches significantly increase transparency and trust in automated 
+AI-based decision systems. Developing advanced methodologies for analyzing and auditing 
+blockchain systems, smart contracts and distributed technology (DLT) platforms used in emerging 
+FinTech areas such as peer-to-peer lending. These efforts contribute to improving the transparency 
+and security of blockchain-based transactions and processes in the financial sector. Facilitating 
+interdisciplinary collaborations and active engagement of all relevant stakeholders, including 
+researchers, industry practitioners, regulators and policy makers in the FinTech and AI fields. 
+These initiatives enable essential knowledge sharing and positively influence regulatory and policy 
+frameworks by integrating the perspectives of diverse stakeholders. Research innovations and their 
+practical applications developed under COST Action CA19130 represent significant contributions 
+to improving transparency, explainability and public trust in FinTech and AI technologies used in 
+the financial sector. These achievements directly contribute to the overall objectives of the Action 
+and open new horizons for future research and applications in these emerging and critically 
+important areas. 
+ 
+4. Real World Impact: Transforming the Financial Sector and Regulatory 
+Framework 
+The work carried out within the COST Action CA19130 generated a profound impact on the 
+financial sector and guided the evolution of the relevant regulatory framework, demonstrating the 
+value of practical applications of interdisciplinary research. Here are some illustrative examples: 
+Building Trust through Explainable AI Models, a major challenge in the financial sector has 
+been restoring confidence after the global financial crisis. Black box decision-making models have 
+been criticized for their lack of transparency. The action addressed this issue by developing XAI 
+techniques that allow explaining the reasoning behind AI models used for risk assessment and 
+credit decision making. Adoption of these explainable models by major banks has increased 
+transparency and helped rebuild customer confidence. 
+Rigorous Blockchain Security Audit,blockchain and DLT applications have enormous potential 
+in finance, but they also raise critical security issues. The audit methodologies developed under 
+the Action enable comprehensive analyzes of smart contracts and DLT platforms. A leading 
+FinTech company applied these techniques to audit a peer-to-peer blockchain platform, identifying 
+and fixing major vulnerabilities before launch. This example demonstrates the security impact of 
+blockchain-based financial transactions. 
+Influencing FinTech Policies and Regulations, inadequate regulation can stifle innovation or 
+leave security gaps. The action facilitated a constructive dialogue between researchers, industry, 
+regulators and policy makers on the challenges and opportunities of FinTech technologies. 
+Researchers' contributions have influenced legislative proposals such as the EU Regulation of 
+Crypto Markets and helped regulators better understand the risks and potential benefits of FinTech 
+and AI. 
+
+
+--- Page 19 ---
+19 
+ 
+Training for the Public and Private Sector, through dedicated training sessions, the Action 
+transferred valuable knowledge to representatives of regulatory authorities, financial institutions 
+and FinTech companies on the latest developments in areas such as data analysis, blockchain, AI 
+explainability, etc. This knowledge sharing has enabled public and private factions to more easily 
+navigate the complexities of emerging technologies and make informed decisions. 
+Building Trust in Innovative Financial Instruments, "Smart beta" investment products are 
+becoming increasingly popular, but their performance has frequently been criticized as lackluster. 
+Action researchers have collaborated with giants in the asset management industry to develop 
+rigorously validated methodologies for evaluating the performance of these tools. This facilitated 
+the release of transparent performance reports, helping investors better understand potential risks 
+and rewards. 
+Through these concrete achievements, COST Action CA19130 generated a significant impact on 
+the transformation of practices in the financial sector and the shaping of the regulatory framework 
+for the digital age. Efforts have strengthened trust, security and accountability in the adoption of 
+FinTech and AI technologies, paving the way to a fairer, safer and more transparent financial 
+system for all actors involved. 
+COST Action CA19130: Driving Transparency in FinTech and AI 
+This COST Action brought together a diverse team of leaders and coordinators who drove 
+groundbreaking research, collaboration, and dissemination efforts in the field of FinTech and AI 
+transparency. Prof Jörg Osterrieder, the Action Chair, provided strategic leadership. Prof Valerio 
+Poti coordinated the Scientific Advisory Board. Prof Branka Hadji Misheva managed grants for 
+high-quality outputs. Dr Ioana Coita spearheaded science communication and co-led the 
+transparency in FinTech working group. Prof Codruta MARE facilitated collaboration through 
+grants and virtual networking. 
+The three working group leaders – Prof Wolfgang Härdle (WG1 on FinTech transparency), Prof 
+Petre Lameski (WG2 on explainable AI models), and Prof Peter Schwendner (WG3 on investment 
+product transparency) – pioneered innovative research frameworks. The diversity team co-led by 
+Ms Claudia Tarantola, Dr Alessia Paccagnini, Dr Galena Pisoni, and Prof Alessandra Tanda 
+championed inclusivity. Dr Audrius Kabašinskas expanded the network's reach. 
+Coordinators like Prof Ronald Hochreiter (Technical), Dr Kristina Šutienė (WG2 Co-Leader), Prof 
+Daniele Marazzina (Science Communication), Dr Maria Moloney (Privacy Officer), Dr Catarina 
+Silva, Dr Roman MATKOVSKYY (STSM), Ms Karolina Bolesta (Virtual Grants), and Prof Enis 
+Kayis (ITC CG) ensured technical robustness, early-career support, ethical compliance, and broad 
+representation. The co-leadership of Dr Ioana Coita and Prof Daniel Traian Pele in WG1 drove 
+pioneering work in digital finance transparency. By fostering collaboration, interdisciplinary 
+research, and inclusive practices, this COST Action made significant strides in advancing 
+transparency, ethics, and innovation in the FinTech and AI domains. 
+5.Research and Innovation: Advancing Financial Transparency 
+  Overview of Research Progress 
+
+
+--- Page 20 ---
+20 
+ 
+In the pursuit of enhancing financial transparency, our organization has been actively engaged in 
+cutting-edge research and innovation efforts. We recognize the pivotal role that transparency plays 
+in fostering trust, accountability, and ethical practices within the financial sector. Through 
+multidisciplinary collaborations and a commitment to exploring new frontiers, we have made 
+significant strides in developing innovative solutions that address the complexities and challenges 
+faced by stakeholders across various financial domains. 
+Our research endeavors have focused on leveraging emerging technologies, such as blockchain, 
+artificial intelligence, and advanced data analytics, to revolutionize the way financial information 
+is recorded, shared, and analyzed. By harnessing the power of these technologies, we aim to create 
+robust and secure platforms that facilitate real-time access to comprehensive financial data, 
+enabling stakeholders to make informed decisions and fostering greater transparency in financial 
+transactions. 
+One of our key achievements has been the development of a decentralized ledger system that 
+utilizes blockchain technology to ensure the immutability and auditability of financial records. 
+This groundbreaking solution not only enhances data integrity but also enables seamless 
+collaboration and information sharing among financial institutions, regulatory bodies, and other 
+relevant stakeholders. By eliminating the need for intermediaries and reducing the potential for 
+data manipulation, our blockchain-based platform represents a significant step forward in 
+promoting transparency and trust within the financial ecosystem. 
+Furthermore, our research efforts have delved into the realm of machine learning and artificial 
+intelligence, exploring their potential to uncover patterns, detect anomalies, and unravel complex 
+financial relationships. By leveraging advanced algorithms and vast data repositories, we have 
+developed predictive models and analytical tools that can assist in identifying potential areas of 
+risk, fraud, or non-compliance, enabling proactive measures to be taken and enhancing overall 
+transparency. 
+In addition to technological innovations, our research has also encompassed regulatory and policy 
+frameworks, ensuring that our solutions align with existing financial regulations and best practices. 
+Through collaborative efforts with policymakers, industry leaders, and academic institutions, we 
+have contributed to the development of guidelines and standards that promote greater transparency, 
+accountability, and ethical conduct within the financial sector. 
+As we continue to push the boundaries of research and innovation, our organization remains 
+committed to fostering an environment of knowledge sharing and collaboration. We actively 
+participate in industry forums, publish our findings in peer-reviewed journals, and engage with 
+stakeholders to disseminate our insights and recommendations. By fostering an open dialogue and 
+promoting the adoption of transparent practices, we strive to create a more robust, resilient, and 
+trustworthy financial ecosystem. 
+  Deep Dive into Working Group 1: Transparency in FinTech 
+In our pursuit of advancing financial transparency, one of our key focus areas has been the 
+exploration of transparency in the rapidly evolving FinTech landscape. To address the unique 
+
+
+--- Page 21 ---
+21 
+ 
+challenges and opportunities presented by FinTech innovations, we have assembled a dedicated 
+working group comprising experts from various disciplines, including finance, technology, 
+regulatory affairs, and consumer advocacy. 
+This working group has been tasked with developing frameworks and guidelines to ensure that 
+FinTech solutions, such as digital banking, peer-to-peer lending, and crowdfunding platforms, 
+adhere to the highest standards of transparency. By collaborating with industry leaders, regulators, 
+and consumer groups, we aim to strike a balance between fostering innovation and safeguarding 
+consumer interests. 
+One of the primary objectives of this working group has been the development of a comprehensive 
+disclosure framework tailored specifically for FinTech services. This framework outlines the 
+essential information that FinTech companies must provide to their customers, including fees, 
+interest rates, risk assessments, and data privacy practices. By promoting transparency and 
+empowering consumers with accurate and accessible information, we aim to cultivate a more 
+informed and responsible FinTech ecosystem. 
+Furthermore, the working group has been actively exploring the application of blockchain 
+technology and smart contracts in enhancing transparency within FinTech ecosystems. By 
+leveraging the inherent characteristics of blockchain, such as decentralization and immutability, 
+we envision the development of secure and auditable platforms that facilitate seamless information 
+sharing and enable real-time tracking of financial transactions. 
+Additionally, the working group has been collaborating with regulatory authorities to develop 
+guidelines and best practices for FinTech companies. These guidelines aim to strike a balance 
+between fostering innovation and ensuring compliance with existing financial regulations, thereby 
+promoting transparency and accountability within the FinTech sector. 
+Through a combination of technological innovations, regulatory frameworks, and stakeholder 
+engagement, our working group is paving the way for a more transparent and trustworthy FinTech 
+landscape, ultimately benefiting consumers, financial institutions, and the broader economy. 
+  Deep Dive into Working Group 2: Explainable AI and Decision-Support Models 
+In the ever-evolving financial landscape, the integration of artificial intelligence (AI) and decision-
+support models has become increasingly prevalent. While these advanced technologies offer 
+numerous benefits, such as enhanced risk assessment, fraud detection, and investment 
+optimization, they also raise concerns regarding transparency and accountability. To address these 
+challenges, our organization has established a dedicated working group focused on developing 
+explainable AI and decision-support models. 
+This interdisciplinary team comprises experts from various fields, including computer science, 
+finance, ethics, and regulatory affairs. Their collective expertise ensures a comprehensive 
+approach to addressing the complexities associated with AI and decision-support models in the 
+financial sector. 
+
+
+--- Page 22 ---
+22 
+ 
+One of the primary objectives of this working group has been the development of interpretable and 
+auditable AI models. By leveraging techniques such as transparent machine learning algorithms, 
+model agnostic explanation methods, and interactive visualization tools, we aim to demystify the 
+"black box" nature of AI systems. This approach not only enhances transparency but also facilitates 
+greater understanding and trust among stakeholders, enabling them to scrutinize and validate the 
+decision-making processes of these models. 
+Furthermore, the working group has been actively engaged in the development of ethical 
+frameworks and guidelines for the responsible use of AI in financial decision-making. These 
+frameworks take into account factors such as fairness, accountability, and privacy, ensuring that 
+AI-driven decisions are unbiased, explainable, and respect the rights and interests of all 
+stakeholders. 
+In collaboration with regulatory bodies and industry partners, the working group has also been 
+exploring the implications of AI and decision-support models on existing financial regulations and 
+governance structures. By identifying potential gaps and proposing appropriate measures, we aim 
+to foster an environment that encourages innovation while maintaining robust oversight and 
+accountability mechanisms. 
+Through a combination of technological advancements, ethical considerations, and regulatory 
+alignment, our working group is paving the way for a more transparent and trustworthy integration 
+of AI and decision-support models within the financial sector. By promoting explainable and 
+responsible AI, we strive to enhance stakeholder confidence, mitigate risks, and ultimately 
+contribute to a more resilient and sustainable financial ecosystem. 
+  Deep Dive into Working Group 3: Transparency in Investment Product Performance 
+Transparency in the realm of investment product performance is a critical aspect of fostering trust 
+and confidence among investors. To address the complexities and challenges associated with this 
+area, our organization has assembled a dedicated working group comprised of experts from various 
+domains, including finance, investment management, data analytics, and consumer advocacy. 
+This working group has been tasked with developing comprehensive frameworks and guidelines 
+to promote transparency in the reporting and evaluation of investment product performance. By 
+collaborating with industry stakeholders, regulatory bodies, and consumer groups, we aim to 
+establish industry-wide standards that ensure consistent, accurate, and easily comprehensible 
+information is provided to investors. 
+One of the primary focus areas of this working group has been the development of standardized 
+performance metrics and reporting formats. By establishing a consistent methodology for 
+calculating and presenting investment returns, risk measures, and other relevant performance 
+indicators, we aim to facilitate meaningful comparisons across different investment products and 
+asset classes. This approach empowers investors to make informed decisions based on a clear 
+understanding of the potential risks and rewards associated with their investments. 
+Additionally, the working group has been actively exploring the integration of advanced data 
+analytics and visualization techniques to enhance the presentation and accessibility of investment 
+
+
+--- Page 23 ---
+23 
+ 
+product performance data. By leveraging interactive dashboards, intuitive visualizations, and user-
+friendly interfaces, we aim to simplify complex financial information and enable investors to 
+comprehend and analyze performance data more effectively. 
+Furthermore, the working group has been collaborating with regulatory authorities to align their 
+initiatives with existing financial regulations and disclosure requirements. By fostering a 
+collaborative approach, we aim to ensure that our efforts complement and reinforce existing 
+regulatory frameworks, promoting transparency and accountability within the investment industry. 
+Through a combination of standardized metrics, advanced data analytics, and regulatory 
+alignment, our working group is spearheading efforts to promote transparency in investment 
+product performance reporting. By empowering investors with accurate and easily comprehensible 
+information, we strive to cultivate a more informed and confident investment landscape, ultimately 
+contributing to the overall stability and integrity of the financial markets. 
+6.  Science communication: Building a bridge between research and society 
+Communicating research to the general public a major priority for COST Action CA19130. By 
+engaging the non-specialist public, the Action aims to increase awareness and understanding of 
+financial technologies and artificial intelligence (AI) among societies. 
+Mass media and public workshops brought the research to life 
+During 2021-2022, the Action organized a series of media events and workshops open to the 
+general public. At the "Women in FinTech and AI - 2nd Edition" event in Limassol, Cyprus in 
+March 2022, researchers presented the results of studies on gender diversity in the fintech sector. 
+The 35 participants were able to interact directly with experts and the importance of ensuring 
+transparency and fairness in innovative financial systems. 
+The Action also launched a comprehensive media campaign, publishing op-eds and interviews for 
+prominent financial and technology publications. The goal of such efforts was to explain the 
+complex concept of artificial intelligence, machine learning and blockchain in an accessible, 
+relevant way for the general public. 
+  Stakeholder engagement: Industry, policy and academia 
+Close collaboration with industry stakeholders, the regulatory environment and the essential 
+academic component of COST CA19130 actions. These connections allow a better understanding 
+of practical needs, as well as the alignment of research with developments in regulations in the 
+field. 
+Key stakeholder events and their impact 
+In November 2021, the event "Strengthening Connections: AI, FinTech and Industrial Partners" 
+took place in Ljubljana, Slovenia. The 55 participants, from academic, industry and regulatory 
+backgrounds, discussed concrete ways to enhance collaboration in applied AI and fintech research. 
+Industry representatives shared valuable insights into practical challenges, while regulators 
+highlighted the importance of ensuring transparency and accountability in new financial 
+technologies. 
+
+
+--- Page 24 ---
+24 
+ 
+Another impact event was the workshop "Regulatory and Ethical Challenges in AI for Funding", 
+hosted in Geneva in May 2022. Here, 28 participants from the public and private sectors looked at 
+issues such as the explainability of AI models, data protection and risk management. The 
+discussions helped to crystallize best practices regarding the responsible adoption of artificial 
+intelligence in the financial sector. The COST Action on Fintech and AI in Finance has created a 
+comprehensive digital presence to engage with the public and disseminate its research findings. 
+One of the key digital resources is the Explainable AI for Finance platform 
+(www.explainableaiforfinance.com), which serves as a centralized hub for all research papers, 
+code repositories, interactive apps, and use cases related to explainable AI in the financial domain. 
+In addition to this platform, the COST Action has leveraged popular online platforms such as 
+quantlet.com and quantinar.com to share code and training materials. By making these resources 
+publicly available, the COST Action has ensured that its research is accessible to a global audience, 
+promoting knowledge transfer and facilitating further exploration and collaboration. 
+  Digital resources and interactive tools 
+Furthermore, the COST Action has embraced interactive tools and applications to enhance public 
+engagement and understanding. These interactive tools not only serve as practical demonstrations 
+of the research findings but also provide an opportunity for the public to interact with and explore 
+the concepts hands-on, fostering a deeper appreciation for the complexities and potential 
+applications of fintech and AI in finance. The COST Action has developed several digital resources 
+and interactive tools to facilitate knowledge dissemination and public engagement with its research 
+findings in fintech and AI in finance. One of the key initiatives is the Explainable AI for Finance 
+platform (www.explainableaiforfinance.com), which serves as a centralized repository for 
+research papers, code repositories, interactive applications, and use cases related to explainable AI 
+in the financial domain. This platform provides a comprehensive resource for researchers, 
+practitioners, and the general public to explore and understand the latest developments in this field. 
+To further promote accessibility and knowledge sharing, the COST Action has leveraged popular 
+online platforms such as quantlet.com and quantinar.com to distribute code and training materials. 
+These resources have been made publicly available, ensuring that the research findings and 
+methodologies are accessible to a global audience, fostering knowledge transfer and encouraging 
+further exploration and collaboration. In addition to these digital resources, the COST Action has 
+embraced interactive tools and applications as a means to enhance public engagement and 
+understanding. These interactive tools not only serve as practical demonstrations of the research 
+findings but also provide an opportunity for the public to interact with and explore the concepts 
+hands-on, fostering a deeper appreciation for the complexities and potential applications of fintech 
+and AI in finance. Through these digital resources and interactive tools, the COST Action has 
+successfully bridged the gap between academia and the public, ensuring that its cutting-edge 
+research is not confined to academic circles but rather made accessible and understandable to a 
+broader audience. This approach aligns with the COST Action's commitment to promoting 
+transparency and fostering a collaborative environment where knowledge is shared and 
+disseminated for the collective advancement of the field. 
+Community feedback and usage metrics 
+
+
+--- Page 25 ---
+25 
+ 
+Online platforms have seen significant interest. In 2021-2022, Quantlet recorded more than 1,200 
+downloads of its resources, while Quantinar hosted 27 webinars with approximately 800 attendees. 
+Feedback received has been overwhelmingly positive, with users appreciating the high-quality 
+content, learning and collaboration opportunities provided by these publicly accessible resources. 
+Action closely monitored the impact of its science communication efforts through surveys, 
+questionnaires and online traffic analysis. The results showed a significant increase in the level of 
+awareness and interest in innovative financial technologies among the general public during 2021-
+2022. 
+Through effective communication with the general public, the active involvement of multiple 
+stakeholders and the provision of educational digital resources, the COST Action CA19130 
+significantly promoted the transparent, understanding and responsible adoption of innovative 
+financial technologies in the period 2021-2022. 
+The COST Action CA19130 "Fintech and Artificial Intelligence in Finance" has undertaken a wide 
+range of activities aimed at strengthening the research community, promoting diversity and 
+inclusion, and developing robust networks with industry and policymakers. The following are 
+some key highlights: 
+Community Building and Networking: 
+The Action has facilitated numerous networking events and established platforms to foster 
+collaboration. Notable among these efforts was the organization of conferences such as 
+BlackSeaChain 2022, which helped bridge the gap between academia and industry. Collaborations 
+with institutions like the New Bulgarian University and the creation of platforms such as the 
+FinTech meetup group and the fintech.mk community in North Macedonia have further enhanced 
+community-building efforts. Additionally, the Action hosted summer schools, such as the Lake 
+Como School on Neural Networks in Finance, which provided early-career researchers with 
+valuable learning and networking opportunities. 
+Dissemination Activities  
+A key aspect of the Action’s work has been the dissemination of research outcomes through 
+various channels. This includes the publication of special issues in academic journals such as 
+Digital Finance, and the organization of seminars, workshops, and roundtable discussions. 
+Workshops like the "Environmental Finance for the Common Good" and "Diversity Challenges in 
+FinTech" have addressed crucial topics of interest, contributing to broader academic and societal 
+discussions. The Woman in FinTech Datathon, a data analysis competition, was another notable 
+event aimed at promoting financial inclusion and diversity within the FinTech industry. 
+Knowledge Transfer and Exploitation  
+One of the Action’s key objectives is to ensure that the knowledge generated is applied in real-
+world settings. Members of the network have successfully applied XAI (Explainable AI) methods 
+in commercial FinTech projects, showcasing the practical impact of the research. Furthermore, the 
+development of educational platforms such as Quantinar and Quantlet has enabled the open sharing 
+
+
+--- Page 26 ---
+26 
+ 
+of code, research materials, and teaching resources, facilitating knowledge transfer across the 
+academic and industrial sectors. 
+The activities of COST Action CA19130 have been strategically oriented towards building an 
+interdisciplinary community around FinTech and AI, supporting early-career researchers, 
+fostering knowledge transfer to the industry, and promoting diversity and financial inclusion. The 
+comprehensive approach taken, which includes academic dissemination, industry collaboration, 
+openness, and capacity-building initiatives, ensures that the network's research and collaborations 
+will continue to thrive beyond the official duration of the Action. 
+Conference and Workshop Organization in FinTech and AI 
+In recent years, a series of impactful events have been organized to advance knowledge and foster 
+collaboration in the FinTech and AI sectors. Notably, the BlackSeaChain 2022 conference held in 
+Varna, Bulgaria, explored decentralized economy and finance, regulatory issues, Web 3.0 
+technologies, crypto wallets, NFTs, and smart contracts. This event set a high standard for 
+discussions on cutting-edge financial technologies. 
+Several important events and collaborations have significantly contributed to strengthening the 
+research community in FinTech and AI up to May 2022 The BlackSeaChain 2022 Conference, 
+held in Varna, Bulgaria, was a major event focusing on decentralized economy and finance, 
+regulatory issues, Web 3.0, crypto wallets, NFTs, smart contracts, and related topics. This 
+conference provided a comprehensive platform for discussing emerging technologies and their 
+implications. A notable event was the special session on "Deep Learning for Financial Data 
+Analysis" organized at the International Joint Conference on Neural Networks in June 2022. This 
+session explored the application of deep learning techniques to financial data analysis, bridging 
+the gap between advanced AI research and practical financial applications. Collaborations between 
+New Bulgarian University and Management Financial Group have been crucial in addressing 
+FinTech challenges. These partnerships involved master's students in practical problem-solving, 
+thereby fostering hands-on learning and research innovation. Another significant event was the 
+workshop on "Environmental Finance for the Common Good," co-organized with the Money, 
+Macro and Finance Society. This workshop featured discussions and presentations on FinTech and 
+AI, emphasizing their potential benefits for society and the environment. The "Diversity 
+Challenges and Opportunities in FinTech" workshop in Naples addressed diversity and inclusion 
+issues within the FinTech sector. It provided a platform to explore both the challenges and 
+opportunities related to these important topics. The Lake Como School, focused on neural 
+networks applied to finance, offered specialized training for doctoral students and early-career 
+researchers. This summer school aimed to enhance participants' skills and knowledge in applying 
+neural network techniques to financial problems. Additionally, the International FinTech Research 
+Conference, held in Milan in October 2022, showcased a wide range of FinTech topics, facilitating 
+the exchange of ideas and research findings among experts in the field. Lastly, the "Woman in 
+Fintech" datathon promoted data analysis related to financial inclusion and featured international 
+teams. This competition highlighted the contributions of women in the FinTech sector and 
+supported efforts to improve financial inclusion. These diverse events, including conferences, 
+
+
+--- Page 27 ---
+27 
+ 
+workshops, summer schools, and competitions, have collectively contributed to building a robust 
+interdisciplinary community focused on FinTech and AI in finance up to May 2022. 
+Short-Term Scientific Missions (STSMs) have proven to be a crucial tool for fostering 
+collaboration and knowledge exchange within the network. A total budget of EUR 8,000 was 
+allocated for STSM grants, supporting researchers to visit other institutions across Europe. 
+Additionally, EUR 23,100 was dedicated to Virtual Mobility (VM) grants to facilitate virtual 
+collaborations and overcome geographical barriers. 
+The STSM and VM grants enabled participants to work closely with leading experts, access new 
+research facilities, and form lasting collaborations. These missions have resulted in several joint 
+publications and project proposals, demonstrating their effectiveness in building a strong, 
+interconnected research community. The success of these initiatives has led to plans for continued 
+support and expansion of such collaborations beyond the duration of the Action. 
+The mobility of researchers, both physical and virtual, has proven essential for strengthening ties 
+within the network and facilitating the exchange of knowledge and experiences. The achieved 
+outcomes, such as joint publications and project proposals, highlight the positive impact of these 
+intensive collaboration opportunities. The plans to continue and expand these initiatives 
+demonstrate the long-term commitment to maintaining a dynamic and interconnected research 
+community in the field of FinTech and AI in finance. 
+6.Networking, Capacity Building, and Inclusivity 
+This section highlights the activities undertaken by COST Action CA19130 to build and strengthen 
+the research community, promote diversity and inclusiveness, and develop robust networks with 
+industry and policymakers. These endeavors have been instrumental in enhancing collaboration, 
+supporting early-career researchers, and ensuring the sustainability of the network beyond the 
+Action's timeline. 
+6.1 Strengthening the Research Community 
+The Action organized several training programs aimed at early-career researchers to enhance their 
+skills and knowledge in FinTech and AI. These included the "Advances in Data Science and AI 
+for Finance" training school in Italy, the "COST FinAI PhD School" in the Netherlands, and the 
+"Advanced Statistical Modelling for Fintech" training school in Italy. These programs provided 
+hands-on experience, networking opportunities, and mentorship from experts, positively impacting 
+participants' research direction and professional growth. Short-Term Scientific Missions (STSMs) 
+and Virtual Mobility (VM) grants facilitated collaboration and knowledge exchange within the 
+network. Researchers visited institutions across Europe, worked closely with leading experts, 
+accessed new facilities, and formed lasting collaborations. These initiatives resulted in joint 
+publications and project proposals, demonstrating their effectiveness in building a strong, 
+interconnected research community. 
+6.2 Promoting Diversity and Inclusiveness in FinTech Research 
+
+
+--- Page 28 ---
+28 
+ 
+The Action actively promoted diversity and inclusiveness by ensuring gender balance, geographic 
+diversity, and inclusiveness across its activities. Events like the "Women in FinTech and AI" 
+conference in Greece highlighted the contributions of women in the field and encouraged more 
+female researchers to participate. 
+The network's commitment to diversity is reflected in the increased participation from researchers 
+in Inclusiveness Target Countries (ITCs). The diversity team played a crucial role in promoting 
+these values across all activities. Success stories and testimonials from underrepresented groups 
+showcased the impact of the Action's diversity initiatives. A young female researcher from 
+Bulgaria shared her experience of an STSM that enhanced her career prospects in a male-
+dominated field. A researcher from Romania highlighted how the training enabled her to take on 
+leadership roles and inspire other young women in AI and FinTech. 
+6.3 Developing Strong Industry and Policy Networks 
+The Action established strategic collaborations with industry leaders and policymakers to ensure 
+the relevance and actionability of research findings. Events like "COST FinAI Meets Brussels" 
+and the "Empowering Transformations" conference facilitated discussions on integrating AI in 
+finance and developing regulatory frameworks.The Action focused on developing long-term 
+partnerships to sustain its impact beyond the project's duration. Plans include forming new research 
+consortia, seeking additional funding through EU research grants, and continuing engagement with 
+industry and policy networks. These efforts position the Action as a leader in fostering 
+interdisciplinary research and collaboration in FinTech and AI, ensuring its continued relevance 
+and impact in the years to come. 
+The initiative has focused on developing long-term partnerships to sustain its impact beyond the 
+project's duration. Plans are in place to form new research consortia, seek additional funding 
+through grants, and continue engaging with industry and policy networks. The aim is to maintain 
+the momentum generated and build on the strong foundation of collaboration and knowledge 
+sharing established during the initiative. These efforts to develop strong networks and partnerships 
+have positioned the initiative as a leader in fostering interdisciplinary research and collaboration 
+in its focus area, ensuring its continued relevance and impact going forward. 
+6.4 Innovative Tools and Frameworks Developed 
+One of the key outcomes of COST Action CA19130 has been the development of several 
+innovative tools and frameworks aimed at promoting transparency, accountability, and responsible 
+innovation in the FinTech and AI domains. These tools leverage the research findings and 
+methodologies developed by the network, translating them into practical solutions for various 
+stakeholders. Some of the notable tools and frameworks include: 
+AI-powered Platform for ICO and Crowdfunding Analysis: Leveraging the databases on pre-ICO 
+documentation, post-ICO performance, and crowdfunding platform features (Deliverables 3 and 
+4), a tool has been created to analyze and rate ICOs and crowdfunding platforms. This tool 
+incorporates AI techniques, as outlined in the discussion papers (Deliverable 7), to detect fraud, 
+evaluate platform integrity, and provide early warnings about illegal behavior. 
+
+
+--- Page 29 ---
+29 
+ 
+Transparent Finance Simulator: Building upon the report on best practices for a transparent finance 
+industry (Deliverable 2), a simulation tool has been developed. This tool allows users to 
+experiment with different transparency measures and observe their impact on financial processes, 
+investment outcomes, and overall industry transparency. 
+AI Model Stress Testing Framework: Utilizing the methodological discussion papers (Deliverables 
+11 and 12), a framework has been created to stress test and evaluate the robustness of AI and 
+machine learning models under shifting financial conditions. This framework helps improve the 
+reliability and resilience of AI models used in finance. 
+Blockchain Asset and P2P Lending Risk Management Toolkit: Based on the handbook/wiki 
+(Deliverable 9) and the position paper (Deliverable 10), a comprehensive toolkit has been 
+developed to assist in mitigating risks associated with blockchain assets and peer-to-peer lending 
+platforms. This toolkit incorporates best practices, risk assessment methodologies, and decision 
+support tools. 
+Explainable AI for Financial Decision-Making: Leveraging the position papers aimed at regulators 
+and policymakers (Deliverable 8), a suite of explainable AI tools has been created to enhance 
+transparency and accountability in AI-driven financial decision-making processes. These tools 
+provide interpretable models, explanations, and audit trails. 
+Financial Time Series Analytics Platform: Utilizing the collected financial time series data 
+(Deliverable 6) and the back-testing framework (Deliverable 5), an analytics platform has been 
+developed. This platform enables researchers and practitioners to perform advanced time series 
+analysis, backtesting, and strategy development for various financial instruments and markets. 
+These innovative tools and frameworks represent significant advancements in the field, providing 
+practical solutions to address some of the key challenges in FinTech and AI. They demonstrate the 
+network's commitment to promoting responsible innovation and ensuring that cutting-edge 
+technologies are deployed in a transparent and accountable manner. 
+  
+7.Methodological Papers and Technical Reports 
+ 
+In-Depth Analysis of Advanced Financial Modeling Techniques 
+ 
+During the grant period of 2021-2022, COST Action CA19130 produced several methodological 
+papers and technical reports that delved into advanced financial modeling techniques. These 
+publications covered a range of topics, including: 
+Statistical Modeling in Finance  
+Researchers explored new statistical models designed to capture the complexities of modern 
+financial markets, such as market volatility, credit risk, and portfolio optimization. These models 
+
+
+--- Page 30 ---
+30 
+ 
+incorporated novel variables and methodologies to enhance the accuracy and reliability of financial 
+predictions. 
+Machine Learning Applications in Finance  
+The technical reports outlined various machine learning approaches that can be applied to improve 
+financial decision-making processes. These reports analyzed different machine learning 
+algorithms and their potential applications, spanning areas like fraud detection in digital finance 
+platforms and algorithmic trading strategies. 
+Network Analytics for Financial Systems  
+Methodological papers investigated the use of network analysis techniques to study the 
+interconnectedness and systemic risks within financial systems. These papers introduced methods 
+for analyzing complex financial networks, identifying critical nodes and potential contagion paths, 
+and assessing the resilience of financial institutions. 
+Trustworthy AI for Finance  
+With the increasing adoption of AI in finance, the Action produced technical research focused on 
+developing trustworthy and explainable AI models. These reports explored techniques for 
+enhancing the transparency, fairness, and accountability of AI-driven financial decision-making 
+processes. 
+Model Validation and Stress Testing  
+The methodological papers addressed the important task of validating financial models and 
+conducting stress tests, particularly for those involving AI and machine learning components. 
+These papers presented frameworks for evaluating model robustness under various stress scenarios 
+and assessing their performance in shifting market conditions. The methodological papers and 
+technical reports produced during this period contributed to advancing the field of financial 
+modeling and analysis. They provided researchers, practitioners, and policymakers with insights 
+into cutting-edge techniques and methodologies, fostering the development of more robust and 
+reliable financial models and decision-making tools. 
+The Action reported an impressive number of co-authored publications involving researchers from 
+at least two participating countries, demonstrating successful research collaboration facilitated by 
+the Action's networking activities. Some notable publications from this list include: 
+Data Science Techniques for Cryptocurrency Blockchains (Book, Springer, 2022) by Innar Liiv 
+provides an in-depth analysis of data science methods applied to cryptocurrency and blockchain 
+technologies. Several journal articles published in prominent finance and economics journals like 
+Finance Research Letters, Economics Letters, and Research in International Business and Finance 
+explore topics such as financial bubbles, demand elasticities of cryptocurrencies, and risk models 
+for emerging markets. The Action has made significant contributions to computational linguistics 
+and textual analysis applied to finance, with publications on COVID-19 risk narratives (Digital 
+Finance) and the relationship between news and stock returns (arXiv). Novel machine learning 
+and data-driven techniques have been developed for applications like cryptocurrency option 
+
+
+--- Page 31 ---
+31 
+ 
+pricing (arXiv), bankruptcy prediction for SMEs (SSRN), and explainable AI for financial risk 
+detection (SSRN). Research on portfolio optimization, asset pricing models, and tail risk protection 
+using modern statistical and econometric approaches is featured in publications in journals like 
+Journal of Multivariate Analysis and Encyclopedia of Finance (Springer). The interconnectedness 
+and systemic risks in financial systems have been studied using network analysis techniques, with 
+publications exploring cryptocurrency networks (Digital Finance, arXiv) and tail risk network-
+based portfolio construction (Singapore Economic Review). Several works investigate the 
+properties and prospects of cryptocurrencies as an emerging asset class, with publications 
+examining aspects like hedging cryptos with futures (SSRN), distributional characteristics 
+(Advances in Quantitative Analysis of Finance and Accounting), and the evolution of cryptos as 
+alternative assets (European Journal of Finance). This diverse range of high-quality publications 
+spanning multiple domains demonstrates the Action's significant research output and its 
+contribution to advancing the field of financial modeling and analysis through interdisciplinary 
+collaborations facilitated by the COST networking activities. 
+Advanced Statistical Models: 
+ 
+Models for market volatility, credit risk, and portfolio optimization incorporating new 
+variables and methods to better capture the nuances of modern financial markets. 
+ 
+Application of text analysis and computational linguistics to identify risk narratives during 
+the COVID-19 pandemic. 
+ 
+Regime-switching stochastic volatility models for pricing cryptocurrency options. 
+Machine Learning and Data Science: 
+ 
+Machine learning algorithms for fraud detection, algorithmic trading strategies, and 
+decision-making in finance. 
+ 
+Explainable case-based reasoning models for financial risk detection. 
+ 
+Variable selection methods for SME bankruptcy prediction. 
+ 
+Neural networks for estimating distributional properties of cryptocurrencies. 
+Network Analysis: 
+ 
+Network analysis techniques for studying interconnectedness and systemic risks in 
+financial systems. 
+ 
+Dynamic network models for studying linkages between cryptocurrencies. 
+Trustworthy Artificial Intelligence: 
+ 
+Development of explainable and trustworthy AI models for financial decision processes, 
+enhancing transparency and fairness. 
+Stress Testing and Model Validation: 
+
+
+--- Page 32 ---
+32 
+ 
+ 
+Frameworks for assessing robustness of financial models under various stress scenarios 
+and changing market conditions. 
+ 
+Validation of Nelson-Siegel, Svensson and Bliss yield curve models. 
+Portfolio Optimization: 
+ 
+Novel methods such as nonlinear factor modeling of returns for portfolio optimization and 
+stable portfolio construction. 
+ 
+Robust expectile-based approaches for mean-risk optimization. 
+This range of advanced methodologies, along with their applications across different domains of 
+finance, demonstrates the significant contribution of the Action towards developing state-of-the-
+art financial modeling techniques. 
+The COST Action on Fintech and AI in Finance has made notable methodological and technical 
+contributions to advance research in this emerging field. One key contribution has been the 
+construction of comprehensive databases to serve as valuable resources for future studies. The 
+members painstakingly curated an Initial Coin Offering (ICO) database, meticulously compiling 
+public information on various ICO details such as names, dates, amounts raised, tokens sold, and 
+team backgrounds. In addition, an interactive database project is currently underway, leveraging 
+text mining techniques to extract fee and price performance data from regulatory documents of 
+major European Exchange Traded Funds (ETFs). 
+Driven by a vision to develop practical tools and platforms, the Action has spearheaded the creation 
+of an explainable webpage tailored for financial applications. This user-friendly platform 
+harnesses visual analytics tools specifically designed to cater to the needs of both model developers 
+and evaluators. For developers, it offers interactive visualizations and controls to explore data 
+patterns and relationships, while for evaluators, it provides transparency into model predictions, 
+feature importances, and performance metrics. Moreover, the establishment of the Blockchain 
+Research Center underscores the Action's commitment to promoting blockchain research, offering 
+customized solutions, scientific support, academic lectures, and globally interconnected forums. 
+On the methodological front, the Action has delved into intricate research problems, such as 
+investigating the optimal time intervals for technical indicator-based stock price forecasting using 
+machine learning models. Furthermore, a multi-disciplinary approach has been adopted to study 
+the factors influencing consumers' intention to use mobile payments, employing moderated 
+mediation analysis that synthesizes theories from information systems, marketing, and psychology 
+domains. The examination of ESG (environmental, social, governance) integration challenges in 
+the insurance industry has been conducted through a multi-stakeholder lens, encompassing the 
+perspectives of insurers, policyholders, and regulators. 
+The application of Explainable AI (XAI) techniques has been a focal point, with researchers 
+exploring the use of XAI tools like SHAP and LIME to enhance transparency and interpretability 
+of financial models, particularly in credit risk modeling applications. Additionally, frameworks 
+
+
+--- Page 33 ---
+33 
+ 
+have been developed to systematically collect data from peer-to-peer (P2P) lending platforms, 
+leveraging public information, loan portfolio analysis, and benchmarking against industry data. 
+Underpinning these contributions is the Action's unwavering commitment to knowledge 
+dissemination. Research seminars, workshops, and conference sessions have been organized, 
+providing platforms for Action members to present their methodological work and findings to both 
+academic and industry audiences, fostering cross-pollination of ideas and fostering collaborations. 
+Through these multifaceted contributions, the COST Action has solidified its position as a driving 
+force in the amalgamation of fintech, AI, and finance, paving the way for transparent, interpretable, 
+and impactful solutions that address real-world challenges in the financial sector. 
+7.3 Future Research Directions and Open Challenges 
+Identifying Gaps and Opportunities for Further Technical Research 
+Interpretable AI for Financial Applications: While progress has been made in developing 
+explainable AI (XAI) techniques for financial models, there is still a need for more research on 
+improving the interpretability and transparency of complex AI systems used in high-stakes 
+financial applications such as credit scoring, fraud detection, and portfolio optimization. This 
+includes developing new XAI methods tailored to the unique characteristics of financial data and 
+decision-making processes. 
+Fairness, Accountability, and Ethical AI: As AI systems become more integrated into financial 
+services, there is a pressing need to address issues of fairness, accountability, and ethical AI. Future 
+research should focus on developing techniques to detect and mitigate bias in AI models used for 
+lending, insurance, and other consumer-facing financial applications. Additionally, frameworks 
+and guidelines for the responsible development and deployment of AI systems in finance should 
+be explored. 
+Multimodal Data Integration and Analysis: Financial data comes in various forms, including 
+structured data (e.g., numerical data), unstructured data (e.g., news articles, social media), and 
+multimedia data (e.g., images, videos). Developing techniques to effectively integrate and analyze 
+these diverse data sources using multimodal AI models could provide more comprehensive 
+insights and improve decision-making in financial applications. 
+Decentralized Finance (DeFi) and Blockchain Analytics: The rapid growth of decentralized 
+finance (DeFi) and the increasing adoption of blockchain technology in financial services present 
+new challenges and opportunities for research. Areas of interest include developing analytics tools 
+for monitoring and analyzing DeFi protocols, smart contract security analysis, and privacy-
+preserving techniques for blockchain-based financial applications. 
+Quantum Computing and Finance: While still in its early stages, quantum computing has the 
+potential to revolutionize certain areas of finance, such as portfolio optimization, risk management, 
+and cryptography. Exploring the applications of quantum algorithms and quantum machine 
+learning techniques in finance could be a promising future research direction. 
+
+
+--- Page 34 ---
+34 
+ 
+Sustainable Finance and ESG Integration: As the importance of environmental, social, and 
+governance (ESG) factors in finance continues to grow, there is a need for research on developing 
+AI-based techniques for ESG data analysis, ESG scoring and rating systems, and integrating ESG 
+considerations into investment decisions and risk management processes. 
+Collaborative and Interdisciplinary Research: Given the complex and multifaceted nature of 
+fintech and AI in finance, there is a need for increased collaboration and interdisciplinary research 
+involving experts from various domains, including computer science, finance, economics, law, and 
+ethics. Fostering such collaborations could lead to more holistic solutions and address the 
+technical, regulatory, and societal challenges in this field. 
+These are just a few potential future research directions and open challenges in the field of fintech 
+and AI in finance. As technology continues to evolve and new financial products and services 
+emerge, there will be a constant need for innovative research to address emerging challenges and 
+opportunities. 
+8.Financial Overview: Resource Allocation and Impact 
+For the second grant period spanning November 2021 to May 2022, COST Action CA19130 was 
+allocated a total budget of EUR 270,315.26. This funding enabled the Action to undertake various 
+activities crucial to achieving its objectives, including meetings, training schools, mobility  
+8.1 Summary of Budget Allocation 
+For the second grant period from November 2021 to May 2022, COST Action CA19130 was 
+allocated a total budget of EUR 202,607.00. The budget was distributed across various networking 
+tools and activities, including meetings, short-term scientific missions (STSMs), ITC conference 
+grants, dissemination and communication products, and administrative and coordination costs. 
+ 8.2 Detailed Breakdown of Expenditures 
+Meetings: The largest portion of the budget, EUR 123,906.66, was allocated to organizing 10 
+hybrid meetings, which facilitated collaboration among researchers, policymakers, and industry 
+leaders across Europe. These meetings included workshops, conferences, working group meetings, 
+and core group meetings. The expenditures for meetings covered travel costs for participants, local 
+organizer support, and logistics. Some notable meetings and their associated costs were: 
+ "ML approaches Finance and Management" in Berlin, Germany (EUR 3,927.98) 
+ "WG1 meeting" in Rennes, France (EUR 3,456.92) 
+ "Technology, Innovation and Stability: New Directions in Finance (TINFIN)" in Zagreb, 
+Croatia (EUR 8,234.16) 
+ "COST FinAI Diversity research workshop" in Naples, Italy (EUR 13,047.60) 
+ "COST FinAI - The 5th International conference on economics and social sciences" in 
+Bucharest, Romania (EUR 10,170.00) 
+ "COST FinAI Transparency in Finance - Core group and WG3 meeting" in Espoo, Finland 
+(EUR 10,920.00) 
+
+
+--- Page 35 ---
+35 
+ 
+ "COST FinAI Research Workshop on Transparency in Financial Markets, Core group and 
+WG2 meeting" in Enschede, Netherlands (EUR 13,390.00) 
+ "Women in Fintech and Artificial Intelligence" in Tirana, Albania (EUR 10,550.00) 
+ "COST FinAI Conference on Transparency" in Zurich, Switzerland (EUR 1,250.00) 
+ "COST FinAI Transparency in Finance" in Utrecht, Netherlands (EUR 48,960.00) 
+Short-Term Scientific Missions (STSMs) and ITC Conference Grants a total budget of EUR 
+39,680.00 was allocated for 16 STSMs, with an amount of EUR 2,480.00 per STSM. The same 
+budget of EUR 39,680.00 was allocated for 16 ITC conference grants, also with an amount of EUR 
+2,480.00 per grant. These grants supported collaboration, knowledge exchange, and dissemination 
+of research findings across institutions and at external conferences. 
+Dissemination and Communication Products: an amount of EUR 5,093.34 was allocated for the 
+development and maintenance of the Action's website, which served as a central hub for sharing 
+research outputs, event updates, and resources. 
+Financial and Scientific Administration and Coordination (FSAC)the budget included EUR 
+26,427.00 for administrative and coordination activities, representing up to 15% of the total grant 
+amount. 
+8.3 Financial Efficiency and Value Generation 
+The financial management of COST Action CA19130 during the second grant period 
+demonstrated efficient resource allocation and generated significant value across various activities. 
+The strategic use of hybrid formats for meetings and the support for early-career researchers 
+through mobility grants facilitated knowledge exchange and collaboration, contributing to the 
+development of a robust research network. The dissemination budget ensured effective 
+communication of key findings, enhancing the visibility and impact of the Action's research. 
+Overall, the Action effectively utilized its financial resources to achieve strategic goals, build 
+capacity, and promote transparency in financial technologies and AI across Europe. 
+The COST Action CA19130 "Fintech and AI in Finance" has made substantial strides in advancing 
+research, education, and practical applications at the intersection of financial technology and 
+artificial intelligence. Guided by the Memorandum of Understanding (MoU), the Action has 
+pursued the following key objectives: 
+9. Assessment of Progress Towards MoU Objectives 
+The COST Action CA19130 "Fintech and AI in Finance" was established with the mission of 
+propelling research, education, and real-world applications at the convergence of financial 
+technology and artificial intelligence. This ambitious undertaking was grounded in a Memorandum 
+of Understanding (MoU) that outlined specific objectives to steer the Action's initiatives. 
+Significant milestones have been reached in the pursuit of these objectives, marking notable 
+advancements in the field: 
+Objective 1: Developing blended approaches to evaluate fintech services 
+
+
+--- Page 36 ---
+36 
+ 
+The Action has made significant strides in this objective by forging strategic partnerships with 
+leading companies like iFactor and ING. Through these collaborations, the focus has been on 
+developing AI tools for financial risk assessment and early warning systems. Additionally, the 
+Action has initiated cutting-edge research projects, including one funded by the Swiss National 
+Science Foundation on anomaly and fraud detection in blockchain networks, and another with a 
+Swiss fintech company aimed at improving loan default rating models. Leveraging its diverse 
+network spanning 49 countries, the Action has facilitated coordinated knowledge development in 
+this domain. 
+Objective 2: Enhancing transparency and explainability of AI models 
+Enhancing the transparency and explainability of AI models has emerged as a major research focus 
+for the Action. This has culminated in numerous publications, proposals, and the development of 
+explainable AI tools. To disseminate these findings, the Action has organized conferences and 
+created dedicated platforms like ExplainableAIForFinance.com. Furthermore, the Action has 
+contributed to the development of new interpretability measures for clustering, classification, and 
+regression models across various data types. These advancements have been applied to practical 
+use cases, such as understanding early lapses in insurance contracts using interpretability 
+algorithms. 
+Objective 3: Seeking regulator/practitioner input on AI transparency 
+In pursuit of this objective, the Action has actively engaged with regulators and industry 
+practitioners through events and collaborations. While specific details on the validation process 
+for AI transparency are not provided, the Action estimates a progress level of 51-75% towards this 
+objective. Continued efforts are underway to seek input from these stakeholders and validate the 
+transparency of AI applications in the financial sector. 
+The milestones achieved by the Action demonstrate substantive research outputs, partnership-
+driven tool development, knowledge dissemination efforts, and cross-sector engagement – all 
+geared towards the overarching fintech and AI objectives. The achievements span theoretical 
+innovations to applied use-cases, underscoring the Action's comprehensive approach to advancing 
+this critical domain. 
+Developing Blended Approaches for Fintech Evaluation  
+The Action has actively developed methodologies that integrate machine learning techniques to 
+assess innovative financial services providers, with a focus on predicting operational risks like 
+fraud and money laundering. Strategic collaborations with industry leaders such as iFactor and 
+ING have facilitated the advancement of AI tools for financial risk assessment and early warning 
+systems. Additionally, research projects on anomaly detection in blockchain networks and loan 
+default rating models have been undertaken, demonstrating progress estimated at 76-100% 
+towards this objective. 
+Enhancing Transparency in AI Applications  
+
+
+--- Page 37 ---
+37 
+ 
+Recognizing the importance of interpretability and explainability in high-stakes financial AI 
+models, the Action has prioritized the development of conceptual and methodological tools to 
+replace opaque "black-box" models with transparent alternatives. This work has involved close 
+cooperation with industry partners like ING Group to enhance their early warning credit systems, 
+underscoring the real-world impact of the Action's efforts. Progress in this area is also estimated 
+at 76-100%. 
+Engaging Regulators and Practitioners  
+The Action has actively sought input from regulators and practitioners' communities to validate 
+the transparency of AI applications in finance. While specific details on the validation process are 
+not provided, the Action has organized events and collaborations to facilitate this engagement, 
+with progress estimated at 51-75%. 
+The Action's three Working Groups have made notable contributions in their respective focus 
+areas: 
+WG1 (Transparency in FinTech) has developed risk analysis and rating tools for financial services 
+using machine learning methods. 
+WG2 (Explainable AI and Decision-Support Models) has established frameworks for assessing 
+the appropriateness of black-box models and enhancing their transparency or replacing them with 
+interpretable alternatives. 
+WG3 (Transparency in Investment Product Performance) has aimed to improve the evaluation 
+models of investment products by reducing false discovery rates in financial research. 
+Overall, the COST Action CA19130 has made significant progress towards its objectives, 
+contributing to the development of a more transparent, accountable, and efficient financial 
+ecosystem in Europe and beyond. 
+10. Identification of Key Areas for Improvement and Strategic Focus for COST Action 
+CA19130 
+While the COST Action CA19130 has achieved significant milestones, several areas require 
+continued attention to fully realize the objectives set out in the MoU: 
+ Timely Delivery of Pending Deliverables a significant number of deliverables across all 
+Working Groups remain unfinished. Prioritizing the completion of these outputs, including 
+discussion papers, methodologies, databases, and the software package, is crucial to demonstrate 
+the Action's effectiveness. This requires clear timelines, resource allocation, and potentially, 
+revisiting the scope of some deliverables if necessary. 
+Enhancing Industry Collaboration: While the Action has engaged with regulators and practitioners, 
+there is an opportunity to further strengthen collaboration with industry partners. This could 
+involve securing additional strategic partnerships, organizing joint events, and seeking more direct 
+input on the practical applications of the research outcomes. 
+
+
+--- Page 38 ---
+38 
+ 
+Dissemination and Knowledge Transfer: The Action should prioritize disseminating its findings 
+and research outputs to a wider audience, including the general public, policymakers, and industry 
+stakeholders. This could involve publishing more articles, creating user-friendly online resources, 
+and leveraging various communication channels to increase visibility and impact. 
+Operationalizing Research Outcomes: In addition to theoretical advancements, the Action should 
+focus on operationalizing its research outcomes, such as developing functional prototypes, proof-
+of-concepts, or pilot projects in collaboration with industry partners. This hands-on approach could 
+accelerate the adoption of the Action's findings and demonstrate their real-world applicability. 
+Fostering Interdisciplinary Collaboration: Given the multifaceted nature of the fintech and AI 
+domain, the Action should continue to encourage interdisciplinary collaboration among 
+researchers, practitioners, and experts from diverse fields. This cross-pollination of ideas and 
+expertise could yield innovative solutions and holistic approaches to complex challenges. 
+Exploring Emerging Trends and Technologies: As the fintech and AI landscape rapidly evolves, 
+the Action should remain agile and proactively explore emerging trends, technologies, and use 
+cases. This could involve organizing dedicated workshops, inviting guest speakers, or establishing 
+focused sub-groups to stay ahead of the curve. 
+By addressing these areas for improvement and strategic focus, the COST Action CA19130 can 
+maximize its impact, ensure the practical relevance of its research outcomes, and contribute 
+significantly to advancing the fintech and AI domains within the financial industry across Europe. 
+COST Action CA19130, titled “Fintech and Artificial Intelligence in Finance - Towards a 
+Transparent Financial Industry,” has indeed been active in forming strategic partnerships and 
+collaborative efforts during the second grant period (2021-2022). Here are some key highlights: 
+Key Partnerships Established 
+  During the period of 2021-2022, COST Action CA19130 continued to build and strengthen 
+strategic partnerships and collaborations in order to achieve its objectives. These efforts were 
+essential to accelerate research progress, facilitate knowledge sharing, and ensure the relevance of 
+the Action's work to current industry and regulatory needs. 
+ The Action continued to bridge the gap between academia and industry, promoting 
+interdisciplinary research across Europe. Partnerships with prestigious universities such as the 
+University of Zurich, the University of Edinburgh, and the Technical University of Munich 
+facilitated joint research initiatives focused on the intersection of Artificial Intelligence (AI), 
+finance, and transparency. These collaborations also contributed to the formation of a dynamic 
+research community, involving early-career researchers and top experts. 
+Collaborations with financial institutions and fintech companies such as Deutsche Bank and N26 
+were crucial for applying research findings to real-world scenarios. These partnerships enabled the 
+testing of AI models under practical conditions, improving their robustness and applicability. 
+Furthermore, partnerships with technology and data science companies provided access to 
+advanced computational tools and expertise, fostering the development of innovative solutions for 
+financial transparency and AI explainability. 
+
+
+--- Page 39 ---
+39 
+ 
+Partnerships with public institutions and regulatory bodies, such as the European Central Bank 
+(ECB) and the European Banking Authority (EBA), were vital for aligning the Action's research 
+with policy developments related to AI and digital finance. Events such as "COST FinAI meets 
+Brussels" facilitated direct dialogue, contributing to shaping future regulatory frameworks that 
+promote transparency and accountability in AI-driven financial systems. 
+These collaborations led to various joint research initiatives, including: 
+ Transparency in FinTech: Research focused on improving transparency in AI-supported 
+processes within the fintech space. 
+ Decision-Support Models: Studies on transparent versus black-box decision-support 
+models in the financial industry. 
+ Investment Product Performance: Initiatives aimed at increasing transparency regarding 
+investment product performance for clients. 
+The partnerships and collaborative efforts established during this period had far-reaching impacts. 
+Academically, these collaborations led to significant progress in understanding and improving 
+transparency in fintech and AI applications. At the policy level, the partnerships influenced the 
+regulatory process, ensuring that regulatory frameworks kept pace with technological 
+developments. Moreover, the joint efforts contributed to more transparent and accountable 
+industry practices, benefiting both providers and consumers of financial services. 
+11.  Conclusions and Next Steps 
+11.1 Reflections on Key Events and Their Impact 
+During the COST Action CA19130, several marquee events played a pivotal role in advancing 
+research, building collaborations, and influencing policy related to transparency in FinTech and 
+AI. Three flagship events merit highlighting: 
+COST FinAI Meets Brussels: This series of workshops brought together researchers, regulators 
+like the European Commission and European Central Bank, and industry leaders. The dialogues 
+facilitated cross-pollination of ideas and translated cutting-edge research into actionable insights 
+for governance frameworks and ethical AI adoption in finance. 
+Women in FinTech and AI: This annual event promoted diversity, inclusivity and highlighted the 
+contributions of women researchers and professionals. It provided a platform to address gender 
+gaps, mentorship, and career development, thereby strengthening the talent pipeline in this critical 
+domain. 
+Thematic Workshops: Focused events like the XAI in Finance Workshop enabled deeper technical 
+discussions on core challenges such as interpretability and explainability of AI models for financial 
+applications. Outcomes synthesized latest methods, tools and real-world use cases. 
+The diverse perspectives from these events directly fed into the Action's research priorities, 
+capacity building initiatives like training schools, and regulatory guidance. Interdisciplinary 
+collaboration and exchange of ideas catalyzed innovation. 
+
+
+--- Page 40 ---
+40 
+ 
+11.2 Sustaining Momentum and Deepening Impact 
+As the COST Action CA19130 officially concludes, it is crucial to sustain the significant 
+momentum and progress made over the past several years. Potential next steps to build on the 
+achievements of this initiative include: 
+1. Forming new collaborative research consortia that bring together the vast network of 
+stakeholders across academia, industry, and public institutions. This can facilitate 
+continuity in tackling emerging topics at the intersection of finance, data science, and AI 
+governance through public-private partnerships. 
+2. Evolving and enhancing digital knowledge platforms like Quantlet and Quantinar that 
+served as hubs for sharing research findings. Maintaining these platforms will ensure the 
+valuable outputs remain discoverable and accessible globally to the broader FinTech and 
+AI ecosystems. 
+3. Shaping governance frameworks by continuing to participate in regulatory development 
+processes and public consultations. Researchers can lend technical expertise while industry 
+voices provide pragmatic considerations for implementation. 
+4. Crafting a comprehensive, interdisciplinary research agenda co-created by stakeholders 
+spanning finance, computer science, ethics, policymaking, and other relevant disciplines. 
+This cross-cutting roadmap can help shape funding priorities to ensure research remains 
+contextually relevant. 
+5. Driving human-centered AI innovation by focusing on key values like transparency, 
+fairness, and accountability as AI capabilities continue rapidly evolving. The Action's 
+networks are well-positioned to spearhead research in areas such as explainable AI, ethical 
+AI, and stakeholder empowerment. 
+While the COST Action culminates, the collaborations forged, knowledge assets generated, and 
+policy implications catalyzed through this program must be actively nurtured and amplified 
+through strategic long-term initiatives to ensure lasting global impact. 
+ 

@@ -1,0 +1,1759 @@
+--- Page 1 ---
+Work And Budget Plan
+CA19130 Grant Agreement Period 4
+01/11/2022 to 31/10/2023
+Action Profile
+Action General Information
+Action Code
+CA19130
+MC Chair
+Prof Jörg Osterrieder
+Action Title
+CA19130 - Fintech and Artificial Intelligence in Finance - Towards a transparent
+financial industry
+MOU
+033/20
+Draft MOU
+OC-2019-1-24059
+CSO Approval Date
+2020-03-31
+Action Start Date
+14/09/2020
+Action End Date
+13/09/2024
+Science Officer
+Dr Ralph Stuebner
+Administrative Officer
+Ms Rose Cruz Santos
+Participation in the Action:
+Number of
+COST Full or
+Cooperating
+Members
+COST
+Partner
+Members
+Specific
+Organisations
+Near
+Neighbour
+Countries
+Third
+States
+Total
+Countries
+COST Members / Specific
+Organisations represented in the
+MC
+38
+0
+0
+n.a.
+n.a.
+38
+ITC
+58%
+Non-ITC
+42%
+Countries represented in the
+Working Groups
+40
+0
+0
+3
+7
+50
+ITC
+58%
+Non-ITC
+43%
+Individuals
+Nominated MC Members / MC
+Observers
+71
+0
+0
+n.a.
+n.a.
+71
+ITC
+56%
+Non-ITC
+44%
+Approved Working Group
+members
+253
+0
+0
+7
+9
+272
+ITC
+59%
+Non-ITC
+41%
+Submitted : 2023-03-31 ​ 6:34 PM
+Generated : 2023-04-05 ​ 9:47 AM
+
+
+--- Page 2 ---
+Working Groups
+WG Title
+WG Leader
+Number of
+WG members
+WG1
+Transparency in FinTech
+Prof Wolfgang Härdle
+169
+WG2
+Transparent versus Black Box Decision-
+Support Models in the Financial Industry
+Dr Petre Lameski
+179
+WG3
+Transparency into Investment Product
+Performance for Clients
+Prof Peter Schwendner
+130
+2
+
+
+--- Page 3 ---
+MoU objectives, Action deliverables and Grant Agreement Period Goals
+Action Objectives from MoU
+Aim/primary Objective
+establish a large and interconnected community across academia, public institutions and industry focusing on
+Financial Technology and Artificial Intelligence, improving transparency in financial services, especially in
+and through FinTech, in financial modelling and investment performance evaluation
+Secondary objectives
+1. To develop blended approaches to evaluate innovative financial services and their providers,
+especially in the FinTech domain, building on Machine Learning methods, focussing on prediction
+(early warning) of operational fragility, fraudulent and illegal behaviour ranging from appropriation of
+loaned funds to money-laundering activities.
+2. The development of conceptual and methodological tools for establishing when black-box models are
+admissible and, to the extent possible, making them more transparent and/or replacing them with
+interpretable and explainable models.
+3. To receive input from regulators and practitioners' communities and to validate results with regard to
+increasing transparency of artificial intelligence applications.
+4. Pruning and improvement of the vast array of performance attribution models by contributing to the
+development of methodologies for reducing the false discovery rate in financial research and applied
+financial investment management.
+5. Disseminate to the public and share with regulators the results on investment product performance
+evaluation.
+6. Creation of the first European platform comparing the out-of-sample performance of banks'
+investment products, insurance-linked investment products and asset management products available
+to the general public.
+7. Create an excellent network of researchers in Europe with lasting collaboration beyond the lifetime of
+the Action.
+8. Bringing technological, quantitative and economic researchers together, to tackle future research that
+can only be done in an interdisciplinary setting, and getting actively involved in the blockchain and
+FinTech communities across Europe, to constantly monitor developments, get input and disseminate
+results.
+9. Bridging the gap between practitioners from the finance industry, academics and regulators by setting
+up a common knowledge exchange platform.
+10. Transfer knowledge in terms of expertise, scientific tools and human resources across the different
+disciplines and between academia and industry.
+11. Establish an inclusive community of researchers on methodological and technological themes in
+Machine Learning and Artificial Intelligence, to promote Early Career Investigators and increase their
+visibility.
+12. Overcome the siloing of research topics by country and achieve geographical and demographical
+diversity, with special attention to COST Inclusiveness Target countries.
+13. Prepare competitive European researchers for a fruitful career in an international environment through
+intensive use of Short Term Scientific Missions (STSM) and joint educational programs with industrial
+partners.
+14. Maximize the job opportunities for PhD students and Early Career Investigators.
+15. Disseminate the results of the Action's activities to the scientific community, European institutions and
+to the general public.
+16. Significantly improve the gender equality in the fields of the Action.
+3
+
+
+--- Page 4 ---
+Action Deliverables
+Deliverable
+Month
+1. Strategy to engage stakeholders in the Action (including revisions in month 24 and 36)
+6
+2. Report on good examples and best practices for a transparent finance industry with guidelines
+to improve transparency
+12
+3. A database which contains pre-ICO documentation and post-ICO performance (ROI and
+lifespan)
+24
+4. A database which contains data on crowdfunding/P2P platform features useful for rating
+platform integrity and to predict fraud
+24
+5. A discussion paper for possible approaches to building a statistically valid back-testing
+framework
+24
+6. An internal database of collected (scraped) financial time series from exchanges and regional
+consolidation platforms optimised for accessibility to all partners
+24
+7. Discussion papers (DP) on the methodology for evaluating/rating ICOs and crowdfunding/P2P
+platforms and for detection/early warning about fraud/illegal behaviour with emphasis on the
+application of AI tools
+36
+8. Position papers, aimed at regulators and policy-makers, on methodology (with examples of
+formal criteria) for testing AI techniques in real-time
+36
+9. Handbook and/or wiki page describing potential approaches to tackle risk management issues
+related to blockchain assets and crowdfunding/P2P lending
+36
+10. A position paper and roadmap on mitigating risks connected with the increased use of digital
+assets
+48
+11. Methodological discussion paper on the design of stress tests for the evaluation of AI and ML
+models under shifting financial conditions to improve the robustness of models
+48
+12. Methodological discussion papers on AI models to generate “failed trials” of investment
+product producers and on quantitative strategies with the usage of the promising field of network
+data analysis
+48
+13. Four annual reports (for lay audience) distributed via local and national media
+48
+14. Key software (codes, packages) developed by each of the Working Groups in line with their
+objectives
+48
+15. An edited volume containing scientific achievements of the Action (dummy text to delete)
+48
+4
+
+
+--- Page 5 ---
+Grant Agreement Period
+Grant Agreement Period Start
+Date
+01/11/2022
+Grant Agreement Period End
+Date
+31/10/2023
+Grant Agreement Period Goals
+Number
+Grant Agreement Period Goal
+MoU Objective(s) it relates to
+GAPG 1
+Research on backtesting frameworks, digital assets
+and evalutaion of AI models under shifting financial
+conditions
+Secondary objective 2
+Secondary objective 10
+GAPG 2
+Paper on testing AI techniques
+Secondary objective 7
+Secondary objective 8
+GAPG 3
+Presentations and dissemination of research results
+on backtesting investment strategies, performance
+explanation/attribution and synthetic data generation
+Secondary objective 2
+Secondary objective 4
+Secondary objective 5
+Secondary objective 6
+Secondary objective 15
+GAPG 4
+Publications on investment and hedging strategies on
+cryptos/digital assets and on traditional assets
+accounting for ESG criteria
+Secondary objective 5
+Secondary objective 15
+GAPG 5
+Publications that tackle the issue of diversity in AI and
+Fintech
+Secondary objective 11
+Secondary objective 15
+Secondary objective 16
+GAPG 6
+Finishing ongoing publications (datathon, financial
+literacy and women in editorial board of financial
+papers)
+Secondary objective 11
+Secondary objective 15
+Secondary objective 16
+GAPG 7
+Involve associations with a diversity focus
+Secondary objective 9
+Secondary objective 15
+GAPG 8
+Annual report on the COST Action
+Secondary objective 8
+Secondary objective 9
+Secondary objective 10
+GAPG 9
+Edited volume containing achievements
+Secondary objective 8
+Secondary objective 9
+Secondary objective 10
+GAPG 10 Involve policy makers and disseminate results to them
+Secondary objective 5
+Secondary objective 9
+Secondary objective 15
+GAPG 11 Disseminate the results of the Action's activities to the
+scientific community, European institutions and to the
+general public
+Secondary objective 16
+5
+
+
+--- Page 6 ---
+Work and Budget Plan for the Grant Agreement Period
+Work and Budget Plan Summary
+A. COST Networking Tools
+EUR
+(1) Meetings
+117,889.40
+(2) Training Schools
+58,594.00
+(3) Mobility of Researchers and Innovators
+43,300.00
+(4) Presentation at Conferences organised by Third Parties
+2,000.00
+(5) Dissemination and Communication Products
+2,500.00
+(6) Other Expenses Related to Scientific Activities (OERSA)
+0.00
+B. Total Science Expenditure (sum of (1) to (6))
+224,283.40
+C. Financial and Scientific Administration and Coordination (FSAC) (max. of
+15% of B)
+33,642.51
+Total Grant (B+C)
+257,925.91
+6
+
+
+--- Page 7 ---
+Meetings
+Overview
+Meeting Title
+Meeting Type
+Dates
+Location
+ITC
+Total Cost
+(EUR)
+Diversity
+challenges and
+stakeholders'
+engagement
+Core Group Meeting,
+Working Group Meeting
+01/02/2023 -
+02/02/2023
+Cluj Napoca
+(Romania)
+Yes
+12,331.40
+Diversity
+challenges for a
+sustainable
+Fintech
+Core Group Meeting,
+Workshops/Conferences
+13/04/2023 -
+14/04/2023
+Pavia (Italy)
+No
+9,024.00
+COST FinAI -
+Fintech and AI
+in Finance -
+Policy
+implications
+Workshops/Conferences 15/05/2023 -
+16/05/2023
+Brussels
+(Belgium)
+No
+15,148.00
+COST FinAI
+WG3:
+Transparency of
+Digital Asset
+Investments
+Working Group Meeting
+26/05/2023 -
+26/05/2023
+Winterthur
+(Switzerland)
+No
+5,322.00
+Women in
+Fintech III -
+Portugal
+Workshops/Conferences 01/06/2023 -
+02/06/2023
+Lisbon
+(Portugal)
+Yes
+11,835.00
+COST FinAI
+meets Romania
+Core Group Meeting,
+Working Group Meeting
+16/06/2023 -
+16/06/2023
+N/A
+N/A
+500.00
+Machine
+Learning,
+Artificial
+Intelligence and
+Data Protection
+in Fintech
+Conference
+WG1, WG2, CG
+Core Group Meeting,
+Working Group Meeting
+06/07/2023 -
+07/07/2023
+Dublin (Ireland)
+No
+9,424.00
+Nordic AI and
+Fintech
+Core Group Meeting,
+Working Group Meeting
+10/07/2023 -
+11/07/2023
+Helsinki
+(Finland)
+No
+13,252.00
+COST FinAI -
+Fintech and AI
+in Finance - MC,
+WG and Core
+group meeting
+Core Group Meeting,
+Management Committee
+Meeting, Working Group
+Meeting
+27/09/2023 -
+28/09/2023
+Bern
+(Switzerland)
+No
+41,053.00
+Total
+117,889.40
+Details
+Title of the Meeting
+Diversity challenges and stakeholders' engagement
+Meeting Type(s)
+Core Group Meeting,Working Group Meeting
+Grant Period Goal(s) it will
+address
+Presentations and dissemination of research results on backtesting investment
+strategies, performance explanation/attribution and synthetic data
+generation,Finishing ongoing publications (datathon, financial literacy and women
+in editorial board of financial papers),Annual report on the COST Action,Edited
+volume containing achievements
+7
+
+
+--- Page 8 ---
+Description
+As this will be the first in person meeting of the Action in 2023, during the Core
+Group meeting (approx. 2 hours) the status of the Action will be assessed,
+especially in terms of the objectives and deliverables - what was achieved in GP2
+and what is running or has to be achieved in GP3. The Diversity Team will meet
+after, to assess the diversity report for GP2 and prepare the strategy for GP3,
+especially to prepare the Women in Fintech III Conference in May 2023, in
+Coimbra, Portugal. Additionally, a special paper session will be dedicated to
+presentation of research conducted by the diversity team. WG1 and WG2 will meet
+in parallel on the 2nd day, to discuss research conducted in each of them, on one
+hand, and their strategies related to objectives and deliverables, on the other. This
+meeting is also related to the Action’s Strategy to engage stakeholders - related to
+this, the status of the strategy’s fulfilment will be assessed and actions to enhance
+cooperation with the stakeholders will be discussed. For this, the meeting will end
+with a round table with the representatives of the Romanian FinTech sector and
+the IT companies working in the field. One of the meeting’s goals is to build the
+action plan for the construction of the first FinTech report for the Balkans, once
+again related to the Action’s strategy to engage stakeholders. Additionally, a
+special session dedicated to PhD students and young researchers will be
+organized. https://www.meetup.com/fintech_ai_in_finance/events/289867639/?
+isFirstPublish=true Support, taking COST FinAI contributions into account, will be
+prioritised: 1) young researchers from ITC 2) ITC 3) young researchers non-ITC.
+Senior researchers from non-ITC are expected to use their own travel funds.
+Output(s)
+Abstracts of presentations will be made available online (upon permission by
+authors). Strategies of the Action for GP3 will be monitored in terms of
+implementation and reporting, along with starting constructing the strategies for
+GP4. More specifically, participants will work on the diversity strategy, the
+stakeholders one and the WG1 and WG2 ones. The event will also allow
+interaction among its members. Societal implications in the Fintech sector with
+research proposals. Deliverable 8 will be finished. Report on good examples and
+best practices for a transparent finance industry with guidelines to improve
+transparency
+Location
+Cluj Napoca (Romania)
+ITC
+Yes
+Start Date
+2023-02-01 09:00:00
+End Date
+2023-02-02
+17:00:00
+Duration
+2 days
+Attendance Type
+Hybrid
+Total number of expected
+participants
+40
+Number of participants expected to be
+reimbursed from COST funds
+15
+Daily allowance (EUR)
+187.00
+Average number of daily allowances per
+participant
+0
+Average Long-Distance
+Costs (EUR)
+688.76
+Average reimbursement
+(per participant) (EUR)
+688.76
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+10,331.40
+Total unique participants
+to be accounted for LOS
+grant
+40
+Local Organiser Support (EUR)
+2,000.00
+Total cost of the meeting
+(EUR)
+12,331.40
+Title of the Meeting
+Diversity challenges for a sustainable Fintech
+Meeting Type(s)
+Core Group Meeting,Workshops/Conferences
+8
+
+
+--- Page 9 ---
+Grant Period Goal(s) it will
+address
+Publications that tackle the issue of diversity in AI and Fintech,Finishing ongoing
+publications (datathon, financial literacy and women in editorial board of financial
+papers),Involve associations with a diversity focus,Annual report on the COST
+Action,Edited volume containing achievements,Disseminate the results of the
+Action's activities to the scientific community, European institutions and to the
+general public
+Description
+https://www.meetup.com/fintech_ai_in_finance/events/288557097/ Core group
+meeting to discuss the current status of MoU and GP3 achievements. The event
+will be hybrid to ensure maximum participation Diversity meeting to discuss
+diversity goals and achievements and discuss potential adjustments. The diversity
+meeting will focus on these topics • Women in fintech III conference • ongoing
+projects and initiatives by diversity team members (e.g. VMG awarded to diversity
+team members, research projects run by members, etc.) • any other issues 2nd
+COST FinAI workshop on Environmental finance for the common good - Fintech
+and AI for more sustainable societies: event dedicated to opportunities and
+obstacles to more inclusive and sustainable societies prompted by Fintech and AI
+tools applied to finance and investment evaluation in a multidisciplinary setting.
+Workshop with COST FinAI organizers and speakers (more than 70%) One
+session dedicated to PhD students and ECI. Each presenter will be assigned a
+discussant to get feedback. The activity hence aims at bringing together
+academics, early career investigators, phd students, the industry and policy
+makers to discuss around the issue of sustainability and if and how Fintech
+applications pose an opportunity or a threat to a more sustainable and more
+inclusive society. New methodologies that employ artificial intelligence in this area
+will also be presented and discussed. Support, taking COST FinAI contributions
+into account, will be prioritised: 1) young researchers from ITC 2) ITC 3) young
+researchers non-ITC. Senior researchers from non-ITC are expected to use their
+own travel funds.
+Output(s)
+Abstracts of papers presented will be made available online on the website of the
+event (upon permission by authors) A selection of papers presented during the
+conference, relevant to the COST FinAI topics, will be invited for submission in
+open access journals. The event will allow interaction among its members during
+breaks and social events organised; discuss state of the art and future planning to
+successfully reach CA19130 objectives; Planning of future events by cost diversity
+team to reach CA19130 objectives in terms of diversity. Deliverable 2. will be
+done. A database which contains data on crowdfunding/P2P platform features
+useful for rating platform integrity and to predict fraud
+Location
+Pavia (Italy)
+ITC
+No
+Start Date
+2023-04-13 13:00:00
+End Date
+2023-04-14
+16:00:00
+Duration
+2 days
+Attendance Type
+Hybrid
+Total number of expected
+participants
+40
+Number of participants expected to be
+reimbursed from COST funds
+8
+Daily allowance (EUR)
+201.00
+Average number of daily allowances per
+participant
+3
+Average Long-Distance
+Costs (EUR)
+400.00
+Average reimbursement
+(per participant) (EUR)
+1,003.00
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+8,024.00
+Total unique participants
+to be accounted for LOS
+grant
+40
+Local Organiser Support (EUR)
+1,000.00
+Total cost of the meeting
+(EUR)
+9,024.00
+9
+
+
+--- Page 10 ---
+Title of the Meeting
+COST FinAI - Fintech and AI in Finance - Policy implications
+Meeting Type(s)
+Workshops/Conferences
+Grant Period Goal(s) it will
+address
+Involve policy makers and disseminate results to them,Disseminate the results of
+the Action's activities to the scientific community, European institutions and to the
+general public
+Description
+The Workshop (two full days) shall highlight the findings of the Action as it relates
+to policy implications. Representatives from the WG will present their findings and
+put them into context of policy implications. Policy makers from the EU will be
+invited to attend and show their point of view and to discuss with Action
+participants. Support, taking COST FinAI contributions into account, will be
+prioritised: 1) young researchers from ITC 2) ITC 3) young researchers non-ITC.
+Senior researchers from non-ITC are expected to use their own travel funds.
+Output(s)
+Dissemination of the COST Action results to policy makers, white paper on policy
+implications of our Action. Receiving input from policykmakers. Deliverable 4 will
+be done. A position paper and roadmap on mitigating risks connected with the
+increased use of digital assets Obj 3. To receive input from regulators and
+practitioners' communities and to validate results with regard to increasing
+transparency of artificial intelligence applications will be tackled.
+Location
+Brussels (Belgium)
+ITC
+No
+Start Date
+2023-05-15 09:00:00
+End Date
+2023-05-16 17:00:00
+Duration
+2 days
+Attendance Type
+Hybrid
+Total number of expected
+participants
+50
+Number of participants
+expected to be
+reimbursed from COST
+funds
+14
+Daily allowance (EUR)
+220.00
+Average number of daily
+allowances per participant
+3
+Average Long-Distance
+Costs (EUR)
+422.00
+Average reimbursement
+(per participant) (EUR)
+1,082.00
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+15,148.00
+Total unique participants
+to be accounted for LOS
+grant
+40
+Local Organiser Support
+(EUR)
+0.00
+Total cost of the meeting
+(EUR)
+15,148.00
+Title of the Meeting
+COST FinAI WG3: Transparency of Digital Asset Investments
+Meeting Type(s)
+Working Group Meeting
+Grant Period Goal(s) it will
+address
+Research on backtesting frameworks, digital assets and evalutaion of AI models
+under shifting financial conditions
+10
+
+
+--- Page 11 ---
+Description
+Working Group 3 of the COST Action CA 19130 Fintech and Artificial Intelligence
+in Finance will organise an interdisciplinary meeting open to all working groups of
+the Action. In line with the item “Capacity Building 2”, we intend to bring together
+experts from technological, quantitative, and economic fields in order to discuss
+research questions relating to digital assets and investing that can best be
+addressed in an interdisciplinary setting. Moreover, there will be ample time for
+open discussions regarding past accomplishments and current deliverables of the
+Action, as well as future joint research projects. In particular, we will address
+Deliverables 4 and 10 of the Action. Support, taking COST FinAI contributions into
+account, will be prioritised: 1) young researchers from ITC 2) ITC 3) young
+researchers non-ITC. Senior researchers from non-ITC are expected to use their
+own travel funds.
+Output(s)
+The working group meeting will facilitate the establishment of joint research
+projects with publications as outputs. The face-to-face working group meeting will
+strengthen the cooperation among researchers and across working groups.
+Location
+Winterthur (Switzerland)
+ITC
+No
+Start Date
+2023-05-26 09:00:00
+End Date
+2023-05-26 17:00:00
+Duration
+1 day
+Attendance Type
+Hybrid
+Total number of expected
+participants
+40
+Number of participants
+expected to be
+reimbursed from COST
+funds
+6
+Daily allowance (EUR)
+209.00
+Average number of daily
+allowances per participant
+2
+Average Long-Distance
+Costs (EUR)
+469.00
+Average reimbursement
+(per participant) (EUR)
+887.00
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+5,322.00
+Total unique participants
+to be accounted for LOS
+grant
+20
+Local Organiser Support
+(EUR)
+0.00
+Total cost of the meeting
+(EUR)
+5,322.00
+Title of the Meeting
+Women in Fintech III - Portugal
+Meeting Type(s)
+Workshops/Conferences
+Grant Period Goal(s) it will
+address
+Publications that tackle the issue of diversity in AI and Fintech,Finishing ongoing
+publications (datathon, financial literacy and women in editorial board of financial
+papers),Involve associations with a diversity focus
+Description
+The event is titled Women in Fintech and AI and it is the third edition of the annual
+event organised by the diversity team of CA19130. The event aims at bringing
+together academia, industry and policy maker to discuss gender equality and how
+AI and Fintech pose opportunities and challenges to a more inclusive society.
+https://www.meetup.com/en-US/fintech_ai_in_finance/events/288557097/ I added:
+Support, taking COST FinAI contributions into account, will be prioritised: 1) young
+researchers from ITC 2) ITC 3) young researchers non-ITC. Senior researchers
+from non-ITC are expected to use their own travel funds.
+11
+
+
+--- Page 12 ---
+Output(s)
+Greater awareness of the role of Women in the financial industry and in the
+technological development Deliverable 15 will be done. Strategy to engage
+stakeholders in the Action (including revisions in month 24 and 36) by including
+policy makers, associations, and the industry, and Obj 3.To receive input from
+regulators and practitioners' communities and to validate results with regard to
+increasing transparency of artificial intelligence applications. And Obj 9- Bridging
+the gap between practitioners from the finance industry, academics and regulators
+by setting up a common knowledge exchange platform. And Obj 15 Disseminate
+the results of the Action's activities to the scientific community, European
+institutions and to the general public.
+Location
+Lisbon (Portugal)
+ITC
+Yes
+Start Date
+2023-06-01 09:00:00
+End Date
+2023-06-02 17:00:00
+Duration
+2 days
+Attendance Type
+Hybrid
+Total number of expected
+participants
+40
+Number of participants
+expected to be
+reimbursed from COST
+funds
+11
+Daily allowance (EUR)
+195.00
+Average number of daily
+allowances per participant
+3
+Average Long-Distance
+Costs (EUR)
+400.00
+Average reimbursement
+(per participant) (EUR)
+985.00
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+10,835.00
+Total unique participants
+to be accounted for LOS
+grant
+40
+Local Organiser Support
+(EUR)
+1,000.00
+Total cost of the meeting
+(EUR)
+11,835.00
+Title of the Meeting
+COST FinAI meets Romania
+Meeting Type(s)
+Core Group Meeting,Working Group Meeting
+Grant Period Goal(s) it will
+address
+Presentations and dissemination of research results on backtesting investment
+strategies, performance explanation/attribution and synthetic data
+generation,Involve policy makers and disseminate results to them,Disseminate the
+results of the Action's activities to the scientific community, European institutions
+and to the general public
+Description
+1 plenary sessions of the Core group – 2h · 1 plenary session for WG1 – 2h · 1
+plenary session for WG2 – 2h · 1 plenary session for WG3 – 2h · 1 plenary
+session – meeting with the Romanian FinTech Sector – 2h . Participation to
+sessions of ICESS 2022 possible for free (if schedule permits) The main goal of
+the 1-day event is to facilitate the meeting of: 1. The core group members to
+discuss the status of the Action, the status of the deliverables and construction of
+GP3 report. 2. WGs meetings to evaluate the achievements of the group, build the
+WG’s reports and strategy for GP4, presentation of the research conducted by the
+group members in order to enhance cooperation. 3. Meeting the Romanian
+FinTech representatives and the local IT companies working in the field in order to
+enhance the cooperation with the stakeholders. 4. Attend the sessions of ICESS
+2022 in order to increase the visibility of the network and attract new members for
+GP4 (if it fits to the schedule) The link is: https://icess.ase.ro/5th-icess/program/
+COST events will be scheduled entirely outside relevant sessions for our network.
+ICESS stands for 5th International Conference on Economics and Social
+Sciences. Support, taking COST FinAI contributions into account, will be
+prioritised: 1) young researchers from ITC 2) ITC 3) young researchers non-ITC.
+Senior researchers from non-ITC are expected to use their own travel funds.
+12
+
+
+--- Page 13 ---
+Output(s)
+Abstracts of presentations will be made available online (upon permission by
+authors) Implication in the Fintech sector with research proposals. Facilitation of
+the development of the network.
+Start Date
+2023-06-16 09:00:00
+End Date
+2023-06-16 17:00:00
+Duration
+1 day
+Attendance Type
+Virtual
+Total number of expected
+participants
+100
+Number of participants
+expected to be
+reimbursed from COST
+funds
+0
+Daily allowance (EUR)
+0.00
+Average number of daily
+allowances per participant
+2
+Average Long-Distance
+Costs (EUR)
+0.00
+Average reimbursement
+(per participant) (EUR)
+0.00
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+0.00
+Total unique participants
+to be accounted for LOS
+grant
+100
+Local Organiser Support
+(EUR)
+500.00
+Total cost of the meeting
+(EUR)
+500.00
+Title of the Meeting
+Machine Learning, Artificial Intelligence and Data Protection in Fintech Conference
+WG1, WG2, CG
+Meeting Type(s)
+Core Group Meeting,Working Group Meeting
+Grant Period Goal(s) it will
+address
+Involve associations with a diversity focus,Involve policy makers and disseminate
+results to them,Disseminate the results of the Action's activities to the scientific
+community, European institutions and to the general public
+Description
+The meeting will take place in hybrid form from Dublin. During the meeting the
+core group will discuss the ongoing preparation for contributing towards informing
+policy at an EU level regarding the development of AI for Fintech with a particular
+focus on developing AI Models and XAI that adhere to the GDPR. It will take into
+consideration the outputs from the meeting in Brussels in May (COST FinAI -
+Fintech and AI in Finance - Policy implications) and expand on them. Additionally,
+the working groups will continue to collaborate to ensure the publication of joint
+papers across the network and work on the deliverables of the action that are
+related to the objectives of each WG. The conference will invite all WG members
+to present their research. The event will be hybrid, including face-to-face events in
+Dublin and the option to attend online. 2 days with: · 1 plenary sessions of the
+Core group – 2h · 1 plenary session for Policy group – 3 h · 1 plenary session for
+WG1 – 2h · 1 plenary session for WG2 – 2h · 1 plenary session for WG2 – 2h · 1
+plenary session – meeting with members from the Irish FinTech Sector – 2h The
+primary objective of this meeting is to inform and advance Fin-AI’s policy agenda
+The core group members will discuss the on-going status of the Action. They will
+look at the progress regarding the deliverables and construction of GP3 report.
+WGs meetings will take place to review the achievements of the group, working on
+the WG’s reports and strategy for GP4. The conference will present the working
+research of the members of most of the WGs with a view to enhancing
+cooperation and exchange of ideas.
+13
+
+
+--- Page 14 ---
+Output(s)
+A policy paper around AI and data protection policy, which will satisfy the 7th
+deliverable of the Action (allocated to WG1 and WG2) for providing position
+papers, aimed at regulators and policy-makers, on methodology (with examples of
+formal criteria) for testing AI techniques in real-time will be finished. A dedicated
+website will make the presentations and results available. Substantial transfer of
+knowledge from experienced researchers to PhD students (and vice versa) who
+will have travelled from numerous COST countries (at least 5 countries). We
+expect a long-lasting effect on social interactions from this kind of event. Improved
+understanding of academic state-of-the art in AI for Finance, training slides,
+presentation slides and new research challenges for ML in Finance developed by
+participants available on the Action website.
+Location
+Dublin (Ireland)
+ITC
+No
+Start Date
+2023-07-06 14:00:00
+End Date
+2023-07-07 17:00:00
+Duration
+2 days
+Attendance Type
+Hybrid
+Total number of expected
+participants
+40
+Number of participants
+expected to be
+reimbursed from COST
+funds
+8
+Daily allowance (EUR)
+211.00
+Average number of daily
+allowances per participant
+3
+Average Long-Distance
+Costs (EUR)
+420.00
+Average reimbursement
+(per participant) (EUR)
+1,053.00
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+8,424.00
+Total unique participants
+to be accounted for LOS
+grant
+40
+Local Organiser Support
+(EUR)
+1,000.00
+Total cost of the meeting
+(EUR)
+9,424.00
+Title of the Meeting
+Nordic AI and Fintech
+Meeting Type(s)
+Core Group Meeting,Working Group Meeting
+Grant Period Goal(s) it will
+address
+Research on backtesting frameworks, digital assets and evalutaion of AI models
+under shifting financial conditions,Paper on testing AI techniques,Publications on
+investment and hedging strategies on cryptos/digital assets and on traditional
+assets accounting for ESG criteria,Annual report on the COST Action,Edited
+volume containing achievements
+Description
+The meeting would take place in a hybrid form in Helsinki. During the meeting the
+working group will discuss the ongoing preparation of joint publications and work
+on the deliverables of the action that are related to the objectives of WG2. WG2
+members will also present some of their research. day 1 WG meeting discussing
+ongoing activities 3 hours CG meeting discussing action activities 3 hours 2nd day
+CG future activity planning and discussion 2 hours WG presentations of research
+and ongoing papers 2 hours CG and WG working on deliverables and objectives 3
+hours Support, taking COST FinAI contributions into account, will be prioritised: 1)
+young researchers from ITC 2) ITC 3) young researchers non-ITC. Senior
+researchers from non-ITC are expected to use their own travel funds.
+Output(s)
+The output of the meeting will be the progress on the action deliverables and the
+joint publications of the WG. In particular, deliverable 6 Methodological discussion
+paper on the design of stress tests for the evaluation of AI and ML models under
+shifting financial conditions to improve the robustness of models will be done.
+Location
+Helsinki (Finland)
+ITC
+No
+Start Date
+2023-07-10 09:00:00
+End Date
+2023-07-11 17:00:00
+Duration
+2 days
+Attendance Type
+Hybrid
+14
+
+
+--- Page 15 ---
+Total number of expected
+participants
+40
+Number of participants
+expected to be
+reimbursed from COST
+funds
+12
+Daily allowance (EUR)
+207.00
+Average number of daily
+allowances per participant
+3
+Average Long-Distance
+Costs (EUR)
+400.00
+Average reimbursement
+(per participant) (EUR)
+1,021.00
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+12,252.00
+Total unique participants
+to be accounted for LOS
+grant
+40
+Local Organiser Support
+(EUR)
+1,000.00
+Total cost of the meeting
+(EUR)
+13,252.00
+Title of the Meeting
+COST FinAI - Fintech and AI in Finance - MC, WG and Core group meeting
+Meeting Type(s)
+Core Group Meeting,Management Committee Meeting,Working Group Meeting
+Grant Period Goal(s) it will
+address
+Research on backtesting frameworks, digital assets and evalutaion of AI models
+under shifting financial conditions,Publications that tackle the issue of diversity in
+AI and Fintech,Finishing ongoing publications (datathon, financial literacy and
+women in editorial board of financial papers),Involve associations with a diversity
+focus,Annual report on the COST Action,Edited volume containing
+achievements,Involve policy makers and disseminate results to them,Disseminate
+the results of the Action's activities to the scientific community, European
+institutions and to the general public
+Description
+During the Core Group meeting (approx. 0.5 days) the report to the MC about the
+Action status will be prepared. Special focus will be given to catching up on the
+deliverables for GP3 and how the budget was spent. The WGs will meet on day 2
+(approx. 1 day) to discuss their tasks and upcoming outputs and then report to the
+plenary (2h). WG1 will focus on blockchain and cryptocurrencies. WG2 will report
+on the joint paper initiatives. WG3 will focus on the deliverables related to
+transparency of investment products. WG2 will agree on the review and discuss
+how to attract participation. All three WGs will also brainstorm on their societal
+impacts. The MC (approx. 0.5 days) on day 3 will discuss the progress made
+during GP3 and the upcoming grant period 4. The afternoon of day 3 is dedicated
+to research presentations of all 3 WGs as well as invited guest speakers. Core
+group members are not eligible for reimbursement for the MC meeting. Any travel
+reimbursement, even if a COST invitation was sent, is conditional on enough
+budget being available at the end of GP3. Support, taking COST FinAI
+contributions into account, will be prioritised: 1) young researchers from ITC 2)
+ITC 3) young researchers non-ITC. Senior researchers from non-ITC are expected
+to use their own travel funds. In case of budget restrictions, travel reimbursement
+is limited to one MC member by country. Travel reimbursement is also conditional
+on accepting the e-COST invite within 14 days of issuance. Bern Business School
+will cover the reimbursement of up to 10k EUR additionally (including Swiss
+mobility grants (SEMP. EU equivalent for Erasmus+)). Participants are
+encouraged to first use Swiss Mobility grants that Bern Business School can
+provide to a few universities.
+Output(s)
+Draft progress report for GP3. Draft Work and Budget Plan for GP 4. Draft
+objectives for GP4. Draft plans for improving outreach and impact of all WGs. A
+dedicated website will make the presentations of day 3 and the results available.
+We expect a long-lasting effect on social interactions from this kind of event. New
+research challenges for ML in Finance developed by participants available on the
+Action website. Deliverable 14. An edited volume containing scientific
+achievements of the Action will be set up.
+Location
+Bern (Switzerland)
+ITC
+No
+15
+
+
+--- Page 16 ---
+Start Date
+2023-09-27 09:00:00
+End Date
+2023-09-28 17:00:00
+Duration
+2 days
+Attendance Type
+Hybrid
+Total number of expected
+participants
+120
+Number of participants
+expected to be
+reimbursed from COST
+funds
+39
+Daily allowance (EUR)
+209.00
+Average number of daily
+allowances per participant
+3
+Average Long-Distance
+Costs (EUR)
+400.00
+Average reimbursement
+(per participant) (EUR)
+1,027.00
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+40,053.00
+Total unique participants
+to be accounted for LOS
+grant
+120
+Local Organiser Support
+(EUR)
+1,000.00
+Total cost of the meeting
+(EUR)
+41,053.00
+16
+
+
+--- Page 17 ---
+Training Schools
+Overview
+Title of the Training
+School
+Dates
+Location
+ITC
+Total Cost (EUR)
+COST FinAI Training
+school Data science
+for sustainable
+economics and
+finance
+20/02/2023 -
+24/02/2023
+Berlin (Germany)
+No
+7,688.00
+COST FinAI -
+Fintech and AI in
+Finance - Training
+School for the latest
+technologies and
+upcoming
+challenges
+26/04/2023 -
+28/04/2023
+Tirana (Albania)
+Yes
+15,950.00
+COST FinAI -
+Fintech and AI in
+Finance - Training
+School on current
+state-of-the-art and
+future challenges -
+Risks and Digital A
+19/06/2023 -
+23/06/2023
+Enschede
+(Netherlands)
+No
+17,660.00
+Advanced Statistical
+Modelling for
+Fintech, financial
+inclusion and
+inequality (AFFINE)
+13/09/2023 -
+15/09/2023
+Naples (Italy)
+No
+17,296.00
+Total
+58,594.00
+Details
+Title of the Training
+School
+COST FinAI Training school Data science for sustainable economics and finance
+Grant Period Goal(s) it will
+address
+Paper on testing AI techniques,Publications on investment and hedging strategies
+on cryptos/digital assets and on traditional assets accounting for ESG
+criteria,Involve associations with a diversity focus,Disseminate the results of the
+Action's activities to the scientific community, European institutions and to the
+general public
+17
+
+
+--- Page 18 ---
+Description
+The Training School in Berlin is targeted at students and young researchers and
+all interested in the contemporary topic of sustainable finance, more specifically
+(Measuring climate risk for financial applications). The instructors will be mainly
+selected from the Action and across all working groups. The participants of this
+School will learn the main challenges and solutions in the field of sustainable
+finance: incorporation of climate risks to stress-testing, risk scores, climate value-
+at-risk. Plan: We will invite Students from Ukraine from university funds.
+Established researchers will be expected to use their own travel funds, especially
+from non-ITC countries. Hybrid; 5 days, each day 3 hours in the morning and 3
+hours in the afternoon Monday morning - Arrival and welcome; Monday afternoon
+Tuesday morning - lectures from invited speakers (academy and industry);
+Tuesday Afternoon - Introduction to the Project (Dataset, tasks) Wednesday,
+Thursday Morning - Work in groups on projects Thursday afternoon - Social event
+(Preliminary: tour to the industry) Friday morning: Presentations and discussion of
+Projects’ results, evaluation.. Wednesday afternoon: Social event Tuesday
+morning, Thursday morning: Mini-workshop Friday afternoon: feedback, wrap-up
+Preliminary lectures topics: Introduction to data-based mathematical modelling,
+introduction to data science, introduction to topics in sustainable finance,
+Programming in R & Python (with focus on stat finance), industry talks from
+financial institutions on motivation of climate risk modelling for investment projects.
+All payment is conditional on trainers to come from at least 5 different COST
+countries, which each contributing substantially. Support, taking COST FinAI
+contributions into account, will be prioritised: 1) young researchers from ITC 2)
+ITC 3) young researchers non-ITC. Senior researchers from non-ITC are expected
+to use their own travel funds. Students that are provided housing by the university
+will have the daily allowance reduced by 60%.
+Output(s)
+Results will be presented on a dedicated website. Knowledge transfer from
+experienced researchers to students (and vice versa). long-lasting effect on social
+interactions due to planned activities. Improved understanding of FinTech issues
+Newsletter of FinAI Webpage on WG1 fin-ai.
+Location
+Berlin (Germany)
+ITC
+No
+Start Date
+2023-02-20 09:00:00
+End Date
+2023-02-24 17:00:00
+Duration
+5 days
+Attendance Type
+Hybrid
+Participant information
+Trainers
+Trainees
+• Daily allowance (EUR)
+212.00
+212.00
+• Average number of daily allowances per
+participant
+6
+6
+• Average Long-Distance Costs (EUR)
+400.00
+• Average reimbursement (EUR)
+1,672.00
+1,672.00
+• Total number of expected trainers/trainees
+10
+10
+• Trainers/trainees expected to be reimbursed
+from COST funds
+2
+2
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+6,688.00
+Total unique participants
+to be accounted for LOS
+grant
+10
+Local Organiser Support
+(EUR)
+1,000.00
+Total cost of the Training
+School (EUR)
+7,688.00
+Title of the Training
+School
+COST FinAI - Fintech and AI in Finance - Training School for the latest
+technologies and upcoming challenges
+18
+
+
+--- Page 19 ---
+Grant Period Goal(s) it will
+address
+Research on backtesting frameworks, digital assets and evalutaion of AI models
+under shifting financial conditions,Paper on testing AI techniques,Presentations
+and dissemination of research results on backtesting investment strategies,
+performance explanation/attribution and synthetic data generation,Disseminate
+the results of the Action's activities to the scientific community, European
+institutions and to the general public
+Description
+3 day doctoral training school on COST topics. The challenges of Fintech and
+Artificial Intelligence in Finance will be highlighted for young researchers as well as
+others interested in the subject during this Training School. It will also cover the
+most recent research on how to improve it, with a particular focus on extending it
+towards Smart Financial services. The future of finance and digital finance will be
+discussed with other experts. Students will learn about the problems and potential
+solutions in this subject, as well as the most modern AI approaches, their
+shortcomings, and new applications, using the MoU of this Action as a practical
+example. All payment is conditional on organizers to be from 5 COST countries
+and trainers to come from at least 5 different COST countries, that contribute at
+least 60%, with each country at most 20%. Support, taking COST FinAI
+contributions into account, will be prioritised: 1) young researchers from ITC 2)
+ITC 3) young researchers non-ITC. Senior researchers from non-ITC are expected
+to use their own travel funds.
+Output(s)
+The presentations and results will be made available on a web portal. Significant
+information transfer from participants. Long lasting impact on social relations.
+Enhanced knowledge for the latest technologies and upcoming challenges.
+Increasing the interest of scientific researchers in the field of Fintech and AI in
+Finance. Deliverable 10 will be finished.
+Location
+Tirana (Albania)
+ITC
+Yes
+Start Date
+2023-04-26 09:00:00
+End Date
+2023-04-28 14:00:00
+Duration
+3 days
+Attendance Type
+Hybrid
+Participant information
+Trainers
+Trainees
+• Daily allowance (EUR)
+180.00
+180.00
+• Average number of daily allowances per
+participant
+4
+4
+• Average Long-Distance Costs (EUR)
+430.00
+• Average reimbursement (EUR)
+1,150.00
+1,150.00
+• Total number of expected trainers/trainees
+10
+40
+• Trainers/trainees expected to be reimbursed
+from COST funds
+7
+6
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+14,950.00
+Total unique participants
+to be accounted for LOS
+grant
+20
+Local Organiser Support
+(EUR)
+1,000.00
+Total cost of the Training
+School (EUR)
+15,950.00
+Title of the Training
+School
+COST FinAI - Fintech and AI in Finance - Training School on current state-of-the-
+art and future challenges - Risks and Digital A
+19
+
+
+--- Page 20 ---
+Grant Period Goal(s) it will
+address
+Research on backtesting frameworks, digital assets and evalutaion of AI models
+under shifting financial conditions,Presentations and dissemination of research
+results on backtesting investment strategies, performance explanation/attribution
+and synthetic data generation,Publications on investment and hedging strategies
+on cryptos/digital assets and on traditional assets accounting for ESG
+criteria,Annual report on the COST Action,Edited volume containing
+achievements,Disseminate the results of the Action's activities to the scientific
+community, European institutions and to the general public
+Description
+This Training School will highlight to young researchers but also to others
+interested in the topic, the challenges of Fintech and Artificial Intelligence in
+Finance and will discuss the latest findings on how to improve it, with a special
+focus on extending this towards Digital Finance. The trainers will be mainly
+selected from the Action, across all working groups. Additional expertise will be
+invited to discuss the future of Finance, related to Digital Finance. Using the MoU
+of this Action as a hands-on example, trainees will learn to understand both
+challenges and solutions in this field, to learn most recent AI techniques and their
+short-comings as well as recent applications. Financial support will be provided to
+PhD students, with priority to improve gender balance and for students from ITC
+countries. Established researchers will have to use their own travel funds,
+especially from non-ITC countries. Hybrid; 5 days, each day 3 hours in the
+morning and 3 hours in the afternoon Monday morning, Tuesday Afternoon,
+Wednesday morning, Thursday afternoon: PhD sessions Monday afternoon:
+Invited guest lectures Wednesday afternoon: Social event Tuesday morning,
+Thursday morning: Mini-workshop Friday morning: Summary, feedback, wrap-up
+Support, taking COST FinAI contributions into account, will be prioritised: 1) young
+researchers from ITC 2) ITC 3) young researchers non-ITC. Senior researchers
+from non-ITC are expected to use their own travel funds.
+Output(s)
+The event brings together member of the cost action and also contributes to the
+following MoU objectives: by including participants from different areas and
+disciplines, and involve possibly new members currently outside the CA19130
+network, by organising a session dedicated to ECI and PhD students to receive
+feedback by discussants and the audience, Geographical, age and gender
+balance will be taken into account when accepting PhD students. A position paper
+and roadmap on mitigating risks connected with the increased use of digital
+assets A dedicated website will make the presentations and results available.
+Substantial transfer of knowledge from experienced researchers to PhD students
+(and vice versa). We expect a long-lasting effect on social interactions from this
+kind of event. Improved understanding of academic state-of-the art in AI for
+Finance, training slides, presentation slides and new research challenges for ML
+in Finance developed by participants available on the Action website. Deliverable
+11 for GP3 will be done after the event.
+Location
+Enschede (Netherlands)
+ITC
+No
+Start Date
+2023-06-19 09:00:00
+End Date
+2023-06-23 17:00:00
+Duration
+5 days
+Attendance Type
+Hybrid
+Participant information
+Trainers
+Trainees
+• Daily allowance (EUR)
+211.00
+211.00
+• Average number of daily allowances per
+participant
+6
+6
+• Average Long-Distance Costs (EUR)
+400.00
+• Average reimbursement (EUR)
+1,666.00
+1,666.00
+• Total number of expected trainers/trainees
+10
+15
+• Trainers/trainees expected to be reimbursed
+from COST funds
+5
+5
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+16,660.00
+Total unique participants
+to be accounted for LOS
+grant
+25
+20
+
+
+--- Page 21 ---
+Local Organiser Support
+(EUR)
+1,000.00
+Total cost of the Training
+School (EUR)
+17,660.00
+Title of the Training
+School
+Advanced Statistical Modelling for Fintech, financial inclusion and inequality
+(AFFINE)
+Grant Period Goal(s) it will
+address
+Publications on investment and hedging strategies on cryptos/digital assets and on
+traditional assets accounting for ESG criteria,Publications that tackle the issue of
+diversity in AI and Fintech,Involve associations with a diversity focus,Annual
+report on the COST Action,Edited volume containing achievements,Involve policy
+makers and disseminate results to them,Disseminate the results of the Action's
+activities to the scientific community, European institutions and to the general
+public
+Description
+The Training School in Advanced Statistical Modelling for Fintech, financial
+inclusion and inequality is offered by University of Naples Federico II and is hosted
+by the Laboratory for Statistical Data Analysis within the Department of Political
+Science, University of Naples Federico II in September 2023 (13, 14, 15). The
+School is designed for COST members, stakeholders, researchers, PhD students,
+and possibly brilliant MSc graduates / final-year students interested in Statistics,
+Probability, Computer Science, Applied Mathematics, and related areas.The
+trainers have been selected from the Action, across all working groups. Among
+participants the school will aim at a 50% gender representation and include
+members from at least 5 different countries, including ITC members. Preliminary
+availability by Albania, Bulgaria, France, Greece, Italy, Ireland, Romania, Turkey,
+Macedonia. The aim of the Training School (TS) AFFINE is to establish a track of
+high level courses on advanced and cutting-edge topics in Statistics and
+Probability with application in FinTech and Artificial Intelligence area. Expertise
+and regulators will be invited to discuss the future of Finance, related to Digital
+Finance. Participants will learn to understand both the challenges and solutions in
+this field, learn about numeracy related to the latest AI techniques, as well as the
+latest applications. The School offers lectures delivered by internationally leading
+scholars, selected from the Action, across all working groups, on the specific
+designated topic, and supervised tutorials. During the school participants analyse
+the results of a survey on ‘Knowledge and use of Fintech products’ administered
+as part of the CA19130 Action from September to December 2022 and discuss
+them also with end-user organisations. One of the objectives is to analyse data
+and assess the presence of diversity and inclusion in the fintech area through
+appropriate statistical models. Financial support will be provided to PhD and MSc
+graduates / final-year students, with priority to improve gender balance and for
+students from ITC countries. Established researchers with their own travel funds
+can join the Training School without reimbursement by the Action. Training school
+for researchers, PhDs and Master students. We will invite trainers and
+participants. 3 workshops delivered by internationally leading scholars (3h each)
+on a dedicated topic with implementations in our COST Action area will be given.
+Two Lab sessions (3h each) show how to repeat the results presented in the
+theoretical sessions through the use of open source software. One afternoon is
+dedicated to special training on transferable skills. One afternoon for social
+networking. A welcome event with a poster session where participants may show
+their research activity will also be provided. The event allows an exchange of
+information on activities even by those who are not currently part of the action.
+Last day is also dedicated to receive input from regulators (Bank of Italy) and
+practitioners' communities and to validate results with regard to increasing
+transparency of artificial intelligence and Fintech applications (obj 3; 15 - overall
+objectives). All payment is conditional on trainers to come from at least 5 different
+COST countries, that contribute at least 60%, with each country at most 20%.
+Travel reimbursement is restricted to COST members with significant contributions
+to the meeting or the Action.
+21
+
+
+--- Page 22 ---
+Output(s)
+To introduce participants to statistical models for analysing complex data
+structures from large-scale surveys consisting of multiple-choice items. Present
+parametric and non-parametric frameworks, joint methods for dimension reduction
+and clustering, statistical learning for fintech data science, data integration, data
+pre-processing and data fusion enhancing participants' understanding. A
+discussion paper for possible approaches to building a statistically valid back-
+testing framework is one of the deliverables (see point 5 GP3 - Overall
+deliverables). Methodological discussion papers on AI models to generate “failed
+trials” of investment product producers and on quantitative strategies with the
+usage of the promising field of network data analysis exchanges and regional
+consolidation platforms optimised for accessibility to all partners represent another
+AFFINE deliverable (see point 10 GP3 - Overall deliverables). Course slides and
+new solutions from open-source software packages, also developed by
+participants, will be available on the Action website. Key software (codes,
+packages) in line with WG objectives will be developed (see point 12 GP3 -
+Overall deliverables). The COST FinAI website will make the presentations and
+results available. Substantial transfer of knowledge from experienced researchers
+to PhD/master students (and vice versa). We expect a long-lasting effect on social
+interactions from this kind of event. Improved understanding of academic state-of-
+the art in AI for Finance, training slides, presentation slides and new research
+challenges for ML in Finance developed by participants available on the Action
+website. Materials (slides, data, codes) about TS AFFINE will be updated on the
+Action website. Deliverable 5 and 10 will be done at the end of the event.
+Location
+Naples (Italy)
+ITC
+No
+Start Date
+2023-09-13 14:00:00
+End Date
+2023-09-15 17:00:00
+Duration
+3 days
+Attendance Type
+Hybrid
+Participant information
+Trainers
+Trainees
+• Daily allowance (EUR)
+201.00
+201.00
+• Average number of daily allowances per
+participant
+4
+4
+• Average Long-Distance Costs (EUR)
+360.00
+• Average reimbursement (EUR)
+1,164.00
+1,164.00
+• Total number of expected trainers/trainees
+10
+20
+• Trainers/trainees expected to be reimbursed
+from COST funds
+7
+7
+Total Travel,
+Accommodation and
+Subsistence Costs (EUR)
+16,296.00
+Total unique participants
+to be accounted for LOS
+grant
+30
+Local Organiser Support
+(EUR)
+1,000.00
+Total cost of the Training
+School (EUR)
+17,296.00
+22
+
+
+--- Page 23 ---
+Mobility of Researchers and Innovators
+Grant
+Period
+Goal(s) it
+will
+address:
+Research on backtesting frameworks, digital assets and evalutaion of AI models under shifting
+financial conditions,Paper on testing AI techniques,Presentations and dissemination of research
+results on backtesting investment strategies, performance explanation/attribution and synthetic
+data generation,Publications on investment and hedging strategies on cryptos/digital assets and
+on traditional assets accounting for ESG criteria,Publications that tackle the issue of diversity in
+AI and Fintech,Finishing ongoing publications (datathon, financial literacy and women in editorial
+board of financial papers),Involve associations with a diversity focus,Annual report on the COST
+Action,Edited volume containing achievements,Involve policy makers and disseminate results to
+them,Disseminate the results of the Action's activities to the scientific community, European
+institutions and to the general public
+Description: STSMs will be strictly allocated only if the outcome is completion of a deliverable or objective that
+is not yet finished or achieved. That is in particular deliverable 3 and 5 and additional ones, as
+decided by the Grant Award Coordinator in cooperation with the Action Chair. Preference will be
+given to junior researchers and ITC countries. Proof of travel costs has to be provided. Daily
+allowance is limited to 160 EUR/ day with potential adjustments in line with the EU country
+coefficients as applied in the HE programme. Virtual grants are only awarded if they directly lead
+to the completion of a deliverable or objective. Diversity is taken into account. Deadlines will be
+every month on the 15th, response until the end of the month, mission from the next month
+onwards. All VGs need to be done jointly by at least 5 COST countries, with each country having
+a substantial contribution.
+Budget
+(EUR)
+Short Term Scientific Missions (STSM) grants
+14,000.00
+This budget would allow for approx. 7 STSM grants (based on the average costs per STSM grant spent by all
+Actions).
+Virtual Mobility grants
+29,300.00
+This budget would allow for approx. 20 Virtual Mobility grants (based on the average costs per VM grant spent by
+all Actions).
+Total
+43,300.00
+23
+
+
+--- Page 24 ---
+Presentations at Conferences organised by Third Parties
+Description: Our COST Action regularly gets invited to high-level industry, academic and policy meetings. We
+will disseminate the results of our Action there.
+Budget
+(EUR)
+ITC Conference grants
+0.00
+This budget would allow for approx. 0 ITC Conference grants (based on the average costs per ITC Conference
+grant spent by all Actions).
+Dissemination Conference grants
+2,000.00
+This budget would allow for approx. 2 Dissemination Conference grants (based on the average costs per DC grant
+spent by all Actions).
+Total
+2,000.00
+24
+
+
+--- Page 25 ---
+Dissemination and Communication Products
+Overview
+Dissemination and Communication Product
+Title
+Total Cost (EUR)
+Action Website
+Website improvement
+2,500.00
+Total (without VAT)
+2,500.00
+Details
+Dissemination and
+Communication Product:
+Action Website
+Title:
+Website improvement
+Description:
+Continous updates and improvements of the website. Budget higher than 1.5k
+EUR, since so far we have not spent anything on the website.
+Total (EUR):
+(without VAT)
+2,500.00
+Powered by TCPDF (www.tcpdf.org)
+25

@@ -1,0 +1,128 @@
+--- Page 1 ---
+ 
+Bank of Lithuania, Gedimino pr. 6, LT-01103 Vilnius, Lithuania 
+For correspondence: Totorių g. 4, LT-01121 Vilnius, Lithuania, phone: +370 5 268 0029, email: info@lb.lt 
+Information on personal data protection: https://www.lb.lt/en/personal-data-protection 
+ 
+ 
+LIETUVOS BANKAS 
+BANK OF LITHUANIA 
+ 
+ 
+Prof. Dr. Audrius Kabašinskas 
+Dept. of Mathematical Modeling 
+Kaunas University of Technology 
+Studentu 50-144, LT - 51368 
+Kaunas, Lithuania 
+ 
+ 
+     No      
+[data] No  
+ 
+ 
+ 
+Letter of Support: COST Innovators Grant (CIG) Application 
+VisionXAI: Pioneering Visual Analytics for Establishing XAI Standards in European 
+Finance with a Policy-Focused Impact 
+ 
+ 
+ 
+ 
+The Bank of Lithuania (BoL) is the central bank of Lithuania, a part of Eurosystem. The 
+mission of the Bank of Lithuania is to bring benefits to society. To accomplish this, we rely on 
+highly-qualified employees, financial and technological resources. As part of the Eurosystem, 
+we cooperate with the European Central Bank and other euro area central banks to make 
+decisions on euro area monetary policy and its implementation.  
+Implementing its strategy, BoL aims to increase the value of the financial services to the 
+consumers, to ensure sustainable growth and to keep the pace of constant progress in a 
+digital economy. 
+ 
+We are aware of the application submitted by Prof. Dr. Jörg Osterrieder from Bern Business 
+School together with partners, among which is Prof. Dr. Audrius Kabašinskas from Kaunas 
+University of Technology, for the COST Innovator Grant with the title "VisionXAI: Pioneering 
+Visual Analytics for Establishing XAI Standards in European Finance with a Policy-Focused 
+Impact," which aligns with our institution goals and activities. 
+ 
+On the project's aim and scope, we have been informed that: 
+• 
+VisionXAI seeks to develop market ready visual analytics tool that enhances the 
+interpretability and standards of XAI in the European financial sector ensuring alignment 
+with EU directives. 
+• 
+VisionXAI aims to foster trust and transparency in AI-driven financial decisions by offering 
+user-specific interpretations and visualizations. 
+• 
+Projects aims to help users to evaluate how well the data, model, and interpretations 
+adhere to current financial regulations. 
+• 
+The initiative also intends to address bias detection and mitigation within AI systems, 
+promoting fairness and data integrity. 
+ 
+We endorse the COST Innovator Grant application for VisionXAI, recognizing the impact of the 
+AI driven solutions in the financial sector. Being mindful about the consumers of the financial 
+services, we understand that explainability of AI driven decisions and services is the major 
+success factor of transparent AI use. 
+ 
+VisionXAI tool idea is well aligned with the BoL strategic directions and ambitions to promote 
+innovations in the financial sector, specifically taking into that it will be tailored for European 
+
+
+--- Page 2 ---
+financial sector and will be developed with strong user centricity in mind. 
+With this letter, we confirm that we are very interested in the proposed solution, and we look 
+forward to assessing the results of the project within the focus our organization activities. 
+ 
+Sincerely 
+ 
+ 
+ 
+ 
+Gintarė Žilinskienė 
+ 
+Head of Center for Digital Excellence of the Bank of Lithuania 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Gintarė Žilinskienė, tel.+370 667 73 685, el. p. gzilinskiene@lb.lt 

@@ -1,0 +1,1667 @@
+--- Page 1 ---
+Brussels, 24 March 2020
+COST 033/20
+DECISION
+Subject: 
+Memorandum of Understanding for the implementation of the COST Action
+“Fintech and Artificial Intelligence in Finance - Towards a transparent financial
+industry” (FinAI) CA19130
+The COST Member Countries and/or the COST Cooperating State will find attached the Memorandum of
+Understanding for the COST Action Fintech and Artificial Intelligence in Finance - Towards a transparent
+financial industry approved by the Committee of Senior Officials through written procedure on 24 March
+2020.
+
+
+--- Page 2 ---
+MEMORANDUM OF UNDERSTANDING
+For the implementation of a COST Action designated as
+COST Action CA19130
+FINTECH AND ARTIFICIAL INTELLIGENCE IN FINANCE - TOWARDS A TRANSPARENT FINANCIAL
+INDUSTRY (FinAI)
+The COST Member Countries and/or the COST Cooperating State, accepting the present Memorandum of
+Understanding (MoU) wish to undertake joint activities of mutual interest and declare their common
+intention to participate in the COST Action (the Action), referred to above and described in the Technical
+Annex of this MoU.
+The Action will be carried out in accordance with the set of COST Implementation Rules approved by the
+Committee of Senior Officials (CSO), or any new document amending or replacing them:
+a.  “Rules for Participation in and Implementation of COST Activities” (COST 132/14 REV2);
+b.  “COST Action Proposal Submission, Evaluation, Selection and Approval” (COST 133/14 REV);
+c.  “COST Action Management, Monitoring and Final Assessment” (COST 134/14 REV2);
+d.  “COST International Cooperation and Specific Organisations Participation” (COST 135/14 REV).
+The main aim and objective of the Action is to establish a large and interconnected community across
+academia, public institutions and industry focusing on Financial Technology and Artificial Intelligence,
+improving transparency in financial services, especially in and through FinTech, in financial modelling and
+investment performance evaluation. This will be achieved through the specific objectives detailed in the
+Technical Annex.
+The economic dimension of the activities carried out under the Action has been estimated, on the basis of
+information available during the planning of the Action, at EUR 80 million in 2019.
+The MoU will enter into force once at least seven (7) COST Member Countries and/or COST Cooperating
+State have accepted it, and the corresponding Management Committee Members have been appointed, as
+described in the CSO Decision COST 134/14 REV2.
+The COST Action will start from the date of the first Management Committee meeting and shall be
+implemented for a period of four (4) years, unless an extension is approved by the CSO following the
+procedure described in the CSO Decision COST 134/14 REV2.
+2
+
+
+--- Page 3 ---
+TECHNICAL ANNEX
+OVERVIEW
+Summary
+The financial sector is the largest user of digital technologies and a major driver in the digital transformation
+of the economy. Financial technology (FinTech) aims to both compete with and support the established
+financial industry in the delivery of financial services. Globally, more than $100 billion of investments have
+been made into FinTech companies and Artificial Intelligence (AI) since 2010, and continue growing
+substantially. In early 2018, the European Commission unveiled (a) their action plan for a more competitive
+and innovative financial market, and (b) an initiative on AI with the aim to harness the opportunities
+presented by technology-enabled innovations. Europe should become a global hub for FinTech, with the
+economy being able to benefit from the European Single Market.
+The Action will investigate AI and Fintech from three different angles: Transparency in FinTech, Transparent
+versus Black Box Decision-Support Models in the Financial Industry and Transparency into Investment
+Product Performance for Clients. The Action will bridge the gap between academia, industry, the public and
+governmental organisations by working in an interdisciplinary way across Europe and focusing on innovation.
+The key objectives are:
+to improve transparency of AI supported processes in the Fintech space
+to address the disparity between the proliferation in AI models within the financial industry for risk
+assessment and decision-making, and the limited insight the public has in its consequences by
+developing policy papers and methods to increase transparency
+to develop methods to scrutinize the quality of products, especially rule-based “smart beta” ones,
+across the asset management, banking and insurance industries.
+Areas of Expertise Relevant for the Action
+● Economics and business: Finance
+● Computer and Information Sciences: Machine learning
+algorithms
+● Economics and business: Econometrics, statistical methods
+applied to economics
+● Computer and Information Sciences: Artificial intelligence,
+intelligent systems, multi agent systems
+● Mathematics: Statistics
+Keywords
+● Artificial Intelligence
+● Fintech
+● Finance
+● Transparency
+● Financial Markets
+Specific Objectives
+To achieve the main objective described in this MoU, the following specific objectives shall be
+accomplished:
+Research Coordination
+●To develop blended approaches to evaluate innovative financial services and their providers, especially in
+the FinTech domain, building on Machine Learning methods, focussing on prediction (early warning) of
+operational fragility, fraudulent and illegal behaviour ranging from appropriation of loaned funds to money-
+laundering activities.
+●The development of conceptual and methodological tools for establishing when black-box models are
+admissible and, to the extent possible, making them more transparent and/or replacing them with
+interpretable and explainable models.
+●To receive input from regulators and practitioners' communities and to validate results with regard to
+increasing transparency of artificial intelligence applications.
+●Pruning and improvement of the vast array of performance attribution models by contributing to the
+development of methodologies for reducing the false discovery rate in financial research and applied
+financial investment management.
+●Disseminate to the public and share with regulators the results on investment product performance
+3
+
+
+--- Page 4 ---
+evaluation.
+●Creation of the first European platform comparing the out-of-sample performance of banks' investment
+products, insurance-linked investment products and asset management products available to the general
+public.
+Capacity Building
+●Create an excellent network of researchers in Europe with lasting collaboration beyond the lifetime of the
+Action.
+●Bringing technological, quantitative and economic researchers together, to tackle future research that can
+only be done in an interdisciplinary setting, and getting actively involved in the blockchain and FinTech
+communities across Europe, to constantly monitor developments, get input and disseminate results.
+●Bridging the gap between practitioners from the finance industry, academics and regulators by setting up
+a common knowledge exchange platform.
+●Transfer knowledge in terms of expertise, scientific tools and human resources across the different
+disciplines and between academia and industry.
+●Establish an inclusive community of researchers on methodological and technological themes in Machine
+Learning and Artificial Intelligence, to promote Early Career Investigators and increase their visibility.
+●Overcome the siloing of research topics by country and achieve geographical and demographical
+diversity, with special attention to COST Inclusiveness Target countries.
+●Prepare competitive European researchers for a fruitful career in an international environment through
+intensive use of Short Term Scientific Missions (STSM) and joint educational programs with industrial
+partners.
+● Maximize the job opportunities for PhD students and Early Career Investigators.
+●Disseminate the results of the Action's activities to the scientific community, European institutions and to
+the general public.
+● Significantly improve the gender equality in the fields of the Action.
+Powered by TCPDF (www.tcpdf.org)
+4
+
+
+--- Page 5 ---
+       1 
+ 
+ 
+TECHNICAL ANNEX 
+1 
+S&T EXCELLENCE 
+1.1 
+SOUNDNESS OF THE CHALLENGE  
+1.1.1 
+DESCRIPTION OF THE STATE-OF-THE-ART 
+There will be three related themes in FinAI, each of which will be tackled by a working group (WG). The 
+state of the art with respect to each of the three themes is described here below. 
+WG1 –Transparency in FinTech  
+Several emerging technologies have significant potential to change the financial system and industry. 
+Examples of such technologies are those based on the blockchain, which essentially allows for secure 
+decentralized book-keeping. A blockchain is a distributed database of hash coded records of all 
+transactions or digital events that have occurred, shared among participating parties (De Filippi and 
+Hassan, 2016). Each record in this database is verified by the participants through a majority consensus 
+and, once confirmed, the transaction cannot be altered or deleted (see for e.g. Tasca and Hayes, 2016). 
+Crypto currencies are one of the first applications. In the last decade, operating independently of central 
+banks, they have massively grown in popularity and price, but the latter has also been very volatile. The 
+financial industry is especially interested in asset tokenization to create liquidity and additional 
+distribution channels for previously illiquid assets. In some European countries, large established 
+companies offer custody and related services for tokenized assets, enabling access for institutional 
+investors. Technological innovation, in parallel to a steep increase in the regulatory oversight of banks, 
+has also promoted forms of disintermediation (diminished role of traditional financial intermediaries) and 
+the rise of alternative financial intermediaries, such as crowdfunding and “peer-to-peer” (P2P) lending 
+platforms. While these forms of FinTech credit still represent a small fraction of overall credit, they are 
+growing very rapidly and account for a large share of activity in specific credit market segments.  
+These developments can lead to cheaper access to financial resources and investment opportunities 
+but also less transparency in the financial system. While many acknowledge the potential benefits in 
+terms of improving market efficiency (completing markets), regulators remain cautious. For example, a 
+recent report by the Hong Kong Securities and Futures Commission warns that “as these arrangements 
+and the parties involved operate online and may not be regulated, investors may be exposed to 
+heightened risks of fraud”. The regulatory approach, however, varies greatly, including across Europe. 
+For example, some regulators treat initial coin offerings (ICOs) as regulated securities, which improves 
+their quality and reduces the risk of frauds, others simply warn investors of their risks. 
+WG2 – Transparent versus Black Box Decision-Support Models in the Financial Industry 
+Regulators do not accept non-transparent “black box” models developed for any aspect of risk exposure. 
+For example, some AI approaches – typically based on machine learning techniques – have not yet 
+received full acceptance by regulators even though they are successfully applied internally by banks. 
+The resulting incentive towards model simplicity bears however some risks: 1) overly simplified models 
+might not apply to the evaluation of some of the more complex modern financial products, creating an 
+indirect and perhaps unintended barrier to financial innovation; 2) regulators and the public using overly 
+simplified models might be left with inferior information about true risk exposures, including systemic 
+risks. Additionally, while AI and machine learning tools hold the potential to improve risk management, 
+they remain untested at addressing risk under shifting financial conditions because they have been only 
+recently deployed. 
+ 
+ 
+
+
+--- Page 6 ---
+ 
+ 
+       2 
+A serious investment into transparent, interpretable and explainable AI in Finance is therefore urgently 
+needed. Such research would encourage regulators to consider and apply more advanced AI-based 
+models. Consequently, explainable artificial intelligence (XAI) is an emergent and very important 
+research area. It not only aims at providing a rationale for model selection but also creates stability in 
+model formulation, an important requirement for trust in models (Došilović et al. 2018, Biran et al. 2018). 
+WG3 – Transparency into Investment Product Performance for Clients 
+Active investment products collectively are often unable to offer outperformance relative to passive 
+products like ETFs (Exchange Traded Funds), that are cheaper in terms of fees because they simply 
+replicate broad market indices. Especially so-called "smart beta" strategies offered by banks have 
+systematically underperformed. An empirical analysis of Suhonen et al. (2016) demonstrated an 
+endemic “overfitting” of banks' investment strategies in their development phase and their significant 
+underperformance after they go live. Lopez de Prado and Lewis (2018) attribute this effect to a 
+"proliferation of false discoveries" about sources of investment performance and calls it "the greatest 
+threat faced by finance as an industry and an academic discipline". Institutional investors use the 
+experience and expertise of specialized investment consultant companies like Mercer, Willis Towers 
+Watson and Siglo to assess potential investments, but private clients and smaller investors do not have 
+access to this. Academic statistical publications offer methods to quantify the overfitting problem, but 
+these methods require data about "failed trials" only available to the product vendors. 
+As a consequence of the ex-ante difficulty for investors to screen active investment managers and the 
+ex-post underperformance of actively managed investment funds relative to passive investment 
+strategies, the former have experienced a substantial outflow of assets under management in favour of 
+the latter. This has led to a substantial reduction in expensive independent research activities, which 
+only active funds can afford. Active managers publicly warn that this can result in a decrease in market 
+efficiency.  
+1.1.2 
+DESCRIPTION OF THE CHALLENGE (MAIN AIM) 
+WG1 –Transparency in FinTech  
+A first point of concern with respect to blockchain applications in finance is that of fraudulent Initial Coin 
+Offerings. International regulatory authorities have raised many concerns, particularly in the context of 
+investor protection, suggesting that, in most cases, investors do not adequately understand the risk 
+involved with ICOs. Although many legitimate start-ups use ICOs for the purpose of raising money, the 
+market has seen many cases of fraudulent ICOs which in turn raises many concerns for investor 
+protection and overall financial stability. If ICOs qualify as financial instruments, there are several 
+existing European pieces of legislations which FinTechs need to comply with, including the Prospectus 
+Directive, the Markets in Financial Instruments Directive (MiFID), the Alternative Investment Fund 
+Managers Directive (AIFMD) and the Fourth Anti-Money Laundering Directive (European Securities and 
+Markets Authority, 2017). Nevertheless, there are many contexts in which ICOs fall outside the scope 
+of laws and regulations. The European Securities and Markets Authority has argued that the hype 
+concerning ICOs, virtual currencies and blockchain technology can lead to speculative behaviour in 
+which only very limited attention is paid to the underlying project and the risks associated with it. 
+Another cause of concern is that crypto assets allow for a multi-billion dollars global market of 
+anonymous transactions, which is not subjected to supervision. Hence, its growth can create 
+considerable challenges for market integrity, particularly coming from money laundering activities. 
+Money laundering embraces all those operations to disguise the illicit origin of capital, to give it a 
+semblance of legitimacy, and facilitate the subsequent reinvestment in the lawful economy. 
+In P2P lending, fraudulent behaviour by P2P platforms was recently shown to be a large-scale problem 
+in China following a tightening of regulatory oversight, and might become (or might even be already) a 
+problem elsewhere, including in Europe.  
+More generally, in many of the emerging market segments and activities commonly referred to as 
+FinTech (seen as a sector of the financial industry), there is great need for transparency about fund 
+flows, activities, intermediaries and risks. Lacking this transparency, the emerging sectors will not 
+develop in full and there will be system-wide risks to financial stability and integrity.  
+ 
+ 
+
+
+--- Page 7 ---
+ 
+ 
+       3 
+WG2 – Transparent versus Black Box Models in the Financial Industry 
+Regulators need to ensure the transparency of rules and criteria used to judge the admissibility of 
+decision algorithms employed by financial institutions, to avoid possible negative impact on the industry 
+such as discrimination among market players.Thus, it is important that regulators and policy-makers 
+have conceptual tools and research at their disposals to make quick and motivated decisions on how to 
+regulate the use of data science techniques. 
+Additionally, while AI and ML tools hold potential to improve risk management, their recent deployment 
+means that they remain untested at addressing risk under shifting financial conditions. Moreover, for 
+more novel asset classes such as those comprising exposure to crypto-assets, the lack of long time 
+series compounds the difficulty of understanding how a given model performs. Thus, it is important to 
+develop methodologies to make inferences on model performance in unstable environments and in the 
+absence of long time series (e.g., along the lines of Athey and Kuang (2018)).  
+Another point of concern is that black-box models can (inadvertently or otherwise) introduce biases in 
+decision making within the financial industry that can have important discriminatory effects, as stressed 
+by Kusner, M.; Loftus, C.; Russell, C. and Silva, R. (2017). For example, credit scoring models might 
+discriminate based on race and socio-cultural characteristics that might be correlated but not have any 
+direct causal link to individuals' creditworthiness.  
+WG3 – Transparency into Investment Product Performance for Clients 
+The investment challenge for clients is the decision between passively and actively managed products 
+of both asset managers and banks. This decision however requires data and methods for evaluating 
+investment performance, which give rise to an analytic and a data challenge, respectively.  
+Starting from the data challenge, this arises because judging the risk-adjusted performance of the 
+products requires estimating their risk as well as their (expected) return. This requires long time series 
+of returns on the products, otherwise valid statistical inferences on risk -adjusted performance would be 
+impossible. This however poses a data availability problem because, while investment fund time series 
+are widely available as their net asset values (NAVs) must be published with regular frequency, other 
+financial products usually have a fixed expiry date and are invisible after their expiry. To circumvent this 
+problem, the calculation of indices that replicate the payoffs of the products over time is required. This, 
+in turn, requires long time series of data on prices of underlying assets and market conditions (risk 
+factors), which must be collected and stored for each product. Some of the required information, such 
+as execution costs for the implementation of the strategies underlying the products, is also not readily 
+observable and must be modelled or otherwise inferred.  
+In terms of methodology, one key challenge is that the "failed trials" produced during the development 
+process are not known to any other party who was not involved in this development process. In these 
+situations, the analytical tools reviewed by Bailey and Lopez de Prado (2014), Bailey et al. (2015) and 
+Lopez de Prado and Lewis (2018), among others, are not applicable. In contrast to the product 
+development process in the pharmaceutical industry, there is also no regulation on how to set up a 
+backtest, which also requires the choice of an appropriate benchmark, what data needs to be stored to 
+ensure replicability, how to test parameter sensitivity and how to deal with failed trials. Hence, the 
+analytic challenge is to provide industry and regulators with guidance on how to deal with these 
+methodological issues and how formulate the necessary regulation, respectively. 
+Overall, the scientific challenge and main aim for this WG is thus to propose consistent and reliable 
+methods, together with the necessary data, for choosing investment products ex-ante and evaluating 
+ex-post their performance.  
+1.2 
+PROGRESS BEYOND THE STATE-OF-THE-ART  
+1.2.1 
+APPROACH TO THE CHALLENGE AND PROGRESS BEYOND THE STATE-OF-THE-ART 
+This Action will improve upon the state-of-the-art in all the three subfields of our research agenda. 
+WG1 –Transparency in FinTech  
+To increase transparency about both risks and opportunities, the WG will first assemble databases on 
+the main FinTech activities, especially ICOs and by P2P lending. Regarding ICOs, the database will 
+
+
+--- Page 8 ---
+ 
+ 
+       4 
+contain data about past ICOs, their pre-ICO documentation and the post-ICO performance. The pre-
+ICO documentation will be obtained directly from issuers and the post-ICO performance data will be 
+obtained from crypto exchanges, as well as from existing databases of specialized data providers. The 
+database on crowdfunding/P2P platforms will include data on custodian and settlement arrangements 
+and practices, on the governance structure and other features useful to predict fraudulent behaviour.  
+Based on these databases, criteria to evaluate ICOs and crowdfunding/P2P lending platforms will be 
+identified using both quantitative and qualitative inputs and methods with different degree of 
+formalization (e.g., from judgemental forecasting, drawing on the insight of experienced stakeholders, 
+to formal ML classifiers). Insight from diverse sources of information and methods will be blended using 
+and extending methodologies that rely on Bayesian learning (e.g., Figini and Giudici (2011)). In this 
+setting, expert judgemental forecasting will be given more weight (as more useful/reliable) when 
+available databases are small (e.g., short time series) whereas a quantitative rating approach using 
+supervised learning methods will become increasingly informative as the databases grow.  
+The Action will also apply and extend text mining analytics methods that use network models to reduce 
+the curse of dimensionality. For example, most recent statistics show that 99% of all ICOs use Telegram 
+as a channel for interacting with communities of investors. By collecting data from the Telegram ICOs 
+(including the corresponding white papers) and discussions on Telegram chats regarding the value and 
+prospects of the projects in question, it will be possible to build, train and test supervised models to 
+discriminate and classify ICOs by their probability of fraud.  
+Furthermore, the public availability of blockchain data makes it possible to apply network-based 
+community detection models in the context of anti-money laundering (AML). These models exploit the 
+transactional network topology for the purpose of identifying communities of users and, in particular, to 
+identify communities of money launderers, using the transactions between them. The method that will 
+be applied for money laundering detection is therefore a network cluster analysis algorithm that takes 
+as inputs the set of users (“nodes” in network terminology) and the trades between users (“edges” or 
+“links” in network terminology) (Foley et al., 2018). The output of the algorithm is an assignment of users 
+to communities such that the “modularity” of the communities (density of links within communities and 
+sparsity of links between communities) is maximized (Foley et al., 2018). 
+WG2 – Transparent versus Black Box Models in the Financial Industry 
+With regard to all three challenges faced by WG2 (listed in sub-section 1.1.2), key insight will come from 
+research on the nexus between causality and prediction, which is currently being explored in pioneering 
+literature at the cross-roads of econometrics and data science, such as the work of Victor Chernozhukov 
+(e.g., Belloni et al. (2017)) and of Susan Athey and Guido Imbens (e.g., Athey (2017), Athey and Imbens 
+(2019)). The Action will build on and expand this line of research, leveraging on the multidisciplinary 
+nature of the network (economists and financial economists working alongside applied mathematicians, 
+statisticians and computer scientists). 
+During this Action, the working group will develop prototypes to demonstrate the application of 
+quantitative methods to improve transparency for the described "black box" models. The working group 
+will also publish policy papers to suggest new regulation and guidelines for industry. The objective is to 
+lower, to the extent possible, the barriers to use more advanced methods. 
+In addition, the work will also address the issues of limited data and small-sample problems that arise 
+in situations when the events of interest occur infrequently (e.g., defaults, fraud, etc.), providing solutions 
+that will augment existing methods used in the financial industry. The WG will employ methods drawn 
+from econometrics and statistics to transparently quantify and, to the extent possible, alleviate the 
+impact of this problem on inference and prediction for financial decision making. This can be done, for 
+example, by explicitly modelling the probability of data unavailability (e.g., using penalized logistic 
+regressions and/or censored regressions), or by using estimation methods that allow for missing data 
+(unbalanced panel data models). 
+WG3 – Transparency into Investment Product Performance for Clients 
+First, this WG will address the data availability challenge. The WG will collect time series data on 
+investment funds, insurance-linked investment products and banks' products, their underlying assets 
+and relevant market conditions (risk factors). This will be done with the objective of directly estimate the 
+risk-adjusted performance, whether directly or, when this will not possible (please see discussion of the 
+challenge), by first calculating indices that replicate the payoffs of the products and estimating their 
+
+
+--- Page 9 ---
+ 
+ 
+       5 
+execution and liquidation costs over time. Some of the data will be directly collected from exchanges 
+and websites and it will be possible to freely exchange it within the network. Other parts of the data will 
+be protected by IP from data vendors. Therefore, a strategy to develop algorithms, distribute these 
+within the working group and then run them on the de-centrally stored data will be developed.  
+Despite this data collection effort, the WG will face a limited data availability problem for some products 
+and/or markets and performance attribution factors. To mitigate this problem, the WG will draw from 
+methods developed by WG2 and contribute to their development. 
+Once the data availability challenge is addressed, the analytic challenge will be tackled. Researchers in 
+the WG, like in many real-world settings, will not have access to the "failed trials" of the product 
+developers, which implies that it will not be possible to apply the methods from the literature reviewed 
+and systematized by Bailey and Lopez de Prado (2014), Bailey et al. (2015) and Lopez de Prado and 
+Lewis (2018). A mitigation measure will be to simulate the development process of rule-based financial 
+products by using generic versions of published factors and then to derive tweaked versions of these 
+implementations until the performance characteristics of published backtested time series of real 
+investment products are matched. The WG will work to automatize this "tweaking" process with machine 
+learning approaches. The artificially generated "failed trials" then serve as input to use the published 
+methodologies of Bailey and Lopez des Prado to quantify the "overfitting bias".  
+1.2.2 
+OBJECTIVES 
+1.2.2.1 Research Coordination Objectives 
+The main objectives of each of the three working group are as follows.  
+WG1 –Transparency in FinTech  
+The main objectives of the working group are the following: 
+ To develop blended approaches to evaluate innovative financial services and their providers, 
+especially in the FinTech domain (primarily but not exclusively ICOs, P2P lending platforms and 
+crowdfunding initiatives), building on machine learning methods for preemptive risk analysis and 
+rating. The focus will be on prediction (early warning) of operational fragility, fraudulent and illegal 
+behaviour ranging from appropriation of loaned funds (including through Ponzi-type schemes) to 
+money-laundering activities. Pursuit of this objective will be assisted by compiling dedicated 
+structured databases (as described in section 1.2.1) to support the large-scale application of the 
+above- mentioned methods.  
+The long-term goal is to improve the quality and transparency of FinTech and of the digital assets space 
+especially in Europe, to facilitate their growth in the interest of European investors and of the European 
+economy more widely. 
+WG2 – Transparent versus Black Box Models in the Financial Industry 
+The main objectives of the working group are 
+ The development of conceptual and methodological tools for establishing when black-box models 
+are admissible and, to the extent possible, making them more transparent and/or replacing them 
+with interpretable and explainable models. This will require (i) the classification of algorithms from 
+a range of disciplinary domains (especially ML, Econometrics) according to the predictability of 
+the variables being modelled/forecast, (ii) the identification of methods for mapping results of 
+black-box models to explainable and interpretable ones, at least ex-post, (iii) a better 
+understanding of the conceptual and empirical nexus between identification of causality within 
+models and the interpretability/explainability of the models.  
+ To receive input from regulators and practitioners' communities and to validate results with regard 
+to increasing transparency of artificial intelligence applications.  
+ 
+ 
+
+
+--- Page 10 ---
+ 
+ 
+       6 
+WG3 – Transparency into Investment Product Performance for Clients 
+The main objectives of the working group are: 
+ Pruning and improvement of the vast array of performance attribution models by contributing to 
+the development of methodologies for reducing the false discovery rate in financial research and 
+applied financial investment management (long-term scientific impact) 
+ Creation of the first European platform comparing the out-of-sample performance of banks' 
+investment products, insurance-linked investment products and asset management products 
+available to the general public (industry impact).  
+ Disseminate to the public and share with regulators the results on investment product 
+performance evaluation. 
+1.2.2.2 Capacity-building Objectives 
+The capacity-building aim of the three working groups is to offer an opportunity for researchers at 
+different stages to collaborate and network with other researchers and practitioners from regulatory 
+bodies and the financial industry. It is intended that all three working groups will develop into long- term 
+stakeholder platforms, coordinating efforts to improve transparency of financial markets (especially 
+FinTech activities) through AI. The precise objectives are: 
+ Create an excellent network of researchers in Europe with lasting collaboration beyond the 
+lifetime the Action 
+ Bringing technological, quantitative and economic researchers together, to tackle future 
+research that can only be done in an interdisciplinary setting, and getting actively involved in 
+the blockchain and FinTech communities across Europe, to constantly monitor 
+developments, get input and disseminate results 
+ Bridging the gap between practitioners from the finance industry, academics and regulators by 
+setting up a common knowledge exchange platform 
+ Transfer knowledge in terms of expertise, scientific tools and human resources across the 
+different disciplines and between academia and industry 
+ Establish an inclusive community of researchers on methodological and technological themes in 
+Machine Learning and Artificial Intelligence, to promote Early Career Investigators and increase 
+their visibility 
+ Overcome the 'siloing' of research topics by country and achieve geographical and demographical 
+diversity, with a special attention to COST Inclusiveness Target countries 
+ Prepare competitive EU researchers for a fruitful career in an international environment through 
+intensive use of Short Term Scientific Missions (STSM) and joint educational programs with 
+industrial partners 
+ Maximize the job opportunities for PhD students and Early Career Investigators 
+ Disseminate the results of the Action activities to the scientific community, European institutions 
+and to the general public 
+ Significantly improve the gender equality in the fields of the Action 
+2 
+NETWORKING EXCELLENCE 
+2.1 
+ADDED VALUE OF NETWORKING IN S&T EXCELLENCE 
+2.1.1 
+ADDED VALUE IN RELATION TO EXISTING EFFORTS AT EUROPEAN AND/OR 
+INTERNATIONAL LEVEL 
+This Action network is unique in its composition, through which it can actively achieve a wide scope in 
+terms of research expertise and international and sectoral diversity, so that it can address Fintech in a 
+way that can maximally benefit society and the European economy. 
+The main focus is the transparency of the new methods and of investment products, which is an under-
+researcher topic. There is no scientific network at the European level focussing on it. Compared to the 
+ITN “Training for Big Data in Financial Research and Risk Management”, which explores the application 
+of Data Science to financial decision making, this Action has a much broader scope. This is because 
+the Action concerns itself with the overall financial industry and all its stakeholders in a very 
+interdisciplinary setting rather than focussing only on investment and risk management. A further 
+
+
+--- Page 11 ---
+ 
+ 
+       7 
+difference is that the Action will explore the application of the entirety of data science methods in a 
+financial domain, rather than only in settings involving big data. This is important because the novelty of 
+recent data science methods also arises from the applicability to unconventional datasets (e.g., 
+unstructured and mixed quantitative/qualitative data), which are not necessarily large. To some degree 
+related to this Action is also the COST Action CA15109 European Cooperation for Statistics of Network 
+Data Science (COSTNET) but it does not address financial industry issues specifically. 
+Very importantly, the European Commission has released a FinTech Action plan in March 2018 and a 
+European initiative on Artificial Intelligence in April 2018. The Action aims, to address the issues and 
+goals by the European Commission. In addition, there are important synergies between the 
+Commission’s Digital Single Market Strategy, the EU’s cybersecurity strategy, the eIDAS Regulation 
+and financial services initiatives such as the Consumer Financial Services Action Plan and the Capital 
+Markets Union (CMU) mid-term Review. In February 2018, the EU has also launched the EU blockchain 
+observatory and forum. It will highlight key developments of the blockchain technology, promote 
+European actors and reinforce European engagement with multiple stakeholders involved in blockchain 
+activities. The Action builds on these initiatives and contributes and is complementary to them. 
+2.2 
+ADDED VALUE OF NETWORKING IN IMPACT 
+2.2.1 
+SECURING THE CRITICAL MASS AND EXPERTISE  
+The core strength of the Action lies in its network, which has a diverse yet carefully calibrated 
+composition both across disciplines and across sectors. In terms of disciplines, the team is balanced 
+between Economics and Business, Computer and Information Sciences, and Mathematics. In addition, 
+the Action benefits from participation of specialists in Electrical engineering, Electronic engineering, 
+Information engineering and Financial Law. Many of the participants have themselves a multidisciplinary 
+background. For example, many of the participants with a Finance background based at 
+Business/Management schools or departments also have a legal and accounting background (as 
+traditionally the case in Finance departments at Business Schools in many countries in continental 
+Europe). Many of them work in departments alongside colleagues from Law (e.g., in Management and 
+Law departments) and will be able to draw additional legal expertise (involving Law colleagues in the 
+network) as needed.  
+In terms of sectors, the team includes participants from academia, industry and the public sector (legal 
+and regulatory entities). Within industry, the partners are drawn from the financial sector and the ICT 
+sector, and the majority are Small and Medium Size Enterprises (SMEs). Many of the network proposers 
+(whether from academia or industry) are internationally recognized experts in their fields. 
+In forming the network, special attention has been paid to ensure that each node has critical mass to 
+engage productively with the remaining nodes and exert 'gravitational pull' in the country and sector to 
+which the node belongs. While there are no obvious gaps in the Action network in terms of expertise, 
+sectoral and geographical exposure, the Action will actively seek to involve new members throughout 
+its life. This can easily be achieved thanks to the open architecture of the Action, relying on the 
+established connections to different stakeholder groups of the network proposers.  
+2.2.2 
+INVOLVEMENT OF STAKEHOLDERS 
+The Action will engage the following stakeholder groups: 
+ Researchers, scholars and experts from universities, research institutes and companies, both 
+from within the core group of proposers and beyond, to carry out state-of-the-art research and 
+provide world-class solutions  
+ Policy makers, regulatory and supervisory authorities at the EU, national and local level. They will 
+be invited to participate in the network and take part to its events, including special joint 
+workshops, to establish a mutually beneficial dialogue that can help improve the understanding 
+and regulation of the Fintech sector 
+ Industry players, including 
+ firms involved in credit risk modelling, financial software development and risk management 
+ Fintech companies, with a special attention to Small and Medium-Sized Enterprises (SMEs), 
+as providers of financial services related to FinTech, such as research, algorithm 
+development, legal and financial consulting, 
+
+
+--- Page 12 ---
+ 
+ 
+       8 
+ banks, asset manager and insurance companies, to help the network identify the key problems 
+they face and how they are impacted by the rise of FinTech. 
+They will be involved to allow them to exchange knowledge with academia and regulators and for 
+the network to receive feedback on ongoing initiatives, findings and research 
+ NGOs, citizens engaged in science and citizen science organizations. They will be regularly 
+involved and updated on the progress of the Action and its research output, which will be essential 
+for the network to receive feedback on the deliverables, in terms of their public acceptance and 
+level of understanding. 
+The consortium of participants for this Action is very large, not only geographically, but also in terms of 
+disciplinary spread and type of stakeholders. Therefore, at the beginning of this Action, the 
+Management Committee (MC henceforth) will prepare a detailed stakeholder engagement strategy 
+which will be carefully maintained and updated on an annual basis, to ensure a high involvement of the 
+most relevant stakeholders.  
+As part of the same strategy, from the beginning of FinAI and throughout its duration, the MC will identify 
+the target stakeholder groups for which there are a lower number of initial participants and will prepare 
+an engagement plan, which will be continuously updated and maintained to monitor progress, take 
+corrective actions and identify new and upcoming relevant stakeholders. The objective will be to ensure 
+that at any time the most relevant stakeholders are involved in FinAI as work group members and 
+through participation in the different activities, such as workshops, industry days, conferences, etc. The 
+overall stakeholder engagement strategy will be inter-disciplinary and strongly inclusive, complemented 
+by fair gender balance, ensuring balanced involvement of stakeholders from different stakeholder 
+groups from COST Member Countries, Near Neighbouring Countries and International Partner 
+Countries . Though the geographical spread of our Action network is very broad, our engagement plan 
+will also aim to extend it to the remaining European countries.  
+Researchers at universities and research institutes will be reached by established mechanisms such as 
+papers in high impact, peer-reviewed international journals (open access journals), presentations at 
+international conferences and workshops and "white papers" on best practice guidelines. Moreover, the 
+Action intends to involve numerous Early Career Investigators (ECI) and provide them with networking 
+and exchange opportunities. The goal is to facilitate the exchange of young researchers to give them 
+access to senior researchers throughout the network, receive feedback on their research work, get 
+involved in new cross-country projects and gain international visibility for their research. This will be 
+done through a range of measures, including research visits and participation in conferences and 
+workshops. 
+A high inclusion of industry members, including Fintech companies and investors, business angels, 
+target incubators, innovation hubs and fintech districts, sand boxes, will be achieved by actively using 
+the full range of available networking tools (e.g., workshops, conferences, brainstorming sessions, joint 
+research and R&D projects, etc.) within the stakeholder engagement strategy.  
+Major policy makers at the EU, national and local level will be provided with policy briefs (position 
+papers) on the key outcomes of our Action and their possible implications for society. Additionally, they 
+will be invited to attend the major conferences organized within the Action. The Action will also have 
+dedicated workshops, combining academia, industry and national and European authorities. 
+Our Action will also reach citizens and citizen science organizations through social media such as 
+Facebook, Twitter and LinkedIn. Moreover, numerous articles will be published in the press and 
+scientific magazines.  
+Involving stakeholders will be a top priority of the MC of this Action. Here below is an overview of the 
+stakeholders' engagement by working group. 
+Degree of involvement of stakeholders by WG: 
+ 
+Stakeholders / WGs 
+WG1 WG2 WG3 
+Universities and research institutes 
++++ 
++++ 
++++ 
+Industry partners 
+++ 
++++ 
++++ 
+Policy makers and regulators 
+++ 
++++ 
+++ 
+Citizens and citizen science organizations +++ + 
++++ 
+ 
+Last but not least, the Action seeks to achieve the optimal gender balance among participants with the 
+aim that 50% of the core group members will be female. 
+
+
+--- Page 13 ---
+ 
+ 
+       9 
+2.2.3 
+MUTUAL BENEFITS OF THE INVOLVEMENT OF SECONDARY PROPOSERS FROM NEAR 
+NEIGHBOUR 
+OR 
+INTERNATIONAL 
+PARTNER 
+COUNTRIES 
+OR 
+INTERNATIONAL 
+ORGANISATIONS 
+The secondary proposers and partners from near-neighbouring and international countries are 
+important due to two reasons. The first one is that the financial industry is global in nature due to the 
+mobility of capital in the current historical context and, therefore, research must have a global 
+perspective as well as a concern for local circumstances. The second one is that research communities 
+and the financial industry represented by nodes of the network at different locations specialize, at least 
+to some extent, on different topics, which are all essential to the success of the Action. For the same 
+reasons, the Action will further expand its international reach on an ongoing basis, exploiting its open 
+architecture to include further partners from outside Europe, especially but not exclusively near 
+neighbour ones, and international organizations.  
+3 
+IMPACT 
+3.1 
+IMPACT TO SCIENCE, SOCIETY AND COMPETITIVENESS, AND 
+POTENTIAL FOR INNOVATION/BREAK-THROUGHS 
+3.1.1 
+SCIENTIFIC, TECHNOLOGICAL, AND/OR SOCIOECONOMIC IMPACTS (INCLUDING 
+POTENTIAL INNOVATIONS AND/OR BREAKTHROUGHS) 
+The expected impacts from the project are both scientific and practical (with direct industry applicability) 
+in nature. 
+Scientific impact – Short term 
+ Novel methodologies for classification and rating of FinTech activities, especially ICOs and 
+crowdfunding/P2P lending platforms, and evaluation of both novel and existing methods with out-
+of-sample tests, including in cases in which limited data is available 
+ White papers with policy and methodological guidelines to bring transparency to currently 
+intransparent financial market activities, especially at the intersection of FinTech and shadow 
+banking 
+ New methods to compare the out-of-sample performance of rule-based investment products 
+offered by asset managers, insurances and banks, relying on machine learning and AI 
+ Published results in edited volumes and top-tier peer-reviewed journal articles  
+Scientific impact – Long term: 
+ Foundation of new research centrers at universities across disciplines 
+ The capacity to guide future innovative research, thanks to a common scientific framework, 
+coordinated research efforts, and pan-European dissemination 
+ The global leadership of the European Research Area on blended AI-aided methods for 
+monitoring and enforcing transparency in financial markets 
+Socio-economic impact – Short term 
+Engagement of EU institutions, NGOs, Fintech startup disruptors and established financial service 
+providers.  
+ Engagement of stakeholders at the local, regional, national, European levels and internationally. 
+Network members have various existing contacts in these areas from earlier and ongoing 
+projects; new ones will be added 
+ Training for EU institutions and NGOs that assist in analysing and evaluating the needs of 
+European citizens as users of financial services and of the financial industry, focusing on 
+transparency 
+ Short-Term-Scientific Missions (STSMs) and training schools that disseminate scientific skills and 
+competencies and strengthen the networking capacity of ECIs and graduate students, enhancing 
+their employability within and beyond academia. 
+ Dissemination among stakeholders of research results and practical tools for assessing and 
+improving transparency of financial services  
+
+
+--- Page 14 ---
+ 
+ 
+       10 
+ Development and attraction of talents in research, in the financial industry and academia. 
+ 
+Socio-economic impact – Long term 
+ 
+ A common platform and European network for academics, industry and policy makers  
+ Raise political and social awareness of the need for transparent financial markets and FinTech 
+ Provide concept and tool that can help preserve the integrity of financial markets while allowing 
+for financial innovation, especially the growth of innovative FinTech applications 
+ Contribute to economic development in Europe by promoting transparent and hence sustainable 
+innovation, especially in the area of FinTech, that can help significantly complete financial 
+markets 
+ Contribute towards the targets set in the white papers for the future of the European Digital  
+ Financial Market  
+ Improve the position of the European financial industry (both Fintech startup disruptors and 
+traditional financial service providers) by improving their product quality and transparency 
+Technological impact – Short term: 
+ Open-source libraries for tackling transparency issues in the industry, that are accessible for 
+researchers, industry practitioners and policy makers 
+ Rating tools accessible by regular citizens for better understanding the risks and rewards of 
+relatively novel investment opportunities, such as initial coin offerings (ICOs) and P2P lending 
+ Rating tools accessible by regular citizens to compare investment products offered by asset 
+managers, insurance companies and banks 
+Technological impact – Long term: 
+ Maintain Europe at the forefront of developments in both FinTech and AI 
+ Startup companies to develop and implement the innovations and results from the project  
+ Development of scalable software platforms accessible to more users based on the technical 
+prototype tools 
+3.2 
+MEASURES TO MAXIMISE IMPACT 
+3.2.1 
+KNOWLEDGE CREATION, TRANSFER OF KNOWLEDGE AND CAREER DEVELOPMENT 
+The Action will actively reach industrial stakeholders by implementing an extensive dissemination plan. 
+In particular, the Action's dissemination plan provides for regular meetings of Action's participants with 
+industry practitioners. Numerous companies from the fields of finance, legal, finance and technology 
+have confirmed their participation in research and knowledge-sharing activities of the Action. They will 
+be reached mainly through invitations to organized conferences, workshops and regular meetings with 
+industry, where they will have an opportunity to present their companies’ profiles as direct participants 
+of the Action. 
+The Action will have a dedicated Stakeholder Coordinator, responsible for managing the stakeholder’s 
+involvement. In collaboration with the Stakeholder Coordinator, the most appropriate MC members 
+(considering the geographical location, institutional connections and field of work) will establish 
+communication with members of selected stakeholders’ groups, inviting them to participate in the Action. 
+Stakeholders will participate in international conferences, in particular in dedicated sessions for sharing 
+expertise, identifying common challenges and requirements, and familiarizing stakeholders with early 
+results of the Action. Stakeholders will cooperate and interact with each other in the Action via 
+workshops, seminars and training schools. STSMs will be the means to connect different stakeholders. 
+Through a regularly updated website and social profiles, as described below, a transparent and frequent 
+dissemination of the Action’s activities will facilitate informing current and potential stakeholders.  
+The Action will involve numerous Early Career Investigators (ECI) and provide them with networking 
+and exchange opportunities through STSMs. Most participants supervise or co-operate with PhD 
+candidates and post-doc researchers and the goal is to facilitate the exchange of young researchers 
+including research stays abroad . 
+
+
+--- Page 15 ---
+ 
+ 
+       11 
+Within the first year of the start of the Action, a knowledge exchange and collaboration platform will be 
+introduced, where the draft documents will be developed, and data and software will be shared.  
+3.2.2 
+PLAN FOR DISSEMINATION AND/OR EXPLOITATION AND DIALOGUE WITH THE 
+GENERAL PUBLIC OR POLICY 
+The Action will appoint a dedicated Science Communication Manager. She/he will be asked to create a 
+detailed dissemination and exploitation plan, which will be regularly updated. The Action will create its 
+own graphical identity and interactive, mobile-friendly website within the first nine months, which will be 
+the front-end of a platform for informing the general public, policy makers, citizen science organizations 
+and companies about current activities and planned future activities. This platform will be distinct from 
+the knowledge exchange and collaboration platform (see just above, in section 3.2.1) but the two 
+platforms will be able to securely interact. A contact form will be available on the web-site to obtain 
+feedback from the public. A mailing list will also be formed to inform the interested parties about new 
+publications on the website and invitations for supported events participation. 
+FinAI will further increase its online presence by creating social network profiles to keep interested 
+parties and the general public informed. ResearchGate, Twitter and LinkedIn will be initially targeted 
+and after that, the presence will be increased on other social networks if needed. Representative 
+materials such as posters, banners and others, will be created based on the graphical identity and will 
+be provided to the participating institutions and partners to promote the Action.  
+Meetings with regulators will be held on a regular basis, in order to receive early feedback on the 
+usefulness and feasibility of the methods, results and deliverables prior to their public release, and 
+ensure the acceptance of the project by the regulators. 
+The Action will organize several workshops and conferences to present ongoing research activities and 
+developments. Policy makers and industry practitioners will be invited to participate in the conferences 
+and workshops and will be encouraged to give guest presentations and keynotes. For each event 
+organized by the Action, the local media will be invited to cover the events and the local public will be 
+informed about the Action goals, achievements and ongoing activities. 
+The Action will organize at least four public panel discussions and invite experts and policy makers from 
+public institutions and industry, as well as academia, where feedback from the public will be obtained 
+and the objectives of the Action will be discussed. 
+In addition to workshops, conferences and public panels, expert panel discussions will be organized 
+with the purpose to summarize the findings, inputs and conclusions from all activities.  
+Each working group of the Action will publish a yearly report that will be available on the website of the 
+Action. At the end of the Action a final report will contain the conclusions from the work done within the 
+activities of the Action and give recommendations for further developments.  
+4 
+IMPLEMENTATION 
+4.1 
+COHERENCE AND EFFECTIVENESS OF THE WORK PLAN 
+4.1.1 
+DESCRIPTION OF WORKING GROUPS, TASKS AND ACTIVITIES 
+To accomplish the Action's objectives, three working groups (WGs) will be formed. Close cooperation 
+and exchange of knowledge between the WGs will be essential. All three WGs will have the common 
+goal of creating an attractive and transparent forum to engage with stakeholders, facilitate knowledge 
+and experience sharing and stimulate reflection on transparency-related issues in financial markets. The 
+research objectives of each WP have been described in section 1.2.2.1. The main tasks and activities 
+are described below. 
+ 
+ 
+
+
+--- Page 16 ---
+ 
+ 
+       12 
+WG1 –Transparency in FinTech  
+Tasks: 
+ Review and extend/develop blended AI-aided models and methods to evaluate and rate 
+innovative financial services and their providers, especially in the FinTech domain  
+ Compile appropriate databases to evaluate and implement the above criteria and methods 
+ Find solutions to data management and storage needs 
+ Interact with stakeholder to raise awareness of the research questions and discuss solutions 
+ Create a handbook or wiki page describing approaches to address transparency needs in  
+ FinTech by implementing/using insight from the research 
+ Monitor and analyse developments in the FinTech domain  
+Activities: WG meetings, joint-peer reviewed publications, specific workshops at major conferences, 
+interdisciplinary workshops with industry partners and regulators, Action workshop, STSMs, Industry 
+weeks, handbook, guidelines, best practices for transparent financial markets 
+WG2: Transparent versus Black Box Models in the Financial Industry 
+Tasks: 
+ Review the existing literature on AI (including machine learning) approaches as they are used in 
+the finance industry and identify the most important applications 
+ Develop prototypes to demonstrate quantitative methods to improve transparency (including 
+explainability and interpretability) of the "black-box" models or to provide alternatives 
+ Interact with stakeholders, in particular regulators, to raise awareness of the research questions 
+and discuss potential solutions 
+ Develop a roadmap for including the results in European regulation and policies, in cooperation 
+with regulators 
+ Publish policy papers to suggest new regulation  
+ Development of a handbook or wiki page describing the prototypes above 
+Activities: WG meetings, joint-peer reviewed publications and policy papers, specific workshops with 
+the regulator and industry, Action workshop, STSMs 
+WG3: Transparency into Investment Product Performance for Clients 
+Tasks: 
+ Identify risk factors for ex-ante performance analysis (back-testing) and ex-post performance 
+evaluation/attribution  
+ Create a database with data on the composition, underlying assets and relevant risk factors of 
+investment products 
+ Develop and implement methodologies for ex-ante performance analysis (back-testing) and ex-
+post performance evaluation/attribution  
+ Set up the dialogue with regulators (through conferences, workshops and research collaboration) 
+and citizen science organizations (through a forum and social media, including Linked-in and 
+Twitter) to discuss the research results and gain feedback and further input  
+ Disseminate (including to investors) expertise on client-focused investment performance analysis 
+through a dedicated website with resources for both advanced and less advanced users, including 
+a handbook or wiki page describing the approaches for analysing the performance of investment 
+products  
+Activities: WG meetings, joint-peer reviewed publications, specific workshops at major conferences with 
+regulators and citizen science organizations, Action workshop, STSMs 
+ 
+ 
+
+
+--- Page 17 ---
+ 
+ 
+       13 
+4.1.2 
+DESCRIPTION OF DELIVERABLES AND TIMEFRAME 
+WG1: Transparency in FinTech  
+ A database which contains pre-ICO documentation and post-ICO performance (ROI and lifespan) 
+(GANTT 4a) 
+ A database which contains data on crowdfunding/P2P platform features useful for rating platform 
+integrity and predict fraud (GANTT 4a) 
+ Software (codes, packages) for evaluating/rating ICOs and crowdfunding/P2P platforms and for 
+detection/early warning about fraud/illegal behaviour, with emphasis on the application of ML and 
+other AI tools (GANTT 4a) 
+ Discussion papers (DP) on the methodology for evaluating/rating ICOs and crowdfunding/P2P 
+platforms and for detection/early warning about fraud/illegal behaviour, with emphasis on the 
+application of AI tools (GANTT 4b) 
+ A position paper and roadmap on mitigating risks connected with the increased use of digital 
+assets (GANTT 4f) 
+ A handbook or wiki page describing potential approaches to tackle risk management issues 
+related to blockchain assets and crowdfunding/P2P lending (GANTT 4e) 
+WG2: Transparent versus Black Box Models in the Financial Industry 
+ Software (codes, packages) to conduct robustness checks of ML models used by financial 
+institutions, mostly for regulators and the industry (GANTT 4a) 
+ A discussion paper for possible approaches to building a statistically valid back-testing framework 
+(GANTT 4b) 
+ Methodological discussion paper on the design of stress tests for the evaluation of AI and ML 
+models under shifting financial conditions to improve the robustness of models (GANTT 4b) 
+ Position papers, aimed at regulators and policy-makers, on methodology (with examples of formal 
+criteria) for testing AI techniques in real-time (GANTT 4f) 
+WG3: Transparency into Investment Product Performance for Clients 
+ An internal database of collected (scraped) financial time series from exchanges and regional 
+consolidation platforms optimised for accessibility to all partners (GANTT 4a) 
+ Software (codes, packages) on simulation of “failed trials” and developed quantitative strategies 
+(GANTT 4a) 
+ Methodological discussion papers on AI models to generate “failed trials” of investment product 
+producers and on quantitative strategies with the usage of the promising field of network data 
+analysis (GANTT 4b) 
+All WGs: 
+ Scientific peer-reviewed papers in top academic journals (GANTT 4b) 
+ Report on good examples and best practices for a transparent finance industry with guidelines to 
+improve transparency (GANTT 4f) 
+ An edited volume containing scientific achievements of the Action (GANTT 4h) 
+ A stakeholder engagement strategy (GANTT 5d) 
+ Four annual reports (for lay audience) distributed via local and national media (GANTT 5f) 
+4.1.3 
+RISK ANALYSIS AND CONTINGENCY PLANS 
+The core team that includes the Action Chair and the WG leaders will closely monitor the progress of 
+reaching the Action objectives and mitigate any risks to ensure timely provision of the deliverables. The 
+following table shows the major identified risks and the corresponding mitigating Actions and 
+contingency plans. 
+ 
+ 
+
+
+--- Page 18 ---
+ 
+ 
+       14 
+Risk description 
+ 
+Probability Impact Mitigating Action (1) / Contingency Plan (2) 
+Research not 
+yielding expected 
+results 
+Medium 
+High 
+(1.1)   Increase cross-collaboration and communication  
+(1.2)  Re-align research targets 
+(1.3)  Increase the network, attract experts for particular 
+research tasks 
+(2)     Redefine scope of research, onboard additional  
+       skill sets 
+Collaboration too 
+sporadic because  
+of geographical  
+spread 
+Medium 
+Medium (1.1)  Set up (more) virtual communication channels, e.g. 
+an online stream of workshops 
+(1.2)  Allocate more funds for STSMs 
+(1.3)  Set up knowledge exchange platform (online) 
+(2)      Reorganize work streams to be more  
+          geographically focused 
+Business partners 
+too reluctant in  
+onboarding 
+and/or  
+participation 
+High 
+Medium (1.1)  Redefine scope for potential business partners 
+(1.2)  More networking activities with a focus on 
+industry partners 
+(2)     Drastically lower entrance  hurdle for new   
+          business partners  
+Partners do not 
+deliver 
+Medium 
+High 
+(1.1)  Tools to track research input of all partners  
+(1.2)  Increase shared responsibility for every task 
+(1.3)  Involve MC to find solutions to increase the contribution 
+          of partners 
+(2)     Redundant skills are available in the network,  
+         substitute non- delivering partners 
+Limited 
+involvement of 
+Action members 
+Medium 
+Low 
+(1.1)  Equip the Action with enough members so that no  
+          member is irreplaceable 
+(1.2)  Use advanced research collaboration tools 
+(2)     Elect and appoint new members for the under-covered  
+         positions 
+Lack of interest 
+and involvement of 
+regulatory bodies 
+Medium 
+Medium (1.1)  The importance of this Action is already acknowledged  
+          by policy makers and regulators. 
+(1.2)  Use the network to invite regulatory bodies from more  
+          countries 
+(1.3)  Increase focus on the regulatory applications of the  
+          research output 
+(1.4)  Organize dedicated knowledge-exchange sessions with 
+          regulators and industry 
+(2)     Formally invite regulators to Action events to increase 
+          interest and involvement 
+Gender imbalance Low 
+Low 
+(1.1)  Include female participants in core decisions and      
+         organization; reserve certain core functions to female  
+         participants  
+(1.2)  Re-allocate funds to increase and support the  
+         involvement of female researchers 
+(2)    Organize events and summer schools that have female 
+         researchers as target audience 
+Lack of 
+involvement of  
+European 
+organisations 
+Low 
+High 
+(1.1)  The MC will ensure the involvement of national  
+         policymakers  
+(1.2)  The Chair and Vice-Chair will have the responsibility to  
+          inform and involve EU level organisations 
+(2)     Formally invite European organisations to Action events 
+         to increase interest and involvement 
+ 
+
+
+--- Page 19 ---
+ 
+ 
+       15 
+4.1.4 
+GANTT DIAGRAM 
+Legend: ✓ contains a deliverable;  is a major 
+event/once off activity and (blue) colouring denotes a 
+protracted activity 
+Year 1 
+Year 2 
+Year 3 
+Year 4 
+Q1 
+Q2 
+Q3 
+Q4 
+Q1 
+Q2 
+Q3 
+Q4 
+Q1 
+Q2 
+Q3 
+Q4 
+Q1 
+Q2 
+Q3 
+Q4 
+1 
+Traditional and social media outreach 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+a 
+setup online infrastructure 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+b 
+social media activity 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+c 
+ResearchGate project activity  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+d 
+newsletter 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+e 
+flyer 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+2 
+Action meetings and conferences 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+a 
+kick-off meeting 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+b 
+workshops and panel discussions 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+c 
+international conferences 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+d 
+meetings with regulators 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+e 
+synopsis meeting 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+f 
+MC meetings 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+3 
+Junior scientists' coaching 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+a 
+ECI meetings 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+b 
+training schools 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+4 
+Joint research 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+a 
+databases and software 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+✓ 
+ 
+ 
+ 
+✓ 
+ 
+ 
+ 
+✓ 
+b 
+joint research output (publications and DP) 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+✓ 
+ 
+ 
+ 
+✓ 
+ 
+ 
+ 
+✓ 
+c 
+knowledge exchange platform 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+d 
+STSM 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+e 
+handbook on risk management of BCA 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+✓ 
+ 
+ 
+ 
+ 
+f 
+position papers and guidelines 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+✓ 
+ 
+ 
+ 
+✓ 
+ 
+ 
+ 
+✓ 
+g 
+joint research grant applications 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+h 
+edited volume 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+✓ 
+5 
+White papers and reports on FinAI development 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+a 
+transparency of digital assets 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+b 
+transparency vs black-box models in the FI 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+c 
+transparency into investment products 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+d 
+stakeholder engagement strategy 
+ 
+✓ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+e 
+WG annual reports 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+f 
+Action annual reports (for lay audience) 
+ 
+ 
+ 
+✓ 
+ 
+ 
+ 
+✓ 
+ 
+ 
+ 
+✓ 
+ 
+ 
+ 
+✓ 
+ 
+ 
+ 
+
+
+--- Page 20 ---
+ 
+ 
+       16 
+REFERENCES 
+Athey. S. (2017), Beyond Prediction: Using Big Data for Policy Problems, Science. February 3, 2017, 
+Vol. 335(6324), pp. 483-485. 
+Athey, S. and G.W. Imbens (2019), Machine Learning Methods Economists Should Know About, 
+Stanford Working Paper No. 3776. Available at: https://www.gsb.stanford.edu/gsb-cmis/gsb-cmis-
+download-auth/476281  
+Athey, S. and K. Kuang (2018), Stable Predictions across Unknown Environments, Knowledge 
+Discovery and Data Mining. 
+Baz, J., Granger, N., Harvey, C., Le Roux, N. and Rattray, S. (2015): Dissecting Investment Strategies 
+in the Cross Section and Time Series 
+Bailey, D. H. and López de Prado, M. (2014): The deflated Sharpe ratio: Correcting for selection bias, 
+backtest overfitting and non-normality, Journal of Portfolio Management, Vol. 40, No. 5, pp. 94-107 
+Bailey, D. H. and Borwein, J. and Lopez de Prado, M. and Zhu, Q. J. (2015), The Probability of Backtest 
+Overfitting, Journal of Computational Finance (Risk Journals), February. Available at SSRN: 
+https://ssrn.com/abstract=2326253  
+Buchak, G., Matvos, G., Piskorski, T. and Seru, A. (2017), FinTech, Regulatory Arbitrage, and the Rise 
+of Shadow Banks, NBER Working Paper No. 23288, March 
+Cao, Y., Dai, M., Kou, S., Li, L. and Yang, C. (2018): Designing Stable Coins. 
+Belloni, A. Chernozhukov, V., C. Hansen, and I. Fernandez-Val (2017), Program Evaluation and Causal 
+Inference With High‐Dimensional Data, Econometrica 85(1), pp. 233-298. 
+Demyanyk, Y. and Kolliner, D. (2014): Peer-to-Peer Lending Is Poised to Grow, Federal Reserve Bank 
+of Cleveland, August. 
+De Filippi, P. and Hassan, S. (2016). Blockchain Technology as a Regulatory Technology: From Code 
+is Law to Law is Code. First Monday Vol 21, N. 12, special issue, Available at SSRN: 
+https://ssrn.com/abstract=3097430  
+Dosilovic, F. K., Brcic, M., and Hlupic, N. (2018): Explainable Artificial Intelligence: A Survey, 41st 
+International Convention on Information and Communication Technology, Electronics and 
+Microelectronics (MIPRO) 
+Figini, S. and P. Giudici, (2011), Statistical merging of rating models, Journal of the Operational 
+Research Society 62, pp. 1067-1074. 
+Foley, S. and Karlsen, J. R. and Putnins, T. J. (2018): Sex, Drugs, and Bitcoin: How Much Illegal Activity 
+Is Financed Through Cryptocurrencies?, October. Available at SSRN: https://ssrn.com/abstract=3102645  
+Harvey, C., Liu, Y. and Zhu, C. (2016): …and the Cross-Section of Expected Returns, Review of 
+Financial Studies, 29(1), pp. 5-68. Available at SSRN: https://ssrn.com/abstract=2249314  
+Kusner, M.; Loftus, C.; Russell, C. and Silva, R. (2017) Counterfactual Fairness. Advances in Neural 
+Information Processing Systems (NIPS) 30.  
+Lopez de Prado, M. and Lewis, M. J. (2018): Detection of false Investment Strategies using 
+Unsupervised Learning Methods. Available at SSRN: https://ssrn.com/abstract=3167017    
+Pedersen, L. (2015): Efficiently Inefficient: How Smart Money Invests and Market Prices Are 
+Determined, Princeton University. Press. ISBN 978-0691166193    
+ 
+ 
+
+
+--- Page 21 ---
+ 
+ 
+       17 
+Sanz, J. A., Bernardo, D., Herrera, F., Bustince, H. and Hagras, H. (2015): A Compact Evolutionary 
+Interval- Valued Fuzzy Rule-Based Classification System for the Modeling and Prediction of Real-World 
+Financial Applications With Imbalanced Data, in IEEE Transactions on Fuzzy Systems, vol. 23, no. 4,pp. 
+973-990, August. Available at: 
+http://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=6849462&isnumber=7174609  
+Suhonen, A., Lennkh, M. and Perez, F. (2016): Quantifying Backtest Overfitting in Alternative Beta 
+Strategies, Journal of Portfolio Management 
+Tasca, P., Liu, S. and Hayes, A. (2016): The Evolution of the Bitcoin Economy: Extracting and Analyzing 
+the Network of Payment Relationships, July. Available at SSRN: https://ssrn.com/abstract=2808762 

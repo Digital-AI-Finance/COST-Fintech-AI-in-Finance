@@ -1,0 +1,45 @@
+--- Page 1 ---
+ 
+ 
+ 
+ 
+Av. Dias da Silva, 165, 3004-512 Coimbra, Portugal – T +351 239 790 500 – feuc@fe.uc.pt  
+  www.fe.uc.pt
+ 
+ 
+ 
+ 
+ 
+To: CIG decision making committee  
+From: Faculty of Economics of University of Coimbra 
+Date: 2024-05-13  
+Letter of support for COST Innovators Grant (CIG): “VisionXAI: Pioneering Visual analytics for 
+Establishing XAI Standards in European Finance with a Policy-Focused Impact”  
+Dear members of the CIG committee,  
+The Faculty of Economics of the University of Coimbra (FEUC) promotes both teaching and research in 
+the field of Economics and Finance. FEUC supports the research activities of its research centres, 
+faculty members and postgraduate students, and fosters interdisciplinary cooperation, as well as 
+collaboration between its research centres and other research institutions.  
+Artificial Intelligence is gaining momentum within the realm of Finance, where it finds application in 
+diverse areas like risk assessment, investment strategies, customer interactions, and process 
+automation. The need for transparent AI systems has become evident in recent times. However, the 
+establishment of universally embraced standards that align with data and financial regulations 
+remains a work in progress. 
+VisionXAI’s proposal is perfectly aligned with the challenge outlined previously. Its focus on regulatory 
+compliance is an important asset. Indeed, we believe that promising use cases of AI should not be 
+implemented without compliance with existing regulations.  
+Furthermore, standards are a must-have in an increasingly complex financial system. They would 
+facilitate the implementation of use cases, while simultaneously helping regulators conduct 
+compliance audits.  
+FEUC is committed to advanced research on the topic of the new finance, including AI applications in 
+finance. As we witness the accelerating digitization of financial services, the importance of responsible 
+AI use cannot be overstated. We therefore enthusiastically endorse the CIG application put forth by 
+VisionXAI as an integral component of our collective efforts to shape the future of finance.  
+ 
+ 
+(Rita Martins) 
+Vice-dean for research and internationalization 
+ 
+Assinado por: Maria Rita Vieira Martins
+Num. de Identificação: 09530184
+Data: 2024.05.13 11:02:07+01'00'

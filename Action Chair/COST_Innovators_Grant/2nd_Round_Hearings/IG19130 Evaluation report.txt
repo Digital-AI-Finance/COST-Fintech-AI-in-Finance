@@ -1,0 +1,115 @@
+--- Page 1 ---
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+COST Innovators Grant 
+application evaluation 
+ 
+2024-2025 
+ 
+ 
+
+
+--- Page 2 ---
+ 
+ 
+       2 
+CIG application reference number:  
+IG19130 
+ 
+INNOVATION 
+POTENTIAL 
+Comments 
+Q1: To what extent does the application describe an innovation challenge, problem or need 
+that is real, relevant, and timely? 
+The application focuses on a relevant challenge and need, namely to design and develop a visual 
+analytics tool for showing the explainability of Artificial Intelligence in the European finance sector. 
+The issue is timely and points to a real and relevant societal and health related potential, although 
+not accompanied by a fully clear identification of the concrete content and features of the intended 
+tool. 
+ 
+AI-computation explainability and transparency are critical in all sectors, and even more so in the 
+financial sector when applied to decision-support tools. The need addressed by the application is real, 
+timely and relevant. 
+While not an expert, regulatory demands in this field have mushroomed and the use of AI can often 
+cloud interpretation. 
+Q2: To what extent is the proposed solution innovative, feasible, and adequate in addressing 
+the problem or need described above? 
+The anticipated approach is feasible in addressing the identified need, and the application introduces 
+appropriately the claimed innovative character of the anticipated system, building on the knowledge 
+and competence developed within the originating action and intending to assume a more practically 
+oriented character, even if through a not fully clear and concrete identification of the anticipated 
+features of the envisaged tool. This allows appreciating appropriately the claimed advance in respect 
+to the state of the art in the field, although the adequacy of the chosen approach is somewhat limited 
+by the not  fully clear content of the anticipated tool. 
+The solution, a visualisation tool, is innovative as it applies state of the art techniques to the highly-
+sensitive area of AI-driven financial applications, responding to the regulators' requirements in the 
+area of AI computations explainability in financial applications. 
+The proposed solution will be very helpful but not necessarily solve all the problems. 
+ 
+EXPECTED 
+IMPACT 
+Comments 
+Q3: To what extent does the application describe expected impacts that are both significant 
+and credible (realistic)?  
+Anticipated impacts are potentially relevant, although quite qualitatively introduced, missing clear 
+analytical justifications to the few introduced estimations. It's overall credible that the intended tool 
+could contribute to innovative solutions to support methodologies for interpreting complex, high-
+dimensional financial models in a way that is both accessible to non-experts and compliant with 
+evolving regulatory standards, resulting in a valuable impact. 
+The application impact can be significant in enabling greater transparency  and policy alignment in 
+FinTech. 
+ 
+
+
+--- Page 3 ---
+ 
+ 
+       3 
+CIG will help improve things - but extent of impact is difficult to assess. Probably significant but not 
+industry changing. 
+Q4: To what extent is the plan for exploitation both realistic and adequate? 
+The proposal indicates an overall sufficiently structured plan to bring forward the proposal after the 
+end of the CIG, although not making fully clear who will take care of the deployment of the tool in the 
+addressed financial market. Overall, there is a fairly well-conceived technology roadmap. The 
+approach is overall sufficiently adequate to ensure an effective take-up by interested stakeholders 
+and end-users. 
+Exploitation plan is realistic and adequate leveraging a strong stakeholders network including 
+regulators and industry. The plan emphasises policy implications for decision-support through role-
+based application functionalities, based on the needs of all stakeholders, i.e. for the regulators, 
+financial analysts and end-users. It includes AI-model explainability at every step of the AI-model 
+development, including at the data collection phase to enable detection of potential biases in the 
+dataset 
+ 
+Plan is good but relies on some assumptions such as the involvement and the inputs of industry etc… 
+ 
+PLAN 
+FOR 
+IMPLEMENT
+ING THE CIG 
+Comments 
+Q5: To what extent are the work plan and the team appropriate for achieving the stated 
+objectives of the CIG? 
+The project presents a well structured and appropriately described work plan, with a clear time-
+schedule, reflecting appropriately the list of activities included within the descriptive part of the project. 
+COST tools will be suitably deployed. Envisaged tasks are overall well presented, with a clear 
+allocation of roles, responsibilities and involvement of the anticipated team members. The CIG team 
+is composed by a variegate set of members, although presented through not fully informative profiles, 
+but with skills aligned with the application scope and content. There is an overall feasible deployment 
+route of the results, likely to support appropriately the achievement of the expected outcomes. 
+Intellectual property aspects are appropriately considered and addressed, providing also for sharing 
+of revenues proportional to the contribution of each member. 
+The work plan is adequate regarding the communications and coordination activities, but ambitious 
+in terms of application implementation, which is risky. The application development methodology as 
+explained is state of the art, as well as the presented IP strategy. 
+Team is large. Though it lacks industry participation it does have a lot of ties with industry. 
+Implementation plan is very detailed. 
+OVERALL MARK OF THE REMOTE EVALUATION:  
+12.667 
+ 

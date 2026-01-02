@@ -1,0 +1,141 @@
+--- Page 1 ---
+WORKPLAN
+Annex A - Work And Budget plan - R I
+CA19130
+Fintech and Artificial Intelligence in Finance - Towards a transparent financial industry
+Grant Period from 01/11/2020 to 31/10/2021
+ 
+Summary Budget
+ 
+Networking Tool
+Quant.
+Budget
+Meetings
+1
+EUR 37 200.00
+Training Schools
+0
+EUR 0.00
+Short Term Scientific Missions (STSM)
+8
+EUR 10 730.00
+ITC Conference Grant
+2
+EUR 3 000.00
+Dissemination and Communication Products
+5
+EUR 3 840.00
+Other Expenses Related to Scientific Activities (OERSA)
+0
+EUR 0.00
+SCIENCE EXPENDITURE : EUR 54 770.00
+Financial and Scientific Administration and Coordination (FSAC) - MAX. 15% 15%
+EUR 8 215.50
+TOTAL GRANT : EUR 62 985.50
+
+
+--- Page 2 ---
+Indicative Information
+Details for Meetings
+Meeting 1
+Type :
+Core Group Meeting, Working Group Meeting, Management Committee
+Meeting
+Title :
+The darkness of Finance - making it transparent
+Attendance Type :
+N/A
+Location :
+Bukarest (Romania)
+Date :
+18/03/2021 - 19/03/2021
+Total Participants :
+45
+Total Reimbursed :
+45
+Travel Costs :
+EUR 36 000.00
+Local Organiser Support :
+EUR 1 200.00
+Details for Training Schools
+You have no Training Schools.
+Details for Short Term Scientific Missions (STSM)
+STSM Summary
+Number of STSMs :
+8
+Amount per STSM :
+1 341.25
+Total Budget for STSMs :
+10 730.00
+Details for ITC Conference Grant
+ITC Conference Grant Summary
+Number of Grants :
+8
+Amount per Grant :
+1 341.25
+Total Budget for Grants :
+10 730.00
+Details for Dissemination and Communication Products
+Item 1
+Title :
+Website for FinAI
+Expected Release Date :
+01/12/2020
+Publisher or Supplier :
+to be determined
+Type :
+Action Website
+Amount :
+EUR 1 790.00
+2
+
+
+--- Page 3 ---
+Item 2
+Title :
+Brochure for COST Fintech and AI in Finance
+Expected Release Date :
+31/12/2020
+Publisher or Supplier :
+to be determined
+Type :
+Brochures, flyers, posters, infographics
+Amount :
+EUR 1 000.00
+Item 3
+Title :
+Magazine publication about COST CA 19130
+Expected Release Date :
+30/11/2020
+Publisher or Supplier :
+to be determined
+Type :
+Publication expenses
+Amount :
+EUR 600.00
+Item 4
+Title :
+Graphics for FinAI
+Expected Release Date :
+11/01/2021
+Publisher or Supplier :
+to be determined
+Type :
+Graphic design (max EUR 1000 Action lifetime)
+Amount :
+EUR 350.00
+Item 5
+Title :
+test
+Expected Release Date :
+02/12/2020
+Publisher or Supplier :
+test
+Type :
+Action Website
+Amount :
+EUR 100.00
+Details for Other Expenses Related to Scientific Activities (OERSA)
+You have no Other Expenditures Related to Scientific Activities.
+Powered by TCPDF (www.tcpdf.org)
+3

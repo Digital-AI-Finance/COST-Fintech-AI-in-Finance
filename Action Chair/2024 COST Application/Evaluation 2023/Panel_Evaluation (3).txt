@@ -1,0 +1,294 @@
+--- Page 1 ---
+CONSENSUS EVALUATION REPORT
+GENERAL OVERVIEW
+Open Call Collection
+OC-2023-1
+Proposal Reference
+OC-2023-1-26347
+Proposal Title
+Sustainable Digital Transformation in Europe
+Proposal Acronym
+DigitalTransform
+Review Panel
+RP5: Transition towards green growth, circular innovation, and inclusive spatial development
+Evaluation Status
+Final
+EVALUATION
+SUMMARY TABLE
+S&T EXCELLENCE
+NETWORKING EXCELLENCE
+IMPACT
+IMPLEM
+ENTATIO
+N
+Marks
+ Q1
+ Q2
+ Q3
+ Q4
+ Q5
+ Q6
+ Q7
+ Q8
+ Q9
+ Q10
+Total
+4
+4
+4
+5
+4
+5
+5
+4
+5
+4
+44
+COMMENTS
+S&T EXCELLENCE
+Soundness of the Challenge
+Q1 - Does the proposal demonstrate a comprehensive command of the state of the art in the field and
+present a relevant and timely challenge?
+Mark
+The proposal addresses this question in a very good manner.
+Main strengths:
+The research questions are well posed. The topics for the WGs are carefully chosen and
+interconnected. The Action will promote the digitalization of finance while ensuring that key policy
+objectives such as consumer and investor protection, fair competition and stability, continue to be
+achieved as the digital transformation of the financial sector continues. The proposal describes the
+problems of integrating advanced technologies in the financial sector. The status of information
+technology implementation in the financial sector and expectations regarding the impact of digital
+technologies on the financial services industry are carefully described. The key functions of finance
+in the future and related research activities are well described. The proposal declares actions aimed
+at overcoming the obstacles associated with the implementation of artificial intelligence in finance.
+The proposal also envisages the creation of an interdisciplinary, gender-balanced international
+research network with a focus on young researchers and innovators, which will lead to development
+of more effective and globally applicable solutions.
+The proposal would benefit from certain improvements:
+The state of the art needs to be stated in more detail:- A description of current data protection and
+fairness issues in finance can be explored in more detail; - Current applications of generative AI in
+4
+
+
+--- Page 2 ---
+finance and its pitfalls should be stated; - state of the art in XAI in finance should be analysed in a
+more methodological set-up: current methodologies include feature importance and sensitivity
+analysis as well as local interpretability and model-agnostic approaches. Their utilization in financial
+applications should be better addressed; - state of the art of ESG in finance could also be explored
+in more detail.
+Progress beyond the state-of-the-art
+Q2 - Does the proposal describe an innovative approach to the challenge that advances the state of the
+art in the field?
+Mark
+The proposal addresses this question in a very good manner.
+Main strengths:
+The proposal highlights methods like differential privacy for ensuring data protection in finance and
+disparate learning processes and variational fair autoencoders to debias algorithms. In XAI, the WG
+would like to focus on interpretable decision trees for time series classification and attention
+mechanisms. In the proposal the differential privacy problem is described as the main one (to
+enable the examination of dataset characteristics related to a populations a whole, all while
+safeguarding individual privacy). The methods of working with financial data that will help to
+overcome it are described. Another well defined problem is fight against bias both on the data and
+methods side. Also the problem of the growing “trust” issues with complex models is highlighted.
+Given the application of generative AI in finance, the Action will develop end-to-end use cases that
+detail the entire process of building AI systems that include LLM for financial applications. The
+Action also envisages the development of solutions that will help increase confidence in complex
+financial models based on artificial intelligence, in particular, using the approach known as
+eXplainable artificial intelligence (XAI). These approaches sounds promising and have potential to
+lead to good results. The proposal has the synergy of multiple majors in order to create a strong
+basis for financial digitalization with participation from multiple countries. It could create
+comprehensive policies.
+The proposal would benefit from certain improvements:
+Description of challenges and progress beyond state of the art should be improved within topics
+surrounding the use of generative AI and the use of LLM. In finance, due to data-sensitivity issues
+as well as ethical questions, LLMs are already in place but the actual use of generative AI is still
+under discussion. Safe usage of generative AI within data privacy considerations and while
+observing equal opportunity goals through avoiding algorithmic discrimination shall be more deeply
+considered. Much attention is paid to the integration of complex mathematical concepts into
+finance, but little attention is paid to environmental and social risk management systems,
+procedures for identifying, measuring, monitoring, controlling, reporting and mitigating
+environmental and social risks, etc.
+4
+Q3 - Are the objectives presented relevant to the challenge, clear and ambitious?
+Mark
+The proposal addresses this question in a very good manner.
+Main strengths:
+The proposed objectives are well composed and take into account the goal to share knowledge and
+find synergies among participants. This is especially visible in objectives RC1, RC2, RC4 and RC5.
+The project goals are clear, specific, smart, and in line with the project's scope. The works to be
+carried out within the framework of the proposal contain clear explanations of how the problems will
+be solved.
+The proposal would benefit from certain improvements:
+4
+2
+
+
+--- Page 3 ---
+The research objectives (esp. RC 7 and RC 8) would benefit from clarification, especially how
+international coordination is vital to these objectives. An objective which includes dissemination of
+research results to public or stakeholders could have been better explored. For some project goals,
+there may be a problem of measurability. 
+NETWORKING EXCELLENCE
+Added value of networking in S&T Excellence
+Q4 - Does networking bring added value in tackling the challenge in relation to existing efforts at the
+European and/or international level?
+Mark
+The proposal addresses this question in an excellent manner.
+Main strengths:
+Prior and ongoing European and international projects are well identified and described.
+Furthermore, the proposal explains well why a further COST Action in this topic is relevant, since
+further disciplines are involved. Interdisciplinary tasks are proposed and can be taken on through a
+diverse team with experts from business as well as technical expert. Especially regulatory
+questions as well as societal norms and ethical considerations are well included into the network's
+objectives and group composition. Therefore, added value in relation to existing projects is
+apparent. The proposal provides a comprehensive, multidisciplinary, and future-oriented roadmap
+for advancements in the field of finance and technology. It not only builds upon but significantly
+extends the existing body of work, targeting a balanced, actionable, and forward-looking approach
+to complex challenges in the financial sector. The proposal details the key differentiators and added
+value of the project in accordance with the project objectives. The proposal also provides an
+overview of European projects that are focused on similar goals to the proposed project. The work
+brings people from different majors and countries. It can create common policies for the
+digitalization of finance and can contributes to possibly other areas in the future.
+5
+Added value of networking in Impact
+Q5 - Does the proposed network contain, or present a credible plan for securing, the critical mass and
+expertise for achieving the objectives and thus addressing the challenge?
+Mark
+The proposal addresses this question in a very good manner.
+Main strengths:
+The proposed participants come from various groups which aim to work interdisciplinary. The
+proposal lists regulators, researchers within AI and data privacy and economic and financial
+experts. Also, the variation in economic backgrounds of participating countries, cultural and social
+differences are highlighted. This aims towards a broad team where geographical diversity is given.
+The proposed network contains a credible plan for securing, the critical mass and expertise for
+achieving the objectives and thus addressing the challenge. The team brings together a wide array
+of scientific disciplines including computer science, finance, cybersecurity, data privacy, artificial
+intelligence, regulatory compliance, sustainability studies, ethics, user experience design,
+algorithmic development, socio-economic studies, legal studies, and cross-cultural communication.
+The scientific fields required for the work enable the study to be carried out. Additionally, the
+timeline is realistic and appropriate.
+The proposal would benefit from certain improvements:
+The challenge of how to coordinate such a diverse team is not addressed. Participants with
+different professional and geographical backgrounds need to be coordinated and motivated,
+ensuring a safe and fruitful exchange of ideas and collaboration. Also, critical mass is seemingly
+reached, but a further explanation on that is missing. The lists of research subjects and areas, from
+which professionals shall be brought together is not consistent throughout the proposal. Despite the
+4
+3
+
+
+--- Page 4 ---
+wide geography of participants, most of them represent higher education institutions and associated
+organisations.There is an imbalance in favour of economics, a smaller representation from
+business enterprise and even smaller from government/intergovernmental representatives. 
+Q6 - Does the proposal identify the most relevant stakeholders and present a clear plan to involve them
+as Action’s participants?
+Mark
+The proposal addresses this question in an excellent manner.
+Main strengths:
+All relevant stakeholders are identified and are already onboarded to support this proposal. A
+Stakeholder Involvement Plan is given, covering main steps within the project duration. The
+proposal identifies the most relevant stakeholders and presents a clear plan to involve them as
+Action’s participants. The proposal identifies the most relevant stakeholders and present a clear
+plan to involve them as Action’s participants. The proposal has a realistic and clear work plan for
+the achievements.
+5
+IMPACT
+Impact to science, society and competitiveness, and potential for innovation/break-throughs
+Q7 - Does the proposal clearly identify relevant and realistic impacts for science, society and/or
+competitiveness (including potential innovations and/or breakthroughs)?
+Mark
+The proposal addresses this question in an excellent manner.
+Main strengths:
+Impact to science, society and potential breakthroughs are described, detailing long- and short-term
+outcomes. The short perspectives give realistic insight in the possibility of high scientific impact.
+Long-term goals and potential breakthroughs are described ambitiously, but a realisation is
+possible. Europe's research could be strengthened through these breakthroughs in science and
+technology. The Socioeconomic breakthroughs are based on economic growth through AI and
+inclusive financial systems which are understandable goals which might lead to lasting chances.
+The description of socioeconomic impact sounds optimistic.The proposal is directly aligned with
+Europe's strategic priorities, affirms the goals of leadership in digital innovation, while considering
+environmental and ethical considerations, emphasizing sustainable digital transformation. The
+scientific achievements are suitable and realistic to the goal of the work.
+5
+Measures to maximise impact
+Q8 - Does the proposed networking clearly contribute to knowledge creation, transfer of knowledge and
+career development?
+Mark
+The proposal addresses this question in a very good manner.
+Main strengths:
+Maximizing Impact through knowledge creation is clearly stated and the contribution is realistic.
+Meeting structures and action for knowledge transfer are described, e.g. PhD training schools and
+conferences. The career development highlights the skill enhancements and network opportunities.
+The proposed networking contributes to knowledge creation, transfer of knowledge and career
+development. Measures to maximize impact are clearly described.
+The proposal would benefit from certain improvements:
+4
+4
+
+
+--- Page 5 ---
+The transfer of knowledge should have better addressed the collaboration between young and
+experienced researchers. The diversity of the team should also be considered and strategies stated
+on how to encourage knowledge transfer between geographical groups. The contribution to career
+development could be more extensively described. Network opportunities for career developments,
+which are mentioned, need to be better monitored. The development of soft skills can be further
+addressed when young researchers shall be supported. Leadership skills should be further
+developed and team collaboration actively encouraged for continuous improvement.
+Q9 - Is the plan for dissemination and/or exploitation of results clear and attainable and does it
+contribute to the dialogue between science and the general public or policy?
+Mark
+The proposal addresses this question in an excellent manner.
+Main strengths:
+The dissemination plan covers a clear science communication plan which includes a pledge
+towards transparency, continuous outreach and engagement. The proposers include all relevant
+dissemination outlets in their description. Highlighted is also the community engagement, which
+shall be achieved through open labs etc. An exploitation plan is mentioned. Here, further
+explanations on the development of this plan within the network would be helpful. The proposal
+expects results that can successfully be exploited.
+5
+IMPLEMENTATION
+Coherence and effectiveness of the work plan
+Q10 - Is the work plan (WGs, tasks, activities, timeframe, deliverables and risk analysis) appropriate to
+ensure the achievement of the objectives?
+Mark
+The proposal addresses this question in a very good manner.
+Main strengths:
+The work plan is well described and includes tasks in each WG, which are adequate for assuring
+the achievement in each WG. The work plan includes further overall action tasks, covering
+collaboration, dissemination, compliance and communication tasks. Those are needed to support
+and reach the objectives of this proposal and fit well into the work plan. Deliverables are stated for
+each working group, covering outcomes for various tasks. The deliverables are meaningful and
+allow to measure the overall progress of the action. Risks and contingency measures are well
+defined, both research coordination objectives and capacity building objectives are listed and
+potential risks identified. All given contingency measures are suitable. The work plan is appropriate
+to ensure the achievement of the objectives. The work plan is divided into four specialised WGs
+and 18 tasks, designed to ensure alignment with the research coordination and capacity-building
+objectives. The results are expected to make a significant contribution to the fields of data privacy,
+generative AI, XAI, and sustainable digital finance, and sustainable. The main risks associated with
+the work plan are identified and the contingency plan should ensure that the objectives of the
+proposed Action are achieved. A graphical illustration of the Gant chart for various activities, tasks
+and results in accordance with the management structure of the proposed event is provided.  We
+believe that the work plan is convenient for the accomplishment of the objectives in terms of
+timeframe, tasks, WGs, activities, and risk analysis.
+The proposal would benefit from certain improvements:
+Although the overall description is designed appropriately, some important information is missing:
+the description of deliverables does not include a specific timeframe for each deliverable and some
+milestones are missing. It remains unclear when control points are set and which information or
+outcome shall be achieved at which time; - it is unclear how to distinguish between some tasks.
+4
+5
+
+
+--- Page 6 ---
+SELECTION
+COMMENT OF THE SCIENTIFIC COMMITTEE
+SC
+To comply with the COST Excellence and Inclusiveness Policy, in the implementation of the Action: - the
+level of involvement of Inclusiveness Target Countries (ITCs) should be maintained and the plans
+described in the proposal for ensuring ITC involvement should be implemented; - the level of involvement
+of Young Researchers and Innovators (YRIs) should be increased and the plans described in the proposal
+for ensuring YRI involvement should be implemented; - the gender balance should be maintained and the
+plans described in the proposal for ensuring gender balance should be implemented.
+Powered by TCPDF (www.tcpdf.org)
+6

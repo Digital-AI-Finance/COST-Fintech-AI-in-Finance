@@ -1,0 +1,44 @@
+--- Page 1 ---
+To: CIG Decision-Making Committee
+Date: May 7, 2024
+Letter of support for COST Innovators Grant (CIG): “VisionXAI: Pioneering Visual
+analytics for
+Establishing XAI Standards in European Finance with a Policy-Focused
+Impact”
+Dear members of the CIG committee,
+Quantum AI Foundation is a non-profit organization aiming to support education, research,
+development, and collaboration in science and new technologies, especially Artificial
+Intelligence and Quantum Computing, but also other fields of Mathematics and Computer
+Science. The Foundation pursues its goals by organizing meetings (e.g., Warsaw Quantum
+Computing Group meetup), workshops (e.g., Workshops on Quantum Computing), contests,
+hackathons, and other events focusing on education and enhancing research and collaboration
+in new technologies like AI and quantum computing. The Foundation also participates in the
+international initiative P-TECH and organize lectures for students.
+We are aware of the submitted application for the COST Innovator Grant entitled "VisionXAI:
+Pioneering Visual Analytics for Establishing XAI Standards in European Finance with a
+Policy-Focused Impact," which aligns with our goals and current activities.
+On the project's aim and scope, we have been informed that:
+
+VisionXAI seeks to create a visual analytics tool that enhances the interpretability and
+standards of XAI in the European financial sector.
+
+The project is geared towards meeting regulatory requirements and policy impacts,
+ensuring alignment with EU directives.
+
+It is designed to be a scalable solution that bridges the gap between technical XAI
+approaches and practical financial applications.
+
+VisionXAI aims to foster trust and transparency in AI-driven financial decisions by
+offering clear, user-friendly interpretations.
+Quantum AI Foundation is one of the leading Polish non-profit organizations in the area of
+Artificial Intelligence and Quantum Computing. I strongly support the proposed project and
+recommend CIG committee to grant the project its full support, allowing to unlock its full
+potential.
+Sincerely,
+Pawel Gora
+CEO of the Quantum AI Foundation
+Qualified electronic 
+signature
+PAWEŁ GORA
+2024-05-07 20:53:30
+Signed on the platform  

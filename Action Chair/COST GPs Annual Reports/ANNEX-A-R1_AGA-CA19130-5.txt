@@ -1,0 +1,338 @@
+--- Page 1 ---
+WORKPLAN
+Annex A - Work And Budget plan - R I
+CA19130
+Fintech and Artificial Intelligence in Finance - Towards a transparent financial industry
+Grant Period from 01/11/2023 to 13/09/2024
+ 
+Summary Budget
+ 
+Networking Tool
+Quant.
+Budget
+Meetings
+10
+EUR 151 674.75
+Training Schools
+3
+EUR 40 782.00
+Mobility of Researchers and Innovators
+tbd.
+EUR 31 100.00
+Presentation at Conferences organised by Third Parties
+tbd.
+EUR 6 000.00
+Dissemination and Communication Products
+1
+EUR 5 000.00
+Other Expenses Related to Scientific Activities (OERSA)
+1
+EUR 500.00
+SCIENCE EXPENDITURE : EUR 235 056.75
+Financial and Scientific Administration and Coordination (FSAC) - MAX. 15% 15%
+EUR 35 258.51
+TOTAL GRANT : EUR 270 315.26
+
+
+--- Page 2 ---
+Indicative Information
+Details for Meetings
+Meeting 1
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+Core Group and Working Group Meeting in Cluj-Napoca
+Attendance Type :
+Hybrid
+Location :
+Cluj-Napoca (Romania)
+Date :
+24/04/2024 - 25/04/2024
+Total Participants :
+50
+Total Reimbursed :
+17
+Travel Costs :
+EUR 12 651.40
+Local Organiser Support :
+EUR 2 000.00
+Meeting 2
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+COST FinAI meets Brussels
+Attendance Type :
+Hybrid
+Location :
+Brussels (Belgium)
+Date :
+14/05/2024 - 15/05/2024
+Total Participants :
+40
+Total Reimbursed :
+26
+Travel Costs :
+EUR 23 440.04
+Local Organiser Support :
+EUR 161.43
+Meeting 3
+Type :
+Workshops/Conferences
+Title :
+Models for data analysis and integration for artificial intelligence:
+concepts, opportunities and challenges in the financial and socio-
+political context
+Attendance Type :
+Hybrid
+Location :
+Naples (Italy)
+Date :
+16/05/2024 - 16/05/2024
+Total Participants :
+45
+Total Reimbursed :
+4
+Travel Costs :
+EUR 3 608.00
+Local Organiser Support :
+EUR 1 000.00
+Meeting 4
+Type :
+Working Group Meeting, Workshops/Conferences
+Title :
+COST FinAI - Empowering Transformations: Digital Assets, AI, and the
+Future of Energy and Finance
+Attendance Type :
+Hybrid
+Location :
+Bucharest (Romania)
+Date :
+17/05/2024 - 17/05/2024
+Total Participants :
+20
+Total Reimbursed :
+7
+Travel Costs :
+EUR 4 370.38
+Local Organiser Support :
+EUR 1 000.00
+2
+
+
+--- Page 3 ---
+Meeting 5
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+COST FinAI Meets Istanbul
+Attendance Type :
+Hybrid
+Location :
+Istanbul (Türkiye)
+Date :
+20/05/2024 - 21/05/2024
+Total Participants :
+50
+Total Reimbursed :
+25
+Travel Costs :
+EUR 22 214.50
+Local Organiser Support :
+EUR 1 000.00
+Meeting 6
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+Women in Fintech and AI - 4th edition
+Attendance Type :
+Hybrid
+Location :
+Rethymno (Greece)
+Date :
+27/06/2024 - 28/06/2024
+Total Participants :
+50
+Total Reimbursed :
+50
+Travel Costs :
+EUR 53 950.00
+Local Organiser Support :
+EUR 1 000.00
+Meeting 7
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+AI in finance and society - challenges and opportunities
+Attendance Type :
+Hybrid
+Location :
+Gran Canaria (Spain)
+Date :
+18/07/2024 - 19/07/2024
+Total Participants :
+50
+Total Reimbursed :
+10
+Travel Costs :
+EUR 10 760.00
+Local Organiser Support :
+EUR 1 000.00
+Meeting 8
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+COST FinAI Meets Copenhagen
+Attendance Type :
+Hybrid
+Location :
+Copenhagen (Denmark)
+Date :
+30/07/2024 - 31/07/2024
+Total Participants :
+40
+Total Reimbursed :
+5
+Travel Costs :
+EUR 5 635.00
+Local Organiser Support :
+EUR 1 000.00
+3
+
+
+--- Page 4 ---
+Meeting 9
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+COST FinAI Meets Iceland
+Attendance Type :
+Hybrid
+Location :
+Bifröst (Iceland)
+Date :
+27/08/2024 - 28/08/2024
+Total Participants :
+40
+Total Reimbursed :
+4
+Travel Costs :
+EUR 4 884.00
+Local Organiser Support :
+EUR 1 000.00
+Meeting 10
+Type :
+Management Committee Meeting
+Title :
+COST FinAI Action Management Committee (MC) Meeting
+Attendance Type :
+Virtual
+Location :
+N/A (Switzerland)
+Date :
+09/09/2024 - 10/09/2024
+Total Participants :
+100
+Total Reimbursed :
+0
+Travel Costs :
+EUR 0.00
+Local Organiser Support :
+EUR 1 000.00
+Details for Training Schools
+Training School 1
+Title :
+Advances in Data Science and AI for Finance: Bridging Academia and
+Industry
+Attendance Type :
+Hybrid
+Location :
+Cosenza (Italy)
+Date :
+03/06/2024 - 04/06/2024
+Number of Trainers :
+10
+Number of Trainees :
+10
+Travel Costs Trainers :
+EUR 6 018.00
+Travel Costs Trainees :
+EUR 5 100.00
+Local Organiser Support :
+EUR 1 000.00
+Training School 2
+Title :
+COST FinAI PhD School on Fintech and AI in Finance
+Attendance Type :
+Hybrid
+Location :
+Enschede (Netherlands)
+Date :
+10/06/2024 - 14/06/2024
+Number of Trainers :
+10
+Number of Trainees :
+10
+Travel Costs Trainers :
+EUR 7 064.00
+Travel Costs Trainees :
+EUR 6 560.00
+Local Organiser Support :
+EUR 1 000.00
+4
+
+
+--- Page 5 ---
+Training School 3
+Title :
+Advanced Statistical Modelling for Fintech, Financial Inclusion and
+Inequality (AFFINE) training school
+Attendance Type :
+Hybrid
+Location :
+Naples (Italy)
+Date :
+04/09/2024 - 06/09/2024
+Number of Trainers :
+5
+Number of Trainees :
+20
+Travel Costs Trainers :
+EUR 6 520.00
+Travel Costs Trainees :
+EUR 6 520.00
+Local Organiser Support :
+EUR 1 000.00
+Details of Grants
+Mobility of Researchers and Innovators
+Total budget for Short Term Scientific Mission grants (STSM):
+EUR 8 000.00
+Total budget for Virtual Mobility grants (VM):
+EUR 23 100.00
+Presentation at Conferences
+Total budget for ITC Conference grants:
+EUR 0.00
+Total budget for Dissemination Conference grants:
+EUR 6 000.00
+Details for Dissemination and Communication Products
+Item 1
+Title :
+Website
+Dissemination and Communication
+Product :
+Action Website
+Amount :
+EUR 5 000.00
+Details for Other Expenses Related to Scientific Activities (OERSA)
+Expense 1
+Type :
+Shipping costs
+Title :
+Poster shipping
+Related Networking activity :
+Women in Fintech and AI - 4th edition, 27/06/2024 - 28/06/2024
+Description :
+Shipping COSTs for our FinAI banners and posters, for all events
+Amount (EUR without VAT) :
+EUR 500.00
+Powered by TCPDF (www.tcpdf.org)
+5
