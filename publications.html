@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Publications - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        nav .logo span { color: var(--cost-orange); }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        nav a:hover { color: white; }
+
+        .header {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%);
+            color: white;
+            padding: 6rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .header p { opacity: 0.9; }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: 700; }
+        .stat-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .charts-section {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .chart-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .chart-card h3 {
+            font-size: 0.95rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .chart-wrapper { height: 220px; }
+
+        .filters {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .filters input[type="text"] {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.7rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .filters select {
+            padding: 0.7rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            background: white;
+            min-width: 140px;
+        }
+
+        .filters input:focus, .filters select:focus {
+            outline: none;
+            border-color: var(--cost-purple);
+        }
+
+        .results-info {
+            margin-bottom: 1rem;
+            color: var(--gray);
+            font-size: 0.9rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .export-btn {
+            background: var(--cost-purple);
+            color: white;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            cursor: pointer;
+        }
+
+        .export-btn:hover { background: var(--cost-blue); }
+
+        .publications-list {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        .pub-item {
+            padding: 1.2rem 1.5rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .pub-item:last-child { border-bottom: none; }
+
+        .pub-item:hover { background: rgba(91, 45, 138, 0.02); }
+
+        .pub-citation {
+            font-size: 0.9rem;
+            line-height: 1.7;
+            color: var(--dark);
+        }
+
+        .pub-citation a {
+            color: var(--cost-blue);
+            text-decoration: none;
+            word-break: break-all;
+        }
+
+        .pub-citation a:hover { text-decoration: underline; }
+
+        .pub-meta {
+            margin-top: 0.5rem;
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .pub-badge {
+            font-size: 0.7rem;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .pub-badge.year {
+            background: rgba(91, 45, 138, 0.1);
+            color: var(--cost-purple);
+        }
+
+        .pub-badge.type {
+            background: rgba(43, 95, 158, 0.1);
+            color: var(--cost-blue);
+        }
+
+        .pub-badge.author {
+            background: rgba(0, 160, 176, 0.1);
+            color: var(--cost-teal);
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.4rem;
+            margin-top: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .pagination button {
+            padding: 0.5rem 0.9rem;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 0.85rem;
+        }
+
+        .pagination button:hover,
+        .pagination button.active {
+            background: var(--cost-purple);
+            color: white;
+            border-color: var(--cost-purple);
+        }
+
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--gray);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: var(--cost-orange);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            .filters { flex-direction: column; }
+            .filters input, .filters select { width: 100%; }
+            .stats-row { gap: 1.5rem; }
+            .charts-section { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">COST <span>CA19130</span></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="mc-members.html">MC Members</a></li>
+                <li><a href="wg-members.html">WG Members</a></li>
+                <li><a href="publications.html" style="color: white; font-weight: 600;">Publications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Publications</h1>
+        <p>Research output by COST Action CA19130 members (2020-2025)</p>
+        <div class="stats-row">
+            <div class="stat-item">
+                <div class="stat-number" id="totalPubs">-</div>
+                <div class="stat-label">Publications</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalAuthors">-</div>
+                <div class="stat-label">Authors</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalDOIs">-</div>
+                <div class="stat-label">With DOI</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="charts-section">
+            <div class="chart-card">
+                <h3>Publications by Year</h3>
+                <div class="chart-wrapper">
+                    <canvas id="yearChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-card">
+                <h3>Publications by Type</h3>
+                <div class="chart-wrapper">
+                    <canvas id="typeChart"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search title, author, or DOI...">
+            <select id="yearFilter">
+                <option value="">All Years</option>
+                <option value="2025">2025</option>
+                <option value="2024">2024</option>
+                <option value="2023">2023</option>
+                <option value="2022">2022</option>
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+            </select>
+            <select id="typeFilter">
+                <option value="">All Types</option>
+            </select>
+            <select id="authorFilter">
+                <option value="">All Authors</option>
+            </select>
+        </div>
+
+        <div class="results-info">
+            <span id="resultsInfo">Loading publications...</span>
+            <button class="export-btn" onclick="exportBibTeX()">Export BibTeX</button>
+        </div>
+
+        <div class="publications-list" id="pubsList">
+            <div class="loading">Loading publications...</div>
+        </div>
+
+        <div class="pagination" id="pagination"></div>
+    </div>
+
+    <footer>
+        <p><a href="index.html">Home</a> | <a href="mc-members.html">MC Members</a> | <a href="wg-members.html">WG Members</a></p>
+        <p style="margin-top: 1rem; opacity: 0.7;">Data sourced from OpenAlex and ORCID</p>
+    </footer>
+
+    <script>
+        let pubData = null;
+        let filteredPubs = [];
+        let currentPage = 1;
+        const itemsPerPage = 25;
+
+        // Load publications
+        fetch('data/publications_apa.json')
+            .then(r => r.json())
+            .then(data => {
+                pubData = data;
+                filteredPubs = [...data.publications];
+
+                // Update header stats
+                document.getElementById('totalPubs').textContent = data.metadata.total_publications.toLocaleString();
+                document.getElementById('totalAuthors').textContent = data.metadata.total_authors;
+                document.getElementById('totalDOIs').textContent = data.metadata.unique_dois.toLocaleString();
+
+                // Populate filters
+                populateFilters();
+
+                // Render charts
+                renderCharts();
+
+                // Render list
+                renderList();
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById('pubsList').innerHTML = '<div class="loading">Error loading publications.</div>';
+            });
+
+        function populateFilters() {
+            // Types
+            const types = Object.keys(pubData.statistics.by_type).sort((a, b) =>
+                pubData.statistics.by_type[b] - pubData.statistics.by_type[a]);
+            const typeSelect = document.getElementById('typeFilter');
+            types.slice(0, 15).forEach(t => {
+                const opt = document.createElement('option');
+                opt.value = t;
+                opt.textContent = `${t} (${pubData.statistics.by_type[t]})`;
+                typeSelect.appendChild(opt);
+            });
+
+            // Authors
+            const authors = Object.keys(pubData.statistics.top_authors).sort();
+            const authorSelect = document.getElementById('authorFilter');
+            authors.forEach(a => {
+                const opt = document.createElement('option');
+                opt.value = a;
+                opt.textContent = a;
+                authorSelect.appendChild(opt);
+            });
+        }
+
+        function renderCharts() {
+            const colors = ['#5B2D8A', '#2B5F9E', '#00A0B0', '#E87722', '#7AB800', '#D4A5A5'];
+
+            // Year chart
+            const years = Object.entries(pubData.statistics.by_year)
+                .filter(([y]) => !isNaN(parseInt(y)))
+                .sort((a, b) => parseInt(a[0]) - parseInt(b[0]));
+
+            new Chart(document.getElementById('yearChart'), {
+                type: 'bar',
+                data: {
+                    labels: years.map(y => y[0]),
+                    datasets: [{
+                        data: years.map(y => y[1]),
+                        backgroundColor: colors[0],
+                        borderRadius: 4
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: { y: { beginAtZero: true } }
+                }
+            });
+
+            // Type chart
+            const types = Object.entries(pubData.statistics.by_type)
+                .sort((a, b) => b[1] - a[1])
+                .slice(0, 6);
+
+            new Chart(document.getElementById('typeChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: types.map(t => t[0]),
+                    datasets: [{
+                        data: types.map(t => t[1]),
+                        backgroundColor: colors,
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { position: 'right', labels: { boxWidth: 12, font: { size: 10 } } }
+                    }
+                }
+            });
+        }
+
+        function filterPubs() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const year = document.getElementById('yearFilter').value;
+            const type = document.getElementById('typeFilter').value;
+            const author = document.getElementById('authorFilter').value;
+
+            filteredPubs = pubData.publications.filter(p => {
+                const matchSearch = !search ||
+                    (p.apa && p.apa.toLowerCase().includes(search)) ||
+                    (p.doi && p.doi.toLowerCase().includes(search)) ||
+                    (p.author && p.author.toLowerCase().includes(search));
+
+                const matchYear = !year || p.year == year;
+                const matchType = !type || p.type === type;
+                const matchAuthor = !author || p.author === author;
+
+                return matchSearch && matchYear && matchType && matchAuthor;
+            });
+
+            currentPage = 1;
+            renderList();
+        }
+
+        function renderList() {
+            const list = document.getElementById('pubsList');
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pagePubs = filteredPubs.slice(start, end);
+
+            if (filteredPubs.length === 0) {
+                list.innerHTML = '<div class="loading">No publications match your filters.</div>';
+                document.getElementById('resultsInfo').textContent = 'No results';
+                document.getElementById('pagination').innerHTML = '';
+                return;
+            }
+
+            document.getElementById('resultsInfo').innerHTML =
+                `<span>Showing ${start + 1}-${Math.min(end, filteredPubs.length)} of ${filteredPubs.length.toLocaleString()} publications</span>`;
+
+            list.innerHTML = pagePubs.map(p => {
+                // Make DOI clickable in APA citation
+                let apa = p.apa || '';
+                if (p.doi) {
+                    const doiUrl = p.doi.startsWith('http') ? p.doi : `https://doi.org/${p.doi}`;
+                    apa = apa.replace(p.doi, `<a href="${doiUrl}" target="_blank">${p.doi}</a>`);
+                }
+
+                return `
+                    <div class="pub-item">
+                        <div class="pub-citation">${apa}</div>
+                        <div class="pub-meta">
+                            ${p.year ? `<span class="pub-badge year">${p.year}</span>` : ''}
+                            ${p.type ? `<span class="pub-badge type">${p.type}</span>` : ''}
+                            ${p.author ? `<span class="pub-badge author">${p.author}</span>` : ''}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+
+            renderPagination();
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(filteredPubs.length / itemsPerPage);
+            const pag = document.getElementById('pagination');
+
+            if (totalPages <= 1) {
+                pag.innerHTML = '';
+                return;
+            }
+
+            let html = `<button onclick="goToPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>Prev</button>`;
+
+            const maxButtons = 7;
+            let startPage = Math.max(1, currentPage - Math.floor(maxButtons / 2));
+            let endPage = Math.min(totalPages, startPage + maxButtons - 1);
+            if (endPage - startPage < maxButtons - 1) {
+                startPage = Math.max(1, endPage - maxButtons + 1);
+            }
+
+            if (startPage > 1) {
+                html += `<button onclick="goToPage(1)">1</button>`;
+                if (startPage > 2) html += `<button disabled>...</button>`;
+            }
+
+            for (let i = startPage; i <= endPage; i++) {
+                html += `<button onclick="goToPage(${i})" class="${i === currentPage ? 'active' : ''}">${i}</button>`;
+            }
+
+            if (endPage < totalPages) {
+                if (endPage < totalPages - 1) html += `<button disabled>...</button>`;
+                html += `<button onclick="goToPage(${totalPages})">${totalPages}</button>`;
+            }
+
+            html += `<button onclick="goToPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next</button>`;
+
+            pag.innerHTML = html;
+        }
+
+        function goToPage(page) {
+            const totalPages = Math.ceil(filteredPubs.length / itemsPerPage);
+            if (page >= 1 && page <= totalPages) {
+                currentPage = page;
+                renderList();
+                window.scrollTo({ top: 400, behavior: 'smooth' });
+            }
+        }
+
+        function exportBibTeX() {
+            // Simple BibTeX export
+            let bibtex = '';
+            filteredPubs.slice(0, 100).forEach((p, i) => {
+                const key = `pub${p.id || i}`;
+                bibtex += `@article{${key},\n`;
+                bibtex += `  title = {${(p.apa || '').split('.')[1] || 'Unknown'}},\n`;
+                bibtex += `  author = {${p.author || 'Unknown'}},\n`;
+                bibtex += `  year = {${p.year || 'n.d.'}},\n`;
+                if (p.doi) bibtex += `  doi = {${p.doi}},\n`;
+                bibtex += `}\n\n`;
+            });
+
+            const blob = new Blob([bibtex], { type: 'text/plain' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = 'cost_ca19130_publications.bib';
+            a.click();
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', filterPubs);
+        document.getElementById('yearFilter').addEventListener('change', filterPubs);
+        document.getElementById('typeFilter').addEventListener('change', filterPubs);
+        document.getElementById('authorFilter').addEventListener('change', filterPubs);
+    </script>
+</body>
+</html>

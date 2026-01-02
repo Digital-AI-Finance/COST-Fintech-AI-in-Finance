@@ -1,0 +1,2946 @@
+{
+  "metadata": {
+    "source": "D:\\Joerg\\Research\\slides\\COST_Network\\working_groups_members\\CA19130-WG-members.xlsx",
+    "total_members": 426,
+    "members_with_orcid": 266,
+    "members_without_orcid": 160,
+    "valid_format": 266,
+    "invalid_format": 0,
+    "api_validated": null,
+    "api_failed": null,
+    "validation_date": "2026-01-02T19:40:28.647240"
+  },
+  "validated_orcids": [
+    {
+      "orcid": "0000-0002-9648-4438",
+      "name": "Ivan Chorbev",
+      "firstName": "Ivan",
+      "lastName": "Chorbev",
+      "affiliation": "Ss. Cyril and Methodius University in Skopje",
+      "country": "North Macedonia (MK)"
+    },
+    {
+      "orcid": "0000-0002-9770-7672",
+      "name": "Bernardete Ribeiro",
+      "firstName": "Bernardete",
+      "lastName": "Ribeiro",
+      "affiliation": "University of Coimbra",
+      "country": "Portugal (PT)"
+    },
+    {
+      "orcid": "0000-0003-0451-0529",
+      "name": "German Rodrigo",
+      "firstName": "German",
+      "lastName": "Rodrigo",
+      "affiliation": "Agencia Estatal Consejo Superior de Investigaciones Cientificas",
+      "country": "Spain (ES)"
+    },
+    {
+      "orcid": "0000-0003-0727-1324",
+      "name": "Denis Trček",
+      "firstName": "Denis",
+      "lastName": "Trček",
+      "affiliation": "University of Ljubljana",
+      "country": "Slovenia (SI)"
+    },
+    {
+      "orcid": "0000-0001-5236-0145",
+      "name": "Innar Liiv",
+      "firstName": "Innar",
+      "lastName": "Liiv",
+      "affiliation": "Tallinn University of Technology",
+      "country": "Estonia (EE)"
+    },
+    {
+      "orcid": "0000-0002-3941-0723",
+      "name": "Ramona Rupeika-Apoga",
+      "firstName": "Ramona",
+      "lastName": "Rupeika-Apoga",
+      "affiliation": "Nordic-Baltic Network in Corporate and International Finance",
+      "country": "International Organisations (XI)"
+    },
+    {
+      "orcid": "0000-0002-5336-1796",
+      "name": "Petre Lameski",
+      "firstName": "Petre",
+      "lastName": "Lameski",
+      "affiliation": "Ss. Cyril and Methodius University in Skopje",
+      "country": "North Macedonia (MK)"
+    },
+    {
+      "orcid": "0000-0002-3833-5215",
+      "name": "Petraq Papajorgji",
+      "firstName": "Petraq",
+      "lastName": "Papajorgji",
+      "affiliation": "Canadian Institute of Technology - European University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0001-7292-4462",
+      "name": "Ciprian-Octavian Truică",
+      "firstName": "Ciprian-Octavian",
+      "lastName": "Truică",
+      "affiliation": "National University of Science and Technology POLITEHNICA Bucharest",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0001-7945-1469",
+      "name": "Maria Dolores Romero Morales",
+      "firstName": "Maria Dolores",
+      "lastName": "Romero Morales",
+      "affiliation": "Copenhagen Business School",
+      "country": "Denmark (DK)"
+    },
+    {
+      "orcid": "0000-0003-0189-8636",
+      "name": "Jörg Osterrieder",
+      "firstName": "Jörg",
+      "lastName": "Osterrieder",
+      "affiliation": "University of Twente",
+      "country": "Netherlands (NL)"
+    },
+    {
+      "orcid": "0000-0002-1206-8294",
+      "name": "Ismail Kirbas",
+      "firstName": "Ismail",
+      "lastName": "Kirbas",
+      "affiliation": "Burdur Mehmet Akif Ersoy Üniversitesi",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0003-1375-2503",
+      "name": "Ozgur Yildirim",
+      "firstName": "Ozgur",
+      "lastName": "Yildirim",
+      "affiliation": "YILDIZ TECHNICAL UNIVERSITY",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-6113-4649",
+      "name": "Resul Das",
+      "firstName": "Resul",
+      "lastName": "Das",
+      "affiliation": "Firat University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-0015-9519",
+      "name": "Gokce Nur Yilmaz",
+      "firstName": "Gokce",
+      "lastName": "Nur Yilmaz",
+      "affiliation": "TED University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-2150-553X",
+      "name": "Aviv Gibali",
+      "firstName": "Aviv",
+      "lastName": "Gibali",
+      "affiliation": "ORT Braude College",
+      "country": "Israel (IL)"
+    },
+    {
+      "orcid": "0000-0001-5530-5635",
+      "name": "Adriana Tiron-Tudor",
+      "firstName": "Adriana",
+      "lastName": "Tiron-Tudor",
+      "affiliation": "Babes-Bolyai University",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0001-6642-8403",
+      "name": "Marko Marinkovic",
+      "firstName": "Marko",
+      "lastName": "Marinkovic",
+      "affiliation": "Faculty Of Civil Engineering",
+      "country": "Serbia (RS)"
+    },
+    {
+      "orcid": "0000-0001-6397-4951",
+      "name": "Elena Simona Apostol",
+      "firstName": "Elena Simona",
+      "lastName": "Apostol",
+      "affiliation": "National University of Science and Technology POLITEHNICA Bucharest",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0003-1506-4181",
+      "name": "Rita Pimentel",
+      "firstName": "Rita",
+      "lastName": "Pimentel",
+      "affiliation": "Norges teknisk-naturvitenskapelige universitet",
+      "country": "Norway (NO)"
+    },
+    {
+      "orcid": "0000-0001-7251-1211",
+      "name": "Bekir Cetintav",
+      "firstName": "Bekir",
+      "lastName": "Cetintav",
+      "affiliation": "Burdur Mehmet Akif Ersoy University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0001-7664-0168",
+      "name": "Eftim Zdravevski",
+      "firstName": "Eftim",
+      "lastName": "Zdravevski",
+      "affiliation": "Ss. Cyril and Methodius University, Faculty of Computer Science and Engineering",
+      "country": "North Macedonia (MK)"
+    },
+    {
+      "orcid": "0000-0001-6903-2877",
+      "name": "Altin Idrizi",
+      "firstName": "Altin",
+      "lastName": "Idrizi",
+      "affiliation": "Universiteti Aleksander Xhuvani",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0003-3415-1731",
+      "name": "Igor Todorović",
+      "firstName": "Igor",
+      "lastName": "Todorović",
+      "affiliation": "University of Banja Luka, Faculty of Economics",
+      "country": "Bosnia and Herzegovina (BA)"
+    },
+    {
+      "orcid": "0000-0002-4886-3572",
+      "name": "Claudia Daniela Antal (Pop)",
+      "firstName": "Claudia Daniela",
+      "lastName": "Antal (Pop)",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0001-5409-4872",
+      "name": "Riste Timovski",
+      "firstName": "Riste",
+      "lastName": "Timovski",
+      "affiliation": "Republic Of Macedonia Goce Delcev State University Stip",
+      "country": "North Macedonia (MK)"
+    },
+    {
+      "orcid": "0000-0003-4807-1345",
+      "name": "Alexandros Iosifidis",
+      "firstName": "Alexandros",
+      "lastName": "Iosifidis",
+      "affiliation": "Aarhus University",
+      "country": "Denmark (DK)"
+    },
+    {
+      "orcid": "0000-0001-5412-3194",
+      "name": "Kristina Šutienė",
+      "firstName": "Kristina",
+      "lastName": "Šutienė",
+      "affiliation": "Kaunas University of Technology",
+      "country": "Lithuania (LT)"
+    },
+    {
+      "orcid": "0000-0001-6863-5895",
+      "name": "Audrius Kabašinskas",
+      "firstName": "Audrius",
+      "lastName": "Kabašinskas",
+      "affiliation": "Kaunas University of Technology",
+      "country": "Lithuania (LT)"
+    },
+    {
+      "orcid": "0000-0001-6127-7538",
+      "name": "Javier Arroyo",
+      "firstName": "Javier",
+      "lastName": "Arroyo",
+      "affiliation": "Universidad De Alcala",
+      "country": "Spain (ES)"
+    },
+    {
+      "orcid": "0000-0002-2868-0322",
+      "name": "Miroslav Hudec",
+      "firstName": "Miroslav",
+      "lastName": "Hudec",
+      "affiliation": "University of Economics in Bratislava",
+      "country": "Slovakia (SK)"
+    },
+    {
+      "orcid": "0000-0002-0317-4351",
+      "name": "Luca Di Persio",
+      "firstName": "Luca",
+      "lastName": "Di Persio",
+      "affiliation": "Università degli Studi di Verona",
+      "country": "Italy (IT)"
+    },
+    {
+      "orcid": "0000-0001-9109-7087",
+      "name": "Jiri Strouhal",
+      "firstName": "Jiri",
+      "lastName": "Strouhal",
+      "affiliation": "Tallinn University of Technology",
+      "country": "Estonia (EE)"
+    },
+    {
+      "orcid": "0000-0001-8029-3584",
+      "name": "Felipe Ferri de C. Paes",
+      "firstName": "Felipe",
+      "lastName": "Ferri de C. Paes",
+      "affiliation": "University of Cambridge",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "orcid": "0000-0001-7448-9206",
+      "name": "Muhammet Demirbilek",
+      "firstName": "Muhammet",
+      "lastName": "Demirbilek",
+      "affiliation": "Suleyman Demirel University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0001-9366-3564",
+      "name": "Peter Schwendner",
+      "firstName": "Peter",
+      "lastName": "Schwendner",
+      "affiliation": "Zurich University of Applied Sciences",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "orcid": "0000-0001-5818-789X",
+      "name": "Alla Petukhina",
+      "firstName": "Alla",
+      "lastName": "Petukhina",
+      "affiliation": "Hochschule für Technik und Wirtschaft Berlin",
+      "country": "Germany (DE)"
+    },
+    {
+      "orcid": "0000-0002-5891-5495",
+      "name": "Daniel Traian Pele",
+      "firstName": "Daniel Traian",
+      "lastName": "Pele",
+      "affiliation": "Bucharest University of Economic Studies",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0001-5261-6948",
+      "name": "Veni Arakelian",
+      "firstName": "Veni",
+      "lastName": "Arakelian",
+      "affiliation": "Council of Economic Advisors, Ministry of Finance, Hellenic Republic",
+      "country": "Greece (EL)"
+    },
+    {
+      "orcid": "0000-0003-1853-8784",
+      "name": "Piotr Wójcik",
+      "firstName": "Piotr",
+      "lastName": "Wójcik",
+      "affiliation": "University of Warsaw",
+      "country": "Poland (PL)"
+    },
+    {
+      "orcid": "0000-0001-6591-2252",
+      "name": "Carlos Vazquez",
+      "firstName": "Carlos",
+      "lastName": "Vazquez",
+      "affiliation": "Universidade da Coruna",
+      "country": "Spain (ES)"
+    },
+    {
+      "orcid": "0000-0003-1156-5616",
+      "name": "Valerio Poti",
+      "firstName": "Valerio",
+      "lastName": "Poti",
+      "affiliation": "University College Dublin",
+      "country": "Ireland (IE)"
+    },
+    {
+      "orcid": "0000-0001-6811-8177",
+      "name": "Maria Moloney",
+      "firstName": "Maria",
+      "lastName": "Moloney",
+      "affiliation": "PrivacyEngine",
+      "country": "Ireland (IE)"
+    },
+    {
+      "orcid": "0000-0002-0305-0906",
+      "name": "Jana Peliova",
+      "firstName": "Jana",
+      "lastName": "Peliova",
+      "affiliation": "Ekonomicka Univerzita V Bratislave",
+      "country": "Slovakia (SK)"
+    },
+    {
+      "orcid": "0000-0001-6107-9822",
+      "name": "Daniele Marazzina",
+      "firstName": "Daniele",
+      "lastName": "Marazzina",
+      "affiliation": "Politecnico Di Milano",
+      "country": "Italy (IT)"
+    },
+    {
+      "orcid": "0000-0001-9101-9046",
+      "name": "Ciprian Sipos",
+      "firstName": "Ciprian",
+      "lastName": "Sipos",
+      "affiliation": "Universitatea De Vest Din Timisoara",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0002-4920-7462",
+      "name": "Codruta MARE",
+      "firstName": "Codruta",
+      "lastName": "MARE",
+      "affiliation": "Babes-Bolyai University",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0001-9115-4264",
+      "name": "Anita Pelle",
+      "firstName": "Anita",
+      "lastName": "Pelle",
+      "affiliation": "University of Szeged",
+      "country": "Hungary (HU)"
+    },
+    {
+      "orcid": "0000-0002-7225-5649",
+      "name": "Dagmar Vagnerova Linnertova",
+      "firstName": "Dagmar",
+      "lastName": "Vagnerova Linnertova",
+      "affiliation": "Masaryk University",
+      "country": "Czech Republic (CZ)"
+    },
+    {
+      "orcid": "0000-0002-7120-8939",
+      "name": "Ronald Hochreiter",
+      "firstName": "Ronald",
+      "lastName": "Hochreiter",
+      "affiliation": "Fachhochschule Wiener Neustadt GmbH",
+      "country": "Austria (AT)"
+    },
+    {
+      "orcid": "0000-0002-5898-0676",
+      "name": "Jan-Alexander Posth",
+      "firstName": "Jan-Alexander",
+      "lastName": "Posth",
+      "affiliation": "Zurich University of Applied Sciences",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "orcid": "0000-0001-6204-1789",
+      "name": "Jasmina Djordjevic",
+      "firstName": "Jasmina",
+      "lastName": "Djordjevic",
+      "affiliation": "University of Nis, Faculty of Sciences and Mathematics",
+      "country": "Serbia (RS)"
+    },
+    {
+      "orcid": "0000-0003-4927-2755",
+      "name": "Mohammad Hamdaqa",
+      "firstName": "Mohammad",
+      "lastName": "Hamdaqa",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-3599-8371",
+      "name": "Sabine Dörry",
+      "firstName": "Sabine",
+      "lastName": "Dörry",
+      "affiliation": "Liser - Luxembourg Institute Of Socio-economic Research",
+      "country": "Luxembourg (LU)"
+    },
+    {
+      "orcid": "0000-0001-5779-6917",
+      "name": "Nika Šimurina",
+      "firstName": "Nika",
+      "lastName": "Šimurina",
+      "affiliation": "Sveuciliste U Zagrebu",
+      "country": "Croatia (HR)"
+    },
+    {
+      "orcid": "0000-0002-9768-8694",
+      "name": "Friedemann Polzin",
+      "firstName": "Friedemann",
+      "lastName": "Polzin",
+      "affiliation": "Utrecht University",
+      "country": "Netherlands (NL)"
+    },
+    {
+      "orcid": "0000-0001-5579-1215",
+      "name": "Petr Hajek",
+      "firstName": "Petr",
+      "lastName": "Hajek",
+      "affiliation": "University of Pardubice",
+      "country": "Czech Republic (CZ)"
+    },
+    {
+      "orcid": "0000-0002-5963-3756",
+      "name": "Claudia Tarantola",
+      "firstName": "Claudia",
+      "lastName": "Tarantola",
+      "affiliation": "University of Milan",
+      "country": "Italy (IT)"
+    },
+    {
+      "orcid": "0000-0003-4573-5097",
+      "name": "Federica Miglietta",
+      "firstName": "Federica",
+      "lastName": "Miglietta",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-7907-6037",
+      "name": "M Sirajul Islam",
+      "firstName": "M Sirajul",
+      "lastName": "Islam",
+      "affiliation": "Orebro University",
+      "country": "Sweden (SE)"
+    },
+    {
+      "orcid": "0000-0002-1049-1742",
+      "name": "Vlora Berisha",
+      "firstName": "Vlora",
+      "lastName": "Berisha",
+      "affiliation": "University Haxhi Zeka",
+      "country": "Kosovo* (KV)"
+    },
+    {
+      "orcid": "0000-0001-6995-3844",
+      "name": "Vasiliki Skintzi",
+      "firstName": "Vasiliki",
+      "lastName": "Skintzi",
+      "affiliation": "University of Peloponnese",
+      "country": "Greece (EL)"
+    },
+    {
+      "orcid": "0000-0003-3678-9608",
+      "name": "Manar Qamhieh",
+      "firstName": "Manar",
+      "lastName": "Qamhieh",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-8065-747X",
+      "name": "Natalie Packham",
+      "firstName": "Natalie",
+      "lastName": "Packham",
+      "affiliation": "Hochschule für Wirtschaft und Recht Berlin",
+      "country": "Germany (DE)"
+    },
+    {
+      "orcid": "0000-0002-8107-1964",
+      "name": "DEIMANTE VASILIAUSKAITE",
+      "firstName": "DEIMANTE",
+      "lastName": "VASILIAUSKAITE",
+      "affiliation": "Vilnius University",
+      "country": "Lithuania (LT)"
+    },
+    {
+      "orcid": "0000-0002-2936-951X",
+      "name": "Yassen Gorbounov",
+      "firstName": "Yassen",
+      "lastName": "Gorbounov",
+      "affiliation": "New Bulgarian University",
+      "country": "Bulgaria (BG)"
+    },
+    {
+      "orcid": "0000-0002-7576-2064",
+      "name": "Djamila Aouada",
+      "firstName": "Djamila",
+      "lastName": "Aouada",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0003-0018-4025",
+      "name": "Don Bredin",
+      "firstName": "Don",
+      "lastName": "Bredin",
+      "affiliation": "University College Dublin",
+      "country": "Ireland (IE)"
+    },
+    {
+      "orcid": "0000-0002-9149-1065",
+      "name": "Marcin Chlebus",
+      "firstName": "Marcin",
+      "lastName": "Chlebus",
+      "affiliation": "Data Juice Lab",
+      "country": "Poland (PL)"
+    },
+    {
+      "orcid": "0000-0003-1894-1610",
+      "name": "Martin Alexy",
+      "firstName": "Martin",
+      "lastName": "Alexy",
+      "affiliation": "University of Economics in Bratislava",
+      "country": "Slovakia (SK)"
+    },
+    {
+      "orcid": "0000-0003-3143-3805",
+      "name": "Igor Loncarski",
+      "firstName": "Igor",
+      "lastName": "Loncarski",
+      "affiliation": "University of Ljubljana",
+      "country": "Slovenia (SI)"
+    },
+    {
+      "orcid": "0000-0002-8162-5816",
+      "name": "John Abela",
+      "firstName": "John",
+      "lastName": "Abela",
+      "affiliation": "University of Malta",
+      "country": "Malta (MT)"
+    },
+    {
+      "orcid": "0000-0002-5678-7979",
+      "name": "Eleftheria Paschalidou",
+      "firstName": "Eleftheria",
+      "lastName": "Paschalidou",
+      "affiliation": "Aristotle University of Thessaloniki",
+      "country": "Greece (EL)"
+    },
+    {
+      "orcid": "0000-0002-1453-0016",
+      "name": "Nadi Serhan Aydın",
+      "firstName": "Nadi Serhan",
+      "lastName": "Aydın",
+      "affiliation": "Istinye University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0003-3212-5783",
+      "name": "Luan Vardari",
+      "firstName": "Luan",
+      "lastName": "Vardari",
+      "affiliation": "Universiteti Ukshin Hoti",
+      "country": "Kosovo* (KV)"
+    },
+    {
+      "orcid": "0000-0002-2126-2339",
+      "name": "Rezarta Shkurti (Perri)",
+      "firstName": "Rezarta",
+      "lastName": "Shkurti (Perri)",
+      "affiliation": "University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0001-7205-8584",
+      "name": "Esra Kabaklarli",
+      "firstName": "Esra",
+      "lastName": "Kabaklarli",
+      "affiliation": "Selcuk Universitesi",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-4860-890X",
+      "name": "Laivi Laidroo",
+      "firstName": "Laivi",
+      "lastName": "Laidroo",
+      "affiliation": "Tallinn University of Technology",
+      "country": "Estonia (EE)"
+    },
+    {
+      "orcid": "0000-0001-5228-8294",
+      "name": "Hanna Kristín Skaftadóttir",
+      "firstName": "Hanna Kristín",
+      "lastName": "Skaftadóttir",
+      "affiliation": "Bifröst University",
+      "country": "Iceland (IS)"
+    },
+    {
+      "orcid": "0000-0001-9654-6013",
+      "name": "Agnes Guerraz",
+      "firstName": "Agnes",
+      "lastName": "Guerraz",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-0019-8518",
+      "name": "Per B Solibakke",
+      "firstName": "Per B",
+      "lastName": "Solibakke",
+      "affiliation": "Norges teknisk-naturvitenskapelige universitet",
+      "country": "Norway (NO)"
+    },
+    {
+      "orcid": "0000-0003-1411-2188",
+      "name": "Arman Hassanniakalager",
+      "firstName": "Arman",
+      "lastName": "Hassanniakalager",
+      "affiliation": "University of Bath",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "orcid": "0000-0003-1448-5152",
+      "name": "Barbara Alemanni",
+      "firstName": "Barbara",
+      "lastName": "Alemanni",
+      "affiliation": "Università degli Studi di Genova",
+      "country": "Italy (IT)"
+    },
+    {
+      "orcid": "0000-0002-7322-4094",
+      "name": "Cornelis Oosterlee",
+      "firstName": "Cornelis",
+      "lastName": "Oosterlee",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-6441-833X",
+      "name": "Vladimir Simović",
+      "firstName": "Vladimir",
+      "lastName": "Simović",
+      "affiliation": "Institut Ekonomskih Nauka",
+      "country": "Serbia (RS)"
+    },
+    {
+      "orcid": "0000-0002-4362-6201",
+      "name": "Miljan Vučetić",
+      "firstName": "Miljan",
+      "lastName": "Vučetić",
+      "affiliation": "Vlatacom Doo",
+      "country": "Serbia (RS)"
+    },
+    {
+      "orcid": "0000-0003-3761-8106",
+      "name": "Mike Tsionas",
+      "firstName": "Mike",
+      "lastName": "Tsionas",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0003-1240-4822",
+      "name": "Thomas DASAKLIS",
+      "firstName": "Thomas",
+      "lastName": "DASAKLIS",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0003-4441-9690",
+      "name": "Sašo Karakatič",
+      "firstName": "Sašo",
+      "lastName": "Karakatič",
+      "affiliation": "Faculty of Electrical Engineering and Computer Science, University of Maribor",
+      "country": "Slovenia (SI)"
+    },
+    {
+      "orcid": "0000-0002-5656-0061",
+      "name": "Catarina Silva",
+      "firstName": "Catarina",
+      "lastName": "Silva",
+      "affiliation": "University of Coimbra",
+      "country": "Portugal (PT)"
+    },
+    {
+      "orcid": "0000-0001-5356-7850",
+      "name": "Lazar Obradović",
+      "firstName": "Lazar",
+      "lastName": "Obradović",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-1897-9152",
+      "name": "Ivan Nikolic",
+      "firstName": "Ivan",
+      "lastName": "Nikolic",
+      "affiliation": "Institute of Social Sciences",
+      "country": "Serbia (RS)"
+    },
+    {
+      "orcid": "0000-0002-0370-9539",
+      "name": "Miller Janny Ariza Garzón",
+      "firstName": "Miller Janny",
+      "lastName": "Ariza Garzón",
+      "affiliation": "Universidad Complutense de Madrid",
+      "country": "Spain (ES)"
+    },
+    {
+      "orcid": "0000-0001-9059-0021",
+      "name": "Luis Lorenzo",
+      "firstName": "Luis",
+      "lastName": "Lorenzo",
+      "affiliation": "Universidad Rey Juan Carlos",
+      "country": "Spain (ES)"
+    },
+    {
+      "orcid": "0000-0001-5193-8304",
+      "name": "Barbara Będowska-Sójka",
+      "firstName": "Barbara",
+      "lastName": "Będowska-Sójka",
+      "affiliation": "Uniwersytet Ekonomiczny W Poznaniu",
+      "country": "Poland (PL)"
+    },
+    {
+      "orcid": "0000-0003-1077-4790",
+      "name": "Ahmed ELMESIRY",
+      "firstName": "Ahmed",
+      "lastName": "ELMESIRY",
+      "affiliation": "London Metropolitan University",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "orcid": "0000-0003-1918-7293",
+      "name": "Belma OZTURKKAL",
+      "firstName": "Belma",
+      "lastName": "OZTURKKAL",
+      "affiliation": "Kadir Has University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0001-5015-8883",
+      "name": "Bálint Molnár",
+      "firstName": "Bálint",
+      "lastName": "Molnár",
+      "affiliation": "Eötvös Loránd University",
+      "country": "Hungary (HU)"
+    },
+    {
+      "orcid": "0000-0002-5630-8595",
+      "name": "Lidija Barjaktarović",
+      "firstName": "Lidija",
+      "lastName": "Barjaktarović",
+      "affiliation": "Singidunum University Belgrade",
+      "country": "Serbia (RS)"
+    },
+    {
+      "orcid": "0000-0003-4808-2466",
+      "name": "Susana Maria Aires de Sousa",
+      "firstName": "Susana Maria",
+      "lastName": "Aires de Sousa",
+      "affiliation": "University of Coimbra Institute for Legal Research (UCILeR)",
+      "country": "Portugal (PT)"
+    },
+    {
+      "orcid": "0000-0002-3825-0780",
+      "name": "Ardita Todri",
+      "firstName": "Ardita",
+      "lastName": "Todri",
+      "affiliation": "University of Elbasan \"Aleksander Xhuvani\"",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0002-4428-1161",
+      "name": "Kadri Sylejmani",
+      "firstName": "Kadri",
+      "lastName": "Sylejmani",
+      "affiliation": "University of Prishtina",
+      "country": "Kosovo* (KV)"
+    },
+    {
+      "orcid": "0000-0002-4649-5120",
+      "name": "Michal Kompan",
+      "firstName": "Michal",
+      "lastName": "Kompan",
+      "affiliation": "Kempelen Institute of Intelligent Technologies",
+      "country": "Slovakia (SK)"
+    },
+    {
+      "orcid": "0000-0003-4843-9373",
+      "name": "Ladislav Krištoufek",
+      "firstName": "Ladislav",
+      "lastName": "Krištoufek",
+      "affiliation": "Univerzita Karlova",
+      "country": "Czech Republic (CZ)"
+    },
+    {
+      "orcid": "0000-0001-5095-5356",
+      "name": "María Óskarsdóttir",
+      "firstName": "María",
+      "lastName": "Óskarsdóttir",
+      "affiliation": "Haskolinn I Reykjavik Ehf",
+      "country": "Iceland (IS)"
+    },
+    {
+      "orcid": "0000-0002-8127-9466",
+      "name": "Marcus Wunsch",
+      "firstName": "Marcus",
+      "lastName": "Wunsch",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0003-2757-9940",
+      "name": "Olivija Filipovska",
+      "firstName": "Olivija",
+      "lastName": "Filipovska",
+      "affiliation": "Geostrategic Institute Gobal Skopje",
+      "country": "North Macedonia (MK)"
+    },
+    {
+      "orcid": "0000-0001-6270-7202",
+      "name": "Roman Matkovskyy",
+      "firstName": "Roman",
+      "lastName": "Matkovskyy",
+      "affiliation": "Rennes School of Business",
+      "country": "France (FR)"
+    },
+    {
+      "orcid": "0000-0002-6885-899X",
+      "name": "Alessandra Tanda",
+      "firstName": "Alessandra",
+      "lastName": "Tanda",
+      "affiliation": "Universita Degli Studi Di Pavia",
+      "country": "Italy (IT)"
+    },
+    {
+      "orcid": "0000-0001-7784-2298",
+      "name": "Olgerta Idrizi",
+      "firstName": "Olgerta",
+      "lastName": "Idrizi",
+      "affiliation": "Mediterranean University of Albania",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0002-2506-7004",
+      "name": "Wei Li",
+      "firstName": "Wei",
+      "lastName": "Li",
+      "affiliation": "National University of Singapore",
+      "country": "Singapore (SG)"
+    },
+    {
+      "orcid": "0000-0002-6444-6840",
+      "name": "Christian Hafner",
+      "firstName": "Christian",
+      "lastName": "Hafner",
+      "affiliation": "UCLouvain",
+      "country": "Belgium (BE)"
+    },
+    {
+      "orcid": "0000-0003-1753-3455",
+      "name": "Ifigenia Georgiou",
+      "firstName": "Ifigenia",
+      "lastName": "Georgiou",
+      "affiliation": "University of Nicosia",
+      "country": "Cyprus (CY)"
+    },
+    {
+      "orcid": "0000-0001-7506-5712",
+      "name": "Luciana Dalla Valle",
+      "firstName": "Luciana",
+      "lastName": "Dalla Valle",
+      "affiliation": "University of Plymouth",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "orcid": "0000-0002-3266-1773",
+      "name": "Galena Pisoni",
+      "firstName": "Galena",
+      "lastName": "Pisoni",
+      "affiliation": "York St John University",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "orcid": "0000-0002-3235-9427",
+      "name": "Marianna Russo",
+      "firstName": "Marianna",
+      "lastName": "Russo",
+      "affiliation": "NEOMA Business School",
+      "country": "France (FR)"
+    },
+    {
+      "orcid": "0000-0002-4260-828X",
+      "name": "Phuong Nguyen",
+      "firstName": "Phuong",
+      "lastName": "Nguyen",
+      "affiliation": "International University - Vietnam National University of Ho Chi Minh City",
+      "country": "Vietnam (VN)"
+    },
+    {
+      "orcid": "0000-0003-4359-987X",
+      "name": "Thomas Walther",
+      "firstName": "Thomas",
+      "lastName": "Walther",
+      "affiliation": "Utrecht University - Utrecht School of Economics",
+      "country": "Netherlands (NL)"
+    },
+    {
+      "orcid": "0000-0001-5097-2607",
+      "name": "Jozef Barunik",
+      "firstName": "Jozef",
+      "lastName": "Barunik",
+      "affiliation": "Charles University",
+      "country": "Czech Republic (CZ)"
+    },
+    {
+      "orcid": "0000-0002-0782-2790",
+      "name": "Ioana Coita",
+      "firstName": "Ioana",
+      "lastName": "Coita",
+      "affiliation": "Universitatea Din Oradea",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0002-3331-5936",
+      "name": "Sinan Hanay",
+      "firstName": "Sinan",
+      "lastName": "Hanay",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-4628-1907",
+      "name": "Apostolos Chalkis",
+      "firstName": "Apostolos",
+      "lastName": "Chalkis",
+      "affiliation": "National and Kapodistrian University of Athens",
+      "country": "Greece (EL)"
+    },
+    {
+      "orcid": "0000-0001-6465-1097",
+      "name": "Sam Goundar",
+      "firstName": "Sam",
+      "lastName": "Goundar",
+      "affiliation": "RMIT University",
+      "country": "Vietnam (VN)"
+    },
+    {
+      "orcid": "0000-0002-1058-9520",
+      "name": "Chemseddine TIDJANI",
+      "firstName": "Chemseddine",
+      "lastName": "TIDJANI",
+      "affiliation": "Centre De Recherche En Economie Appliquee Pour Le Developpement",
+      "country": "Algeria (DZ)"
+    },
+    {
+      "orcid": "0000-0002-7563-2374",
+      "name": "Cuong Nguyen",
+      "firstName": "Cuong",
+      "lastName": "Nguyen",
+      "affiliation": "Lincoln University",
+      "country": "New Zealand (NZ)"
+    },
+    {
+      "orcid": "0000-0002-2156-0942",
+      "name": "Fatmir Memaj",
+      "firstName": "Fatmir",
+      "lastName": "Memaj",
+      "affiliation": "University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0002-4592-1765",
+      "name": "Meriem Kherbouche",
+      "firstName": "Meriem",
+      "lastName": "Kherbouche",
+      "affiliation": "ELTE",
+      "country": "Hungary (HU)"
+    },
+    {
+      "orcid": "0000-0001-6575-1268",
+      "name": "Tiago Faria",
+      "firstName": "Tiago",
+      "lastName": "Faria",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-2646-9937",
+      "name": "Maria Iannario",
+      "firstName": "Maria",
+      "lastName": "Iannario",
+      "affiliation": "Universita Degli Studi Di Napoli Federico II",
+      "country": "Italy (IT)"
+    },
+    {
+      "orcid": "0000-0003-2973-9098",
+      "name": "David Bevan",
+      "firstName": "David",
+      "lastName": "Bevan",
+      "affiliation": "Saint Martin's Institute of Higher Education",
+      "country": "Malta (MT)"
+    },
+    {
+      "orcid": "0000-0002-9668-5782",
+      "name": "Karolina Bolesta",
+      "firstName": "Karolina",
+      "lastName": "Bolesta",
+      "affiliation": "Szkola Glowna Handlowa W Warszawie",
+      "country": "Poland (PL)"
+    },
+    {
+      "orcid": "0000-0001-9045-0694",
+      "name": "Seda AKTURK",
+      "firstName": "Seda",
+      "lastName": "AKTURK",
+      "affiliation": "IGDIR UNIVERSITY",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0001-6289-4116",
+      "name": "Bernardo Marques",
+      "firstName": "Bernardo",
+      "lastName": "Marques",
+      "affiliation": "Universidade Católica Portuguesa - Católica Porto Business School",
+      "country": "Portugal (PT)"
+    },
+    {
+      "orcid": "0000-0002-9167-2237",
+      "name": "Simona Cosma",
+      "firstName": "Simona",
+      "lastName": "Cosma",
+      "affiliation": "Alma Mater Studiorum - Universita di Bologna",
+      "country": "Italy (IT)"
+    },
+    {
+      "orcid": "0000-0003-4915-3297",
+      "name": "Vassilios Papavassiliou",
+      "firstName": "Vassilios",
+      "lastName": "Papavassiliou",
+      "affiliation": "University College Dublin",
+      "country": "Ireland (IE)"
+    },
+    {
+      "orcid": "0000-0002-9032-0723",
+      "name": "Jurgita Černevičienė",
+      "firstName": "Jurgita",
+      "lastName": "Černevičienė",
+      "affiliation": "Kaunas University of  Technology",
+      "country": "Lithuania (LT)"
+    },
+    {
+      "orcid": "0000-0003-4998-4592",
+      "name": "Rupel Nargunam",
+      "firstName": "Rupel",
+      "lastName": "Nargunam",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-8403-4536",
+      "name": "Albulena Shala",
+      "firstName": "Albulena",
+      "lastName": "Shala",
+      "affiliation": "University of Prishtina",
+      "country": "Kosovo* (KV)"
+    },
+    {
+      "orcid": "0000-0002-2281-6970",
+      "name": "Angele Giuliano",
+      "firstName": "Angele",
+      "lastName": "Giuliano",
+      "affiliation": "Acrosslimits Ltd",
+      "country": "Malta (MT)"
+    },
+    {
+      "orcid": "0000-0001-8703-3232",
+      "name": "Francesca Grassetti",
+      "firstName": "Francesca",
+      "lastName": "Grassetti",
+      "affiliation": "Politecnico di Milano",
+      "country": "Italy (IT)"
+    },
+    {
+      "orcid": "0000-0001-8161-4992",
+      "name": "Mona Demaidi",
+      "firstName": "Mona",
+      "lastName": "Demaidi",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-2577-7348",
+      "name": "Ying Chen",
+      "firstName": "Ying",
+      "lastName": "Chen",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-3651-9934",
+      "name": "Huei-Wen Teng",
+      "firstName": "Huei-Wen",
+      "lastName": "Teng",
+      "affiliation": "National Chiao Tung University",
+      "country": "Taiwan (TW)"
+    },
+    {
+      "orcid": "0000-0001-5492-3570",
+      "name": "Domagoj Sajter",
+      "firstName": "Domagoj",
+      "lastName": "Sajter",
+      "affiliation": "Josip Juraj Strossmayer University of Osijek, Faculty of Economics and Business",
+      "country": "Croatia (HR)"
+    },
+    {
+      "orcid": "0000-0002-1206-6424",
+      "name": "Elda Xhumari",
+      "firstName": "Elda",
+      "lastName": "Xhumari",
+      "affiliation": "University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0002-5999-1203",
+      "name": "Alper Ozcan",
+      "firstName": "Alper",
+      "lastName": "Ozcan",
+      "affiliation": "Akdeniz University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0003-0224-6787",
+      "name": "Min-Bin Lin",
+      "firstName": "Min-Bin",
+      "lastName": "Lin",
+      "affiliation": "Karlsruhe Institute of Technology",
+      "country": "Germany (DE)"
+    },
+    {
+      "orcid": "0000-0002-7866-0020",
+      "name": "Jamal Abdul Nasir",
+      "firstName": "Jamal",
+      "lastName": "Abdul Nasir",
+      "affiliation": "University of Galway",
+      "country": "Ireland (IE)"
+    },
+    {
+      "orcid": "0000-0003-4542-7481",
+      "name": "Matthieu Nadini",
+      "firstName": "Matthieu",
+      "lastName": "Nadini",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-9067-1259",
+      "name": "Imelda Sejdini",
+      "firstName": "Imelda",
+      "lastName": "Sejdini",
+      "affiliation": "University of Elbasan \"Aleksandër Xhuvani\"",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0002-3138-1622",
+      "name": "Sema Yılmaz",
+      "firstName": "Sema",
+      "lastName": "Yılmaz",
+      "affiliation": "Yıldız Technical University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0003-3925-844X",
+      "name": "Melike Bildirici",
+      "firstName": "Melike",
+      "lastName": "Bildirici",
+      "affiliation": "YILDIZ TECHNICAL UNIVERSITY",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-2270-3247",
+      "name": "Jan Vlachy",
+      "firstName": "Jan",
+      "lastName": "Vlachy",
+      "affiliation": "University of Chemistry and Technology Prague",
+      "country": "Czech Republic (CZ)"
+    },
+    {
+      "orcid": "0000-0001-5913-4220",
+      "name": "Akanksha Jalan",
+      "firstName": "Akanksha",
+      "lastName": "Jalan",
+      "affiliation": "Rennes School of Business",
+      "country": "France (FR)"
+    },
+    {
+      "orcid": "0000-0002-5561-6158",
+      "name": "Stavros Pantos",
+      "firstName": "Stavros",
+      "lastName": "Pantos",
+      "affiliation": "University of Reading",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "orcid": "0000-0003-0857-0764",
+      "name": "Ahmet ALKAN",
+      "firstName": "Ahmet",
+      "lastName": "ALKAN",
+      "affiliation": "Kahramanmaras Sutcu Imam University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-7663-198X",
+      "name": "Mile Bošnjak",
+      "firstName": "Mile",
+      "lastName": "Bošnjak",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0001-6715-7406",
+      "name": "Gabriela Mihaela Muresan",
+      "firstName": "Gabriela Mihaela",
+      "lastName": "Muresan",
+      "affiliation": "Babes-Bolyai University",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0003-1544-4379",
+      "name": "Dashmir Istrefi",
+      "firstName": "Dashmir",
+      "lastName": "Istrefi",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0003-4129-233X",
+      "name": "Jose Antonio Muniz Martinez",
+      "firstName": "Jose Antonio",
+      "lastName": "Muniz Martinez",
+      "affiliation": "University of Bath",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "orcid": "0000-0003-1056-2368",
+      "name": "Marcos Machado",
+      "firstName": "Marcos",
+      "lastName": "Machado",
+      "affiliation": "University of Twente",
+      "country": "Netherlands (NL)"
+    },
+    {
+      "orcid": "0000-0002-2505-9653",
+      "name": "Abraham Weinberg",
+      "firstName": "Abraham",
+      "lastName": "Weinberg",
+      "affiliation": "AI-WEINBERG, AI Experts",
+      "country": "Israel (IL)"
+    },
+    {
+      "orcid": "0000-0002-6035-800X",
+      "name": "Esteban Guerrero",
+      "firstName": "Esteban",
+      "lastName": "Guerrero",
+      "affiliation": "Umea Universitet",
+      "country": "Sweden (SE)"
+    },
+    {
+      "orcid": "0000-0003-0336-5219",
+      "name": "Cesario Mateus",
+      "firstName": "Cesario",
+      "lastName": "Mateus",
+      "affiliation": "Aalborg Universitet",
+      "country": "Denmark (DK)"
+    },
+    {
+      "orcid": "0000-0001-8120-0001",
+      "name": "Alexandre Boulenger",
+      "firstName": "Alexandre",
+      "lastName": "Boulenger",
+      "affiliation": "Genify",
+      "country": "France (FR)"
+    },
+    {
+      "orcid": "0000-0003-3718-7449",
+      "name": "Mutlu Akar",
+      "firstName": "Mutlu",
+      "lastName": "Akar",
+      "affiliation": "YILDIZ TECHNICAL UNIVERSITY",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-1831-0192",
+      "name": "Eliona Gremi",
+      "firstName": "Eliona",
+      "lastName": "Gremi",
+      "affiliation": "Universiteti Aleksander Xhuvani",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0002-3176-7779",
+      "name": "Valbona Ballkoci",
+      "firstName": "Valbona",
+      "lastName": "Ballkoci",
+      "affiliation": "University of Elbasan \"Aleksandër Xhuvani\"",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0002-2217-8956",
+      "name": "Marsida MORINA",
+      "firstName": "Marsida",
+      "lastName": "MORINA",
+      "affiliation": "University of Elbasan \"Aleksandër Xhuvani\"",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0003-3684-6692",
+      "name": "Gamze Ozturk Danisman",
+      "firstName": "Gamze",
+      "lastName": "Ozturk Danisman",
+      "affiliation": "Istanbul Bilgi University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-7737-9675",
+      "name": "Lennart John Baals",
+      "firstName": "Lennart John",
+      "lastName": "Baals",
+      "affiliation": "Bern University of Applied Sciences",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "orcid": "0000-0003-4838-4659",
+      "name": "Fiona Metani",
+      "firstName": "Fiona",
+      "lastName": "Metani",
+      "affiliation": "Albanian Developmemt Fund - Fondi Shqiptar i Zhvillimit",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0002-1838-620X",
+      "name": "Stefana Belbe",
+      "firstName": "Stefana",
+      "lastName": "Belbe",
+      "affiliation": "Babes-Bolyai University",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0002-5541-4257",
+      "name": "Alberto Citterio",
+      "firstName": "Alberto",
+      "lastName": "Citterio",
+      "affiliation": "University of Insubria",
+      "country": "Italy (IT)"
+    },
+    {
+      "orcid": "0000-0002-5450-9983",
+      "name": "Ashish Kumar Jha",
+      "firstName": "Ashish Kumar",
+      "lastName": "Jha",
+      "affiliation": "Trinity College Dublin",
+      "country": "Ireland (IE)"
+    },
+    {
+      "orcid": "0000-0003-3121-8603",
+      "name": "Mustafa Okur",
+      "firstName": "Mustafa",
+      "lastName": "Okur",
+      "affiliation": "Marmara University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0001-6939-9097",
+      "name": "Iryna Mihus",
+      "firstName": "Iryna",
+      "lastName": "Mihus",
+      "affiliation": "OÜ  \"Scientific Center of Innovative Research\"",
+      "country": "Estonia (EE)"
+    },
+    {
+      "orcid": "0000-0001-5426-435X",
+      "name": "Lorenzo Schoenleber",
+      "firstName": "Lorenzo",
+      "lastName": "Schoenleber",
+      "affiliation": "Collegio Carlo Alberto - Centro Di Ricerca E Alta Formazione",
+      "country": "Italy (IT)"
+    },
+    {
+      "orcid": "0000-0003-3442-9342",
+      "name": "Raul Bag",
+      "firstName": "Raul",
+      "lastName": "Bag",
+      "affiliation": "FABIZ - Bucharest Academy of Economic Studies",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0002-8261-5601",
+      "name": "Sorin Anagnoste",
+      "firstName": "Sorin",
+      "lastName": "Anagnoste",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0002-2578-488X",
+      "name": "Tomas Plihal",
+      "firstName": "Tomas",
+      "lastName": "Plihal",
+      "affiliation": "Masaryk University",
+      "country": "Czech Republic (CZ)"
+    },
+    {
+      "orcid": "0000-0002-3582-6684",
+      "name": "Haoran Wu",
+      "firstName": "Haoran",
+      "lastName": "Wu",
+      "affiliation": "University College Dublin",
+      "country": "Ireland (IE)"
+    },
+    {
+      "orcid": "0000-0002-4280-8468",
+      "name": "Karel Kozmik",
+      "firstName": "Karel",
+      "lastName": "Kozmik",
+      "affiliation": "Charles University",
+      "country": "Czech Republic (CZ)"
+    },
+    {
+      "orcid": "0000-0003-3602-9289",
+      "name": "Nuray Bayar Muluk",
+      "firstName": "Nuray",
+      "lastName": "Bayar Muluk",
+      "affiliation": "Kırıkkale University, Faculty of Medicine",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0001-7316-9796",
+      "name": "Dimitar Kitanovski",
+      "firstName": "Dimitar",
+      "lastName": "Kitanovski",
+      "affiliation": "Ss. Cyril and Methodius University in Skopje",
+      "country": "North Macedonia (MK)"
+    },
+    {
+      "orcid": "0000-0003-0882-3426",
+      "name": "Ana Isabel Azevedo",
+      "firstName": "Ana Isabel",
+      "lastName": "Azevedo",
+      "affiliation": "Instituto Politecnico Do Porto",
+      "country": "Portugal (PT)"
+    },
+    {
+      "orcid": "0000-0002-0117-8447",
+      "name": "Petros Dellaportas",
+      "firstName": "Petros",
+      "lastName": "Dellaportas",
+      "affiliation": "Athens University Of Economics And Business - Research Center",
+      "country": "Greece (EL)"
+    },
+    {
+      "orcid": "0000-0001-6290-5380",
+      "name": "Alexandra Conda",
+      "firstName": "Alexandra",
+      "lastName": "Conda",
+      "affiliation": "The Bucharest University of Economic Studies",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0003-0508-105X",
+      "name": "ELISSA MOLLAKUQE",
+      "firstName": "ELISSA",
+      "lastName": "MOLLAKUQE",
+      "affiliation": "Kadir Has University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0001-5876-0465",
+      "name": "Dea Baka",
+      "firstName": "Dea",
+      "lastName": "Baka",
+      "affiliation": "University of Tirana - Faculty of natural sciences",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0003-2453-1511",
+      "name": "Stanca Liana",
+      "firstName": "Stanca",
+      "lastName": "Liana",
+      "affiliation": "Babes-Bolyai University",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0002-0017-601X",
+      "name": "Franco Farrugia",
+      "firstName": "Franco",
+      "lastName": "Farrugia",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "orcid": "0000-0001-5084-9633",
+      "name": "Marius Vlad Pop",
+      "firstName": "Marius Vlad",
+      "lastName": "Pop",
+      "affiliation": "Universitatea Din Oradea",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0003-1614-2639",
+      "name": "Abdulkadir Sengur",
+      "firstName": "Abdulkadir",
+      "lastName": "Sengur",
+      "affiliation": "Firat University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0003-2212-5544",
+      "name": "Zeynep Bala Duranay",
+      "firstName": "Zeynep Bala",
+      "lastName": "Duranay",
+      "affiliation": "Firat University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-9596-6814",
+      "name": "Alona Klochko",
+      "firstName": "Alona",
+      "lastName": "Klochko",
+      "affiliation": "Sumy National Agrarian University",
+      "country": "Ukraine (UA)"
+    },
+    {
+      "orcid": "0000-0003-4778-5960",
+      "name": "Luis Vicente",
+      "firstName": "Luis",
+      "lastName": "Vicente",
+      "affiliation": "Universidad de Zaragoza",
+      "country": "Spain (ES)"
+    },
+    {
+      "orcid": "0000-0003-3044-4983",
+      "name": "Begoña Gutiérrez-Nieto",
+      "firstName": "Begoña",
+      "lastName": "Gutiérrez-Nieto",
+      "affiliation": "Universidad de Zaragoza",
+      "country": "Spain (ES)"
+    },
+    {
+      "orcid": "0000-0003-2596-9638",
+      "name": "Carlos Serrano-Cinca",
+      "firstName": "Carlos",
+      "lastName": "Serrano-Cinca",
+      "affiliation": "Universidad de Zaragoza - Faculty of Business and Economics",
+      "country": "Spain (ES)"
+    },
+    {
+      "orcid": "0000-0003-3275-5814",
+      "name": "Cristina Ortiz",
+      "firstName": "Cristina",
+      "lastName": "Ortiz",
+      "affiliation": "Universidad de Zaragoza",
+      "country": "Spain (ES)"
+    },
+    {
+      "orcid": "0000-0002-7362-9163",
+      "name": "Denis Vostricov",
+      "firstName": "Denis",
+      "lastName": "Vostricov",
+      "affiliation": "Academy of Economic Studies of Moldova",
+      "country": "Moldova (MD)"
+    },
+    {
+      "orcid": "0000-0001-6889-9006",
+      "name": "Alexios Ioannis Moukas",
+      "firstName": "Alexios Ioannis",
+      "lastName": "Moukas",
+      "affiliation": "University of the Aegean",
+      "country": "Greece (EL)"
+    },
+    {
+      "orcid": "0000-0002-5744-0192",
+      "name": "Gazi Salah Uddin",
+      "firstName": "Gazi Salah",
+      "lastName": "Uddin",
+      "affiliation": "Linköping University - linköping university",
+      "country": "Sweden (SE)"
+    },
+    {
+      "orcid": "0000-0003-1745-9259",
+      "name": "Christina Erlwein-Sayer",
+      "firstName": "Christina",
+      "lastName": "Erlwein-Sayer",
+      "affiliation": "Hochschule für Technik und Wirtschaft Berlin",
+      "country": "Germany (DE)"
+    },
+    {
+      "orcid": "0000-0002-2362-5981",
+      "name": "Stephen Zamore",
+      "firstName": "Stephen",
+      "lastName": "Zamore",
+      "affiliation": "NLA University College",
+      "country": "Norway (NO)"
+    },
+    {
+      "orcid": "0000-0001-5605-0419",
+      "name": "Ömer Osman DURSUN",
+      "firstName": "Ömer Osman",
+      "lastName": "DURSUN",
+      "affiliation": "Firat University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-2498-3297",
+      "name": "Bihter Das",
+      "firstName": "Bihter",
+      "lastName": "Das",
+      "affiliation": "Firat University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-7568-4131",
+      "name": "SUAT TORAMAN",
+      "firstName": "SUAT",
+      "lastName": "TORAMAN",
+      "affiliation": "Firat University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0003-4701-041X",
+      "name": "Monica Violeta Achim",
+      "firstName": "Monica Violeta",
+      "lastName": "Achim",
+      "affiliation": "Babes-Bolyai University",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0001-5427-0741",
+      "name": "Gizay DAVER",
+      "firstName": "Gizay",
+      "lastName": "DAVER",
+      "affiliation": "Zonguldak Bülent Ecevit University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-8786-6557",
+      "name": "Donus Sengur",
+      "firstName": "Donus",
+      "lastName": "Sengur",
+      "affiliation": "Firat University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0003-4116-7344",
+      "name": "Seçil Tümen Akyıldız",
+      "firstName": "Seçil",
+      "lastName": "Tümen Akyıldız",
+      "affiliation": "Fırat University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-7310-2126",
+      "name": "Eduard Manziuk",
+      "firstName": "Eduard",
+      "lastName": "Manziuk",
+      "affiliation": "Khmelnytskyi National University",
+      "country": "Ukraine (UA)"
+    },
+    {
+      "orcid": "0000-0002-9427-1201",
+      "name": "Ellen Pei-yi Yu",
+      "firstName": "Ellen Pei-yi",
+      "lastName": "Yu",
+      "affiliation": "Birkbeck College - University Of London",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "orcid": "0000-0003-3661-5448",
+      "name": "Laura Andreu",
+      "firstName": "Laura",
+      "lastName": "Andreu",
+      "affiliation": "Universidad de Zaragoza",
+      "country": "Spain (ES)"
+    },
+    {
+      "orcid": "0000-0001-7594-8937",
+      "name": "Müzeyyen Bulut Özek",
+      "firstName": "Müzeyyen",
+      "lastName": "Bulut Özek",
+      "affiliation": "Firat University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-9655-6825",
+      "name": "Marko Pešović",
+      "firstName": "Marko",
+      "lastName": "Pešović",
+      "affiliation": "Faculty of Civil Engineering, University of Belgrade",
+      "country": "Serbia (RS)"
+    },
+    {
+      "orcid": "0000-0002-4596-0131",
+      "name": "Filip Đorđević",
+      "firstName": "Filip",
+      "lastName": "Đorđević",
+      "affiliation": "University of Belgrade - Faculty of Civil Engineering",
+      "country": "Serbia (RS)"
+    },
+    {
+      "orcid": "0000-0001-8454-167X",
+      "name": "Stefan Kitzler",
+      "firstName": "Stefan",
+      "lastName": "Kitzler",
+      "affiliation": "Complexity Science Hub Vienna",
+      "country": "Austria (AT)"
+    },
+    {
+      "orcid": "0000-0002-0415-4491",
+      "name": "Bernhard Haslhofer",
+      "firstName": "Bernhard",
+      "lastName": "Haslhofer",
+      "affiliation": "Complexity Science Hub Vienna",
+      "country": "Austria (AT)"
+    },
+    {
+      "orcid": "0000-0002-8400-3465",
+      "name": "Ekaterina Svetlova",
+      "firstName": "Ekaterina",
+      "lastName": "Svetlova",
+      "affiliation": "University of Twente",
+      "country": "Netherlands (NL)"
+    },
+    {
+      "orcid": "0000-0002-1574-733X",
+      "name": "Mehmet Yasin Ulukuş",
+      "firstName": "Mehmet Yasin",
+      "lastName": "Ulukuş",
+      "affiliation": "ISTANBUL TECHNICAL UNIVERSITY - Faculty of Management",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0003-3751-5641",
+      "name": "Anxhela Kosta",
+      "firstName": "Anxhela",
+      "lastName": "Kosta",
+      "affiliation": "Faculty of Natural Sciences - Faculty of Natural Sciences, University if Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0001-9389-6894",
+      "name": "Ilma Lili",
+      "firstName": "Ilma",
+      "lastName": "Lili",
+      "affiliation": "University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0009-0001-1981-128X",
+      "name": "Malvina Halilaj",
+      "firstName": "Malvina",
+      "lastName": "Halilaj",
+      "affiliation": "Università Politecnica delle Marche",
+      "country": "Italy (IT)"
+    },
+    {
+      "orcid": "0000-0002-0678-979X",
+      "name": "Erisa Bekteshi",
+      "firstName": "Erisa",
+      "lastName": "Bekteshi",
+      "affiliation": "University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0002-0708-5030",
+      "name": "Jonida Shehu",
+      "firstName": "Jonida",
+      "lastName": "Shehu",
+      "affiliation": "University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0009-0001-9733-8694",
+      "name": "Dan Mitra",
+      "firstName": "Dan",
+      "lastName": "Mitra",
+      "affiliation": "Universitatea Din Oradea",
+      "country": "Romania (RO)"
+    },
+    {
+      "orcid": "0000-0003-0382-530X",
+      "name": "Walter Gontarek",
+      "firstName": "Walter",
+      "lastName": "Gontarek",
+      "affiliation": "Channel Capital",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "orcid": "0000-0003-0414-5402",
+      "name": "Bertaç Şakir Şahin",
+      "firstName": "Bertaç Şakir",
+      "lastName": "Şahin",
+      "affiliation": "Yildiz Technical University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-4548-7081",
+      "name": "Ogochukwu Monye",
+      "firstName": "Ogochukwu",
+      "lastName": "Monye",
+      "affiliation": "University of Benin, Nigeria - University of Benin and University of Southampton",
+      "country": "Nigeria (NG)"
+    },
+    {
+      "orcid": "0000-0002-3575-3470",
+      "name": "Baris C. CANTURK",
+      "firstName": "Baris C.",
+      "lastName": "CANTURK",
+      "affiliation": "Marmara University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-8903-8931",
+      "name": "A. Ozlem Onder",
+      "firstName": "A. Ozlem",
+      "lastName": "Onder",
+      "affiliation": "Ege University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0001-5733-5045",
+      "name": "Dervis Kirikkaleli",
+      "firstName": "Dervis",
+      "lastName": "Kirikkaleli",
+      "affiliation": "European University of Lefke",
+      "country": "Cyprus (CY)"
+    },
+    {
+      "orcid": "0000-0001-6177-5318",
+      "name": "KIRAN SOOD",
+      "firstName": "KIRAN",
+      "lastName": "SOOD",
+      "affiliation": "University of Malta",
+      "country": "Malta (MT)"
+    },
+    {
+      "orcid": "0000-0002-9179-9342",
+      "name": "María Victoria Ruiz-Mallorquí",
+      "firstName": "María Victoria",
+      "lastName": "Ruiz-Mallorquí",
+      "affiliation": "University of Las Palmas de Gran Canaria - Faculty od Economics, Business and Tourism",
+      "country": "Spain (ES)"
+    },
+    {
+      "orcid": "0000-0001-5227-2014",
+      "name": "Robert Slepaczuk",
+      "firstName": "Robert",
+      "lastName": "Slepaczuk",
+      "affiliation": "University of Warsaw",
+      "country": "Poland (PL)"
+    },
+    {
+      "orcid": "0000-0003-3384-3795",
+      "name": "Paweł Sakowski",
+      "firstName": "Paweł",
+      "lastName": "Sakowski",
+      "affiliation": "University of Warsaw",
+      "country": "Poland (PL)"
+    },
+    {
+      "orcid": "0000-0002-5413-9660",
+      "name": "Wouter van Heeswijk",
+      "firstName": "Wouter",
+      "lastName": "van Heeswijk",
+      "affiliation": "University of Twente",
+      "country": "Netherlands (NL)"
+    },
+    {
+      "orcid": "0000-0002-9881-5915",
+      "name": "Jewel Kumar Roy",
+      "firstName": "Jewel Kumar",
+      "lastName": "Roy",
+      "affiliation": "Szechenyi Istvan Egyetem",
+      "country": "Hungary (HU)"
+    },
+    {
+      "orcid": "0000-0002-2039-5930",
+      "name": "Ceylan Onay Sahin",
+      "firstName": "Ceylan",
+      "lastName": "Onay Sahin",
+      "affiliation": "University of Brighton",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "orcid": "0000-0002-2809-8615",
+      "name": "Mariusz Nowostawski",
+      "firstName": "Mariusz",
+      "lastName": "Nowostawski",
+      "affiliation": "Norges teknisk-naturvitenskapelige universitet",
+      "country": "Norway (NO)"
+    },
+    {
+      "orcid": "0000-0003-2659-4436",
+      "name": "Pınar Nur",
+      "firstName": "Pınar",
+      "lastName": "Nur",
+      "affiliation": "Medipol University Ankara, School of Law",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-6526-0773",
+      "name": "Dajana Ercegovac",
+      "firstName": "Dajana",
+      "lastName": "Ercegovac",
+      "affiliation": "Novi Sad School of Business",
+      "country": "Serbia (RS)"
+    },
+    {
+      "orcid": "0000-0001-5752-6992",
+      "name": "Mirela Momčilović",
+      "firstName": "Mirela",
+      "lastName": "Momčilović",
+      "affiliation": "Novi Sad Business School",
+      "country": "Serbia (RS)"
+    },
+    {
+      "orcid": "0000-0001-8973-5705",
+      "name": "Levent CARKACIOGLU",
+      "firstName": "Levent",
+      "lastName": "CARKACIOGLU",
+      "affiliation": "Aselsan Elektronik Sanayi Ve Ticaret Anonim Sirketi",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0001-8160-0611",
+      "name": "Hazar Altinbas",
+      "firstName": "Hazar",
+      "lastName": "Altinbas",
+      "affiliation": "Fenerbahce University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0001-5237-2015",
+      "name": "Michalis Linardakis",
+      "firstName": "Michalis",
+      "lastName": "Linardakis",
+      "affiliation": "University of Crete",
+      "country": "Greece (EL)"
+    },
+    {
+      "orcid": "0009-0004-1815-8743",
+      "name": "Gabin Taibi",
+      "firstName": "Gabin",
+      "lastName": "Taibi",
+      "affiliation": "Bern University of Applied Sciences",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "orcid": "0000-0002-3914-8868",
+      "name": "Lucía Gómez Teijeiro",
+      "firstName": "Lucía",
+      "lastName": "Gómez Teijeiro",
+      "affiliation": "Bern University of Applied Sciences",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "orcid": "0009-0000-0875-7911",
+      "name": "Marija Stankova Medarovska",
+      "firstName": "Marija",
+      "lastName": "Stankova Medarovska",
+      "affiliation": "University American College Skopje",
+      "country": "North Macedonia (MK)"
+    },
+    {
+      "orcid": "0000-0003-2883-9863",
+      "name": "Mehmet Fidan",
+      "firstName": "Mehmet",
+      "lastName": "Fidan",
+      "affiliation": "Eskisehir Technical University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-9738-2791",
+      "name": "Elif Gövez",
+      "firstName": "Elif",
+      "lastName": "Gövez",
+      "affiliation": "Ataturk University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-5177-153X",
+      "name": "Ferda Nur Özdemir",
+      "firstName": "Ferda Nur",
+      "lastName": "Özdemir",
+      "affiliation": "Ataturk University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0003-4470-0802",
+      "name": "Cenk Keskin",
+      "firstName": "Cenk",
+      "lastName": "Keskin",
+      "affiliation": "Ataturk University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0009-0000-4558-1417",
+      "name": "Frédérik Sinan Bernard",
+      "firstName": "Frédérik Sinan",
+      "lastName": "Bernard",
+      "affiliation": "University of Twente",
+      "country": "Netherlands (NL)"
+    },
+    {
+      "orcid": "0000-0001-9074-7711",
+      "name": "Christos Themistocleous",
+      "firstName": "Christos",
+      "lastName": "Themistocleous",
+      "affiliation": "Cyprus University of Technology",
+      "country": "Cyprus (CY)"
+    },
+    {
+      "orcid": "0000-0003-0532-2773",
+      "name": "Xiaohong Huang",
+      "firstName": "Xiaohong",
+      "lastName": "Huang",
+      "affiliation": "University of Twente",
+      "country": "Netherlands (NL)"
+    },
+    {
+      "orcid": "0000-0001-8469-2427",
+      "name": "Susanne Durst",
+      "firstName": "Susanne",
+      "lastName": "Durst",
+      "affiliation": "Reykjavik University",
+      "country": "Iceland (IS)"
+    },
+    {
+      "orcid": "0000-0002-7871-9176",
+      "name": "Llesh LLESHAJ",
+      "firstName": "Llesh",
+      "lastName": "LLESHAJ",
+      "affiliation": "University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0001-8774-267X",
+      "name": "Blisard Zani",
+      "firstName": "Blisard",
+      "lastName": "Zani",
+      "affiliation": "University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "orcid": "0000-0003-3862-6132",
+      "name": "Sérgio Barbosa",
+      "firstName": "Sérgio",
+      "lastName": "Barbosa",
+      "affiliation": "University of Graz",
+      "country": "Austria (AT)"
+    },
+    {
+      "orcid": "0000-0002-7094-0749",
+      "name": "Ferlanda Luna",
+      "firstName": "Ferlanda",
+      "lastName": "Luna",
+      "affiliation": "UNIVERSIDADE DE COIMBRA",
+      "country": "Portugal (PT)"
+    },
+    {
+      "orcid": "0009-0004-9429-0383",
+      "name": "Theo Zacharis",
+      "firstName": "Theo",
+      "lastName": "Zacharis",
+      "affiliation": "Greek Scientists Society",
+      "country": "Greece (EL)"
+    },
+    {
+      "orcid": "0000-0002-1421-4670",
+      "name": "Fatma Ozge Ozkok",
+      "firstName": "Fatma Ozge",
+      "lastName": "Ozkok",
+      "affiliation": "Erciyes University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "orcid": "0000-0002-1775-2773",
+      "name": "Gülşah KEKLİK",
+      "firstName": "Gülşah",
+      "lastName": "KEKLİK",
+      "affiliation": "Istanbul Technical University",
+      "country": "Türkiye (TR)"
+    }
+  ],
+  "invalid_orcids": [],
+  "members_without_orcid": [
+    {
+      "name": "Rossitza Goleva",
+      "affiliation": "New Bulgarian University",
+      "country": "Bulgaria (BG)"
+    },
+    {
+      "name": "Anh Tuan Trinh",
+      "affiliation": "EIT Digital Hungary",
+      "country": "Hungary (HU)"
+    },
+    {
+      "name": "Nikolaos S. Thomaidis",
+      "affiliation": "University of the Aegean",
+      "country": "Greece (EL)"
+    },
+    {
+      "name": "MIRJANA IVANOVIC",
+      "affiliation": "University of Novi Sad Faculty of Sciences",
+      "country": "Serbia (RS)"
+    },
+    {
+      "name": "Yosi KELLER",
+      "affiliation": "Bar Ilan University",
+      "country": "Israel (IL)"
+    },
+    {
+      "name": "Andreas Gregoriades",
+      "affiliation": "Cyprus University of Technology",
+      "country": "Cyprus (CY)"
+    },
+    {
+      "name": "Joana Dias",
+      "affiliation": "UNIVERSIDADE DE COIMBRA",
+      "country": "Portugal (PT)"
+    },
+    {
+      "name": "Thomas Ågotnes",
+      "affiliation": "University of Bergen",
+      "country": "Norway (NO)"
+    },
+    {
+      "name": "Stefano Denicolai",
+      "affiliation": "Universita Degli Studi Di Pavia",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Andrea Bracciali",
+      "affiliation": "Universita degli Studi di Torino",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Paolo Giudici",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Ioannis Emiris",
+      "affiliation": "Athena - Research and Innovation Center in Information, Communication and Knowledge Technologies",
+      "country": "Greece (EL)"
+    },
+    {
+      "name": "Antonio Pelegrina Jimenez",
+      "affiliation": "UNIVERSIDADE DE SANTIAGO DE COMPOSTELA",
+      "country": "Spain (ES)"
+    },
+    {
+      "name": "Loizos Michael",
+      "affiliation": "Open University of Cyprus",
+      "country": "Cyprus (CY)"
+    },
+    {
+      "name": "Miroslav Mirchev",
+      "affiliation": "Complexity Science Hub Vienna",
+      "country": "Austria (AT)"
+    },
+    {
+      "name": "Tatjana Atanasova - Pachemska",
+      "affiliation": "Republic Of Macedonia Goce Delcev State University Stip",
+      "country": "North Macedonia (MK)"
+    },
+    {
+      "name": "Enis Kayis",
+      "affiliation": "Ozyegin Universitesi",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "name": "Antoni Jaume i Capó",
+      "affiliation": "Universitat De Les Illes Balears",
+      "country": "Spain (ES)"
+    },
+    {
+      "name": "Juan Carlos Nieves Sanchez",
+      "affiliation": "Umea Universitet",
+      "country": "Sweden (SE)"
+    },
+    {
+      "name": "Jaan Übi",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Stoyan Mishev",
+      "affiliation": "New Bulgarian University",
+      "country": "Bulgaria (BG)"
+    },
+    {
+      "name": "Tomaso Aste",
+      "affiliation": "University College London (UCL)",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "name": "Maria Luisa Morgado",
+      "affiliation": "Universidade de Trás-os-Montes e Alto Douro",
+      "country": "Portugal (PT)"
+    },
+    {
+      "name": "Goran Petkovski",
+      "affiliation": "Ss. Cyril and Methodius University, Faculty of Computer Science and Engineering",
+      "country": "North Macedonia (MK)"
+    },
+    {
+      "name": "Aleks Huc",
+      "affiliation": "University of Ljubljana",
+      "country": "Slovenia (SI)"
+    },
+    {
+      "name": "Paola Vicard",
+      "affiliation": "Università degli Studi Roma Tre",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Silvija Vlah Jerić",
+      "affiliation": "Sveuciliste U Zagrebu Ekonomski Fakultet",
+      "country": "Croatia (HR)"
+    },
+    {
+      "name": "Vasile Strat",
+      "affiliation": "Academia De Studii Economice Din Bucuresti",
+      "country": "Romania (RO)"
+    },
+    {
+      "name": "Ania Zalewska",
+      "affiliation": "University of Leicester",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "name": "Alessia Paccagnini",
+      "affiliation": "University College Dublin",
+      "country": "Ireland (IE)"
+    },
+    {
+      "name": "Shatha Qamhieh",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Dorin Cristian Coita",
+      "affiliation": "University of Oradea",
+      "country": "Romania (RO)"
+    },
+    {
+      "name": "NadiaConcetta Fabrizio",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Marc Wildi",
+      "affiliation": "Zurich University of Applied Sciences",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "name": "yi wang",
+      "affiliation": "University Of Bedfordshire",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "name": "Oleg Deev",
+      "affiliation": "Masarykova univerzita",
+      "country": "Czech Republic (CZ)"
+    },
+    {
+      "name": "Wolfgang Härdle",
+      "affiliation": "Humboldt University of Berlin",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Simon Trimborn",
+      "affiliation": "University of Amsterdam",
+      "country": "Netherlands (NL)"
+    },
+    {
+      "name": "Sadettin haluk çitçi",
+      "affiliation": "Gebze Technical University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "name": "Ronald Kleverlaan",
+      "affiliation": "Utrecht University - Utrecht School of Economics",
+      "country": "Netherlands (NL)"
+    },
+    {
+      "name": "Karsten Wenzlaff",
+      "affiliation": "Universität Hamburg",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Christian Ochs",
+      "affiliation": "FINcredible GmbH",
+      "country": "Austria (AT)"
+    },
+    {
+      "name": "Eda Orhun",
+      "affiliation": "AMERICAN UNIVERSITY IN BULGARIA",
+      "country": "Bulgaria (BG)"
+    },
+    {
+      "name": "Branka Hadji Misheva",
+      "affiliation": "Zurich University of Applied Sciences",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "name": "Marek Káčer",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Endrit Xhina",
+      "affiliation": "University of Tirana - Faculty of Natural Sciences",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "Ana Atanasova",
+      "affiliation": "Ss. Cyril and Methodius University in Skopje",
+      "country": "North Macedonia (MK)"
+    },
+    {
+      "name": "Jelena Poljašević",
+      "affiliation": "University of Banja Luka, Faculty of Economics",
+      "country": "Bosnia and Herzegovina (BA)"
+    },
+    {
+      "name": "Andreas Theodorou",
+      "affiliation": "Universitat Politècnica de Catalunya",
+      "country": "Spain (ES)"
+    },
+    {
+      "name": "Saida Teleu",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Martina Solenički",
+      "affiliation": "University of Zagreb, Faculty of Economics and Business",
+      "country": "Croatia (HR)"
+    },
+    {
+      "name": "Miquel Noguer i Alonso",
+      "affiliation": "esade",
+      "country": "Spain (ES)"
+    },
+    {
+      "name": "Ana Ivanisevic Hernaus",
+      "affiliation": "University of Zagreb, Faculty of Economics and Business",
+      "country": "Croatia (HR)"
+    },
+    {
+      "name": "Andrei Petroia",
+      "affiliation": "Academy of Economic Studies of Moldova",
+      "country": "Moldova (MD)"
+    },
+    {
+      "name": "Andrea Furkova",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Danial Saef",
+      "affiliation": "Humboldt Universität zu Berlin",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Theodoros Christodoulou",
+      "affiliation": "Aristotle University of Thessaloniki - Theodoros Christodoulou",
+      "country": "Greece (EL)"
+    },
+    {
+      "name": "Matthias Fengler",
+      "affiliation": "University of St. Gallen",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "name": "Petra Palić",
+      "affiliation": "Catholic University of Croatia",
+      "country": "Croatia (HR)"
+    },
+    {
+      "name": "Rui Ren",
+      "affiliation": "University of Augsburg",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Florentina Paraschiv",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Luca Trapin",
+      "affiliation": "Alma Mater Studiorum - Universita di Bologna",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Stephen Chan",
+      "affiliation": "American University of Sharjah",
+      "country": "United Arab Emirates (AE)"
+    },
+    {
+      "name": "Maria Elena De Giuli",
+      "affiliation": "Università degli Studi di Pavia",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Suela Maxhelaku (Vasil)",
+      "affiliation": "University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "Erika Mináriková",
+      "affiliation": "University of Economics in Bratislava - Faculty of Economic Informatics",
+      "country": "Slovakia (SK)"
+    },
+    {
+      "name": "Armela Baka",
+      "affiliation": "University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "Giovanni Lagioia",
+      "affiliation": "University of Bari Aldo Moro",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Luka Filipovic",
+      "affiliation": "Univerzitet Donja Gorica Podgorica",
+      "country": "Montenegro (ME)"
+    },
+    {
+      "name": "Luisa Anderloni",
+      "affiliation": "UNIVERSITA DEGLI STUDI DI MILANO",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Ken Cassar",
+      "affiliation": "UMNAI Ltd",
+      "country": "Malta (MT)"
+    },
+    {
+      "name": "Bekir Berkcan",
+      "affiliation": "Artvin Coruh University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "name": "Dominykas Svedas",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Andrei Damascan",
+      "affiliation": "Academia De Studii Economice Din Bucuresti",
+      "country": "Romania (RO)"
+    },
+    {
+      "name": "Ye Zhang",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Anastas Dzurovski",
+      "affiliation": "University St Kliment Ohridski Bitola",
+      "country": "North Macedonia (MK)"
+    },
+    {
+      "name": "Anila Çekrezi",
+      "affiliation": "“Aleksander Xhuvani” University - Faculty of Economy",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "Paraskevi Tsoutsa",
+      "affiliation": "University of Thessaly",
+      "country": "Greece (EL)"
+    },
+    {
+      "name": "Achraf Ayadi",
+      "affiliation": "ALTAVO PARTNERS",
+      "country": "France (FR)"
+    },
+    {
+      "name": "Sujit (Bob) Chakravorti",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Xinwen Ni",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Jola Harizaj",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Cal Muckley",
+      "affiliation": "University College Dublin",
+      "country": "Ireland (IE)"
+    },
+    {
+      "name": "Sabrina Giordano",
+      "affiliation": "Universita Della Calabria",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Juliana Imeraj",
+      "affiliation": "Universiteti “Aleksandër Moisiu” Durrës - Faculty of Business",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "Maria Vojtasova",
+      "affiliation": "Ekonomicka Univerzita V Bratislave",
+      "country": "Slovakia (SK)"
+    },
+    {
+      "name": "Vijay Marisetty",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Zhdanova Lleshaj",
+      "affiliation": "n'Arte sh.p.k.",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "RongLin Zuo",
+      "affiliation": "Eötvös Loránd University",
+      "country": "Hungary (HU)"
+    },
+    {
+      "name": "Yiting Liu",
+      "affiliation": "Bern University of Applied Sciences",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "name": "Sofia Giantsidi",
+      "affiliation": "Universita Degli Studi Di Pavia",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Vlad Bolovaneanu",
+      "affiliation": null,
+      "country": null
+    },
+    {
+      "name": "Erhan Uluceviz",
+      "affiliation": "Gebze Technical University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "name": "Francis Liu",
+      "affiliation": "Humboldt-Universität zu Berlin - International Research Training Group 1792",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Veljko Milutinović",
+      "affiliation": "Indiana University Bloomington",
+      "country": "United States (US)"
+    },
+    {
+      "name": "Laqiqige Zhu",
+      "affiliation": "Trinity College Dublin - Trinity Business School",
+      "country": "Ireland (IE)"
+    },
+    {
+      "name": "Gerta Sauli",
+      "affiliation": "University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "Emirjan Metushi",
+      "affiliation": "Univeristy of Tirana - University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "Drita Seci",
+      "affiliation": "University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "Mentor Cokaj",
+      "affiliation": "Polytechnical University of Tirana",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "Ledia Bozo",
+      "affiliation": "Tirana University - Faculty of Natural Sciences",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "Ratmir Miftachov",
+      "affiliation": "Humboldt-Universität zu Berlin",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Mesut Karakaş",
+      "affiliation": "Yıldız Technical University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "name": "Stijn van der Pol",
+      "affiliation": "University of Twente",
+      "country": "Netherlands (NL)"
+    },
+    {
+      "name": "Ferit Buyukkececi",
+      "affiliation": "Sigortam.net",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "name": "Christian Spindler",
+      "affiliation": "Sustainaccount AG",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "name": "Alexandra Conda",
+      "affiliation": "The Bucharest University of Economic Studies – ASE Bucuresti - Bucharest University of Economic Studies",
+      "country": "Romania (RO)"
+    },
+    {
+      "name": "Mai Phan",
+      "affiliation": "Hochschule für Technik und Wirtschaft Berlin",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Danijel Jevtic",
+      "affiliation": "Zurich University of Applied Sciences (ZHAW)",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "name": "Erlind Demolli",
+      "affiliation": "Zurich University of Applied Sciences (ZHAW)",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "name": "Fabrizio Raeli",
+      "affiliation": "Politecnico Milano",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Giorgio Pietro Frigerio",
+      "affiliation": "Politecnico di Milano",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Matteo Ghesini",
+      "affiliation": "Politecnico di Milano",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Samuele D'Elia",
+      "affiliation": "Politecnico di Milano",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Saverio Lorenzo Lefosse",
+      "affiliation": "Politecnico di Milano",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Ana Alexandrescu",
+      "affiliation": "Wirtschaftsakademie Bukarest (Bucharest University of Economic Studies) - Department of Statistics and Econometrics",
+      "country": "Romania (RO)"
+    },
+    {
+      "name": "Diana Popa",
+      "affiliation": "Bucharest University of Economic Studies",
+      "country": "Romania (RO)"
+    },
+    {
+      "name": "Ioana Birlan",
+      "affiliation": "Bucharest University of Economic Studies",
+      "country": "Romania (RO)"
+    },
+    {
+      "name": "Vlad Bolovăneanu",
+      "affiliation": "Bucharest University of Economic Studies",
+      "country": "Romania (RO)"
+    },
+    {
+      "name": "Christian Suter",
+      "affiliation": "Zurich University of Applied Sciences (ZHAW)",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "name": "Daniel Philipp",
+      "affiliation": "Berlin School of Economics and Law (HWR Berlin)",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Daniela El-Dor",
+      "affiliation": "HTW Berlin",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Elda Vukaj",
+      "affiliation": "Berlin School of Economics and Law",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Leonie Löbenberg",
+      "affiliation": "Berlin School of Economics and Law (HWR Berlin)",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Mariana Bigler",
+      "affiliation": "Zurich University of Applied Sciences",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "name": "Mariia Kovalenko",
+      "affiliation": "Oles Honchar Dnipro National University",
+      "country": "Ukraine (UA)"
+    },
+    {
+      "name": "Melisa Cihan",
+      "affiliation": "HTW Berlin",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Patrick Lanz",
+      "affiliation": "Zurich University of Applied Sciences (ZHAW)",
+      "country": "Switzerland (CH)"
+    },
+    {
+      "name": "Polina Skok",
+      "affiliation": "Oles Honchar Dnipro National University",
+      "country": "Ukraine (UA)"
+    },
+    {
+      "name": "Roman Kuznietsov",
+      "affiliation": "Oles Honchar Dnipro National University",
+      "country": "Ukraine (UA)"
+    },
+    {
+      "name": "Sophia Zhigaleva",
+      "affiliation": "Dnipro State Technical University",
+      "country": "Ukraine (UA)"
+    },
+    {
+      "name": "Tran Van Anh Pham",
+      "affiliation": "Berlin School of Economics and Law (HWR Berlin)",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Federico Guido Migliore",
+      "affiliation": "Università di Bologna,",
+      "country": "Italy (IT)"
+    },
+    {
+      "name": "Kateryna Romashko",
+      "affiliation": "Dnipro National University",
+      "country": "Ukraine (UA)"
+    },
+    {
+      "name": "Maria Basangova",
+      "affiliation": "HTW Berlin",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Sami Alkhoury",
+      "affiliation": "Berlin School of Economics and Law",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Yifan Qi",
+      "affiliation": "The University of Edinburgh",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "name": "Nataliya Togobytska",
+      "affiliation": "University of Applied Sciences for Engineering and Economics  (HTW) Berlin",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Manmeet Abrol",
+      "affiliation": "The Entrepreneur Studio",
+      "country": "Ireland (IE)"
+    },
+    {
+      "name": "Fatih Ertan",
+      "affiliation": "Hacettepe Universitesi",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "name": "Alireza Khoshghadam",
+      "affiliation": "Jönköping International business school",
+      "country": "Sweden (SE)"
+    },
+    {
+      "name": "Sonia Granado-Suárez",
+      "affiliation": "University of Las Palmas de Gran Canaria - Faculty of Economics, Bussines and Tourism",
+      "country": "Spain (ES)"
+    },
+    {
+      "name": "Tudor Doman",
+      "affiliation": "Autoritatea de Supraveghere Financiară",
+      "country": "Romania (RO)"
+    },
+    {
+      "name": "Emmanuel Eyiah-Donkor",
+      "affiliation": "University College Dublin",
+      "country": "Ireland (IE)"
+    },
+    {
+      "name": "Khawla Bouafia",
+      "affiliation": "Eötvös Loránd University",
+      "country": "Hungary (HU)"
+    },
+    {
+      "name": "Laviniu Chis",
+      "affiliation": "North West Regional Development Agency",
+      "country": "Romania (RO)"
+    },
+    {
+      "name": "Cosmin Curticapean",
+      "affiliation": "iFactor Brokerage SA",
+      "country": "Romania (RO)"
+    },
+    {
+      "name": "Ana Armstrong",
+      "affiliation": "University of Greenwich",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "name": "Monika Gehde-Trapp",
+      "affiliation": "Eberhard Karls Universität Tübingen",
+      "country": "Germany (DE)"
+    },
+    {
+      "name": "Hariton Korizis",
+      "affiliation": "BIOPIKILO SINGLE MEMBER PRIVATE COMPANY",
+      "country": "Greece (EL)"
+    },
+    {
+      "name": "Sheetal Suman",
+      "affiliation": "Ibm United Kingdom Ltd",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "name": "Özgür Altıntop",
+      "affiliation": "YTU Yıldız Teknopark",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "name": "Rubin Haxhiymeri",
+      "affiliation": "DigitSapiens",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "Ali Deran",
+      "affiliation": "Tarsus University",
+      "country": "Türkiye (TR)"
+    },
+    {
+      "name": "Jacopo Capra",
+      "affiliation": "University College London",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "name": "Matilda Barrow",
+      "affiliation": "Thomson Reuters Group Limited",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "name": "Shuo Wang",
+      "affiliation": "The University of Birmingham",
+      "country": "United Kingdom (UK)"
+    },
+    {
+      "name": "Eda Tabaku",
+      "affiliation": "University Aleksander Moisiu Durres",
+      "country": "Albania (AL)"
+    },
+    {
+      "name": "NOOR UL QAYYUM",
+      "affiliation": "Universite De Montpellier",
+      "country": "France (FR)"
+    },
+    {
+      "name": "aaa aaa",
+      "affiliation": "NONE",
+      "country": "Norway (NO)"
+    }
+  ]
+}
