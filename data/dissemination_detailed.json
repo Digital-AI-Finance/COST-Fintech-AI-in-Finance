@@ -1,0 +1,18 @@
+[
+  {
+    "title": "Action",
+    "type": "Website",
+    "provider": "Website improvement Alexios Ioannis Moukas",
+    "date": "05/10/2023",
+    "amount": 2000.0,
+    "grant_period": 4
+  },
+  {
+    "title": "Action",
+    "type": "Website",
+    "provider": "Website Karolina Bolest",
+    "date": "09/09/2024",
+    "amount": 2000.0,
+    "grant_period": 5
+  }
+]

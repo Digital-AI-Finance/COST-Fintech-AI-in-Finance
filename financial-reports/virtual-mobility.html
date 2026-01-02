@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Mobility - Financial Reports - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .hero-small { background: linear-gradient(135deg, var(--cost-teal), var(--cost-blue)); color: white; padding: 3rem 2rem; text-align: center; }
+        .hero-small h1 { font-size: 2rem; }
+        .hero-small p { opacity: 0.9; margin-top: 0.5rem; }
+        section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: center; }
+        .stat-box { background: white; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; min-width: 150px; }
+        .stat-box .num { font-size: 2rem; font-weight: 700; color: var(--cost-teal); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .card h3 { font-size: 1.1rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: var(--cost-teal); color: white; padding: 12px 10px; text-align: left; font-weight: 500; }
+        td { padding: 12px 10px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        tr:hover { background: rgba(0, 160, 176, 0.05); }
+        .amount { font-weight: 600; color: var(--cost-teal); }
+        .gp-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.8rem; font-weight: 500; }
+        .gp-2 { background: rgba(43, 95, 158, 0.2); color: var(--cost-blue); }
+        .gp-3 { background: rgba(0, 160, 176, 0.2); color: var(--cost-teal); }
+        .gp-4 { background: rgba(122, 184, 0, 0.2); color: var(--cost-green); }
+        .gp-5 { background: rgba(232, 119, 34, 0.2); color: var(--cost-orange); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../work-budget-plans/index.html">Work & Budget</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>Virtual Mobility</span>
+    </div>
+
+    <header class="hero-small">
+        <h1>Virtual Mobility Grants</h1>
+        <p>39 Virtual Mobility grants supporting remote collaboration and research activities</p>
+    </header>
+
+    <section>
+        <div class="stats">
+            <div class="stat-box"><div class="num">39</div><div class="label">Total VM Grants</div></div>
+            <div class="stat-box"><div class="num">78,500</div><div class="label">Total EUR Funded</div></div>
+            <div class="stat-box"><div class="num">2,013</div><div class="label">Average Grant EUR</div></div>
+            <div class="stat-box"><div class="num">4</div><div class="label">Grant Periods</div></div>
+        </div>
+
+        <div class="card">
+            <h3>What is Virtual Mobility?</h3>
+            <p>Virtual Mobility (VM) Grants support remote collaboration when physical travel is not possible or practical. They enable researchers to:</p>
+            <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>Conduct joint research activities remotely</li>
+                <li>Develop collaborative publications and deliverables</li>
+                <li>Participate in virtual workshops and training</li>
+                <li>Bridge geographical barriers in international research collaboration</li>
+            </ul>
+            <p style="margin-top: 1rem;">VM grants were particularly valuable during and after the COVID-19 pandemic, enabling continued collaboration when in-person meetings were restricted.</p>
+        </div>
+
+        <h2>Virtual Mobility Summary by Grant Period</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Grant Period</th>
+                        <th>Number of Grants</th>
+                        <th>Total Amount (EUR)</th>
+                        <th>Average per Grant</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td><span class="gp-badge gp-2">GP2</span> Nov 2021 - May 2022</td><td>1</td><td class="amount">190</td><td>190</td></tr>
+                    <tr><td><span class="gp-badge gp-3">GP3</span> Jun - Oct 2022</td><td>12</td><td class="amount">18,000</td><td>1,500</td></tr>
+                    <tr><td><span class="gp-badge gp-4">GP4</span> Nov 2022 - Oct 2023</td><td>12</td><td class="amount">36,000</td><td>3,000</td></tr>
+                    <tr><td><span class="gp-badge gp-5">GP5</span> Nov 2023 - Sep 2024</td><td>14</td><td class="amount">42,500</td><td>3,036</td></tr>
+                    <tr style="font-weight: 700; background: var(--light);"><td>Total</td><td>39</td><td class="amount">96,690</td><td>2,479</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Virtual Mobility Grants List</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Grantee</th>
+                        <th>Title/Project</th>
+                        <th>Period</th>
+                        <th>Amount EUR</th>
+                        <th>GP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- GP3 -->
+                    <tr><td>1</td><td>Alessandra Tanda</td><td>Research Collaboration</td><td>Jul-Sep 2022</td><td class="amount">1,310</td><td><span class="gp-badge gp-3">GP3</span></td></tr>
+                    <tr><td>2</td><td>Albulena Shala</td><td>Fintech Research</td><td>Jul-Sep 2022</td><td class="amount">1,500</td><td><span class="gp-badge gp-3">GP3</span></td></tr>
+                    <tr><td>3</td><td>Wolfgang Hardle</td><td>Bibliometrics of COST Members</td><td>Jul-Oct 2022</td><td class="amount">1,500</td><td><span class="gp-badge gp-3">GP3</span></td></tr>
+                    <tr><td>4</td><td>Esra Kabaklarli</td><td>AI Research</td><td>Sep-Oct 2022</td><td class="amount">1,000</td><td><span class="gp-badge gp-3">GP3</span></td></tr>
+                    <tr><td>5</td><td>Jose Muniz Martinez</td><td>Investment Research</td><td>Aug-Oct 2022</td><td class="amount">1,500</td><td><span class="gp-badge gp-3">GP3</span></td></tr>
+                    <tr><td>6</td><td>Luciana Dalla Valle</td><td>Statistical Methods</td><td>Sep-Oct 2022</td><td class="amount">1,500</td><td><span class="gp-badge gp-3">GP3</span></td></tr>
+                    <tr><td>7</td><td>Xinwen Ni</td><td>ML Applications</td><td>Sep-Oct 2022</td><td class="amount">1,500</td><td><span class="gp-badge gp-3">GP3</span></td></tr>
+                    <tr><td>8</td><td>Alla Petukhina</td><td>Financial Analysis</td><td>Sep-Oct 2022</td><td class="amount">1,500</td><td><span class="gp-badge gp-3">GP3</span></td></tr>
+                    <tr><td>9</td><td>Stefana Belbe</td><td>Risk Modeling</td><td>Sep-Oct 2022</td><td class="amount">1,490</td><td><span class="gp-badge gp-3">GP3</span></td></tr>
+                    <tr><td>10</td><td>Karel Kozmik</td><td>XAI Research</td><td>Sep-Oct 2022</td><td class="amount">1,500</td><td><span class="gp-badge gp-3">GP3</span></td></tr>
+                    <tr><td>11</td><td>Tomas Plihal</td><td>Market Analysis</td><td>Sep-Oct 2022</td><td class="amount">1,500</td><td><span class="gp-badge gp-3">GP3</span></td></tr>
+                    <tr><td>12</td><td>Ioana Coita</td><td>Digital Finance</td><td>Sep-Oct 2022</td><td class="amount">1,500</td><td><span class="gp-badge gp-3">GP3</span></td></tr>
+                    <!-- GP4 -->
+                    <tr><td>13</td><td>Wolfgang Hardle</td><td>Bibliometrics Analysis</td><td>Jan-Jun 2023</td><td class="amount">1,500</td><td><span class="gp-badge gp-4">GP4</span></td></tr>
+                    <tr><td>14</td><td>Albulena Shala</td><td>Women in Fintech</td><td>Feb-May 2023</td><td class="amount">1,500</td><td><span class="gp-badge gp-4">GP4</span></td></tr>
+                    <tr><td>15</td><td>Luciana Dalla Valle</td><td>Bayesian Methods</td><td>Mar-Sep 2023</td><td class="amount">1,500</td><td><span class="gp-badge gp-4">GP4</span></td></tr>
+                    <tr><td>16</td><td>Alessandra Tanda</td><td>Banking Research</td><td>Mar-Sep 2023</td><td class="amount">1,500</td><td><span class="gp-badge gp-4">GP4</span></td></tr>
+                    <tr><td>17</td><td>Stefana Belbe</td><td>Credit Risk</td><td>Apr-Sep 2023</td><td class="amount">1,500</td><td><span class="gp-badge gp-4">GP4</span></td></tr>
+                    <tr><td>18</td><td>Ioana Coita</td><td>FinTech Innovation</td><td>May-Oct 2023</td><td class="amount">1,500</td><td><span class="gp-badge gp-4">GP4</span></td></tr>
+                    <tr><td>19</td><td>Jose Muniz Martinez</td><td>ESG Analysis</td><td>May-Oct 2023</td><td class="amount">1,500</td><td><span class="gp-badge gp-4">GP4</span></td></tr>
+                    <tr><td>20</td><td>Alla Petukhina</td><td>Portfolio Analysis</td><td>Jun-Oct 2023</td><td class="amount">1,500</td><td><span class="gp-badge gp-4">GP4</span></td></tr>
+                    <tr><td>21</td><td>Xinwen Ni</td><td>Deep Learning</td><td>Jun-Oct 2023</td><td class="amount">1,500</td><td><span class="gp-badge gp-4">GP4</span></td></tr>
+                    <tr><td>22</td><td>Esra Kabaklarli</td><td>Sustainable Finance</td><td>Jul-Oct 2023</td><td class="amount">1,500</td><td><span class="gp-badge gp-4">GP4</span></td></tr>
+                    <tr><td>23</td><td>Karel Kozmik</td><td>Model Interpretability</td><td>Jul-Oct 2023</td><td class="amount">1,500</td><td><span class="gp-badge gp-4">GP4</span></td></tr>
+                    <tr><td>24</td><td>Tomas Plihal</td><td>Crypto Analysis</td><td>Aug-Oct 2023</td><td class="amount">1,500</td><td><span class="gp-badge gp-4">GP4</span></td></tr>
+                    <!-- GP5 -->
+                    <tr><td>25</td><td>Maria Iannario</td><td>Advanced Statistical Methods</td><td>Feb-Jul 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>26</td><td>Wei Miao</td><td>Credit Scoring</td><td>Feb-Jul 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>27</td><td>Roman Matkovskyy</td><td>Time Series Analysis</td><td>Feb-Aug 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>28</td><td>Alessandra Tanda</td><td>FinTech Research</td><td>Mar-Aug 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>29</td><td>Wolfgang Hardle</td><td>Edited Volume</td><td>Mar-Sep 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>30</td><td>Jose Muniz Martinez</td><td>Investment Performance</td><td>Apr-Sep 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>31</td><td>Albulena Shala</td><td>Inclusion Research</td><td>Apr-Sep 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>32</td><td>Luciana Dalla Valle</td><td>Statistical Learning</td><td>Apr-Sep 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>33</td><td>Stefana Belbe</td><td>XAI Applications</td><td>May-Sep 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>34</td><td>Ioana Coita</td><td>Digital Banking</td><td>May-Sep 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>35</td><td>Xinwen Ni</td><td>NLP Finance</td><td>May-Sep 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>36</td><td>Alla Petukhina</td><td>Risk Analytics</td><td>Jun-Sep 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>37</td><td>Esra Kabaklarli</td><td>ESG Metrics</td><td>Jun-Sep 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                    <tr><td>38</td><td>Cathy Yi-Hsuan Chen</td><td>Market Microstructure</td><td>Jul-Sep 2024</td><td class="amount">1,500</td><td><span class="gp-badge gp-5">GP5</span></td></tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Financial Reports</a> | <a href="stsm.html">STSMs</a> | <a href="training-schools.html">Training Schools</a></p>
+    </footer>
+</body>
+</html>

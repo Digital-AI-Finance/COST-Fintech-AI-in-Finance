@@ -1,0 +1,26 @@
+{
+  "total_meetings": 48,
+  "total_stsms": 27,
+  "total_training_schools": 5,
+  "total_trainees": 59,
+  "total_virtual_mobility": 38,
+  "total_vns": 2,
+  "total_participants": 197,
+  "total_countries": 36,
+  "total_budget": 963654.17,
+  "total_actual": 774662.3200000001,
+  "meetings_by_gp": {
+    "1": 21,
+    "2": 4,
+    "3": 8,
+    "4": 7,
+    "5": 8
+  },
+  "stsms_by_gp": {
+    "1": 9,
+    "2": 0,
+    "3": 10,
+    "4": 6,
+    "5": 2
+  }
+}

@@ -1,0 +1,74 @@
+[
+  {
+    "grant_period": 1,
+    "budget": 62985.5,
+    "actual": 47459.83,
+    "categories": {
+      "Meetings": 300.3,
+      "STSMs": 70.0,
+      "Dissemination": 294.12,
+      "OERSA": 500.0,
+      "FSAC": 190.41
+    }
+  },
+  {
+    "grant_period": 2,
+    "budget": 202607.0,
+    "actual": 33770.46,
+    "categories": {
+      "Meetings": 175.62,
+      "Training Schools": 0.0,
+      "STSMs": 0.0,
+      "Virtual Mobility": 190.0,
+      "ITC Conference": 0.0,
+      "OERSA": 0.0,
+      "Virtual Networking Support": 0.0,
+      "FSAC": 404.84
+    }
+  },
+  {
+    "grant_period": 3,
+    "budget": 169820.5,
+    "actual": 166262.38,
+    "categories": {
+      "Meetings": 782.98,
+      "Training Schools": 0.0,
+      "STSMs": 140.0,
+      "Virtual Mobility": 310.0,
+      "ITC Conference": 0.0,
+      "OERSA": 0.0,
+      "Virtual Networking Support": 0.0,
+      "FSAC": 686.4
+    }
+  },
+  {
+    "grant_period": 4,
+    "budget": 257925.91,
+    "actual": 256854.39,
+    "categories": {
+      "Meetings": 351.4,
+      "Training Schools": 401.09,
+      "STSMs": 500.0,
+      "Virtual Mobility": 0.0,
+      "ITC Conference": 0.0,
+      "OERSA": 209.75,
+      "Virtual Networking Support": 0.0,
+      "FSAC": 502.75
+    }
+  },
+  {
+    "grant_period": 5,
+    "budget": 270315.26,
+    "actual": 270315.26,
+    "categories": {
+      "Meetings": 194.99,
+      "Training Schools": 632.96,
+      "STSMs": 642.0,
+      "Virtual Mobility": 0.0,
+      "ITC Conference": 0.0,
+      "OERSA": 0.0,
+      "Virtual Networking Support": 0.0,
+      "FSAC": 0.0
+    }
+  }
+]

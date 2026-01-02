@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Vasile Strat",
+    "title": "VNS",
+    "country": "RO",
+    "start_date": "07/07/2022",
+    "end_date": "30/10/2022",
+    "amount": 4000.0,
+    "grant_period": 3
+  },
+  {
+    "name": "Codruta MARE",
+    "title": "strategy to support CA19130 in",
+    "country": "RO",
+    "start_date": "17/04/2023",
+    "end_date": "30/10/2023",
+    "amount": 4000.0,
+    "grant_period": 4
+  }
+]
