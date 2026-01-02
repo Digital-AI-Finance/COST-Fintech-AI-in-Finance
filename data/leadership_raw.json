@@ -1,0 +1,352 @@
+{
+  "metadata": {
+    "action": "CA19130",
+    "action_name": "Fintech and Artificial Intelligence in Finance - Towards a transparent financial industry (FinAI)",
+    "action_status": "Complete",
+    "source": "COST e-services portal",
+    "source_url": "https://e-services.cost.eu/action/CA19130/leadership-positions",
+    "extracted_date": "2026-01-02T20:14:59.488177",
+    "pdf_file": "Leadership_Positions.pdf"
+  },
+  "core_leadership": {
+    "action_chair": {
+      "title": "Action Chair",
+      "holders": [
+        {
+          "name": "Prof Jorg Osterrieder",
+          "status": "current"
+        }
+      ]
+    },
+    "action_vice_chair": {
+      "title": "Action Vice-Chair",
+      "holders": [
+        {
+          "name": "Prof Valerio Poti",
+          "status": "current"
+        }
+      ]
+    },
+    "gh_scientific_representative": {
+      "title": "Current GH Scientific Representative",
+      "holders": [
+        {
+          "name": "Prof Branka Hadji Misheva",
+          "status": "current"
+        }
+      ]
+    },
+    "gh_manager": {
+      "title": "Current GH Manager",
+      "holders": [
+        {
+          "name": "Prof Branka Hadji Misheva",
+          "status": "current"
+        }
+      ]
+    }
+  },
+  "working_groups": {
+    "wg1": {
+      "number": 1,
+      "title": "Transparency in FinTech",
+      "leader": "Prof Wolfgang Hardle",
+      "participants": 281
+    },
+    "wg2": {
+      "number": 2,
+      "title": "Transparent versus Black Box Decision-Support Models in the Financial Industry",
+      "leader": "Prof Petre Lameski",
+      "participants": 254
+    },
+    "wg3": {
+      "number": 3,
+      "title": "Transparency into Investment Product Performance for Clients",
+      "leader": "Prof Peter Schwendner",
+      "participants": 223
+    }
+  },
+  "science_communication_coordinator": {
+    "title": "Science Communication Coordinator",
+    "holders": [
+      {
+        "name": "Dr Ioana Coita",
+        "start": "2024-03-07",
+        "end": null,
+        "status": "Assigned",
+        "assigned_by": "Prof Jorg Osterrieder"
+      },
+      {
+        "name": "Prof Alessia Paccagnini",
+        "start": "2021-04-22",
+        "end": "2024-03-07",
+        "status": "Expired",
+        "assigned_by": "Prof Jorg Osterrieder"
+      },
+      {
+        "name": "Dr Anita Pelle",
+        "start": "2020-09-15",
+        "end": "2021-04-22",
+        "status": "Expired",
+        "assigned_by": "Ms Rose Cruz Santos"
+      }
+    ]
+  },
+  "grant_awarding_coordinator": {
+    "title": "Grant Awarding Coordinator",
+    "holders": [
+      {
+        "name": "Prof Codruta MARE",
+        "start": "2022-03-03",
+        "end": null,
+        "status": "Assigned",
+        "assigned_by": "Prof Jorg Osterrieder"
+      }
+    ]
+  },
+  "other_positions": {
+    "diversity_team_co_leader": {
+      "title": "Diversity team co-leader",
+      "holders": [
+        {
+          "name": "Prof Claudia Tarantola",
+          "start": "2022-03-03",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        },
+        {
+          "name": "Prof Alessia Paccagnini",
+          "start": "2022-03-03",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        },
+        {
+          "name": "Dr Galena Pisoni",
+          "start": "2022-05-17",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        },
+        {
+          "name": "Prof Alessandra Tanda",
+          "start": "2022-03-03",
+          "end": "2022-05-17",
+          "status": "Expired",
+          "assigned_by": "Prof Jorg Osterrieder"
+        }
+      ]
+    },
+    "scientific_advisory_board_coordinator": {
+      "title": "Scientific Advisory Board coordinator",
+      "holders": [
+        {
+          "name": "Prof Valerio Poti",
+          "start": "2022-08-01",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        }
+      ]
+    },
+    "technical_coordinator": {
+      "title": "Technical Coordinator",
+      "holders": [
+        {
+          "name": "Prof Ronald Hochreiter",
+          "start": "2022-03-03",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        }
+      ]
+    },
+    "wg2_co_leader": {
+      "title": "Working Group 2 co-leader",
+      "holders": [
+        {
+          "name": "Dr Kristina Sutiene",
+          "start": "2022-03-03",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        }
+      ]
+    },
+    "diversity_team_leader": {
+      "title": "Diversity team leader",
+      "holders": [
+        {
+          "name": "Prof Alessandra Tanda",
+          "start": "2022-05-17",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        },
+        {
+          "name": "Dr Galena Pisoni",
+          "start": "2022-03-04",
+          "end": "2022-05-17",
+          "status": "Expired",
+          "assigned_by": "Prof Jorg Osterrieder"
+        },
+        {
+          "name": "Prof Codruta MARE",
+          "start": "2022-03-03",
+          "end": "2022-03-04",
+          "status": "Expired",
+          "assigned_by": "Prof Jorg Osterrieder"
+        }
+      ]
+    },
+    "virtual_networking_support_manager": {
+      "title": "Virtual Networking Support Manager",
+      "holders": [
+        {
+          "name": "Prof Codruta MARE",
+          "start": "2023-04-17",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        },
+        {
+          "name": "Mr Vasile Strat",
+          "start": "2022-07-07",
+          "end": "2023-04-17",
+          "status": "Expired",
+          "assigned_by": "Prof Jorg Osterrieder"
+        }
+      ]
+    },
+    "chief_privacy_officer": {
+      "title": "Chief Privacy Officer",
+      "holders": [
+        {
+          "name": "Dr Maria Moloney",
+          "start": "2023-03-23",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        }
+      ]
+    },
+    "stsm_coordinator": {
+      "title": "STSM Coordinator",
+      "holders": [
+        {
+          "name": "Dr Catarina Silva",
+          "start": "2024-03-07",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        },
+        {
+          "name": "Dr Roman Matkovskyy",
+          "start": "2023-03-23",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        },
+        {
+          "name": "Prof Codruta MARE",
+          "start": "2021-11-02",
+          "end": "2023-04-17",
+          "status": "Expired",
+          "assigned_by": null
+        }
+      ]
+    },
+    "virtual_grant_co_coordinator": {
+      "title": "Virtual Grant Co-Coordinator",
+      "holders": [
+        {
+          "name": "Dr Karolina Bolesta",
+          "start": "2023-06-17",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        }
+      ]
+    },
+    "wg1_co_leader": {
+      "title": "WG1 Co-Leader",
+      "holders": [
+        {
+          "name": "Prof Daniel Traian Pele",
+          "start": "2024-03-07",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": "Prof Jorg Osterrieder"
+        }
+      ]
+    },
+    "itc_cg_coordinator": {
+      "title": "ITC CG Coordinator",
+      "holders": [
+        {
+          "name": "Prof Enis Kayis",
+          "start": "2021-11-02",
+          "end": null,
+          "status": "Assigned",
+          "assigned_by": null
+        }
+      ]
+    }
+  },
+  "mc_observers": [
+    {
+      "name": "Prof Panayotis Alexakis",
+      "country": "Greece"
+    },
+    {
+      "name": "Mr Michael Fruhmann",
+      "country": "Austria"
+    },
+    {
+      "name": "Prof Henning Schulzrinne",
+      "country": "United States"
+    }
+  ],
+  "grant_periods": [
+    {
+      "period": 1,
+      "start": "2020-11-01",
+      "end": "2021-10-31",
+      "institution": "Zurich University of Applied Sciences",
+      "status": "Closed"
+    },
+    {
+      "period": 2,
+      "start": "2021-11-01",
+      "end": "2022-05-31",
+      "institution": "Zurich University of Applied Sciences",
+      "status": "Closed"
+    },
+    {
+      "period": 3,
+      "start": "2022-06-01",
+      "end": "2022-10-31",
+      "institution": "Bern University of Applied Sciences",
+      "status": "Closed"
+    },
+    {
+      "period": 4,
+      "start": "2022-11-01",
+      "end": "2023-10-31",
+      "institution": "Bern University of Applied Sciences",
+      "status": "Closed"
+    },
+    {
+      "period": 5,
+      "start": "2023-11-01",
+      "end": "2024-09-13",
+      "institution": "Bern University of Applied Sciences",
+      "status": "Closed"
+    }
+  ],
+  "statistics": {
+    "initial_fsac_percentage": 15,
+    "total_wg_participants": 758
+  }
+}

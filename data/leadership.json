@@ -1,328 +1,255 @@
 {
   "metadata": {
     "action": "CA19130",
-    "action_name": "Fintech and Artificial Intelligence in Finance",
-    "generated": "2026-01-02T20:02:44.248100",
-    "source": "Leadership_Positions.pdf"
+    "action_name": "Fintech and Artificial Intelligence in Finance - Towards a transparent financial industry (FinAI)",
+    "action_status": "Complete",
+    "source": "COST e-services portal",
+    "source_url": "https://e-services.cost.eu/action/CA19130/leadership-positions",
+    "extracted_date": "2026-01-02T20:14:59.488177",
+    "pdf_file": "Leadership_Positions.pdf"
   },
   "grant_periods": [
     {
       "period": 1,
       "start": "2020-11-01",
       "end": "2021-10-31",
-      "grant_holder": "Zurich University of Applied Sciences"
+      "institution": "Zurich University of Applied Sciences",
+      "status": "Closed"
     },
     {
       "period": 2,
       "start": "2021-11-01",
       "end": "2022-05-31",
-      "grant_holder": "Zurich University of Applied Sciences"
+      "institution": "Zurich University of Applied Sciences",
+      "status": "Closed"
     },
     {
       "period": 3,
       "start": "2022-06-01",
       "end": "2022-10-31",
-      "grant_holder": "Bern University of Applied Sciences"
+      "institution": "Bern University of Applied Sciences",
+      "status": "Closed"
     },
     {
       "period": 4,
       "start": "2022-11-01",
       "end": "2023-10-31",
-      "grant_holder": "Bern University of Applied Sciences"
+      "institution": "Bern University of Applied Sciences",
+      "status": "Closed"
     },
     {
       "period": 5,
       "start": "2023-11-01",
       "end": "2024-09-13",
-      "grant_holder": "Bern University of Applied Sciences"
+      "institution": "Bern University of Applied Sciences",
+      "status": "Closed"
     }
   ],
-  "core_leadership": {
-    "action_chair": {
+  "core_leadership": [
+    {
       "title": "Action Chair",
-      "current": {
-        "name": "Prof Jorg Osterrieder",
-        "country": "Switzerland",
-        "affiliation": "Bern University of Applied Sciences",
-        "start": "2020-09-15"
-      },
+      "current_holder": "Prof Jorg Osterrieder",
       "history": []
     },
-    "action_vice_chair": {
+    {
       "title": "Action Vice-Chair",
-      "current": {
-        "name": "Prof Valerio Poti",
-        "country": "Ireland",
-        "affiliation": "Dublin City University",
-        "start": "2020-09-15"
-      },
+      "current_holder": "Prof Valerio Poti",
       "history": []
     },
-    "gh_scientific_representative": {
-      "title": "GH Scientific Representative",
-      "current": {
-        "name": "Prof Branka Hadji Misheva",
-        "country": "Switzerland",
-        "affiliation": "Bern University of Applied Sciences",
-        "start": "2022-06-01"
-      },
-      "history": [
-        {
-          "name": "Prof Jorg Osterrieder",
-          "country": "Switzerland",
-          "start": "2020-11-01",
-          "end": "2022-05-31"
-        }
-      ]
+    {
+      "title": "Current GH Scientific Representative",
+      "current_holder": "Prof Branka Hadji Misheva",
+      "history": []
     },
-    "gh_manager": {
-      "title": "Grant Holder Manager",
-      "current": {
-        "name": "Prof Branka Hadji Misheva",
-        "country": "Switzerland",
-        "affiliation": "Bern University of Applied Sciences",
-        "start": "2022-06-01"
-      },
-      "history": [
-        {
-          "name": "Prof Jorg Osterrieder",
-          "country": "Switzerland",
-          "start": "2020-11-01",
-          "end": "2022-05-31"
-        }
-      ]
+    {
+      "title": "Current GH Manager",
+      "current_holder": "Prof Branka Hadji Misheva",
+      "history": []
     }
-  },
-  "working_groups": {
-    "wg1": {
-      "name": "WG1: Transparency and Explainability in AI/ML for Finance",
-      "participants": 281,
-      "leader": {
-        "title": "WG Leader",
-        "current": {
-          "name": "Prof Wolfgang Karl Hardle",
-          "country": "Germany",
-          "affiliation": "Humboldt University Berlin",
-          "start": "2020-09-15"
-        },
-        "history": []
-      },
-      "vice_leader": {
-        "title": "WG Vice Leader",
-        "current": {
-          "name": "Prof Branka Hadji Misheva",
-          "country": "Switzerland",
-          "affiliation": "Bern University of Applied Sciences",
-          "start": "2020-09-15"
-        },
-        "history": []
-      }
+  ],
+  "working_groups": [
+    {
+      "number": 1,
+      "title": "Transparency in FinTech",
+      "leader": "Prof Wolfgang Hardle",
+      "participants": 281
     },
-    "wg2": {
-      "name": "WG2: Optimization in AI/ML for Finance",
-      "participants": 254,
-      "leader": {
-        "title": "WG Leader",
-        "current": {
-          "name": "Prof Petre Lameski",
-          "country": "North Macedonia",
-          "affiliation": "Ss. Cyril and Methodius University",
-          "start": "2020-09-15"
-        },
-        "history": []
-      },
-      "vice_leader": {
-        "title": "WG Vice Leader",
-        "current": {
-          "name": "Prof Damian Trif",
-          "country": "Romania",
-          "affiliation": "Babes-Bolyai University",
-          "start": "2024-03-07"
-        },
-        "history": [
-          {
-            "name": "Prof Djordje Siljak",
-            "country": "Ireland",
-            "start": "2020-09-15",
-            "end": "2024-03-07"
-          }
-        ]
-      }
+    {
+      "number": 2,
+      "title": "Transparent versus Black Box Decision-Support Models in the Financial Industry",
+      "leader": "Prof Petre Lameski",
+      "participants": 254
     },
-    "wg3": {
-      "name": "WG3: AI/ML Challenges in Quantitative Finance",
-      "participants": 223,
-      "leader": {
-        "title": "WG Leader",
-        "current": {
-          "name": "Prof Peter Hartmut Schwendner",
-          "country": "Switzerland",
-          "affiliation": "Zurich University of Applied Sciences",
-          "start": "2020-09-15"
-        },
-        "history": []
-      },
-      "vice_leader": {
-        "title": "WG Vice Leader",
-        "current": {
-          "name": "Prof Joao Paulo Vieito",
-          "country": "Portugal",
-          "affiliation": "Polytechnic Institute of Viana do Castelo",
-          "start": "2020-09-15"
-        },
-        "history": []
-      }
+    {
+      "number": 3,
+      "title": "Transparency into Investment Product Performance for Clients",
+      "leader": "Prof Peter Schwendner",
+      "participants": 223
     }
-  },
-  "coordinators": {
-    "science_communication": {
+  ],
+  "coordinators": [
+    {
       "title": "Science Communication Coordinator",
-      "current": {
-        "name": "Dr Ioana Coita",
-        "country": "Romania",
-        "affiliation": "University of Oradea",
-        "start": "2024-03-07"
-      },
+      "current_holder": "Dr Ioana Coita",
+      "start_date": "2024-03-07",
       "history": [
         {
           "name": "Prof Alessia Paccagnini",
-          "country": "Ireland",
           "start": "2021-04-22",
           "end": "2024-03-07"
         },
         {
           "name": "Dr Anita Pelle",
-          "country": "Hungary",
           "start": "2020-09-15",
           "end": "2021-04-22"
         }
       ]
     },
-    "grant_awarding": {
+    {
       "title": "Grant Awarding Coordinator",
-      "current": {
-        "name": "Prof Codruta Mare",
-        "country": "Romania",
-        "affiliation": "Babes-Bolyai University",
-        "start": "2022-03-03"
-      },
-      "history": [
-        {
-          "name": "Prof Alessia Paccagnini",
-          "country": "Ireland",
-          "start": "2020-09-15",
-          "end": "2022-03-03"
-        }
-      ]
-    },
-    "training_schools": {
-      "title": "Training School Coordinator",
-      "current": {
-        "name": "Prof Petre Lameski",
-        "country": "North Macedonia",
-        "affiliation": "Ss. Cyril and Methodius University",
-        "start": "2022-12-12"
-      },
-      "history": [
-        {
-          "name": "Prof Raphael Silbernagel",
-          "country": "Switzerland",
-          "start": "2020-09-15",
-          "end": "2022-12-12"
-        }
-      ]
-    },
-    "stsm": {
-      "title": "STSM Coordinator",
-      "current": {
-        "name": "Dr Andreea Nita",
-        "country": "Romania",
-        "affiliation": "Bucharest University of Economic Studies",
-        "start": "2024-03-07"
-      },
-      "history": [
-        {
-          "name": "Prof Codruta Mare",
-          "country": "Romania",
-          "start": "2020-09-15",
-          "end": "2024-03-07"
-        }
-      ]
-    },
-    "virtual_networking": {
-      "title": "Virtual Networking Support Manager",
-      "current": {
-        "name": "Prof Raphael Silbernagel",
-        "country": "Switzerland",
-        "affiliation": "University of Applied Sciences Northwestern Switzerland",
-        "start": "2022-12-12"
-      },
-      "history": [
-        {
-          "name": "Prof Branka Hadji Misheva",
-          "country": "Switzerland",
-          "start": "2020-09-15",
-          "end": "2022-12-12"
-        }
-      ]
-    },
-    "ict": {
-      "title": "ICT Conference Grants Coordinator",
-      "current": {
-        "name": "Dr Andreea Nita",
-        "country": "Romania",
-        "affiliation": "Bucharest University of Economic Studies",
-        "start": "2023-05-31"
-      },
+      "current_holder": "Prof Codruta MARE",
+      "start_date": "2022-03-03",
       "history": []
     }
-  },
+  ],
+  "other_positions": [
+    {
+      "title": "Diversity team co-leader",
+      "current_holders": [
+        "Prof Claudia Tarantola",
+        "Prof Alessia Paccagnini",
+        "Dr Galena Pisoni"
+      ],
+      "start_date": "2022-03-03",
+      "history": [
+        {
+          "name": "Prof Alessandra Tanda",
+          "start": "2022-03-03",
+          "end": "2022-05-17"
+        }
+      ]
+    },
+    {
+      "title": "Scientific Advisory Board coordinator",
+      "current_holders": [
+        "Prof Valerio Poti"
+      ],
+      "start_date": "2022-08-01",
+      "history": []
+    },
+    {
+      "title": "Technical Coordinator",
+      "current_holders": [
+        "Prof Ronald Hochreiter"
+      ],
+      "start_date": "2022-03-03",
+      "history": []
+    },
+    {
+      "title": "Working Group 2 co-leader",
+      "current_holders": [
+        "Dr Kristina Sutiene"
+      ],
+      "start_date": "2022-03-03",
+      "history": []
+    },
+    {
+      "title": "Diversity team leader",
+      "current_holders": [
+        "Prof Alessandra Tanda"
+      ],
+      "start_date": "2022-05-17",
+      "history": [
+        {
+          "name": "Dr Galena Pisoni",
+          "start": "2022-03-04",
+          "end": "2022-05-17"
+        },
+        {
+          "name": "Prof Codruta MARE",
+          "start": "2022-03-03",
+          "end": "2022-03-04"
+        }
+      ]
+    },
+    {
+      "title": "Virtual Networking Support Manager",
+      "current_holders": [
+        "Prof Codruta MARE"
+      ],
+      "start_date": "2023-04-17",
+      "history": [
+        {
+          "name": "Mr Vasile Strat",
+          "start": "2022-07-07",
+          "end": "2023-04-17"
+        }
+      ]
+    },
+    {
+      "title": "Chief Privacy Officer",
+      "current_holders": [
+        "Dr Maria Moloney"
+      ],
+      "start_date": "2023-03-23",
+      "history": []
+    },
+    {
+      "title": "STSM Coordinator",
+      "current_holders": [
+        "Dr Catarina Silva",
+        "Dr Roman Matkovskyy"
+      ],
+      "start_date": "2024-03-07",
+      "history": [
+        {
+          "name": "Prof Codruta MARE",
+          "start": "2021-11-02",
+          "end": "2023-04-17"
+        }
+      ]
+    },
+    {
+      "title": "Virtual Grant Co-Coordinator",
+      "current_holders": [
+        "Dr Karolina Bolesta"
+      ],
+      "start_date": "2023-06-17",
+      "history": []
+    },
+    {
+      "title": "WG1 Co-Leader",
+      "current_holders": [
+        "Prof Daniel Traian Pele"
+      ],
+      "start_date": "2024-03-07",
+      "history": []
+    },
+    {
+      "title": "ITC CG Coordinator",
+      "current_holders": [
+        "Prof Enis Kayis"
+      ],
+      "start_date": "2021-11-02",
+      "history": []
+    }
+  ],
   "mc_observers": [
     {
       "name": "Prof Panayotis Alexakis",
-      "country": "Greece",
-      "role": "MC Observer",
-      "start": "2020-09-15"
+      "country": "Greece"
     },
     {
       "name": "Mr Michael Fruhmann",
-      "country": "Austria",
-      "role": "MC Observer",
-      "start": "2020-09-15"
+      "country": "Austria"
     },
     {
       "name": "Prof Henning Schulzrinne",
-      "country": "United States",
-      "role": "MC Observer",
-      "start": "2020-09-15"
-    },
-    {
-      "name": "Dr Faycel Allouche",
-      "country": "Tunisia",
-      "role": "MC Observer",
-      "start": "2024-03-07"
-    },
-    {
-      "name": "Dr Armel Jacques Nzeuko Njougo Francois",
-      "country": "Cameroon",
-      "role": "MC Observer",
-      "start": "2024-03-07"
-    },
-    {
-      "name": "Prof Daouda Sangare",
-      "country": "Ivory Coast",
-      "role": "MC Observer",
-      "start": "2024-03-07"
+      "country": "United States"
     }
   ],
   "statistics": {
-    "total_participating_countries": 45,
-    "cost_member_countries": 38,
-    "near_neighbour_countries": 4,
-    "international_partner_countries": 3,
     "total_wg_participants": 758,
-    "wg1_participants": 281,
-    "wg2_participants": 254,
-    "wg3_participants": 223
+    "initial_fsac_percentage": 15
   }
 }
