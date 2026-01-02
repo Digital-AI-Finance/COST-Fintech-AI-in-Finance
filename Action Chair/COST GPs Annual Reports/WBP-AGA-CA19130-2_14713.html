@@ -1,0 +1,1546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WBP AGA CA19130 2 14713 - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>WBP AGA CA19130 2 14713</h1>
+        <div class="meta">Source: WBP-AGA-CA19130-2_14713.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>WBP AGA CA19130 2 14713</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>22 pages</span>
+                    <span>50,787 characters</span>
+                    <span>7,341 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+Work And Budget Plan
+CA19130 Grant Agreement Period 2
+01/11/2021 to 31/05/2022
+Action Profile
+Action General Information
+Action Code
+CA19130
+MC Chair
+  Prof Jörg Osterrieder
+Action Title
+CA19130 - Fintech and Artificial Intelligence in Finance - Towards a
+transparent financial industry
+MOU
+033/20
+Draft MOU
+OC-2019-1-24059
+CSO Approval Date
+2020-03-31
+Action Start Date
+2020-09-14
+Action End Date
+2024-09-13
+Science Officer
+Dr Ralph Stuebner
+Administrative Officer
+Ms Rose Cruz Santos
+Participating COST Members: 
+ITC
+Non-ITC
+Total
+COST Members (countries) having
+accepted the MoU
+Number
+24
+Number
+18
+42
+% of ITC in
+Action
+57.14%
+% of non-
+ITC in
+Action
+42.86%
+% of all ITC
+100%
+% of all non-
+ITC
+105.88%
+Number of Action MC members
+39
+32
+71
+ COST Member and Acceptance Date
+  AL 13/05/2020
+  AT 30/04/2020
+  BE 17/02/2021
+  BA 30/04/2020
+  BG 04/09/2020
+  HR 02/06/2020
+  CY 17/02/2021
+  CZ 14/07/2021
+  DK 28/05/2020
+  EE 04/05/2020
+  FI 02/11/2021
+  EL 22/05/2020
+  HU 13/05/2020
+  IS 05/05/2020
+  IE 29/04/2020
+  IL 11/05/2020
+  IT 12/06/2020
+  LV 12/07/2021
+  LT 17/05/2020
+  LU 30/04/2020
+  MT 22/02/2021
+  MD 17/10/2020
+  ME 19/05/2020
+  NL 25/06/2020
+  MK 07/05/2020
+  NO 06/05/2020
+  PL 30/04/2020
+  PT 28/05/2020
+  RO 10/06/2020
+  RS 27/06/2020
+  SK 29/04/2020
+  SI 27/05/2020
+  ZA 02/11/2021
+  ES 18/06/2020
+  SE 26/05/2020
+  CH 20/05/2020
+  TR 04/05/2020
+  UA 12/04/2022
+  UK 30/04/2020
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+  FR 05/05/2020
+  GE 12/04/2022
+  DE 08/05/2020
+Submitted : 2022-05-18 at 1:41 PM
+Generated : 2022-05-18 at 1:41 PM
+2
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+International cooperation
+NNC
+IPC
+Specific 
+Organis
+ation
+Total
+Number of entities formally approved to join Action
+0
+0
+0
+0
+Number of countries
+0
+0
+0
+  0
+Working Groups
+WG Title
+WG Leader
+Number of
+WG members
+WG1
+Transparency in FinTech
+  Prof Wolfgang Härdle
+50
+WG2
+Transparent versus Black Box Decision-
+Support Models in the Financial Industry
+  Dr Petre Lameski
+57
+WG3
+Transparency into Investment Product
+Performance for Clients
+  Prof Peter Schwendner
+41
+3
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+MoU objectives, Action deliverables and Grant Agreement Period Goals
+Action Objectives from MoU
+Aim/primary Objective
+establish a large and interconnected community across academia, public institutions and industry focusing
+on Financial Technology and Artificial Intelligence, improving transparency in financial services, especially
+in and through FinTech, in financial modelling and investment performance evaluation
+Secondary objectives
+1.To develop blended approaches to evaluate innovative financial services and their providers,
+especially in the FinTech domain, building on Machine Learning methods, focussing on prediction
+(early warning) of operational fragility, fraudulent and illegal behaviour ranging from appropriation
+of loaned funds to money-laundering activities.
+2.The development of conceptual and methodological tools for establishing when black-box models
+are admissible and, to the extent possible, making them more transparent and/or replacing them
+with interpretable and explainable models.
+3.To receive input from regulators and practitioners&#x27; communities and to validate results with regard
+to increasing transparency of artificial intelligence applications.
+4.Pruning and improvement of the vast array of performance attribution models by contributing to the
+development of methodologies for reducing the false discovery rate in financial research and
+applied financial investment management.
+5.Disseminate to the public and share with regulators the results on investment product performance
+evaluation.
+6.Creation of the first European platform comparing the out-of-sample performance of banks&#x27;
+investment products, insurance-linked investment products and asset management products
+available to the general public.
+7.Create an excellent network of researchers in Europe with lasting collaboration beyond the lifetime
+of the Action.
+8.Bringing technological, quantitative and economic researchers together, to tackle future research
+that can only be done in an interdisciplinary setting, and getting actively involved in the blockchain
+and FinTech communities across Europe, to constantly monitor developments, get input and
+disseminate results.
+9.Bridging the gap between practitioners from the finance industry, academics and regulators by
+setting up a common knowledge exchange platform.
+10.Transfer knowledge in terms of expertise, scientific tools and human resources across the different
+disciplines and between academia and industry.
+11.Establish an inclusive community of researchers on methodological and technological themes in
+Machine Learning and Artificial Intelligence, to promote Early Career Investigators and increase
+their visibility.
+12.Overcome the siloing of research topics by country and achieve geographical and demographical
+diversity, with special attention to COST Inclusiveness Target countries.
+13.Prepare competitive European researchers for a fruitful career in an international environment
+through intensive use of Short Term Scientific Missions (STSM) and joint educational programs
+with industrial partners.
+14.Maximize the job opportunities for PhD students and Early Career Investigators.
+15.Disseminate the results of the Action&#x27;s activities to the scientific community, European institutions
+and to the general public.
+16.Significantly improve the gender equality in the fields of the Action.
+4
+
+
+</pre><div class="page-break" data-page="Page 5"></div><pre class="text-content">
+Action Deliverables
+Deliverable
+Month
+1. Strategy to engage stakeholders in the Action (including revisions in month 24 and 36)
+  6
+2. Report on good examples and best practices for a transparent finance industry with
+guidelines to improve transparency
+  12
+3. A database which contains pre-ICO documentation and post-ICO performance (ROI and
+lifespan)
+  24
+4. A database which contains data on crowdfunding/P2P platform features useful for rating
+platform integrity and to predict fraud
+  24
+5. A discussion paper for possible approaches to building a statistically valid back-testing
+framework
+  24
+6. An internal database of collected (scraped) financial time series from exchanges and regional
+consolidation platforms optimised for accessibility to all partners
+  24
+7. Discussion papers (DP) on the methodology for evaluating/rating ICOs and
+crowdfunding/P2P platforms and for detection/early warning about fraud/illegal behaviour with
+emphasis on the application of AI tools
+  36
+8. Position papers, aimed at regulators and policy-makers, on methodology (with examples of
+formal criteria) for testing AI techniques in real-time
+  36
+9. Handbook and/or wiki page describing potential approaches to tackle risk management
+issues related to blockchain assets and crowdfunding/P2P lending
+  36
+10. A position paper and roadmap on mitigating risks connected with the increased use of
+digital assets
+  48
+11. Methodological discussion paper on the design of stress tests for the evaluation of AI and
+ML models under shifting financial conditions to improve the robustness of models
+  48
+12. Methodological discussion papers on AI models to generate “failed trials” of investment
+product producers and on quantitative strategies with the usage of the promising field of
+network data analysis
+  48
+13. Four annual reports (for lay audience) distributed via local and national media
+  48
+14. Key software (codes, packages) developed by each of the Working Groups in line with their
+objectives
+  48
+15. An edited volume containing scientific achievements of the Action (dummy text to delete)
+  48
+5
+
+
+</pre><div class="page-break" data-page="Page 6"></div><pre class="text-content">
+Grant Agreement Period
+Grant Agreement Period Start
+Date
+01/11/2021
+Grant Agreement Period End
+Date
+31/05/2022
+Grant Agreement Period Goals
+Number
+Grant Agreement Period Goal
+MoU Objective(s) it relates to
+GAPG 1
+Collection of software pieces into a P2P knowledge
+platform like quantinar.com
+Secondary objective 1
+Secondary objective 2
+Secondary objective 3
+Secondary objective 4
+Secondary objective 5
+Secondary objective 10
+Secondary objective 15
+GAPG 2
+Design and management of an interactive exchange
+system for Videos, slides, quantlets
+Secondary objective 5
+Secondary objective 10
+Secondary objective 15
+GAPG 3
+Create scientific methods to improve transparency of
+investment processes. Apply these methods to
+published investment processes and develop
+improved investment processes.
+Secondary objective 2
+Secondary objective 5
+Secondary objective 6
+GAPG 4
+Reach out to and include researchers from
+sustainable investments into WG3
+Challenge
+Secondary objective 7
+Secondary objective 8
+Secondary objective 11
+GAPG 5
+Actively seek, encourage and promote research from
+researchers at different stage of their carriers and
+females
+Secondary objective 11
+Secondary objective 12
+Secondary objective 13
+Secondary objective 14
+Secondary objective 16
+GAPG 6
+Increase the visibility of the network by creating video
+content for the wider public based on research
+produced in the action
+Secondary objective 5
+Secondary objective 10
+Secondary objective 15
+GAPG 7
+Increase the practial impact of the network by
+developing the connection with industry - (joint
+academia - industry hybrid/online events)
+Secondary objective 9
+GAPG 8
+Produce research on transparency of AI applications
+Secondary objective 3
+6
+
+
+</pre><div class="page-break" data-page="Page 7"></div><pre class="text-content">
+Work and Budget Plan for the Grant Agreement Period
+Work and Budget Plan Summary
+A. COST Networking Tools
+EUR
+(1) Meetings
+123,906.66
+(2) Training Schools
+0.00
+(3) Short Term Scientific Missions (STSM)
+39,680.00
+(4) ITC Conference Grant
+7,500.00
+(5) COST Action Dissemination
+5,093.34
+(6) Other Expenses Related to Scientific Activities
+(OERSA)
+0.00
+B. Total Science Expenditure (sum of (1) to (6))
+176,180.00
+  C. Financial and Scientific Administration and
+Coordination (FSAC) (max. of 15% of B)
+26,427.00
+Total Grant (B+C)
+202,607.00
+7
+
+
+</pre><div class="page-break" data-page="Page 8"></div><pre class="text-content">
+Meetings
+Overview
+Meeting Title
+Meeting Type
+Dates
+Location
+ITC
+Total Cost(EUR)
+ML approaches
+Finance and
+Management
+Workshops/Conf
+erences,
+Working Group
+Meeting
+24/03/2022 -
+25/03/2022
+Berlin (Germany) No
+3,927.98
+WG1 meeting
+Working Group
+Meeting
+08/04/2022 -
+08/04/2022
+Rennes (France) No
+3,456.92
+Technology,
+Innovation and
+Stability: New
+Directions in
+Finance
+(TINFIN)
+Workshops/Conf
+erences,
+Working Group
+Meeting
+05/05/2022 -
+06/05/2022
+Zagreb (Croatia) Yes
+8,234.16
+COST FinAI
+Diversity
+research
+workshop
+Workshops/Conf
+erences
+16/05/2022 -
+17/05/2022
+Naples (Italy)
+No
+13,047.60
+COST FinAI -
+The 5th
+International
+conference on
+economics and
+social sciences
+Workshops/Conf
+erences
+16/06/2022 -
+17/06/2022
+Bucharest
+(Romania)
+Yes
+10,170.00
+COST FinAI
+Transparency in
+Finance - Core
+group and WG3
+meeting
+Working Group
+Meeting, Core
+Group Meeting
+06/07/2022 -
+06/07/2022
+Espoo (Finland)
+No
+10,920.00
+COST FinAI
+Research
+Workshop on
+Transparency in
+Financial
+Markets, Core
+group and WG2
+meeting
+Core Group
+Meeting,
+Working Group
+Meeting, Worksh
+ops/Conferences
+22/08/2022 -
+24/08/2022
+Enschede
+(Netherlands)
+No
+13,390.00
+Women in
+Fintech and
+Artificial
+Intelligence
+Workshops/Conf
+erences
+21/09/2022 -
+22/09/2022
+Tirana (Albania)
+Yes
+10,550.00
+COST FinAI
+Conference on
+Transparency
+Workshops/Conf
+erences
+30/09/2022 -
+30/09/2022
+Zurich
+(Switzerland)
+No
+1,250.00
+COST FinAI
+Transparency in
+Finance
+Management
+Committee
+Meeting, Worksh
+ops/Conferences
+, Core Group
+Meeting,
+Working Group
+05/10/2022 -
+07/10/2022
+Utrecht
+(Netherlands)
+No
+48,960.00
+8
+
+
+</pre><div class="page-break" data-page="Page 9"></div><pre class="text-content">
+Meeting
+Total
+123,906.66
+Details
+  Meeting Type
+Workshops/Conferences,Working Group Meeting
+Title of the Meeting
+ML approaches Finance and Management
+Grant Period Goal(s) it
+will address
+Collection of software pieces into a P2P knowledge platform like
+quantinar.com,Design and management of an interactive exchange system for
+Videos, slides, quantlets,Actively seek, encourage and promote research from
+researchers at different stage of their carriers and females,Increase the practial
+impact of the network by developing the connection with industry - (joint
+academia - industry hybrid/online events)
+Description
+https://www.meetup.com/Fintech_AI_in_Finance/events/283173624/ The co-
+organised conference “ML approaches Finance and Management” will be a two-
+day hybrid event. It provides a platform for interdisciplinary discussion on AI
+application in finance, interpretable ML in management, statistics and
+explainable AI, blended approaches in the FinTech domain, which is highly
+related to the COST Action FinAI. The conference will be recorded. The slides
+will be available to all COST members. Moreover, the event is organised by
+female researchers, and female scientists will also present on the conference
+(meet GP2 the goal 6, Capacity Building 10). The conference will be recorded
+by video. (meet GP2 the goal 8). Keynote speakers include Prof. Giuseppe
+Cavaliere (University of Bologna), Prof. Francis de Véricourt (ESMT Berlin),
+Prof. Wolfgang Karl Härdle (Humboldt University of Berlin), Prof. Dennis
+Kristensen (University College London) Prof. Olivier Scaillet (University of
+Geneva), Prof. Dacheng Xiu (University of Chicago). They will provide valuable
+insight on the topic from multiple perspectives. It will help to create an excellent
+network of researchers in Europe with lasting collaboration beyond the lifetime
+of the Action. (meet Capacity Building 1-9) There will be a dedicated COST
+FinAI Session: It will be from 14.45 to 17:45 on March 24th (3hours). Four
+speakers will present here. Every presentation will last 45 minutes. Prof. Dr.
+Wolfgang Härdle and I (1.75 hours) and Rui Ren are also from COST FinAI. So
+In total we have at least six speakers from COST FinAI, and total time is 4.75
+hours. On March 25, 2022, we are also planning a working group meeting of
+working group 1 after the end of the co-organised conference. Travel cost
+reimbursement is restricted to COST FinAI members. The allocated budget
+cannot be exceeded. In case of budget restrictions, preference for
+reimbursement will be given to COST FinAI members based on their
+contributions to the Action, to this particular event as well as the contribution to
+goals and objectives that have not yet been achieved, taking also diversity
+considerations and previous budget allocations into account. LOS is 50% of the
+maximum eligible amount and will be reduced accordingly in case of a lower
+number of participants and conditional on the COST FinAI session.
+Output(s)
+A section will be designated for COST, which will be beneficial for the
+dissemination of the Action results • Video of the conference. • Slides available
+for all COST members • Codes available on the Quantlets. • Excellent network
+of researchers in Europe • Exchange of knowledges and further collaboration
+We will meet the following objectives: • AI application in finance (meet GP2 the
+goal 2 and 10, Capacity Building 2, 5-9) • ML in management (meet Capacity
+Building 2, 5-9) • Statistics and explainable AI (Meet Research Coordination 2,
+Capacity Building 2, 5-9) Blended approaches in the FinTech domain (Meet
+Research Coordination 1, Capacity Building 2, 5-9
+Location
+Berlin (Germany)
+ITC
+No
+Start Date
+2022-03-24 14:00:00
+End Date
+2022-03-25 12:00:00
+9
+
+
+</pre><div class="page-break" data-page="Page 10"></div><pre class="text-content">
+Duration
+  2 days
+Number of expected total
+participants
+51
+Number of participants to
+be reimbursed from
+COST funds
+3
+Average
+reimbursement(per
+participant)(EUR)
+642.66
+Total Reimbursement
+costs (EUR)
+1,927.98
+Local Organiser Support
+(EUR)
+2,000.00
+Total cost of the meeting
+(EUR)
+3,927.98
+  Meeting Type
+Working Group Meeting
+Title of the Meeting
+WG1 meeting
+Grant Period Goal(s) it
+will address
+Design and management of an interactive exchange system for Videos, slides,
+quantlets,Actively seek, encourage and promote research from researchers at
+different stage of their carriers and females,Increase the practial impact of the
+network by developing the connection with industry - (joint academia - industry
+hybrid/online events)
+Description
+We are planning a working group meeting of working group 1, in a hybrid way.
+This is regular WG1 meeting where goals and progress which belong to WG1
+area will be discussed, research on FinAI topics presented, further collaboration
+plans and joint events determined. 3 hours of WG1 meeting, with half-time for
+discussions of progress and plans and half presentation of research results of
+WG1 members. Discussion of Achievement of GP2 goals of WG1 as well as
+deliverables for GP2&amp;3, planning of further activities. To control the progress of
+achievement goals as well as deliverables of WG1 for GP2, adjustment of the
+working plan. Potential keynote speakers for WG1 research: Wolfgang Karl
+Härdle, Christian Hafner (Data Analytics, Digital assets), Ania Zalewska
+(Finance, Management), Alla Petukhina (Quantitative finance, Digital assets),
+Daniele Marazzina (Digital assets, ML for insurance)
+Output(s)
+1. Re Codified knowledge: methods and models that can be used in the
+FinTech industry, in particular in NFT and cryptocurrency markets. 2. Re tacit
+knowledge: know-how regarding ways of evaluation of innovative financial
+services related to NFTs and cryptocurrencies as well as beliefs and
+recommendations for their further development 3. Re technology: empirical
+models and approaches to evaluate and analyze NFTs and cryptocurrencies 4.
+Re societal application: NFT potential is enormous, given that they can be used
+to transfer rights related to both virtual and physical property. Thus, we expect
+increased interest in and application of NFTs in the way how they can be
+treated, held and valued from traditional institutions like museums, funds etc. as
+well as in different applications, like selectively sharing pieces of our personal
+identity or leveraging NFTs as access tokens. Also, we can expect to see
+broader adoption of blockchain technologies, to digitise, track and monitor
+many more processes starting with medical data usage, ESG attributes,
+verifying suppliers’ identities, money transfer
+Location
+Rennes (France)
+ITC
+No
+Start Date
+2022-04-08 10:00:00
+End Date
+2022-04-08 13:00:00
+Duration
+  1 day
+Number of expected total
+participants
+51
+Number of participants to
+be reimbursed from
+COST funds
+2
+10
+
+
+</pre><div class="page-break" data-page="Page 11"></div><pre class="text-content">
+Average
+reimbursement(per
+participant)(EUR)
+728.46
+Total Reimbursement
+costs (EUR)
+1,456.92
+Local Organiser Support
+(EUR)
+2,000.00
+Total cost of the meeting
+(EUR)
+3,456.92
+  Meeting Type
+Workshops/Conferences,Working Group Meeting
+Title of the Meeting
+Technology, Innovation and Stability: New Directions in Finance (TINFIN)
+Grant Period Goal(s) it
+will address
+Create scientific methods to improve transparency of investment processes.
+Apply these methods to published investment processes and develop improved
+investment processes.,Actively seek, encourage and promote research from
+researchers at different stage of their carriers and females,Increase the practial
+impact of the network by developing the connection with industry - (joint
+academia - industry hybrid/online events),Produce research on transparency of
+AI applications
+Description
+https://sites.google.com/net.efzg.hr/tinfinconference/home. COST FinAI
+organized conference (co-organized by the Faculty of Economics and
+Business, where our COST FinAI members work) Dedicated COST session on
+the first day of the conference This conference has more than 50% of the
+programme and organizing committee from our COST network. Working Group
+2 meeting (discussing strategic priorities) the day after, together with WG2
+related research talks on Transparent versus Black Box Decision-Support
+Models in the Financial Industry. The main focus is on: Produce research on
+transparency of AI applications in finance which is related to RCOs 2,4 and 6 1.
+COST FinAI members are represented by: 58% in Programme Committee 55%
+in Organising Committee 2. COST FinAI ITC represented by: 66% in
+Programme Committee 100% in Organising Committee 3. Women are
+represented by: 58% in Programme Committee 78% in Organising Committee
+Travel cost reimbursement is restricted to COST FinAI members. The allocated
+budget cannot be exceeded. In case of budget restrictions, preference for
+reimbursement will be given to COST FinAI members based on their
+contributions to the Action, to this particular event as well as the contribution to
+goals and objectives that have not yet been achieved, taking also diversity
+considerations and previous budget allocations into account. LOS is 50% of the
+maximum eligible amount and will be reduced accordingly in case of a lower
+number of participants.
+Output(s)
+The main focus is on: Produce research on transparency of AI applications in
+finance which is related to RCOs 2,4 and 6 A particular focus is on mapping
+XAI methods for credit risk modeling. Key words: enhance the visibility of
+COST; enhance the visibility of COST Action FinAI and work of WG2; share
+research insights; new network; new collaboration opportunities; extend
+research; facilitate other COST networking tools
+Location
+Zagreb (Croatia)
+ITC
+Yes
+Start Date
+2022-05-05 09:00:00
+End Date
+2022-05-06 17:00:00
+Duration
+  2 days
+Number of expected total
+participants
+51
+Number of participants to
+be reimbursed from
+COST funds
+6
+Average
+reimbursement(per
+participant)(EUR)
+872.36
+Total Reimbursement
+costs (EUR)
+5,234.16
+11
+
+
+</pre><div class="page-break" data-page="Page 12"></div><pre class="text-content">
+Local Organiser Support
+(EUR)
+3,000.00
+Total cost of the meeting
+(EUR)
+8,234.16
+  Meeting Type
+Workshops/Conferences
+Title of the Meeting
+COST FinAI Diversity research workshop
+Grant Period Goal(s) it
+will address
+Create scientific methods to improve transparency of investment processes.
+Apply these methods to published investment processes and develop improved
+investment processes.,Actively seek, encourage and promote research from
+researchers at different stage of their carriers and females,Produce research on
+transparency of AI applications
+Description
+https://www.meetup.com/Fintech_AI_in_Finance/events/282751069
+https://www.meetup.com/Fintech_AI_in_Finance/events/282751078 COST
+FinAI organized event The event is envisioned to take place over 2-days, the
+full agenda below The format will be hybrid and open and advertised to all,
+members of the COST action and beyond, local participants to which the event
+will be of interest, and audience researched through our communication
+campaigns. In situ participation will be covered to the COST action members
+that showed interest to come in a dedicated expression of interest call.
+Output(s)
+The event targets all MoU objectives, as the resulting research papers, round
+tables, and discussions will be pertinent to the areas of the interest of the
+action, aiming to maximizing diversity within the research area. Enhanced
+understanding of diversity in our field Roadmap of further diversity priorities for
+COST FinAI Travel cost reimbursement is restricted to COST FinAI members.
+The allocated budget cannot be exceeded. In case of budget restrictions,
+preference for reimbursement will be given to COST FinAI members based on
+their contributions to the Action, to this particular event as well as the
+contribution to goals and objectives that have not yet been achieved, taking
+also diversity considerations and previous budget allocations into account. LOS
+is 50% of the maximum eligible amount and will be reduced accordingly in case
+of a lower number of participants.
+Location
+Naples (Italy)
+ITC
+No
+Start Date
+2022-05-16 15:00:00
+End Date
+2022-05-17 17:30:00
+Duration
+  2 days
+Number of expected total
+participants
+51
+Number of participants to
+be reimbursed from
+COST funds
+12
+Average
+reimbursement(per
+participant)(EUR)
+837.30
+Total Reimbursement
+costs (EUR)
+10,047.60
+Local Organiser Support
+(EUR)
+3,000.00
+Total cost of the meeting
+(EUR)
+13,047.60
+  Meeting Type
+Workshops/Conferences
+Title of the Meeting
+COST FinAI - The 5th International conference on economics and social
+sciences
+Grant Period Goal(s) it
+will address
+Collection of software pieces into a P2P knowledge platform like
+quantinar.com,Design and management of an interactive exchange system for
+12
+
+
+</pre><div class="page-break" data-page="Page 13"></div><pre class="text-content">
+Videos, slides, quantlets,Create scientific methods to improve transparency of
+investment processes. Apply these methods to published investment processes
+and develop improved investment processes.,Actively seek, encourage and
+promote research from researchers at different stage of their carriers and
+females,Increase the visibility of the network by creating video content for the
+wider public based on research produced in the action,Increase the practial
+impact of the network by developing the connection with industry - (joint
+academia - industry hybrid/online events),Produce research on transparency of
+AI applications
+Description
+https://icess.ase.ro/digital-disruption-in-financial-markets-round-table/
+https://www.meetup.com/Fintech_AI_in_Finance/events/282805879/ Co-
+organized event with a dedicated COST FinAI Section The Fintech and Artificial
+Intelligence in Finance conference looks at the following COST FinAI topics: •
+Transparency in FinTech • Transparent versus Black Box Decision-Support
+Models in the Financial Industry • Transparency into Investment Product
+Performance for Clients • Fintech • AI in Finance The program and organization
+committee consists entirely of COST FinAI members. The conference section is
+also accompanied by a round table joined by industry representatives. Travel
+cost reimbursement is restricted to COST FinAI members. The allocated budget
+cannot be exceeded. In case of budget restrictions, preference for
+reimbursement will be given to COST FinAI members based on their
+contributions to the Action, to this particular event as well as the contribution to
+goals and objectives that have not yet been achieved, taking also diversity
+considerations and previous budget allocations into account. LOS is 50% of the
+maximum eligible amount and will be reduced accordingly in case of a lower
+number of participants.
+Output(s)
+Presentation of research results so far in WG1, 2 and 3 Updates on the virtual
+mobility grants and STSMs; one new consortium for a joint research
+application; two new proposed working papers. Two videos on contents of
+COST FinAI, for dissemination to the general audience
+Location
+Bucharest (Romania)
+ITC
+Yes
+Start Date
+2022-06-16 14:00:00
+End Date
+2022-06-17 17:00:00
+Duration
+  2 days
+Number of expected total
+participants
+50
+Number of participants to
+be reimbursed from
+COST funds
+10
+Average
+reimbursement(per
+participant)(EUR)
+917.00
+Total Reimbursement
+costs (EUR)
+9,170.00
+Local Organiser Support
+(EUR)
+1,000.00
+Total cost of the meeting
+(EUR)
+10,170.00
+  Meeting Type
+Working Group Meeting,Core Group Meeting
+Title of the Meeting
+COST FinAI Transparency in Finance - Core group and WG3 meeting
+Grant Period Goal(s) it
+will address
+Collection of software pieces into a P2P knowledge platform like
+quantinar.com,Create scientific methods to improve transparency of investment
+processes. Apply these methods to published investment processes and
+develop improved investment processes.,Reach out to and include researchers
+from sustainable investments into WG3,Actively seek, encourage and promote
+research from researchers at different stage of their carriers and
+females,Increase the practial impact of the network by developing the
+13
+
+
+</pre><div class="page-break" data-page="Page 14"></div><pre class="text-content">
+connection with industry - (joint academia - industry hybrid/online
+events),Produce research on transparency of AI applications
+Description
+Core group and WG3 meeting, co-located with EURO 2022. Daily allowance
+and reimbursement only applies to the core group and WG3 meeting. This will
+take place during the EURO 2022 conference, which is organized by a COST
+FinAI member and lasts several days. Due to the variety of topics there, we will
+schedule our meetings during a time, when no relevant COST FinAI topics are
+discussed at the conference. Also, Peter Schwendner is organizing a dedicated
+COST FinAI session at EURO 2022.
+https://www.meetup.com/Fintech_AI_in_Finance/events/283227124/
+https://www.meetup.com/Fintech_AI_in_Finance/events/283344628/ COST
+FinAI Core Group Meeting We aim to have two research talks specifically from
+within our COST FinAI Action. Another focus is on COST FinAI science
+communication. We will extend our strategic plan on how to disseminate our
+research results. Working group meeting: · The networking activity will bring
+together the WG3 members and serve the MoU objectives by facilitating
+research presentations and discussions. One focus will be on the design of
+stress tests for the evaluation of AI and ML models under dynamic financial
+conditions to improve the robustness of investment strategies. Time permitting,
+we will also discuss how to design AI models to generate “failed trials” of
+investment product producers and on quantitative strategies. · The output will
+be both codified knowledge (in the form of technical papers and publications) as
+well as tacit knowledge. · There will be a 2h plenary session together with
+several research presentations embedded in the “Area Financial modeling and
+Risk management”. · Website for the co-located event: https://www.euro-
+online.org/conf/euro32/streams · Within the “Area Financial modeling and Risk
+management”, MC member Peter Schwendner will act as Chair of the session
+“AI &amp; Innovation in Sustainable Finance”. · The COST Action will benefit from
+the co-location by facilitating the interaction of its members with experts from
+other sessions and areas, such as “Stochastic and Robust Optimization” or
+“New challenges for financial modelling”. Travel cost reimbursement is
+restricted to COST FinAI members. The allocated budget cannot be exceeded.
+In case of budget restrictions, preference for reimbursement will be given to
+COST FinAI members based on their contributions to the Action, to this
+particular event as well as the contribution to goals and objectives that have not
+yet been achieved, taking also diversity considerations and previous budget
+allocations into account. LOS is 50% of the maximum eligible amount and will
+be reduced accordingly in case of a lower number of participants.
+Output(s)
+We intend to find further concepts for our research, put in place a research
+framework, and work on the development of joint proposals. We will discuss
+and develop strategies to engage stakeholders in the Action, as well as work on
+a discussion paper for possible approaches to building a statistically valid back-
+testing framework. One focus will be on the design of stress tests for the
+evaluation of AI and ML models under dynamic financial conditions to improve
+the robustness of investment strategies. Time permitting, we will also discuss
+how to design AI models to generate “failed trials” of investment product
+producers and on quantitative strategies. The core group will meet to review the
+COST FinAI Action so far and the plans going forward. This will serve as an
+input to the annual MC meeting which will then take place in October. The
+output will be an overview of the research results that have been achieved so
+far in working groups 1,23, as well as an overview of the COST FinAI
+achievements to date, for both research and diversity achievements. The output
+will be summarized on the COST FInAI blog as well as a the COST FinAI
+newsletter. Travel cost reimbursement is restricted to COST FinAI members
+that contribute to the output described above.
+Location
+Espoo (Finland)
+ITC
+No
+Start Date
+2022-07-06 09:00:00
+End Date
+2022-07-06 17:00:00
+14
+
+
+</pre><div class="page-break" data-page="Page 15"></div><pre class="text-content">
+Duration
+  1 day
+Number of expected total
+participants
+51
+Number of participants to
+be reimbursed from
+COST funds
+10
+Average
+reimbursement(per
+participant)(EUR)
+892.00
+Total Reimbursement
+costs (EUR)
+8,920.00
+Local Organiser Support
+(EUR)
+2,000.00
+Total cost of the meeting
+(EUR)
+10,920.00
+  Meeting Type
+Core Group Meeting,Working Group Meeting,Workshops/Conferences
+Title of the Meeting
+COST FinAI Research Workshop on Transparency in Financial Markets, Core
+group and WG2 meeting
+Grant Period Goal(s) it
+will address
+Create scientific methods to improve transparency of investment processes.
+Apply these methods to published investment processes and develop improved
+investment processes.,Reach out to and include researchers from sustainable
+investments into WG3,Actively seek, encourage and promote research from
+researchers at different stage of their carriers and females,Increase the practial
+impact of the network by developing the connection with industry - (joint
+academia - industry hybrid/online events),Produce research on transparency of
+AI applications
+Description
+https://www.meetup.com/Fintech_AI_in_Finance/events/283227167/ Working
+group 2, core group meeting Co-organized meeting with FinanceCom 2022
+(&gt;60% of program committee are COST FinAI members) Core group meeting ,
+Aug 22 https://www.meetup.com/Fintech_AI_in_Finance/events/283226981/
+Working group 2 meeting, Aug 23
+https://www.meetup.com/Fintech_AI_in_Finance/events/283304320/ COST
+FinAI dedicated session on AI and Transparency in Financial Markets
+https://www.meetup.com/Fintech_AI_in_Finance/events/283227167/ WG and
+CG meeting take place before the conference, CG meeting on Aug 22, WG
+meeting on Aug 23. There will be a dedicated COST session on Aug 24. The
+number of days where daily allowance is provided, is dependent on contribution
+to the COST session, participation in the WG and CG meetings. Travel cost
+reimbursement is restricted to COST FinAI members. The allocated budget
+cannot be exceeded. In case of budget restrictions, preference for
+reimbursement will be given to COST FinAI members based on their
+contributions to the Action, to this particular event as well as the contribution to
+goals and objectives that have not yet been achieved, taking also diversity
+considerations and previous budget allocations into account. LOS is 50% of the
+maximum eligible amount and will be reduced accordingly in case of a lower
+number of participants. Invites have to be accepted within 10 days, otherwise
+any potential daily allowance or travel cost reimbursements are forfaited.
+Output(s)
+COST FinAI working group 2 meeting • Special Focus on Transparency in
+Finance and explainability of machine learning algorithms • Focus on the
+objective: Develop and apply XAI approaches to solve certain/specific problems
+in finance, that include RCOs 1,2,3,4. The output will be an overview of the
+research results that have been achieved so far in working group 2, as well as
+an overview of the COST FinAI achievements to date, for both research and
+diversity achievements. The output will be summarized on the COST FInAI blog
+as well as the COST FinAI newsletter.
+Location
+Enschede (Netherlands)
+ITC
+No
+15
+
+
+</pre><div class="page-break" data-page="Page 16"></div><pre class="text-content">
+Start Date
+2022-08-22 14:00:00
+End Date
+2022-08-24 17:00:00
+Duration
+  3 days
+Number of expected total
+participants
+60
+Number of participants to
+be reimbursed from
+COST funds
+10
+Average
+reimbursement(per
+participant)(EUR)
+914.00
+Total Reimbursement
+costs (EUR)
+9,140.00
+Local Organiser Support
+(EUR)
+4,250.00
+Total cost of the meeting
+(EUR)
+13,390.00
+  Meeting Type
+Workshops/Conferences
+Title of the Meeting
+Women in Fintech and Artificial Intelligence
+Grant Period Goal(s) it
+will address
+Create scientific methods to improve transparency of investment processes.
+Apply these methods to published investment processes and develop improved
+investment processes.,Actively seek, encourage and promote research from
+researchers at different stage of their carriers and females,Increase the practial
+impact of the network by developing the connection with industry - (joint
+academia - industry hybrid/online events),Produce research on transparency of
+AI applications
+Description
+https://www.meetup.com/Fintech_AI_in_Finance/events/282751138
+https://www.meetup.com/Fintech_AI_in_Finance/events/282751146 This is the
+2nd edition of the Woman in fintech conference, result of the 1st year efforts of
+the COST FIntech and AI group. The keynote talks and papers presentations
+will on the themes of the COST Action as below: • Transparency in Fintech •
+Transparent versus Black Box Decision-Support Models in the Financial
+Industry • Transparency into Investment Product Performance for Clients •
+Fintech • Artificial Intelligence in Finance with a particular focus on research
+related to databases on investment products and their performance Organizing
+Committee: Dr. Galena Pisoni, France, Dr. Alessia Paccagnini, Ireland, Dr.
+Claudia Tarantola, Italy, Dr. Alessandra Tanda, Italy Programme Committee is
+to be defined yet, but will be composed mainly of COST FinAI members.
+Output(s)
+The output will be an updated strategic agenda for diversity, a blog entry and
+website entry on diversity and COST FinAI. Travel cost reimbursement is
+restricted to COST FinAI members. The allocated budget cannot be exceeded.
+In case of budget restrictions, preference for reimbursement will be given to
+COST FinAI members based on their contributions to the Action, to this
+particular event as well as the contribution to goals and objectives that have not
+yet been achieved, taking also diversity considerations and previous budget
+allocations into account. LOS is 50% of the maximum eligible amount and will
+be reduced accordingly in case of a lower number of participants. Invites have
+to be accepted within 10 days, otherwise any potential daily allowance or travel
+cost reimbursements are forfaited.
+Location
+Tirana (Albania)
+ITC
+Yes
+Start Date
+2022-09-21 09:00:00
+End Date
+2022-09-22 17:00:00
+Duration
+  2 days
+Number of expected total
+participants
+50
+Number of participants to
+be reimbursed from
+COST funds
+10
+Average
+855.00
+Total Reimbursement
+8,550.00
+16
+
+
+</pre><div class="page-break" data-page="Page 17"></div><pre class="text-content">
+reimbursement(per
+participant)(EUR)
+costs (EUR)
+Local Organiser Support
+(EUR)
+2,000.00
+Total cost of the meeting
+(EUR)
+10,550.00
+  Meeting Type
+Workshops/Conferences
+Title of the Meeting
+COST FinAI Conference on Transparency
+Grant Period Goal(s) it
+will address
+Create scientific methods to improve transparency of investment processes.
+Apply these methods to published investment processes and develop improved
+investment processes.,Reach out to and include researchers from sustainable
+investments into WG3,Actively seek, encourage and promote research from
+researchers at different stage of their carriers and females,Increase the practial
+impact of the network by developing the connection with industry - (joint
+academia - industry hybrid/online events),Produce research on transparency of
+AI applications
+Description
+https://www.meetup.com/Fintech_AI_in_Finance/events/277736229/ COST
+FinAI - Online Conference on Fintech and AI in Finance One afternoon on
+research discussions of COST FinAI topics, one talk for each working group
+and one overall talk on Fintech and AI in Finance This COST FinAI resesarch
+conference will focus on: • Transparency in Fintech • Transparent versus Black
+Box Decision-Support Models in the Financial Industry • Transparency into
+Investment Product Performance for Clients • Fintech • Artificial Intelligence in
+Finance with a particular focus on research related to databases on investment
+products and their performance Organizing Committee: Alessandra Tanda,
+University of Pavia, Italy Valerio Poti, University College Dublin, Ireland Cuong
+Nguyen, Lincoln, New Zealand Ania Zalewska, Uni Bath, UK Audrius
+Kabasinskas, Kaunas University of Technology, Lithuania Hadji Misheva
+Branka, Zurich Universit of Applied Sciences, Switzerland Joerg Osterrieder,
+Zurich University of Applied Sciences, Switzerland Simon Trimborn, CUNY,
+Hong Kong Catarina Silva, Universidade de Coimbra, Portugal
+Output(s)
+The output is a summary of the research conference, posted on the website,
+the blog and the newsletter. This event will mostly serve the dissemination
+activities of our Action, but also support the ongoing research via the research
+talks. Travel cost reimbursement is restricted to COST FinAI members. The
+allocated budget cannot be exceeded. In case of budget restrictions, preference
+for reimbursement will be given to COST FinAI members based on their
+contributions to the Action, to this particular event as well as the contribution to
+goals and objectives that have not yet been achieved, taking also diversity
+considerations and previous budget allocations into account. LOS is 50% of the
+maximum eligible amount and will be reduced accordingly in case of a lower
+number of participants.
+Location
+Zurich (Switzerland)
+ITC
+No
+Start Date
+2022-09-30 09:00:00
+End Date
+2022-09-30 17:00:00
+Duration
+  1 day
+Number of expected total
+participants
+60
+Number of participants to
+be reimbursed from
+COST funds
+0
+Average
+reimbursement(per
+participant)(EUR)
+766.00
+Total Reimbursement
+costs (EUR)
+0.00
+Local Organiser Support
+1,250.00
+17
+
+
+</pre><div class="page-break" data-page="Page 18"></div><pre class="text-content">
+(EUR)
+Total cost of the meeting
+(EUR)
+1,250.00
+  Meeting Type
+Management Committee Meeting,Workshops/Conferences,Core Group
+Meeting,Working Group Meeting
+Title of the Meeting
+COST FinAI Transparency in Finance
+Grant Period Goal(s) it
+will address
+Collection of software pieces into a P2P knowledge platform like
+quantinar.com,Design and management of an interactive exchange system for
+Videos, slides, quantlets,Create scientific methods to improve transparency of
+investment processes. Apply these methods to published investment processes
+and develop improved investment processes.,Reach out to and include
+researchers from sustainable investments into WG3,Actively seek, encourage
+and promote research from researchers at different stage of their carriers and
+females,Increase the visibility of the network by creating video content for the
+wider public based on research produced in the action,Increase the practial
+impact of the network by developing the connection with industry - (joint
+academia - industry hybrid/online events),Produce research on transparency of
+AI applications
+Description
+https://www.meetup.com/Fintech_AI_in_Finance/events/282305472/
+https://www.meetup.com/Fintech_AI_in_Finance/events/282305481/
+https://www.meetup.com/Fintech_AI_in_Finance/events/282305490/ We have a
+co-organized COST FinAI research conference (80% of organizers are COST
+FinAI members), three working group meetings, a core group meeting as well
+as the annual MC meeting. The setting is hybrid. 1. Annual COST FInAI MC
+meeting, joint with 6th edition of European Alternative Finance Research
+Conferencem, co-organized by the COST Action 19130 Fintech and AI in
+Finance 2. COST FinAI Annual MC Meeting Fintech and AI in Finance, focusing
+on • Produce research on transparency of AI applications in finance • Develop
+and apply XAI approaches to solve certain/specific problems in finance •
+Deciding on the future strategic priorities • Review of the first period of this
+Action • Analysis of COST FinAI diversity achievements 3. COST Fintech and
+Artificial Intelligence in Finance Working group meetings We will focus on our
+three main themes • Transparency in Fintech • Transparent versus Black Box
+Decision-Support Models in the Financial Industry • Transparency into
+Investment Product Performance for Clients with a particular focus on research
+related to Fintech products, the underlying methods and their performance. The
+working group leaders will give an overview of the research so far, the strategic
+priorities and COST FinAI members will present their research. Travel cost
+reimbursement is restricted to COST FinAI members. The allocated budget
+cannot be exceeded. In case of budget restrictions, preference for
+reimbursement will be given to COST FinAI members based on their
+contributions to the Action, to this particular event as well as the contribution to
+goals and objectives that have not yet been achieved, taking also diversity
+considerations and previous budget allocations into account. LOS is 60% of the
+maximum eligible amount and will be reduced accordingly in case of a lower
+number of participants. The justification to allocate 60% is that the organizers
+are are providing free lunch and free refreshments throughout the event Invites
+have to be accepted within 10 days, otherwise any potential daily allowance or
+travel cost reimbursements are forfaited.
+Output(s)
+We will • decide on the future strategic priorities • review the first period of this
+Action • analyze COST FinAI diversity achievements COST FinAI working
+groups will both present their results so far as well as decide on future strategic
+priorities. The output is a summary of all achievements, posted on the website,
+the blog and the newsletter as well as the strategic plan going forward. Also,
+18
+
+
+</pre><div class="page-break" data-page="Page 19"></div><pre class="text-content">
+the plan for activities in GP3 will be discussed and decided upon.
+Location
+Utrecht (Netherlands)
+ITC
+No
+Start Date
+2022-10-05 09:00:00
+End Date
+2022-10-07 16:00:00
+Duration
+  3 days
+Number of expected total
+participants
+120
+Number of participants to
+be reimbursed from
+COST funds
+40
+Average
+reimbursement(per
+participant)(EUR)
+1,074.00
+Total Reimbursement
+costs (EUR)
+42,960.00
+Local Organiser Support
+(EUR)
+6,000.00
+Total cost of the meeting
+(EUR)
+48,960.00
+19
+
+
+</pre><div class="page-break" data-page="Page 20"></div><pre class="text-content">
+Short Term Scientific Missions (STSM)
+Number
+Average cost per STSM(EUR)
+Total cost(EUR)
+16
+2,480.00
+39,680.00
+Grant Period Goal(s) it
+will address
+Collection of software pieces into a P2P knowledge platform like
+quantinar.com,Design and management of an interactive exchange system for
+Videos, slides, quantlets,Create scientific methods to improve transparency of
+investment processes. Apply these methods to published investment processes
+and develop improved investment processes.,Reach out to and include
+researchers from sustainable investments into WG3,Actively seek, encourage
+and promote research from researchers at different stage of their carriers and
+females,Increase the visibility of the network by creating video content for the
+wider public based on research produced in the action,Increase the practial
+impact of the network by developing the connection with industry - (joint
+academia - industry hybrid/online events),Produce research on transparency of
+AI applications
+Description
+A Short-Term Scientific Mission consists of a visit of a host organization located
+in a different country other than the country of affiliation by a Researcher or
+Innovator for the specific work to be carried out and for a determined period of
+time (COST-094-21). STSM Grant provides a contribution for travelling,
+accommodation and subsistence expenses, implementation of the project,
+delivery of the report to the COST Action MC and overall effort. The main
+evaluation criteria include the following: (i) diversity, i.e., young researchers,
+applicants and hosts form ITC countries, gender diversity; (ii) sound working
+plan measured by scientific quality, potential impact, originality, benefits for the
+Action; and (iii) compliance with the Grant Period’s goals and the overall
+objectives (iv) Clear preference will be given to STSMs that can contribute to
+goals and objectives that have not yet been fully achieved. A tangible output and
+contribution need to be ensured. Preference will be given to existing COST FinAI
+members. Each STSM grantee is expected to become a working group member
+of the Action and continue to be involved. The budget for STSMs may be used
+also to cover Virtual Networking Grants if becoming available through COST and
+if deemed suitable for the Action.
+Output(s)
+The quantitative output includes successful applications from at least 6 different
+host countries. The main research focus spins around the main current research
+goals both of the CA 19130 and of the working groups, with a particular
+emphasis on innovative financial services, especially in the FinTech domain and
+its fairness and sustainability. Development of Machine Learning methods and
+conceptual and methodological approaches to increase transparency of black-
+box tools and, in a broad sense, of investment processes that use them is also
+among the research priorities, We also aim at reducing the false discovery rate
+in financial research and applied financial investment management. Grant
+payment for each STSM grantee is conditional on generating at least the
+following output: • give at least one talk, scheduled on the COST FinAI meet up •
+Write a one-page summary to be published on the webpage
+20
+
+
+</pre><div class="page-break" data-page="Page 21"></div><pre class="text-content">
+ITC Conference Grant
+Number
+Average cost per Grant(EUR)
+Total cost(EUR)
+5
+1,500.00
+7,500.00
+Grant Period Goal(s) it
+will address
+Collection of software pieces into a P2P knowledge platform like
+quantinar.com,Design and management of an interactive exchange system for
+Videos, slides, quantlets,Create scientific methods to improve transparency of
+investment processes. Apply these methods to published investment processes
+and develop improved investment processes.,Reach out to and include
+researchers from sustainable investments into WG3,Actively seek, encourage
+and promote research from researchers at different stage of their carriers and
+females,Increase the visibility of the network by creating video content for the
+wider public based on research produced in the action,Increase the practial
+impact of the network by developing the connection with industry - (joint
+academia - industry hybrid/online events),Produce research on transparency of
+AI applications
+Description
+We will use ITC conference grants to explicitly enable ITC researchers to
+participate in research conferences. The main evaluation criteria include the
+following: (i) diversity, i.e., young researchers, applicants and hosts from ITC
+countries, gender diversity; (ii) conference related to COST FinAI goals and
+objectives (iii) compliance with the Grant Period’s goals and the overall
+objectives (iv) Clear preference will be given to ITC grants that have the potential
+to contribute to goals and objectives that have not yet been fully achieved. A
+tangible output and contribution need to be ensured. Preference will be given to
+existing COST FinAI members. Each ITC conference grantee is expected to
+become a working group member of the Action and continue to be involved. The
+budget for ITC Conference Grants may be used also to cover Dissemination
+Grants, if deemed suitable for the Action.
+Output(s)
+The quantitative output includes successful applications from at least 3 different
+countries. Grant payment for each ITC conference grantee is conditional on
+generating at least the following output: • give at least one talk, scheduled on the
+COST FinAI meet up • Write a one-page summary to be published on the
+webpage
+21
+
+
+</pre><div class="page-break" data-page="Page 22"></div><pre class="text-content">
+COST Action Dissemination
+  Title
+Type
+Publisher/provider
+Expected date
+of Release
+Cost(EUR)
+Website
+Action Website tbd
+31/05/2022
+5,093.34
+Grant Period Goal(s) it
+will address
+Collection of software pieces into a P2P knowledge platform like quantinar.com
+Description
+Maintenance and improvement of the web site
+Output(s)
+Enhanced and updated website
+  Total Disseminations
+5,093.34
+Powered by TCPDF (www.tcpdf.org)
+22
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

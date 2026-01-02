@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5 - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>5</h1>
+        <div class="meta">Source: 5.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>5</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>2 pages</span>
+                    <span>8,546 characters</span>
+                    <span>1,214 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+Online Trust and Reputation Systems 
+  
+Neel Sundaresan 
+eBay Research Labs 
+2145 Hamilton Avenue 
+San Jose, CA 95125 
+(408)376-8422 
+nsundaresan@ebay.com 
+ 
+ABSTRACT 
+As online commerce, social networks, and user-generated content 
+become common, need for trust and reputation models become 
+prime. This tutorial will give an overview of trust and reputation 
+systems as studied by social network researchers. Other topics 
+include: Reputation and its relationship to security and fraud; 
+Feedback and other Manifestations and Implementations of trust 
+and reputations; Models of reputation; platforms: P2P systems, 
+Centralized systems; Auctions, Incentive systems; Collaborative 
+filtering; Social Networking and Social reputation; Portability and 
+Universality of Identity, trust, and reputation.  
+Categories and Subject Descriptors 
+I.2.11 [Artificial Intelligence]: Distributed Artificial Intelligence. 
+General Terms 
+Economics, Human Factors, Verification, Management, 
+Algorithms, Theory. 
+Keywords 
+Identity; Trust; Fraud; Reputation; Electronic Commerce; Social 
+Networks 
+1. INTRODUCTION 
+Over the past decade electronic commerce, user generated content 
+and recommendations, and social networking applications have 
+become common on the web. As reliance on these applications 
+grow the need for a trust and reputation model has become 
+essential. Users look for recommendations on products, web site, 
+suppliers, buyers, content, and peers based upon the nature of 
+interaction. Recommendations are provided based upon personal 
+experience, usefulness of prior recommendations, and other 
+behaviors on the system. The roles and behaviors of any user in 
+an online application define the trust that other users of the system 
+have on the user. This also defines the reputation of the user in the 
+community. 
+Feedback on an online marketplace like eBay is an expression of 
+reputation. It provides a simple accumulative model for 
+reputation. Social network sites like Slashdot.org and digg.com 
+have their own model of reputation where users with extensive 
+authorship and recommendation are promoted to being 
+moderators and super-moderators.  
+Trust is well-studied among social network researchers. It is 
+explicated through referrals and ratings. Resnick[] has marked out 
+the characteristics of a reputation system. These include 1. actors 
+in such a system have to be long lived to influence future 
+reputation scores;  2. mechanism to capture current scores to 
+influence future scores; 3. ratings about past interactions to guide 
+current interactions. The characteristics apply well not only to 
+eCommerce systems like clicks-and-mortar stores where an 
+individual business is rated by its customers but also in peer-to-
+peer marketplaces and social network sites which include 
+interactions, reviews, and guides. 
+Trust and reputation often identify other related entities like fraud 
+and safety. Algorithms defined to compute reputation are closely 
+attached to those designed to detect fraud or compute safety 
+measures. Lack of trust leads means higher possibility of fraud or 
+fraud committers try and take over reputed member’s trust to 
+commit fraud. Mechanisms that restrict such takeover are of 
+importance to build low fraud applications. 
+2. TUTORIAL OVERVIEW 
+This tutorial will cover several areas of online reputation systems. 
+Some key topics include: 
+1. 
+Concepts and definition of online trust and reputation. 
+2. 
+Reputation and its relationship to security and fraud. 
+3. 
+Feedback and other manifestations and Implementations 
+of trust and reputations 
+4. 
+Models of reputation  
+5. 
+Platforms: P2P systems, Centralized systems  
+6. 
+Auctions, Incentive systems 
+7. 
+Collaborative filtering 
+8. 
+Social Networking and Social reputation 
+9. 
+Degrees of freedom; Circles of trust 
+10. Example Applications (Amazon, Epinions, eBay, 
+Slashdot.org, Digg etc.) 
+ 
+3. TUTOR BIOGRAPHY 
+Neel Sundaresan is the Director and Head of eBay Research Labs. 
+His current areas of research interest includes Social and 
+Incentive Networks, Trust and Reputation Systems, Machine 
+Learning as applied to Recommender systems, Classification, 
+Ontology, and Search. Prior to joining eBay was a founder and 
+CTO of a startup focused on multi-attribute fuzzy search and 
+network CRM. Prior to this he was the head of the eMerging 
+Internet Technologies group at the IBM Research Center. There 
+he built the first XML-based Search Engine. He was one of the 
+ 
+Copyright is held by the author/owner(s). 
+EC’07, June 11–15, 2007, San Diego, California, USA. 
+ACM  978-1-59593-653-0/07/0006. 
+ 
+366
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+early leaders in building XML technologies including schema-
+aware compression algorithms, application component generators 
+and pattern-match systems and compilers. He built the first RDF 
+reference implementation as a W3C standard recommendation. 
+He led research work in other areas like domain specific search 
+engines, multi-modal interfaces and assistive technologies, 
+semantic transcoding, web mining, query systems, and 
+classification for semi-structured data. Prior to this he worked on 
+C++ compiler and runtime systems for massively parallel 
+machines and for shared memory systems and also on retargetable 
+compilers, program translators and generators. He has over 40 
+research publications and several patents to his credit. He has 
+been a frequent speaker at several national and international 
+technology conferences. He has advised several PhD and masters 
+dissertations. He has a degree in mathematics and a masters in 
+computer science and engineering from the Indian Institute of 
+Technology, Mumbai India and a PhD in computer science from 
+Indiana University, Bloomington. 
+4. REFERENCES 
+[1] Z. Abrams, R. McGrew and S. Plotkin. A Non-Manipulable 
+Trust System Based on EigenTrust. ACM SIGecom 
+Exchanges, Vol.5, No. 4, July 2005, pages 21-30. 
+[2] Z. Abrams, R. McGrew and S. Plotkin. Keeping Peers 
+Honest in EigenTrust. Proceedings of the Second Workshop 
+on Economics of Peer-Peer Systems. 2004. 
+[3] C. Dellarocas. Goodwill Hunting: An Economically Efficient 
+Online Feedback Mechanism for Environments with 
+Variable kProduct Quality. AMEC 2002, LNAI 2531. J. 
+Padget et al. (Eds.). pages 238-252. 2002. 
+[4] O. Farideh. Bibliometrics, Citation Analysis and Co-citation 
+Analysis: A Review of Literature L. Libri 46, September 
+1996. 149-158.  
+[5] E. Fourquet, K. Larson and W. Cowan. A Reputation 
+Mechanism for Layered Communities. ACM SIGecom 
+Exchanges, Vol. 6 No. 1, 05 2006, pages 11-22. 
+[6] R. Guha, R. Kumar, P. Raghavan and A. Tomkins. 
+Propagation of Trust and Distrust. Proceedings of the 
+WWW2004, May 17-22, 2004, New York, New York, USA. 
+[7] D. Houser. Reputation in Auctions: Theory and Evidence 
+from eBay. Journal of Economics and Management Strategy, 
+2004.   
+[8] A. Josang, R. Ismail and Colin Boyd. A Survey of Trust and 
+Reputation Systems for Online Service Provision. Decision 
+Support Systems 2006. pages 1-46. 
+[9] S. Kamvar, M. Schlosser and H. Garcia-Molina. The 
+EigenTrust Algorithm for Reputation Management in P2P 
+Networks. Prodceedings of the WWW2003, Budapest, 
+Hungary. May 2003. 
+[10] R. Larson, Bibliometrics of the World Wide Web: An 
+exploratory analysis of the intellectual structure of 
+cyberspace. Annual Meeting of the American Society for 
+Information Science, 1996.  
+[11] T. Papaioannou and G. Stamoulis. An Incentives’ 
+Mechanism for Promoting Truthful Feedback in Peer-to-Peer 
+Systems. In CCGRID 05: Proceedings of the 5th IEEE/ACM 
+Internation Symposium on Cluster Computing and the Grid, 
+IEEE Computer Society Press, Pages 259-266. 
+[12] P. Resnick and R. Zeckhauser. Trust Among Strangers in 
+Internet Transactions: Empirical Analysis of eBay’s 
+Reputation System. In the Economics of the Internet and e-
+Commerce, M.R. Baye, Ed. Advances in Applied 
+micronomics, vol. 11. Elsevier Science, Amsterdam, 127-
+157. 
+[13] J. Sabater and C. Sierra. Reputation and Social Network 
+Analysis in Multi-Agent Systems. Proceedings of the 1st 
+International Joint Conference on Autonomous Agents and 
+Multi-agent Systems. 475-482. 2002. 
+[14] J. R. Seeley, The net of reciprocal influence: A problem in 
+treating sociometric data. Canadian Journal of Psychology, 
+3, pages 234-240, 1949. 
+[15] N. Sundaresan. On an Online Reputation System. eBay 
+Research Labs Technical Report. 2006. 
+[16] S. Wasserman and K. Faust, Social Network Analysis: 
+Methods and Applications. Cambridge University Press, 
+1994. 
+ 
+ 
+ 
+ 
+ 
+ 
+367
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

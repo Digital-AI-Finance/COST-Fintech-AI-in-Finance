@@ -1,0 +1,2307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COST FinAi Estonia 2023 additional report about country - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>COST FinAi Estonia 2023 additional report about country</h1>
+        <div class="meta">Source: COST_FinAi_Estonia_2023_additional_report_about_country.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>COST FinAi Estonia 2023 additional report about country</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>31 pages</span>
+                    <span>79,315 characters</span>
+                    <span>11,235 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+See discussions, stats, and author profiles for this publication at: https://www.researchgate.net/publication/374006680
+FINTECH REPORT ESTONIA 2023
+Technical Report · September 2023
+DOI: 10.13140/RG.2.2.36379.64800
+CITATIONS
+0
+3 authors:
+Some of the authors of this publication are also working on these related projects:
+Horizon 2020 Grant project: Individual Behaviour and Economic Performance: Methodological Challenges and Institutional Context (IBEP) View project
+Digital Development in Finance View project
+Laivi Laidroo
+TalTech School of Business and Governance
+34 PUBLICATIONS   440 CITATIONS   
+SEE PROFILE
+Triinu Tapver
+Tallinn University of Technology
+6 PUBLICATIONS   56 CITATIONS   
+SEE PROFILE
+Mari-Liis Kukk
+Tallinn University of Technology
+5 PUBLICATIONS   14 CITATIONS   
+SEE PROFILE
+All content following this page was uploaded by Laivi Laidroo on 19 September 2023.
+The user has requested enhancement of the downloaded file.
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+FINTECH REPORT 
+ESTONIA 2023
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+ FINTECH REPORT 
+ESTONIA 2023 
+ 
+EDITED BY: Laivi Laidroo, Triinu Tapver, Mari-Liis Kukk 
+IN COOPERATION WITH 
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+TABLE OF CONTENTS 
+1. PREFACE .................................................................................................................................................... 3 
+2. DEFINITION AND FRAMEWORK OF THE STUDY ........................................................................................ 6 
+2.1. Definition of FinTech .......................................................................................................................... 6 
+2.2. Research methods ............................................................................................................................. 7 
+3. ESTONIAN FINTECH ENVIRONMENT ......................................................................................................... 8 
+3.1. Changes in the legal environment ..................................................................................................... 8 
+3.1.1. Changes in European Union Law .................................................................................................... 8 
+3.1.2. Changes in the Estonian regulatory framework ............................................................................. 9 
+3.2. Estonia’s cautious approach towards regulatory sandboxes .......................................................... 10 
+4. FINTECH COMPANIES IN ESTONIA .......................................................................................................... 12 
+4.1. Overview of Estonian FinTech companies ....................................................................................... 12 
+4.2. Results of the survey ........................................................................................................................ 15 
+4.2.1. General characteristics of the respondents .................................................................................. 15 
+4.2.2. Business model attributes ............................................................................................................ 16 
+4.2.3. Location choices ............................................................................................................................ 19 
+4.2.4. Current challenges for FinTechs ................................................................................................... 21 
+4.2.5. FinTech sector outlook.................................................................................................................. 22 
+5. CONCLUSION ........................................................................................................................................... 25 
+APPENDIX 1. MAP OF ESTONIAN FINTECHS ................................................................................................ 27 
+LIST OF REFERENCES ................................................................................................................................... 28 
+
+
+</pre><div class="page-break" data-page="Page 5"></div><pre class="text-content">
+3 
+1. PREFACE
+Two years have passed since the last report on the Estonian FinTech sector was prepared (for reference 
+see Laidroo, et al., 2021b). Over the years, the Estonian FinTech sector has been characterised by speedy 
+development both locally and globally (Laidroo and Avarmaa, 2020; Laidroo et al., 2021a; Tirmaste et al., 
+2019). The COVID-19 outbreak created some challenges inside the companies while creating opportunities 
+outside. Still, its overall impact on Estonian FinTechs remained modest (Laidroo, et al., 2021b). Geopolitical 
+developments following the break-out of the war between Russia and Ukraine in February 2022 have 
+increased uncertainties and left a significant mark on the regional economic conditions, impacting the 
+everyday activities of most businesses. The startup sector has been further touched by the global decline 
+in the availability of funding.  
+This report aims to provide an overview of the recent developments influencing the Estonian FinTech 
+sector and the main characteristics and challenges of the FinTechs. This report is prepared in cooperation 
+between TalTech School of Business and Governance and FinanceEstonia, which is a non-profit 
+organisation representing the financial sector. As mapping the FinTech landscape is a challenge, because 
+of the difficulties in distinguishing FinTechs from non-FinTechs, we would urge the Estonian FinTechs not 
+mentioned in this report to let us know of their existence, so they can provide input for future reports. 
+The report is divided into several sections. Section 2 provides the definitions and the overall framework of 
+the report. Section 3 presents an overview of the current Estonian FinTech environment with the main 
+focus on changes in the legal environment and regulatory sandbox approach in Estonia. Section 4 presents 
+an overview of Estonian FinTechs and the results of the survey conducted in spring 2023. Section 5 
+concludes the report by presenting the most important findings. 
+We greatly appreciate the support provided by the FinanceEstonia FinTech workgroup in contacting the 
+FinTechs, and by the FinTechs who participated in the survey. We would like to thank Andrus Alber, Anu 
+Müürsepp, Kristen Leppik, Thomas Auväärt, Siiri Tõniste, Kristiina Kubja for their input and feedback on 
+this report. We acknowledge the contribution of Bruno Isand, Hedi Radtšenko, Kristiina Pullerits, Mari 
+Avarmaa in preparing this report. We would like to thank our colleagues Thomas Ankenbrand, Andreas 
+Dietrich, and Denis Bieri from the Lucerne School of Business for igniting our interest in preparing a FinTech 
+report. We also appreciate the financial support from Tallinn University of Technology under the grant 
+BHV1 “Digital Development in Finance” which has allowed us to finance the preparation of this report as 
+well as Estonian Research Council grant PRG1125 that enabled us to investigate the aspects related to 
+regulatory sandbox. We also value the moral support from colleagues involved in COST Action CA19130 – 
+Fintech and Artificial Intelligence in Finance – Towards a transparent financial industry (FinAI). 
+
+
+</pre><div class="page-break" data-page="Page 6"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+4 
+ 
+We thank all the respondents 
+ 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 7"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+5 
+ 
+ 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 8"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+6 
+ 
+2. DEFINITION AND FRAMEWORK OF THE STUDY
+2.1. Definition of FinTech 
+There are numerous definitions of FinTech but no 
+consensus about which is the most appropriate. 
+In the 2023 report, we rely on the definition by 
+EBA (2017) p.4: “technologically enabled 
+financial innovation that could result in new 
+business models, applications, processes or 
+products with an associated material effect on 
+financial markets and institutions and the 
+provision of financial services”. This means that 
+this report continues to cover both startups and 
+established firms involved in or supporting the 
+provision of financial services. To be included in 
+the report, the FinTech companies had to be 
+incorporated in Estonia meaning that we are 
+omitting all branches (e.g., Wise, Monese). 
+ 
+To capture the developments in the FinTech 
+sector more accurately, this report relies on a 
+categorisation similar to the one introduced in 
+CCAF, World Bank and World Economic Forum 
+(2022). The latter report divides FinTechs into 
+two broad categories – retail facing and market 
+provisioning – which we treat in this report as 
+providers of financial services and providers of 
+technology and support services. 
+ 
+Providers 
+of 
+financial 
+services 
+include 
+companies involved in: 
+• 
+Digital lending – P2P lending, balance 
+sheet lending, including invoice trading, 
+leasing, consumer credit. 
+• 
+Digital capital raising – equity-based, 
+revenue/profit 
+share, 
+reward-based, 
+donation-based 
+crowdfunding, 
+real-
+estate crowdfunding, ICO platforms. 
+• 
+Digital banking – fully digital banks, 
+providers of banking as a service (BaaS) 
+that have obtained a banking licence. 
+• 
+Digital savings – digital savings solutions, 
+savings-as-a-service. 
+• 
+Digital payments – mobile payments, 
+money 
+transfers, 
+e-money 
+issuers, 
+points of access, other payment-related 
+services. 
+• 
+Digital asset exchange – trading and 
+brokerage services including different 
+platforms, exchanges, Bitcoin Teller 
+Machines etc. 
+• 
+Digital custody - digital wallets, key 
+management services. 
+• 
+WealthTech – robo-advisors, social 
+trading, personal financial management, 
+financial comparison sites.  
+• 
+InsurTech – insurance-related products 
+and services, including digital brokers or 
+agents, 
+peer-to-peer 
+insurance, 
+insurance comparison portals etc. 
+ 
+Providers of technology and support services 
+include: 
+• 
+Alternative credit &amp; data analytics – 
+credit scoring based on alternative data, 
+solutions based on analysis of biometric 
+and social data. 
+• 
+RegTech 
+– 
+solutions 
+for 
+meeting 
+regulatory 
+requirements, 
+including 
+profiling 
+and 
+due 
+diligence, 
+risk 
+analytics, regulatory reporting, market 
+monitoring etc. 
+• 
+Digital identity – services related to 
+biometric 
+security, 
+KYC, 
+fraud 
+prevention. 
+• 
+Enterprise technology provisioning – 
+technological solutions for financial 
+service providers including back-office 
+solutions, 
+API 
+management, 
+cloud 
+computing, AI, BI tools, enterprise 
+blockchain etc. 
+ 
+Compared to the initial categorisations by CCAF, 
+World Bank and World Economic Forum (2022), 
+we exclude providers of digital accounting 
+solutions as these are not specifically targeted at 
+providers of financial services. Also, our 
+interpretation of some of the sub-categories 
+includes some modifications. All companies 
+covered by this report had to fall into one of the 
+sub-categories which we initially determined in 
+the course of desk research based on public data 
+in different registries and companies’ web pages. 
+For those companies that responded to the 
+survey, 
+we 
+cross-checked 
+the 
+initial 
+categorisations based on the responses. 
+ 
+
+
+</pre><div class="page-break" data-page="Page 9"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+7 
+ 
+The above-mentioned categorisation is similar to 
+the one used in FinTech Report Estonia 2021 and 
+differs from the one used in FinTech Report 
+Estonia 2019, which relied on IFZ FinTech Study 
+2018 (Ankenbrand et al., 2018).  
+2.2. Research methods 
+This report draws mainly on a survey that was 
+carried out in the spring of 2023. The 2023 
+survey concentrated, similarly to the 2021 
+survey, on the business model characteristics of 
+Estonian FinTechs. These were analysed using 
+the business model canvas of Osterwalder and 
+Pigneur (2010), covering the key activities, key 
+resources, value proposition, customer channels 
+and segments, and revenue streams that have 
+been modified by the value proposition and 
+product/service delivery classifications from 
+Eickhoff et al. (2017). However, compared to the 
+survey 
+instrument 
+used 
+in 
+2021, 
+some 
+improvements were made. Firstly, the business 
+model attributes covering technology were 
+modified according to Imerman &amp; Fabozzi (2020) 
+classification. Secondly, the opinions and 
+evaluations of the future outlook and regulative 
+changes were adjusted.  
+ 
+In addition, this report includes section 3.2. the 
+findings of which are based on the policy 
+documents and eight semi-structured interviews 
+with key policymakers (from the Ministry of 
+Finance, Estonian Financial Supervision and 
+Resolution Authority, and the Bank of Estonia) 
+and an industry representative. This preparation 
+of this part of the report has been supported by 
+the Estonian Research Council grant PRG1125.  
+
+
+</pre><div class="page-break" data-page="Page 10"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+8 
+ 
+3. ESTONIAN FINTECH ENVIRONMENT
+3.1. Changes in the legal 
+environment 
+By Mari-Liis Kukk 
+ 
+As previous editions of this report (Laidroo et al., 
+2021b; Tirmaste et al., 2019) have noted, the 
+regulatory landscape for financial services in 
+Estonia is based mostly on EU-wide agreements, 
+as the union is seeking to ultimately achieve a 
+single market for financial services. Harmonizing 
+regulatory approaches among Member States is 
+one important step in achieving that goal. 
+However, there are also some local aspects, 
+which must be focused on separately. As such, 
+changes to the legal environment are covered in 
+two parts. Firstly, Section 3.1.1. describes the 
+FinTech-related 
+changes 
+currently 
+being 
+implemented in the EU law. Then, Section 3.1.2. 
+discusses new additions to the local Estonian 
+legislative framework. 
+3.1.1. Changes in European Union Law 
+As also mentioned in the previous edition of the 
+report, EU regulatory ambitions surrounding 
+innovative financial services specifically arise 
+from the digital finance package, which was 
+released in September 2020 and included several 
+proposals for introducing new regulations. 
+Although compared to the previous edition of 
+the report, the digital finance package has not 
+led to any significant new regulatory proposals, 
+the initial texts have by now all gone through the 
+legislative processes and have entered into force. 
+The Regulation on European Crowdfunding 
+Service Providers (ECSPR) entered into force on 
+November 10, 2020, and was applied exactly 12 
+months later, as expected. However, the initial 
+expectation was that all existing crowdfunding 
+platforms, which had previously been licensed 
+under national rules, should have been 
+transitioned to the new EU-wide license by 
+November 10, 2022. However, on July 12, 2022, 
+the EU Commission proposed to extend that 
+deadline by 12 months, based on an assessment 
+by the European Securities and Markets 
+Authority that without an extension, several 
+competent authorities may not be able to 
+process the applications of service providers in 
+due time, and large disruptions of crowdfunding 
+markets could occur. (Regulation 2022/1988) 
+ 
+The next regulatory development from the 
+digital finance package to enter into force was 
+the regulation of a pilot regime for market 
+infrastructures based on distributed ledger 
+technology (DLT), commonly known as the DLT 
+Pilot regime, which entered into force on June 
+23, 2022, and became applicable on March 23, 
+2023. Unlike other regulations in the package, 
+the aim of the DLT Pilot is not so much to apply 
+regulatory demands to novel business models, 
+but instead to create a special EU-wide sandbox-
+esque regime for testing the use of DLT for the 
+trading and post-trading of crypto-assets that 
+qualify as regulated financial instruments. The 
+reasoning behind creating this regime was that 
+the regulatory treatment of such instruments is 
+rather uncertain, and there exist certain 
+regulatory obstacles in traditional rules regarding 
+financial services that significantly hamper the 
+use of DLT for financial market infrastructures. 
+Under the regime, which all Member States have 
+to apply directly, firms wishing to establish 
+market infrastructures using DLT can apply for 
+certain exemptions while still being able to offer 
+their services publicly. The EU is hoping that 
+allowing such experimentations will allow 
+regulators to learn about the nuances of applying 
+DLT, and lead to a permanent EU regulatory 
+regime for such markets being established. 
+(European Commission, 2020) 
+ 
+The Digital Operational Resilience Act (DORA), 
+which aims to mitigate risks pertaining to cyber-
+attacks, and put into place safeguards that would 
+help all financial service providers ensure that 
+risks 
+involving 
+the 
+use 
+of 
+information 
+communication 
+technologies 
+would 
+be 
+sufficiently accounted for, entered into force on 
+January 16, 2023. However, its application date is 
+set at January 17, 2025, with the standard 
+implementation period of 12 months being 
+doubled because of the high level of complexity 
+involved in meeting the standards (Moek &amp; 
+Huijpen, 2023). Notably, unlike other proposals 
+in the digital finance package, DORA is not 
+
+
+</pre><div class="page-break" data-page="Page 11"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+9 
+ 
+targeted at any specific new financial service but 
+is instead intended to cover novel risks arising 
+from the increased digitalisation of financial 
+services that affect all providers. What is more, 
+the scope of DORA may also extend beyond 
+financial 
+services, 
+as 
+critical 
+third-party 
+technology providers will also have to meet 
+certain requirements (KPMG, n.d.).  
+ 
+The fourth, and currently the youngest digital 
+finance package regulatory development is the 
+Markets in Crypto-assets (MiCA) regulation, 
+which entered into force on 29 June 2023. The 
+regulation includes disclosure requirements for 
+the issuance, offering and admission to trading of 
+so-called non-stablecoin crypto-assets while 
+imposing 
+stricter 
+requirements, 
+including 
+authorisation requirements to crypto-assets 
+deemed as stablecoins, which for MiCA purposes 
+have been classified as either e-money tokens or 
+asset-referenced tokens, depending on the 
+specific 
+setup. 
+MiCA 
+also 
+introduces 
+authorisation requirements for the service 
+providers that facilitate transactions with crypto-
+assets, listing eight different types of services 
+that will have to comply with both universal and 
+activity-specific 
+requirements. 
+Importantly, 
+MiCA does not cover truly decentralized services, 
+nor does it regulate unique, non-fungible tokens, 
+which cannot be directly interchangeable with 
+another token. Furthermore, as noted above, 
+crypto-assets that fall under the definition of 
+financial instruments will remain regulated 
+under previously established rules. The timeline 
+for MiCA application is set out in the regulation, 
+with rules pertaining to stablecoins becoming 
+applicable 12 months after MiCA entres into 
+force, and the rest of MiCA applying 6 months 
+later (Regulation 2023/1114). 
+ 
+While not specifically named under the digital 
+finance package, the EU has kept proceeding 
+with a separate regulation on the information 
+accompanying transfers of funds and certain 
+crypto-assets (TfR) in tandem with MiCA. 
+Fundamentally, this regulation introduces the so-
+called “Travel Rule”, familiar from traditional 
+financial services, to crypto asset service 
+providers as well. The “Travel Rule” relates to the 
+information that is passed along about the 
+parties involved when executing electronic 
+transactions, enabling to trace the movement of 
+funds and identify all parties starting from the 
+source to the final destination. This information 
+can thus be used by law enforcement, for 
+instance when investigating cases of money 
+laundering and terrorist financing. The TfR will 
+enter into force on the same date as MiCA. 
+ 
+Aside from regulations directly targeted at 
+financial services, FinTech companies may also 
+have to consider other EU-wide regulations that 
+have been recently introduced, such as the 
+Digital Services Act (DSA) and the Digital Markets 
+Act (DMA), which were both published in the EU 
+Official Journal in October 2022 and entered into 
+force on November 16, 2022, and November 1, 
+2022, respectively. The two acts work in unison 
+and aim to provide better protection of the 
+fundamental rights of customers online, combat 
+illegal content and establish a level playing field 
+when it comes to very large platforms. (European 
+Commission, n.d.) Financial services are also set 
+to be considered in the scope of the Artificial 
+Intelligence Act (AI Act), which was first 
+proposed in April 2021 and could be adopted in 
+2023. The AI Act will classify artificial intelligence 
+applications based on their presumed risks, with 
+some applications being completely prohibited, 
+others required to go through a pre-approval 
+process and some having to disclose certain 
+information aimed at increasing transparency 
+(European Parliament, 2023). The EU is also 
+currently working on harmonized rules for the 
+use and access of data generated in EU markets, 
+as first proposed via the Data Act in February 
+2022 (European Commission, 2022). As this 
+regulation aims to encourage the use of data to 
+provide innovative financial services, it could 
+have profound effects on financial markets. 
+However, a certain draft of the Data Act has also 
+been met with criticism, notably by DLT 
+companies, as certain provisions may be in 
+conflict with how smart contracts stored on 
+blockchains operate (Schickler, 2023).  
+3.1.2. Changes in the Estonian regulatory 
+framework 
+In terms of local regulations, the draft rules for a 
+bespoke regime for crowdfunding and other 
+alternative 
+investments 
+previously 
+left 
+unregulated (including crypto-assets), which was 
+introduced by the Ministry of Finance on January 
+
+
+</pre><div class="page-break" data-page="Page 12"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+10 
+ 
+15, 2021, and mentioned in the previous edition 
+of this report, have thus far not been made into 
+law. While the regulation was submitted for 
+approval to stakeholders in December 2021, and 
+also to the Ministry of Justice in March 2022, 
+there have been no public updates about the 
+legislative process after that.  
+ 
+In May 2023, the Ministry of Finance did, 
+however, announce that they are working on a 
+adoption of EU MiCA regulation described 
+above. The Ministry of Finance also notified of 
+their intention to designate the Estonian 
+Financial Supervision and Resolution Authority 
+as the competent authority for supervising 
+crypto asset service providers (CASPs) under the 
+new law, instead of the Financial Intelligence 
+Unit, which has so far authorised CASPs under 
+the Money Laundering and Terrorist Financing 
+Prevention Act (MLTFP). Previously, the MLTFP 
+was also extensively amended in March 2022, 
+with a focus on tightening requirements set for 
+CASPs. For instance, the amendments required 
+CASPs to submit a business plan when applying 
+for authorisation, there was a significant increase 
+in capital requirements, and all CASPs were 
+subjected to external audit requirements. The 
+amendments also included a version of the 
+Travel Rule, under which certain identifiable 
+information regarding the initiator of the 
+transaction 
+must 
+be 
+collected 
+(Money 
+Laundering and Terrorist ...). These changes 
+arguably likened the requirements applicable for 
+Estonian CASPs under local AML rules to those 
+that will apply to CASPs EU-wide under the MiCA 
+regulation. 
+ 
+In addition to regulation, the Ministry of Finance 
+and the Ministry of Economic Affairs and 
+Communications are working on the Estonian 
+FinTech Strategy 2023+. This document aims at 
+determining the vision for FinTech in Estonia and 
+setting targets for the coming years to overcome 
+the main challenges of the sector. It is expected 
+to be completed by the end of 2023. 
+ 
+ 
+3.2. Estonia’s cautious approach 
+towards regulatory sandboxes 
+By Egert Juuse, Ringa Raudla 
+ 
+The adoption of a regulatory sandbox (RS) for 
+FinTech companies has been on the agenda of 
+public institutions in Estonia for a few years, but 
+to this date, it has not materialized, contrary to 
+Latvia and Lithuania. Even though the first official 
+steps were taken in 2019 (EBRD, 2019), when 
+EBRD and the Ministry of Finance launched a 
+project to support the creation of a RS in Estonia, 
+Estonia has opted for the innovation hub format 
+that was launched in 2021. Despite long-lasting 
+discussions, several factors can be highlighted to 
+explain why the launch of RS in Estonia has been 
+delayed  
+ 
+In a nutshell these could be summarized as 
+follows:  
+• 
+ambivalence about the idea, the concept 
+and the expected outcomes of the RS 
+tool 
+among 
+policymakers 
+and 
+supervisors;  
+• 
+lack of interest from the political level 
+about the RS; 
+• 
+missing mandates and legal grounds, 
+and unsupportive institutional set-up of 
+the 
+central 
+banking, 
+competition 
+promotion and supervision functions; 
+• 
+conservative 
+and 
+cautious 
+characteristics 
+of 
+public 
+sector 
+organizations, 
+and 
+lacking 
+internal 
+capacities; 
+• 
+unsupportive financing arrangements of 
+the FSA activities and suboptimality of 
+the RS tool in a small state context;  
+• 
+Innovation Hub as a pre-condition and 
+existing alternative substitute(s) for 
+sandboxing (e.g. incubators);  
+• 
+the EU’s initiatives and regulatory 
+landscape as ineffective triggers and 
+enablers for temporary relaxation of 
+adopted rules;  
+• 
+lack of demand for a RS from the existing 
+FinTech sector.  
+ 
+Overall, discussions about the adoption of a RS in 
+Estonia have lasted for the last seven years and 
+even though there has not been an active 
+
+
+</pre><div class="page-break" data-page="Page 13"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+11 
+ 
+opposition to the instrument, it has not been 
+realized to this day. Most of the arguments 
+against the creation of RS could be ascribed to 
+small state peculiarities such as lacking financial 
+resources, insufficient human capital, insufficient 
+demand, low return on investment from a RS, 
+and the availability of alternative and more 
+optimal solutions. Other deterring factors have 
+been revolving around legal uncertainty, lacking 
+mandates and the missing political demand to 
+deal with the topic. At the same time, one cannot 
+neglect the role of idiosyncratic elements such as 
+money laundering scandals of the Nordic banks 
+and the failed regulatory ‘experiment’ with 
+crypto service providers in the mid-2010s that 
+fed a risk-averse and conservative stance among 
+civil servants in the Ministry of Finance and the 
+FSA. 
+ 
+
+
+</pre><div class="page-break" data-page="Page 14"></div><pre class="text-content">
+12 
+4. FINTECH COMPANIES IN ESTONIA
+4.1. Overview of Estonian FinTech 
+companies 
+By Triinu Tapver, Laivi Laidroo 
+The discussion in this section is based on the list 
+of FinTechs compiled by the authors of this 
+report using data retrieved from the Crunchbase, 
+Startup Estonia, FinTech Baltic, Key Capital, and 
+FinanceEstonia databases as of December 2022. 
+This data was complemented with companies 
+identified amongst those that have received 
+permits and licenses required for the provision of 
+financial services in Estonia. To ensure a uniform 
+definition of FinTechs, we applied the definitions 
+given in Section 1. In addition, the list of FinTechs 
+was cross-checked against the Estonian Business 
+Registry to ensure that only active1 FinTechs 
+incorporated in Estonia were considered. 
+Our final list of Estonian FinTechs as of the end of 
+2022 contains 264 companies which refers to an 
+increase of 49 companies (23%) compared to the 
+end of 2020.2 When comparing the list as at the 
+end of 2022 with the one in 2020, in total of 126 
+new FinTechs have entered the list. The total 
+count of FinTechs has increased less due to exits 
+from the list. 
+From the 215 FinTechs in the 2021 report, 77, or 
+36%, were excluded from the 2023 list. First, 45, 
+companies were excluded due to missing data on 
+their activity. In most cases, either the 
+companies’ websites were down or they had lost 
+the license they needed for running their 
+operations, indicating that the actual activity of 
+the 
+company 
+had 
+stopped. 
+Second, 
+14 
+companies had officially been deleted from the 
+Estonian Business Registry, had gone bankrupt, 
+or were being liquidated. Third, 13 companies 
+had moved their business from Estonia to other 
+countries. Fourth, 5 companies had turned out to 
+be scams.  
+1 We are not covering the companies that have ceased their 
+operations or have no clear signs of operations (e.g., the 
+virtual asset service provider licence holders with no 
+activity or cancelled licences). 
+The numbers presented above show that the list 
+of FinTechs is constantly changing with old 
+companies exiting and new ones entering. As the 
+list of companies has become rather long 
+(compared to just 84 in 2019) and, in many cases, 
+the information about companies’ operations is 
+not publicly readily available, the list is prone to 
+contain some errors in terms of the count of 
+companies and their classifications. 
+All 
+FinTechs 
+were 
+classified 
+using 
+the 
+categorisations presented in Section 1. Some of 
+the FinTechs are involved in activities that could 
+be categorised in multiple ways, so an arbitrary 
+decision was made giving preference to one 
+activity above all others. As can be seen from 
+Figure 4.1., four categories of FinTechs take up 
+72% of the total population. These are digital 
+asset exchange with 86 companies, or 33%, 
+digital lending with 39 companies, or 15%, 
+enterprise technology provisioning with 37 
+companies, or 14%, and digital payments with 29 
+companies, or 11% of the total population. 
+WealthTech and digital capital raising take up 9% 
+and 6% of the total population with 24 and 15 
+companies, respectively. The rest of the 
+companies in the remaining categories take up 
+less than 5% of the total population. A more 
+detailed overview of the population is provided 
+in Appendix 1. 
+Figure 4.1. Distribution of the number of 
+Estonian FinTechs by type of activity 
+2 Due to data collection and classification difficulties, we 
+acknowledge that some FinTechs registered in Estonia, 
+especially those registered in 2022 or later, may be missing 
+from the list. 
+
+
+</pre><div class="page-break" data-page="Page 15"></div><pre class="text-content">
+13 
+When comparing the populations of FinTechs 
+across the 2023 and 2021 reports, it appears that 
+their distribution has remained rather similar. 
+The greatest increase of 9 percentage points has 
+occurred in the proportion of FinTechs in the 
+digital asset exchange category where the 
+number of FinTechs has increased from 51 in 
+2021 to 86 by 2023. When looking at these 
+numbers, it is important to note that in our 
+previous reports (Tirmaste et al., 2019; Laidroo, 
+et al., 2021b), a very conservative approach was 
+taken when including companies focusing on 
+digital assets. This meant that only a handful of 
+over 2000 companies that obtained the 
+virtual asset 
+service 
+provider 
+(VASP) 
+license 
+between 
+2017-2022 
+have 
+been 
+included 
+(Rahapesu 
+Andmebüroo, 
+2022). Starting 
+from 
+2018, 
+in 
+the 
+course 
+of supervisory 
+procedures, 
+the 
+Financial 
+Intelligence 
+Unit 
+gradually 
+cancelled most of these licenses and as 
+on 
+25 May 
+2023 only 
+93 
+remain 
+in 
+force. 
+The 
+only 
+reason why 
+the 
+total 
+count of such companies has increased in 
+our population is due to the addition of 
+some companies for which we have been able 
+to gather more data or that have been 
+formed 
+after 
+the 
+preparation 
+of 
+the 
+previous 
+report. 
+In 
+other 
+activity 
+categories, 
+the differences remain at ±8 
+companies representing a rather modest 
+change. 
+Figure 4.2. Distribution of the number of 
+FinTechs by year of establishment 
+As can be seen from Figure 4.2., 152 FinTechs, or 
+58%, are 3 to 5 years old and 38 FinTechs, or 14%, 
+were established less than 3 years ago. This 
+indicates that the majority of FinTechs are 
+relatively young with 28% of all FinTechs being 
+older than 5 years and only 11% being more than 
+10 years old. When compared to the situation at 
+the end of 2021, the proportion of FinTechs 3 to 
+5 years old has increased by 5 percentage points. 
+Correspondingly, the proportion of FinTechs 6 to 
+10 years old has decreased by almost the same 
+proportion. 
+As can be seen from Figure 4.3., on average, the 
+oldest companies are in digital banking. The age 
+of these companies increased significantly due to 
+re-classification of some FinTechs in this group. 
+Older companies can also be found in digital 
+lending, alternative credit &amp; data analytics, 
+InsurTech, 
+and 
+enterprise 
+technology 
+provisioning. 
+On 
+average, 
+the 
+youngest 
+companies are in WealthTech, RegTech and 
+digital savings. This can be explained by the 
+growing need for security, KYC procedures, fraud 
+prevention, risk management and analytics, 
+regulatory reporting, etc. When comparing 2023 
+and 2021, the average age has increased by one 
+to two years, in line with to gradual ageing of 
+existing companies.  
+Figure 4.3. The average age of companies by 
+FinTech type 
+The peak for the establishment of the existing 
+FinTechs was in 2018 with 63 new FinTechs, 
+followed by 2019 with 54 FinTechs and 2020 with 
+28 FinTechs. The distribution of established 
+companies by type during 2018-2022 can be 
+seen in Figure 4.4. In 2018, digital asset exchange 
+dominated with 29 established companies 
+followed by enterprise technology provisioning 
+with 10 established companies. The same 
+indicators in 2019 were 26 and 5, respectively. 
+
+
+</pre><div class="page-break" data-page="Page 16"></div><pre class="text-content">
+14 
+The remaining categories have been less 
+frequent. Starting from 2020, the growth of new 
+FinTechs has stalled remarkedly. In 2021 only 19 
+and in 2022 only 15 companies were added to 
+our list. This may be impacted by several factors, 
+such as a stricter regulatory landscape, the 
+market&#x27;s focus towards more mature FinTechs 
+with a clearer path to profitability, worsening 
+access to capital, and a recently deteriorated 
+economic outlook as well as our poorer 
+possibilities to identify very recently established 
+FinTechs.  
+Figure 4.4. The number of FinTechs established in 
+2018–2020 by type of activity 
+Based on the data obtained from the Tax and 
+Customs Board as of the 4th quarter of 2022, 181 
+FinTechs employed 2529 employees. This 
+represents an increase of 27% compared to 
+2020. 43 FinTechs in our list had no employees 
+and, overall, 69% of the FinTechs have employed 
+at least one employee. The largest proportion of 
+employees was employed in digital lending with 
+671 employees, followed by digital asset 
+exchange with 486 employees, digital identity 
+with 418 employees, and enterprise technology 
+provisioning with 289 employees. This indicates 
+that the remaining 26.3% of all employees were 
+rather evenly divided between the remaining 
+FinTech categories. 
+The financial indicators of the FinTechs also 
+deserve attention. Financial indicators are 
+available for 233, or 88.3%, of the firms. Data is 
+available mostly for FinTechs that are more than 
+two years old. The current assessment is based 
+on the latest data available for FinTechs. This 
+means that most data is from 2021, however, the 
+data of 19 FinTechs was taken from 2020. 
+Based on our assessments, the volume of total 
+assets of Estonian FinTechs as of the end of 2021 
+was around 2.24 billion euros, this is a substantial 
+growth compared to the value of assets as of 
+2019, which was around 1.03 billion euros. 89% 
+of the total value of assets, comes from FinTechs 
+concentrating either on digital asset exchange, 
+digital banking, or on digital lending. 
+As can be seen from Figure 4.5., 133 FinTechs, or 
+57% of FinTechs with available financial data, 
+have assets valued at less than one million euros. 
+Most such companies are involved in digital asset 
+exchange. However, such companies account for 
+the majority of companies in all FinTech 
+categories with the exception of digital lending 
+and digital banking. 24% of FinTechs have assets 
+valued at 5 to 10 million euros. This group has a 
+greater representation of FinTechs from digital 
+asset exchange, digital lending, digital payments, 
+and enterprise technology provisioning. This 
+shows that Estonian FinTechs tend to be rather 
+small. Companies with more than 100 million 
+euros of assets are only found in digital banking, 
+and digital lending due to their differing asset 
+structure.  
+Figure 4.5. Distribution of the number of 
+FinTechs by total assets in millions of euros 
+The quarterly 2022 total income data from the 
+Tax and Customs Board were aggregated to 
+
+
+</pre><div class="page-break" data-page="Page 17"></div><pre class="text-content">
+15 
+obtain the indicative value of total income for the 
+year. The total income generated by Estonian 
+FinTechs as of the end of 2022 was around 400 
+million euros. This is around a 42% increase from 
+2021 when the total income was around 282 
+million euros. As the number of FinTechs has 
+increased by around 23% during the same 
+period, it reflects that on average the FinTechs 
+have become more active in providing their 
+products and services. Still, it should be borne in 
+mind that this number does not include net 
+interest income that is not taxed with value-
+added tax. 
+Figure 4.6. Distribution of total income of 
+Estonian FinTechs by type of activity 
+As can be seen from Figure 4.6., 27% of the total 
+income comes from digital lending, followed by 
+digital asset exchange with 19% and digital 
+identity with 18%. Enterprise technology 
+provisioning accounts for 10% of total income, 
+digital payments for 9%, and WealthTech 
+accounts for 8%. The “other” section includes all 
+the remaining types of FinTechs. 
+The majority of Estonian FinTechs are relatively 
+young, therefore, many have not yet become 
+profitable. According to the available data, 57.4% 
+of the companies that had submitted their 2021 
+or 2020 annual report reported a positive result, 
+while 6.5% reported 0 profit. It should also be 
+considered that whether a profit or loss is 
+reported depends on the owners’ choices of 
+accounting approaches, for instance, how 
+development costs are capitalised. The total net 
+profit generated by all Estonian FinTechs in 2021 
+was around 136 million euros. This is a 
+substantial growth compared to 2019 when the 
+total net profit was 64 million euros.  
+The distribution of average net profit by type of 
+FinTech activity is presented in Figure 4.7. Digital 
+asset exchange is more profitable than other 
+types of FinTech activities with an average net 
+profit reaching over 1.2 million euros and a total 
+net profit reaching 87.4 million euros. It is 
+followed by digital lending with an average of 
+0.96 million euros and digital custody with 0.80 
+million euros. The figure omits the RegTech and 
+digital identity that have been at a loss in 2021 as 
+well as digital banking that was represented by 
+two companies having net income level very 
+different from other FinTechs.  
+Figure 4.7. Distribution of average net profit of 
+Estonian FinTechs by type of activity 
+Overall, the latest available statistics show that 
+digital asset exchange FinTechs are currently the 
+most dominant among the Estonian FinTechs for 
+their overall economic impact. 
+4.2. Results of the survey 
+By Laivi Laidroo 
+4.2.1. General characteristics of the 
+respondents 
+In total, 33 FinTechs responded to the survey in 
+March–May 2023. This accounts for 13% of the 
+total population of Estonian FinTechs. In previous 
+reports, the total count of responses has been 
+greater and response rates have remained 
+between 22% and 38%, meaning that the 
+possibility to generalise the findings of this 
+survey to the whole population of Estonian 
+FinTechs remains somewhat lower. In the 2023 
+
+
+</pre><div class="page-break" data-page="Page 18"></div><pre class="text-content">
+16 
+survey, we received no responses from FinTechs 
+representing digital custody and digital banking 
+categories. Still, if we compare the composition 
+of a sample by FinTech category across the 2023 
+and 2021 surveys, these remain very similar. This 
+indicates that the survey responses from the last 
+two surveys are quite well comparable, and we 
+present many results for these surveys hereafter 
+in parallel.   
+Most of the responses (73%) were given by 
+either the CEO or owner of the company. The 
+greatest number of responses were received 
+from digital asset exchange companies, followed 
+by digital lending and enterprise technology 
+provisioning companies (see Figure 4.8.). 
+Figure 4.8. Comparison of the survey sample and 
+the total population 
+Response rates exceeding 30% were obtained for 
+FinTech activities with population size less than 
+10 companies. Amongst more common FinTech 
+activities, 18% of digital lending and 13% of 
+WealthTech FinTechs responded. The lowest 0% 
+response rate was among companies classified 
+as digital custody and digital banking. Response 
+rates below 13% are characterised also FinTechs 
+involved in digital asset exchange and enterprise 
+technology provisioning. This indicates that, 
+similarly to earlier years, more popular activity 
+types are crowded by companies that may be 
+difficult to reach if they are in early development 
+phases, want to avoid public attention, or do not 
+consider themselves as FinTechs. 
+12% of the respondents were from businesses 
+that were already running and 88% were in the 
+growth phase. While in previous years we have 
+had 15 to 19% of respondents in the construction 
+phase, no such companies responded to the 
+survey this time.  
+Although all respondents had a legal body in 
+Estonia, two of them (6%) had headquarters 
+elsewhere. 
+The 
+alternative 
+headquarter 
+locations mentioned included UK and Iceland. In 
+previous survey rounds, the share of FinTechs 
+with foreign headquarters has been more than 
+two 
+times 
+greater, 
+indicating 
+that 
+the 
+respondents in this survey round are more 
+strongly anchored to Estonia. 
+33% of the respondents were active in 
+FinanceEstonia, 30% in Startup Estonia, and 15% 
+in the Estonian Founders Society (previously 
+Estonian 
+Startup 
+Leaders 
+Club). 
+Many 
+respondents 
+were 
+involved 
+in 
+several 
+organisations 
+simultaneously 
+and 
+some 
+indicated cooperation on an international level. 
+The latter can be partly explained by the 
+presence of foreign founders as 18% of 
+respondents indicated that they had used an e-
+residency programme. Still, 18% of respondents 
+were not cooperating with any Estonian 
+organisation uniting FinTechs. Considering that 
+more active attempts to contact FinTechs were 
+made through FinanceEstonia, it reflects that the 
+proportion of FinTechs that are not participating 
+in any of the above-mentioned organisations is 
+significantly larger. 
+4.2.2. Business model attributes 
+Key activities 
+As our classification of FinTechs was arbitrary 
+and FinTechs can be involved in different types of 
+activities, we asked the respondents to indicate 
+whether they were providing financial services 
+themselves and/or are providing support 
+services. 67% of the respondents provide 
+financial services such as lending, capital raising, 
+digital banking, payments, investment/asset 
+management, trading or brokerage services, and 
+digital wallets. 21% of respondents were 
+involved in activities related to crypto-assets. 19 
+respondents, or 57%, had at least one license for 
+providing financial services. The most common 
+was a licence from the Estonian Financial 
+Supervision and Resolution Authority, owned by 
+
+
+</pre><div class="page-break" data-page="Page 19"></div><pre class="text-content">
+17 
+36% of respondents, followed by the licence 
+from the Estonian Financial Intelligence Unit 
+owned by 21% of respondents. 2 respondents 
+had a licence from an authority in the EU (excl. 
+Estonia).   
+36% of the respondents support the provision of 
+financial services by another company such as 
+KYC-related activities, RegTech, data and credit 
+analysis. 4 respondents, or 12%, provide financial 
+services themselves and simultaneously also 
+support the provision of financial services by 
+other companies. The latter result demonstrates 
+the complexity of categorising FinTechs by type 
+of activity. 
+Although 39% of the respondents had not 
+outsourced any activities, the remaining FinTechs 
+had outsourced at least some services. 
+Programming and technical support had been 
+outsourced by 39% and 27% of respondents, 
+respectively. Some respondents mentioned also 
+the outsourcing of accounting, legal, credit risk 
+analysis, and KYC services. 
+Key resources 
+The main resources of FinTechs are technology 
+and people. The majority of respondents listed 
+several innovative technologies that they use in 
+their activities. As can be seen from Figure 4.9., 
+almost a third of FinTechs use either blockchain, 
+Big Data Analytics, AI (Artificial Intelligence), or 
+Open Source Computing (APIs). Cybersecurity 
+and 
+automation/robotics 
+are 
+used 
+less 
+frequently.  
+Figure 4.9. Technologies employed by the 
+respondents 
+The average number of employees working in 
+FinTechs that responded was 47, ranging from 1 
+to 400. However, over half of the respondents 
+had 12 or fewer employees. It should also be 
+noted that while the total employee count of 
+respondents was 1553, 43% of them were 
+employed outside of Estonia. Compared to the 
+survey conducted in 2021, the average employee 
+count has increased by 22 employees and the 
+proportion of employees outside of Estonia has 
+increased by 10 percentage points. This indicates 
+that surveyed Estonian FinTechs have remained 
+open to global workforce either due to global 
+focus of their business or shortage of skilled local 
+employees. 
+Figure 4.10. Expected change in the workforce 
+for the year ahead from the beginning of  2021 
+and 2023 
+As can be seen from Figure 4.10., the majority of 
+the respondents are expecting growth or 
+substantial growth in the number of employees. 
+Compared to the indications obtained in 2021, 
+the proportion of respondents referring to an 
+increase in the workforce has decreased by 14 
+percentage points and the share of respondents 
+referring to no change in the workforce has 
+increased from 17% to 30%. This may be partly 
+related to the increasing maturity of the firms, as 
+well as the changes in the external environment 
+that are capping the growth of companies’ 
+activity. 
+Value proposition 
+Most of the respondents offer products / 
+services with several value propositions (see 
+Figure 4.11.).  
+
+
+</pre><div class="page-break" data-page="Page 20"></div><pre class="text-content">
+18 
+Figure 4.11. Value proposition mentioned by the 
+respondents 
+The 
+most 
+frequently 
+mentioned 
+was 
+transparency (e.g., improving access to timely 
+and sufficient information) and monetary value 
+(e.g., financial gain for the customer) which were 
+mentioned by 67% of the respondents, followed 
+by automation mentioned by 64% of the 
+respondents and usability mentioned by 61% of 
+respondents. Intermediation (e.g., helping to 
+bring 
+the 
+client 
+and 
+seller 
+together), 
+consolidation (e.g., combining some things into a 
+more 
+effective 
+and 
+coherent 
+whole), 
+customisation according to the customer&#x27;s needs 
+(e.g., 
+personalised 
+service), 
+collaboration/ 
+coordination for providing a service, improving 
+insight (e.g., by enhancing customer awareness), 
+financial risk management (e.g., improving the 
+client&#x27;s 
+financial 
+risk 
+management), 
+and 
+improving user security were mentioned slightly 
+less frequently.  Compared to 2021 there have 
+been rather minor changes in value proposition 
+with the biggest increases occurring for 
+transparency and monetary value. No clear trend 
+could be identified between a specific type of 
+FinTech and the mentioned value proposition. 
+Still, the results do show that transparency and 
+monetary value remain at the forefront for most 
+Estonian FinTechs. Also, more versatile value 
+propositions can be observed among FinTechs 
+involved in enterprise technology provisioning, 
+InsurTech, digital lending, and digital asset 
+exchange. 
+Customer segment 
+When the respondents were asked to indicate 
+where they operate, 72% responded that they 
+operate both in Estonia and internationally and 
+28% operate only in Estonia. When FinTechs 
+were asked to list the countries in which they are 
+already operating, then most European countries 
+were mentioned. Several more distant countries 
+and regions were also reported, including the 
+USA, Mexico, Indonesia, Australia, and African 
+countries. When asked into which countries the 
+company intends to expand its activities in the 
+future, the responses referred, in addition to 
+European countries, also to the USA, Latin 
+America, the Middle East, North Africa, 
+Southeast Asia, and East Asia. 
+The activity profile of the respondents shows 
+that 76% of the respondents were involved in 
+business-to-business, 
+61% 
+in 
+business-to-
+customer and 27% in business-to-business-to-
+customer activities. 45% of the respondents 
+were involved in a mix of the aforementioned 
+activities. These proportions are rather similar to 
+the ones observed in 2021. 
+The total income of all the respondents in 2022 
+was estimated to be 135 million euros and only 
+33% of the respondents’ revenue exceeds 1 
+million euros. On average, 43% of the revenue 
+was from the export of goods and services with 
+33% of FinTechs having export above 75% of 
+revenue. Despite quite unpredictable external 
+conditions, 82% of the respondents indicated 
+that they do expect an increase in the revenues 
+of the company in 2023 compared to 2022. 
+Based on the companies’ estimates, total 
+revenue in 2023 could reach 197 million euros, 
+referring to a 46% increase compared to 2022. 
+The average share of export is also expected to 
+rise from an average of 43% in 2022 to 48% in 
+2023. 
+Overall, the results indicate that Estonian 
+FinTechs continue to serve rather diverse 
+customer 
+segments 
+and 
+have 
+a 
+strong 
+international focus in their activities. This can be 
+explained by the small home market which 
+forces companies to concentrate on global 
+markets from the early phases of business 
+creation. However, the worsening economic 
+
+
+</pre><div class="page-break" data-page="Page 21"></div><pre class="text-content">
+19 
+conditions seem to have a modest impact on the 
+companies’ expected revenue for 2023. It might 
+be more strongly reflected in profit estimates 
+that we did not ask the companies to specify. 
+Delivery channels 
+As can be seen from Figure 4.12., 88% of the 
+respondents indicated that their product and/or 
+service delivery occurs through the web 
+application and 61% indicated the use of an 
+application programming interface (API). These 
+were followed by 24% through mobile app and 
+6% through instant messaging. Physical contact 
+was indicated only by 4 respondents. The 
+delivery channels have remained rather stable 
+compared to 2021, with the exception of the use 
+of mobile applications that can be related to the 
+changed composition of respondents. 
+Figure 4.12. Delivery channels mentioned by the 
+respondents 
+When looking at the use of different delivery 
+channels across FinTech activities, it was possible 
+to observe that less diverse delivery channels, 
+covering a maximum of two channels, were 
+among providers of digital capital raising, digital 
+payments and RegTech. Simultaneous use of 
+over three different delivery channels could be 
+seen among FinTechs engaged in InsurTech and 
+digital asset exchange. This shows that the main 
+activity of the FinTechs influences strongly the 
+number and set of delivery channels. 
+Revenue streams 
+Most respondents listed several items as streams 
+of revenue. As can be seen from Figure 4.13., 
+73% of the respondents mentioned commission 
+income from services or products delivered.  
+Figure 4.13. Sources of revenue mentioned by 
+the respondents 
+This source of revenue was more dominant in 
+companies involved in InsurTech, WealthTech, 
+digital payments, digital lending, digital capital 
+raising, and digital asset exchange. Commission 
+income played the greatest role in the revenue of 
+FinTechs also in 2021, being mentioned by 64% 
+of FinTechs. 27% of the respondents mentioned 
+centralised hosting of business applications 
+(SaaS – software as a service). This revenue 
+stream dominated the responses of FinTechs 
+involved in RegTech and enterprise technology 
+provisioning. License fee from a product or 
+software licencing was mentioned by 21% of the 
+respondents, being more strongly present in 
+RegTech firms. Interest income, income from 
+data, trading and advertising were mentioned 
+less frequently. As 55% of the respondents 
+referred to two or more different revenue 
+sources. As this number is significantly lower 
+than the 80% reported in the 2021 report,  some 
+decrease in the diversification of revenue 
+streams appears to have occurred. 
+4.2.3. Location choices 
+The respondents were asked to assess the 
+importance of several different factors that 
+affected their decision to register the company in 
+Estonia from less important to more important 
+on a scale of 1 to 7 (see Figure 4.14. for results). 
+The results show that FinTech entrepreneurs 
+valued the ease of establishing a company and 
+good quality digital infrastructure the most. Both 
+aspects received an average score of 6.2. Quite 
+even emphasis, ranging from 5.6 to 5.8 average 
+points, was given to Estonia’s reputation, 
+knowledge 
+of 
+the 
+local 
+entrepreneurial 
+
+
+</pre><div class="page-break" data-page="Page 22"></div><pre class="text-content">
+20 
+environment, regulatory clarity, availability of 
+qualified workforce, and low level of corruption. 
+The lowest relevance was put on materials / 
+events introducing Estonia as a place of doing 
+business (evaluated on average at 3.4 points), 
+preceded by the sufficiency of customer base 
+and availability of capital. The low relevance of 
+introductory materials and quite significant 
+relevance of the knowledge about the local 
+entrepreneurial environment can be related to a 
+rather 
+large 
+representation 
+of 
+local 
+entrepreneurs among the surveyed companies. 
+This is reflected in the fact that only 6 
+respondents, representing less than 18% of the 
+respondents, indicated the use of the e-
+residency programme by their founders. 
+Figure 4.14. Decisive factors for location choice 
+Compared to the evaluations on location choice 
+in 2021, the ones provided in 2023 appear rather 
+similar. This indicates that the entrepreneurs’ 
+opinions 
+regarding 
+locations 
+choice 
+have 
+remained stable over the past two years. 
+6 of the 33 respondents mentioned that they had 
+considered registering the company in some 
+other country. Other countries mentioned in that 
+context included UK, Latvia, Lithuania, Finland, 
+and Germany. When asked to comment about 
+the decisive factor in preferring Estonia each 
+respondent had their reason. Mentioned factors 
+included corporate tax (no tax is paid on retained 
+earnings), e-services, startup ecosystem and 
+personal network. Although a favourable 
+regulatory climate was mentioned, it came with 
+a remark that the same would not apply now. 
+Indicating that in the eyes of the respondents, 
+Estonian regulatory conditions had deteriorated. 
+Similarly, a respondent indicated that the costs 
+were low years ago, but now the UK would be a 
+better place to start FinTech. Still, another 
+respondent 
+mentioned 
+that 
+they 
+initially 
+preferred the UK, but this idea was neglected 
+due to Brexit. The diversity of these explanations 
+shows that the location choice of each FinTech 
+does tend to remain rather specific. 
+It is quite alarming that 10 out of 31 FinTechs that 
+are currently located in Estonia have discussed 
+the possibility of moving the company’s 
+operations abroad. Some have considered it for 
+improving their access to customers by being 
+closer to bigger markets or by gaining added 
+credibility in the eyes of the customers. At the 
+start of the war between Russia and Ukraine, also 
+the risk of war was one of the triggers of such 
+discussions. 
+Several 
+respondents 
+brought 
+forward too tight conditions for the virtual asset 
+service provider (VASP) licensing. Also, some 
+claimed 
+that 
+Estonia 
+uses 
+more 
+strict 
+requirements for client onboarding, foreign 
+investors have problems opening Estonian bank 
+accounts, and regulators remain less supportive 
+towards innovation. Regulatory factors that may 
+affect the operations of some FinTechs can also 
+relate to the lack of factoring licencing in Estonia, 
+different cross-country interpretations on how 
+external insurance partners can operate in 
+Estonia (whether you need a branch or can 
+operate under the freedom to provide service 
+model), the applicability of investment account 
+system on investment companies and remote 
+identification requirements.  
+Overall, the results indicate that Estonia may be 
+the first choice for local entrepreneurs due to 
+greater familiarity with local conditions and 
+stronger networks. However, poor access to 
+customers and regulatory challenges may force 
+companies to select alternative destinations or 
+even re-consider their initial location decisions 
+over time. Worsening geopolitical conditions 
+may also open discussions about where it is safe 
+enough to set up and maintain your business. 
+
+
+</pre><div class="page-break" data-page="Page 23"></div><pre class="text-content">
+21 
+4.2.4. Current challenges for FinTechs 
+The respondents were asked to evaluate the 
+extent that specific problems affect their 
+business on a scale of 1 to 7 from not pressing to 
+extremely pressing. As can be seen from Figure 
+4.15., the most critical problems are related to 
+finding customers, scoring 5.5, expansion to 
+foreign markets, scoring 5.2, and economic 
+conditions and access to finance, both scoring 
+5.1. Quite similar relevance with evaluations 
+ranging between 4.2 and 4.9 was attributed to 
+the remaining factors. 
+Figure 4.15. Current pressing problems on a scale 
+of 1 to 7  
+It does appear that compared to 2021, the access 
+to finance and cost of production or labour have 
+exhibited the greatest increase in evaluations, 
+both increasing on average by 0.6 points. At the 
+same time, the expansion of product portfolio 
+and building partnerships with established 
+players have decreased their relevance to a 
+similar extent. These changes appear to be 
+strongly linked to changes occurring in the 
+economic conditions that ranked the third 
+concern in 2023. As that claim was not part of the 
+2021 survey, we cannot compare it to a previous 
+evaluation. Although in the previous survey, the 
+regulatory aspects were framed a bit differently, 
+their 2021 score of 5.3 (2nd largest), is 
+significantly greater than the 4.4 reported in 
+2023. This does indicate that the urgency of 
+regulatory aspects has decreased against the 
+backdrop of other more burning issues.  
+We also analysed the answers across FinTech 
+categories. Among the two most relevant 
+respondent groups, the most striking differences 
+were observed for regulation. Pressure from the 
+regulation side was the strongest for FinTechs 
+involved in digital asset exchange, scoring at 5.9, 
+compared to only 4.0 for FinTechs in digital 
+lending. This can be related to the regulatory 
+changes that put greater pressure on the 
+activities of these types of FinTechs the most (see 
+section 3). At the same time, a top-performing 
+concern for FinTechs in digital lending was access 
+to finance, scoring 6.1, that for FinTech in digital 
+asset exchange received a score of 4.9. Still in 
+both groups, finding customers remained the 
+second most important concern. This indicates 
+that there do remain some differences across 
+FinTechs focusing on different activities.   
+Figure 4.16. Regulative and regulator-related 
+factors restricting the expansion to foreign 
+markets 
+We also wanted to know what restricts the 
+expansion of FinTechs to foreign markets. When 
+asked about regulative and regulator-related 
+factors (see Figure 4.16.). The most critical were 
+the restrictions on IT solutions that are available 
+
+
+</pre><div class="page-break" data-page="Page 24"></div><pre class="text-content">
+22 
+for identifying and verifying a person and 
+collecting and checking data on the activities of 
+customers, both scoring 4.2 on a scale of 1 to 7. 
+Compared to the 2021 survey, these factors have 
+increased in their relevance on average 0.5 to 0.8 
+points. At the same time, we see that the 
+cooperation 
+with 
+regulators, 
+regulators’ 
+readiness to understand new business models 
+and 
+their 
+readiness 
+to 
+involve 
+market 
+participants have improved up to 0.8 points in 
+the eyes of FinTechs. More cooperative 
+relationships with regulators may explain why 
+FinTechs have begun to perceive activity 
+restrictions arising from regulations as less 
+relevant, in general.   
+As can be seen from Figure 4.17., most non-
+regulation-specific factors receive an even lower 
+score. The highest score, reaching 4.3, was given 
+to the lack of contact and network and to 
+difficulties in finding employees. This indicator is 
+0.7 points greater than in 2021. The remaining 
+factors receive scores below the middle of the 
+range, indicating that more “classical” factors 
+inhibiting expansion to the foreign markets are 
+less relevant and the regulation-related factors 
+tend to dominate these. 
+Figure 4.17. Other factors that might restrict the 
+expansion of business to foreign markets 
+Overall, we can conclude that the main 
+challenges that FinTechs face have somewhat 
+tilted away from regulation-related aspects 
+towards their everyday activities. The expansion 
+to foreign markets remains less restricted by 
+poor cooperation with regulators and has 
+become more strongly impacted by restrictions 
+on the use of technological solutions and 
+requirements concerning customer monitoring.  
+4.2.5. FinTech sector outlook 
+We asked the respondents several questions 
+concerning their views on the development 
+potential, funding sources, and regulatory 
+developments. 
+On a scale of 1 to 7, the respondents evaluated 
+the overall strength of the competitive position 
+of the Estonian FinTech sector. The average score 
+was 4.8 with 73% of the responses remaining at 
+5 or above. This indicates that the companies 
+view the situation as above-average. The 
+greatest development potential in Estonian 
+FinTech was seen in very different areas. Some 
+emphasized 
+cloud-based 
+systems, 
+web3 
+environment, while others mentioned services, 
+including support services for financial sector 
+companies. The activity areas emphasized 
+covered credit products, digital/crypto assets, 
+data, 
+crowdfunding, 
+payments 
+investment 
+accounts, and e-treasury. Some remained critical 
+about the ability of Estonian FinTech to scale 
+their applications due to a lack of international 
+expertise.  
+When we asked FinTechs to indicate the most 
+important funding sources for FinTechs in the 
+next three years, seed capital and venture capital 
+prevailed with both being ranked the 1st by 
+almost a third of respondents. Although the 
+same funding sources were on top in the 2021 
+survey, the position of seed capital has 
+somewhat weakened as then it was ranked first 
+by 51% of the respondents. More traditional 
+funding sources like equity funding from 
+financial institutions, equity funding from the 
+company itself, and private funding from other 
+sectors were ranked lower. The lowest 
+importance was attributed to debt funding, as in 
+2021. 
+When the respondents were asked to rank eight 
+measures that would help to develop their 
+company and / or the Estonian FinTech sector 
+further, some interesting patterns emerged (see 
+Figure 4.18). Improving regulations and tax 
+reliefs were the top-ranking measures. This 
+indicates the regulations remain an important 
+aspect to consider despite remaining a bit 
+further behind in everyday struggles for 
+FinTechs. Better cooperation with relevant 
+
+
+</pre><div class="page-break" data-page="Page 25"></div><pre class="text-content">
+23 
+authorities ranked a bit further behind and the 
+average rank of that claim increased almost by 1 
+compared to 2021. This development supports 
+the earlier notion that the cooperation with 
+regulators seems to have improved and, 
+therefore, its further improvement is not as 
+important as it was in 2021. The following 
+measures were the support for hiring foreign 
+workforce, developing a sandbox, specialised 
+incubators, and startup visa. As in 2021, the 
+worst ranking was the cooperation with research 
+and education institutions. 
+Figure 4.18. Ranking of factors potentially 
+improving Estonian FinTech sector development 
+The respondents brought forward several 
+regulatory aspects that should receive more 
+attention. Improvement of remote identification 
+and online verification outside of European 
+Economic Area countries was mentioned. 
+Offering some sort of licencing in areas that do 
+not currently require licencing or improving the 
+investment account system, could potentially 
+improve the outlook of Estonian FinTechs. Some 
+suggested that Estonian regulations, in general, 
+should be more similar to more innovative 
+countries in Europe and the regulatory 
+environment 
+should 
+become 
+multilingual. 
+Others mentioned more general factors, like 
+making the debt collection processes faster, 
+creating a positive credit register, allowing long-
+term investment products by employers at the 
+same terms as employer’s option programmes, 
+or introducing a social tax ceiling. 
+Seven 
+respondents 
+commented 
+on 
+the 
+questions related to crowdfunding regulation. 
+Three (42%) of them indicated that further 
+regulation of crowdfunding is needed and mainly 
+to avoid scams. When they were asked to 
+evaluate how well the EU crowdfunding 
+regulation reduces the risks in the sector on a 
+scale of 1 (does not reduce at all) to 7 (reduces 
+significantly), the average score was 4.71. this 
+indicates that the respondents admitted the risk-
+mitigating impact of this regulation. Quite similar 
+views were expressed by market participants 
+also in the 2021 survey.  
+Seven respondents commented also on the EU 
+proposal for regulating crypto currencies. The 
+majority of the respondents fell under the 
+regulation’s 
+Title 
+V 
+crypto-asset 
+service 
+providers. Still, some were also under Title II 
+crypto-Assets, other than asset-referenced 
+tokens or e-money tokens; Title III asset-
+referenced tokens; or Title IV Electronic money 
+tokens. Four of the respondents had already 
+adjusted their business activities to the new 
+regulation, two needed less than 6 months to 
+comply, and only one respondent required 6 to 
+12 months for achieving compliance. When 
+asked to name the requirement that was/is the 
+hardest to adopt, the travel rule, tax reporting, 
+own funds requirement, and request to have 
+unique paperwork were mentioned. As this 
+survey probably reached more active crypto 
+service providers, the actual adoption level and 
+potential for the whole population of Estonian 
+FinTechs is likely to remain at a significantly 
+lower level.  
+On a scale of 1 (not appropriate at all) to 7 (very 
+appropriate), 
+these 
+seven 
+respondents 
+evaluated also the sufficiency of the application 
+field of the crypto asset regulation proposal. The 
+average score was 4.4, indicating a rather 
+positive opinion. However, the respondents 
+were much more critical about how well the 
+same regulation reduces risks in the sector. The 
+average score was 2.8 which indicates a very 
+modest reduction of risks. These results show 
+that although some aspects of the regulation are 
+viewed positively, there remains room for 
+
+
+</pre><div class="page-break" data-page="Page 26"></div><pre class="text-content">
+24 
+improvement. The same tendencies were 
+observed already in the 2021 survey, with the 
+same scores being 4.2 and 3.9, respectively. 
+When asked to highlight areas that needed 
+further 
+regulations, 
+57% 
+of 
+respondents 
+mentioned providing credit in exchange for 
+crypto-assets, 42% mentioned the NFTs, and 
+decentralized service providers and only one 
+respondent marked storing crypto-assets for 
+earning interest (staking). Two respondents 
+provided no input for further regulation areas 
+and firmly stated that no further regulation is 
+needed.  
+On the negative side, 71% of respondents, 
+indicated that the crypto asset regulation 
+approval would lead to the closure of a 
+significant portion of Estonian crypto companies. 
+28% of the respondents also believed that some 
+crypto companies in Estonia will either 
+consolidate or acquire a license from another EU 
+country. Only one respondent thought that 
+companies with licenses from abroad will 
+acquire new licenses based on the new 
+regulation from Estonia. This indicates that the 
+market 
+participants 
+believe 
+a 
+further 
+consolidation of the Estonian crypto market 
+which has anyhow been through significant 
+negative developments during recent years with 
+the cancellation of the majority of the VASP 
+licenses. 
+
+
+</pre><div class="page-break" data-page="Page 27"></div><pre class="text-content">
+25 
+5. CONCLUSION
+This report aimed to provide an overview of the 
+recent developments influencing the Estonian 
+FinTech sector and the main characteristics and 
+challenges of the FinTechs. A survey of FinTech 
+companies was used to draw some general 
+conclusions. 
+First, the economic impact of FinTech is gradually 
+increasing. Although the growth in the number 
+of FinTechs has decelerated, compared to the 
+end of 2020, the count of FinTechs has increased 
+by 23%, reaching 264 firms by the end of 2022. 
+The deceleration of growth arises as the growth 
+of FinTechs by 126 companies has been 
+counterbalanced with an exit of 77 former 
+FinTech list constituents. As of the end of 2021, 
+the total assets of FinTechs stood already at 2.24 
+billion euros, 1.2 times the numbers in 2019. 
+Total 
+income 
+generated 
+in 
+2022 
+was 
+approximately 400 million euros, an increase of 
+70% compared to 2020 and survey respondents 
+were expecting on average a 46% increase in 
+income on a year-by-year basis in 2023. As of the 
+end of 2022 4th quarter, the total employee count 
+was 2529 which is 27% greater than in 2020. Still, 
+30% of survey respondents did indicate that no 
+change in employment in 2023 is expected and 
+compared to the 2021 survey, the proportions of 
+respondents indicating an increase in the 
+workforce has decreased by 14 percentage 
+points. This does indicate that the economic 
+conditions are likely to influence also the 
+activities of FInTechs, however, their impact on 
+income may remain less evident.  
+Second, the field remains dominated by 
+companies involved in digital asset exchange that 
+account for 33% of all Estonian FinTechs despite 
+the significant decline in the number of 
+companies having a valid VASP license. This 
+reflects the impact of past decisions regarding 
+licensing, however, given the coming changes 
+with the MiCA adoption, the share of this FinTech 
+category is likely to decrease, as estimated also 
+by survey respondents. Despite the strong 
+presence of FinTechs focusing on crypto assets, 
+the Estonian FinTech space remains diverse with 
+a strong presence of FinTechs involved in digital 
+lending, enterprise technology provisioning, 
+digital payments WealthTech and others.  
+Third, the business models of Estonian FinTechs 
+have not changed significantly. Innovative 
+technologies in the form of blockchain, big data, 
+AI etc. are applied and, in many cases, also 
+outsourced from outside the company. Value 
+proposition remains dominated by transparency 
+(e.g., improving access to timely and sufficient 
+information) and monetary value (e.g., financial 
+gain for the customer). The majority of FinTechs 
+have continued to operate both in Estonia and 
+internationally, providing mainly business-to-
+business or business-to-customer services. 
+FinTech services are delivered mainly through 
+web applications and APIs with most of the 
+income coming through commission fees. 
+Fourth, entrepreneurs’ location choices have not 
+changed 
+significantly. 
+Local 
+FinTech 
+entrepreneurs prefer Estonia due to familiarity 
+with local conditions and stronger networks. Still, 
+given that nearly a third of respondents had 
+considered relocating their business, poor access 
+to customers and regulatory challenges may 
+force 
+companies 
+to 
+select 
+alternative 
+destinations or even re-consider their initial 
+location decisions over time.  
+Fifth, the greatest challenges for FinTechs lie in 
+finding customers, expansion to foreign markets, 
+economic conditions and access to finance. 
+Compared to 2021, the concerns had most 
+strongly increased in the area of access to 
+finance and cost of labour, reflecting the recent 
+developments in the macroeconomy and global 
+venture capital markets. Interestingly, these 
+developments had somewhat decreased the 
+relative importance of regulatory concerns, 
+especially 
+amongst 
+FinTechs 
+from 
+fields 
+unrelated to crypto-assets. 
+Sixth, when considering expanding their business 
+abroad, FinTechs do view their relationship with 
+regulators more positively compared to the 2021 
+survey. A greater obstacle is perceived in the 
+form of regulative restrictions to IT solutions, 
+
+
+</pre><div class="page-break" data-page="Page 28"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+26 
+ 
+collecting and checking data and lack of contacts 
+and networks abroad. 
+ 
+Seventh, FinTechs consider the Estonian FinTech 
+sector to be competitive on an average level. The 
+greatest development potential is seen in cloud-
+based systems, web3 environment, and support 
+services for financial sector companies. Still, 
+when ranking the factors that could enhance the 
+Estonian FinTech sector, regulations and tax 
+reliefs emerge on top. On the positive side, 
+compared to 2021, the respondents view 
+cooperation with relevant authorities more 
+positively.  
+ 
+Respondents indicated that they would like to 
+see Estonian regulations more in line with similar 
+innovative European countries. More specific 
+regulatory aspects that would deserve attention, 
+based on the opinion of FinTechs, were the 
+following: 
+• 
+Improvement of remote identification 
+and online verification outside of 
+European Economic Area countries. 
+• 
+Some sort of licencing in areas that do 
+not currently require licencing to 
+broaden the business opportunities for 
+Estonian FinTechs (e.g., factoring). 
+• 
+Improving 
+the 
+investment 
+account 
+system 
+to 
+make 
+it 
+available 
+for 
+investment companies. 
+• 
+Making the regulatory environment 
+multilingual. 
+• 
+Making debt collection faster. 
+• 
+Creating a positive credit register. 
+• 
+Allowing long-term investment products 
+by the employer at the same terms as 
+employer’s option programmes. 
+• 
+Introducing social tax ceiling. 
+• 
+Improving investors’ possibilities for 
+opening Estonian bank accounts. 
+ 
+Overall, the Estonian FinTech sector remains 
+strong and if the challenges can be properly 
+handled, Estonia would remain an attractive 
+location for FinTechs with global ambitions.
+
+
+</pre><div class="page-break" data-page="Page 29"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+27 
+ 
+APPENDIX 1. MAP OF ESTONIAN FINTECHS 
+ 
+
+
+</pre><div class="page-break" data-page="Page 30"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+28 
+ 
+LIST OF REFERENCES 
+ 
+Ankenbrand, T., Dietrich, A., Bieri, D. (2018). IFZ FinTech Study 2018: An overview of Swiss FinTech. 
+Institute of Financial Services Zug IFZ. Accessible: 
+https://blog.hslu.ch/retailbanking/files/2018/06/IFZ-FinTech-Study-2018.pdf 
+ 
+CCAF, World Bank and World Economic Forum. (2022). The Global Covid-19 FinTech Market Impact and 
+Industry Resilience Study, University of Cambridge, World Bank Group and the World 
+Economic Forum. Accessible:  https://www.jbs.cam.ac.uk/wp-content/uploads/2022/06/2022-
+global-covid19-fintech-market-study.pdf    
+ 
+Crunchbase. Accessible: https://www.crunchbase.com/ 
+ 
+EBA (2017). Discussion Paper on the EBA’s approach to financial technology (FinTech) 
+https://www.eba.europa.eu/sites/default/documents/files/documents/10180/1919160/7a1b
+9cda-10ad-4315-91ce-
+d798230ebd84/EBA%20Discussion%20Paper%20on%20Fintech%20%28EBA-DP-2017-
+02%29.pdf  
+ 
+EBRD. 2019. EBRD and Estonia are working on their first sandbox, 14.02.2019. Accessible: 
+https://www.ebrd.com/news/2019/moving-the-regulatory-debate-forward-ebrd-and-estonia-
+are-working-on-their-first-sandbox.html 
+ 
+Eickhoff, M., Muntermann, J., Weinrich, T. (2017). What do FinTechs actually do? A taxonomy of FinTech 
+business models. ICIS 2017 Proceedings. Accessible: 
+http://aisel.aisnet.org/icis2017/EBusiness/Presentations/22 
+ 
+European Commission (2020, September 24) Proposal for a regulation of the European Parliament and 
+of the Council on a pilot regime for market infrastructures based on distributed ledger 
+technology. Accessible: https://eur-lex.europa.eu/legal-
+content/EN/TXT/?uri=CELEX%3A52020PC0594  
+ 
+European Commission (2022, February 23) Data Act: Commission proposes measures for a fair and 
+innovative data economy. Accessible: 
+https://ec.europa.eu/commission/presscorner/detail/en/ip_22_1113  
+ 
+European Commission (n.d.) The Digital Services Act package. Retrieved May 1, 2023, from 
+https://digital-strategy.ec.europa.eu/en/policies/digital-services-act-package  
+ 
+European Parliament (2023, May 11) AI Act: a step closer to the first rules on Artificial Intelligence 
+Accessible: https://www.europarl.europa.eu/news/en/press-room/20230505IPR84904/ai-act-
+a-step-closer-to-the-first-rules-on-artificial-intelligence  
+ 
+FinanceEstonia. Accessible: http://www.financeestonia.eu/about-us/ 
+ 
+Imerman, M.B., Fabozzi, F.J. (2020). Chasing in on innovation: A taxonomy of FinTEch. Journal of Asset 
+Management 21, 167-177. Accessible: https://doi.org/10.1057/s41260-020-00163-4  
+ 
+
+
+</pre><div class="page-break" data-page="Page 31"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+29 
+ 
+KMPG (n.d.) Digital Operational Resilience Act – DORA. What you need to know about the new security 
+regulation affecting the financial sector?. Retrieved May 1, 2023, from 
+https://kpmg.com/ee/en/home/insights/2021/08/dora-what-you-need-to-know-about-the-
+new-security-regulation-affecting-the-financial-sector.html  
+ 
+Laidroo, L., Avarmaa, M. (2020). The role of location in FinTech formation. Entrepreneurship &amp; Regional 
+Development 32 (7-8), 555–572. Accessible: https://doi.org/10.1080/08985626.2019.1675777  
+ 
+Laidroo, L., Koroleva, E., Kliber, A., Rupeika-Apoga, R., Grigaliuniene, Z. (2021a) Business models of 
+FinTechs – Difference in similarity? Electronic Commerce Research and Applications 46, 10134. 
+Accessible: https://doi.org/10.1016/j.elerap.2021.101034 
+ 
+Laidroo, L., Tamre, A., Kukk, M.-L., Tasa, E., Avarmaa, M. (2021b) FinTech Report Estonia 2021, 
+https://doi.org/10.13140/RG.2.2.34303.74408   
+ 
+Moek, N., Huijpen, N. (2023, January 24). DORA enters info force in 2025; wait patiently or time for 
+action? Accessible: https://charcoendique.nl/en/articles/dora-enters-into-force-in-2025-time-
+for-action/  
+ 
+Osterwalder, A., Pigneur, Y. (2010). Business Model Generation: A Handbook for Visionaries, Game 
+Changers, and Challenges. John Wiley &amp; Sons. 
+ 
+Rahapesu andmebüroo (2022). Virtuaalvääringu teenuse pakkujatega seonduvad risked Eestis. 
+https://fiu.ee/media/170/download  
+ 
+Regulation 2022/1988. Commission delegated regulation (EU) 2022/1988 of 12 July 2022 extending the 
+transitional period for continuing to provide crowdfunding services in accordance with 
+national law as referred to in Article 48(1) of Regulation (EU) 2020/1503 of the European 
+Parliament and of the Council. Accessible: https://eur-lex.europa.eu/legal-
+content/EN/TXT/PDF/?uri=CELEX:32022R1988   
+ 
+Regulation 2023/1114. Regulation (EU) 2023/1114 of the European Parliament and of the Council of 31 
+May 2023 on markets in crypto-assets, and amending Regulations (EU) No 1093/2010 and (EU) 
+No 1095/2010 and Directives 2013/36/EU and (EU) 2019/1937. (2023). Accessible:  
+https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:32023R1114   
+ 
+Money Laundering and Terrorist Financing Prevention Act, RT I, 17.11.2017, 2. Accessible: 
+https://www.riigiteataja.ee/en/eli/ee/521022023001/consolide/current  
+ 
+Schickler, J. (2023, March 27) EU Smart Contract Regulations Included in Council’s Data Act Draft. 
+CoinDesk. Accessible: https://www.coindesk.com/policy/2023/03/27/eu-smart-contract-
+regulations-included-in-councils-data-act-draft/  
+ 
+Tirmaste, K., Voolma, L., Laidroo, L., Kukk, M.-L., Avarmaa, M. (2019) FinTech Report 
+Estonia 2019, https://doi.org/10.13140/RG.2.2.30062.77128  
+ 
+ 
+View publication stats
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

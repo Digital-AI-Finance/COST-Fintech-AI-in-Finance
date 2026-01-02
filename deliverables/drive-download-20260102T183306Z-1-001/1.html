@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>1</h1>
+        <div class="meta">Source: 1.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>1</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>7 pages</span>
+                    <span>30,802 characters</span>
+                    <span>4,976 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+Detecting systemically important platforms in P2P
+market of China
+1st Shan Lu
+School of Economics and Management,
+Beihang University
+Beijing, China
+2nd Xiaolei Xu
+National Computer network
+Emergency Response technical Team/
+Coordination Center of China
+Beijing, China
+3rd Huiwen Wang
+Beijing Advanced Innovation Center for Big
+Data and Brain Computing; School of
+Economics and Management,
+Beihang University, Beijing, China
+4th Jichang Zhao
+Beijing Advanced Innovation Center for Big
+Data and Brain Computing; School of Economics
+and Management, Beihang University
+Beijing, China, jichang@buaa.edu.cn
+5th Zhen Wu
+National Computer network Emergency
+Response technical Team/
+Coordination Center of China
+Beijing, China
+Abstract—Fueled by advances in technology and shifts in
+generational values, the market of online peer-to-peer (P2P) plat-
+forms is growing prosperously in China. While the development
+of this rapidly-evolving industry has stimulated the ﬁnancial
+market where traditional banks could not reach, collapses of
+well-known platforms due to malpractice, fraud or business
+failure are raising great concerns about systemic risk, as troubles
+of systemically important platforms may trigger wide range of
+failures because of the network of ﬁnancial exposures among the
+industry. However, the network of Chinese P2P lending platforms
+remains unknown. To ﬁll this vital gap, we performed the ﬁrst
+complex network analysis of the Chinese P2P lending platforms
+using empirical platform-level data. The network analysis enables
+us to detect the systematically important platforms, through
+the static importance indicators as well as cascading scheme.
+A further grouping analysis presents the different characteristic
+of the platform with different importance levels, which in turn
+proves the network modeling is able to function effectively in
+detecting the systemic important platforms.
+Index Terms—P2P lending, network modelling, systemic risk
+I. INTRODUCTION
+Peer-to-peer (P2P) online lending, namely lending through
+Internet, is a hot topic in China. The convenience of com-
+pleting all procedures, including the authorization, accounting,
+clearing, delivery, etc., through Internet has met people’s re-
+quirements in getting loans. With an estimated two thousands
+P2P Internet ﬁnance platforms (henceforth denoted as ‘plat-
+form) across the country, online P2P service has successfully
+connect individual borrowers with lenders. Nearly all market
+participants can borrow and lend directly on the Internet with
+few information barriers. The number of investors on online
+P2P lending platform has increased from 172 thousands in
+2014 to 2861 thousands in 2016. While the booming P2P
+lending service have contributed to market-driven ﬁnancial
+liberalization, it also incorporates multiple problems, from
+managers running away to the collapse of platforms in China’s
+978-1-5386-5178-0/18/$31.00 ©2018 IEEE
+biggest fraud cases. For example, an Internet P2P lending
+platform called Ezubao attracted funds of about 50 billion
+yuan (7.6 billion dollars) from 900,000 investors since it set
+up in 2014, and ceased to trade in December 2015 because
+the company operated as a Ponzi scheme. To avoid that kind
+of thing from happening again, China has been exploring the
+potential of peer-to-peer regulation for years [1]. Furthermore,
+the collapses of well-known platforms due to malpractice,
+fraud or business failure [2] are raising great concerns about
+systemic risk, as troubles of systemically important platforms
+may trigger wide range of failures because of the network of
+ﬁnancial exposures among the industry. However, the network
+of Chinese P2P lending platforms remains unknown.
+To ﬁll this vital gap, we performed the ﬁrst complex network
+analysis (to the best of our knowledge) of the Chinese P2P
+lending platforms using empirical platform-level data. We
+argue that platforms with overlapped consumers, identical
+business models or congruent corporate controls would have
+correlative performance and thus can be connected in the
+established network of P2P market. Therefore, the connections
+among the platforms could be their similarity of operating
+performance. In this paper, eleven indictors of operating per-
+formance are carefully collected from P2P lending platforms,
+such as transaction volume, number of investors, number
+of borrowers, average interest rate, and so on at monthly
+frequency. The dataset possesses a sample size of 691, and
+the sampling period starts from March 2016 to February 2017,
+which makes it a well-representative sample to investigate the
+P2P platforms system. We establish the distance matrix of the
+P2P platform’s network by dynamic time warping (DTW), as
+the observations of each platform varies. Based on the network
+of P2P platforms, we pick out those that are ‘important’ to the
+network system using the language of network science, such
+as degree centrality, betweenness centrality, etc. [3]. Detecting
+the systemically important platforms in advance, the regulation
+department could take precautions against the collapsing of
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+them to avoid tremendous lossesand that’s good for investors,
+borrowers, and the companies themselves.
+The rest of this paper is organized as follows. Section II
+reviews the related works in recent years and further point
+out our motivations. The data sets are detailedly introduced in
+Section III. Section IV depicts our presenting approaches for
+networking method, and the importance indicators including
+degree centrality, betweenness centrality, closeness centrality,
+eigenvalue centrality, and a cascading scheme based indicator.
+Section V shows the systemic important platforms under
+different important measures, and a further grouping analysis
+presents the different characteristic of the platforms with
+different importance level. Finally we brieﬂy conclude the
+paper and review the limitations in Section VI.
+II. RELATED WORKS
+The studies in the ﬁeld of P2P online lending in China
+mainly focus on the business model [4], [5], regulation manner
+[1], the detection of individual fraud cases [6]. There are few
+that pay attention to the systemic risk among P2P online
+platforms. Recent studies in banking systems and ﬁnancial
+systems take rather different account of systemic risk. Instead
+of focusing on the individual institution intending to minimize
+risk and maximize proﬁt, more attention was paid to the
+potential effects on the system-wide stability [7]–[12]. On
+one hand, the collapses of well-known platforms are raising
+great concerns about systemic risk, as troubles of systemically
+important platforms may trigger wide range of failures because
+of the network of ﬁnancial exposures among the industry. On
+the other hand, detecting the systemically important platforms
+in advance will beneﬁt the regulation department for taking
+precautions against the collapsing of them to avoid tremendous
+losses.
+III. DATA SETS
+From the beginning of 2016, we have kept record Internet
+ﬁnance platforms operating performance data from WDZJ
+(The data source website is http://www.wdzj.com/.), the most
+powerful third-party information web portals of Internet ﬁ-
+nance platforms. In this paper, the sampling period starts
+from March 2016 to February 2017, covering 691 online
+ﬁnance platforms. The collected data contains 11 indicators
+of operation performance, shown in Table I.
+Note that the data is not a complete records of all the
+investigated Internet ﬁnance platforms for the following two
+reasons: (1) as most of the online ﬁnance platform are not
+listed company, they have no obligation to public consecutive
+operating performance data. The most extreme case is that
+some platforms just appear once in the whole dataset, pro-
+viding only one-month information; (2) some platforms get
+into trouble and become a so-called ‘problematic platform’.
+The platform will then be closed so the subsequent data are
+missing. Fig. 1 shows the frequency that platforms appear
+in our dataset. In addition, it should be noted that there are
+5761 records on 634 all-time normal platforms while only
+216 records of 58 problematic platforms. In preparation, once
+the platform become a problematic one, all the records of
+it will be labeled as problematic. For the convenience to be
+aware of the difference availability for the normal platforms
+and problematic platforms, frequency histograms are drawn
+separately in Fig. 1.
+Fig. 1. Histogram of platforms contained in the data set.
+As can be seen from Fig. 1, for the normal platforms, there
+are over 300 platforms that have a full-sample period records.
+However, a half of the problematic platforms are available only
+once, either in the month that it is announced as the ‘problem
+or in one of the former months. The above data descriptions
+stress that the data is severely imbalanced between normal
+and problematic platforms, and has a limitation in censoring.
+Modeling with the data should consider both of the concerns.
+IV. MODELING METHOD
+A. Distance matrix
+The whole procedure to create the distance matrix for the
+P2P platforms is shown in Fig. 2. The details of each step is
+given below.
+Fig. 2. The procedure to obtain distance matrix.
+1) Dynamic time warping distance for every indicator: To
+deal with the ‘imbalance’ of lengths for the sample platforms’
+observations that has been discussed in the previous section,
+we considering using dynamic time warping (DTW) to ob-
+tain the distance between platforms. In time series analysis,
+dynamic time warping (DTW) is one of the algorithms for
+measuring similarity between two temporal sequences, which
+may vary in length. The method started being used by the
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+TABLE I
+DESCRIPTION STATISTICS OF INDICATORS.
+Indicator
+Notation
+Description
+weight
+Average amount of money from borrowers
+(million)
+ave out
+Equal to the total amount of lending divided by the number of borrowers. From the
+view of a P2P platform, the money ﬂows out form the platform to the borrowers.
+0.087
+Average amount of money from lenders
+(million)
+ave in
+Equal to the total amount of lending divided by the number of lenders.
+0.090
+Number of borrowers
+out per
+The number of borrowers during the observation period.
+0.070
+Number of lenders
+in per
+The number of lenders during the observation period.
+0.094
+Number of underlying lending proposals
+out num
+The number of lending or borrowing cases claimed on the platform during the
+observation period.
+0.079
+Top10 borrowers balance (million)
+top10 out
+The amount of money to be paid for the top 10 borrowers who borrow the most.
+0.090
+Top10 lenders balance (million)
+top10 in
+The amount of money to be receive for the top 10 lenders who borrow the most.
+0.116
+Average lending term
+ave period Average lending term of all the subject of lending on the platform.
+0.093
+Average interest rate
+ave inter
+Average annual interest rate of all the subject of borrowing on the platform.
+0.121
+Transaction volume (million)
+volumn
+Total amount of money borrowed from the platform during the observation month,
+reﬂects the activity level of one platform. The total lending and borrowing amount of
+money is the same.
+0.080
+Time of a tender to be fulﬁlled
+full time
+How much time on average for the lending or borrowing cases to be fulﬁlled. It could
+reﬂect both activity and attraction level of one platform.
+0.078
+Platform Status
+status
+Whether it is a normal platform or a trouble platform.
+/
+data mining community to overcome some of the limitations
+associated with the Euclidean distance [13]. In a word, DTW
+is a dissimilarity measurement based on the shapes of time
+series [14]. The sequences are ”warped” non-linearly in the
+time dimension to determine a measure of their similarity inde-
+pendent of certain non-linear variations in the time dimension.
+Considering x and y as the input series, where x has length
+of n and y has length of m. The ﬁrst step in DTW involves
+creating a local cost matrix lcmn×m, which is created for
+every pair of distances compared. The elements in lcmn×m
+for x and y are obtained by
+lcmij = (
+
+v
+|xv
+i −yv
+j |p)1/p.
+(1)
+The second step in DTW involves ﬁnding the path that
+minimizes the alignment between x and y by iteratively
+stepping through the lcm. In each round of the procedure,
+the algorithm ﬁnd the direction that cost increases the least.
+Denote φ = {(1, 1), ..., (n, m)} as the set containing all the
+points that fall on the optimum path, then the ﬁnal distance
+would be computed by
+DTWp(x, y) = (
+ mφlcm(k)p
+Mφ
+)1/p, ∀k ∈φ,
+(2)
+where mφ is a per-step weighting coefﬁcient and Mφ is
+the corresponding normalization constant. The way that the
+algorithm traverses through the lcm is primarily dictated by
+the chosen step pattern. The step pattern is a local constraint
+that determines which directions are allowed when moving
+ahead in the lcm as the cost is being aggregated, as well as
+the associated per-step weights. In this paper, we are using the
+TSdist package in R to determine the DTW distance among
+the time series.
+2) Standardized distance matrix for every indicator: By
+applying dynamic time warping method, the distance matrix
+of each indicator is obtained. That is, we have eleven distance
+matrices in total. To eliminate the scale effect, we apply stan-
+dardization for every distance matrix of the eleven indicators
+as follows. The elements in one weight matrix are scaled by
+the maximum and minimum of the weight matrix, as shown
+in equation (3).
+wij =
+wij −min(wij)
+max(wij) −min(wij).
+(3)
+3) Weighting the distance matrices: As the eleven in-
+dicators yield eleven distance matrices, it is necessary to
+aggregated them in to a single distance matrix according
+to the importance of indicators. In the dataset, we have
+status indicating whether the platform is a good platform
+or a problematic one. Therefore, we could use status as the
+label of the platform to learn which operating performance
+indicator is more important to the status of the platform.
+The issue is then converted to classiﬁcation modeling. There
+are lots of classiﬁcation methods available to deal with our
+scenario. Speciﬁcally, we use the Extra-Tree method (standing
+for extremely randomized trees) [15] since the algorithm is
+computational efﬁciency and of high accuracy.
+The input features of the Extra-Tree classiﬁer is the eleven
+indicators of operation performance and the label of the Extra-
+Tree classiﬁer is status, which is a dummy variable, with 1 as
+problematic platform and 0 as good platform. One of the clas-
+siﬁer’s outputs that is of our interest is the eleven coefﬁcients
+for indicators. The coefﬁcients are the feature importance
+measurement that we are looking for. More algorithm related
+details of Extra-Tree method could be found in Geurts (2006)
+[15]. In this paper, we use the sklearn package in Python
+to conduct the procedure. The feature coefﬁcients (weights for
+the distance matrices) are shown in the last column of Table
+I. We then applied weighs to the eleven standardized distance
+matrices by feature selection coefﬁcients in order to produce
+accurate estimates of the platforms similarities.
+4) The distance distribution: After weighting the eleven
+distance matrices, we aggregate them into a single distance
+matrix. The distribution of the aggregated distance is shown in
+Fig. 3, which exhibits obvious right skewness. This indicates
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+that most platforms are similar in the aspects of operating
+performances as their distance to each other are low, while
+some deviate from others as they has long distance from other.
+Fig. 3. The distance distribution.
+B. Networking method
+The network is formed according to the aggregated distance
+matrix. To neglect those unimportant edges while keep the
+network connected, we use minimum spanning tree(MST) to
+extract the bone of the network. This technique has been
+applied in previous studies and achieve well-deﬁned results
+[16]–[19]. After the MST extraction, the network possesses
+691 nodes and 690 edges, as shown in Fig. 4.
+Fig. 4. Network visualization. The size of a node is proportional to its out-
+degrees.
+Usually, for assortative network, nodes of comparable de-
+gree tend to link to each other: small-degree nodes to small-
+degree nodes and hubs to hubs. For disassortative networks,
+hubs tend to connect to small-degree nodes and small-degree
+nodes to hubs. The higher the degree assortativity coefﬁcient,
+the more disassortativity the network is. The present network
+possesses a degree assortativity coefﬁcient of -0.14, which
+means the slightly dissasortativity property.
+C. Importance measurements
+The importance of nodes in a network have various mea-
+surement in different aspects.
+1) Degree centrality: It is commonly believed that a node
+is important if it has many neighbors. Intuitively, degree
+is a simple measure that counts the number of neighbors
+a node possess in a graph. Degree centrality considers the
+standardization of degree as
+DCi =
+k
+N −1,
+(4)
+where k is the degree of node i and N is the number of nodes
+of the graph. We argue that the collapse of node with high
+degree will bring about risk to those platforms that connected
+to the it.
+2) Betweeness centrality: Betweenness centrality measures
+the centrality of a node based on shortest paths [20]. For every
+pair of vertices in a connected graph, there exists at least one
+shortest path between the vertices such that either the number
+of edges that the path passes through (for unweighted graphs)
+or the sum of the weights of the edges (for weighted graphs) is
+minimized. The betweenness centrality for each vertex is the
+number of these shortest paths that pass through the vertex.
+Denote gst as the number of shortest path from node s to t,
+among which there are ni
+st paths that go through node i. The
+betweeness centrality is deﬁned as
+BCi =
+
+s̸=i̸=j
+ni
+st
+gst
+,
+(5)
+3) Closeness: In a connected graph, closeness of a node is
+also a measure of centrality in a network, calculated as the
+sum of the length of the shortest paths between the node and
+all other nodes in the graph. Thus the more central a node is,
+the closer it is to all other nodes. It was deﬁned by [21] as
+CCi = 1
+di
+=
+N
+N
+j=1 dij
+,
+(6)
+where dij is the distance between node i and node j, and di
+is the average distance of the paths from node i to other nodes
+in the network.
+4) Eigenvector centrality: Unlike the previous measures of
+centrality, the eigenvectior centrality accounts for the node’s
+importance as well as its neighbors’. Denote the adjacency
+matrix of the graph as A = (aij). The relative eigenvector
+centrality of node i can be deﬁned as
+ECi = c
+N
+
+j=1
+aijxj
+(7)
+where c is a constance.
+
+
+</pre><div class="page-break" data-page="Page 5"></div><pre class="text-content">
+One could solve the corresponding eigenvector equation
+Ax = cx to obtain the ECi. This measure has inspired many
+follow-up useful indicators such as Google’s PageRank and
+the Katz centrality [22].
+5) SIR based importance: An SIR model is an epidemi-
+ological model that was proposed to explain the rapid rise
+and fall in the number of infected patients observed in epi-
+demics [23]. This model is reasonably predictive for infectious
+diseases which are transmitted from human to human, and
+where recovery confers lasting resistance. A network-based
+SIR model assumes that the infection only happen to those
+who connected to the nodes with disease. For a speciﬁc disease
+in a speciﬁc population, these functions may be worked out
+in order to predict possible outbreaks and bring them under
+control.
+In our scenario, the network of P2P platforms have already
+demonstrated the interplays among platforms. Our aim is to
+measure the extent of cascading effect for a given platform’s
+collapse. We design the following simulation procedure the
+get, what we call it ‘SIR based importance’.
+• Step1: Initial collapse.
+Denote N as the total number of nodes, S as the number
+of susceptible nodes, I for the number of infectious
+nodes, and R for the number of recovered nodes. At the
+beginning, one node is chose to be infected, or say, one
+platform is collapsed. Set the time as t = 0.
+• Step2: Collapse spreading.
+The collapsed node would spread ‘disease’ to its neigh-
+bors. Denote the infection strength as b, where b ∈[0, 1].
+For each neighbor, generate a random number a from
+the uniform distribution a ∼U(0, 1), and if a &lt; b, the
+neighbor is infected. Otherwise, it is still susceptible. Set
+the time as t = t + 1 after the one-hop cascading.
+• Step3: Platform recovering.
+Denote the recovering strength as g. For every infected
+platform, a speciﬁc recovering time r is assigned to it,
+where r is generated from exponential distribution r ∼
+exp(g). And when the simulation come to time t+r, the
+infected node will be set as recovered. Once the node is
+recovered, it would not be infected again.
+• Step4: Update S, I, R.
+Count the numbers of susceptible nodes, infected nodes,
+and recovered nodes. If there is newly infected node, the
+simulation goes on, that is, we jump back to Step 2 as the
+newly infected nodes would again spread the ’disease’.
+On the contrary, if there’s no more newly infected nodes,
+we stop the simulation, and get the SIR-based impor-
+tance measure importanceSIR = I/N, that is, the ﬁnal
+infection ratio of the system. Then, jump back to Step1
+to start another round of simulation with the same initial
+collapse. For every initial collapse, the simulation repeats
+100 times to get the mean.
+A higher importanceSIR indicates the initial collapse of
+the platform would bring about a more severe systematic
+failure, thus, the platform is more important.
+V. RESULTS
+To single out the P2P platforms that are systemically
+important, four centrality measures DC, BC, CC, EC, that
+reﬂect different aspects of importance are computed, as well
+as one index formed by cascading regime, which we call it
+importanceSIR. We rank the platforms by the order from im-
+portant to unimportant for the ﬁve importance measurements,
+respectively, as shown in Fig. 5.
+Fig. 5. Nodes importance of online P2P platforms revealed by ﬁve indicators.
+In Fig 5, each column represents one indicator, as where
+each row represents one platform. The lighter the color is, the
+more importance the platform is. The left side of Fig 5 shows
+the hierarchy clustering results using the Euclidean distance
+of the ﬁve importance measurement. The basic process of
+hierarchical clustering (deﬁned by S.C. Johnson in 1967 [24])
+is that 1) Start by assigning each item to a cluster. We have
+691 platforms, so now there are 691 clusters, each containing
+just one item. 2) Find the closest (the least Euclidean distance)
+pair of clusters and merge them into a single cluster, so that
+there are one cluster less. 3) Compute the Euclidean distances
+between the new cluster and each of the old clusters. 4) Repeat
+steps 2) and 3) until all items are clustered into a single cluster
+of size 691. To make the clustering results clear, we extract
+the clustering results and present it in Fig. 6.
+Without the loss of generality, we cut the clustering tree with
+groups to be ﬁve. The ﬁve groups are exhibited in different
+colors. From left to right in Fig. 6, we call them ‘green group’,
+‘red group’, ‘blue group’, ‘purple group’, and ‘yellow group’.
+The operating performances of the four groups are shown
+in Fig. 7 (the blue group is rather small), with color being
+accordance with the names of the groups.
+
+
+</pre><div class="page-break" data-page="Page 6"></div><pre class="text-content">
+Fig. 6. Cluster.
+As can be seen in Fig. 6 and Fig. 5, the green group are
+those with least importance (rank over 400) in every aspect
+of importance measurements. The green group possesses 138
+platforms, with 10 of them are problematic. In Fig. 7(d), we
+ﬁnd that these platforms act at the average level in most
+operating dimensions, while possess higher average amount
+of money from borrowers (ave out) and average amount of
+money from lenders (ave in).
+The red group is similar with the green group in DC and
+BC, implying that they both have low degrees and connections
+in the platforms network. However, the red group is of higher
+importance in aspects of CC, EC, importanceSIR. This
+indicates that those platforms may connected to those of high
+importance. The red group possesses 194 platforms, with 24 of
+them are problematic. Fig. 7(b) shows that the blue group of
+platforms has obvious higher number of underlying lending
+proposals(out num) and number of borrowers(out per) than
+the average level.
+Moving on to the purple groups, it is shown in Fig. 5
+that the group is of high importance in every aspect of
+importance measurement, whereas the radar plot of Fig. 7(c)
+tells that the purple group has lower values in average amount
+of money from lenders (ave in), average amount of money
+from borrowers(ave out), number of underlying lending pro-
+posals(out num), number of borrowers(out per). The purple
+group possesses 166 platforms, with 22 of them are problem-
+atic.
+Last but not the least, the yellow group which has high
+importance evaluations in DC and BC, however, has low
+importance evaluations in CC, EC, importanceSIR. The
+yellow group (Fig. 7(a) ) behaves abnormal in transaction
+volume (volumn), number of borrowers(out per), number of
+underlying lending proposals(out num). It possesses 138 plat-
+forms, with 10 of them are problematic.
+On the top of the four groups, the purple group is the most
+importance one, given the leading status in the importance
+measurements of the platform network. Tracing back to the
+operating performance indicators, it is further shown that the
+purple group has the most abnormal behaviors in several
+operating indicators. Speciﬁcally, it possesses lower ‘energy’
+in lending and borrowing activities going on the group’s
+platforms, implying these platforms may suffer from ill-run
+problems so that few borrowers seeking money and few lend-
+ing proposal could not be fulﬁlled. The further investigation
+of the proportion of problematic platforms in every group also
+shows that the purple group has the highest ratio. This in turn
+has proved that the capacity of the ﬁve importance indicators in
+detecting the systematic important and problematic platforms.
+Fig. 7. Characteristic of four groups of platforms. The gray line is the average
+level of 691 platforms.
+VI. CONCLUSION
+Our approach of similarity measures plus network analysis
+provides a mean of detecting ‘systemically important P2P plat-
+forms. Overall, two main ﬁndings are disclosed in our results.
+Firstly, a small group of platforms have priority in every angle
+of importance, and some only domain in one or two indicators
+and, secondly, when looking close to those ‘important nodes,
+it is shown that they have abnormal operation performance.
+This study inevitably has limitations, for example, whether
+the systemic important measurements could work in prediction
+is still not investigated because the limitation of longitude
+of observation period. Nevertheless, our results could help to
+offer investing advice to investors and regulating priority for
+macro prudential supervision.
+ACKNOWLEDGEMENT
+This research was ﬁnancially supported by National Natural
+Science Foundation of China (Grant Nos. 71420107025 and
+71501005).
+REFERENCES
+[1] W. Xiaoguang and C. Yi, “The regulation strengthening of the p2p online
+lending platform,” South China Finance, vol. 4, p. 009, 2011.
+
+
+</pre><div class="page-break" data-page="Page 7"></div><pre class="text-content">
+[2] Z. Tania, R. E.J., L. Annie, Z. Bryan, S. K. Randall, and G. Kieran,
+“The 2017 americas alternative ﬁnance industry survey,” 2017.
+[3] A.-L. Barab´asi, Network science.
+Cambridge university press, 2016.
+[4] Q. J.-y. Y. Fei, “The development status and prospects of chinese p2p
+network lending,” in Finance Forum, vol. 1, 2012, p. 009.
+[5] D. Chen and C. Han, “A comparative study of online p2p lending in
+the usa and china,” Journal of Internet Banking and Commerce, vol. 17,
+no. 2, p. 1, 2012.
+[6] R. Emekter, Y. Tu, B. Jirasakuldech, and M. Lu, “Evaluating credit risk
+and loan performance in online peer-to-peer (p2p) lending,” Applied
+Economics, vol. 47, no. 1, pp. 54–70, 2015.
+[7] F. Schweitzer, G. Fagiolo, D. Sornette, F. Vega-Redondo, A. Vespignani,
+and D. R. White, “Economic networks: The new challenges,” Science,
+vol. 325, no. 5939, pp. 422–425, 2009.
+[8] A. G. Haldane and R. M. May, “Systemic risk in banking ecosystems,”
+Nature, vol. 469, no. 7330, pp. 351–355, 2011.
+[9] X. Zhang, L. Feng, Y. Berman, N. Hu, and H. E. Stanley, “Exacerbated
+vulnerability of coupled socio-economic risk in complex networks,” EPL
+(Europhysics Letters), vol. 116, no. 1, p. 18001, 2016.
+[10] M. Bardoscia, S. Battiston, F. Caccioli, and G. Caldarelli, “Pathways
+towards instability in ﬁnancial networks,” Nature Communications,
+vol. 8, p. 14416, 2017.
+[11] M. Billio, M. Getmansky, A. W. Lo, and L. Pelizzon, “Econometric
+measures of connectedness and systemic risk in the ﬁnance and insur-
+ance sectors,” Journal of Financial Economics, vol. 104, no. 3, pp. 535
+– 559, 2012.
+[12] T. Roukny, H. Bersini, H. Pirotte, G. Caldarelli, and S. Battiston,
+“Default cascades in complex networks: Topology and systemic risk,”
+Scientiﬁc Reports, vol. 3, pp. 2759 EP –, 2013.
+[13] D. J. Berndt and J. Clifford, “Using dynamic time warping to ﬁnd
+patterns in time series.” in KDD workshop, vol. 10, no. 16.
+Seattle,
+WA, 1994, pp. 359–370.
+[14] S. Aghabozorgi, A. S. Shirkhorshidi, and T. Y. Wah, “Time-series
+clustering–a decade review,” Information Systems, vol. 53, pp. 16–38,
+2015.
+[15] P. Geurts, D. Ernst, and L. Wehenkel, “Extremely randomized trees,”
+Machine learning, vol. 63, no. 1, pp. 3–42, 2006.
+[16] R. N. Mantegna, “Hierarchical structure in ﬁnancial markets,” The
+European Physical Journal B - Condensed Matter and Complex Systems,
+vol. 11, no. 1, pp. 193–197, 1999.
+[17] G. Bonanno, G. Caldarelli, F. Lillo, and R. N. Mantegna, “Topology of
+correlation-based minimal spanning trees in real and model markets,”
+Physical Review E, vol. 68, no. 4, p. 046130, 2003.
+[18] H.-J. Kim, Y. Lee, B. Kahng, and I.-m. Kim, “Weighted scale-free
+network in ﬁnancial correlations,” Journal of the Physical Society of
+Japan, vol. 71, no. 9, pp. 2133–2136, 2002.
+[19] H. Kim, I. Kim, Y. Lee, and B. Kahng, “Scale-free network in stock
+markets,” Journal-Korean Physical Society, vol. 40, pp. 1105–1108,
+2002.
+[20] L. C. Freeman, “A set of measures of centrality based on betweenness,”
+Sociometry, pp. 35–41, 1977.
+[21] A. Bavelas, “Communication patterns in task-oriented groups,” The
+Journal of the Acoustical Society of America, vol. 22, no. 6, pp. 725–
+730, 1950.
+[22] M. E. Newman, “The mathematics of networks,” The new palgrave
+encyclopedia of economics, vol. 2, no. 2008, pp. 1–12, 2008.
+[23] M. LeChevallier, W. Norton, and R. Lee, “A contribution to the mathe-
+matical theory of epidemics,” in R. Soc. Lond. Proc. Ser. A Math. Phys.
+Eng. Sci, vol. 115, 1995, pp. 48–86.
+[24] S. C. Johnson, “Hierarchical clustering schemes,” Psychometrika,
+vol. 32, no. 3, pp. 241–254, 1967.
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

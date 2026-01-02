@@ -1,0 +1,1947 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COST Open Call Applicant Guidelines oc 2024 1 - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>COST Open Call Applicant Guidelines oc 2024 1</h1>
+        <div class="meta">Source: COST_Open_Call_Applicant_Guidelines_oc-2024-1.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>COST Open Call Applicant Guidelines oc 2024 1</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>28 pages</span>
+                    <span>69,590 characters</span>
+                    <span>10,348 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+COST Association AISBL 
+Avenue du Boulevard – Bolwerklaan 21 | 1210 Brussels, Belgium 
+T +32 (0)2 533 3800 | office@cost.eu | www.cost.eu 
+ 
+ 
+ 
+ 
+ 
+COST Open Call – 
+Applicant Guidelines 
+(Submission, Evaluation, Selection 
+and Approval - SESA) - Level C 
+ 
+ 
+ 
+ 
+ 
+November 2023 
+ 
+Open Call oc-2024-1 
+ 
+ 
+ 
+ 
+ 
+COST 104/21 
+V3.0 
+ 
+ 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+ 
+ 
+ 2 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Copyright Notice 
+© The COST Association 
+Reproduction of this document and its content, in part or in whole, is authorised, provided the source is 
+acknowledged, save where otherwise stated. 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+ 
+ 
+ 3 
+November 2023 (Version 3.0) 
+Document Change History 
+Version 
+Release date 
+Summary of changes 
+1.0 (former 
+oc-2022-1) 
+15 December 2021 Updates to launch oc-2022-1, including:  
+- 
+included clear examples of eligible statements on anonymity, 
+- 
+list of information to be provided to evaluators has been 
+modified (deleting those which were not an evaluation criteria), 
+- 
+the amended list of ITCs, 
+- 
+updates of the links to reference documents in the context of 
+Horizon Europe,  
+- 
+change of terminology and definition: Early Career Investigators 
+(ECI) is changed to Young Researchers and Innovators (YRI), 
+and 
+- 
+amendments resulting from the change on the rules for 
+participation of researchers and innovators from NNC and Third 
+States (IPC) 
+1.1 (former 
+oc-2022-1) 
+13 April 2022 
+Minor updates, linguistic and formatting changes: 
+- 
+correction of the release date on page 3 (15 December instead 
+of 29 October 2021) 
+- 
+due to the deletion of a Chapter in the previous version, a series 
+of references to Chapter numbers needed to be updated  
+- 
+the “sections” of the Guidelines were renamed as “Chapters” to 
+avoid confusion with the “sections” of the Technical Annex, 
+which are also described in the Guidelines 
+2.0 
+18 November 2022 Updates to launch oc-2023-1, including: 
+- 
+Updated link to Country and Organisation table 
+- 
+Sentence added for resubmissions to use the correct template 
+- 
+Clarification on outermost regions status for Open Call 
+- 
+Text edits / reference updates 
+- 
+Link added to the European Commission website on gender 
+equality in research and innovation 
+2.1 
+December 2022 
+Updates to launch oc-2023-1, including: 
+- 
+Anonymity clarification for proposal section added (general 
+feature and Network of Proposers) 
+- 
+Honoria information for iEEs and RPMs added 
+3.0 
+November 2023 
+Guidelines updated for oc-2024-1, including: 
+- 
+Clarification on Action funding level in Chapter 1.2 
+- 
+Summary table showing proposal section visibility by SESA 
+actors in Chapter 2.4 
+- 
+Merged Chapter 2.4.2 (Technical Annex) and former 2.6 (Key 
+Concepts definitions) to improve readability and avoid 
+repetitions 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+ 
+ 
+ 4 
+TABLE OF CONTENT 
+INTRODUCTION 
+5 
+1. 
+OVERVIEW OF COST FRAMEWORK, COST ACTION AND OPEN CALL PROCESS 
+5 
+1.1. 
+THE COST FRAMEWORK: MISSION AND POLICY 
+5 
+1.2. 
+COST ACTIONS 
+6 
+1.2.1. COST ACTION STRUCTURE 
+7 
+1.2.2. PARTICIPANTS 
+8 
+1.3. 
+COST OPEN CALL AND SESA PROCESSES 
+9 
+2. 
+PREPARING AND SUBMITTING A PROPOSAL FOR A COST ACTION 
+9 
+2.1. 
+REGISTRATION FOR SUBMISSION 
+9 
+2.2. 
+ELIGIBILITY CRITERIA 
+11 
+2.3. 
+NETWORK OF PROPOSERS: REQUIREMENTS 
+12 
+2.4. 
+PROPOSAL TEMPLATE 
+12 
+2.4.1. GENERAL FEATURES 
+13 
+2.4.2. TECHNICAL ANNEX 
+14 
+2.4.3. REFERENCES 
+19 
+2.4.4. COST MISSION AND POLICY 
+19 
+2.4.5. NETWORK OF PROPOSERS 
+19 
+2.5. 
+WRITING STYLE GUIDE 
+20 
+3. 
+HOW COST PROPOSALS ARE EVALUATED, SELECTED AND APPROVED – CORE 
+PRINCIPLES AND CONFLICT OF INTEREST RULES 
+21 
+3.1. 
+CONFLICT OF INTEREST 
+21 
+3.2. 
+CONFIDENTIALITY 
+23 
+3.3. 
+PROPOSAL EVALUATION, SELECTION AND APPROVAL 
+23 
+3.3.1. STEP 1 – PROPOSAL EVALUATION BY INDEPENDENT EXTERNAL EXPERTS: 
+23 
+3.3.2. STEP 2 – REVISION AND QUALITY CHECK BY AD HOC REVIEW PANEL 
+25 
+3.3.3. STEP 3 – PROPOSALS SELECTION BY COST SCIENTIFIC COMMITTEE 
+26 
+3.3.4. PROPOSAL APPROVAL BY THE COMMITTEE OF SENIOR OFFICIALS (CSO) 
+26 
+3.4. 
+FEEDBACK TO PROPOSERS 
+27 
+3.5. 
+REDRESS PROCEDURE 
+27 
+4. 
+HONORARIA 
+27 
+5. 
+DEFINITIONS AND ABBREVIATIONS 
+27 
+ANNEX 
+28 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 5"></div><pre class="text-content">
+ 
+ 
+ 5 
+INTRODUCTION 
+This document provides a practical step-by-step guide to the European Cooperation in Science and 
+Technology (COST) Open Call rules and procedures for Submission, Evaluation, Selection and 
+Approval (SESA) of COST Action proposals, as decided by the COST Committee of Senior Officials 
+(CSO).  
+Proposers are invited to read the set of COST Implementation Rules establishing the conditions for 
+participation in COST activities and in particular in COST Actions, namely: 
+ 
+• 
+Annotated Rules for COST Actions (COST 094/21) 
+• 
+COST Action Proposal Submission, Evaluation, Selection and Approval (COST 101/21)  
+They are available at: https://www.cost.eu/funding/documents-guidelines/. These documents are legally 
+binding and take precedence over any guideline. In case of any contradiction between the COST 
+Implementation Rules and the current guidelines, the COST Implementation Rules shall prevail.  
+ 
+1. OVERVIEW OF COST FRAMEWORK, COST ACTION 
+AND OPEN CALL PROCESS 
+ 
+The COST Association is the legal entity in charge of the management and implementation of COST 
+strategy, policy and activities towards the achievement of the COST Mission. The overview of the COST 
+structure and its intergovernmental dimension can be found at https://www.cost.eu/who-we-are/about-
+cost/. 
+1.1. The COST framework: mission and policy  
+COST is a pan-European intergovernmental framework1 dedicated to European-based Science and 
+Technology (S&amp;T) networking activities aiming at allowing their participants to jointly develop their ideas 
+and new initiatives across all scientific disciplines through trans-European coordination of nationally or 
+otherwise funded research activities. COST has been contributing since its creation in 1971 to closing 
+the gap between science, policy makers and society throughout Europe and beyond. 
+The COST Mission is to provide networking opportunities for researchers and innovators in order to 
+strengthen Europe’s capacity to address scientific, technological and societal challenges. There are 
+three strategic priorities: 
+• 
+promoting and spreading excellence; 
+• 
+fostering interdisciplinary research for breakthrough science; 
+• 
+empowering and retaining young researchers. 
+COST implements its mission by funding bottom-up, excellence-driven, open and inclusive networks for 
+peaceful purposes in all areas of science and technology.  
+To achieve its mission, COST provides support for activities such as: 
+• 
+the development of European-based scientific and technological networks in any scientific or 
+interdisciplinary domain; 
+• 
+the exploitation of the research outcomes by integrating all stakeholders, thereby intensifying 
+the links between scientific communities, enterprises, policy makers and society; 
+• 
+the dissemination of results of such research activities in order to improve their scientific, social 
+and economic impact; 
+ 
+1 See the list of countries and organisations in COST 088/21 Rules and Principles for COST Activities, Annex I. 
+
+
+</pre><div class="page-break" data-page="Page 6"></div><pre class="text-content">
+ 
+ 
+ 6 
+• 
+the provision for collaboration opportunities to all researchers to employ all talented and creative 
+human resources available in Europe overcoming the bottlenecks linked to geographic location, 
+age or gender; 
+• 
+the facilitation of the international collaboration of the European research networks, thereby 
+increasing their efficiency, effectiveness and impact within the European Research Area (ERA) 
+and at global level; 
+• 
+COST has put in place the COST Excellence and Inclusiveness policy and a set of rules aiming 
+at fulfilling its mission and specific objectives. 
+The policy on COST Excellence and Inclusiveness is built upon two pillars: 
+• 
+strengthening the excellence through the creation of cross-border networking of researchers; 
+• 
+promoting geographical, age2 and gender balance throughout its activities and operations. 
+This policy aims to provide collaboration opportunities to all researchers and innovators in COST Full or 
+Cooperating Members3 and to overcome the bottlenecks that prevent the use of all talented and creative 
+human resources available for European science. It has the following objectives: 
+• 
+encouraging and enabling researchers from less research-intensive countries across Europe to 
+set up or join COST Actions. These countries are denominated Inclusiveness Target Countries 
+(ITC) (see Annex I – Level A: Country and Organisations table); 
+• 
+counterbalancing research communities’ unequal access to knowledge, infrastructures, funding 
+and resources; 
+• 
+providing strong means to increase the visibility and integration of researchers to the leading 
+knowledge hubs of Europe, as well as to acquire their necessary leadership skills, regardless 
+of their location, age or gender; 
+• 
+smoothly contributing to trigger structural changes in the national research systems of COST 
+Members; 
+• 
+identifying excellence across Europe to contribute to ERA widening objectives. 
+Through COST global networking, COST encourages the participation of researchers and innovators 
+affiliated in non-COST Members4 and Specific Organisations in COST activities on the basis of mutual 
+benefit. The participation of researchers from Near Neighbour Countries (NNCs) is particularly 
+encouraged, according to the provisions related to eligibility for both participation and reimbursement 
+set in the Annotated Rules for COST Actions. 
+Further, COST aims at enabling fruitful collaborations between researchers, innovators and other 
+stakeholders and business by providing a platform for them to meet and build mutual trust. It also aims 
+at increasing impact of research in the industrial sector. With this purpose, COST promotes the use and 
+development of technologies, as well as the exploitation5 of COST Action results and outcomes through 
+dedicated dissemination and exploitation activities targeting small and medium-sized enterprises 
+(SMEs) and large companies in Europe. 
+1.2. 
+COST Actions 
+COST funds networking activities to the benefit of nationally or otherwise funded research activities.  
+COST Actions are Science and Technology (S&amp;T) networks open to researchers and innovators 
+affiliated to universities, research centres, companies, in particular small and medium-sized enterprises 
+(SMEs), as well as other stakeholders and relevant legal entities. All the relevant information to manage 
+ 
+2 COST has a special focus on Young Researchers and Innovators (YRI), defined as ‘researchers or innovators under the age of 
+40’ (COST Glossary - https://www.cost.eu/Glossary) 
+3 See the list of countries in COST 088/21 Rules and Principles for COST Activities, Annex I 
+4 States that are not COST Members. They can be Near Neighbour Countries or Third States (also called International Partner 
+Countries)  
+5 See COST 094/21 Annotated Rules for COST Actions, Chapter 5.5.2 on Intellectual Property Rights on Action results 
+
+
+</pre><div class="page-break" data-page="Page 7"></div><pre class="text-content">
+ 
+ 
+ 7 
+a COST Action is presented in the Annotated Rules for COST Actions. COST Actions are set up to 
+achieve specific objectives within their four-year duration based upon the sharing, creation, 
+dissemination and application of knowledge. These objectives can be reached through COST 
+networking activities: 
+• 
+Meetings (e.g., Management Committee meetings, Working Group meetings); 
+• 
+Training Schools; 
+• 
+Mobility of Researchers and Innovators (Short-Term Scientific Missions – STSMs; Virtual 
+Mobility - VM); 
+• 
+Presentations at conferences organised by third parties (ITC Conference presentation and 
+Dissemination presentations). 
+Further, COST Actions can receive funding for other expenses supporting the Action: 
+• 
+Dissemination and Communication Products; 
+Expenses incurred for the benefit of the network (OERSA and Virtual Networking Support VNS). 
+No budget forecast is requested when submitting a proposal. For information, in recent years, the 
+average funding received during the 4-year duration of a COST Action amounts to 600,000 EUR. The 
+amounts are variable from a grant period to another and depends, among others, on the size of the 
+network and overall budget available to COST. COST Actions are: 
+• 
+Pan-European: the COST inter-governmental framework spans over 41 Full Members, one 
+Cooperating Member, and one Partner Member; 
+• 
+Bottom-up: in terms of S&amp;T fields and topics, COST welcomes any novel, original and 
+innovative idea; 
+• 
+Open: in terms of participation, COST Actions can grow in size; 
+• 
+Unique: as a platform to coordinate national research funding and resources within a well-
+defined framework; 
+• 
+Multi-, Inter- and Transdisciplinary: bridging different research communities, disciplines, 
+fields and methodologies; 
+• 
+Output and Impact-Oriented: COST Actions are monitored against their expected output and 
+impact. 
+COST Actions are bottom-up in two ways: their topics are chosen by proposers and the scientific 
+management decisions are entrusted to the Action Management Committees. They are open 
+throughout their lifetime to new members and are adaptable in terms of internal organisation and 
+strategy. They shall promote actively the participation of the next generation of researchers and 
+innovators. Thus, COST Actions are especially well-suited to pursue new ideas through collaborative 
+efforts and/or to build communities around emerging S&amp;T topics and societal questions. 
+1.2.1. COST ACTION STRUCTURE 
+The intergovernmental dimension of COST is reflected in the structure of a COST Action. 
+The Action Management Committee (MC) is the decision-making body. The Action MC is responsible 
+for the coordination, implementation and management of the Action activities and for supervising the 
+appropriate allocation and use of the grant with a view to achieve the Action’s scientific and technological 
+objectives. It is composed of: 
+MC Members: up to two representatives of the COST Full or Cooperating Member. Nomination of MC 
+Members is a national prerogative, follows national procedures, and is performed by the COST National 
+Coordinator’s (CNCs)6. 
+ 
+6 Before the start of the Action (date of the first Management Committee meeting), persons nominated by the CNC will automatically 
+become Action MC Members. After the Action’s first MC meeting, new Action MC Members need to be validated by the Action MC. 
+
+
+</pre><div class="page-break" data-page="Page 8"></div><pre class="text-content">
+ 
+ 
+ 8 
+MC Observers:  
+• 
+up to two representatives of the COST Partner Member. Action MC Observers from the Partner 
+Member are nominated by the respective COST National Coordinator (CNC);  
+• 
+up to one representative of the Specific Organisation that joined the Action. Action MC 
+Observers from Specific Organisations are nominated by the Specific Organisation.  
+The MC takes decisions by simple majority vote. MC Observers have no voting rights. 
+Working Groups (WGs) are in charge of developing the scientific activities needed to achieve the 
+Action objectives, in line with the Action strategy defined by the Action MC. The composition is based 
+on WG applications submitted via the Action page on the COST website, the leadership is subject to 
+the Action MC vote, and the activity of the WG is defined by the MC and the MoU. 
+COST Actions are funded via yearly Action Grant Agreements (AGAs) based on annual Work and 
+Budget Plans (W&amp;BPs), detailing the activities designed to achieve the objectives defined in the MoU. 
+The Action’s activities are decided by the Action MC, taking advantage of the full range of the COST 
+networking activities. The rules applying to their funding are defined in the Annotated Rules for COST 
+Actions. 
+The research and development activities needed for the achievement of the Action objectives are not 
+funded by COST and rely on nationally or otherwise funded research projects and resources (e.g., 
+employees’ time, infrastructures and equipment). COST Actions aim at leveraging national or other 
+sources of funding towards efficient trans-European research cooperation. 
+1.2.2. PARTICIPANTS 
+COST Actions are open to all researchers and innovators who are committed to work on and achieve 
+the Action objectives and are affiliated to a legal entity7. Action Participants are defined as any person 
+being an Action MC Member, an Action MC Observer, a Working Group member or an ad hoc 
+participant: 
+Action MC Members and Observers: their role is to represent and benefit their national community 
+and pro-actively participate in the implementation of coordination and management decisions in the 
+Action.  
+WG members: any individual affiliated to a legal entity in any country in the world may become a WG 
+member. Their participation needs to be approved by the Action MC, based on an application submitted 
+through the Action page on the COST website. Their role is to contribute to the achievement of the 
+Action objectives through their participation in WG(s). 
+Ad hoc Participants: Individuals selected, as necessary, by the Action MC to contribute to the COST 
+Action activities towards the achievement of the COST Action Objectives. Ad hoc participants can be 
+STSM grantees, trainees and trainers in Training Schools, and invited speakers at COST Action 
+Workshops and Conferences. 
+All Action Participants must be affiliated to a legal entity located in a COST Member or in any NNC or 
+Third State (IPC8).  
+A legal entity can be (non-exhaustive list) a public entity (national, regional, local public authority or any 
+other kind of public entity), a university, a research centre, company, association, Specific Organisation 
+or any other form of legal entity recognised under a national or international framework9. 
+ 
+7 For more detailed information, please check COST 094/21 Annotated Rules for COST Actions. 
+8 International Partner Countries (IPC) – Third States: States that are neither COST Members nor COST Near Neighbour 
+Countries (e.g., Argentina, Japan, US, etc.). 
+9 Chapter 4.1.1.1.1 in the COST 094/21 Annotated Rules for COST Actions.  
+
+
+</pre><div class="page-break" data-page="Page 9"></div><pre class="text-content">
+ 
+ 
+ 9 
+The eligibility for reimbursement and the rules for participation depend on the status of country or specific 
+organisation the participant is affiliated to according to COST rules (see Annotated Rules for COST 
+Actions and Annex I – Level A : Country and Organisations table). 
+The procedures to participate in a COST Action may be found in the Annotated Rules for COST Actions. 
+1.3. COST Open Call and SESA processes 
+The COST Open Call is implemented via the Submission, Evaluation, Selection and Approval (SESA) 
+procedure. COST publishes the official announcement of the Open Call on Funding Documents &amp; 
+Guidelines with the Collection Date, the schedule, the description of the procedure and reference to the 
+evaluation criteria. Further information including an Open Call infographic is available on the Open Call 
+page on the COST website. 
+The proposal submission involves a one-stage submission process. Proposals may be submitted 
+through a dedicated secured online tool, e-COST (further details are provided in Chapter 2). 
+The proposal evaluation and selection follow a three-step process further described in Chapter 3 of 
+these guidelines: 
+Step 1 – Evaluation by Independent External Experts 
+Step 2 – Revision and Quality Check of Consensus Evaluation Reports by ad hoc Review Panels 
+Step 3 – Proposals’ Selection by COST Scientific Committee (SC) 
+The shortlist of proposals selected by the SC is submitted to the CSO for approval. Further details about 
+the three-step process and the approval are provided in Chapter 3. 
+Proposals are evaluated and selected on a competitive basis, taking into account the available funds 
+for the particular Open Call Collection. 
+COST reserves the right to involve observers to assess and provide feedback on the Evaluation and 
+Selection process. 
+ 
+2. PREPARING AND SUBMITTING A PROPOSAL FOR A 
+COST ACTION 
+2.1. Registration for submission 
+Proposals shall be submitted by a network of proposers, represented by only one Main Proposer 
+affiliated to an institution located in a COST Full or Cooperating Member, or affiliated to a European 
+RTD organisation or EU body, office or agency, as described in Table 1. 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 10"></div><pre class="text-content">
+ 
+ 
+ 10 
+Table 1: Eligibility to participate in the Network of Proposers by Affiliation 
+ 
+Proposers affiliated in 
+Eligible as 
+Main 
+Proposer 
+Secondary 
+Proposer 
+A legal entity in a COST Full/Cooperating member 
+ 
+ 
+A legal entity in a COST Partner Member 
+ 
+ 
+A legal entity in a Near Neighbour Country (NNC)  
+ 
+ 
+A legal entity in a Third State (IPC) 
+ 
+ 
+EU Institutions, Bodies, Offices and Agencies (EC/EU) 
+ 
+ 
+European RTD 
+ 
+ 
+International Organisations 
+ 
+ 
+ = Yes 
+ = No 
+Independent workers are ineligible as Main or Secondary Proposer. 
+To submit a proposal to the COST Open Call, the Main Proposer has first to create an e-COST profile, 
+an account (if not registered yet) in e-COST (https://e-services.cost.eu/). The Main Proposer will be able 
+to create, manage and submit their proposal before the Collection Date, by logging into e-COST and 
+selecting the e-COST Submission Tool, by clicking “Open Call”, “Proposals”, “Create New proposal” 
+(https://e-services.cost.eu/sesa/quickAccess). 
+The proposal has a draft status until it is submitted. Once it is submitted, it may still be revised as many 
+times as needed before the Collection Date. N.B.: when being revised, the proposal loses its 
+“submitted” status. To be evaluated, it needs to be submitted again before the Collection Date. 
+Proposals that are not submitted will not be evaluated. The draft proposal is saved in the system and 
+may be accessed and retrieved by the Main Proposer until the Collection Date. Please note that after 
+the Collection Date the proposal data are only available in read mode and none of its sections is 
+transferable to another Open Call collection. 
+In order to avoid possible congestions of the e-COST Submission Tool, it is highly recommended to 
+avoid submitting the proposal just before the Collection Date. 
+A submitted proposal may not be identical, not even in part, to another one submitted during the same 
+collection. Should this occur, only the proposal which is submitted first shall be considered.  
+In case of re-submission of a proposal, the latest template of the Technical Annex must be used (see 
+Chapter 2.2). 
+All enquiries concerning the Open Call can be addressed directly from the “contact us” link in e-COST 
+or by sending an e-mail to opencall@cost.eu. 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 11"></div><pre class="text-content">
+ 
+ 
+ 11 
+2.2. Eligibility criteria 
+Please pay particular attention to this Chapter and to each one of the following eligibility 
+criteria10.  
+COST Action proposals must: 
+• 
+represent a Network of Proposers from at least 7 different COST Full or Cooperating Members 
+among which at least 50% shall be from COST Inclusiveness Target Countries as detailed 
+in the Annex of this document; 
+• 
+respect fundamental ethical principles as described in the Annotated Rules for COST Actions 
+(COST 094/21) and in the European Code of Conduct for Research Integrity11, with particular 
+emphasis on originality of findings and ideas, and on peaceful purposes of the addressed S&amp;T 
+challenges; 
+• 
+respect word and page limits as described in Chapter 2.4.2 of this document. Do not change 
+in any way the compulsory format of the “Technical Annex” (font, margins, line spacing, etc.) 
+and make sure any added figures or tables are readable. Furthermore, do not provide links or 
+references to any additional information about the proposal (web link to pages describing the 
+proposal, audio-visual material, etc); 
+• 
+be written in English, the working language of the COST Association; 
+• 
+be anonymous, in order to comply with the double-blind principle of the evaluation: 
+proposals may not contain any direct or indirect reference to people and/or their 
+institutions participating in the Network of Proposers (Main or Secondary Proposers). 
+This means that names of proposers or their institutions should neither be explicitly 
+mentioned, nor be potentially identifiable through, e.g., links to web pages or through 
+references to their role and/or participation in existing or ended projects, grants, 
+networks. 
+Table 2: Examples of statements resulting in ineligibility and statements that are eligible. 
+Statements resulting in ineligibility 
+Eligible statements 
+“Several members of the proposers’ network have been 
+involved in previous FP7 projects, like ATTPS and 
+ADAPTIWALL, and 
+institutions/organisations/networks/COST Actions, such 
+as FP0901” (direct reference) 
+“The Action will seek contact with / reach out to / draw 
+on the expertise of / build on / … previous FP7 
+projects, like ATTPS and ADAPTIWALL, and 
+institutions/organisations/networks/COST Actions/…, 
+such as FP0901.”  
+“Among government-run public services we have the 
+Department of Health of Catalonia on board” (direct 
+reference) 
+&quot;The Network of Proposers already includes a / 
+several government-run public service(s).&quot; 
+Some of the Proposers’ names are emphasised in the 
+references section, e.g., “Smith A &amp; Jones B (2020), 
+Journal of Physics”, where A. Smith is a proposer 
+(direct reference) 
+No emphasis on proposers&#x27; publications in the 
+references section in any way, e.g., “Smith A &amp; Jones 
+B (2020), Journal of Physics” 
+“The Network of Proposers has already generated 
+some output1”, with in the footnote a link to a YouTube 
+video or webpage in which Secondary Proposers can 
+be identified (indirect reference, potentially identifiable) 
+“The Network of Proposers has already generated 
+some output”, without links to a YouTube video or 
+webpage in which Secondary Proposers can be 
+identified  
+The Technical Annex referring to the expertise of the 
+network members through specific publications (the 
+authors of these publications come from an institution 
+participating in the proposal: indirect reference) 
+The Technical Annex referring to the expertise of the 
+Network of Proposers, possibly also mentioning the 
+field, sub-field and expected contribution to the 
+respective WG(s) / activities but without mentioning 
+specific publications  
+ 
+10  See also COST 101/21 COST Action Proposal Submission, Evaluation Selection and Approval, Chapter 5. 
+11 European Code of Conduct for Research Integrity (https://allea.org/code-of-conduct/), Berlin, ALLEA – All European Academies  
+
+
+</pre><div class="page-break" data-page="Page 12"></div><pre class="text-content">
+ 
+ 
+ 12 
+Note on “References”: 
+o 
+In the “References” section of the proposal, you may quote proposers’ own publications, 
+provided that:  
+▪ 
+a) there is no emphasis (in the text e.g., in bold/italics or with links) that the 
+publication is authored by one or more of the proposers and  
+▪ 
+b) it is only one or a few of the references in the reference list provided. 
+ 
+Proposals may be declared ineligible at any stage of the SESA process, whenever a breach of the 
+above eligibility criteria is identified. Main Proposers will be informed by the COST Association of the 
+ineligibility of their proposal. 
+2.3. Network of Proposers: requirements 
+The Network of Proposers must fulfil the following requirements: 
+• 
+The Network of Proposers must include at least 7 different COST Full or Cooperating Members 
+i.e., countries (one country where the Main Proposer has its entity of affiliation located, plus at 
+least 6 other countries for the Secondary Proposers) amongst which at least 50% shall be from 
+COST Inclusiveness Target Countries as detailed in Annex I – Level A : Country and 
+Organisations Table and in the Annex of this document. There can be more than one proposer 
+from the same institution, as long as it is clearly beneficial for the proposed Action. Similarly, 
+there is no limit on the maximum number of proposers from the same country. 
+• 
+It is important to note that for the participation of the network of proposers, the ITC status of 
+researchers and innovators from EU Member States Outermost Regions will be counted as the 
+EU Member State they are linked to12 (see Annex I – Level A : Country and Organisations 
+Table). 
+• 
+The European Commission and EU bodies, offices or agencies, European RTD Organisations 
+and International Organisations do not count as COST Full or Cooperating Members, even if 
+they are geographically located in the territory of one of the COST Full or Cooperating Members. 
+No letter of intention is required from any of the institutions involved in the Network of Proposers 
+(Main or Secondary Proposers). 
+• 
+The Main Proposer acts as representative and contact point for the COST Association and is 
+also in charge of inviting and accepting Secondary Proposers to the Network. Please do not 
+underestimate the time necessary to complete this task as acceptance implies completion of e-
+COST profiles. 
+• 
+All proposers must have a registered and updated e-COST profile (https://e-services.cost.eu) 
+and specify their scientific expertise. Proposers should be aware that completing an e-COST 
+profile may require some time.  
+See also Table 1, summarising the eligibility for participation as Main and Secondary Proposers by 
+affiliation. 
+2.4. Proposal template 
+Proposals for COST Actions have the following sections. Each section is included in the generated view 
+(PDF) of the proposal depending on the role of the actor in the SESA process.  
+ 
+ 
+ 
+12 For example, researchers affiliated in a legal entity in e.g., Guadeloupe will be counted as France (non-ITC), researchers 
+affiliated in a legal entity in Azores will be counted as Portugal (ITC). 
+
+
+</pre><div class="page-break" data-page="Page 13"></div><pre class="text-content">
+ 
+ 
+ 13 
+Table 3: The table below shows who can view which part of the proposal PDF. 
+ 
+Network 
+of 
+Proposers 
+IEE 
+RPM 
+SC 
+CSO 
+COST Association 
+Administration 
+General Features 
+ 
+ 
+ 
+ 
+ 
+ 
+Technical Annex 
+ 
+ 
+ 
+ 
+ 
+ 
+References 
+ 
+ 
+ 
+ 
+ 
+ 
+COST Mission 
+and Policy 
+ 
+ 
+ 
+ 
+ 
+ 
+Network of 
+Proposers – 
+features 
+ 
+ 
+ 
+ 
+ 
+ 
+Network of 
+Proposer – details 
+ 
+ 
+ 
+ 
+ 
+ 
+ = Yes 
+ = No 
+All these sections are to be completed online with the exception of the Technical Annex. The instructions 
+related to each section are given below. 
+2.4.1. GENERAL FEATURES 
+This section shall be completed online in the e-COST Submission Tool. It contains mandatory fields that 
+shall be filled in by the Main Proposer. 
+Table 4: Sections of the proposal to be filled in online in the e-COST Submission Tool. 
+General Features 
+Open Call Collection identifier 
+• 
+Automatically assigned 
+Proposal reference 
+• 
+Automatically assigned 
+Title 
+• 
+Mandatory 
+• 
+Max. 12 words 
+• 
+The title of the proposal should describe at a glance what the proposal is about 
+Acronym 
+• 
+Mandatory 
+• 
+Only original acronyms should be adopted, i.e., not in use by any other public or private entity or 
+research group, even if they are part of the Network of Proposers 
+• 
+Acronyms may only contain letters and numbers. The use of symbols is not accepted, with the exception 
+of “-” and “@” 
+
+
+</pre><div class="page-break" data-page="Page 14"></div><pre class="text-content">
+ 
+ 
+ 14 
+Summary 
+• 
+Mandatory 
+• 
+Max. 250 words 
+• 
+Short abstract used to illustrate the challenge that the Action is proposing to address. A revised version 
+of the text of this section will be used as a summary of the Action to be published on the COST website, 
+should the Action be approved. 
+Be brief, clear and “to the point”: illustrate your ideas in a concise manner and include what is the main 
+S&amp;T and/or societal Challenge the proposed Action aims to address. 
+Key expertise needed for evaluation 
+• 
+Mandatory 
+• 
+Minimum 1 key expertise and maximum 5 must be indicated. Multiple choice selection of sub-fields to 
+be chosen from six main S&amp;T fields: natural sciences, engineering and technology, medical and health 
+sciences, agricultural sciences, social sciences and humanities. 
+Please be aware that the Independent External Experts will be selected on the basis of the key 
+expertise(s) you provide in this section. 
+Keywords 
+• 
+Mandatory 
+• 
+Minimum 3 and maximum 5 keywords 
+• 
+Each keyword not exceeding 60 characters 
+• 
+These should exclusively refer to the S&amp;T content of the proposal, including techniques or 
+methodologies used or developed and/or infrastructures involved. Keywords are separated by commas. 
+Keywords may be composed by multiple words. Generic keywords, such as “interdisciplinary”, “research 
+coordination”, “science” or “networking”, as well as their combinations, should be avoided as they bring 
+no information on the specific expertise needed to evaluate the proposal. 
+2.4.2. TECHNICAL ANNEX 
+The Technical Annex is composed by the following sections: 
+• 
+Section 1. S&amp;T EXCELLENCE 
+• 
+Section 2. NETWORKING EXCELLENCE 
+• 
+Section 3. IMPACT 
+• 
+Section 4. IMPLEMENTATION 
+The Technical Annex template is available at http://www.cost.eu/technical_annex_template to prepare 
+a proposal. Follow the instructions provided and pay particular attention to the following eligibility criteria 
+(see Chapter 2.2):  
+- 
+The length of the Technical Annex must not exceed fifteen (15) pages. The first page with the 
+instructions has to be deleted when saving the proposal to PDF. 
+- 
+The template provided must not be modified and the formatting must be kept (COST 
+standard style: Arial font, size 10, line spacing 1 – choose “Normal, Text” style option from the 
+ribbon styles gallery). When figures or tables are added, they must be readable. 
+- 
+The anonymity criterion must be respected throughout the whole proposal. 
+The instructions to complete each section are listed in Table 5.  
+  
+ 
+
+
+</pre><div class="page-break" data-page="Page 15"></div><pre class="text-content">
+ 
+ 
+ 15 
+Table 5: Sections of the Technical Annex (left hand side) and completion explanation (right hand side). 
+Section 1 – S&amp;T EXCELLENCE 
+ 
+1.1 SOUNDNESS OF THE 
+CHALLENGE 
+Key concept: Challenge.  
+These are the research questions addressed by a COST Action, targeting 
+S&amp;T and/or socio-economic problems. 
+In COST Actions, researchers and innovators from different places and 
+backgrounds are expected to work as a team towards the resolution of a 
+S&amp;T challenge. To respond to the challenge, the network needs not only 
+coordination in working as a team, but also in gathering a critical mass of 
+participants (researchers and innovators) around the science and 
+technology topic in question. 
+1.1.1 DESCRIPTION OF THE 
+STATE OF THE ART 
+Demonstrate a comprehensive command of the state of the art in the field. 
+1.1.2 DESCRIPTION OF THE 
+CHALLENGE (MAIN AIM) 
+Describe the research question(s) your proposal addresses. Explain the 
+relevance and timeliness of the identified challenge(s).  
+1.2 PROGRESS BEYOND THE 
+STATE OF THE ART 
+Describe how the addressing of the identified challenge is expected to 
+advance the state of the art.  
+1.2.1 APPROACH TO THE 
+CHALLENGE AND PROGRESS 
+BEYOND THE STATE OF THE 
+ART 
+Describe how the challenge will be approached and emphasise the 
+innovativeness of this approach, and how it will advance the state of the 
+art in the field. 
+1.2.2 OBJECTIVES 
+Describe clear and ambitious objectives clearly showing their relevance to 
+the identified challenge. Please formulate the objectives in a “SMART” 
+(Specific, Measurable, Achievable, Relevant and Timely) way. Objectives 
+are not COST Action networking activities (e.g., meetings, training 
+schools), milestones or deliverables. Indeed, networking activities are 
+means to support the achievement of the Action objectives. 
+1.2.2.1 Research Coordination 
+Objectives 
+These objectives entail the distribution of tasks, sharing of knowledge and 
+know-how, and the creation of synergies among Action Participants to 
+achieve specific outputs. Achieving these objectives turns COST Actions 
+from initially scattered groups into one transnational team and leverages 
+the existing funded research. 
+Examples of Research Coordination Objectives: 
+• 
+development of a common understanding/definition of the 
+subject matter; 
+• 
+coordination of information seeking, identification, collection 
+and/or data curation; 
+• 
+coordination of experimentation or testing; 
+• 
+comparison and/or performance assessment of theory/ model/ 
+scenario/ 
+projection/ 
+simulation/ 
+narrative/ 
+methodology/ 
+technology/ technique; 
+• 
+development of knowledge needing international coordination: 
+new or improved theory/ model/scenario/ projection/ simulation/ 
+narrative/ methodology/ technology/ technique; 
+• 
+achievement of a specific tangible output that cannot be 
+achieved without international coordination (e.g., due to practical 
+issues such as database availability, language barriers, 
+availability of infrastructure or know-how, etc.); 
+
+
+</pre><div class="page-break" data-page="Page 16"></div><pre class="text-content">
+ 
+ 
+ 16 
+• 
+input to stakeholders (e.g., standardization body, policy-makers, 
+regulators, users) -excluding commercial applications; 
+• 
+input for future market applications (including cooperation with 
+private enterprises); 
+• 
+dissemination of research results to the general public or to 
+stakeholders. 
+1.2.2.2 Capacity-building 
+Objectives 
+Achieving these objectives entails building critical mass to drive scientific 
+progress, thereby strengthening the European Research Area. They can 
+be achieved by the delivery of specific outputs and/or through network 
+features or types and levels of participation. 
+Examples of Capacity-building Objectives: 
+• 
+fostering knowledge exchange and the development of a joint 
+research agenda around a topic of scientific and/or socio-
+economic relevance; 
+• 
+fostering knowledge exchange and the development of a joint 
+research agenda around a new or emerging field of research; 
+• 
+bridging separate fields of science/disciplines to achieve 
+breakthroughs that requires an interdisciplinary approach; 
+• 
+acting as a stakeholder platform or trans-national practice 
+community (by area of socio-economic application and/or market 
+sector); 
+• 
+involving specific target groups (e.g., newly established research 
+groups, Young Researchers and Innovators, the under-
+represented gender, teams from countries/regions with less 
+capacity in the field of the Action). 
+Section 2 – NETWORKING 
+EXCELLENCE 
+ 
+2.1 ADDED VALUE OF 
+NETWORKING IN S&amp;T 
+EXCELLENCE 
+ 
+2.1.1 ADDED VALUE IN 
+RELATION TO EXISTING 
+EFFORTS AT EUROPEAN 
+AND/OR INTERNATIONAL LEVEL 
+Describe the added value of the proposed COST Action in tackling the 
+challenge in relation to former and existing efforts (research projects, other 
+networks, etc.) at the European and/or international level. 
+2.2 ADDED VALUE OF 
+NETWORKING IN IMPACT 
+ 
+2.2.1 SECURING THE CRITICAL 
+MASS AND EXPERTISE AND 
+GEOGRAPHICAL BALANCE 
+WITHIN THE COST MEMBERS 
+AND BEYOND 
+Demonstrate that the proposed network contains the critical mass and 
+expertise for achieving the objectives and thus addressing the challenge; 
+and/ or present a credible plan for securing the critical mass and expertise 
+for achieving the objectives.  
+Explain why your Network of Proposers can address the identified 
+challenge and objectives of the proposed COST Action: make a case for 
+the critical mass, expertise and geographical distribution needed for 
+addressing the challenge and the objectives, both in the COST Members 
+and, if applicable, NNC, Third States (IPC) and Specific Organisations.  
+If your Network misses any of the critical mass, expertise or geographical 
+distribution needed, present a clear plan for overcoming the identified 
+
+
+</pre><div class="page-break" data-page="Page 17"></div><pre class="text-content">
+ 
+ 
+ 17 
+gaps. COST Policy should not be addressed in this section. See 
+Chapter 2.4.4. 
+2.2.2 INVOLVEMENT OF 
+STAKEHOLDERS  
+Identify the most relevant stakeholders and present a clear plan to involve 
+them in the Action. 
+Section 3 – IMPACT 
+Impact is the effect or influence on short-term to long-term scientific, 
+technological, and/or socio-economic changes produced by a COST 
+Action. 
+3.1 IMPACT TO SCIENCE, 
+SOCIETY AND 
+COMPETITIVENESS, AND 
+POTENTIAL FOR 
+INNOVATION/BREAKTHROUGHS 
+Key concept: Innovation/Breakthrough.  
+Through the Actions, COST aims notably at enabling breakthrough 
+scientific developments leading to new concepts, services, processes and 
+products and thereby contributing to strengthening Europe’s research and 
+innovation capacities. 
+These are the direct results stemming from the COST Action activities. 
+Outputs can be, among other things, codified knowledge, tacit knowledge, 
+technology, and societal applications: 
+• 
+Codified knowledge: Knowledge expressed through language 
+(including mathematics, music etc.) and thus capable of being 
+stored on a physical support (i.e., transferrable knowledge) – 
+e.g., publications; patents, websites; 
+• 
+Tacit knowledge: Not formalised knowledge, resulting from the 
+participation in the COST Action networking activities and the 
+social interaction among its members that can also be re-
+invested in other contexts; 
+• 
+Technology: Knowledge embedded in artefacts either ready to 
+use or not, such as machinery or software, new materials or 
+modified organisms –e.g., a prototype, a database; 
+• 
+Societal applications: Use of any kind of knowledge (codified, 
+tacit, technology) to perform specific tasks; 
+• 
+Societal applications require the active participation of 
+stakeholders (such as business enterprises, practitioners, 
+regulators, users) within the lifetime of an Action. If stakeholders 
+are not involved, then societal applications may only be 
+considered as possible future impacts resulting from the 
+envisaged outputs, rather than direct Action outputs (e.g., use of 
+a methodology developed by the Action by a community of 
+practitioners not participating to the Action). 
+When choosing a COST Action as an instrument to tackle the S&amp;T 
+Challenge, proposers must have a clear vision on the innovation potential 
+of their endeavour. 
+3.1.1. SCIENTIFIC, 
+TECHNOLOGICAL, AND/OR 
+SOCIOECONOMIC IMPACTS 
+(INCLUDING POTENTIAL 
+INNOVATIONS AND/OR 
+BREAKTHROUGHS)  
+Describe in a clear way the relevant scientific and/or technological and/or 
+socio-economic impact envisaged by the proposal in the short- and long-
+term perspective. Clearly identify relevant and realistic impacts for 
+science, society and/or competitiveness, including potential scientific, 
+technological and/or socioeconomic innovations and/or breakthroughs. 
+3.2 MEASURES TO MAXIMISE 
+IMPACT 
+ 
+
+
+</pre><div class="page-break" data-page="Page 18"></div><pre class="text-content">
+ 
+ 
+ 18 
+3.2.1. KNOWLEDGE CREATION, 
+TRANSFER OF KNOWLEDGE 
+AND CAREER DEVELOPMENT 
+Clearly describe the contribution that the proposed Action would make to 
+knowledge creation, transfer of knowledge and career development. 
+3.2.2. PLAN FOR 
+DISSEMINATION AND/OR 
+EXPLOITATION AND DIALOGUE 
+WITH THE GENERAL PUBLIC OR 
+POLICY 
+Present a clear and attainable plan for dissemination and/or exploitation 
+of results, including IPR, if relevant13. Describe a plan for dissemination 
+and/or exploitation of results that is clear and attainable and contributes 
+to the dialogue between science and the general public and/or policy. 
+Section 4 – IMPLEMENTATION 
+ 
+4.1 COHERENCE AND 
+EFFECTIVENESS OF THE WORK 
+PLAN 
+Please note that you do not need to provide a budget breakdown at this 
+stage, since the budget is allocated to the approved Actions by the COST 
+Association on the basis of specific parameters and subject to budget 
+availability (see Chapter 1.2). 
+4.1.1 DESCRIPTION OF 
+WORKING GROUPS, TASKS 
+AND ACTIVITIES 
+Provide a detailed description of the different Working Groups, tasks and 
+activities, ensuring that these are appropriate to ensure the achievement 
+of the objectives of the proposed Action. There is no need to describe the 
+standard Action management structure (e.g., each COST Action is 
+organised with a Management Committee led by a Chair). Specific 
+structure including leadership roles which are functional to the needs of 
+the proposed Action shall be described in this section.  
+4.1.2. DESCRIPTION OF 
+DELIVERABLES AND 
+TIMEFRAME 
+Describe the proposed Action’s major deliverables and timeframe, 
+ensuring that these are appropriate to ensure the achievement of the 
+objectives of the proposed Action.  
+Deliverables are distinct, expected and tangible outputs of the Action, 
+meaningful in terms of the Action’s overall objectives, such as: reports, 
+documents, technical diagrams, scientific and technical papers and 
+contributions, content for training schools, input to standards, best 
+practices, white papers, etc. Note that COST Action deliverables are used 
+to measure the Action’s progress and success on Action objectives.  
+Deliverables are not COST Action networking activities (e.g., meetings, 
+training schools, etc.).  
+4.1.3 RISK ANALYSIS AND 
+CONTINGENCY PLANS 
+Identify the main risks related to the Work Plan and present a credible 
+contingency plan which is appropriate to ensure the achievement of the 
+objectives of the proposed Action. 
+4.1.4 GANTT DIAGRAM 
+Provide a graphical illustration of the time schedule for the different 
+activities, tasks, milestones and deliverables according to the 
+management structure of the proposed Action. 
+Milestones are control points in the Action that help to map progress. They 
+are needed at intermediary stages so that, if problems have arisen, 
+corrective measures can be taken in a timely way. 
+ 
+ 
+ 
+13 See COST 094/21 Annotated Rules for COST Actions. 
+
+
+</pre><div class="page-break" data-page="Page 19"></div><pre class="text-content">
+ 
+ 
+ 19 
+2.4.3. REFERENCES 
+Please complete this section online. 
+References 
+• 
+Non mandatory 
+• 
+Max. 500 words 
+• 
+Free text section to list relevant references on the topic of the proposal further demonstrating your 
+awareness on the state of the art of the given field(s). The list of references is displayed to the 
+evaluators, but not assessed during the evaluation. 
+2.4.4. COST MISSION AND POLICY 
+Please complete this section online. Summarise how the proposal addresses COST Mission and Policy. 
+Please refer to Chapter 1.1 of this document for further details on the COST Mission and Policy.  
+N.B.: The content of this section will be assessed at the selection phase by the Scientific 
+Committee. 
+COST Mission and Policy  
+• 
+Mandatory 
+• 
+Max. 1000 words 
+• 
+This is a free text section to explain how the Action proposal will address the COST Policy with regard 
+to: 
+1. 
+ensuring a geographical balance, and involving participants from Inclusiveness Target Countries 
+(ITC);  
+2. 
+Young Researchers and Innovators (YRI); 
+3. 
+addressing Gender balance14. 
+• 
+The proposal should describe the plans (what and how) for each of these three specific targets.  
+2.4.5. NETWORK OF PROPOSERS 
+Please complete this section online. For further details please check Chapter 2.3. 
+On the “Network” section of the proposal, the Main Proposer invites Secondary Proposers by filling in 
+the following mandatory fields:  
+• 
+first name,  
+• 
+last name and  
+• 
+e-mail address.  
+By clicking on the “envelope” icon, an automatic email is sent to the candidate Secondary Proposer. 
+The Secondary Proposer accepts the invitation by following the link communicated in the invitation e-
+mail. To do so, they must have (or set up) an e-COST profile.  
+N.B.: the email address used in the invitation email must be registered in the Secondary 
+Proposers e-COST profile. 
+ 
+14 Applicants may find it useful to consult the European Commission website on gender equality in research and innovation 
+
+
+</pre><div class="page-break" data-page="Page 20"></div><pre class="text-content">
+ 
+ 
+ 20 
+In case the Secondary Proposer is affiliated to a legal entity in a COST Full Member or COST 
+Cooperating Member, they can express their intention to be considered by the COST National 
+Coordinator (CNC) to be nominated to the Action’s Management Committee (MC).  
+Based on the e-COST profiles of the Main and Secondary Proposers, the following information on the 
+Network of Proposers, automatically extracted and aggregated, will be displayed to the evaluators: 
+Network of Proposers - Features  
+• 
+COST Inclusiveness Target Countries (%) 
+• 
+Number of Proposers 
+• 
+Geographic Distribution of Proposers 
+• 
+Gender Distribution of Proposers (% M/F) 
+• 
+Number of Young Researchers and Innovators 
+• 
+Core Expertise of proposers: distribution by sub-field of Science 
+• 
+Institutional distribution of Network of Proposers 
+• 
+COST Full Members (number and list in alphabetical order) 
+• 
+COST Cooperating Members  
+• 
+COST Partner Member 
+• 
+NNCs (number and list in alphabetical order) 
+• 
+IPCs (number and list in alphabetical order) 
+• 
+European RTD Organisations 
+• 
+European Commission, EU Bodies, Offices and Agencies 
+• 
+International Organisations 
+ 
+2.5. Writing style guide 
+The COST Association strongly recommends complying with the following requirements when drafting 
+a proposal: 
+• 
+check language and spelling; 
+• 
+present the text in a logical way, avoiding unnecessary repetition between the different sections; 
+• 
+do not use footnotes; 
+• 
+use of capital letters for COST-specific and Action-related expressions. A non-exhaustive list: 
+COST Action, Action Chair, Action Management Committee, Working Group, Short-Term 
+Scientific Mission (STSM), Training School, Core Group; 
+• 
+explain all acronyms, including those commonly used in the Framework Programme context; 
+• 
+use of “Europe” or “COST Member Countries” when referring to the overall geographical scope 
+of COST. “European Union” or “EU Member States” should only be used to refer to the EU as 
+a player (“EU legislation”, “EU programmes”, “EU policies” etc.) or when only EU Member 
+State(s) need to be explicitly mentioned, excluding COST Members that are no Member States 
+of the EU; 
+• 
+use of “framework” or “scheme” when referring to COST (COST is an intergovernmental 
+framework, not an “EU instrument”, although it is funded by the EU Framework Programme); 
+• 
+avoid pronouns such as “I”, “we”; rather use “the Action”; 
+• 
+avoid expressions such as “planned” or “proposed” when referring to the Action; rather use 
+“aims at”, “will”, etc.; 
+• 
+avoid overstatements regarding the potential impact of the Action. 
+ 
+
+
+</pre><div class="page-break" data-page="Page 21"></div><pre class="text-content">
+ 
+ 
+ 21 
+3. HOW 
+COST 
+PROPOSALS 
+ARE 
+EVALUATED, 
+SELECTED AND APPROVED – CORE PRINCIPLES 
+AND CONFLICT OF INTEREST RULES 
+The Open Call Evaluation, Selection and Approval procedure fulfils three core principles: excellence, 
+fairness and transparency. COST strives to avoid any Conflict of Interest (CoI)15 and all those involved 
+in the SESA process must commit to confidentiality. 
+3.1. Conflict of Interest 
+COST expects an ethical behaviour from all the participants in COST activities. 
+The Conflict of Interest rules apply to all those concerned by the SESA process (CNCs, Independent 
+External Experts, Review Panel Members, Scientific Committee Members, and CSO members). Each 
+individual involved in the evaluation, selection and approval of proposals shall have only one role in the 
+evaluation, selection and approval of a COST Action and may not take any benefit from any Action 
+approved under that specific Collection. In particular: 
+• 
+Independent External Experts having evaluated a proposal may not participate in the Action 
+deriving from that proposal; 
+• 
+Review Panel Members may not participate in any Action approved following the evaluation 
+process in which they were involved in that position; 
+• 
+CNCs and Scientific Committee Members may not join any Action in any way during their 
+mandate;  
+• 
+CSO members may not join any Action in any way during their mandate.  
+A Conflict of Interest can be real, potential or perceived. 
+1. Cases of Real Conflict of Interest 
+The person involved in the evaluation or selection procedures (Independent External Expert, Review 
+Panel Member, and Scientific Committee Member): 
+• 
+has been involved in the preparation of the proposal;  
+• 
+has been involved in any previous evaluation step in the same Collection.  
+2. Cases of Potential Conflict of Interest 
+The person involved in the evaluation or selection procedures (Independent External Expert, Review 
+Panel Member, and Scientific Committee Member): 
+• 
+was aware of the preparation of the proposal;  
+• 
+has a professional or personal relationship with a proposer; 
+• 
+stands to benefit directly or indirectly if the proposal shall be accepted or rejected. 
+3. Cases of Perceived Conflict of Interest 
+The person involved in the evaluation or selection procedures (Independent External Expert, Review 
+Panel Member, Scientific Committee Member): 
+• 
+feels for any reason unable to provide an impartial review of the proposal. 
+ 
+15 See COST 101/21 COST Action Proposal Submission, Evaluation, Selection and Approval (SESA) – (Level B) 
+
+
+</pre><div class="page-break" data-page="Page 22"></div><pre class="text-content">
+ 
+ 
+ 22 
+Table 6: Summary of the cases of Conflict of Interest (CoI), marked with 
+. 
+Steps 
+Main Proposer 
+and Network of 
+Proposers 
+Independent 
+External 
+Expert 
+ad hoc Review 
+Panel 
+Member 
+Scientific 
+Committee 
+Member 
+Step 1 
+Evaluation (Independent 
+External Experts) 
+ 
+ 
+ 
+ 
+Step 2 Revision 
+(Review Panel) 
+ 
+ 
+ 
+ 
+Step 3 Selection 
+(COST Scientific Committee) 
+ 
+ 
+ 
+ 
+Final approval (CSO) 
+ 
+ 
+ 
+ 
+ 
+1. If the Conflict of Interest is confirmed/identified before the evaluation starts: 
+• 
+the evaluator may not participate in the evaluation/selection procedure in the ongoing 
+collection and shall be replaced.  
+ 
+2. If the Conflict of Interest is confirmed/identified during the evaluation:  
+• 
+the evaluator shall stop evaluating/selecting in the ongoing collection and shall be 
+replaced;  
+• 
+any comments and marks already given by the evaluator shall be discarded. 
+ 
+3. If the Conflict of Interest is confirmed/identified after the evaluation has taken place, the COST 
+Association shall examine: 
+• 
+the potential impact and consequences of the Conflict of Interest and take appropriate 
+measures. 
+ 
+The COST Association has the right to take the lead in any resolution process of a CoI situation at any 
+moment of the evaluation and selection. 
+All cases of CoI are recorded by the COST Association. All those related to nationally nominated actors 
+(Review Panel Members and COST Scientific Committee Members) are reported to the COST National 
+Coordinator. 
+Declaration of Conflict of Interest 
+Any person involved in the evaluation or selection procedures (Independent External Expert, Review 
+Panel Member, and Scientific Committee Member) shall sign a declaration stating/accepting he/she: 
+• 
+is not aware of any conflict of interest regarding the proposal(s) to be evaluated/selected; 
+• 
+shall inform immediately the COST Association of any conflict of interest discovered during the 
+evaluation process; 
+• 
+shall maintain the confidentiality of the procedure. 
+Failure to declare the CoI may have the following consequences: 
+• 
+notification to the COST Association Director; 
+• 
+notification to the respective CNC for Review Panel Members; 
+• 
+notification to the CSO for Scientific Committee Members; 
+• 
+removal from the COST Expert Database. 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 23"></div><pre class="text-content">
+ 
+ 
+ 23 
+3.2. Confidentiality16  
+COST expects that each person involved in the SESA process (Independent External Expert, Review 
+Panel Member, Scientific Committee Member, CNC and CSO member): 
+• 
+treats confidentially any information, including personal data of any natural person concerned 
+by or involved in the submission, evaluation, selection and approval of the proposals process, 
+and document, in any form (i.e., paper or electronic), disclosed in writing or orally in relation to 
+the performance of the evaluation; 
+• 
+processes any confidential information or documents as described above only for the purposes 
+and for the duration of the submission, evaluation, selection and approval of proposals process;  
+• 
+does not, either directly or indirectly, disclose any confidential information or document related 
+to proposals or applicants, without prior written approval of the COST Association; 
+• 
+does not discuss any proposal with others, including other evaluators or staff not directly 
+involved in evaluating the proposal, except during formal discussions at dedicated ad hoc 
+Review Panels and Scientific Committee meetings; 
+• 
+does not disclose any detail of the evaluation process and its outcomes, nor of any proposal 
+submitted, for any purpose other than fulfilling their tasks as evaluator; 
+• 
+does not disclose the names of other experts participating in the evaluation; 
+• 
+does not communicate with proposers on any proposal during or after the evaluation until the 
+approval of CSO. 
+Under no circumstances should the proposers contact any of the actors involved in the SESA process 
+regarding their proposal. Any attempt to do so may lead to immediate exclusion of the proposal from 
+the process. 
+3.3. Proposal Evaluation, Selection and Approval 
+As outlined in Chapter 1.3, the proposal Evaluation, Selection and Approval procedure is divided into 
+three steps, which are described below. 
+3.3.1. STEP 1 – PROPOSAL EVALUATION BY INDEPENDENT EXTERNAL 
+EXPERTS: 
+Independent External Experts carry out the remote peer-review evaluation. They are identified and 
+assigned to proposals on the basis of their scientific and technological expertise necessary for the 
+evaluation of proposals, taking into account the Research Areas and keywords selected by the network 
+of proposers.  
+This step uses double-blind peer review, which means the identity of both Independent External Experts 
+and proposers is kept confidential. Each proposal is evaluated by a minimum of three Independent 
+External Experts. The evaluation is performed remotely, and each External Expert submits an Individual 
+Evaluation Report for each proposal they evaluate. One of the experts is appointed Rapporteur, with 
+the responsibility to coordinate the preparation and submission of the Consensus Evaluation Report. 
+Following the submission of the Individual Evaluation Reports, a consensus is sought among the 
+External Experts (remotely) and a Consensus Evaluation Report is drafted. Consensus shall not be 
+imposed, and External Experts may maintain their views on the proposal. In the cases where no 
+consensus is reached, the three Individual Evaluation Reports will be sent to the ad hoc Review Panel 
+which is in charge of the quality check and resolution of discrepancies. 
+The Individual Evaluation Reports are structured as follows: 
+• 
+eligibility criteria 
+ 
+16See COST 101/21 COST Action Proposal Submission, Evaluation, Selection and Approval (SESA) – (Level B) 
+
+
+</pre><div class="page-break" data-page="Page 24"></div><pre class="text-content">
+ 
+ 
+ 24 
+• 
+evaluation criteria 
+o 
+S&amp;T Excellence 
+o 
+Networking Excellence 
+o 
+Impact 
+o 
+Implementation. 
+The Independent External Experts check the following eligibility criteria (see Chapter 2.2 of this 
+document): 
+• 
+Length of the Technical Annex; 
+• 
+Anonymity; 
+• 
+Respect of fundamental ethical principles with special emphasis on peaceful purposes; 
+• 
+Language (English). 
+The table below presents the evaluation criteria, as well as the respective maximum marks at this stage 
+of the procedure. The overall threshold for access to the selection stage is also indicated. 
+Table 7: Evaluation criteria and maximum mark per criterion 
+S&amp;T EXCELLENCE 
+NETWORKING EXCELLENCE 
+IMPACT 
+IMPLEMENTATION 
+Total mark for the section  
+= 15 points 
+Total mark for the section  
+= 15 points 
+Total mark for the 
+section  
+= 15 points 
+Total mark for the 
+section  
+= 5 points 
+TOTAL MARKS AWARDED = 0 – 50 points 
+OVERALL THRESHOLD = 34 points 
+ 
+Proposals failing to achieve the overall threshold will not be funded. 
+Table 8 shows the specific questions addressed by the Independent External Experts on each of the 
+criteria. 
+Table 8: Evaluation questions addressed by the Independent External Experts 
+S&amp;T EXCELLENCE CRITERIA 
+Soundness of the Challenge 
+Q1: Does the proposal demonstrate a comprehensive command of the state of the art in the field(s) and 
+present a relevant and timely challenge? 
+Progress beyond the state-of-the-art. 
+Q2: Does the proposal describe an innovative approach to the challenge that advances the state of the art 
+in the field(s)? 
+Q3: Are the objectives presented relevant to the challenge, clear and ambitious? 
+NETWORKING EXCELLENCE CRITERIA 
+Added value of networking in S&amp;T Excellence  
+Q4: Does networking bring added value in tackling the challenge in relation to existing efforts at the European 
+and/or international level? 
+
+
+</pre><div class="page-break" data-page="Page 25"></div><pre class="text-content">
+ 
+ 
+ 25 
+Added value of networking in Impact  
+Q5: Does the proposed network contain, or present a credible plan for securing, the critical mass and range 
+of expertise for achieving the objectives and thus addressing the challenge? 
+Q6: Does the proposal identify the most relevant stakeholders and present a clear plan to involve them as 
+Action participants? 
+IMPACT CRITERIA 
+Impact to science, society and competitiveness, and potential for innovation/breakthroughs 
+Q7: Does the proposal clearly identify relevant and realistic impacts for science, society and/or 
+competitiveness (including potential innovations and/or breakthroughs)? 
+Measures to maximise impact  
+Q8: Does the proposed networking clearly contribute to knowledge creation, transfer of knowledge and 
+career development? 
+Q9: Is the plan for dissemination and/or exploitation of results clear and attainable and does it contribute to 
+the dialogue between science and the general public or policy? 
+IMPLEMENTATION CRITERION 
+Coherence and effectiveness of the work plan 
+Q10: Is the work plan (WGs, tasks, activities, timeframe, deliverables and risk analysis) appropriate to ensure 
+the achievement of the objectives? 
+3.3.2. STEP 2 – REVISION AND QUALITY CHECK BY AD HOC REVIEW PANEL 
+Ad hoc Review Panels are set up after each Collection Date, based on the number of received proposals 
+and on the topics covered. 
+The members of the ad hoc Review Panels are appointed by the COST Association from a pool of active 
+researchers and innovators who have been nominated by the CNCs. Step 2 again uses double-blind 
+peer review, which means that the identity of both Review Panel Members and proposers is kept 
+confidential. 
+The ad hoc Review Panels shall: 
+a) ensure the quality of the Consensus Evaluation Reports and marks submitted in Step 1; 
+b) resolve the differences in opinions among the Independent External Experts, using one of the 
+following options: 
+• 
+choose any mark within the range of marks awarded by the individual Independent External 
+Experts or the non-agreed consensus mark of the Rapporteur as the review consensus marks, 
+produce and validate the Consensus Evaluation Report; 
+• 
+in exceptional cases, ask for one or two additional Independent External Experts to remotely 
+evaluate the proposal. In this case the ad hoc Review Panel shall make use of the additional 
+evaluation reports to prepare the validated Consensus Evaluation Report and marks; 
+c) rank the proposals above the overall threshold; 
+d) strive for consistency of marking across the proposals within and across the Review Panels; 
+e) identify those proposals which address emerging issues or potentially important future 
+developments; 
+f) prepare the report for the Scientific Committee, reflecting the process and the decisions of Step 2. 
+
+
+</pre><div class="page-break" data-page="Page 26"></div><pre class="text-content">
+ 
+ 
+ 26 
+3.3.3. STEP 3 – PROPOSALS SELECTION BY COST SCIENTIFIC COMMITTEE 
+The Scientific Committee is composed of high-level experts (one from each COST Full Member and 
+one from the Cooperating Member) with internationally renowned expertise and recognised merit in their 
+professional career (science, technology, research management, innovation, industry or other). 
+Scientific Committee Members are appointed by, and report to, the CSO. 
+The Scientific Committee guarantees that the present rules and procedures are observed and 
+documented throughout all the SESA process. Specifically, it is in charge of: 
+• 
+establishing the shortlist of proposals that shall be submitted to the CSO for approval by  
+o 
+adopting from the ranked shortlist of proposals provided by the Review panels a list of 
+retained proposals, which include all proposals with marks: 
+▪ 
+above the cut-off mark* (A); 
+▪ 
+equal to the cut-off mark*, one point less than the cut-off mark* or two points 
+less than the cut-off mark* (B); and 
+*the cut-off mark is the number of points of the Nth proposal in the ranked list (sorted 
+in decreasing order according to number of points), with N being the number of 
+proposals to be funded according to available funds)  
+ 
+o 
+selecting from the list of retained proposals the shortlist of proposals for approval by the 
+CSO: 
+▪ 
+the proposals in A (above the cut-off mark*) automatically enter the list of 
+proposals recommended for funding;  
+▪ 
+among the proposals in B (equal to the cut-off mark*, one point less than the 
+cut-off mark* or two points less than the cut-off mark*) the Scientific Committee 
+completes the list of proposals recommended for funding with those that, 
+besides being highly marked with respect to S&amp;T Excellence/Networking 
+Excellence / Impact / Implementation (i.e. the mark established by the Review 
+Panels), best respond to COST Mission and Policy, based on the description 
+in the proposal on COST Mission and Policy, as described in Chapter 2.4.4 
+COST Mission and Policy of the present Guidelines. In order to achieve that, 
+the Scientific Committee applies a pass / no-pass mark to all the proposals in B 
+based on the criteria 2.b-2.d that are described in Chapter 7 of document COST 
+101/21 “COST Action Proposal Submission, Evaluation, Selection and 
+Approval”. Each Main Proposer in proposals under B receives a notification 
+that their proposal has been grouped among the proposals in B and that the 
+final mark consists of the mark established by the Review Panels and the 
+pass / no-pass mark established by the Scientific Committee. A separate 
+comment on the pass / no-pass mark is provided by the Scientific Committee 
+to each Main Proposer in proposals under B, additionally to the Consensus 
+Evaluation Report.  
+• 
+deciding on eligibility of proposals that have been identified by the COST Administration, the 
+External Experts or the Review Panels as potentially breaching the COST principles; 
+For all proposals recommended for funding the Scientific Committee adopts a Recommendation on 
+COST Mission and Policy. 
+3.3.4. PROPOSAL APPROVAL BY THE COMMITTEE OF SENIOR OFFICIALS 
+(CSO) 
+The final decision on approval and funding for new COST Actions is taken by the CSO, on the basis of 
+the shortlist submitted by the Scientific Committee taking into account the available budget. The CSO 
+may decide not to approve Actions selected through the procedure above described. 
+
+
+</pre><div class="page-break" data-page="Page 27"></div><pre class="text-content">
+ 
+ 
+ 27 
+The text of a successful proposal approved by the CSO will form the basis of the Action’s Memorandum 
+of Understanding (MoU). The procedure for starting a COST Action is described in the Annotated Rules 
+for COST Actions. 
+3.4. Feedback to proposers 
+The Consensus Evaluation Reports, the marks of the evaluation and the results of the assessments 
+made by the SC under Chapter 3.3.3 are made available to all proposers via e-COST. The decision on 
+the approved proposals is communicated after the CSO decision to the Main Proposers. 
+3.5. Redress Procedure 
+In order to contribute to the fairness and transparency of the SESA process, the COST Association has 
+established a Redress Procedure. The Main Proposer has the possibility to submit a request for redress 
+within 15 calendar days after being notified of the proposal non-eligibility and/or following the 
+communication of the result of the evaluation. 
+Redress is allowed only in case of alleged procedural shortcomings and factual errors, i.e., whenever: 
+• 
+the Network of Proposers considers that the evaluation has not been carried out in accordance 
+with the SESA process procedure; 
+• 
+the Network of Proposers deems that the Consensus Evaluation Report bears factual errors. 
+Requests for redress dealing with the scientific judgment by the Independent External Experts, 
+by the ad hoc Review Panels or Scientific Committee members are not admissible. 
+The proposal Selection by the COST Scientific Committee (Step 3, Chapter 3.3.3) shall not be open to 
+redress.  
+The redress procedure may be initiated only by email sent to redress@cost.eu. In the email, the Main 
+Proposer shall: 
+• 
+indicate the proposal number and title; 
+• 
+provide a detailed description of the alleged procedural shortcoming(s) and /or factual error(s). 
+The outcome of the redress procedure is definitive. 
+4. HONORARIA 
+Honoraria17 shall be paid to the Independent External Experts and ad-hoc Review Panels’ members 
+involved in the SESA procedure as follows: 
+1. Independent External Experts: EUR 50 per proposal, an additional EUR 50 for the Rapporteur;  
+2. Review Panel members: EUR 400 per Collection Date. 
+ 
+5. DEFINITIONS AND ABBREVIATIONS  
+The Rules and Principles for COST Activities (Annex II)18 set the definitions of the terms and acronyms 
+used in these guidelines. 
+ 
+ 
+17 See COST 101/21 COST Action Proposal Submission, Evaluation, Selection and Approval (SESA) – (Level B) 
+18 Annex II - Level A: Definitions and Abbreviations applicable throughout COST Implementation Rules - Glossary 
+
+
+</pre><div class="page-break" data-page="Page 28"></div><pre class="text-content">
+ 
+ 
+ 28 
+ANNEX 
+Table 9: Required minimum number of COST Inclusiveness Target Countries per number of COST Full or 
+Cooperating Members represented in a proposal. 
+ 
+Number of COST Full or  
+Cooperating Members 
+Minimum number of ITC 
+7 
+4 
+8 
+4 
+9 
+5 
+10 
+5 
+11 
+6 
+12 
+6 
+13 
+7 
+14 
+7 
+15 
+8 
+16 
+8 
+17 
+9 
+18 
+9 
+19 
+10 
+20 
+10 
+21 
+11 
+22 
+11 
+23 
+12 
+24 
+12 
+25 
+13 
+26 
+13 
+27 
+14 
+28 
+14 
+29 
+15 
+30 
+15 
+31 
+16 
+32 
+16 
+33 
+17 
+34 
+17 
+35 
+18 
+36 
+18 
+37 
+19 
+38 
+19 
+39 
+20 
+40 
+20 
+41 
+21 
+42 
+21 
+ 
+ 
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

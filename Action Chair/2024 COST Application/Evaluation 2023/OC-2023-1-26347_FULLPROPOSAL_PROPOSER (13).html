@@ -1,0 +1,3062 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OC 2023 1 26347 FULLPROPOSAL PROPOSER - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>OC 2023 1 26347 FULLPROPOSAL PROPOSER</h1>
+        <div class="meta">Source: OC-2023-1-26347_FULLPROPOSAL_PROPOSER (13).txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>OC 2023 1 26347 FULLPROPOSAL PROPOSER</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>48 pages</span>
+                    <span>133,857 characters</span>
+                    <span>18,174 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+Open Call Collection OC-2023-1
+Proposal Reference OC-2023-1-26347
+Title:
+Sustainable Digital Transformation in Europe
+Acronym:
+DigitalTransform
+Summary
+With 38 COST countries and 187 proposers, the Action is a strategically designed initiative targeting the
+transformation of the European finance sector into a more sustainable and digitally advanced landscape,
+with the ultimate goal of enhancing Europe&#x27;s global competitiveness. This is a European task and can only
+be achieved with the help of a COST network.
+The work plan for transforming the European finance sector is organized into four Working Groups (WGs).
+WG1 focuses on data-driven processes and data privacy, employing methods like differential privacy and
+federated learning to create comprehensive guidelines. Building on that, WG2 employs Generative AI for
+several finance areas. WG3 will make AI in finance more transparent and accountable, while WG4 will
+advance sustainable finance through data-driven ESG measurements.
+The Action will have a multi-faceted impact across scientific, technological, and socioeconomic domains in
+Europe and has outlined specific deliverables, including comprehensive reports, models, and algorithms, to
+be achieved within the 48-month time frame. It also identifies potential risks, such as inconsistency in data
+privacy regulations and limited adoption of XAI protocols, and provides contingency plans for each.
+The network will be interdisciplinary, involving professionals from finance, law, ethics, and computer
+sciences. The Action aligns with key strategic priorities like the European Green Deal and the Digital Finance
+Package. It places a strong focus on young researchers and will engage stakeholders from various
+disciplines. Overall, the Action will provide actionable solutions to complex challenges in the financial sector,
+ensuring its research is grounded in real-world applications and policy landscapes.
+Key Expertise needed for evaluation 
+Economics and business
+Econometrics, statistical methods applied to economics
+Keywords
+Sustainability
+Digital Transformation
+Digital Finance
+Financial Services
+Powered by TCPDF (www.tcpdf.org)
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+TECHNICAL ANNEX
+1. S&amp;T EXCELLENCE
+1.1 SOUNDNESS OF THE CHALLENGE
+1.1.1 DESCRIPTION OF THE STATE OF THE ART
+The Action will develop a research framework that will address the key challenges associated with
+integrating cutting-edge digital technologies in the finance sector. In achieving this aim, the Action will
+drive forward the digitalization of finance while ensuring that core policy objectives, such as consumer
+and investor protection, fair competition and stability continue to be met as the digital transformation of
+the financial sector continues.
+In recent years, we have seen the emergence of new technologies, products and business models at
+an unprecedented speed, all summarised under the label Digital Finance. The digitalisation of the
+financial industry holds great promise. It offers the opportunity to make quick and cost-effective
+payments, enable the development of innovative financial products and services and foster wider
+access to financial services thus incorporating previously “unbanked” areas. Put simply, digital
+technologies are expected to fundamentally transform the financial service industry. Some
+examples of the practitioners’ perspective in terms of the topic’s relevance come from an extensive
+analysis done by the World Economic Forum (WEF) (2020), which provides a comprehensive picture
+of how digital technologies are applied in financial services by both incumbents and Fintechs. The
+study finds that:
+●
+77% of practitioners anticipate innovative technologies to possess high or very high overall
+importance to their businesses in the future
+●
+Approximately 64% of practitioners anticipate employing innovative digital technologies in all
+of the following categories – generating new revenue potential through new products and
+processes, process automation, risk management, customer service and client acquisition
+●
+Overwhelmingly, practitioners expect that digital technologies will become a key success
+factor for specific financial service sectors
+Despite promises, the fast adoption of innovative technologies in finance poses challenges and risks,
+encompassing legal issues like disclosure and oversight, technology-related concerns such as poor
+data quality, protection and privacy, lack of sufficient explainability, algorithmic bias, and inconsistency
+in ESG assessment. The European Commission has taken steps in addressing some challenges
+through GDPR, the AI strategy (European Commission., 2023), and the digital finance package
+(European Commission., 2020b). These issues align with UN Sustainable Development Goals
+(Department of Economic and Social Affairs, Sustainable Development, 2023) and are increasingly
+relevant for financial service companies, as per the 2020 WEF study. To this point, the study done by
+WEF (2020) finds that:
+●
+91% of the surveyed practitioners consider data quality issues to be a key hurdle to deploying
+innovative digital technologies like machine learning in practice
+●
+64% of practitioners consider deficits in trust and user adoption to be another major hindrance
+of the adoption of digital technologies in finance
+●
+Complex models are often developed and evaluated within closed environments which do not
+match the conditions of real-world applications
+●
+Firms are particularly wary of the potential for complex models to entrench biases in
+decision-making
+Having
+in
+mind
+this
+gap
+between
+the
+theoretical
+capabilities
+of
+technology
+and its actual
+implementation in real-world scenarios, the Action will develop a research framework that addresses
+the key technology-related huddles of implementing state-of-art technologies in finance applications
+and enable the transition to a digital finance ecosystem that is sustainable, transparent and inclusive.
+Specifically, the action will: (i) bolster the EU&#x27;s digital data market by enhancing data quality, protection
+and privacy; (ii) establish clear guidelines for integrating generative AI in finance by developing
+innovative solutions for risk management, market trend prediction, and personalized financial products
+that take into consideration challenges related to data security, ethical considerations and regulatory
+compliance; (iii) develop domain-driven XAI solutions for the finance sector by solving some of the key
+challenges of deploying explainability to machine learning (ML) and deep learning (DL) models applied
+to financial use cases; and (iv) propose data-driven ESG scoring methods.
+As a result, the Action’s research framework will lead to more, better, and more inclusive
+ﬁnancial innovations that accelerate the digital and green transition of Europe, in line with
+Europe’s key strategic priorities such as the development of key digital, enabling and emerging
+technologies (DG Research and Innovation, 2021), the European Green Deal, the Digital Finance
+Package and the European Approach to AI (European Commission 2023).
+oc-2023-1
+1/15
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+We elaborate in more detail on the four key technology-related pillars of the future function of finance,
+which in turn define the research objectives of the Action:
+●
+Ensuring data protection, privacy and fairness in financial data (WG1). The distinctive
+trait of the emerging new financial ecosystem is the increasing availability of data. Data is in
+the centre of the digital transformation and more is to come (EC, A European strategy for data,
+2020). Both academia and industry are increasingly faced with data characterised with
+staggeringly high number of dimensions, high variability and high veracity. Utilising such data
+is accompanied by many challenges among which: How do we ensure that all dimensions
+(accuracy, consistency, completeness, currency, volatility and timeliness) of data quality are
+satisfied to a necessary extent? What are the key challenges and opportunities in developing
+a unified data privacy framework, including clear definitions and methods, for ensuring the
+security and compliance of financial applications through the integration of differential privacy
+and federated learning techniques? What are the most effective methods and techniques for
+assessing and mitigating biases in large financial datasets to achieve data fairness, and how
+do these methods impact decision-making processes and outcomes in various finance use
+cases?
+●
+Develop and deploy end-to-end use cases of generative AI&#x27;s applications in finance
+(WG2). Generative AI holds transformative potential for the finance sector, offering capabilities
+that span from the simulation of intricate financial scenarios and the creation of novel
+investment strategies, to the generation of synthetic financial data for enhanced analytics. By
+leveraging these models, financial institutions can potentially devise innovative solutions that
+enhance risk management and portfolio optimization processes, predict market trends, and
+offer personalized financial products tailored to individual consumer preferences. However, the
+journey to integrate generative AI into finance is riddled with challenges: How can sensitive
+ﬁnancial data be processed by generative AI models without risking unintentional disclosures?
+What are the potential applications and limitations of large language models (LLM) in
+predicting ﬁnancial market movements, and how can these models be effectively integrated
+into existing ﬁnancial forecasting methodologies? How do we assess the suitability and
+effectiveness of LLM in the speciﬁc applications of portfolio optimization and risk
+management? How can the potential of generative AI be fully harnessed in the ﬁnance sector
+while ensuring no compromises on security, ethics, or regulatory compliance?
+●
+Ensure explainability and fairness of AI-based systems in finance (WG3). In order to
+address the “black box” challenge of AI solutions, the concept of eXplainable AI (XAI)
+emerged, introducing a suite of techniques attempting to explain to users how complex
+models arrived at certain decisions. For the most part, these techniques, introduced primarily
+through academic efforts, are not tailored to ﬁnancial use cases and datasets and, as such,
+their ability to bring forward robust and stable explanations concerning the inner-working of
+complex models applied in ﬁnance, is limited. In this context, pending research questions are:
+To what extent existing XAI tools address the explainability needs of different stakeholders
+within
+the
+ﬁnancial
+value
+chain?
+–How
+can
+we
+build
+XAI
+methods that are not
+perturbation-based and thus maintain the natural time ordering and dependence structures of
+the data? How can we make sure that algorithmic systems do not yield socially-biassed
+outcomes, thereby compounding inequalities? How can we deal with the persisting latency in
+computing and showing explanations in real time? How can XAI platforms enhance ethics in
+the use of AI predictive models and ensure compliance with GDPR?
+●
+Streamlining ESG assessment and reporting (WG4). Sustainable finance will have a key
+role to play in the future function of finance as climate change and environmental degradation
+are becoming an existential threat to Europe and the world (EC, European green deal, 2019).
+As clearly stated in the European Green Deal strategy, sustainable finance and investment will
+be key to fostering sustainable global development. Though inevitable, transitioning to a
+sustainable future with inclusive, green economies and resilient ecosystems is associated with
+many challenges. With the Action, we will answer the following research questions: What are
+the key components and methodological considerations in developing a real-time, data-driven
+ESG (Environmental, Social, and Governance) scoring model that integrates sentiment
+analysis obtained through the utilisation of LLM? How can the resulting model be effectively
+disseminated, either as an open-source tool or as a policy recommendation, to enhance
+sustainability assessments and regulatory oversight in the financial sector? How do different
+data-driven ESG measurement techniques, incorporating LLM for sentiment analysis and
+news report analysis, compare in terms of accuracy, reliability, and suitability for assessing the
+sustainability performance of organizations, and what are the implications for informed
+decision-making by investors and stakeholders?
+oc-2023-1
+2/15
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+In this context, the Action will ensure that the European finance industry will stay globally competitive,
+give
+European
+consumers
+access to innovative financial products, while ensuring consumer
+protection, financial stability and contribute to ESG and European Green Deal goals.
+A research initiative aimed at overcoming the obstacles associated with AI deployment in finance
+demands a transdisciplinary, gender-balanced, international research network with a strong
+focus on young researchers and innovators for several compelling reasons. First, financial
+systems are by design intricately interconnected and globally interdependent, influenced by an array of
+factors that transcend national boundaries. Researchers from different regions bring valuable
+perspectives to the table, shedding light on regional nuances and providing a comprehensive
+understanding of the global financial landscape. Second, addressing these challenges goes beyond
+the confines of single disciplines. It involves a blend of expertise from computer science, economics,
+law, ethics, regulation, and cybersecurity. A transdisciplinary approach ensures that all aspects of the
+problem are thoroughly explored and integrated into potential solutions. Thirdly, financial data is
+diverse and subject to regional regulations. Collaboration on an international scale facilitates the
+aggregation of heterogeneous datasets, addresses data privacy concerns, and establishes common
+data standards crucial for the development and training of AI models. Fourth, financial regulations vary
+across countries, and ethical considerations are essential. An international research network can
+facilitate the exchange of regulatory insights and ethical best practices, ensuring that AI systems are
+compliant with international standards. Lastly, collaboration on an international scale accelerates the
+development of AI solutions for finance. By pooling resources, knowledge, and expertise from
+researchers and institutions across Europe, collaborative efforts can drive innovation, leading to more
+effective and globally applicable solutions.
+1.1.2. DESCRIPTION OF THE CHALLENGE (MAIN AIM)
+The Action will establish a cross-border network of professionals across finance, mathematics,
+statistics, computer sciences, law and ethics, focusing on solving the main hurdles of integrating AI
+systems into the different functions of finance. The main goal is to develop a collaborative platform that
+derives
+AI-driven,
+robust,
+explainable
+and
+sustainable
+systems
+that
+will
+support
+the
+digital
+transformation of finance. Currently, there exists a significant gap between the theoretical
+possibilities of AI-based systems and the actual feasibility of implementing these capabilities
+in real-world scenarios in finance. While numerous researchers have established the effectiveness
+of AI-based systems across diverse predictive tasks (Dingli and Fournier, 2017, Di Persio and
+Honchar, 2017, Sen and Mehtab, 2021, Cao, 2022), there remains a critical need for research focused
+on identifying (and addressing) the key barriers hindering their widespread adoption in real-world
+financial use cases, thus leading to sustained and expansive impacts in Finance, ensuring a green
+and digital transition. Specifically, through joint international efforts and interdisciplinary expertise, the
+Action will address hurdles related with the different stages of building and deploying AI-based
+systems. In order to ensure that all dimensions of data quality are satisfied, the COST action will:
+develop a comprehensive data quality assessment framework, establish a unified data privacy
+framework for financial applications, and identify effective methods for assessing and mitigating biases
+in large financial datasets. Looking at the model deployment hurdles that industry is faced with, the
+Action will: prototype and deploy end-to-end generative AI use cases in finance, propose guidelines for
+sensitive financial data processing by AI models, introduce novel metrics for evaluating the utility of
+LLM for financial market prediction, and run an assessment of their suitability for portfolio optimization
+and risk management. For the purpose of bringing suitable level of explainability and trust into
+deployed AI systems in finance, the Action will: evaluate existing XAI tools, propose novel
+finance-specific XAI methods, train and test strategies for preventing socially-biassed outcomes in
+AI-based risk management systems, and research into real-time solutions for reducing latency in AI
+explanations. Finally, in order to ensure a data-driven assessment of sustainability, the Action will:
+create a real-time, data-driven ESG scoring model integrating sentiment analysis, document methods
+for effective dissemination (either as an open-source tool or policy recommendations), and conduct a
+comparative analysis of data-driven ESG measurement techniques, including the utilization of LLM for
+enhanced sustainability assessments and regulatory oversight in finance.
+The ultimate goal of the Action is to blend diverse expertise that allows us to optimally use
+high-dimensional data and state-of-art AI systems to push forward the digitalization of the functions of
+finance. Emerging AI technologies, distinct from conventional methods, present clear benefits for the
+financial sector. The effectiveness of these methods will be measured and contextualised in terms of
+their practicality and challenges of real-world implementation. While the focus is on financial
+applications, the outcomes will be applicable to wider fields, and efforts will be made to share insights
+across different industry domains.
+oc-2023-1
+3/15
+
+
+</pre><div class="page-break" data-page="Page 5"></div><pre class="text-content">
+1.2 PROGRESS BEYOND THE STATE OF THE ART
+1.2.1 APPROACH TO THE CHALLENGE AND PROGRESS BEYOND THE STATE OF THE ART
+From a methodological perspective, the Action will focus on bringing forward several contributions to
+the literature. In the context of ensuring data quality, privacy and protection, the Action will test
+different state-of-art techniques proposed in the literature for tackling privacy issues in deep and
+federated learning (FL). Particularly, we will focus on differential privacy (DP). The primary aim of
+differential privacy (DP) is to enable the examination of dataset characteristics related to a population
+as a whole, all while safeguarding individual privacy (Dwork, 2006, Dwork 2008, Ouadrhiri et al.,
+2022). In simpler terms, DP involves introducing perturbations, either in statistical inquiries or the
+original dataset, to prevent an adversary from determining whether a specific individual is part of the
+dataset or not. This approach is considered a de facto standard for protecting users’ privacy in
+statistical computations. The Action will run and compare several applications of DP for financial data
+sets and time series. Moreover, the network will also tackle the challenges evolving in algorithmic bias.
+Many financial services, such as mortgage or loan approvals, are algorithmically aided decisions.
+Such techniques, including supervised and unsupervised learning methods, are not inherently biassed
+but often oblivious to sensitive parameters. This can be a result of bias introduced at any step in the
+life cycle (Davidson et al., 2023) including, e.g., socio-historical bias in the data generation process,
+Simpson’s Paradox as an example of aggregation bias (Prost et al., 2023) or the choice of
+optimization functions, regularizations that can contribute to biassed algorithmic decisions. Within the
+COST Action, researchers will explore a wide variety of methods to debias algorithmic solutions for
+financial applications. Since many fair learning algorithms have already been implemented (like IBM
+(2023) AI Fairness 360 toolkit), the researchers within COST will analyze the possibility of adjusting
+and extending those methods for problems arising in the financial sector. Moreover, much of the
+attention will be focused on developing new approaches to fight against bias both on the data and
+methods side. On the algorithmic side, the researchers will investigate the approach based on
+disparate learning processes (DLPs) that allows the sensitive attributes during the learning phase but
+not during the prediction time (Lipton et al., 2018) or Variational Fair Autoencoder, which treats
+protected attributes as the nuisance variables (Louizos, 2015). On the data debiasing side, a very
+interesting approach is Fair Adversarial Networks (FairGAN), whose goal is to create synthetic data of
+similar quality as real data, not discriminatory toward certain demographic groups (Wu, 2022).
+Considering the application of generative AI in finance, the Action will develop end-to-end use cases
+which will detail the entire pipeline of building AI-systems incorporating LLMs for financial applications.
+LLM have been shown to be very effective on a variety of language tasks (information and knowledge
+queries, analysing text data, generating briefs and reports) (Wu et al., 2023, Xie et al., 2023, Zhao et
+al., 2023, Hadi et al., 2023). However, most of the implementations available in the literature do not
+take into consideration the practical constraints (like regulatory compliance, scalability, privacy
+concerns, etc.) in which the financial sector operates. To this end, the Action will assess the potential
+and limitations of LLM for various financial applications (i.e. predicting financial markets, enhancing
+risk management and portfolio optimization processes) and propose guidelines for effectively
+integrating their outputs into classic methodologies for classification and prediction.
+Furthermore, the Action will also aim at proposing solutions for the growing “trust” issues with complex
+models. The introduction of complex ML and DL methods for financial use cases (i.e. time series
+forecasting or credit scoring), potentially enables higher predictive accuracy but this comes at the cost
+of higher complexity and thus lower interpretability (Hulsen, 2023),. ML models are referred to as
+“black boxes” because it is often difficult to understand how variables are jointly related to arrive at a
+certain output (Arrieta et al., 2019). This reduced ability to understand the inner workings and
+mechanisms of complex models unavoidably affects their trustworthiness and the willingness among
+practitioners to deploy such methods in sensitive domains such as finance. As a result, the scientific
+interest in the field of eXplainable artificial intelligence (XAI) has grown tremendously within the last
+few years (Gunning et al., 2019, Linardatos et al., 2021, Dazeley et al., 2021 and Saeed and Omlin,
+2023). XAI aims at introducing a suite of techniques attempting to communicate understandable
+information about how an already developed model produces its predictions for any given input
+(Arrieta et al., 2019). The growing popularity of the topic notwithstanding, research on XAI in finance
+remains limited and most of the existing explainability techniques are not suited for financial data
+which are characterised with dependence of features and non-stationarity. Many state-of-the-art XAI
+methods are originally tailored for certain input types such as images (ex. Saliency Maps) or text (ex.
+LRP) and have later been adjusted to suit tabular data as well. However, temporal dimensions and
+features&#x27; dependence are often omitted, and the literature currently offers only a limited consideration
+of the topic. Notable examples are interpretable decision trees for time series classification (Hidasi and
+Gáspár-Papanek, 2011) and using attention mechanisms (Hsu et al., 2019, Schockaert, 2020) with
+none of the applications looking specifically at explainability for financial data. To address this gap in
+oc-2023-1
+4/15
+
+
+</pre><div class="page-break" data-page="Page 6"></div><pre class="text-content">
+the literature as well as in the considered application field, the Action will focus on investigating the
+utility of existing state-of-art XAI methods and proposing novel methods for financial applications.
+Finally, the Action will also focus on tackling several methodological challenges related to the
+sustainable
+finance
+domain.
+Numerous
+organisations
+are assessing businesses&#x27; non-financial
+endeavours by employing environmental, social, and governance (ESG) metrics as assessment
+criteria (Almeyda and Darmansya, 2019 and Bassen and Kovacs, 2020). Nevertheless, the reliability
+of existing ESG ratings is constrained by variations in criteria among assessment bodies, resulting in
+significant discrepancies in a company&#x27;s ESG rating when assessed by different organisations (Lee
+and Kim, 2023). Thus, a data-driven approach to ESG estimation is needed, and the studies that focus
+on the need for automatic and direct extraction and classification of ESG information are limited. The
+Action will investigate the utility of LLM in effectively analyzing and extracting insights from vast
+amounts of sustainability-related textual data, such as news articles, to gain deeper insights into
+companies’ ESG performance and their societal impact.
+1.2.2 OBJECTIVES
+1.2.2.1 Research Coordination Objectives
+The scientific progress will be pursued by capitalising on the COST research coordination tools. The
+specific objectives in this respect are shown below.
+RC1. Unified Data Protection Framework (WG1): Develop a common framework and definitions for
+data privacy methods, specifically focused on differential privacy and federated learning techniques.
+RC2. Data Sourcing Standardization for LLM (WG2): Coordinate the collection and curation of
+financial datasets, and establish a standard set of performance metrics specifically for Transformer
+Neural Networks used in portfolio optimization and risk management.
+RC3. Harmonized Protocols for XAI (WG3): Develop standardized protocols for experimentation and
+data collection XAI, focused on non-perturbative XAI methods applicable to financial time-series data.
+RC4. Comparative Assessment of ESG Measurement (WG4): Conduct a comparative analysis of
+data-driven ESG techniques, including the use of LLMs for sentiment and news analysis.
+RC5. Shared Resource Portal (All WGs): Establish a centralized digital portal where resources like
+datasets, software tools, and methodological guidelines can be shared across all WGs to accelerate
+research in data-driven processes, generative AI, XAI, and sustainable digital finance.
+RC6. International Coordination for Fairness Models (WG1): Coordinate with international bodies
+and standardization agencies to establish guidelines that ensure fairness and data protection in
+financial algorithms, leveraging differential privacy and federated learning methodologies.
+RC7. Stakeholder Input for Algorithmic Bias Mitigation (WG3): Engage with policymakers and
+regulatory bodies to translate the WG&#x27;s findings on algorithmic bias mitigation into actionable policies.
+RC8. Tangible Output for Real-Time ESG Scoring (WG4): Develop a real-time, data-driven ESG
+scoring model that leverages sentiment analysis and other language model-based techniques, to be
+shared as an open-source tool or as a policy recommendation for financial regulatory bodies.
+1.2.2.2 Capacity-building Objectives
+The focus of capacity-building goals, achieved through the facilitation of knowledge exchange and
+collaborative research agenda development, will be centred around the following subject areas:
+CB1. Joint Research Agenda on Data Protection (D1): Foster knowledge exchange between legal
+experts, data scientists, and policymakers to develop a joint research agenda focused on creating
+comprehensive data privacy guidelines for financial applications.
+CB2: Interdisciplinary Collaboration for Fairness in Financial Algorithms (D2, D9): Bridge the
+gap between ethics, data science, and finance to facilitate interdisciplinary research aimed at fairness
+models and algorithmic bias mitigation in financial algorithms.
+CB3. Young Researchers in Federated Learning (D3): Engage young researchers and innovators to
+contribute to the report on federated learning techniques and protocols, thereby building their capacity.
+CB4. Stakeholder Platform for Generative AI in Finance (D4, D5, D6): Act as a trans-national
+practice community involving financial institutions, AI researchers, and regulators to foster the
+adoption of Generative AI models for portfolio optimization, risk, and personalized financial advice.
+CB5. Inclusive XAI Methods (D7, D8): Involve under-represented genders and teams from
+countries/regions with less capacity in the field to contribute to the development of scalable XAI
+methods and transparent Transformer Neural Networks.
+CB6. Sustainability Focus in Digital Finance (D10, D11, D12): Develop a joint research agenda that
+includes environmental scientists, financial analysts, and data scientists to advance sustainable digital
+finance, particularly in ESG sentiment analysis and real-time scoring models.
+CB7. Comprehensive Capacity-building Through Overall Action Deliverables (D13-D19): Utilize
+the online presence, data collection, publication plan, training materials, and gender balance reports
+as tools for ongoing capacity-building across all research groups and stakeholder communities.
+oc-2023-1
+5/15
+
+
+</pre><div class="page-break" data-page="Page 7"></div><pre class="text-content">
+2. NETWORKING EXCELLENCE
+2.1 ADDED VALUE OF NETWORKING IN S&amp;T EXCELLENCE
+2.1.1
+ADDED
+VALUE
+IN
+RELATION
+TO
+EXISTING
+EFFORTS
+AT
+EUROPEAN
+AND/OR
+INTERNATIONAL LEVEL
+The proposed Action distinctively positions itself within a number of prior and ongoing European and
+international projects and initiatives. To highlight its added value, we systematically contrast it with
+previous efforts across multiple platforms:
+Marie Skłodowska-Curie Actions (MSCA):
+TraDE-OPT, REBOOT.AI, BigDataFinance, DEDS, BehindAI, and AIFocus have made valuable
+contributions in specialized areas such as big data analytics, regulatory sandboxes for AI, and the
+impact of AI on firm strategy. However, these actions focus on segmented expertise, lacking a holistic
+framework that combines these elements. Our Action integrates these specialized insights into a
+multidisciplinary dialogue.
+COST Actions:
+While COST CA19130 Fintech and AI in Finance and COST CA21163 HiTEc Text have initiated
+discussions on fintech and econometrics, they have not sufficiently explored the intersectionality
+between technological, regulatory, and ethical dimensions in finance. Our Action fills this gap by
+synergizing these aspects.
+Horizon 2020 and Horizon Europe:
+Projects like TANGO, FAME, AI for Alpha, HACID, FINTECH, SINGULARITY, Great.Power.Finance,
+and
+FINE
+offer
+essential
+technological
+advancements
+and
+insights.
+Yet,
+they
+often
+fail
+to
+comprehensively address the coordination between technology, ethics, and regulations. Our Action
+aims to meld these disparate threads into a unified framework.
+EU Initiatives and Collaborations:
+European Blockchain Partnership (EBP), European Fintech Association, the European Green Deal,
+the European Digital Finance Package, the European Data Governance Act, AI4EU, and ELISE have
+made strides in their respective domains. However, these platforms typically focus on specific facets of
+finance or technology. Our Action expands on this by offering an integrative strategy that aligns with
+EU priorities, thereby ensuring Europe&#x27;s competitive position on the global stage.
+Key Differentiators and added value
+●
+Interdisciplinary Convergence in WG1 to WG4: Across all our work packages, our platform
+uniquely brings together professionals from computer science, finance, sociology, and
+regulatory bodies. This integrative approach allows us to tackle issues such as data privacy
+(WG1), generative AI (WG2), explainable AI and bias (WG3), and sustainability (WG4).
+●
+Holistic Approach to Regulatory Compliance in WG3 and WG4: Unlike prior initiatives that
+either focus on technological feasibility or regulatory challenges, our Action harmonizes these
+by incorporating ethical and regulatory considerations, particularly in WG3 and WG4.
+●
+Future-proofing the Financial Sector in WG2: While previous efforts like AI for Alpha and
+TANGO
+have
+addressed
+some
+aspects
+of
+market
+adaptability,
+our
+WG2
+aims
+to
+comprehensively understand how AI models can adapt to evolving market conditions.
+●
+Operationalizing Ethical Governance in WG3: We move beyond theoretical discussions of
+ethical considerations to actualize them, especially in WG3 where we tackle explainable AI
+and algorithmic bias, ensuring these methods align with societal norms and values.
+●
+Inclusivity of Stakeholder Perspectives in WG1 and WG4: WG1 focuses on user trust and
+experience,
+and
+WG4
+addresses
+sustainability across sectors. This ensures a more
+democratic approach to finance, incorporating a broad range of stakeholder perspectives.
+●
+Global Competitive Positioning in WG1 to WG4: In line with EU policy agendas, our Action&#x27;s
+objectives
+strategically
+align
+Europe&#x27;s
+financial
+technologies
+with
+global
+competitive
+requirements. This is particularly emphasized in our cross-WG challenges on interdisciplinary
+approaches, fostering collaboration, and navigating regulatory landscapes.
+It becomes evident that our Action provides a comprehensive, multidisciplinary, and future-oriented
+roadmap for advancements in the field of finance and technology. It not only builds upon but
+significantly extends the existing body of work, targeting a balanced, actionable, and forward-looking
+approach to complex challenges in the financial sector.
+oc-2023-1
+6/15
+
+
+</pre><div class="page-break" data-page="Page 8"></div><pre class="text-content">
+2.2 ADDED VALUE OF NETWORKING IN IMPACT
+2.2.1 SECURING THE CRITICAL MASS, EXPERTISE AND GEOGRAPHICAL BALANCE WITHIN
+THE COST MEMBERS AND BEYOND
+Our team brings together a wide array of scientific disciplines including computer science, finance,
+cybersecurity, data privacy, artificial intelligence, regulatory compliance, sustainability studies, ethics,
+user
+experience
+design,
+algorithmic development, socio-economic studies, legal studies, and
+cross-cultural communication, ensuring a rich, comprehensive approach to tackling the complexities
+and challenges in advancing financial technologies through data-driven processes and sustainable,
+ethical AI implementation across diverse European financial ecosystems.
+That is needed in view of our objectives and challenges:
+Interdisciplinary Synergy: Our interdisciplinary approach ensures that every aspect, from data-driven
+processes
+and
+AI
+model development to ethical and sustainable technology deployment, is
+underpinned by authoritative knowledge and innovative thinking.
+Practical and Theoretical Knowledge: The combination of both academic researchers and industry
+professionals ensures a balanced blend of theoretical insight and practical know-how. Our academic
+experts bring forth the latest research and theoretical frameworks, while our industry professionals
+provide real-world application insights, thereby ensuring solutions are both innovative and applicable.
+Regulatory insights: With specialists experienced in the financial regulatory landscapes across
+Europe, our network is acutely aware of the varied and often complex regulatory environments in
+different countries. This expertise is crucial to develop and implement financial technologies that are
+not only innovative but also compliant with regional and international standards.
+Technological Proficiency: Inclusion of experts in AI and FinTech provides a solid foundation to
+explore, develop, and validate cutting-edge technologies that align with the evolving needs of the
+financial industry, ensuring that our solutions are not just current but also future-ready.
+Sustainability Insight: Engaging with specialists in sustainability, especially within the financial sector,
+ensures that our network can innovatively combine financial technologies with sustainability goals,
+creating solutions that are both economically and environmentally viable.
+Data Privacy Expertise: With authorities in data privacy and protection, our network will create
+solutions that are not only efficient and innovative but also stringently adhere to data protection laws,
+safeguarding user information and building user trust.
+Geographical and Cultural Awareness: Having experts from different geographical and cultural
+backgrounds ensures a wide perspective, enabling the development of solutions that are mindful of
+cultural, social, and regional nuances, thereby ensuring wider applicability and acceptability of the
+devised technologies and strategies.
+Economic and Financial Insight: Experts in economics and finance within our network ensure a
+thorough understanding of market dynamics, providing crucial insights into creating technologies and
+strategies that are not only innovative but also economically viable and market-ready.
+Furthermore, we have variation across socio-economic factors:
+●
+Regulatory Divergence: Our experts are from countries that have different financial rules,
+helping
+us
+build
+technologies
+that
+work
+across
+various legal frameworks, especially
+considering the different ways countries implement rules like the GDPR, AI regulations and
+Fintech sandboxes.
+●
+Economic Variation: Our network has participants from all sorts of economies, from big
+financial hubs like Frankfurt and London to growing markets in Eastern Europe, ensuring our
+solutions work everywhere and can scale according to different economic contexts.
+●
+Technology Adoption: Our network includes countries at different stages of adopting
+FinTech, like tech-forward Sweden and others that are just starting their digital finance journey,
+helping us understand and plan for varied tech landscapes.
+●
+Cultural and Social Differences: We have professionals and academics from areas with
+diverse attitudes toward finance and data privacy, ensuring our solutions are sensitive to
+different cultural norms and can be adopted widely.
+●
+Environmental Priorities: Our countries have different approaches and progress levels
+toward sustainability in finance, ensuring our solutions are comprehensive and mindful of
+varied green finance initiatives and policies.
+oc-2023-1
+7/15
+
+
+</pre><div class="page-break" data-page="Page 9"></div><pre class="text-content">
+With our COST members, our network strategically encompasses seasoned fintech innovators from
+nations with rigorous data protection regulations, data scientists experienced in dealing with multiple
+economic climates, and AI specialists who&#x27;ve formulated models adaptable to multiple financial
+scenarios; synergistically, collaborations with NNC provide insights from emerging markets, while our
+affiliations with IPC ensure that the developed technologies are globally relevant and adaptable, and
+engagement with Specific Organisations like international fintech forums and regulatory bodies
+strengthen our initiative with a global, industry-relevant, and regulatory-compliant perspective, thereby
+increasing our capacity to enhance financial technologies
+2.2.2 INVOLVEMENT OF STAKEHOLDERS
+In the Action, relevant stakeholders have been identified as:
+●
+Financial Institutions: This encompasses a wide range of entities such as banks, insurance
+companies, credit unions, microfinance institutions, fintech startups, and investment firms, all
+integral to the evolving financial technologies landscape.
+●
+Regulatory and Compliance Entities: Bodies ensuring that financial technologies adhere to
+legal and ethical guidelines.
+●
+Technology Providers and Developers: Entities that create and innovate data-driven solutions
+and AI technologies.
+●
+Academic Researchers: Institutions and academics focusing on finance, sustainability, and
+technology research.
+●
+Sustainability Organizations: Advocates for environmentally responsible practices in financial
+technologies.
+●
+Consumer Advocacy Groups: Organizations protecting and promoting consumer interests.
+●
+Global Partners: This includes entities from Non-COST countries and Third States (IPC),
+particularly focusing on key players from countries like the USA, Singapore, Hong Kong,
+Japan and the UAE, enriching our understanding and ensuring a global perspective.
+It’s noteworthy that we have successfully onboarded representatives from each of these stakeholder
+categories, ensuring that a wide spectrum of expertise and perspectives is embedded from the outset.
+Stakeholder Involvement Plan:
+●
+Inclusive Initiating Workshop: Establish a foundational understanding, initial stakeholder input,
+and network cohesiveness by convening a workshop with virtual and in-person participation
+options to initiate collaborative action. The outcome will be a consolidated document capturing
+an initial roadmap, main challenges identified, and strategies to address them
+●
+Continuous Collaboration and Communication: Ensure a sustained dialogue and cooperation
+by
+implementing
+a
+digital
+platform
+for
+continual
+discussion, knowledge sharing, and
+collaboration among stakeholders.
+●
+Regular Stakeholder Check-Ins: Ensure consistent feedback and iterative development by
+implementing bi-annual meetings for updates, inputs, and collaborative efforts.
+●
+Thematic Working Groups: Achieve in-depth progress in specialized areas by focussing on
+various
+aspects
+like
+technological
+development and sustainability, inviting stakeholder
+participation through open calls.
+●
+Capacity Building and Dissemination: Enhance stakeholder capacity and disseminate insights
+by conducting workshops and webinars to share findings and build capacity.
+●
+Continuous Feedback and Improvement: Ensure that the Action is consistently refined based
+on stakeholder feedback by implementing bi-annual surveys and feedback tools, integrating
+insights into ongoing Action adaptations.
+●
+Policy Dialogue and Aligning Outputs: Ensure findings and outputs align with and influence
+policy by organizing annual forums with policy-makers, e.g. in Brussels, to ensure findings are
+policy-relevant and contribute to policy evolution.
+●
+Final Evaluation and Future Planning Workshop: Assess impact and a plan for future
+sustainability by hosting a concluding workshop to evaluate impacts, understand shortfalls,
+and plan future trajectories.
+Through this approach, we cement a bi-directional, ongoing dialogue between the Action and its
+stakeholders, ensuring our research is not only grounded in scientific and technological excellence but
+also remains tightly connected with real-world applications, challenges, and policy landscapes. Our
+cross-sectoral
+and
+interdisciplinary
+stakeholder
+base fortifies the Action’s potential to realize
+meaningful, practical, and transformative impacts across the financial technology landscape.
+oc-2023-1
+8/15
+
+
+</pre><div class="page-break" data-page="Page 10"></div><pre class="text-content">
+3. IMPACT
+3.1 IMPACT TO SCIENCE, SOCIETY AND COMPETITIVENESS, AND POTENTIAL FOR
+INNOVATION/BREAKTHROUGHS
+3.1.1
+SCIENTIFIC,
+TECHNOLOGICAL,
+AND/OR
+SOCIOECONOMIC
+IMPACTS
+(INCLUDING
+POTENTIAL INNOVATIONS AND/OR BREAKTHROUGHS)
+The Action will have a major impact in all of the nine primary scientific, economic/technological and
+societal Key-Impact Pathways of Europe.
+A. Scientific Impact
+Short-Term Perspective: Immediate Research Outcomes
+The proposal&#x27;s immediate scientific impact is based on the advancement of financial technologies
+through data-driven methodologies and AI. In the short term:
+●
+Enhanced Data Privacy and Protection: The emphasis on differential privacy methods and
+federated learning will lead to immediate improvements in data protection. It will set a
+benchmark for how financial data should be handled in the digital age.
+●
+AI-driven Financial Models: With the deployment of Transformer Neural Networks in portfolio
+management and risk assessment, financial entities can expect models that are more
+accurate, leading to safer financial decisions and strategies.
+●
+Introduction of Explainable AI: In a field where AI decisions can have significant monetary
+implications, introducing XAI ensures that stakeholders can understand and trust AI outputs.
+This transparency is crucial for regulatory compliance and building user trust.
+Long-Term Perspective: Sustained and Expansive Impacts in Finance
+●
+Setting New Industry Standards: The guidelines and models developed for data privacy,
+fairness, and explainability will likely become industry standards. Financial technology firms
+will adhere to these models, ensuring a consistent level of data protection and AI transparency
+across the sector.
+●
+Algorithmic Bias Mitigation: The focus on identifying and mitigating algorithmic bias will
+have a long-standing impact on ensuring fairness in AI-driven financial decisions. This will
+lead to more equitable financial systems, minimizing the risk of systematic biases in lending,
+insuring, and other financial services.
+●
+Sustainable Financial Decisions: The emphasis on data-driven ESG scoring models is a
+step towards sustainable financial decisions. In the future, these dynamic scoring models will
+shape the investment strategies of big financial players, driving capital towards more
+sustainable businesses.
+A.1 Creating high-quality new knowledge
+We will publish 20 peer-reviewed articles in recognized journals (e.g. Journal of Finance, Journal of
+Financial Innovation) within the first two years and will monitor the field-weighted Citation Index of
+peer-reviewed publications in the medium term ultimately reaching a significant number and share of
+peer-reviewed publications that are core contributions within Sustainable Digital Finance.
+A.2 Strengthening human capital in research and innovation
+Our Action will strengthen human capital in research and innovation. Consequently, 100 researchers
+will benefit from extensive upskilling activities, including training, mobility, and access to vital
+infrastructures. Additionally, we will work towards ensuring that 50 of these researchers gain
+substantially more influence in the Sustainable Digital Finance field, resulting in improved working
+conditions for them, both in academia and industry. Simultaneously, our goal is to elevate Europe&#x27;s
+standing on the global stage by increasing its share of top-tier Digital Finance researchers.
+A.3 Fostering diffusion of knowledge and Open source
+100% of our research output, including open data, publications, and software, will be disseminated
+through open knowledge infrastructures and frequently cited. Platforms such as Arxiv.org, osf.io,
+github.com/,
+https://protocolexchange.researchsquare.com/,
+zenodo.org,
+https://eosc-portal.eu,
+https://opensource.org/licenses, and https://open-research-europe.ec.europa.eu will be used in our
+distribution efforts. Moreover, a significant 30% of COST members, through the benefits of the
+network, will forge new transdisciplinary and trans-sectoral collaborations, partnering with users to
+maximize the potential of their open R&amp;I outputs. Overall, we will ensure that scientific results are
+made openly accessible to bolster Europe&#x27;s standing in scientific competitiveness.
+oc-2023-1
+9/15
+
+
+</pre><div class="page-break" data-page="Page 11"></div><pre class="text-content">
+B. Societal Impact
+B.1 Addressing EU Policy Priorities and Global Challenges through Research and Innovation
+Digital
+Transformation
+aligned
+with
+EU
+Strategy:
+By
+emphasizing
+sustainable
+digital
+transformation, our Action directly aligns with Europe&#x27;s strategic priorities to establish itself as a
+frontrunner in digital innovation while addressing environmental and ethical considerations (EU Digital
+Finance Package, EU Green Deal, European Approach to Artificial Intelligence).
+Data Privacy and Fairness as global challenges: By setting data privacy and fairness at the core of
+our actions (WP1), we are tackling worldwide concerns about data misuse and inequity. Additionally,
+our focus on sustainable digital finance (WP4) resonates with global sustainability goals, aiming to
+make the financial sector more responsive and responsible in the face of environmental, social, and
+governance challenges.
+B.2 Delivering Benefits and Impact through Research and Innovation Missions:
+Generative AI will revolutionize the financial sector: The Action&#x27;s emphasis on Generative AI in
+finance (WP2) promises to redefine areas like portfolio optimization, risk management, and fraud
+detection, leading to more efficient and secure financial systems.
+Promotion of Ethical AI: Our dedicated effort on explainable AI and algorithmic bias mitigation (WP3)
+not only drives technological advancements but also ensures the ethical deployment of AI in finance.
+This paves the way for more transparent, accountable, and unbiased financial decision-making.
+B.3 Strengthening the Uptake of Research and Innovation in Society:
+Explainable AI will promote transparent technologies: Through the Action´s work on explainable
+AI (WP3), we are enabling society to understand and trust AI-driven financial solutions better. This
+transparency is pivotal in fostering public trust and encouraging the broader adoption of AI
+technologies.
+The Action will have substantial educational outreach: By producing easy-to-implement models
+and guidelines, the COST Action serves as a resource for educational institutions, facilitating the
+integration of cutting-edge AI and financial tech knowledge into curricula. This ensures the next
+generation of financial professionals is equipped with both the skills and ethical considerations vital for
+the industry&#x27;s future.
+All WPs prioritise an enhanced stakeholder engagement: The actionable outcomes from our
+research missions, such as the data-driven ESG scoring models (WP4), provide tangible tools for
+stakeholders ranging from policymakers to financial institutions. This strengthens the bond between
+research,
+innovation,
+and
+its real-world applications, driving societal progress and European
+competitiveness.
+C. Socioeconomic Impact
+C.1 Generating Innovation-based Growth:
+Innovative Financial Tools: We anticipate 15 new AI-driven financial tools and 10 sustainable digital
+finance tools by the end of the Action as well as five potential IPR applications for unique
+methodologies in AI and sustainable finance.
+Generative AI Innovations: Forecasting the emergence of 12 standout innovations from the Action.
+Four of these will stem directly from awarded IPRs, particularly in the area of generative AI.
+Economic Growth and Startups: Expectation of a 10% growth in market share for companies
+integrating our AI and sustainable digital finance tools. Three new startups could emerge, focusing
+exclusively on WP3 and WP4 innovations.
+C.2 Creating More and Better Jobs:
+Supported Employment: The Action will directly lead to the creation of 320 FTE jobs by the end of
+the Action, predominantly in AI, data management, and sustainable finance roles.
+Sustained Employment: 400+ FTE roles are anticipated post-project, focusing on the maintenance,
+scalability, and continuous improvement of the developed tools and methodologies. This figure also
+includes positions in academic research and high-profile R&amp;D positions in collaborating industries
+Total Employment: The diffusion of the Action&#x27;s outcomes will indirectly generate or sustain an
+additional 600 jobs across sectors that will leverage these innovations.
+C.3 Leveraging Investment in Research and Innovation:
+Investment Mobilization: The work of the Action will draw €3+ million in public and private
+investments during its life-time. Post-project innovations are expected to attract an additional €7 million
+for scaling up and widespread application.
+EU GDP Target Progress: The Action&#x27;s initiatives are set to contribute towards the EU&#x27;s ambitious 3%
+GDP target, spurred by the adoption and diffusion of the generated technologies.
+D. The Action’s key indicators
+80% of the output will be aimed at directly addressing EU policy priorities, with a prominent focus on
+SDGs 9 (Industry, Innovation, and Infrastructure) and SDG 13 (Climate Action). In the medium to
+oc-2023-1
+10/15
+
+
+</pre><div class="page-break" data-page="Page 12"></div><pre class="text-content">
+long-term, 10 innovations and scientific results will address EU policy priorities, in particular the EU
+Digital Finance Package, EU Artificial Intelligence programme and the Green Deal, leading to a
+substantial advancement of EU policies on Digital Finance and the European single digital market.
+40 outputs (research articles, white papers and prototypes) will span sustainable energy, climate
+action, and reducing inequalities, i.e. EU missions.
+In terms of Engagement and Societal Uptake, 20% of our projects will actively involve EU citizens in
+co-creation, which will lead to substantial societal uptake in the long-run, impacting over 100,000
+European citizens directly, via industry-academia generated products and regulations.
+E. Potential Innovations and Breakthroughs
+E.1 Scientific Breakthroughs:
+●
+Dynamic Data Privacy Protocols: Harnessing differential privacy methods combined with
+federated learning will establish new benchmarks in data science, particularly in financial data
+protection. This will drive a paradigm shift in how financial data is handled, balancing between
+utility and privacy.
+●
+Universal Framework for AI Transparency: The advancement of non-perturbative XAI
+methods will result in a universally accepted scientific framework for AI transparency. This will
+lay the foundation for standardized methodologies and measurements across AI applications
+in the financial domain.
+E.2 Technological Innovations:
+●
+Generative AI in Financial Systems: Integration of Transformer Neural Networks into
+portfolio optimization, risk assessment, and fraud detection will pave the way for more
+advanced financial technologies. These tools will not only optimize current processes but will
+also create novel avenues for financial decision-making.
+●
+Real-time Sustainability Metrics: Utilizing large language models to drive real-time ESG
+scoring will set a new technological standard. By providing instantaneous updates, financial
+entities will enhance their responsiveness to rapidly changing global events and sustainability
+trends.
+E.3 Socioeconomic Breakthroughs:
+●
+Economic Growth through AI: The deployment and broader acceptance of AI tools, backed
+by trust and transparency, will spur economic growth. Enhanced financial decision-making
+tools can optimize investments, resulting in substantial economic gains.
+●
+Inclusive Financial Systems: By addressing and mitigating algorithmic biases, the financial
+ecosystem will be shaped into a more equitable platform. This paves the way for fairer
+financial outcomes, ensuring a broader segment of society benefits from financial growth and
+stability.
+●
+Sustainable Finance as Norm: The emphasis on real-time sustainability metrics and their
+adoption will drive the entire financial sector towards more sustainable operations, aligning
+financial growth with global sustainability goals.
+3.2
+MEASURES TO MAXIMISE IMPACT
+3.2.1 KNOWLEDGE CREATION, TRANSFER OF KNOWLEDGE AND CAREER DEVELOPMENT
+A. Maximizing Impact through Knowledge Creation with COST Tools
+The Action will lead to groundbreaking research in European sustainable digital finance, leveraging
+data-driven processes, artificial intelligence, and sustainability insights. We will use the COST Action&#x27;s
+synergies as follows:
+Strategic Meetings for Overall Research Direction: Our biannual hybrid MC meetings set the
+overarching research directions. These directions are then refined and explored in our quarterly
+working group meetings, ensuring a focused and collaborative approach. The core group oversees
+these efforts, setting tangible implementation goals to ensure cohesiveness across work packages.
+Advanced Research Through Short-Term Scientific Missions: These missions will ensure practical
+engagement, facilitating knowledge transfer and hands-on training across all work packages.
+Empowering the Next Generation: Our commitment to involving young researchers to a large extent
+is about creating knowledge with fresh perspectives and innovative methodologies
+Hands-on Collaborative Research via Virtual Mobility Grants: Our joint hybrid paper-writing
+workshops are planned as knowledge creation sessions, where the Action creates new knowledge.
+B. Maximizing Impact through Transfer of Knowledge
+In the framework of the Action, we will implement a systematic approach for knowledge transfer. We
+facilitate PhD Training Schools, targeting doctoral candidates with intensive research methodologies.
+Our STSMs enable researchers to collaborate and gain insights into varied practices across different
+oc-2023-1
+11/15
+
+
+</pre><div class="page-break" data-page="Page 13"></div><pre class="text-content">
+institutions. To bolster remote collaborations, we utilize Virtual Grants. Structured Mentoring Sessions
+are in place, with seasoned researchers guiding newcomers. Furthermore, through academic talks
+and conferences, we not only share our advancements with the academic community but also engage
+with other key stakeholders in the industry and government organisations.
+C. Contribution to Career Development
+The Action integrates core domains: data-driven processes, generative AI in finance, explainable AI,
+and sustainable digital finance. By advancing methodologies like differential privacy, Transformer
+Neural Networks, and Large Language Models for ESG evaluations, participants equip themselves
+with skills highly demanded in contemporary financial research and applications.
+The vast stakeholder network within our Action provides significant networking opportunities,
+facilitating transitions into multiple sectors. Participation in decision-making roles during the Action
+fosters essential management capabilities. Direct contributions to tangible research outcomes further
+solidify the credentials of researchers, improving their academic and industry prospects.
+3.2.2
+PLAN
+FOR
+DISSEMINATION
+AND/OR
+EXPLOITATION
+AND
+DIALOGUE
+WITH
+THE
+GENERAL PUBLIC OR POLICY
+In our Action&#x27;s first MC meeting, a comprehensive science communication plan will be laid out.
+Science Communication Plan: This plan is grounded on three core principles:
+●
+Transparency: Ensuring all communications are clear, open, and understandable.
+●
+Continuous Outreach: A pledge to maintain persistent engagement with all stakeholders.
+●
+Engagement: Fostering connections across diverse fields, from academia to industry.
+Academic Seminars: Every partner institution will host at least one academic seminar annually.
+Conference Presence: COST members will participate in high-quality international conferences
+across Europe, ensuring our research and innovations are showcased on leading platforms.
+Publications: Our strategy includes aiming for publications in reputable journals recognized for their
+robust impact metrics.
+Industry Engagements: Seminars designed for industry experts are planned in hybrid formats. The
+objective: to captivate a minimum of 100 participants and spur subsequent collaborative projects.
+Multimedia Outreach: For every Action activity, an informational video will be produced targeting the
+wider public. Our digital strategy will also encompass the creation of a dedicated website, active social
+media engagement, and insightful blog posts.
+Intellectual Property Management: Our approach here is two-fold:
+●
+Encouraging collaborations and external research initiatives.
+●
+Channeling resources into product evolution and development.
+Community Engagement:Twice annually, we will connect with communities, the general public, and
+end users (Open Lab Days, Open Science Festivals). Our findings and innovations will also be
+presented to a comprehensive audience, including regulators and policymakers. Additionally, the focus
+remains on the pragmatic aspect: transitioning from research prototypes to tangible financial tools.
+Dissemination Oversight by CG: The CG will act as the custodian of our dissemination activities.
+Their mandate will encompass ensuring that our output is not just communicated but will follow
+stringent
+standards.
+Resource
+optimization
+strategies
+include
+synchronizing
+Working
+Group
+discussions with standout conferences like the Computational and Financial Econometrics (CFE) and
+Computational Statistics (COMPSTAT) conferences. During these conferences, dedicated sessions
+will be chaired by COST members to amplify our research visibility.
+Multi-Channel Engagement:Our strategy is to adopt a multi-channel approach for engagement. This
+involves: 1. A dedicated website; 2. Active social media channels like Facebook and Twitter; 3.
+Circulation of newsletters within academic and professional circles; 4. Prioritizing publications in
+prestigious journals; 5. Both virtual and in-person scientific discourses
+Outreach: Leveraging the media contacts of select Action members, our outreach initiatives will be
+amplified to capture a broader public audience.
+Exploitation Plan: The Action will generate results that can successfully be exploited academically
+and economically. Key elements of this plan include:
+●
+Commercialization: Transitioning research prototypes into market-ready products.
+●
+Collaborations: Engaging with industry leaders for potential partnerships or licensing deals.
+●
+Education: Offering training programs and workshops based on our findings, catering to both
+academia and industry.
+●
+Policy Influence: Using our research to inform and shape regulatory frameworks and policies
+●
+Repository Updates: Ensuring that our database remains updated, reflecting the latest findings
+and innovations.
+oc-2023-1
+12/15
+
+
+</pre><div class="page-break" data-page="Page 14"></div><pre class="text-content">
+4. IMPLEMENTATION
+4.1 COHERENCE AND EFFECTIVENESS OF THE WORK PLAN
+4.1.1 DESCRIPTION OF WORKING GROUPS, TASKS AND ACTIVITIES
+The work plan is divided into four specialised WGs and 18 tasks, for the 48-month duration, designed
+to ensure alignment with the research coordination and capacity-building objectives.
+WG1: Data-driven processes
+WG1 focuses on safeguarding data privacy, data protection, and ensuring fairness in finance. The
+interdisciplinary group lays the foundation for the other WGs and employs advanced methodologies
+such as differential privacy and federated learning to develop guidelines for data privacy and fairness.
+T1. Develop Comprehensive Data Privacy Guidelines: Create a set of comprehensive data privacy
+guidelines tailored to the unique challenges of financial applications
+T2. Fairness Models for Financial Algorithms: Develop fairness models and metrics designed for
+financial algorithms to mitigate biases and ensure equitable outcomes.
+T3. Implementation of Federated Learning: Implement techniques to enable collaborative model
+training across distributed financial data sources while preserving data privacy.
+WG2: Generative AI in Finance
+WG2 is dedicated to enhancing portfolio optimization, risk management, and personalized financial
+advice through advanced Generative AI techniques. The group leverages recent Transformer Neural
+Networks to improve models for optimal portfolios, assessing risks, and detecting fraudulent activities.
+T4. Advanced Portfolio Optimization: Develop advanced portfolio optimization models using
+Transformer Neural Networks to improve investment strategies and maximize returns.
+T5.
+Enhanced Risk Assessment: Create advanced risk management models that leverage
+Generative AI to identify and assess financial risks in real-time.
+T6. Personalized Financial Advice: Develop personalized financial advice models that consider
+investor preferences and financial goals, leading to tailored recommendations.
+WG3: Explainable AI and Algorithmic Bias in Finance
+WG3 will make AI models in finance more transparent and accountable while addressing algorithmic
+bias. The group pioneers the development of novel, non-perturbative XAI methods for financial data
+and Transformer Neural Networks. They also work on mitigation strategies for algorithmic bias.
+T7. Scalable XAI Methods: Develop scalable XAI methods tailored for financial time series data,
+allowing stakeholders to understand AI-driven decisions.
+T8. Transparent Transformer Neural Networks: Create transparent Transformer Neural Networks by
+devising interpretable architectures and visualization techniques.
+T9. Algorithmic Bias Mitigation Strategies: Design and implement effective strategies for measuring
+and mitigating algorithmic bias in financial applications, ensuring fairness.
+WG4: Sustainable Digital Finance
+WG4 will advance sustainable digital finance through data-driven ESG measurement. The group
+employs Large Language Models to perform sentiment analysis, analyze news and reports, and
+develop real-time, data-driven ESG scoring models, contributing to sustainable finance.
+T10. ESG Sentiment Analysis: Utilize Large Language Models to perform sentiment analysis on
+news articles, financial reports, and social media data to improve ESG factors.
+T11. News and Reports Analysis: Develop algorithms for comprehensive analysis of news and
+financial reports to extract relevant ESG-related information.
+T12. Real-time ESG Scoring Models: Build dynamic ESG scoring models that provide ongoing
+assessment and scoring of ESG performance for financial products and companies.
+Overall Action Tasks:
+T13. Cross-WG Collaboration: Foster collaboration and knowledge exchange among all WGs to
+ensure interdisciplinary insights using tools such as Git, Jira and Slack channels.
+T14. Dissemination and Impact: Implement a comprehensive dissemination strategy to share
+research outcomes, engage with stakeholders, and maximize the impact of the Action.
+T15. Ethical and Regulatory Compliance: Ensure all ethical guidelines and regulatory rules, in
+relation to data privacy, algorithmic fairness, and financial industry standards.
+T16. Science Communication Plan: Develop and implement a science communication plan to
+disseminate the Action findings to both the scientific community and the general public.
+T17. Quarterly CG meetings; T18. Annual MC meetings
+oc-2023-1
+13/15
+
+
+</pre><div class="page-break" data-page="Page 15"></div><pre class="text-content">
+4.1.2 DESCRIPTION OF DELIVERABLES AND TIMEFRAME
+The Action&#x27;s major deliverables and timeframe are designed to achieve the research coordination and
+capacity-building objectives effectively. These deliverables span a period of 48 months and will make
+impactful contributions to the areas of data privacy, generative AI, XAI, and sustainable digital finance.
+Data-Driven Processes
+D1: Data Privacy Guidelines for Financial Applications: A comprehensive report outlining best
+practices for data privacy in financial applications.
+D2: Fairness Models for Financial Algorithms: Models and metrics to ensure fairness in algorithms.
+D3: Federated Learning Implementation: A report on the techniques and protocols for implementing
+federated learning in financial applications.
+Generative AI in Finance
+D4: Advanced Portfolio Optimization Models: A document detailing advanced portfolio optimization
+techniques using Transformer Neural Networks.
+D5: Enhanced Risk Assessment Models: Models and algorithms that leverage generative AI for
+real-time financial risk assessment.
+D6: Personalized Financial Advice Models: Models that provide tailored financial advice.
+Explainable AI and Algorithmic Bias in Finance
+D7: Scalable XAI Methods: A report on scalable XAI methods tailored for financial time-series data.
+D8: Transparent Transformer Neural Networks: Documentation and code for transparent and
+interpretable Transformer Neural Network architectures.
+D9: Algorithmic Bias Mitigation Strategies: A report outlining strategies for measuring and mitigating
+algorithmic bias in financial applications.
+Sustainable Digital Finance
+D10: ESG Sentiment Analysis: Models and findings on sentiment analysis related to Environmental,
+Social, and Governance factors.
+D11: News and Reports Analysis: Algorithms for analyzing news to extract ESG-related information.
+D12: Real-Time ESG Scoring Models: A real-time scoring system for assessing the ESG performance.
+Overall Action Deliverables
+D13: Online Presence and Social Media: A website and LinkedIn, Facebook and Twitter accounts.
+D14: Data Collection: 20 datasets to be used for research, publicly accessible.
+D15: Publication Plan: A green open-access repository featuring 80 papers, and 4 special issues.
+D16: Training Materials: Slides and video material from at least two PhD training schools per year.
+D17: Research Proposals: Submission of at least 40 research proposals, both national and European.
+D18: Award: An award for the best Young Researcher presentation at the annual MC meeting.
+D19: Gender Balance Reports: Periodic reports tracking gender balance and other inclusivity metrics.
+4.1.3 RISK ANALYSIS AND CONTINGENCY PLANS
+Description of the Risk
+Contingency Measure
+Risks for Research coordination objectives
+Inconsistency in Data Privacy Regulations
+(RC1, RC6): The changing privacy regulations
+can introduce inconsistencies, making it difficult
+to create a unified framework for data privacy.
+Monitor
+ongoing
+changes
+in
+regulations
+and
+maintain flexibility in the framework to adapt to
+new guidelines. Collaborate with legal advisors to
+ensure alignment with international standards.
+Data Quality and Standardization (RC2): Poor
+data
+quality
+or
+lack
+of
+data
+standardization
+impacts the effectiveness of AI models.
+Develop
+robust
+data
+validation
+and cleansing
+processes.
+Implement
+mechanisms
+for
+data
+governance to ensure data quality.
+Limited Adoption of XAI Protocols (RC3, RC7)
+Non-adherence to standardized protocols for XAI
+by stakeholders and research communities may
+result in fragmented and non-scalable solutions.
+Actively promote the protocols through webinars,
+publications,
+and
+partnerships
+with
+key
+stakeholders. Create incentives for the adoption of
+standardized practices
+Inaccurate ESG Measurements (RC4, RC8)
+The rapidly evolving field of ESG can result in
+outdated or inaccurate measurements.
+Regularly
+review
+and
+adapt methodologies to
+ensure they align with current ESG norms and
+standards.
+Resource Portal Mismanagement (RC5): The
+shared resource portal can become disorganized
+or outdated, affecting all Working Groups.
+Implement automated quality checks and periodic
+manual reviews to maintain the accuracy and
+relevance of shared resources.
+oc-2023-1
+14/15
+
+
+</pre><div class="page-break" data-page="Page 16"></div><pre class="text-content">
+Risks for Capacity building objectives
+Inadequate Stakeholder Participation (CB1,
+CB4): Lack of interest or participation from key
+stakeholders, such as legal experts or financial
+institutions, undermines the effectiveness of the
+joint agendas and stakeholder platforms.
+Establish fallback collaborations with academic
+institutions
+and
+NGOs.
+Use
+incentives
+like
+whitepapers
+or
+industry
+reports
+to
+entice
+stakeholder participation.
+Interdisciplinary
+Collaboration
+Challenges
+(CB2, CB6): Difficulties may arise in achieving
+interdisciplinary collaboration, given the diverse
+fields of ethics, data science, and finance.
+Employ a dedicated interdisciplinary coordinator to
+facilitate communication and project management
+between
+various
+disciplines.
+Conduct
+regular
+interdisciplinary workshops.
+Limited
+Engagement
+from
+Young
+Researchers (CB3): Low participation rates from
+young researchers may hinder capacity-building
+in the emerging field of federated learning.
+Introduce mentorship programs and competitive
+grants
+targeted
+at
+young
+researchers
+to
+encourage their active participation.
+Lack of Diversity and Inclusion (CB5)
+Failure to adequately involve under-represented
+genders and marginalized communities could
+result in a lack of diversity for XAI methods.
+Create targeted outreach programs and provide
+scholarships or stipends to facilitate the inclusion
+of under-represented groups.
+Insufficient
+Resources
+for
+Comprehensive
+Capacity-building (CB7): Resource constraints
+may hamper the achievement of overall action
+deliverables like training materials, publications,
+and gender balance reports.
+Prioritize deliverables based on their impact and
+availability of resources. In the case of budget
+limitations,
+seek
+additional
+external
+funding
+through grants or partnerships.
+4.1.4 GANTT DIAGRAM
+oc-2023-1
+15/15
+
+
+</pre><div class="page-break" data-page="Page 17"></div><pre class="text-content">
+References
+Bassen, A., &amp; Kovács, A. M. (2020). Environmental, social and governance key performance
+indicators from a capital market perspective (pp. 809-820). Springer Fachmedien Wiesbaden.
+Dazeley, R., Vamplew, P., Foale, C., Young, C., Aryal, S., &amp; Cruz, F. (2021). Levels of Explainable
+Artificial Intelligence for Human-Aligned Conversational Explanations. Artificial Intelligence, 299,
+103525. https://www.sciencedirect.com/science/article/abs/pii/S000437022100076X   
+Department of Economic and Social Affairs, Sustainable Development. (n.d.). The 17 Goals.
+https://sdgs.un.org/goals  
+Directorate-General for Research and Innovation. (2021). HORIZON EUROPE STRATEGIC PLAN
+2021-
+2024.https://www.eeas.europa.eu/sites/default/files/horizon_europe_strategic_plan_2021-2024.pdf 
+Dwork, C. (2008). Differential privacy: A survey of results. In M. Agrawal, D. Du, Z. Duan, &amp; A. Li
+(Eds.), Theory and Applications of Models of Computation (pp. 1-19). Springer.
+https://link.springer.com/chapter/10.1007/978-3-540-79228-4_1  
+European Commission. (2019). The European Green Deal: Striving to be the first climate-neutral
+continent. https://commission.europa.eu/strategy-and-policy/priorities-2019-2024/european-green-
+deal_en  
+European Commission. (2020b). Digital finance package. Retrieved from
+https://finance.ec.europa.eu/publications/digital-finance-package_en 
+European Commission. (2023). A European approach to artificial intelligence. Digital Strategy.
+Retrieved from https://digital-strategy.ec.europa.eu/en/policies/european-approach-artificial-
+intelligence 
+European Commission. (2023). A European Strategy for data. Digital Strategy. Retrieved from
+https://digital-strategy.ec.europa.eu/en/policies/strategy-data 
+European Commission. (2020). White paper on artificial intelligence: A European approach to
+excellence and trust. Retrieved from https://ec.europa.eu/info/sites/default/files/commission-white-
+paper-artificial-intelligence-feb2020_en.pdf 
+European Commission. (2023). EU blockchain strategy. Digital Strategy. Retrieved from https://digital-
+strategy.ec.europa.eu/en/policies/blockchain-strategy 
+Gunning, D., Stefik, M., Choi, J., Miller, T., Stumpf, S., &amp; Yang, G. (2019). XAI-Explainable Artificial
+Intelligence. Sci Robot 18:4(37). https://pubmed.ncbi.nlm.nih.gov/33137719/  
+Hsu, E. Y., Liu, C.-L., &amp; Tseng, V. S.-M. (2019). Multivariate time series early classification with
+interpretability using deep learning and attention mechanism. In M.-L. Zhang, Z.-H. Zhou, Z. Gong,
+Q. Yang, &amp; S.-J. Huang (Eds.), Advances in Knowledge Discovery and Data Mining - 23rd Pacific-
+Asia Conference, PAKDD 2019, Proceedings (pp. 541–553). Springer Verlag.
+Hulsen, T. (2023). Explainable Artificial Intelligence (XAI): Concepts and Challenges in Healthcare.
+AI, 4(3), 652-666. https://doi.org/10.3390/ai4030034. 
+IBM. (2023). AI Fairness 360 (AIF360) toolkit. Retrieved from https://aif360.res.ibm.com/
+Lee, J., &amp; Kim, M. (2023). ESG Information Extraction with Cross-Sectoral and Multi-Source
+Adaptation Based on Domain-Tuned Language Models. Expert Systems with Applications, 221,
+119726.
+Linardatos, P., Papastefanopoulos, V. and Kotsiantis, S. (2021). Explainable AI: A Review of
+Machine Learning Interpretability Methods Entropy 23, no. 1: 18. https://doi.org/10.3390/e23010018 
+Louizos, C., Swersky, K., Li, Y., Welling, M., &amp; Zemel, R. (2015). The Variational Fair Autoencoder.
+arXiv:1511.00830 [stat.ML]
+Ouadrhiri, A., &amp; Abdelhadi, A. (2022). Differential Privacy for Deep and Federated Learning: A
+Survey. IEEE Access, 10.1109/ACCESS.2022.3151670.
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&amp;arnumber=9714350  
+Saeed, W. and Omlin, C. (2023). Explainable AI (XAI): A systematic meta-survey of current
+challenges and future opportunities. Knowledge-based systems, 263. 110273.
+
+
+</pre><div class="page-break" data-page="Page 18"></div><pre class="text-content">
+https://doi.org/10.1016/j.knosys.2023.110273 
+Sen, J., &amp; Mehtab, S. (2021). Design and Analysis of Robust Deep Learning Models for Stock Price
+Prediction. arXiv:2106.09664. https://arxiv.org/abs/2106.09664  
+United Nations. (2023). The 17 goals. Sustainable Development Goals. Retrieved from
+https://sdgs.un.org/goals 
+World Economic Forum. (2020, January). Transforming Paradigms: A Global AI in Financial Services
+Survey. https://www3.weforum.org/docs/WEF_AI_in_Financial_Services_Survey.pdf 
+World Economic Forum. (2020). AI in financial services. Retrieved from
+https://www3.weforum.org/docs/WEF_AI_in_Financial_Services_Survey.pdf 
+Wu, X., Xu, D., Yuan, S., &amp; Zhang, L. (2022). Fair Data Generation and Machine Learning Through
+Generative Adversarial Networks. In Intelligent Systems Reference Library (ISRL), Volume 217.
+Wu, S., Irsoy, O., Lu, S., Dabravolski, V., Dredze, M., Gehrmann, S., Kambadur, P., Rosenberg, D.,
+&amp; Mann, G. (2023). BloombergGPT: A Large Language Model for Finance. arXiv preprint
+arXiv:2303.17564. https://huggingface.co/papers/2303.17564 
+Zhao, W. X., Zhou, K., Li, J., Tang, T., Wang, X., Hou, Y., Wen, J.-R. (2023). A Survey of Large
+Language Models. arXiv preprint, 2303.18223.
+
+
+</pre><div class="page-break" data-page="Page 19"></div><pre class="text-content">
+COST Mission and Policies
+1. COST Excellence and Inclusiveness:
+The two pillars of COST excellence and inclusiveness are:
+Strengthening the excellence through the creation of cross-border networking of researchers
+Promoting geographical, age and gender balance throughout its activities and operations
+Those will be addressed as follows:
+In our Action proposal, 59% of the participating countries are Inclusiveness Target Countries. Indeed, we
+have all ITCs but two on board. At the start of the Action, we will actively work on adding the remaining two
+as well.
+All of our COST activities are focused on cross-border collaboration, networking and dissemination of results
+across borders.
+59% of the participating countries are ITC. We have reserved 50% of the following key leadership positions
+in the Action management to a representative of a COST Inclusiveness Target Country. Those are:
+Two of the four working group leaders
+Two of the four vice-leaders of the working groups
+One of the following: Science Communication Coordinator, Scientific Advisory Board Coordinator,
+Academia-Industry Coordinator
+Vice-Chair of the Action or Grant Awarding Coordinator
+The Grant Holder is supposed to be from one of the COST Inclusiveness Target Countries. We have
+identified suitable candidates from those countries for the position of Grant Holder Scientific
+Representative, who is then expected to assign persons to the positions of Grant Holder Legal
+Representative, Grant Holder Financial Representative and Grant Holder Manager, also from ITC.
+Geographical, age and gender balance will be addressed as follows: All activities are monitored and
+prioritized based on wide geographical inclusion and distribution across Europe:
+Our networking tools will reserve at least 50% of the funds for Young Researchers and Innovators.
+Gender balance is one of our goals and we will actively promote female participants in all our
+activities. Preferences, given the same qualifications, will be given to female researchers. We
+currently have 46% female participants and actively aim to increase that to 50% throughout life-time
+of the Action.
+All ITCs will be members of the Action and funds allocated will be at least 50%. 
+2. Participation of non-COST Countries and Specific Organisations:
+During the proposal phase, we have focused on including COST countries, where we now have almost all of
+the COST countries included in our network. We have five near-neighbouring countries and five international
+partners involved, among them the top finance centres globally. One of the first goals of the Action will be to
+target additional non-COST countries and include them in our network, within the Rules for Participation of
+Non-COST countries and Specific Organisations and the COST Annotated Rules. To include specific
+organisations, we will draw on the network of our proposers, who themselves are in contact with a
+substantial number of them.  
+3. Collaborations between different stakeholders
+One of the main objectives of our Action is to enable fruitful collaborations between researchers, engineers,
+scholars and other stakeholders and business by providing a natural platform for them to meet and build
+mutual trust. In the inaugural MC meeting, we will set up a Stakeholder Committee with the first to write a
+stakeholder engagement strategy and plans to implement it. The Core Group will regularly report the
+progress of the engagement to the MC and take corrective actions if needed.. 
+ 
+
+
+</pre><div class="page-break" data-page="Page 20"></div><pre class="text-content">
+4. Impact of research in the industrial sector
+One of our goals is to increase the impact of our research in the industrial sector. We will achieve that by
+promoting the use and development of new technologies in the area of Sustainable Digital Finance.
+Throughout the research phase, we will actively work together with the Finance industry (this is already
+needed given the topic of our Action proposal). Furthermore, our results and outcomes will be actively
+disseminated to SMEs as well as established players throughout Europe. This will be done via the COST
+networking and dissemination tools, which will always require substantial involvement from the industry. We
+envision that all conferences and workshops will have at least a 40% participation rate from industry. 
+5. COST Strategic Plan
+Our Action has agreed to align all activities with the three COST strategic priorities. Indeed, all targets and
+Key Performance Indicators as defined in the COST Strategic Plan, March 2023, are already met during
+Proposal phase (as far as they concern that phase), have been agreed upon by the proposers (in so far
+COST MC decisions are concerned) or will be our guiding principles.
+Specifically: 
+5.1 Promoting and spreading excellence
+92% of ITCs (23/25) are in our Action during the proposal phase (COST Target: 50%).
+A minimum of four leadership positions are filled by ITC participants, as described under 1. (COST
+Target: three). 
+Our Action has agreed, from day one on, that 50% of the budget will be invested in ITCs/ activities in
+ITCs and/or ITC researchers (COST target: 50%).
+50% of leadership positions will be occupied by female researchers, as described under 1. (COST
+target: 50%).
+5.2 Fostering interdisciplinary research for breakthrough science
+Our Action has four science disciplines substantially represented and we aim to extend that to six
+during the lifetime of the Action (COST Target: 2).
+Our current proposers have regularly published more than 30 peer reviewed publications per year in
+the topics related to our Action, i.e. 120 over a four-year period (COST Target: 50).
+The current proposers submit, on average per year, more than 5 proposals to Horizon Europe on the
+topics of this Action, i.e. 20 over a four-year period (COST Target: 2.5).
+Our proposers were granted, on average, six H2020 projects over a four-year period, related to the
+Action topics (COST Target: 1 per Action).
+Considering the output our current proposers produce per year, we will obtain more than 50 success
+stories of scientific results and impact per year (COST Target: 50 per year).
+5.3. Empowering and retaining young researchers
+Our current share of young researchers and innovators is at 35% and we have agreed to make it a
+top priority to increase that number to 45% (COST Target: 40%).
+Our proposers have agreed to allocate 25% of Action leadership positions to young researchers and
+innovators (COST Target: 20%).
+As for the overall Action, we will also have a 50% share of female researchers among the young
+researchers, already at 48.5% (COST Target: 50%).
+
+
+</pre><div class="page-break" data-page="Page 21"></div><pre class="text-content">
+Network of Proposers - Features
+COST Inclusiveness Target Countries
+  58.97 %
+Number of Proposers
+187
+Geographic Distribution of Proposers
+Country
+ITC/ non ITC/ other
+Number of institutions
+from that country
+Number of researchers
+from that country
+Percentage of the
+proposing network
+Albania
+ITC
+5
+5
+  2.67 %
+Algeria
+other
+1
+1
+  0.53 %
+Austria
+non ITC
+3
+3
+  1.6 %
+Belgium
+non ITC
+2
+2
+  1.07 %
+Bosnia and Herzegovina
+ITC
+1
+1
+  0.53 %
+Bulgaria
+ITC
+4
+4
+  2.14 %
+Croatia
+ITC
+4
+4
+  2.14 %
+Cyprus
+ITC
+2
+2
+  1.07 %
+Czech Republic
+ITC
+2
+3
+  1.6 %
+Denmark
+non ITC
+3
+3
+  1.6 %
+Egypt
+other
+1
+1
+  0.53 %
+Estonia
+ITC
+3
+3
+  1.6 %
+Finland
+non ITC
+1
+1
+  0.53 %
+France
+non ITC
+4
+4
+  2.14 %
+Georgia
+ITC
+1
+1
+  0.53 %
+Germany
+non ITC
+4
+4
+  2.14 %
+Greece
+ITC
+6
+6
+  3.21 %
+Hungary
+ITC
+4
+4
+  2.14 %
+Iceland
+non ITC
+2
+2
+  1.07 %
+Ireland
+non ITC
+2
+4
+  2.14 %
+Israel
+non ITC
+1
+1
+  0.53 %
+Italy
+non ITC
+9
+9
+  4.81 %
+Kosovo*
+other
+3
+3
+  1.6 %
+Kuwait
+other
+1
+1
+  0.53 %
+Latvia
+ITC
+2
+2
+  1.07 %
+Lithuania
+ITC
+7
+7
+  3.74 %
+Moldova
+ITC
+5
+5
+  2.67 %
+Montenegro
+ITC
+3
+3
+  1.6 %
+Netherlands
+non ITC
+9
+9
+  4.81 %
+
+
+</pre><div class="page-break" data-page="Page 22"></div><pre class="text-content">
+North Macedonia
+ITC
+4
+4
+  2.14 %
+Norway
+non ITC
+4
+4
+  2.14 %
+Poland
+ITC
+8
+8
+  4.28 %
+Portugal
+ITC
+6
+6
+  3.21 %
+Romania
+ITC
+11
+11
+  5.88 %
+Serbia
+ITC
+3
+3
+  1.6 %
+Slovakia
+ITC
+4
+4
+  2.14 %
+Slovenia
+ITC
+6
+6
+  3.21 %
+Spain
+non ITC
+8
+8
+  4.28 %
+Sweden
+non ITC
+4
+5
+  2.67 %
+Switzerland
+non ITC
+10
+10
+  5.35 %
+Tunisia
+other
+2
+2
+  1.07 %
+Türkiye
+ITC
+9
+9
+  4.81 %
+Ukraine
+ITC
+3
+3
+  1.6 %
+United Arab Emirates
+other
+1
+1
+  0.53 %
+United Kingdom
+non ITC
+3
+3
+  1.6 %
+United States
+other
+2
+2
+  1.07 %
+Gender Distribution of Proposers
+52.4% Males
+47.1% Females 
+Number of Young Researchers and Innovators
+67
+Core Expertise of Proposers: Distribution by Sub-Field of Science
+51.3% Economics and business
+  19.3% Computer and Information Sciences
+  17.1% Mathematics
+  3.7% Law
+  2.7% Electrical engineering, electronic engineering, Information engineering
+  5.2% Other
+  0.5% Unspecified
+   
+Institutional distribution of Network of Proposers
+88.8% Higher Education &amp; Associated Organisations
+8.6% Business enterprise
+1.6% Government/Intergovernmental Organisations except Higher Education
+0.5% Standards Organisation
+0.5% Private Non-Profit without market revenues, NGO  
+Higher Education &amp; Associated Organisations:166
+  Number by Field of Science of Department/Faculty of Affiliation
+  Economics and business:89
+  Law:6
+  Mathematics:25
+
+
+</pre><div class="page-break" data-page="Page 23"></div><pre class="text-content">
+  Other engineering and technologies:5
+  Computer and Information Sciences:32
+  Political Science:1
+  Other social sciences:1
+  Electrical engineering, electronic engineering, Information engineering:2
+  Other humanities:1
+  Sociology:1
+  Educational sciences:1
+  Interdisciplinary:1
+  Number by Type
+  Research Oriented:69
+  Education Oriented:97
+  Number by Ownership
+  Fully or mostly public:139
+  Fully or mostly private:24
+  50-50 Public and Private:3
+Business enterprise:16
+  Number by Market sector of unit of affiliation
+  Financial And Insurance Activities:8
+  Information And Communication:4
+  Professional, Scientific And Technical Activities:4
+  Number by Type
+  Private enterprises:13
+  Research and Technology Organization - RTO:2
+  Public enterprises:1
+  Number by Ownership and International Status
+  Enterprise owned by a foreign multinational group:4
+  Independent Enterprise:9
+  Enterprise owned by a national group:3
+  Number by Size
+  Large company:5
+  SME (EU Definition provided underneath after selection):11
+Government/Intergovernmental Organisations except Higher Education:3
+  Number by Level
+  Central and Federal Government:1
+  Local government:1
+  European Union - EU:1
+  Number by Type
+  Non-R&amp;D executive agencies, including sector specific regulatory bodies:1
+  Government department or government-run general public services:1
+  Other Public Non-Profit Institution:1
+Standards Organisation:1
+  Number by Membership type
+  With no government membership:1
+  Number by Level
+  Regional - European:1
+Private Non-Profit without market revenues, NGO:1
+  Number by Type
+  Other:1
+  Number by Level
+
+
+</pre><div class="page-break" data-page="Page 24"></div><pre class="text-content">
+  National:1
+COST Full Member (38) : Albania  , Austria  , Belgium  , Bosnia and Herzegovina  , Bulgaria  , Croatia  ,
+Cyprus  , Czech Republic  , Denmark  , Estonia  , Finland  , France  , Georgia  , Germany  , Greece  ,
+Hungary  , Iceland  , Ireland  , Italy  , Latvia  , Lithuania  , Moldova  , Montenegro  , Netherlands  , North
+Macedonia  , Norway  , Poland  , Portugal  , Romania  , Serbia  , Slovakia  , Slovenia  , Spain  , Sweden  ,
+Switzerland  , Türkiye  , Ukraine  , United Kingdom 
+COST Cooperating Member (1) : Israel 
+Near Neighbour Country (4) : Algeria, Egypt, Kosovo*, Tunisia
+International Partner (3) : Kuwait, United Arab Emirates, United States
+European RTD Organisation (0)
+EU Institutions, Bodies, Offices and Agencies (EC/EU) (0)
+International Organisation (0)
+
+
+</pre><div class="page-break" data-page="Page 25"></div><pre class="text-content">
+Network of Proposers - Details
+Main Proposer&#x27;s Details
+Title:
+Prof
+First Name:
+Jörg
+Gender:
+M
+Last Name:
+Osterrieder
+Is Young Researcher
+and Innovator:
+No
+Institution:
+Bern University of Applied Sciences
+Type of Institution:
+COST Full
+Member
+Sub-field of Science
+of Department:
+Economics and business
+Core Area of
+Expertise:
+Mathematics
+(Financial
+Mathematics)
+
+
+</pre><div class="page-break" data-page="Page 26"></div><pre class="text-content">
+Secondary Proposers’ Details
+Albania
+Ms Armela Maxhelaku (Faculty of Law, University of Tirana [Department of Civil Law])
+Participating as Secondary Proposer
+Core Expertise: Law: International Law, Private Law, Labour Law, Comparative Law, Legal
+aspects of environmental regulations
+Gender: F
+Is Young Researcher and Innovator: Yes
+Prof Fatmir Memaj (University of Tirana [Deputy dean of Faculty of economy])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Econometrics, statistical methods applied to
+economics
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Rezarta Shkurti (Perri) (University of Tirana - Faculty of Economics)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Accounting
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Suela Maxhelaku (Vasil) (University of Tirana [Computer Science Department])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: F
+Is Young Researcher and Innovator: Yes
+Prof Elda Xhumari (University of Tirana, Faculty of Natural Sciences - Elda Xhumari
+[Department of Informatics])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: F
+Is Young Researcher and Innovator: Yes
+Algeria
+Dr Chemseddine TIDJANI (Centre de Recherche en Economie Appliquée pour le
+Développement (CREAD) [Firms &amp; Industrial Economics ])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: Yes
+Austria
+Prof Ronald Hochreiter (WU Vienna [Computational Methods])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Machine learning algorithms
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Christa Cuchiero (University of Vienna)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Probability 
+
+
+</pre><div class="page-break" data-page="Page 27"></div><pre class="text-content">
+Gender: F
+Is Young Researcher and Innovator: Yes
+Prof Michaela Szoelgyenyi (University of Klagenfurt - Faculty of Technical Sciences
+[Department of Statistics])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Probability 
+Gender: F
+Is Young Researcher and Innovator: Yes
+Belgium
+Dr Irem Yaman (KBC Group - KBC Group )
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Numerical analysis
+Gender: F
+Is Young Researcher and Innovator: No
+Mr Theodosios Sampaniotis (European Commission - EUROPEAN COMMISSION [DG
+REGIONAL AND URBAN POLICY])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Development, economic growth, competitiveness
+Gender: M
+Is Young Researcher and Innovator: No
+Bosnia and Herzegovina
+Dr Nataša Simeunović (University FINra Tuzla)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Accounting
+Gender: F
+Is Young Researcher and Innovator: No
+Bulgaria
+Dr Stoyan Mishev (Institute for Advanced Physical Studies)
+Participating as Secondary Proposer
+Core Expertise: Physical Sciences: Nuclear physics (theory)
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Teodora Bakardjieva (Varna Free University - Varna Free University [Computer Science
+Dept.])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: F
+Is Young Researcher and Innovator: No
+Ms Antonina Ivanova (Varna Free University &quot;Chernorizets Hrabar&quot; [Computer Science])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Yassen Gorbounov (New Bulgarian University)
+Participating as Secondary Proposer
+Core Expertise: Electrical engineering, electronic engineering, Information engineering: Electrical
+and electronic engineering of semiconductors, components, systems
+
+
+</pre><div class="page-break" data-page="Page 28"></div><pre class="text-content">
+Gender: M
+Is Young Researcher and Innovator: No
+Croatia
+Prof Ana Ivanisevic Hernaus (University of Zagreb, Faculty of Economics and Business
+[Department of Finance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: Yes
+Prof Domagoj Sajter (Faculty of Economics in Osijek)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Silvija Vlah Jerić (Faculty of Economics and Business Zagreb)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Control theory and optimization
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Nika Šimurina (Faculty of Economics &amp; Business University of Zagreb [Departmant of
+Finance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Public economics, political economics
+Gender: F
+Is Young Researcher and Innovator: No
+Cyprus
+Dr Andreas Gregoriades (Cyprus University of Technology)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Human Factors, Software Engineering,
+Decision Support Systems, Road Safety Analysis
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Constandinos Mavromoustakis (University of Nicosia [Computer Science])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Algorithms, distributed, parallel and network
+algorithms
+Gender: M
+Is Young Researcher and Innovator: No
+Czech Republic
+Prof Milos Kopa (Charles University - Charles University [Faculty of Mathematics and Physics,
+Department of Probability and Mathematical Statistics])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Stochastic optimization
+Gender: M
+Is Young Researcher and Innovator: No
+Ms Jana Junová (Charles University [Faculty of Mathematics and Physics])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Control theory and optimization
+Gender: F
+
+
+</pre><div class="page-break" data-page="Page 29"></div><pre class="text-content">
+Is Young Researcher and Innovator: Yes
+Ms Monika Kalatova (Charles University [Faculty of Mathematics and Physics])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Control theory and optimization
+Gender: F
+Is Young Researcher and Innovator: Yes
+Denmark
+Dr Serkan Ayvaz (University of Southern Denmark [The Maersk Mc-Kinney Moller Institute])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: M
+Is Young Researcher and Innovator: Yes
+Dr Parisa Niloofar (University of Southern Denmark [Software Engineering])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Mathematics applied to computer science,
+mathematical aspects of computer science
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Sadok BEN YAHIA (University of Southern Denmark - The Maersk Mc-Kinney Moller
+Institute)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: M
+Is Young Researcher and Innovator: No
+Egypt
+Dr Fatma Gadelrab (Egyption University - Faculty of computers and AI [IT])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Machine learning algorithms
+Gender: F
+Is Young Researcher and Innovator: No
+Estonia
+Dr Innar Liiv (Tallinn University of Technology)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Tonn Talpsepp (Tallinn University of Technology - Department of economics and finance)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Kristiina Hakk (Tallinn University of Technology [IT Department])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Numerical solution of  weakly singular integral equations
+Gender: F
+Is Young Researcher and Innovator: No
+
+
+</pre><div class="page-break" data-page="Page 30"></div><pre class="text-content">
+Finland
+Prof Timothy King (University of Vaasa [School of Accounting and Finance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: Yes
+France
+Dr Roman MATKOVSKYY (Rennes School of Business [Department of Finance and Accounting
+])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Amira Mouakher (University of Perpignan Via Domitia - Amira Mouakher [University of
+Perpignan Via Domitia])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: F
+Is Young Researcher and Innovator: Yes
+Dr Galena Pisoni (University of Côte d&#x27;Azur)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Digital business model, digital innovation
+and entrepreneurship
+Gender: F
+Is Young Researcher and Innovator: Yes
+Ms lalitha shankari balachandar (Rennes School of Business [FMCO])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: Yes
+Georgia
+Dr Davit Keshelava (ISET Policy Institute - International School of Economics (ISET) Policy
+Institute [Macroeconomic Policy Research center])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Macroeconomics, business cycles
+Gender: M
+Is Young Researcher and Innovator: Yes
+Germany
+Prof Wolfgang Härdle (HU Berlin)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Statistics
+Gender: M
+Is Young Researcher and Innovator: No
+Mr Matthias Pocs (Stelar Security Technology Law Research [Research])
+Participating as Secondary Proposer
+Core Expertise: Law: Databases, data mining, data curation, computational modelling
+Gender: M
+Is Young Researcher and Innovator: Yes
+
+
+</pre><div class="page-break" data-page="Page 31"></div><pre class="text-content">
+Mr Karsten Wenzlaff (University of Hamburg [WiSo Fakultät, Fachbereich Sozialökonomie,
+Lehrstuhl Digitale Märke])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Monika Gehde-Trapp (Eberhard Karls Universität Tübingen [Faculty of Economics and
+Social Sciences])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Greece
+Dr Dimitris Anastasiou (Athens University of Economics and Business [Accounting and
+Finance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: Yes
+Mr Alexios Ioannis Moukas (Aristotle University of Thessaloniki [School of Economics])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Energy Economics
+Gender: M
+Is Young Researcher and Innovator: Yes
+Dr Theodoros Stamatiou (Eurobank SA [Division of Economic Analysis and Financial Markets
+Research])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Nikolaos S. Thomaidis (University of the Aegean [Department of Financial and Management
+Engineering ])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Econometrics, statistical methods applied to
+economics
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Veni Arakelian (Piraeus Bank)
+Participating as Secondary Proposer
+Core Expertise: Other social  sciences: Databases, data mining, data curation, computational
+modelling
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Hariton Korizis (Biopikilo Single Member Private Company - Biopikilo)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Hungary
+
+
+</pre><div class="page-break" data-page="Page 32"></div><pre class="text-content">
+Dr Marta Alexy (Eotvos Lorand University [Faculty of Informatics])
+Participating as Secondary Proposer
+Core Expertise: Animal and dairy science: Agriculture related to animal husbandry, dairying,
+livestock raising, animal welfare
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Szabolcs Korba (ELTE University Budapest)
+Participating as Secondary Proposer
+Core Expertise: Law: Private law
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Bálint Molnár (ELTE, Eötvös Loránd University [Information Systems])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Mathematics applied to computer science,
+mathematical aspects of computer science
+Gender: M
+Is Young Researcher and Innovator: No
+Dr RongLin Zuo (Eötvös Loránd University)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: F
+Is Young Researcher and Innovator: Yes
+Iceland
+Dr Erlendur Jonsson (Bifrost - Business department [Business])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Econometrics, statistical methods applied to
+economics
+Gender: M
+Is Young Researcher and Innovator: No
+Ms Hanna Kristín Skaftadóttir (Uni - University of Iceland [School of Business])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Ireland
+Dr Alessia Paccagnini (University College Dublin)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Econometrics, statistical methods applied to
+economics
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Cal Muckley (UCD [Banking and Finance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Emmanuel Eyiah-Donkor (University College Dublin)
+Participating as Secondary Proposer
+
+
+</pre><div class="page-break" data-page="Page 33"></div><pre class="text-content">
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: Yes
+Dr Maria Moloney (University College Dublin)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Informational privacy and data protection
+Gender: F
+Is Young Researcher and Innovator: No
+Israel
+Dr Abraham Weinberg (AI-WEINBERG)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Machine learning algorithms
+Gender: M
+Is Young Researcher and Innovator: No
+Italy
+Prof Simona Cosma (University of Bologna [DISA - Department of Management])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Sabrina Giordano (University of Calabria [Department of Economics, Statistics and
+Finance])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Statistics
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Daniele Marazzina (Politecnico di Milano [Department of Mathematics])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Maria Iannario (University of Naples Federico II [Political Sciences])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Statistics
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Alessandra Tanda (Università degli Studi di Pavia [Department of Economics and
+Management])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: Yes
+Ms Claudia Tarantola (University of Pavia [DEM])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Statistics
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Valerio Veglio (University of Pavia)
+
+
+</pre><div class="page-break" data-page="Page 34"></div><pre class="text-content">
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Business and international management
+Gender: M
+Is Young Researcher and Innovator: Yes
+Prof Paolo Zicchittu (Università degli studi di Milano-Bicocca [School of Law])
+Participating as Secondary Proposer
+Core Expertise: Law: Legal theory, legal systems, constitutions, comparative law
+Gender: M
+Is Young Researcher and Innovator: Yes
+Prof Luca Di Persio (University of Verona)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Probability 
+Gender: M
+Is Young Researcher and Innovator: No
+Kosovo*
+Dr Albulena Shala (University of Prishtina [Bank and Finance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: Yes
+Prof Vlora Berisha (University Haxhi Zeka)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Accounting
+Gender: F
+Is Young Researcher and Innovator: Yes
+Mr Sead Ujkani (University of Prishtina [Faculty of Economics])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Accounting
+Gender: M
+Is Young Researcher and Innovator: Yes
+Kuwait
+Dr Vladimir Simović (Australian University, Kuwait [Scientific Research Center])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Management of Technology and Innovation
+Gender: M
+Is Young Researcher and Innovator: No
+Latvia
+Prof Pierpaolo Marano (University of Latvia - Faculty of Business, managament and
+economics)
+Participating as Secondary Proposer
+Core Expertise: Law: Insurance 
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Ramona Rupeika-Apoga (University of Latvia)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+
+
+</pre><div class="page-break" data-page="Page 35"></div><pre class="text-content">
+Lithuania
+Ms Jurgita Černevičienė (Kaunas University of Technology [Department of Mathematical
+Modelling])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: F
+Is Young Researcher and Innovator: No
+Mr Ahmad Kaab Omeir (Vilnius University [Faculty of Economic and Business Administration,
+Department of Finance ])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Audrius Kabašinskas (Kaunas University of Technology [dept. Mathematical modelling])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Operational research
+Gender: M
+Is Young Researcher and Innovator: No
+Mr Aidas Malakauskas (Swedbank - Swedbank Baltics, AS [Transformation and Innovation
+department])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: Yes
+Dr Kristina Šutienė (Kaunas University of Technology)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Statistics
+Gender: F
+Is Young Researcher and Innovator: No
+Prof DEIMANTE VASILIAUSKAITE (VILNIUS UNIVERSITY [FINANCE DEPARTMENT])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Ms Oksana Adlere (Scientany, UAB)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Moldova
+Ms Muntean Neli (Technical University of Moldova - Technical University of Moldova
+[Economics and Management])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Business and international management
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Victoria Cociug (Academy of Economic Studies of Moldova [Academy of Economic Studies
+of Moldova])
+
+
+</pre><div class="page-break" data-page="Page 36"></div><pre class="text-content">
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Ms Angela Casian (Academy of Economic Studies of Moldova)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Public economics, political economics
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Denis Vostricov (The Academy of Economic Studies from Moldova [Finance and Insurance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Busmachiu Eugenia (Academy of Economic Studies of Moldova [Finance and Inurance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Montenegro
+Dr Luka Filipovic (University of Donja Gorica - Luka Filipovic [NCC Montenegro - National
+Competence Centre for High-Performance Computing])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Algorithms, distributed, parallel and network
+algorithms
+Gender: M
+Is Young Researcher and Innovator: No
+Ms Sanja Nikolic (University of Donja Gorica - University of Donja Gorica, [High Performance
+Computing National Competence Centre @University of Donja Gorica])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Strategy and management
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Maja Drakic Grgur (University of Donja Gorica [Faculty for International Economics,
+Finance and Business])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Macroeconomics, business cycles
+Gender: F
+Is Young Researcher and Innovator: No
+Netherlands
+Dr Fang Fang (Delft University of Technology - Applied Mathematics)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Numerical analysis
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Marcos Machado (University of Twente [Industrial Engineering and Business Information
+Systems])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Applications of machine learning algorithms
+
+
+</pre><div class="page-break" data-page="Page 37"></div><pre class="text-content">
+and analytics
+Gender: M
+Is Young Researcher and Innovator: Yes
+Prof Cornelis Oosterlee (Utrecht University [Mathematical Institute])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Numerical analysis
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Antonis Papapantoleon (TU Delft [DIAM])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Probability 
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Laura Spierdijk (University of Twente [High-tech business and entrepreneurship])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Econometrics, statistical methods applied to
+economics
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Ekaterina Svetlova (University of Twente)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Wouter van Heeswijk (Universite of Twente - University of Twente [Industrial Engineering &amp;
+Business Information Systems])
+Participating as Secondary Proposer
+Core Expertise: Other  engineering and technologies: Applied mathematics, statistics, non-
+computational modeling for other engineering and technology
+Gender: M
+Is Young Researcher and Innovator: Yes
+Mr Ronald Kleverlaan (CrowdfundingHub)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Chiheb Ben Hammouda (Utrecht University [mathematical Institute])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Numerical analysis
+Gender: M
+Is Young Researcher and Innovator: Yes
+North Macedonia
+Prof Petre Lameski (Ss Cyril and Methodius University in Skopje - Faculty of Computer Science
+and Engineering)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: M
+Is Young Researcher and Innovator: Yes
+
+
+</pre><div class="page-break" data-page="Page 38"></div><pre class="text-content">
+Dr Olivija Filipovska (Komrcijalna BAnka AD Skopje - Komercijalna Banka AD Skopje)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Mr Goran Petkovski (FINKI)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Machine learning algorithms
+Gender: M
+Is Young Researcher and Innovator: Yes
+Dr Eftim Zdravevski (magix.ai)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: M
+Is Young Researcher and Innovator: Yes
+Norway
+Dr Fabian Rocha Aponte (SINTEF AS [Sintef Industry/Economics and optimization])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Sustainability
+Gender: U
+Is Young Researcher and Innovator: Yes
+Dr Sheikh Idrees (Norwegian University of Science and Technology - NTNU)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: DLT, Blockchain, DeFi
+Gender: M
+Is Young Researcher and Innovator: Yes
+Prof Basel Katt (NTNU Norwegian University of Science and Technology - Department of
+Information Security and Communication Technology)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Cryptology, security, privacy
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Mariusz Nowostawski (NTNU - Norwegian University of Science and Technology (NTNU)
+[Computer Science ])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: M
+Is Young Researcher and Innovator: No
+Poland
+Prof Barbara Będowska-Sójka (Poznan University of Economics and Business [Department of
+Econometrics])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Ms Karolina Bolesta (Warsaw School of Economics [Collegium of Economic Analysis])
+Participating as Secondary Proposer
+
+
+</pre><div class="page-break" data-page="Page 39"></div><pre class="text-content">
+Core Expertise: Economics and business: Labour economics
+Gender: F
+Is Young Researcher and Innovator: Yes
+Dr Marcin Chlebus (University of Warsaw [Faculty of Economic Sciences, Department of
+Quantitative Finance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Econometrics, statistical methods applied to
+economics
+Gender: M
+Is Young Researcher and Innovator: Yes
+Mr Przemysław Grądzki (University of Warsaw)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Databases, data mining, data curation, computational
+modelling
+Gender: M
+Is Young Researcher and Innovator: Yes
+Ms Zhen Li (University of Warsaw [Doctoral School of Social Sciences, Faculty of Economic
+Sciences])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Corporate Finance, ESG, Organization, Strategy,
+Sustainability
+Gender: F
+Is Young Researcher and Innovator: Yes
+Prof Marta Maciejasz (University of Opole [Institute of Economics and Finance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Consumer choice, behavioural economics
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Robert Poskart (University of Opole - Faculty of Economics [Institute of Economics and
+FInance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Piotr Wójcik (Uniwersytet Warszawski)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Econometrics, statistical methods applied to
+economics
+Gender: M
+Is Young Researcher and Innovator: No
+Portugal
+Dr Ana Isabel Azevedo (CEOS.PP, ISCAP, Polytechnic University of Porto)
+Participating as Secondary Proposer
+Core Expertise: Other  engineering and technologies: Databases, data mining, data curation,
+computational modelling for other engineering and technologies
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Jose Azevedo (Polytechnic University of Porto - CEOS.PP / ISCAP / Polytechnic University
+of Porto [Mathematics / CEOS.PP])
+Participating as Secondary Proposer
+
+
+</pre><div class="page-break" data-page="Page 40"></div><pre class="text-content">
+Core Expertise: Mathematics: Statistics
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Irene Brito (Universidade do Minho [Department of Mathematics])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Applied Mathematics, Mathematical Modelling, Risk Theory,
+General Relativity
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Joana Dias (INESC Coimbra)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Management Science / operations research
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Hugo Gonçalo Oliveira (University of Coimbra [Department of Informatics Engineering])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: M
+Is Young Researcher and Innovator: Yes
+Dr Catarina Silva (University of Coimbra [Informatics Engineering Department])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: F
+Is Young Researcher and Innovator: No
+Romania
+Ms Stefana Belbe (Babes-Bolyai University [Mathematics-Forecasts-Statistics])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Machine learning algorithms
+Gender: F
+Is Young Researcher and Innovator: Yes
+Dr Ioana Coita (University of Oradea, Fac. of Economics [Finance and Accounting])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: Yes
+Mr Tudor Doman (Autoritatea de Supraveghere Financiară [Integrated Regulations, Strategy
+and Financial Innovation Unit])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Management of Technology and Innovation
+Gender: M
+Is Young Researcher and Innovator: Yes
+Prof Codruta MARE (Babes-Bolyai University [Statistics-Forecasts-Mathematics])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Econometrics, statistical methods applied to
+economics
+Gender: F
+Is Young Researcher and Innovator: Yes
+
+
+</pre><div class="page-break" data-page="Page 41"></div><pre class="text-content">
+Ms Raluca Micu (National Bank of Romania)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Analysis
+Gender: F
+Is Young Researcher and Innovator: Yes
+Prof Daniel Traian Pele (Bucharest University of Economic Studies)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Econometrics, statistical methods applied to
+economics
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Stanca Liana (Babes-Bolyai University [Business Information Systems])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Databases, data mining, data curation, computational
+modelling
+Gender: F
+Is Young Researcher and Innovator: No
+Mr Vasile Strat (Bucharest University of Economic Studies [Statistics])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Econometrics, statistical methods applied to
+economics
+Gender: M
+Is Young Researcher and Innovator: Yes
+Mr Marius Vlad Pop (UNIVERSITATEA DIN ORADEA [Engineering &amp; Management])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Management of Technology and Innovation
+Gender: M
+Is Young Researcher and Innovator: Yes
+Mr Cosmin Curticapean (iFactor - iFactor Brokerage SA)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Ms DIANA MARIETA MIHAIU (LUCIAN BLAGA UNIVERSITY OF SIBIU)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: Yes
+Serbia
+Dr Miljan Vučetić (Vlatacom Institute of High Technologies Ltd. [Artificial Intelligence
+Department])
+Participating as Secondary Proposer
+Core Expertise: Electrical engineering, electronic engineering, Information engineering:
+Databases, data mining, data curation, computational modelling
+Gender: M
+Is Young Researcher and Innovator: Yes
+Prof Lidija Barjaktarović (Singidunum University Belgrade [Finance and Banking ])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+
+
+</pre><div class="page-break" data-page="Page 42"></div><pre class="text-content">
+Is Young Researcher and Innovator: No
+Dr Marko Barjaktarovic (EyeSee Reserach)
+Participating as Secondary Proposer
+Core Expertise: Electrical engineering, electronic engineering, Information engineering: Computer
+vision
+Gender: M
+Is Young Researcher and Innovator: No
+Slovakia
+Dr Zuzana Brokesova (University of Economics in Bratislava [Faculty of National Economy])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Consumer choice, behavioural economics
+Gender: F
+Is Young Researcher and Innovator: Yes
+Mr Davy Čajko (Fintech &amp; Insurtech asociácia Slovenska)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Jana Peliova (University of Economics in Bratislava [Finance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Jozef Štefčík (EUBA-Faculty of Applied languages - University of Economics)
+Participating as Secondary Proposer
+Core Expertise: Other social  sciences: Translation studies, Terminology
+Gender: M
+Is Young Researcher and Innovator: No
+Slovenia
+Dr Kristijan Breznik (International School for Social and Business Studies)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Statistics
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Marjan Cugmas (University of Ljubljana - Faculty of Social Sciences)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Statistics
+Gender: M
+Is Young Researcher and Innovator: Yes
+Ms Janja Jerebic (Faculty of organizational sciences)
+Participating as Secondary Proposer
+Core Expertise: 
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Sašo Karakatič (University of Maribor [Faculty of Electrical Engineering and Computer
+Science])
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+
+
+</pre><div class="page-break" data-page="Page 43"></div><pre class="text-content">
+multi agent systems
+Gender: M
+Is Young Researcher and Innovator: Yes
+Dr Vesna Skrbinjek (Mednarodna Fakulteta Za Druäbene in Poslovne Ètudije - Vesna Skrbinjek)
+Participating as Secondary Proposer
+Core Expertise: Educational sciences: Education: training, pedagogy, didactics
+Gender: F
+Is Young Researcher and Innovator: No
+Ms Anja Žnidaršič (University of Maribor)
+Participating as Secondary Proposer
+Core Expertise: Other social  sciences: Quantitative methods for the social sciences
+Gender: F
+Is Young Researcher and Innovator: No
+Spain
+Dr Javier Arroyo (Universidad Complutense de Madrid)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: M
+Is Young Researcher and Innovator: No
+Dr María Victoria Ruiz-Mallorquí (University of Las Palmas de Gran Canaria - Faculty od
+Economics, Business and Tourism [Finanace and Accounting])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Prof GONZALO DIAZ-MENESES (Universidad de Las Palmas de Gran Canaria - University of
+Las Palmas de Gran Canaria [Economics and management])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Marketing
+Gender: M
+Is Young Researcher and Innovator: No
+Dr MARIA-JESUS SEGOVIA-VARGAS (UNIVERSIDAD COMPLUTENSE DE MADRID - FACULTY
+OF ECONOMICS [DEPARTMENT OF FINANCIAL AND ACTUARIAL ECONOMICS &amp; STATISTICS])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Juan Carlos Burguillo-Rial (University of Vigo)
+Participating as Secondary Proposer
+Core Expertise: Electrical engineering, electronic engineering, Information engineering:
+Telematics, Artificial Intelligence, Evolutionary Computation
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Albert Domingo Vilar (Universitat Pompeu Fabra Ventures, S.L. - UPF Ventures)
+Participating as Secondary Proposer
+Core Expertise: Electrical engineering, electronic engineering, Information engineering:
+Communications engineering and systems (select for additional explanation)
+Gender: M
+Is Young Researcher and Innovator: Yes
+
+
+</pre><div class="page-break" data-page="Page 44"></div><pre class="text-content">
+Ms Sonia Granado-Suárez (University of Las Palmas de Gran Canaria - Faculty of Economics,
+Bussines and Tourism [Department of Financial Economics and Accounting])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Accounting
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Daniel Balsalobre Lorente (Universidad de Castilla La Mancha - University of Castilla La
+Mancha [Applied Economics I])
+Participating as Secondary Proposer
+Core Expertise: Earth and related Environmental sciences: Databases, data mining, data
+curation, computational modelling
+Gender: M
+Is Young Researcher and Innovator: No
+Sweden
+Prof Bertram Steininger (KTH Royal Institute of Technology)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Seyedeh Fatemeh Mottaghi (KTH Royal Institute of Technology [School of Architecture and
+the Built Environment])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: Yes
+Dr Cecilia Hermansson (KTH, Royal Institute of Technology - KTH Royal Institute of
+Technology)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Consumer choice, behavioural economics
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Olli Vigren (KTH Royal Institute of Technology)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Management of Technology and Innovation
+Gender: M
+Is Young Researcher and Innovator: Yes
+Dr Zan Yang (Royal Institute of Technology - real estate economics and finance)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: urban and housing economics 
+Gender: F
+Is Young Researcher and Innovator: No
+Switzerland
+Prof Beatrice Acciaio (ETH)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Probability 
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Erich Walter Farkas (University of Zurich [Department of Banking and Finance])
+Participating as Secondary Proposer
+
+
+</pre><div class="page-break" data-page="Page 45"></div><pre class="text-content">
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Branka Hadji Misheva (Bern University of Applied Sciences (BFH) [Institute of Applied
+Data Science and Finance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: Yes
+Prof Christian Hopp (Berner Fachhochschule - Berner Fachhochscule)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Adam Kurpisz (BFH Bern Business School [Institute for Applied Data Science &amp; Finance])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Control theory and optimization
+Gender: M
+Is Young Researcher and Innovator: Yes
+Prof Rahel Meili (Bern University of Applied Sciences [Business School])
+Participating as Secondary Proposer
+Core Expertise: Social and economic geography: Social, cultural and economic geography,
+international trade
+Gender: F
+Is Young Researcher and Innovator: Yes
+Prof Eva Schlindwein (Berner Fachhochschule - Eva Schlindwein)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Sustainability
+Gender: F
+Is Young Researcher and Innovator: Yes
+Prof Peter Schwendner (ZHAW [IWA])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Josef Teichmann (ETH Zurich)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Probability 
+Gender: M
+Is Young Researcher and Innovator: No
+Tunisia
+Dr Sahbi Bahroun (University Tunis EL Manar)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Leila Ben Othman (University Tunis El Manar - Fst [Computer Science Department ])
+Participating as Secondary Proposer
+
+
+</pre><div class="page-break" data-page="Page 46"></div><pre class="text-content">
+Core Expertise: Computer and Information Sciences: Machine learning algorithms
+Gender: F
+Is Young Researcher and Innovator: No
+Türkiye
+Prof Mutlu Akar (Yildiz Technical University - Mutlu Akar)
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Mathematics applied to computer science,
+mathematical aspects of computer science
+Gender: M
+Is Young Researcher and Innovator: Yes
+Dr Bekir Cetintav (Mehmet Akif Ersoy University [Department of Statistics])
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Statistics
+Gender: M
+Is Young Researcher and Innovator: Yes
+Prof Sadettin haluk çitçi (Gebze Technical University [Department of Economics])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Consumer choice, behavioural economics
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Gizay DAVER (Zonguldak Bulent Ecevit University - Zonguldak Bülent Ecevit University
+[Faculty of Applied Sciences / Finance and Banking Department])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: Yes
+Dr esra kabaklarli (selçuk university [economics])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Econometrics, statistical methods applied to
+economics
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Belma OZTURKKAL (Kadir Has University [International Trade and Finance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Prof Ozgur Yildirim (Yildiz Technical University)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Numerical analysis
+Gender: M
+Is Young Researcher and Innovator: No
+Prof Ali Serhan Koyuncugil (BİB - BİB Yazılım Savunma İnşaat Enerji Eğitim Reklam Turizm
+Sanayi ve Ticaret A.Ş.)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Statistics
+Gender: M
+Is Young Researcher and Innovator: No
+Mr Ferit Buyukkececi (Sigortam.net [Information Technology])
+
+
+</pre><div class="page-break" data-page="Page 47"></div><pre class="text-content">
+Participating as Secondary Proposer
+Core Expertise: Computer and Information Sciences: Artificial intelligence, intelligent systems,
+multi agent systems
+Gender: M
+Is Young Researcher and Innovator: Yes
+Ukraine
+Prof Alona Klochko (Sumy National Agrarain University - Sumy National Agrarian University
+[Law Faculty, International Relations Department])
+Participating as Secondary Proposer
+Core Expertise: Law: International law
+Gender: F
+Is Young Researcher and Innovator: No
+Dr Nataliia Klietsova (Sumy National Agrarian University [International Relations Department])
+Participating as Secondary Proposer
+Core Expertise: Law: Labour law
+Gender: F
+Is Young Researcher and Innovator: Yes
+Prof Yuriy Danko (Sumy National Agrarian University [Faculty of Economics and Management])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Development, economic growth, competitiveness
+Gender: M
+Is Young Researcher and Innovator: No
+United Arab Emirates
+Dr Stephen Chan (American University of Sharjah)
+Participating as Secondary Proposer
+Core Expertise: Mathematics: Statistics
+Gender: M
+Is Young Researcher and Innovator: Yes
+United Kingdom
+Dr Ceylan Onay Sahin (University of Brighton - School of Business and Law [Accounting,
+Finance and Economics Subject Group])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Prof yi wang (University of Bedfordshire - University of Bedforshire [business])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Databases, data mining, data curation, computational
+modelling
+Gender: M
+Is Young Researcher and Innovator: No
+Dr Krystallia Moysidou (University of Sussex)
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Management of Technology and Innovation
+Gender: F
+Is Young Researcher and Innovator: Yes
+United States
+Dr Blake Rayfield (Northern Arizona University [W.A. Franke College of Business])
+Participating as Secondary Proposer
+
+
+</pre><div class="page-break" data-page="Page 48"></div><pre class="text-content">
+Core Expertise: Economics and business: Finance
+Gender: M
+Is Young Researcher and Innovator: Yes
+Prof Elif Sisli Ciamarra (Stonehill College [Finance])
+Participating as Secondary Proposer
+Core Expertise: Economics and business: Finance
+Gender: F
+Is Young Researcher and Innovator: No
+Powered by TCPDF (www.tcpdf.org)
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

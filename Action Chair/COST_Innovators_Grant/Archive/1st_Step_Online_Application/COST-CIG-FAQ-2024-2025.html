@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COST CIG FAQ 2024 2025 - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>COST CIG FAQ 2024 2025</h1>
+        <div class="meta">Source: COST-CIG-FAQ-2024-2025.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>COST CIG FAQ 2024 2025</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>11 pages</span>
+                    <span>16,694 characters</span>
+                    <span>2,680 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+COST Innovators Grant 
+Frequently Asked Questions 
+(FAQ) 
+2023/November 
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+ 
+ 
+Document Change History 
+Version 
+Release date 
+Summary of changes 
+CIG 
+24th November 2023 
+Updated information relative to CIGs 2024-2025 
+ 
+CIG 
+19th December 2022 
+Updated information relative to CIGs 2023-2024 
+ 
+CIG 
+11 January 2022 
+Updated information relative to new Rules for COST 
+Innovators Grants and Annotated rules for COST Actions  
+CIG 
+04 December 2020 
+Updated information relative to CIGs 2021-2022 
+CIG Pilot 
+12 December 2019 
+First release of the document 
+ 
+ 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+ 
+ 
+ 
+TABLE OF CONTENT 
+APPLICATION 
+1 
+EVALUATION 
+4 
+APPROVAL 
+5 
+IMPLEMENTATION 
+6 
+ 
+This document provides additional information to the CIG Guidelines.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+ 
+1 
+ 
+Application 
+Is the CIG Team composed exclusively of MC members or can substitutes, Working Group (WG) 
+members or even people outside of the Action also be in the CIG team?  
+The CIG Team can be composed of any researcher and innovator affiliated to a legal entity located in 
+any COST Full or Cooperating Member regardless of their former contribution in the Action.  
+ 
+What is the difference between a CIG Team member and a CIG participant? 
+A CIG Team member is mentioned in the application as such and his/her expertise needs to be relevant 
+with the purpose of the CIG being proposed. Once the CIG application is submittted, the CIG Team 
+composition cannot be changed. The CIG Team will be responsible for the management of the CIG 
+budget and activities and its role will be similar to that of the Management Committee of an Action. 
+ 
+A CIG participant is a person participating in any of the CIG activities, without being a member of the 
+CIG Team.   
+ 
+CIG Team members and CIG participants will be reimbursed  according to the Annotated Rules for 
+COST Actions (COST 094/21; https://www.cost.eu/Annotated_Rules_for_COST_Actions_C). 
+ 
+Is there a minimum or maximum number of countries and/or participants for the CIG application?  
+There is no maximum or minimum requirement. 
+ 
+Can a SME affiliated participant be a CIG Chair or Grant Holder? 
+A SME affiliated Action participant can be CIG Chair. The SME can act as Grant Holder provided it fulfils 
+the COST requirements to be Grant Holder (Annotated Rules for COST Actions (COST 094/21; 
+https://www.cost.eu/Annotated_Rules_for_COST_Actions_C)). 
+ 
+Are the CIG Chair or Vice Chair the same person as the Action Chair or Vice Chair?  
+The CIG Chair or Vice Chair do not have to be the same person as the Action Chair or Vice Chair. 
+ 
+Must the Action chair and vice-chair of the CIG be affiliated to institutions in different countries or they 
+can be affiliated to the same institution or two different institutions but in the same country? 
+The CIG Chair and Vice Chair can be from the same country. The reason for this approach needs to be 
+justified in the CIG application. 
+ 
+Does the Grant Holder institution have to remain the same as in the COST Action? 
+It is preferable that the Action Grant Holder manages the CIG, but this is not compulsory. 
+ 
+What happens if the Action Grant Holder is not willing to continue with the CIG financial administration?  
+A new Grant Holder Institution should agree to take over the CIG Grant management. The GH will be 
+the Institution receiving and managing the CIG Grant. The GH will also receive the FSAC to manage 
+
+
+</pre><div class="page-break" data-page="Page 5"></div><pre class="text-content">
+ 
+2 
+ 
+the activities. Please refer to the Annotated Rules for COST Actions (COST 094/21; 
+https://www.cost.eu/Annotated_Rules_for_COST_Actions_C ) for more details. 
+ 
+What are the eligible activities and expenses?  
+CIG networking activities and eligible expenses are the same as those available to COST Actions and 
+the 
+Annotated 
+Rules 
+for 
+COST 
+Actions 
+(COST 
+094/21; 
+https://www.cost.eu/Annotated_Rules_for_COST_Actions_C) apply for eligibility of reimbursements.  
+ 
+Can CIG Team members be from the United Kingdom? Can partners be from UK? 
+CIG Team members and participants affiliated to an Institution in the UK can participate in CIGs and are 
+eligible for reimbursements as described in the Annotated Rules for COST Actions (COST 094/21; 
+https://www.cost.eu/Annotated_Rules_for_COST_Actions_C).  
+ 
+According to the Work Plan in the CIG Application Form, there is a budget associated to CIG Team 
+member/s. The budget is associated to the specific person or their institution?  
+No, the budget is meant to be used to carry out the activities in the same way as in the Actions.  
+ 
+In case the maximum budget of 125.000 EUR is requested, how many CIG Team members are 
+expected to be recruited? 
+The budget does not depend on the number of CIG Team members but relates to the activities proposed 
+and the envisaged number of total participants, thus including CIG Team members and CIG participants. 
+For each activity stated in the CIG application it shall be explained which of the CIG Team Members 
+have committed to contribute to this activity. In this respect, there is no minimum or maximum number 
+of CIG Team members. 
+ 
+Is there a FSAC included in the CIG funding? 
+The maximum funding that can be requested is of EUR 125.000. This amount includes 15% of Financial 
+and Scientific Administration and Coordination (FSAC). 
+ 
+How many applications per Action can be submitted? 
+Only one application per Action, and according to the rules defined in the CIG Guidelines, only the last 
+one submitted will be considered for evaluation. 
+ 
+Is there any constraint about anonymity in the CIG application?  
+No, there is not. Anonymity is not an eligibility criterion. 
+ 
+Can we include different innovations in various areas, in the same application? If this is possible, has 
+the business plan to be presented for all the innovation presented, or only for the best one? 
+Yes, you can include different innovations in various areas in the CIG application and the business plan 
+should address all of them. 
+ 
+
+
+</pre><div class="page-break" data-page="Page 6"></div><pre class="text-content">
+ 
+3 
+ 
+If the application gets rejected, can it be resubmitted? If so when?  
+Resubmissions of CIG’s application are not allowed. 
+ 
+For fundamental research we can have a strong innovation potential but not marketable applications, 
+can we still apply? Are novel scientific IDEAS, RESULTS or DISCOVERIES suitable for a CIG or will 
+we be disfavoured? 
+The definitions of innovation and of the business plan allow for CIG applications to vert on all aspects 
+of innovation, hence a marketable application is not the only possible outcome. If applications are on 
+fundamental research or social innovation this will not be a ground for disfavouring them. 
+ 
+How does the “explicit MC vote” work? 
+The explicit MC vote requested for the approval of the CIG submission will be launched and managed 
+by the COST Association via e-COST after the submission deadline. This vote will be run one time. This 
+type of vote requires the Management Committee members to actively express whether they are in 
+favour or not, hence there is no tacit approval by a “no-reply”. The quorum of 2/3 of the countries 
+represented in the MC must express their vote for the MC decision to be valid. 
+The decision will be by simple majority vote by participating COST Full Member and COST Cooperating 
+Member. 
+To summarise, if the two MC members from a participating COST Full Member / Cooperating Member: 
+ 
+Agree, the vote will count as one;  
+ 
+disagree, their vote will count as null;  
+ 
+if one of the two MC members does note reply to the vote, it will count as abstention and the 
+vote of the other MC member will prevail;  
+ 
+if both MC members do not reply to the vote it will not be counted for the quorum.  
+
+
+</pre><div class="page-break" data-page="Page 7"></div><pre class="text-content">
+ 
+4 
+ 
+Evaluation 
+When and where is the Hearing taking place? 
+The Hearings are taking place on 23th and 24th May 2024. If your application reaches this stage, you will 
+receive an individual invitation for one of those two days. The Hearings will take place face to face in 
+Brussels at COST premises. 
+ 
+Who and how many people can participate in the Hearing?  
+Only one person will be invited and by default it is the CIG Chair. If the CIG Chair cannot attend, 
+someone else from the CIG team can substitute them. 
+ 
+Does at least one of the three CIG Committee members evaluating the application have a scientific 
+background? 
+The CIG Committee is composed of experts in research-based innovation, most of whom have a 
+scientific background. 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 8"></div><pre class="text-content">
+ 
+5 
+ 
+Approval 
+When will the results be communicated?  
+The outcome of the remote evaluation of CIG applications will be communicated by the end of April 
+2024. The final decision taken by the CSO will be communicated approximately one month after the 
+Hearings. 
+ 
+What are the honoraria mentioned in the Guidelines about? 
+The Honoraria mentioned in the Guidelines (Chapter 7) refers to the honorarium each CIG Committee 
+member is entitled to for taking part to the CIG applications’ evaluation. 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 9"></div><pre class="text-content">
+ 
+6 
+ 
+Implementation 
+Is the CIG Chair to be elected among the proposed CIG team? 
+The CIG Chair is the person identified as such in the application. Rules for CIG implementation are 
+available 
+under 
+the 
+Rules 
+for 
+COST 
+Innovators 
+Grants 
+(CIG) 
+available 
+at 
+www.cost.eu/rules_innovators_grant . 
+ 
+Are CIGs open as COST Actions?  
+Changes in the composition of the CIG Team are possible under certain circumstances as described in 
+the Rules for COST Innovators Grant (COST 098/21;  https://www.cost.eu/rules_innovators_grant) .  
+Participation to  CIG activities is open to any individual affiliated to a legal entity wherever in the world, 
+in 
+agreement 
+with 
+the 
+Annotated 
+Rules 
+for 
+COST 
+Actions 
+(COST 
+094/21; 
+https://www.cost.eu/Annotated_Rules_for_COST_Actions_C).  
+ 
+Can unspent budget from the Action be used also in the CIG, if approved?  
+Although the CIG stems from an Action, these are considered different grants. Therefore, it will not be 
+possible to transfer the underspent budget at the end of the Action to the CIG. 
+ 
+Will the CIG be managed via e-COST? 
+Yes, once approved the CIG grant will be generated in e-COST and the financial management will be 
+carried out in e-COST as for a COST Action. 
+ 
+When is the final achievement report due?  
+The final achievement report is due 45 days after the end of the CIG Grant Period.  
+ 
+What will be the contents of the reporting at the end of the CIG period?  
+The Final achievement report will be an adaptation of the one in place for COST Actions.  
+ 
+Is there any impact on the eligibility of the costs linked to the CIG final achievement report?  
+The Final achievement report has no impact on the eligibility of costs incurred during the CIG. This will 
+be the role of the final financial report in accordance with the Annotated Rules for COST Actions (COST 
+094/21; https://www.cost.eu/Annotated_Rules_for_COST_Actions_C). 
+ 
+If the proposed CIG output is an innovative service, can it be trialed with users/customers during the 
+CIG ? 
+Yes, it can. The purpose of the trial and the expected outcomes can be explained in the CIG application. 
+ 
+What happens if the Action is extended? Is an overlap in time possible?  
+If the Action is extended and it does not overlap with the CIG Grant Period (01/11/2024 – 31/10/2025) 
+this is possible. However, overlap of Action and CIG activities is not allowed. 
+ 
+
+
+</pre><div class="page-break" data-page="Page 10"></div><pre class="text-content">
+ 
+7 
+ 
+Where can the activities be organised: only in the CIG Team countries or also in the Action Participating 
+Countries?  
+Please refer to section 6.3. of the Annotated Rules for COST Actions (COST 094/21; 
+https://www.cost.eu/Annotated_Rules_for_COST_Actions_C) as CIGs follow the same rules as COST 
+Actions.   
+ 
+Who would be eligible for the reimbursement: only the participants from the CIG Team countries or also 
+from the Action Participating Countries?  
+Please refer to section 6.4. of the Annotated Rules for COST Actions (COST 094/21; 
+https://www.cost.eu/Annotated_Rules_for_COST_Actions_C) as CIGs follow the same rules as COST 
+Actions. 
+ 
+Can we focus on using only a subset of networking tools (not all types) if it matches well the objectives 
+of the CIG? 
+The most appropriate tools to achieve the CIG objectives and deliver the business plan can be chosen. 
+ 
+Can we invite external Speakers? 
+Yes, you can in accordance with the Annotated Rules for COST Actions (COST 094/21; 
+https://www.cost.eu/Annotated_Rules_for_COST_Actions_C. 
+ 
+Do the CIG networking tools have to be specific to the &quot;Innovation&quot; or can they also be relevant to the 
+objectives and deliverables of the originating Action? 
+The CIG networking tools need to be specific to the CIG objectives and contribute to the delivery of the 
+business plan and other outputs mentioned in the application. 
+ 
+Can we combine CIG activities with the other funded events? 
+This is possible as long as no double funding of the activity is ensured. 
+ 
+The successful CIGs would have a joint Final Meeting. Will this be funded by the COST Association or 
+does this need to be taken into account in the CIG WBP? From the CIG Action, who will be eligible to 
+attend the FM?  
+The final event is planned to take place in the months following the end of the grant and it would be 
+organised and paid by COST. 
+ 
+The required rules for STSM, meeting participation, etc (and the rest of decisions) during the CIG, need 
+to be approved only by the CIG Team? or by the MC of the Action? 
+The Action activities will be ended when the CIG starts. The CIG Team will be the decision-making body 
+and shall formally establish their decision-making procedure.  
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 11"></div><pre class="text-content">
+ 
+8 
+ 
+In case that the Action Chair is not the same person as the CIG Chair, what will this imply for the CIG 
+development from the administrative and financial point of view? will that imply any delay? 
+The CIG chair might not be the Action Chair. There normally should not be any delay directly due to that 
+fact.  
+ 
+How detailed should the business plan be, do we need to give the names of companies that will 
+develop/apply the innovations? 
+The business plan is the output at the end of the CIG activities. According to the definition given in the 
+CIG Guidelines, the business plan describes in detail the overall strategy for bringing the innovation to 
+the users and lays out an appropriate written plan from a marketing, advocacy, communication or 
+promotion; financial and operational viewpoint, including the sustainability of each.  
+The Business Plan is a final output of a CIG and shall therefore not be described in detail in the CIG 
+application, but be mentioned as a compulsory output. 
+ 
+Any recommendation on how to develop a business plan for the CIG? Can the CIG Team be supported 
+with this task? Is there a template for it? 
+The COST Association is envisaging a training module that could be proposed to CIG Teams on how 
+to prepare a business plan, further information will be sent in due time. The business plan is one 
+mandatory output of the CIG, the CIG activities proposed should ensure its delivery. The CIG Team can 
+organise a CIG activity for this purpose, provided it falls under the networking tools available to COST 
+Actions. 
+The COST Association is not providing a template for the business plan because COST Actions – and 
+the derived CIGs – have different backgrounds and objectives. 
+ 
+Regarding the final output of the Business Plan, what happens if the CIG application is approved but 
+the activities in the CIG application cannot result in the expected Business Plan? Will the Grant Holder 
+be required to reimburse the financed budget to COST? 
+The CIG Committee will evaluate the feasibility based on information in the CIG application (see CIG 
+Guidelines). The CIG Team commits to achieve the objectives of the CIG and deliver all proposed 
+outputs, one mandatory proposed output being the business plan. The proposed CIG activities in the 
+application need to clearly describe how they will ensure that the CIG objectives will be reached. Should 
+there be a critical problem encountered during the course of the CIG and the need to deviate from the 
+plan arises, this would need to be discussed with the Science Officer and approved by COST (it is similar 
+to Action). In this case, there should not be a reimbursement of the Grant. 
+ 
+What is the procedure to apply for an extension? 
+CIG extensions are described in the Rules for COST Innovators Grant (COST 098/21; 
+https://www.cost.eu/rules_innovators_grant). They are exclusively granted by the Executive Board of 
+COST on the basis of Force Majeur. No other extension is admissible. 
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

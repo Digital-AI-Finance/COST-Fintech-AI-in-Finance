@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>2</h1>
+        <div class="meta">Source: 2.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>2</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>4 pages</span>
+                    <span>15,508 characters</span>
+                    <span>2,490 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+ 
+ 
+A CREDIT MODEL ON P2P NETWORK BASED ON COMMENTS GROUP 
+QING-QI ZHONG, WEN-HONG WEI 
+Department of Computer Science, Dongguan University of Technology, Dongguan 523808, China 
+E-MAIL: zhongqq@dgut.edu.cn, hquwwh@tom.com 
+Abstract: 
+In order to solve a series of security problems such as 
+mobility and uncertainty brought by frauds in the network, in 
+this paper, we propose a new credit model on P2P network, 
+and use a special dynamic mechanism named comments group 
+to distinguish the reliability of P2P model. Compared with 
+former models, our model can be better used in mobile and 
+uncertain P2P network, which improve the serviceability of 
+the P2P network. 
+Keywords: 
+P2P; Credit Model; Comments group 
+1. 
+Introduction 
+The core in P2P field is resources, of which the key is 
+to search the resources of reliable substance. The issue that 
+how to acquire the necessary resources of reliable 
+substances assemblage with fast-speed and accuracy, and 
+select the suitable substances from this assemblage as a 
+server machine have become a heat topic. In literature [1], 
+we use a credit model without particular feature, and via the 
+client’s computed storage end to guarantee both security 
+and efficiency of the credit value. In literature [2], in order 
+to emphasize on how to design and calculate the credit 
+value, the paper put forward the concept of super node in 
+the network. In our paper, we propose a new credit model 
+via bringing forward a role of dynamic panel and 
+corresponding system, which can provide the credit 
+calculation, storage, and inquiry function with fast-speed, 
+high-efficiency and security. Thus, the P2P network can 
+operate efficiently. 
+The so-called dynamic panel refers to a type of 
+dynamic varying substance’s assemblage which can store 
+and provide inquiry of credit value. According to the 
+research 
+from 
+F.Le 
+Fessant, 
+S.Handurukande, 
+A.M.Kermarrec and L.Massouli, etc, they put forward the 
+“small world” phenomenon of position and interest existed 
+in the network, which can be used to divide the P2P 
+network based on region, and each region contains an 
+amount of substances. When the substance transact with 
+each other, whether it comes from the same or different 
+region, this transaction needs to ensure the reliability of the 
+two parities. This paper is to deal with the problem on how 
+to gain the credit value. 
+2. 
+Problem analysis 
+2.1. 
+Inquiry efficiency of the credit value 
+There two common ways to inquiry at present: the 
+broadcast inquiry and the single node inquiry. In the 
+broadcast inquiry, client stores server’s credit value. The 
+inquiry end uses this way to request the server’s credit 
+value. In other words, when the substance (the former client) 
+being queried, after having transacted with the server in the 
+network, it will transmit the server’s credit value to inquiry 
+end. However, it needs more communicated expense than 
+other means, with lower efficiency and inferior network 
+utilization factor. While in the single node inquiry, the 
+server stores its own credit value, so that the client can gain 
+the credit value by querying its end. Despite its 
+high-efficiency, the communication quantity is little, and 
+simultaneously, there exists the security problems like fraud, 
+retaliation, etc. 
+2.2. 
+Timeliness 
+When the client selects the superior creditable server, 
+the timeliness and representative faithfulness of credit value 
+is vitally interrelated. If the credit value can not reflect the 
+authentic server’s reputation, the whole credit system will 
+lose its worthiness. 
+2.3. 
+Integrality 
+The credit value is offered by the client, while the 
+server probably modifies or forges it deeply as to gain a 
+preferable one. As a result, the integrality of the credit value 
+will be destroyed. 
+344
+2011 IEEE
+978-1-4577-0308-9/11/$26.00 ©
+Proceedings of the 2011 International Conference on Machine Learning and Cybernetics, Guilin, 10-13 July, 2011
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+ 
+ 
+2.4. Robustness 
+It’s obvious that we do not expect that there is a certain 
+physics node in the P2P network, once it has been destroyed, 
+the network can not operate as usual. This result is entirely 
+contrary to the original intention of why we used the P2P 
+network. 
+2.5. Retaliation 
+The server probably retaliate the client as their 
+evaluations are too low, for instance, viciously reduce 
+client’s credit value or provide inferior service at next time. 
+3. 
+Credit Model 
+3.1. 
+Credit Model 
+The P2P credit model is shown in the figure 1. In this 
+figure, ķ shows that the client request the evaluate end 
+for credit value, ĸ shows that the evaluate end transmit 
+the credit value to the client, Ĺ shows that the client 
+transmit data to the server, ĺ shows that the client 
+transmit the new credit value to the evaluate end, Ļ 
+shows that the server transmit relevant data to evaluate end, 
+ļ shows that the group leader broadcast the new credit 
+value to each member inner the panel. 
+This model acts the following roles in accordance with 
+its analyzed function: client (or evaluate end), server, 
+evaluate end, inquiry end. Theoretically, each substance in 
+the P2P network can serve as one or certain roles as 
+mentioned above. That is to say, one entity can inquiry 
+other servers (serves as inquiry end), or use another entities 
+server to offer service and evaluation (serves as client), 
+which simultaneously offer service to other entities (serves 
+as server). At the same time, it can collect the whole entity 
+credit value of this region and offer the table for the inquiry 
+end to use. However, considering that not only the entities 
+have differences in actual performance, but also it’s 
+evaluate end burden heavy task and excessive data 
+communication, the model uses certain algorithms to select 
+the weight computer as the comments group member. 
+3.2. 
+The principles abided by model 
+Apparently, it’s of importance on how to select the 
+comments group. As a rule, a panel includes 8 to 10 
+members. We should abide by the following principles 
+while selecting members as to ensure their weight: 
+(1) Accuracy. Make sure this panel can provide each 
+entity credit value of the inner region. Thus, we select those 
+high credit value entities as our panel’s member as possible 
+as we can. 
+ 
+ 
+Some evaluate 
+members 
+Sever 
+Client 
+Ļ 
+Ĺ 
+ķ 
+ĸ 
+ĺ 
+ļ 
+Group leader 
+(Evaluate end) 
+ 
+Figure 1. Credit model 
+ (2) Speediness. Apparently, the faster the exchanging 
+speeds of information between each region’s entity and 
+panels, the higher inquiry efficiency of the entire credit 
+value. It this way, the substance with higher network’s 
+speed will be chosen. 
+(3) Representativeness. To make sure the network can 
+operate as usual, we should consider the problem of 
+regional relevance while selecting members, especially 
+those of each subregion. Only through this way can we 
+avoid all panels’ members breaking off the network and 
+dropping the regional credit value’s data, which in turn can 
+result in collapsing the entire network’s credit value system. 
+(4) Stability. Obviously, it’s inappropriate to evaluate 
+panel’s member list too fast. Therefore, those entities that 
+online longer and more stable can be considered at first. 
+(5) Flexibility. Whatever substance of this region 
+enters into the network, we need to ensure the weight of 
+entity according to the standard mentioned above. If the 
+weight reaches the threshold we have set, this entity will be 
+added into the panel and gain the credit value table. 
+Meanwhile, the last one in the group has to quit. 
+3.3. 
+The framework of panel 
+After we make sure the members of comments group, 
+its’ members should follow the rule and coordinate with 
+each other: 
+(1) We set the highest weight member as the panel’s 
+leader, and other members become candidates. The leader 
+receives the entire regional member’s credit value table and 
+distributes it to these candidates by the multicast. 
+(2) The leader establishes new credit value table after 
+each transaction has accomplished, and distribute it to other 
+members for the sake of update. 
+345
+Proceedings of the 2011 International Conference on Machine Learning and Cybernetics, Guilin, 10-13 July, 2011
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+ 
+ 
+(3) Only after the leader pushed out the network for 
+some reasons (e.g. fall line), can a new principal with 
+highest weight be selected, and start up its credit value. 
+3.4. 
+The implementation procedure of model 
+First of all, when the regional network initializes itself, 
+each autonomic region will transmit its credit value to panel, 
+so that the leader can collect them into a table and preserve 
+in all members’ record. 
+When one of these regional entities requests the credit 
+value of another one, the group leader will offer the 
+corresponding credit value according to mastery tables. 
+The client will gain the corresponding credit value list 
+and select the highest value to transact it. 
+The client ensures the new credit value base on former 
+one and the relevant data after finishing the transaction. The 
+record of this process will be sent to server’s regional leader, 
+and the server will transmit the relevant records to the 
+group leader. 
+The leader, therefore, receives this regional server’s 
+new credit value and data, so as to ensure both parties’ 
+records and efficiency, which can updates its credit value 
+chart by the form of panel’s broadcast. 
+ 
+Begin 
+Upload credit 
+Put in inquiry 
+Get credit 
+Selection 
+Group leader confirm 
+transaction 
+Upload credit 
+Group broadcast 
+Update credit 
+Finish 
+Is used? 
+ 
+Figure 2. The implementation procedure of model 
+3.5. 
+Efficiency analysis 
+Under an ideal circumstance, we can compare the new 
+model with those of the literature [1]. The entire network 
+has 1000 nodes (in ideal situation), which has been divided 
+into 10 regions. Thus, each region has 100 nodes which can 
+evaluate 10 members of a panel, and all the regional nodes 
+form a connected graph. These regions in turn can connect 
+with each other, and make up of completed graph. 
+In general, we assume that the spending time of each 
+regional node connect with another one is  , that is to say, 
+the average spending time of cross-regional node is 
+out
+ω
+(
+m
+ω
+&gt;
+˅: 
+In the course of a credit value’s inquiry, as the client 
+maybe any nodes of the entire network, the new client have 
+to acquire server’s certificate as the literature [1] described, 
+and gain the server’s credit value from the former client, so 
+as to complete two spending time: 
+(0.9
+0.1
+)
+(0.9
+0.1
+)
+out
+m
+out
+m
+ω
+ω
+ω
+ω
++
++
++
+ 
+In the model proposed by us, however, the new client 
+just has to acquire the server’s credit value from regional 
+panel’s leader, of which the spending time is: 
+(0.9
+0.1
+)
+(0.9
+0.1
+)
+out
+out
+m
+out
+m
+ω
+ω
+ω
+ω
+ω
+&lt;
++
++
++
+ 
+The credit value updates itself after the service is 
+finished. In the literature [1], the new client builds a 
+server’s credit value and stores it. It sends the certificate to 
+inform the server, who will update the new client’s 
+certificate of former one, and the network expense is: 
+(0.9
+0.1
+)
+(0.9
+0.1
+)
+out
+m
+out
+m
+ω
+ω
+ω
+ω
++
++
++
+ 
+What’s more, the new client just has to update the 
+server’s credit value to the leader, who will broadcast inner 
+the panel. The spending time is: 
+)
+1.0
+9.0
+(
+)
+1.0
+9.0
+(
+)
+1.0
+9.0
+(
+m
+out
+m
+out
+m
+m
+out
+ω
+ω
+ω
+ω
+ω
+ω
+ω
++
++
++
+&lt;
++
++
+ 
+We can conclude from the above formulas that this 
+model is in favor of economizing the network resources and 
+improve its availability and efficiency. 
+4. 
+Performance analysis 
+We can analyze the model as follow: 
+(1) Efficiency of the credit’s security. This model 
+introduces the concept of comments group, and adopt the 
+layer multicast technology, which can avoid the drawbacks 
+of traditional broadcast inquiry and single node inquiry, 
+reduce the communicated expense, and improve the 
+efficiency to certain extent. 
+(2) Real time of the credit. Owing that the 
+corresponding credit value can update in time after each 
+transaction has accomplished, the model possess superior 
+346
+Proceedings of the 2011 International Conference on Machine Learning and Cybernetics, Guilin, 10-13 July, 2011
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+ 
+ 
+real time. 
+(3) Integrality of the credit. In this model, the credit 
+value’s evaluation is finished by the client and store in the 
+panel. Therefore, it avoids the server to falsify, forge or 
+delete the credit value. Because of the higher reputation of 
+each member in the panel, the model guarantees the credit 
+table’s authenticity and integrality. 
+(4) Robustness of the network. This model is superior 
+in the robustness and efficiency in the network by 
+overcoming the drawbacks of the excessive communication 
+expense and lower response of the network that lack of 
+organization. Besides, the model doesn’t bear the traditional 
+centralized server which is confronted to particular 
+structure node, as it can lead to break down the whole 
+network if it can not operate as usual. 
+(5) Prevention of fraud. On account of the client 
+evaluate the credit value after the transaction have finished, 
+the model cease the fraudulent phenomena. 
+5. 
+Conclusions 
+This paper put forward a credit model aim at solving 
+security and reliability problems exist in the present P2P 
+network, and introduce a robust, secure and efficient P2P 
+environment. This model divides the entire network into 
+amounts of regions in accordance with the “small world” 
+theory existed in the P2P network. Meanwhile, it solves the 
+problems mentioned above to some extent by electing a 
+comments group in all the regions to store and offer each 
+member’s credit value to clients. 
+Due to the particularity of the panel’s members, how 
+to ensure the weight and threshold of each member has 
+been the key problem. Besides, as the model establishes the 
+entire credit system based on the high credit value of 
+panel’s members, it can not completely guarantee the actual 
+behaviors done by panel’s members. Therefore, it’s 
+necessary to form an inner panel’s mutual supervision 
+system, which is supposed to ensure the integrate credit 
+system. This task is up for us to make further efforts to 
+accomplish. 
+Acknowledgements 
+This work is supported by the Natural Science 
+Foundation of China (No. 60973150) and the Young 
+Natural Science Foundation of Dongguan University of 
+Technology (No. 2010QZ21). 
+References 
+[1] Hen Zhao,Yining Quan, Yupu Hu. Secure and 
+efficient reputation system in P2P networks. Computer 
+Applications, 2005, 25(5): 551-553. 
+[2] Jiangsha Deng, Zhiwei Zhang. Trust Model in P2P 
+Environment. Journal of Changsha University of 
+Electric Power, 2006, 03: 42-45. 
+[3] Bin Yu, Munindar P Singh. An Evidential Model of 
+Distributed Reputation Management. Proceedings of 
+the 1st International Joint Conference on Autonomous 
+Agents and Multi Agent Systems (AAMAS). Bologna, 
+2002. 
+[4] Farag 
+Azzedin, 
+Multhucumaru 
+Maheswaran. 
+Integrating Trust Grid Resource Management Systems. 
+Proceedings of the International Conference on 
+Parallel Processing Vancouver, 2002. 
+[5] Jingmei Zhang, Jingxiang Zhang. Researches on Trust 
+Models of P2P Network Security. Application 
+Research of Computers, 2003, 3: 76-77. 
+[6] Kewen Wang, Fuding Xie, Yong Zhang. Trust model 
+to peer-to-peer network environment based on time 
+decay. Computer Engineering and Applications, 2009, 
+45(23): 92-95. 
+ 
+347
+Proceedings of the 2011 International Conference on Machine Learning and Cybernetics, Guilin, 10-13 July, 2011
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

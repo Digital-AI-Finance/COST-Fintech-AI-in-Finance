@@ -1,0 +1,7652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COST FinAI Bulgaria September 2023 FinTech Report - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>COST FinAI Bulgaria September 2023 FinTech Report</h1>
+        <div class="meta">Source: COST_FinAI_Bulgaria_September_2023_FinTech_Report.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>COST FinAI Bulgaria September 2023 FinTech Report</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>97 pages</span>
+                    <span>142,127 characters</span>
+                    <span>21,464 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+IN COLLABORATION WITH:
+
+MINISTRY OF FINANCE
+OF THE REPUBLIC OF
+BULGARIA
+INSTITUTIONAL PARTNERS:
+
+ANNUAL 
+FINTECH
+REPORT
+ISSUE 4/2022
+FACULTY OF ECONOMICS
+AND BUSINESS
+ADMINISTRATION
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+2
+Be part of the movement at fintechbulgaria.org
+2
+3
+Introduction
+Preface - Bulgarian Fintech Association ---------------------------------------------------- 4 
+Foreword - Ministry of Finance of the Republic of Bulgaria ------------------------  5-6 
+The Association and FinTech Guru ----------------------------------------------------------- 7
+Executive Summary -------------------------------------------------------------------------- 9-10
+Chapter 1 - Bulgarian FinTech Landscape 2022 ---------------------------------------------  11
+Bulgarian FinTech Ecosystem Snapshot --------------------------------------------------- 2
+Bulgarian FinTech Mapping 2022 ----------------------------------------------------------- 13
+Chapter 2 - FinTech Market Analysis - Private sector  ------------------------------------  14
+FinTech industry composition ------------------------------------------------------------ 15-17
+FinTech total revenue -------------------------------------------------------------------------- 18
+Total revenue by segment --------------------------------------------------------------------  19
+Operating revenue  ----------------------------------------------------------------------------- 20
+Operating revenue by segment  ------------------------------------------------------------- 21
+Total assets ---------------------------------------------------------------------------------------  22
+Total assets revenue by segment -----------------------------------------------------------  23
+Total expenses ----------------------------------------------------------------------------------   24
+Personnel -----------------------------------------------------------------------------------------  25
+Total revenue per employee  ----------------------------------------------------------------- 26
+FinTech industry best performers  ---------------------------------------------------------- 27
+FinTech VC investments ----------------------------------------------------------------------  28
+Top 5 most dynamic FinTechs in 2021 ----------------------------------------------------- 29
+Summary of Market analysis 2021 ---------------------------------------------------------- 30
+Chapter 3 - FinTech Market Analysis 2022 - Consumer side ----------------------------  31
+Digital Payment Index by Mastercard - 2021 ----------------------------------------- 32-37
+Chapter 4 - FinTech Market Analysis 2022 - Qualitative Research -------------------- 38
+Market Research - Annual FinTech Survey 2022 ---------------------------------------  39
+Target Markets ----------------------------------------------------------------------------------  40
+Customers ----------------------------------------------------------------------------------------- 41
+Challenges &amp; Recommendations  ---------------------------------------------------------- 42
+Compensation ----------------------------------------------------------------------------------- 43
+Gender composition &amp; age ------------------------------------------------------------------- 44
+Building the finest home for startups ------------------------------------------------- 44-48
+Sofia FinTech Hub -------------------------------------------------------------------------- 49-50
+CONTENTS
+2022
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+2
+Be part of the movement at fintechbulgaria.org
+3
+3
+Chapter 5 - Regulation and the role of the state and regulators ---------------------- 51
+Regulating the innovation -------------------------------------------------------------------  52 
+Regulate FinTech, article by FSC -------------------------------------------------------  52-57 
+FinTech Regulatory Landscape - Bulgaria 2022, article by PMP ---------------- 58-59
+What&#x27;s next? EU FinTech regulation, article by EC    ------------------------------- 60-63
+EU Crypto regulation - Impact on the industry, article by NEXO --------------  64-69
+EU Crypto regulation - Impact on the industry, article by Paysafe  ------------ 70-72
+What to Expect? EU Digital Finance Platform, article by EC --------------------- 73-75
+Chapter 6 - FinTech and Financial Education ----------------------------------------------- 76
+BFA&#x27;s role in FinTech education ------------------------------------------------------------- 77
+FinTech education in Bulgaria - 2022, article by FEBA ---------------------------- 78-79
+FinTech education in Bulgaria - 2022, article by VUZF University -------------- 80-81
+Why Bulgaria, article by Streamflow ------------------------------------------------------- 82
+Doing P2P in Bulgaria, article by iuvo -------------------------------------------------  83-84
+Chapter 7 - Future Technologies in FinTech  ------------------------------------------------ 85
+Technologies in FinTech - Digital Euro, article by EC  ----------------------------- 86-89
+Future technologies in FinTech - Industry view, article by Epay.bg -----------  90-91
+Future technologies in FinTech - Industry view, article by Paysera ------------ 92-94
+Methodology ------------------------------------------------------------------------------------- 95
+Acknowledgements ---------------------------------------------------------------------------- 96
+CONTENTS
+2022
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+2
+Be part of the movement at fintechbulgaria.org
+In 2023, we remain committed to
+bringing the above-mentioned key
+stakeholders together and creating
+Bulgaria as the leading FinTech hub in
+Southeastern Europe. 
+At 
+this 
+point, 
+I 
+would 
+like 
+to
+congratulate BFA&#x27;s team, FinTech&#x27;s
+representatives, and all who have
+contributed 
+their 
+knowledge 
+and
+expertise to this important report.
+VALERI VALTCHEV
+CHAIRMAN OF 
+BULGARIAN FINTECH 
+ASSOCIATION
+4
+
+INTRODUCTION
+With the reopening of economies and
+the slowing down of the Covid-19
+pandemic, we see that the hype
+around FinTech is fading away giving
+space 
+to 
+sustainable 
+financial
+products 
+and 
+services. 
+These
+sustainable 
+business 
+models 
+are
+especially the ones we represent and
+what we consider proper FinTechs.
+PREFACE
+THE CLUSTER
+What started five years ago as a group
+of 
+some 
+of 
+the 
+most 
+prominent
+FinTech companies and professionals
+in the country, and with the help of
+the whole team and all our partners,
+has now evolved into a non-for-profit
+for-impact 
+cluster 
+organisation,
+uniting the key stakeholders in the
+region towards a higher goal - to
+improve the prosperity of a nation
+through 
+the 
+development 
+of 
+an
+emerging industry. 
+At the Association we believe that
+FinTech is one of the few economic
+chances for Bulgaria to be among the
+business leaders in the European
+Union. Undoubtedly, this could only
+happen 
+with 
+a 
+well-developed
+internal market, highly efficient and
+effective public institutions, and a
+well-organise educational system that
+maintains a rich talent pool that is
+able to answer the current business
+needs. To achieve all of the above, we
+apply 
+daily 
+the 
+Quadruple 
+Helix
+model of innovation which stipulates
+the cooperation between private and
+public sectors, academia, and civil
+society. 
+
+
+</pre><div class="page-break" data-page="Page 5"></div><pre class="text-content">
+The digital revolution is a key aspect
+of all fields of life, including the
+financial sector, and digitalization is
+already an important part of modern
+trends. 
+Traditional 
+financial
+institutions today are facing serious
+competition which accelerates their
+transformation via the adoption of
+digital 
+solutions 
+and 
+close
+cooperation with fintech players. Due
+to digitalization different financial
+business models that did not exist
+before have entered the market. Many
+of them shape the entire industry. 
+Digital innovation in financial services
+has brought major improvements in
+the 
+connectivity 
+of 
+systems, 
+in
+computing power and cost, and in
+newly created and usable data. These
+improvements have had a positive
+impact on transaction costs and have
+given rise to new business models and
+new 
+entrants. 
+As 
+technology 
+has
+increased information exchange and
+has reduced transaction costs, the
+way financial services are provided
+has also changed. 
+The rapid onset of the new digital age
+in financial markets leads to the
+necessity to adopt a new regulatory
+approach and requirements. In this
+regard, 
+a 
+significant 
+package 
+of
+legislative 
+measures 
+has 
+been
+adopted at the European level. The
+package establishes a completely new
+and innovative regulatory framework
+for 
+digital 
+finance 
+and 
+the
+digitalization of financial services. It
+FOREWORD
+includes several legislative acts, most
+of which are expected to be finalized
+by the end of 2022: 
+-Regulation and directive on markets
+in crypto assets;
+-Regulation 
+(EU) 
+2022/858 
+of 
+the
+European 
+Parliament 
+and 
+of 
+the
+Council of 30 May 2022 on a pilot
+regime 
+for 
+market 
+infrastructures
+based 
+on 
+distributed 
+ledger
+technology 
+(DLT), 
+and 
+amending
+Regulations (EU) No 600/2014 and
+(EU) 
+No 
+909/2014 
+and 
+Directive
+2014/65/EU (Text with EEA relevance)
+and shall apply from March 2023
+(already adopted);
+-Regulation 
+on 
+information
+accompanying transfers of funds with
+certain crypto-assets;
+-The Digital Operational Resilience
+Regulation;
+-The 
+revision 
+of 
+Regulation 
+(EU)
+N°910/2014 on electronic 
+ROSITZA VELKOVA
+MINISTER OF FINANCE
+OF THE REPUBLIC OF
+BULGARIA
+INTRODUCTION
+MINISTRY OF FINANCE
+OF THE REPUBLIC OF
+BULGARIA
+2
+Be part of the movement at fintechbulgaria.org
+5
+
+
+</pre><div class="page-break" data-page="Page 6"></div><pre class="text-content">
+identification and trust services for
+electronic transactions in the internal
+market (eIDAS Regulation)– aiming to
+support the European Digital Identity
+Wallet by including the electronic
+ledgers based on DLT;
+-Data Act – the initiative in some of its
+sections envisages the use of DLT for
+the conclusion of smart contracts.
+Defining 
+a 
+common 
+regulatory
+framework in the EU is vital for an
+efficient 
+digital 
+transformation 
+of
+financial services. In this respect, the
+Ministry of Finance will continue to
+work actively in order to implement
+effectively the new policy set in the
+national legislation. In this regard,
+allow me to express our gratitude to
+the Bulgarian Fintech Association for
+its 
+active 
+role 
+and 
+constructive
+contribution to the legislative process. 
+The digital transformation of financial
+services 
+gives 
+rise 
+to 
+a 
+set 
+of
+important policy issues in terms of
+competition, 
+regulatory 
+perimeters
+and ensuring a level playing field. To
+navigate this new territory effectively
+and to balance the necessary policy
+goals, authorities need to collaborate
+both domestically – between central
+banks, 
+financial 
+sector 
+regulators,
+other 
+industry 
+regulators, 
+and
+competition 
+and 
+data 
+protection
+authorities, and across borders. Let 
+me 
+take 
+this 
+opportunity 
+to
+acknowledge 
+the 
+excellent
+cooperation between all stakeholders
+at 
+national 
+level 
+and 
+the 
+strong
+commitment 
+of 
+the 
+supervisory
+authorities - the Bulgarian National
+Bank and the Financial Supervision
+Commission. 
+Currently, policymakers are working
+actively on a variety of initiatives to
+identify and manage effectively the
+potential 
+risks 
+that 
+these 
+new
+business models bring to the financial
+sector 
+while 
+supporting 
+an
+environment fostering innovation. The
+Fintech sector plays a vital role and
+takes a substantial part of the new
+technology solutions and the digital
+transformation 
+itself. 
+Fintech
+developments have the potential to
+materially enhance, transform and
+improve 
+efficiency 
+of 
+business
+models, 
+applications, 
+regulatory
+oversight, processes or products in
+many areas of the financial services
+industry. In that regard, the recent
+trend of FinTech companies offering
+more sustainable products that have
+a positive and significant effect on
+financial stability is commendable. 
+I would like to take this opportunity
+and to congratulate the Bulgarian
+Fintech sector, and in particular the
+Bulgarian Fintech Association, for the
+active and very important role that
+they 
+are 
+playing 
+in 
+the 
+digital
+transformation of the financial sector
+of Bulgaria, as well as for their
+activities 
+and 
+support 
+aimed 
+at
+positioning our country as a leading
+FinTech center in the region.
+FOREWORD
+INTRODUCTION
+MINISTRY OF FINANCE
+OF THE REPUBLIC OF
+BULGARIA
+2
+Be part of the movement at fintechbulgaria.org
+6
+
+
+</pre><div class="page-break" data-page="Page 7"></div><pre class="text-content">
+INTRODUCTION
+The Bulgarian Fintech Association is a
+non-governmental, 
+for-impact
+organisation 
+uniting 
+all 
+interested
+parties in the sector of digital finance
+innovation, working from the region
+of Southeastern Europe (SEE). The
+association was established at the end
+of 2017 and for a little over 5 years it
+has 
+attracted 
+72 
+member
+organisations, 
+among 
+which 
+more
+than 
+45 
+FinTech 
+companies, 
+20+
+FinTech supporting companies, two
+universities 
+and 
+two 
+traditional
+financial institutions. At the moment,
+we 
+represent 
+more 
+than 
+8,400
+employees 
+in 
+the 
+Digital 
+Finance
+industry in the region of Southeastern
+Europe (SEE).
+Our ultimate goal is to establish
+Bulgaria as the leading FinTech Hub in
+the region of SEE. 
+THE
+ASSOCIATION
+2
+Be part of the movement at fintechbulgaria.org
+7
+
+
+</pre><div class="page-break" data-page="Page 8"></div><pre class="text-content">
+INTRODUCTION
+THE FINTECH
+GURU
+DEYAN RADEV, PHD
+DIRECTOR OF CEE CENTRE
+FOR DIGITAL FINANCE
+ASSOCIATE PROFESSOR OF 
+FINTECH AND BANKING &amp;
+PETAR BERON FELLOW IN
+ECONOMICS
+Deyan Radev, PhD is an Associate
+Professor of Fintech and Banking at
+FEBA at Sofia University and teaches
+courses 
+in 
+fintech 
+and 
+banking
+regulation. Dr. Radev has 15 years of
+experience 
+at 
+Goethe 
+University
+Frankfurt, University of Bonn and the
+European Central Bank. He received
+Germany&#x27;s best PhD dissertation prize
+in capital markets in 2014 for his work
+on 
+systemic 
+risk 
+assessment. 
+His
+systemic risk indicators are in daily
+operational 
+use 
+at 
+the 
+European
+Central Bank. Dr. Radev has published
+in the Journal of Banking and Finance
+and Springer Verlag, and his research
+on systemic risk, banking regulation
+and fintech has been presented at the
+ECB, Federal Reserve Board, Bank of
+England, Deutsche Bundesbank, Bank
+for 
+International 
+Settlements 
+and
+others. Since December 2022, Dr.
+Radev is the Director of the CEE
+Center for Digital Finance.
+2
+Be part of the movement at fintechbulgaria.org
+8
+
+
+</pre><div class="page-break" data-page="Page 9"></div><pre class="text-content">
+EXECUTIVE SUMMARY
+In 2021, there are 156 FinTech
+companies in Bulgaria, of which
+92% are SMEs, mostly located in
+Sofia, Varna and Plovdiv. 
+FINTECH
+LANDSCAPE
+In 2020, the Covid-19 pandemic
+boosted the creation of FinTech
+companies 
+and 
+they 
+reached
+their 
+all-time 
+high 
+of 
+23
+companies 
+established 
+in 
+a
+single year. 
+Despite the lower number of
+FinTech companies founded in
+2021, 
+FinTech&#x27;s 
+total 
+revenue
+achieved a historic 25% increase
+with a historic peak of total
+revenue - BGN 1.8 billion.
+The 
+number 
+of 
+established
+companies in 2021  is still to be
+updated but we expect it to be
+somewhere near the 2020 results
+In 2021, the Digital Payments
+segment continues to be the
+largest 
+contributor 
+to 
+the
+performance of the sector with
+54% of the total revenue.
+The Bulgarian FinTech industry&#x27;s
+operating revenue follows the
+total revenue increase in the last
+5 years and overcomes the 2018-
+2020 stagnation.
+segment, followed by Enterprise
+Technology Provisioning FinTech
+companies 
+and 
+Digital 
+Asset
+Exchange.
+Digital Payments companies are
+the largest contributor to the
+2021 Operating revenue by 
+In 
+the 
+period 
+2017-2021, 
+the
+FinTech 
+Total 
+assets 
+almost
+double reaching a peak of BGN
+1.863 million in 2021. 
+Despite the health crisis, the
+total assets of FinTech firms in
+Bulgaria scored a record of BGN
+2,368 million in 2020, or about a
+20% increase compared to 2019.
+Despite the health crisis, the
+total assets of FinTech firms in
+Bulgaria scored a record of BGN
+2,368 million in 2020, or about a
+20% increase compared to 2019.
+In 
+2021, 
+the 
+Total 
+assets
+contributor leader in Bulgaria
+remains 
+Digital 
+Payments.
+Second - Digital Lending, Third -
+Enterprise 
+Technology
+Provisioning
+2021 marked the highest peak of
+BGN 1,6 billion in total expenses
+for FinTech firms in Bulgaria.
+During the recovery year 2021,
+the trend of increasing expenses
+reflects the expansion of the
+FinTech 
+sector 
+and 
+closely
+matches the 25% growth in total
+revenue in 2021.
+2
+Be part of the movement at fintechbulgaria.org
+9
+
+
+</pre><div class="page-break" data-page="Page 10"></div><pre class="text-content">
+EXECUTIVE SUMMARY
+FINTECH
+WORKFOCE
+In 2021, the employed in the
+FinTech 
+industry 
+reached 
+a
+record high of 11,862.
+The growth from 2020 to 2021 is
+25.12% 
+again 
+reflecting 
+the
+reopening of the economy and
+the demand for labor of players
+on the cryptoasset scene. 
+The productivity of the FinTech
+sector, measured by operating
+revenue per employee, grew by
+22% on an annual basis in the
+period 2017-2021, achieving a
+peak of BGN 222 thousand in
+2021, doubling from BGN 112
+thousand in 2017. 
+The 2022 BFA study finds that
+the average gross monthly salary
+in the FinTech industry in 2021 is
+BGN 3,248 (EUR 1,659), more
+than 2 times higher than the
+country&#x27;s average gross in 2021.
+The specialists most in demand
+are 
+software 
+engineers, 
+sales
+and marketing specialists.
+The BFA study also finds that
+44% of all employed in FinTech
+in Bulgaria are women and the
+average age of FinTech teams is
+35.4 years.
+The average growth of the TOP
+10 fastest-growing FinTechs in
+2021, compared to 2020 is 290%.
+BEST FINTECH 
+PERFORMERS
+The revenue of the 2021 Top 5
+FinTech companies accounts for
+around 48% of the total annual
+revenue of the Bulgarian Fintech
+sector.
+The 
+2021 
+highest 
+growth 
+of
+operating revenue of 636% was
+achieved by Phos, followed by
+Crypto.com 
+and 
+Payslip 
+with
+388% and 291%, respectively. 
+For the years 2017-2021 - the
+investments 
+in 
+FinTech
+companies rose from BGN 1.3
+million to almost BGN 11 million.
+The 2021 BGN 10.03 million VC
+investments 
+in 
+FinTech
+represents 1/5 of all 2021 VC
+investments in Bulgaria, making
+FinTech 
+the 
+most 
+attractive
+industry in the country. 
+In 
+2021, 
+the 
+first 
+Bulgarian
+unicorn Payhawk was ranked
+fourth 
+by 
+operating 
+revenue
+growth with  267%. The fifth
+place is reserved for the licensed
+TPP and open banking experts -
+Iris Solutions - 249%.
+INVESTMENTS
+2
+Be part of the movement at fintechbulgaria.org
+10
+
+
+</pre><div class="page-break" data-page="Page 11"></div><pre class="text-content">
+2
+Be part of the movement at fintechbulgaria.org
+11
+CHAPTER I
+BULGARIAN 
+FINTECH LANDSCAPE
+
+
+</pre><div class="page-break" data-page="Page 12"></div><pre class="text-content">
+2022 ECOSYSTEM 
+SNAPSHOT
+11,862 employed
+ in the industry
+156 FinTech 
+Companies 
+9 E-money 
+Institutions 
+1 1 Payment 
+Institutions 
+12,900 enrolled 
+in STEM
+programmes
+FINTECHS
+€ 1,659 average
+gross salary
+WORKFORCE
+44% of employed
+are women 
+EDUCATION
+51 higher
+ educational
+institutions
+18 universities
+teaching Informatics
+and Computer Science
+2
+Be part of the movement at fintechbulgaria.org
+12
+
+
+</pre><div class="page-break" data-page="Page 13"></div><pre class="text-content">
+2
+Be part of the movement at fintechbulgaria.org
+13
+
+
+</pre><div class="page-break" data-page="Page 14"></div><pre class="text-content">
+CHAPTER II
+FINTECH MARKET
+ANALYSIS 2022 - 
+PRIVATE SECTOR
+data provided by: 
+2
+Be part of the movement at fintechbulgaria.org
+14
+
+
+</pre><div class="page-break" data-page="Page 15"></div><pre class="text-content">
+FINTECH MARKET
+ANALYSIS 2022
+FINTECH INDUSTRY
+COMPOSITION
+Digital Payments
+Digital Asset Exchange
+Digital Lending
+WealthTech
+InsureTech
+Alter. Credit &amp; D.Analytics
+RegTech
+Digital Banking
+Digital Capital Raising
+Digital Identity
+Digital Custody
+FinTech Supporting 
+Companies
+44
+23
+18
+11
+6
+6
+6
+5
+4
+2
+1
+90+
+156
+FINTECH
+FIRMS
+Enter. Techn. Provisioning
+30
+2
+Be part of the movement at fintechbulgaria.org
+15
+
+
+</pre><div class="page-break" data-page="Page 16"></div><pre class="text-content">
+0
+50
+100
+150
+Sofia
+FINTECH INDUSTRY
+COMPOSITION
+FINTECH MARKET
+ANALYSIS 2022
+To show the progress of the Bulgarian FinTech ecosystem throughout the years, we
+employ both qualitative and quantitative methods of research. For the former, we
+perform a financial analysis based on public data from the Commercial Register of the
+Republic of Bulgaria. Since the Commercial Register is updated frequently, the
+presented data should be considered accurate but not exhaustive. The qualitative
+research is conducted through an Annual FinTech Survey. This year, together with our
+research we also present the Mastercard&#x27;s Digital Payment Index 2021, which reveals
+the consumer side of the FinTech market in Bulgaria.
+In 
+2022, 
+we 
+found 
+156 
+FinTech
+companies matching the definition
+for 
+a 
+FinTech 
+firm 
+of 
+the 
+most
+comprehensive 
+FinTech 
+taxonomy
+globally - the Taxonomy of FinTech of
+the University of Cambridge. The SMEs
+portion (&lt;250 full-time employees and
+&lt;50 million in revenue) is 92% of the
+market and continues to be prevalent
+FINTECH BY
+SIZE
+51%
+Micro
+22%
+Small
+2022 FinTechs in Bulgaria by size 
+Source: 
+BFA 
+Fintech 
+Market 
+Analysis 
+2021;
+Commercial Register 
+FINTECHS BY
+HEADQUARTER
+This year, once again Sofia is the
+leading 
+FinTech 
+hub 
+with 
+131
+companies, followed by Varna with 14
+and Plovdiv with 5. The remaining 6
+are located in small regions such as
+Vratsa, Yambol, Ruse, Pazardzhik, etc. 
+Varna
+Plovdiv
+Other
+131
+FinTechs by headquarter - 2022
+Source: BFA Fintech Market Analysis 
+2022; Commercial Register 
+19%
+Medium
+8%
+Large
+in the Bulgarian FinTech space. 
+2
+Be part of the movement at fintechbulgaria.org
+16
+
+
+</pre><div class="page-break" data-page="Page 17"></div><pre class="text-content">
+3
+The 
+FinTech 
+industry 
+could 
+be
+considered 
+one 
+of 
+the 
+youngest
+industries in the country. Most of the
+companies are created in the last 12
+years, with significant peaks in 2018
+and 2020. 
+FINTECH MARKET
+ANALYSIS 2022
+FINTECH BY YEAR
+OF ESTABLISHMENT
+2009
+2010
+2011
+2012
+2013
+2014
+2015
+2016
+2017
+2018
+2019
+2020
+2021
+25 
+20 
+15 
+10 
+5 
+0 
+22
+23
+THE COVID-19
+PANDEMIC: 
+THE FINTECH BOOST
+14
+We must note that setting up a new
+company takes several months to a
+year and the drop in 2021 reflects the
+number 
+of 
+applications 
+in 
+the
+pandemic 2020. We expect that
+number to more than double when
+the first financials for companies
+founded in 2021 are uploaded in the
+Commercial registry after the fiscal
+2022 is closed.
+The COVID-19 pandemic, which started at
+the beginning of 2020  gave a remarkable 
+Number of newly established FinTech companies in Bulgaria, 2009-2021 
+Source: BFA Fintech Market Analysis 2022; Commercial Register 
+FINTECH INDUSTRY
+COMPOSITION
+9
+boost to the creation of FinTech
+companies 
+in 
+Bulgaria 
+and 
+they
+reached their all-time high of 23
+companies established in a single
+year. 
+2
+Be part of the movement at fintechbulgaria.org
+17
+
+
+</pre><div class="page-break" data-page="Page 18"></div><pre class="text-content">
+FINTECH MARKET
+ANALYSIS 2022
+2017
+2018
+2019
+2020
+2021
+2,000 
+1,500 
+1,000 
+500 
+0 
+In the following analysis is based on
+financial reporting data for the 156
+FinTech companies,  listed in the
+FinTech 
+Mapping 
+&#x27;22. 
+This 
+list
+excludes 
+traditional 
+financial
+institutions 
+operating, 
+as 
+well 
+as
+FinTech-supporting 
+companies 
+and
+PropTech firms. 
+As the graph above shows and despite 
+the 
+lower 
+number 
+of 
+FinTech
+companies founded in 2021, FinTech&#x27;s
+total revenue achieved a historic 25%
+increase. 
+This 
+is 
+evidence 
+that
+Bulgarian FinTech companies were
+stable, mature and ready to take a
+bigger share of the global FinTech
+market. 
+GROWTH RATE
+Total revenue of the Bulgarian FinTech industry, in BGN million, 2017-2021 
+Source: BFA Fintech Market Analysis 2022; Commercial Register 
+1204
+1439
+1374
+1828
+12%
+Average 
+growth
+rate
+REOPENING OF
+ECONOMIES
+DOUBLES 
+GROWTH RATE
+OF REVENUE 
+THE ANALYSIS
+The average annual growth rate  of
+revenue throughout the past five
+years has been 12%, which in 2021
+reached its all-time high of BGN 1.8
+billion. 
+TOTAL REVENUE
+1467
+2
+Be part of the movement at fintechbulgaria.org
+18
+
+
+</pre><div class="page-break" data-page="Page 19"></div><pre class="text-content">
+CONTRIBUTION
+BY SEGMENT
+As shown in the pie chart above, with
+its 44 FinTech companies, the Digital
+Payments segment is by far the
+largest 
+contributor 
+to 
+the
+performance of the sector. In 2021, its
+share 
+reached 
+54% 
+of 
+the 
+total
+revenue.  Within this segment are all
+eMoney issuers, payment aggregators,
+settlement and clearing services 
+FINTECH MARKET
+ANALYSIS 2022
+FinTech companies by Total Revenue in 2021, by segment
+Source: BFA Fintech Market Analysis 2022; Commercial Register 
+TOTAL REVENUE 
+BY SEGMENT
+54%
+Digital
+Payments
+14%
+Enterprise Technology
+Provisioning
+8%
+Alternative Credit &amp;
+Data Analytics
+9%
+Digital Asset
+Exchange
+4%
+Digital 
+Lending
+11%
+Other
+providers. The biggest Fintech Digital
+payment companies by total revenue
+are Datecs, Paysafe, EasyPay, MyPOS,
+etc. 
+The second biggest contributor is the
+Enterprise 
+Technology 
+Provisioning
+companies, 
+which 
+enable 
+API
+Management, 
+Cloud 
+Computing,
+AI/ML/NLP, Enterprise.  
+2
+Be part of the movement at fintechbulgaria.org
+19
+
+
+</pre><div class="page-break" data-page="Page 20"></div><pre class="text-content">
+2021:
+STAGNATION IS
+OVERCOME
+For the last 5 years, the Bulgarian
+FinTech industry has increased its
+operating revenue at a similar pace to
+the dynamics of total revenue. It is
+interesting to note that the industry
+managed to overcome the stagnation
+which could be observed in the years
+2018-2020.
+These 
+numbers 
+show 
+that 
+the
+industry is not only resilient to global
+health and economic crises, but also
+may be considered a beneficiary of
+the social distancing measures that
+kept more people at home. 
+FINTECH MARKET
+ANALYSIS 2022
+2017
+2018
+2019
+2020
+2021
+2,000 
+1,500 
+1,000 
+500 
+0 
+935
+1159
+1,094
+1,166
+1,550
+FINTECH AFTER
+COVID-19
+PANDEMIC 
+If we assume that the 2020 results are
+mainly 
+driven 
+by 
+the 
+COVID-19
+Pandemic, 2021 reflects the reopening
+of the global economy. The active
+restructuring of the payments sector
+during the crisis bore fruits and
+customers 
+who 
+recognized 
+the
+convenience 
+of 
+digital 
+financial
+solutions have now integrated them
+fully into their daily life. The rising
+popularity 
+of 
+new 
+investment
+opportunities, such as crypto assets,
+has also led to an increase in total
+revenue and total operating revenue.
+Operating revenue of the Bulgarian FinTech industry, in BGN million, 2017-2021 
+Source: BFA Fintech Market Analysis 2022; Commercial Register 
+OPERATING REVENUE
+2020-2021
+33%
+2
+Be part of the movement at fintechbulgaria.org
+20
+
+
+</pre><div class="page-break" data-page="Page 21"></div><pre class="text-content">
+CONTRIBUTION
+BY SEGMENT
+Similarly to the previously presented
+pie 
+chart, 
+Digital 
+Payments 
+are
+holding the lead of Operating revenue
+in 2021 by segment, followed by
+Enterprise 
+Technology 
+Provisioning
+FinTech companies. The third biggest
+contributor to operating revenue in
+2021 is the segment of Digital Asset
+Exchange, which includes NEXO,
+FINTECH MARKET
+ANALYSIS 2022
+OPERATING REVENUE
+BY SEGMENT
+Crypto.com, 
+flatexDEGIRO, 
+etc.
+Although there are only 6 Alternative
+Credit and Data Analytics companies,
+they produced 9% of all FinTech
+operating revenue. in 2021. These
+companies 
+are 
+manly 
+foreign
+companies, such as My Cloud Quant,
+Scorify, Experian, etc.
+FinTech companies by Operating Revenue in 2021, by segment
+Source: BFA Fintech Market Analysis 2022; Commercial Register 
+56%
+Digital
+Payments
+16%
+Enterprise Technology
+Provisioning
+9%
+Alternative Credit &amp;
+Data Analytics
+11%
+Digital Asset
+Exchange
+1%
+Digital 
+Lending
+6%
+Other
+2
+Be part of the movement at fintechbulgaria.org
+21
+
+
+</pre><div class="page-break" data-page="Page 22"></div><pre class="text-content">
+TOTAL ASSETS
+DOUBLES IN
+FIVE YEARS
+In 
+the 
+course 
+of 
+2017-2021, 
+the
+FinTech Total assets almost double
+reaching a peak of BGN 1.863 million
+in 2021. 
+FINTECH MARKET
+ANALYSIS 2022
+2017
+2018
+2019
+2020
+2021
+2,500 
+2,000 
+1,500 
+1,000 
+500 
+0 
+1,261
+1,589
+1,654
+1,978
+2,368
+industries in the country, the FinTech
+industry&#x27;s 
+total 
+assets 
+achieved
+positive growth during the COVID-19
+pandemic. Despite the health crisis,
+Fintechs in Bulgaria scored a record of
+BGN 2,368 million in 2020, or about a
+20% increase compared to 2019. One
+explanation for this boost may be the
+increased 
+number 
+of 
+real-time
+transactions that saw a growth of 41%
+in 2020, as reported by a number of
+media outlets. 
+The steady growth in total assets
+confirms the positive trend observed
+in the previous sections and shows
+that 
+Bulgarian 
+FinTech 
+companies
+manage to take full advantage of the
+accelerated digitalization triggered by
+the pandemic.
+Total assets of the FinTech industry, in BGN million, 2017-2021 
+Source: BFA Fintech Market Analysis 2022; Commercial Register 
+TOTAL ASSETS
+THE POSITIVE
+EFFECT OF THE
+PANDEMIC
+As with other metrics covered in this
+Report, FinTech total assets achieved
+positive growth during the COVID-19
+pandemic and ownards.
+17%
+Average 
+growth
+rate
+2
+Be part of the movement at fintechbulgaria.org
+22
+
+
+</pre><div class="page-break" data-page="Page 23"></div><pre class="text-content">
+CONTRIBUTION
+BY SEGMENT
+Total 
+assets 
+follow 
+the 
+revenue
+pattern, with the leading segment
+being Digital Payments. Examples of
+such foreign FinTechs in Bulgaria are
+Paysafe, Visa, Mastercard, as well as
+the Bulgarian FinTechs - Paynetics,
+Paysera Bulgaria, Borica, DatecsPay,
+etc. 
+FINTECH MARKET
+ANALYSIS 2022
+TOTAL ASSETS
+BY SEGMENT
+The main difference to 2020 comes in
+the 
+second 
+and 
+third 
+biggest
+contributors in terms of assets - the
+Digital 
+Lending 
+and 
+Enterprise
+Technology 
+Provisioning 
+segments,
+respectively with 15% and 6% of the
+total BGN 2.4 billion. Digital Assets
+Exchange and WelthTech are gaining
+grounds and represent, respectively,
+3% and 4% of the total assets of the
+sector.
+FinTech companies by Assets in 2021, by segment
+Source: BFA Fintech Market Analysis 2022; Commercial Register 
+54%
+Digital
+Payments
+6%
+Enterprise Technology
+Provisioning
+4%
+WealthTech
+3%
+Digital Asset
+Exchange
+15%
+Digital 
+Lending
+9%
+Other
+2
+Be part of the movement at fintechbulgaria.org
+23
+
+
+</pre><div class="page-break" data-page="Page 24"></div><pre class="text-content">
+TOTAL
+EXPENSES -
+KEEPING THE
+PACE
+With the growth of the industry, the
+total expenses reflected the trend and
+kept an average pace of a 14%
+increase per year, with the highest
+peak in 2021 of BGN 1,640 million. 
+TOTAL EXPENSES
+FINTECH MARKET
+ANALYSIS 2022
+2017
+2018
+2019
+2020
+2021
+2,000 
+1,500 
+1,000 
+500 
+0 
+986
+1,121
+1,152
+1,303
+1,640
+compared to only 3% increase in 2019.
+This upward trend might might have
+been a result of increased costs
+related to employees working from
+home.
+During the recovery year 2021, the
+trend of increasing expenses reflects
+the expansion of the FinTech sector
+and closely matches the 25% growth
+in total revenue in 2021 shown above. 
+Total expenses of FinTech industry, in BGN million, 2017-2021 
+Source: BFA Fintech Market Analysis 2022; Commercial Register 
+14%
+Average 
+growth
+rate
+THE PANDEMIC
+AND ONWARDS
+During the pandemic 2020 year, the
+expenses increased by about 13%,
+2
+Be part of the movement at fintechbulgaria.org
+24
+
+
+</pre><div class="page-break" data-page="Page 25"></div><pre class="text-content">
+2017
+2018
+2019
+2020
+2021
+12,500 
+10,000 
+7,500 
+5,000 
+2,500 
+0 
+Employed in the FinTech industry of Bulgaria 2017-2021 
+Source: BFA Fintech Market Analysis 2022; Commercial Register 
+The data for employment shows a steady
+upward trend in the past 5 years. After the
+slowdown of employment growth in 2019
+and 2020, from 11% in 2018 to 5% driven
+by economic uncertainty and business
+restructuring, we observe a substantial
+spike in the numbers of hired talent in the 
+EVER-
+INCREASING
+DEMAND FOR
+TALENT 
+11,862
+13 %
+Average 
+growth
+rate
+7,331
+9,478
+8.284
+PERSONNEL  
+FINTECH MARKET
+ANALYSIS 2022
+8,901
+FinTech indurstry. The growth from 2020
+to 2021 is 25.12% again reflects the
+reopening of the economy and the
+demand for labor of players on the
+cryptoasset scene. 
+2
+Be part of the movement at fintechbulgaria.org
+25
+
+
+</pre><div class="page-break" data-page="Page 26"></div><pre class="text-content">
+FINTECH MARKET
+ANALYSIS 2022
+FINTECH
+PRODUCTIVITY-
+LEVELING UP
+The productivity of the FinTech sector,
+measured by operating revenue per
+employee,  grew by 22% on an annual
+basis 
+in 
+the 
+period 
+2017-2021,
+ 
+achieving 
+a 
+peak 
+of 
+BGN 
+222
+thousand in 2021, doubling from BGN
+112 thousand in 2017. 
+The main contributor to the average
+growth 
+was 
+a 
+significant
+technological 
+shift 
+of 
+71% 
+that
+occurred in 2018-2019.
+TOTAL REVENUE PER
+EMPLOYEE
+2017
+2018
+2019
+2020
+2021
+250 
+200 
+150 
+100 
+50 
+0 
+112
+122
+209
+208
+222
+Operating revenue per employee in the FinTech industry, in BGN, in thousand,
+2017-2021 
+Source: BFA Fintech Market Analysis 2022; Commercial Register
+This technological shift was driven
+primarily by the events after the
+Referendum for Brexit and the exodus
+of FinTech firms from London to
+Central 
+and 
+Eastern 
+Europe.
+Remarkably, 
+this 
+improvement 
+in
+productivity per employee remained
+stable during the COVID-19 pandemic,
+underlining the importance of the 
+ 
+development 
+of 
+financial
+technologies for economic stability,
+employment and growth. Based on
+the 
+growing 
+digitalization 
+of 
+the
+financial 
+sector, 
+combined 
+with
+increased demand for online FinTech
+solutions, 
+we 
+expect 
+even 
+higher
+productivity in the sector in the next
+years.
+22%
+Average 
+growth
+rate
+2018-2019
+71%
+2
+Be part of the movement at fintechbulgaria.org
+26
+
+
+</pre><div class="page-break" data-page="Page 27"></div><pre class="text-content">
+In 2021, the revenue of the Top 5
+FinTech 
+companies 
+accounts 
+for
+around 
+48% 
+of 
+the 
+total 
+annual
+revenue 
+of 
+the 
+Bulgarian 
+Fintech
+sector. Three out of five of the best-
+performing FinTech companies in the
+country 
+are 
+home-raised 
+FinTech
+champions: Datecs, myPOS and Easy
+Payments Services.
+TOP 5 BY TOTAL
+REVENUE
+0
+50
+100
+150
+200
+250
+Datecs
+Paysafe
+myPOS
+Easy Payment Services
+Experian
+0
+50
+100
+150
+200
+250
+Top 5 FinTech companies by total
+revenue, in BGN million, 2021 
+Source: BFA Fintech Market Analysis 2022; 
+Top 
+5 
+FinTech 
+companies 
+by
+operating rev., in BGN million, 2021 
+Source: BFA Fintech Market Analysis 2022; 
+BY OPERATING
+REVENUE
+Datecs
+Paysafe
+Experian
+myPOS
+EasyPay
+The top 5 FinTech performers by
+operating 
+revenue 
+are 
+almost
+identical 
+to 
+the 
+total 
+revenue
+champions with a slight difference in
+a new actor - EasyPay, taking the
+place 
+of 
+Easy 
+Payment 
+Services.
+Furthermore, 
+these 
+5 
+champions
+accumulate 56% of the total FinTech
+operating revenue in 2020. 
+FINTECH MARKET
+ANALYSIS 2022
+FINTECH INDUSTRY
+BEST PERFORMERS
+2
+Be part of the movement at fintechbulgaria.org
+27
+
+
+</pre><div class="page-break" data-page="Page 28"></div><pre class="text-content">
+2018
+2019
+2020
+2021
+2022
+15 
+10 
+5 
+0 
+FINTECH MOST
+АTTRACTIVE
+FOR VC FUNDS
+NOTE: the numbers presented above
+are 
+the 
+investments 
+strictly 
+in
+Bulgarian entities. Thus, we exclude
+investments in FinTechs such as the
+unicorn 
+Payhawk, 
+the 
+RegTech
+LogSentinel, etc. 
+VC INVESTMENTS
+FINTECH MARKET
+ANALYSIS 2022
+1.3
+3.9
+9.91
+10.03
+10.7
+VC Investments in the FinTech industry in Bulgaria, in BGN million, 2018-2022
+(YTD). 
+*The data includes VC investments only in registered Bulgaria FinTech entities
+Source: BFA Fintech Market Analysis 2022; Dealroom.co
+In a time span of 5 years, the
+investments in FinTech companies
+rose from BGN 1.3 million to almost
+BGN 11 million. The positive trend was
+not affected neither by the COVID-19
+pandemic nor by the ongoing war in
+Ukraine. The BGN 10.03 million VC
+investments in FinTech represents 1/5
+of all 2021 VC investments in Bulgaria,
+188 %
+Average 
+growth
+rate
+making FinTech the most attractive
+industry in the country. 
+It is still to be seen if 2022 will match
+the average growth rate of 188%. 
+2
+Be part of the movement at fintechbulgaria.org
+28
+
+
+</pre><div class="page-break" data-page="Page 29"></div><pre class="text-content">
+750 
+500 
+250 
+0 
+TOP 5 MOST DYNAMIC
+FINTECHS IN 2021
+FINTECH MARKET
+ANALYSIS 2022
+Comparison of operating revenue for 2020 and 2021 of the Top 5 most
+dynamic FinTechs, in %
+Source: BFA Fintech Market Analysis 2022
+As shown in the chart below, 2021 has
+seen spectacular growth in operating
+revenue by a number of companies.
+The highest growth of 636% was
+achieved 
+by 
+Phos, 
+followed 
+by
+Crypto.com and Payslip with 388%
+and 291%, respectively. 
+The first Bulgarian unicorn Payhawk is
+next with 267% operating revenue
+growth, followed by the licensed TPP
+and 
+open 
+banking 
+experts 
+- 
+Iris
+Solutions.
+Phos
+Crypto.com
+Payslip
+Payhawk
+Iris Solutions
+636%
+388%
+291%
+267%
+249%
+The average growth of
+the TOP 10 fastest-
+growing FinTechs in
+2021, compared to 2020
+290%
+2
+Be part of the movement at fintechbulgaria.org
+29
+
+
+</pre><div class="page-break" data-page="Page 30"></div><pre class="text-content">
+SUMMARY
+DEYAN RADEV, PHD
+DIRECTOR OF CEE CENTRE FOR
+DIGITAL FINANCE
+ASSOCIATE PROFESSOR OF 
+FINTECH AND BANKING
+While 2020 was marked by lockdowns
+and disruptions to the global supply
+chains of goods and services due to
+the COVID-19 pandemic, 2021 was the
+year of global recovery.
+The results from the FinTech Market
+Analysis 2022 confirm the positive
+trend for the sector documented in
+BFA&#x27;s Annual FinTech Report 2021 for
+data until 2020. 
+The Bulgarian FinTech ecosystem saw
+9 new entries and a double-digit
+growth across all Key Performance
+Indicators in our analysis: Total Assets,
+Total Revenue, Operating Revenue, 
+ and Total Personnel Number. The
+growth of the latter is mainly driven
+by the promising segment of digital
+assets.
+FinTech remains the most attractive
+sector for VC funding with 20% of the
+total attracted VC capital at the
+national level. This also shows that
+Bulgaria 
+offers 
+an 
+attractive
+environment for investors and FinTech
+entrepreneurs.
+Our data shows that the FinTech
+sector has managed to double its
+productivity 
+since 
+2017, 
+primarily
+driven by technology transfer after the
+Referendum 
+for 
+Brexit. 
+This
+technological shift has helped the 
+SUMMARY ON 
+FINTECH MARKET
+ANALYSIS 2022
+sector to weather well the COVID-19
+pandemic and take full advantage of
+the 
+demand 
+for 
+digital 
+financial
+solutions during and after the crisis. 
+In conclusion, despite its early stage
+of 
+development, 
+the 
+Bulgarian
+FinTech sector proves to be flexible
+and resilient to external shocks and
+therefore 
+can 
+be 
+considered 
+a
+promising driver and facilitator of the
+transition of the Bulgarian economy
+to 
+Industry 
+4.0 
+on 
+the 
+way 
+to
+economic growth and prosperity.
+2
+Be part of the movement at fintechbulgaria.org
+30
+
+
+</pre><div class="page-break" data-page="Page 31"></div><pre class="text-content">
+CHAPTER III
+FINTECH MARKET
+ANALYSIS 2022 - 
+CONSUMER SIDE
+2
+Be part of the movement at fintechbulgaria.org
+31
+
+
+</pre><div class="page-break" data-page="Page 32"></div><pre class="text-content">
+DIGITAL PAYMENT
+INDEX - 2021 - 
+BULGARIA 
+The Digital Payment Index (DPI) is one of the most in-depth studies of the market of
+digital payments that Mastercard have conducted so far. Following a successful launch
+for Hungary in 2021, this year the Index was replicated in 6 additional countries: Austria,
+Bulgaria, Croatia, Greece, Serbia and Romania. The Index aims to provide a holistic,
+annual view of digital payments trends with both quantitative and qualitative insights.
+This is achieved by quantifying market development in Bulgaria and comparing its
+maturity to the other participating countries in three critical pillars that outline the
+main structure of the index: Infrastructure, Knowledge, and Usage.
+It combines statistical data from public sources and Mastercard covering 2021 with
+bespoke primary research findings from the beginning of 2022. DPI is designed and
+structured in a way to be able to flexibly handle market evolution (e.g., introduction of
+new payment solutions) and cross-country comparison.
+a study by:
+2021 BULGARIA&#x27;S CONSUMER
+PAYMENTS INFRASTRUCTURE
+81% banked
+population in Bulgaria
+(2020)
+7.2 million
+Payment cards
+125 000
+POS Terminals
+Mastercard: &quot;Overall, the Bulgarian core cashless infrastructure is
+well-developed&quot;.
+2
+Be part of the movement at fintechbulgaria.org
+32
+
+
+</pre><div class="page-break" data-page="Page 33"></div><pre class="text-content">
+DIGITAL PAYMENT
+INDEX 2021
+a study by:
+Presence of mobile
+wallets provided by
+issuers
+Readiness of banks to
+support car-to-card
+payments
+Open Banking: Possibility
+to connect to banks via
+the use of API
+Payment Request
+service (no interbank
+functionality)
+Presence of wearables
+(e.g. Apple, Google
+pay, etc.)
+Availability of stored
+credential infrastructure 
+at banks
+Mastercard: &quot;Infrastructure in Bulgaria has a strong foundation for
+the digitalization of consumer payments in Bulgaria&quot;.
+Contactless cards
+in the market
+Contactless POS
+terminals
+84%
+99%
+25%
+100%
+25%
+90%
+67%
+87%
+2
+Be part of the movement at fintechbulgaria.org
+33
+
+
+</pre><div class="page-break" data-page="Page 34"></div><pre class="text-content">
+DIGITAL PAYMENT
+INDEX 2021
+Security
+Convenience
+1,0
+2,0
+3,0
+1,0
+2,0
+3,0
+0,0
+Average
+Average
+10
+9
+4
+9
+3
+7
+6
+5
+Chip &amp; 
+1.
+Pin
+11
+12. Cashless
+2. Contactless
+Chip &amp; Pin payment
+Contactless card payment
+Payment with mobile wallet
+by tapping a terminal 
+Payment with smart watch
+or wearable by taping a
+terminal
+Bank transfer by entering
+recipient&#x27;s account number
+CNP by entering card details
+manually
+CNP with Card-on-file
+CNP with mobile wallet
+Paying by phone number
+P2P payment
+Payment by accepting a
+request for money transfer 
+Payment with cash
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+Online payment method
+Physical payment method
+Cash
+Consumers’ 
+awareness 
+of 
+digital
+payments 
+provides 
+a 
+strong
+foundation for the growth of cashless
+alternatives. However, it is critical to
+change consumers’ perceptions about
+the security and raise awareness 
+about cardholder protection feature
+of card payments, especially in the
+online space. The size of the bubbles
+illustrates the share of respondents
+who use the solutions at least once
+per month. Correlation among the
+three dimensions was observed: the
+more frequently consumers use a
+certain payment method, the more
+convenient and secure they perceive
+that method.
+PAYMENT
+METHOD BY
+CONVENIENCE
+AND SECURITY 
+How do consumers rank the different payment solutions based on convenience
+and security? 
+Source: Digital Payment Index 2021, Mastercard
+a study by:
+2
+Be part of the movement at fintechbulgaria.org
+34
+
+
+</pre><div class="page-break" data-page="Page 35"></div><pre class="text-content">
+POTENTIAL 
+FOR GROWTH
+DIGITAL PAYMENT
+INDEX 2021
+a study by:
+Withdraw half
+in cash
+41%
+54%
+11%
+8%
+27%
+Total income via bank transfer
+Total income in cash
+Does not answer or no income
+Less than total income via bank transfer 
+Consumers with regular income on their
+accounts. % of total respodents
+Source: 
+Digital 
+Payment 
+Index 
+2021,
+Mastercard
+The Index considers a great potential
+for the growth of the use of various
+digital payment methods in Bulgaria - 
+the well-developed infrastructure and
+the high awareness of users are a 
+stable basis for the growth of the use
+of various solutions. 
+According to the survey, a large
+segment 
+of 
+Bulgarian 
+consumers
+(45%) does not receive their full salary
+digitally. Receiving income in cash
+limits 
+the 
+adoption 
+of 
+cashless
+payment 
+methods 
+and 
+that’s 
+the
+biggest challenge in front of the
+companies who try to develop the
+best solutions, and the institutions
+which fight the grey economy.
+BULGARIA&#x27;S
+DIGITAL
+PAYMENT
+CHANCE
+2
+Be part of the movement at fintechbulgaria.org
+35
+
+
+</pre><div class="page-break" data-page="Page 36"></div><pre class="text-content">
+DIGITAL PAYMENT
+INDEX 2021
+a study by:
+Claim to have used
+Credential-on-File
+51%
+69%
+31%
+Active cards using CP only
+Active cards using CNP
+Share of active cards that are used online (CNP)
+Source: Digital Payment Index 2021, Mastercard
+Claim to have
+paid online with
+wallet 
+32%
+2
+Be part of the movement at fintechbulgaria.org
+36
+
+
+</pre><div class="page-break" data-page="Page 37"></div><pre class="text-content">
+DIGITAL PAYMENT
+INDEX 2021
+MISSION TOWARDS
+DIGITALISATION
+a study by:
+VANYA MANOVA
+COUNTRY MANAGER BULGARIA,
+NORTH MACEDONIA, ALBANIA AND
+KOSOVO AT MASTERCARD
+As the world goes through one of the
+most challenging economic periods in
+history, there is a need to transition to
+a more robust, digitally-focused, and
+sustainable economy – a move that
+will reshape everything from how
+transit 
+systems 
+run 
+and 
+welfare
+benefits are distributed to how ESG
+commitments for net-zero emissions
+are pursued. Digital payments have a
+major 
+role 
+to 
+play 
+in 
+this
+transformative process.
+As a global technology company,
+Mastercard has a mission to connect
+and 
+power 
+an 
+inclusive, 
+digital
+economy 
+that 
+benefits 
+everyone,
+everywhere by making payments (but
+not only) safe, simple, smart, and
+accessible. There&#x27;s a lot of value that
+gets created in the form of data, in the
+form of capability, that enables other
+organizations, like governments and
+financial institutions, to take it to a
+second level to the benefit of the
+players in the ecosystem.
+Together we have achieved much
+progress in furthering the role of
+digital payments. Now, with the Index
+to provide a qualitative measure of 
+market development progress, we can
+focus our efforts and do so much
+more.
+2
+Be part of the movement at fintechbulgaria.org
+37
+
+
+</pre><div class="page-break" data-page="Page 38"></div><pre class="text-content">
+CHAPTER IV
+FINTECH MARKET
+ANALYSIS 2022 -
+QUALITATIVE RESEARCH
+2
+Be part of the movement at fintechbulgaria.org
+38
+
+
+</pre><div class="page-break" data-page="Page 39"></div><pre class="text-content">
+MARKET RESEARCH -
+ANNUAL FINTECH
+SURVEY 2022
+For a fourth year in a roll, Bulgarian FinTech Association conducts a FinTech survey in
+Bulgaria to track the community&#x27;s trends. Although the findings might not be
+considered wholly representative of the ecosystem, it is still a powerful tool to
+showcase the tendencies within the industry and some of its characteristics. The
+following qualitative analysis shows the ecosystem is vital and strives for improvement.
+In 
+2022, 
+17 
+FinTech 
+companies
+participated in the FinTech survey. The
+composition of the respondents shows
+that 76% of respondents are SMEs,
+compared to 93% found in this year&#x27;s
+Market analysis.
+The composition of FinTech entities in
+the region indicates that the market is
+still emerging. The young structure of
+the ecosystem makes the industry
+flexible to changes but at the same
+time might signal a lack of experience.
+The survey reveals that the most
+significant part of FinTech founders&#x27;
+background is in Finance. Only 6% are
+those 
+coming 
+with 
+a 
+Technology
+major and the same for Marketing
+and Business Administration. This is
+to show that the Bulgarian FinTech
+ecosystem is deeply rooted in the
+financial sector, working on finding
+solutions to solve traditional Finance
+issues. 
+COMPOSITION-
+RESPONDENTS
+MBA
+6%
+Finance 82%
+Large
+24%
+Micro
+41%
+Small
+18%
+Medium
+18%
+Marketing
+6%
+FOUNDERS&#x27;
+BACKGROUND
+Technology
+6%
+2
+Be part of the movement at fintechbulgaria.org
+39
+
+
+</pre><div class="page-break" data-page="Page 40"></div><pre class="text-content">
+Bulgarian 
+FinTech 
+companies 
+are
+highly 
+export-oriented, 
+with 
+main
+markets in the EU, but also in the UK,
+USA, and Latin America. 
+These 
+aspirations 
+to 
+work 
+and
+compete 
+in 
+international 
+markets
+improves the overall productivity and
+performance 
+of 
+the 
+Bulgarian
+economy. 
+MARKET RESEARCH -
+SURVEY 2022
+TARGET MARKETS
+SEE region
+29%
+UK
+12%
+USA
+6%
+Latin 
+America
+6%
+EU
+35%
+#EUREMAIN
+CURRENT
+FINTECH
+MARKETS 
+Global
+24%
+BG
+41%
+EU
+35%
+2
+Be part of the movement at fintechbulgaria.org
+40
+
+
+</pre><div class="page-break" data-page="Page 41"></div><pre class="text-content">
+Being 
+heavily 
+business-oriented,
+Bulgarian FinTech companies work
+closely 
+together 
+with 
+traditional
+financial 
+institutions 
+both 
+in 
+the
+banking and non-banking sector. This
+reaffirms 
+once 
+again 
+the 
+close
+relationships within the finance sector
+in the region.
+MARKET RESEARCH -
+SURVEY 2022
+CUSTOMERS
+PARTNERSHIPS
+WITH ALL
+PLAYERS
+B2B:LEADING
+BUSINESS
+MODEL
+Consumers
+29%
+Businesses
+71%
+The &#x27;22 survey shows that Bulgarian
+FinTech companies continue to work
+in the space of business-to-business,
+served by  71% of all respondents. This
+may 
+reflect 
+the 
+relatively 
+small
+Bulgarian market for FinTech services.
+But it also means that the products
+and services provided by Bulgarian
+fintech 
+companies 
+solve 
+real-life
+business problems. 
+Independently
+24%
+Both 
+53%
+Do 
+you 
+prefer 
+to 
+operate
+independently, or to cooperate with
+banks, insurers, and other relevant
+corporates and organizations?
+Source: Annual FinTech Survey 2022
+Cooperation
+24%
+What type of customers does your
+company predominantly service? 
+Source: Annual FinTech Survey 2022
+2
+Be part of the movement at fintechbulgaria.org
+41
+
+
+</pre><div class="page-break" data-page="Page 42"></div><pre class="text-content">
+The Annual FinTech Survey 2022 focuses on the obstacles and challenges the
+ecosystem faces. What is more, the survey expands it further with asking about the
+recommendations the FinTech players give. The results of the survey on the challenge
+is incorporated in the following chapters of this Report. 
+MARKET SURVEY &#x27;22
+CHALLENGES  &amp;
+RECOMMENDATIONS
+1. Predictability,
+innovation, successful
+fundraises and exits
+Predictability from the start of a
+FinTech venture to funding it, and
+having a successful exit, remains
+Recommendation 
+#1 
+within 
+the
+FinTech 
+community 
+in 
+Bulgaria.
+Undoubtedly, this could only happen
+with 
+a 
+well-developed 
+internal
+market, highly efficient and effective
+public institutions and an up-to-date
+regulatory framework. 
+2. Access to anonymised
+data
+TOP 3 TO
+BOOSTING THE
+ECOSYSTEM*
+Being 
+part 
+of 
+the 
+440+ 
+million
+European Union market is both an
+opportunity 
+and 
+a 
+challenge.
+Bulgarian FinTech companies remain
+conservative about their place and
+role 
+on 
+a 
+global 
+scale. 
+More
+internationalization 
+initiatives 
+are
+needed, respondents say.
+      - Policies and
+regulation
+Access to data has become a key
+competitive driver which presents
+new 
+opportunities, 
+especially 
+for
+FinTechs. Although in Bulgaria, as
+shown above in the Mastercards&#x27; DPI,
+the financial sectors&#x27; APIs are open
+and running at almost 100%, 24/7,
+data is still hard to be accessed. 
+*Based on respondents&#x27; answers in Annual FinTech Survey 2022
+3. Global exposure
+2
+Be part of the movement at fintechbulgaria.org
+42
+
+
+</pre><div class="page-break" data-page="Page 43"></div><pre class="text-content">
+0%
+20%
+40%
+60%
+80%
+What specialists are most in demand? (% of respondents reply)
+Source: Annual FinTech Survey 2022
+FINTECH
+AVERAGE
+SALARY
+According 
+to 
+the 
+Annual 
+FinTech
+Survey 
+2022, 
+the 
+average 
+gross
+monthly salary in the FinTech space is 
+Continuing 
+last 
+year&#x27;s 
+trend, 
+the
+respondents in the Annual FinTech
+Survey &#x27;22 state that the specialists
+most in demand for the industry are
+software 
+engineers. 
+What 
+is
+interesting to spot this year is that
+every third FinTech company is also
+looking 
+for 
+Sales 
+and 
+Marketing
+specialists, reflecting once again the
+post-pandemic recovery trend.
+MOST WANTED:
+IT &amp; SALES
+IT/Software Engineer,/Developper
+Sales
+Marketing
+Risk/Compliance
+Customer Service
+MARKET RESEARCH -
+SURVEY 2022
+COMPENSATION
+BG FINTECH AVERAGE
+GROSS SALARY
+BGN 3,248
+EUR 1,659
+76%
+35%
+BGN 3,248 (EUR 1,659), which is more
+than 2 times higher than the average
+for the country in 2021. 
+2
+Be part of the movement at fintechbulgaria.org
+43
+
+
+</pre><div class="page-break" data-page="Page 44"></div><pre class="text-content">
+MARKET RESEARCH -
+SURVEY 2022
+GENDER
+COMPOSITION &amp; AGE
+Of all employed in the
+Bulgarian FinTech industry
+are women
+44%
+The average age of
+employees in Bulgarian
+Fintech comapanies
+35.4 years
+In 2022, women continue to play and
+important role in the Bulgarian FinTech
+industry. Although the technology field
+and 
+finance 
+are 
+thought 
+to 
+be
+predominantly 
+men-dominated, 
+in
+Bulgaria we observe a parity, confirmed
+by our surveys for a  second year in a row. 
+Having a strong female representation
+signifies the strong diversification of
+FinTech workforce, which is the basis for
+increased 
+innovation 
+and 
+higher
+productivity 
+of 
+Bulgarian 
+FinTech
+companies. 
+WOMEN:
+STRONGLY
+REPRESENTED
+IN FINTECH
+YOUNG TEAMS,
+CREATIVE
+IDEAS
+Respondents claim that the average age
+of their teams is 35.4 years. The young
+environment is more adaptive to sudden
+changes, which can be of great benefit in
+the fast-paced and quickly changing 
+ FinTech landscape. 
+Young people are also energetic with a
+natural affinity for tech, which helps the
+adoption and use of new software and
+technology within the organization.
+2
+Be part of the movement at fintechbulgaria.org
+44
+
+
+</pre><div class="page-break" data-page="Page 45"></div><pre class="text-content">
+2022 
+has 
+been 
+a 
+year 
+of 
+great
+challenges and while it is easy to get
+lost in the daily, it is also important to
+acknowledge 
+what 
+we 
+have
+accomplished, 
+reflect 
+on 
+it 
+and
+remind ourselves where we stand and
+where we are headed. These are 3
+trends by the public sector that aim to
+develop the local ecosystem, improve
+business conditions and build a better
+home for the startups and ultimately
+the people of Sofia.
+Sandbox for Innovative Solutions
+Innovative Sofia has a Swiss Army
+knife of its own - the Sandbox for
+Innovative Solutions. The Sandbox is a
+municipal 
+programme 
+for 
+pilot
+projects 
+that 
+test 
+innovative
+technological 
+solutions 
+for 
+urban
+challenges, effectively making the city
+an R&amp;D space for great ideas to turn
+into scalable concepts. We strongly
+believe 
+that 
+topics 
+such 
+as
+environment, 
+urban 
+mobility, 
+and
+data gathering are most effectively
+tackled together under the spirit of
+cooperation and co-creation. Sofia has
+a rich, strong and diverse startup
+sector, so naturally, we should look
+within the local ecosystem where
+passion and ingenuity intersect and
+ opt for a bottom-up approach in 
+terms of project management. Since
+the 
+inception 
+of 
+the 
+Sandbox,
+Innovative Sofia has launched 9 pilot
+projects, i.e. the Green Kindergarten
+pilot, the VR Exhibition for Innovative
+Schools, a wedding portal etc. 
+With regards to fintech, the most
+notable example would be the new e-
+services 
+platform 
+for 
+address
+registration. Together with Evrotrust
+Technologies 
+JSC, 
+we 
+have
+successfully digitally transformed the
+legacy 
+electronic 
+service 
+into 
+a
+modern, fully digital, fully online,
+seamless e-service. The bridge that
+made the transition from a paper
+process made digital to a 360 degrees’
+digital process was Evrotrust’s cloud-
+based technology. The ease of use and
+convenience not only saved users 
+VELKO VELKOV
+SENIOR EXPERT AT 
+INNOVATIVE SOFIA
+BUILDING THE 
+FINEST HOME FOR 
+STARTUPS
+2
+Be part of the movement at fintechbulgaria.org
+45
+
+
+</pre><div class="page-break" data-page="Page 46"></div><pre class="text-content">
+thousands of hours, but also actively
+encouraged and increased use of
+municipal e-services over 30 times.
+The address registration pilot is a case
+study of how to satisfy a demand and
+meet 
+market 
+expectations 
+by
+introducing human-centered design
+to 
+an 
+outdated 
+process, 
+thus
+establishing a new standard of service
+offering 
+that 
+can 
+be 
+used 
+as 
+a
+blueprint for future endeavors. 
+What started as a pilot project for a
+few select districts grew into a city-
+wide solution with multiple phases of
+scaling 
+up, 
+integration 
+with 
+the
+Ministry of e-Governance, and more to
+come in the future with a Phase 2.0
+just around the corner, which is a
+testament to how sandboxing is one
+of the most effective method to
+validate 
+innovative 
+concepts. 
+We
+would very much like to see more
+regulatory sandboxes in the future,
+especially ones aimed at the fintech
+sector. 
+Startup Visa
+One 
+of 
+the 
+most 
+exciting 
+new
+developments for the ecosystem is the
+startup visa, which launched in 
+October. Thanks to the tireless efforts
+by the Bulgarian Startup Association
+(BESCO), there is now a mechanism in
+place aimed at the startup sector that
+fast-tracks long-term residence for
+non-EU 
+entrepreneurs 
+and 
+helps
+founders &amp; entrepreneurs to make
+Bulgaria their new home. Sofia has
+already established itself as a tech &amp;
+innovation hub, hence it stands to
+benefit from an influx of innovators
+that would ultimately help advance
+the economy, create job opportunities
+and impact the people. 
+To 
+apply 
+for 
+a 
+startup, 
+visa 
+a
+candidate must fill in an online form,
+which is available in both Bulgarian
+and English on the website of the
+Ministry of Innovation &amp; Growth. The
+form focuses on two aspects: 1) what
+is your pitch deck and 2) how is your
+concept innovative, which can be
+supplemented 
+with 
+a 
+patent 
+or
+competition awards. The application
+is then reviewed by an expert advisory
+board 
+which 
+comprises
+representatives 
+from 
+the 
+public
+sector, academia, business, NGOs and
+other 
+members 
+of 
+the 
+local
+ecosystem, a process which should
+take no longer than 30 days, unless
+the 
+application 
+necessitates
+additional documents. A successful
+visa would then be valid up to 1 year,
+which could potentially be extended
+even further. 
+The startup visa is an incredible 
+BUILDING THE 
+FINEST HOME FOR 
+STARTUPS
+visa
+2
+Be part of the movement at fintechbulgaria.org
+46
+
+
+</pre><div class="page-break" data-page="Page 47"></div><pre class="text-content">
+milestone, but for BESCO this is only
+the beginning and there will be many
+more great things to come. They are
+already plans for a tech visa for digital
+nomads, a practice that is becoming
+more popular globally and in the EU,
+the 
+most 
+recent 
+example 
+being
+Portugal, which launched a tech visa
+programme 
+in 
+October 
+this 
+year.
+Furthermore, BESCO is working on
+improving the procedure for Blue
+Cards 
+for 
+IT 
+talents, 
+as 
+well 
+as
+preparing 
+other 
+proposals 
+for
+amendments and policies that would
+help to optimize the systems in place.
+It is exciting to see what the future
+holds and thanks to BESCO Bulgaria is
+working its way towards achieving
+Startup 
+Nations 
+Standard 
+of
+Excellence.
+Compass for Entrepreneurs
+How 
+about 
+a 
+thought 
+exercise?
+Imagine for a second you want to start
+a business here. You have the ideas,
+the vision and you cannot wait to set
+up shop. How familiar are you with
+the local business landscape in terms
+of 
+finance 
+opportunities,
+administrative help and other relevant
+insights? Of course, “Google is your 
+friend” as the saying goes, but a far
+more convenient option is to have a
+one-stop for all such information
+needs. This is where the Compass for
+Entrepreneurs 
+comes 
+in, 
+a 
+joint
+initiative by Innovative Sofia with
+partners such as Invest Sofia, BESCO,
+the Fund of Funds, VCs and other
+financial institutions. 
+Sofia 
+has 
+a 
+growing 
+economic
+potential, 
+capacity 
+for 
+innovation,
+healthy conditions for business that
+attract foreign interest. This is a
+strong business environment with an
+abundance 
+of 
+opportunities. 
+This
+wealth 
+of 
+information 
+should 
+be
+made available, but more importantly,
+made accessible to a wider audience,
+so that they can in turn take that
+information and create value out of it. 
+The concept of the Compass for
+Entrepreneurs is to gather all the
+relevant 
+information 
+for 
+new
+businesses and consolidate it under a
+single platform. Think of it as a
+guiding tool for your entrepreneurial
+journey 
+that 
+covers 
+the 
+entire
+roadmap 
+from 
+the 
+early
+organizational stages through getting
+financing and validation, to entering
+the market and acquiring your first
+clients.
+While the Compass for Entrepreneurs
+is 
+still 
+in 
+its 
+early 
+stage 
+of
+development, we are confident that
+providing an interactive technical 
+BUILDING THE 
+FINEST HOME FOR 
+STARTUPS
+2
+Be part of the movement at fintechbulgaria.org
+47
+
+
+</pre><div class="page-break" data-page="Page 48"></div><pre class="text-content">
+solution will be extremely helpful to
+future 
+entrepreneurs. 
+By 
+working
+together and combining our expertise,
+insights and know-how of today, we
+will facilitate the opportunities of
+tomorrow. 
+Conclusion
+Sofia 
+has 
+a 
+growing 
+economic
+potential, 
+capacity 
+for 
+innovation,
+healthy conditions for business that
+attract foreign interest. This is a
+strong business environment with an
+abundance 
+of 
+opportunities. 
+This
+wealth of information should be made
+available, but more importantly, made
+accessible to a wider audience, so that
+they can in turn take that information
+and create value out of it.
+The concept of the Compass for
+Entrepreneurs is to gather all the
+relevant 
+information 
+for 
+new
+businesses and consolidate it under a
+single platform. Think of it as a
+guiding tool for your entrepreneurial
+journey 
+that 
+covers 
+the 
+entire
+roadmap 
+from 
+the 
+early
+organizational stages through getting
+financing and validation, to entering
+the market and acquiring your first
+clients.
+While the Compass for Entrepreneurs
+is 
+still 
+in 
+its 
+early 
+stage 
+of
+development, we are confident that
+providing 
+an 
+interactive 
+technical
+solution will be extremely helpful to 
+BUILDING THE 
+FINEST HOME FOR 
+STARTUPS
+VELKO VELKOV
+SENIOR EXPERT AT 
+INNOVATIVE SOFIA
+future 
+entrepreneurs. 
+By 
+working
+together and combining our expertise,
+insights and know-how of today, we
+will facilitate the opportunities of
+tomorrow.
+2
+Be part of the movement at fintechbulgaria.org
+48
+
+
+</pre><div class="page-break" data-page="Page 49"></div><pre class="text-content">
+How 
+can 
+you 
+ensure 
+the 
+top
+performance, 
+efficiency, 
+and
+happiness of employees?
+Without 
+a 
+doubt, 
+the 
+working
+environment plays a major role in all
+these factors. Over the past couple of
+years, 
+the 
+world 
+discovered 
+the
+importance 
+of 
+flexibility 
+at 
+work.
+Whether working from home or from
+an office, the ability to shift gears
+turned out to be paramount for
+company success. But along with
+flexibility, 
+teamwork 
+and
+collaboration also need taking care of.
+As an industry, fintech is no exception.
+SOFIA 
+FINTECH
+HUB 
+Enter the flex space. When Bulgarian
+fintech startup Cashwave found their
+new home at Entract 127, they were
+looking for a place that would provide
+their team with the social interactions
+it needs to thrive. Thanks to its
+location in the city centre of Sofia, this
+exclusive flexible office space is easily
+accessible 
+while 
+also 
+ensuring
+companies 
+have 
+a 
+spacious 
+and
+collaborative setting. 
+When you end up at a such a space,
+you have the unique opportunity to
+immerse in a new, bigger community
+which includes other businesses and
+individuals who value the networking
+spirit 
+of 
+the 
+flexible 
+office
+environment. 
+Nevertheless, 
+as 
+the
+official hub of the Bulgarian Fintech
+Association, 
+Entract 
+127 
+could
+guarantee Cashwave connections with
+other fintech businesses to exchange
+tips and ideas. 
+x
+2
+Be part of the movement at fintechbulgaria.org
+49
+
+
+</pre><div class="page-break" data-page="Page 50"></div><pre class="text-content">
+As a fast-growing company with an
+international team in five countries,
+Cashwave started to gather their team
+together every quarter. Entract 127
+accommodates their needs as they
+benefit from the private fitted out
+office 
+options, 
+coworking 
+desks,
+meeting rooms, 24/7 access, and the
+multifunctional event space where
+they organize in-person and hybrid
+events for their team and partners.
+At the end of the day, you need an
+office that cares about much more
+than getting the work done. You need
+flexibility, teamwork, and guaranteed
+security – and for all of those, Entract
+127 is your friend.
+SOFIA 
+FINTECH
+HUB 
+All of this would not be possible
+without the efforts of the team behind
+Entract 127. The space impresses not
+only 
+with 
+the 
+premium 
+quality,
+executive ambience and fine design
+touch but also with the welcoming
+and engaged attitude of Entract 127’s
+team. When it comes to the top floor
+city view, this one speaks for itself, as
+it uncovers the vibrant Rakovski Street
+with its many theatres, cultural spots,
+bars and restaurants.
+A state-of-the-art space in a top
+location may suffice for companies in
+some 
+industries, 
+but 
+in 
+fintech,
+security is another must-have when in
+search of an office. The specifics of
+Cashwave’s operations require a high
+level of cyber security which Entract
+127 provides.
+x
+2
+Be part of the movement at fintechbulgaria.org
+50
+
+
+</pre><div class="page-break" data-page="Page 51"></div><pre class="text-content">
+CHAPTER V
+REGULATION AND ROLE
+OF THE STATE AND
+REGULATORS
+2
+Be part of the movement at fintechbulgaria.org
+51
+
+
+</pre><div class="page-break" data-page="Page 52"></div><pre class="text-content">
+REGULATING THE
+INNOVATION
+SVETOSLAV DIMITROV
+SECRETARY 
+OF 
+BOD 
+AND
+FINTECH REGULATION LEAD AT
+BULGARIAN FINTECH ASSOC.
+The Bulgarian Fintech Association
+(BFA) is a non-governmental, for-
+impact 
+organisation 
+uniting 
+all
+interested parties in the sector of
+digital finance, working from the
+region of Southeastern Europe (SEE).
+Our mission is to bring together large
+FinTechs, SMEs, supporting industries,
+the 
+respective 
+authorities 
+and
+academia 
+to 
+create 
+favourable
+environment, including an innovative
+regulatory framework, supporting the
+development 
+of 
+digital 
+finance
+solutions. In 2019 BFA become one
+the 
+co-founders 
+of 
+the 
+European
+Digital 
+Finance 
+Association, 
+the
+largest 
+FinTech 
+organisation,
+representing 15 European countries
+and 
+more 
+than 
+1,000 
+FinTech
+companies. 
+In the similar vein, from the very first
+days 
+of 
+its 
+establishment, 
+the
+Bulgarian 
+Fintech 
+Association 
+has
+been 
+the 
+leading 
+player 
+in 
+the
+discussions for the development of
+FinTech regulatory framework both
+on national an supranational level.
+The results
+So far we have submitted more than a
+couple of dozens of industry opinions
+to the Bulgarian authorities on laws
+and 
+regulations 
+relevant 
+to 
+our
+industry such as the National Strategy
+for Financial Literacy, Consumer 
+ 
+Protection Law,  Bulgarian VAT law,
+etc. and on an European level - Digital
+Strategy 
+for 
+the 
+EU, 
+European
+Measures to Support Digital Finance
+in the Post-COVID-19 Context, PSD-2
+Review, etc. 
+What&#x27;s next 
+At BFA, we clearly understand that
+working on shaping EU and Bulgarian
+regulation 
+is 
+a 
+years-long, 
+highly
+complex 
+process 
+where 
+positive
+results could be achieved only with
+the participation of numerous players,
+both from the public and private
+sector. BFA remains committed to the
+SEE FinTech community and will
+continue working towards achieving
+the ecosystem&#x27;s goals.
+2
+Be part of the movement at fintechbulgaria.org
+52
+
+
+</pre><div class="page-break" data-page="Page 53"></div><pre class="text-content">
+Financial 
+development 
+and
+innovation: The right path for a
+sustainable 
+future 
+in 
+the 
+non-
+banking financial sector
+It 
+is 
+indisputable 
+that 
+new
+technologies 
+are 
+fundamentally
+reshaping the financial sector, while
+at the same time they are significantly
+facilitating the access of investors and
+companies 
+to 
+services. 
+Innovative
+opportunities in the field of finance
+are not new, hence in the recent years
+the investment in technology and the
+speed of development have reached
+new heights. As a result, we are
+witnessing the introduction of new
+financial technology solutions that
+use 
+digital 
+identification, 
+mobile
+applications, cloud services, big data
+analytics, 
+artificial 
+intelligence,
+blockchain 
+and 
+shared 
+ledger
+technologies. The Bulgarian Financial
+Supervision 
+Commission 
+(FSC) 
+is
+guided by the belief that the rapid
+and 
+effective 
+implementation 
+of
+financial 
+innovations 
+by 
+capital
+market participants supports both the
+growth 
+of 
+their 
+activity 
+and 
+the
+development of the capital market as
+a whole. Following this policy, the FSC
+encourages  the growing interest in
+the 
+above 
+principles 
+and 
+takes
+consistent and timely actions for their
+accelerated implementation in the
+non-banking financial services sector.
+One of the first steps in this direction
+is the Innovation Hub created by FSC.
+It provides a single point of contact 
+for the provision of proposals, but also 
+for the identification of obstacles that
+are relevant to the sector and which,
+through 
+facilitated 
+communication
+and 
+data 
+exchange 
+between 
+the
+interested parties and the regulator,
+as 
+in 
+this 
+way 
+can 
+shorten 
+the
+response time to inquiries received.
+We are also committed to broadening
+the dialogue with all of the interested
+parties as a basis of achieving a
+balance between the benefits of the
+introduction of financial innovations,
+and ensuring stability and confidence
+in 
+the 
+financial 
+markets 
+and
+protection of the rights of investors.
+For this purpose, a special taskforce to
+monitor financial innovations in the
+non-banking 
+financial 
+sector 
+was
+created within the BFSC’s team. Its
+activity is aiming at tracking the
+benefits and controlling the risks
+arising from the integration of 
+MARIA FILIPOVA
+DEPUTY CHAIR OF THE FINANCIAL
+SUPERVISION COMMISSION IN
+CHARGE OF THE SUPERVISION OF
+THE INVESTMENT ACTIVITIES
+DIVISION
+REGULATE 
+FINTECH
+2
+Be part of the movement at fintechbulgaria.org
+53
+
+
+</pre><div class="page-break" data-page="Page 54"></div><pre class="text-content">
+financial 
+innovations, 
+as 
+well 
+as
+promoting the dialogue between the
+regulator and the business. In this
+connection the regular studies and
+analyses that the Bulgarian Financial
+Supervision Commission team carries
+out in order to establish the level of
+innovations 
+used 
+are 
+of 
+essential
+importance. It must be noted that
+such 
+types 
+of 
+studies 
+include 
+a
+specially developed methodology for
+the 
+effective 
+extraction 
+of
+information, and the results of the
+studies serve to plan the subsequent
+and targeted actions.
+At the same time, investor protection
+is an important social responsibility –
+and this also applies to the Bulgarian
+Financial 
+Supervision 
+Commission.
+The FSC undertakes a number of
+actions aimed at facilitating users&#x27;
+access 
+to 
+reliable 
+and 
+clear
+information, so that they can protect
+their rights. To achieve this goal, FSC
+conducts a consistent educational
+and information policy  - as part of it,
+a &quot;Financial Innovations&quot; section has
+been created on the FSC’s website. It
+contains numerous publications of an
+educational and cautionary nature
+aimed at increasing the financial
+literacy of all the users of financial
+services. Also, we are about to present
+the FSC Mobile application to the
+public.
+In this regard it, the FSC undertook
+the next step to improve public
+awareness and in accordance with 
+new 
+technologies. 
+FSC 
+launched
+#InvestSafely, a digital campaign to
+protect investors of financial services
+in the non-banking financial sector. 
+The campaign is a step forward from
+the measures already taken by FSC for
+the investors’ protection. Through the
+provided online space, it is possible
+for an unlimited number of people to
+get information on how to distinguish
+unauthorized 
+firms 
+and 
+how 
+to
+protect 
+oneself 
+from 
+them. 
+The
+campaign has a dedicated website
+that combines video and text, news
+and 
+warnings 
+to 
+users:
+https://investsafely.fsc.bg/, as well as
+series of video content posted on the
+FSC 
+YouTube 
+channel 
+and 
+FSC’s
+LinkedIn 
+profile. 
+Additionally, 
+the
+users are provided with a direct
+access 
+to 
+the 
+list 
+of 
+licensed
+investment 
+firms, 
+as 
+well 
+as
+indications for investors to identify
+irregularities. In addition to the above
+actions, the initiative #InvestSafely
+was also promoted through public
+lectures conducted by some of the
+FSC’s experts in partnership with the
+Bulgarian 
+Association 
+of 
+Licensed
+Investment Brokers and the Investors
+Compensation Fund, at the leading
+universities 
+in 
+the 
+Republic 
+of
+Bulgaria under the title “Invest Safely
+in the Digital World”.
+Convinced from the need for joint
+cooperation between the regulator
+and 
+the 
+business 
+to 
+create 
+a
+developed 
+fintech 
+ecosystem,
+representatives of the Commission
+actively participate in a number of
+local and international initiatives in 
+2
+Be part of the movement at fintechbulgaria.org
+54
+
+
+</pre><div class="page-break" data-page="Page 55"></div><pre class="text-content">
+cooperation 
+with 
+the 
+Bulgarian
+Fintech 
+Association. 
+One 
+of 
+the
+examples in this direction is the
+efficient and effective participation of
+FSC in the events &quot;From Zero to
+Fintech&quot; and the webinar &quot;Safety of
+the digital financial instruments: Pay
+safely 
+on 
+the 
+Internet!&quot; 
+which 
+is
+initiated by Junior Achievement and
+organized by the Bulgarian Fintech
+Association on the occasion of the
+Global Money Week.
+The FSC assesses the important role of
+financial 
+technologies 
+for 
+the
+development of the capital market by
+integrating digitization and changing
+business models, through data-based
+solutions, for example in the asset
+management sector, in the sector of
+investment intermediaries  and in the
+distribution 
+channels 
+of 
+financial
+products. We are assured that the
+communication with the European
+supervisory 
+authorities, 
+the
+participation in the meetings of the
+structures 
+of 
+the 
+European
+Commission and the exchange of
+experience with regulatory authorities
+from 
+other 
+member 
+states 
+is 
+of
+primary 
+importance 
+for 
+the
+implementation 
+of 
+rules 
+for 
+the
+development of digital technologies
+in order the safety for investors to be
+ensured. 
+In this regard, the preparation of the
+new Digital Financial Package of the
+EC has also an important role for the
+development of the digitization. The 
+draft regulations and directives on
+digital operational resilience for the
+financial 
+sector 
+(DORA), 
+on 
+the
+Markets 
+in 
+Crypto-assets 
+and
+amending Directive (EU) 2019/1937
+(MiCA), the pilot regime for market
+infrastructures based on distributed
+ledger 
+technology 
+(DLT) 
+are 
+all
+examples in this regard. The package
+aims to stimulate competitiveness
+and innovation in the financial sector
+in Europe, to provide investors and
+companies with a greater choice of
+financial 
+services 
+and 
+modern
+payment solutions, and to ensure
+investor 
+protection 
+and 
+financial
+stability. An essential stage in the
+development 
+of 
+the 
+regulatory
+framework is the joint initiative of the
+European supervisory authorities to
+collect information and data with the
+participation of the Commission and
+representatives 
+of 
+the 
+Bulgarian
+companies, with the ultimate goal to
+assist the market participants in the
+future application of the European
+legislation.
+Furthermore, during 2022 the FSC
+took part in online event organized by
+the 
+National 
+Bank 
+of 
+Lithuania
+regarding 
+the 
+possibility 
+of
+introducing a regulatory sandbox - a
+working environment provided by the
+regulator for supervised testing of
+new financial products and provision
+of 
+financial 
+services 
+in 
+a 
+digital
+environment.
+The 
+crowdfunding 
+regulation 
+is
+introduced in order to provide new
+funding opportunities for start-ups
+and small and medium-sized 
+2
+Be part of the movement at fintechbulgaria.org
+55
+
+
+</pre><div class="page-break" data-page="Page 56"></div><pre class="text-content">
+enterprises, which usually rely on
+small-scale investments. Such funding
+may be under the form of loans or
+through 
+the 
+acquisition 
+of
+transferable 
+securities 
+or 
+other
+eligible instruments for the purposes
+of crowdfunding. The adoption of the
+new 
+legal 
+framework 
+provides 
+a
+possibility to seek financing for their
+activities by accessing the capital
+markets of all EU member states
+under alleviated conditions, while at
+the same time equal conditions were
+created 
+for 
+potential 
+competitors
+from other countries and the rights
+and the interests of investors are
+guaranteed. 
+Regarding the investor protection, in
+the legislation have been introduced
+mechanisms, which are mainly in two
+directions:
+1. The first of them is aimed at
+investors 
+and 
+more 
+specifically 
+it
+addresses the need of preparing and
+presenting an assessment to investors.
+The 
+aim 
+is 
+to 
+confirm 
+their
+understanding of the risks involved in
+investing 
+in 
+startups 
+and 
+private
+enterprises.
+2. 
+The 
+second 
+group 
+of 
+investor
+protection measures includes a set of
+requirements 
+for 
+platforms,
+encompassing 
+conflict 
+of 
+interest
+policies, 
+prudential 
+policies 
+and
+disclosure 
+of 
+information 
+about
+platforms wishing to invest in their
+own offerings listed on the platform. It
+is planned to prepare a new 
+harmonized document for each offer -
+an 
+information 
+sheet 
+for 
+key
+investments 
+(Key 
+Investment
+Information 
+Sheet 
+- 
+KIIS). 
+KIIS
+includes information about project
+creators 
+and 
+platform 
+process
+features. The new regulation allows
+the use of special purpose vehicles
+(SPVs), 
+which 
+facilitate 
+individual
+small investors and grant them the
+same level of investor rights as larger
+investors.
+A guarantee for greater transparency
+and competitiveness of companies on
+the European market is provided by
+the harmonized requirements and
+rules, with the introduction of a single
+process 
+of 
+authorization 
+and
+passporting for platforms that would
+like to operate throughout Europe,
+coordinated 
+by 
+the 
+European
+Securities 
+and 
+Markets 
+Authority
+(ESMA), as well as a uniform set of
+requirements for businesses to raise
+capital up to 5 million euros over a
+period of 12 months without having to
+prepare a prospectus.
+In continuation of the actions already
+taken and in sync with the adopted
+Strategy 
+for 
+Monitoring 
+Financial
+Innovations for the period 2021-2024,
+in 
+which 
+the 
+planned 
+long-term
+commitments 
+are 
+outlined, 
+FSC
+declares its readiness to continue
+successful 
+cooperation 
+with 
+the
+business. The FSC will continue to
+promote the development of financial
+innovations, 
+by 
+monitoring 
+the
+development 
+of 
+financial
+technologies, assessing possible risks
+for the market and for investors and 
+2
+Be part of the movement at fintechbulgaria.org
+56
+
+
+</pre><div class="page-break" data-page="Page 57"></div><pre class="text-content">
+initiating actions and measures to
+minimize them in order to realize the
+benefits of the growing interest in
+innovative 
+financial 
+products 
+and
+technologies, 
+in 
+accordance 
+with
+regulatory requirements.
+The new technologies change the
+non-banking financial sector and the
+ways investors and companies access
+services. They create opportunities for
+better access to finance and improve
+the financial inclusion of citizens
+within the digital society. Financial
+technologies 
+support 
+operational
+efficiency and further increase the
+competitiveness of the economy of
+the countries where they are used and
+contribute 
+to 
+the 
+deepening 
+and
+expansion of capital markets in the
+European Union.
+MARIA FILIPOVA
+DEPUTY CHAIR OF THE FINANCIAL
+SUPERVISION COMMISSION IN
+CHARGE OF THE SUPERVISION OF
+THE INVESTMENT ACTIVITIES
+DIVISION
+2
+Be part of the movement at fintechbulgaria.org
+57
+
+
+</pre><div class="page-break" data-page="Page 58"></div><pre class="text-content">
+FINTECH REGULATORY
+LANDSCAPE
+BULGARIA 2022
+Where is Bulgaria located in terms of
+regulation compared to the EU and
+its neighbouring countries? 
+The FinTech sector in Bulgaria has
+been developing rapidly in recent
+years. Bulgarian private and business
+users 
+are 
+increasingly 
+turning 
+to
+FinTech companies as an alternative
+to banking services. This makes the
+regulatory topic even more important,
+since 
+the 
+legislative 
+clarity 
+and
+consumer protection are obviously
+paramount for the sustainability of
+the whole FinTech ecosystem. Having
+said this, Bulgaria has e high level of
+compliance 
+when 
+it 
+comes 
+to
+transposition 
+of 
+the 
+relevant 
+EU
+financial regulations on local level,
+where 
+at 
+the 
+same 
+time 
+the
+authorities remain conservative when
+it 
+comes 
+to 
+implementation 
+of
+entirely innovative (not established on
+EU level) regulatory regimes in the
+sphere.
+According to BFA’s FinTech survey
+2022, legislation remains to be the
+biggest struggle to the FinTech SMEs
+development. From your experience,
+where 
+are 
+the 
+most 
+common
+misunderstandings and obstacles?
+The 
+most 
+common 
+misunder-
+standings and obstacles are related to
+the cases where the activity of the
+FinTech 
+company 
+falls 
+on 
+the
+borderline 
+between 
+current
+regulations for conventional financial
+products and legislative gaps (grey
+zones) 
+where, 
+basically, 
+the
+technology 
+has 
+outstripped 
+the
+development 
+of 
+the 
+regulatory
+framework. 
+A good example in this regard is the
+cryptocurrency field, where some of
+the features of particular products are
+on the one hand - very similar to
+certain investment products, whereas
+on the other – are truly unique and 
+ASEN APOSTOLOV
+ATTORNEY AT LAW AT
+PENKOV, MARKOV AND PARTNERS
+2
+Be part of the movement at fintechbulgaria.org
+58
+
+
+</pre><div class="page-break" data-page="Page 59"></div><pre class="text-content">
+FINTECH REGULATORY
+LANDSCAPE
+BULGARIA 2022
+non-regulated.
+Is the market able to overcome
+them? 
+The market in the FinTech field is
+always 
+one 
+step 
+ahead 
+of 
+the
+legislative basis and this is a direct
+result of the fact that the whole sector
+bases its growth on innovation. In
+turn, 
+this 
+is 
+a 
+driving 
+force 
+for
+evolution of the regulatory framework,
+which 
+is 
+another 
+positive
+consequence 
+of 
+the 
+technology
+development in the field. Being able
+to overcome challenges is one of the
+reasons why FinTechs are FinTechs –
+they always find a way to progress. 
+What are the future steps, we might
+see 
+from 
+policymakers 
+and
+regulators towards the improvement
+of legislation in the country? What is
+still missing in Bulgaria?
+In our opinion, Bulgaria has to explore
+the 
+various 
+opportunities 
+for
+development of the FinTech sector
+through establishment of innovation
+hubs and regulatory sandbox regimes.
+These are places where FinTechs can
+test their innovative products and
+services, business models and delivery
+mechanisms, so that consumers are 
+ 
+protected and new financial products
+and technologies are checked for
+compliance 
+with 
+regulatory 
+and
+safety requirements. 
+NIKOLAY VOYNOV
+SENIOR ASSOCIATE AT
+PENKOV, MARKOV AND PARTNERS
+2
+Be part of the movement at fintechbulgaria.org
+59
+
+
+</pre><div class="page-break" data-page="Page 60"></div><pre class="text-content">
+The EU brings crypto-assets, crypto-
+assets 
+issuers 
+and 
+crypto-asset
+service providers under a regulatory
+framework for the first time. What
+does this mean for the FinTech
+industry of the EU?
+MiCA in fact is not a product oriented
+piece 
+of 
+regulation, 
+it 
+does 
+not
+regulate the crypto-assets themselves
+but the crypto assets service providers
+and 
+the 
+crypto 
+asset 
+issuers. 
+It
+therefore 
+follows 
+the 
+standard
+architecture 
+of 
+the 
+EU 
+financial
+services 
+legislation 
+which 
+is 
+to
+regulate 
+the 
+intermediaries 
+of 
+a
+financial activity.
+Having said that, the MiCA scope is
+quite 
+broad 
+and 
+provides 
+a
+comprehensive framework:
+ -It covers the rights and obligations
+applicable to issuers of crypto-assets
+(separating crypto assets into three
+main 
+categories, 
+asset 
+referenced
+tokens, 
+e-money 
+tokens 
+and
+everything else) and 
+ -It covers the rights and obligations
+applicable 
+to 
+crypto-asset 
+service
+providers (CASPs).
+MiCA 
+will 
+bring 
+a 
+previously
+unregulated space under financial
+services regulation. The aim is to
+promote the soundness of the entire 
+crypto-asset market by rooting out
+bad actors, providing consumer and
+investor protection and setting the
+necessary organisational, operational
+and 
+prudential 
+requirements 
+for
+crypto-asset service providers, and
+preventing market abuse. MiCA will
+therefore provide legal certainty for
+innovators and will allow them to
+navigate 
+financial 
+legislation 
+and
+scale across the EU. 
+In 
+addition, 
+MiCA 
+implements
+international recommendations from
+the 
+Financial 
+Stability 
+Board 
+as
+regards so-called ‘stablecoins’ and 
+CHRISTIANA VOVIDOU
+POLICY OFFICER 
+DIGITAL FINANCE UNIT
+EUROPEAN COMMISSION
+WHAT&#x27;S TO NEXT?
+EU FINTECH
+REGULATION
+2
+Be part of the movement at fintechbulgaria.org
+60
+
+
+</pre><div class="page-break" data-page="Page 61"></div><pre class="text-content">
+also the Financial Action Task Force,
+ensuring 
+that 
+together 
+with 
+the
+updated AML framework all AML/CFT
+risks are appropriately mitigated.
+In short, MiCA will bring clarity, legal
+certainty, protection for investors and
+a framework for innovators to pursue
+new digital finance ideas across the
+EU.
+What environmental safeguards will
+be taken when implementing MiCA?
+There are indeed concerns about the
+environmental impact and increasing
+energy needs of DLT, notably for
+certain crypto-assets. 
+As 
+set 
+out 
+in 
+the 
+Commission’s
+strategy for financing the transition to
+a 
+sustainable 
+economy, 
+the
+Commission 
+will 
+assess 
+the
+sustainability impact of digital finance
+technologies. We believe that the EU
+should take the lead in making these
+infrastructures climate neutral and
+energy efficient by 2030. The EU
+Taxonomy will be a key instrument to
+ensure 
+that 
+the 
+market 
+uses
+sustainable crypto-assets. This will 
+build 
+on 
+previous 
+initiatives 
+to
+promote sustainable data centres.
+More 
+concretely, 
+MiCA 
+already
+recognises 
+that 
+the 
+consensus
+mechanisms used for the validation of
+transactions in crypto-assets might
+have principal adverse impacts on the
+climate 
+and 
+other 
+environment-
+related 
+impacts. 
+Such 
+consensus
+mechanisms should therefore deploy
+more 
+environmentally-friendly
+solutions 
+and 
+ensure 
+that 
+any
+principal adverse impact that they
+might have on the climate and any
+other 
+environment-related 
+adverse
+impact is adequately identified and
+disclosed by issuers and crypto-asset
+service providers. When determining
+whether adverse effects are principal,
+account 
+should 
+be 
+taken 
+of 
+the
+principle of proportionality and the
+size and volume of the crypto-asset
+issued. ESMA, in cooperation with
+EBA, is mandated to develop draft
+regulatory 
+technical 
+standards 
+to
+further 
+specify 
+the 
+content,
+methodologies and presentation of
+information 
+in 
+relation 
+to
+sustainability indicators with regard
+to climate and other environment‐
+related 
+adverse 
+impacts, 
+and 
+to
+outline key energy indicators. The
+draft regulatory technical standards
+should 
+also 
+ensure 
+coherence 
+of
+disclosures by issuers and crypto-
+WHAT&#x27;S NEXT?
+EU FINTECH
+REGULATION
+2
+Be part of the movement at fintechbulgaria.org
+61
+
+
+</pre><div class="page-break" data-page="Page 62"></div><pre class="text-content">
+asset 
+service 
+providers. 
+When
+developing 
+the 
+draft 
+regulatory
+technical 
+standards, 
+ESMA 
+should
+take into account the various types of
+consensus mechanisms used for the
+validation of transactions in crypto-
+asset, their characteristics and the
+differences 
+between 
+them. 
+ESMA
+should also take into account existing
+disclosure 
+requirements, 
+ensure
+complementarity 
+and 
+consistency,
+and 
+avoid 
+double 
+burden 
+on
+companies. 
+In addition, the MiCA text provides for
+a number of environmentally related
+disclosures 
+towards 
+potential
+investors:
+ -The crypto asset white paper (for all
+types of crypto assets) will need to
+provide 
+information 
+on 
+principal
+adverse environmental and climate
+related 
+impact 
+of 
+the 
+consensus
+mechanism used to issue the crypto-
+asset.
+ -Crypto-asset service providers will be
+required to make publicly available, in
+a prominent place on their website,
+information 
+related 
+to 
+principal
+adverse environmental and climate-
+related impact of the consensus 
+mechanism used to issue each crypto-
+asset in relation to which they provide
+services.
+Finally, in the future MiCA review, the
+Commission 
+will 
+examine 
+the
+developments in business models and
+technologies 
+in 
+the 
+crypto-asset
+market with a particular focus on the
+environmental and climate impact of
+new 
+technologies, 
+as 
+well 
+as 
+an
+assessment of policy options and
+where 
+necessary 
+any 
+additional
+measures that may be warranted to
+mitigate the adverse impacts on the
+climate 
+and 
+environment 
+of 
+the
+technologies used in the crypto-assets
+market and, in particular, of the
+consensus 
+mechanisms 
+used 
+to
+validate crypto-asset transactions.
+What are the next steps?
+Crypto-assets are an area of fast
+innovation and developments. MiCA is
+a 
+beginning 
+but 
+does 
+not 
+cover
+everything. There are areas falling out
+of the scope of MiCA, for example
+Decentralised Finance (DeFI) and this
+is for good reason. This is an area still
+in 
+development, 
+its 
+risks 
+and
+vulnerabilities are monitored but have
+not yet been fully assessed. That is
+why MiCA provides for a number of
+reports 
+to 
+be 
+produced, 
+starting
+almost immediately after entry into 
+WHAT&#x27;S NEXT?
+EU FINTECH
+REGULATION
+2
+Be part of the movement at fintechbulgaria.org
+62
+
+
+</pre><div class="page-break" data-page="Page 63"></div><pre class="text-content">
+force. There will be an annual ESMA
+report on developments providing
+quantitative data such as the number
+of 
+issuances 
+of 
+crypto-assets, 
+the
+number of CASP licenses given out
+and information on what types and
+volumes of crypto-assets are being
+traded. This will be followed by a
+Commission 
+report 
+(18 
+months
+following entry into force) to assess
+the areas not addressed by MiCA and
+if 
+necessary 
+come 
+back 
+with 
+a
+legislative proposal. At 24 months
+following its entry into force there will
+be an interim report, followed by the
+big review of the MiCA Regulation 48
+months following its entry into force. 
+As to the MiCA Regulation, it is
+expected to be published in spring
+2023 
+and 
+will 
+apply 
+18 
+months
+following its entry into force, except
+for the parts for asset referenced
+tokens and e-money tokens that will
+apply a bit sooner, at 12 months
+following its entry into force. 
+CHRISTIANA VOVIDOU
+POLICY OFFICER 
+DG FISMA AT 
+EUROPEAN COMMISSION
+WHAT&#x27;S NEXT?
+EU FINTECH
+REGULATION
+2
+Be part of the movement at fintechbulgaria.org
+63
+
+
+</pre><div class="page-break" data-page="Page 64"></div><pre class="text-content">
+How 
+will 
+the 
+EU&#x27;s 
+largest
+cryptocurrency 
+regulation 
+affect
+crypto 
+companies 
+and 
+their
+operations? What positive effect do
+you expect from it?
+The 
+Markets 
+in 
+Crypto 
+Assets
+Regulation (MiCA) is a significant
+milestone 
+for 
+the 
+cryptocurrency
+market, highly necessitated by its
+dynamic development. It will create
+order out of blockchain chaos and put
+an end to the crypto “Wild West” and
+the fragmented national regulatory
+regimes of Member States. MiCА is
+intended to introduce a harmonized
+regulatory framework and common
+standards for the crypto ecosystem
+across the EU, applicable to both EU
+companies and non-EU ones seeking
+to promote or advertise their services
+on the single market. Some of its
+major benefits are establishing legal
+certainty, 
+consumer 
+and 
+investor
+protection, 
+and 
+market 
+integrity,
+preserving financial stability, fostering
+innovation and fair competition, and
+empowering 
+cooperation 
+between
+Member 
+States 
+on 
+blockchain
+technology. 
+The 
+new 
+rules 
+will
+facilitate the expansion of crypto
+businesses throughout all Member 
+BIANCA VELEVA
+HEAD OF LEGAL &amp; 
+REGULATORY COMPLIANCE AT 
+NEXO
+EU CRYPTO
+REGULATION
+IMPACT ON PRIVATE
+SECTOR
+About Nexo
+Nexo is the world’s leading regulated
+digital 
+assets 
+institution. 
+Biancа
+Veleva, Head of Legal &amp; Regulatory
+Compliance, discusses the effects the
+EU’s 
+Markets 
+in 
+Crypto 
+Assets
+Regulation (MiCA) will have on the
+crypto industry and the clients across
+the Member States. 
+2
+Be part of the movement at fintechbulgaria.org
+64
+
+
+</pre><div class="page-break" data-page="Page 65"></div><pre class="text-content">
+States by way of a pan-European
+passport to offer their services. Thus,
+MiCA’s importance for the crypto-
+asset industry is comparable to the
+impact that the Markets in Financial
+Instruments Directive (MiFID) had on
+the financial instruments market, or
+the 
+one 
+of 
+the 
+General 
+Data
+Protection Regulation (GDPR) on the
+protection of personal data in the EU. 
+What will be the impact of MiCA on
+the digital assets users in the EU?
+Will it stimulate wider adoption of
+digital currencies?
+As a rule, the lack of regulation
+exposes 
+users 
+to 
+various 
+risks,
+facilitates unlawful and fraudulent
+practices, 
+and 
+hinders 
+the
+development of a certain market.
+Therefore, 
+the 
+natural 
+result 
+of
+regulatory 
+clarity 
+in 
+the
+cryptocurrency field will be enhanced
+security and protection for users, who
+will be able to safely access new
+investment 
+opportunities 
+or 
+new
+types of payment instruments and
+services in a cross-border context. The
+explicit 
+requirements 
+that 
+MiCA
+imposes on all industry players, 
+EU CRYPTO
+REGULATION
+IMPACT ON PRIVATE
+SECTOR
+aiming to offer their products on the
+EU market, including the rules on
+market abuse, will undoubtedly have
+a 
+positive 
+effect 
+from 
+a 
+user
+perspective. 
+This 
+will 
+lead 
+to 
+an
+increase of users’ trust in crypto assets
+and their wider adoption as a means
+of exchange and payment across the
+EU.
+Will MiCA attract more institutional
+investors in the digital assets world?
+Is this what the institutions expected
+in order to recognize &amp; adopt digital
+assets?
+Regulatory clarity is always positive
+when it comes to financial services. In
+this sense, it is crucial to institutional
+investors transacting in digital assets
+of material value and volatile nature,
+which can suffer significant financial
+losses 
+as 
+a 
+result 
+of 
+market
+downturns, thus affecting financial
+stability as a whole. A legislative
+framework like MiCA will undoubtedly
+boost the crypto industry credibility,
+attracting only “reliable players” on
+the side of operators, and create
+greater comfort in relation to using
+crypto-asset services in the EU. 
+What obstacles do you expect the
+companies 
+to 
+encounter 
+when
+implementing the regulation?
+2
+Be part of the movement at fintechbulgaria.org
+65
+
+
+</pre><div class="page-break" data-page="Page 66"></div><pre class="text-content">
+On one hand, MiCA is intended to
+minimize the risk of “forum shopping”
+between 
+Member 
+States, 
+and
+eliminate the fragmented regulatory
+landscape, leading to confusion and
+uneven treatment of multinational
+market players across the EU. On the
+other hand, all crypto-asset issuers
+and service providers, who intend to
+continue servicing the EU market,
+have to consider the regulatory status
+of 
+their 
+activities 
+from 
+MiCA’s
+perspective. What is more, they need
+to develop a complex strategy to
+bring 
+their 
+operations 
+into
+compliance with the new rules, which
+will undoubtedly be cost- and time-
+consuming.
+MiCA authorisation is associated with
+structural, 
+organizational, 
+financial,
+documentary, risk management and
+even 
+jurisdictional 
+issues. 
+The
+preparatory actions to be undertaken
+by the crypto companies in this
+regard will depend on their size,
+business strategy, and the type of
+services for which authorization is
+sought. Robust internal processes and
+procedures need to be developed,
+maintained and updated to ensure 
+EU CRYPTO
+REGULATION
+IMPACT ON PRIVATE
+SECTOR
+compliance with the Regulation on an
+ongoing basis. 
+The new requirements could prove to
+be a significant burden for smaller
+crypto 
+businesses 
+that 
+have 
+not
+allocated 
+sufficient 
+resources 
+to
+ensure compliance therewith, and for
+third-country service providers. Thus,
+both of these market players may be
+deterred from entering the EU market.
+On 
+the 
+other 
+hand, 
+overly 
+strict
+regulations of crypto activities could
+result in suspending or limiting the
+services offered by crypto companies
+in the EU compared to those offered
+in 
+more 
+innovation-tolerant
+jurisdictions, and in increasing the
+gap between them. This would reduce
+both the companies&#x27; income from
+such services and the EU users&#x27; access
+thereto, 
+thus 
+having 
+a 
+negative
+impact on crypto businesses.
+What would be the MiCA impact on
+the revenue of the crypto companies?
+Taking into consideration the cost-
+consuming compliance with MiCA
+and the possibility of suspending,
+limiting or restricting the provision of
+relevant services to the EU market
+until operations are brought into line
+with 
+the 
+new 
+requirements, 
+the
+revenue of crypto companies will be
+negatively affected by the Regulation 
+2
+Be part of the movement at fintechbulgaria.org
+66
+
+
+</pre><div class="page-break" data-page="Page 67"></div><pre class="text-content">
+EU CRYPTO
+REGULATION
+IMPACT ON PRIVATE
+SECTOR
+the transfers of funds is extended to
+crypto assets by way of introduction
+of 
+the 
+so-called 
+“travel 
+rule” 
+in
+compliance with the most demanding
+international 
+AML/CFT 
+standards 
+-
+Recommendations 15 and 16 of the
+Financial Action Task Force (FATF).
+However, MiCA explicitly requires that
+crypto-asset 
+service 
+providers,
+authorized in the EU, apply increased
+checks 
+on 
+financial 
+operations
+involving 
+customers 
+and 
+financial
+institutions 
+from 
+high-risk 
+third
+countries having strategic deficiencies
+in their AML/CTF regime. In order to
+enhance the AML/CTF measures and
+ensure 
+harmonization 
+and
+coordination of supervisory practices
+at a regional level, the EU intends to
+also create a dedicated Anti-money
+Laundering Authority (AMLA). All of
+the above will enable the EU to
+combat the risks of money laundering
+and 
+terrorist 
+financing 
+in 
+the
+technology-driven 
+field 
+of
+cryptocurrencies, 
+while 
+ensuring
+competitiveness 
+among 
+market
+players and protection of consumers,
+investors and financial integrity. 
+How 
+is 
+Nexo 
+preparing 
+for 
+the
+adoption of the regulation? What are
+your expectations for its impact on
+the company?
+As a global crypto company, Nexo has 
+in 
+the 
+short 
+term. 
+However, 
+the
+regulatory 
+clarity 
+and 
+envisaged
+safeguards of users’ assets will make
+the crypto industry significantly more
+attractive to both institutional and
+individual 
+investors. 
+Thus, 
+the
+increased 
+EU 
+client 
+base 
+will
+definitely have a positive impact on
+the income of crypto companies in
+the long run. 
+What will be the effect of MiCA in the
+fight against fraud and suspicious
+financial activities?
+MiCA is intended to complement the
+EU 
+Anti-Money 
+Laundering 
+and
+Counter-Terrorism 
+Financing
+(AML/CTF) 
+framework, 
+setting
+universal 
+standards 
+regarding 
+the
+prevention of the illicit use of crypto-
+assets 
+in 
+the 
+EU. 
+Providing 
+for
+adherence 
+to 
+certain 
+AML/CTF
+requirements by crypto businesses,
+MiCA refers to the already established
+rules under the AML Directives and
+the revised version of the Transfer of
+Funds 
+Regulation 
+(ToFR), 
+avoiding
+overlaps 
+with 
+them. 
+It’s 
+worth
+mentioning that the scope of ToFR’s
+rules on information accompanying 
+2
+Be part of the movement at fintechbulgaria.org
+67
+
+
+</pre><div class="page-break" data-page="Page 68"></div><pre class="text-content">
+EU CRYPTO
+REGULATION
+IMPACT ON PRIVATE
+SECTOR
+Regulation and aligning our internal
+procedures therewith. In addition, we
+have retained top-tier law firms in all
+EU jurisdictions of operation to assist
+our 
+masterful 
+Legal 
+&amp; 
+Regulatory
+Compliance 
+Team 
+with 
+the
+implementation 
+of 
+Nexo’s 
+pan-EU
+strategy, the ultimate goal of which is
+to 
+eliminate 
+any 
+negative
+consequences 
+of 
+MiCA 
+for 
+our
+business operations. 
+What is the future of regulations in
+the crypto world? What is Nexo&#x27;s
+position when it comes to regulating
+digital assets?
+Every actively expanding, lucrative
+and innovative industry such as the
+crypto-asset one is related to the
+continuous adoption of regulations
+with the ultimate goal of ensuring
+legal certainty, fair competition and
+enhanced 
+consumer 
+and 
+investor
+protection. Being the first regional
+comprehensive 
+set 
+of 
+rules 
+for
+cryptocurrency 
+operations, 
+MiCA
+serves as a competitive advantage of
+the EU and lays the foundations of the
+regulatory landscape worldwide.
+As a global company at the forefront
+of innovation, we are happy to see
+regional 
+and 
+national 
+lawmakers’
+proactive interest in FinTech and
+blockchain and their efforts in going 
+always prioritized its compliance with
+the highest industry standards and
+the laws of all jurisdictions in which it
+operates. 
+Having 
+been 
+proactive
+regarding 
+both 
+local 
+and 
+global
+regulations in the blockchain space,
+we have always welcomed greater
+transparency and legal certainty. In
+this sense, MiCA will bring the much-
+need regulatory clarity to the crypto
+world, turning it into an overall safer
+place for all market players.
+Since the beginning of the legislative
+endeavors around MiCA and the EU
+Digital Finance Package, Nexo has
+been 
+applying 
+a 
+holistic 
+EU
+compliance approach and ensuring
+the allocation of significant resources
+for this purpose, all the while taking
+into 
+consideration 
+the 
+existing
+fragmented 
+regulatory 
+landscape
+across the Member States and the
+forthcoming unified regulation at a
+regional level. In preparation for the
+adoption and entry into force of the
+latter, which is a lengthy process, we
+have 
+pursued 
+and 
+secured
+registrations in several Member States
+and are constantly monitoring the
+newly proposed amendments to the 
+2
+Be part of the movement at fintechbulgaria.org
+68
+
+
+</pre><div class="page-break" data-page="Page 69"></div><pre class="text-content">
+through great lengths in bringing
+much-needed regulatory clarity and
+ensuring the safety of the community.
+That is an effort we, at Nexo, are also
+dedicated 
+to. 
+Despite 
+the
+imperfections 
+each 
+piece 
+of
+regulation may certainly have, we
+always welcome any attempt in this
+regard 
+as 
+a 
+gesture 
+of 
+fostering
+innovation and sustainable growth of
+the crypto industry. In this sense, the
+MiCA Regulation will surely be a step
+forward for the digital assets world as
+a whole. 
+BIANCA VELEVA
+HEAD OF LEGAL &amp; 
+REGULATORY COMPLIANCE AT 
+NEXO
+EU CRYPTO
+REGULATION
+IMPACT ON PRIVATE
+SECTOR
+2
+Be part of the movement at fintechbulgaria.org
+69
+
+
+</pre><div class="page-break" data-page="Page 70"></div><pre class="text-content">
+EU CRYPTO
+REGULATION
+IMPACT ON PRIVATE
+SECTOR
+Markets in Crypto Assets (MiCA) and
+the Travel Rule – industry impact and
+Paysafe story
+Markets in Crypto Assets (MiCA) is a
+proposed regulation in EU law that
+has already been endorsed by the
+Economic 
+and 
+Monetary 
+Affairs
+Committee and the EU Council. It is
+expected to be approved by the
+European Parliament before the end
+of 2022 and to enter into force at
+some point in 2024. 
+A key positive aspect of this law is to
+introduce 
+an 
+EU-wide 
+licensing
+regime and enable a level playing
+field for Crypto Asset Service Providers
+(CASPs) who wish to access customers
+in the whole region. A consistent
+regulatory framework will increase
+trust and will bring about stronger
+institutional 
+presence 
+as 
+well 
+as
+protection for retail investors, which
+in turn will help develop the emerging
+crypto industry.
+This is especially positive for Paysafe
+as we already work with many of the
+key players in the industry who will
+have an easier time of managing their
+EU licensing strategy, as well as
+enabling smoother onboarding for 
+GIACOMO AUSTIN
+GROUP MLRO &amp; SENIOR VICE
+PRESIDENT COMPLIANCE AT 
+PAYSAFE
+smaller crypto players who are just
+starting on their journey in the region.
+Paysafe provides all these companies
+with an easy and secure mechanism
+for “on-ramps” (getting fiat money
+into the crypto ecosystem) and “off-
+ramps” (transferring crypto gains back
+into the fiat system) as well as other
+fiat-related services. 
+In the broader crypto space, there is
+often 
+a 
+reluctance 
+to 
+embrace
+regulation, 
+partially 
+due 
+to
+cryptocurrencies’ cypherpunk origins. 
+2
+Be part of the movement at fintechbulgaria.org
+70
+
+
+</pre><div class="page-break" data-page="Page 71"></div><pre class="text-content">
+EU CRYPTO
+REGULATION
+IMPACT ON PRIVATE
+SECTOR
+all cross-border and domestic wire
+transfer of funds. On 19 June 2019,
+FATF extended Recommendation 16
+to CASPs, including cryptocurrency
+exchanges and wallet providers. The
+aim is to address AML/CFT challenges
+to help law enforcement agencies to
+monitor and track criminal activities
+where crypto-assets are used. Without
+harmonised standards at a global
+level, CASPs and financial institutions
+face 
+significant 
+challenges 
+in
+developing 
+compliant 
+Anti-Money
+Laundering (AML) solutions to comply
+with the Travel Rule. Meeting these
+regulatory 
+obligations 
+without
+passing on the costs to consumers will
+be challenging for the industry. The
+Travel Rule presents a challenge, as
+the underlying technology for crypto
+is not designed to send personally
+identifiable 
+information 
+alongside
+transactions. There are several Travel
+Rule solutions being produced and
+CASPS may be faced with integrating
+multiple protocols that are not all
+interoperable. If there is not a globally
+harmonised approach to compliance,
+the cost could be extremely high.
+When it comes to Bulgaria specifically,
+the challenge will be to monitor the
+speed of implementation of the new
+MiCA law into Bulgarian law and how
+the ever-increasing crypto community
+(including locally 
+We need to continue working to find
+better ways to explain to the crypto
+community 
+why 
+regulation 
+is
+important. If we can find a way to
+communicate 
+the 
+benefits 
+of
+regulation 
+to 
+the 
+broader 
+crypto
+community, we can help them to
+embrace the regulatory environment
+and reduce the risk of regulatory
+arbitrage, where merchants will seek
+to set up in jurisdictions with weaker
+controls.
+We 
+can 
+see 
+from 
+current 
+and
+proposed 
+legislation 
+such 
+as 
+the
+Travel Rule that a global standard is
+extremely important, as it ensures
+legislation is fit for purpose and
+consistent across jurisdictions is a
+must for governments.
+Paysafe 
+encourages 
+enhanced
+coordination 
+to 
+ensure 
+the
+interoperability of solutions, as well as
+international 
+collaboration 
+for
+effective implementation of the Travel
+Rule. The Travel Rule was originally
+introduced 
+under 
+FATF
+Recommendation 16 requiring firms
+to exchange identifying information
+of the originators and beneficiaries of 
+2
+Be part of the movement at fintechbulgaria.org
+71
+
+
+</pre><div class="page-break" data-page="Page 72"></div><pre class="text-content">
+EU CRYPTO
+REGULATION
+IMPACT ON PRIVATE
+SECTOR
+present CASPs) would react to the set
+regulatory expectations, as they prove
+to be demanding even at this stage.
+Preparedness, agility, and proactivity
+would 
+be 
+key 
+attributes 
+to 
+a
+successful business transition to the
+new framework. 
+Paysafe is uniquely positioned to take
+advantage of both UK and EU regimes
+for e-money and crypto regulations
+but is especially fortunate to count on
+our phenomenal nearshoring office in
+Bulgaria which employs 1,400 people
+(nearly 
+half 
+of 
+the 
+company’s
+employees). 
+The 
+Bulgarian 
+office
+supports the delivery of new products,
+compliance 
+with 
+new 
+regulation,
+management of risks in the crypto
+space, and customer engagement to
+name a few.
+GIACOMO AUSTIN
+GROUP MLRO &amp; SENIOR VICE
+PRESIDENT COMPLIANCE AT 
+PAYSAFE
+2
+Be part of the movement at fintechbulgaria.org
+72
+
+
+</pre><div class="page-break" data-page="Page 73"></div><pre class="text-content">
+The FinTech industry in the EU is
+booming. 
+However, 
+many 
+of 
+the
+FinTechs, especially the SMEs, face
+obstacles to growing and offering
+their 
+services 
+across 
+the 
+single
+market. What are these difficulties
+and 
+how 
+does 
+the 
+European
+Commission help to overcome these
+challenges?  
+Fragmentation is indeed an issue in
+Europe. “Classic” core activities in the
+financial 
+system 
+are 
+covered 
+by
+passporting. This means that any firm
+authorised in an EU or European
+Economic Area country on the basis of
+common rules can offer financial
+services or products across the Union.
+But not all innovative new services
+and applications fit neatly into this
+system, and passporting does not
+cover all areas of our rules. This can
+make 
+it 
+prohibitively 
+difficult 
+for
+firms, especially smaller ones, to scale
+up their activities across the EU. This
+hampers fintechs and means that
+customers 
+– 
+both 
+businesses 
+and
+consumers – are missing out on a
+much bigger, more effective offering.
+And 
+on 
+a 
+broader 
+level, 
+this
+fragmentation 
+puts 
+a 
+brake 
+on
+innovation in the EU.
+The European Commission is working
+to 
+overcome 
+these 
+challenges 
+in
+several ways. Legislation is one of
+them. Our new framework for crypto  
+assets 
+for 
+example 
+will 
+create
+common rules enabling firms to scale
+up across countries while protecting
+investors and consumers. The new EU
+Digital Finance Platform is another
+tool. It is designed to build dialogue
+between 
+fintechs 
+and 
+national
+financial 
+supervisors 
+and 
+to 
+offer
+practical support for the scaling up of
+digital financial services. Our central
+feature in this context is a gateway to
+supervisors: here, firms can find 
+CHRISTINA MAI
+POLICY OFFICER 
+DIGITAL FINANCE UNIT AT 
+EUROPEAN COMMISSION
+WHAT TO EXPECT?
+EU DIGITAL FINANCE
+PLATFORM
+2
+Be part of the movement at fintechbulgaria.org
+73
+
+
+</pre><div class="page-break" data-page="Page 74"></div><pre class="text-content">
+information about national innovation
+hubs, 
+regulatory 
+sandboxes 
+and
+licensing requirements in one place.
+And they can get into contact with
+supervisory authorities here. 
+What 
+is 
+the 
+Digital 
+Finance
+Observatory? How about the cross-
+border testing option the Platform
+offers?
+The Digital Finance Observatory is one
+of two building blocks of the EU
+Digital Finance Platform. It is all about
+interaction. 
+We 
+are 
+building 
+a
+European Fintech Map here – where
+fintechs from across the EU can
+literally put themselves on the map.
+We hope that over time, this map will
+show the evolving fintech ecosystem
+in Europe and also enable firms to
+build stronger connections with each
+other. The Digital Finance Observatory
+is also a place where users can share
+events, 
+hackathons 
+and 
+research
+publications 
+relevant 
+for 
+digital
+finance. They can propose content
+using webforms – a simple process
+that 
+allows 
+fintechs 
+to 
+promote
+activities and get in contact with
+other companies and supervisors.
+Cross-border testing is a core feature 
+of the EU Digital Finance Platform.
+Basically, the website offers a single
+entry 
+point 
+for 
+firms 
+seeking 
+to
+involve multiple national supervisors
+when they have a new product or
+application that they want to offer in
+specific countries. Via a standardised
+form, 
+firms 
+can 
+contact 
+various
+national 
+supervisors 
+in 
+one 
+step.
+These 
+supervisors 
+can 
+act 
+as
+regulatory 
+sandbox, 
+observers 
+of
+testing or recipient of test findings.
+Testing will still take place at the
+national level, according to national
+rules. But cross-border testing is an
+important step towards simplifying
+the process for fintechs and fostering
+closer cooperation between national
+supervisors. The rules underpinning
+cross-border testing were developed
+by national competent authorities,
+coordinated 
+by 
+the 
+European
+Supervisory Authorities, and we are
+proud to give this initiative a home on
+the EU Digital Finance Platform.
+How can a FinTech company be part
+of the European FinTech Map? 
+It is really easy! All it takes is one click
+on a button that says “Add your
+company”, enter a few details about
+your business, such as your sector and
+activity, and press “Save”. Our EU
+Digital Finance Platform team will
+then see the form and publish it 
+WHAT TO EXPECT?
+EU DIGITAL FINANCE
+PLATFORM
+2
+Be part of the movement at fintechbulgaria.org
+74
+
+
+</pre><div class="page-break" data-page="Page 75"></div><pre class="text-content">
+(possibly after getting back to you
+with questions if something is not
+clear). The map is open to all fintechs
+licensed 
+in 
+an 
+EU 
+or 
+European
+Economic Area country. 
+What are the future steps of the EU
+Digital Finance Platform? 
+We are busy preparing the second
+phase of this project. The key novelty
+we are planning to build is a Data
+hub. This would complement national
+innovation hubs and sandboxes, as
+well as cross-border testing. The idea
+is to make data available to firms here
+that they can use to test innovative
+products – data that is not normally
+available to them. At least initially, we
+plan to build the Data hub with
+synthetic data. This would help to get
+around confidentiality requirements
+that make sharing data very difficult.
+The Commission will offer national
+supervisors, 
+but 
+also 
+market
+participants 
+the 
+possibility 
+to
+synthesise relevant data with the help
+of a private provider, whose services
+would be acquired centrally by the
+Commission. We are looking forward
+to discussing this in more detail with
+fintechs – your feedback is essential to
+make sure we offer data for testing
+that is useful and relevant.
+WHAT TO EXPECT?
+EU DIGITAL FINANCE
+PLATFORM
+CHRISTINA MAI
+POLICY OFFICER 
+DIGITAL FINANCE UNIT AT 
+EUROPEAN COMMISSION
+2
+Be part of the movement at fintechbulgaria.org
+75
+
+
+</pre><div class="page-break" data-page="Page 76"></div><pre class="text-content">
+CHAPTER VI
+FINTECH AND FINANCIAL
+EDUCATION
+2
+Be part of the movement at fintechbulgaria.org
+76
+
+
+</pre><div class="page-break" data-page="Page 77"></div><pre class="text-content">
+BFA&#x27;S ROLE IN
+FINTECH EDUCATION 
+GEORGI PENEV
+DIRECTOR 
+AND 
+FINTECH
+EDUCATION 
+LEAD 
+AT
+BULGARIAN FINTECH ASSOC.
+Spread 
+the 
+word 
+about 
+new
+financial 
+tools, 
+solutions, 
+and
+companies
+Teach highest-level of consumer
+protection and how to mitigate
+emerging risks
+Encourage 
+more 
+youngsters 
+to
+become 
+leaders 
+(investors 
+or
+entrepreneurs) in FinTech
+Campaign 
+for 
+more 
+political
+actions towards promoting the
+development of digital financial
+services, both on national and
+supranational levels
+Why financial literacy?
+Financial 
+literacy 
+and 
+FinTech
+education are a big part of BFA&#x27;s
+efforts toward the development of
+the cluster and the Bulgarian nation
+as a whole. As part of these efforts, we
+teach FinTech and the contemporary
+financial landscape. We believe this is
+crucial 
+for 
+a 
+well-informed
+community to take the best financial
+decisions 
+and 
+ultimately 
+increase
+their prosperity.
+BFA&#x27;s objectives are:
+2022 FinTech education work 
+In 2022 BFA continued to help and
+promote the FinTech Master&#x27;s degree
+program, organised the From Zero to
+FinTech hackathon and a FinTech
+Career Day at Sofia University &quot;St.
+Kliment Ohridski&quot;. In parallel, this
+year for the first time we participated 
+in a FinTech short course in the
+region and created a second FinTech
+Master&#x27;s degree programme, this time
+for VUZF University. 
+The results
+In 2022, BFA’s FinTech educational
+initiatives reached more than 300
+people and attracted 80+ participants
+in the FinTech hackathon. 
+Three years after the start of the first
+FinTech Master&#x27;s degree efforts, we
+now work on the creation of the CEE
+Centre for Digital Finance which will
+play the key role of the leading
+FinTech facilitator in the region. 
+a photo
+taken by
+Ivan Kolovos
+2
+Be part of the movement at fintechbulgaria.org
+77
+
+
+</pre><div class="page-break" data-page="Page 78"></div><pre class="text-content">
+FACULTY OF ECONOMICS
+AND BUSINESS
+ADMINISTRATION
+FINTECH EDUCATION
+IN BULGARIA - 2022
+For a third consecutive year FEBA at
+Sofia 
+University 
+“St. 
+Kliment
+Ohridski” and in collaboration with
+BFA, launched a Master’s degree in
+Finance, Investments, and FinTech.
+Tell us more about the programme?
+First of all, we are very grateful to the
+Bulgarian Fintech Association for the
+valuable partnership and constant
+support and we look forward to
+continue 
+and 
+expand 
+our
+collaboration in the future! 
+Our 
+Master’s 
+degree 
+in 
+Finance,
+Investments 
+and 
+FinTech 
+is
+interdisciplinary in nature and aims to
+give 
+students 
+theoretical 
+and
+practical knowledge and skills in the
+field 
+of 
+finance, 
+investments 
+and
+financial innovation. It combines the
+fields of company’s financial analysis
+with 
+financial 
+instruments,
+investments and fintech.
+The 
+programme 
+starts 
+with
+introductory courses on investment
+management and FOREX, which cover
+topics 
+of 
+the 
+essence 
+and
+infrastructure of financial instruments
+and markets. Some of the key courses
+are devoted to business valuation,
+financial technology and electronic
+banking, 
+crypto-assets, 
+alternative
+investments etc.
+How is this year’s programme 
+BOZHIDAR NEDEV, PHD
+ASSOCIATE PROFESSOR AT 
+FACULTY OF ECONIMICS AND
+BUSINESS ADMINISTRATION AT
+SOFIA UNIVERSITY &quot;ST. KLIMENT
+OHRIDSKI&quot;
+different from last year&#x27;s? What do
+you want to continue doing and
+where you could go better? 
+What is different is that we have
+increased the horary in disciplines
+such as Alternative Investments, we
+have 
+added 
+exercises 
+in 
+Applied
+Macroeconomic 
+Analysis, 
+we 
+have
+optimized 
+the 
+list 
+of 
+elective
+disciplines, which generally covers big
+data, banking and accounting.
+2
+Be part of the movement at fintechbulgaria.org
+78
+
+
+</pre><div class="page-break" data-page="Page 79"></div><pre class="text-content">
+FINTECH EDUCATION
+IN BULGARIA - 2022
+We constantly strive to keep up with
+changes, consider modern trends and
+update the curriculum in a timely
+manner. The presence of a blockchain
+and 
+cryptocurrency 
+course 
+at 
+a
+Bulgarian university is a pleasant
+surprise for the business. We foresee
+the 
+introduction 
+of 
+a 
+specialized
+practical 
+course 
+in 
+the 
+field 
+of
+regulations in the fintech industry, as
+well as further changes to enrich the
+curriculum of the programme.
+What’s the student’s and company’s
+feedback and how do you plan to
+increase 
+the 
+impact 
+of 
+the
+programme?
+We constantly seek feedback from our
+students in order to improve. We get a
+lot of positive feedback and we highly
+appreciate 
+it 
+together 
+with 
+the
+criticism which help us get better at
+what we do. The interest of the
+business towards our programme is
+also 
+high 
+considering 
+the 
+large
+number of guest lectures on fintech
+and 
+e-banking, 
+cryptocurrencies,
+alternative 
+investments 
+and 
+many
+more. For a third year in a row the
+master’s degree programme is among
+the 
+most 
+desirable 
+in 
+FEBA 
+and
+maintains a steady enrollment of over
+40 students per year. This gives us the
+motivation to constantly upgrade and
+improve our programme. The positive
+word-of-mouth feedback is very 
+BOZHIDAR NEDEV, PHD
+ASSOCIATE PROFESSOR AT 
+FACULTY OF ECONIMICS AND
+BUSINESS ADMINISTRATION AT
+SOFIA UNIVERSITY &quot;ST. KLIMENT
+OHRIDSKI&quot;
+valuable and rewarding to us. Our
+incentive is to offer valuable and
+contemporary 
+education 
+on 
+a
+Master`s level in Bulgaria. The same
+goal we follow with the Bachelor`s
+programme in Accounting, Finance
+and Digital Applications in English,
+which is the first and only accredited
+programme in Bulgaria by the CFA
+Institute. It is also affiliated to ICAEW
+and the BFA.
+FACULTY OF ECONOMICS
+AND BUSINESS
+ADMINISTRATION
+2
+Be part of the movement at fintechbulgaria.org
+79
+
+
+</pre><div class="page-break" data-page="Page 80"></div><pre class="text-content">
+FINTECH EDUCATION
+IN BULGARIA - 2022
+VUZF launches a Master’s degree
+programme in FinTech, finance and
+digital innovation in partnership with
+BFA. What is new in this programme
+and how would the students benefit
+from the BFA participation in it?
+We are happy to launch the first
+master&#x27;s 
+programme 
+in 
+FinTech,
+Finance 
+and 
+Digital 
+Innovation,
+although similar programs already
+exist in other universities. We believe
+we have designed a program to
+respond 
+to 
+the 
+most 
+immediate
+demands of the market for digital
+innovation in the field of finance. This
+ambitious project aims to prepare
+highly qualified professionals, who
+will work in financial as well as non-
+financial institutions. Digitalization is
+a must and no future profession can
+go without it. Meanwhile, we are
+privileged to have as our partner the
+BFA in this joint venture. We highly
+value 
+their 
+contribution 
+to 
+the
+programme as guest lecturers and
+their 
+engagement 
+in 
+the 
+overall
+education process. It is a common
+mission we have set as partners - to
+design a modern program and to give
+our students not only theoretical but
+also 
+practical 
+knowledge 
+and
+experience. 
+What are the main topics covered by
+the programme and how would the 
+best FinTech master’s degree 
+PROF. JULIA DOBREVA 
+VICE-RECTOR OF VUZF UNIVERSITY, 
+PROFESSOR OF ECONOMICS
+AT VUZF UNIVERSITY
+candidate look like?
+The main topics include introduction
+to FinTech and financial systems,
+artificial 
+intelligence, 
+FinTech 
+and
+open banking, risk capital and private
+investments, Fintech and insurance
+(InsurTech), Regtech and Suptech,
+Behavioural finance etc. The best
+master’s degree candidate should be
+first of all highly motivated and 
+2
+Be part of the movement at fintechbulgaria.org
+80
+
+
+</pre><div class="page-break" data-page="Page 81"></div><pre class="text-content">
+FINTECH EDUCATION
+IN BULGARIA - 2022
+ambitious. He or she should be either
+working in the field of finance or
+pursuing a career in this field. It is not
+necessary to be a person with a
+bachelor’s 
+degree 
+in 
+Finance 
+or
+Economics. 
+We 
+also 
+offer 
+the
+programme for people with other
+academic backgrounds, in different
+fields such as law, humanities, etc.
+They will go through a preparatory
+year 
+and 
+cover 
+the 
+fundamental
+disciplines in economics, while in
+their 
+second 
+year 
+they 
+will 
+be
+specialising 
+in 
+particular 
+FinTech
+courses. 
+What are the plans for the future
+extension of the programme?
+We intend to invite guest lecturers
+from leading foreign universities, who
+will contribute to the programme. In
+addition, we are planning to organise
+round 
+tables 
+and 
+seminars 
+with
+FinTech 
+companies 
+with 
+the
+participation of the students and also
+study visits in the companies to give
+our students a first hand impression
+of how it all happens in practice. Once
+we build up an alumni network, it
+would be great if we can establish a
+connection between our graduate and
+current students and organise peer-
+to-peer seminars and workshops on
+different topics. In addition, we are
+also 
+planning 
+to 
+launch 
+the 
+ programme in English, so that foreign 
+PROF. JULIA DOBREVA 
+VICE-RECTOR OF VUZF UNIVERSITY, 
+PROFESSOR OF ECONOMICS
+AT VUZF UNIVERSITY
+students can also enrol in it.
+2
+Be part of the movement at fintechbulgaria.org
+81
+
+
+</pre><div class="page-break" data-page="Page 82"></div><pre class="text-content">
+VISSARION KARVOUNIS
+FOUNDER 
+AND 
+CEO 
+OF
+STREAMFLOW
+Our story in Bulgaria
+Streamflow started its operations in
+2014 
+as 
+an 
+“EOOD” 
+with 
+just 
+1
+employee and 1000€ worth of capital
+at small office next to blvd. Bulgaria.
+Two years later, Streamflow entered
+the FinTech sector and in 2020 due to
+its increased turnover became an
+“EAD”. Nowadays Streamflow has 12
+employees, operates offices in three
+more 
+countries 
+through 
+its
+subsidiaries, 
+has 
+over 
+140.000
+accounts, 
+6 
+White 
+Labels 
+and 
+a
+turnover exceeding EUR 885 million
+without counting the turnover of the
+partner White Labels, showcasing the
+potential of the FinTech market in
+both Bulgaria and Europe.
+Why Bulgaria?
+People tend to believe that Bulgaria is
+a cheap business destination. While
+Bulgaria is a cost-effective destination
+to operate a business in, it does not
+mean that there is any compromise in
+the quality of the business ecosystem.  
+I literally cannot stress enough how
+the Bulgarian business ecosystem is
+characterized by quality where one of
+the key factors stimulating economic
+growth is its human capital. A highly-
+skilled workforce along with a focus
+on 
+tech 
+education, 
+provide 
+the
+FinTech industry a pool of talented
+individuals that can help them grow. 
+However, the potential of the growth
+of the private sector in Bulgaria, 
+WHY BULGARIA?
+INDUSTRY VIEW
+including ours, is limited by the
+brain-drain which translates to loss
+of human capital. That is why I
+strongly 
+believe 
+that 
+we 
+as 
+an
+Association 
+and 
+as 
+businesses
+operating in Bulgaria should partner
+with other actors for a long-term
+initiatives and plan aiming for the
+repatriation 
+of 
+the 
+Bulgarian
+diaspora. 
+And 
+that 
+is 
+how 
+the
+Bulgarian business ecosystem will
+reach its full potential. 
+About Streamflow
+We are a FinTech company with EMD
+agent 
+licenses, 
+a 
+programme
+manager, operates its own platform
+and at the same time offers White
+Label solutions for other businesses
+that are not necessarily FinTech.
+2
+Be part of the movement at fintechbulgaria.org
+82
+
+
+</pre><div class="page-break" data-page="Page 83"></div><pre class="text-content">
+How is the P2P business developing
+in 
+Bulgaria, 
+is 
+it 
+gaining 
+more
+traction and popularity?
+More 
+and 
+more 
+Bulgarians 
+add
+investments in the so-called P2P loans
+to their investment portfolio. They aim
+to 
+diversify 
+with 
+moderate 
+and
+modern products. 
+On the one hand, they want to escape
+from the unsatisfyingly low-interest
+rates of the banks and at the same
+time to get more predictability and
+security compared to more volatile
+options such as investments in stocks
+or cryptocurrencies. An interesting
+fact is that the majority of Bulgarians
+who chose P2P lending for their
+wallet first started with iuvo. This does
+not surprise us, considering that iuvo
+is the first Bulgarian P2P platform for
+investing in loans and we are the
+leader of the local market.
+What are the advantages of doing
+P2P business in Bulgaria?
+Earlier 
+this 
+year, 
+we 
+started 
+the
+process of moving iuvo registration to
+Bulgaria. Our country is one of the
+main IT outsourcing hubs in Europe,
+and it offers excellent prospects for
+FinTech companies. With the move
+back 
+home, 
+we 
+will 
+significantly
+reduce platform maintenance costs
+and with the saved resources we will
+invest in more innovation for our
+platform.
+DOING P2P IN
+BULGARIA
+BLAGOVEST KARADJOV
+CHIEF EXECUTIVE OFFICER AT 
+IUVO GROUP
+What business goals do iuvo set for
+the Bulgarian market?
+We aim to continue to be a leader
+among Bulgarian P2P platforms, as
+well as to be in the top 3 throughout
+Europe. We understand perfectly that
+there is a significant part of Bulgarian
+society who are still conservative and
+is 
+not 
+familiar 
+with 
+alternative
+instruments for their savings. Some of
+these people still keep their savings in
+the banks at close to 0% interest rate. 
+We want to reach these users and give
+them a safe alternative - iuvoSAVE.
+This product offers a fixed period for
+their 
+investment, 
+flexibility, 
+and
+liquidity. Ultimately, this product 
+2
+Be part of the movement at fintechbulgaria.org
+83
+
+
+</pre><div class="page-break" data-page="Page 84"></div><pre class="text-content">
+2
+provides 
+our 
+customers 
+with 
+the
+predictability of their cashflows and
+the ability to know exactly when and
+what amount to expect. What is more,
+with iuvoSAVE it is possible to deposit
+additional funds or withdraw early for
+a small fee, but without changing the
+end 
+date 
+and 
+without 
+losing 
+all
+interest.
+What is your plan for being part of
+the Bulgarian FinTech ecosystem? 
+As co-founders of Bulgarian fintech
+association, we remain committed to
+helping 
+the 
+development 
+of 
+the
+cluster 
+and 
+respectively 
+the
+ecosystem. 
+ 
+DOING P2P IN
+BULGARIA
+BLAGOVEST KARADJOV
+CHIEF EXECUTIVE OFFICER AT 
+IUVO GROUP
+2
+Be part of the movement at fintechbulgaria.org
+84
+
+
+</pre><div class="page-break" data-page="Page 85"></div><pre class="text-content">
+CHAPTER VII
+FUTURE TECHNOLOGIES
+IN FINTECH
+2
+Be part of the movement at fintechbulgaria.org
+85
+
+
+</pre><div class="page-break" data-page="Page 86"></div><pre class="text-content">
+On 14 July 2021, the ECB decided to
+launch the investigation phase of the
+digital euro project. What is the
+digital euro and why do we need it? 
+Digitalisation and new technologies
+are increasingly shaping European
+citizens’ 
+lives 
+and 
+the 
+European
+economy. 
+With 
+the 
+European
+economy becoming more and more
+digital, Europeans also increasingly
+use digital means of payment to
+transact. The socio-economic impacts
+of the COVID-19 crisis accelerated this
+trend and increased the need to allow
+the 
+business 
+to 
+be 
+conducted
+remotely 
+and 
+through 
+innovative
+digital 
+technologies, 
+wherever
+possible.
+ 
+In March 2021, the Eurosummit called
+for a stronger and more innovative
+digital 
+finance 
+sector 
+and 
+more
+efficient 
+and 
+resilient 
+payment
+systems. In this context, it was stated
+that exploratory work on the possible
+introduction of a digital euro should
+be taken forward.
+The 
+Digital 
+Finance 
+and 
+Retail
+Payment 
+Strategies 
+of 
+the
+Commission adopted in September
+2020 supported the emergence of
+competitive home-grown and pan-
+European 
+payment 
+solutions
+supporting Europe’s economic and
+financial sovereignty and supported
+the exploration of a digital euro.
+FINTECH
+TECHNOLOGIES 
+DIGITAL EURO
+The ECB’s retail payment strategy
+also calls for European payment
+solutions that have a pan-European
+reach, are low cost, are safe and
+efficient, are European brand and
+governance and can be globally
+accepted in the long run. The ECB
+issued its report on the digital euro
+in October 2020 and ran a public
+consultation on the digital euro
+between October 2020 and January
+2021. 
+On 14 July 2021, the Governing
+Council of the ECB decided to kick-
+start a formal investigation phase on 
+LUDMILA ANDREEVA-PASKOV
+POLICY OFFICER 
+DIGITAL FINANCE UNIT AT
+EUROPEAN COMMISSION
+2
+Be part of the movement at fintechbulgaria.org
+86
+
+
+</pre><div class="page-break" data-page="Page 87"></div><pre class="text-content">
+the digital euro in October 2021.
+Overall, the entire process leading to
+the possible issuance of the digital
+euro is expected to last 5 years and
+aims 
+at 
+addressing 
+key 
+issues
+regarding 
+use 
+cases, 
+design 
+and
+distribution. 
+Following 
+the 
+ECB
+decision, the Eurogroup has engaged
+in a series of discussions on the
+objectives and use cases and policy
+implications. 
+The possibility to introduce a retail
+digital euro has received support from
+the European Parliament and the
+Eurosummit. 
+What would a digital euro be?
+The idea of retail Central Bank Digital
+Currencies 
+(CBDC) 
+has 
+gained
+significant attention over recent years.
+A retail CBDC, like cash, would be an
+official form of currency constituting a
+direct central bank liability towards
+its holder in digital form. A retail
+CBDC makes central bank digital
+money available to the general public
+(i.e. businesses and people), in the
+same way as cash is available to the
+general public as a direct claim on the
+central bank.
+FINTECH
+TECHNOLOGIES 
+DIGITAL EURO
+In the euro area, the establishment
+of a retail CBDC – a digital euro –
+could support a stronger and more
+innovative digital finance sector and
+more efficient and resilient payment
+systems. A digital euro could play a
+role 
+in 
+further 
+enhancing
+competition and innovation in the
+European retail payments market by
+facilitating the development of a full
+range of pan-euro area end-user
+solutions accessible to consumers as
+well as supporting digital financial
+services.
+How is the European Commission
+involved 
+in 
+its 
+creation 
+and
+implementation?
+The European Commission will do a
+legislative proposal (regulation). The
+regulation based on Art 133 TFEU
+would establish the Digital Euro and
+regulate its essential elements. It
+would then be up to the ECB to
+decide whether to issue a Digital
+Euro. 
+The 
+process 
+will 
+be 
+the
+following:
+The ECB process
+The digital euro project is a project
+for a retail (a.k.a “general purpose”,
+i.e. for people and businesses) CBDC
+(Central Bank Digital Currency). In
+the investigation phase, the ECB will
+focus on design decisions supported
+by market research (esp. focus 
+2
+Be part of the movement at fintechbulgaria.org
+87
+
+
+</pre><div class="page-break" data-page="Page 88"></div><pre class="text-content">
+groups) 
+but 
+no 
+further 
+detailed
+technical 
+experimentation 
+are
+foreseen. 
+Final decision on technical design is
+expected for Q1 2024. If the ECB
+decides to issue a digital euro, the
+development phase would likely last
+two more years.
+The ECB is thinking to go with a first
+release of the digital euro, followed by
+additional releases with additional
+(innovative) functionalities (staggered
+approach).
+The legislative process
+The issuance of a digital euro will
+require a regulation under Article 133.
+To fit ideally within the timeline
+resulting from Eurogroup discussions
+and the ECB investigation phase, the
+proposal for a regulation should be
+ready 
+in 
+Q1 
+2023. 
+In 
+addition,
+legislative 
+action 
+would 
+also 
+be
+necessary to introduce the digital
+euro in existing sectoral legislative
+acts and coordinate them.
+The Council and the Parliament of the
+EU should ideally adopt the
+FINTECH
+TECHNOLOGIES 
+DIGITAL EURO
+Regulation by the end of 2023.
+What is the role of public and
+private sector in the digital euro
+ecosystem?
+In a digitalised economy, a digital
+euro is meant to meet new payment
+needs of citizens and businesses.
+Industry 4.0 and the crypto-assets
+ecosystem are fast evolving. There is
+growing demand for new forms of
+payments. Cash cannot respond to
+the 
+needs 
+of 
+Industry 
+4.0,
+decentralised finance (DeFi) or the
+decentralised 
+internet 
+(web 
+3),
+which demand a new, state-of-the-
+art payment ecosystem. Compared
+to crypto assets and stablecoins, a
+digital euro would provide added
+value given its risk free nature. 
+The Commission would support use
+cases of the digital euro where
+private solutions cannot or do not
+fulfil users’ needs due to lack of
+profitability, 
+business 
+interest 
+or
+technological 
+or 
+regulatory
+limitations. 
+These 
+include 
+micro
+payments, 
+off-line 
+payments 
+and
+work 
+on 
+programmable 
+and
+machine-to-machine payment. 
+At the same time, the digital euro
+should not crowd out private 
+2
+Be part of the movement at fintechbulgaria.org
+88
+
+
+</pre><div class="page-break" data-page="Page 89"></div><pre class="text-content">
+Financial stability risks, as it
+may result in large scale shifts
+of deposits from commercial
+banks to the digital euro, if not
+prudently designed; 
+Risks 
+to 
+crowding 
+out 
+the
+private sector, if synergies are
+not adequately developed. 
+The digital euro involves key
+political, industrial and societal
+choices. And this needs to be
+debated further as well. 
+We 
+are 
+calling 
+upon 
+all
+interested parties to participate
+in the various outreach 
+possibilities 
+including 
+our
+targeted public consultation. 
+On that basis, we will prepare
+the legislative proposal we plan 
+solutions. 
+This 
+is 
+why 
+solutions
+developed for the digital euro need to
+work 
+hand 
+in 
+hand 
+with 
+other
+initiatives such as instant payments
+deployment 
+and 
+the 
+European
+Payment 
+Initiative 
+(EPI). 
+Synergies
+with 
+the 
+digital 
+euro 
+can 
+be
+developed along a shared acceptance
+infrastructure 
+in 
+terms 
+of 
+POS
+terminals and standards.
+What to expect in the near future?
+To conclude, we believe that the
+digital 
+euro 
+would 
+provide 
+clear
+benefits for business and citizens.
+·It also carries however some risks: 
+FINTECH
+TECHNOLOGIES 
+DIGITAL EURO
+to adopt in Q1-Q2 2023 to establish
+the digital euro and regulate its
+essential aspects. 
+LUDMILA ANDREEVA-PASKOV
+POLICY OFFICER 
+DIGITAL FINANCE UNIT AT
+EUROPEAN COMMISSION
+2
+Be part of the movement at fintechbulgaria.org
+89
+
+
+</pre><div class="page-break" data-page="Page 90"></div><pre class="text-content">
+FUTURE OF FINTECH
+TECHNOLOGIES 
+INDUSTRY VIEW
+We have seen great developments in
+digital payments, but it seems that
+&quot;cash&quot; is still king?
+There is one main reason for this, and
+that is the apparent notion that
+paying in cash is free. When we
+exchange cash, there are usually no
+fees. But at the same time, everyone
+has a smartphone because it&#x27;s easier
+and cheaper to communicate that
+way. And this is where the paradox
+comes 
+in: 
+We 
+all 
+communicate
+digitally, but prefer to pay cash.
+However, 
+payment 
+is 
+a 
+form 
+of
+communication. So we&#x27;re trying to
+bring it into the environment where
+people communicate. And we do it in
+an accessible and cost-effective way. I
+can tell you about our project with
+Rakuten Viber - EasyPay&#x27;s chatbot for
+paying utility bills, where we already
+have almost 350,000 users. One can
+also just check the bills for free.
+We saw your recent campaign to cut
+back on paper at the expense of
+digital receipts. Is that the other big
+&quot;enemy&quot; of digitization: paper?
+For 
+historical 
+reasons, 
+paper 
+is
+enshrined 
+in 
+some 
+laws 
+as 
+an
+evidentiary document between two
+parties. 
+Whether 
+it 
+is 
+a 
+utility,
+insurance, or financial contract... The
+main function of this document is to 
+serve as evidence to a third party
+when 
+needed. 
+The 
+signature
+confirms the authenticity of the
+document. 
+It 
+is 
+easy 
+to 
+put 
+a
+signature on a piece of paper. But
+only so much. Everything else that
+involves paper, such as production,
+storage 
+and 
+data 
+collection, 
+is
+expensive and difficult. That&#x27;s why
+we developed a document signing
+service 
+for 
+EasyPay&#x27;s 
+offices 
+in
+collaboration with InfoNotary. The
+provider sends the customer a 
+GEORGI MARINOV
+FOUNDER AND CEO OF
+EPAY. BG
+2
+Be part of the movement at fintechbulgaria.org
+90
+
+
+</pre><div class="page-break" data-page="Page 91"></div><pre class="text-content">
+FUTURE OF FINTECH
+TECHNOLOGIES 
+DIGITAL EURO - 
+INDUSTRY VIEW
+10-digit code that they can use to sign
+electronically at the EasyPay office
+just by showing their ID. The customer
+receives 
+a 
+receipt 
+for 
+signing 
+a
+contract, indicating where the original
+of this document is kept.
+Are there other innovations you are
+working on?
+The European payments regulatory
+environment is constantly evolving.
+Based also on the significant volume
+of transactions we perform in our
+companies, we realized the need for
+AI-based tools. Currently our team is
+implementing and testing tools that
+will 
+serve 
+fraud 
+transactions
+detections, 
+Know 
+Your 
+Customer
+regulation, 
+Strong 
+Customer
+Authentication, 
+money 
+laundering.
+What we will initially be offering and
+are happy to share with our fintech
+community are these software and
+solutions as a service (SaaS).
+GEORGI MARINOV
+FOUNDER AND CEO OF
+EPAY. BG
+2
+Be part of the movement at fintechbulgaria.org
+91
+
+
+</pre><div class="page-break" data-page="Page 92"></div><pre class="text-content">
+FUTURE OF FINTECH
+TECHNOLOGIES 
+INDUSTRY VIEW
+Super Apps have been on the rise for
+some time now and in certain regions
+of the world have become a default
+way of consuming a wide variety of
+experiences and services. What does
+it mean for the fintech sector?
+First, let’s start with the Super App
+definition. Every day we use more
+than 10 different mobile applications -
+from 
+banking 
+to 
+socializing 
+and
+shopping. Imagine doing all this in
+just one app. By bringing together a
+range of experiences, services, and
+functions on a single platform that
+customers 
+already 
+feel 
+confident
+using, Super Apps provide seamless
+experiences that keep users engaged.
+Since 
+embedded 
+payments 
+and
+financial services are among the most
+common features of Super Apps, I
+would say that fintech is what glues
+things together. You have all your
+money management options in one
+place and on top of that, you can shop
+online, book accommodation, or buy
+tickets 
+without 
+leaving 
+the 
+app.
+Fintech 
+is 
+already 
+remodeling
+financial 
+services, 
+and 
+now 
+it’s
+changing the way we use digital
+services in general.
+What are the key reasons for Super
+Apps success? 
+The 
+biggest 
+reason 
+is 
+the
+convenience that people are always
+searching for. A one-stop platform
+for multiple tasks saves time and
+sweeps 
+the 
+troubles 
+of 
+creating
+several accounts and remembering
+numerous passwords. Many people
+are facing issues with storage on
+their devices because various apps
+were downloaded. Not to mention
+the uncontrolled increase in the
+number of applications over the
+years. App stores are like a never-
+ending pit, and it is very difficult for
+the 
+user 
+to 
+find 
+the 
+reliable
+application they need in this chaos. 
+MARTIN BOGDANOV
+CHAIRMAN OF THE BOARD OF
+DIRECTORS AT PAYSERA
+2
+Be part of the movement at fintechbulgaria.org
+92
+
+
+</pre><div class="page-break" data-page="Page 93"></div><pre class="text-content">
+FUTURE OF FINTECH
+TECHNOLOGIES 
+INDUSTRY VIEW
+In addition to the convenience of a
+single login, Super Apps also reduce
+the risk of compromised user data.
+They store all personal and financial
+information 
+in 
+one 
+ecosystem 
+of
+products and services, as opposed to
+spreading across multiple platforms.
+But even then, information security is
+of paramount importance. Hence, we
+as users need to stay alert when it
+comes to data security and use only
+reliable 
+platforms 
+with 
+a 
+strong
+authentication process.
+The benefit of keeping users’ data is
+the personalization of the consumer
+experience. Super Apps make it easy
+to capture customer information so
+merchants can serve them offers more
+relevant to their interests. Like loyalty
+programs, 
+coupons, 
+or 
+discounts
+based 
+on 
+their 
+preferences.
+Furthermore, consumers get access to
+a vast range of services, even some
+new to them. 
+In 2021 Paysera announced that the
+mobile wallet will transform into
+Super App. Why did you decide to
+take this road and what is your value
+proposition?
+Paysera is much more than a digital 
+payment 
+platform. 
+We 
+work 
+in
+synergy with our partners to create a
+fintech hub around our core services.
+In addition to payments, we offer
+also 
+the 
+possibility 
+to 
+buy
+investment gold online, access to
+loans, 
+ticket 
+sales, 
+and 
+even
+donations to charity. Paysera clients
+can invest in agricultural loans and
+real 
+estate 
+through 
+leading
+crowdfunding 
+platforms. 
+The
+process 
+is 
+fast 
+and 
+convenient,
+directly via their smartphone or
+through a simplified identification
+procedure. By linking their Paysera
+account 
+to 
+the 
+wallet 
+in 
+the
+platform, 
+clients 
+can 
+track 
+all
+movements in real-time.
+Our 
+path 
+to 
+the 
+transformation
+began a long time ago with the
+Paysera mobile wallet and the 360-
+degree 
+payment 
+account. 
+We
+adopted 
+the 
+client-centered
+approach and gradually added new
+services and features. The results
+today 
+- 
+a 
+complete 
+transaction
+service 
+with 
+easier 
+and 
+more
+accessible 
+digital 
+payments 
+that
+help businesses be more competitive
+and 
+effective 
+in 
+their 
+financial
+management. 
+What other services or features do
+you plan to add and how do you
+keep your clients engaged through
+the changes?
+2
+Be part of the movement at fintechbulgaria.org
+93
+
+
+</pre><div class="page-break" data-page="Page 94"></div><pre class="text-content">
+FUTURE OF FINTECH
+TECHNOLOGIES 
+INDUSTRY VIEW
+We do the changes gradually. Firstly,
+each new integration requires lots of
+IT development work. And secondly,
+to give more time to our clients to
+accept and get used to the new
+things. Our long-term plans are to
+provide a complete ecosystem of
+services 
+shaped 
+around 
+users’
+everyday 
+lifestyle 
+needs. 
+It 
+is
+incorporated in our slogan - “One app,
+endless possibilities”. Shopping, more
+investment options, and virtual cards
+are some of the new solutions we are
+working on.
+However, it takes time to define and
+transform the client’s needs into a
+new feature. Our team examines and
+analyzes customers’ preferences first.
+Only after that, we consider new
+partnerships. 
+We 
+have 
+already
+received 
+requests 
+from 
+several
+digitally 
+oriented 
+companies 
+that
+want to integrate their service into
+Paysera Super App. 
+What does the future of Super Apps
+look like?
+Although Super Apps began in Asia, 
+they are quickly becoming a common
+trend 
+globally. 
+Billions 
+of 
+users
+experience the convenience of having
+multiple services within one app and
+local businesses gain better exposure.
+ In my opinion, the more often that
+customers use them, the greater
+their benefits will be in this digital
+interface. 
+Regardless of what they’re called
+and how they’ll be developed, Super
+Apps will have a significant impact
+on open banking implementation
+too. 
+As 
+the 
+digital 
+landscape
+continues to evolve, competition for
+consumers&#x27; attention is also growing.
+Mobile applications already started
+adapting to users’ financial habits
+and improving the user experience.
+All of this is possible thanks to open
+banking. 
+MARTIN BOGDANOV
+CHAIRMAN OF THE BOARD OF
+DIRECTORS AT PAYSERA
+2
+Be part of the movement at fintechbulgaria.org
+94
+
+
+</pre><div class="page-break" data-page="Page 95"></div><pre class="text-content">
+Digital Lending - Platforms, individuals or institutional funders, providing loans directly to a
+business borrower or consumer. Individuals and/or institutional funders purchase debt-based
+securities, unsecured bonds, or invoices and receivables from a business at discount.
+Digital Capital Raising - Individuals or institutional funders purchasing or providing equity,
+shares or depth.
+Digital Banking - Banking and non-banking enterprises providing exclusively digital banking
+services.
+Digital Savings - Companies for fundraising and saving opportunities.
+Digital Payments - Providers of remittances services, digital means of payments, digital means
+of payments, Issuers of electronic funds, facilitator of transfers through a mobile device,
+providing hardware of software for capturing payments. 
+Digital Asset Exchange - Platforms for Order-book, peer-to-peer exchange, trading and
+clearing, brokerage services.
+Digital Custody - Software and Hardware Wallet, vault services, key management services.
+InsurTech - innovative technologies and data analytics for the insurance business as well as
+(re)insurers selling policies digitally, excluding standard insurance corporates. 
+WealthTech - investment and wealth management platforms and analytics tools. 
+RegTech - innovative technologies, which address regulatory challenges in financial services,
+including audit, risk, and regulatory compliance software.
+Alternative Credit &amp; Data Analytics - Alternative Credit Rating Agency, Credit Scoring,
+Psychometric Analytics, Sociometric Analytics, Biometric Analytics
+Digital Identity - Security &amp; Biometrics, KYC Solutions, Fraud Prevention &amp; Risk Management
+Enterprise Technology Provisioning - API Management, Cloud Computing, AI/ML/NLP,
+Enterprise Blockchain, Financial Management and Business Intelligence, Digital Accounting,
+Electronic Invoicing
+Main terminology and definitions 
+FinTech firms are enterprises whose core business is related to the creation or use of
+technologies, enabling innovations, and facilitating the supply, access, and/or usage of financial
+or insurance services, including technologies in payments, money transfer, insurance, digital
+lending, personal finance and savings, digital banking, investing, debt collection, accounting,
+capital markets, credit scores and analytics, mobile wallets, and payroll and benefits. In 2022, we
+have identified a total of 156 companies operating in the FinTech industry in Bulgaria. They were
+collected through desktop research from various sources, including the Commercial Register,
+part of the Registry Agency of the Republic of Bulgaria and the Register of non-profit legal
+entities, Crunchbase, Dev.bg, news portals, BFA, and external databases. We estimate that the
+companies included in the report represent more than 95% of all Fintechs operating in Bulgaria,
+which provides reliable, comparable, comprehensive and independent data about the market
+stakeholders. 
+For the analysis of the industry, we applied the Taxonomy of FinTech of the Centre for Alternative
+Finance at the University of Cambridge University. Following this taxonomy, we divided FinTech
+business models and therefore all FinTech companies into 13th categories, which cover the whole
+range of products and services developed by the companies in the industry: 
+1.
+2.
+3.
+4.
+5.
+6.
+7.
+8.
+9.
+10.
+11.
+12.
+13.
+Bulgaria&#x27;s  FinTech Mapping 2022
+The mapping was developed in collaboration with Innovative Sofia and represents the FinTech
+community of Bulgaria as of November 2022. All rights reserved. The report was prepared in
+September-October 2022.
+METHODOLOGY
+2
+Be part of the movement at fintechbulgaria.org
+95
+
+
+</pre><div class="page-break" data-page="Page 96"></div><pre class="text-content">
+This project would not have been possible without the support of all
+contributors. We would like to recognize the invaluable assistance of Andrey
+Andreev from Ciela AD in data gathering. 
+We are very thankful to the representatives from the Fintech industry that took
+part in our Annual Fintech Survey 2022 and those who contributed with articles
+to this Report. Receiving insights on the success stories, development areas and
+challenges from the FinTech community is crucial for an adequate analysis that
+benefits everyone in the industry. We believe that as the industry grows, this
+brings a better economic future for Bulgaria. 
+ACKNOWLEDGEMENTS
+Thanks to all participants in the Annual FinTech Survey 2022!
+2
+Be part of the movement at fintechbulgaria.org
+96
+
+
+</pre><div class="page-break" data-page="Page 97"></div><pre class="text-content">
+PARTNERS
+GOLD
+PLATINUM
+ISSUE 4/2022
+SILVER
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

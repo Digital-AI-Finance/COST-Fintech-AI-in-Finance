@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CA19130 PR2 ActionChairReport 2022 08 21 - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>CA19130 PR2 ActionChairReport 2022 08 21</h1>
+        <div class="meta">Source: CA19130_PR2_ActionChairReport_2022-08-21 (1).txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>CA19130 PR2 ActionChairReport 2022 08 21</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>16 pages</span>
+                    <span>20,547 characters</span>
+                    <span>2,952 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+DRAFT
+COST Action
+Progress Report at 24 months
+(14/09/2020 to 14/09/2022)
+CA19130: Fintech and Artificial Intelligence
+in Finance - Towards a transparent financial
+industry
+The Action was approved by the Committee of Senior Officials (CSO) on 31-3-2020 and
+has the MoU reference COST 033/20.
+This report shows the data entered into e-COST to enable the Action Chair to verify the
+completeness and accuracy of the report with the MC prior to submitting the report via e-
+COST in fulfilment of the rules for COST Action Management, Monitoring and Final
+Assessment.
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+DRAFT
+Action leadership and participants
+ 
+Leadership positions
+Position
+Name
+Contact details
+Country*
+Chair
+Prof Jörg Osterrieder
+josterri@googlemail.com
++41774692809
+  Netherlands
+Position
+Name
+Contact details
+Country*
+Vice Chair
+Prof Valerio Poti
+valerio.poti@ucd.ie
+00353-1-7168961
+  Ireland
+Working groups
+#
+WG Title
+# of partic
+ipants
+WG Leader
+Country*
+1
+Transparency in FinTech
+50
+Prof Wolfgang Härdle
+haerdle@hu-berlin.de
+  Germany
+2
+Transparent versus Black Box
+Decision-Support Models in the
+Financial Industry
+57
+Dr Petre Lameski
+lameski@finki.ukim.mk
+  North Macedonia
+3
+Transparency into Investment
+Product Performance for Clients
+41
+Prof Peter Schwendner
+scwp@zhaw.ch
+  Switzerland
+Other key leadership positions
+Position
+Name
+Contact details
+Country*
+Science
+Communication
+Coordinator
+Dr Alessia
+Paccagnini
+alessia.paccagnini@ucd.ie
+Ireland
+GH Scientific
+Representative
+Prof Branka Hadji
+Misheva
+heb1@bfh.ch
+Switzerland
+  * The country displayed is:
+for the Action Chair, the country that nominated that person to the Management Committee before
+they were elected Action Chair;
+for the Vice Chair the country that nominated the person as a Management Committee Member,
+for all other leadership positions, if the person is a MC Member the country displayed is the country
+of nomination, otherwise it is the country of the person’s primary work affiliation.
+2
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+DRAFT
+Participants
+COST members having accepted the MoU
+AL
+13/05/2020
+AT
+30/04/2020
+BE
+17/02/2021
+BA
+30/04/2020
+BG
+04/09/2020
+HR
+02/06/2020
+CY
+17/02/2021
+CZ
+14/07/2021
+DK
+28/05/2020
+EE
+04/05/2020
+FI
+02/11/2021
+FR
+05/05/2020
+GE
+12/04/2022
+DE
+08/05/2020
+EL
+22/05/2020
+HU
+13/05/2020
+IS
+05/05/2020
+IE
+29/04/2020
+IL
+11/05/2020
+IT
+12/06/2020
+LV
+12/07/2021
+LT
+17/05/2020
+LU
+30/04/2020
+MT
+22/02/2021
+MD
+17/10/2020
+ME
+19/05/2020
+NL
+25/06/2020
+MK
+07/05/2020
+NO
+06/05/2020
+PL
+30/04/2020
+PT
+28/05/2020
+RO
+10/06/2020
+RS
+27/06/2020
+SK
+29/04/2020
+SI
+27/05/2020
+ZA
+02/11/2021
+ES
+18/06/2020
+SE
+26/05/2020
+CH
+20/05/2020
+TR
+04/05/2020
+UA
+12/04/2022
+UK
+30/04/2020
+Other participants
+Institution Name
+Country
+3
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+DRAFT
+Summary
+ 
+The main aim and objective of the Action is to
+establish a large and interconnected community across academia, public institutions and industry focusing
+on Financial Technology and Artificial Intelligence, improving transparency in financial services, especially
+in and through FinTech, in financial modelling and investment performance evaluation
+During its first two years the Action progressed the achievement of this as
+described below
+The Action will implement the following measures in the coming two years to
+overcome any issues identified in this report as potentially endangering the
+achievement of the objectives of the Action
+Action website
+https://fin-ai.eu/
+4
+
+
+</pre><div class="page-break" data-page="Page 5"></div><pre class="text-content">
+DRAFT
+Achievement of MoU objectives, deliverables and additional
+outputs/ achievements
+ 
+MoU objectives
+Please self-assess and describe the level of achievement of each MoU objective. For any MoU objective
+that is 25% or less achieved, please add an explanation.
+Mou objective
+To develop blended approaches to evaluate innovative financial services and their
+providers, especially in the FinTech domain, building on Machine Learning methods,
+focussing on prediction (early warning) of operational fragility, fraudulent and illegal
+behaviour ranging from appropriation of loaned funds to money-laundering activities.
+Type of objective
+Level of progress
+76 - 100%
+Description of progress with
+achieving the MoU objective
+Test Test Test Test Test Test Test Test Test Test Test Test Test Test 
+Mou objective
+The development of conceptual and methodological tools for establishing when black-
+box models are admissible and, to the extent possible, making them more transparent
+and/or replacing them with interpretable and explainable models.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+To receive input from regulators and practitioners&#x27; communities and to validate results
+with regard to increasing transparency of artificial intelligence applications.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Pruning and improvement of the vast array of performance attribution models by
+contributing to the development of methodologies for reducing the false discovery rate
+in financial research and applied financial investment management.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Disseminate to the public and share with regulators the results on investment product
+performance evaluation.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Creation of the first European platform comparing the out-of-sample performance of
+5
+
+
+</pre><div class="page-break" data-page="Page 6"></div><pre class="text-content">
+DRAFT
+banks&#x27; investment products, insurance-linked investment products and asset
+management products available to the general public.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Create an excellent network of researchers in Europe with lasting collaboration beyond
+the lifetime of the Action.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Bringing technological, quantitative and economic researchers together, to tackle future
+research that can only be done in an interdisciplinary setting, and getting actively
+involved in the blockchain and FinTech communities across Europe, to constantly
+monitor developments, get input and disseminate results.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Bridging the gap between practitioners from the finance industry, academics and
+regulators by setting up a common knowledge exchange platform.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Transfer knowledge in terms of expertise, scientific tools and human resources across
+the different disciplines and between academia and industry.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Establish an inclusive community of researchers on methodological and technological
+themes in Machine Learning and Artificial Intelligence, to promote Early Career
+Investigators and increase their visibility.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Overcome the siloing of research topics by country and achieve geographical and
+demographical diversity, with special attention to COST Inclusiveness Target countries.
+6
+
+
+</pre><div class="page-break" data-page="Page 7"></div><pre class="text-content">
+DRAFT
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Prepare competitive European researchers for a fruitful career in an international
+environment through intensive use of Short Term Scientific Missions (STSM) and joint
+educational programs with industrial partners.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Maximize the job opportunities for PhD students and Early Career Investigators.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Disseminate the results of the Action&#x27;s activities to the scientific community, European
+institutions and to the general public.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+Mou objective
+Significantly improve the gender equality in the fields of the Action.
+Type of objective
+Level of progress
+—
+Description of progress with
+achieving the MoU objective
+7
+
+
+</pre><div class="page-break" data-page="Page 8"></div><pre class="text-content">
+DRAFT
+Deliverables
+This section covers only deliverables that were foreseen for the Action, not additional outputs that were
+generated during the Action (these additional outputs will be added in the following section). Please select
+and comment on the progress with achieving each deliverable.
+For deliverables that are:
+Delivered, please provide proof to enable the Action Rapporteur to confirm the delivery
+Not delivered but delivery is foreseen within 2 years please explain how the delivery will be
+achieved
+Not foreseen to be delivered please explain why not
+Deliverable
+A database which contains pre-ICO documentation and post-ICO performance (ROI and
+lifespan)
+Progress with achieving
+deliverable
+—
+Month deliverable due
+24
+Deliverable
+A database which contains data on crowdfunding/P2P platform features useful for rating
+platform integrity and to predict fraud
+Progress with achieving
+deliverable
+—
+Month deliverable due
+24
+Deliverable
+Discussion papers (DP) on the methodology for evaluating/rating ICOs and
+crowdfunding/P2P platforms and for detection/early warning about fraud/illegal
+behaviour with emphasis on the application of AI tools
+Progress with achieving
+deliverable
+—
+Month deliverable due
+36
+Deliverable
+A position paper and roadmap on mitigating risks connected with the increased use of
+digital assets
+Progress with achieving
+deliverable
+—
+Month deliverable due
+48
+Deliverable
+A discussion paper for possible approaches to building a statistically valid back-testing
+framework
+Progress with achieving
+deliverable
+—
+Month deliverable due
+24
+Deliverable
+Methodological discussion paper on the design of stress tests for the evaluation of AI
+and ML models under shifting financial conditions to improve the robustness of models
+Progress with achieving
+deliverable
+—
+Month deliverable due
+48
+Deliverable
+Position papers, aimed at regulators and policy-makers, on methodology (with examples
+of formal criteria) for testing AI techniques in real-time
+8
+
+
+</pre><div class="page-break" data-page="Page 9"></div><pre class="text-content">
+DRAFT
+Progress with achieving
+deliverable
+—
+Month deliverable due
+36
+Deliverable
+Report on good examples and best practices for a transparent finance industry with
+guidelines to improve transparency
+Progress with achieving
+deliverable
+—
+Month deliverable due
+12
+Deliverable
+An internal database of collected (scraped) financial time series from exchanges and
+regional consolidation platforms optimised for accessibility to all partners
+Progress with achieving
+deliverable
+—
+Month deliverable due
+24
+Deliverable
+Methodological discussion papers on AI models to generate “failed trials” of investment
+product producers and on quantitative strategies with the usage of the promising field of
+network data analysis
+Progress with achieving
+deliverable
+—
+Month deliverable due
+48
+Deliverable
+Four annual reports (for lay audience) distributed via local and national media
+Progress with achieving
+deliverable
+—
+Month deliverable due
+48
+Deliverable
+Key software (codes, packages) developed by each of the Working Groups in line with
+their objectives
+Progress with achieving
+deliverable
+—
+Month deliverable due
+48
+Deliverable
+Handbook and/or wiki page describing potential approaches to tackle risk management
+issues related to blockchain assets and crowdfunding/P2P lending
+Progress with achieving
+deliverable
+—
+Month deliverable due
+36
+Deliverable
+An edited volume containing scientific achievements of the Action (dummy text to
+delete)
+Progress with achieving
+deliverable
+—
+Month deliverable due
+48
+Deliverable
+Strategy to engage stakeholders in the Action (including revisions in month 24 and 36)
+Progress with achieving
+deliverable
+—
+Month deliverable due
+6
+9
+
+
+</pre><div class="page-break" data-page="Page 10"></div><pre class="text-content">
+DRAFT
+Additional outputs / achievements
+Co-authored Action publications
+Please enter below ONLY publications (including publications that are submitted but not yet accepted):
+that are on the topic of the Action, and
+that are co-authored by at least two Action participants from two countries participating in the Action, and
+for which the Action networking was necessary.
+Please pay special attention to the COST Excellence and Inclusiveness policy and ensure the inclusion of publications with authors from COST Inclusiveness
+Target Countries (ITCs), from the underrepresented gender in the Action and from Early Career Investigators/Young researchers. 
+Bibliographic data
+Countries
+participating in
+the Action
+among authors
+Open
+Access
+COST
+cited?
+COST
+funds?
+Relevance to H2020
+Societal challenge
+Peer Rev
+iewed?
+Projects resulting from Action activities
+Please enter below all the projects on the topic of the Action resulting from Action activities, involving at least one Action participant, and for which the Action
+networking was necessary.
+The Action reported 0 project(s) and 0 proposal(s) resulting from the Action networking.
+#
+Title
+Countries
+participating in
+the Action
+among
+proposers
+Main proposer name
+Funder
+Amount
+Call identifier
+Relevance to H2020
+Societal Challenge
+Other outputs / achievements
+Please enter below any additional outputs/ achievements on the topic of the Action that contribute to the COST mission: “COST enables break-through scientific
+10
+
+
+</pre><div class="page-break" data-page="Page 11"></div><pre class="text-content">
+DRAFT
+developments leading to new concepts and products and thereby contributes to strengthen Europe’s research and innovation capacities&quot;, and for which the Action
+networking was necessary (e.g. a patent, standards, white paper).
+Output / achievement description
+Dependence of achievement on the
+Action networking
+test
+  High
+11
+
+
+</pre><div class="page-break" data-page="Page 12"></div><pre class="text-content">
+DRAFT
+Impacts
+ 
+Please describe the impacts (the short- to long-term scientific, technological, and / or socioeconomic
+changes produced by a COST Action, directly or indirectly, intended or unintended) that have resulted, or
+might result, from the Action in the following table (one impact per line).
+Description of the impact, i.e. what will change, and for whom, as a result
+of what the Action achieved
+Type of impact
+Timing of impact
+Please describe how the Action is advancing the careers, skills and network of researchers, including ECIs
+(for example: joint supervision of graduate and PhD students, research exchanges not funded by the
+Action, collaborations, Training Schools with ECTS accreditation, joint projects and jobs prospects).
+12
+
+
+</pre><div class="page-break" data-page="Page 13"></div><pre class="text-content">
+DRAFT
+Dissemination and exploitation of Action results (other than co-authored Action publications
+listed previously)
+ 
+Please describe the Action&#x27;s dissemination and exploitation approach as well as all activities undertaken to ensure dissemination and exploitation of the Action
+results and the effectiveness of these activities.
+Dissemination and exploitation approach of the Action
+Dissemination
+Dissemination meetings funded by the Action
+Title of Dissemination
+meeting
+Meeting date
+Meeting country
+Action participant
+Event name and
+hyperlink to the website
+Title of presentation
+Description of added
+value to the Action
+N/A
+Other dissemination activities
+E.g. participation to non-Action meetings, e.g. EU Parliament, meetings with policy makers, experts in the field, regional authorities.
+Item/activity
+Target audience
+Outcome
+Hyperlink
+N/A
+Exploitation activities
+Please describe below any activities undertaken to ensure exploitation (use, in particular in a commercial context) of the Action&#x27;s achievements.
+Item/activity
+Target audience
+Outcome
+N/A
+13
+
+
+</pre><div class="page-break" data-page="Page 14"></div><pre class="text-content">
+DRAFT
+Other matters
+ 
+This section is confidential to the Management Committee, the Action Rapporteur and the COST
+Association, and is not included in the version of the report that is published on the COST website.
+Difficulties in implementing the Action
+If any difficulties are experienced in the implementation of the Action (e.g. imbalances of participation
+across the Working Groups, inactive country representatives) please describe these below. Please also
+describe the efforts made by the MC to address these.
+Endangerment Measures
+Taking into account the issues identified throughout this report, please summarise the measures the Action
+will implement in the coming two years to overcome any issues identified as potentially endangering the
+achievement of the objectives of the Action.
+Suggestions for improvements to COST framework/ procedures
+The mandate of the Scientific Committee includes providing advice to the COST Committee of Senior
+Officials on possible improvements to the COST framework. Please describe below any improvements that
+you believe should be made to the COST framework.
+Sustaining the network beyond the Action
+Are there any plans to sustain the network beyond the end of the Action?
+Emerging topics/ developments in the field of the Action
+Please describe any emerging topics or potentially important future developments identified during the
+Action and that could potentially be addressed by future COST activities such as Actions S&amp;T Conferences
+or Exploratory Workshops.
+14
+
+
+</pre><div class="page-break" data-page="Page 15"></div><pre class="text-content">
+DRAFT
+Annex 1: Types of objectives
+ 
+1 - Coordination of scientific and technological activities at a European level
+1.a - Development of a common understanding/definition of the subject matter
+1.b - Coordination of information seeking, identification, collection and/or data curation
+1.c - Coordination of experimentation or testing
+1.d - Comparison and/or performance assessment of a theory, model, methodology, technology or
+technique
+1.e - Development of knowledge needing international coordination, pertaining to a new or improved
+theory, model, methodology, technology or technique
+1.f - Achievement of a specific tangible output that cannot be achieved without international
+coordination (e.g. due to practical issues such as database availability, language barriers, availability
+of infrastructure or know-how, etc.)
+1.g - Input to stakeholders (e.g. standardization body, policy-makers, regulators, users), excluding
+commercial applications
+1.h - Input for future market applications (including cooperation with private enterprises)
+1.i - Dissemination of research results to the general public
+1.j - Dissemination of research results to stakeholders (excluding specific input in view of knowledge
+application)
+2 - Community building
+2.a - Building a community around a topic of scientific and/or socio-economic relevance, allowing for
+knowledge exchange and the development of a joint research agenda
+2.b - Building a community around a new or emerging field of research
+2.c - Bridging separate fields of science/disciplines to achieve breakthroughs that require an
+interdisciplinary approach
+2.d - Acting as a stakeholder platform or trans-national practice community, pertaining to a certain
+area of socio-economical or societal application, or to a certain market sector
+2.e - Building capacity in the demographic inclusiveness of networks in science and technology,
+including representation of newly established research groups, Early-Career Investigators, the under-
+represented gender and teams from countries/regions with less capacity in the field of the Action
+15
+
+
+</pre><div class="page-break" data-page="Page 16"></div><pre class="text-content">
+DRAFT
+Annex 2: Dimensions of successes
+ 
+1 - Breakthroughs
+1.a - Scientific breakthrough
+1.b - Technological breakthrough
+1.c - Breakthrough in socio-economic or societal applications
+2 - Policy contribution
+2.a - Contribution to regulatory policy
+2.b - Contribution to environmental, infrastructural or agricultural policy
+2.c - Contribution to economic or socio-economic policy
+2.d - Contribution to social, cultural or legal policy
+3 - Capacity building
+3.a - Building capacity in an existing field of science and technology
+3.b - Building capacity in bridging separate fields of science and technology
+3.c - Building capacity in a new or emerging field of science and technology
+3.d - Building capacity in valorising and implementing advances and applications in science and
+technology
+3.e - Building capacity in the demographic inclusiveness of networks in science and technology,
+including representation of newly established research groups, Early-Career Investigators, the under-
+represented gender and teams from countries/regions with less capacity in the field of the Action
+Powered by TCPDF (www.tcpdf.org)
+16
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

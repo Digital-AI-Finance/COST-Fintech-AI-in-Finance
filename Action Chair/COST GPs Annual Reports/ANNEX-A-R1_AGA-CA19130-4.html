@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANNEX A R1 AGA CA19130 4 - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>ANNEX A R1 AGA CA19130 4</h1>
+        <div class="meta">Source: ANNEX-A-R1_AGA-CA19130-4.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>ANNEX A R1 AGA CA19130 4</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>5 pages</span>
+                    <span>5,834 characters</span>
+                    <span>967 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+WORKPLAN
+Annex A - Work And Budget plan - R I
+CA19130
+Fintech and Artificial Intelligence in Finance - Towards a transparent financial industry
+Grant Period from 01/11/2022 to 31/10/2023
+ 
+Summary Budget
+ 
+Networking Tool
+Quant.
+Budget
+Meetings
+9
+EUR 117 889.40
+Training Schools
+4
+EUR 58 594.00
+Mobility of Researchers and Innovators
+tbd.
+EUR 43 300.00
+Presentation at Conferences organised by Third Parties
+tbd.
+EUR 2 000.00
+Dissemination and Communication Products
+1
+EUR 2 500.00
+Other Expenses Related to Scientific Activities (OERSA)
+0
+EUR 0.00
+SCIENCE EXPENDITURE : EUR 224 283.40
+Financial and Scientific Administration and Coordination (FSAC) - MAX. 15% 15%
+EUR 33 642.51
+TOTAL GRANT : EUR 257 925.91
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+Indicative Information
+Details for Meetings
+Meeting 1
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+Diversity challenges and stakeholders&#x27; engagement
+Attendance Type :
+Hybrid
+Location :
+Cluj Napoca (Romania)
+Date :
+01/02/2023 - 02/02/2023
+Total Participants :
+40
+Total Reimbursed :
+15
+Travel Costs :
+EUR 10 331.40
+Local Organiser Support :
+EUR 2 000.00
+Meeting 2
+Type :
+Core Group Meeting, Workshops/Conferences
+Title :
+Diversity challenges for a sustainable Fintech
+Attendance Type :
+Hybrid
+Location :
+Pavia (Italy)
+Date :
+13/04/2023 - 14/04/2023
+Total Participants :
+40
+Total Reimbursed :
+8
+Travel Costs :
+EUR 8 024.00
+Local Organiser Support :
+EUR 1 000.00
+Meeting 3
+Type :
+Workshops/Conferences
+Title :
+COST FinAI - Fintech and AI in Finance - Policy implications
+Attendance Type :
+Hybrid
+Location :
+Brussels (Belgium)
+Date :
+15/05/2023 - 16/05/2023
+Total Participants :
+50
+Total Reimbursed :
+14
+Travel Costs :
+EUR 15 148.00
+Local Organiser Support :
+EUR 0.00
+Meeting 4
+Type :
+Working Group Meeting
+Title :
+COST FinAI WG3: Transparency of Digital Asset Investments
+Attendance Type :
+Hybrid
+Location :
+Winterthur (Switzerland)
+Date :
+26/05/2023 - 26/05/2023
+Total Participants :
+40
+Total Reimbursed :
+6
+Travel Costs :
+EUR 5 322.00
+Local Organiser Support :
+EUR 0.00
+2
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+Meeting 5
+Type :
+Workshops/Conferences
+Title :
+Women in Fintech III - Portugal
+Attendance Type :
+Hybrid
+Location :
+Lisbon (Portugal)
+Date :
+01/06/2023 - 02/06/2023
+Total Participants :
+40
+Total Reimbursed :
+11
+Travel Costs :
+EUR 10 835.00
+Local Organiser Support :
+EUR 1 000.00
+Meeting 6
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+COST FinAI meets Romania
+Attendance Type :
+Virtual
+Location :
+N/A
+Date :
+16/06/2023 - 16/06/2023
+Total Participants :
+100
+Total Reimbursed :
+0
+Travel Costs :
+EUR 0.00
+Local Organiser Support :
+EUR 500.00
+Meeting 7
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+Machine Learning, Artificial Intelligence and Data Protection in Fintech
+Conference WG1, WG2, CG
+Attendance Type :
+Hybrid
+Location :
+Dublin (Ireland)
+Date :
+06/07/2023 - 07/07/2023
+Total Participants :
+40
+Total Reimbursed :
+8
+Travel Costs :
+EUR 8 424.00
+Local Organiser Support :
+EUR 1 000.00
+Meeting 8
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+Nordic AI and Fintech
+Attendance Type :
+Hybrid
+Location :
+Helsinki (Finland)
+Date :
+10/07/2023 - 11/07/2023
+Total Participants :
+40
+Total Reimbursed :
+12
+Travel Costs :
+EUR 12 252.00
+Local Organiser Support :
+EUR 1 000.00
+3
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+Meeting 9
+Type :
+Core Group Meeting, Management Committee Meeting, Working Group
+Meeting
+Title :
+COST FinAI - Fintech and AI in Finance - MC, WG and Core group
+meeting
+Attendance Type :
+Hybrid
+Location :
+Bern (Switzerland)
+Date :
+27/09/2023 - 28/09/2023
+Total Participants :
+120
+Total Reimbursed :
+39
+Travel Costs :
+EUR 40 053.00
+Local Organiser Support :
+EUR 1 000.00
+Details for Training Schools
+Training School 1
+Title :
+COST FinAI Training school Data science for sustainable economics
+and finance
+Attendance Type :
+Hybrid
+Location :
+Berlin (Germany)
+Date :
+20/02/2023 - 24/02/2023
+Number of Trainers :
+10
+Number of Trainees :
+10
+Travel Costs Trainers :
+EUR 3 344.00
+Travel Costs Trainees :
+EUR 3 344.00
+Local Organiser Support :
+EUR 1 000.00
+Training School 2
+Title :
+COST FinAI - Fintech and AI in Finance - Training School for the latest
+technologies and upcoming challenges
+Attendance Type :
+Hybrid
+Location :
+Tirana (Albania)
+Date :
+26/04/2023 - 28/04/2023
+Number of Trainers :
+10
+Number of Trainees :
+40
+Travel Costs Trainers :
+EUR 8 050.00
+Travel Costs Trainees :
+EUR 6 900.00
+Local Organiser Support :
+EUR 1 000.00
+Training School 3
+Title :
+COST FinAI - Fintech and AI in Finance - Training School on current
+state-of-the-art and future challenges - Risks and Digital A
+Attendance Type :
+Hybrid
+Location :
+Enschede (Netherlands)
+Date :
+19/06/2023 - 23/06/2023
+Number of Trainers :
+10
+Number of Trainees :
+15
+Travel Costs Trainers :
+EUR 8 330.00
+Travel Costs Trainees :
+EUR 8 330.00
+Local Organiser Support :
+EUR 1 000.00
+4
+
+
+</pre><div class="page-break" data-page="Page 5"></div><pre class="text-content">
+Training School 4
+Title :
+Advanced Statistical Modelling for Fintech, financial inclusion and
+inequality (AFFINE)
+Attendance Type :
+Hybrid
+Location :
+Naples (Italy)
+Date :
+13/09/2023 - 15/09/2023
+Number of Trainers :
+10
+Number of Trainees :
+20
+Travel Costs Trainers :
+EUR 8 148.00
+Travel Costs Trainees :
+EUR 8 148.00
+Local Organiser Support :
+EUR 1 000.00
+Details of Grants
+Mobility of Researchers and Innovators
+Total budget for Short Term Scientific Mission grants (STSM):
+EUR 14 000.00
+Total budget for Virtual Mobility grants (VM):
+EUR 29 300.00
+Presentation at Conferences
+Total budget for ITC Conference grants:
+EUR 0.00
+Total budget for Dissemination Conference grants:
+EUR 2 000.00
+Details for Dissemination and Communication Products
+Item 1
+Title :
+Website improvement
+Dissemination and Communication
+Product :
+Action Website
+Amount :
+EUR 2 500.00
+Details for Other Expenses Related to Scientific Activities (OERSA)
+You have no Other Expenditures Related to Scientific Activities.
+Powered by TCPDF (www.tcpdf.org)
+5
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

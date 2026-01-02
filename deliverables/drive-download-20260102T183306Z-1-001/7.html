@@ -1,0 +1,1729 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>7</h1>
+        <div class="meta">Source: 7.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>7</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>11 pages</span>
+                    <span>68,613 characters</span>
+                    <span>11,813 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+PPay: Micropayments for Peer-to-Peer Systems
+Beverly Yang
+Hector Garcia-Molina
+{byang, hector}@db.stanford.edu
+Stanford University
+ABSTRACT
+Emerging economic P2P applications share the common need for
+an eﬃcient, secure payment mechanism. In this paper, we present
+PPay, a micropayment system that exploits unique characteristics
+of P2P systems to maximize eﬃciency while maintaining security
+properties. We show how the basic PPay protocol far outperforms
+existing micropayment schemes, while guaranteeing that all coin
+fraud is detectable, traceable and unproﬁtable. We also present
+and analyze several extensions to PPay that further improve eﬃ-
+ciency.
+Categories and Subject Descriptors
+C.2.4 [Computer-Communication Networks]: Distributed
+Systems—Distributed Applications
+Keywords
+Economics, Security, Design, Performance
+General Terms
+peer-to-peer, micropayments
+1.
+INTRODUCTION
+In recent years, peer-to-peer (P2P) applications have emerged
+as a popular way to share huge amounts of data, compute
+cycles, knowledge/expertise, and other resources.
+For ex-
+ample, as of April 30 2003, the KaZaA [9] multimedia ﬁle
+sharing application reported over 4.5 million users sharing
+a total of 7 petabytes of data.
+The reason P2P systems
+can achieve such scale is their ability to pool together and
+harness large amounts of resources at the “edge” of the net-
+work (i.e., at the peers), rather than relying on expensive
+centralized resources.
+Recently, the “killer” application of free multimedia ﬁle
+sharing has come under legal ﬁre from the recording indus-
+try. As a result, new P2P applications are emerging, such as
+pay-per-transfer ﬁle sharing systems, Grid-style computing
+Permission to make digital or hard copies of all or part of this work for
+personal or classroom use is granted without fee provided that copies are
+not made or distributed for proﬁt or commercial advantage and that copies
+bear this notice and the full citation on the ﬁrst page. To copy otherwise, to
+republish, to post on servers or to redistribute to lists, requires prior speciﬁc
+permission and/or a fee.
+CCS’03, October 27–31, 2003, Was hington, DC, U SA.
+Copyright 2003 ACM 1-58113-738-9/03/0010 ...$5.00.
+systems, web service catalogs/service discovery, data stor-
+age/archival systems, etc. The goal of these new applica-
+tions are for the rightful owners of goods or services to be
+compensated; therefore they all share a common need: an ef-
+ﬁcient and secure micropayment mechanism, by which peers
+can purchase services from one another.
+The problem with most existing micropayment schemes is
+the heavy load on the trusted, centralized broker. A broker
+is required to handle accounts, distribute and cash coins,
+provide security (such as double-spending detection), etc.
+Although payments need not be online, eventually the bro-
+ker must take some action for every transaction; as a result,
+broker load is always O(n) in the number of transactions.
+Brokers therefore present a scalability and performance bot-
+tleneck for any system using these micropayment schemes.
+However, P2P applications have two main characteristics
+that we can exploit to address the above problem:
+• First, peers serve as both vendors, who sell goods, and
+buyers, who purchase them. As a result, a transferable
+coin can be used in many transactions before the broker
+must be involved in cashing it.
+• Second, and more importantly, are the massive resources
+available at the peers themselves. Like other P2P appli-
+cations, if we can tap into this pool of resources and shed
+the broker’s load onto the peers, we can build a micro-
+payment scheme with much better scalability and perfor-
+mance properties than existing ones.
+The main challenge in exploiting the above two points is
+to ensure that the security properties of the scheme are not
+compromised. For example, transferable coins delay the de-
+tection of coin fraud, and we now want operations normally
+done by the trusted broker to be performed by untrusted
+peers.
+In this paper, we present PPay1, a micropayment scheme
+that addresses the dual problem of improving performance
+while maintaining security. PPay only requires broker in-
+volvement when peers open or close accounts, for arbitra-
+tion, and in limited cases, to perform services on behalf of
+oﬄine peers. We show that under realistic application sce-
+narios, PPay signiﬁcantly outperforms existing schemes in
+terms of broker load.
+At the same time, however, PPay
+guarantees that all fraud is detectable and traceable. Our
+contributions are as follows:
+• We present (Section 3) the basic PPay protocol for ﬂoat-
+ing, self-managed coins.
+• We show (Section 4) how the necessary security properties
+hold.
+1“PPay” is short for PeerPay
+300
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+• We describe (Section 5) several extensions to the basic
+protocol that greatly improve system performance.
+• We present a detailed performance analysis (Section 6),
+using simulations to (1) show PPay outperforms existing
+micropayment schemes in our target application scenario
+(Section 7.1), (2) determine the special cases in which
+PPay is not better, and (3) show how to tune the per-
+formance of PPay by setting the appropriate parameter
+values for our extensions (Section 7.2).
+We believe that our performance analysis is unique in this
+ﬁeld, where most schemes are proposed and only qualita-
+tively analyzed.
+Preliminaries.
+One very important point to keep in mind
+is that micropayments are payments of a small amount.
+Therefore, (1) utmost security is not required, and (2) the
+payment mechanism must be lightweight, otherwise the cost
+of the scheme will outweigh the value of the payment. A
+real-world analogy to vending machines is illustrative. Be-
+cause the goods are low-cost, it is not proﬁtable to hire an
+employee to attend the machine. As a consequence, candy
+bars may be stolen, or clients may receive low-quality, stale
+candy. Likewise, most micropayment schemes (all schemes
+known to the authors) do not guarantee fair exchange of
+goods and payment. An escrow service (e.g., [8]) would make
+transactions more expensive than the value of the goods.
+Therefore, the main disincentive for cheating is that a bad
+user will be shunned, and will not be able to carry on busi-
+ness in the future.
+Furthermore, because payments are oﬄine, coin fraud (e.g.,
+using a counterfeit coin in a vending machine) may not
+be discovered until after the fact.
+However, oﬄine pay-
+ments are preferred from a practical standpoint because they
+have lower latency, communication costs and computational
+costs. Naturally, large-scale fraud needs to be detected and
+punished (discussed in Section 4). On the whole, however,
+eﬀective micropayment systems simply need “good enough”
+security where fraud is detectable, traceable and unprof-
+itable, while maintaining high eﬃciency.
+Notation.
+The public key of a node N is denoted PKN,
+and the secret key SKN. A message M signed by some key
+K is denoted as {M}K (e.g., {M}SKN ).
+2.
+RELATED WORK
+Many micropayment schemes have been proposed in the
+past, including NetBill [13], DigiCash [4], Millicent [5], and
+the scheme proposed by Rivest et.
+al. [14, 11].
+Each of
+the above schemes require O(n) broker load, where n is the
+total number of payments made. In fact, in DigiCash and
+NetBill, every transaction requires an online broker involve-
+ment, which as we noted earlier, has worse performance but
+better security.
+Payword hash chains [14] and electronic lottery tickets [11]
+greatly reduce the “hidden constant” of this O(n) cost in the
+work of Rivest et. al., but we note that both these techniques
+may also be applied directly to our scheme to reduce peer
+and broker load (see Sections 5.4 and 7.2.3).
+The Millicent scheme also has a very low “hidden con-
+stant,” because the broker does not need to perform any
+signature generations or veriﬁcations. As a result of this low
+security, however, there is no way of proving fraud. Instead,
+the broker will eject any vendor for which it receives many
+complaints. The money spent by the broker to pre-purchase
+that vendor’s scrip will be lost. Furthermore, given the pos-
+sibility of malicious peers “framing” a particular user, we
+prefer a system with stronger security properties.
+At ﬁrst glance, transferable coins [1, 3] seem to exploit
+the ﬁrst characteristic of P2P systems we mentioned in the
+previous section. The basic idea behind transferable coins
+is similar to layered coins discussed in Section 5.2. When
+a user uses a coin for payment, he adds some information
+to the coin, such as his (possibly disguised/hidden) identity.
+Most transferable coin schemes have been developed in a
+macropayment context, and are very heavyweight in order
+to provide additional security properties such as anonymity
+and untraceability. In general, anonymity and untraceability
+are not used for micropayments because the cost outweighs
+the beneﬁts. However, even a lightweight scheme employing
+the basic idea of transferable coins has the following prop-
+erties: (1) the coin grows in size as it is transferred, and (2)
+double-spending detection is signiﬁcantly delayed. For the
+above reasons, in practice, transferable coins must be cashed
+after they have been used a certain number of times. Even
+with transferable coins, then, broker load will still be O(n)
+in the number of transactions. Furthermore, even if coins
+could be transferred indeﬁnitely, eventually when the coins
+are cashed, the broker will receive O(n) amount of data, be-
+cause each coin’s size is O(n′) in the number of times it was
+transferred.
+Elements of the PPay protocol are optimistic, in that
+transactions between peers do not involve the broker unless
+an exception occurs (e.g., a peer dies). Optimistic protocols
+for fair exchange have been studied in the past (e.g., [2]).
+Unlike fair exchange, however, a micropayment protocol will
+always require some broker involvement in non-exception
+cases (e.g., when the ﬁnal payment is made); hence, the
+focus of this work is to minimize broker involvement in non-
+exception cases.
+Finally, MojoNation [12] developed a micropayment sys-
+tem for P2P applications; however, the company has gone
+out of business, and left no documentation of their scheme.
+From informal interactions with others knowledgeable about
+MojoNation, it appears that their system also had broker
+load that was O(n) in the number of transactions.
+In Section 7.1, we provide a performance comparison be-
+tween our scheme and the micropayment scheme of [11, 14]
+in conjunction with transferable coins.
+For a survey over
+these and other schemes, please refer to [10].
+3.
+PPAY PROTOCOL
+In PPay, we present the concept of ﬂoating, self-managed
+currency to greatly reduce broker involvement.
+Floating
+currency allows digital currency to “ﬂoat” from one node
+to another without the involvement of a centralized broker,
+which is only useful when peers act as both buyers and ven-
+dors. However, unlike traditional transferable cash, coins in
+PPay do not grow in size as they are transferred. We say
+the currency is “self-managed” because all security related
+to a coin, except for when the coin is ﬁrst created or cashed,
+is managed by the users who “own” the coins. In this way,
+we harness the resources available at individual peers.
+Basic Implementation.
+Self-managed, ﬂoating currency
+is implemented as follows. A user U purchases digital coins
+from the broker B.
+A raw coin from the broker has the
+following form:
+C = {U, sn}SKB
+(1)
+where sn is the serial number of a coin that uniquely iden-
+tiﬁes it. User U is now the owner of coin C.
+301
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+Now, when U wishes to buy a service from another user
+V , it will send V the assigned coin:
+AUV = {V, seq1, C}SKU
+(2)
+where seq1 represents the sequence number of the assign-
+ment.
+Each assignment of a coin must have a sequence
+number that is greater than the sequence number of the
+previous assignment, if a previous assignment exists (that
+is, if this assignment is not the ﬁrst of this coin). V is now
+the holder of the coin. At any time, a holder may “cash” its
+assigned coins (or any unused raw coins) at the broker for a
+ﬂat fee (the fee is meant to deter users from constantly cash-
+ing coins, which reduces the beneﬁts of ﬂoating currency).
+Instead of cashing the assigned coin, V may instead pay
+another node X using the same coin. In the basic case, V
+sends the following reassignment request to owner U:
+RUV X = {X, AUV }SKV
+(3)
+When U receives RUV X, it keeps a record of the reassign-
+ment request in order to later prove that V “relinquished”
+the that particular assignment of the coin, in the case of a
+dispute.
+After receiving and processing the reassignment request,
+U then sends to V and X the new assignment:
+AUX = {X, seq2, C}SKU
+(4)
+Nodes V and X are responsible for verifying that seq2 &gt;
+seq1. After the new assignment has been issued, the old as-
+signment, AUV , is no longer valid. In Section 5.2 we discuss
+the option of layered coins, where V reassigns a coin to X
+without going through owner U. Note that both V and X
+receive the new assignment. That way, if for some reason X
+claims to have not received the coin, V can send its copy to
+X. If neither V nor X receive the coin, then the scenario is
+identical to the one in which U is simply down.
+Downtime Protocol.
+Peers must be online to manage
+their coins. Say a node V receives a coin owned by U, and
+then attempts to spend it at node X. If U is unavailable
+(e.g., due to network partitions or natural downtime of a
+computer), or if U is attempting an attack, then it will not
+reassign the coin.
+If the owner of a coin is not online (which the holder
+should determine via a ping before sending the reassign-
+ment request), the holder should attempt to make the pay-
+ment via a coin owned by a diﬀerent user who is online.
+In the case where this option is not available, or where the
+holder already sent the reassignment request but received
+no response, the holder may have the coin reassigned by the
+broker. Continuing our example from above, broker B will
+generate the newly assigned coin:
+AUX = {X, seq2, C}SKB
+(5)
+which is identical in content to an assignment issued by
+owner U. The broker will then store the reassignment re-
+quest from V and send it to owner U when it comes back
+online. U will be responsible for detecting any misconduct
+while it was down.
+In the oﬀchance where both the broker and the owner re-
+assign the coin (e.g., because the holder timed out on waiting
+for a response from the owner), no damage is done. Both
+assignments will have the same sequence number and be as-
+signed to the same user; hence they are essentially the same
+assignment. If the holder tries to reassign the coin to two dif-
+ferent users, the owner can detect this misbehavior through
+the two reassignment requests. Please refer to Section 4 for
+a detailed security analysis of our protocol.
+Broker B will charge both V and U a percentage of the
+reassigned amount for this service.
+Both parties must be
+charged in order to prevent attacks where U always pretends
+to be down, or V pretends U is down. Note that this exten-
+sion provides incentives for nodes to remain online, and to
+minimize the involvement of the broker. It also makes any
+attack by the owner unproﬁtable, since the owner will not
+only be charged a fee, but it will also be unable to reuse the
+coin for itself.
+An alternative to this downtime protocol is for peers to
+simply print a new coin whenever it does not hold another
+coin whose owner is alive. What a peer decides to do will de-
+pend on how much it is willing to manage another coin, and
+on what the respective fees are (which the broker controls).
+Later in Section 7.1 we present a performance analysis of
+this alternative method of dealing with oﬄine owners. Even
+if this alternative method is used, however, we still need the
+downtime protocol to handle the case when the owner does
+not respond after the reassignment request has already been
+sent.
+Observations.
+First, the broker’s involvement is now
+limited to O(m), where m is the number of coins issued.
+Since each coin can be involved in thousands of payments
+before being cashed, m may be orders of magnitude lower
+than n, the number of payments made. Furthermore, in the
+“ideal” case where all nodes own the same number of coins,
+and coins are randomly selected to make payments, the cost
+per node of handling coin reassignments remains constant,
+regardless of the number of nodes in the system – i.e., it
+scales perfectly.
+Next, we observe that reassigning a coin is relatively ex-
+pensive (2 signature generations, 4 signature veriﬁcations,
+and 3 extra network messages). However, here we can di-
+rectly use existing micropayment techniques originally in-
+tended to reduce broker involvement. For example, we can
+use electronic lottery tickets [11] to reduce the number of
+coin reassignments by a factor of s, where in practice s can
+safely be set to roughly 100. We refer readers to the citation
+for details.
+Third, PPay is oﬄine with respect to the broker, meaning
+that broker load is conserved. However, because payments
+must (usually) be online with respect to the coin owner,
+overall communication cost and latency is higher than with
+true oﬄine payments. In Section 7.1 we compare the load
+of peers in PPay with other oﬄine schemes.
+Finally, we note that downtimes increase the involvement
+for the broker, but to a limited degree. As downtimes in-
+crease, PPay essentially degenerates into a regular brokered
+scheme where broker involvement is O(n) in the number of
+transactions. In Section 7.1 we show how our scheme main-
+tains good performance, even in the face of many oﬄine
+peers.
+4.
+SECURITY
+As with any oﬄine payment system, coin fraud is an im-
+portant issue that must be carefully addressed. Like other
+micropayment schemes, PPay does not prevent coin fraud
+at the outset, but instead makes fraud unproﬁtable.
+To
+achieve this goal, we need to ensure that (1) any fraud can
+be detected and traced back to the misbehaving peer (Sec-
+tion 4.1), and (2) proper punishments are in place (Sec-
+tion 4.2).
+Note that although a payment scheme can be
+designed to make fraud impossible (e.g., by making all pay-
+ments online through the broker), such a scheme would
+302
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+be very ineﬃcient. Recall that the goal of micropayment
+schemes is to provide an eﬃcient payment mechanism with
+“good enough” security – i.e., where fraud is unproﬁtable.
+Throughout this discussion, we assume that the broker is
+trustworthy. For a discussion on why this is a reasonable
+assumption, please refer to [17].
+4.1
+Detection
+To assure that coin owners and holders cannot commit
+fraud without leaving behind proof of misconduct, the fol-
+lowing invariants must hold:
+1. If H is the valid holder of coin C owned by U, then U
+does not have proof that H has relinquished its valid
+assignment. Proof of relinquishment is in the form of a
+signed reassignment request from H for coin C, for the
+speciﬁc assignment in question (i.e., with the matching
+sequence number).
+2. The sequence number of each assigned coin is greater
+than the sequence number of the preceding assignment
+of the coin.
+3. If H is not the valid holder of coin C, then U can
+refute any assignment that H claims with proof of re-
+linquishment (as deﬁned earlier).
+Note that as a consequence of invariant 3, the owner of a
+coin must keep a full “audit trail” of the coin.
+To show that our system can detect and trace various
+attacks, we must prove the following theorem:
+Theorem 1. The above three invariants hold at all times,
+for all coins C.
+For a full proof of the above theorem, we refer readers to
+our extended report [17]. The proof covers both the default
+protocol, where owners reassign their own coins, and the
+downtime protocol, where owners are oﬄine and the broker
+must reassign their coins.
+Attack Analysis.
+Given that Theorem 1 holds, it is
+now a simple matter for malicious peers to be detected and
+identiﬁed. Here we enumerate the most common attacks on
+a micropayment scheme, and show how all instances of the
+attack can be detected and traced back to the misbehaving
+peer.
+First, the holder of a coin may commit fraud by replicat-
+ing an assigned coin and spending it twice. For example,
+say owner U assigns a coin to V . User V then reassigns the
+coin to X, and then tries to reassign it again to Y . Given
+invariant 3, however, owner U will always be able to refute
+the second reassignment of coin C. Note that if owner U
+was oﬄine when V replicated its assignment, then the sec-
+ond, invalid assignment will be retroactively refuted when
+U comes back online (details in [17]).
+The owner of a coin may commit fraud by wrongfully
+denying validity of an assignment, or by double-spending a
+coin (generating two coins with the same serial number). As
+an example of wrongful denial, a peer V may hold a valid
+assignment of coin C owned by peer U. If V tries to reassign
+C, and U claims that V ’s assignment is invalid, then V will
+lose the value of that coin. By our protocol, wrongful denial
+is prevented by default, because the burden falls upon the
+owner to prove that a given assignment is invalid.
+If an
+assignment is valid, by invariant 1, no such proof exists.
+As an example of double-spending, an owner U may
+assign a raw coin C to V , and then assign the coin to X
+as well. The broker evades the double-spending attack by
+recording the serial number and owner of each coin that has
+been cashed, and the holder of the coin who cashed it. If
+multiple coins with the same owner and serial number are
+cashed, the broker will ask the owner of the coin to prove
+the invalidity of one or both of the assignments. If the owner
+is able to refute an assignment, then the holder of the coin
+will be punished. If the owner is not able to refute either
+assignment, then the owner will be punished. By invariants
+1 and 3, the owner will only be punished if it double-spent
+the coin.
+4.2
+Punishment and Risk Management
+In real life, if a business can be proven to be corrupt, then
+legal action can be taken. Likewise, because fraud can be
+exposed with proof, then the broker will be involved in the
+arbitration. In general, the broker B will require the misbe-
+having party to pay for any “fake” coins, as well as a penalty
+fee for misbehavior.
+If a node continues to misbehave, the
+broker may boot the node out of the system (e.g., never al-
+low the node to cash in its coins, and/or inform other users
+to avoid the node).
+Unfortunately, in any oﬄine payment scheme, it is pos-
+sible that when credit fraud is detected, the cheater is not
+able or available to make payments. In our system users
+must provide a valid credit card to the broker when they
+ﬁrst join the system, and the broker can charge the penalty
+fees via this payment channel. However, if a user cheats,
+immediately closes down his credit card account, and dis-
+appears from the system, the broker can no longer charge
+the penalty fees. In the worst situation, the business owning
+the broker must settle with the user out-of-system, using the
+personal information provided when the user ﬁrst joined the
+system (e.g., name, address, phone). Fortunately, we believe
+this type of “cheat and run” attack can be avoided in most
+or all cases given the following proper disincentives.
+First, bear in mind that individual micropayments are
+worth very little.
+Hence, if the user cheats with a small
+number of coins, then the loss to the broker is negligible. To
+guard against medium to large cheat amounts, the broker
+may charge a deposit when the user ﬁrst joins the system.
+When a user permanently leaves the system, he notiﬁes the
+broker, who then recalls all coins belonging to that user.
+After the coins have been recalled and the broker has de-
+termined no cases of cheating, the user receives his deposit
+back, and may cash any coins it is currently holding.
+If
+the user cheats and disappears, without going through the
+formal process of leaving the system, he forfeits his deposit.
+It is also possible that a user cheats with an enormous
+number of coins that a reasonable deposit can not cover.
+However, such a scenario means that the user must pur-
+chase an enormous number of low-value goods (e.g., 100000
+web pages), which is not likely or realistic behavior. This
+observation is in contrast to credit card fraud, where the
+cheater can select from a huge range of goods that are po-
+tentially very expensive. Furthermore, to select and down-
+load all these goods will take quite some time. Because the
+user cheated with an enormous number of coins, there is a
+greatly increased chance that the user will be caught before
+he ﬁnishes downloading the goods. Finally, the user will al-
+ways be caught, eventually. Hence, even if the user is able to
+cheat and disappear before he is caught, he will eventually
+face a collection agency and bad credit as a consequence.
+Given these disincentives, then, we believe that large-scale
+cheating will be very rare or nonexistent.
+In terms of a peer’s risk, the broker will guarantee refunds
+303
+
+
+</pre><div class="page-break" data-page="Page 5"></div><pre class="text-content">
+to cheated peers in all cases except large-scale fraud. With
+large-scale fraud, the broker will provide refunds as far as
+can be covered by the bad peer’s deposit. The remainder of
+the fraud amount will be covered if the broker can extract
+payment from the bad peer through out-of-system means.
+Individual peers must therefore manage their risk; e.g., by
+not accepting too many coins from the same user, or by
+periodically cashing their coins.
+5.
+ISSUES AND EXTENSIONS
+Here we consider a few issues in the scheme described,
+and provide extensions that solve or mitigate the problems.
+For each extension proposed, we also discuss the associated
+security considerations and risks.
+5.1
+Limit Certiﬁcates
+Printing raw coins can be expensive for the broker, given
+that the broker’s load is otherwise very low. Observe that
+the purpose of a raw coin is to notify other users that the
+owner U has purchased this coin; hence, the coin can later be
+redeemed at the broker. To achieve this same functionality,
+we can instead have users print their own coins, given proof
+that the broker has authorized them to do so. When a user
+U ﬁrst joins the network, it obtains a limit certiﬁcate from
+the broker that speciﬁes how many coins U is authorized to
+print. The certiﬁcate has the following format:
+L = {U, liml, limu}SKB
+(6)
+Field liml denotes the lower bound on the serial number of
+the coins that U may print, while limu denotes the upper
+bound. User U will typically need to prepay the value of
+limu −liml + 1 coins. U may now print his own “raw coin”
+with the following format:
+C′ = {sn, L}SKU
+(7)
+where it must be the case that liml ≤sn ≤limu. Any raw
+coin with a serial number outside of the limits set by the
+certiﬁcate is not valid.
+Security Considerations.
+Note that while user U may
+print a coin with the same serial number twice, such an
+action is no diﬀerent from U copying and double-spending
+a raw coin issued by the broker.
+The security properties
+of self-printed coins with limit certiﬁcates is therefore no
+diﬀerent from the security properties of broker-printed raw
+coins.
+5.2
+Layered Coins
+Rather than requiring a node V to go through owner U to
+reassign coin C to node X, V can instead reassign C itself
+by directly sending X the following message:
+PUV X = {X, V, seqn, AUV }SKV
+(8)
+where seqn is greater than the sequence number of AUV .
+Similarly, X can then reassign the coin to some node Y by
+adding another “layer” to PUV X.
+Each layer of the coin
+is eﬀectively a reassignment request, and serves as proof of
+relinquishment. When a node ﬁnally does go to U to have
+the coin reassigned, U can obtain all necessary proofs by
+“peeling” oﬀthe layers.
+Layered coins are a lightweight implementation of tradi-
+tional transferable cash, with no anonymity or untraceabil-
+ity properties. Like transferable cash, layered coins grow in
+size as they are transferred. Unlike transferable cash, how-
+ever, layered coins in our scheme will eventually be peeled
+at a peer, rather than the broker; therefore broker load is
+signiﬁcantly lower.
+Security Considerations.
+In our extended report [17],
+we show how Theorem 1 continues to hold in the presence
+of layers. However, layers may still delay the discovery of
+fraud. For example, say user V replicates coin C belonging
+to owner U. If layers are not allowed, V will be caught as
+soon as it tries to spend C the second time. With layers,
+however, V can reassign coin C to two users without U’s
+knowledge. Only after both coins are peeled, can U pinpoint
+V as the misbehaving party. In Section 7.2.1 we study the
+tradeoﬀof layered coins between security and eﬃciency.
+5.3
+Coin renewal
+To limit the amount of state each peer must keep (e.g.,
+audit trails, payment history), we can require coins to be re-
+newed during a certain time window (e.g., a 30-day window
+starting at time t). After the renewal window closes, the
+owner of the coin may purge the audit trail of the coin and
+start the audit trail anew. Further, any payment history in-
+volving an expired coin may also be purged. Any coin that
+has a renewal date in the past is considered invalid. If nodes
+do not renew their coins, then they forfeit the coins after the
+renewal window closes. Hence, the renewal window must be
+large enough such that nodes have a fair chance to renew
+the coins in their possession.
+Just as with reassignment, if V tries to renew a coin at
+U but U is not alive, then V may have the coin renewed at
+broker B, at a fee for both V and U. Alternatively, V may
+simply cash the coin if it is about to expire, thereby taking
+it out of circulation. The decision V makes will depend on
+the respective fees charged for renewal and cashing.
+Assigned coins now have the following form:
+AUV = {V, ts, rb, re, C}SKU
+(9)
+where rb and re designate the begin time and end time of
+the renewal period, respectively, and ts is the current times-
+tamp. When V wants to renew a coin, it sends the following
+renewal request to U:
+N = {AUV }SKV
+(10)
+U will then return the assigned coin to V with a new renewal
+period speciﬁed:
+AUV = {V, ts, r′
+b, r′
+e, C}SKU
+(11)
+Security Considerations.
+In our extended report [17],
+we discuss what happens if owner U tampers with the re-
+newal window (e.g., sets the window to a time in the past)
+and how a holder V can easily guard against that attack.
+We also prove that Theorem 1 continues to hold in the pres-
+ence of renewals. Here, we brieﬂy discuss how the size of the
+renewal period aﬀects the worst-case time to detect fraud.
+As we mentioned in Section 4.2, we expect large-scale
+fraud to be rare, and likely to be detected within a short
+amount of time. However, in the worst case, fraud will not
+be detected until conﬂicting coins (i.e., with the same serial
+number) are cashed, reassigned or renewed at the broker.
+There are no guarantees as to when a given coin will be
+cashed or reassigned; however, the coin must be renewed
+within the renewal period. Hence, the worst-case time to
+detect any kind of fraud is equal to the renewal period. In
+practice, we must balance the tradeoﬀbetween renewal load
+and worst-case fraud detection. In Section 7.2.2, we discuss
+further this tradeoﬀbetween security and performance.
+304
+
+
+</pre><div class="page-break" data-page="Page 6"></div><pre class="text-content">
+5.4
+Soft Credit Windows
+In some systems, payments are not only made for large
+items, such as downloads, but also for small items, such
+as forwarding messages or answering queries. Such systems
+use economic incentives to ensure the proper operation of
+the P2P infrastructure. Because these “picopayments” may
+need to be very fast and will occur very frequently, we cannot
+require a signature generation and veriﬁcation per payment.
+Furthermore, because the value of picopayments are very
+low (fraction of a micropayment), security surrounding them
+can also be low.
+To make payments fast, we observe that in P2P systems,
+the economic relationship between nodes is often symmetric.
+For example, U may provide several services to V , but later,
+V will then provide services to U.2 Due to this symmetry,
+payments between nodes can “cancel” each other out before
+the exchange of a signed lottery ticket or coin is required.
+We take advantage of the above observation by utilizing
+soft credit windows.3 For each node V that U interacts with,
+U must keep track of the balance MUV of “picopayments” it
+owes that node. The balance begins at 0. Each time V per-
+forms a service for U, MUV is increased. When U performs
+a service for V , MUV is decreased. At the same time, V is
+maintaining MV U. Under correct behavior, MUV = −MV U
+at all times. Naturally, peers can easily behave incorrectly;
+we will discuss this problem shortly. When MUV falls out
+of the range (−x, x), then U must pay V , or vice versa. The
+balances are then reset to 0.
+We make several observation about the performance of
+soft credit windows. First, if x is large enough to handle the
+variance in balance, theoretically, two nodes may never need
+to exchange coins, even if they provide enormous amounts of
+service for each other.
+Second, soft credit windows require
+you keep state per node you interact with, but this per-peer
+state is very small. Even if each node interacted with a mil-
+lion other peers in the system, total state would be on the
+order of 6MB of memory (i.e., one integer and one short
+per node), which is not at all signiﬁcant on today’s comput-
+ers. Finally, soft credit windows are very eﬃcient, not only
+because of the symmetric relationship between nodes, but
+also because no signature generation/veriﬁcation is needed.
+Even if the relationship is totally asymmetric, we can still
+utilize soft credit windows to decrease the number of signa-
+ture operations required.
+Security Considerations.
+Because soft credit windows
+do not provide proof that one party is indebted to another,
+choosing window size x presents a tradeoﬀbetween eﬃciency
+and risk. As we observed earlier, large x may result in super-
+linear reduction in the number of coin reassignments. How-
+ever, the larger x is, the more a peer stands to lose if it is
+cheated, for example, if the other peer refuses to make a
+payment when the balance reaches x. Note that it is possi-
+ble for to U believe the balance has exceeded the window,
+but V disagrees. If this situation occurs frequently, then U
+should learn to avoid V . However, if the situation occurs
+2Symmetric behavior may not be seen for large items, e.g., in
+download patterns. However, if payments are made for small
+items such as forwarding messages or processing queries,
+then relationships become much more symmetric.
+3The authors have been informed that MojoNation [12] used
+a similar idea, which they called bilateral accounting. How-
+ever, no documentation is available to conﬁrm or cite. Be-
+yond the introduction of this idea, we also discuss risk man-
+agement for this technique, as well as a performance analysis
+in Section 7.2.3
+infrequently (e.g., due to honest mistakes, lost messages),
+then the loss of a few picopayments is a very small deal. In
+Section 7.2.3 we will explore this tradeoﬀbetween eﬃciency
+and risk as x varies, and as the number of misbehaving peers
+in the system varies.
+Because potential loss sustained by a peer can be high,
+we need to investigate ways of bounding this loss. We now
+present the NetLossCap method of managing the risk of
+credit loss.
+Let cij(t) denote the credit (in picopayments) peer pj owes
+peer pi at time t (cij(t) = −cji(t)). Potential credit loss li(t)
+of peer pi is deﬁned as li(t) =
+ pj∈network cij(t). The max-
+imum value of cij(t) is x (the size of the window), hence
+maximum possible loss li(t) is x ·∥network∥. Loss is implic-
+itly potential until a peer permanently leaves the system.
+In the NetLossCap method, peers set a cap value v that
+limits credit loss li at any point in time. If li(t) = v and
+a peer pj wishes to extend its credit at pi, pi will refuse.
+Instead, in order to receive service, pj will need to pay pi
+a coin. In paying this coin, pj is essentially extending pi
+x picopayment credits (since a coin is worth one window’s
+worth of picopayments). Loss li(t) is thus decreased by x,
+and pj can now receive service at pi.
+Note that when pj pays pi the coin, other requirements
+should not be broken. In particular, if lj(t) &gt; v −x prior
+to the coin payment, then pj cannot pay pi – otherwise
+lj(t) will go over the cap value.
+In addition, pj cannot
+pay pi if cij(t) &gt; 0 prior to the coin payment, otherwise
+cij(t) + x will fall out of the credit window. No exchange of
+credit and service will occur unless pj can aﬀord to make the
+payment without unnecessarily aﬀecting its own risk.
+In
+Section 7.2.3, we investigate the impact of NetLossCap on
+system performance and risk.
+Hash Chains.
+An existing, popular way to make fast,
+small payments are Payword hash chains [14]. For readers
+not familiar with hash chains, a longer discussion of the
+statements made in this section can be found in [17].
+Unlike soft credit windows, hash chains present no credit
+loss risk to peers, assuming broker functionality is extended
+to honor partial hash chains.
+However, maintaining hash
+chains has high state overhead. In a system with a million
+peers and hash chains of length 100, over 4GB of state per
+peer must be maintained. Furthermore, because hash chains
+can only express an increasing amount of credit (as opposed
+to both increasing and decreasing, like soft credit windows),
+they can not take advantage of the symmetric relationship
+between peers. If users A and B exchange an inﬁnite but
+balanced number of picopayments, the will need to exchange
+an inﬁnite number of coins, rather than zero coins. In Sec-
+tion 7.2.3 we compare the performance of hash chains and
+soft credit windows.
+6.
+EXPERIMENTAL SETUP
+In the previous three sections we have provided a formal
+description of the PPay micropayment scheme.
+Now, we
+wish to use simulations to answer the following important
+questions: (1) Is PPay feasible in terms of broker load, peer
+load, and the amount of state needed to implement our secu-
+rity features? (2) How does PPay perform relative to other
+schemes? What usage scenarios produce best or worst case
+behavior? (3) How should we tune parameter values (such
+as credit window size) for best performance?
+We evaluate PPay in the context of a ﬁle-sharing sys-
+tem using the GUESS protocol [7] to discover ﬁles. GUESS
+305
+
+
+</pre><div class="page-break" data-page="Page 7"></div><pre class="text-content">
+Name
+Default
+Description
+Network Size
+1000
+Number of peers in the network
+Cache Size
+100
+Size of each peer’s pong cache
+Query Rate
+9.26
+The expected number of queries per
+·10−3
+user per second
+Lifespan
+1
+Multiplier used to extend the
+Multiplier
+period of time peers remain online
+Downtime
+1
+Multiplier used to extend the
+Multiplier
+period of time peers remain oﬄine
+Credit Window
+10
+Size of a soft credit window or
+Size
+hash chain
+Credit Window
+Payword
+The type of credit window used
+Type
+(Payword, soft credit windows)
+Max Layers
+2
+Maximum number of layers allowed
+on a coin before it must be peeled
+Renewal Wait
+30 days
+Elapsed time between audit trail
+purges for a given coin
+Scheme
+PPay
+The micropayment scheme used
+(PPay, PPay*, or RM)
+Net Loss Cap
+∞
+Maximum allowed net loss per peer
+due to soft credit windows
+Table 1: System and Micropayment parameters
+is a new protocol from the Gnutella Development Forum
+(GDF) aimed at addressing performance and security issues
+in Gnutella [6] – the largest open P2P system in operation
+today.
+In brief, under the GUESS protocol each peer keeps
+a “pong cache”, which is a list of IP addresses of other peers
+in the system. When a peer has a query, it “probes” the
+peers in its pong cache with the query message, one by one,
+until a match is found. There are many policies by which
+peers can order their probes; for simplicity, we assume that
+the order is random.
+One problem with the current GUESS protocol is that it
+does not provide the proper incentives for peers to cooperate
+– peers can easily cheat the system by sending out its probes
+all at once. This behavior incurs a much higher load on other
+peers, while drastically improving the response time of the
+search for the querying peer. If all peers act according to
+their best interests, the system might fail as if under a denial
+of service (DoS) attack. In order for GUESS to work, there
+must be a way to give peers an incentive to adhere to the
+protocol. One straightforward proposal is to have peers pay
+for each probe. Peers will then be motivated to probe as few
+peers as possible to answer their queries. In our evaluation,
+we use the PPay micropayment system to implement this
+incentive mechanism.
+In particular, peers will make one
+picopayment per probe. Coin payments are then made as
+credit windows are ﬁlled.
+6.1
+Metrics
+Performance of a micropayment scheme is measured pri-
+marily by load.
+Load is deﬁned as the amount of work
+an entity must do per unit time. Load is measured along
+three resource types: incoming bandwidth, outgoing band-
+width, and processing cost. Bandwidth is measured in bits
+per second (bps). Processing cost is conceptually measured
+in cycles per second (Hz), although we actually measure
+costs in coarse units before converting them to approximate
+cycles (described further below). We look at load from two
+perspectives: the broker, and the peers.
+Recall that our
+goal is not overall eﬃciency, but broker eﬃciency. At the
+same time, however, we want to ensure that peer loads are
+reasonable.
+In addition to load, we also look at state, and credit loss.
+State is simply the number of “proofs” (i.e., reassignments
+or renewals) that an entity must store. Because the amount
+of state varies over time, we will be measuring the average
+state over time.
+6.2
+Parameters
+We will be comparing the performance of diﬀerent conﬁg-
+urations of PPay, where a conﬁguration is deﬁned by a set
+of system and micropayment parameters, listed in Table 1.
+Most system parameters will remain unchanged in our ex-
+periments, as they do not qualitatively aﬀect the results. We
+will describe these and other parameters in further detail as
+they appear later in the section. In our experiments, unless
+otherwise speciﬁed, the default parameter values are used.
+Note that Network Size = 1000 is a modest number of
+peers, compared to the scale of an actual P2P application.
+We had to limit network size because of the length of our
+simulations. However, most results shown in Section 7 should
+be a good qualitative representation of any network size, be-
+cause PPay is scalable. For peer loads, although application-
+level purchases grows with the number of peers in the sys-
+tem, so does the number of peers that manage coins.
+In
+fact, peer load decreases as network size increases because
+more payments are absorbed by the greater total amount of
+picopayment credit (recall that maximum possible credit is
+equal to the network size times the size of the credit win-
+dow). Broker load scales sublinearly with network size for
+the same reason. The only potentially unscalable result the
+NetLossCap method for bounding credit loss, and we discuss
+this issue in Section 7.2.3.
+Please refer to [17] for ﬁgures
+showing the above scalability results.
+6.3
+Simulation Framework
+In a given simulation run, we simulate Network Size peers
+participating in the GUESS protocol. At the beginning of
+the simulation, peers begin with a limit certiﬁcate but no
+printed coins (e.g., as if the peers just joined the network).
+Over time peers print new coins as they are needed. We
+assume the limit certiﬁcate is large enough to handle each
+peer’s needs for the duration of the simulation, which is 40
+simulated days. Throughout the simulation, peers may go
+oﬄine and come back online.
+The duration of these on-
+line and oﬄine periods follow the distribution of lifespans
+and downtimes measured by [15] over the Gnutella net-
+work. We may tune online or oﬄine times via the Lifespan
+Multiplier and Downtime Multiplier parameters, respec-
+tively. If Lifespan Multiplier = x, then all values in the
+measured distribution of lifetimes are multiplied by x. At
+the end of the simulation, we assume that all peers leave
+the system and cash in their coins. Doing so is a worst-case
+scenario for our scheme since in practice, the existing coins
+can continue to “ﬂoat” before they are cashed.
+The “arrival” of queries at each peer follows a Poisson
+process with rate Query Rate. When a peer has a query, it
+will sequentially probe the peers in its pong cache, which is
+of size Pong Cache Size. Peers in the cache may be oﬄine,
+and the queryer need only pay peers that are online.
+To
+determine whether a peer returns a result for a query, we
+use the query model developed in [16]. Though this query
+model was developed for hybrid ﬁle-sharing systems, it is
+still applicable to the ﬁle-sharing systems we are studying.
+The probability of a peer returning a result depends partially
+on the number of ﬁles owned by that peer; number of ﬁles
+owned by peers are assigned according to the distribution
+of ﬁles measured by [15] over Gnutella. If a peer returns a
+result to the queryer, then the query is stopped. Otherwise,
+306
+
+
+</pre><div class="page-break" data-page="Page 8"></div><pre class="text-content">
+the queryer will probe every live node in its cache before
+stopping the query.
+When a peer makes a payment, it will ﬁrst try to pay
+with a coin for which the owner is online. If the peer has no
+such coin, it will attempt to pay with a coin via layers. If
+all its coins already contain the maximum number of layers,
+the peer may reassign a coin through the broker, or print
+its own coin if it has a valid limit certiﬁcate (in Section 7.1
+we compare these two alternatives). Within each class of
+coin (e.g., the class of coins whose owners are alive), the
+peer may often choose among several coins in its possession.
+The order in which coins are selected may have security and
+performance implications; for example, a peer V may choose
+a coin owned by another peer U, if V already holds many
+coins belonging to U. This policy decreases V ’s risk if U
+commits large-scale fraud. While the ordering of coins is an
+interesting question, in our simulations coins within a class
+are accessed through a queue.
+Action Costs.
+Our simulations tell us how many “macro
+actions” each entity must execute, such as signature gener-
+ations, message transfers, etc. In order to calculate load,
+we now need to calculate to cost of these actions, measured
+in bytes for bandwidth, and cycles for processing.
+Due to
+space limitations, details on how these costs are determined
+can be found in our extended report [17].
+7.
+RESULTS
+In this section we present and discuss the results of our
+simulations.
+We divide the results into two sections, cor-
+responding to the two main questions that we wish to in-
+vestigate: (1) The performance of the PPay micropayment
+scheme relative to other schemes, and (2) the tradeoﬀs in-
+volved in setting micropayment parameter values.4
+7.1
+Comparison with Existing Schemes
+We compare PPay against the micropayment scheme pro-
+posed by Rivest et.
+al.
+in [11, 14] (the RM scheme).
+We choose the RM scheme among many possible existing
+schemes because it is the most recent research in the area
+known to the authors. In this scheme, users print tokens
+(like coins) to give to vendors as payment. Vendors then
+give these coins to the broker to redeem. In fact, the RM
+scheme is a special case of our scheme in which peers im-
+mediately5 cash every coin they receive.
+On top of RM,
+Payword hash chains are used to delay the payment of a
+coin, as discussed in Section 5.4.
+We also allow the use of
+layered, transferable coins. The maximum number of layers
+allowed before a coin must be cashed is set by Max Layers.
+We compare the RM scheme to two variants of PPay. By
+default, we assume peers prefer printing a new coin over us-
+ing the downtime protocol. If a peer must make a payment,
+and it does not possess any coins whose owners are alive or
+that can be layered, the peer will print a new coin. In the
+second variant, which we call “PPay*”, peers prefer using
+the downtime protocol over printing a new coin. Likewise
+for renewals, in the ﬁrst variant peers prefer to cash a coin
+4Due to space limitations, we report all load results in terms
+of processing cost. Bandwidth results can be omitted be-
+cause in all our experiments, either behavior is comparable
+to processing cost results, and/or the absolute bandwidth
+costs are very low, making them insigniﬁcant relative to pro-
+cessing costs.
+5By immediate, we mean that the coin is not reassigned to
+a diﬀerent user before it is cashed.
+that is about to expire, rather than have it renewed through
+the broker; in PPay*, the preference is switched. While the
+ﬁrst variant conserves broker load in terms of renewals and
+reassignments, it also causes more coins to be printed, which
+must eventually be cashed. In our performance studies, we
+want to see whether this tradeoﬀis worthwhile.
+Figure 1 shows us the broker’s load (work per unit time)
+in the three micropayment schemes in terms of processing
+cost, as Downtime Multiplier is varied. Bars are labeled
+below according to Downtime Multiplier value, and shade
+indicates the micropayment scheme. For now, let us focus
+on Downtime Multiplier = 1, the default case.
+We see from Figure 1 that PPay and PPay* perform sig-
+niﬁcantly better than RM. While the broker must cash O(n)
+coins in RM, where n is the number of transactions, it must
+only cash O(m) coins in PPay and PPay*, where m is the
+number of coins. Therefore, in this simulation RM broker
+load (40.6 · 105 Hz) is over 12 times heavier than in PPay*
+(3.46 · 105 Hz), and over 20 times heavier than in PPay
+(1.98 · 105 Hz).
+At the same time, PPay outperforms PPay* because the
+broker no longer needs to reassign or renew any coins. In-
+stead, for each reassignment/renewal the broker used to do
+in PPay* (which constituted about 43% of broker load), it
+now has to cash at most one new coin. Since cashing (1 veri-
+ﬁcation) is substantially less expensive than reassignment or
+renewal (1 veriﬁcation + 1 generation), broker load is like-
+wise less expensive. The price of PPay falls onto the peer
+(discussed later), rather than the broker, which is a desir-
+able tradeoﬀfrom our perspective. From Figure 1, then, we
+can conclude that ﬂoating, self-managed coins are crucial to
+minimizing broker performance in a P2P application.
+Recall that the distributions of online and oﬄine periods
+are measured directly from the Gnutella network. There-
+fore, these distributions reﬂect the instability of peers, and
+their tendency to come online for short periods of time.6
+Despite peer instability, PPay and PPay* continue to per-
+form well. One interesting question is how far can we “push”
+the instability of peers before the broker in PPay becomes
+overloaded.
+Let us look again at Figure 1. In general, overall application-
+level activity decreases in absolute value as oﬄine periods
+increase in duration (i.e., Downtime Multiplier increases),
+because there are fewer peers online performing queries. At
+Downtime Multiplier = 20, only 3% of all peers are online
+at any given time, on average. We believe this scenario is
+very extreme, yet PPay continues to far outperform RM. At
+Downtime Multiplier = 20, broker load in RM (2.94 · 105
+Hz) is over 7 times heavier than load in PPay (.41 · 105
+Hz). However, broker load in PPay* actually increases as
+application-level activity decreases, because the number of
+reassignments and renewals that must go through the bro-
+ker increases. At Downtime Multiplier = 20, 89% of broker
+load in PPay* (3.59·105 MHz) consists of reassignment load.
+As a result, PPay* has the highest load of all.
+While we have achieved our goal of signiﬁcantly reducing
+broker load, we still need to make sure that peer load does
+not suﬀer. Figure 2 is just like Figure 1, except that it shows
+6These distributions do not reﬂect the case where some
+peers may log on, log oﬀ, and then never come back to the
+network again.
+In our simulations, we assume that even
+though peers are online for short periods of time, they will
+always come back at some (possibly distant) time in the fu-
+ture. This assumption is reasonable in a system where peers
+have an incentive to come back (i.e., to make money).
+307
+
+
+</pre><div class="page-break" data-page="Page 9"></div><pre class="text-content">
+1
+10
+20
+0
+1
+2
+3
+4
+5
+6
+7
+8 x 10
+5
+Downtime Multiplier
+Processing Cost (Hz)
+PPay
+PPay*
+RM
+4.1 x 10 
+6 
+Figure 1:
+Comparison of broker
+processing loads in PPay vs. RM
+as Downtime Multiplier varies
+1
+10
+20
+0
+1
+2
+3
+4
+5
+6 x 10
+5
+Downtime Multiplier
+Processing Cost (Hz)
+PPay
+PPay*
+RM
+Figure 2:
+Comparison of peer
+processing loads in PPay vs. RM
+as Downtime Multiplier varies
+0
+2
+4
+8
+0
+0.5
+1
+1.5
+2
+2.5
+3
+3.5 x 10
+4
+Processing Cost (Hz)
+Max Layers
+Limit Cert
+Cashing
+Figure 3:
+Broker load is barely
+aﬀected by Max Layers
+average peer load, rather than broker load. In this ﬁgure,
+we see that peers in PPay do have higher load than peers in
+PPay*, but only slightly. As we mentioned earlier, peers in
+PPay will need to manage more coins than in PPay*.
+The
+cost of managing these coins comes from reassignments and
+renewals. However, note that since the number of reassign-
+ments is not aﬀected by the number of coins in circulation,
+having more coins does not necessarily mean that reassign-
+ment load will be higher. Furthermore, renewals only con-
+stitute about 6% of total peer load in PPay, which is higher
+than it is in PPay*, but still not a signiﬁcant cost. As a
+result, PPay has peer load that is comparable to PPay*.
+Also in Figure 2, we see that peers in PPay and PPay*
+have processing load that is roughly 50% higher than peer
+loads in RM. Peer bandwidth load (not shown) is 25-35%
+heavier than in RM. While the increase in peer load is non-
+trivial, we believe it is a desirable tradeoﬀwith broker load
+for two reasons. First, the absolute value of peer loads are
+small; users probably would not notice the extra load. Sec-
+ond, although the absolute values of broker load shown in
+these experiments are not much higher than peer loads, re-
+call from Section 6.2 that peer load decreases slightly as the
+number of peers grows, while broker load increases (sublin-
+early). When network size grows, for example, to 1 million,
+broker load will be much higher than peer load. Therefore,
+from a scalability viewpoint, it is most important for broker
+load to be minimized.
+Because PPay outperforms PPay* in all the scenarios we
+studied, in terms of broker load, we will only present results
+for PPay from this point on. PPay has also outperformed
+RM in the experiments we have looked at thus far, but there
+are speciﬁc scenarios in which RM outperforms PPay. In
+particular, the worst-case scenario for PPay is the extreme
+case in which each coin is used exactly once before being
+cashed. Even in this scenario, however, broker load is com-
+parable in both micropayment schemes: bandwidth load is
+35% higher in PPay, and processing load just 6.6% higher.
+Further details are given in our extended report [17].
+7.2
+Setting Micropayment Parameters
+7.2.1
+Layers
+Figure 3 shows us broker processing load as the maximum
+number of allowed layers on a coin (Max Layers) is varied.
+In this ﬁgure, Downtime Multiplier = 20, because the more
+peers that are oﬄine, the more impact layers will have on
+performance. As we can see, broker performance varies very
+little as Max Layers increases We initially found this result
+quite surprising. Because coin owners are often down when
+a payment must be made (with almost 97% probability, on
+average), we would have expected layers to be very useful in
+avoiding the need to print new coins. However, recall that
+new coins are printed in two payment scenarios: (1) when
+the peer has no coins, and (2) when a peer has coins but the
+owners are oﬄine, and layers cannot be used (e.g., because
+the maximum number of layers has been reached). It turns
+out that printing more coins in scenario 2 results in print-
+ing fewer coins in scenario 1, such that the total number of
+coins printed is not largely aﬀected by layers. Because layers
+have so little impact on broker performance (nor peer per-
+formance), and since layers do delay the detection of fraud,
+we recommend that very low values for Max Layers (e.g., 0
+or 1).
+7.2.2
+Coin Renewal
+The Renewal Wait parameter speciﬁes the system-wide
+renewal period for a coin. Renewals present a tradeoﬀbe-
+tween performance and security, and state management as
+well. As discussed in Section 5.3, the renewal period deter-
+mines the worst-case time to fraud detection. Therefore, the
+closer together renewals are, the tighter the bound. State
+also decreases, because audit trails are purged after each re-
+newal period. However, load increases, since each renewal is
+fairly expensive.
+In our implementation, we assume that that coins are re-
+newed every Renewal Wait = w days, and that the renewal
+window is also w days long. That is, if the renewal begin-
+time of an assignment is rb, then after a renewal, the new
+renewal begin-time is rb + w, and the renewal end-time is
+rb + 2 · w
+Figures 4 and 5 illustrate the tradeoﬀbetween peer load
+and state as Renewal Wait is varied. Figure 4 shows peer
+processing load divided into four main tasks: GUESS-related
+work (e.g., processing queries), reassignments, renewals, and
+miscellaneous (e.g., cashing coins). As we can see, renewals
+take up a non-trivial fraction of peer load, ranging from 20%
+at Renewal Wait = 10 days to 6% at Renewal Wait = 30
+days. However, Figure 5 shows us that although Renewal
+Wait does have an impact on the amount of state a peer must
+store, this impact is limited. Therefore, the more important
+tradeoﬀis between performance and security. In terms of
+broker load, Renewal Wait has very little eﬀect, since the
+308
+
+
+</pre><div class="page-break" data-page="Page 10"></div><pre class="text-content">
+10 days
+20 days
+30 days
+0
+0.5
+1
+1.5
+2
+2.5 x 10
+4
+259
+Renewal Wait (w)
+Processing Cost (Hz)
+GUESS
+Reassignment
+Renewal
+Misc.
+Figure 4: Peer load decreases as
+renewal period increases
+10 days
+20 days
+30 days
+0
+20
+40
+60
+80
+100
+120
+140
+160
+Renewal Wait (w)
+Storage (# proofs)
+Figure 5:
+Peer
+storage (aver-
+age number of proofs stored over
+time) increases as renewal period
+increases
+10
+20
+100
+0
+0.5
+1
+1.5
+2 x 10
+5
+Credit Window (x)
+Processing Cost (Hz)
+Limit Cert
+Cashing
+SWC 
+Payword 
+SWC 
+Payword 
+SWC 
+Payword 
+Figure 6:
+Soft credit windows
+have better broker load by ac-
+counting for symmetric peer rela-
+tionships
+number of coins printed due to payment is far higher than
+the number of coins printed due to expired coins. Therefore,
+since broker load is unaﬀected and peer load is scalable, we
+recommend a relatively low Renewal Wait, such as 10 days
+in our application scenario. Note that the renewal period
+should not be too low (e.g., 1 day), otherwise peers may not
+have a chance to renew their coins due to downtimes.
+We note that in Figure 4, for peer loads, the overhead of
+PPay relative to the load of the application (GUESS) is very
+high - about 18 times higher. However, this comparison is
+skewed, as GUESS is not processing-intensive. In terms of
+bandwidth, the overhead of PPay is just 4% of the GUESS
+load.
+Furthermore, if we set Credit Window Size to 100
+(default is 10), then even the processing overhead of PPay
+is just 13%, and the bandwidth overhead just .03%. In both
+processing and bandwidth cost, absolute overhead is always
+very low; therefore we do not believe the overhead of PPay
+for peers to be a signiﬁcant issue.
+7.2.3
+Credit Windows
+Figure 6 shows the processing load of the broker as Credit
+Window Size is varied, for both Payword hash chains (Pay-
+word) and soft credit windows (SWC). We immediately ob-
+serve that credit window size greatly aﬀects broker load –
+large credit window is crucial for good broker performance.
+As we discussed in Section 5.4, Payword cannot take ad-
+vantage of the “back and forth” symmetry of peer relation-
+ships. Soft credit windows, on the other hand, are designed
+to take this symmetry into account.
+In Figure 6, we see
+that soft credit windows consistently outperform Payword
+for this reason: broker load with Payword ranges from being
+over 40% heavier at Credit Window Size=10, to almost 3
+times heavier at Credit Window Size = 100. Furthermore,
+peer load shows an even greater performance beneﬁt with
+soft credit windows. Figure 7 shows peer load as a func-
+tion of window size, in terms of processing cost. Here, we
+see how Payword loads range from 17 times heavier (at a
+window size of 10) to over 38 times heavier (at a window
+size of 100)! Clearly, then, exploiting the symmetry of peer
+relationships is very beneﬁcial to performance of both the
+broker and peers.
+NetLossCap.
+Figures 6 and 7 show us the beneﬁts of soft
+credit windows when no credit loss cap is applied. However,
+as we discussed in Section 5.4, in practice we need to bound
+the risk taken by peers using the NetLossCap method. Be-
+fore discussing NetLossCap, let us deﬁne how a misbehaving
+peer might take advantage of soft credit windows.
+We assume that the goal of a misbehaving peer is to re-
+ceive the best quality service possible while spending no
+money.
+In other words, rather than being malicious, the
+peer is lazy. A lazy peer pj will never pay a coin for service.
+Instead, it will only probe a peer pi if cij &lt; x, where x is
+the size of the credit window. Because a lazy peer pj still
+wants to receive service, it will not lie about its view of cij,
+since that will cause peer pi to shun it. Furthermore, the
+lazy peer is willing to provide service to other nodes, since it
+can potentially make money by doing so, and because it will
+at least receive credits to redeem for service in the future.
+For this same reason, then, the lazy node will not lie about
+its cap value (e.g., will not refuse service to another peer by
+claiming that lj = v).
+Now, let us see how eﬀective NetLossCap is as Credit
+Window Size and Percent Lazy Node (the percentage of peers
+in the network that are lazy) vary. Recall that we assume
+all peers permanently leave the system at the end of the
+simulation. Credit loss for a peer pi in the following ﬁgures
+therefore reﬂect li(40 days).
+First, Figure 8 shows us the mean and maximum credit
+losses of non-lazy peers in our simulation, when NetLossCap
+is not used. Along the x-axis we vary credit window size,
+while the diﬀerent curves show diﬀerent values of Percent
+Lazy Node. For example, when Credit Window Size = 100
+when there are no lazy peers, the largest value of li(40 days)
+observed for some peer pi is roughly 12000 picopayments.
+This worst-case observed value is rare, however; 90% of all
+li(40 days) values are under 4000, while the average value
+of li(40 days) is 0.
+We make several observations. First, the percentage of
+lazy peers in the system does not seem to greatly aﬀect the
+risk of non-lazy peers. The reasons for this are that (1) credit
+risk is already very high, with no lazy peers, and (2) lazy
+peers are not cheating, per se – they are simply acting con-
+servatively. Cheating peers will eventually be cut oﬀfrom
+the rest of the system; hence, lazy/cheating peers do not
+pose a signiﬁcant additional risk to the existing credit risk
+of an honest peer. Second, soft credit window size greatly
+aﬀects potential credit loss. The need for a way to bound
+credit loss is clear, if we are going to reap the beneﬁts of
+large credit windows.
+When we apply the NetLossCap method with a cap value
+309
+
+
+</pre><div class="page-break" data-page="Page 11"></div><pre class="text-content">
+10
+20
+100
+0
+1
+2
+3
+4
+5
+6 x 10
+5
+Credit Window (x)
+Processing Cost (Hz)
+GUESS
+Reassignment
+Renewal
+Misc.
+SWC 
+SWC 
+SWC 
+Payword 
+Payword 
+Payword 
+Figure 7:
+Soft credit windows
+have better broker load by ac-
+counting for symmetric peer rela-
+tionships
+0
+20
+40
+60
+80
+100
+0
+2000
+4000
+6000
+8000
+10000
+12000
+14000
+Credit Window (x)
+Credit Loss (pico)
+%lazy = 0
+%lazy = 10
+%lazy = 20
+Figure 8:
+Maximum credit loss
+increases as credit window size in-
+creases
+0
+20
+40
+60
+80
+100
+0
+0.5
+1
+1.5
+2
+2.5 x 10
+5
+Credit Window (x)
+Processing Cost (Hz)
+Cap = 500
+Cap = 1000
+Cap = 2000
+No Cap
+Figure 9:
+Broker load as the
+credit loss cap value varies
+of v, the maximum observed credit loss is always v, regard-
+less of credit window size. As an example, when window size
+is 100 and v = 500, maximum credit loss is 500, as opposed
+to 12000 when there is no cap. However, we need to be sure
+that using NetLossCap does not signiﬁcantly aﬀect perfor-
+mance – otherwise, hash chains may be a better alternative
+than soft credit windows.
+Figure 9 shows us broker processing load as cap value and
+credit window size are varied. Window size is varied along
+the x-axis, and diﬀerent curves represent diﬀerent cap val-
+ues. Although the lines may be diﬃcult to distinguish, the
+basic shape of the curves tells us what we need to know.
+First, the choice of Credit Window Size is still very im-
+portant in tuning performance, for all cap values shown.
+Second, assuming the cap value is not too small, cap values
+do not signiﬁcantly degrade performance. Although this re-
+sult may be surprising at ﬁrst, the cause goes back to the
+law of large numbers. Even though credit between pairs of
+peers may be imbalanced (e.g., cij = 100 and cik = −100),
+the sum of these individual credits, li, will fall closer to the
+expected value, which is 0. Finally, we found (not shown
+here) that the quality of service received by each peer is not
+aﬀected by NetLossCap, for the cap values studied. Hence,
+in the given simulation scenario, the NetLossCap method is
+very eﬀective in limiting risk while maintaining good perfor-
+mance.
+However, we note that the NetLossCap method is not nec-
+essarily scalable. As the number of peers in the system in-
+crease, if we assume that all users interact with all other
+peers, then the cap value must also increase proportionally.
+However, if the number of peers with which a given peer
+interacts does not grow with the size of the network, which
+may be reasonable in many situations (e.g., peers only inter-
+act with neighbors), then NetLossCap does scale. In either
+case, important future work lies in designing a quick pay-
+ment mechanism that can take into account symmetric peer
+relationships, but can also provide proof of the credit bal-
+ance to the broker.
+8.
+CONCLUSION
+Business-oriented P2P applications hold great potential
+for the future. Before such applications can take oﬀ, how-
+ever, there must be an eﬃcient way for peers to pay each
+other for services. In this paper, we present PPay, an eﬃ-
+cient micropayment scheme designed for P2P applications.
+By identifying and exploiting characteristics unique to P2P
+applications, PPay can signiﬁcantly outperform existing schemes
+in terms of broker load, while maintaining a reasonable peer
+load.
+We present a detailed performance analysis over a
+sample P2P application to support our claims, and to illus-
+trate how PPay can be tuned for best performance.
+9.
+REFERENCES
+[1] H. Antwerpen. Electronic cash. Technical report, University
+of Eindhoven, Masters Thesis, 1990.
+[2] N. Asokan, Matthias Schunter, and Michael Waidner.
+Optimistic protocols for multi-party fair exchange.
+Technical Report RZ 2892 (# 90840), 1996.
+[3] D. Chaum and T. Pederson. Transferred cash grows in size.
+In Advances in Cryptology – EUROCRYPT ’92, 1993.
+[4] DigiCash website. http://digicash.com.
+[5] S. Glassman, M. Manasse, M. Abadi, P. Gauthier, and
+P. Sobalvarro. The millicent protocol for inexpensive
+electronic commerce. In In Proc. of WWW4, 1995.
+[6] Gnutella website. http://www.gnutella.com.
+[7] GUESS protocol speciﬁcation. http://groups.yahoo.com/-
+group/the gdf/ﬁles/Proposals/GUESS/guess o1.txt.
+[8] B. Horne, B. Pinkas, and T. Sander. Escrow services and
+incentives in peer-to-peer networks. In Proceedings of 3rd
+ACM Conference on Electronic Commerce, 2001.
+[9] KaZaA website. http://www.kazaa.com.
+[10] J. Kytojoki and V. Karpijoki.
+Micropayments - Requirements and Solutions.
+http://www.tml.hut.ﬁ/Opinnot/Tik-110.501/1999/papers/-
+micropayments/micropayments.html.
+[11] S. Micali and R. Rivest. Micropayments revisted. In
+”CT-RSA”, 2002.
+[12] MojoNation website. http://web.archive.org/-
+web/20020122164402/http://mojonation.com/.
+[13] NetBill website. http://www.ini.cmu.edu/netbill.
+[14] R. Rivest and A. Shamir. Payword and micromint: two
+simple micropayment schemes. In Security Protocols
+Workshop, 1996.
+[15] S. Saroiu, P. Gummadi, and S. Gribble. A measurement
+study of peer-to-peer ﬁle sharing systems. In Proc. of the
+Multimedia Computing and Networking, January 2002.
+[16] B. Yang and H. Garcia-Molina. Comparing hybrid
+peer-to-peer systems. In Proc. of the 27th Intl. Conf. on
+Very Large Databases, September 2001.
+[17] B. Yang and H. Garcia-Molina. Ppay: Micropayments for
+peer-to-peer systems. Technical report, Stanford University,
+2003. http://dbpubs.stanford.edu/pub/2003-31.
+310
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

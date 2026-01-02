@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>glossary - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>glossary</h1>
+        <div class="meta">Source: glossary.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>glossary</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>7 pages</span>
+                    <span>17,216 characters</span>
+                    <span>2,495 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ANNEX 
+II 
+– 
+LEVEL 
+A: 
+DEFINITIONS 
+AND 
+ABBREVIATIONS 
+APPLICABLE 
+THROUGHOUT 
+COST IMPLEMENTATION RULES 
+ 
+GLOSSARY 
+HISTORY OF CHANGES 
+Version 
+Publication date 
+Changes 
+1.0 
+01.11.2021 
+Initial version 
+This document forms the Annex II of the Rules and Principles for 
+COST activities 
+ 
+ 
+Action Chair and Action 
+Vice-Chair  
+The individuals elected by the Management Committee of a COST Action 
+to, respectively, coordinate and implement the Action or assist the Chair in 
+those tasks. 
+Action 
+Grant 
+Agreement 
+(AGA) 
+The agreement between the COST Association and the Grant Holder that 
+governs the administrative and financial implementation of the COST 
+Action. 
+Action Participant 
+Any person being a Management Committee member, a Management 
+Committee Observer, a Working Group member, or an ad-hoc contributor 
+to a COST Action. 
+Action Rapporteur 
+An independent expert assigned to carry out the monitoring or final 
+assessment of a COST Action outputs based on their scientific and 
+technological expertise 
+Action results 
+Any tangible proceeding, scientific or otherwise, to which the Action and/or 
+the Action activities provided a material contribution. 
+Affiliation 
+Any form of established recognised relationship between the individual and 
+a legal entity 
+Background Information 
+any tangible or intangible input, from data to know-how that exist before 
+the COST activity (including COST Action activity) started and that is 
+needed to implement the COST activity (including COST Action activity) or 
+to exploit its results. 
+Business Plan 
+For the purposes of the CIG the following definition of Business Plan 
+applies: Business Plan means a written document that describes in detail 
+how an innovation is going to reach the users. A business plan defines the 
+overall strategy for bringing the innovation to the users and lays out an 
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+ 
+ 
+ 2 
+appropriate written plan from a marketing, advocacy, communication, or 
+promotion. 
+Close relative 
+A first degree relative or any person that is dependent on an Action 
+participant. 
+Collection Date 
+The final date when the proposals for new COST Actions submitted during 
+a certain period are gathered and sent for evaluation. 
+Committee 
+of 
+Senior 
+Officials (CSO)  
+The supreme body of the COST Association.  
+Communication of Action 
+results 
+Communication of Action results: sharing Action results with audiences 
+outside the scientific community, including but not limited to industry or 
+SMEs, policy makers, the media, interest groups, standardisation bodies 
+and the general audience. 
+Conflict of Interests 
+Any situation where any person, being involved in the conduct of the COST 
+activities or susceptible to influence it has, directly or indirectly, a financial, 
+economic or other personal interest which might compromise or be 
+perceived to compromise their impartiality and independence in the context 
+of the COST activities. 
+Core Group 
+Individuals elected by the Management Committee of a COST Action for 
+exercising functions of the Management Committee as defined in a 
+delegation of powers 
+COST 
+The COST Association, including COST Governance and COST 
+Administration. 
+COST Action 
+The COST pan-European networking instrument allowing their participants 
+to develop jointly their ideas and new initiatives in a field or topic of 
+common interest. 
+COST Administration  
+The personnel of the COST Association acting under the authority of the 
+Director of the COST Association and responsible for the fulfilment of the 
+Association’s administrative tasks and implementation of the COST 
+activities and the COST Governance’s decisions, policies and plans. 
+COST Cooperating Member Any Non-European State admitted to the COST Association as a COST 
+Cooperating Member as per article 7 of the COST Association Statutes. 
+COST F/C Members 
+COST Full or Cooperating Members 
+COST Full Member  
+ 
+Any European State admitted to the COST Association as a COST Full 
+Member as per article 6 of the COST Association Statutes.  
+COST Governance 
+The CSO and the EB of the COST Association 
+COST Grant System (CGS) 
+The COST decentralised management scheme, under which COST 
+Actions are funded through a Grant provided by the COST Association to 
+the COST Action. 
+COST Inclusiveness Target 
+Countries (ITC) 
+Countries or Regions of the COST Full Members and associated countries 
+as defined by the EC as depicted in Annex I of the present Rules.  
+Individuals affiliated to legal entities therein vested may benefit from 
+dedicated support that enables participation in COST activities.  
+COST Members 
+States being Members of the COST Association. There are three 
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+ 
+ 
+ 3 
+categories of members: COST Full Members, COST Cooperating 
+Members and COST Partner Members. 
+COST National Coordinator 
+(CNC)  
+ 
+An individual appointed by a COST Member to serve as interface/relay 
+between the COST Association and the COST Member’s national 
+communities, in charge of nominating the Management Committee 
+Members or Observers of their COST Member and experts from their 
+COST Full or Cooperating Member for the Review Panels. 
+COST 
+Partner 
+Member 
+(CPM) 
+A non-European State admitted to the COST Association as a COST 
+Partner Member as per article 8 of the COST Association Statutes.   
+COST Principles 
+A set of principles defined in the Rules and Principles for COST activities 
+that apply throughout all COST activities to all its actors and whose breach 
+may lead to sanctions defined in the Rules and Principles for COST 
+activities. 
+COST Scientific Committee 
+(SC) 
+Committee created by the CSO for advisory purposes on the scientific and 
+technological orientation of COST. It shall serve in the fulfilment of COST’s 
+objectives, supporting COST in its science and technology activities, 
+contributing to secure recognition of COST as a key organisation driving 
+scientific excellence in Europe and beyond underpinning the fulfilment of 
+the European Research Area within a globalised world. 
+Dissemination Conference 
+A networking activity that can receive financial support from COST. 
+A grant awarded by the Management Committee to an individual to present 
+the COST Action’s work and results at an international well recognised 
+conference organised by third parties. 
+Dissemination 
+of 
+Action 
+results 
+Sharing Action results with the scientific community, not limited to the 
+field(s) or discipline(s) covered by the Action. 
+EC 
+European Commission 
+EU 
+European Union 
+EU 
+Institutions, 
+Bodies, 
+Offices 
+and 
+Agencies 
+(EC/EU) 
+A body defined accordingly by the EU. 
+A list of the EU Bodies, Offices and Agencies may be found at 
+http://europa.eu/european-union/about-eu/agencies_en 
+European 
+RTD 
+Organisation (Eur RTD Org) 
+The intergovernmental scientific research organisations whose members 
+are States, the majority of which are COST Members. 
+The recognition of European RTD Organisations status is subject to COST 
+Administration approval.  
+Executive Board (EB) 
+The body in charge of the management of the COST Association, including 
+the administration, organisation, human resources and financial 
+management of the COST Association. 
+Force majeure  
+Any unforeseeable and exceptional situation or event beyond the control 
+of a concerned individual or legal entity, which prevents them from 
+performing any of their obligations in the frame of a COST activity.  
+Force majeure relates to circumstances not attributable to error or 
+negligence of the concerned individual or legal entity and that could not 
+have been avoided by the exercise of due diligence. Deficiencies in 
+equipment or material or delays in making it available, labour disputes, 
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+ 
+ 
+ 4 
+strikes or financial problems cannot be invoked as unforeseeable 
+circumstances unless they derive directly from a relevant case of 
+unforeseeable circumstances.  
+Foreground information 
+See Action results 
+Grant Awarding Coordinator An individual elected by the Management Committee of a COST Action to 
+act as coordinator of the awarding process of grants to be awarded in their 
+COST Action.  
+Grant Holder (GH) 
+The legal entity responsible for the administrative and financial 
+implementation of the COST Action. 
+Grant 
+Holder 
+Financial 
+Representative  
+The individual from the Grant Holder Institution who has the legal authority 
+to financially commit the institution in question and to validate the expenses 
+listed in financial reports.  
+Grant 
+Holder 
+Legal 
+Representative  
+The individual from the Grant Holder Institution who bears the legal 
+authority to sign the COST Action Grant Agreement (e.g., the Rector of a 
+University). 
+Grant Holder Manager 
+The individual from the Grant Holder Institution who is responsible for 
+overseeing the administrative management of the COST Action and is the 
+primary user, on behalf of the Grant Holder, of the e-COST Action 
+management tool. 
+Grant 
+Holder 
+Scientific 
+Representative (GH SR) 
+The Management Committee Member or Observer affiliated with the Grant 
+Holder of a COST Action.  
+Grant Period 
+The duration defined in the Action Grant Agreement during which the 
+COST Action budget shall be spent in accordance with the Work and 
+Budget Plan.  
+Independent 
+External 
+Expert (iEE) 
+An independent expert assigned to carry out the remote peer-review 
+evaluation of proposals based on their scientific and technological 
+expertise. 
+Innovation 
+For the purposes of the CIG, the following definition of innovation applies: 
+Innovation means a new or improved product, process, service, 
+organisational method, or policy approach that constitutes a state-of-the-
+art change in the sector or policy area in which the actor operates 
+(European Parliament: “Mainstreaming Innovation Funding in the EU 
+Budget” 18/4/2019).  
+International 
+Organisation 
+(IO) 
+Any Intergovernmental Organisation governed by international law. 
+European RTD organisations or EU bodies, offices, or agencies shall not 
+be considered International Organisation in the COST framework. 
+International 
+Partner 
+Countries (IPC) – Third 
+States 
+States that are neither COST Members nor COST Near Neighbour 
+Countries. 
+ITC Conference  
+A networking activity that can receive financial support from COST. 
+A grant awarded by the Management Committee to a young researcher or 
+innovator affiliated in an ITC or a NNC, to present their own work at an 
+international well recognised conference organised by third parties. 
+Main Proposer 
+The representative of a network of proposers who submit a proposal for a 
+
+
+</pre><div class="page-break" data-page="Page 5"></div><pre class="text-content">
+ 
+ 
+ 5 
+COST Action in response to the Open Call. 
+Management 
+Committee 
+(MC) 
+The committee responsible for the management of a COST Action. 
+Management 
+Committee 
+Member 
+An individual nominated by the CNC of their COST Full or Cooperating 
+Member in the Management Committee of a COST Action. 
+Management 
+Committee 
+Observer 
+An individual nominated by the CNC of their COST Partner Member or the 
+Responsible for Nomination of a Specific Organisation in the Management 
+Committee of a COST Action. 
+Mandatory 
+Leadership 
+positions   
+Positions needed in a COST Action to assure the minimal needs of a COST 
+Action, i.e.:  
+• 
+Positions related to the Management Committee and funding of 
+the Action: Chair, Vice Chair and Grant Holder Scientific 
+Representative (GH SR) – those positions shall be filled in by 
+election of the Management Committee at the first Management 
+Committee (MC1) meeting, 
+• 
+Positions related to the coordination of the WGs defined by the 
+Action: Working Group Leaders,  
+• 
+Position related to Grant awarding: Grant Awarding Coordinator,  
+• 
+Position related to dissemination and communication: Science 
+Communication Coordinator.  
+MC1 
+First meeting of the Management Committee of a COST Action 
+Meeting 
+A networking activity that can receive financial support from COST. 
+An event organised by the COST Action, bringing together relevant 
+participants either in face-to-face or virtual by virtual or hybrid means and 
+aiming at achieving the Action aim and MoU objectives. 
+A meeting may consist in a Management Committee, a WG, or any other 
+relevant meeting. 
+Memorandum 
+of 
+Understanding (MoU) 
+The agreement approved by the CSO that describes the Action’s aims 
+objectives.  
+Mobility  
+Physical or virtual mobility of researchers and innovators to perform 
+capacity building and research coordination activities in bi/multilateral 
+collaborations within the COST Action. 
+Near Neighbour Country 
+(NNC) 
+ 
+Non-COST Countries as per Annex I of the present Rules. 
+Individuals affiliated to legal entities therein vested may benefit from 
+dedicated support that enables participation in COST Action activities.  
+Non-COST Countries 
+States that are not COST Members. They can be Near Neighbour 
+Countries or Third States (also called International Partner Countries) 
+Open Access 
+Online access, provided free of charge to the end user, to research outputs 
+resulting from COST activities, including COST Actions 
+Open Call for proposals 
+The official announcement/publication with the description of the 
+objectives and criteria required for COST Action proposals to be evaluated 
+and selected. The Open Call allows submitting proposals on a continuous 
+basis; the publication indicates the Collection Date. 
+
+
+</pre><div class="page-break" data-page="Page 6"></div><pre class="text-content">
+ 
+ 
+ 6 
+Open Science 
+An approach to the scientific process based on open cooperative work and 
+diffusing knowledge 
+Responsible for nomination 
+The CNC of a COST Member or the individual in charge of nominating their 
+Management Committee Observer within a Specific Organisation having 
+joined a COST Action 
+Review Panel 
+A group of Review Panel Members established ad hoc in after each 
+Collection Date to ensure the quality of the independent External Expert 
+evaluation outcome and resolve potential differences in their opinions and 
+to prepare a shortlist of proposals with their validated consensus reports 
+and marks for examination and selection by the Scientific Committee. 
+Review Panel Member 
+An active researcher, engineer or scholar, previously nominated by the 
+COST National Coordinator of their COST Full and Cooperating Member, 
+assigned to a Review Panel. 
+Reviewing Procedure 
+Any evaluation, selection, monitoring or assessment procedure of a COST 
+activity 
+Science 
+Communication 
+Coordinator 
+An individual elected by the Management Committee of a COST Action to 
+act as coordinator for science communication and dissemination of the 
+COST Action outputs. 
+Science 
+Communication 
+Plan 
+A 
+written 
+document 
+including 
+an 
+appropriate 
+Communication, 
+Dissemination and Valorisation strategy as well as a plan for the 
+implementation of this strategy to be adopted by the Action MC.  
+SESA 
+Submission, Evaluation, Selection and Approval of COST Actions’ 
+proposals. 
+Short-Term 
+Scientific 
+Mission (STSM) 
+A networking activity that can receive financial support from COST. 
+A grant awarded by the Management Committee to an individual for 
+supporting physical mobility aiming at capacity building and transfer of 
+knowledge through bilateral/multilateral collaborations during a research 
+stay in a different country. 
+Specific Organisations 
+The European Commission, EU bodies, offices and agencies, the 
+European RTD Organisations and International Organisations 
+Training School  
+A networking activity that can receive financial support from COST. 
+An event organised by the COST Action, bringing together relevant 
+participants either in face-to-face or virtual by virtual or hybrid means and 
+providing highly specialised training. 
+Valorisation 
+of 
+Action 
+results 
+Utilising Action results for the improvement of a product, process or system 
+beyond the strict scientific realm. 
+Virtual Mobility 
+A networking activity that can receive financial support from COST.  
+A grant awarded by the Management Committee to an individual for 
+supporting activities aiming at capacity building and transfer of knowledge 
+through bilateral/multilateral collaborations in a virtual setting, when in-
+person presence is not necessary for the activity. 
+Virtual Networking Support    A support activity that can receive financial support from COST. 
+A grant awarded by the Management Committee to an individual for 
+supporting 
+the 
+Management 
+Committee 
+in 
+the 
+definition 
+and 
+
+
+</pre><div class="page-break" data-page="Page 7"></div><pre class="text-content">
+ 
+ 
+ 7 
+implementation of the virtual and hybrid networking strategy.  
+Work and Budget Plan 
+(WBP) 
+The detail of the planned activities and the budget allocated to each for the 
+given Grant Period, defined, agreed, and approved by the Management 
+Committee.  
+Forms an Annex to the Action Grant Agreement. 
+Working Group (WG) 
+A group of individuals participating in a COST Action on the long-term 
+whose activity, composition and leadership shall be defined by the 
+Management Committee of a COST Action to achieve the Action aims and 
+objectives. 
+Working Group leader 
+An individual elected by Management Committee of a COST Action to act 
+as leader of a specific Working Group. 
+Young 
+Researcher 
+and 
+Innovator 
+A researcher or innovator under the age of 40. 
+___________________ 
+ 
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

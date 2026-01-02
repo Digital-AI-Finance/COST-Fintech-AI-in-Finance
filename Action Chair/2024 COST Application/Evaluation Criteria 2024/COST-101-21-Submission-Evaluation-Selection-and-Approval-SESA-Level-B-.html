@@ -1,0 +1,1007 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COST 101 21 Submission Evaluation Selection and Approval SESA Level B - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>COST 101 21 Submission Evaluation Selection and Approval SESA Level B</h1>
+        <div class="meta">Source: COST-101-21-Submission-Evaluation-Selection-and-Approval-SESA-Level-B-.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>COST 101 21 Submission Evaluation Selection and Approval SESA Level B</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>15 pages</span>
+                    <span>35,653 characters</span>
+                    <span>4,876 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+ 
+ 
+ 
+ 
+ 
+COST Association AISBL 
+Avenue du Boulevard – Bolwerklaan 21 | 1210 Brussels, Belgium  
+ 
+T +32 (0)2 533 3800 | office@cost.eu | www.cost.eu 
+ 
+Brussels, 18 November 2021 
+ 
+COST 101/21 
+ 
+COST ACTION PROPOSAL SUBMISSION, EVALUATION, 
+SELECTION AND APPROVAL 
+(LEVEL B) 
+ 
+The COST Committee of Senior Officials (“CSO”) having regard to: 
+The Statutes of the COST Association, 
+ 
+The Internal Rules of the COST Association, 
+ 
+The CSO Decision COST 088/21, “Rules and Principles for COST Activities”, 
+In accordance with its role as General Assembly of the COST Association,  
+ 
+Whereas 
+ 
+(1) COST Full Members have established an International not-for-profit Association, the COST 
+Association, integrating the governance, management and implementation functions of COST. 
+(2) COST contributes to the objective of strengthening the scientific and technological bases of the 
+European Research Area by promoting the European-based scientific and technological 
+networking encouraging all stakeholders to share, create and apply knowledge, thereby 
+encouraging Europe to become more competitive. 
+(3) COST shall be open to all fields in science and technology and wishes to foster multi- and 
+interdisciplinary networks, aiming to enable breakthrough scientific developments leading to 
+new concepts, services and products. 
+(4) The set of COST Rules should provide a coherent, comprehensive and transparent frame to 
+ensure efficient and harmonised implementation of activities, as well as ease access for all 
+potential stakeholders, by promoting and facilitating participation from a wide range of 
+researchers, engineers or scholars from universities, research centres and companies, as well 
+as other relevant stakeholders (in particular small and medium-sized enterprises - SMEs) and 
+legal entities. 
+(5) For the benefit of the Action Participants the set of COST Implementation Rules should be 
+robust, stable and consistent and should focus on best interest of research communities and 
+foster mutual trust in their networking activities. 
+(6) COST should provide funding for activities of relevance for fulfilling COST mission and 
+achieving COST objectives, more particularly for COST Actions, the COST networking 
+instrument. 
+(7) COST should further encourage participation of young talents and next generation leaders in 
+science and technology, promote working opportunities for Young Researchers and Innovators 
+and gender balance. 
+(8) COST should support integration of scientific research communities and increase the 
+contribution of participants from identified Inclusiveness Target Countries in COST activities. 
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+ 
+2 
+ 
+ 
+ 
+ 
+(9) COST should fund networking activities in the field of science and technology destined only for 
+peaceful purposes; any funding of activities related to sensitive technology development, 
+armament or defence-oriented research should be avoided. COST should support activities 
+carried out in compliance with fundamental ethical principles. 
+ 
+(10) COST should establish rules and procedures to govern the submission, evaluation, selection 
+and approval of proposals for COST Actions and other activities where appropriate. 
+(11) COST should protect EU financial interests and ensure sound financial management. COST is 
+aware that the EU auditing procedures apply. 
+The CSO has adopted the present rules for Submission, Evaluation, Selection and Approval for COST 
+Action Proposals in accordance with the Rules and Principles for COST Activities.  
+The present rules shall be subordinated to and may not contravene the Rules and Principles for COST 
+Activities. In case of any contradiction between those CSO Decisions, the Rules and Principles for COST 
+Activities shall prevail.  
+These rules shall enter into force on 18 November 2021, approval date of the Committee of Senior 
+Officials. 
+ 
+SUBJECT MATTER AND SCOPE  
+COST shall strive to implement transparent, cost-efficient, timely and simple evaluation and selection 
+procedures.  
+ 
+This decision shall lay down the rules and procedure for the submission, evaluation, selection and 
+approval of COST Action proposals. These rules derive from the basic principles laid down in the Rules 
+and Principles for COST Activities. 
+These rules shall be further detailed and explained in the Level C document: COST Open Call 
+Applicants’ Guidelines - Submission, Evaluation, Selection and Approval (SESA).  
+ 
+DEFINITIONS 
+Definitions of the Annex II of the Rules and Principles for COST Activities shall apply to this Decision.  
+ 
+GENERAL PROVISIONS 
+The present rules and procedures shall allow researchers and innovators or other stakeholders to 
+submit proposals and provide them with networking opportunities in order to strengthen Europe’s 
+capacity to address scientific, technological and societal challenges. 
+ 
+The objective of the present rules and procedure described herein shall be to enhance the scientific 
+excellence and transparency through an accessible bottom-up opportunity with rigorous peer review on 
+a competitive basis.  
+ 
+COST Action proposals shall be submitted for evaluation and selection following the publication of the 
+Open Call. They shall aim at addressing the COST mission and Excellence and Inclusiveness policy.  
+ 
+COST Action proposals shall guarantee that the proposed Action objectives shall be achieved by means 
+of COST networking support using national or other R&amp;D funding and resources. 
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+ 
+3 
+ 
+TABLE OF CONTENTS 
+1. 
+Basic principles....................................................................................................... 4 
+2. 
+Obligation of confidentiality .................................................................................... 4 
+3. 
+COST Open Call..................................................................................................... 4 
+4. 
+Proposal Submission.............................................................................................. 5 
+5. 
+Proposal assessment against Eligibility Criteria.................................................... 6 
+6. 
+Proposal Evaluation ............................................................................................... 6 
+6.1 
+EXPERTS ROLE................................................................................................................... 6 
+6.1.1. 
+External Experts ............................................................................................ 6 
+6.1.2. 
+Review Panels ............................................................................................... 6 
+6.1.3. 
+COST Scientific Committee ............................................................................ 7 
+6.2  
+ PROPOSAL EVALUATION .............................................................................................. 7 
+6.2.1 
+Step 1 – External Remote Evaluation ................................................................ 7 
+6.2.2 
+Step 2 – Revision by Ad-hoc Review Panels................................................... 7 
+6.3 
+EVALUATION CRITERIA...................................................................................................... 8 
+7. 
+Proposal Selection ................................................................................................. 8 
+8. 
+Proposal Approval .................................................................................................. 9 
+9. 
+Redress of the Evaluation ...................................................................................... 9 
+10. 
+Honoraria ........................................................................................................... 10 
+11. 
+Conflict of Interest .............................................................................................. 10 
+11.1 CONFLICT OF INTEREST DEFINITION AND CASES...................................................... 10 
+11.2 DECLARATION OF CONFLICT OF INTEREST ................................................................ 11 
+11.3 TABLE OF INCOMPATIBILITIES ...................................................................................... 11 
+11.4 CONSEQUENCES................................................................................................................ 11 
+12. 
+Final Provisions ................................................................................................. 12 
+Annex A ......................................................................................................................... 13 
+Annex B ......................................................................................................................... 15 
+ 
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+ 
+4 
+ 
+1. BASIC PRINCIPLES 
+The present rules shall reflect the basic principles governing the submission, evaluation, selection and 
+approval of proposals for COST Actions which shall ensure fairness, transparency, openness, 
+excellence and inclusiveness. 
+ 
+COST shall make the best endeavours to avoid conflict of interest. 
+ 
+All those involved in the submission, evaluation, selection and approval of proposals shall commit to 
+confidentiality. 
+ 
+2. OBLIGATION OF CONFIDENTIALITY  
+Each person involved in the submission, evaluation, selection and approval procedure (Independent 
+External Expert, Review Panel Member, Scientific Committee Member, CNC and CSO Member) shall: 
+ 
+• Treat confidentially any information, including personal data of any natural person concerned by 
+or involved in the submission, evaluation, selection and approval of proposals process, and 
+documents, in any form (i.e. paper or electronic), disclosed in writing or orally in relation to the 
+performance of the evaluation;  
+ 
+• Process any confidential information or documents as described above only for the purposes and 
+for the duration of the submission, evaluation, selection and approval of proposals process;  
+ 
+• Not disclose, directly or indirectly, confidential information or documents relating to proposals or 
+applicants, without prior written approval of the COST Association; 
+ 
+• Not discuss any proposal with others, including other evaluators or staff not directly involved in 
+evaluating the proposal, except during formal discussions at dedicated Review Panels and 
+Scientific Committee meetings;  
+ 
+• Not disclose any detail of the evaluation process and its outcomes or of any proposal submitted 
+for evaluation for any purpose other than fulfilling their tasks as evaluator; 
+ 
+• Not disclose the names of other experts participating in the evaluation; 
+ 
+• Not communicate with proposers on any proposal during or after the evaluation until the approval 
+by the CSO. 
+ 
+Further, under no circumstances should the proposers contact any of the actors involved in the 
+evaluation, selection and approval procedure regarding their proposal. Any attempt to do so may lead 
+to immediate exclusion of the proposal from the evaluation, selection and approval process. 
+3. COST OPEN CALL 
+The COST Open Call shall allow submitting proposals on a continuous basis. 
+ 
+COST shall publish on its website the official announcement of the Open Call indicating the Collection 
+Date, the description of the procedure and complete schedule, and criteria against which COST Action 
+proposals shall be evaluated and selected. 
+ 
+The COST Open Call shall enhance transparency of COST through an accessible bottom-up opportunity 
+with rigorous peer review. Proposals shall be evaluated on a competitive basis, taking into account the 
+available funds for the particular Collection Date. 
+ 
+
+
+</pre><div class="page-break" data-page="Page 5"></div><pre class="text-content">
+ 
+5 
+ 
+The proposal shall be submitted by a Main Proposer acting on behalf of a network of proposers who 
+see an opportunity for advancing scientific, technological or social knowledge and impact resulting from 
+such advancements through the international coordination support offered by COST. 
+ 
+The Open Call is a one-stage submission process where proposals may be registered and submitted at 
+any time before the Collection Date using a dedicated secure online tool. Proposals shall be gathered 
+at the Collection Date. 
+The Open Call follows the subsequent phases:  
+• Proposal Submission by a Main Proposer on behalf of a network of proposers; 
+• Proposal Assessment for Eligibility; 
+• Proposal Evaluation by Independent External Experts and ad-hoc Review Panels; 
+• Proposal Selection by the Scientific Committee; 
+• Proposal Approval by the CSO. 
+ 
+4. PROPOSAL SUBMISSION 
+Proposals shall be submitted by a network of proposers, represented by a Main Proposer. The network 
+shall be composed of proposers from at least seven (7) COST Full or Cooperating Members amongst 
+which a minimum number (≥50%) shall be from COST Inclusiveness Target Countries1 (see also in 
+Annex B to the present decision the required minimum number of COST Inclusiveness Target Countries 
+per number of COST Full or Cooperating Members represented in a proposal).  
+ 
+The table below shows who can be part of a Network of Proposers as Main Proposer or Secondary 
+Proposer. 
+ 
+ 
+Proposers affiliated in 
+Eligible as 
+ 
+Main 
+Proposer 
+Secondary 
+Proposer 
+A legal entity in a COST Full/Cooperating member 
+ 
+ 
+A legal entity in a COST Partner member 
+ 
+ 
+A legal entity in a Near Neighbour Country (NNC)  
+ 
+ 
+A legal entity in a Third State 
+ 
+ 
+EU Institutions, Bodies, Offices and Agencies (EC/EU) 
+ 
+ 
+European RTD 
+ 
+ 
+International Organisations 
+ 
+ 
+  = Yes 
+ 
+= No 
+ 
+A list of countries and specific organisations can be found in Annex I of the Level A Rules and Principles 
+for COST Activities. It is important to note that for the participation of the network of proposers, the ITC 
+status of researchers and innovators from EU Member States Outermost Regions will be counted as 
+the EU Member State they are linked to2.  
+ 
+Proposals may be registered and submitted at any time before the Collection Date via a secured online 
+tool designed for this purpose (e-COST). The online tool allows the Main Proposer to access, edit and 
+submit the proposal until the chosen Collection Date. Only the last submitted version of a proposal shall 
+be considered for evaluation. 
+ 
+Proposals shall be written in English, as no translation shall be provided, and peer reviewers come from 
+different countries. 
+ 
+1 Annex I – Level A: Country and Organisations table 
+2 Researchers affiliated in a legal entity in e.g., Guadeloupe will be counted as France (non-ITC), researchers affiliated in a legal 
+entity in Azores will be counted as Portugal (ITC). 
+
+
+</pre><div class="page-break" data-page="Page 6"></div><pre class="text-content">
+ 
+6 
+ 
+5. PROPOSAL 
+ASSESSMENT 
+AGAINST 
+ELIGIBILITY 
+CRITERIA 
+To be eligible, a proposal for a COST Action shall: 
+ 
+a) Represent a network of proposers from at least seven (7) COST Full or Cooperating Members 
+amongst which ≥50% shall be from COST Inclusiveness Target Countries as detailed in 
+Annex B with proposers having a registered e-COST profile; 
+b) Respect fundamental ethical principles as described in the Rules and Principles for COST 
+Activities3 with particular emphasis on the originality of findings and ideas, and on peaceful 
+purposes of the addressed science and technology challenges; 
+c) Respect word or page limits as described in the COST Open Call Applicants’ Guidelines - 
+Submission, Evaluation Selection and Approval (SESA)4; 
+d) Be written in English, the working language of the COST Association 
+e) Be anonymous, hence contain no reference to the proposers’ and/or institutions’ names 
+participating in the network of proposers, meaning that proposers and/or institutions’ names 
+should neither be explicitly mentioned nor be potentially identifiable5. 
+ 
+Proposals can be declared ineligible at any point of the process should any breach of the above eligibility 
+criteria be identified during the evaluation. 
+6. PROPOSAL EVALUATION  
+6.1 EXPERTS ROLE  
+Three different groups of experts shall intervene throughout the procedure towards selection of the best 
+proposals: the Independent External Experts, the ad-hoc Review Panels and the Scientific Committee. 
+6.1.1.  EXTERNAL EXPERTS 
+Independent External Experts carry out the remote peer-review evaluation.  
+ 
+They shall be identified, selected and assigned to proposals on the basis of their scientific and 
+technological expertise necessary for the evaluation of proposals. This will notably be based on 
+Research Areas6 and keywords chosen by the network of proposers themselves.  
+ 
+Whenever possible, each External Expert will evaluate at least three proposals.  
+6.1.2.  REVIEW PANELS 
+Ad-hoc Review Panels shall be established after each Collection Date based on the number and topics 
+of received proposals from a pool of active researchers and innovators, previously nominated by the 
+COST National Coordinators.  
+ 
+The experts shall register in the COST Expert Database (e-COST). A Review Panel expert may serve 
+in the Review Panels for a maximum of four collections out of eight successive collections. After four 
+participations as Review Panel expert, a minimum of four collections shall pass before the same person 
+may participate again as Review Panel expert. In all cases, COST shall strive for diversity among RP 
+members in topic expertise and experience in serving in the RP.   
+ 
+The Review Panels shall ensure the quality of the Independent External Expert evaluation outcome and 
+resolve potential differences in their opinions. 
+ 
+3 COST 088/21 Rules and Principles for COST Activities  
+4 Details in COST 104/21 COST Open Call Applicants’ Guidelines – Submission, Evaluation, Selection and Approval (SESA)  
+5 Details in COST 104/21 COST Open Call Applicants’ Guidelines – Submission, Evaluation, Selection and Approval (SESA) 
+6 See Annex A to the present document: List of Fields and Sub-Fields of Science and Technology 
+
+
+</pre><div class="page-break" data-page="Page 7"></div><pre class="text-content">
+ 
+7 
+ 
+ 
+As the outcome of their work, the Review Panels prepare a shortlist of proposals with their validated 
+consensus reports and marks for examination and selection by the Scientific Committee.  
+ 
+In addition, the Review Panels shall prepare a report to the Scientific Committee using the templates 
+provided by COST. 
+6.1.3. 
+COST SCIENTIFIC COMMITTEE 
+The Scientific Committee shall guarantee that the present rules and procedures shall all be observed 
+throughout the process. Specifically, the Scientific Committee shall: 
+ 
+a) Assess and accordingly make a recommendation to the COST Administration with regard to the 
+eligibility of proposals that have been identified as potentially breaching the Rules and Principles 
+for COST Activities;  
+b) Identify, among the list of proposals presented by the Review Panels, those that respond best 
+to COST Mission and Policy; 
+c) Establish the shortlist of proposals that shall be presented to the CSO for approval. 
+6.2   PROPOSAL EVALUATION 
+Proposals shall be evaluated against the following two-step procedure. During this process, the identity 
+of the Main Proposer and of the network of proposers will be kept anonymous. 
+6.2.1 STEP 1 – EXTERNAL REMOTE EVALUATION 
+Each proposal shall be evaluated by a minimum of 3 Independent External Experts identified, selected 
+and assigned to proposals as described here above. The evaluation shall be performed remotely, and 
+each Independent External Expert shall submit an evaluation report for each proposal he/she evaluates.  
+ 
+Further to the individual evaluation, a consensus shall be sought between the Independent External 
+Experts (remotely). 
+ 
+The consensus shall not be imposed; Independent External Experts may maintain their views on the 
+proposal. 
+6.2.2 STEP 2 – REVISION BY AD-HOC REVIEW PANELS 
+In addition to the evaluation performed by the Independent External Experts, the ad-hoc Review Panels 
+shall ensure the quality of the consensus evaluation report, deliberate how to manage differences in 
+opinions, arbitrate and establish a ranked list of proposals having passed the overall threshold as 
+described hereunder.  
+Review Panels shall: 
+ 
+a) Review and validate the evaluation consensus reports and marks of the proposals for which the 
+Independent External Experts achieved consensus. 
+b) For proposals without consensus, resolve the differences in opinions between the External 
+Experts, using one of the following options:  
+• 
+Choose any mark within the range of marks awarded by the individual Independent 
+External Experts or the non-agreed consensus mark entered into e-COST as the review 
+consensus mark and produce the consensus report. 
+• 
+In exceptional cases, ask for one or two additional Independent External Experts to 
+remotely evaluate the proposal. In this case the Review Panel shall make use of the 
+additional evaluation reports to prepare the final consensus report and mark. 
+c) Strive for consistency of marking across the proposals within and across the Review Panel(s). 
+d) Identify those proposals with potential high impact or that indicate emerging issues or potentially 
+important future developments.  
+ 
+At their meeting, the Review Panels shall prepare their reports for the Scientific Committee. 
+
+
+</pre><div class="page-break" data-page="Page 8"></div><pre class="text-content">
+ 
+8 
+ 
+6.3 EVALUATION CRITERIA 
+Proposals will be evaluated on the basis of the following evaluation criteria: 
+ 
+S&amp;T EXCELLENCE 
+NETWORKING 
+EXCELLENCE 
+IMPACT 
+IMPLEMENTATION 
+Total marks for the 
+section  
+= 15 points 
+Total marks for the 
+section  
+= 15 points 
+Total marks for the 
+section  
+= 15 points 
+Total marks for the 
+section  
+= 5 points 
+TOTAL MARKS AWARDED = 0 - 50 points 
+OVERALL THRESHOLD = 34 points 
+ 
+Those evaluation criteria shall be further explained in the SESA Guidelines. 
+ 
+Proposals failing to achieve the overall threshold shall not be funded. 
+7.  PROPOSAL SELECTION  
+Ahead of the meeting, the Scientific Committee shall receive the reports of the Review Panels as well 
+as information on the composition of the network of proposers and other information considered relevant 
+on the proposals, such as: 
+• Aggregated information on the network of proposers (breakdown, expertise, geographic, age and 
+gender distribution); 
+• Plans to involve relevant participants or targeted stakeholders; openness to additional 
+participants. 
+ 
+Based on this information, the Scientific Committee shall establish the shortlist of proposals for approval 
+by the CSO.   
+ 
+In order to do so, the Scientific Committee shall: 
+1. Adopt the list of proposals which are of sufficiently high quality to be retained for possible funding 
+based on the available budget for the call (the retained proposals); 
+2. Select among the retained proposals the ones for the final list on the basis of the following 
+criteria applied sequentially: 
+a. S&amp;T Excellence, Networking Excellence, Impact and Implementation as described in 
+6.3. 
+b. Compliance with COST Excellence and Inclusiveness policy with regard to 
+Inclusiveness issue. A high degree of compliance with it shall be achieved by proposals 
+that build the capacity of COST Inclusiveness Target Countries to engage in the 
+European Research Area by: 
+i. Having very well-defined plans for including COST Inclusiveness Target 
+Countries participants in the implementation of the Action; and/or 
+ii. Being led by a Main Proposer from an ITC.  
+c. Applied with equal weight: 
+i. Compliance with COST Excellence and Inclusiveness policy with regard to 
+Young Researchers and Innovators (YRI). A high degree of compliance with it 
+shall be achieved by proposals: 
+1. Presenting a high proportion of Young Researchers and Innovators in 
+the Network of Proposers; and/or 
+2. Having very well-defined plans for including Young Researchers and 
+Innovators in the implementation of the Action; and/or 
+3. Led by a Main Proposer being a Young Researcher and Innovator. 
+ii. Compliance with COST Excellence and Inclusiveness policy with regard to 
+Gender balance. A high degree of compliance with it shall be achieved by 
+proposals: 
+
+
+</pre><div class="page-break" data-page="Page 9"></div><pre class="text-content">
+ 
+9 
+ 
+1. Presenting a good gender balance; and/ or  
+2. Having very well-defined plans for achieving gender balance in the 
+implementation of the Action; and/or 
+3. Led by a Main Proposer of the underrepresented gender. 
+d. For proposals that shall be deemed equivalent after application of criteria under 2. a to 
+c, achieving a balanced COST Actions’ portfolio and promoting interdisciplinarity. This 
+shall be done by selecting proposals addressing Research Areas and/ or Science Sub-
+Fields that are less extensively covered among the existing COST Actions’ portfolio and 
+those that are of a more interdisciplinary nature. 
+ 
+Detailed procedure shall be described in the COST Open Call Applicants’ Guidelines - Submission, 
+Evaluation, Selection and Approval (SESA)7. The Scientific Committee (SC) shall submit the final ranked 
+list of selected proposals to the CSO for approval. 
+ 
+The SC shall adopt a SC recommendation per selected proposal and a SC comment per non-selected 
+proposal among the retained proposals. 
+8.  PROPOSAL APPROVAL 
+The final decision on approval and funding for new COST Actions shall be taken by the Committee of 
+Senior Officials (CSO) on the basis of the shortlist submitted by the Scientific Committee, together with 
+a list of the evaluation results of all evaluated proposals taking into account the available budget. The 
+CSO may decide not to approve Actions selected through the procedure described under paragraphs 5 
+to 7 of the present rules. 
+ 
+The Technical Annex of a successful proposal approved by the CSO shall form the basis of the Action’s 
+Memorandum of Understanding (MoU). The start of the COST Action shall be described in the 
+Annotated Rules for COST Actions. 
+ 
+CNCs will receive the results either before or at the same time as the Main Proposers. The result of the 
+evaluation and selection shall be made available to the Main Proposer and the network of proposers via 
+e-COST. 
+ 
+9. REDRESS OF THE EVALUATION 
+In order to contribute to the fairness and transparency of the COST evaluation process, the COST 
+Association has established a redress procedure. The Main Proposer shall thereby have the possibility 
+to submit a request for assessment of the evaluation and potential redress.  
+ 
+Redress shall be allowed only in case of potential procedural shortcomings and factual errors, i.e., 
+whenever: 
+ 
+• the network of proposers considers that the evaluation has not been carried out in accordance 
+with the procedures set out in the current document; 
+ 
+• the network of proposers deems that the evaluation report bears a factual mistake. 
+ 
+Requests for redress dealing with the assessments by the Independent External Experts, of the Review 
+Panels or of the Scientific Committee shall not be admissible. 
+ 
+Further, proposal selection by the Scientific Committee as described under section 7 shall not be open 
+to redress. 
+ 
+ 
+7 COST 104/21 COST Open Call Applicants’ Guidelines – Submission, Evaluation, Selection and Approval (SESA) 
+
+
+</pre><div class="page-break" data-page="Page 10"></div><pre class="text-content">
+ 
+10 
+ 
+The redress procedure shall be designed to ensure a prompt and fair feedback to requests and shall be 
+available in the COST Open Call Applicants’ Guidelines - Submission, Evaluation, Selection and 
+Approval (SESA)8. 
+ 
+10.  HONORARIA 
+Honoraria shall be paid to the Independent External Experts and ad-hoc Review Panels’ members 
+involved in the SESA procedure. The EB shall determine the amount in the relevant COST Open Call 
+Applicants’ Guidelines - Submission, Evaluation, Selection and Approval (SESA). 
+ 
+11.  CONFLICT OF INTEREST 
+COST expects ethical behaviour from all participants in COST activities in accordance with the principles 
+established in the Rules and Principles for COST Activities. 
+ 
+COST shall strive to avoid any conflict of interest in its evaluation, selection and approval procedure.  
+ 
+Actors involved in the evaluation, selection and approval of proposals may not take any benefit from any 
+Action approved under the particular Collection Date they participated in.  
+ 
+The present rules shall apply to all players concerned by the submission, evaluation, selection and 
+approval of COST Action proposals (CNC, Independent External Expert, Review Panel Member, 
+Scientific Committee Member, and CSO Member). 
+ 
+11.1 CONFLICT OF INTEREST DEFINITION AND CASES 
+A Conflict of Interest with regard to the submission, evaluation, selection, and approval procedure shall 
+be the risk that professional judgement or actions regarding a person’s duties and responsibilities shall 
+be unduly influenced by that person’s professional or private interests. Each individual shall have only 
+one role in the evaluation, selection and approval of a COST Action. 
+ 
+A Conflict of Interest can be real, potential or perceived. 
+ 
+1. Cases of Real Conflict of Interest 
+ 
+The person involved in the evaluation or selection procedures (Independent External Expert, Review 
+Panel Member, Scientific Committee Member): 
+1. 
+has been involved in the preparation of the proposal;  
+2. 
+has been involved in any previous evaluation step in the same Collection.  
+ 
+2. Cases of Potential Conflict of Interest 
+ 
+The person involved in the evaluation or selection procedures (Independent External Expert, Review 
+Panel Member, Scientific Committee Member): 
+1. 
+was aware of the preparation of the proposal;  
+2. 
+has a professional or personal relationship with a proposer; 
+3. 
+stands to benefit directly or indirectly if the proposal shall be accepted or rejected. 
+ 
+3. Cases of Perceived Conflict of Interest 
+ 
+The person involved in the evaluation or selection procedures (Independent External Expert, Review 
+Panel Member, Scientific Committee Member): 
+ 
+1. 
+feels for any reason unable to provide an impartial review of the proposal. 
+ 
+8 COST 104/21 COST Open Call Applicants’ Guidelines – Submission, Evaluation, Selection and Approval (SESA) 
+
+
+</pre><div class="page-break" data-page="Page 11"></div><pre class="text-content">
+ 
+11 
+ 
+11.2 DECLARATION OF CONFLICT OF INTEREST 
+Before performing any evaluation, any person involved in the evaluation or selection procedures 
+(Independent External Expert, Review Panel Member, and Scientific Committee Member) shall sign a 
+declaration stating/accepting that he/she: 
+ 
+• is not aware of any conflict of interest regarding the proposal(s) to be evaluated/selected; 
+• shall inform immediately the COST Association of any conflict of interest discovered during the 
+evaluation process; 
+• shall maintain the confidentiality of the procedure. 
+11.3 TABLE OF INCOMPATIBILITIES 
+This table presents cases where a position shall be incompatible with an evaluation, selection and 
+approval step. 
+ 
+Steps 
+Main proposer 
+and network of 
+proposers 
+Independent 
+External 
+Expert 
+Ad hoc 
+Review 
+Panel  
+Member 
+Scientific 
+Committee   
+Member 
+Step 1 Evaluation 
+(External Experts) 
+ 
+ 
+ 
+ 
+Step 2 Revision (Review 
+Panel) 
+ 
+ 
+ 
+ 
+Step 3 Selection 
+(Scientific Committee) 
+ 
+ 
+ 
+ 
+Final approval (CSO) 
+ 
+ 
+ 
+ 
+  = incompatible  
+ 
+Any individual having participated in the submission, evaluation, selection or approval of Action 
+proposals shall observe these rules of conflict of interest.   
+ 
+11.4 CONSEQUENCES 
+The first duty of any person involved in the evaluation or selection procedures shall be to declare a 
+Conflict of Interest. 
+ 
+Failure to declare the Conflict of Interest may have the following consequences: 
+• notification to the COST Association Director;  
+• notification to the respective CNC for Review Panel Members; 
+• notification to the CSO for Scientific Committee Members; 
+• removal of the expert from the COST Expert Database. 
+ 
+All cases of Conflict of Interest shall be recorded and, for nationally nominated evaluators (Review Panel 
+Members and Scientific Committee Members), reported to the COST National Coordinator. 
+ 
+1. If the Conflict of Interest is confirmed/identified before the evaluation starts: 
+• 
+the evaluator may not participate in the evaluation/selection procedure in the ongoing 
+collection and shall be replaced.  
+ 
+2. If the Conflict of Interest is confirmed/identified during the evaluation:  
+• 
+the evaluator shall stop evaluating/selecting in the ongoing collection and shall be replaced;  
+• 
+any comments and marks already given by the evaluator shall be discarded. 
+ 
+3. If the Conflict of Interest is confirmed/identified after the evaluation has taken place, the COST 
+Association shall examine: 
+• 
+the potential impact and consequences of the Conflict of Interest and take appropriate 
+measures. 
+
+
+</pre><div class="page-break" data-page="Page 12"></div><pre class="text-content">
+ 
+12 
+ 
+ 
+The COST Association has the right to take the lead in any resolution process of a Conflict of Interest 
+situation at any moment of the evaluation. 
+12. FINAL PROVISIONS 
+The present rules shall be binding in their entirety and directly applicable to all actors concerned by the 
+submission, evaluation, selection and approval of COST Action proposals. 
+ 
+Any change or derogations to the present rules shall be subject to the approval of the CSO. 
+ 
+ 
+ 
+____________________ 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 13"></div><pre class="text-content">
+ 
+13 
+ 
+ANNEX A 
+List of Fields and Sub-Fields of Science and Technology9 
+ 
+Natural Sciences 
+Mathematics (research on methodologies of pure and applied mathematics, statistics and 
+probability: mathematics and statistics applied to other fields of science are excluded) 
+Computer and Information Sciences 
+Physical Sciences (excluding engineering and nano-technology applications to be found under each 
+engineering category) 
+Chemical sciences 
+Earth and related Environmental sciences 
+Biological sciences (excluding medical, clinical and agricultural applications) 
+Engineering and technology 
+Civil engineering 
+Electrical engineering, electronic engineering, Information engineering 
+Mechanical engineering 
+Chemical engineering 
+Materials engineering 
+Medical engineering (excluding biomaterials and physical characteristics of living material as related 
+to medical implants, devices, sensors) 
+Environmental engineering (excluding environmental biotechnology) 
+Environmental biotechnology 
+Industrial biotechnology 
+Nano-technology 
+Other engineering and technologies 
+Medical and Health Sciences 
+Basic medicine 
+Clinical medicine 
+Health Sciences 
+Medical biotechnology 
+Other medical sciences 
+Agricultural sciences 
+Agriculture, Forestry, and Fisheries (excluding agricultural biotechnology) 
+Animal and dairy science (excluding animal biotechnology) 
+Veterinary science 
+Agricultural biotechnology 
+Other agricultural sciences 
+Social Sciences 
+Psychology 
+Economics and business 
+Educational sciences (excluding institutional and economic aspects) 
+ 
+9 Science and Technology Fields and Sub-Fields correspond to the Organization for Economic Cooperation and Development 
+(OECD) Fields of Science used for international and European R&amp;D statistics (source: OECD Document DSTI/EAS/STP/NESTI 
+(2006)19/FINAL)  
+ 
+
+
+</pre><div class="page-break" data-page="Page 14"></div><pre class="text-content">
+ 
+14 
+ 
+Sociology 
+Law 
+Political Science 
+Social and economic geography 
+Media and communications 
+Other social sciences 
+Humanities 
+History and Archaeology 
+Languages and literature 
+Philosophy, Ethics and Religion (excluding philosophy and ethics applied to other fields of science) 
+Arts (arts, history of arts, performing arts, music) 
+Other humanities 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+
+</pre><div class="page-break" data-page="Page 15"></div><pre class="text-content">
+ 
+15 
+ 
+ANNEX B 
+ 
+Required minimum number of COST Inclusiveness Target Countries per number of COST Full 
+or Cooperating Members represented in a proposal  
+ 
+Number of COST Full or 
+Cooperating Members 
+Minimum number of ITC 
+7 
+4 
+8 
+4 
+9 
+5 
+10 
+5 
+11 
+6 
+12 
+6 
+13 
+7 
+14 
+7 
+15 
+8 
+16 
+8 
+17 
+9 
+18 
+9 
+19 
+10 
+20 
+10 
+21 
+11 
+22 
+11 
+23 
+12 
+24 
+12 
+25 
+13 
+26 
+13 
+27 
+14 
+28 
+14 
+29 
+15 
+30 
+15 
+31 
+16 
+32 
+16 
+33 
+17 
+34 
+17 
+35 
+18 
+36 
+18 
+37 
+19 
+38 
+19 
+39 
+20 
+ 
+ 
+ 
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>

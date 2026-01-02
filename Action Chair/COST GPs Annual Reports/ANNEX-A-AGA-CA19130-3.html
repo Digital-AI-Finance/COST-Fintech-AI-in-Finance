@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ANNEX A AGA CA19130 3 - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .header { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 6rem 2rem 2rem; }
+        .header h1 { font-size: 1.8rem; max-width: 1200px; margin: 0 auto 0.5rem; }
+        .header .meta { font-size: 0.9rem; opacity: 0.8; max-width: 1200px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb-content { max-width: 1200px; margin: 0 auto; font-size: 0.85rem; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .document { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow: hidden; }
+        .doc-header { background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05)); padding: 1.5rem 2rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+        .doc-header h2 { color: var(--cost-purple); font-size: 1.1rem; }
+        .doc-stats { display: flex; gap: 1.5rem; font-size: 0.85rem; color: var(--gray); }
+        .doc-stats span { display: flex; align-items: center; gap: 0.3rem; }
+        .doc-body { padding: 2rem; }
+        .page-break { border-top: 2px dashed var(--border); margin: 2rem 0; padding-top: 1rem; }
+        .page-break::before { content: attr(data-page); display: inline-block; background: var(--cost-purple); color: white; padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .text-content { font-family: 'Source Code Pro', monospace; font-size: 0.85rem; line-height: 1.8; white-space: pre-wrap; word-wrap: break-word; color: #333; }
+        .text-content .highlight { background: rgba(232,119,34,0.15); padding: 0.1rem 0.3rem; border-radius: 3px; }
+        .toc { background: white; border-radius: 12px; padding: 1.5rem 2rem; margin-bottom: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .toc h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1rem; }
+        .toc ul { list-style: none; }
+        .toc li { margin-bottom: 0.5rem; }
+        .toc a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .toc a:hover { text-decoration: underline; }
+        .download-btn { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; padding: 0.6rem 1.2rem; border-radius: 8px; text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .download-btn:hover { background: #4a2470; }
+        .search-box { margin-bottom: 1.5rem; }
+        .search-box input { width: 100%; padding: 0.8rem 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 0.9rem; }
+        .search-box input:focus { outline: none; border-color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .header h1 { font-size: 1.4rem; } .doc-body { padding: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>ANNEX A AGA CA19130 3</h1>
+        <div class="meta">Source: ANNEX-A-AGA-CA19130-3.txt | Generated: 2026-01-02 20:41</div>
+    </header>
+
+    <div class="breadcrumb">
+        <div class="breadcrumb-content">
+            <a href="index.html">Home</a> <span>/</span>
+            <a href="documents.html">Documents</a> <span>/</span>
+            <span>ANNEX A AGA CA19130 3</span>
+        </div>
+    </div>
+
+    <main class="content">
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search in document..." onkeyup="searchDocument()">
+        </div>
+
+        <div class="document">
+            <div class="doc-header">
+                <h2>Document Content</h2>
+                <div class="doc-stats">
+                    <span>4 pages</span>
+                    <span>3,597 characters</span>
+                    <span>587 words</span>
+                </div>
+            </div>
+            <div class="doc-body" id="documentBody">
+<div class="page-break" data-page="Page 1"></div><pre class="text-content">
+WORKPLAN
+Annex A - Work And Budget plan 
+CA19130
+Fintech and Artificial Intelligence in Finance - Towards a transparent financial industry
+Grant Period from 01/06/2022 to 31/10/2022
+ 
+Summary Budget
+ 
+Networking Tool
+Quant.
+Budget
+Meetings
+6
+EUR 97 170.00
+Training Schools
+0
+EUR 0.00
+Short Term Scientific Missions (STSM)
+16
+EUR 40 000.00
+ITC Conference Grant
+5
+EUR 7 500.00
+Dissemination and Communication Products
+2
+EUR 3 000.00
+Other Expenses Related to Scientific Activities (OERSA)
+0
+EUR 0.00
+SCIENCE EXPENDITURE : EUR 147 670.00
+Financial and Scientific Administration and Coordination (FSAC) - MAX. 15% 15%
+EUR 22 150.50
+TOTAL GRANT : EUR 169 820.50
+
+
+</pre><div class="page-break" data-page="Page 2"></div><pre class="text-content">
+Indicative Information
+Details for Meetings
+Meeting 1
+Type :
+Workshops/Conferences
+Title :
+COST FinAI - The 5th International conference on economics and
+social sciences
+Attendance Type :
+Hybrid
+Location :
+Bucharest (Romania)
+Date :
+16/06/2022 - 16/06/2022
+Total Participants :
+50
+Total Reimbursed :
+10
+Travel Costs :
+EUR 7 300.00
+Local Organiser Support :
+EUR 1 000.00
+Meeting 2
+Type :
+Core Group Meeting, Working Group Meeting
+Title :
+COST FinAI Transparency in Finance - Core group and WG3 meeting
+Attendance Type :
+Hybrid
+Location :
+Espoo (Finland)
+Date :
+06/07/2022 - 06/07/2022
+Total Participants :
+51
+Total Reimbursed :
+10
+Travel Costs :
+EUR 8 920.00
+Local Organiser Support :
+EUR 2 000.00
+Meeting 3
+Type :
+Core Group Meeting, Working Group Meeting, Workshops/Conferences
+Title :
+COST FinAI Research Workshop on Transparency in Financial
+Markets, Core group and WG2 meeting
+Attendance Type :
+Hybrid
+Location :
+Enschede (Netherlands)
+Date :
+22/08/2022 - 24/08/2022
+Total Participants :
+60
+Total Reimbursed :
+10
+Travel Costs :
+EUR 9 140.00
+Local Organiser Support :
+EUR 4 250.00
+Meeting 4
+Type :
+Workshops/Conferences
+Title :
+Women in Fintech and Artificial Intelligence
+Attendance Type :
+Hybrid
+Location :
+Tirana (Albania)
+Date :
+21/09/2022 - 22/09/2022
+Total Participants :
+51
+Total Reimbursed :
+10
+Travel Costs :
+EUR 8 550.00
+Local Organiser Support :
+EUR 2 000.00
+2
+
+
+</pre><div class="page-break" data-page="Page 3"></div><pre class="text-content">
+Meeting 5
+Type :
+Workshops/Conferences
+Title :
+European COST Conference on Artificial Intelligence in Finance
+Attendance Type :
+Hybrid
+Location :
+Bern (Switzerland)
+Date :
+30/09/2022 - 30/09/2022
+Total Participants :
+51
+Total Reimbursed :
+0
+Travel Costs :
+EUR 0.00
+Local Organiser Support :
+EUR 1 250.00
+Meeting 6
+Type :
+Management Committee Meeting, Core Group Meeting, Working Group
+Meeting, Workshops/Conferences
+Title :
+COST FinAI Transparency in Finance
+Attendance Type :
+Hybrid
+Location :
+Utrecht (Netherlands)
+Date :
+05/10/2022 - 07/10/2022
+Total Participants :
+120
+Total Reimbursed :
+40
+Travel Costs :
+EUR 46 760.00
+Local Organiser Support :
+EUR 6 000.00
+Details for Training Schools
+You have no Training Schools.
+Details for Short Term Scientific Missions (STSM)
+STSM Summary
+Number of STSMs :
+16
+Amount per STSM :
+2 500.00
+Total Budget for STSMs :
+40 000.00
+Details for ITC Conference Grant
+ITC Conference Grant Summary
+Number of Grants :
+16
+Amount per Grant :
+2 500.00
+Total Budget for Grants :
+40 000.00
+Details for Dissemination and Communication Products
+Item 1
+Title :
+Website
+Expected Release Date :
+30/09/2022
+Publisher or Supplier :
+tbd
+Type :
+Action Website
+Amount :
+EUR 1 500.00
+3
+
+
+</pre><div class="page-break" data-page="Page 4"></div><pre class="text-content">
+Item 2
+Title :
+Website
+Expected Release Date :
+30/09/2022
+Publisher or Supplier :
+tbd
+Type :
+Action Website
+Amount :
+EUR 1 500.00
+Details for Other Expenses Related to Scientific Activities (OERSA)
+You have no Other Expenditures Related to Scientific Activities.
+Powered by TCPDF (www.tcpdf.org)
+4
+</pre>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p><a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> | <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a></p>
+    </footer>
+
+    <script>
+        function searchDocument() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const content = document.getElementById('documentBody');
+
+            // Remove existing highlights
+            content.innerHTML = content.innerHTML.replace(/<mark class="highlight">([^<]+)<\/mark>/gi, '$1');
+
+            if (input.length < 2) return;
+
+            // Add new highlights
+            const regex = new RegExp('(' + input.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+            content.innerHTML = content.innerHTML.replace(regex, '<mark class="highlight">$1</mark>');
+        }
+    </script>
+</body>
+</html>
