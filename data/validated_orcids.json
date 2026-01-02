@@ -2,9 +2,9 @@
   "metadata": {
     "source": "D:\\Joerg\\Research\\slides\\COST_Network\\working_groups_members\\CA19130-WG-members.xlsx",
     "total_members": 426,
-    "members_with_orcid": 266,
+    "members_with_orcid": 260,
     "members_without_orcid": 160,
-    "valid_format": 266,
+    "valid_format": 260,
     "invalid_format": 0,
     "api_validated": null,
     "api_failed": null,
@@ -2084,60 +2084,12 @@
       "country": "Iceland (IS)"
     },
     {
-      "orcid": "0000-0002-7871-9176",
-      "name": "Llesh LLESHAJ",
-      "firstName": "Llesh",
-      "lastName": "LLESHAJ",
-      "affiliation": "University of Tirana",
-      "country": "Albania (AL)"
-    },
-    {
-      "orcid": "0000-0001-8774-267X",
-      "name": "Blisard Zani",
-      "firstName": "Blisard",
-      "lastName": "Zani",
-      "affiliation": "University of Tirana",
-      "country": "Albania (AL)"
-    },
-    {
-      "orcid": "0000-0003-3862-6132",
-      "name": "Sérgio Barbosa",
-      "firstName": "Sérgio",
-      "lastName": "Barbosa",
-      "affiliation": "University of Graz",
-      "country": "Austria (AT)"
-    },
-    {
-      "orcid": "0000-0002-7094-0749",
-      "name": "Ferlanda Luna",
-      "firstName": "Ferlanda",
-      "lastName": "Luna",
-      "affiliation": "UNIVERSIDADE DE COIMBRA",
-      "country": "Portugal (PT)"
-    },
-    {
       "orcid": "0009-0004-9429-0383",
       "name": "Theo Zacharis",
       "firstName": "Theo",
       "lastName": "Zacharis",
       "affiliation": "Greek Scientists Society",
       "country": "Greece (EL)"
-    },
-    {
-      "orcid": "0000-0002-1421-4670",
-      "name": "Fatma Ozge Ozkok",
-      "firstName": "Fatma Ozge",
-      "lastName": "Ozkok",
-      "affiliation": "Erciyes University",
-      "country": "Türkiye (TR)"
-    },
-    {
-      "orcid": "0000-0002-1775-2773",
-      "name": "Gülşah KEKLİK",
-      "firstName": "Gülşah",
-      "lastName": "KEKLİK",
-      "affiliation": "Istanbul Technical University",
-      "country": "Türkiye (TR)"
     }
   ],
   "invalid_orcids": [],
