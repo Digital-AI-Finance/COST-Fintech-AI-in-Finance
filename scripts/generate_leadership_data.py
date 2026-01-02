@@ -1,0 +1,387 @@
+"""
+Generate leadership data JSON from the Leadership_Positions.pdf content.
+Contains all leadership positions with history for COST Action CA19130.
+"""
+import json
+from pathlib import Path
+from datetime import datetime
+
+def main():
+    script_dir = Path(__file__).parent
+    project_dir = script_dir.parent
+    data_dir = project_dir / 'data'
+    data_dir.mkdir(parents=True, exist_ok=True)
+
+    # Leadership data extracted from Leadership_Positions.pdf
+    leadership_data = {
+        "metadata": {
+            "action": "CA19130",
+            "action_name": "Fintech and Artificial Intelligence in Finance",
+            "generated": datetime.now().isoformat(),
+            "source": "Leadership_Positions.pdf"
+        },
+
+        "grant_periods": [
+            {
+                "period": 1,
+                "start": "2020-11-01",
+                "end": "2021-10-31",
+                "grant_holder": "Zurich University of Applied Sciences"
+            },
+            {
+                "period": 2,
+                "start": "2021-11-01",
+                "end": "2022-05-31",
+                "grant_holder": "Zurich University of Applied Sciences"
+            },
+            {
+                "period": 3,
+                "start": "2022-06-01",
+                "end": "2022-10-31",
+                "grant_holder": "Bern University of Applied Sciences"
+            },
+            {
+                "period": 4,
+                "start": "2022-11-01",
+                "end": "2023-10-31",
+                "grant_holder": "Bern University of Applied Sciences"
+            },
+            {
+                "period": 5,
+                "start": "2023-11-01",
+                "end": "2024-09-13",
+                "grant_holder": "Bern University of Applied Sciences"
+            }
+        ],
+
+        "core_leadership": {
+            "action_chair": {
+                "title": "Action Chair",
+                "current": {
+                    "name": "Prof Jorg Osterrieder",
+                    "country": "Switzerland",
+                    "affiliation": "Bern University of Applied Sciences",
+                    "start": "2020-09-15"
+                },
+                "history": []
+            },
+            "action_vice_chair": {
+                "title": "Action Vice-Chair",
+                "current": {
+                    "name": "Prof Valerio Poti",
+                    "country": "Ireland",
+                    "affiliation": "Dublin City University",
+                    "start": "2020-09-15"
+                },
+                "history": []
+            },
+            "gh_scientific_representative": {
+                "title": "GH Scientific Representative",
+                "current": {
+                    "name": "Prof Branka Hadji Misheva",
+                    "country": "Switzerland",
+                    "affiliation": "Bern University of Applied Sciences",
+                    "start": "2022-06-01"
+                },
+                "history": [
+                    {
+                        "name": "Prof Jorg Osterrieder",
+                        "country": "Switzerland",
+                        "start": "2020-11-01",
+                        "end": "2022-05-31"
+                    }
+                ]
+            },
+            "gh_manager": {
+                "title": "Grant Holder Manager",
+                "current": {
+                    "name": "Prof Branka Hadji Misheva",
+                    "country": "Switzerland",
+                    "affiliation": "Bern University of Applied Sciences",
+                    "start": "2022-06-01"
+                },
+                "history": [
+                    {
+                        "name": "Prof Jorg Osterrieder",
+                        "country": "Switzerland",
+                        "start": "2020-11-01",
+                        "end": "2022-05-31"
+                    }
+                ]
+            }
+        },
+
+        "working_groups": {
+            "wg1": {
+                "name": "WG1: Transparency and Explainability in AI/ML for Finance",
+                "participants": 281,
+                "leader": {
+                    "title": "WG Leader",
+                    "current": {
+                        "name": "Prof Wolfgang Karl Hardle",
+                        "country": "Germany",
+                        "affiliation": "Humboldt University Berlin",
+                        "start": "2020-09-15"
+                    },
+                    "history": []
+                },
+                "vice_leader": {
+                    "title": "WG Vice Leader",
+                    "current": {
+                        "name": "Prof Branka Hadji Misheva",
+                        "country": "Switzerland",
+                        "affiliation": "Bern University of Applied Sciences",
+                        "start": "2020-09-15"
+                    },
+                    "history": []
+                }
+            },
+            "wg2": {
+                "name": "WG2: Optimization in AI/ML for Finance",
+                "participants": 254,
+                "leader": {
+                    "title": "WG Leader",
+                    "current": {
+                        "name": "Prof Petre Lameski",
+                        "country": "North Macedonia",
+                        "affiliation": "Ss. Cyril and Methodius University",
+                        "start": "2020-09-15"
+                    },
+                    "history": []
+                },
+                "vice_leader": {
+                    "title": "WG Vice Leader",
+                    "current": {
+                        "name": "Prof Damian Trif",
+                        "country": "Romania",
+                        "affiliation": "Babes-Bolyai University",
+                        "start": "2024-03-07"
+                    },
+                    "history": [
+                        {
+                            "name": "Prof Djordje Siljak",
+                            "country": "Ireland",
+                            "start": "2020-09-15",
+                            "end": "2024-03-07"
+                        }
+                    ]
+                }
+            },
+            "wg3": {
+                "name": "WG3: AI/ML Challenges in Quantitative Finance",
+                "participants": 223,
+                "leader": {
+                    "title": "WG Leader",
+                    "current": {
+                        "name": "Prof Peter Hartmut Schwendner",
+                        "country": "Switzerland",
+                        "affiliation": "Zurich University of Applied Sciences",
+                        "start": "2020-09-15"
+                    },
+                    "history": []
+                },
+                "vice_leader": {
+                    "title": "WG Vice Leader",
+                    "current": {
+                        "name": "Prof Joao Paulo Vieito",
+                        "country": "Portugal",
+                        "affiliation": "Polytechnic Institute of Viana do Castelo",
+                        "start": "2020-09-15"
+                    },
+                    "history": []
+                }
+            }
+        },
+
+        "coordinators": {
+            "science_communication": {
+                "title": "Science Communication Coordinator",
+                "current": {
+                    "name": "Dr Ioana Coita",
+                    "country": "Romania",
+                    "affiliation": "University of Oradea",
+                    "start": "2024-03-07"
+                },
+                "history": [
+                    {
+                        "name": "Prof Alessia Paccagnini",
+                        "country": "Ireland",
+                        "start": "2021-04-22",
+                        "end": "2024-03-07"
+                    },
+                    {
+                        "name": "Dr Anita Pelle",
+                        "country": "Hungary",
+                        "start": "2020-09-15",
+                        "end": "2021-04-22"
+                    }
+                ]
+            },
+            "grant_awarding": {
+                "title": "Grant Awarding Coordinator",
+                "current": {
+                    "name": "Prof Codruta Mare",
+                    "country": "Romania",
+                    "affiliation": "Babes-Bolyai University",
+                    "start": "2022-03-03"
+                },
+                "history": [
+                    {
+                        "name": "Prof Alessia Paccagnini",
+                        "country": "Ireland",
+                        "start": "2020-09-15",
+                        "end": "2022-03-03"
+                    }
+                ]
+            },
+            "training_schools": {
+                "title": "Training School Coordinator",
+                "current": {
+                    "name": "Prof Petre Lameski",
+                    "country": "North Macedonia",
+                    "affiliation": "Ss. Cyril and Methodius University",
+                    "start": "2022-12-12"
+                },
+                "history": [
+                    {
+                        "name": "Prof Raphael Silbernagel",
+                        "country": "Switzerland",
+                        "start": "2020-09-15",
+                        "end": "2022-12-12"
+                    }
+                ]
+            },
+            "stsm": {
+                "title": "STSM Coordinator",
+                "current": {
+                    "name": "Dr Andreea Nita",
+                    "country": "Romania",
+                    "affiliation": "Bucharest University of Economic Studies",
+                    "start": "2024-03-07"
+                },
+                "history": [
+                    {
+                        "name": "Prof Codruta Mare",
+                        "country": "Romania",
+                        "start": "2020-09-15",
+                        "end": "2024-03-07"
+                    }
+                ]
+            },
+            "virtual_networking": {
+                "title": "Virtual Networking Support Manager",
+                "current": {
+                    "name": "Prof Raphael Silbernagel",
+                    "country": "Switzerland",
+                    "affiliation": "University of Applied Sciences Northwestern Switzerland",
+                    "start": "2022-12-12"
+                },
+                "history": [
+                    {
+                        "name": "Prof Branka Hadji Misheva",
+                        "country": "Switzerland",
+                        "start": "2020-09-15",
+                        "end": "2022-12-12"
+                    }
+                ]
+            },
+            "ict": {
+                "title": "ICT Conference Grants Coordinator",
+                "current": {
+                    "name": "Dr Andreea Nita",
+                    "country": "Romania",
+                    "affiliation": "Bucharest University of Economic Studies",
+                    "start": "2023-05-31"
+                },
+                "history": []
+            }
+        },
+
+        "mc_observers": [
+            {
+                "name": "Prof Panayotis Alexakis",
+                "country": "Greece",
+                "role": "MC Observer",
+                "start": "2020-09-15"
+            },
+            {
+                "name": "Mr Michael Fruhmann",
+                "country": "Austria",
+                "role": "MC Observer",
+                "start": "2020-09-15"
+            },
+            {
+                "name": "Prof Henning Schulzrinne",
+                "country": "United States",
+                "role": "MC Observer",
+                "start": "2020-09-15"
+            },
+            {
+                "name": "Dr Faycel Allouche",
+                "country": "Tunisia",
+                "role": "MC Observer",
+                "start": "2024-03-07"
+            },
+            {
+                "name": "Dr Armel Jacques Nzeuko Njougo Francois",
+                "country": "Cameroon",
+                "role": "MC Observer",
+                "start": "2024-03-07"
+            },
+            {
+                "name": "Prof Daouda Sangare",
+                "country": "Ivory Coast",
+                "role": "MC Observer",
+                "start": "2024-03-07"
+            }
+        ],
+
+        "statistics": {
+            "total_participating_countries": 45,
+            "cost_member_countries": 38,
+            "near_neighbour_countries": 4,
+            "international_partner_countries": 3,
+            "total_wg_participants": 758,
+            "wg1_participants": 281,
+            "wg2_participants": 254,
+            "wg3_participants": 223
+        }
+    }
+
+    # Save leadership data
+    output_file = data_dir / 'leadership.json'
+    with open(output_file, 'w', encoding='utf-8') as f:
+        json.dump(leadership_data, f, indent=2, ensure_ascii=False)
+
+    print(f"Leadership data saved to: {output_file}")
+
+    # Print summary
+    print("\n" + "=" * 70)
+    print("LEADERSHIP DATA SUMMARY")
+    print("=" * 70)
+    print(f"Grant Periods: {len(leadership_data['grant_periods'])}")
+    print(f"Core Leadership Positions: {len(leadership_data['core_leadership'])}")
+    print(f"Working Groups: {len(leadership_data['working_groups'])}")
+    print(f"Coordinator Positions: {len(leadership_data['coordinators'])}")
+    print(f"MC Observers: {len(leadership_data['mc_observers'])}")
+
+    # Count positions with history
+    positions_with_history = 0
+    for pos in leadership_data['core_leadership'].values():
+        if pos.get('history'):
+            positions_with_history += 1
+    for wg in leadership_data['working_groups'].values():
+        if wg['leader'].get('history'):
+            positions_with_history += 1
+        if wg['vice_leader'].get('history'):
+            positions_with_history += 1
+    for coord in leadership_data['coordinators'].values():
+        if coord.get('history'):
+            positions_with_history += 1
+
+    print(f"Positions with leadership changes: {positions_with_history}")
+    print("=" * 70)
+
+
+if __name__ == '__main__':
+    main()
