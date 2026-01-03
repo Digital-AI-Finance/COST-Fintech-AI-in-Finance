@@ -19,6 +19,29 @@ from collections import Counter
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
+# Type groupings: map 33 publication types to 6 clean categories
+TYPE_GROUPS = {
+    'peer_reviewed': ['article', 'review', 'journal-article'],
+    'books_chapters': ['book', 'book-chapter', 'edited-book'],
+    'conference': ['conference-paper', 'conference-abstract', 'conference-poster',
+                   'conference-presentation', 'conference-proceedings', 'conference-output'],
+    'preprints': ['preprint', 'working-paper'],
+    'datasets': ['dataset', 'data-set', 'software'],
+    'other': ['editorial', 'report', 'paratext', 'letter', 'erratum',
+              'peer-review', 'dissertation', 'dissertation-thesis',
+              'encyclopedia-entry', 'dictionary-entry', 'online-resource',
+              'magazine-article', 'book-review', 'license', 'journal-issue',
+              'retraction', 'standards-and-policy', 'other']
+}
+
+def get_type_group(pub_type: str) -> str:
+    """Map a publication type to its group."""
+    pub_type = pub_type.lower() if pub_type else 'other'
+    for group, types in TYPE_GROUPS.items():
+        if pub_type in types:
+            return group
+    return 'other'
+
 
 def normalize_title(title: str) -> str:
     """Normalize title for comparison."""
@@ -107,8 +130,10 @@ def deduplicate_preprints(publications: List[dict]) -> tuple:
 
 def compute_author_stats(publications: List[dict]) -> dict:
     """
-    Compute per-author statistics with type breakdown.
-    Returns dict: {orcid: {name, total, by_type: {type: count}}}
+    Compute per-author statistics with type breakdown, grouped categories,
+    open access counts, and citation metrics.
+
+    Returns dict: {orcid: {name, total, by_type, by_group, open_access, cited_works, total_citations}}
     """
     author_stats = {}
 
@@ -121,17 +146,45 @@ def compute_author_stats(publications: List[dict]) -> dict:
             author_stats[orcid] = {
                 'name': p.get('author', 'Unknown'),
                 'total': 0,
-                'by_type': Counter()
+                'by_type': Counter(),
+                'by_group': Counter(),
+                'open_access': 0,
+                'cited_works': 0,
+                'total_citations': 0
             }
 
         author_stats[orcid]['total'] += 1
+
+        # Track by individual type
         pub_type = p.get('type', 'unknown')
         author_stats[orcid]['by_type'][pub_type] += 1
+
+        # Track by grouped category
+        group = get_type_group(pub_type)
+        author_stats[orcid]['by_group'][group] += 1
+
+        # Track open access
+        if p.get('is_open_access', False):
+            author_stats[orcid]['open_access'] += 1
+
+        # Track citations
+        cited_by = p.get('cited_by', 0) or 0
+        if cited_by > 0:
+            author_stats[orcid]['cited_works'] += 1
+        author_stats[orcid]['total_citations'] += cited_by
 
     # Convert Counters to dicts and add traditional_pubs count
     for orcid, stats in author_stats.items():
         by_type = dict(stats['by_type'])
         stats['by_type'] = by_type
+
+        by_group = dict(stats['by_group'])
+        # Ensure all groups exist (even if 0)
+        for group in TYPE_GROUPS.keys():
+            if group not in by_group:
+                by_group[group] = 0
+        stats['by_group'] = by_group
+
         # Traditional publications = articles + book-chapters + books + reviews
         stats['traditional_pubs'] = sum(
             by_type.get(t, 0) for t in ['article', 'book-chapter', 'book', 'review']
@@ -351,23 +404,30 @@ def main():
     for t, c in list(sorted(by_type.items(), key=lambda x: -x[1]))[:10]:
         print(f"  {t}: {c}")
 
-    print("\nTop 10 authors by publication count (total / traditional):")
-    # Sort by total but show traditional breakdown
+    print("\nTop 10 authors by publication count:")
+    print("  {:<25} {:>6} {:>6} {:>5} {:>5} {:>5} {:>5} {:>5} {:>6}".format(
+        "Author", "Total", "PeerRv", "Books", "Conf", "Pre", "Data", "OA", "Cited"))
+    print("  " + "-" * 75)
+
     sorted_authors = sorted(author_stats.items(), key=lambda x: -x[1]['total'])[:10]
     for orcid, stats in sorted_authors:
-        name = stats['name']
-        total = stats['total']
-        trad = stats['traditional_pubs']
-        print(f"  {name}: {total} total ({trad} traditional)")
+        name = stats['name'][:25]
+        bg = stats['by_group']
+        print("  {:<25} {:>6} {:>6} {:>5} {:>5} {:>5} {:>5} {:>5} {:>6}".format(
+            name, stats['total'],
+            bg.get('peer_reviewed', 0), bg.get('books_chapters', 0),
+            bg.get('conference', 0), bg.get('preprints', 0), bg.get('datasets', 0),
+            stats['open_access'], stats['cited_works']))
 
     print("\n" + "-" * 70)
-    print("Publication type breakdown for top authors:")
-    for orcid, stats in sorted_authors[:5]:
+    print("Detailed type breakdown for top 3 authors:")
+    for orcid, stats in sorted_authors[:3]:
         name = stats['name']
         by_type = stats['by_type']
         type_str = ", ".join(f"{t}: {c}" for t, c in sorted(by_type.items(), key=lambda x: -x[1]))
         print(f"  {name}:")
         print(f"    {type_str}")
+        print(f"    Total citations: {stats['total_citations']}")
 
     print("=" * 70)
 

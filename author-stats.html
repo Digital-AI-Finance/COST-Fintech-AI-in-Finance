@@ -116,7 +116,7 @@
         .nav-pills a.active { background: white; color: var(--cost-blue); }
 
         .container {
-            max-width: 1000px;
+            max-width: 1200px;
             margin: 0 auto;
             padding: 1rem;
         }
@@ -443,16 +443,20 @@
             <table>
                 <thead>
                     <tr>
-                        <th class="rank" data-sort="rank">Rank</th>
+                        <th class="rank" data-sort="rank">#</th>
                         <th data-sort="name">Author</th>
-                        <th data-sort="traditional" title="Articles + Book Chapters + Books + Reviews">Traditional</th>
-                        <th data-sort="article" title="Peer-reviewed articles">Articles</th>
-                        <th data-sort="dataset" title="Datasets (Zenodo, etc.)">Datasets</th>
-                        <th data-sort="count" class="sorted-desc" title="Total count including all types">Total</th>
+                        <th data-sort="peer_reviewed" title="Peer-reviewed articles + reviews">Peer-Rev</th>
+                        <th data-sort="books_chapters" title="Books + Book Chapters">Books</th>
+                        <th data-sort="conference" title="Conference papers">Conf</th>
+                        <th data-sort="preprints" title="Preprints + Working papers">Pre</th>
+                        <th data-sort="datasets" title="Datasets + Software">Data</th>
+                        <th data-sort="open_access" title="Open Access publications">OA</th>
+                        <th data-sort="cited_works" title="Publications with citations">Cited</th>
+                        <th data-sort="total" class="sorted-desc" title="Total publications">Total</th>
                     </tr>
                 </thead>
                 <tbody id="authorBody">
-                    <tr><td colspan="6" class="loading">Loading...</td></tr>
+                    <tr><td colspan="10" class="loading">Loading...</td></tr>
                 </tbody>
             </table>
         </div>
@@ -512,16 +516,26 @@
                 // Use author_stats from the JSON (computed by combine_publications.py)
                 const authorStats = data.author_stats || {};
 
-                // Convert to array with type breakdown
-                authorData = Object.entries(authorStats).map(([orcid, stats]) => ({
-                    name: stats.name || 'Unknown',
-                    orcid: orcid,
-                    total: stats.total || 0,
-                    traditional: stats.traditional_pubs || 0,
-                    article: (stats.by_type || {}).article || 0,
-                    dataset: (stats.by_type || {}).dataset || 0,
-                    by_type: stats.by_type || {}
-                }));
+                // Convert to array with grouped type breakdown
+                authorData = Object.entries(authorStats).map(([orcid, stats]) => {
+                    const bg = stats.by_group || {};
+                    return {
+                        name: stats.name || 'Unknown',
+                        orcid: orcid,
+                        total: stats.total || 0,
+                        // Grouped categories
+                        peer_reviewed: bg.peer_reviewed || 0,
+                        books_chapters: bg.books_chapters || 0,
+                        conference: bg.conference || 0,
+                        preprints: bg.preprints || 0,
+                        datasets: bg.datasets || 0,
+                        other: bg.other || 0,
+                        // Additional metrics
+                        open_access: stats.open_access || 0,
+                        cited_works: stats.cited_works || 0,
+                        total_citations: stats.total_citations || 0
+                    };
+                });
 
                 // Sort by total descending
                 authorData.sort((a, b) => b.total - a.total);
@@ -534,6 +548,7 @@
 
                 // Update stats
                 const totalPubs = authorData.reduce((sum, a) => sum + a.total, 0);
+                const totalOA = authorData.reduce((sum, a) => sum + a.open_access, 0);
                 document.getElementById('totalAuthors').textContent = authorData.length;
                 document.getElementById('totalPubs').textContent = totalPubs.toLocaleString();
                 document.getElementById('avgPubs').textContent = (totalPubs / authorData.length).toFixed(1);
@@ -542,14 +557,14 @@
             })
             .catch(err => {
                 console.error(err);
-                document.getElementById('authorBody').innerHTML = '<tr><td colspan="6" class="loading">Error loading data.</td></tr>';
+                document.getElementById('authorBody').innerHTML = '<tr><td colspan="10" class="loading">Error loading data.</td></tr>';
             });
 
         function renderTable() {
             const tbody = document.getElementById('authorBody');
 
             if (filteredData.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="6" class="loading">No authors match your search.</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="10" class="loading">No authors match your search.</td></tr>';
                 document.getElementById('resultsInfo').textContent = 'No results';
                 return;
             }
@@ -562,13 +577,20 @@
                     `<a href="https://orcid.org/${a.orcid}" target="_blank" style="color:inherit;text-decoration:none;" title="${a.orcid}">${a.name}</a>` :
                     a.name;
 
+                // Helper to show 0 as dash for cleaner display
+                const fmt = (v) => v > 0 ? v : '-';
+
                 return `
                     <tr>
                         <td class="rank">${a.rank}</td>
                         <td class="author-name">${nameLink}</td>
-                        <td style="text-align:center;color:var(--cost-green);font-weight:600;">${a.traditional || 0}</td>
-                        <td style="text-align:center;color:var(--cost-blue);">${a.article || 0}</td>
-                        <td style="text-align:center;color:var(--cost-orange);">${a.dataset || 0}</td>
+                        <td style="text-align:center;color:var(--cost-purple);font-weight:600;">${fmt(a.peer_reviewed)}</td>
+                        <td style="text-align:center;color:var(--cost-blue);">${fmt(a.books_chapters)}</td>
+                        <td style="text-align:center;color:var(--cost-teal);">${fmt(a.conference)}</td>
+                        <td style="text-align:center;color:var(--gray);">${fmt(a.preprints)}</td>
+                        <td style="text-align:center;color:var(--cost-orange);">${fmt(a.datasets)}</td>
+                        <td style="text-align:center;color:var(--cost-green);">${fmt(a.open_access)}</td>
+                        <td style="text-align:center;color:#666;">${fmt(a.cited_works)}</td>
                         <td class="pub-count">
                             ${a.total}
                             <div class="pub-bar" style="width: ${barWidth}%"></div>
@@ -595,14 +617,8 @@
                 }
             });
 
-            // Map column names to data properties
-            const colMap = {
-                'count': 'total',
-                'traditional': 'traditional',
-                'article': 'article',
-                'dataset': 'dataset'
-            };
-            const sortKey = colMap[column] || column;
+            // Column names map directly to data properties
+            const sortKey = column;
 
             filteredData.sort((a, b) => {
                 let valA = a[sortKey];
