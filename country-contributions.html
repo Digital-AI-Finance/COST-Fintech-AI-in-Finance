@@ -88,7 +88,7 @@
         /* Impact Grid */
         .impact-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
             gap: 1rem;
             margin: 2rem 0;
         }
@@ -96,19 +96,19 @@
         .impact-card {
             background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
             color: white;
-            padding: 1.5rem;
+            padding: 1.25rem;
             border-radius: 12px;
             text-align: center;
         }
 
         .impact-value {
-            font-size: 2.5rem;
+            font-size: 2rem;
             font-weight: 700;
             color: var(--cost-orange);
         }
 
         .impact-label {
-            font-size: 0.9rem;
+            font-size: 0.85rem;
             opacity: 0.9;
         }
 
@@ -151,7 +151,7 @@
         /* Countries Grid */
         .countries-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
             gap: 1.5rem;
             margin: 1.5rem 0;
         }
@@ -168,7 +168,6 @@
 
         .country-card:hover {
             border-color: var(--cost-orange);
-            transform: translateY(-3px);
             box-shadow: 0 8px 25px rgba(0,0,0,0.12);
         }
 
@@ -186,7 +185,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
-            margin-bottom: 1rem;
+            margin-bottom: 0.75rem;
         }
 
         .country-name {
@@ -228,27 +227,109 @@
 
         .metrics-grid {
             display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 0.75rem;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1rem;
         }
 
         .metric-item {
             text-align: center;
-            padding: 0.5rem;
+            padding: 0.5rem 0.25rem;
             background: var(--light);
             border-radius: 8px;
         }
 
         .metric-value {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: 700;
             color: var(--cost-purple);
         }
 
         .metric-label {
-            font-size: 0.7rem;
+            font-size: 0.65rem;
             color: var(--gray);
             text-transform: uppercase;
+        }
+
+        /* Country Summary Text */
+        .country-summary {
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+
+        /* Expandable Content */
+        .expand-btn {
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            background: var(--light);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--cost-purple);
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .expand-btn:hover {
+            background: var(--cost-purple);
+            color: white;
+        }
+
+        .country-details {
+            display: none;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .country-details.active {
+            display: block;
+        }
+
+        .detail-section {
+            margin-bottom: 1rem;
+        }
+
+        .detail-section h5 {
+            font-size: 0.85rem;
+            color: var(--cost-purple);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-list {
+            font-size: 0.8rem;
+            color: var(--gray);
+            padding-left: 1rem;
+        }
+
+        .detail-list li {
+            margin-bottom: 0.25rem;
+        }
+
+        .slide-content {
+            background: var(--light);
+            padding: 0.75rem;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        .slide-title {
+            font-weight: 600;
+            color: var(--cost-purple);
+            margin-bottom: 0.25rem;
+        }
+
+        .slide-text {
+            color: var(--gray);
+            line-height: 1.4;
         }
 
         /* Gallery */
@@ -398,6 +479,7 @@
             .search-input, .filter-select { width: 100%; }
             .countries-grid { grid-template-columns: 1fr; }
             nav .nav-links { display: none; }
+            .metrics-grid { grid-template-columns: repeat(2, 1fr); }
         }
     </style>
 </head>
@@ -422,19 +504,27 @@
         <div class="impact-grid" id="summary-stats">
             <div class="impact-card">
                 <div class="impact-value" id="stat-countries">29</div>
-                <div class="impact-label">Countries Reporting</div>
+                <div class="impact-label">Countries</div>
             </div>
             <div class="impact-card">
-                <div class="impact-value" id="stat-publications">664+</div>
+                <div class="impact-value" id="stat-publications">581</div>
                 <div class="impact-label">Publications</div>
             </div>
             <div class="impact-card">
-                <div class="impact-value" id="stat-events">186+</div>
+                <div class="impact-value" id="stat-acknowledgment">42</div>
+                <div class="impact-label">With Acknowledgment</div>
+            </div>
+            <div class="impact-card">
+                <div class="impact-value" id="stat-events">140</div>
                 <div class="impact-label">Events</div>
             </div>
             <div class="impact-card">
-                <div class="impact-value" id="stat-stsm">16+</div>
+                <div class="impact-value" id="stat-stsm">23</div>
                 <div class="impact-label">STSMs</div>
+            </div>
+            <div class="impact-card">
+                <div class="impact-value" id="stat-grants">11</div>
+                <div class="impact-label">Funded Grants</div>
             </div>
         </div>
 
@@ -497,22 +587,43 @@
 
         function updateStats(data) {
             document.getElementById('stat-countries').textContent = data.total_countries;
-            document.getElementById('stat-publications').textContent = data.summary_statistics.total_publications + '+';
-            document.getElementById('stat-events').textContent = data.summary_statistics.total_events + '+';
-            document.getElementById('stat-stsm').textContent = data.summary_statistics.total_stsm + '+';
+            document.getElementById('stat-publications').textContent = data.summary_statistics.total_publications || 0;
+            document.getElementById('stat-acknowledgment').textContent = data.summary_statistics.total_with_acknowledgment || 0;
+            document.getElementById('stat-events').textContent = data.summary_statistics.total_events || 0;
+            document.getElementById('stat-stsm').textContent = data.summary_statistics.total_stsm || 0;
+            document.getElementById('stat-grants').textContent = data.summary_statistics.total_funded_grants || 0;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
         }
 
         function renderCountries(countries) {
             const grid = document.getElementById('countries-grid');
             if (!grid) return;
 
-            grid.innerHTML = countries.map(country => `
+            grid.innerHTML = countries.map((country, idx) => {
+                const stats = country.summary_stats || {};
+                const textSummary = country.text_summary || {};
+                const highlights = textSummary.highlights || [];
+                const achievements = textSummary.achievements || [];
+                const slides = (textSummary.slides || []).slice(0, 5);
+
+                // Get events list
+                const events = (country.aggregated_metrics?.events?.events || []).slice(0, 5);
+
+                // Get grants info
+                const grants = (country.aggregated_metrics?.grants?.grants || []).slice(0, 3);
+
+                return `
                 <div class="country-card"
                      data-country="${country.country.toLowerCase()}"
                      data-region="${country.region}"
                      data-years="${country.years_reported.join(',')}">
                     <div class="country-header">
-                        <h4 class="country-name">${country.country}</h4>
+                        <h4 class="country-name">${escapeHtml(country.country)}</h4>
                         <span class="country-code">${country.country_code}</span>
                     </div>
                     <div class="country-region">${country.region}</div>
@@ -521,24 +632,89 @@
                     </div>
                     <div class="metrics-grid">
                         <div class="metric-item">
-                            <div class="metric-value">${country.summary_stats.total_publications}</div>
+                            <div class="metric-value">${stats.total_publications || 0}</div>
                             <div class="metric-label">Publications</div>
                         </div>
                         <div class="metric-item">
-                            <div class="metric-value">${country.summary_stats.total_events}</div>
+                            <div class="metric-value">${stats.total_events || 0}</div>
                             <div class="metric-label">Events</div>
                         </div>
                         <div class="metric-item">
-                            <div class="metric-value">${country.summary_stats.total_stsm}</div>
+                            <div class="metric-value">${stats.total_stsm || 0}</div>
                             <div class="metric-label">STSMs</div>
                         </div>
                         <div class="metric-item">
-                            <div class="metric-value">${country.summary_stats.total_grants}</div>
+                            <div class="metric-value">${stats.total_funded_grants || 0}</div>
                             <div class="metric-label">Grants</div>
                         </div>
                     </div>
+                    <p class="country-summary">${escapeHtml(country.summary || '')}</p>
+                    <button class="expand-btn" onclick="toggleDetails(${idx})">
+                        Show Details
+                    </button>
+                    <div class="country-details" id="details-${idx}">
+                        ${highlights.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Highlights</h5>
+                            <ul class="detail-list">
+                                ${highlights.map(h => `<li>${escapeHtml(h)}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${events.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Events & Activities</h5>
+                            <ul class="detail-list">
+                                ${events.map(e => `<li>${escapeHtml(e.name || '')}${e.date ? ` (${e.date})` : ''}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${grants.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Grants & Projects</h5>
+                            <ul class="detail-list">
+                                ${grants.map(g => `<li>${escapeHtml(g.description || '')} ${g.status === 'funded' ? '<strong>(Funded)</strong>' : ''}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${slides.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Report Content</h5>
+                            ${slides.map(s => `
+                                <div class="slide-content">
+                                    ${s.title ? `<div class="slide-title">${escapeHtml(s.title)}</div>` : ''}
+                                    <div class="slide-text">${escapeHtml((s.content || '').substring(0, 300))}${(s.content || '').length > 300 ? '...' : ''}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        ` : ''}
+
+                        ${achievements.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Achievements</h5>
+                            <ul class="detail-list">
+                                ${achievements.slice(0, 5).map(a => `<li>${escapeHtml(a)}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+                    </div>
                 </div>
-            `).join('');
+            `}).join('');
+        }
+
+        function toggleDetails(idx) {
+            const details = document.getElementById(`details-${idx}`);
+            const btn = details.previousElementSibling;
+            if (details.classList.contains('active')) {
+                details.classList.remove('active');
+                btn.textContent = 'Show Details';
+            } else {
+                details.classList.add('active');
+                btn.textContent = 'Hide Details';
+            }
         }
 
         function renderGallery(countries) {
@@ -547,7 +723,7 @@
 
             const allImages = [];
             countries.forEach(country => {
-                country.gallery_images.slice(0, 3).forEach(img => {
+                (country.gallery_images || []).slice(0, 3).forEach(img => {
                     allImages.push({
                         ...img,
                         country: country.country,
@@ -559,9 +735,9 @@
             const displayImages = allImages.slice(0, 24);
 
             gallery.innerHTML = displayImages.map(img => `
-                <div class="gallery-item" onclick="openLightbox('images/contributions/${img.path}', '${img.country} (${img.year})')">
-                    <img src="images/contributions/${img.path}" alt="${img.country}" loading="lazy">
-                    <div class="gallery-caption">${img.country}</div>
+                <div class="gallery-item" onclick="openLightbox('images/${img.path}', '${escapeHtml(img.country)} (${img.year})')">
+                    <img src="images/${img.path}" alt="${escapeHtml(img.country)}" loading="lazy">
+                    <div class="gallery-caption">${escapeHtml(img.country)}</div>
                 </div>
             `).join('');
         }
@@ -572,7 +748,7 @@
 
             const downloads = [];
             countries.forEach(country => {
-                country.downloads.forEach(dl => {
+                (country.downloads || []).forEach(dl => {
                     downloads.push({
                         ...dl,
                         country: country.country,
@@ -586,9 +762,9 @@
             container.innerHTML = downloads.map(dl => `
                 <a href="downloads/contributions/${dl.country_code.toLowerCase()}/${dl.filename}"
                    class="download-item" target="_blank">
-                    <div class="download-icon">${dl.type.toUpperCase()}</div>
+                    <div class="download-icon">${(dl.type || 'FILE').toUpperCase()}</div>
                     <div>
-                        <div class="download-country">${dl.country}</div>
+                        <div class="download-country">${escapeHtml(dl.country)}</div>
                         <div class="download-year">${dl.year} Update</div>
                     </div>
                 </a>
