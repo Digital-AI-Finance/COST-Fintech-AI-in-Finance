@@ -285,20 +285,160 @@
             th, td { padding: 0.75rem 0.5rem; font-size: 0.8rem; }
         }
     </style>
+    <link rel="stylesheet" href="css/mega-menu.css">
 </head>
 <body>
-    <nav>
-        <div class="nav-content">
-            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">COST <span>CA19130</span></a></div>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="leadership.html">Leadership</a></li>
-                <li><a href="mc-members.html">MC Members</a></li>
-                <li><a href="wg-members.html">WG Members</a></li>
-                <li><a href="publications.html">Publications</a></li>
+        <!-- COST CA19130 Legacy Archive - Mega Menu Navigation -->
+    <nav class="mega-nav">
+        <div class="mega-nav-content">
+            <a href="index.html" class="mega-nav-logo">
+                COST <span>CA19130</span>
+                <span class="completed-badge">2020-2024</span>
+            </a>
+            <ul class="mega-nav-menu">
+                <li><a href="index.html" data-category="home">HOME</a></li>
+                <li>
+                    <a href="#" data-category="impact">IMPACT <span class="arrow">&#9660;</span></a>
+                    <div class="mega-dropdown mega-dropdown-single">
+                        <a href="final-achievements.html">Final Achievements</a>
+                        <a href="final-report.html">Objectives Met (16/16)</a>
+                        <a href="work-budget-plans/deliverables.html">Deliverables Completed (15/15)</a>
+                        <a href="final-impacts.html">Scientific Impact</a>
+                        <a href="final-publications.html">Legacy & Continuation</a>
+                        <a href="comparison-enhanced.html">Report Comparison</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
+                    <div class="mega-dropdown mega-dropdown-single">
+                        <a href="members.html">All Members (426)</a>
+                        <a href="leadership.html">Leadership Team</a>
+                        <a href="mc-members.html">Management Committee (70)</a>
+                        <a href="wg-members.html">Working Groups</a>
+                        <a href="country-contributions.html">Countries (48)</a>
+                        <a href="author-stats.html">Author Statistics</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" data-category="research">RESEARCH <span class="arrow">&#9660;</span></a>
+                    <div class="mega-dropdown mega-dropdown-single">
+                        <a href="publications.html">Publications</a>
+                        <a href="preprints.html">Preprints</a>
+                        <a href="datasets.html">Datasets</a>
+                        <a href="other-outputs.html">Other Outputs</a>
+                        <a href="documents.html">Documents</a>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" data-category="activities">ACTIVITIES <span class="arrow">&#9660;</span></a>
+                    <div class="mega-dropdown mega-dropdown-multi">
+                        <div class="mega-dropdown-column">
+                            <h4>Meetings</h4>
+                            <a href="financial-reports/meetings.html">All Meetings</a>
+                            <a href="progress-reports.html">By Grant Period</a>
+                            <a href="financial-reports/participants.html">Participants</a>
+                        </div>
+                        <div class="mega-dropdown-column">
+                            <h4>Mobility</h4>
+                            <a href="financial-reports/stsm.html">STSMs</a>
+                            <a href="financial-reports/virtual-mobility.html">Virtual Mobility</a>
+                            <a href="financial-reports/countries.html">ITC Grants</a>
+                        </div>
+                        <div class="mega-dropdown-column">
+                            <h4>Training</h4>
+                            <a href="financial-reports/training-schools.html">Training Schools</a>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <a href="#" data-category="archive">ARCHIVE <span class="arrow">&#9660;</span></a>
+                    <div class="mega-dropdown mega-dropdown-multi wide">
+                        <div class="mega-dropdown-column">
+                            <h4>Reports</h4>
+                            <a href="final-action-chair-report-full.html">Final Report (Full)</a>
+                            <a href="midterm-action-chair-report-full.html">Mid-Term Report (Full)</a>
+                            <a href="progress-reports.html">Progress Reports</a>
+                            <a href="midterm-rapporteur-review.html">Rapporteur Review</a>
+                        </div>
+                        <div class="mega-dropdown-column">
+                            <h4>Finances</h4>
+                            <a href="financial-reports/overview.html">Financial Overview</a>
+                            <a href="work-budget-plans/index.html">Budget Plans</a>
+                            <a href="financial-reports/ffr1.html">FFR 1-5</a>
+                        </div>
+                        <div class="mega-dropdown-column">
+                            <h4>Tools</h4>
+                            <a href="report-editor.html">Report Editor</a>
+                            <a href="comparison-enhanced.html">Report Comparison</a>
+                        </div>
+                    </div>
+                </li>
             </ul>
+            <button class="mega-nav-hamburger" aria-label="Toggle menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
     </nav>
+
+    <!-- Mobile Menu -->
+    <div class="mega-mobile-menu">
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li>
+                <button>IMPACT <span class="toggle-icon">+</span></button>
+                <div class="mega-mobile-submenu">
+                    <a href="final-achievements.html">Final Achievements</a>
+                    <a href="final-report.html">Objectives Met (16/16)</a>
+                    <a href="work-budget-plans/deliverables.html">Deliverables Completed</a>
+                    <a href="final-impacts.html">Scientific Impact</a>
+                    <a href="final-publications.html">Legacy & Continuation</a>
+                    <a href="comparison-enhanced.html">Report Comparison</a>
+                </div>
+            </li>
+            <li>
+                <button>NETWORK <span class="toggle-icon">+</span></button>
+                <div class="mega-mobile-submenu">
+                    <a href="members.html">All Members (426)</a>
+                    <a href="leadership.html">Leadership Team</a>
+                    <a href="mc-members.html">Management Committee</a>
+                    <a href="wg-members.html">Working Groups</a>
+                    <a href="country-contributions.html">Countries (48)</a>
+                    <a href="author-stats.html">Author Statistics</a>
+                </div>
+            </li>
+            <li>
+                <button>RESEARCH <span class="toggle-icon">+</span></button>
+                <div class="mega-mobile-submenu">
+                    <a href="publications.html">Publications</a>
+                    <a href="preprints.html">Preprints</a>
+                    <a href="datasets.html">Datasets</a>
+                    <a href="other-outputs.html">Other Outputs</a>
+                    <a href="documents.html">Documents</a>
+                </div>
+            </li>
+            <li>
+                <button>ACTIVITIES <span class="toggle-icon">+</span></button>
+                <div class="mega-mobile-submenu">
+                    <a href="financial-reports/meetings.html">All Meetings</a>
+                    <a href="financial-reports/stsm.html">STSMs</a>
+                    <a href="financial-reports/virtual-mobility.html">Virtual Mobility</a>
+                    <a href="financial-reports/training-schools.html">Training Schools</a>
+                </div>
+            </li>
+            <li>
+                <button>ARCHIVE <span class="toggle-icon">+</span></button>
+                <div class="mega-mobile-submenu">
+                    <a href="final-action-chair-report-full.html">Final Report</a>
+                    <a href="midterm-action-chair-report-full.html">Mid-Term Report</a>
+                    <a href="progress-reports.html">Progress Reports</a>
+                    <a href="financial-reports/overview.html">Financial Overview</a>
+                    <a href="report-editor.html">Report Editor</a>
+                </div>
+            </li>
+        </ul>
+    </div>
 
     <header class="header">
         <h1>Action Members</h1>
@@ -345,8 +485,45 @@
         <div class="pagination" id="pagination"></div>
     </div>
 
-    <footer>
-        <p><a href="index.html">Back to Home</a> | COST Action CA19130 - Fintech and AI in Finance</p>
+        <!-- Legacy Footer -->
+    <footer class="legacy-footer">
+        <div class="legacy-footer-content">
+            <div class="legacy-footer-title">
+                <h3>COST Action CA19130 - Fintech and Artificial Intelligence in Finance</h3>
+                <p class="completed">October 2020 - October 2024 (Completed)</p>
+            </div>
+            <div class="legacy-footer-grid">
+                <div class="legacy-footer-col">
+                    <h4>Impact</h4>
+                    <a href="final-achievements.html">Achievements</a>
+                    <a href="final-report.html">16/16 Objectives</a>
+                    <a href="work-budget-plans/deliverables.html">15/15 Deliverables</a>
+                </div>
+                <div class="legacy-footer-col">
+                    <h4>Network</h4>
+                    <a href="members.html">426 Members</a>
+                    <a href="country-contributions.html">48 Countries</a>
+                    <a href="leadership.html">Leadership</a>
+                </div>
+                <div class="legacy-footer-col">
+                    <h4>Archive</h4>
+                    <a href="final-action-chair-report-full.html">Final Report</a>
+                    <a href="midterm-action-chair-report-full.html">Mid-Term Report</a>
+                    <a href="financial-reports/overview.html">Financial Reports</a>
+                </div>
+            </div>
+            <div class="legacy-footer-grid" style="margin-bottom: 0;">
+                <div class="legacy-footer-col">
+                    <h4>Connect</h4>
+                    <a href="https://www.cost.eu/actions/CA19130/" target="_blank" rel="noopener">COST Official Page</a>
+                    <a href="https://fin-ai.eu" target="_blank" rel="noopener">fin-ai.eu</a>
+                    <a href="https://github.com/Digital-AI-Finance" target="_blank" rel="noopener">GitHub</a>
+                </div>
+            </div>
+            <div class="legacy-footer-bottom">
+                <p>Data sourced from <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a> and <a href="https://orcid.org" target="_blank" rel="noopener">ORCID</a> | Archive maintained since 2024</p>
+            </div>
+        </div>
     </footer>
 
     <script>
@@ -516,5 +693,6 @@
         document.getElementById('wgFilter').addEventListener('change', filterMembers);
         document.getElementById('roleFilter').addEventListener('change', filterMembers);
     </script>
+    <script src="js/mobile-menu.js"></script>
 </body>
 </html>
