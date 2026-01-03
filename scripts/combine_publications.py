@@ -43,6 +43,24 @@ def get_type_group(pub_type: str) -> str:
     return 'other'
 
 
+def load_excluded_orcids(data_dir: Path) -> set:
+    """Load ORCIDs to exclude (non-finance authors)."""
+    exclusion_file = data_dir / 'excluded_non_finance_orcids.json'
+    if not exclusion_file.exists():
+        return set()
+
+    with open(exclusion_file, 'r', encoding='utf-8') as f:
+        data = json.load(f)
+
+    excluded = set()
+    for entry in data.get('excluded', []):
+        orcid = entry.get('orcid', '')
+        if orcid:
+            excluded.add(orcid)
+
+    return excluded
+
+
 def normalize_title(title: str) -> str:
     """Normalize title for comparison."""
     if not title:
@@ -229,16 +247,31 @@ def main():
         print("ERROR: No publications to combine. Run fetcher scripts first.")
         return
 
+    # Load excluded ORCIDs (non-finance authors)
+    excluded_orcids = load_excluded_orcids(data_dir)
+    if excluded_orcids:
+        print(f"\nExcluded ORCIDs (non-finance): {len(excluded_orcids)}")
+        for orcid in list(excluded_orcids)[:5]:
+            print(f"  - {orcid}")
+        if len(excluded_orcids) > 5:
+            print(f"  ... and {len(excluded_orcids) - 5} more")
+
     # Combine publications
     # Strategy: Show per author (as requested), but track duplicates for statistics
     # Use DOI as unique identifier where available
 
     combined = []
     seen_per_author = {}  # {author_orcid: set of DOIs}
+    excluded_count = 0
 
     # Process OpenAlex first (generally better metadata)
     for pub in openalex_pubs:
         author_orcid = pub.get('cost_author', {}).get('orcid', '')
+
+        # Skip excluded authors
+        if author_orcid in excluded_orcids:
+            excluded_count += 1
+            continue
         doi = normalize_doi(pub.get('doi', ''))
 
         if author_orcid not in seen_per_author:
@@ -272,6 +305,12 @@ def main():
     orcid_added = 0
     for pub in orcid_pubs:
         author_orcid = pub.get('cost_author', {}).get('orcid', '')
+
+        # Skip excluded authors
+        if author_orcid in excluded_orcids:
+            excluded_count += 1
+            continue
+
         doi = normalize_doi(pub.get('doi', ''))
 
         if author_orcid not in seen_per_author:
@@ -303,6 +342,8 @@ def main():
     print(f"\nCombined total (before dedup): {len(combined)}")
     print(f"  From OpenAlex: {openalex_count}")
     print(f"  From ORCID (unique): {orcid_added}")
+    if excluded_count > 0:
+        print(f"  Excluded (non-finance): {excluded_count}")
 
     # Deduplicate preprints that match published articles
     combined, preprints_removed = deduplicate_preprints(combined)
