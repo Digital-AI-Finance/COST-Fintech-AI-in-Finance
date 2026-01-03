@@ -609,13 +609,21 @@
                 const textSummary = country.text_summary || {};
                 const highlights = textSummary.highlights || [];
                 const achievements = textSummary.achievements || [];
-                const slides = (textSummary.slides || []).slice(0, 5);
+                const slides = (textSummary.slides || []).slice(0, 10);
+
+                // Get text content sections
+                const textContent = country.text_content || {};
+                const membersText = (textContent.members || []).slice(0, 10);
+                const pubsText = (textContent.publications || []).slice(0, 10);
+                const eventsText = (textContent.events || []).slice(0, 10);
+                const stsmText = (textContent.stsm || []).slice(0, 10);
+                const grantsText = (textContent.grants || []).slice(0, 10);
 
                 // Get events list
-                const events = (country.aggregated_metrics?.events?.events || []).slice(0, 5);
+                const events = (country.aggregated_metrics?.events?.events || []).slice(0, 8);
 
                 // Get grants info
-                const grants = (country.aggregated_metrics?.grants?.grants || []).slice(0, 3);
+                const grants = (country.aggregated_metrics?.grants?.grants || []).slice(0, 5);
 
                 return `
                 <div class="country-card"
@@ -700,6 +708,42 @@
                             </ul>
                         </div>
                         ` : ''}
+
+                        ${membersText.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Team Members</h5>
+                            <ul class="detail-list">
+                                ${membersText.map(m => `<li>${escapeHtml(m)}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${pubsText.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Publications</h5>
+                            <ul class="detail-list">
+                                ${pubsText.map(p => `<li>${escapeHtml(p)}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${stsmText.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Scientific Missions (STSM)</h5>
+                            <ul class="detail-list">
+                                ${stsmText.map(s => `<li>${escapeHtml(s)}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${grantsText.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Grants & Funding</h5>
+                            <ul class="detail-list">
+                                ${grantsText.map(g => `<li>${escapeHtml(g)}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
                     </div>
                 </div>
             `}).join('');
@@ -723,7 +767,8 @@
 
             const allImages = [];
             countries.forEach(country => {
-                (country.gallery_images || []).slice(0, 3).forEach(img => {
+                // Show up to 5 images per country for better coverage
+                (country.gallery_images || []).slice(0, 5).forEach(img => {
                     allImages.push({
                         ...img,
                         country: country.country,
@@ -732,11 +777,12 @@
                 });
             });
 
-            const displayImages = allImages.slice(0, 24);
+            // Show all images (no limit)
+            const displayImages = allImages;
 
             gallery.innerHTML = displayImages.map(img => `
-                <div class="gallery-item" onclick="openLightbox('images/${img.path}', '${escapeHtml(img.country)} (${img.year})')">
-                    <img src="images/${img.path}" alt="${escapeHtml(img.country)}" loading="lazy">
+                <div class="gallery-item" onclick="openLightbox('${img.path}', '${escapeHtml(img.country)} (${img.year})')">
+                    <img src="${img.path}" alt="${escapeHtml(img.country)}" loading="lazy">
                     <div class="gallery-caption">${escapeHtml(img.country)}</div>
                 </div>
             `).join('');
