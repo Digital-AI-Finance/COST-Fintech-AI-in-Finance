@@ -1,529 +1,1078 @@
 [
   {
-    "number": 2,
+    "id": "GP4_TS1",
+    "grant_period": 4,
+    "school_number": 1,
+    "start_date": "26/04/2023",
+    "end_date": "28/04/2023",
+    "duration_days": 3,
+    "location": "Department of Informatics, Faculty of Natural Sciences, University of Tirana / Tirana /",
+    "city": "Department of Informatics, Faculty of Natural Sciences, University of Tirana",
+    "country": "Tirana /",
+    "title": "COSTFinAI-FintechandAIinFinance-TrainingSchoolforthelatesttechnologies",
+    "participants": [
+      {
+        "index": 1,
+        "name": "Baka, Dea",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 2,
+        "name": "Bekteshi, Erisa",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 3,
+        "name": "Cokaj, Mentor",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 4,
+        "name": "Halilaj, Malvina",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 5,
+        "name": "Kosta, Anxhela",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 6,
+        "name": "Lili, Ilma",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 7,
+        "name": "Maxhelaku (Vasil), Suela",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 8,
+        "name": "Maxhelaku, Armela",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 9,
+        "name": "Metani, Fiona",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 10,
+        "name": "Metushi, Emirjan",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 11,
+        "name": "Osterrieder, Jörg",
+        "country": "NL",
+        "is_itc": false,
+        "travel_allowance": 779.27,
+        "daily_allowance": 612.0,
+        "other_expenses": 0.0,
+        "total": 1391.27
+      },
+      {
+        "index": 12,
+        "name": "Sauli, Gerta",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 13,
+        "name": "Seci, Drita",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 14,
+        "name": "Xhina, Endrit",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      },
+      {
+        "index": 15,
+        "name": "Xhumari, Elda",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 0.0,
+        "daily_allowance": 216.0,
+        "other_expenses": 0.0,
+        "total": 216.0
+      }
+    ],
+    "trainers": [],
+    "participant_subtotal": 4415.27,
+    "los_grant": 3000.0,
+    "total_expenditure": 7415.27
+  },
+  {
+    "id": "GP4_TS2",
+    "grant_period": 4,
+    "school_number": 2,
     "start_date": "12/06/2023",
     "end_date": "16/06/2023",
     "duration_days": 5,
     "location": "University of Twente / Enschede / Netherlands",
+    "city": "Enschede",
+    "country": "Netherlands",
     "title": "COSTFinAI-FintechandAIinFinance-TrainingSchooloncurrentstate-of-the-art",
-    "grant_period": 4,
-    "trainees": [
+    "participants": [
       {
+        "index": 1,
         "name": "Baals, Lennart John",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 463.76,
-        "daily_allowance": 1.0,
-        "other_expenses": 350.4,
-        "total": 0.0
+        "daily_allowance": 1350.4,
+        "other_expenses": 0.0,
+        "total": 1814.16
       },
       {
+        "index": 2,
         "name": "Belbe, Stefana",
         "country": "RO",
+        "is_itc": true,
         "travel_allowance": 315.55,
-        "daily_allowance": 1.0,
-        "other_expenses": 139.4,
-        "total": 0.0
+        "daily_allowance": 1139.4,
+        "other_expenses": 0.0,
+        "total": 1454.95
       },
       {
+        "index": 3,
         "name": "Coita, Ioana",
         "country": "RO",
+        "is_itc": true,
         "travel_allowance": 490.19,
         "daily_allowance": 506.4,
         "other_expenses": 0.0,
         "total": 996.59
       },
       {
+        "index": 4,
         "name": "Hadji Misheva, Branka",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 379.44,
         "daily_allowance": 485.3,
         "other_expenses": 0.0,
         "total": 864.74
       },
       {
+        "index": 5,
         "name": "Liana, Stanca",
         "country": "RO",
+        "is_itc": true,
         "travel_allowance": 511.88,
         "daily_allowance": 675.2,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1187.08
       },
       {
+        "index": 6,
         "name": "Liu, Yiting",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 399.86,
-        "daily_allowance": 1.0,
-        "other_expenses": 350.4,
-        "total": 0.0
+        "daily_allowance": 1350.4,
+        "other_expenses": 0.0,
+        "total": 1750.26
       },
       {
+        "index": 7,
         "name": "MATKOVSKYY, Roman",
         "country": "FR",
+        "is_itc": false,
         "travel_allowance": 463.03,
         "daily_allowance": 907.3,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1370.33
       },
       {
+        "index": 8,
         "name": "Moukas, Alexios Ioannis",
         "country": "EL",
+        "is_itc": true,
         "travel_allowance": 266.83,
         "daily_allowance": 717.4,
         "other_expenses": 0.0,
         "total": 984.23
       },
       {
+        "index": 9,
         "name": "Osterrieder, Jörg",
         "country": "NL",
+        "is_itc": false,
         "travel_allowance": 379.4,
-        "daily_allowance": 1.0,
-        "other_expenses": 350.4,
-        "total": 0.0
+        "daily_allowance": 1350.4,
+        "other_expenses": 0.0,
+        "total": 1729.8
       },
       {
+        "index": 10,
         "name": "Shala, Albulena",
         "country": "KV",
+        "is_itc": true,
         "travel_allowance": 489.6,
-        "daily_allowance": 1.0,
-        "other_expenses": 350.4,
-        "total": 0.0
+        "daily_allowance": 1350.4,
+        "other_expenses": 0.0,
+        "total": 1840.0
       },
       {
+        "index": 11,
         "name": "Temkov, Slave",
         "country": "MK",
+        "is_itc": true,
         "travel_allowance": 242.74,
         "daily_allowance": 907.3,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1150.04
       },
       {
+        "index": 12,
         "name": "Thomaidis, Nikolaos S.",
         "country": "EL",
+        "is_itc": true,
         "travel_allowance": 591.02,
         "daily_allowance": 717.4,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1308.42
       },
       {
+        "index": 13,
         "name": "Zhu, Laqiqige",
         "country": "IE",
+        "is_itc": false,
         "travel_allowance": 264.04,
-        "daily_allowance": 1.0,
-        "other_expenses": 308.2,
-        "total": 80.0
+        "daily_allowance": 1308.2,
+        "other_expenses": 80.0,
+        "total": 1652.24
       },
       {
+        "index": 14,
         "name": "çitçi, Sadettin haluk",
         "country": "TR",
+        "is_itc": true,
         "travel_allowance": 343.51,
         "daily_allowance": 907.3,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1250.81
       }
-    ]
+    ],
+    "trainers": [],
+    "participant_subtotal": 19353.65,
+    "los_grant": 3000.0,
+    "total_expenditure": 22353.65
   },
   {
-    "number": 3,
+    "id": "GP4_TS3",
+    "grant_period": 4,
+    "school_number": 3,
     "start_date": "28/08/2023",
     "end_date": "01/09/2023",
     "duration_days": 5,
     "location": "HTW Berlin / Berlin / Germany",
+    "city": "Berlin",
+    "country": "Germany",
     "title": "COST FinAI Training school Data science for sustainable economics and finance",
-    "grant_period": 4,
-    "trainees": [
+    "participants": [
       {
+        "index": 1,
         "name": "Birlan, Ioana",
         "country": "RO",
+        "is_itc": true,
         "travel_allowance": 0.0,
         "daily_allowance": 670.0,
         "other_expenses": 0.0,
         "total": 670.0
       },
       {
+        "index": 2,
         "name": "D'Elia, Samuele",
         "country": "IT",
+        "is_itc": false,
         "travel_allowance": 0.0,
         "daily_allowance": 600.0,
         "other_expenses": 0.0,
         "total": 600.0
       },
       {
+        "index": 3,
         "name": "Demolli, Erlind",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 0.0,
         "daily_allowance": 600.0,
         "other_expenses": 0.0,
         "total": 600.0
       },
       {
+        "index": 4,
         "name": "Frigerio, Giorgio Pietro",
         "country": "IT",
+        "is_itc": false,
         "travel_allowance": 0.0,
         "daily_allowance": 600.0,
         "other_expenses": 0.0,
         "total": 600.0
       },
       {
+        "index": 5,
         "name": "Ghesini, Matteo",
         "country": "IT",
+        "is_itc": false,
         "travel_allowance": 0.0,
         "daily_allowance": 600.0,
         "other_expenses": 0.0,
         "total": 600.0
       },
       {
+        "index": 6,
         "name": "Jevtic, Danijel",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 0.0,
         "daily_allowance": 600.0,
         "other_expenses": 0.0,
         "total": 600.0
       },
       {
+        "index": 7,
         "name": "Lefosse, Saverio Lorenzo",
         "country": "IT",
+        "is_itc": false,
         "travel_allowance": 0.0,
         "daily_allowance": 600.0,
         "other_expenses": 0.0,
         "total": 600.0
       },
       {
+        "index": 8,
         "name": "Migliore, Federico Guido",
         "country": "IT",
+        "is_itc": false,
         "travel_allowance": 0.0,
         "daily_allowance": 600.0,
         "other_expenses": 0.0,
         "total": 600.0
       },
       {
+        "index": 9,
         "name": "Popa, Diana",
         "country": "RO",
+        "is_itc": true,
         "travel_allowance": 0.0,
         "daily_allowance": 911.0,
         "other_expenses": 0.0,
         "total": 911.0
       },
       {
+        "index": 10,
         "name": "Raeli, Fabrizio",
         "country": "IT",
+        "is_itc": false,
         "travel_allowance": 0.0,
         "daily_allowance": 600.0,
         "other_expenses": 0.0,
         "total": 600.0
       },
       {
+        "index": 11,
         "name": "Spindler, Christian",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 397.47,
         "daily_allowance": 911.6,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1309.07
       }
-    ]
+    ],
+    "trainers": [],
+    "participant_subtotal": 7690.07,
+    "los_grant": 1000.0,
+    "total_expenditure": 8690.07
   },
   {
-    "number": 4,
+    "id": "GP4_TS4",
+    "grant_period": 4,
+    "school_number": 4,
     "start_date": "13/09/2023",
     "end_date": "15/09/2023",
     "duration_days": 3,
     "location": "Uni Naples / Naples / Italy",
+    "city": "Naples",
+    "country": "Italy",
     "title": "Advanced Statistical Modelling for Fintech, financial inclusion and inequality (AFFINE)",
-    "grant_period": 4,
-    "trainees": [
+    "participants": [
       {
+        "index": 1,
         "name": "Akar, Mutlu",
         "country": "TR",
+        "is_itc": true,
         "travel_allowance": 0.0,
         "daily_allowance": 482.4,
         "other_expenses": 0.0,
         "total": 482.4
       },
       {
+        "index": 2,
         "name": "Belbe, Stefana",
         "country": "RO",
+        "is_itc": true,
         "travel_allowance": 310.56,
         "daily_allowance": 884.4,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1194.96
       },
       {
+        "index": 4,
         "name": "Citterio, Alberto",
         "country": "IT",
+        "is_itc": false,
         "travel_allowance": 107.6,
         "daily_allowance": 663.3,
         "other_expenses": 0.0,
         "total": 770.9
       },
       {
+        "index": 5,
         "name": "Liana, Stanca",
         "country": "RO",
+        "is_itc": true,
         "travel_allowance": 139.45,
         "daily_allowance": 864.3,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1003.75
       },
       {
+        "index": 6,
         "name": "Mirzaei, Mahsa",
         "country": "IE",
+        "is_itc": false,
         "travel_allowance": 344.32,
         "daily_allowance": 462.3,
         "other_expenses": 0.0,
         "total": 806.62
       },
       {
+        "index": 7,
         "name": "OZTURKKAL, Belma",
         "country": "TR",
+        "is_itc": true,
         "travel_allowance": 629.03,
         "daily_allowance": 663.3,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1292.33
       },
       {
+        "index": 8,
         "name": "Skaftadóttir, Hanna Kristín",
         "country": "IS",
+        "is_itc": false,
         "travel_allowance": 672.88,
         "daily_allowance": 884.4,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1557.28
       },
       {
+        "index": 9,
         "name": "Tarantola, Claudia",
         "country": "IT",
+        "is_itc": false,
         "travel_allowance": 90.62,
         "daily_allowance": 683.4,
         "other_expenses": 0.0,
         "total": 774.02
       },
       {
+        "index": 10,
         "name": "kabaklarli, esra",
         "country": "TR",
+        "is_itc": true,
         "travel_allowance": 578.84,
         "daily_allowance": 482.4,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1061.24
       }
-    ]
+    ],
+    "trainers": [],
+    "participant_subtotal": 9942.1,
+    "los_grant": 1000.0,
+    "total_expenditure": 10942.1
   },
   {
-    "number": 1,
+    "id": "GP5_TS1",
+    "grant_period": 5,
+    "school_number": 1,
     "start_date": "03/06/2024",
     "end_date": "04/06/2024",
     "duration_days": 2,
     "location": "University of Calabria / Cosenza / Italy",
+    "city": "Cosenza",
+    "country": "Italy",
     "title": "Advances in Data Science and AI for Finance: Bridging Academia and Industry",
-    "grant_period": 5,
-    "trainees": [
+    "participants": [
       {
+        "index": 2,
         "name": "Cetintav, Bekir",
         "country": "TR",
+        "is_itc": true,
         "travel_allowance": 511.32,
         "daily_allowance": 683.4,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1194.72
       },
       {
+        "index": 3,
         "name": "Dellaportas, Petros",
         "country": "UK",
+        "is_itc": false,
         "travel_allowance": 423.36,
         "daily_allowance": 683.4,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1106.76
       },
       {
+        "index": 4,
         "name": "MARE, Codruta",
         "country": "RO",
+        "is_itc": true,
         "travel_allowance": 421.81,
         "daily_allowance": 643.2,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1065.01
       },
       {
+        "index": 5,
         "name": "Moukas, Alexios Ioannis",
         "country": "EL",
+        "is_itc": true,
         "travel_allowance": 221.1,
         "daily_allowance": 510.0,
         "other_expenses": 0.0,
         "total": 731.1
       },
       {
+        "index": 6,
         "name": "Ortiz, Cristina",
         "country": "ES",
+        "is_itc": false,
         "travel_allowance": 203.78,
         "daily_allowance": 495.0,
         "other_expenses": 0.0,
         "total": 698.78
       },
       {
+        "index": 7,
         "name": "Osterrieder, Jörg",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 889.17,
         "daily_allowance": 663.3,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1552.47
       },
       {
+        "index": 8,
         "name": "Paschalidou, Eleftheria",
         "country": "EL",
+        "is_itc": true,
         "travel_allowance": 336.0,
         "daily_allowance": 510.0,
         "other_expenses": 0.0,
         "total": 846.0
       },
       {
+        "index": 9,
         "name": "Pisoni, Galena",
         "country": "FR",
+        "is_itc": false,
         "travel_allowance": 209.56,
         "daily_allowance": 482.4,
         "other_expenses": 0.0,
         "total": 691.96
       },
       {
+        "index": 10,
         "name": "Tanda, Alessandra",
         "country": "IT",
+        "is_itc": false,
         "travel_allowance": 122.98,
         "daily_allowance": 482.4,
         "other_expenses": 0.0,
         "total": 605.38
       },
       {
+        "index": 11,
         "name": "Tarantola, Claudia",
         "country": "IT",
+        "is_itc": false,
         "travel_allowance": 202.24,
         "daily_allowance": 663.3,
         "other_expenses": 0.0,
         "total": 865.54
       }
-    ]
+    ],
+    "trainers": [],
+    "participant_subtotal": 10340.34,
+    "los_grant": 1000.0,
+    "total_expenditure": 11340.34
   },
   {
-    "number": 2,
+    "id": "GP5_TS2",
+    "grant_period": 5,
+    "school_number": 2,
     "start_date": "10/06/2024",
     "end_date": "14/06/2024",
     "duration_days": 5,
     "location": "University of Twente / Enschede / Netherlands",
+    "city": "Enschede",
+    "country": "Netherlands",
     "title": "COST FinAI PhD School on Fintech and AI in Finance",
-    "grant_period": 5,
-    "trainees": [
+    "participants": [
       {
+        "index": 1,
         "name": "Baals, Lennart John",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 209.8,
-        "daily_allowance": 1.0,
-        "other_expenses": 26.0,
-        "total": 0.0
+        "daily_allowance": 1026.0,
+        "other_expenses": 0.0,
+        "total": 1235.8
       },
       {
+        "index": 2,
         "name": "Belbe, Stefana",
         "country": "RO",
+        "is_itc": true,
         "travel_allowance": 464.52,
-        "daily_allowance": 1.0,
-        "other_expenses": 216.0,
-        "total": 0.0
+        "daily_allowance": 1216.0,
+        "other_expenses": 0.0,
+        "total": 1680.52
       },
       {
+        "index": 3,
         "name": "Gómez Teijeiro, Lucía",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 285.35,
         "daily_allowance": 928.4,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1213.75
       },
       {
+        "index": 4,
         "name": "Hadji Misheva, Branka",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 515.2,
-        "daily_allowance": 1.0,
-        "other_expenses": 139.4,
-        "total": 0.0
+        "daily_allowance": 1139.4,
+        "other_expenses": 0.0,
+        "total": 1654.6
       },
       {
+        "index": 5,
         "name": "Härdle, Wolfgang",
         "country": "DE",
+        "is_itc": false,
         "travel_allowance": 246.3,
         "daily_allowance": 696.3,
         "other_expenses": 0.0,
         "total": 942.6
       },
       {
+        "index": 6,
         "name": "Klein, Marius",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 126.7,
         "daily_allowance": 988.0,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1114.7
       },
       {
+        "index": 7,
         "name": "Liana, Stanca",
         "country": "RO",
+        "is_itc": true,
         "travel_allowance": 309.87,
         "daily_allowance": 988.0,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1297.87
       },
       {
+        "index": 8,
         "name": "Liu, Yiting",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 137.95,
-        "daily_allowance": 1.0,
-        "other_expenses": 216.0,
-        "total": 0.0
+        "daily_allowance": 1216.0,
+        "other_expenses": 0.0,
+        "total": 1353.95
       },
       {
+        "index": 9,
         "name": "MATKOVSKYY, Roman",
         "country": "FR",
+        "is_itc": false,
         "travel_allowance": 280.94,
         "daily_allowance": 506.4,
         "other_expenses": 0.0,
         "total": 787.34
       },
       {
+        "index": 10,
         "name": "Muniz Martinez, Jose Antonio",
         "country": "UK",
+        "is_itc": false,
         "travel_allowance": 274.47,
-        "daily_allowance": 1.0,
-        "other_expenses": 139.4,
-        "total": 0.0
+        "daily_allowance": 1139.4,
+        "other_expenses": 0.0,
+        "total": 1413.87
       },
       {
+        "index": 11,
         "name": "Osterrieder, Jörg",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 366.8,
-        "daily_allowance": 1.0,
-        "other_expenses": 350.4,
-        "total": 0.0
+        "daily_allowance": 1350.4,
+        "other_expenses": 0.0,
+        "total": 1717.2
       },
       {
+        "index": 12,
         "name": "Pele, Daniel Traian",
         "country": "RO",
+        "is_itc": true,
         "travel_allowance": 365.92,
         "daily_allowance": 928.4,
         "other_expenses": 0.0,
-        "total": 1.0
+        "total": 1294.32
       },
       {
+        "index": 13,
         "name": "Taibi, Gabin",
         "country": "CH",
+        "is_itc": false,
         "travel_allowance": 270.05,
-        "daily_allowance": 1.0,
-        "other_expenses": 216.0,
-        "total": 0.0
+        "daily_allowance": 1216.0,
+        "other_expenses": 0.0,
+        "total": 1486.05
       },
       {
+        "index": 14,
         "name": "Wenzlaff, Karsten",
         "country": "DE",
+        "is_itc": false,
         "travel_allowance": 105.6,
         "daily_allowance": 696.3,
         "other_expenses": 0.0,
         "total": 801.9
       },
       {
+        "index": 15,
         "name": "van Heeswijk, Wouter",
         "country": "NL",
+        "is_itc": false,
         "travel_allowance": 0.0,
         "daily_allowance": 907.3,
         "other_expenses": 0.0,
         "total": 907.3
       }
-    ]
+    ],
+    "trainers": [],
+    "participant_subtotal": 18901.77,
+    "los_grant": 4000.0,
+    "total_expenditure": 22901.77
+  },
+  {
+    "id": "GP5_TS3",
+    "grant_period": 5,
+    "school_number": 3,
+    "start_date": "05/09/2024",
+    "end_date": "07/09/2024",
+    "duration_days": 3,
+    "location": "Aula G4, Department of Political Science, University of Naples Federico II, Via",
+    "city": null,
+    "country": null,
+    "title": "Advanced Statistical Modelling for Fintech, Financial Inclusion and Inequality",
+    "participants": [
+      {
+        "index": 1,
+        "name": "Baals, Lennart John",
+        "country": "CH",
+        "is_itc": false,
+        "travel_allowance": 448.96,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1333.36
+      },
+      {
+        "index": 2,
+        "name": "Belbe, Stefana",
+        "country": "RO",
+        "is_itc": true,
+        "travel_allowance": 283.11,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1167.51
+      },
+      {
+        "index": 3,
+        "name": "Bernard, Frédérik Sinan",
+        "country": "NL",
+        "is_itc": false,
+        "travel_allowance": 0.0,
+        "daily_allowance": 600.0,
+        "other_expenses": 0.0,
+        "total": 600.0
+      },
+      {
+        "index": 4,
+        "name": "Bolesta, Karolina",
+        "country": "PL",
+        "is_itc": true,
+        "travel_allowance": 90.82,
+        "daily_allowance": 824.1,
+        "other_expenses": 0.0,
+        "total": 914.92
+      },
+      {
+        "index": 6,
+        "name": "Coita, Ioana",
+        "country": "RO",
+        "is_itc": true,
+        "travel_allowance": 420.02,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1304.42
+      },
+      {
+        "index": 7,
+        "name": "Dellaportas, Petros",
+        "country": "UK",
+        "is_itc": false,
+        "travel_allowance": 363.94,
+        "daily_allowance": 864.3,
+        "other_expenses": 0.0,
+        "total": 1228.24
+      },
+      {
+        "index": 8,
+        "name": "Filipovska, Olivija",
+        "country": "MK",
+        "is_itc": true,
+        "travel_allowance": 415.98,
+        "daily_allowance": 844.2,
+        "other_expenses": 0.0,
+        "total": 1260.18
+      },
+      {
+        "index": 9,
+        "name": "Giordano, Sabrina",
+        "country": "IT",
+        "is_itc": false,
+        "travel_allowance": 50.9,
+        "daily_allowance": 864.3,
+        "other_expenses": 0.0,
+        "total": 915.2
+      },
+      {
+        "index": 10,
+        "name": "Gómez Teijeiro, Lucía",
+        "country": "CH",
+        "is_itc": false,
+        "travel_allowance": 445.5,
+        "daily_allowance": 864.3,
+        "other_expenses": 0.0,
+        "total": 1309.8
+      },
+      {
+        "index": 11,
+        "name": "Hadji Misheva, Branka",
+        "country": "CH",
+        "is_itc": false,
+        "travel_allowance": 275.99,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1160.39
+      },
+      {
+        "index": 12,
+        "name": "Liu, Yiting",
+        "country": "CH",
+        "is_itc": false,
+        "travel_allowance": 463.83,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1348.23
+      },
+      {
+        "index": 13,
+        "name": "Maxhelaku (Vasil), Suela",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 27.3,
+        "daily_allowance": 683.4,
+        "other_expenses": 0.0,
+        "total": 710.7
+      },
+      {
+        "index": 14,
+        "name": "Maxhelaku, Armela",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 27.3,
+        "daily_allowance": 683.4,
+        "other_expenses": 0.0,
+        "total": 710.7
+      },
+      {
+        "index": 15,
+        "name": "Nur Yilmaz, Gokce",
+        "country": "TR",
+        "is_itc": true,
+        "travel_allowance": 951.02,
+        "daily_allowance": 462.3,
+        "other_expenses": 0.0,
+        "total": 1413.32
+      },
+      {
+        "index": 16,
+        "name": "Osterrieder, Jörg",
+        "country": "CH",
+        "is_itc": false,
+        "travel_allowance": 0.0,
+        "daily_allowance": 649.0,
+        "other_expenses": 0.0,
+        "total": 649.0
+      },
+      {
+        "index": 17,
+        "name": "Peliova, Jana",
+        "country": "SK",
+        "is_itc": true,
+        "travel_allowance": 163.92,
+        "daily_allowance": 864.3,
+        "other_expenses": 0.0,
+        "total": 1028.22
+      },
+      {
+        "index": 18,
+        "name": "Pisoni, Galena",
+        "country": "FR",
+        "is_itc": false,
+        "travel_allowance": 205.8,
+        "daily_allowance": 683.4,
+        "other_expenses": 0.0,
+        "total": 889.2
+      },
+      {
+        "index": 19,
+        "name": "Rupeika-Apoga, Ramona",
+        "country": "LV",
+        "is_itc": true,
+        "travel_allowance": 233.96,
+        "daily_allowance": 663.3,
+        "other_expenses": 0.0,
+        "total": 897.26
+      },
+      {
+        "index": 20,
+        "name": "Shkurti (Perri), Rezarta",
+        "country": "AL",
+        "is_itc": true,
+        "travel_allowance": 250.72,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1135.12
+      },
+      {
+        "index": 21,
+        "name": "Skaftadóttir, Hanna Kristín",
+        "country": "IS",
+        "is_itc": false,
+        "travel_allowance": 574.52,
+        "daily_allowance": 844.2,
+        "other_expenses": 0.0,
+        "total": 1418.72
+      },
+      {
+        "index": 22,
+        "name": "van Heeswijk, Wouter",
+        "country": "NL",
+        "is_itc": false,
+        "travel_allowance": 0.0,
+        "daily_allowance": 600.0,
+        "other_expenses": 0.0,
+        "total": 600.0
+      }
+    ],
+    "trainers": [],
+    "participant_subtotal": 23172.85,
+    "los_grant": 2000.0,
+    "total_expenditure": 25172.85
   }
 ]

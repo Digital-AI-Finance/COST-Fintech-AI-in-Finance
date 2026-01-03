@@ -1,0 +1,7204 @@
+{
+  "generated": "2026-01-02T23:43:14.487168",
+  "summary": {
+    "total_meetings_with_costs": 32,
+    "total_reimbursements": 373,
+    "total_amount": 346110.55000000005,
+    "unique_participants": 125,
+    "all_meetings_verified": false
+  },
+  "by_meeting": [
+    {
+      "id": "GP1_M19",
+      "gp": 1,
+      "city": "Skopje",
+      "date": "15/10/2021",
+      "participants": 6,
+      "participant_sum": 3771.19,
+      "reported_subtotal": 3771.19,
+      "los": 500.0,
+      "total": 4271.1900000000005,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP1_M21",
+      "gp": 1,
+      "city": "Bucharest",
+      "date": "28/10/2021",
+      "participants": 7,
+      "participant_sum": 5589.11,
+      "reported_subtotal": 5589.11,
+      "los": 440.0,
+      "total": 6029.11,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP2_M1",
+      "gp": 2,
+      "city": "Berlin",
+      "date": "24/03/2022",
+      "participants": 3,
+      "participant_sum": 1927.98,
+      "reported_subtotal": 1927.98,
+      "los": 2000.0,
+      "total": 3927.98,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP2_M2",
+      "gp": 2,
+      "city": "Rennes",
+      "date": "08/04/2022",
+      "participants": 2,
+      "participant_sum": 1456.9099999999999,
+      "reported_subtotal": 1456.91,
+      "los": 2000.0,
+      "total": 3456.91,
+      "diff": 2.2737367544323206e-13,
+      "status": "OK"
+    },
+    {
+      "id": "GP2_M3",
+      "gp": 2,
+      "city": "Zagreb",
+      "date": "05/05/2022",
+      "participants": 6,
+      "participant_sum": 5234.16,
+      "reported_subtotal": 5234.16,
+      "los": 3000.0,
+      "total": 8234.16,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP2_M4",
+      "gp": 2,
+      "city": "Naples",
+      "date": "16/05/2022",
+      "participants": 12,
+      "participant_sum": 10556.57,
+      "reported_subtotal": 10556.57,
+      "los": 3000.0,
+      "total": 13556.57,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP3_M1",
+      "gp": 3,
+      "city": "Bucharest",
+      "date": "16/06/2022",
+      "participants": 2,
+      "participant_sum": 1629.1,
+      "reported_subtotal": 1629.1,
+      "los": 1000.0,
+      "total": 2629.1,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP3_M2",
+      "gp": 3,
+      "city": "Espoo",
+      "date": "06/07/2022",
+      "participants": 3,
+      "participant_sum": 1023.48,
+      "reported_subtotal": 1758.73,
+      "los": 0.0,
+      "total": 1758.73,
+      "diff": 735.25,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP3_M3",
+      "gp": 3,
+      "city": "Enschede",
+      "date": "22/08/2022",
+      "participants": 14,
+      "participant_sum": 12498.98,
+      "reported_subtotal": 12498.98,
+      "los": 6000.0,
+      "total": 18498.98,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP3_M4",
+      "gp": 3,
+      "city": "Tirana",
+      "date": "21/09/2022",
+      "participants": 11,
+      "participant_sum": 8898.53,
+      "reported_subtotal": 9737.76,
+      "los": 3000.0,
+      "total": 12737.76,
+      "diff": 839.2299999999996,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP3_M5",
+      "gp": 3,
+      "city": "Bern",
+      "date": "30/09/2022",
+      "participants": 9,
+      "participant_sum": 6301.9800000000005,
+      "reported_subtotal": 7247.74,
+      "los": 6000.0,
+      "total": 13247.74,
+      "diff": 945.7599999999993,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP3_M6",
+      "gp": 3,
+      "city": "Utrecht",
+      "date": "05/10/2022",
+      "participants": 28,
+      "participant_sum": 27704.32,
+      "reported_subtotal": 29505.3,
+      "los": 6000.0,
+      "total": 35505.3,
+      "diff": 1800.9799999999996,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP3_M7",
+      "gp": 3,
+      "city": "Skopje",
+      "date": "10/10/2022",
+      "participants": 5,
+      "participant_sum": 1274.9199999999998,
+      "reported_subtotal": 1274.92,
+      "los": 1000.0,
+      "total": 2274.92,
+      "diff": 2.2737367544323206e-13,
+      "status": "OK"
+    },
+    {
+      "id": "GP3_M8",
+      "gp": 3,
+      "city": "Brno",
+      "date": "21/10/2022",
+      "participants": 2,
+      "participant_sum": 1939.01,
+      "reported_subtotal": 1939.01,
+      "los": 500.0,
+      "total": 2439.01,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP3_M9",
+      "gp": 3,
+      "city": "Bucharest",
+      "date": "28/10/2022",
+      "participants": 9,
+      "participant_sum": 6681.44,
+      "reported_subtotal": 6691.44,
+      "los": 1000.0,
+      "total": 7691.44,
+      "diff": 10.0,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP4_M1",
+      "gp": 4,
+      "city": "Cluj Napoca",
+      "date": "01/02/2023",
+      "participants": 14,
+      "participant_sum": 9859.96,
+      "reported_subtotal": 10716.49,
+      "los": 2000.0,
+      "total": 12716.49,
+      "diff": 856.5300000000007,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP4_M2",
+      "gp": 4,
+      "city": "Pavia",
+      "date": "13/04/2023",
+      "participants": 11,
+      "participant_sum": 10197.68,
+      "reported_subtotal": 11826.13,
+      "los": 1000.0,
+      "total": 12826.13,
+      "diff": 1628.449999999999,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP4_M3",
+      "gp": 4,
+      "city": "Brussels",
+      "date": "15/05/2023",
+      "participants": 24,
+      "participant_sum": 26395.31,
+      "reported_subtotal": 27253.09,
+      "los": 0.0,
+      "total": 27253.09,
+      "diff": 857.7799999999988,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP4_M4",
+      "gp": 4,
+      "city": "Lisbon",
+      "date": "01/06/2023",
+      "participants": 15,
+      "participant_sum": 16932.1,
+      "reported_subtotal": 17947.09,
+      "los": 1000.0,
+      "total": 18947.09,
+      "diff": 1014.9900000000016,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP4_M5",
+      "gp": 4,
+      "city": "Helsinki",
+      "date": "10/07/2023",
+      "participants": 10,
+      "participant_sum": 10575.93,
+      "reported_subtotal": 10575.93,
+      "los": 1141.6,
+      "total": 11717.53,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP4_M6",
+      "gp": 4,
+      "city": "Horta Faial Azores",
+      "date": "03/09/2023",
+      "participants": 6,
+      "participant_sum": 7282.11,
+      "reported_subtotal": 7282.11,
+      "los": 930.0,
+      "total": 8212.11,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP4_M7",
+      "gp": 4,
+      "city": "Bern",
+      "date": "27/09/2023",
+      "participants": 23,
+      "participant_sum": 22697.62,
+      "reported_subtotal": 28792.32,
+      "los": 6000.0,
+      "total": 34792.32,
+      "diff": 6094.700000000001,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP4_M8",
+      "gp": 4,
+      "city": "Barcelona",
+      "date": "30/10/2023",
+      "participants": 14,
+      "participant_sum": 11190.51,
+      "reported_subtotal": 11190.51,
+      "los": 1585.53,
+      "total": 12776.04,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP5_M1",
+      "gp": 5,
+      "city": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "participants": 16,
+      "participant_sum": 11410.18,
+      "reported_subtotal": 12651.21,
+      "los": 2000.0,
+      "total": 14651.21,
+      "diff": 1241.0299999999988,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP5_M2",
+      "gp": 5,
+      "city": "Brussels",
+      "date": "14/05/2024",
+      "participants": 26,
+      "participant_sum": 22772.96,
+      "reported_subtotal": 22772.96,
+      "los": 161.43,
+      "total": 22934.39,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP5_M3",
+      "gp": 5,
+      "city": "Naples",
+      "date": "16/05/2024",
+      "participants": 0,
+      "participant_sum": 0,
+      "reported_subtotal": 0.0,
+      "los": 1000.0,
+      "total": 1000.0,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP5_M4",
+      "gp": 5,
+      "city": "Bucharest",
+      "date": "17/05/2024",
+      "participants": 6,
+      "participant_sum": 3496.35,
+      "reported_subtotal": 3496.35,
+      "los": 0.0,
+      "total": 3496.35,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP5_M5",
+      "gp": 5,
+      "city": "Istanbul",
+      "date": "20/05/2024",
+      "participants": 23,
+      "participant_sum": 21032.12,
+      "reported_subtotal": 21452.32,
+      "los": 0.0,
+      "total": 21452.32,
+      "diff": 420.2000000000007,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP5_M6",
+      "gp": 5,
+      "city": "Rethymno",
+      "date": "27/06/2024",
+      "participants": 18,
+      "participant_sum": 17791.18,
+      "reported_subtotal": 19977.53,
+      "los": 1000.0,
+      "total": 20977.53,
+      "diff": 2186.3499999999985,
+      "status": "MISMATCH"
+    },
+    {
+      "id": "GP5_M7",
+      "gp": 5,
+      "city": "Coimbra",
+      "date": "10/07/2024",
+      "participants": 14,
+      "participant_sum": 14666.76,
+      "reported_subtotal": 14666.76,
+      "los": 1500.0,
+      "total": 16166.76,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP5_M8",
+      "gp": 5,
+      "city": "Gran Canaria",
+      "date": "18/07/2024",
+      "participants": 18,
+      "participant_sum": 24140.32,
+      "reported_subtotal": 24140.32,
+      "los": 1694.33,
+      "total": 25834.65,
+      "diff": 0.0,
+      "status": "OK"
+    },
+    {
+      "id": "GP5_M9",
+      "gp": 5,
+      "city": "Reykjavík",
+      "date": "27/08/2024",
+      "participants": 16,
+      "participant_sum": 19181.78,
+      "reported_subtotal": 19181.78,
+      "los": 2500.0,
+      "total": 21681.78,
+      "diff": 0.0,
+      "status": "OK"
+    }
+  ],
+  "by_participant": [
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "CH",
+      "reimbursement_count": 18,
+      "total_amount": 21529.320000000003,
+      "meetings": [
+        {
+          "meeting": "Zagreb (05/05/2022)",
+          "amount": 1204.19
+        },
+        {
+          "meeting": "Naples (16/05/2022)",
+          "amount": 1364.17
+        },
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 1163.4
+        },
+        {
+          "meeting": "Tirana (21/09/2022)",
+          "amount": 1190.41
+        },
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 1530.3
+        },
+        {
+          "meeting": "Skopje (10/10/2022)",
+          "amount": 1026.62
+        },
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 1405.35
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1368.96
+        },
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 1207.54
+        },
+        {
+          "meeting": "Helsinki (10/07/2023)",
+          "amount": 1335.92
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 167.2
+        },
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 659.4
+        },
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 1337.8
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 800.0
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 1067.5
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 1308.84
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1816.06
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1575.66
+        }
+      ]
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "reimbursement_count": 17,
+      "total_amount": 19076.9,
+      "meetings": [
+        {
+          "meeting": "Bucharest (16/06/2022)",
+          "amount": 866.0
+        },
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 1111.98
+        },
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 1479.0
+        },
+        {
+          "meeting": "Bucharest (28/10/2022)",
+          "amount": 865.3
+        },
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 536.5
+        },
+        {
+          "meeting": "Pavia (13/04/2023)",
+          "amount": 1363.3
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1097.9
+        },
+        {
+          "meeting": "Helsinki (10/07/2023)",
+          "amount": 1359.81
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1410.6
+        },
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 1445.28
+        },
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 536.5
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 1409.68
+        },
+        {
+          "meeting": "Bucharest (17/05/2024)",
+          "amount": 607.77
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 928.96
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 1453.66
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 838.3
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1766.36
+        }
+      ]
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "reimbursement_count": 19,
+      "total_amount": 18947.899999999998,
+      "meetings": [
+        {
+          "meeting": "Naples (16/05/2022)",
+          "amount": 864.62
+        },
+        {
+          "meeting": "Bucharest (16/06/2022)",
+          "amount": 763.1
+        },
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 1193.69
+        },
+        {
+          "meeting": "Tirana (21/09/2022)",
+          "amount": 1312.0
+        },
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 1206.35
+        },
+        {
+          "meeting": "Bucharest (28/10/2022)",
+          "amount": 763.8
+        },
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 149.6
+        },
+        {
+          "meeting": "Pavia (13/04/2023)",
+          "amount": 899.2
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 899.28
+        },
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 1346.21
+        },
+        {
+          "meeting": "Helsinki (10/07/2023)",
+          "amount": 1096.22
+        },
+        {
+          "meeting": "Horta Faial Azores (03/09/2023)",
+          "amount": 1805.92
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1410.6
+        },
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 149.6
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 1132.32
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 640.9
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 871.11
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1244.94
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1198.44
+        }
+      ]
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "reimbursement_count": 13,
+      "total_amount": 15282.110000000002,
+      "meetings": [
+        {
+          "meeting": "Zagreb (05/05/2022)",
+          "amount": 926.5
+        },
+        {
+          "meeting": "Bern (30/09/2022)",
+          "amount": 877.89
+        },
+        {
+          "meeting": "Bucharest (28/10/2022)",
+          "amount": 890.5
+        },
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 1363.8
+        },
+        {
+          "meeting": "Helsinki (10/07/2023)",
+          "amount": 1550.15
+        },
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 1256.68
+        },
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 1286.3
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 738.89
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 882.83
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 1351.79
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 1224.39
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1579.79
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1352.6
+        }
+      ]
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "reimbursement_count": 13,
+      "total_amount": 14042.429999999998,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 1002.58
+        },
+        {
+          "meeting": "Bucharest (28/10/2022)",
+          "amount": 894.85
+        },
+        {
+          "meeting": "Pavia (13/04/2023)",
+          "amount": 649.4
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1304.66
+        },
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 1337.48
+        },
+        {
+          "meeting": "Helsinki (10/07/2023)",
+          "amount": 1201.97
+        },
+        {
+          "meeting": "Horta Faial Azores (03/09/2023)",
+          "amount": 1248.4
+        },
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 1007.55
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 1083.15
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 895.15
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 1250.25
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 936.8
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1230.19
+        }
+      ]
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "reimbursement_count": 12,
+      "total_amount": 11476.82,
+      "meetings": [
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 1001.19
+        },
+        {
+          "meeting": "Pavia (13/04/2023)",
+          "amount": 910.88
+        },
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 1332.41
+        },
+        {
+          "meeting": "Horta Faial Azores (03/09/2023)",
+          "amount": 1279.08
+        },
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 1032.85
+        },
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 149.6
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 1086.52
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 893.7
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 896.7
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 775.61
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 998.4
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1119.88
+        }
+      ]
+    },
+    {
+      "name": "OZTURKKAL, Belma",
+      "country": "TR",
+      "reimbursement_count": 9,
+      "total_amount": 10645.37,
+      "meetings": [
+        {
+          "meeting": "Naples (16/05/2022)",
+          "amount": 1140.57
+        },
+        {
+          "meeting": "Tirana (21/09/2022)",
+          "amount": 680.9
+        },
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 815.21
+        },
+        {
+          "meeting": "Pavia (13/04/2023)",
+          "amount": 1173.61
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1600.17
+        },
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 1367.59
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1049.54
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 1052.26
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1765.52
+        }
+      ]
+    },
+    {
+      "name": "Liu, Yiting",
+      "country": "CH",
+      "reimbursement_count": 7,
+      "total_amount": 8629.71,
+      "meetings": [
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1266.72
+        },
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 877.33
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 947.4
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 1267.84
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 1233.35
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1501.14
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1535.93
+        }
+      ]
+    },
+    {
+      "name": "Maxhelaku (Vasil), Suela",
+      "country": "AL",
+      "reimbursement_count": 7,
+      "total_amount": 7774.749999999999,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 967.3
+        },
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 1336.52
+        },
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 917.48
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 1108.67
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 1119.3
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 991.16
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1334.32
+        }
+      ]
+    },
+    {
+      "name": "Baals, Lennart John",
+      "country": "CH",
+      "reimbursement_count": 6,
+      "total_amount": 7542.42,
+      "meetings": [
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1328.2
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 1023.8
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 1124.97
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 1128.84
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1412.69
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1523.92
+        }
+      ]
+    },
+    {
+      "name": "Liana, Stanca",
+      "country": "RO",
+      "reimbursement_count": 8,
+      "total_amount": 7147.650000000001,
+      "meetings": [
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 910.23
+        },
+        {
+          "meeting": "Helsinki (10/07/2023)",
+          "amount": 1403.36
+        },
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 149.6
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 693.7
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 900.4
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 862.66
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 673.23
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1554.47
+        }
+      ]
+    },
+    {
+      "name": "Skaftadóttir, Hanna Kristín",
+      "country": "IS",
+      "reimbursement_count": 7,
+      "total_amount": 7001.94,
+      "meetings": [
+        {
+          "meeting": "Naples (16/05/2022)",
+          "amount": 862.28
+        },
+        {
+          "meeting": "Tirana (21/09/2022)",
+          "amount": 1479.35
+        },
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 1152.61
+        },
+        {
+          "meeting": "Pavia (13/04/2023)",
+          "amount": 746.78
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1229.2
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 1366.12
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 165.6
+        }
+      ]
+    },
+    {
+      "name": "Maxhelaku, Armela",
+      "country": "AL",
+      "reimbursement_count": 6,
+      "total_amount": 6765.929999999999,
+      "meetings": [
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1295.0
+        },
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 917.48
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 1108.67
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 1119.3
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 991.16
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1334.32
+        }
+      ]
+    },
+    {
+      "name": "Akar, Mutlu",
+      "country": "TR",
+      "reimbursement_count": 7,
+      "total_amount": 6608.49,
+      "meetings": [
+        {
+          "meeting": "Bucharest (28/10/2022)",
+          "amount": 779.03
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1124.06
+        },
+        {
+          "meeting": "Bucharest (17/05/2024)",
+          "amount": 687.92
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 267.4
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 994.48
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 1397.53
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1358.07
+        }
+      ]
+    },
+    {
+      "name": "Tarantola, Claudia",
+      "country": "IT",
+      "reimbursement_count": 8,
+      "total_amount": 6447.200000000001,
+      "meetings": [
+        {
+          "meeting": "Naples (16/05/2022)",
+          "amount": 512.38
+        },
+        {
+          "meeting": "Tirana (21/09/2022)",
+          "amount": 652.0
+        },
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 985.97
+        },
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 717.09
+        },
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 970.96
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 863.1
+        },
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 783.59
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 962.11
+        }
+      ]
+    },
+    {
+      "name": "Silva, Catarina",
+      "country": "PT",
+      "reimbursement_count": 6,
+      "total_amount": 6428.379999999999,
+      "meetings": [
+        {
+          "meeting": "Bern (30/09/2022)",
+          "amount": 713.35
+        },
+        {
+          "meeting": "Pavia (13/04/2023)",
+          "amount": 984.31
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1062.81
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1094.0
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 1170.0
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1403.91
+        }
+      ]
+    },
+    {
+      "name": "Lameski, Petre",
+      "country": "MK",
+      "reimbursement_count": 6,
+      "total_amount": 6165.95,
+      "meetings": [
+        {
+          "meeting": "Zagreb (05/05/2022)",
+          "amount": 853.8
+        },
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 1306.4
+        },
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 1333.4
+        },
+        {
+          "meeting": "Skopje (10/10/2022)",
+          "amount": 57.3
+        },
+        {
+          "meeting": "Helsinki (10/07/2023)",
+          "amount": 1587.8
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1027.25
+        }
+      ]
+    },
+    {
+      "name": "Hadji Misheva, Branka",
+      "country": "CH",
+      "reimbursement_count": 6,
+      "total_amount": 5512.26,
+      "meetings": [
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 1358.6
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 967.02
+        },
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 881.18
+        },
+        {
+          "meeting": "Horta Faial Azores (03/09/2023)",
+          "amount": 1064.53
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 167.2
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 1073.73
+        }
+      ]
+    },
+    {
+      "name": "Moloney, Maria",
+      "country": "IE",
+      "reimbursement_count": 5,
+      "total_amount": 4818.11,
+      "meetings": [
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 966.78
+        },
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 468.57
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 817.33
+        },
+        {
+          "meeting": "Horta Faial Azores (03/09/2023)",
+          "amount": 1165.1
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1400.33
+        }
+      ]
+    },
+    {
+      "name": "Xhumari, Elda",
+      "country": "AL",
+      "reimbursement_count": 4,
+      "total_amount": 4435.5,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 967.3
+        },
+        {
+          "meeting": "Pavia (13/04/2023)",
+          "amount": 836.68
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1295.0
+        },
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 1336.52
+        }
+      ]
+    },
+    {
+      "name": "Dzurovski, Anastas",
+      "country": "MK",
+      "reimbursement_count": 7,
+      "total_amount": 4321.429999999999,
+      "meetings": [
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 470.0
+        },
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 519.15
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 461.38
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 507.9
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 931.29
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 749.72
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 681.99
+        }
+      ]
+    },
+    {
+      "name": "Thomaidis, Nikolaos S.",
+      "country": "EL",
+      "reimbursement_count": 4,
+      "total_amount": 4031.63,
+      "meetings": [
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 785.72
+        },
+        {
+          "meeting": "Pavia (13/04/2023)",
+          "amount": 992.4
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1455.39
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 798.12
+        }
+      ]
+    },
+    {
+      "name": "Paschalidou, Eleftheria",
+      "country": "EL",
+      "reimbursement_count": 5,
+      "total_amount": 3923.64,
+      "meetings": [
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 909.27
+        },
+        {
+          "meeting": "Pavia (13/04/2023)",
+          "amount": 800.06
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 759.2
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 797.15
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 657.96
+        }
+      ]
+    },
+    {
+      "name": "kabaklarli, esra",
+      "country": "TR",
+      "reimbursement_count": 4,
+      "total_amount": 3897.99,
+      "meetings": [
+        {
+          "meeting": "Naples (16/05/2022)",
+          "amount": 853.71
+        },
+        {
+          "meeting": "Tirana (21/09/2022)",
+          "amount": 1013.43
+        },
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 899.17
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1131.68
+        }
+      ]
+    },
+    {
+      "name": "Kayis, Enis",
+      "country": "TR",
+      "reimbursement_count": 3,
+      "total_amount": 3694.1099999999997,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 1308.12
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1028.73
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1357.26
+        }
+      ]
+    },
+    {
+      "name": "Pisoni, Galena",
+      "country": "FR",
+      "reimbursement_count": 4,
+      "total_amount": 3686.23,
+      "meetings": [
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 664.1
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1106.1
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 806.88
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1109.15
+        }
+      ]
+    },
+    {
+      "name": "Arakelian, Veni",
+      "country": "EL",
+      "reimbursement_count": 3,
+      "total_amount": 3527.8500000000004,
+      "meetings": [
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1160.1
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1277.36
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 1090.39
+        }
+      ]
+    },
+    {
+      "name": "Yildirim, Ozgur",
+      "country": "TR",
+      "reimbursement_count": 3,
+      "total_amount": 3508.42,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 1185.19
+        },
+        {
+          "meeting": "Bucharest (28/10/2022)",
+          "amount": 763.96
+        },
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 1559.27
+        }
+      ]
+    },
+    {
+      "name": "van Heeswijk, Wouter",
+      "country": "NL",
+      "reimbursement_count": 4,
+      "total_amount": 3499.95,
+      "meetings": [
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 928.68
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 570.0
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 980.64
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1020.63
+        }
+      ]
+    },
+    {
+      "name": "Petukhina, Alla",
+      "country": "DE",
+      "reimbursement_count": 4,
+      "total_amount": 3235.63,
+      "meetings": [
+        {
+          "meeting": "Rennes (08/04/2022)",
+          "amount": 864.41
+        },
+        {
+          "meeting": "Brno (21/10/2022)",
+          "amount": 827.2
+        },
+        {
+          "meeting": "Bucharest (17/05/2024)",
+          "amount": 631.5
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 912.52
+        }
+      ]
+    },
+    {
+      "name": "Pele, Daniel Traian",
+      "country": "RO",
+      "reimbursement_count": 6,
+      "total_amount": 3212.9700000000003,
+      "meetings": [
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 407.98
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1120.59
+        },
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 474.64
+        },
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 435.24
+        },
+        {
+          "meeting": "Bucharest (17/05/2024)",
+          "amount": 74.8
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 699.72
+        }
+      ]
+    },
+    {
+      "name": "Shala, Albulena",
+      "country": "KV",
+      "reimbursement_count": 4,
+      "total_amount": 3084.64,
+      "meetings": [
+        {
+          "meeting": "Naples (16/05/2022)",
+          "amount": 909.93
+        },
+        {
+          "meeting": "Tirana (21/09/2022)",
+          "amount": 642.0
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 1130.98
+        },
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 401.73
+        }
+      ]
+    },
+    {
+      "name": "Shkurti (Perri), Rezarta",
+      "country": "AL",
+      "reimbursement_count": 3,
+      "total_amount": 2977.05,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 662.08
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1038.73
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1276.24
+        }
+      ]
+    },
+    {
+      "name": "Tanda, Alessandra",
+      "country": "IT",
+      "reimbursement_count": 5,
+      "total_amount": 2898.4900000000002,
+      "meetings": [
+        {
+          "meeting": "Tirana (21/09/2022)",
+          "amount": 313.78
+        },
+        {
+          "meeting": "Bern (30/09/2022)",
+          "amount": 396.7
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 560.7
+        },
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 739.14
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 888.17
+        }
+      ]
+    },
+    {
+      "name": "Poti, Valerio",
+      "country": "IE",
+      "reimbursement_count": 4,
+      "total_amount": 2808.4399999999996,
+      "meetings": [
+        {
+          "meeting": "Berlin (24/03/2022)",
+          "amount": 426.57
+        },
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 936.28
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 726.51
+        },
+        {
+          "meeting": "Horta Faial Azores (03/09/2023)",
+          "amount": 719.08
+        }
+      ]
+    },
+    {
+      "name": "Machado, Marcos",
+      "country": "NL",
+      "reimbursement_count": 3,
+      "total_amount": 2513.48,
+      "meetings": [
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 986.39
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 570.0
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 957.09
+        }
+      ]
+    },
+    {
+      "name": "Rupeika-Apoga, Ramona",
+      "country": "LV",
+      "reimbursement_count": 2,
+      "total_amount": 2331.7,
+      "meetings": [
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1008.48
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1323.22
+        }
+      ]
+    },
+    {
+      "name": "Vagnerova Linnertova, Dagmar",
+      "country": "CZ",
+      "reimbursement_count": 2,
+      "total_amount": 2291.84,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 966.81
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1325.03
+        }
+      ]
+    },
+    {
+      "name": "Gregoriades, Andreas",
+      "country": "CY",
+      "reimbursement_count": 2,
+      "total_amount": 2283.4300000000003,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 1222.29
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 1061.14
+        }
+      ]
+    },
+    {
+      "name": "Klochko, Alona",
+      "country": "UA",
+      "reimbursement_count": 3,
+      "total_amount": 2274.7200000000003,
+      "meetings": [
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 936.0
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 334.4
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 1004.32
+        }
+      ]
+    },
+    {
+      "name": "Wenzlaff, Karsten",
+      "country": "DE",
+      "reimbursement_count": 2,
+      "total_amount": 2256.34,
+      "meetings": [
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 761.15
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1495.19
+        }
+      ]
+    },
+    {
+      "name": "Mishev, Stoyan",
+      "country": "BG",
+      "reimbursement_count": 2,
+      "total_amount": 2197.19,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 1108.49
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1088.7
+        }
+      ]
+    },
+    {
+      "name": "Hudec, Miroslav",
+      "country": "SK",
+      "reimbursement_count": 2,
+      "total_amount": 2137.6800000000003,
+      "meetings": [
+        {
+          "meeting": "Naples (16/05/2022)",
+          "amount": 901.29
+        },
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 1236.39
+        }
+      ]
+    },
+    {
+      "name": "Marazzina, Daniele",
+      "country": "IT",
+      "reimbursement_count": 3,
+      "total_amount": 2117.95,
+      "meetings": [
+        {
+          "meeting": "Naples (16/05/2022)",
+          "amount": 609.1
+        },
+        {
+          "meeting": "Espoo (06/07/2022)",
+          "amount": 443.88
+        },
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 1064.97
+        }
+      ]
+    },
+    {
+      "name": "Trinh, Anh Tuan",
+      "country": "HU",
+      "reimbursement_count": 2,
+      "total_amount": 2091.9700000000003,
+      "meetings": [
+        {
+          "meeting": "Bern (30/09/2022)",
+          "amount": 1104.77
+        },
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 987.2
+        }
+      ]
+    },
+    {
+      "name": "Nur Yilmaz, Gokce",
+      "country": "TR",
+      "reimbursement_count": 2,
+      "total_amount": 2059.4300000000003,
+      "meetings": [
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 1286.73
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 772.7
+        }
+      ]
+    },
+    {
+      "name": "Wójcik, Piotr",
+      "country": "PL",
+      "reimbursement_count": 2,
+      "total_amount": 2015.92,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 896.54
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1119.38
+        }
+      ]
+    },
+    {
+      "name": "Peliova, Jana",
+      "country": "SK",
+      "reimbursement_count": 2,
+      "total_amount": 1996.1599999999999,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 827.55
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1168.61
+        }
+      ]
+    },
+    {
+      "name": "Abdul Nasir, Jamal",
+      "country": "IE",
+      "reimbursement_count": 2,
+      "total_amount": 1995.13,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 883.32
+        },
+        {
+          "meeting": "Brno (21/10/2022)",
+          "amount": 1111.81
+        }
+      ]
+    },
+    {
+      "name": "Bernard, Frédérik Sinan",
+      "country": "NL",
+      "reimbursement_count": 2,
+      "total_amount": 1979.3700000000001,
+      "meetings": [
+        {
+          "meeting": "Coimbra (10/07/2024)",
+          "amount": 1137.4
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 841.97
+        }
+      ]
+    },
+    {
+      "name": "Härdle, Wolfgang",
+      "country": "DE",
+      "reimbursement_count": 3,
+      "total_amount": 1954.87,
+      "meetings": [
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 466.5
+        },
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 617.1
+        },
+        {
+          "meeting": "Bucharest (17/05/2024)",
+          "amount": 871.27
+        }
+      ]
+    },
+    {
+      "name": "Ivanisevic Hernaus, Ana",
+      "country": "HR",
+      "reimbursement_count": 2,
+      "total_amount": 1920.85,
+      "meetings": [
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 729.55
+        },
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1191.3
+        }
+      ]
+    },
+    {
+      "name": "Schwendner, Peter",
+      "country": "CH",
+      "reimbursement_count": 2,
+      "total_amount": 1879.02,
+      "meetings": [
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 930.62
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 948.4
+        }
+      ]
+    },
+    {
+      "name": "Gómez Teijeiro, Lucía",
+      "country": "CH",
+      "reimbursement_count": 2,
+      "total_amount": 1833.8899999999999,
+      "meetings": [
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 681.08
+        },
+        {
+          "meeting": "Gran Canaria (18/07/2024)",
+          "amount": 1152.81
+        }
+      ]
+    },
+    {
+      "name": "Giordano, Sabrina",
+      "country": "IT",
+      "reimbursement_count": 2,
+      "total_amount": 1790.48,
+      "meetings": [
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 658.71
+        },
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 1131.77
+        }
+      ]
+    },
+    {
+      "name": "Paccagnini, Alessia",
+      "country": "IE",
+      "reimbursement_count": 2,
+      "total_amount": 1777.9099999999999,
+      "meetings": [
+        {
+          "meeting": "Naples (16/05/2022)",
+          "amount": 813.25
+        },
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 964.66
+        }
+      ]
+    },
+    {
+      "name": "Hajek, Petr",
+      "country": "CZ",
+      "reimbursement_count": 2,
+      "total_amount": 1710.32,
+      "meetings": [
+        {
+          "meeting": "Zagreb (05/05/2022)",
+          "amount": 807.52
+        },
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 902.8
+        }
+      ]
+    },
+    {
+      "name": "Hanna Kristin Skaftadottir",
+      "country": "IS",
+      "reimbursement_count": 1,
+      "total_amount": 1610.4,
+      "meetings": [
+        {
+          "meeting": "Skopje (15/10/2021)",
+          "amount": 1610.4
+        }
+      ]
+    },
+    {
+      "name": "Sandulescu, Magda",
+      "country": "RO",
+      "reimbursement_count": 2,
+      "total_amount": 1506.56,
+      "meetings": [
+        {
+          "meeting": "Tirana (21/09/2022)",
+          "amount": 716.68
+        },
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 789.88
+        }
+      ]
+    },
+    {
+      "name": "Hochreiter, Ronald",
+      "country": "AT",
+      "reimbursement_count": 2,
+      "total_amount": 1466.95,
+      "meetings": [
+        {
+          "meeting": "Berlin (24/03/2022)",
+          "amount": 745.87
+        },
+        {
+          "meeting": "Bern (30/09/2022)",
+          "amount": 721.08
+        }
+      ]
+    },
+    {
+      "name": "Papajorgji, Petraq",
+      "country": "AL",
+      "reimbursement_count": 2,
+      "total_amount": 1396.4,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 696.3
+        },
+        {
+          "meeting": "Bucharest (28/10/2022)",
+          "amount": 700.1
+        }
+      ]
+    },
+    {
+      "name": "Muniz Martinez, Jose Antonio",
+      "country": "UK",
+      "reimbursement_count": 2,
+      "total_amount": 1391.28,
+      "meetings": [
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 385.38
+        },
+        {
+          "meeting": "Reykjavík (27/08/2024)",
+          "amount": 1005.9
+        }
+      ]
+    },
+    {
+      "name": "Costea, Adrian",
+      "country": "RO",
+      "reimbursement_count": 2,
+      "total_amount": 1338.26,
+      "meetings": [
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 427.47
+        },
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 910.79
+        }
+      ]
+    },
+    {
+      "name": "DAVER, Gizay",
+      "country": "TR",
+      "reimbursement_count": 2,
+      "total_amount": 1235.9,
+      "meetings": [
+        {
+          "meeting": "Helsinki (10/07/2023)",
+          "amount": 709.5
+        },
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 526.4
+        }
+      ]
+    },
+    {
+      "name": "Koenigstein, Nicole",
+      "country": "LI",
+      "reimbursement_count": 2,
+      "total_amount": 1184.19,
+      "meetings": [
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 742.59
+        },
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 441.6
+        }
+      ]
+    },
+    {
+      "name": "Cetintav, Bekir",
+      "country": "TR",
+      "reimbursement_count": 1,
+      "total_amount": 1173.67,
+      "meetings": [
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 1173.67
+        }
+      ]
+    },
+    {
+      "name": "Atanasova - Pachemska, Tatjana",
+      "country": "MK",
+      "reimbursement_count": 2,
+      "total_amount": 1173.6200000000001,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 1097.22
+        },
+        {
+          "meeting": "Skopje (10/10/2022)",
+          "amount": 76.4
+        }
+      ]
+    },
+    {
+      "name": "Themistocleous, Christos",
+      "country": "CY",
+      "reimbursement_count": 1,
+      "total_amount": 1122.96,
+      "meetings": [
+        {
+          "meeting": "Istanbul (20/05/2024)",
+          "amount": 1122.96
+        }
+      ]
+    },
+    {
+      "name": "Girvica, Olga",
+      "country": "LV",
+      "reimbursement_count": 1,
+      "total_amount": 1104.7,
+      "meetings": [
+        {
+          "meeting": "Bern (30/09/2022)",
+          "amount": 1104.7
+        }
+      ]
+    },
+    {
+      "name": "Ågotnes, Thomas",
+      "country": "NO",
+      "reimbursement_count": 1,
+      "total_amount": 1100.89,
+      "meetings": [
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1100.89
+        }
+      ]
+    },
+    {
+      "name": "KABAKLARLI, Esra",
+      "country": "TR",
+      "reimbursement_count": 1,
+      "total_amount": 1074.07,
+      "meetings": [
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 1074.07
+        }
+      ]
+    },
+    {
+      "name": "TAIBI, Gabin",
+      "country": "CH",
+      "reimbursement_count": 1,
+      "total_amount": 1045.0,
+      "meetings": [
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 1045.0
+        }
+      ]
+    },
+    {
+      "name": "Dias, Joana",
+      "country": "PT",
+      "reimbursement_count": 1,
+      "total_amount": 1039.13,
+      "meetings": [
+        {
+          "meeting": "Bern (27/09/2023)",
+          "amount": 1039.13
+        }
+      ]
+    },
+    {
+      "name": "Gavranovic, Nedim",
+      "country": "BA",
+      "reimbursement_count": 1,
+      "total_amount": 1013.9,
+      "meetings": [
+        {
+          "meeting": "Bucharest (28/10/2022)",
+          "amount": 1013.9
+        }
+      ]
+    },
+    {
+      "name": "Jörg Osterrieder",
+      "country": "CH",
+      "reimbursement_count": 1,
+      "total_amount": 1011.15,
+      "meetings": [
+        {
+          "meeting": "Skopje (15/10/2021)",
+          "amount": 1011.15
+        }
+      ]
+    },
+    {
+      "name": "Petre Lameski",
+      "country": "MK",
+      "reimbursement_count": 2,
+      "total_amount": 1010.8,
+      "meetings": [
+        {
+          "meeting": "Skopje (15/10/2021)",
+          "amount": 68.4
+        },
+        {
+          "meeting": "Bucharest (28/10/2021)",
+          "amount": 942.4
+        }
+      ]
+    },
+    {
+      "name": "Zuo, RongLin",
+      "country": "HU",
+      "reimbursement_count": 1,
+      "total_amount": 976.0,
+      "meetings": [
+        {
+          "meeting": "Lisbon (01/06/2023)",
+          "amount": 976.0
+        }
+      ]
+    },
+    {
+      "name": "Deev, Oleg",
+      "country": "CZ",
+      "reimbursement_count": 1,
+      "total_amount": 966.81,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 966.81
+        }
+      ]
+    },
+    {
+      "name": "Achim, Monica Violeta",
+      "country": "RO",
+      "reimbursement_count": 1,
+      "total_amount": 937.32,
+      "meetings": [
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 937.32
+        }
+      ]
+    },
+    {
+      "name": "Mináriková, Erika",
+      "country": "SK",
+      "reimbursement_count": 1,
+      "total_amount": 925.29,
+      "meetings": [
+        {
+          "meeting": "Naples (16/05/2022)",
+          "amount": 925.29
+        }
+      ]
+    },
+    {
+      "name": "Chis, Laviniu",
+      "country": "RO",
+      "reimbursement_count": 1,
+      "total_amount": 923.73,
+      "meetings": [
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 923.73
+        }
+      ]
+    },
+    {
+      "name": "Bernard, Frederik Sinan",
+      "country": "NL",
+      "reimbursement_count": 1,
+      "total_amount": 911.0,
+      "meetings": [
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 911.0
+        }
+      ]
+    },
+    {
+      "name": "Vojtasova, Maria",
+      "country": "SK",
+      "reimbursement_count": 1,
+      "total_amount": 908.59,
+      "meetings": [
+        {
+          "meeting": "Bern (30/09/2022)",
+          "amount": 908.59
+        }
+      ]
+    },
+    {
+      "name": "Yosi KELLER",
+      "country": "IL",
+      "reimbursement_count": 1,
+      "total_amount": 866.87,
+      "meetings": [
+        {
+          "meeting": "Bucharest (28/10/2021)",
+          "amount": 866.87
+        }
+      ]
+    },
+    {
+      "name": "Souhir Ben Amor",
+      "country": "DE",
+      "reimbursement_count": 1,
+      "total_amount": 860.3,
+      "meetings": [
+        {
+          "meeting": "Bucharest (28/10/2021)",
+          "amount": 860.3
+        }
+      ]
+    },
+    {
+      "name": "Abrol, Manmeet",
+      "country": "IE",
+      "reimbursement_count": 1,
+      "total_amount": 849.04,
+      "meetings": [
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 849.04
+        }
+      ]
+    },
+    {
+      "name": "Ortiz, Cristina",
+      "country": "ES",
+      "reimbursement_count": 1,
+      "total_amount": 845.35,
+      "meetings": [
+        {
+          "meeting": "Cluj-Napoca (24/04/2024)",
+          "amount": 845.35
+        }
+      ]
+    },
+    {
+      "name": "Moukas, Alexios Ioannis",
+      "country": "EL",
+      "reimbursement_count": 1,
+      "total_amount": 841.06,
+      "meetings": [
+        {
+          "meeting": "Pavia (13/04/2023)",
+          "amount": 841.06
+        }
+      ]
+    },
+    {
+      "name": "Mirchev, Miroslav",
+      "country": "MK",
+      "reimbursement_count": 2,
+      "total_amount": 829.7299999999999,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 772.43
+        },
+        {
+          "meeting": "Skopje (10/10/2022)",
+          "amount": 57.3
+        }
+      ]
+    },
+    {
+      "name": "Svedas, Dominykas",
+      "country": "LT",
+      "reimbursement_count": 1,
+      "total_amount": 812.74,
+      "meetings": [
+        {
+          "meeting": "Zagreb (05/05/2022)",
+          "amount": 812.74
+        }
+      ]
+    },
+    {
+      "name": "Kainat Khowaja",
+      "country": "DE",
+      "reimbursement_count": 1,
+      "total_amount": 807.12,
+      "meetings": [
+        {
+          "meeting": "Bucharest (28/10/2021)",
+          "amount": 807.12
+        }
+      ]
+    },
+    {
+      "name": "Perri, Rezarta",
+      "country": "AL",
+      "reimbursement_count": 1,
+      "total_amount": 799.98,
+      "meetings": [
+        {
+          "meeting": "Naples (16/05/2022)",
+          "amount": 799.98
+        }
+      ]
+    },
+    {
+      "name": "Cornelis Oosterlee",
+      "country": "NL",
+      "reimbursement_count": 1,
+      "total_amount": 798.76,
+      "meetings": [
+        {
+          "meeting": "Bucharest (28/10/2021)",
+          "amount": 798.76
+        }
+      ]
+    },
+    {
+      "name": "Muckley, Cal",
+      "country": "IE",
+      "reimbursement_count": 1,
+      "total_amount": 795.45,
+      "meetings": [
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 795.45
+        }
+      ]
+    },
+    {
+      "name": "Pelegrina Jimenez, Antonio",
+      "country": "ES",
+      "reimbursement_count": 1,
+      "total_amount": 767.42,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 767.42
+        }
+      ]
+    },
+    {
+      "name": "Giantsidi, Sofia",
+      "country": "IT",
+      "reimbursement_count": 1,
+      "total_amount": 756.19,
+      "meetings": [
+        {
+          "meeting": "Rethymno (27/06/2024)",
+          "amount": 756.19
+        }
+      ]
+    },
+    {
+      "name": "Chen, Cathy Yi-Hsuan",
+      "country": "UK",
+      "reimbursement_count": 1,
+      "total_amount": 755.54,
+      "meetings": [
+        {
+          "meeting": "Berlin (24/03/2022)",
+          "amount": 755.54
+        }
+      ]
+    },
+    {
+      "name": "Bag, Raul",
+      "country": "RO",
+      "reimbursement_count": 1,
+      "total_amount": 740.4,
+      "meetings": [
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 740.4
+        }
+      ]
+    },
+    {
+      "name": "Raphael Reule",
+      "country": "DE",
+      "reimbursement_count": 1,
+      "total_amount": 699.26,
+      "meetings": [
+        {
+          "meeting": "Bucharest (28/10/2021)",
+          "amount": 699.26
+        }
+      ]
+    },
+    {
+      "name": "Hirsa, Ali",
+      "country": "US",
+      "reimbursement_count": 1,
+      "total_amount": 696.3,
+      "meetings": [
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 696.3
+        }
+      ]
+    },
+    {
+      "name": "Kotlarz, Piotr",
+      "country": "CH",
+      "reimbursement_count": 1,
+      "total_amount": 629.41,
+      "meetings": [
+        {
+          "meeting": "Zagreb (05/05/2022)",
+          "amount": 629.41
+        }
+      ]
+    },
+    {
+      "name": "Chakravorti, Sujit (Bob)",
+      "country": "US",
+      "reimbursement_count": 1,
+      "total_amount": 628.62,
+      "meetings": [
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 628.62
+        }
+      ]
+    },
+    {
+      "name": "Tiron-Tudor, Adriana",
+      "country": "RO",
+      "reimbursement_count": 1,
+      "total_amount": 623.09,
+      "meetings": [
+        {
+          "meeting": "Bucharest (17/05/2024)",
+          "amount": 623.09
+        }
+      ]
+    },
+    {
+      "name": "Danial Saef",
+      "country": "DE",
+      "reimbursement_count": 1,
+      "total_amount": 614.4,
+      "meetings": [
+        {
+          "meeting": "Bucharest (28/10/2021)",
+          "amount": 614.4
+        }
+      ]
+    },
+    {
+      "name": "Curticapean, Cosmin",
+      "country": "RO",
+      "reimbursement_count": 1,
+      "total_amount": 612.89,
+      "meetings": [
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 612.89
+        }
+      ]
+    },
+    {
+      "name": "Antonio Pelegrina Jimenez",
+      "country": "HU",
+      "reimbursement_count": 1,
+      "total_amount": 602.44,
+      "meetings": [
+        {
+          "meeting": "Skopje (15/10/2021)",
+          "amount": 602.44
+        }
+      ]
+    },
+    {
+      "name": "Nadini, Matthieu",
+      "country": "UK",
+      "reimbursement_count": 1,
+      "total_amount": 592.5,
+      "meetings": [
+        {
+          "meeting": "Rennes (08/04/2022)",
+          "amount": 592.5
+        }
+      ]
+    },
+    {
+      "name": "Svetlova, Ekaterina",
+      "country": "NL",
+      "reimbursement_count": 1,
+      "total_amount": 528.0,
+      "meetings": [
+        {
+          "meeting": "Brussels (15/05/2023)",
+          "amount": 528.0
+        }
+      ]
+    },
+    {
+      "name": "Solibakke, Per B",
+      "country": "NO",
+      "reimbursement_count": 1,
+      "total_amount": 496.8,
+      "meetings": [
+        {
+          "meeting": "Espoo (06/07/2022)",
+          "amount": 496.8
+        }
+      ]
+    },
+    {
+      "name": "Iannario, Maria",
+      "country": "IT",
+      "reimbursement_count": 1,
+      "total_amount": 496.0,
+      "meetings": [
+        {
+          "meeting": "Tirana (21/09/2022)",
+          "amount": 496.0
+        }
+      ]
+    },
+    {
+      "name": "Strat, Vasile",
+      "country": "RO",
+      "reimbursement_count": 1,
+      "total_amount": 427.98,
+      "meetings": [
+        {
+          "meeting": "Cluj Napoca (01/02/2023)",
+          "amount": 427.98
+        }
+      ]
+    },
+    {
+      "name": "Tatjana Atanasova - Pachemska",
+      "country": "MK",
+      "reimbursement_count": 1,
+      "total_amount": 410.4,
+      "meetings": [
+        {
+          "meeting": "Skopje (15/10/2021)",
+          "amount": 410.4
+        }
+      ]
+    },
+    {
+      "name": "De Giuli, Maria Elena",
+      "country": "IT",
+      "reimbursement_count": 1,
+      "total_amount": 409.9,
+      "meetings": [
+        {
+          "meeting": "Bern (30/09/2022)",
+          "amount": 409.9
+        }
+      ]
+    },
+    {
+      "name": "Citterio, Alberto",
+      "country": "IT",
+      "reimbursement_count": 1,
+      "total_amount": 401.98,
+      "meetings": [
+        {
+          "meeting": "Tirana (21/09/2022)",
+          "amount": 401.98
+        }
+      ]
+    },
+    {
+      "name": "Hafner, Christian",
+      "country": "BE",
+      "reimbursement_count": 1,
+      "total_amount": 308.0,
+      "meetings": [
+        {
+          "meeting": "Brussels (14/05/2024)",
+          "amount": 308.0
+        }
+      ]
+    },
+    {
+      "name": "Marisetty, Vijay",
+      "country": "NL",
+      "reimbursement_count": 1,
+      "total_amount": 295.4,
+      "meetings": [
+        {
+          "meeting": "Utrecht (05/10/2022)",
+          "amount": 295.4
+        }
+      ]
+    },
+    {
+      "name": "Kleverlaan, Ronald",
+      "country": "NL",
+      "reimbursement_count": 1,
+      "total_amount": 197.1,
+      "meetings": [
+        {
+          "meeting": "Enschede (22/08/2022)",
+          "amount": 197.1
+        }
+      ]
+    },
+    {
+      "name": "Borodenko, Vladyslav",
+      "country": "UA",
+      "reimbursement_count": 1,
+      "total_amount": 165.6,
+      "meetings": [
+        {
+          "meeting": "Helsinki (10/07/2023)",
+          "amount": 165.6
+        }
+      ]
+    },
+    {
+      "name": "Guerrero, Esteban",
+      "country": "FI",
+      "reimbursement_count": 1,
+      "total_amount": 165.6,
+      "meetings": [
+        {
+          "meeting": "Helsinki (10/07/2023)",
+          "amount": 165.6
+        }
+      ]
+    },
+    {
+      "name": "Domingo Vilar, Albert",
+      "country": "ES",
+      "reimbursement_count": 1,
+      "total_amount": 153.6,
+      "meetings": [
+        {
+          "meeting": "Barcelona (30/10/2023)",
+          "amount": 153.6
+        }
+      ]
+    },
+    {
+      "name": "Liiv, Innar",
+      "country": "EE",
+      "reimbursement_count": 1,
+      "total_amount": 82.8,
+      "meetings": [
+        {
+          "meeting": "Espoo (06/07/2022)",
+          "amount": 82.8
+        }
+      ]
+    },
+    {
+      "name": "Eftim Zdravevski",
+      "country": "MK",
+      "reimbursement_count": 1,
+      "total_amount": 68.4,
+      "meetings": [
+        {
+          "meeting": "Skopje (15/10/2021)",
+          "amount": 68.4
+        }
+      ]
+    },
+    {
+      "name": "De Meer Pardo, Fernando",
+      "country": "CH",
+      "reimbursement_count": 1,
+      "total_amount": 65.0,
+      "meetings": [
+        {
+          "meeting": "Bern (30/09/2022)",
+          "amount": 65.0
+        }
+      ]
+    },
+    {
+      "name": "Zdravevski, Eftim",
+      "country": "MK",
+      "reimbursement_count": 1,
+      "total_amount": 57.3,
+      "meetings": [
+        {
+          "meeting": "Skopje (10/10/2022)",
+          "amount": 57.3
+        }
+      ]
+    },
+    {
+      "name": "Apostol, Elena Simona",
+      "country": "RO",
+      "reimbursement_count": 1,
+      "total_amount": 10.0,
+      "meetings": [
+        {
+          "meeting": "Bucharest (28/10/2022)",
+          "amount": 10.0
+        }
+      ]
+    }
+  ],
+  "by_country": [
+    {
+      "country": "RO",
+      "reimbursement_count": 73,
+      "total_amount": 66982.47
+    },
+    {
+      "country": "CH",
+      "reimbursement_count": 40,
+      "total_amount": 44331.93
+    },
+    {
+      "country": "TR",
+      "reimbursement_count": 32,
+      "total_amount": 33897.45
+    },
+    {
+      "country": "MK",
+      "reimbursement_count": 35,
+      "total_amount": 29319.74
+    },
+    {
+      "country": "AL",
+      "reimbursement_count": 23,
+      "total_amount": 24149.61
+    },
+    {
+      "country": "NL",
+      "reimbursement_count": 21,
+      "total_amount": 17894.05
+    },
+    {
+      "country": "IT",
+      "reimbursement_count": 22,
+      "total_amount": 15318.190000000004
+    },
+    {
+      "country": "PL",
+      "reimbursement_count": 14,
+      "total_amount": 14975.2
+    },
+    {
+      "country": "IE",
+      "reimbursement_count": 15,
+      "total_amount": 13044.08
+    },
+    {
+      "country": "EL",
+      "reimbursement_count": 13,
+      "total_amount": 12324.18
+    },
+    {
+      "country": "DE",
+      "reimbursement_count": 13,
+      "total_amount": 10427.92
+    },
+    {
+      "country": "IS",
+      "reimbursement_count": 8,
+      "total_amount": 8612.34
+    },
+    {
+      "country": "PT",
+      "reimbursement_count": 7,
+      "total_amount": 7467.51
+    },
+    {
+      "country": "SK",
+      "reimbursement_count": 6,
+      "total_amount": 5967.72
+    },
+    {
+      "country": "CZ",
+      "reimbursement_count": 5,
+      "total_amount": 4968.97
+    },
+    {
+      "country": "FR",
+      "reimbursement_count": 4,
+      "total_amount": 3686.23
+    },
+    {
+      "country": "HU",
+      "reimbursement_count": 4,
+      "total_amount": 3670.41
+    },
+    {
+      "country": "LV",
+      "reimbursement_count": 3,
+      "total_amount": 3436.4000000000005
+    },
+    {
+      "country": "CY",
+      "reimbursement_count": 3,
+      "total_amount": 3406.3900000000003
+    },
+    {
+      "country": "KV",
+      "reimbursement_count": 4,
+      "total_amount": 3084.64
+    },
+    {
+      "country": "UK",
+      "reimbursement_count": 4,
+      "total_amount": 2739.32
+    },
+    {
+      "country": "UA",
+      "reimbursement_count": 4,
+      "total_amount": 2440.32
+    },
+    {
+      "country": "BG",
+      "reimbursement_count": 2,
+      "total_amount": 2197.19
+    },
+    {
+      "country": "HR",
+      "reimbursement_count": 2,
+      "total_amount": 1920.85
+    },
+    {
+      "country": "ES",
+      "reimbursement_count": 3,
+      "total_amount": 1766.37
+    },
+    {
+      "country": "NO",
+      "reimbursement_count": 2,
+      "total_amount": 1597.69
+    },
+    {
+      "country": "AT",
+      "reimbursement_count": 2,
+      "total_amount": 1466.95
+    },
+    {
+      "country": "US",
+      "reimbursement_count": 2,
+      "total_amount": 1324.92
+    },
+    {
+      "country": "BA",
+      "reimbursement_count": 1,
+      "total_amount": 1013.9
+    },
+    {
+      "country": "IL",
+      "reimbursement_count": 1,
+      "total_amount": 866.87
+    },
+    {
+      "country": "LT",
+      "reimbursement_count": 1,
+      "total_amount": 812.74
+    },
+    {
+      "country": "LI",
+      "reimbursement_count": 1,
+      "total_amount": 441.6
+    },
+    {
+      "country": "BE",
+      "reimbursement_count": 1,
+      "total_amount": 308.0
+    },
+    {
+      "country": "FI",
+      "reimbursement_count": 1,
+      "total_amount": 165.6
+    },
+    {
+      "country": "EE",
+      "reimbursement_count": 1,
+      "total_amount": 82.8
+    }
+  ],
+  "all_reimbursements": [
+    {
+      "name": "Abdul Nasir, Jamal",
+      "country": "IE",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 419.12,
+      "daily": 464.2,
+      "other": 0.0,
+      "total": 883.32
+    },
+    {
+      "name": "Abdul Nasir, Jamal",
+      "country": "IE",
+      "meeting": "Brno",
+      "date": "21/10/2022",
+      "gp": 3,
+      "travel": 500.61,
+      "daily": 611.2,
+      "other": 0.0,
+      "total": 1111.81
+    },
+    {
+      "name": "Abrol, Manmeet",
+      "country": "IE",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 231.94,
+      "daily": 617.1,
+      "other": 0.0,
+      "total": 849.04
+    },
+    {
+      "name": "Achim, Monica Violeta",
+      "country": "RO",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 453.32,
+      "daily": 484.0,
+      "other": 0.0,
+      "total": 937.32
+    },
+    {
+      "name": "Akar, Mutlu",
+      "country": "TR",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 734.53,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1397.53
+    },
+    {
+      "name": "Akar, Mutlu",
+      "country": "TR",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 376.06,
+      "daily": 748.0,
+      "other": 0.0,
+      "total": 1124.06
+    },
+    {
+      "name": "Akar, Mutlu",
+      "country": "TR",
+      "meeting": "Bucharest",
+      "date": "17/05/2024",
+      "gp": 5,
+      "travel": 239.12,
+      "daily": 448.8,
+      "other": 0.0,
+      "total": 687.92
+    },
+    {
+      "name": "Akar, Mutlu",
+      "country": "TR",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 0.0,
+      "daily": 267.4,
+      "other": 0.0,
+      "total": 267.4
+    },
+    {
+      "name": "Akar, Mutlu",
+      "country": "TR",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 338.28,
+      "daily": 656.2,
+      "other": 0.0,
+      "total": 994.48
+    },
+    {
+      "name": "Akar, Mutlu",
+      "country": "TR",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 654.27,
+      "daily": 703.8,
+      "other": 0.0,
+      "total": 1358.07
+    },
+    {
+      "name": "Akar, Mutlu",
+      "country": "TR",
+      "meeting": "Bucharest",
+      "date": "28/10/2022",
+      "gp": 3,
+      "travel": 330.23,
+      "daily": 448.8,
+      "other": 0.0,
+      "total": 779.03
+    },
+    {
+      "name": "Antonio Pelegrina Jimenez",
+      "country": "HU",
+      "meeting": "Skopje",
+      "date": "15/10/2021",
+      "gp": 1,
+      "travel": 192.04,
+      "daily": 410.4,
+      "other": 0.0,
+      "total": 602.44
+    },
+    {
+      "name": "Apostol, Elena Simona",
+      "country": "RO",
+      "meeting": "Bucharest",
+      "date": "28/10/2022",
+      "gp": 3,
+      "travel": 0.0,
+      "daily": 10.0,
+      "other": 0.0,
+      "total": 10.0
+    },
+    {
+      "name": "Arakelian, Veni",
+      "country": "EL",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 562.39,
+      "daily": 528.0,
+      "other": 0.0,
+      "total": 1090.39
+    },
+    {
+      "name": "Arakelian, Veni",
+      "country": "EL",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 852.1,
+      "daily": 308.0,
+      "other": 0.0,
+      "total": 1160.1
+    },
+    {
+      "name": "Arakelian, Veni",
+      "country": "EL",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 504.66,
+      "daily": 710.6,
+      "other": 62.09,
+      "total": 1277.36
+    },
+    {
+      "name": "Atanasova - Pachemska, Tatjana",
+      "country": "MK",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 379.82,
+      "daily": 717.4,
+      "other": 0.0,
+      "total": 1097.22
+    },
+    {
+      "name": "Atanasova - Pachemska, Tatjana",
+      "country": "MK",
+      "meeting": "Skopje",
+      "date": "10/10/2022",
+      "gp": 3,
+      "travel": 0.0,
+      "daily": 76.4,
+      "other": 0.0,
+      "total": 76.4
+    },
+    {
+      "name": "Baals, Lennart John",
+      "country": "CH",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 465.84,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1128.84
+    },
+    {
+      "name": "Baals, Lennart John",
+      "country": "CH",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 275.8,
+      "daily": 748.0,
+      "other": 0.0,
+      "total": 1023.8
+    },
+    {
+      "name": "Baals, Lennart John",
+      "country": "CH",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 580.2,
+      "daily": 748.0,
+      "other": 0.0,
+      "total": 1328.2
+    },
+    {
+      "name": "Baals, Lennart John",
+      "country": "CH",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 779.09,
+      "daily": 633.6,
+      "other": 0.0,
+      "total": 1412.69
+    },
+    {
+      "name": "Baals, Lennart John",
+      "country": "CH",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 475.57,
+      "daily": 649.4,
+      "other": 0.0,
+      "total": 1124.97
+    },
+    {
+      "name": "Baals, Lennart John",
+      "country": "CH",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 820.12,
+      "daily": 703.8,
+      "other": 0.0,
+      "total": 1523.92
+    },
+    {
+      "name": "Bag, Raul",
+      "country": "RO",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 329.0,
+      "daily": 411.4,
+      "other": 0.0,
+      "total": 740.4
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 669.41,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1332.41
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "meeting": "Horta Faial Azores",
+      "date": "03/09/2023",
+      "gp": 4,
+      "travel": 811.08,
+      "daily": 468.0,
+      "other": 0.0,
+      "total": 1279.08
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 502.61,
+      "daily": 273.0,
+      "other": 0.0,
+      "total": 775.61
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "meeting": "Pavia",
+      "date": "13/04/2023",
+      "gp": 4,
+      "travel": 448.58,
+      "daily": 462.3,
+      "other": 0.0,
+      "total": 910.88
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 338.52,
+      "daily": 748.0,
+      "other": 0.0,
+      "total": 1086.52
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 345.6,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 998.4
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 282.5,
+      "daily": 611.2,
+      "other": 0.0,
+      "total": 893.7
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 304.89,
+      "daily": 696.3,
+      "other": 0.0,
+      "total": 1001.19
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 0.0,
+      "daily": 149.6,
+      "other": 0.0,
+      "total": 149.6
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 433.5,
+      "daily": 463.2,
+      "other": 0.0,
+      "total": 896.7
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 457.48,
+      "daily": 662.4,
+      "other": 0.0,
+      "total": 1119.88
+    },
+    {
+      "name": "Belbe, Stefana",
+      "country": "RO",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 380.05,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1032.85
+    },
+    {
+      "name": "Bernard, Frederik Sinan",
+      "country": "NL",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 207.0,
+      "daily": 704.0,
+      "other": 0.0,
+      "total": 911.0
+    },
+    {
+      "name": "Bernard, Frédérik Sinan",
+      "country": "NL",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 493.9,
+      "daily": 643.5,
+      "other": 0.0,
+      "total": 1137.4
+    },
+    {
+      "name": "Bernard, Frédérik Sinan",
+      "country": "NL",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 246.77,
+      "daily": 595.2,
+      "other": 0.0,
+      "total": 841.97
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 674.48,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1337.48
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "meeting": "Horta Faial Azores",
+      "date": "03/09/2023",
+      "gp": 4,
+      "travel": 643.9,
+      "daily": 604.5,
+      "other": 0.0,
+      "total": 1248.4
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 496.18,
+      "daily": 506.4,
+      "other": 0.0,
+      "total": 1002.58
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "meeting": "Helsinki",
+      "date": "10/07/2023",
+      "gp": 4,
+      "travel": 518.87,
+      "daily": 683.1,
+      "other": 0.0,
+      "total": 1201.97
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "meeting": "Pavia",
+      "date": "13/04/2023",
+      "gp": 4,
+      "travel": 187.1,
+      "daily": 462.3,
+      "other": 0.0,
+      "total": 649.4
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "CH",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 357.15,
+      "daily": 726.0,
+      "other": 0.0,
+      "total": 1083.15
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 578.66,
+      "daily": 726.0,
+      "other": 0.0,
+      "total": 1304.66
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 322.4,
+      "daily": 614.4,
+      "other": 0.0,
+      "total": 936.8
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 264.85,
+      "daily": 630.3,
+      "other": 0.0,
+      "total": 895.15
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 613.35,
+      "daily": 636.9,
+      "other": 0.0,
+      "total": 1250.25
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 588.49,
+      "daily": 641.7,
+      "other": 0.0,
+      "total": 1230.19
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "meeting": "Bucharest",
+      "date": "28/10/2022",
+      "gp": 3,
+      "travel": 464.75,
+      "daily": 430.1,
+      "other": 0.0,
+      "total": 894.85
+    },
+    {
+      "name": "Bolesta, Karolina",
+      "country": "PL",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 354.75,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1007.55
+    },
+    {
+      "name": "Borodenko, Vladyslav",
+      "country": "UA",
+      "meeting": "Helsinki",
+      "date": "10/07/2023",
+      "gp": 4,
+      "travel": 0.0,
+      "daily": 165.6,
+      "other": 0.0,
+      "total": 165.6
+    },
+    {
+      "name": "Cetintav, Bekir",
+      "country": "TR",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 510.67,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1173.67
+    },
+    {
+      "name": "Chakravorti, Sujit (Bob)",
+      "country": "US",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 185.52,
+      "daily": 443.1,
+      "other": 0.0,
+      "total": 628.62
+    },
+    {
+      "name": "Chen, Cathy Yi-Hsuan",
+      "country": "UK",
+      "meeting": "Berlin",
+      "date": "24/03/2022",
+      "gp": 2,
+      "travel": 273.14,
+      "daily": 482.4,
+      "other": 0.0,
+      "total": 755.54
+    },
+    {
+      "name": "Chis, Laviniu",
+      "country": "RO",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 270.93,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 923.73
+    },
+    {
+      "name": "Citterio, Alberto",
+      "country": "IT",
+      "meeting": "Tirana",
+      "date": "21/09/2022",
+      "gp": 3,
+      "travel": 149.98,
+      "daily": 252.0,
+      "other": 0.0,
+      "total": 401.98
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 106.4,
+      "daily": 430.1,
+      "other": 0.0,
+      "total": 536.5
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 550.6,
+      "daily": 928.4,
+      "other": 0.0,
+      "total": 1479.0
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Helsinki",
+      "date": "10/07/2023",
+      "gp": 4,
+      "travel": 656.01,
+      "daily": 703.8,
+      "other": 0.0,
+      "total": 1359.81
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 370.3,
+      "daily": 468.0,
+      "other": 0.0,
+      "total": 838.3
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Pavia",
+      "date": "13/04/2023",
+      "gp": 4,
+      "travel": 700.0,
+      "daily": 663.3,
+      "other": 0.0,
+      "total": 1363.3
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 661.68,
+      "daily": 748.0,
+      "other": 0.0,
+      "total": 1409.68
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 349.9,
+      "daily": 748.0,
+      "other": 0.0,
+      "total": 1097.9
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Bucharest",
+      "date": "16/06/2022",
+      "gp": 3,
+      "travel": 417.2,
+      "daily": 448.8,
+      "other": 0.0,
+      "total": 866.0
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Bucharest",
+      "date": "17/05/2024",
+      "gp": 5,
+      "travel": 158.97,
+      "daily": 448.8,
+      "other": 0.0,
+      "total": 607.77
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 1151.96,
+      "daily": 614.4,
+      "other": 0.0,
+      "total": 1766.36
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 279.56,
+      "daily": 649.4,
+      "other": 0.0,
+      "total": 928.96
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 394.58,
+      "daily": 717.4,
+      "other": 0.0,
+      "total": 1111.98
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 106.4,
+      "daily": 430.1,
+      "other": 0.0,
+      "total": 536.5
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 797.46,
+      "daily": 656.2,
+      "other": 0.0,
+      "total": 1453.66
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 700.0,
+      "daily": 710.6,
+      "other": 0.0,
+      "total": 1410.6
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Bucharest",
+      "date": "28/10/2022",
+      "gp": 3,
+      "travel": 416.5,
+      "daily": 448.8,
+      "other": 0.0,
+      "total": 865.3
+    },
+    {
+      "name": "Coita, Ioana",
+      "country": "RO",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 792.48,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1445.28
+    },
+    {
+      "name": "Cornelis Oosterlee",
+      "country": "NL",
+      "meeting": "Bucharest",
+      "date": "28/10/2021",
+      "gp": 1,
+      "travel": 234.36,
+      "daily": 564.4,
+      "other": 0.0,
+      "total": 798.76
+    },
+    {
+      "name": "Costea, Adrian",
+      "country": "RO",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 404.79,
+      "daily": 506.0,
+      "other": 0.0,
+      "total": 910.79
+    },
+    {
+      "name": "Costea, Adrian",
+      "country": "RO",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 165.67,
+      "daily": 261.8,
+      "other": 0.0,
+      "total": 427.47
+    },
+    {
+      "name": "Curticapean, Cosmin",
+      "country": "RO",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 344.09,
+      "daily": 268.8,
+      "other": 0.0,
+      "total": 612.89
+    },
+    {
+      "name": "DAVER, Gizay",
+      "country": "TR",
+      "meeting": "Helsinki",
+      "date": "10/07/2023",
+      "gp": 4,
+      "travel": 440.4,
+      "daily": 269.1,
+      "other": 0.0,
+      "total": 709.5
+    },
+    {
+      "name": "DAVER, Gizay",
+      "country": "TR",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 259.0,
+      "daily": 267.4,
+      "other": 0.0,
+      "total": 526.4
+    },
+    {
+      "name": "Danial Saef",
+      "country": "DE",
+      "meeting": "Bucharest",
+      "date": "28/10/2021",
+      "gp": 1,
+      "travel": 50.0,
+      "daily": 564.4,
+      "other": 0.0,
+      "total": 614.4
+    },
+    {
+      "name": "De Giuli, Maria Elena",
+      "country": "IT",
+      "meeting": "Bern",
+      "date": "30/09/2022",
+      "gp": 3,
+      "travel": 138.2,
+      "daily": 271.7,
+      "other": 0.0,
+      "total": 409.9
+    },
+    {
+      "name": "De Meer Pardo, Fernando",
+      "country": "CH",
+      "meeting": "Bern",
+      "date": "30/09/2022",
+      "gp": 3,
+      "travel": 55.0,
+      "daily": 10.0,
+      "other": 0.0,
+      "total": 65.0
+    },
+    {
+      "name": "Deev, Oleg",
+      "country": "CZ",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 460.41,
+      "daily": 506.4,
+      "other": 0.0,
+      "total": 966.81
+    },
+    {
+      "name": "Dias, Joana",
+      "country": "PT",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 537.53,
+      "daily": 501.6,
+      "other": 0.0,
+      "total": 1039.13
+    },
+    {
+      "name": "Domingo Vilar, Albert",
+      "country": "ES",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 0.0,
+      "daily": 153.6,
+      "other": 0.0,
+      "total": 153.6
+    },
+    {
+      "name": "Dzurovski, Anastas",
+      "country": "MK",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 349.72,
+      "daily": 400.0,
+      "other": 0.0,
+      "total": 749.72
+    },
+    {
+      "name": "Dzurovski, Anastas",
+      "country": "MK",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 110.65,
+      "daily": 350.73,
+      "other": 0.0,
+      "total": 461.38
+    },
+    {
+      "name": "Dzurovski, Anastas",
+      "country": "MK",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 284.12,
+      "daily": 397.87,
+      "other": 0.0,
+      "total": 681.99
+    },
+    {
+      "name": "Dzurovski, Anastas",
+      "country": "MK",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 417.9,
+      "daily": 90.0,
+      "other": 0.0,
+      "total": 507.9
+    },
+    {
+      "name": "Dzurovski, Anastas",
+      "country": "MK",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 276.05,
+      "daily": 243.1,
+      "other": 0.0,
+      "total": 519.15
+    },
+    {
+      "name": "Dzurovski, Anastas",
+      "country": "MK",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 275.09,
+      "daily": 656.2,
+      "other": 0.0,
+      "total": 931.29
+    },
+    {
+      "name": "Dzurovski, Anastas",
+      "country": "MK",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 150.0,
+      "daily": 320.0,
+      "other": 0.0,
+      "total": 470.0
+    },
+    {
+      "name": "Eftim Zdravevski",
+      "country": "MK",
+      "meeting": "Skopje",
+      "date": "15/10/2021",
+      "gp": 1,
+      "travel": 0.0,
+      "daily": 68.4,
+      "other": 0.0,
+      "total": 68.4
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 720.3,
+      "daily": 643.5,
+      "other": 0.0,
+      "total": 1363.8
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Zagreb",
+      "date": "05/05/2022",
+      "gp": 2,
+      "travel": 548.1,
+      "daily": 378.4,
+      "other": 0.0,
+      "total": 926.5
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Helsinki",
+      "date": "10/07/2023",
+      "gp": 4,
+      "travel": 908.45,
+      "daily": 641.7,
+      "other": 0.0,
+      "total": 1550.15
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 795.39,
+      "daily": 429.0,
+      "other": 0.0,
+      "total": 1224.39
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 232.89,
+      "daily": 506.0,
+      "other": 0.0,
+      "total": 738.89
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 926.99,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1579.79
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 634.53,
+      "daily": 248.3,
+      "other": 0.0,
+      "total": 882.83
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 669.2,
+      "daily": 617.1,
+      "other": 0.0,
+      "total": 1286.3
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 695.59,
+      "daily": 656.2,
+      "other": 0.0,
+      "total": 1351.79
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 690.2,
+      "daily": 662.4,
+      "other": 0.0,
+      "total": 1352.6
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Bucharest",
+      "date": "28/10/2022",
+      "gp": 3,
+      "travel": 441.7,
+      "daily": 448.8,
+      "other": 0.0,
+      "total": 890.5
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Bern",
+      "date": "30/09/2022",
+      "gp": 3,
+      "travel": 397.19,
+      "daily": 480.7,
+      "other": 0.0,
+      "total": 877.89
+    },
+    {
+      "name": "Filipovska, Olivija",
+      "country": "MK",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 603.88,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1256.68
+    },
+    {
+      "name": "Gavranovic, Nedim",
+      "country": "BA",
+      "meeting": "Bucharest",
+      "date": "28/10/2022",
+      "gp": 3,
+      "travel": 583.8,
+      "daily": 430.1,
+      "other": 0.0,
+      "total": 1013.9
+    },
+    {
+      "name": "Giantsidi, Sofia",
+      "country": "IT",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 119.29,
+      "daily": 636.9,
+      "other": 0.0,
+      "total": 756.19
+    },
+    {
+      "name": "Giordano, Sabrina",
+      "country": "IT",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 247.31,
+      "daily": 411.4,
+      "other": 0.0,
+      "total": 658.71
+    },
+    {
+      "name": "Giordano, Sabrina",
+      "country": "IT",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 494.87,
+      "daily": 636.9,
+      "other": 0.0,
+      "total": 1131.77
+    },
+    {
+      "name": "Girvica, Olga",
+      "country": "LV",
+      "meeting": "Bern",
+      "date": "30/09/2022",
+      "gp": 3,
+      "travel": 624.0,
+      "daily": 480.7,
+      "other": 0.0,
+      "total": 1104.7
+    },
+    {
+      "name": "Gregoriades, Andreas",
+      "country": "CY",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 525.99,
+      "daily": 696.3,
+      "other": 0.0,
+      "total": 1222.29
+    },
+    {
+      "name": "Gregoriades, Andreas",
+      "country": "CY",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 411.74,
+      "daily": 649.4,
+      "other": 0.0,
+      "total": 1061.14
+    },
+    {
+      "name": "Guerrero, Esteban",
+      "country": "FI",
+      "meeting": "Helsinki",
+      "date": "10/07/2023",
+      "gp": 4,
+      "travel": 0.0,
+      "daily": 165.6,
+      "other": 0.0,
+      "total": 165.6
+    },
+    {
+      "name": "Gómez Teijeiro, Lucía",
+      "country": "CH",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 175.08,
+      "daily": 506.0,
+      "other": 0.0,
+      "total": 681.08
+    },
+    {
+      "name": "Gómez Teijeiro, Lucía",
+      "country": "CH",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 538.41,
+      "daily": 614.4,
+      "other": 0.0,
+      "total": 1152.81
+    },
+    {
+      "name": "Hadji Misheva, Branka",
+      "country": "CH",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 218.18,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 881.18
+    },
+    {
+      "name": "Hadji Misheva, Branka",
+      "country": "CH",
+      "meeting": "Horta Faial Azores",
+      "date": "03/09/2023",
+      "gp": 4,
+      "travel": 596.53,
+      "daily": 468.0,
+      "other": 0.0,
+      "total": 1064.53
+    },
+    {
+      "name": "Hadji Misheva, Branka",
+      "country": "CH",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 545.73,
+      "daily": 528.0,
+      "other": 0.0,
+      "total": 1073.73
+    },
+    {
+      "name": "Hadji Misheva, Branka",
+      "country": "CH",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 659.02,
+      "daily": 308.0,
+      "other": 0.0,
+      "total": 967.02
+    },
+    {
+      "name": "Hadji Misheva, Branka",
+      "country": "CH",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 493.5,
+      "daily": 865.1,
+      "other": 0.0,
+      "total": 1358.6
+    },
+    {
+      "name": "Hadji Misheva, Branka",
+      "country": "CH",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 0.0,
+      "daily": 167.2,
+      "other": 0.0,
+      "total": 167.2
+    },
+    {
+      "name": "Hafner, Christian",
+      "country": "BE",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 0.0,
+      "daily": 308.0,
+      "other": 0.0,
+      "total": 308.0
+    },
+    {
+      "name": "Hajek, Petr",
+      "country": "CZ",
+      "meeting": "Zagreb",
+      "date": "05/05/2022",
+      "gp": 2,
+      "travel": 257.12,
+      "daily": 550.4,
+      "other": 0.0,
+      "total": 807.52
+    },
+    {
+      "name": "Hajek, Petr",
+      "country": "CZ",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 417.5,
+      "daily": 485.3,
+      "other": 0.0,
+      "total": 902.8
+    },
+    {
+      "name": "Hanna Kristin Skaftadottir",
+      "country": "IS",
+      "meeting": "Skopje",
+      "date": "15/10/2021",
+      "gp": 1,
+      "travel": 1200.0,
+      "daily": 410.4,
+      "other": 0.0,
+      "total": 1610.4
+    },
+    {
+      "name": "Hirsa, Ali",
+      "country": "US",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 0.0,
+      "daily": 696.3,
+      "other": 0.0,
+      "total": 696.3
+    },
+    {
+      "name": "Hochreiter, Ronald",
+      "country": "AT",
+      "meeting": "Berlin",
+      "date": "24/03/2022",
+      "gp": 2,
+      "travel": 283.57,
+      "daily": 462.3,
+      "other": 0.0,
+      "total": 745.87
+    },
+    {
+      "name": "Hochreiter, Ronald",
+      "country": "AT",
+      "meeting": "Bern",
+      "date": "30/09/2022",
+      "gp": 3,
+      "travel": 261.28,
+      "daily": 459.8,
+      "other": 0.0,
+      "total": 721.08
+    },
+    {
+      "name": "Hudec, Miroslav",
+      "country": "SK",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 573.39,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1236.39
+    },
+    {
+      "name": "Hudec, Miroslav",
+      "country": "SK",
+      "meeting": "Naples",
+      "date": "16/05/2022",
+      "gp": 2,
+      "travel": 237.99,
+      "daily": 663.3,
+      "other": 0.0,
+      "total": 901.29
+    },
+    {
+      "name": "Härdle, Wolfgang",
+      "country": "DE",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 0.0,
+      "daily": 617.1,
+      "other": 0.0,
+      "total": 617.1
+    },
+    {
+      "name": "Härdle, Wolfgang",
+      "country": "DE",
+      "meeting": "Bucharest",
+      "date": "17/05/2024",
+      "gp": 5,
+      "travel": 441.17,
+      "daily": 430.1,
+      "other": 0.0,
+      "total": 871.27
+    },
+    {
+      "name": "Härdle, Wolfgang",
+      "country": "DE",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 171.1,
+      "daily": 295.4,
+      "other": 0.0,
+      "total": 466.5
+    },
+    {
+      "name": "Iannario, Maria",
+      "country": "IT",
+      "meeting": "Tirana",
+      "date": "21/09/2022",
+      "gp": 3,
+      "travel": 244.0,
+      "daily": 252.0,
+      "other": 0.0,
+      "total": 496.0
+    },
+    {
+      "name": "Ivanisevic Hernaus, Ana",
+      "country": "HR",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 33.25,
+      "daily": 696.3,
+      "other": 0.0,
+      "total": 729.55
+    },
+    {
+      "name": "Ivanisevic Hernaus, Ana",
+      "country": "HR",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 501.6,
+      "daily": 689.7,
+      "other": 0.0,
+      "total": 1191.3
+    },
+    {
+      "name": "Jörg Osterrieder",
+      "country": "CH",
+      "meeting": "Skopje",
+      "date": "15/10/2021",
+      "gp": 1,
+      "travel": 600.75,
+      "daily": 410.4,
+      "other": 0.0,
+      "total": 1011.15
+    },
+    {
+      "name": "KABAKLARLI, Esra",
+      "country": "TR",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 456.47,
+      "daily": 617.6,
+      "other": 0.0,
+      "total": 1074.07
+    },
+    {
+      "name": "Kainat Khowaja",
+      "country": "DE",
+      "meeting": "Bucharest",
+      "date": "28/10/2021",
+      "gp": 1,
+      "travel": 259.32,
+      "daily": 547.8,
+      "other": 0.0,
+      "total": 807.12
+    },
+    {
+      "name": "Kayis, Enis",
+      "country": "TR",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 400.82,
+      "daily": 907.3,
+      "other": 0.0,
+      "total": 1308.12
+    },
+    {
+      "name": "Kayis, Enis",
+      "country": "TR",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 653.46,
+      "daily": 703.8,
+      "other": 0.0,
+      "total": 1357.26
+    },
+    {
+      "name": "Kayis, Enis",
+      "country": "TR",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 318.13,
+      "daily": 710.6,
+      "other": 0.0,
+      "total": 1028.73
+    },
+    {
+      "name": "Kleverlaan, Ronald",
+      "country": "NL",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 112.7,
+      "daily": 84.4,
+      "other": 0.0,
+      "total": 197.1
+    },
+    {
+      "name": "Klochko, Alona",
+      "country": "UA",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 278.32,
+      "daily": 726.0,
+      "other": 0.0,
+      "total": 1004.32
+    },
+    {
+      "name": "Klochko, Alona",
+      "country": "UA",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 210.0,
+      "daily": 726.0,
+      "other": 0.0,
+      "total": 936.0
+    },
+    {
+      "name": "Klochko, Alona",
+      "country": "UA",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 0.0,
+      "daily": 334.4,
+      "other": 0.0,
+      "total": 334.4
+    },
+    {
+      "name": "Koenigstein, Nicole",
+      "country": "CH",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 447.19,
+      "daily": 295.4,
+      "other": 0.0,
+      "total": 742.59
+    },
+    {
+      "name": "Koenigstein, Nicole",
+      "country": "LI",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 0.0,
+      "daily": 441.6,
+      "other": 0.0,
+      "total": 441.6
+    },
+    {
+      "name": "Kotlarz, Piotr",
+      "country": "CH",
+      "meeting": "Zagreb",
+      "date": "05/05/2022",
+      "gp": 2,
+      "travel": 216.61,
+      "daily": 412.8,
+      "other": 0.0,
+      "total": 629.41
+    },
+    {
+      "name": "Lameski, Petre",
+      "country": "MK",
+      "meeting": "Zagreb",
+      "date": "05/05/2022",
+      "gp": 2,
+      "travel": 269.0,
+      "daily": 584.8,
+      "other": 0.0,
+      "total": 853.8
+    },
+    {
+      "name": "Lameski, Petre",
+      "country": "MK",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 405.0,
+      "daily": 928.4,
+      "other": 0.0,
+      "total": 1333.4
+    },
+    {
+      "name": "Lameski, Petre",
+      "country": "MK",
+      "meeting": "Helsinki",
+      "date": "10/07/2023",
+      "gp": 4,
+      "travel": 884.0,
+      "daily": 703.8,
+      "other": 0.0,
+      "total": 1587.8
+    },
+    {
+      "name": "Lameski, Petre",
+      "country": "MK",
+      "meeting": "Skopje",
+      "date": "10/10/2022",
+      "gp": 3,
+      "travel": 0.0,
+      "daily": 57.3,
+      "other": 0.0,
+      "total": 57.3
+    },
+    {
+      "name": "Lameski, Petre",
+      "country": "MK",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 589.0,
+      "daily": 717.4,
+      "other": 0.0,
+      "total": 1306.4
+    },
+    {
+      "name": "Lameski, Petre",
+      "country": "MK",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 316.65,
+      "daily": 710.6,
+      "other": 0.0,
+      "total": 1027.25
+    },
+    {
+      "name": "Liana, Stanca",
+      "country": "RO",
+      "meeting": "Helsinki",
+      "date": "10/07/2023",
+      "gp": 4,
+      "travel": 906.56,
+      "daily": 496.8,
+      "other": 0.0,
+      "total": 1403.36
+    },
+    {
+      "name": "Liana, Stanca",
+      "country": "RO",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 400.23,
+      "daily": 273.0,
+      "other": 0.0,
+      "total": 673.23
+    },
+    {
+      "name": "Liana, Stanca",
+      "country": "RO",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 165.7,
+      "daily": 528.0,
+      "other": 0.0,
+      "total": 693.7
+    },
+    {
+      "name": "Liana, Stanca",
+      "country": "RO",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 184.23,
+      "daily": 726.0,
+      "other": 0.0,
+      "total": 910.23
+    },
+    {
+      "name": "Liana, Stanca",
+      "country": "RO",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 901.67,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1554.47
+    },
+    {
+      "name": "Liana, Stanca",
+      "country": "RO",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 289.2,
+      "daily": 611.2,
+      "other": 0.0,
+      "total": 900.4
+    },
+    {
+      "name": "Liana, Stanca",
+      "country": "RO",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 0.0,
+      "daily": 149.6,
+      "other": 0.0,
+      "total": 149.6
+    },
+    {
+      "name": "Liana, Stanca",
+      "country": "RO",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 245.06,
+      "daily": 617.6,
+      "other": 0.0,
+      "total": 862.66
+    },
+    {
+      "name": "Liiv, Innar",
+      "country": "EE",
+      "meeting": "Espoo",
+      "date": "06/07/2022",
+      "gp": 3,
+      "travel": 0.0,
+      "daily": 82.8,
+      "other": 0.0,
+      "total": 82.8
+    },
+    {
+      "name": "Liu, Yiting",
+      "country": "CH",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 570.35,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1233.35
+    },
+    {
+      "name": "Liu, Yiting",
+      "country": "CH",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 199.4,
+      "daily": 748.0,
+      "other": 0.0,
+      "total": 947.4
+    },
+    {
+      "name": "Liu, Yiting",
+      "country": "CH",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 518.72,
+      "daily": 748.0,
+      "other": 0.0,
+      "total": 1266.72
+    },
+    {
+      "name": "Liu, Yiting",
+      "country": "CH",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 848.34,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1501.14
+    },
+    {
+      "name": "Liu, Yiting",
+      "country": "CH",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 561.78,
+      "daily": 649.4,
+      "other": 56.66,
+      "total": 1267.84
+    },
+    {
+      "name": "Liu, Yiting",
+      "country": "CH",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 832.13,
+      "daily": 703.8,
+      "other": 0.0,
+      "total": 1535.93
+    },
+    {
+      "name": "Liu, Yiting",
+      "country": "CH",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 416.53,
+      "daily": 460.8,
+      "other": 0.0,
+      "total": 877.33
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 0.0,
+      "daily": 149.6,
+      "other": 0.0,
+      "total": 149.6
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 702.71,
+      "daily": 643.5,
+      "other": 0.0,
+      "total": 1346.21
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Horta Faial Azores",
+      "date": "03/09/2023",
+      "gp": 4,
+      "travel": 1142.92,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1805.92
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 299.05,
+      "daily": 907.3,
+      "other": 0.0,
+      "total": 1206.35
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Helsinki",
+      "date": "10/07/2023",
+      "gp": 4,
+      "travel": 433.82,
+      "daily": 662.4,
+      "other": 0.0,
+      "total": 1096.22
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Pavia",
+      "date": "13/04/2023",
+      "gp": 4,
+      "travel": 235.9,
+      "daily": 663.3,
+      "other": 0.0,
+      "total": 899.2
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 428.32,
+      "daily": 704.0,
+      "other": 0.0,
+      "total": 1132.32
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 173.28,
+      "daily": 726.0,
+      "other": 0.0,
+      "total": 899.28
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Naples",
+      "date": "16/05/2022",
+      "gp": 2,
+      "travel": 221.42,
+      "daily": 643.2,
+      "other": 0.0,
+      "total": 864.62
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Bucharest",
+      "date": "16/06/2022",
+      "gp": 3,
+      "travel": 314.3,
+      "daily": 448.8,
+      "other": 0.0,
+      "total": 763.1
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 592.14,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1244.94
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 220.7,
+      "daily": 420.2,
+      "other": 0.0,
+      "total": 640.9
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Tirana",
+      "date": "21/09/2022",
+      "gp": 3,
+      "travel": 700.0,
+      "daily": 612.0,
+      "other": 0.0,
+      "total": 1312.0
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 286.39,
+      "daily": 907.3,
+      "other": 0.0,
+      "total": 1193.69
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 0.0,
+      "daily": 149.6,
+      "other": 0.0,
+      "total": 149.6
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 234.21,
+      "daily": 636.9,
+      "other": 0.0,
+      "total": 871.11
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 536.04,
+      "daily": 662.4,
+      "other": 0.0,
+      "total": 1198.44
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 700.0,
+      "daily": 710.6,
+      "other": 0.0,
+      "total": 1410.6
+    },
+    {
+      "name": "MARE, Codruta",
+      "country": "RO",
+      "meeting": "Bucharest",
+      "date": "28/10/2022",
+      "gp": 3,
+      "travel": 315.0,
+      "daily": 448.8,
+      "other": 0.0,
+      "total": 763.8
+    },
+    {
+      "name": "Machado, Marcos",
+      "country": "NL",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 64.0,
+      "daily": 506.0,
+      "other": 0.0,
+      "total": 570.0
+    },
+    {
+      "name": "Machado, Marcos",
+      "country": "NL",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 345.89,
+      "daily": 611.2,
+      "other": 0.0,
+      "total": 957.09
+    },
+    {
+      "name": "Machado, Marcos",
+      "country": "NL",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 350.59,
+      "daily": 635.8,
+      "other": 0.0,
+      "total": 986.39
+    },
+    {
+      "name": "Marazzina, Daniele",
+      "country": "IT",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 368.67,
+      "daily": 696.3,
+      "other": 0.0,
+      "total": 1064.97
+    },
+    {
+      "name": "Marazzina, Daniele",
+      "country": "IT",
+      "meeting": "Espoo",
+      "date": "06/07/2022",
+      "gp": 3,
+      "travel": 174.78,
+      "daily": 269.1,
+      "other": 0.0,
+      "total": 443.88
+    },
+    {
+      "name": "Marazzina, Daniele",
+      "country": "IT",
+      "meeting": "Naples",
+      "date": "16/05/2022",
+      "gp": 2,
+      "travel": 146.8,
+      "daily": 462.3,
+      "other": 0.0,
+      "total": 609.1
+    },
+    {
+      "name": "Marisetty, Vijay",
+      "country": "NL",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 0.0,
+      "daily": 295.4,
+      "other": 0.0,
+      "total": 295.4
+    },
+    {
+      "name": "Maxhelaku (Vasil), Suela",
+      "country": "AL",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 673.52,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1336.52
+    },
+    {
+      "name": "Maxhelaku (Vasil), Suela",
+      "country": "AL",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 482.0,
+      "daily": 485.3,
+      "other": 0.0,
+      "total": 967.3
+    },
+    {
+      "name": "Maxhelaku (Vasil), Suela",
+      "country": "AL",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 542.66,
+      "daily": 448.5,
+      "other": 0.0,
+      "total": 991.16
+    },
+    {
+      "name": "Maxhelaku (Vasil), Suela",
+      "country": "AL",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 404.67,
+      "daily": 704.0,
+      "other": 0.0,
+      "total": 1108.67
+    },
+    {
+      "name": "Maxhelaku (Vasil), Suela",
+      "country": "AL",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 681.52,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1334.32
+    },
+    {
+      "name": "Maxhelaku (Vasil), Suela",
+      "country": "AL",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 489.0,
+      "daily": 630.3,
+      "other": 0.0,
+      "total": 1119.3
+    },
+    {
+      "name": "Maxhelaku (Vasil), Suela",
+      "country": "AL",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 283.88,
+      "daily": 633.6,
+      "other": 0.0,
+      "total": 917.48
+    },
+    {
+      "name": "Maxhelaku, Armela",
+      "country": "AL",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 542.66,
+      "daily": 448.5,
+      "other": 0.0,
+      "total": 991.16
+    },
+    {
+      "name": "Maxhelaku, Armela",
+      "country": "AL",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 404.67,
+      "daily": 704.0,
+      "other": 0.0,
+      "total": 1108.67
+    },
+    {
+      "name": "Maxhelaku, Armela",
+      "country": "AL",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 547.0,
+      "daily": 748.0,
+      "other": 0.0,
+      "total": 1295.0
+    },
+    {
+      "name": "Maxhelaku, Armela",
+      "country": "AL",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 681.52,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1334.32
+    },
+    {
+      "name": "Maxhelaku, Armela",
+      "country": "AL",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 489.0,
+      "daily": 630.3,
+      "other": 0.0,
+      "total": 1119.3
+    },
+    {
+      "name": "Maxhelaku, Armela",
+      "country": "AL",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 283.88,
+      "daily": 633.6,
+      "other": 0.0,
+      "total": 917.48
+    },
+    {
+      "name": "Mináriková, Erika",
+      "country": "SK",
+      "meeting": "Naples",
+      "date": "16/05/2022",
+      "gp": 2,
+      "travel": 261.99,
+      "daily": 663.3,
+      "other": 0.0,
+      "total": 925.29
+    },
+    {
+      "name": "Mirchev, Miroslav",
+      "country": "MK",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 287.13,
+      "daily": 485.3,
+      "other": 0.0,
+      "total": 772.43
+    },
+    {
+      "name": "Mirchev, Miroslav",
+      "country": "MK",
+      "meeting": "Skopje",
+      "date": "10/10/2022",
+      "gp": 3,
+      "travel": 0.0,
+      "daily": 57.3,
+      "other": 0.0,
+      "total": 57.3
+    },
+    {
+      "name": "Mishev, Stoyan",
+      "country": "BG",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 391.09,
+      "daily": 717.4,
+      "other": 0.0,
+      "total": 1108.49
+    },
+    {
+      "name": "Mishev, Stoyan",
+      "country": "BG",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 587.1,
+      "daily": 501.6,
+      "other": 0.0,
+      "total": 1088.7
+    },
+    {
+      "name": "Moloney, Maria",
+      "country": "IE",
+      "meeting": "Horta Faial Azores",
+      "date": "03/09/2023",
+      "gp": 4,
+      "travel": 502.1,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1165.1
+    },
+    {
+      "name": "Moloney, Maria",
+      "country": "IE",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 194.27,
+      "daily": 274.3,
+      "other": 0.0,
+      "total": 468.57
+    },
+    {
+      "name": "Moloney, Maria",
+      "country": "IE",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 289.33,
+      "daily": 528.0,
+      "other": 0.0,
+      "total": 817.33
+    },
+    {
+      "name": "Moloney, Maria",
+      "country": "IE",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 766.73,
+      "daily": 633.6,
+      "other": 0.0,
+      "total": 1400.33
+    },
+    {
+      "name": "Moloney, Maria",
+      "country": "IE",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 270.48,
+      "daily": 696.3,
+      "other": 0.0,
+      "total": 966.78
+    },
+    {
+      "name": "Moukas, Alexios Ioannis",
+      "country": "EL",
+      "meeting": "Pavia",
+      "date": "13/04/2023",
+      "gp": 4,
+      "travel": 398.86,
+      "daily": 442.2,
+      "other": 0.0,
+      "total": 841.06
+    },
+    {
+      "name": "Muckley, Cal",
+      "country": "IE",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 289.45,
+      "daily": 506.0,
+      "other": 0.0,
+      "total": 795.45
+    },
+    {
+      "name": "Muniz Martinez, Jose Antonio",
+      "country": "UK",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 77.38,
+      "daily": 308.0,
+      "other": 0.0,
+      "total": 385.38
+    },
+    {
+      "name": "Muniz Martinez, Jose Antonio",
+      "country": "UK",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 322.8,
+      "daily": 683.1,
+      "other": 0.0,
+      "total": 1005.9
+    },
+    {
+      "name": "Nadini, Matthieu",
+      "country": "UK",
+      "meeting": "Rennes",
+      "date": "08/04/2022",
+      "gp": 2,
+      "travel": 352.0,
+      "daily": 240.5,
+      "other": 0.0,
+      "total": 592.5
+    },
+    {
+      "name": "Nur Yilmaz, Gokce",
+      "country": "TR",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 314.3,
+      "daily": 458.4,
+      "other": 0.0,
+      "total": 772.7
+    },
+    {
+      "name": "Nur Yilmaz, Gokce",
+      "country": "TR",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 725.73,
+      "daily": 561.0,
+      "other": 0.0,
+      "total": 1286.73
+    },
+    {
+      "name": "OZTURKKAL, Belma",
+      "country": "TR",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 385.11,
+      "daily": 430.1,
+      "other": 0.0,
+      "total": 815.21
+    },
+    {
+      "name": "OZTURKKAL, Belma",
+      "country": "TR",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 704.59,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1367.59
+    },
+    {
+      "name": "OZTURKKAL, Belma",
+      "country": "TR",
+      "meeting": "Pavia",
+      "date": "13/04/2023",
+      "gp": 4,
+      "travel": 691.21,
+      "daily": 482.4,
+      "other": 0.0,
+      "total": 1173.61
+    },
+    {
+      "name": "OZTURKKAL, Belma",
+      "country": "TR",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 896.17,
+      "daily": 704.0,
+      "other": 0.0,
+      "total": 1600.17
+    },
+    {
+      "name": "OZTURKKAL, Belma",
+      "country": "TR",
+      "meeting": "Naples",
+      "date": "16/05/2022",
+      "gp": 2,
+      "travel": 497.37,
+      "daily": 643.2,
+      "other": 0.0,
+      "total": 1140.57
+    },
+    {
+      "name": "OZTURKKAL, Belma",
+      "country": "TR",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 1131.92,
+      "daily": 633.6,
+      "other": 0.0,
+      "total": 1765.52
+    },
+    {
+      "name": "OZTURKKAL, Belma",
+      "country": "TR",
+      "meeting": "Tirana",
+      "date": "21/09/2022",
+      "gp": 3,
+      "travel": 428.9,
+      "daily": 252.0,
+      "other": 0.0,
+      "total": 680.9
+    },
+    {
+      "name": "OZTURKKAL, Belma",
+      "country": "TR",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 589.06,
+      "daily": 463.2,
+      "other": 0.0,
+      "total": 1052.26
+    },
+    {
+      "name": "OZTURKKAL, Belma",
+      "country": "TR",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 547.94,
+      "daily": 501.6,
+      "other": 0.0,
+      "total": 1049.54
+    },
+    {
+      "name": "Ortiz, Cristina",
+      "country": "ES",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 246.95,
+      "daily": 598.4,
+      "other": 0.0,
+      "total": 845.35
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "NL",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 788.25,
+      "daily": 617.1,
+      "other": 0.0,
+      "total": 1405.35
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "NL",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 544.54,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1207.54
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "CH",
+      "meeting": "Zagreb",
+      "date": "05/05/2022",
+      "gp": 2,
+      "travel": 808.59,
+      "daily": 395.6,
+      "other": 0.0,
+      "total": 1204.19
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "CH",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 623.0,
+      "daily": 907.3,
+      "other": 0.0,
+      "total": 1530.3
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "NL",
+      "meeting": "Helsinki",
+      "date": "10/07/2023",
+      "gp": 4,
+      "travel": 632.12,
+      "daily": 703.8,
+      "other": 0.0,
+      "total": 1335.92
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "CH",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 684.84,
+      "daily": 624.0,
+      "other": 0.0,
+      "total": 1308.84
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "NL",
+      "meeting": "Skopje",
+      "date": "10/10/2022",
+      "gp": 3,
+      "travel": 778.32,
+      "daily": 248.3,
+      "other": 0.0,
+      "total": 1026.62
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "CH",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 118.0,
+      "daily": 682.0,
+      "other": 0.0,
+      "total": 800.0
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "NL",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 642.96,
+      "daily": 726.0,
+      "other": 0.0,
+      "total": 1368.96
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "CH",
+      "meeting": "Naples",
+      "date": "16/05/2022",
+      "gp": 2,
+      "travel": 700.87,
+      "daily": 663.3,
+      "other": 0.0,
+      "total": 1364.17
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "CH",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 1163.26,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1816.06
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "CH",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 437.2,
+      "daily": 630.3,
+      "other": 0.0,
+      "total": 1067.5
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "CH",
+      "meeting": "Tirana",
+      "date": "21/09/2022",
+      "gp": 3,
+      "travel": 596.41,
+      "daily": 594.0,
+      "other": 0.0,
+      "total": 1190.41
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "CH",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 235.0,
+      "daily": 928.4,
+      "other": 0.0,
+      "total": 1163.4
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "CH",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 702.0,
+      "daily": 635.8,
+      "other": 0.0,
+      "total": 1337.8
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "CH",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 871.86,
+      "daily": 703.8,
+      "other": 0.0,
+      "total": 1575.66
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "NL",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 0.0,
+      "daily": 167.2,
+      "other": 0.0,
+      "total": 167.2
+    },
+    {
+      "name": "Osterrieder, Jörg",
+      "country": "NL",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 659.4,
+      "daily": 0.0,
+      "other": 0.0,
+      "total": 659.4
+    },
+    {
+      "name": "Paccagnini, Alessia",
+      "country": "IE",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 216.66,
+      "daily": 748.0,
+      "other": 0.0,
+      "total": 964.66
+    },
+    {
+      "name": "Paccagnini, Alessia",
+      "country": "IE",
+      "meeting": "Naples",
+      "date": "16/05/2022",
+      "gp": 2,
+      "travel": 129.85,
+      "daily": 683.4,
+      "other": 0.0,
+      "total": 813.25
+    },
+    {
+      "name": "Papajorgji, Petraq",
+      "country": "AL",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 0.0,
+      "daily": 696.3,
+      "other": 0.0,
+      "total": 696.3
+    },
+    {
+      "name": "Papajorgji, Petraq",
+      "country": "AL",
+      "meeting": "Bucharest",
+      "date": "28/10/2022",
+      "gp": 3,
+      "travel": 270.0,
+      "daily": 430.1,
+      "other": 0.0,
+      "total": 700.1
+    },
+    {
+      "name": "Paschalidou, Eleftheria",
+      "country": "EL",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 460.47,
+      "daily": 448.8,
+      "other": 0.0,
+      "total": 909.27
+    },
+    {
+      "name": "Paschalidou, Eleftheria",
+      "country": "EL",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 14.46,
+      "daily": 643.5,
+      "other": 0.0,
+      "total": 657.96
+    },
+    {
+      "name": "Paschalidou, Eleftheria",
+      "country": "EL",
+      "meeting": "Pavia",
+      "date": "13/04/2023",
+      "gp": 4,
+      "travel": 357.86,
+      "daily": 442.2,
+      "other": 0.0,
+      "total": 800.06
+    },
+    {
+      "name": "Paschalidou, Eleftheria",
+      "country": "EL",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 300.8,
+      "daily": 458.4,
+      "other": 0.0,
+      "total": 759.2
+    },
+    {
+      "name": "Paschalidou, Eleftheria",
+      "country": "EL",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 140.95,
+      "daily": 656.2,
+      "other": 0.0,
+      "total": 797.15
+    },
+    {
+      "name": "Pele, Daniel Traian",
+      "country": "RO",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 146.18,
+      "daily": 261.8,
+      "other": 0.0,
+      "total": 407.98
+    },
+    {
+      "name": "Pele, Daniel Traian",
+      "country": "RO",
+      "meeting": "Bucharest",
+      "date": "17/05/2024",
+      "gp": 5,
+      "travel": 0.0,
+      "daily": 74.8,
+      "other": 0.0,
+      "total": 74.8
+    },
+    {
+      "name": "Pele, Daniel Traian",
+      "country": "RO",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 241.32,
+      "daily": 458.4,
+      "other": 0.0,
+      "total": 699.72
+    },
+    {
+      "name": "Pele, Daniel Traian",
+      "country": "RO",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 173.44,
+      "daily": 261.8,
+      "other": 0.0,
+      "total": 435.24
+    },
+    {
+      "name": "Pele, Daniel Traian",
+      "country": "RO",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 409.99,
+      "daily": 710.6,
+      "other": 0.0,
+      "total": 1120.59
+    },
+    {
+      "name": "Pele, Daniel Traian",
+      "country": "RO",
+      "meeting": "Barcelona",
+      "date": "30/10/2023",
+      "gp": 4,
+      "travel": 205.84,
+      "daily": 268.8,
+      "other": 0.0,
+      "total": 474.64
+    },
+    {
+      "name": "Pelegrina Jimenez, Antonio",
+      "country": "ES",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 261.02,
+      "daily": 506.4,
+      "other": 0.0,
+      "total": 767.42
+    },
+    {
+      "name": "Peliova, Jana",
+      "country": "SK",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 321.15,
+      "daily": 506.4,
+      "other": 0.0,
+      "total": 827.55
+    },
+    {
+      "name": "Peliova, Jana",
+      "country": "SK",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 687.91,
+      "daily": 480.7,
+      "other": 0.0,
+      "total": 1168.61
+    },
+    {
+      "name": "Perri, Rezarta",
+      "country": "AL",
+      "meeting": "Naples",
+      "date": "16/05/2022",
+      "gp": 2,
+      "travel": 156.78,
+      "daily": 643.2,
+      "other": 0.0,
+      "total": 799.98
+    },
+    {
+      "name": "Petre Lameski",
+      "country": "MK",
+      "meeting": "Skopje",
+      "date": "15/10/2021",
+      "gp": 1,
+      "travel": 0.0,
+      "daily": 68.4,
+      "other": 0.0,
+      "total": 68.4
+    },
+    {
+      "name": "Petre Lameski",
+      "country": "MK",
+      "meeting": "Bucharest",
+      "date": "28/10/2021",
+      "gp": 1,
+      "travel": 378.0,
+      "daily": 564.4,
+      "other": 0.0,
+      "total": 942.4
+    },
+    {
+      "name": "Petukhina, Alla",
+      "country": "DE",
+      "meeting": "Rennes",
+      "date": "08/04/2022",
+      "gp": 2,
+      "travel": 605.41,
+      "daily": 259.0,
+      "other": 0.0,
+      "total": 864.41
+    },
+    {
+      "name": "Petukhina, Alla",
+      "country": "DE",
+      "meeting": "Bucharest",
+      "date": "17/05/2024",
+      "gp": 5,
+      "travel": 182.7,
+      "daily": 448.8,
+      "other": 0.0,
+      "total": 631.5
+    },
+    {
+      "name": "Petukhina, Alla",
+      "country": "DE",
+      "meeting": "Brno",
+      "date": "21/10/2022",
+      "gp": 3,
+      "travel": 177.8,
+      "daily": 649.4,
+      "other": 0.0,
+      "total": 827.2
+    },
+    {
+      "name": "Petukhina, Alla",
+      "country": "DE",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 256.32,
+      "daily": 656.2,
+      "other": 0.0,
+      "total": 912.52
+    },
+    {
+      "name": "Pisoni, Galena",
+      "country": "FR",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 664.1,
+      "daily": 0.0,
+      "other": 0.0,
+      "total": 664.1
+    },
+    {
+      "name": "Pisoni, Galena",
+      "country": "FR",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 169.98,
+      "daily": 636.9,
+      "other": 0.0,
+      "total": 806.88
+    },
+    {
+      "name": "Pisoni, Galena",
+      "country": "FR",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 405.35,
+      "daily": 703.8,
+      "other": 0.0,
+      "total": 1109.15
+    },
+    {
+      "name": "Pisoni, Galena",
+      "country": "FR",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 395.5,
+      "daily": 710.6,
+      "other": 0.0,
+      "total": 1106.1
+    },
+    {
+      "name": "Poti, Valerio",
+      "country": "IE",
+      "meeting": "Horta Faial Azores",
+      "date": "03/09/2023",
+      "gp": 4,
+      "travel": 519.08,
+      "daily": 200.0,
+      "other": 0.0,
+      "total": 719.08
+    },
+    {
+      "name": "Poti, Valerio",
+      "country": "IE",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 198.51,
+      "daily": 528.0,
+      "other": 0.0,
+      "total": 726.51
+    },
+    {
+      "name": "Poti, Valerio",
+      "country": "IE",
+      "meeting": "Enschede",
+      "date": "22/08/2022",
+      "gp": 3,
+      "travel": 239.98,
+      "daily": 696.3,
+      "other": 0.0,
+      "total": 936.28
+    },
+    {
+      "name": "Poti, Valerio",
+      "country": "IE",
+      "meeting": "Berlin",
+      "date": "24/03/2022",
+      "gp": 2,
+      "travel": 165.27,
+      "daily": 261.3,
+      "other": 0.0,
+      "total": 426.57
+    },
+    {
+      "name": "Raphael Reule",
+      "country": "DE",
+      "meeting": "Bucharest",
+      "date": "28/10/2021",
+      "gp": 1,
+      "travel": 300.86,
+      "daily": 398.4,
+      "other": 0.0,
+      "total": 699.26
+    },
+    {
+      "name": "Rupeika-Apoga, Ramona",
+      "country": "LV",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 670.42,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1323.22
+    },
+    {
+      "name": "Rupeika-Apoga, Ramona",
+      "country": "LV",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 297.88,
+      "daily": 710.6,
+      "other": 0.0,
+      "total": 1008.48
+    },
+    {
+      "name": "Sandulescu, Magda",
+      "country": "RO",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 172.78,
+      "daily": 617.1,
+      "other": 0.0,
+      "total": 789.88
+    },
+    {
+      "name": "Sandulescu, Magda",
+      "country": "RO",
+      "meeting": "Tirana",
+      "date": "21/09/2022",
+      "gp": 3,
+      "travel": 284.68,
+      "daily": 432.0,
+      "other": 0.0,
+      "total": 716.68
+    },
+    {
+      "name": "Schwendner, Peter",
+      "country": "CH",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 446.62,
+      "daily": 484.0,
+      "other": 0.0,
+      "total": 930.62
+    },
+    {
+      "name": "Schwendner, Peter",
+      "country": "CH",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 794.99,
+      "daily": 153.41,
+      "other": 0.0,
+      "total": 948.4
+    },
+    {
+      "name": "Shala, Albulena",
+      "country": "KV",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 401.73,
+      "daily": 0.0,
+      "other": 0.0,
+      "total": 401.73
+    },
+    {
+      "name": "Shala, Albulena",
+      "country": "KV",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 324.98,
+      "daily": 726.0,
+      "other": 80.0,
+      "total": 1130.98
+    },
+    {
+      "name": "Shala, Albulena",
+      "country": "KV",
+      "meeting": "Naples",
+      "date": "16/05/2022",
+      "gp": 2,
+      "travel": 186.73,
+      "daily": 643.2,
+      "other": 80.0,
+      "total": 909.93
+    },
+    {
+      "name": "Shala, Albulena",
+      "country": "KV",
+      "meeting": "Tirana",
+      "date": "21/09/2022",
+      "gp": 3,
+      "travel": 30.0,
+      "daily": 612.0,
+      "other": 0.0,
+      "total": 642.0
+    },
+    {
+      "name": "Shkurti (Perri), Rezarta",
+      "country": "AL",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 176.78,
+      "daily": 485.3,
+      "other": 0.0,
+      "total": 662.08
+    },
+    {
+      "name": "Shkurti (Perri), Rezarta",
+      "country": "AL",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 593.14,
+      "daily": 683.1,
+      "other": 0.0,
+      "total": 1276.24
+    },
+    {
+      "name": "Shkurti (Perri), Rezarta",
+      "country": "AL",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 537.13,
+      "daily": 501.6,
+      "other": 0.0,
+      "total": 1038.73
+    },
+    {
+      "name": "Silva, Catarina",
+      "country": "PT",
+      "meeting": "Pavia",
+      "date": "13/04/2023",
+      "gp": 4,
+      "travel": 522.01,
+      "daily": 462.3,
+      "other": 0.0,
+      "total": 984.31
+    },
+    {
+      "name": "Silva, Catarina",
+      "country": "PT",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 534.81,
+      "daily": 528.0,
+      "other": 0.0,
+      "total": 1062.81
+    },
+    {
+      "name": "Silva, Catarina",
+      "country": "PT",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 711.6,
+      "daily": 458.4,
+      "other": 0.0,
+      "total": 1170.0
+    },
+    {
+      "name": "Silva, Catarina",
+      "country": "PT",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 720.81,
+      "daily": 683.1,
+      "other": 0.0,
+      "total": 1403.91
+    },
+    {
+      "name": "Silva, Catarina",
+      "country": "PT",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 592.4,
+      "daily": 501.6,
+      "other": 0.0,
+      "total": 1094.0
+    },
+    {
+      "name": "Silva, Catarina",
+      "country": "PT",
+      "meeting": "Bern",
+      "date": "30/09/2022",
+      "gp": 3,
+      "travel": 420.75,
+      "daily": 292.6,
+      "other": 0.0,
+      "total": 713.35
+    },
+    {
+      "name": "Skaftadóttir, Hanna Kristín",
+      "country": "IS",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 435.21,
+      "daily": 717.4,
+      "other": 0.0,
+      "total": 1152.61
+    },
+    {
+      "name": "Skaftadóttir, Hanna Kristín",
+      "country": "IS",
+      "meeting": "Pavia",
+      "date": "13/04/2023",
+      "gp": 4,
+      "travel": 284.48,
+      "daily": 462.3,
+      "other": 0.0,
+      "total": 746.78
+    },
+    {
+      "name": "Skaftadóttir, Hanna Kristín",
+      "country": "IS",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 701.2,
+      "daily": 528.0,
+      "other": 0.0,
+      "total": 1229.2
+    },
+    {
+      "name": "Skaftadóttir, Hanna Kristín",
+      "country": "IS",
+      "meeting": "Naples",
+      "date": "16/05/2022",
+      "gp": 2,
+      "travel": 198.98,
+      "daily": 663.3,
+      "other": 0.0,
+      "total": 862.28
+    },
+    {
+      "name": "Skaftadóttir, Hanna Kristín",
+      "country": "IS",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 716.72,
+      "daily": 649.4,
+      "other": 0.0,
+      "total": 1366.12
+    },
+    {
+      "name": "Skaftadóttir, Hanna Kristín",
+      "country": "IS",
+      "meeting": "Tirana",
+      "date": "21/09/2022",
+      "gp": 3,
+      "travel": 885.35,
+      "daily": 594.0,
+      "other": 0.0,
+      "total": 1479.35
+    },
+    {
+      "name": "Skaftadóttir, Hanna Kristín",
+      "country": "IS",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 0.0,
+      "daily": 165.6,
+      "other": 0.0,
+      "total": 165.6
+    },
+    {
+      "name": "Solibakke, Per B",
+      "country": "NO",
+      "meeting": "Espoo",
+      "date": "06/07/2022",
+      "gp": 3,
+      "travel": 0.0,
+      "daily": 496.8,
+      "other": 0.0,
+      "total": 496.8
+    },
+    {
+      "name": "Souhir Ben Amor",
+      "country": "DE",
+      "meeting": "Bucharest",
+      "date": "28/10/2021",
+      "gp": 1,
+      "travel": 312.5,
+      "daily": 547.8,
+      "other": 0.0,
+      "total": 860.3
+    },
+    {
+      "name": "Strat, Vasile",
+      "country": "RO",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 166.18,
+      "daily": 261.8,
+      "other": 0.0,
+      "total": 427.98
+    },
+    {
+      "name": "Svedas, Dominykas",
+      "country": "LT",
+      "meeting": "Zagreb",
+      "date": "05/05/2022",
+      "gp": 2,
+      "travel": 227.94,
+      "daily": 584.8,
+      "other": 0.0,
+      "total": 812.74
+    },
+    {
+      "name": "Svetlova, Ekaterina",
+      "country": "NL",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 0.0,
+      "daily": 528.0,
+      "other": 0.0,
+      "total": 528.0
+    },
+    {
+      "name": "TAIBI, Gabin",
+      "country": "CH",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 319.0,
+      "daily": 726.0,
+      "other": 0.0,
+      "total": 1045.0
+    },
+    {
+      "name": "Tanda, Alessandra",
+      "country": "IT",
+      "meeting": "Tirana",
+      "date": "21/09/2022",
+      "gp": 3,
+      "travel": 61.78,
+      "daily": 252.0,
+      "other": 0.0,
+      "total": 313.78
+    },
+    {
+      "name": "Tanda, Alessandra",
+      "country": "IT",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 140.74,
+      "daily": 598.4,
+      "other": 0.0,
+      "total": 739.14
+    },
+    {
+      "name": "Tanda, Alessandra",
+      "country": "IT",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 231.97,
+      "daily": 656.2,
+      "other": 0.0,
+      "total": 888.17
+    },
+    {
+      "name": "Tanda, Alessandra",
+      "country": "IT",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 80.0,
+      "daily": 480.7,
+      "other": 0.0,
+      "total": 560.7
+    },
+    {
+      "name": "Tanda, Alessandra",
+      "country": "IT",
+      "meeting": "Bern",
+      "date": "30/09/2022",
+      "gp": 3,
+      "travel": 125.0,
+      "daily": 271.7,
+      "other": 0.0,
+      "total": 396.7
+    },
+    {
+      "name": "Tarantola, Claudia",
+      "country": "IT",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 118.69,
+      "daily": 598.4,
+      "other": 0.0,
+      "total": 717.09
+    },
+    {
+      "name": "Tarantola, Claudia",
+      "country": "IT",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 307.96,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 970.96
+    },
+    {
+      "name": "Tarantola, Claudia",
+      "country": "IT",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 289.67,
+      "daily": 696.3,
+      "other": 0.0,
+      "total": 985.97
+    },
+    {
+      "name": "Tarantola, Claudia",
+      "country": "IT",
+      "meeting": "Naples",
+      "date": "16/05/2022",
+      "gp": 2,
+      "travel": 50.08,
+      "daily": 462.3,
+      "other": 0.0,
+      "total": 512.38
+    },
+    {
+      "name": "Tarantola, Claudia",
+      "country": "IT",
+      "meeting": "Tirana",
+      "date": "21/09/2022",
+      "gp": 3,
+      "travel": 76.0,
+      "daily": 576.0,
+      "other": 0.0,
+      "total": 652.0
+    },
+    {
+      "name": "Tarantola, Claudia",
+      "country": "IT",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 166.49,
+      "daily": 617.1,
+      "other": 0.0,
+      "total": 783.59
+    },
+    {
+      "name": "Tarantola, Claudia",
+      "country": "IT",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 305.91,
+      "daily": 656.2,
+      "other": 0.0,
+      "total": 962.11
+    },
+    {
+      "name": "Tarantola, Claudia",
+      "country": "IT",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 173.4,
+      "daily": 689.7,
+      "other": 0.0,
+      "total": 863.1
+    },
+    {
+      "name": "Tatjana Atanasova - Pachemska",
+      "country": "MK",
+      "meeting": "Skopje",
+      "date": "15/10/2021",
+      "gp": 1,
+      "travel": 0.0,
+      "daily": 410.4,
+      "other": 0.0,
+      "total": 410.4
+    },
+    {
+      "name": "Themistocleous, Christos",
+      "country": "CY",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 435.74,
+      "daily": 649.4,
+      "other": 37.82,
+      "total": 1122.96
+    },
+    {
+      "name": "Thomaidis, Nikolaos S.",
+      "country": "EL",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 336.92,
+      "daily": 448.8,
+      "other": 0.0,
+      "total": 785.72
+    },
+    {
+      "name": "Thomaidis, Nikolaos S.",
+      "country": "EL",
+      "meeting": "Pavia",
+      "date": "13/04/2023",
+      "gp": 4,
+      "travel": 510.0,
+      "daily": 482.4,
+      "other": 0.0,
+      "total": 992.4
+    },
+    {
+      "name": "Thomaidis, Nikolaos S.",
+      "country": "EL",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 751.39,
+      "daily": 704.0,
+      "other": 0.0,
+      "total": 1455.39
+    },
+    {
+      "name": "Thomaidis, Nikolaos S.",
+      "country": "EL",
+      "meeting": "Rethymno",
+      "date": "27/06/2024",
+      "gp": 5,
+      "travel": 141.92,
+      "daily": 656.2,
+      "other": 0.0,
+      "total": 798.12
+    },
+    {
+      "name": "Tiron-Tudor, Adriana",
+      "country": "RO",
+      "meeting": "Bucharest",
+      "date": "17/05/2024",
+      "gp": 5,
+      "travel": 192.99,
+      "daily": 430.1,
+      "other": 0.0,
+      "total": 623.09
+    },
+    {
+      "name": "Trinh, Anh Tuan",
+      "country": "HU",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 290.9,
+      "daily": 696.3,
+      "other": 0.0,
+      "total": 987.2
+    },
+    {
+      "name": "Trinh, Anh Tuan",
+      "country": "HU",
+      "meeting": "Bern",
+      "date": "30/09/2022",
+      "gp": 3,
+      "travel": 624.07,
+      "daily": 480.7,
+      "other": 0.0,
+      "total": 1104.77
+    },
+    {
+      "name": "Vagnerova Linnertova, Dagmar",
+      "country": "CZ",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 460.41,
+      "daily": 506.4,
+      "other": 0.0,
+      "total": 966.81
+    },
+    {
+      "name": "Vagnerova Linnertova, Dagmar",
+      "country": "CZ",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 614.43,
+      "daily": 710.6,
+      "other": 0.0,
+      "total": 1325.03
+    },
+    {
+      "name": "Vojtasova, Maria",
+      "country": "SK",
+      "meeting": "Bern",
+      "date": "30/09/2022",
+      "gp": 3,
+      "travel": 406.99,
+      "daily": 501.6,
+      "other": 0.0,
+      "total": 908.59
+    },
+    {
+      "name": "Wenzlaff, Karsten",
+      "country": "DE",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 233.15,
+      "daily": 528.0,
+      "other": 0.0,
+      "total": 761.15
+    },
+    {
+      "name": "Wenzlaff, Karsten",
+      "country": "DE",
+      "meeting": "Gran Canaria",
+      "date": "18/07/2024",
+      "gp": 5,
+      "travel": 842.39,
+      "daily": 652.8,
+      "other": 0.0,
+      "total": 1495.19
+    },
+    {
+      "name": "Wójcik, Piotr",
+      "country": "PL",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 200.24,
+      "daily": 696.3,
+      "other": 0.0,
+      "total": 896.54
+    },
+    {
+      "name": "Wójcik, Piotr",
+      "country": "PL",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 429.68,
+      "daily": 689.7,
+      "other": 0.0,
+      "total": 1119.38
+    },
+    {
+      "name": "Xhumari, Elda",
+      "country": "AL",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 673.52,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 1336.52
+    },
+    {
+      "name": "Xhumari, Elda",
+      "country": "AL",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 482.0,
+      "daily": 485.3,
+      "other": 0.0,
+      "total": 967.3
+    },
+    {
+      "name": "Xhumari, Elda",
+      "country": "AL",
+      "meeting": "Pavia",
+      "date": "13/04/2023",
+      "gp": 4,
+      "travel": 354.28,
+      "daily": 482.4,
+      "other": 0.0,
+      "total": 836.68
+    },
+    {
+      "name": "Xhumari, Elda",
+      "country": "AL",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 547.0,
+      "daily": 748.0,
+      "other": 0.0,
+      "total": 1295.0
+    },
+    {
+      "name": "Yildirim, Ozgur",
+      "country": "TR",
+      "meeting": "Utrecht",
+      "date": "05/10/2022",
+      "gp": 3,
+      "travel": 467.79,
+      "daily": 717.4,
+      "other": 0.0,
+      "total": 1185.19
+    },
+    {
+      "name": "Yildirim, Ozgur",
+      "country": "TR",
+      "meeting": "Coimbra",
+      "date": "10/07/2024",
+      "gp": 5,
+      "travel": 915.77,
+      "daily": 643.5,
+      "other": 0.0,
+      "total": 1559.27
+    },
+    {
+      "name": "Yildirim, Ozgur",
+      "country": "TR",
+      "meeting": "Bucharest",
+      "date": "28/10/2022",
+      "gp": 3,
+      "travel": 315.16,
+      "daily": 448.8,
+      "other": 0.0,
+      "total": 763.96
+    },
+    {
+      "name": "Yosi KELLER",
+      "country": "IL",
+      "meeting": "Bucharest",
+      "date": "28/10/2021",
+      "gp": 1,
+      "travel": 302.47,
+      "daily": 564.4,
+      "other": 0.0,
+      "total": 866.87
+    },
+    {
+      "name": "Zdravevski, Eftim",
+      "country": "MK",
+      "meeting": "Skopje",
+      "date": "10/10/2022",
+      "gp": 3,
+      "travel": 0.0,
+      "daily": 57.3,
+      "other": 0.0,
+      "total": 57.3
+    },
+    {
+      "name": "Zuo, RongLin",
+      "country": "HU",
+      "meeting": "Lisbon",
+      "date": "01/06/2023",
+      "gp": 4,
+      "travel": 313.0,
+      "daily": 663.0,
+      "other": 0.0,
+      "total": 976.0
+    },
+    {
+      "name": "kabaklarli, esra",
+      "country": "TR",
+      "meeting": "Cluj Napoca",
+      "date": "01/02/2023",
+      "gp": 4,
+      "travel": 469.07,
+      "daily": 430.1,
+      "other": 0.0,
+      "total": 899.17
+    },
+    {
+      "name": "kabaklarli, esra",
+      "country": "TR",
+      "meeting": "Brussels",
+      "date": "15/05/2023",
+      "gp": 4,
+      "travel": 603.68,
+      "daily": 528.0,
+      "other": 0.0,
+      "total": 1131.68
+    },
+    {
+      "name": "kabaklarli, esra",
+      "country": "TR",
+      "meeting": "Naples",
+      "date": "16/05/2022",
+      "gp": 2,
+      "travel": 411.51,
+      "daily": 442.2,
+      "other": 0.0,
+      "total": 853.71
+    },
+    {
+      "name": "kabaklarli, esra",
+      "country": "TR",
+      "meeting": "Tirana",
+      "date": "21/09/2022",
+      "gp": 3,
+      "travel": 473.43,
+      "daily": 540.0,
+      "other": 0.0,
+      "total": 1013.43
+    },
+    {
+      "name": "van Heeswijk, Wouter",
+      "country": "NL",
+      "meeting": "Brussels",
+      "date": "14/05/2024",
+      "gp": 5,
+      "travel": 64.0,
+      "daily": 506.0,
+      "other": 0.0,
+      "total": 570.0
+    },
+    {
+      "name": "van Heeswijk, Wouter",
+      "country": "NL",
+      "meeting": "Istanbul",
+      "date": "20/05/2024",
+      "gp": 5,
+      "travel": 350.34,
+      "daily": 630.3,
+      "other": 0.0,
+      "total": 980.64
+    },
+    {
+      "name": "van Heeswijk, Wouter",
+      "country": "NL",
+      "meeting": "Cluj-Napoca",
+      "date": "24/04/2024",
+      "gp": 5,
+      "travel": 292.88,
+      "daily": 635.8,
+      "other": 0.0,
+      "total": 928.68
+    },
+    {
+      "name": "van Heeswijk, Wouter",
+      "country": "NL",
+      "meeting": "Reykjavík",
+      "date": "27/08/2024",
+      "gp": 5,
+      "travel": 358.23,
+      "daily": 662.4,
+      "other": 0.0,
+      "total": 1020.63
+    },
+    {
+      "name": "Ågotnes, Thomas",
+      "country": "NO",
+      "meeting": "Bern",
+      "date": "27/09/2023",
+      "gp": 4,
+      "travel": 620.19,
+      "daily": 480.7,
+      "other": 0.0,
+      "total": 1100.89
+    }
+  ]
+}

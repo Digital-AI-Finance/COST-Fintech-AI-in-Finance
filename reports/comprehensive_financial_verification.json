@@ -1,0 +1,690 @@
+{
+  "generated": "2026-01-02T23:49:44.290983",
+  "summary": {
+    "total_checks": 42,
+    "passed": 42,
+    "failed": 0,
+    "warnings": 0
+  },
+  "ffr_data": {
+    "1": {
+      "summary": {
+        "total_grant_budget": 62985.5,
+        "total_eligible_expenditure": 0.0
+      },
+      "categories": {
+        "meetings": {
+          "budget": 37200.0,
+          "actuals": 10300.3,
+          "accruals": 0.0,
+          "total": 10300.3,
+          "delta": -26899.7
+        },
+        "training_schools": {
+          "budget": 0.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": 0.0
+        },
+        "stsm": {
+          "budget": 10730.0,
+          "actuals": 20800.0,
+          "accruals": 0.0,
+          "total": 20800.0,
+          "delta": 10070.0
+        },
+        "vns": {
+          "budget": 0.0,
+          "actuals": 4000.0,
+          "accruals": 0.0,
+          "total": 4000.0,
+          "delta": 4000.0
+        },
+        "itc_conference": {
+          "budget": 3000.0,
+          "actuals": 375.0,
+          "accruals": 0.0,
+          "total": 375.0,
+          "delta": -2625.0
+        },
+        "dissemination": {
+          "budget": 3840.0,
+          "actuals": 294.12,
+          "accruals": 0.0,
+          "total": 294.12,
+          "delta": -3545.88
+        },
+        "oersa": {
+          "budget": 0.0,
+          "actuals": 5500.0,
+          "accruals": 0.0,
+          "total": 5500.0,
+          "delta": 5500.0
+        }
+      }
+    },
+    "2": {
+      "summary": {
+        "total_grant_budget": 202607.0,
+        "total_eligible_expenditure": 0.0
+      },
+      "categories": {
+        "meetings": {
+          "budget": 123906.66,
+          "actuals": 29175.62,
+          "accruals": 0.0,
+          "total": 29175.62,
+          "delta": -94731.04
+        },
+        "training_schools": {
+          "budget": 0.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": 0.0
+        },
+        "stsm": {
+          "budget": 39680.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": -39680.0
+        },
+        "virtual_mobility": {
+          "budget": 0.0,
+          "actuals": 190.0,
+          "accruals": 0.0,
+          "total": 190.0,
+          "delta": 190.0
+        },
+        "itc_conference": {
+          "budget": 7500.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": -7500.0
+        },
+        "dissemination_conference": {
+          "budget": 0.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": 0.0
+        },
+        "dissemination": {
+          "budget": 5093.34,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": -5093.34
+        },
+        "oersa": {
+          "budget": 0.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": 0.0
+        },
+        "vns": {
+          "budget": 0.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": 0.0
+        }
+      }
+    },
+    "3": {
+      "summary": {
+        "total_grant_budget": 169820.5,
+        "total_eligible_expenditure": 0.0
+      },
+      "categories": {
+        "meetings": {
+          "budget": 97170.0,
+          "actuals": 96782.98,
+          "accruals": 0.0,
+          "total": 96782.98,
+          "delta": -387.02
+        },
+        "training_schools": {
+          "budget": 0.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": 0.0
+        },
+        "stsm": {
+          "budget": 40000.0,
+          "actuals": 24140.0,
+          "accruals": 0.0,
+          "total": 24140.0,
+          "delta": -15860.0
+        },
+        "virtual_mobility": {
+          "budget": 0.0,
+          "actuals": 17310.0,
+          "accruals": 0.0,
+          "total": 17310.0,
+          "delta": 17310.0
+        },
+        "itc_conference": {
+          "budget": 7500.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": -7500.0
+        },
+        "dissemination_conference": {
+          "budget": 0.0,
+          "actuals": 2343.0,
+          "accruals": 0.0,
+          "total": 2343.0,
+          "delta": 2343.0
+        },
+        "dissemination": {
+          "budget": 3000.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": -3000.0
+        },
+        "oersa": {
+          "budget": 0.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": 0.0
+        },
+        "vns": {
+          "budget": 0.0,
+          "actuals": 4000.0,
+          "accruals": 0.0,
+          "total": 4000.0,
+          "delta": 4000.0
+        }
+      }
+    },
+    "4": {
+      "summary": {
+        "total_grant_budget": 191165.65,
+        "total_eligible_expenditure": 0.0
+      },
+      "categories": {
+        "meetings": {
+          "budget": 117889.4,
+          "actuals": 139240.8,
+          "accruals": 0.0,
+          "total": 139240.8,
+          "delta": 21351.4
+        },
+        "training_schools": {
+          "budget": 58594.0,
+          "actuals": 49401.09,
+          "accruals": 0.0,
+          "total": 49401.09,
+          "delta": -9192.91
+        },
+        "stsm": {
+          "budget": 14000.0,
+          "actuals": 10500.0,
+          "accruals": 0.0,
+          "total": 10500.0,
+          "delta": -3500.0
+        },
+        "virtual_mobility": {
+          "budget": 29300.0,
+          "actuals": 18000.0,
+          "accruals": 0.0,
+          "total": 18000.0,
+          "delta": -11300.0
+        },
+        "itc_conference": {
+          "budget": 0.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": 0.0
+        },
+        "dissemination_conference": {
+          "budget": 2000.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": -2000.0
+        },
+        "dissemination": {
+          "budget": 2500.0,
+          "actuals": 2000.0,
+          "accruals": 0.0,
+          "total": 2000.0,
+          "delta": -500.0
+        },
+        "oersa": {
+          "budget": 0.0,
+          "actuals": 209.75,
+          "accruals": 0.0,
+          "total": 209.75,
+          "delta": 209.75
+        },
+        "vns": {
+          "budget": 0.0,
+          "actuals": 4000.0,
+          "accruals": 0.0,
+          "total": 4000.0,
+          "delta": 4000.0
+        }
+      }
+    },
+    "5": {
+      "summary": {
+        "total_grant_budget": 209449.5,
+        "total_eligible_expenditure": 315.26
+      },
+      "categories": {
+        "meetings": {
+          "budget": 151674.75,
+          "actuals": 148194.99,
+          "accruals": 0.0,
+          "total": 148194.99,
+          "delta": -3479.76
+        },
+        "training_schools": {
+          "budget": 40782.0,
+          "actuals": 59414.96,
+          "accruals": 0.0,
+          "total": 59414.96,
+          "delta": 18632.96
+        },
+        "stsm": {
+          "budget": 8000.0,
+          "actuals": 4642.0,
+          "accruals": 0.0,
+          "total": 4642.0,
+          "delta": -3358.0
+        },
+        "virtual_mobility": {
+          "budget": 23100.0,
+          "actuals": 21000.0,
+          "accruals": 0.0,
+          "total": 21000.0,
+          "delta": -2100.0
+        },
+        "itc_conference": {
+          "budget": 0.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": 0.0
+        },
+        "dissemination_conference": {
+          "budget": 6000.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": -6000.0
+        },
+        "dissemination": {
+          "budget": 5000.0,
+          "actuals": 2000.0,
+          "accruals": 0.0,
+          "total": 2000.0,
+          "delta": -3000.0
+        },
+        "oersa": {
+          "budget": 500.0,
+          "actuals": 0.0,
+          "accruals": 0.0,
+          "total": 0.0,
+          "delta": -500.0
+        },
+        "vns": {
+          "budget": 0.0,
+          "actuals": 4000.0,
+          "accruals": 0.0,
+          "total": 4000.0,
+          "delta": 4000.0
+        }
+      }
+    }
+  },
+  "checks": [
+    {
+      "status": "PASS",
+      "category": "STSM GP1",
+      "description": "STSM total for GP1",
+      "ffr_value": 20800.0,
+      "json_value": 20800.0,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM GP2",
+      "description": "STSM total for GP2",
+      "ffr_value": 0.0,
+      "json_value": 0,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM GP3",
+      "description": "STSM total for GP3",
+      "ffr_value": 24140.0,
+      "json_value": 24140.0,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM GP4",
+      "description": "STSM total for GP4",
+      "ffr_value": 10500.0,
+      "json_value": 10500.0,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM GP5",
+      "description": "STSM total for GP5",
+      "ffr_value": 4642.0,
+      "json_value": 4642.0,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Stjepan Picek (GP1)",
+      "ffr_value": 1520.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Wei Li (GP1)",
+      "ffr_value": 3500.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Luciana Dalla Valle (GP1)",
+      "ffr_value": 1260.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Danial Saef (GP1)",
+      "ffr_value": 3500.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Apostolos Chalkis (GP1)",
+      "ffr_value": 2450.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Jasone Ram\u00edrez-Ayerbe (GP1)",
+      "ffr_value": 2540.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Alla Petukhina (GP1)",
+      "ffr_value": 1500.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Ioana Coita (GP1)",
+      "ffr_value": 2500.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Galena Pisoni (GP1)",
+      "ffr_value": 2030.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Pele, Daniel Traian (GP3)",
+      "ffr_value": 1800.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Chen, Cathy Yi-Hsuan (GP3)",
+      "ffr_value": 3200.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Dalla Valle, Luciana (GP3)",
+      "ffr_value": 1440.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Muniz Martinez, Jose (GP3)",
+      "ffr_value": 1900.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Petukhina, Alla (GP3)",
+      "ffr_value": 2000.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Coita, Ioana (GP3)",
+      "ffr_value": 2500.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Belbe, Stefana (GP3)",
+      "ffr_value": 2700.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Plihal, Tomas (GP3)",
+      "ffr_value": 4000.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Kozmik, Karel (GP3)",
+      "ffr_value": 3000.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Ni, Xinwen (GP3)",
+      "ffr_value": 1600.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Shkurti (Perri), Rezarta (GP4)",
+      "ffr_value": 1000.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "\u010cernevi\u010dien\u0117, Jurgita (GP4)",
+      "ffr_value": 1600.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Dalla Valle, Luciana (GP4)",
+      "ffr_value": 2000.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Papavassiliou, Vassilios (GP4)",
+      "ffr_value": 2500.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "kabaklarli, esra (GP4)",
+      "ffr_value": 1500.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Belbe, Stefana (GP4)",
+      "ffr_value": 1900.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Coita, Ioana (GP5)",
+      "ffr_value": 1997.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "STSM Individual",
+      "description": "Cetintav, Bekir (GP5)",
+      "ffr_value": 2645.0,
+      "json_value": null,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "VM GP1",
+      "description": "VM total for GP1",
+      "ffr_value": 0,
+      "json_value": 0,
+      "difference": 0
+    },
+    {
+      "status": "PASS",
+      "category": "VM GP2",
+      "description": "VM total for GP2",
+      "ffr_value": 190.0,
+      "json_value": 190.0,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "VM GP3",
+      "description": "VM total for GP3",
+      "ffr_value": 17310.0,
+      "json_value": 17310.0,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "VM GP4",
+      "description": "VM total for GP4",
+      "ffr_value": 18000.0,
+      "json_value": 18000.0,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "VM GP5",
+      "description": "VM total for GP5",
+      "ffr_value": 21000.0,
+      "json_value": 21000.0,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "TS GP1",
+      "description": "Training School total for GP1",
+      "ffr_value": 0.0,
+      "json_value": 0,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "TS GP2",
+      "description": "Training School total for GP2",
+      "ffr_value": 0.0,
+      "json_value": 0,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "TS GP3",
+      "description": "Training School total for GP3",
+      "ffr_value": 0.0,
+      "json_value": 0,
+      "difference": 0.0
+    },
+    {
+      "status": "PASS",
+      "category": "TS GP4",
+      "description": "Training School total for GP4",
+      "ffr_value": 49401.09,
+      "json_value": 49401.090000000004,
+      "difference": 7.275957614183426e-12
+    },
+    {
+      "status": "PASS",
+      "category": "TS GP5",
+      "description": "Training School total for GP5",
+      "ffr_value": 59414.96,
+      "json_value": 59414.96,
+      "difference": 0.0
+    }
+  ]
+}

@@ -2,7 +2,7 @@
   "total_meetings": 52,
   "total_stsms": 27,
   "total_training_schools": 7,
-  "total_trainees": 59,
+  "total_trainees": 96,
   "total_virtual_mobility": 39,
   "total_vns": 2,
   "total_participants": 182,
@@ -24,11 +24,11 @@
     "5": 2
   },
   "vm_by_gp": {
-    "1": 3,
+    "1": 0,
     "2": 1,
     "3": 12,
     "4": 12,
-    "5": 11
+    "5": 14
   },
   "ts_by_gp": {
     "1": 0,
@@ -37,5 +37,15 @@
     "4": 4,
     "5": 3
   },
-  "last_updated": "2026-01-02"
+  "trainees_by_gp": {
+    "4": 49,
+    "5": 47
+  },
+  "financial_totals": {
+    "meetings": 423694.69,
+    "training_schools": 108816.05,
+    "stsms": 60082.00,
+    "virtual_mobility": 56500.00
+  },
+  "last_updated": "2026-01-03"
 }

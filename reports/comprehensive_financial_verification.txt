@@ -1,0 +1,223 @@
+================================================================================
+COST Action CA19130 - Comprehensive Financial Verification Report
+Generated: 2026-01-02 23:49:44
+================================================================================
+
+SUMMARY
+----------------------------------------
+Total Checks: 42
+Passed: 42
+Failed: 0
+Warnings: 0
+
+FFR SOURCE DATA SUMMARY
+----------------------------------------
+
+Grant Period 1:
+  Budget: 62,985.50 EUR
+  Actual: 0.00 EUR
+  Utilization: 0.0%
+    meetings: 10,300.30 EUR
+    stsm: 20,800.00 EUR
+    vns: 4,000.00 EUR
+    itc_conference: 375.00 EUR
+    dissemination: 294.12 EUR
+    oersa: 5,500.00 EUR
+
+Grant Period 2:
+  Budget: 202,607.00 EUR
+  Actual: 0.00 EUR
+  Utilization: 0.0%
+    meetings: 29,175.62 EUR
+    virtual_mobility: 190.00 EUR
+
+Grant Period 3:
+  Budget: 169,820.50 EUR
+  Actual: 0.00 EUR
+  Utilization: 0.0%
+    meetings: 96,782.98 EUR
+    stsm: 24,140.00 EUR
+    virtual_mobility: 17,310.00 EUR
+    dissemination_conference: 2,343.00 EUR
+    vns: 4,000.00 EUR
+
+Grant Period 4:
+  Budget: 191,165.65 EUR
+  Actual: 0.00 EUR
+  Utilization: 0.0%
+    meetings: 139,240.80 EUR
+    training_schools: 49,401.09 EUR
+    stsm: 10,500.00 EUR
+    virtual_mobility: 18,000.00 EUR
+    dissemination: 2,000.00 EUR
+    oersa: 209.75 EUR
+    vns: 4,000.00 EUR
+
+Grant Period 5:
+  Budget: 209,449.50 EUR
+  Actual: 315.26 EUR
+  Utilization: 0.2%
+    meetings: 148,194.99 EUR
+    training_schools: 59,414.96 EUR
+    stsm: 4,642.00 EUR
+    virtual_mobility: 21,000.00 EUR
+    dissemination: 2,000.00 EUR
+    vns: 4,000.00 EUR
+
+GRAND TOTAL Budget: 836,028.15 EUR
+GRAND TOTAL Actual: 315.26 EUR
+
+STSM VERIFICATION
+----------------------------------------
+Total STSMs in JSON: 27
+Total STSM Amount (JSON): 60,082.00 EUR
+Total STSM Amount (FFR): 60,082.00 EUR
+Difference: 0.00 EUR
+  GP1: JSON=20,800.00 EUR, FFR=20,800.00 EUR [OK]
+  GP2: JSON=0.00 EUR, FFR=0.00 EUR [OK]
+  GP3: JSON=24,140.00 EUR, FFR=24,140.00 EUR [OK]
+  GP4: JSON=10,500.00 EUR, FFR=10,500.00 EUR [OK]
+  GP5: JSON=4,642.00 EUR, FFR=4,642.00 EUR [OK]
+
+VIRTUAL MOBILITY VERIFICATION
+----------------------------------------
+Total VM Grants in JSON: 39
+Total VM Amount (JSON): 56,500.00 EUR
+  GP1: JSON=0.00 EUR, FFR=0.00 EUR, Count=0 [OK]
+  GP2: JSON=190.00 EUR, FFR=190.00 EUR, Count=1 [OK]
+  GP3: JSON=17,310.00 EUR, FFR=17,310.00 EUR, Count=12 [OK]
+  GP4: JSON=18,000.00 EUR, FFR=18,000.00 EUR, Count=12 [OK]
+  GP5: JSON=21,000.00 EUR, FFR=21,000.00 EUR, Count=14 [OK]
+
+TRAINING SCHOOL VERIFICATION
+----------------------------------------
+Total Training Schools in JSON: 7
+Total TS Amount (JSON): 108,816.05 EUR
+  GP1: JSON=0.00 EUR, FFR=0.00 EUR, Schools=0 [OK]
+  GP2: JSON=0.00 EUR, FFR=0.00 EUR, Schools=0 [OK]
+  GP3: JSON=0.00 EUR, FFR=0.00 EUR, Schools=0 [OK]
+  GP4: JSON=49,401.09 EUR, FFR=49,401.09 EUR, Schools=4 [OK]
+  GP5: JSON=59,414.96 EUR, FFR=59,414.96 EUR, Schools=3 [OK]
+
+INDIVIDUAL STSM AMOUNTS
+----------------------------------------
+  GP1: Alla Petukhina                   1,500.00 EUR  (12 days, DE->RO)
+  GP1: Apostolos Chalkis                2,450.00 EUR  (14 days, EL->FR)
+  GP1: Danial Saef                      3,500.00 EUR  (30 days, DE->UK)
+  GP1: Galena Pisoni                    2,030.00 EUR  (8 days, FR->NO)
+  GP1: Ioana Coita                      2,500.00 EUR  (10 days, RO->DE)
+  GP1: Jasone Ramírez-Ayerbe            2,540.00 EUR  (14 days, ES->DK)
+  GP1: Luciana Dalla Valle              1,260.00 EUR  (6 days, UK->IT)
+  GP1: Stjepan Picek                    1,520.00 EUR  (16 days, NL->HR)
+  GP1: Wei Li                           3,500.00 EUR  (120 days, NO->DE)
+  GP3: Belbe, Stefana                   2,700.00 EUR  (12 days, RO->CH)
+  GP3: Chen, Cathy Yi-Hsuan             3,200.00 EUR  (32 days, GB->HR)
+  GP3: Coita, Ioana                     2,500.00 EUR  (11 days, RO->CH)
+  GP3: Dalla Valle, Luciana             1,440.00 EUR  (9 days, GB->IT)
+  GP3: Kozmik, Karel                    3,000.00 EUR  (23 days, CZ->DE)
+  GP3: Muniz Martinez, Jose             1,900.00 EUR  (11 days, GB->CH)
+  GP3: Ni, Xinwen                       1,600.00 EUR  (9 days, DE->GB)
+  GP3: Pele, Daniel Traian              1,800.00 EUR  (10 days, RO->DE)
+  GP3: Petukhina, Alla                  2,000.00 EUR  (10 days, DE->IT)
+  GP3: Plihal, Tomas                    4,000.00 EUR  (13 days, CZ->CH)
+  GP4: Belbe, Stefana                   1,900.00 EUR  (10 days, RO->DE)
+  GP4: Dalla Valle, Luciana             2,000.00 EUR  (10 days, GB->IT)
+  GP4: Papavassiliou, Vassilios         2,500.00 EUR  (11 days, IE->PT)
+  GP4: Shkurti (Perri), Rezarta         1,000.00 EUR  (6 days, AL->IT)
+  GP4: kabaklarli, esra                 1,500.00 EUR  (6 days, TR->DE)
+  GP4: Černevičienė, Jurgita            1,600.00 EUR  (6 days, LT->CZ)
+  GP5: Cetintav, Bekir                  2,645.00 EUR  (12 days, TR->PT)
+  GP5: Coita, Ioana                     1,997.00 EUR  (10 days, RO->SK)
+
+INDIVIDUAL VM GRANT AMOUNTS
+----------------------------------------
+  GP2: Alessandra Tanda                        190.00 EUR
+  GP3: Albulena Shala                        1,500.00 EUR
+  GP3: Alessandra Tanda                      1,310.00 EUR
+  GP3: Barbara Będowska-Sójka                1,500.00 EUR
+  GP3: Belma OZTURKKAL                       1,500.00 EUR
+  GP3: Codruta MARE                          1,500.00 EUR
+  GP3: Codruta MARE                          1,500.00 EUR
+  GP3: Ioana Coita                           1,500.00 EUR
+  GP3: Karolina Bolesta                      1,500.00 EUR
+  GP3: Maria Iannario                        1,500.00 EUR
+  GP3: Maria Moloney                         1,500.00 EUR
+  GP3: Wolfgang Härdle                       1,500.00 EUR
+  GP3: esra kabaklarli                       1,000.00 EUR
+  GP4: Albulena Shala                        1,500.00 EUR
+  GP4: Branka Hadji Misheva                  1,500.00 EUR
+  GP4: Branka Hadji Misheva                  1,500.00 EUR
+  GP4: Galena Pisoni                         1,500.00 EUR
+  GP4: Galena Pisoni                         1,500.00 EUR
+  GP4: Jörg Osterrieder                      1,500.00 EUR
+  GP4: Jörg Osterrieder                      1,500.00 EUR
+  GP4: Maria Iannario                        1,500.00 EUR
+  GP4: Monica Violeta Achim                  1,500.00 EUR
+  GP4: Piotr Wójcik                          1,500.00 EUR
+  GP4: Stanca Liana                          1,500.00 EUR
+  GP4: Wolfgang Härdle                       1,500.00 EUR
+  GP5: Albulena Shala                        1,500.00 EUR
+  GP5: Alessandra Tanda                      1,500.00 EUR
+  GP5: Branka Hadji Misheva                  1,500.00 EUR
+  GP5: Galena Pisoni                         1,500.00 EUR
+  GP5: Ioana Coita                           1,500.00 EUR
+  GP5: Jörg Osterrieder                      1,500.00 EUR
+  GP5: Jörg Osterrieder                      1,500.00 EUR
+  GP5: Karolina Bolesta                      1,500.00 EUR
+  GP5: Maria Iannario                        1,500.00 EUR
+  GP5: Miroslav Hudec                        1,500.00 EUR
+  GP5: Olivija Filipovska                    1,500.00 EUR
+  GP5: Stanca Liana                          1,500.00 EUR
+  GP5: Stefana Belbe                         1,500.00 EUR
+  GP5: Veni Arakelian                        1,500.00 EUR
+
+DETAILED CHECK RESULTS
+----------------------------------------
+
+PASS (42):
+  [STSM GP1] STSM total for GP1: FFR=20,800.00, JSON=20,800.00
+  [STSM GP2] STSM total for GP2: FFR=0.00, JSON=0.00
+  [STSM GP3] STSM total for GP3: FFR=24,140.00, JSON=24,140.00
+  [STSM GP4] STSM total for GP4: FFR=10,500.00, JSON=10,500.00
+  [STSM GP5] STSM total for GP5: FFR=4,642.00, JSON=4,642.00
+  [STSM Individual] Stjepan Picek (GP1): 1,520.00 EUR
+  [STSM Individual] Wei Li (GP1): 3,500.00 EUR
+  [STSM Individual] Luciana Dalla Valle (GP1): 1,260.00 EUR
+  [STSM Individual] Danial Saef (GP1): 3,500.00 EUR
+  [STSM Individual] Apostolos Chalkis (GP1): 2,450.00 EUR
+  [STSM Individual] Jasone Ramírez-Ayerbe (GP1): 2,540.00 EUR
+  [STSM Individual] Alla Petukhina (GP1): 1,500.00 EUR
+  [STSM Individual] Ioana Coita (GP1): 2,500.00 EUR
+  [STSM Individual] Galena Pisoni (GP1): 2,030.00 EUR
+  [STSM Individual] Pele, Daniel Traian (GP3): 1,800.00 EUR
+  [STSM Individual] Chen, Cathy Yi-Hsuan (GP3): 3,200.00 EUR
+  [STSM Individual] Dalla Valle, Luciana (GP3): 1,440.00 EUR
+  [STSM Individual] Muniz Martinez, Jose (GP3): 1,900.00 EUR
+  [STSM Individual] Petukhina, Alla (GP3): 2,000.00 EUR
+  [STSM Individual] Coita, Ioana (GP3): 2,500.00 EUR
+  [STSM Individual] Belbe, Stefana (GP3): 2,700.00 EUR
+  [STSM Individual] Plihal, Tomas (GP3): 4,000.00 EUR
+  [STSM Individual] Kozmik, Karel (GP3): 3,000.00 EUR
+  [STSM Individual] Ni, Xinwen (GP3): 1,600.00 EUR
+  [STSM Individual] Shkurti (Perri), Rezarta (GP4): 1,000.00 EUR
+  [STSM Individual] Černevičienė, Jurgita (GP4): 1,600.00 EUR
+  [STSM Individual] Dalla Valle, Luciana (GP4): 2,000.00 EUR
+  [STSM Individual] Papavassiliou, Vassilios (GP4): 2,500.00 EUR
+  [STSM Individual] kabaklarli, esra (GP4): 1,500.00 EUR
+  [STSM Individual] Belbe, Stefana (GP4): 1,900.00 EUR
+  [STSM Individual] Coita, Ioana (GP5): 1,997.00 EUR
+  [STSM Individual] Cetintav, Bekir (GP5): 2,645.00 EUR
+  [VM GP1] VM total for GP1: FFR=0.00, JSON=0.00
+  [VM GP2] VM total for GP2: FFR=190.00, JSON=190.00
+  [VM GP3] VM total for GP3: FFR=17,310.00, JSON=17,310.00
+  [VM GP4] VM total for GP4: FFR=18,000.00, JSON=18,000.00
+  [VM GP5] VM total for GP5: FFR=21,000.00, JSON=21,000.00
+  [TS GP1] Training School total for GP1: FFR=0.00, JSON=0.00
+  [TS GP2] Training School total for GP2: FFR=0.00, JSON=0.00
+  [TS GP3] Training School total for GP3: FFR=0.00, JSON=0.00
+  [TS GP4] Training School total for GP4: FFR=49,401.09, JSON=49,401.09
+  [TS GP5] Training School total for GP5: FFR=59,414.96, JSON=59,414.96
+
+================================================================================
+END OF REPORT
+================================================================================
