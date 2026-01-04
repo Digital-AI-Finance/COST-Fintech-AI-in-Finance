@@ -119,7 +119,7 @@ class TestMeetingsHTML:
         except FileNotFoundError:
             pytest.skip(f"FFR{gp} HTML page not found")
 
-    @pytest.mark.parametrize("gp", [1, 5])
+    @pytest.mark.parametrize("gp", [1])  # GP5 has known discrepancy, tested separately
     def test_html_meetings_matches_ffr(self, html_parser, ffr_parser, gp):
         """HTML displayed meetings should match FFR source."""
         try:
@@ -137,3 +137,19 @@ class TestMeetingsHTML:
                         f"GP{gp}: HTML shows {html_meetings}, FFR has {ffr_meetings.actuals}"
         except FileNotFoundError:
             pytest.skip(f"FFR{gp} HTML page not found")
+
+    def test_html_meetings_matches_ffr_gp5(self, html_parser, ffr_parser):
+        """GP5 HTML meetings should match FFR source.
+
+        This was previously a known discrepancy (HTML showed 120,814 vs FFR 148,194.99)
+        that was fixed by the sync_json_to_html.py script on 2026-01-04.
+        """
+        html_data = html_parser.parse_ffr_page(5)
+        ffr_data = ffr_parser.parse_grant_period(5)
+
+        html_meetings = html_data.actual_amounts.get('meetings', Decimal("0.00"))
+        ffr_meetings = ffr_data.categories['meetings'].actuals
+
+        diff = abs(html_meetings - ffr_meetings)
+        assert diff <= Decimal("1.00"), \
+            f"GP5: HTML shows {html_meetings}, FFR has {ffr_meetings}"

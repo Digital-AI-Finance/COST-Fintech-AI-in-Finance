@@ -53,9 +53,10 @@ class TestVirtualMobilityTotals:
             if 'virtual_networking_support' in data.categories:
                 total_vm += data.categories['virtual_networking_support'].actuals
 
-        # Expected: 56,500 EUR total
-        expected = Decimal("56500.00")
-        tolerance = Decimal("5000.00")
+        # Expected: 72,500 EUR total (verified from FFR source files)
+        # Breakdown: GP1=4000, GP2=190, GP3=21310, GP4=22000, GP5=25000
+        expected = Decimal("72500.00")
+        tolerance = Decimal("100.00")
 
         diff = abs(total_vm - expected)
         assert diff <= tolerance, f"VM total {total_vm} differs from expected {expected} by {diff}"

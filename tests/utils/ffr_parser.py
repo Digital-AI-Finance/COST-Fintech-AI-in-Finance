@@ -289,15 +289,25 @@ class FFRParser:
         """Extract individual STSM records."""
         stsms = []
 
-        # Find STSM section
-        stsm_start = content.find("Short Term Scientific Mission")
+        # Find STSM section - try multiple headers
+        # GP1: "Short Term Scientific Mission (STSM) Expenditure"
+        # GP3/GP4/GP5: "Short-Term Scientific Mission Grant Expenditure"
+        stsm_start = content.find("Short-Term Scientific Mission Grant Expenditure")
+        if stsm_start == -1:
+            stsm_start = content.find("Short Term Scientific Mission (STSM) Expenditure")
+        if stsm_start == -1:
+            stsm_start = content.find("Short Term Scientific Mission")
         if stsm_start == -1:
             stsm_start = content.find("Short-Term Scientific Mission")
         if stsm_start == -1:
             return stsms
 
-        # Find the end of STSM section
-        stsm_end = content.find("Virtual", stsm_start)
+        # Find the end of STSM section - look for the next section marker
+        stsm_end = content.find("Virtual Mobility Grant Expenditure", stsm_start)
+        if stsm_end == -1:
+            stsm_end = content.find("Virtual Networking", stsm_start)
+        if stsm_end == -1:
+            stsm_end = content.find("ITC Conference", stsm_start + 100)
         if stsm_end == -1:
             stsm_end = content.find("PAGE", stsm_start + 100)
         if stsm_end == -1:
@@ -305,14 +315,19 @@ class FFRParser:
 
         stsm_section = content[stsm_start:stsm_end]
 
-        # Pattern for STSM lines (varies by GP)
-        # GP1: "1 Dr Stjepan Picek Y HR NL 11/01/2021 26/01/2021 16 NO 1 520.00"
-        # GP5 has similar format with slight variations
-        stsm_pattern = r'^(\d+)\s+(.+?)\s+([YN])\s+([A-Z]{2})\s+([A-Z]{2})\s+(\d{2}/\d{2}/\d{4})\s+(\d{2}/\d{2}/\d{4})\s+(\d+)\s+(YES|NO)\s+([\d\s,\.]+)\s*$'
+        # Pattern 1: GP1 format with YES/NO prepayment
+        # "1 Dr Stjepan Picek Y HR NL 11/01/2021 26/01/2021 16 NO 1 520.00"
+        stsm_pattern_gp1 = r'^(\d+)\s+(.+?)\s+([YN])\s+([A-Z]{2})\s+([A-Z]{2})\s+(\d{2}/\d{2}/\d{4})\s+(\d{2}/\d{2}/\d{4})\s+(\d+)\s+(YES|NO)\s+([\d\s,\.]+)\s*$'
+
+        # Pattern 2: GP3/GP4/GP5 format without prepayment, column order is YRI Host Home
+        # "1 Pele, Daniel Traian NO DE RO 26/09/2022 04/10/2022 10 1 800.00"
+        stsm_pattern_gp3 = r'^(\d+)\s+(.+?)\s+(YES|NO)\s+([A-Z]{2})\s+([A-Z]{2})\s+(\d{2}/\d{2}/\d{4})\s+(\d{2}/\d{2}/\d{4})\s+(\d+)\s+([\d\s,\.]+)\s*$'
 
         for line in stsm_section.split('\n'):
             line = line.strip()
-            match = re.match(stsm_pattern, line)
+
+            # Try GP1 format first
+            match = re.match(stsm_pattern_gp1, line)
             if match:
                 stsms.append(STSMRecord(
                     index=int(match.group(1)),
@@ -326,6 +341,24 @@ class FFRParser:
                     prepayment=match.group(9),
                     amount=parse_eur_amount(match.group(10))
                 ))
+                continue
+
+            # Try GP3/GP4/GP5 format (YRI column is YES/NO, Host before Home)
+            match = re.match(stsm_pattern_gp3, line)
+            if match:
+                # Note: In GP3/GP4, the column order is Host, Home (reversed)
+                stsms.append(STSMRecord(
+                    index=int(match.group(1)),
+                    grantee_name=match.group(2).strip(),
+                    eci='Y' if match.group(3) == 'YES' else 'N',
+                    home_country=match.group(5),  # Home is second
+                    host_country=match.group(4),  # Host is first
+                    start_date=match.group(6),
+                    end_date=match.group(7),
+                    days=int(match.group(8)),
+                    prepayment='N/A',  # Not available in this format
+                    amount=parse_eur_amount(match.group(9))
+                ))
 
         return stsms
 
@@ -338,10 +371,6 @@ class FFRParser:
         if meetings_start == -1:
             return meetings
 
-        # Pattern for meeting list entries
-        # "1 Cluj-Napoca / Romania Core Group, Working Group, 14 651.21 0.00 14 651.21"
-        meeting_list_pattern = r'^(\d+)\s+(.+?/\s*[A-Za-z\s]+)\s+([A-Za-z\s,]+),\s+([\d\s,\.]+)\s+([\d\s,\.]+)\s+([\d\s,\.]+)\s*$'
-
         # Extract basic meeting list first
         meeting_section_end = content.find("Meeting 1", meetings_start)
         if meeting_section_end == -1:
@@ -349,22 +378,51 @@ class FFRParser:
 
         meeting_list_section = content[meetings_start:meeting_section_end]
 
+        # Pattern for meeting list entries - handles space-separated amounts
+        # Format: "index location / country type, actuals accruals total"
+        # Examples:
+        #   "1 online / Switzerland Management Committee, 0.00 0.00 0.00"
+        #   "1 Skopje / North Macedonia Working Group, 4 271.19 0.00 4 271.19"
+        #   "1 Cluj-Napoca / Romania Core Group, Working Group, 14 651.21 0.00 14 651.21"
+        #
+        # Improved pattern: capture index, location+type, then parse amounts from end
+        # Match: index, everything before amounts, then 3 amounts at end
+        meeting_line_pattern = r'^(\d+)\s+(.+?)\s+(-?[\d\s]+\.?\d*)\s+(-?[\d\s]+\.?\d*)\s+(-?[\d\s]+\.?\d*)\s*$'
+
         for line in meeting_list_section.split('\n'):
             line = line.strip()
-            match = re.match(meeting_list_pattern, line)
+            match = re.match(meeting_line_pattern, line)
             if match:
+                # Parse the description to extract location and type
+                description = match.group(2).strip()
+                # Split on last comma before amounts
+                if ',' in description:
+                    # Find the location/country (contains /)
+                    parts = description.split('/')
+                    if len(parts) >= 2:
+                        location = parts[0].strip() + ' / ' + parts[1].split()[0]
+                        # Meeting type is the rest
+                        type_start = len(parts[0]) + len(parts[1].split()[0]) + 4
+                        meeting_type = description[type_start:].strip().rstrip(',')
+                    else:
+                        location = description
+                        meeting_type = ""
+                else:
+                    location = description
+                    meeting_type = ""
+
                 meetings.append(MeetingRecord(
                     index=int(match.group(1)),
-                    location=match.group(2).strip(),
-                    meeting_type=match.group(3).strip(),
+                    location=location,
+                    meeting_type=meeting_type,
                     title="",  # Will be filled from detailed section
                     start_date="",
                     end_date="",
                     participants=0,
                     reimbursed_participants=0,
-                    actuals=parse_eur_amount(match.group(4)),
-                    accruals=parse_eur_amount(match.group(5)),
-                    total=parse_eur_amount(match.group(6))
+                    actuals=parse_eur_amount(match.group(3)),
+                    accruals=parse_eur_amount(match.group(4)),
+                    total=parse_eur_amount(match.group(5))
                 ))
 
         # Now parse detailed meeting sections

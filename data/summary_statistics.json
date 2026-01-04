@@ -1,51 +1,55 @@
 {
-  "total_meetings": 52,
-  "total_stsms": 27,
-  "total_training_schools": 7,
-  "total_trainees": 96,
-  "total_virtual_mobility": 39,
-  "total_vns": 2,
-  "total_participants": 182,
-  "total_countries": 36,
-  "total_budget": 963654.17,
-  "total_actual": 774662.32,
-  "meetings_by_gp": {
-    "1": 21,
-    "2": 4,
-    "3": 9,
-    "4": 8,
-    "5": 10
+  "totals": {
+    "budget": 963654.17,
+    "actual": 774662.32,
+    "utilization_rate": 80.38800060399261
   },
-  "stsms_by_gp": {
-    "1": 9,
-    "2": 0,
-    "3": 10,
-    "4": 6,
-    "5": 2
+  "by_category": {
+    "meetings": {
+      "total": 423694.69,
+      "count": 51
+    },
+    "stsm": {
+      "total": 60082.0,
+      "count": 27
+    },
+    "virtual_mobility": {
+      "total": 72500.0,
+      "count": 0
+    },
+    "training_schools": {
+      "total": 108816.05,
+      "count": 7
+    },
+    "fsac": {
+      "total": 101042.91
+    }
   },
-  "vm_by_gp": {
-    "1": 0,
-    "2": 1,
-    "3": 12,
-    "4": 12,
-    "5": 14
-  },
-  "ts_by_gp": {
-    "1": 0,
-    "2": 0,
-    "3": 0,
-    "4": 4,
-    "5": 3
-  },
-  "trainees_by_gp": {
-    "4": 49,
-    "5": 47
-  },
-  "financial_totals": {
-    "meetings": 423694.69,
-    "training_schools": 108816.05,
-    "stsms": 60082.00,
-    "virtual_mobility": 56500.00
-  },
-  "last_updated": "2026-01-03"
+  "by_grant_period": {
+    "GP1": {
+      "budget": 62985.5,
+      "actual": 47459.83,
+      "utilization": 75.35040604583595
+    },
+    "GP2": {
+      "budget": 202607.0,
+      "actual": 33770.46,
+      "utilization": 16.667963100978742
+    },
+    "GP3": {
+      "budget": 169820.5,
+      "actual": 166262.38,
+      "utilization": 97.90477592516804
+    },
+    "GP4": {
+      "budget": 257925.91,
+      "actual": 256854.39,
+      "utilization": 99.58456286923636
+    },
+    "GP5": {
+      "budget": 270315.26,
+      "actual": 270315.26,
+      "utilization": 100.0
+    }
+  }
 }
