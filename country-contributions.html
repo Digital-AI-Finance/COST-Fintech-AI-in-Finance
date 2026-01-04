@@ -474,12 +474,91 @@
             margin-top: 0.75rem;
         }
 
+        /* Charts Grid */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .chart-container {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.25rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .chart-container h3 {
+            font-size: 1rem;
+            color: var(--cost-purple);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .chart-container canvas {
+            max-height: 300px;
+        }
+
+        /* Export Container */
+        .export-container {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+        }
+
+        .export-btn {
+            padding: 0.75rem 1.5rem;
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(91, 45, 138, 0.3);
+        }
+
+        /* Mobile: Small screens */
+        @media (max-width: 576px) {
+            .impact-grid { grid-template-columns: repeat(2, 1fr); }
+            .charts-grid { grid-template-columns: 1fr; }
+            .chart-container canvas { max-height: 250px; }
+            .export-container { flex-direction: column; }
+            .export-btn { width: 100%; }
+            .gallery-grid { grid-template-columns: repeat(2, 1fr); }
+            h1 { font-size: 1.5rem; }
+            h2 { font-size: 1.2rem; }
+        }
+
+        /* Tablet: Medium screens */
+        @media (min-width: 577px) and (max-width: 1024px) {
+            .countries-grid { grid-template-columns: repeat(2, 1fr); }
+            .charts-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* Desktop and larger */
         @media (max-width: 768px) {
             .filter-container { flex-direction: column; }
             .search-input, .filter-select { width: 100%; }
             .countries-grid { grid-template-columns: 1fr; }
             nav .nav-links { display: none; }
             .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+
+        /* Print styles */
+        @media print {
+            nav, .filter-container, .export-container, .lightbox { display: none !important; }
+            .country-card { break-inside: avoid; }
+            .chart-container { break-inside: avoid; }
         }
     </style>
     <link rel="stylesheet" href="css/mega-menu.css">
@@ -915,6 +994,34 @@
             </div>
         </div>
 
+        <!-- Charts Section -->
+        <h2>Country Comparison Charts</h2>
+        <div class="charts-grid">
+            <div class="chart-container">
+                <h3>Publications by Region</h3>
+                <canvas id="chart-publications-region"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Top 10 Countries by Publications</h3>
+                <canvas id="chart-top-countries"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>Events by Region</h3>
+                <canvas id="chart-events-region"></canvas>
+            </div>
+            <div class="chart-container">
+                <h3>STSM Distribution</h3>
+                <canvas id="chart-stsm"></canvas>
+            </div>
+        </div>
+
+        <!-- Export Section -->
+        <div class="export-container">
+            <button onclick="exportCSV()" class="export-btn">Export CSV</button>
+            <button onclick="exportPDF()" class="export-btn">Export PDF Summary</button>
+            <button onclick="window.print()" class="export-btn">Print</button>
+        </div>
+
         <h2>Filter Countries</h2>
         <div class="filter-container">
             <input type="text" id="country-search" placeholder="Search countries..." class="search-input">
@@ -1002,6 +1109,7 @@
                 renderCountries(contributionsData.countries);
                 renderGallery(contributionsData.countries);
                 renderDownloads(contributionsData.countries);
+                renderCharts();
                 updateStats(contributionsData);
             } catch (error) {
                 console.error('Error loading contributions data:', error);
@@ -1278,6 +1386,245 @@
             searchInput?.addEventListener('input', applyFilters);
             regionFilter?.addEventListener('change', applyFilters);
             yearFilter?.addEventListener('change', applyFilters);
+        }
+
+        // Chart rendering functions
+        let chartInstances = {};
+
+        function renderCharts() {
+            if (!contributionsData) return;
+
+            const countries = contributionsData.countries;
+            const regionData = contributionsData.by_region || {};
+
+            // Color palette
+            const colors = {
+                purple: '#5B2D8A',
+                blue: '#2B5F9E',
+                teal: '#00A0B0',
+                orange: '#E87722',
+                green: '#7AB800',
+                gray: '#6c757d'
+            };
+
+            const regionColors = [
+                'rgba(91, 45, 138, 0.8)',   // purple
+                'rgba(43, 95, 158, 0.8)',   // blue
+                'rgba(0, 160, 176, 0.8)',   // teal
+                'rgba(232, 119, 34, 0.8)',  // orange
+                'rgba(122, 184, 0, 0.8)',   // green
+                'rgba(108, 117, 125, 0.8)'  // gray
+            ];
+
+            // 1. Publications by Region (horizontal bar)
+            const pubsByRegion = {};
+            for (const [region, countryList] of Object.entries(regionData)) {
+                pubsByRegion[region] = countryList.reduce((sum, c) => sum + (c.publications || 0), 0);
+            }
+            const regionLabels = Object.keys(pubsByRegion).sort((a, b) => pubsByRegion[b] - pubsByRegion[a]);
+            const regionPubValues = regionLabels.map(r => pubsByRegion[r]);
+
+            if (chartInstances.pubsRegion) chartInstances.pubsRegion.destroy();
+            chartInstances.pubsRegion = new Chart(document.getElementById('chart-publications-region'), {
+                type: 'bar',
+                data: {
+                    labels: regionLabels,
+                    datasets: [{
+                        label: 'Publications',
+                        data: regionPubValues,
+                        backgroundColor: regionColors.slice(0, regionLabels.length),
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { beginAtZero: true, grid: { display: false } },
+                        y: { grid: { display: false } }
+                    }
+                }
+            });
+
+            // 2. Top 10 Countries by Publications (bar)
+            const sortedByPubs = [...countries]
+                .sort((a, b) => (b.summary_stats?.total_publications || 0) - (a.summary_stats?.total_publications || 0))
+                .slice(0, 10);
+
+            if (chartInstances.topCountries) chartInstances.topCountries.destroy();
+            chartInstances.topCountries = new Chart(document.getElementById('chart-top-countries'), {
+                type: 'bar',
+                data: {
+                    labels: sortedByPubs.map(c => c.country_code),
+                    datasets: [{
+                        label: 'Publications',
+                        data: sortedByPubs.map(c => c.summary_stats?.total_publications || 0),
+                        backgroundColor: 'rgba(91, 45, 138, 0.8)',
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        y: { beginAtZero: true, grid: { color: 'rgba(0,0,0,0.05)' } },
+                        x: { grid: { display: false } }
+                    }
+                }
+            });
+
+            // 3. Events by Region (bar)
+            const eventsByRegion = {};
+            for (const [region, countryList] of Object.entries(regionData)) {
+                eventsByRegion[region] = countryList.reduce((sum, c) => sum + (c.events || 0), 0);
+            }
+            const eventRegionLabels = Object.keys(eventsByRegion).sort((a, b) => eventsByRegion[b] - eventsByRegion[a]);
+            const eventRegionValues = eventRegionLabels.map(r => eventsByRegion[r]);
+
+            if (chartInstances.eventsRegion) chartInstances.eventsRegion.destroy();
+            chartInstances.eventsRegion = new Chart(document.getElementById('chart-events-region'), {
+                type: 'bar',
+                data: {
+                    labels: eventRegionLabels,
+                    datasets: [{
+                        label: 'Events',
+                        data: eventRegionValues,
+                        backgroundColor: regionColors.slice(0, eventRegionLabels.length),
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    indexAxis: 'y',
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } },
+                    scales: {
+                        x: { beginAtZero: true, grid: { display: false } },
+                        y: { grid: { display: false } }
+                    }
+                }
+            });
+
+            // 4. STSM Distribution (doughnut)
+            const stsmByRegion = {};
+            for (const [region, countryList] of Object.entries(regionData)) {
+                const regionSum = countries
+                    .filter(c => c.region === region)
+                    .reduce((sum, c) => sum + (c.summary_stats?.total_stsm || 0), 0);
+                if (regionSum > 0) stsmByRegion[region] = regionSum;
+            }
+            const stsmLabels = Object.keys(stsmByRegion);
+            const stsmValues = stsmLabels.map(r => stsmByRegion[r]);
+
+            if (chartInstances.stsm) chartInstances.stsm.destroy();
+            chartInstances.stsm = new Chart(document.getElementById('chart-stsm'), {
+                type: 'doughnut',
+                data: {
+                    labels: stsmLabels,
+                    datasets: [{
+                        data: stsmValues,
+                        backgroundColor: regionColors.slice(0, stsmLabels.length),
+                        borderWidth: 2,
+                        borderColor: '#fff'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: { boxWidth: 12, font: { size: 11 } }
+                        }
+                    }
+                }
+            });
+        }
+
+        // Export to CSV
+        function exportCSV() {
+            if (!contributionsData) return;
+
+            const headers = ['Country', 'Code', 'Region', 'Years', 'Publications', 'With Acknowledgment', 'Events', 'STSMs', 'Grants', 'Members'];
+            const rows = contributionsData.countries.map(c => [
+                c.country,
+                c.country_code,
+                c.region,
+                c.years_reported.join('; '),
+                c.summary_stats?.total_publications || 0,
+                c.summary_stats?.total_with_acknowledgment || 0,
+                c.summary_stats?.total_events || 0,
+                c.summary_stats?.total_stsm || 0,
+                c.summary_stats?.total_funded_grants || 0,
+                c.summary_stats?.total_members || 0
+            ]);
+
+            const csvContent = [headers, ...rows]
+                .map(row => row.map(cell => `"${String(cell).replace(/"/g, '""')}"`).join(','))
+                .join('\n');
+
+            const blob = new Blob([csvContent], { type: 'text/csv;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'cost_country_contributions.csv';
+            link.click();
+            URL.revokeObjectURL(link.href);
+        }
+
+        // Export to PDF (summary)
+        function exportPDF() {
+            if (!contributionsData) return;
+
+            // Create a printable summary
+            const summary = `
+COST Action CA19130 - Country Contributions Summary
+Generated: ${new Date().toLocaleDateString()}
+
+OVERALL STATISTICS
+==================
+Total Countries: ${contributionsData.total_countries}
+Total Publications: ${contributionsData.summary_statistics?.total_publications || 0}
+Publications with Acknowledgment: ${contributionsData.summary_statistics?.total_with_acknowledgment || 0}
+Total Events: ${contributionsData.summary_statistics?.total_events || 0}
+Total STSMs: ${contributionsData.summary_statistics?.total_stsm || 0}
+Total Funded Grants: ${contributionsData.summary_statistics?.total_funded_grants || 0}
+
+TOP CONTRIBUTING COUNTRIES
+==========================
+${contributionsData.countries
+    .sort((a, b) => (b.summary_stats?.total_publications || 0) - (a.summary_stats?.total_publications || 0))
+    .slice(0, 15)
+    .map((c, i) => `${i + 1}. ${c.country} (${c.country_code}): ${c.summary_stats?.total_publications || 0} publications, ${c.summary_stats?.total_events || 0} events`)
+    .join('\n')}
+
+BY REGION
+=========
+${Object.entries(contributionsData.by_region || {})
+    .map(([region, countries]) => {
+        const pubs = countries.reduce((sum, c) => sum + (c.publications || 0), 0);
+        const events = countries.reduce((sum, c) => sum + (c.events || 0), 0);
+        return `${region}: ${countries.length} countries, ${pubs} publications, ${events} events`;
+    })
+    .join('\n')}
+
+ALL COUNTRIES
+=============
+${contributionsData.countries
+    .sort((a, b) => a.country.localeCompare(b.country))
+    .map(c => `${c.country} (${c.country_code}) - ${c.region} - Years: ${c.years_reported.join(', ')} - Pubs: ${c.summary_stats?.total_publications || 0} - Events: ${c.summary_stats?.total_events || 0}`)
+    .join('\n')}
+`;
+
+            // Create text file download (as PDF generation requires external library)
+            const blob = new Blob([summary], { type: 'text/plain;charset=utf-8;' });
+            const link = document.createElement('a');
+            link.href = URL.createObjectURL(blob);
+            link.download = 'cost_country_contributions_summary.txt';
+            link.click();
+            URL.revokeObjectURL(link.href);
         }
 
         document.addEventListener('keydown', (e) => {
