@@ -1,5 +1,5 @@
 {
-  "generated": "2026-01-04T08:15:05.737621",
+  "generated": "2026-01-04T17:04:16.785968",
   "total_countries": 29,
   "countries_with_both_years": 15,
   "summary_statistics": {
@@ -10,7 +10,7 @@
     "total_grants": 154,
     "total_funded_grants": 7,
     "total_members": 238,
-    "total_images": 297
+    "total_images": 300
   },
   "by_region": {
     "Central Europe": [
@@ -75,7 +75,7 @@
         ],
         "publications": 5,
         "events": 8,
-        "images": 1
+        "images": 2
       },
       {
         "country": "Switzerland",
@@ -108,7 +108,7 @@
         ],
         "publications": 5,
         "events": 6,
-        "images": 1
+        "images": 2
       },
       {
         "country": "Ireland",
@@ -209,7 +209,7 @@
         ],
         "publications": 8,
         "events": 5,
-        "images": 1
+        "images": 2
       },
       {
         "country": "Greece",
@@ -353,22 +353,22 @@
         "members": {
           "count": 5,
           "names": [
-            "Bernhard Haslhofer",
-            "Industry Representative",
-            "Stefan Kitzler",
             "Organizing Conferences",
-            "Core Member"
+            "Core Member",
+            "Bernhard Haslhofer",
+            "Stefan Kitzler",
+            "Industry Representative"
           ]
         },
         "publications": {
           "total_mentioned": 0,
           "with_acknowledgment": 0,
           "journals": [
-            "Journal of Financial Stability",
             "Decentralized Finance",
+            "Journal of Financial Stability",
+            "Frontiers in Decentralized Finance",
             "Data Science",
-            "Digital Finance",
-            "Frontiers in Decentralized Finance"
+            "Digital Finance"
           ]
         },
         "events": {
@@ -421,8 +421,8 @@
         },
         "collaborations": {
           "universities": [
-            "ESG Data",
             "ESG Workshop",
+            "ESG Data",
             "ZHAW School"
           ],
           "total_international": 3
@@ -646,21 +646,21 @@
         "members": {
           "count": 6,
           "names": [
+            "Sabrine Majeri",
+            "Mathias Dah Fienon",
             "Lara Wautier",
             "Bin Ling",
-            "Zhongxiu Chen",
-            "Mathias Dah Fienon",
             "Linqi Wang",
-            "Sabrine Majeri"
+            "Zhongxiu Chen"
           ]
         },
         "publications": {
           "total_mentioned": 4,
           "with_acknowledgment": 0,
           "journals": [
+            "Journal of Alternative Investments",
             "Finance Research",
-            "Digital Finance",
-            "Journal of Alternative Investments"
+            "Digital Finance"
           ]
         },
         "events": {
@@ -721,11 +721,11 @@
         },
         "collaborations": {
           "universities": [
-            "DAI Digital",
             "AI Meets",
             "Cambridge University",
             "COST Action",
-            "COST Fin"
+            "COST Fin",
+            "DAI Digital"
           ],
           "total_international": 5
         }
@@ -806,8 +806,8 @@
       },
       "gallery_images": [
         {
-          "filename": "2024_placeholder.png",
-          "path": "contributions/be/2024_placeholder.png",
+          "filename": "2024_title.png",
+          "path": "contributions/be/2024_title.png",
           "year": 2024
         }
       ],
@@ -842,40 +842,40 @@
         "members": {
           "count": 72,
           "names": [
-            "Enterprise Technology\nProvisioning",
-            "Digital \nPayment \nIndex",
-            "Digital Euro",
-            "Enterprise \nTechnology\nProvisioning",
-            "Psychometric Analytics",
-            "Commercial Register",
-            "Digital Asset\nExchange",
+            "Why Bulgaria",
             "Member \nStates",
-            "Ivan Kolovos",
-            "Digital\nStrategy",
-            "Enterprise\nTechnology \nProvisioning",
-            "Applied\nMacroeconomic \nAnalysis",
-            "Digital\nPayments",
-            "Datecs\nPaysafe\nExperian",
             "Financial \nSupervision",
             "Total Revenue",
+            "Digital\nStrategy",
+            "Commercial Register",
+            "Quadruple \nHelix",
+            "Supervision \nCommission",
+            "Conclusion\nSofia",
+            "Enterprise \nTechnology\nProvisioning",
+            "Enterprise Technology\nProvisioning",
+            "Applied\nMacroeconomic \nAnalysis",
+            "Digital Banking",
+            "Digital\nPayments",
+            "Ivan Kolovos",
+            "Psychometric Analytics",
+            "Monetary \nAffairs",
+            "Electronic Invoicing",
             "Easy Payment Services",
-            "Average\nAverage",
-            "Laundering Authority",
-            "Quadruple \nHelix"
+            "Laundering Authority"
           ]
         },
         "publications": {
           "total_mentioned": 1,
           "with_acknowledgment": 0,
           "journals": [
+            "Computer Science",
+            "Qualitative Research",
+            "Digital \nFinance",
+            "Journal of Banking and Finance\nand",
             "Alternative\nFinance",
             "Decentralised Finance",
             "Market Research",
-            "Journal of Banking and Finance\nand",
-            "Computer Science",
-            "Qualitative Research",
-            "Digital Finance",
-            "Digital \nFinance"
+            "Digital Finance"
           ]
         },
         "events": {
@@ -926,26 +926,26 @@
         },
         "collaborations": {
           "universities": [
-            "VIEW\nWe",
-            "ECONOMICS\nDeyan",
-            "API\nManagement",
-            "KYC Solutions",
-            "SECTOR\nMarkets",
-            "WORKFOCE\nIn",
-            "HUB \nEnter",
-            "GROUP\nWhat",
-            "BFA Fintech",
-            "REVENUE\nDatecs",
-            "INTRODUCTION\nThe",
-            "EU Crypto",
-            "SEGMENT\nSimilarly",
-            "EURO\nRegulation",
-            "EU \nAnti",
-            "SEGMENT\nTotal",
-            "MARKETS \nGlobal",
-            "IDEAS\nRespondents",
             "EURO\nThe",
-            "Sofia University"
+            "VIEW\nWe",
+            "VUZF University",
+            "ECONOMICS\nDeyan",
+            "SEGMENT\nSimilarly",
+            "YEARS\nIn",
+            "EU Crypto",
+            "CNP\nShare",
+            "KYC Solutions",
+            "WORKFOCE\nIn",
+            "MARKETS \nGlobal",
+            "REVENUE\nDatecs",
+            "Sofia University",
+            "SEGMENT\nTotal",
+            "FIRMS\nEnter",
+            "IDEAS\nRespondents",
+            "BFA Fintech",
+            "GROUP\nWhat",
+            "EU \nAnti",
+            "HUB \nEnter"
           ],
           "total_international": 25
         }
@@ -2065,27 +2065,27 @@
         "members": {
           "count": 11,
           "names": [
-            "Bozena\nGulija",
             "Vlah Jeric",
-            "Petra\nPalic",
-            "Silvija\nVlah Jeric",
-            "Ivanisevic Hernaus",
-            "Communist Economies",
             "Martina\nSolenicki",
+            "Bozena\nGulija",
+            "Communist Economies",
+            "Petra\nPalic",
+            "Ivanisevic Hernaus",
             "Ming Chen",
+            "Ana\nIvanisevic Hernaus",
             "Domagoj\nSajter",
-            "Nika\nSimurina",
-            "Ana\nIvanisevic Hernaus"
+            "Silvija\nVlah Jeric",
+            "Nika\nSimurina"
           ]
         },
         "publications": {
           "total_mentioned": 15,
           "with_acknowledgment": 0,
           "journals": [
-            "Mathematical Finance",
+            "Decentralized Finance",
             "Frontiers in Applied Mathematics and Statistics",
             "International Review",
-            "Decentralized Finance",
+            "Mathematical Finance",
             "Data Science"
           ]
         },
@@ -2207,26 +2207,26 @@
         },
         "collaborations": {
           "universities": [
+            "Arcada University",
+            "University of Osijek",
             "Palic\nCatholic University",
+            "Ivanisevic Hernaus\nUniversity",
+            "University of Croatia",
             "Nika\nSimurina\nUniversity",
-            "Martina\nSolenicki\nUniversity",
+            "University of Warwick",
+            "Strossmayer University",
             "Michigan State University",
             "University of Zagreb",
-            "COST Action",
-            "COST Fin",
-            "University of Warwick",
-            "EBES Conference",
-            "Arcada University",
-            "Domagoj\nSajter\nUniversity",
-            "Ivanisevic Hernaus\nUniversity",
-            "Strossmayer University",
+            "Martina\nSolenicki\nUniversity",
             "Vlah Jeric\nUniversity",
+            "EBES Conference",
+            "COST Fin",
+            "USA\nInvited",
+            "Domagoj\nSajter\nUniversity",
             "AI Annual",
             "ESG Indices",
-            "USA\nInvited",
-            "University of Applied Sciencies",
-            "University of Croatia",
-            "University of Osijek"
+            "COST Action",
+            "University of Applied Sciencies"
           ],
           "total_international": 20
         }
@@ -2663,8 +2663,8 @@
         "members": {
           "count": 2,
           "names": [
-            "Dr Christos Themistocleous",
-            "Planned Actions"
+            "Planned Actions",
+            "Dr Christos Themistocleous"
           ]
         },
         "publications": {
@@ -2727,15 +2727,15 @@
         },
         "collaborations": {
           "universities": [
-            "IEEE International",
-            "University of Nicosia",
+            "Cyprus University",
+            "Open University",
+            "University of Technology\nAssistant",
             "AI Country",
             "University of Technology\nOther",
-            "Cyprus University",
-            "University of Technology\nAssistant",
+            "University of Nicosia",
             "MC Members",
-            "Open University",
-            "COST Fin"
+            "COST Fin",
+            "IEEE International"
           ],
           "total_international": 9
         }
@@ -2827,8 +2827,13 @@
       },
       "gallery_images": [
         {
-          "filename": "2023_placeholder.png",
-          "path": "contributions/cy/2023_placeholder.png",
+          "filename": "2024_title.png",
+          "path": "contributions/cy/2024_title.png",
+          "year": 2024
+        },
+        {
+          "filename": "2023_title.png",
+          "path": "contributions/cy/2023_title.png",
           "year": 2023
         }
       ],
@@ -2878,15 +2883,15 @@
           "total_mentioned": 4,
           "with_acknowledgment": 0,
           "journals": [
-            "Journal of Economics and \nFinance",
-            "National Science",
-            "Research in International Business",
-            "Journal of Operational Research",
-            "Applied \nScience",
-            "Operations \nResearch",
-            "Annals of Operations \nResearch",
             "Operational Research",
-            "Czech Science"
+            "Research in International Business",
+            "Annals of Operations \nResearch",
+            "Czech Science",
+            "Applied \nScience",
+            "Journal of Operational Research",
+            "National Science",
+            "Operations \nResearch",
+            "Journal of Economics and \nFinance"
           ]
         },
         "events": {
@@ -2918,17 +2923,17 @@
         },
         "collaborations": {
           "universities": [
-            "Masaryk University",
-            "Humboldt University",
             "University of Applied \nSciences",
-            "STSM\nTom",
+            "Humboldt University",
+            "MC Meeting",
+            "COST Action",
+            "AI\nTom",
+            "Masaryk University",
+            "University of Pardubice\nLadislav",
             "CCF Research",
             "Charles University",
-            "Bern University",
-            "University of Pardubice\nLadislav",
-            "AI\nTom",
-            "COST Action",
-            "MC Meeting"
+            "STSM\nTom",
+            "Bern University"
           ],
           "total_international": 11
         }
@@ -3257,10 +3262,10 @@
           "total_mentioned": 16,
           "with_acknowledgment": 0,
           "journals": [
-            "Operations Research",
             "Journal of Operational Research",
             "Behavioral Research",
-            "Operational Research"
+            "Operational Research",
+            "Operations Research"
           ]
         },
         "events": {
@@ -3285,14 +3290,14 @@
         },
         "collaborations": {
           "universities": [
-            "Aarhus University",
-            "MC Substitute",
+            "AU Centre",
             "AI Country",
             "MC Members",
-            "RISE Ne",
-            "AU Centre",
+            "Aarhus University",
+            "COST Fin",
             "STSM\n\nJasone",
-            "COST Fin"
+            "RISE Ne",
+            "MC Substitute"
           ],
           "total_international": 8
         }
@@ -3558,35 +3563,35 @@
         "members": {
           "count": 16,
           "names": [
-            "Iryna Mihus",
-            "Prevention Act",
-            "Estonian \nStartup \nLeaders",
-            "Triinu Tapver",
             "Service Providers",
-            "Industry Resilience Study",
-            "Sandeep Kumar Gupta",
-            "Digital Services Act",
+            "Laivi Laidroo",
             "Startup Estonia",
+            "By Egert Juuse",
+            "By Laivi Laidroo",
+            "Digital Services Act",
+            "Prevention Act",
+            "By Triinu Tapver",
+            "Southeast Asia",
             "Travel Rule",
             "Open Source Computing",
-            "By Triinu Tapver",
-            "By Egert Juuse",
-            "Resolution Authority",
+            "Iryna Mihus",
+            "Industry Resilience Study",
+            "Estonian \nStartup \nLeaders",
             "Liis Kukk",
-            "Southeast Asia",
-            "By Laivi Laidroo",
-            "Laivi Laidroo"
+            "Resolution Authority",
+            "Sandeep Kumar Gupta",
+            "Triinu Tapver"
           ]
         },
         "publications": {
           "total_mentioned": 440,
           "with_acknowledgment": 0,
           "journals": [
+            "Innovation Research",
+            "Estonian Research",
             "Innovative Research",
             "Journal of Asset \nManagement",
-            "Innovation Research",
-            "Commerce Research",
-            "Estonian Research"
+            "Commerce Research"
           ]
         },
         "events": {
@@ -3627,26 +3632,26 @@
         },
         "collaborations": {
           "universities": [
-            "Tallinn University",
-            "AI Act",
-            "EU Smart",
-            "PREFACE\nTwo",
-            "REFERENCES \n \nAnkenbrand",
-            "COST Action",
-            "CONCLUSION\nThis",
-            "PROFILE\nTriinu",
             "Kukk\nTallinn University",
-            "Tapver\nTallinn University",
-            "KROK University",
-            "PROFILE\nAll",
-            "EU \nOfficial",
-            "COST Fin",
-            "EU Commission",
-            "IV Electronic",
+            "REFERENCES \n \nAnkenbrand",
+            "PROFILE\nTriinu",
+            "MC Members",
+            "University of Cambridge",
             "University of Technology",
+            "EU Commission",
+            "Tapver\nTallinn University",
+            "DLT Pilot",
+            "IFZ Fin",
+            "Tallinn University",
+            "PROFILE\nAll",
+            "AI Act",
             "EU Mi",
-            "PROFILE\nMari",
-            "DLT Pilot"
+            "PREFACE\nTwo",
+            "EU Smart",
+            "DLT \nPilot",
+            "CONCLUSION\nThis",
+            "COST Fin",
+            "EU \nOfficial"
           ],
           "total_international": 21
         }
@@ -4363,20 +4368,20 @@
         "members": {
           "count": 6,
           "names": [
-            "Finland\nEsteban Guerrero",
-            "Florina Coita",
-            "Pekka Ruuskanen",
             "Mikko Ylikangas",
+            "Finland\nEsteban Guerrero",
+            "Codruta Mare",
+            "Florina Coita",
             "Esteban Guerrero",
-            "Codruta Mare"
+            "Pekka Ruuskanen"
           ]
         },
         "publications": {
           "total_mentioned": 1,
           "with_acknowledgment": 0,
           "journals": [
-            "Computer Science",
-            "Senior Science"
+            "Senior Science",
+            "Computer Science"
           ]
         },
         "events": {
@@ -4414,13 +4419,13 @@
         },
         "collaborations": {
           "universities": [
-            "AI Country",
             "University of Vaasa",
+            "AI Country",
             "COST Executive",
-            "COST National",
             "SN Computer",
-            "Tampere University",
-            "COST Fin"
+            "COST National",
+            "COST Fin",
+            "Tampere University"
           ],
           "total_international": 7
         }
@@ -4554,17 +4559,17 @@
         "members": {
           "count": 7,
           "names": [
-            "Main Proposer",
-            "Alexandre Boulenger",
             "Elias Tsigaridas",
-            "Roman Matkovskyy",
-            "Galena Pisoni",
-            "Akanksha Jalan",
-            "Ethereum Foundation",
-            "Achraf Ayadi",
-            "Databases\nYi Liu",
             "Erika Minarikova",
-            "Marianna Russo"
+            "Galena Pisoni",
+            "Main Proposer",
+            "Marianna Russo",
+            "Achraf Ayadi",
+            "Ethereum Foundation",
+            "Akanksha Jalan",
+            "Alexandre Boulenger",
+            "Databases\nYi Liu",
+            "Roman Matkovskyy"
           ]
         },
         "publications": {
@@ -4632,16 +4637,16 @@
         },
         "collaborations": {
           "universities": [
-            "Zhongnan University",
             "National University",
-            "AI\nCurrently",
-            "University of Economics",
+            "IADIS Information",
             "NUS Application",
+            "COST Action",
             "AI\n\nFrance",
             "University of Singapore",
-            "Chiao Tung University",
-            "IADIS Information",
-            "COST Action"
+            "Zhongnan University",
+            "University of Economics",
+            "AI\nCurrently",
+            "Chiao Tung University"
           ],
           "total_international": 10
         }
@@ -4815,8 +4820,13 @@
       },
       "gallery_images": [
         {
-          "filename": "2023_placeholder.png",
-          "path": "contributions/fr/2023_placeholder.png",
+          "filename": "2024_title.png",
+          "path": "contributions/fr/2024_title.png",
+          "year": 2024
+        },
+        {
+          "filename": "2023_title.png",
+          "path": "contributions/fr/2023_title.png",
           "year": 2023
         }
       ],
@@ -4857,16 +4867,16 @@
         "members": {
           "count": 11,
           "names": [
-            "Danial Saef",
-            "Rui Ren",
             "Christina Erlwein",
+            "Xinwen Ni",
             "Bin Lin",
-            "Alla Petukhina",
             "Natalia Togobytska",
             "Florentina Paraschiv",
-            "Natalie Packham",
-            "Xinwen Ni",
             "Techs Apps",
+            "Danial Saef",
+            "Natalie Packham",
+            "Alla Petukhina",
+            "Rui Ren",
             "Kainat Khowaja"
           ]
         },
@@ -4874,20 +4884,20 @@
           "total_mentioned": 61,
           "with_acknowledgment": 42,
           "journals": [
-            "Economic Review",
-            "Journal of Multivariate Analysis",
             "And Economics",
-            "Sustainable Finance",
-            "Sustainable \nFinance",
-            "Research in International Business",
-            "Quantitative finance",
+            "Journal of Multivariate Analysis",
+            "Applied Science",
             "Blockchain Research",
-            "Digital finance",
-            "Journal of Commodity Markets",
-            "Journal of European finance",
-            "Computational Economics",
-            "Journal of Econometrics",
+            "Research in International Business",
+            "Sustainable Finance",
             "Approaches Finance",
+            "Computational Economics",
+            "Quantitative finance",
+            "Journal of Econometrics",
+            "Journal of Commodity Markets",
+            "Sustainable \nFinance",
+            "Economic Review",
+            "Journal of European finance",
             "Data Science"
           ]
         },
@@ -4964,25 +4974,25 @@
         },
         "collaborations": {
           "universities": [
-            "COST \nConference",
-            "IDA Institute",
-            "HU Berlin",
-            "YCH Chen",
-            "ML Approaches",
-            "AI Academic",
-            "ASE Bucharest",
-            "AI Germany",
-            "COST Fin",
-            "REFIND Robust",
-            "HU \nBerlin",
             "University of Twente",
-            "HTW Berlin",
-            "University of Applied Sciences",
-            "MSCA Doctoral",
+            "AI Academic",
+            "AI Summer",
+            "COST \nConference",
             "ABC Research",
+            "HTW Berlin",
+            "IDA Institute",
+            "REFIND Robust",
+            "ASE Bucharest",
+            "HU \nBerlin",
+            "MSCA \nDoctoral",
+            "DT Pele",
+            "YCH Chen",
+            "University of Applied Sciences",
+            "COST Fin",
             "ASE Bucuresti",
-            "CYH Chen",
             "HWR Berlin",
+            "AI Germany",
+            "CYH Chen",
             "AI Annual"
           ],
           "total_international": 24
@@ -5322,9 +5332,9 @@
         "members": {
           "count": 4,
           "names": [
+            "Eleni Anastasopoulou",
             "Paschalis Terzis",
             "Apostolos Chalkis",
-            "Eleni Anastasopoulou",
             "Planned Actions"
           ]
         },
@@ -5332,17 +5342,17 @@
           "total_mentioned": 0,
           "with_acknowledgment": 0,
           "journals": [
+            "Markets Research",
             "Journal of Payments Strategy",
+            "Finance Research",
+            "Journal of Finance and Economics",
             "Sustainable Finance",
+            "Journal of Sustainable Finance",
             "Journal of Economic\nBehavior and Organization",
+            "Financial Economics",
             "Business Research",
             "Journal of Business Research",
-            "Journal of Finance and Economics",
-            "Behavioral Finance",
-            "Markets Research",
-            "Finance Research",
-            "Financial Economics",
-            "Journal of Sustainable Finance"
+            "Behavioral Finance"
           ]
         },
         "events": {
@@ -5373,24 +5383,24 @@
         },
         "collaborations": {
           "universities": [
-            "MC Substitute",
+            "Cyprus University",
+            "Hellenic Open University",
+            "AI Country",
+            "AUEB\nApostolos",
+            "University of Piraeus\nProf",
+            "Lancaster University",
+            "University of East Anglia",
+            "Armenia State University",
+            "AUEB\nOther",
+            "MC Members",
+            "SME Finance",
+            "COST Fin",
             "ATHENA Research",
             "University of Economics",
-            "University of East Anglia",
-            "AUEB\nOther",
-            "AI Country",
-            "University of Technology\nNew",
-            "Cyprus University",
-            "Lancaster University",
-            "University of Athens",
-            "Armenia State University",
-            "MC Members",
+            "MC Substitute",
             "Athens University",
-            "Hellenic Open University",
-            "University of Piraeus\nProf",
-            "SME Finance",
-            "AUEB\nApostolos",
-            "COST Fin"
+            "University of Athens",
+            "University of Technology\nNew"
           ],
           "total_international": 18
         }
@@ -5546,9 +5556,9 @@
         "members": {
           "count": 3,
           "names": [
-            "Tuan Trinh",
+            "Planned Actions",
             "Location Centre",
-            "Planned Actions"
+            "Tuan Trinh"
           ]
         },
         "publications": {
@@ -5556,9 +5566,9 @@
           "with_acknowledgment": 0,
           "journals": [
             "Computer Science",
-            "Digital Finance",
+            "Service Science",
             "Principal Research",
-            "Service Science"
+            "Digital Finance"
           ]
         },
         "events": {
@@ -5590,16 +5600,16 @@
         "collaborations": {
           "universities": [
             "VGM\n\nStatistical",
-            "IGI Global",
-            "EIT Digital",
             "AI Country",
-            "IADIS Press",
-            "SME\nVocational",
-            "NFT\nDigital",
-            "MC Members",
-            "ELTE English",
             "SME\nCourses",
-            "COST Fin"
+            "IGI Global",
+            "MC Members",
+            "COST Fin",
+            "EIT Digital",
+            "NFT\nDigital",
+            "SME\nVocational",
+            "ELTE English",
+            "IADIS Press"
           ],
           "total_international": 9
         }
@@ -5968,11 +5978,11 @@
         },
         "collaborations": {
           "universities": [
-            "AI Rethymno",
             "AI Country",
             "HED Cooperation",
-            "AI Tools",
-            "COST Fin"
+            "AI Rethymno",
+            "COST Fin",
+            "AI Tools"
           ],
           "total_international": 5
         }
@@ -6093,8 +6103,8 @@
       },
       "gallery_images": [
         {
-          "filename": "2024_placeholder.png",
-          "path": "contributions/is/2024_placeholder.png",
+          "filename": "2024_title.png",
+          "path": "contributions/is/2024_title.png",
           "year": 2024
         }
       ],
@@ -6136,11 +6146,11 @@
           "with_acknowledgment": 0,
           "journals": [
             "Journal of International Financial Markets",
-            "Series Research",
             "Irish Finance",
-            "Narrative Finance",
             "Digital Finance",
-            "Journal of Financial Transformation"
+            "Narrative Finance",
+            "Journal of Financial Transformation",
+            "Series Research"
           ]
         },
         "events": {
@@ -6298,23 +6308,23 @@
         "members": {
           "count": 4,
           "names": [
-            "Stefan Thurner",
-            "Juri Marcucci",
             "Nial Friel",
-            "Rita Cappariello"
+            "Stefan Thurner",
+            "Rita Cappariello",
+            "Juri Marcucci"
           ]
         },
         "publications": {
           "total_mentioned": 15,
           "with_acknowledgment": 0,
           "journals": [
-            "Frontiers in Applied Mathematics and Statistics",
             "Annals of Operations Research",
+            "Frontiers in Applied Mathematics and Statistics",
             "Operations Research",
-            "Planning Science",
+            "Young Research",
             "Fintech Research",
-            "Data Science",
-            "Young Research"
+            "Planning Science",
+            "Data Science"
           ]
         },
         "events": {
@@ -6416,8 +6426,8 @@
         "collaborations": {
           "universities": [
             "University of Vienna",
-            "University of Calabria",
-            "University of Salerno"
+            "University of Salerno",
+            "University of Calabria"
           ],
           "total_international": 2
         }
@@ -6681,12 +6691,12 @@
         },
         "collaborations": {
           "universities": [
+            "IT Competitiveness",
             "COST Actions",
             "AI Country",
-            "IT Competitiveness",
-            "University of Prishtina",
             "COST Action",
-            "COST Fin"
+            "COST Fin",
+            "University of Prishtina"
           ],
           "total_international": 6
         }
@@ -6997,11 +7007,11 @@
           "total_mentioned": 4,
           "with_acknowledgment": 0,
           "journals": [
-            "Journal of Risk and Financial Management",
             "Journal of Information Management Data Insights",
-            "Literature Review",
             "Journal of Risk and \nFinancial Management",
-            "Literature \nReview"
+            "Literature Review",
+            "Literature \nReview",
+            "Journal of Risk and Financial Management"
           ]
         },
         "events": {
@@ -7066,21 +7076,21 @@
         },
         "collaborations": {
           "universities": [
+            "University of Latvia",
+            "AI Act",
+            "AI\nKeynote",
             "AI\nPublication",
+            "COST Action",
+            "III International",
+            "AIDA Serbia",
             "AI\nLatvia",
-            "Catholic \nUniversity",
+            "BRICS Countries",
+            "AI\nPublications",
             "University of Malta\nFocus",
             "University of Latvia\nFocus",
-            "BRICS Countries",
-            "AGP Model",
-            "AI Act",
-            "AI\nPublications",
+            "Catholic \nUniversity",
             "SICAV Fund",
-            "University of Latvia",
-            "III International",
-            "AI\nKeynote",
-            "COST Action",
-            "AIDA Serbia"
+            "AGP Model"
           ],
           "total_international": 11
         }
@@ -7330,8 +7340,8 @@
           "total_mentioned": 4,
           "with_acknowledgment": 0,
           "journals": [
-            "Digital finance",
-            "Frontiers in Artificial Intelligence"
+            "Frontiers in Artificial Intelligence",
+            "Digital finance"
           ]
         },
         "events": {
@@ -7374,12 +7384,12 @@
           "universities": [
             "AI\nSeptember",
             "Vilnius University",
-            "MC Substitute",
             "Kaunas University",
-            "MC Members",
-            "University of Technology",
             "COST Action",
-            "COST Fin"
+            "MC Members",
+            "COST Fin",
+            "University of Technology",
+            "MC Substitute"
           ],
           "total_international": 8
         }
@@ -7531,10 +7541,10 @@
           "with_acknowledgment": 0,
           "journals": [
             "Journal of Information Management Data Insights",
-            "Faculties\nResearch",
-            "Digital Finance",
             "Alternative Finance",
-            "Journal of Financial Transformation"
+            "Faculties\nResearch",
+            "Journal of Financial Transformation",
+            "Digital Finance"
           ]
         },
         "events": {
@@ -7587,16 +7597,16 @@
         },
         "collaborations": {
           "universities": [
-            "ICO\nCrowdfunding",
-            "AI Doctoral",
-            "AI Topics",
             "University of Twente",
+            "AI Topics",
             "AI Country",
-            "Delft University",
+            "ICO\nCrowdfunding",
             "MSCA Digital",
-            "DN Action",
             "Utrecht University",
+            "AI Doctoral",
+            "DN Action",
             "MC Members",
+            "Delft University",
             "COST Fin"
           ],
           "total_international": 11
@@ -7825,8 +7835,8 @@
         },
         "collaborations": {
           "universities": [
-            "IDAS\nRegulatory",
-            "AI North"
+            "AI North",
+            "IDAS\nRegulatory"
           ],
           "total_international": 2
         }
@@ -8070,9 +8080,9 @@
         "members": {
           "count": 3,
           "names": [
-            "Marcin Chlebus",
+            "Policy Implications",
             "Osowska Ewelina",
-            "Policy Implications"
+            "Marcin Chlebus"
           ]
         },
         "publications": {
@@ -8080,13 +8090,13 @@
           "with_acknowledgment": 0,
           "journals": [
             "Frontiers in Artificial Intelligence",
-            "National Science",
             "Blockchain Research",
-            "Quantitative Finance",
             "Bibliometric Research",
+            "Economic Science",
+            "National Science",
             "Data Science",
-            "Digital Finance",
-            "Economic Science"
+            "Quantitative Finance",
+            "Digital Finance"
           ]
         },
         "events": {
@@ -8161,17 +8171,17 @@
         },
         "collaborations": {
           "universities": [
-            "University of Warsaw",
-            "Humboldt University",
-            "Economic Sciences University",
-            "University of Economics",
-            "COST Fintech",
             "AI Country",
+            "Humboldt University",
             "AFFINE Training",
-            "XAI Tools",
+            "COST Fintech",
             "MC Members",
             "COST Action",
-            "COST Fin"
+            "COST Fin",
+            "University of Warsaw",
+            "University of Economics",
+            "Economic Sciences University",
+            "XAI Tools"
           ],
           "total_international": 11
         }
@@ -8305,8 +8315,8 @@
       },
       "gallery_images": [
         {
-          "filename": "2023_placeholder.png",
-          "path": "contributions/pl/2023_placeholder.png",
+          "filename": "2023_title.png",
+          "path": "contributions/pl/2023_title.png",
           "year": 2023
         }
       ],
@@ -8342,11 +8352,11 @@
         "members": {
           "count": 5,
           "names": [
-            "Layer Perceptron",
+            "Contribution Topics",
             "Main Aims",
             "Bernardete Ribeiro",
-            "Catarina Silva",
-            "Contribution Topics"
+            "Layer Perceptron",
+            "Catarina Silva"
           ]
         },
         "publications": {
@@ -8422,18 +8432,18 @@
         },
         "collaborations": {
           "universities": [
+            "Substitutes\nUniversity",
+            "MC Committee",
+            "MC Substitutes",
+            "MC Meeting",
             "UCD Michael",
             "MC\nCatarina",
-            "AI Algorithms",
-            "MC Committee",
-            "Substitutes\nUniversity",
             "UTAD\n\nContribution",
-            "SHAP Applicability",
-            "MC Substitutes",
             "University of Coimbra",
-            "University of Pavia",
+            "SHAP Applicability",
             "COST Conference",
-            "MC Meeting"
+            "University of Pavia",
+            "AI Algorithms"
           ],
           "total_international": 11
         }
@@ -8689,35 +8699,35 @@
         "members": {
           "count": 11,
           "names": [
+            "Napoca\nIoana Coita",
+            "Bin Lin",
+            "The Unchain Festival",
+            "Tsung Chen",
+            "Pricing Kernel Puzzles",
+            "Wen Teng",
+            "Napoca\nMonica Achim",
+            "Hsuan Chen",
             "Traian Pele",
             "Napoca\nVasile Strat",
-            "Napoca\nMonica Achim",
-            "Wen Teng",
-            "Brussels\nIstanbul\nCoimbra",
-            "Hsuan Chen",
-            "Bin Lin",
-            "Pricing Kernel Puzzles",
-            "Napoca\nIoana Coita",
-            "The Unchain Festival",
-            "Tsung Chen"
+            "Brussels\nIstanbul\nCoimbra"
           ]
         },
         "publications": {
           "total_mentioned": 13,
           "with_acknowledgment": 0,
           "journals": [
-            "Markets Review",
-            "Exploring Research",
+            "Energy Finance",
+            "Finance Research",
+            "Applied Science",
+            "International Finance",
             "Blockchain Research",
             "Young Research",
-            "International Finance",
+            "Exploring Research",
             "Corporate Finance",
-            "Quantitative Finance",
-            "Finance Research",
+            "Markets Review",
             "Data Science",
-            "Digital Finance",
-            "Applied Science",
-            "Energy Finance"
+            "Quantitative Finance",
+            "Digital Finance"
           ]
         },
         "events": {
@@ -8865,26 +8875,26 @@
         },
         "collaborations": {
           "universities": [
+            "University of Essex",
+            "HTW Berlin",
             "AI Git",
-            "STSM Machine",
             "LLM Va",
-            "AI Community",
-            "AI Innovations",
+            "University of Economic Studies",
             "Charles University",
             "UBB Cluj",
-            "University of Essex",
-            "AI Tools",
-            "University of Leibniz",
-            "Masaryk University",
-            "ML Models",
-            "BRC Blockchain",
-            "COST Fin",
-            "FRM Links",
-            "ML Conference",
             "AI Action",
-            "HTW Berlin",
-            "University of Economic Studies",
-            "University of Applied Sciences"
+            "ML Conference",
+            "UO Oradea",
+            "AI Tools",
+            "ML Models",
+            "Masaryk University",
+            "AI Innovations",
+            "University of Leibniz",
+            "FRM Links",
+            "BRC Blockchain",
+            "AI Ph",
+            "University of Applied Sciences",
+            "COST Fin"
           ],
           "total_international": 25
         }
@@ -9330,18 +9340,18 @@
         },
         "collaborations": {
           "universities": [
-            "CFA Society",
-            "BELEX Dataset",
-            "MC Substitute",
-            "University of Economics Bratislava",
-            "AI Serbian",
-            "FINIZ\nWoman",
-            "University of Belgrade",
             "FINIZ\nInternational",
-            "FINIZ\nEspoo",
             "Singidunum University",
+            "University of Economics Bratislava",
+            "University of Belgrade",
+            "MC Meeting",
+            "FINIZ\nWoman",
+            "BELEX Dataset",
+            "AI Serbian",
+            "FINIZ\nEspoo",
             "FINIZ\n\nConferences",
-            "MC Meeting"
+            "CFA Society",
+            "MC Substitute"
           ],
           "total_international": 10
         }
@@ -9685,10 +9695,10 @@
         "members": {
           "count": 8,
           "names": [
-            "Miroslav Hudec",
             "Based Systems",
             "Jana Peliova",
-            "Marek Kacer"
+            "Marek Kacer",
+            "Miroslav Hudec"
           ]
         },
         "publications": {
@@ -9765,16 +9775,16 @@
         "collaborations": {
           "universities": [
             "IEEE International",
-            "AI Rethymno",
-            "University of Economics",
             "Maria Ianario University",
             "AI Country",
-            "BFH\nNot",
-            "University of Naples Federico",
             "HED Cooperation",
-            "STSM Ioana",
+            "University of Naples Federico",
+            "AI Rethymno",
+            "COST Fin",
             "AI Tools",
-            "COST Fin"
+            "STSM Ioana",
+            "University of Economics",
+            "BFH\nNot"
           ],
           "total_international": 10
         }
@@ -9963,8 +9973,13 @@
       },
       "gallery_images": [
         {
-          "filename": "2023_placeholder.png",
-          "path": "contributions/sk/2023_placeholder.png",
+          "filename": "2024_title.png",
+          "path": "contributions/sk/2024_title.png",
+          "year": 2024
+        },
+        {
+          "filename": "2023_title.png",
+          "path": "contributions/sk/2023_title.png",
           "year": 2023
         }
       ],
@@ -10112,11 +10127,11 @@
           "total_mentioned": 0,
           "with_acknowledgment": 0,
           "journals": [
+            "Applied Science",
+            "Narrative Finance",
             "Sustainable Finance",
             "Data Science",
-            "Narrative Finance",
-            "Digital Finance",
-            "Applied Science"
+            "Digital Finance"
           ]
         },
         "events": {
@@ -10148,17 +10163,17 @@
         },
         "collaborations": {
           "universities": [
-            "University of Applied Sciences",
-            "University of Twente",
             "ESG Scoring",
-            "AI Country",
-            "COST Events",
+            "University of Twente",
             "COST Funded",
-            "Bern University",
-            "VIX Index",
+            "AI Country",
             "MC Member",
+            "VIX Index",
             "Zurich University",
-            "COST Fin"
+            "COST Events",
+            "University of Applied Sciences",
+            "COST Fin",
+            "Bern University"
           ],
           "total_international": 11
         }
@@ -10336,27 +10351,27 @@
         "members": {
           "count": 34,
           "names": [
-            "Davutpasa Campus",
+            "Future Plans",
             "Women Editors",
             "Other Responsibilities",
-            "Future Plans"
+            "Davutpasa Campus"
           ]
         },
         "publications": {
           "total_mentioned": 0,
           "with_acknowledgment": 0,
           "journals": [
-            "Business Economics",
             "And Economics",
-            "Sustainable Finance",
-            "Young Research",
-            "Related Research",
-            "Digital Finance",
-            "Computational Economics",
-            "Data Science",
+            "Business Economics",
+            "Frontiers in AI",
             "Journal of Business Ethics in",
+            "Young Research",
+            "Sustainable Finance",
+            "Computational Economics",
+            "Related Research",
             "Systematic Review",
-            "Frontiers in AI"
+            "Data Science",
+            "Digital Finance"
           ]
         },
         "events": {
@@ -10425,26 +10440,26 @@
         },
         "collaborations": {
           "universities": [
-            "Yildiz Technical University",
-            "AI Country",
-            "COST Digi",
-            "OECD Countries",
-            "Koc University",
-            "COST Virtual",
-            "TED University",
-            "IISE Transactions",
-            "Ankara Medipol University",
-            "AI Topics",
-            "Kadir Has University",
+            "AI Summer",
             "MC Member",
-            "COST Fin",
-            "ESG Application",
+            "CG Coordinator",
+            "Bulent Ecevit University",
+            "MC Members",
             "AI  Book",
+            "Yildiz Technical University",
+            "IISE Transactions",
+            "ESG Application",
+            "OECD Countries",
+            "AI Topics",
+            "COST Virtual",
             "AI Istanbul",
-            "NFT Portfolio",
-            "Ozyegin University",
+            "Kadir Has University",
+            "Koc University",
+            "Ankara Medipol University",
+            "AI Country",
             "AI Meets",
-            "Bulent Ecevit University"
+            "Ozyegin University",
+            "COST Fin"
           ],
           "total_international": 23
         }
