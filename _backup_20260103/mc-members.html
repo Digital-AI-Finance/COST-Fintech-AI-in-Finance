@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Management Committee - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        nav .logo span {
+            color: var(--cost-orange);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%);
+            color: white;
+            padding: 6rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            opacity: 0.9;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .filters {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .filters input[type="text"] {
+            flex: 1;
+            min-width: 250px;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        .filters select {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            background: white;
+            min-width: 180px;
+        }
+
+        .filters input:focus,
+        .filters select:focus {
+            outline: none;
+            border-color: var(--cost-purple);
+        }
+
+        .results-info {
+            margin-bottom: 1rem;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .members-table {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--cost-purple);
+            color: white;
+            font-weight: 500;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            background: var(--cost-blue);
+        }
+
+        th.sorted-asc::after {
+            content: ' ^';
+        }
+
+        th.sorted-desc::after {
+            content: ' v';
+        }
+
+        tr:hover {
+            background: rgba(91, 45, 138, 0.03);
+        }
+
+        td {
+            font-size: 0.9rem;
+        }
+
+        .name-cell {
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .name-cell a {
+            color: var(--cost-purple);
+            text-decoration: none;
+        }
+
+        .name-cell a:hover {
+            text-decoration: underline;
+        }
+
+        .affiliation-cell {
+            color: var(--gray);
+            font-size: 0.85rem;
+            max-width: 300px;
+        }
+
+        .country-cell {
+            color: var(--cost-blue);
+            white-space: nowrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            margin-left: 0.3rem;
+        }
+
+        .badge-itc {
+            background: rgba(232, 119, 34, 0.1);
+            color: var(--cost-orange);
+        }
+
+        .wg-badges {
+            display: flex;
+            gap: 0.3rem;
+            flex-wrap: wrap;
+        }
+
+        .wg-badge {
+            display: inline-block;
+            padding: 0.2rem 0.4rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        .wg-badge.wg1 { background: rgba(91, 45, 138, 0.1); color: var(--cost-purple); }
+        .wg-badge.wg2 { background: rgba(43, 95, 158, 0.1); color: var(--cost-blue); }
+        .wg-badge.wg3 { background: rgba(122, 184, 0, 0.1); color: var(--cost-green); }
+
+        .orcid-link {
+            color: var(--cost-green);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        .orcid-link:hover {
+            text-decoration: underline;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--gray);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: var(--cost-orange);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            nav ul { display: none; }
+            .filters { flex-direction: column; }
+            .filters input[type="text"],
+            .filters select { width: 100%; }
+            th, td { padding: 0.75rem 0.5rem; font-size: 0.8rem; }
+            .stats-row { gap: 1.5rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">COST <span>CA19130</span></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="mc-members.html" style="color: white; font-weight: 600;">MC</a></li>
+                <li><a href="wg-members.html">WG</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="midterm-report.html">Mid-Term</a></li>
+                <li><a href="progress-reports.html">Progress</a></li>
+                <li><a href="final-report.html">Final</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Management Committee</h1>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <div class="stats-row">
+            <div class="stat-item">
+                <div class="stat-number" id="totalMembers">-</div>
+                <div class="stat-label">MC Members</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalCountries">-</div>
+                <div class="stat-label">Countries</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="itcCount">-</div>
+                <div class="stat-label">ITC Members</div>
+            </div>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search by name, affiliation, or country...">
+            <select id="countryFilter">
+                <option value="">All Countries</option>
+            </select>
+            <select id="wgFilter">
+                <option value="">All Working Groups</option>
+                <option value="wg1">WG1 - Transparency in FinTech</option>
+                <option value="wg2">WG2 - Decision-Support Models</option>
+                <option value="wg3">WG3 - Investment Products</option>
+            </select>
+        </div>
+
+        <div class="results-info" id="resultsInfo">Loading...</div>
+
+        <div class="members-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th data-sort="name">Name</th>
+                        <th data-sort="affiliation">Affiliation</th>
+                        <th data-sort="country">Country</th>
+                        <th>Working Groups</th>
+                        <th>ORCID</th>
+                    </tr>
+                </thead>
+                <tbody id="membersBody">
+                    <tr><td colspan="5" class="loading">Loading MC members...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="index.html">Home</a> | <a href="leadership.html">Leadership</a> | <a href="wg-members.html">Working Groups</a> | <a href="publications.html">Publications</a></p>
+        <p style="margin-top: 1rem; opacity: 0.7;">COST Action CA19130 - Fintech and AI in Finance</p>
+    </footer>
+
+    <script>
+        let mcData = null;
+        let filteredMembers = [];
+        let sortColumn = 'country';
+        let sortDirection = 'asc';
+
+        // Load MC members data
+        fetch('data/mc_members.json')
+            .then(response => response.json())
+            .then(data => {
+                mcData = data;
+                filteredMembers = [...data.members];
+
+                // Update header stats
+                document.getElementById('totalMembers').textContent = data.metadata.totalMembers;
+                document.getElementById('totalCountries').textContent = data.metadata.countries;
+                document.getElementById('itcCount').textContent = data.members.filter(m => m.itc).length;
+
+                // Populate country filter
+                populateCountryFilter();
+
+                // Initial render
+                sortMembers();
+                renderTable();
+            })
+            .catch(err => {
+                console.error('Error loading MC members:', err);
+                document.getElementById('membersBody').innerHTML =
+                    '<tr><td colspan="5" class="loading">Unable to load MC member data.</td></tr>';
+            });
+
+        function populateCountryFilter() {
+            const countries = [...new Set(mcData.members.map(m => m.country))].sort();
+            const select = document.getElementById('countryFilter');
+            countries.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country;
+                option.textContent = country;
+                select.appendChild(option);
+            });
+        }
+
+        function filterMembers() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const country = document.getElementById('countryFilter').value;
+            const wg = document.getElementById('wgFilter').value;
+
+            filteredMembers = mcData.members.filter(m => {
+                const matchesSearch = !search ||
+                    m.name.toLowerCase().includes(search) ||
+                    (m.affiliation && m.affiliation.toLowerCase().includes(search)) ||
+                    m.country.toLowerCase().includes(search);
+
+                const matchesCountry = !country || m.country === country;
+
+                const matchesWG = !wg ||
+                    (wg === 'wg1' && m.wg1) ||
+                    (wg === 'wg2' && m.wg2) ||
+                    (wg === 'wg3' && m.wg3);
+
+                return matchesSearch && matchesCountry && matchesWG;
+            });
+
+            sortMembers();
+            renderTable();
+        }
+
+        function sortMembers() {
+            filteredMembers.sort((a, b) => {
+                let valA = a[sortColumn] || '';
+                let valB = b[sortColumn] || '';
+                if (typeof valA === 'string') valA = valA.toLowerCase();
+                if (typeof valB === 'string') valB = valB.toLowerCase();
+                if (valA < valB) return sortDirection === 'asc' ? -1 : 1;
+                if (valA > valB) return sortDirection === 'asc' ? 1 : -1;
+                return 0;
+            });
+        }
+
+        function handleSort(column) {
+            if (sortColumn === column) {
+                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortColumn = column;
+                sortDirection = 'asc';
+            }
+
+            // Update header indicators
+            document.querySelectorAll('th').forEach(th => {
+                th.classList.remove('sorted-asc', 'sorted-desc');
+                if (th.dataset.sort === sortColumn) {
+                    th.classList.add(sortDirection === 'asc' ? 'sorted-asc' : 'sorted-desc');
+                }
+            });
+
+            sortMembers();
+            renderTable();
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('membersBody');
+
+            if (filteredMembers.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="5" class="loading">No members match your filters.</td></tr>';
+                document.getElementById('resultsInfo').textContent = 'No results';
+                return;
+            }
+
+            document.getElementById('resultsInfo').textContent =
+                `Showing ${filteredMembers.length} of ${mcData.members.length} MC members`;
+
+            tbody.innerHTML = filteredMembers.map(m => {
+                // WG badges
+                const wgBadges = [];
+                if (m.wg1) wgBadges.push('<span class="wg-badge wg1">WG1</span>');
+                if (m.wg2) wgBadges.push('<span class="wg-badge wg2">WG2</span>');
+                if (m.wg3) wgBadges.push('<span class="wg-badge wg3">WG3</span>');
+
+                // Name with optional ITC badge
+                const itcBadge = m.itc ? '<span class="badge badge-itc">ITC</span>' : '';
+
+                // ORCID link
+                const orcidHtml = m.orcid ?
+                    `<a href="https://orcid.org/${m.orcid}" target="_blank" class="orcid-link">${m.orcid}</a>` :
+                    '-';
+
+                // Name with optional homepage link
+                const nameHtml = m.homepage ?
+                    `<a href="${m.homepage}" target="_blank">${m.name}</a>` :
+                    m.name;
+
+                return `
+                    <tr>
+                        <td class="name-cell">${nameHtml}${itcBadge}</td>
+                        <td class="affiliation-cell">${m.affiliation || '-'}</td>
+                        <td class="country-cell">${m.country}</td>
+                        <td><div class="wg-badges">${wgBadges.join('') || '-'}</div></td>
+                        <td>${orcidHtml}</td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', filterMembers);
+        document.getElementById('countryFilter').addEventListener('change', filterMembers);
+        document.getElementById('wgFilter').addEventListener('change', filterMembers);
+
+        // Sort on header click
+        document.querySelectorAll('th[data-sort]').forEach(th => {
+            th.addEventListener('click', () => handleSort(th.dataset.sort));
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documents - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        .hero { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 7rem 2rem 3rem; text-align: center; }
+        .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .hero p { opacity: 0.9; }
+        .content { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+        .stats { display: flex; justify-content: center; gap: 3rem; background: white; padding: 1.5rem; border-radius: 12px; margin: -2rem auto 2rem; max-width: 600px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); position: relative; z-index: 10; }
+        .stat { text-align: center; }
+        .stat .num { font-size: 2rem; font-weight: 700; color: var(--cost-purple); }
+        .stat .label { font-size: 0.8rem; color: var(--gray); }
+        .search { margin-bottom: 2rem; }
+        .search input { width: 100%; padding: 1rem; border: 2px solid var(--border); border-radius: 8px; font-size: 1rem; }
+        .search input:focus { outline: none; border-color: var(--cost-purple); }
+        .folders { margin-bottom: 2rem; }
+        .folder { background: white; border-radius: 12px; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden; }
+        .folder-header { background: linear-gradient(135deg, rgba(91,45,138,0.08), rgba(43,95,158,0.08)); padding: 1rem 1.5rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+        .folder-header:hover { background: linear-gradient(135deg, rgba(91,45,138,0.12), rgba(43,95,158,0.12)); }
+        .folder-header h3 { color: var(--cost-purple); font-size: 1rem; }
+        .folder-header .count { background: var(--cost-purple); color: white; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.75rem; }
+        .folder-content { padding: 0 1.5rem; max-height: 0; overflow: hidden; transition: max-height 0.3s, padding 0.3s; }
+        .folder-content.open { max-height: 2000px; padding: 1rem 1.5rem; }
+        .doc-item { display: flex; justify-content: space-between; align-items: center; padding: 0.8rem 0; border-bottom: 1px solid var(--border); }
+        .doc-item:last-child { border-bottom: none; }
+        .doc-item a { color: var(--cost-blue); text-decoration: none; font-size: 0.9rem; }
+        .doc-item a:hover { text-decoration: underline; }
+        .doc-item .meta { font-size: 0.8rem; color: var(--gray); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .stats { flex-direction: column; gap: 1rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="documents.html">Documents</a></li>
+                <li><a href="midterm-report.html">Mid-Term Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Document Library</h1>
+        <p>All extracted PDF documents converted to searchable HTML</p>
+    </header>
+
+    <div class="stats">
+        <div class="stat"><div class="num">128</div><div class="label">Documents</div></div>
+        <div class="stat"><div class="num">2443</div><div class="label">Pages</div></div>
+        <div class="stat"><div class="num">23</div><div class="label">Folders</div></div>
+    </div>
+
+    <main class="content">
+        <div class="search">
+            <input type="text" id="searchInput" placeholder="Search documents..." onkeyup="filterDocs()">
+        </div>
+
+        <div class="folders" id="folderList">
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder1')">
+                <h3>1st_Round_Online_Application</h3>
+                <span class="count">1 docs</span>
+            </div>
+            <div class="folder-content" id="folder1">
+            <div class="doc-item">
+                <a href="COST CIG CA19130 Application 2024.01.24.html">COST CIG CA19130 Application 2024.01.24</a>
+                <span class="meta">14 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder2')">
+                <h3>1st_Step_Online_Application</h3>
+                <span class="count">5 docs</span>
+            </div>
+            <div class="folder-content" id="folder2">
+            <div class="doc-item">
+                <a href="COST-088-21-Level-A-Rules-and-Principles-for-COST-Activities.html">COST 088 21 Level A Rules and Principles for COST Activities</a>
+                <span class="meta">14 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-094-21-Annotated-Rules-for-COST-Actions-Level-C-V1.4-Final-.html">COST 094 21 Annotated Rules for COST Actions Level C V1.4 Final</a>
+                <span class="meta">111 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-098-21-v.1.1-Rules-for-COST-Innovators-Grants-Level-B.html">COST 098 21 v.1.1 Rules for COST Innovators Grants Level B</a>
+                <span class="meta">12 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-CIG-FAQ-2024-2025.html">COST CIG FAQ 2024 2025</a>
+                <span class="meta">11 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="glossary.html">glossary</a>
+                <span class="meta">7 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder3')">
+                <h3>2023</h3>
+                <span class="count">10 docs</span>
+            </div>
+            <div class="folder-content" id="folder3">
+            <div class="doc-item">
+                <a href="20230927_FinAI Germany update.html">20230927 FinAI Germany update</a>
+                <span class="meta">12 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST Action.Latvia.update.2023.pptx.html">COST Action.Latvia.update.2023.pptx</a>
+                <span class="meta">5 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST_FinAI_Bulgaria_September_2023_FinTech_Report.html">COST FinAI Bulgaria September 2023 FinTech Report</a>
+                <span class="meta">97 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST_FinAI_Bulgaria_September_2023.pptx.html">COST FinAI Bulgaria September 2023.pptx</a>
+                <span class="meta">2 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST FinAI Country Update 2023 Austria.html">COST FinAI Country Update 2023 Austria</a>
+                <span class="meta">6 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST_FinAI_Czechia_update_2023.html">COST FinAI Czechia update 2023</a>
+                <span class="meta">6 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST_FinAI_Kosovo_2023.html">COST FinAI Kosovo 2023</a>
+                <span class="meta">5 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-FinAI-MK.html">COST FinAI MK</a>
+                <span class="meta">5 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST_FinAi_Estonia_2023.html">COST FinAi Estonia 2023</a>
+                <span class="meta">3 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST_FinAi_Estonia_2023_additional_report_about_country.html">COST FinAi Estonia 2023 additional report about country</a>
+                <span class="meta">31 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder4')">
+                <h3>2024</h3>
+                <span class="count">1 docs</span>
+            </div>
+            <div class="folder-content" id="folder4">
+            <div class="doc-item">
+                <a href="COST_FinAI_Czechia_update_2024.html">COST FinAI Czechia update 2024</a>
+                <span class="meta">6 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder5')">
+                <h3>2024_COST Innovators Grant</h3>
+                <span class="count">5 docs</span>
+            </div>
+            <div class="folder-content" id="folder5">
+            <div class="doc-item">
+                <a href="COST-088-21-Level-A-Rules-and-Principles-for-COST-Activities.html">COST 088 21 Level A Rules and Principles for COST Activities</a>
+                <span class="meta">14 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-094-21-Annotated-Rules-for-COST-Actions-Level-C-V1.4-Final-.html">COST 094 21 Annotated Rules for COST Actions Level C V1.4 Final</a>
+                <span class="meta">111 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-098-21-v.1.1-Rules-for-COST-Innovators-Grants-Level-B.html">COST 098 21 v.1.1 Rules for COST Innovators Grants Level B</a>
+                <span class="meta">12 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-CIG-FAQ-2024-2025.html">COST CIG FAQ 2024 2025</a>
+                <span class="meta">11 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="glossary.html">glossary</a>
+                <span class="meta">7 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder6')">
+                <h3>2nd_Round_Hearings</h3>
+                <span class="count">1 docs</span>
+            </div>
+            <div class="folder-content" id="folder6">
+            <div class="doc-item">
+                <a href="IG19130 Evaluation report.html">IG19130 Evaluation report</a>
+                <span class="meta">3 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder7')">
+                <h3>COST Documents</h3>
+                <span class="count">5 docs</span>
+            </div>
+            <div class="folder-content" id="folder7">
+            <div class="doc-item">
+                <a href="COST-088-21-Level-A-Rules-and-Principles-for-COST-Activities.html">COST 088 21 Level A Rules and Principles for COST Activities</a>
+                <span class="meta">14 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-094-21-Annotated-Rules-for-COST-Actions-Level-C-V1.4-Final-.html">COST 094 21 Annotated Rules for COST Actions Level C V1.4 Final</a>
+                <span class="meta">111 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-098-21-v.1.1-Rules-for-COST-Innovators-Grants-Level-B.html">COST 098 21 v.1.1 Rules for COST Innovators Grants Level B</a>
+                <span class="meta">12 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-CIG-FAQ-2024-2025.html">COST CIG FAQ 2024 2025</a>
+                <span class="meta">11 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="glossary.html">glossary</a>
+                <span class="meta">7 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder8')">
+                <h3>COST GPs Annual Reports</h3>
+                <span class="count">15 docs</span>
+            </div>
+            <div class="folder-content" id="folder8">
+            <div class="doc-item">
+                <a href="ANNEX-A-AGA-CA19130-3.html">ANNEX A AGA CA19130 3</a>
+                <span class="meta">4 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="ANNEX-A-R1_AGA-CA19130-1.html">ANNEX A R1 AGA CA19130 1</a>
+                <span class="meta">3 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="ANNEX-A-R1_AGA-CA19130-2.html">ANNEX A R1 AGA CA19130 2</a>
+                <span class="meta">5 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="ANNEX-A-R1_AGA-CA19130-4.html">ANNEX A R1 AGA CA19130 4</a>
+                <span class="meta">5 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="ANNEX-A-R1_AGA-CA19130-5.html">ANNEX A R1 AGA CA19130 5</a>
+                <span class="meta">5 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CA19130-e.html">CA19130 e</a>
+                <span class="meta">21 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="FinalInfograficG2-Nov 2021 to May2022.html">FinalInfograficG2 Nov 2021 to May2022</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="InfograficNovember 2022 to October 2023​.html">InfograficNovember 2022 to October 2023​</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Report Nov 2021 to Mai 2022 COST Action CA19130finalfinalfinalfinal.html">Report Nov 2021 to Mai 2022 COST Action CA19130finalfinalfinalfinal</a>
+                <span class="meta">40 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="WBP-AGA-CA19130-1_13682.html">WBP AGA CA19130 1 13682</a>
+                <span class="meta">12 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="WBP-AGA-CA19130-2_14713.html">WBP AGA CA19130 2 14713</a>
+                <span class="meta">22 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="WBP-AGA-CA19130-3_14714.html">WBP AGA CA19130 3 14714</a>
+                <span class="meta">17 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="WBP-AGA-CA19130-4_15816.html">WBP AGA CA19130 4 15816</a>
+                <span class="meta">25 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="WBP-AGA-CA19130-5_16959 (1).html">WBP AGA CA19130 5 16959</a>
+                <span class="meta">29 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="second_progress_report-CA19130.html">second progress report CA19130</a>
+                <span class="meta">64 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder9')">
+                <h3>D8</h3>
+                <span class="count">1 docs</span>
+            </div>
+            <div class="folder-content" id="folder9">
+            <div class="doc-item">
+                <a href="SSRN-id4620106.html">SSRN id4620106</a>
+                <span class="meta">33 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder10')">
+                <h3>Evaluation 2023</h3>
+                <span class="count">5 docs</span>
+            </div>
+            <div class="folder-content" id="folder10">
+            <div class="doc-item">
+                <a href="COST_Open_Call_Applicant_Guidelines_oc-2023-1 (3).html">COST Open Call Applicant Guidelines oc 2023 1</a>
+                <span class="meta">30 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Evaluation_Criteria 2023.html">Evaluation Criteria 2023</a>
+                <span class="meta">30 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="OC-2023-1-26347_FULLPROPOSAL_PROPOSER (13).html">OC 2023 1 26347 FULLPROPOSAL PROPOSER</a>
+                <span class="meta">48 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="OC-2023-1-26347_TechnicalAnnex (7).html">OC 2023 1 26347 TechnicalAnnex</a>
+                <span class="meta">15 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Panel_Evaluation (3).html">Panel Evaluation</a>
+                <span class="meta">6 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder11')">
+                <h3>Evaluation Criteria 2024</h3>
+                <span class="count">4 docs</span>
+            </div>
+            <div class="folder-content" id="folder11">
+            <div class="doc-item">
+                <a href="COST-088-21-Level-A-Rules-and-Principles-for-COST-Activities.html">COST 088 21 Level A Rules and Principles for COST Activities</a>
+                <span class="meta">14 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-101-21-Submission-Evaluation-Selection-and-Approval-SESA-Level-B-.html">COST 101 21 Submission Evaluation Selection and Approval SESA Level B</a>
+                <span class="meta">15 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST_Open_Call_Announcement.html">COST Open Call Announcement</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST_Open_Call_Applicant_Guidelines_oc-2024-1.html">COST Open Call Applicant Guidelines oc 2024 1</a>
+                <span class="meta">28 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder12')">
+                <h3>Final Report</h3>
+                <span class="count">4 docs</span>
+            </div>
+            <div class="folder-content" id="folder12">
+            <div class="doc-item">
+                <a href="CA19130_FA_ActionChairReport_2024-06-17.html">CA19130 FA ActionChairReport 2024 06 17</a>
+                <span class="meta">34 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CA19130_FA_ActionChairReport_2024-06-17.html">CA19130 FA ActionChairReport 2024 06 17</a>
+                <span class="meta">34 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CA19130_PR2_ActionChairReport_2024-02-19.html">CA19130 PR2 ActionChairReport 2024 02 19</a>
+                <span class="meta">93 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CA19130_PR2_ActionChairReport_2024-02-19.html">CA19130 PR2 ActionChairReport 2024 02 19</a>
+                <span class="meta">93 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder13')">
+                <h3>FinalReport_in_progress</h3>
+                <span class="count">1 docs</span>
+            </div>
+            <div class="folder-content" id="folder13">
+            <div class="doc-item">
+                <a href="CA19130_FA_ActionChairReport_2026-01-02.html">CA19130 FA ActionChairReport 2026 01 02</a>
+                <span class="meta">91 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder14')">
+                <h3>GP4 Progress Report</h3>
+                <span class="count">2 docs</span>
+            </div>
+            <div class="folder-content" id="folder14">
+            <div class="doc-item">
+                <a href="CA19130_PR2_ActionChairReport_2024-02-19.html">CA19130 PR2 ActionChairReport 2024 02 19</a>
+                <span class="meta">93 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CA19130_PR2_ActionChairReport_2024-02-19.html">CA19130 PR2 ActionChairReport 2024 02 19</a>
+                <span class="meta">93 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder15')">
+                <h3>IP</h3>
+                <span class="count">2 docs</span>
+            </div>
+            <div class="folder-content" id="folder15">
+            <div class="doc-item">
+                <a href="ip_recommendation_en.html">ip recommendation en</a>
+                <span class="meta">9 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="ip_recommendation_en.html">ip recommendation en</a>
+                <span class="meta">9 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder16')">
+                <h3>LOS</h3>
+                <span class="count">40 docs</span>
+            </div>
+            <div class="folder-content" id="folder16">
+            <div class="doc-item">
+                <a href="AROBS_Romania.html">AROBS Romania</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Banca Trsnsilvania RO 20240502_LOS.html">Banca Trsnsilvania RO 20240502 LOS</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CARDO cig Signed.html">CARDO cig Signed</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CIG Letter Business Asociation Foundation for New Business Edu.html">CIG Letter Business Asociation Foundation for New Business Edu</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CIG Letter of Support TES.html">CIG Letter of Support TES</a>
+                <span class="meta">2 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CIG Letter of Support UNI Bank Skopje.html">CIG Letter of Support UNI Bank Skopje</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CIG_National Bank of Slovakia.html">CIG National Bank of Slovakia</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CIG_SL.Fintech.LV.html">CIG SL.Fintech.LV</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CIG_SL.LatviaFA.html">CIG SL.LatviaFA</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CIG_support_letter_C2DF_ILB_France.html">CIG support letter C2DF ILB France</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CIG support letter Easypay - Albania.html">CIG support letter Easypay Albania</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CY LOS from CCCI.html">CY LOS from CCCI</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CY LOS from SGBCy.html">CY LOS from SGBCy</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Croatia - LOS Croatian National Bank.html">Croatia LOS Croatian National Bank</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Croatia - LOS Hrvatska Postanska Banka.html">Croatia LOS Hrvatska Postanska Banka</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="FERD  Kosovo for CIG.html">FERD Kosovo for CIG</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Hungary_MHB -FinTechLab_2024-05-15 12.56.html">Hungary MHB FinTechLab 2024 05 15 12.56</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="IBAS_KOSOVA.html">IBAS KOSOVA</a>
+                <span class="meta">2 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Italy - VisionXAI modefinance.html">Italy VisionXAI modefinance</a>
+                <span class="meta">2 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Italy - oneef LOS_vs1.html">Italy oneef LOS vs1</a>
+                <span class="meta">2 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="LOS BME (Spain).html">LOS BME (Spain)</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="LOS-Cardo-AI.html">LOS Cardo AI</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="LOS-Croatian-National-Bank.html">LOS Croatian National Bank</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="LOS-Gizay-theBanksAssociation-Turkey.html">LOS Gizay theBanksAssociation Turkey</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="LOS IAF (Spain).html">LOS IAF (Spain)</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="LOS ITA (Spain).html">LOS ITA (Spain)</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="LOS Ibercaja (Spain).html">LOS Ibercaja (Spain)</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="LT_INVEGA_Letter of Support.html">LT INVEGA Letter of Support</a>
+                <span class="meta">2 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="LT_LB_Letter of Support for  COST Innovators Grant CIG Application LT.html">LT LB Letter of Support for COST Innovators Grant CIG Application LT</a>
+                <span class="meta">2 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="LT_Swedbank.html">LT Swedbank</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Letter of Support_UCILeR Portugal.html">Letter of Support UCILeR Portugal</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Letter of support RFC (Iceland).html">Letter of support RFC (Iceland)</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="North Macedonia GIG.html">North Macedonia GIG</a>
+                <span class="meta">0 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="PE Letter of Support for CIG.html">PE Letter of Support for CIG</a>
+                <span class="meta">2 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Poland LOS AIQLABS.html">Poland LOS AIQLABS</a>
+                <span class="meta">2 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Poland LOS Data Juice Lab.html">Poland LOS Data Juice Lab</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Poland LOS Quantum AI Foundation.html">Poland LOS Quantum AI Foundation</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Poland LOS Warsaw School of Economics.html">Poland LOS Warsaw School of Economics</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Portugal CIG_SupportLetter_FEUC_signed.html">Portugal CIG SupportLetter FEUC signed</a>
+                <span class="meta">1 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="Vision XAI Support HK-3 (Turkey).html">Vision XAI Support HK 3 (Turkey)</a>
+                <span class="meta">1 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder17')">
+                <h3>MidTermReport</h3>
+                <span class="count">3 docs</span>
+            </div>
+            <div class="folder-content" id="folder17">
+            <div class="doc-item">
+                <a href="CA19130_PR2_ActionChairReport_2024-06-27 (1).html">CA19130 PR2 ActionChairReport 2024 06 27</a>
+                <span class="meta">93 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CA19130_PR2_RapporteurReview_2024-06-27 (2).html">CA19130 PR2 RapporteurReview 2024 06 27</a>
+                <span class="meta">59 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CA19130_SecondProgressReportPublic_2024-06-27 (1).html">CA19130 SecondProgressReportPublic 2024 06 27</a>
+                <span class="meta">64 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder18')">
+                <h3>Progress Report</h3>
+                <span class="count">2 docs</span>
+            </div>
+            <div class="folder-content" id="folder18">
+            <div class="doc-item">
+                <a href="CA19130_PR2_ActionChairReport_2023-01-12 (4) (3).html">CA19130 PR2 ActionChairReport 2023 01 12 (4)</a>
+                <span class="meta">92 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CA19130_PR2_ActionChairReport_2023-01-12 (4) (3).html">CA19130 PR2 ActionChairReport 2023 01 12 (4)</a>
+                <span class="meta">92 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder19')">
+                <h3>Progress Report GP1 and GP2</h3>
+                <span class="count">2 docs</span>
+            </div>
+            <div class="folder-content" id="folder19">
+            <div class="doc-item">
+                <a href="CA19130_PR2_ActionChairReport_2022-08-21 (1).html">CA19130 PR2 ActionChairReport 2022 08 21</a>
+                <span class="meta">16 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="CA19130_PR2_ActionChairReport_2022-08-21 (1).html">CA19130 PR2 ActionChairReport 2022 08 21</a>
+                <span class="meta">16 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder20')">
+                <h3>SharePoint Folder</h3>
+                <span class="count">6 docs</span>
+            </div>
+            <div class="folder-content" id="folder20">
+            <div class="doc-item">
+                <a href="COST-088-21-Level-A-Rules-and-Principles-for-COST-Activities.html">COST 088 21 Level A Rules and Principles for COST Activities</a>
+                <span class="meta">14 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-094-21-Annotated-Rules-for-COST-Actions-Level-C-V1.4-Final-.html">COST 094 21 Annotated Rules for COST Actions Level C V1.4 Final</a>
+                <span class="meta">111 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-098-21-v.1.1-Rules-for-COST-Innovators-Grants-Level-B.html">COST 098 21 v.1.1 Rules for COST Innovators Grants Level B</a>
+                <span class="meta">12 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST CIG CA19130 Application_Submitted v3.html">COST CIG CA19130 Application Submitted v3</a>
+                <span class="meta">14 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST-CIG-FAQ-2024-2025.html">COST CIG FAQ 2024 2025</a>
+                <span class="meta">11 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="glossary.html">glossary</a>
+                <span class="meta">7 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder21')">
+                <h3>archive</h3>
+                <span class="count">5 docs</span>
+            </div>
+            <div class="folder-content" id="folder21">
+            <div class="doc-item">
+                <a href="2024.01.23 COST CIG CA19130 Application.html">2024.01.23 COST CIG CA19130 Application</a>
+                <span class="meta">14 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST CIG CA19130 Application 2024.01.23.html">COST CIG CA19130 Application 2024.01.23</a>
+                <span class="meta">14 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="COST CIG CA19130 Application 2024.01.24.html">COST CIG CA19130 Application 2024.01.24</a>
+                <span class="meta">14 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="This One COST CIG CA19130 Application.html">This One COST CIG CA19130 Application</a>
+                <span class="meta">14 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="This One COST CIG CA19130 Application 23.1.24 1815.html">This One COST CIG CA19130 Application 23.1.24 1815</a>
+                <span class="meta">14 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder22')">
+                <h3>drive-download-20260102T183306Z-1-001</h3>
+                <span class="count">7 docs</span>
+            </div>
+            <div class="folder-content" id="folder22">
+            <div class="doc-item">
+                <a href="1.html">1</a>
+                <span class="meta">7 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="2.html">2</a>
+                <span class="meta">4 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="3.html">3</a>
+                <span class="meta">6 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="4.html">4</a>
+                <span class="meta">15 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="5.html">5</a>
+                <span class="meta">2 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="6.html">6</a>
+                <span class="meta">8 pages</span>
+            </div>
+            <div class="doc-item">
+                <a href="7.html">7</a>
+                <span class="meta">11 pages</span>
+            </div>
+            </div>
+        </div>
+        <div class="folder">
+            <div class="folder-header" onclick="toggleFolder('folder23')">
+                <h3>leadership</h3>
+                <span class="count">1 docs</span>
+            </div>
+            <div class="folder-content" id="folder23">
+            <div class="doc-item">
+                <a href="Leadership_Positions.html">Leadership Positions</a>
+                <span class="meta">6 pages</span>
+            </div>
+            </div>
+        </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <p>Generated: 2026-01-02 20:41</p>
+    </footer>
+
+    <script>
+        function toggleFolder(id) {
+            const content = document.getElementById(id);
+            content.classList.toggle('open');
+        }
+
+        function filterDocs() {
+            const input = document.getElementById('searchInput').value.toLowerCase();
+            const items = document.querySelectorAll('.doc-item');
+            items.forEach(item => {
+                const text = item.textContent.toLowerCase();
+                item.style.display = text.includes(input) ? '' : 'none';
+            });
+        }
+
+        // Open first folder by default
+        document.querySelector('.folder-content')?.classList.add('open');
+    </script>
+</body>
+</html>

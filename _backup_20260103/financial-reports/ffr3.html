@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFR3 - Grant Period 3 - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .hero-small { background: linear-gradient(135deg, var(--cost-teal), var(--cost-blue)); color: white; padding: 3rem 2rem; text-align: center; }
+        .hero-small h1 { font-size: 2rem; }
+        .hero-small .period { font-size: 1.1rem; opacity: 0.9; margin-top: 0.5rem; }
+        section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: center; }
+        .stat-box { background: white; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; min-width: 150px; }
+        .stat-box .num { font-size: 2rem; font-weight: 700; color: var(--cost-teal); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; overflow-x: auto; }
+        .card h3 { font-size: 1.1rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: var(--cost-teal); color: white; padding: 10px; text-align: left; font-size: 0.85rem; }
+        td { padding: 10px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        tr:hover { background: rgba(0, 160, 176, 0.05); }
+        .amount { font-weight: 600; color: var(--cost-teal); }
+        .progress-bar { background: #e0e0e0; border-radius: 10px; height: 20px; overflow: hidden; margin-top: 0.5rem; }
+        .progress-fill { background: linear-gradient(90deg, var(--cost-teal), var(--cost-green)); height: 100%; border-radius: 10px; }
+        .ffr-nav { display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .ffr-nav a { padding: 0.5rem 1rem; background: white; border-radius: 8px; text-decoration: none; color: var(--cost-purple); box-shadow: 0 2px 10px rgba(0,0,0,0.08); font-weight: 500; }
+        .ffr-nav a:hover, .ffr-nav a.active { background: var(--cost-teal); color: white; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 500; }
+        .badge-yri { background: var(--cost-green); color: white; }
+        .badge-itc { background: rgba(232, 119, 34, 0.2); color: #b35c10; }
+        .highlight { background: rgba(0, 160, 176, 0.1); border-left: 4px solid var(--cost-teal); padding: 1rem; margin: 1rem 0; border-radius: 0 8px 8px 0; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="overview.html">Overview</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>FFR3</span>
+    </div>
+
+    <header class="hero-small">
+        <h1>Final Financial Report 3 (FFR3)</h1>
+        <p class="period">Grant Period 3: June 2022 - October 2022</p>
+    </header>
+
+    <section>
+        <div class="ffr-nav">
+            <a href="ffr1.html">FFR1</a>
+            <a href="ffr2.html">FFR2</a>
+            <a href="ffr3.html" class="active">FFR3</a>
+            <a href="ffr4.html">FFR4</a>
+            <a href="ffr5.html">FFR5</a>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num">169,821</div><div class="label">Budget EUR</div></div>
+            <div class="stat-box"><div class="num">166,262</div><div class="label">Actual EUR</div></div>
+            <div class="stat-box"><div class="num">98%</div><div class="label">Utilization</div></div>
+            <div class="stat-box"><div class="num">10</div><div class="label">STSMs</div></div>
+        </div>
+
+        <div class="highlight">
+            <strong>Peak Performance:</strong> GP3 achieved 98% budget utilization in just 5 months - the highest activity intensity in the Action's history. Post-pandemic recovery enabled extensive in-person collaboration.
+        </div>
+
+        <div class="card">
+            <h3>Budget Utilization</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 98%;"></div>
+            </div>
+            <p style="text-align: center; margin-top: 0.5rem; color: var(--gray);">166,262 EUR of 169,821 EUR budget utilized - exceptional performance</p>
+        </div>
+
+        <h2>Expenditure Breakdown</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr><th>Category</th><th>Budget EUR</th><th>Actual EUR</th><th>% Used</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Meetings</td><td class="amount">120,000</td><td class="amount">111,588</td><td>93.0%</td></tr>
+                    <tr><td>STSMs</td><td class="amount">25,000</td><td class="amount">24,140</td><td>96.6%</td></tr>
+                    <tr><td>ITC Conference Grants</td><td class="amount">3,000</td><td class="amount">2,343</td><td>78.1%</td></tr>
+                    <tr><td>Virtual Networking Support</td><td class="amount">6,000</td><td class="amount">6,000</td><td>100.0%</td></tr>
+                    <tr><td>Dissemination</td><td class="amount">1,000</td><td class="amount">540</td><td>54.0%</td></tr>
+                    <tr><td>FSAC</td><td class="amount">14,821</td><td class="amount">21,651</td><td>146.1%</td></tr>
+                    <tr style="background: rgba(0, 160, 176, 0.1); font-weight: 600;">
+                        <td>TOTAL</td><td class="amount">169,821</td><td class="amount">166,262</td><td>97.9%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>STSMs Funded in GP3</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr><th>Grantee</th><th>YRI</th><th>Home</th><th>Host</th><th>Start</th><th>End</th><th>Days</th><th>Amount</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Daniel Traian Pele</td><td></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2022-09-26</td><td>2022-10-04</td><td>10</td><td class="amount">1,800</td></tr>
+                    <tr><td>Cathy Yi-Hsuan Chen</td><td></td><td>GB</td><td>HR <span class="badge badge-itc">ITC</span></td><td>2022-10-01</td><td>2022-10-31</td><td>32</td><td class="amount">3,200</td></tr>
+                    <tr><td>Luciana Dalla Valle</td><td></td><td>GB</td><td>IT</td><td>2022-07-11</td><td>2022-07-18</td><td>9</td><td class="amount">1,440</td></tr>
+                    <tr><td>Jose Muniz Martinez</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>GB</td><td>2022-09-27</td><td>2022-10-06</td><td>11</td><td class="amount">1,900</td></tr>
+                    <tr><td>Alla Petukhina</td><td><span class="badge badge-yri">YRI</span></td><td>IT</td><td>DE</td><td>2022-09-18</td><td>2022-09-26</td><td>10</td><td class="amount">2,000</td></tr>
+                    <tr><td>Ioana Coita</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2022-10-14</td><td>2022-10-23</td><td>11</td><td class="amount">2,500</td></tr>
+                    <tr><td>Stefana Belbe</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2022-10-21</td><td>2022-10-31</td><td>12</td><td class="amount">2,700</td></tr>
+                    <tr><td>Tomas Plihal</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2022-09-21</td><td>2022-10-02</td><td>13</td><td class="amount">4,000</td></tr>
+                    <tr><td>Karel Kozmik</td><td><span class="badge badge-yri">YRI</span></td><td>DE</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2022-10-10</td><td>2022-10-31</td><td>23</td><td class="amount">3,000</td></tr>
+                    <tr><td>Xinwen Ni</td><td><span class="badge badge-yri">YRI</span></td><td>GB</td><td>DE</td><td>2022-10-24</td><td>2022-10-31</td><td>9</td><td class="amount">1,600</td></tr>
+                    <tr style="background: rgba(0, 160, 176, 0.1); font-weight: 600;">
+                        <td colspan="6">TOTAL</td><td>140</td><td class="amount">24,140</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Key Activities</h2>
+        <div class="card">
+            <ul style="padding-left: 1.5rem;">
+                <li><strong>Major Conferences:</strong> Multiple in-person conferences resumed as COVID restrictions lifted</li>
+                <li><strong>10 STSMs:</strong> Most intensive STSM period with 140 researcher-days</li>
+                <li><strong>Strong YRI Participation:</strong> 7 of 10 STSMs (70%) awarded to Young Researcher Investigators</li>
+                <li><strong>ITC Engagement:</strong> 6 STSMs involved ITC countries as either home or host</li>
+                <li><strong>Working Group Growth:</strong> WG1: 50, WG2: 57, WG3: 41 members</li>
+                <li><strong>Deliverables Completed:</strong> D3-D6 (databases, back-testing framework, time series data)</li>
+            </ul>
+        </div>
+
+        <h2>STSM Statistics</h2>
+        <div class="card">
+            <ul style="padding-left: 1.5rem;">
+                <li><strong>Young Researcher STSMs:</strong> 7 of 10 (70%)</li>
+                <li><strong>ITC Country Involvement:</strong> 6 STSMs involved ITC countries (60%)</li>
+                <li><strong>Top Host Country:</strong> Germany (3 STSMs)</li>
+                <li><strong>Top Home Country:</strong> Switzerland (4 STSMs)</li>
+                <li><strong>Longest Mission:</strong> Cathy Yi-Hsuan Chen - 32 days</li>
+                <li><strong>Highest Grant:</strong> Tomas Plihal - 4,000 EUR</li>
+                <li><strong>Average Duration:</strong> 14 days</li>
+                <li><strong>Average Grant:</strong> 2,414 EUR</li>
+            </ul>
+        </div>
+
+        <h2>Context</h2>
+        <div class="card">
+            <p>Grant Period 3 was a transformative 5-month period that marked the Action's transition from pandemic-constrained operations to full-scale activity. Despite being the shortest grant period, it achieved near-complete budget utilization.</p>
+            <p style="margin-top: 1rem;">Key achievements:</p>
+            <ul style="margin-top: 0.5rem; padding-left: 1.5rem;">
+                <li>Highest STSM count in a single grant period (10)</li>
+                <li>Strong focus on Young Researcher Investigators (70% of STSMs)</li>
+                <li>Excellent ITC country participation (60% of STSMs)</li>
+                <li>Major in-person conferences across Europe</li>
+                <li>Significant working group membership growth</li>
+            </ul>
+            <p style="margin-top: 1rem;">The 98% budget utilization in just 5 months demonstrates exceptional planning and execution during the post-pandemic recovery period.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="ffr1.html"><- Previous: FFR1</a> | <a href="index.html">Back to Financial Reports</a> | <a href="ffr5.html">Next: FFR5 -></a></p>
+    </footer>
+</body>
+</html>

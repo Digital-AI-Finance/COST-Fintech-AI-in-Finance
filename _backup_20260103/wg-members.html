@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working Groups - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        nav .logo span {
+            color: var(--cost-orange);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%);
+            color: white;
+            padding: 6rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        /* WG Tabs */
+        .wg-tabs {
+            display: flex;
+            gap: 0;
+            margin-bottom: 0;
+            background: white;
+            border-radius: 12px 12px 0 0;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .wg-tab {
+            flex: 1;
+            padding: 1.5rem 1rem;
+            text-align: center;
+            cursor: pointer;
+            border: none;
+            background: white;
+            font-family: inherit;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: var(--gray);
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+        }
+
+        .wg-tab:hover {
+            background: var(--light);
+        }
+
+        .wg-tab.active {
+            color: white;
+            border-bottom: 3px solid white;
+        }
+
+        .wg-tab.active.wg1 { background: var(--cost-purple); }
+        .wg-tab.active.wg2 { background: var(--cost-blue); }
+        .wg-tab.active.wg3 { background: var(--cost-green); }
+
+        .wg-tab .tab-name {
+            font-weight: 600;
+            display: block;
+            margin-bottom: 0.3rem;
+        }
+
+        .wg-tab .tab-title {
+            font-size: 0.75rem;
+            opacity: 0.8;
+            display: block;
+        }
+
+        .wg-tab .tab-count {
+            display: block;
+            margin-top: 0.5rem;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
+
+        /* WG Content Panel */
+        .wg-content {
+            background: white;
+            border-radius: 0 0 12px 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            padding: 1.5rem;
+        }
+
+        .wg-description {
+            padding: 1rem;
+            background: var(--light);
+            border-radius: 8px;
+            margin-bottom: 1.5rem;
+        }
+
+        .wg-description h3 {
+            font-size: 1rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .wg-description p {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        .wg-stats {
+            display: flex;
+            gap: 2rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .wg-stat {
+            text-align: center;
+        }
+
+        .wg-stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--cost-purple);
+        }
+
+        .wg-stat-label {
+            font-size: 0.75rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Filters */
+        .filters {
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .filters input[type="text"] {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.6rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        .filters select {
+            padding: 0.6rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            font-size: 0.9rem;
+            background: white;
+            min-width: 150px;
+        }
+
+        .filters input:focus,
+        .filters select:focus {
+            outline: none;
+            border-color: var(--cost-purple);
+        }
+
+        .results-info {
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 1rem;
+        }
+
+        /* Table */
+        .members-table {
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 0.8rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--light);
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover {
+            background: var(--border);
+        }
+
+        tr:hover {
+            background: rgba(91, 45, 138, 0.02);
+        }
+
+        td {
+            font-size: 0.85rem;
+        }
+
+        .name-cell {
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .name-cell a {
+            color: var(--cost-purple);
+            text-decoration: none;
+        }
+
+        .name-cell a:hover {
+            text-decoration: underline;
+        }
+
+        .affiliation-cell {
+            color: var(--gray);
+            max-width: 250px;
+        }
+
+        .country-cell {
+            color: var(--cost-blue);
+            white-space: nowrap;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-size: 0.65rem;
+            font-weight: 500;
+            margin-left: 0.3rem;
+        }
+
+        .badge-mc {
+            background: var(--cost-purple);
+            color: white;
+        }
+
+        .badge-itc {
+            background: rgba(232, 119, 34, 0.1);
+            color: var(--cost-orange);
+        }
+
+        .badge-yr {
+            background: rgba(0, 160, 176, 0.1);
+            color: var(--cost-teal);
+        }
+
+        .orcid-link {
+            color: var(--cost-green);
+            text-decoration: none;
+            font-size: 0.8rem;
+        }
+
+        .orcid-link:hover {
+            text-decoration: underline;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 2rem;
+            color: var(--gray);
+        }
+
+        /* Pagination */
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.4rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .pagination button {
+            padding: 0.4rem 0.8rem;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.85rem;
+            transition: all 0.2s;
+        }
+
+        .pagination button:hover,
+        .pagination button.active {
+            background: var(--cost-purple);
+            color: white;
+            border-color: var(--cost-purple);
+        }
+
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: var(--cost-orange);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            nav ul { display: none; }
+            .wg-tabs { flex-direction: column; }
+            .wg-tab { border-bottom: none; border-left: 3px solid transparent; }
+            .wg-tab.active { border-left: 3px solid white; }
+            .filters { flex-direction: column; }
+            .filters input[type="text"],
+            .filters select { width: 100%; }
+            th, td { padding: 0.6rem 0.4rem; font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">COST <span>CA19130</span></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="mc-members.html">MC</a></li>
+                <li><a href="wg-members.html" style="color: white; font-weight: 600;">WG</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="midterm-report.html">Mid-Term</a></li>
+                <li><a href="progress-reports.html">Progress</a></li>
+                <li><a href="final-report.html">Final</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Working Group Members</h1>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+    </header>
+
+    <div class="container">
+        <div class="wg-tabs">
+            <button class="wg-tab wg1 active" data-wg="WG1">
+                <span class="tab-name">WG1</span>
+                <span class="tab-title">Transparency in FinTech</span>
+                <span class="tab-count" id="wg1Count">-</span>
+            </button>
+            <button class="wg-tab wg2" data-wg="WG2">
+                <span class="tab-name">WG2</span>
+                <span class="tab-title">Decision-Support Models</span>
+                <span class="tab-count" id="wg2Count">-</span>
+            </button>
+            <button class="wg-tab wg3" data-wg="WG3">
+                <span class="tab-name">WG3</span>
+                <span class="tab-title">Investment Products</span>
+                <span class="tab-count" id="wg3Count">-</span>
+            </button>
+        </div>
+
+        <div class="wg-content">
+            <div class="wg-description" id="wgDescription">
+                <h3 id="wgTitle">Working Group 1: Transparency in FinTech</h3>
+                <p id="wgDesc">Investigating transparency requirements and solutions in fintech applications, including blockchain, digital payments, and regulatory compliance technologies.</p>
+            </div>
+
+            <div class="wg-stats" id="wgStats">
+                <div class="wg-stat">
+                    <div class="wg-stat-value" id="statMembers">-</div>
+                    <div class="wg-stat-label">Members</div>
+                </div>
+                <div class="wg-stat">
+                    <div class="wg-stat-value" id="statCountries">-</div>
+                    <div class="wg-stat-label">Countries</div>
+                </div>
+                <div class="wg-stat">
+                    <div class="wg-stat-value" id="statITC">-</div>
+                    <div class="wg-stat-label">ITC Members</div>
+                </div>
+                <div class="wg-stat">
+                    <div class="wg-stat-value" id="statMC">-</div>
+                    <div class="wg-stat-label">MC Members</div>
+                </div>
+            </div>
+
+            <div class="filters">
+                <input type="text" id="searchInput" placeholder="Search by name, affiliation, or country...">
+                <select id="countryFilter">
+                    <option value="">All Countries</option>
+                </select>
+                <select id="roleFilter">
+                    <option value="">All Roles</option>
+                    <option value="mc">MC Members</option>
+                    <option value="itc">ITC Countries</option>
+                    <option value="yr">Young Researchers</option>
+                </select>
+            </div>
+
+            <div class="results-info" id="resultsInfo">Loading...</div>
+
+            <div class="members-table">
+                <table>
+                    <thead>
+                        <tr>
+                            <th data-sort="name">Name</th>
+                            <th data-sort="affiliation">Affiliation</th>
+                            <th data-sort="country">Country</th>
+                            <th>ORCID</th>
+                        </tr>
+                    </thead>
+                    <tbody id="membersBody">
+                        <tr><td colspan="4" class="loading">Loading members...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="pagination" id="pagination"></div>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="index.html">Home</a> | <a href="mc-members.html">MC Members</a> | <a href="members.html">All Members</a></p>
+        <p style="margin-top: 1rem; opacity: 0.7;">COST Action CA19130 - Fintech and AI in Finance</p>
+    </footer>
+
+    <script>
+        // WG descriptions
+        const wgInfo = {
+            WG1: {
+                title: 'Working Group 1: Transparency in FinTech',
+                description: 'Investigating transparency requirements and solutions in fintech applications, including blockchain, digital payments, and regulatory compliance technologies.',
+                color: '#5B2D8A'
+            },
+            WG2: {
+                title: 'Working Group 2: Transparent vs Black Box Decision-Support Models',
+                description: 'Comparing transparent and opaque machine learning models in financial decision-making, focusing on explainability and interpretability.',
+                color: '#2B5F9E'
+            },
+            WG3: {
+                title: 'Working Group 3: Investment Product Performance Transparency',
+                description: 'Enhancing transparency in investment product performance reporting for retail and institutional clients.',
+                color: '#7AB800'
+            }
+        };
+
+        let allData = {};
+        let currentWG = 'WG1';
+        let filteredMembers = [];
+        let sortColumn = 'country';
+        let sortDirection = 'asc';
+        let currentPage = 1;
+        const itemsPerPage = 30;
+
+        // Load all WG data
+        Promise.all([
+            fetch('data/wg1_members.json').then(r => r.json()),
+            fetch('data/wg2_members.json').then(r => r.json()),
+            fetch('data/wg3_members.json').then(r => r.json())
+        ])
+        .then(([wg1, wg2, wg3]) => {
+            allData = { WG1: wg1, WG2: wg2, WG3: wg3 };
+
+            // Update tab counts
+            document.getElementById('wg1Count').textContent = wg1.metadata.totalMembers;
+            document.getElementById('wg2Count').textContent = wg2.metadata.totalMembers;
+            document.getElementById('wg3Count').textContent = wg3.metadata.totalMembers;
+
+            // Initial render
+            switchWG('WG1');
+        })
+        .catch(err => {
+            console.error('Error loading WG data:', err);
+            document.getElementById('membersBody').innerHTML =
+                '<tr><td colspan="4" class="loading">Unable to load member data.</td></tr>';
+        });
+
+        function switchWG(wg) {
+            currentWG = wg;
+            currentPage = 1;
+
+            // Update active tab
+            document.querySelectorAll('.wg-tab').forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.dataset.wg === wg) {
+                    tab.classList.add('active');
+                }
+            });
+
+            // Update description
+            const info = wgInfo[wg];
+            document.getElementById('wgTitle').textContent = info.title;
+            document.getElementById('wgDesc').textContent = info.description;
+
+            // Update stats
+            const data = allData[wg];
+            document.getElementById('statMembers').textContent = data.metadata.totalMembers;
+            document.getElementById('statCountries').textContent = data.metadata.countries;
+            document.getElementById('statITC').textContent = data.metadata.itcMembers;
+            document.getElementById('statMC').textContent = data.metadata.mcMembers;
+
+            // Update country filter
+            populateCountryFilter();
+
+            // Reset filters
+            document.getElementById('searchInput').value = '';
+            document.getElementById('countryFilter').value = '';
+            document.getElementById('roleFilter').value = '';
+
+            // Render
+            filteredMembers = [...data.members];
+            sortMembers();
+            renderTable();
+        }
+
+        function populateCountryFilter() {
+            const data = allData[currentWG];
+            const countries = [...new Set(data.members.map(m => m.country))].sort();
+            const select = document.getElementById('countryFilter');
+            select.innerHTML = '<option value="">All Countries</option>';
+            countries.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country;
+                option.textContent = country;
+                select.appendChild(option);
+            });
+        }
+
+        function filterMembers() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const country = document.getElementById('countryFilter').value;
+            const role = document.getElementById('roleFilter').value;
+
+            const data = allData[currentWG];
+            filteredMembers = data.members.filter(m => {
+                const matchesSearch = !search ||
+                    m.name.toLowerCase().includes(search) ||
+                    (m.affiliation && m.affiliation.toLowerCase().includes(search)) ||
+                    m.country.toLowerCase().includes(search);
+
+                const matchesCountry = !country || m.country === country;
+
+                const matchesRole = !role ||
+                    (role === 'mc' && m.mc) ||
+                    (role === 'itc' && m.itc) ||
+                    (role === 'yr' && m.youngResearcher);
+
+                return matchesSearch && matchesCountry && matchesRole;
+            });
+
+            currentPage = 1;
+            sortMembers();
+            renderTable();
+        }
+
+        function sortMembers() {
+            filteredMembers.sort((a, b) => {
+                let valA = a[sortColumn] || '';
+                let valB = b[sortColumn] || '';
+                if (typeof valA === 'string') valA = valA.toLowerCase();
+                if (typeof valB === 'string') valB = valB.toLowerCase();
+                if (valA < valB) return sortDirection === 'asc' ? -1 : 1;
+                if (valA > valB) return sortDirection === 'asc' ? 1 : -1;
+                return 0;
+            });
+        }
+
+        function handleSort(column) {
+            if (sortColumn === column) {
+                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortColumn = column;
+                sortDirection = 'asc';
+            }
+            sortMembers();
+            renderTable();
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('membersBody');
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageMembers = filteredMembers.slice(start, end);
+
+            if (filteredMembers.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="4" class="loading">No members match your filters.</td></tr>';
+                document.getElementById('resultsInfo').textContent = 'No results';
+                document.getElementById('pagination').innerHTML = '';
+                return;
+            }
+
+            const data = allData[currentWG];
+            document.getElementById('resultsInfo').textContent =
+                `Showing ${start + 1}-${Math.min(end, filteredMembers.length)} of ${filteredMembers.length} ${currentWG} members`;
+
+            tbody.innerHTML = pageMembers.map(m => {
+                // Badges
+                const badges = [];
+                if (m.mc) badges.push('<span class="badge badge-mc">MC</span>');
+                if (m.itc) badges.push('<span class="badge badge-itc">ITC</span>');
+                if (m.youngResearcher) badges.push('<span class="badge badge-yr">YR</span>');
+
+                // ORCID
+                const orcidHtml = m.orcid ?
+                    `<a href="https://orcid.org/${m.orcid}" target="_blank" class="orcid-link">${m.orcid}</a>` :
+                    '-';
+
+                // Name with optional link
+                const nameHtml = m.homepage ?
+                    `<a href="${m.homepage}" target="_blank">${m.name}</a>` :
+                    m.name;
+
+                return `
+                    <tr>
+                        <td class="name-cell">${nameHtml}${badges.join('')}</td>
+                        <td class="affiliation-cell">${m.affiliation || '-'}</td>
+                        <td class="country-cell">${m.country}</td>
+                        <td>${orcidHtml}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            renderPagination();
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(filteredMembers.length / itemsPerPage);
+            const pagination = document.getElementById('pagination');
+
+            if (totalPages <= 1) {
+                pagination.innerHTML = '';
+                return;
+            }
+
+            let html = `<button onclick="goToPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>Prev</button>`;
+
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+                    html += `<button onclick="goToPage(${i})" class="${i === currentPage ? 'active' : ''}">${i}</button>`;
+                } else if (i === currentPage - 3 || i === currentPage + 3) {
+                    html += '<button disabled>...</button>';
+                }
+            }
+
+            html += `<button onclick="goToPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next</button>`;
+
+            pagination.innerHTML = html;
+        }
+
+        function goToPage(page) {
+            const totalPages = Math.ceil(filteredMembers.length / itemsPerPage);
+            if (page >= 1 && page <= totalPages) {
+                currentPage = page;
+                renderTable();
+            }
+        }
+
+        // Event listeners
+        document.querySelectorAll('.wg-tab').forEach(tab => {
+            tab.addEventListener('click', () => switchWG(tab.dataset.wg));
+        });
+
+        document.getElementById('searchInput').addEventListener('input', filterMembers);
+        document.getElementById('countryFilter').addEventListener('change', filterMembers);
+        document.getElementById('roleFilter').addEventListener('change', filterMembers);
+
+        document.querySelectorAll('th[data-sort]').forEach(th => {
+            th.addEventListener('click', () => handleSort(th.dataset.sort));
+        });
+    </script>
+</body>
+</html>

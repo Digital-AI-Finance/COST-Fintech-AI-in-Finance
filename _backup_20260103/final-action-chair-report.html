@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Achievement Report (DRAFT) - COST Action CA19130</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --cost-red: #DC3545;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: var(--light);
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%);
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: white;
+            font-size: 1.4rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        .logo span { color: var(--cost-orange); }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 0.9rem;
+            opacity: 0.9;
+            transition: opacity 0.3s;
+        }
+
+        .nav-links a:hover { opacity: 1; }
+
+        .hero {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%);
+            color: white;
+            padding: 7rem 2rem 3rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .hero p {
+            opacity: 0.9;
+            font-size: 1.1rem;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+
+        .badge-draft {
+            background: var(--cost-orange);
+            color: white;
+        }
+
+        .badge-internal {
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+
+        .breadcrumb {
+            background: white;
+            padding: 1rem 2rem;
+            font-size: 0.85rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .breadcrumb a {
+            color: var(--cost-purple);
+            text-decoration: none;
+        }
+
+        section {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 3rem 2rem;
+        }
+
+        h2 {
+            color: var(--cost-purple);
+            font-size: 1.6rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid var(--cost-orange);
+        }
+
+        h3 {
+            color: var(--dark);
+            font-size: 1.2rem;
+            margin: 1.5rem 0 1rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .stat-box {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%);
+            color: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .stat-box .value {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .stat-box .label {
+            font-size: 0.8rem;
+            opacity: 0.9;
+        }
+
+        .objective-item {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-left: 4px solid var(--cost-purple);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .objective-item h4 {
+            color: var(--cost-purple);
+            margin-bottom: 0.5rem;
+        }
+
+        .objective-item p {
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .progress-bar {
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 8px;
+            margin-top: 0.5rem;
+            overflow: hidden;
+        }
+
+        .progress-fill {
+            height: 100%;
+            border-radius: 10px;
+            background: linear-gradient(90deg, var(--cost-green) 0%, var(--cost-teal) 100%);
+        }
+
+        .deliverable-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 1rem;
+        }
+
+        .deliverable-table th {
+            background: var(--cost-purple);
+            color: white;
+            padding: 0.8rem;
+            text-align: left;
+            font-size: 0.85rem;
+        }
+
+        .deliverable-table td {
+            padding: 0.8rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.85rem;
+        }
+
+        .deliverable-table tr:hover {
+            background: rgba(91,45,138,0.03);
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 500;
+        }
+
+        .status-delivered {
+            background: rgba(122,184,0,0.15);
+            color: #5a8a00;
+        }
+
+        .status-expected {
+            background: rgba(232,119,34,0.15);
+            color: #c66000;
+        }
+
+        .country-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .country-tag {
+            background: rgba(91,45,138,0.1);
+            color: var(--cost-purple);
+            padding: 0.3rem 0.6rem;
+            border-radius: 15px;
+            font-size: 0.75rem;
+        }
+
+        /* Comparison specific styles */
+        .comparison-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+
+        .comparison-column {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+        }
+
+        .column-midterm {
+            border-top: 4px solid var(--cost-blue);
+        }
+
+        .column-final {
+            border-top: 4px solid var(--cost-green);
+        }
+
+        .column-header {
+            text-align: center;
+            padding: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .column-header h3 {
+            margin: 0;
+            color: var(--dark);
+        }
+
+        .column-header .period {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .growth-indicator {
+            color: var(--cost-green);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.3rem;
+        }
+
+        .growth-arrow {
+            font-size: 1.2rem;
+        }
+
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.8rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        .metric-label {
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .metric-value {
+            font-weight: 600;
+        }
+
+        .new-badge {
+            background: var(--cost-green);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            margin-left: 0.5rem;
+        }
+
+        .changed-badge {
+            background: var(--cost-orange);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            margin-left: 0.5rem;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        footer a {
+            color: var(--cost-orange);
+            text-decoration: none;
+            margin: 0 0.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links { display: none; }
+            .hero h1 { font-size: 1.6rem; }
+            .comparison-grid { grid-template-columns: 1fr; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="logo">COST <span>CA19130</span></a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="final-action-chair-report-full.html">Full Report</a>
+                <a href="midterm-action-chair-report-full.html">Mid-Term</a>
+                <a href="comparison-action-chair-full.html">Comparison</a>
+                <a href="publications.html">Publications</a>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Final Achievement Report</h1>
+        <p>COST Action CA19130: Fintech and Artificial Intelligence in Finance</p>
+        <p style="opacity: 0.8; margin-top: 0.5rem;">Period: 14/09/2020 - 13/09/2024 (48 months)</p>
+        <span class="badge badge-draft">DRAFT</span>
+        <span class="badge badge-internal">Internal Document</span>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="index.html">Home</a> / <a href="midterm-report.html">Reports</a> / <span>Final Achievement Report</span>
+    </div>
+
+    <section>
+        <h2>Executive Summary</h2>
+        
+    <div class="stats-grid">
+        <div class="stat-box">
+            <div class="value">420</div>
+            <div class="label">Researchers</div>
+        </div>
+        <div class="stat-box">
+            <div class="value">55</div>
+            <div class="label">Countries</div>
+        </div>
+        <div class="stat-box">
+            <div class="value">150</div>
+            <div class="label">Conferences</div>
+        </div>
+        <div class="stat-box">
+            <div class="value">6,000</div>
+            <div class="label">Participants</div>
+        </div>
+        <div class="stat-box">
+            <div class="value">10,000+</div>
+            <div class="label">Citations</div>
+        </div>
+        <div class="stat-box">
+            <div class="value">758</div>
+            <div class="label">WG Members</div>
+        </div>
+    </div>
+
+        <div class="card">
+            <h3>Main Objective</h3>
+            <p>Establish a large and interconnected community across academia, public institutions and industry focusing on Financial Technology and Artificial Intelligence, improving transparency in financial services, especially in and through FinTech, in financial modelling and investment performance evaluation.</p>
+        </div>
+
+        <div class="card">
+            <h3>Key Achievement</h3>
+            <p>The COST Action on Fintech and AI in Finance has brought together an incredibly diverse network of <strong>420 interdisciplinary researchers</strong> from <strong>55 countries</strong>, with 39 European COST countries, becoming one of the largest and most active COST Actions in Europe.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Leadership & Working Groups</h2>
+
+        <div class="card">
+            <h3>Action Leadership</h3>
+            <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem;">
+                <div>
+                    <strong>Chair:</strong> Prof Jorg Osterrieder<br>
+                    <small style="color: var(--gray);">Netherlands</small>
+                </div>
+                <div>
+                    <strong>Vice-Chair:</strong> Prof Valerio Poti<br>
+                    <small style="color: var(--gray);">Ireland</small>
+                </div>
+                <div>
+                    <strong>Science Communication:</strong> Dr Ioana Coita<br>
+                    <small style="color: var(--gray);">Romania</small>
+                </div>
+                <div>
+                    <strong>GH Scientific Rep:</strong> Branka Hadji Misheva<br>
+                    <small style="color: var(--gray);">Switzerland</small>
+                </div>
+            </div>
+        </div>
+
+        
+    <div class="card">
+        <h3>Working Groups</h3>
+        <div class="stats-grid">
+            <div class="stat-box" style="background: linear-gradient(135deg, #6B3D9A 0%, #4A2870 100%);">
+                <div class="value">281</div>
+                <div class="label">WG1: Transparency in FinTech</div>
+            </div>
+            <div class="stat-box" style="background: linear-gradient(135deg, #3B6FAE 0%, #2B5F9E 100%);">
+                <div class="value">254</div>
+                <div class="label">WG2: Black Box Models</div>
+            </div>
+            <div class="stat-box" style="background: linear-gradient(135deg, #00B0C0 0%, #00A0B0 100%);">
+                <div class="value">223</div>
+                <div class="label">WG3: Investment Performance</div>
+            </div>
+        </div>
+    </div>
+    </section>
+
+    <section>
+        <h2>Participating Countries (43)</h2>
+        <div class="card">
+            <div class="country-grid"><span class="country-tag">Albania</span><span class="country-tag">Armenia</span><span class="country-tag">Austria</span><span class="country-tag">Belgium</span><span class="country-tag">Bosnia and Herzegovina</span><span class="country-tag">Bulgaria</span><span class="country-tag">Croatia</span><span class="country-tag">Cyprus</span><span class="country-tag">Czech Republic</span><span class="country-tag">Denmark</span><span class="country-tag">Estonia</span><span class="country-tag">Finland</span><span class="country-tag">France</span><span class="country-tag">Georgia</span><span class="country-tag">Germany</span><span class="country-tag">Greece</span><span class="country-tag">Hungary</span><span class="country-tag">Iceland</span><span class="country-tag">Ireland</span><span class="country-tag">Israel</span><span class="country-tag">Italy</span><span class="country-tag">Latvia</span><span class="country-tag">Lithuania</span><span class="country-tag">Luxembourg</span><span class="country-tag">Malta</span><span class="country-tag">Moldova</span><span class="country-tag">Montenegro</span><span class="country-tag">Netherlands</span><span class="country-tag">North Macedonia</span><span class="country-tag">Norway</span><span class="country-tag">Poland</span><span class="country-tag">Portugal</span><span class="country-tag">Romania</span><span class="country-tag">Serbia</span><span class="country-tag">Slovakia</span><span class="country-tag">Slovenia</span><span class="country-tag">South Africa</span><span class="country-tag">Spain</span><span class="country-tag">Sweden</span><span class="country-tag">Switzerland</span><span class="country-tag">Turkey</span><span class="country-tag">Ukraine</span><span class="country-tag">United Kingdom</span></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>MoU Objectives (16)</h2>
+        
+        <div class="objective-item">
+            <h4>Objective 1</h4>
+            <p>To develop blended approaches to evaluate innovative financial services and their
+providers, especially in the FinTech domain, building on Machine Learning methods,
+focussing on prediction (early warn...</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 2</h4>
+            <p>The development of conceptual and methodological tools for establishing when black-
+box models are admissible and, to the extent possible, making them more transparent
+and/or replacing them with inter...</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 3</h4>
+            <p>To receive input from regulators and practitioners' communities and to validate results
+with regard to increasing transparency of artificial intelligence applications.</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 4</h4>
+            <p>Pruning and improvement of the vast array of performance attribution models by
+contributing to the development of methodologies for reducing the false discovery rate
+in financial research and applied ...</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 5</h4>
+            <p>Disseminate to the public and share with regulators the results on investment product
+performance evaluation.</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 6</h4>
+            <p>Creation of the first European platform comparing the out-of-sample performance of
+banks' investment products, insurance-linked investment products and asset
+management products available to the gener...</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 7</h4>
+            <p>Create an excellent network of researchers in Europe with lasting collaboration beyond
+the lifetime of the Action.</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 8</h4>
+            <p>Bringing technological, quantitative and economic researchers together, to tackle future
+research that can only be done in an interdisciplinary setting, and getting actively
+involved in the blockchain...</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 9</h4>
+            <p>Bridging the gap between practitioners from the finance industry, academics and
+regulators by setting up a common knowledge exchange platform.</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 10</h4>
+            <p>Transfer knowledge in terms of expertise, scientific tools and human resources across
+the different disciplines and between academia and industry.</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 11</h4>
+            <p>Establish an inclusive community of researchers on methodological and technological
+themes in Machine Learning and Artificial Intelligence, to promote Early Career
+Investigators and increase their vis...</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 12</h4>
+            <p>Overcome the siloing of research topics by country and achieve geographical and
+demographical diversity, with special attention to COST Inclusiveness Target countries.</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 13</h4>
+            <p>Prepare competitive European researchers for a fruitful career in an international
+environment through intensive use of Short Term Scientific Missions (STSM) and joint
+educational programs with indust...</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 14</h4>
+            <p>Maximize the job opportunities for PhD students and Early Career Investigators.</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 15</h4>
+            <p>Disseminate the results of the Action's activities to the scientific community, European
+institutions and to the general public.</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+        <div class="objective-item">
+            <h4>Objective 16</h4>
+            <p>Significantly improve the gender equality in the fields of the Action.</p>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 90%;"></div>
+            </div>
+            <small style="color: var(--gray);">Achievement: 76 - 100%</small>
+        </div>
+    </section>
+
+    <section>
+        <h2>Deliverables</h2>
+        <div class="card">
+            
+    <table class="deliverable-table">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Deliverable</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>as well as the extent to which the
+achievement was dependant on the Action networking.
+For deliverables that are:
+Delivered, please provide proof to e...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>https://drive.google.com/drive/folders/1qJmo2T0VeOojtC4037mmukyaElP2IGNP
+Deliverable
+A database which contains data on crowdfunding/P2P platform featu...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>https://drive.google.com/drive/folders/1qJmo2T0VeOojtC4037mmukyaElP2IGNP
+Deliverable
+Discussion papers (DP) on the methodology for evaluating/rating I...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=3&gmla=AJs
+N-F6xDT8LzN0VTcxVoAQ62so5mrd07nCxu3LVD7ni_DjB9_jlcLtucIIRxMVYfkDodOt...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=3&gmla=AJs
+N-F6xDT8LzN0VTcxVoAQ62so5mrd07nCxu3LVD7ni_DjB9_jlcLtucIIRxMVYfkDodOt...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>https://drive.google.com/drive/folders/1qJmo2T0VeOojtC4037mmukyaElP2IGNP
+Deliverable
+Methodological discussion paper on the design of stress tests for...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=3&gmla=AJs
+N-F6xDT8LzN0VTcxVoAQ62so5mrd07nCxu3LVD7ni_DjB9_jlcLtucIIRxMVYfkDodOt...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=3&gmla=AJs
+N-F6xDT8LzN0VTcxVoAQ62so5mrd07nCxu3LVD7ni_DjB9_jlcLtucIIRxMVYfkDodOt...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=3&gmla=AJs
+N-F6xDT8LzN0VTcxVoAQ62so5mrd07nCxu3LVD7ni_DjB9_jlcLtucIIRxMVYfkDodOt...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>https://drive.google.com/drive/folders/1qJmo2T0VeOojtC4037mmukyaElP2IGNP
+Deliverable
+Methodological discussion papers on AI models to generate “failed...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=3&gmla=AJs
+N-F6xDT8LzN0VTcxVoAQ62so5mrd07nCxu3LVD7ni_DjB9_jlcLtucIIRxMVYfkDodOt...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=3&gmla=AJs
+N-F6xDT8LzN0VTcxVoAQ62so5mrd07nCxu3LVD7ni_DjB9_jlcLtucIIRxMVYfkDodOt...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>https://www.quantinar.com
+Deliverable
+Handbook and/or wiki page describing potential approaches to tackle risk management
+issues related to blockchain...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>https://www.quantinar.com
+Deliverable
+An edited volume containing scientific achievements of the Action</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>https://scholar.google.com/citations?hl=en&view_op=list_works&authuser=3&gmla=AJs
+N-F6xDT8LzN0VTcxVoAQ62so5mrd07nCxu3LVD7ni_DjB9_jlcLtucIIRxMVYfkDodOt...</td>
+                <td><span class="status-badge status-delivered">Delivered</span></td>
+            </tr>
+        </tbody>
+    </table>
+        </div>
+    </section>
+
+    <section>
+        <h2>Knowledge Exchange Platforms</h2>
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1rem;">
+            <div class="card" style="border-top: 3px solid var(--cost-teal);">
+                <h4>Quantlet.com</h4>
+                <p style="font-size: 0.85rem; color: var(--gray);">Repository of reproducible code pieces for academic research in finance and data science.</p>
+            </div>
+            <div class="card" style="border-top: 3px solid var(--cost-teal);">
+                <h4>Quantinar.com</h4>
+                <p style="font-size: 0.85rem; color: var(--gray);">Training and dissemination platform with fundamentals of FinTech and cutting-edge research.</p>
+            </div>
+            <div class="card" style="border-top: 3px solid var(--cost-teal);">
+                <h4>ExplainableAIforFinance.com</h4>
+                <p style="font-size: 0.85rem; color: var(--gray);">Extensive platform on XAI with use cases, papers, code repositories, and interactive apps.</p>
+            </div>
+            <div class="card" style="border-top: 3px solid var(--cost-teal);">
+                <h4>Blockchain Research Center</h4>
+                <p style="font-size: 0.85rem; color: var(--gray);">Datasets and resources for blockchain and cryptocurrency research.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and Artificial Intelligence in Finance</p>
+        <div>
+            <a href="https://www.fintech-ai-finance.com/" target="_blank">Action Website</a>
+            <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a>
+            <a href="comparison-action-chair.html">Compare with Mid-Term</a>
+        </div>
+        <p style="margin-top: 1rem; opacity: 0.7; font-size: 0.85rem;">Final Achievement Report (DRAFT) | Generated: 2026-01-02</p>
+    </footer>
+</body>
+</html>

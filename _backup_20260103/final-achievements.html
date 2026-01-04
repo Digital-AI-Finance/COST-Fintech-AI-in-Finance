@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Achievements - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --success: #28a745;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; text-decoration: none; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .hero { background: linear-gradient(135deg, var(--cost-green) 0%, var(--cost-teal) 100%); color: white; padding: 7rem 2rem 3rem; text-align: center; }
+        .hero .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 0.3rem 1rem; border-radius: 15px; font-size: 0.85rem; margin-bottom: 1rem; }
+        .hero h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        .hero .subtitle { opacity: 0.9; font-size: 1rem; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb span { color: var(--gray); font-size: 0.9rem; }
+        section { padding: 3rem 2rem; max-width: 1100px; margin: 0 auto; }
+        section h2 { font-size: 1.6rem; color: var(--cost-purple); margin-bottom: 1.5rem; }
+        section h2::after { content: ''; display: block; width: 50px; height: 3px; background: var(--cost-orange); margin-top: 0.5rem; }
+        .card { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .objective-item { border-left: 4px solid var(--cost-green); padding-left: 1.5rem; margin-bottom: 2rem; }
+        .objective-item h3 { color: var(--dark); font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .objective-item p { color: var(--gray); font-size: 0.95rem; margin-bottom: 0.8rem; }
+        .objective-item .types { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-bottom: 0.8rem; }
+        .objective-item .type-badge { background: rgba(91,45,138,0.1); color: var(--cost-purple); padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; }
+        .progress-bar { height: 8px; background: #e9ecef; border-radius: 4px; overflow: hidden; margin: 0.5rem 0; }
+        .progress-fill { height: 100%; background: var(--cost-green); border-radius: 4px; }
+        .achievement-badge { display: inline-block; background: var(--success); color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.8rem; font-weight: 600; }
+        .deliverables-table { width: 100%; border-collapse: collapse; margin-top: 1rem; }
+        .deliverables-table th, .deliverables-table td { padding: 1rem; text-align: left; border-bottom: 1px solid var(--border); }
+        .deliverables-table th { background: var(--light); color: var(--cost-purple); font-weight: 600; font-size: 0.9rem; }
+        .deliverables-table td { font-size: 0.9rem; color: var(--gray); }
+        .status-delivered { background: var(--success); color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .stat-box { background: var(--light); border-radius: 8px; padding: 1rem; text-align: center; }
+        .stat-box .value { font-size: 1.8rem; font-weight: 700; color: var(--cost-green); }
+        .stat-box .label { font-size: 0.8rem; color: var(--gray); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .hero h1 { font-size: 1.6rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="logo">COST <span>CA19130</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="final-report.html">Final Report</a></li>
+                <li><a href="final-publications.html">Publications</a></li>
+                <li><a href="final-impacts.html">Impacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="badge">Final Achievement Report</div>
+        <h1>MoU Objectives & Deliverables</h1>
+        <div class="subtitle">Complete achievement analysis - 100% objectives met, 100% deliverables completed</div>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="final-report.html">Final Report</a> <span> / Achievements</span>
+    </div>
+
+    <section>
+        <h2>Achievement Summary</h2>
+        <div class="card">
+            <div class="stats-grid">
+                <div class="stat-box">
+                    <div class="value">8</div>
+                    <div class="label">MoU Objectives</div>
+                </div>
+                <div class="stat-box">
+                    <div class="value">100%</div>
+                    <div class="label">Achievement Rate</div>
+                </div>
+                <div class="stat-box">
+                    <div class="value">11</div>
+                    <div class="label">Deliverables</div>
+                </div>
+                <div class="stat-box">
+                    <div class="value">100%</div>
+                    <div class="label">Delivery Rate</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>MoU Objectives</h2>
+        <div id="objectivesContainer">
+            <!-- Loaded from JSON -->
+        </div>
+    </section>
+
+    <section>
+        <h2>Deliverables</h2>
+        <div class="card">
+            <p style="margin-bottom: 1rem; color: var(--gray);">All deliverables foreseen in the Memorandum of Understanding have been successfully delivered:</p>
+            <table class="deliverables-table" id="deliverablesTable">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Deliverable</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Loaded from JSON -->
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>COST Action CA19130</strong> - Final Achievement Report</p>
+        <p style="margin-top: 0.5rem;"><a href="final-report.html">Back to Report Overview</a></p>
+    </footer>
+
+    <script>
+        fetch('data/final_report.json')
+            .then(response => response.json())
+            .then(data => {
+                // Render objectives
+                const container = document.getElementById('objectivesContainer');
+                data.mou_objectives.forEach((obj, index) => {
+                    const item = document.createElement('div');
+                    item.className = 'objective-item';
+                    item.innerHTML = `
+                        <h3>Objective ${index + 1}: ${obj.title}</h3>
+                        <p>${obj.description}</p>
+                        <div class="types">
+                            ${obj.types.map(t => `<span class="type-badge">${t}</span>`).join('')}
+                        </div>
+                        <div style="display: flex; align-items: center; gap: 1rem;">
+                            <div style="flex: 1;">
+                                <div class="progress-bar">
+                                    <div class="progress-fill" style="width: 100%"></div>
+                                </div>
+                            </div>
+                            <span class="achievement-badge">${obj.achievement}</span>
+                        </div>
+                        <p style="margin-top: 0.8rem; font-size: 0.85rem;"><strong>Proof:</strong> ${obj.proof}</p>
+                    `;
+                    container.appendChild(item);
+                });
+
+                // Render deliverables
+                const tbody = document.querySelector('#deliverablesTable tbody');
+                data.deliverables.forEach((del, index) => {
+                    const row = document.createElement('tr');
+                    row.innerHTML = `
+                        <td>${index + 1}</td>
+                        <td><strong>${del.title}</strong><br><span style="font-size: 0.85rem;">${del.description}</span></td>
+                        <td><span class="status-delivered">${del.status}</span></td>
+                    `;
+                    tbody.appendChild(row);
+                });
+            });
+    </script>
+</body>
+</html>

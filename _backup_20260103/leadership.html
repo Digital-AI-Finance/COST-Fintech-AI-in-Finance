@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leadership - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        nav .logo span {
+            color: var(--cost-orange);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%);
+            color: white;
+            padding: 6rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            opacity: 0.9;
+        }
+
+        .header .source-link {
+            margin-top: 1rem;
+            font-size: 0.85rem;
+            opacity: 0.8;
+        }
+
+        .header .source-link a {
+            color: var(--cost-orange);
+            text-decoration: none;
+        }
+
+        .header .source-link a:hover {
+            text-decoration: underline;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 700;
+        }
+
+        .stat-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            overflow: hidden;
+        }
+
+        .section-header {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            color: white;
+            padding: 1rem 1.5rem;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .section-content {
+            padding: 1.5rem;
+        }
+
+        /* Position cards */
+        .position-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+        }
+
+        .position-card {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            background: rgba(91, 45, 138, 0.02);
+        }
+
+        .position-title {
+            font-weight: 600;
+            color: var(--cost-purple);
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .position-holder {
+            font-size: 1rem;
+            color: var(--dark);
+            margin-bottom: 0.3rem;
+        }
+
+        .position-date {
+            font-size: 0.8rem;
+            color: var(--cost-green);
+        }
+
+        .position-history {
+            margin-top: 0.75rem;
+            padding-top: 0.75rem;
+            border-top: 1px dashed var(--border);
+        }
+
+        .history-title {
+            font-size: 0.75rem;
+            color: var(--gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .history-item {
+            font-size: 0.8rem;
+            color: var(--gray);
+            padding: 0.25rem 0;
+        }
+
+        .history-item .name {
+            color: var(--dark);
+        }
+
+        /* Working Group cards */
+        .wg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .wg-card {
+            border: 2px solid var(--cost-purple);
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .wg-card.wg1 { border-color: var(--cost-purple); }
+        .wg-card.wg2 { border-color: var(--cost-blue); }
+        .wg-card.wg3 { border-color: var(--cost-green); }
+
+        .wg-header {
+            padding: 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .wg-card.wg1 .wg-header { background: rgba(91, 45, 138, 0.1); }
+        .wg-card.wg2 .wg-header { background: rgba(43, 95, 158, 0.1); }
+        .wg-card.wg3 .wg-header { background: rgba(122, 184, 0, 0.1); }
+
+        .wg-number {
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        .wg-card.wg1 .wg-number { color: var(--cost-purple); }
+        .wg-card.wg2 .wg-number { color: var(--cost-blue); }
+        .wg-card.wg3 .wg-number { color: var(--cost-green); }
+
+        .wg-participants {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        .wg-body {
+            padding: 1rem;
+        }
+
+        .wg-title {
+            font-size: 0.9rem;
+            color: var(--dark);
+            margin-bottom: 0.75rem;
+        }
+
+        .wg-leader {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .wg-leader-label {
+            font-size: 0.75rem;
+            color: var(--gray);
+            text-transform: uppercase;
+        }
+
+        /* Grant periods timeline */
+        .grant-timeline {
+            position: relative;
+            padding-left: 30px;
+        }
+
+        .grant-timeline::before {
+            content: '';
+            position: absolute;
+            left: 9px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: var(--border);
+        }
+
+        .grant-period {
+            position: relative;
+            padding-bottom: 1.5rem;
+        }
+
+        .grant-period:last-child {
+            padding-bottom: 0;
+        }
+
+        .grant-period::before {
+            content: '';
+            position: absolute;
+            left: -21px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            background: var(--cost-purple);
+            border: 2px solid white;
+            box-shadow: 0 0 0 2px var(--cost-purple);
+        }
+
+        .grant-period-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .grant-period-number {
+            font-weight: 600;
+            color: var(--dark);
+        }
+
+        .grant-period-dates {
+            font-size: 0.85rem;
+            color: var(--cost-purple);
+            font-weight: 500;
+        }
+
+        .grant-period-holder {
+            font-size: 0.9rem;
+            color: var(--gray);
+            margin-top: 0.3rem;
+        }
+
+        .grant-period-status {
+            display: inline-block;
+            padding: 0.15rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            background: rgba(91, 45, 138, 0.1);
+            color: var(--cost-purple);
+            margin-left: 0.5rem;
+        }
+
+        /* MC Observers */
+        .observers-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+            gap: 1rem;
+        }
+
+        .observer-card {
+            background: rgba(91, 45, 138, 0.03);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+        }
+
+        .observer-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background: var(--cost-teal);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.85rem;
+            flex-shrink: 0;
+        }
+
+        .observer-info h5 {
+            margin: 0;
+            font-size: 0.9rem;
+            color: var(--dark);
+        }
+
+        .observer-info .country {
+            font-size: 0.8rem;
+            color: var(--cost-blue);
+        }
+
+        /* Coordinator cards with history */
+        .coordinator-card {
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            margin-bottom: 1rem;
+            overflow: hidden;
+        }
+
+        .coordinator-card:last-child {
+            margin-bottom: 0;
+        }
+
+        .coordinator-header {
+            background: rgba(91, 45, 138, 0.05);
+            padding: 1rem 1.5rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+        }
+
+        .coordinator-title {
+            font-weight: 600;
+            color: var(--cost-purple);
+        }
+
+        .coordinator-badge {
+            background: var(--cost-green);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        .coordinator-body {
+            padding: 1rem 1.5rem;
+        }
+
+        .coordinator-current {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .coordinator-avatar {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 1rem;
+            flex-shrink: 0;
+        }
+
+        .coordinator-info h4 {
+            margin: 0;
+            font-size: 1rem;
+        }
+
+        .coordinator-info .date {
+            font-size: 0.85rem;
+            color: var(--cost-green);
+            margin-top: 0.2rem;
+        }
+
+        .coordinator-history {
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .coordinator-history-title {
+            font-size: 0.8rem;
+            color: var(--gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .coordinator-history-item {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.4rem 0;
+        }
+
+        .history-dot {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--gray);
+        }
+
+        .history-name {
+            font-size: 0.85rem;
+            color: var(--dark);
+        }
+
+        .history-period {
+            font-size: 0.75rem;
+            color: var(--gray);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: var(--cost-orange);
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            nav ul { display: none; }
+            .stats-row { gap: 1.5rem; }
+            .wg-grid { grid-template-columns: 1fr; }
+            .position-grid { grid-template-columns: 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">COST <span>CA19130</span></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leadership.html" style="color: white; font-weight: 600;">Leadership</a></li>
+                <li><a href="mc-members.html">MC</a></li>
+                <li><a href="wg-members.html">WG</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="midterm-report.html">Mid-Term</a></li>
+                <li><a href="progress-reports.html">Progress</a></li>
+                <li><a href="final-report.html">Final</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Leadership Positions</h1>
+        <p>COST Action CA19130 - Fintech and AI in Finance</p>
+        <div class="stats-row">
+            <div class="stat-item">
+                <div class="stat-number" id="totalPositions">-</div>
+                <div class="stat-label">Positions</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="grantPeriods">-</div>
+                <div class="stat-label">Grant Periods</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalParticipants">-</div>
+                <div class="stat-label">WG Participants</div>
+            </div>
+        </div>
+        <div class="source-link">
+            Data source: <a href="https://e-services.cost.eu/action/CA19130/leadership-positions" target="_blank">COST e-services portal</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Grant Periods Timeline -->
+        <div class="section">
+            <div class="section-header">Grant Periods</div>
+            <div class="section-content">
+                <div class="grant-timeline" id="grantTimeline"></div>
+            </div>
+        </div>
+
+        <!-- Core Leadership -->
+        <div class="section">
+            <div class="section-header">Action Chair / Vice-Chair / Grant Holder</div>
+            <div class="section-content">
+                <div class="position-grid" id="coreLeadership"></div>
+            </div>
+        </div>
+
+        <!-- Working Groups -->
+        <div class="section">
+            <div class="section-header">Working Groups</div>
+            <div class="section-content">
+                <div class="wg-grid" id="workingGroups"></div>
+            </div>
+        </div>
+
+        <!-- Main Coordinators -->
+        <div class="section">
+            <div class="section-header">Coordinators</div>
+            <div class="section-content" id="coordinators"></div>
+        </div>
+
+        <!-- Other Leadership Positions -->
+        <div class="section">
+            <div class="section-header">Other Leadership Positions</div>
+            <div class="section-content">
+                <div class="position-grid" id="otherPositions"></div>
+            </div>
+        </div>
+
+        <!-- MC Observers (only shown if data exists) -->
+        <div class="section" id="observersSection" style="display: none;">
+            <div class="section-header">MC Observers</div>
+            <div class="section-content">
+                <div class="observers-grid" id="observers"></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="index.html">Home</a> | <a href="mc-members.html">MC Members</a> | <a href="wg-members.html">WG Members</a> | <a href="publications.html">Publications</a> | <a href="progress-reports.html">Progress</a> | <a href="final-report.html">Final</a></p>
+        <p style="margin-top: 1rem; opacity: 0.7;">COST Action CA19130 - Fintech and AI in Finance</p>
+    </footer>
+
+    <script>
+        let data = null;
+
+        function getInitials(name) {
+            return name.split(' ')
+                .filter(p => !['Prof', 'Dr', 'Mr', 'Ms'].includes(p))
+                .map(p => p[0])
+                .slice(0, 2)
+                .join('');
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: 'numeric' });
+        }
+
+        function renderGrantTimeline(periods) {
+            const container = document.getElementById('grantTimeline');
+            const reversed = [...periods].reverse();
+
+            container.innerHTML = reversed.map(p => `
+                <div class="grant-period">
+                    <div class="grant-period-header">
+                        <span class="grant-period-number">Grant Period ${p.period}</span>
+                        <span class="grant-period-dates">${formatDate(p.start)} - ${formatDate(p.end)}</span>
+                    </div>
+                    <div class="grant-period-holder">
+                        ${p.institution}
+                        <span class="grant-period-status">${p.status}</span>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderCoreLeadership(positions) {
+            const container = document.getElementById('coreLeadership');
+            container.innerHTML = positions.map(pos => `
+                <div class="position-card">
+                    <div class="position-title">${pos.title}</div>
+                    <div class="position-holder">${pos.current_holder}</div>
+                </div>
+            `).join('');
+        }
+
+        function renderWorkingGroups(wgs) {
+            const container = document.getElementById('workingGroups');
+            const colors = ['wg1', 'wg2', 'wg3'];
+
+            container.innerHTML = wgs.map((wg, i) => `
+                <div class="wg-card ${colors[i]}">
+                    <div class="wg-header">
+                        <span class="wg-number">WG${wg.number}</span>
+                        <span class="wg-participants">${wg.participants} participants</span>
+                    </div>
+                    <div class="wg-body">
+                        <div class="wg-title">${wg.title}</div>
+                        <div class="wg-leader-label">Leader</div>
+                        <div class="wg-leader">${wg.leader}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        function renderCoordinators(coords) {
+            const container = document.getElementById('coordinators');
+
+            container.innerHTML = coords.map(coord => {
+                let historyHtml = '';
+                if (coord.history && coord.history.length > 0) {
+                    historyHtml = `
+                        <div class="coordinator-history">
+                            <div class="coordinator-history-title">Previous holders:</div>
+                            ${coord.history.map(h => `
+                                <div class="coordinator-history-item">
+                                    <div class="history-dot"></div>
+                                    <span class="history-name">${h.name}</span>
+                                    <span class="history-period">(${formatDate(h.start)} - ${formatDate(h.end)})</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                }
+
+                return `
+                    <div class="coordinator-card">
+                        <div class="coordinator-header">
+                            <span class="coordinator-title">${coord.title}</span>
+                            <span class="coordinator-badge">Current</span>
+                        </div>
+                        <div class="coordinator-body">
+                            <div class="coordinator-current">
+                                <div class="coordinator-avatar">${getInitials(coord.current_holder)}</div>
+                                <div class="coordinator-info">
+                                    <h4>${coord.current_holder}</h4>
+                                    <div class="date">Since ${formatDate(coord.start_date)}</div>
+                                </div>
+                            </div>
+                            ${historyHtml}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderOtherPositions(positions) {
+            const container = document.getElementById('otherPositions');
+
+            container.innerHTML = positions.map(pos => {
+                const holders = pos.current_holders.join(', ');
+
+                let historyHtml = '';
+                if (pos.history && pos.history.length > 0) {
+                    historyHtml = `
+                        <div class="position-history">
+                            <div class="history-title">Previous:</div>
+                            ${pos.history.map(h => `
+                                <div class="history-item">
+                                    <span class="name">${h.name}</span>
+                                    <br>${formatDate(h.start)} - ${formatDate(h.end)}
+                                </div>
+                            `).join('')}
+                        </div>
+                    `;
+                }
+
+                return `
+                    <div class="position-card">
+                        <div class="position-title">${pos.title}</div>
+                        <div class="position-holder">${holders}</div>
+                        <div class="position-date">Since ${formatDate(pos.start_date)}</div>
+                        ${historyHtml}
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function renderObservers(observers) {
+            const container = document.getElementById('observers');
+            container.innerHTML = observers.map(obs => `
+                <div class="observer-card">
+                    <div class="observer-avatar">${getInitials(obs.name)}</div>
+                    <div class="observer-info">
+                        <h5>${obs.name}</h5>
+                        <div class="country">${obs.country}</div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // Load and render
+        fetch('data/leadership.json')
+            .then(response => response.json())
+            .then(d => {
+                data = d;
+
+                // Stats
+                const totalPositions =
+                    data.core_leadership.length +
+                    data.working_groups.length +
+                    data.coordinators.length +
+                    data.other_positions.length;
+
+                document.getElementById('totalPositions').textContent = totalPositions;
+                document.getElementById('grantPeriods').textContent = data.grant_periods.length;
+                document.getElementById('totalParticipants').textContent = data.statistics.total_wg_participants;
+
+                // Render sections
+                renderGrantTimeline(data.grant_periods);
+                renderCoreLeadership(data.core_leadership);
+                renderWorkingGroups(data.working_groups);
+                renderCoordinators(data.coordinators);
+                renderOtherPositions(data.other_positions);
+
+                // Only show MC Observers if data exists
+                if (data.mc_observers && data.mc_observers.length > 0) {
+                    document.getElementById('observersSection').style.display = 'block';
+                    renderObservers(data.mc_observers);
+                }
+            })
+            .catch(err => {
+                console.error('Error loading leadership data:', err);
+                document.querySelector('.container').innerHTML =
+                    '<div style="text-align: center; padding: 3rem; color: var(--gray);">Unable to load leadership data. Please try again later.</div>';
+            });
+    </script>
+</body>
+</html>

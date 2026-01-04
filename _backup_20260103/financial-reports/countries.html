@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Analytics - Financial Reports - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .hero-small { background: linear-gradient(135deg, var(--cost-green), var(--cost-teal)); color: white; padding: 3rem 2rem; text-align: center; }
+        .hero-small h1 { font-size: 2rem; }
+        .hero-small p { opacity: 0.9; margin-top: 0.5rem; }
+        section { padding: 2rem; max-width: 1400px; margin: 0 auto; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: center; }
+        .stat-box { background: white; padding: 1.2rem 1.5rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; min-width: 130px; }
+        .stat-box .num { font-size: 1.6rem; font-weight: 700; color: var(--cost-teal); }
+        .stat-box .label { font-size: 0.75rem; color: var(--gray); }
+        .stat-box.itc .num { color: var(--cost-orange); }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .card h3 { font-size: 1.1rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        .filters { display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; align-items: center; }
+        .filters input, .filters select { padding: 0.6rem 1rem; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; }
+        .filters input { flex: 1; min-width: 200px; }
+        .filters select { min-width: 150px; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: var(--cost-green); color: white; padding: 12px 10px; text-align: left; font-weight: 500; font-size: 0.8rem; cursor: pointer; white-space: nowrap; }
+        th:hover { background: #6ca300; }
+        th.sorted-asc::after { content: ' ^'; }
+        th.sorted-desc::after { content: ' v'; }
+        td { padding: 10px; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+        tr:hover { background: rgba(122, 184, 0, 0.05); }
+        .amount { font-weight: 600; color: var(--cost-teal); white-space: nowrap; }
+        .country-name { font-weight: 600; }
+        .itc-badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 0.65rem; font-weight: 500; background: rgba(232, 119, 34, 0.15); color: var(--cost-orange); margin-left: 0.3rem; }
+        .bar-container { width: 100%; height: 20px; background: var(--light); border-radius: 4px; overflow: hidden; position: relative; }
+        .bar { height: 100%; border-radius: 4px; }
+        .bar-meetings { background: var(--cost-blue); }
+        .bar-stsm { background: var(--cost-purple); }
+        .bar-vm { background: var(--cost-teal); }
+        .bar-ts { background: var(--cost-green); }
+        .legend { display: flex; gap: 1.5rem; flex-wrap: wrap; margin-bottom: 1rem; font-size: 0.85rem; }
+        .legend-item { display: flex; align-items: center; gap: 0.3rem; }
+        .legend-color { width: 16px; height: 16px; border-radius: 3px; }
+        .comparison-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; }
+        .comparison-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .comparison-card h4 { font-size: 1rem; color: var(--cost-purple); margin-bottom: 1rem; display: flex; align-items: center; gap: 0.5rem; }
+        .comparison-stats { display: flex; justify-content: space-between; gap: 1rem; }
+        .comparison-stat { text-align: center; }
+        .comparison-stat .value { font-size: 1.3rem; font-weight: 700; }
+        .comparison-stat .label { font-size: 0.75rem; color: var(--gray); }
+        .itc-color { color: var(--cost-orange); }
+        .nonitc-color { color: var(--cost-blue); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        .loading { text-align: center; padding: 2rem; color: var(--gray); }
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            .filters { flex-direction: column; }
+            .filters input, .filters select { width: 100%; }
+            td, th { padding: 6px 4px; font-size: 0.75rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="participants.html">Participants</a></li>
+                <li><a href="meetings.html">Meetings</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>Country Analytics</span>
+    </div>
+
+    <header class="hero-small">
+        <h1>Country Analytics</h1>
+        <p id="hero-subtitle">Loading country statistics...</p>
+    </header>
+
+    <section>
+        <div class="stats" id="stats-container">
+            <div class="stat-box"><div class="num" id="stat-countries">--</div><div class="label">Countries</div></div>
+            <div class="stat-box itc"><div class="num" id="stat-itc">--</div><div class="label">ITC Countries</div></div>
+            <div class="stat-box"><div class="num" id="stat-participants">--</div><div class="label">Unique Participants</div></div>
+            <div class="stat-box"><div class="num" id="stat-amount">--</div><div class="label">Total EUR</div></div>
+            <div class="stat-box itc"><div class="num" id="stat-itc-pct">--</div><div class="label">ITC Funding %</div></div>
+        </div>
+
+        <h2>ITC vs Non-ITC Comparison</h2>
+        <div class="comparison-grid">
+            <div class="comparison-card">
+                <h4><span class="legend-color" style="background: var(--cost-orange);"></span> ITC Countries</h4>
+                <div class="comparison-stats" id="itc-stats"></div>
+            </div>
+            <div class="comparison-card">
+                <h4><span class="legend-color" style="background: var(--cost-blue);"></span> Non-ITC Countries</h4>
+                <div class="comparison-stats" id="nonitc-stats"></div>
+            </div>
+        </div>
+
+        <h2>Country Details</h2>
+        <div class="card">
+            <div class="legend">
+                <div class="legend-item"><div class="legend-color" style="background: var(--cost-blue);"></div> Meetings</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--cost-purple);"></div> STSMs</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--cost-teal);"></div> Virtual Mobility</div>
+                <div class="legend-item"><div class="legend-color" style="background: var(--cost-green);"></div> Training Schools</div>
+            </div>
+            <div class="filters">
+                <input type="text" id="search" placeholder="Search by country..." onkeyup="filterTable()">
+                <select id="itcFilter" onchange="filterTable()">
+                    <option value="">All Countries</option>
+                    <option value="itc">ITC Countries Only</option>
+                    <option value="non-itc">Non-ITC Countries</option>
+                </select>
+                <select id="sortBy" onchange="sortTable()">
+                    <option value="total_amount">Sort by Total Funding</option>
+                    <option value="unique_participant_count">Sort by Participants</option>
+                    <option value="meeting_participants">Sort by Meeting Attendance</option>
+                    <option value="code">Sort by Country Code</option>
+                </select>
+            </div>
+            <table id="countries-table">
+                <thead>
+                    <tr>
+                        <th onclick="sortByColumn('code')">Country</th>
+                        <th onclick="sortByColumn('unique_participant_count')">Participants</th>
+                        <th onclick="sortByColumn('meeting_participants')">Meetings</th>
+                        <th onclick="sortByColumn('stsm_count')">STSMs</th>
+                        <th onclick="sortByColumn('vm_count')">VM</th>
+                        <th onclick="sortByColumn('ts_participants')">TS</th>
+                        <th onclick="sortByColumn('total_amount')">Total EUR</th>
+                        <th style="width: 200px;">Distribution</th>
+                    </tr>
+                </thead>
+                <tbody id="countries-tbody">
+                    <tr><td colspan="8" class="loading">Loading country data...</td></tr>
+                </tbody>
+            </table>
+            <p id="filter-status" style="margin-top: 1rem; font-size: 0.85rem; color: var(--gray);"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Financial Reports</a> | <a href="participants.html">Participants</a> | <a href="meetings.html">Meetings</a></p>
+    </footer>
+
+    <script>
+        let countryData = [];
+        let currentSort = { column: 'total_amount', direction: 'desc' };
+
+        const COUNTRY_NAMES = {
+            'AL': 'Albania', 'AT': 'Austria', 'BA': 'Bosnia & Herzegovina', 'BE': 'Belgium', 'BG': 'Bulgaria',
+            'CH': 'Switzerland', 'CY': 'Cyprus', 'CZ': 'Czechia', 'DE': 'Germany', 'DK': 'Denmark',
+            'EE': 'Estonia', 'EL': 'Greece', 'ES': 'Spain', 'FI': 'Finland', 'FR': 'France',
+            'GB': 'United Kingdom', 'HR': 'Croatia', 'HU': 'Hungary', 'IE': 'Ireland', 'IL': 'Israel',
+            'IS': 'Iceland', 'IT': 'Italy', 'KV': 'Kosovo', 'LI': 'Liechtenstein', 'LT': 'Lithuania',
+            'LU': 'Luxembourg', 'LV': 'Latvia', 'MD': 'Moldova', 'ME': 'Montenegro', 'MK': 'North Macedonia',
+            'MT': 'Malta', 'NL': 'Netherlands', 'NO': 'Norway', 'PL': 'Poland', 'PT': 'Portugal',
+            'RO': 'Romania', 'RS': 'Serbia', 'SE': 'Sweden', 'SI': 'Slovenia', 'SK': 'Slovakia',
+            'TR': 'Turkey', 'UA': 'Ukraine', 'UK': 'United Kingdom', 'US': 'United States'
+        };
+
+        function formatAmount(amount) {
+            return new Intl.NumberFormat('en-EU', { minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(amount);
+        }
+
+        async function loadData() {
+            try {
+                const response = await fetch('../data/country_statistics_full.json');
+                countryData = await response.json();
+
+                // Filter out empty country codes
+                countryData = countryData.filter(c => c.code && c.code.trim() !== '');
+
+                // Sort by total amount descending
+                sortData();
+
+                updateStats();
+                updateComparison();
+                renderTable(countryData);
+            } catch (error) {
+                console.error('Error loading country data:', error);
+                document.getElementById('countries-tbody').innerHTML = '<tr><td colspan="8" class="loading">Error loading data.</td></tr>';
+            }
+        }
+
+        function updateStats() {
+            const totalCountries = countryData.length;
+            const itcCountries = countryData.filter(c => c.is_itc).length;
+            const totalParticipants = countryData.reduce((sum, c) => sum + c.unique_participant_count, 0);
+            const totalAmount = countryData.reduce((sum, c) => sum + c.total_amount, 0);
+            const itcAmount = countryData.filter(c => c.is_itc).reduce((sum, c) => sum + c.total_amount, 0);
+            const itcPct = totalAmount > 0 ? Math.round((itcAmount / totalAmount) * 100) : 0;
+
+            document.getElementById('stat-countries').textContent = totalCountries;
+            document.getElementById('stat-itc').textContent = itcCountries;
+            document.getElementById('stat-participants').textContent = totalParticipants;
+            document.getElementById('stat-amount').textContent = formatAmount(totalAmount);
+            document.getElementById('stat-itc-pct').textContent = itcPct + '%';
+            document.getElementById('hero-subtitle').textContent = `Participation from ${totalCountries} countries with ${totalParticipants} unique researchers`;
+        }
+
+        function updateComparison() {
+            const itcData = countryData.filter(c => c.is_itc);
+            const nonItcData = countryData.filter(c => !c.is_itc);
+
+            const itcStats = {
+                countries: itcData.length,
+                participants: itcData.reduce((s, c) => s + c.unique_participant_count, 0),
+                amount: itcData.reduce((s, c) => s + c.total_amount, 0),
+                meetings: itcData.reduce((s, c) => s + c.meeting_participants, 0)
+            };
+
+            const nonItcStats = {
+                countries: nonItcData.length,
+                participants: nonItcData.reduce((s, c) => s + c.unique_participant_count, 0),
+                amount: nonItcData.reduce((s, c) => s + c.total_amount, 0),
+                meetings: nonItcData.reduce((s, c) => s + c.meeting_participants, 0)
+            };
+
+            document.getElementById('itc-stats').innerHTML = `
+                <div class="comparison-stat"><div class="value itc-color">${itcStats.countries}</div><div class="label">Countries</div></div>
+                <div class="comparison-stat"><div class="value itc-color">${itcStats.participants}</div><div class="label">Participants</div></div>
+                <div class="comparison-stat"><div class="value itc-color">${itcStats.meetings}</div><div class="label">Meeting Attendance</div></div>
+                <div class="comparison-stat"><div class="value itc-color">${formatAmount(itcStats.amount)}</div><div class="label">Total EUR</div></div>
+            `;
+
+            document.getElementById('nonitc-stats').innerHTML = `
+                <div class="comparison-stat"><div class="value nonitc-color">${nonItcStats.countries}</div><div class="label">Countries</div></div>
+                <div class="comparison-stat"><div class="value nonitc-color">${nonItcStats.participants}</div><div class="label">Participants</div></div>
+                <div class="comparison-stat"><div class="value nonitc-color">${nonItcStats.meetings}</div><div class="label">Meeting Attendance</div></div>
+                <div class="comparison-stat"><div class="value nonitc-color">${formatAmount(nonItcStats.amount)}</div><div class="label">Total EUR</div></div>
+            `;
+        }
+
+        function sortData() {
+            const col = currentSort.column;
+            const dir = currentSort.direction === 'asc' ? 1 : -1;
+
+            countryData.sort((a, b) => {
+                let valA = a[col];
+                let valB = b[col];
+                if (typeof valA === 'string') {
+                    return valA.localeCompare(valB) * dir;
+                }
+                return (valA - valB) * dir;
+            });
+        }
+
+        function sortByColumn(column) {
+            if (currentSort.column === column) {
+                currentSort.direction = currentSort.direction === 'asc' ? 'desc' : 'asc';
+            } else {
+                currentSort.column = column;
+                currentSort.direction = 'desc';
+            }
+            sortData();
+            filterTable();
+        }
+
+        function sortTable() {
+            currentSort.column = document.getElementById('sortBy').value;
+            currentSort.direction = 'desc';
+            sortData();
+            filterTable();
+        }
+
+        function renderTable(data) {
+            const tbody = document.getElementById('countries-tbody');
+            const maxTotal = Math.max(...data.map(c => c.total_amount));
+
+            if (data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="8" class="loading">No matching countries found.</td></tr>';
+                document.getElementById('filter-status').textContent = '';
+                return;
+            }
+
+            let html = '';
+            data.forEach(country => {
+                const countryName = COUNTRY_NAMES[country.code] || country.code;
+                const itcBadge = country.is_itc ? '<span class="itc-badge">ITC</span>' : '';
+
+                // Calculate bar widths
+                const total = country.total_amount;
+                const meetingsPct = total > 0 ? (country.meeting_reimbursements / total) * 100 : 0;
+                const stsmPct = total > 0 ? (country.stsm_amount / total) * 100 : 0;
+                const vmPct = total > 0 ? (country.vm_amount / total) * 100 : 0;
+                const tsPct = total > 0 ? (country.ts_amount / total) * 100 : 0;
+
+                html += `<tr>
+                    <td><span class="country-name">${country.code}</span> ${countryName}${itcBadge}</td>
+                    <td>${country.unique_participant_count}</td>
+                    <td>${country.meeting_participants}</td>
+                    <td>${country.stsm_count || '-'}</td>
+                    <td>${country.vm_count || '-'}</td>
+                    <td>${country.ts_participants || '-'}</td>
+                    <td class="amount">${formatAmount(country.total_amount)}</td>
+                    <td>
+                        <div class="bar-container">
+                            <div class="bar bar-meetings" style="width: ${meetingsPct}%; position: absolute; left: 0;"></div>
+                            <div class="bar bar-stsm" style="width: ${stsmPct}%; position: absolute; left: ${meetingsPct}%;"></div>
+                            <div class="bar bar-vm" style="width: ${vmPct}%; position: absolute; left: ${meetingsPct + stsmPct}%;"></div>
+                            <div class="bar bar-ts" style="width: ${tsPct}%; position: absolute; left: ${meetingsPct + stsmPct + vmPct}%;"></div>
+                        </div>
+                    </td>
+                </tr>`;
+            });
+            tbody.innerHTML = html;
+
+            const totalAmount = data.reduce((sum, c) => sum + c.total_amount, 0);
+            document.getElementById('filter-status').textContent = `Showing ${data.length} countries totaling EUR ${formatAmount(totalAmount)}`;
+        }
+
+        function filterTable() {
+            const search = document.getElementById('search').value.toLowerCase();
+            const itcFilter = document.getElementById('itcFilter').value;
+
+            const filtered = countryData.filter(country => {
+                const countryName = COUNTRY_NAMES[country.code] || '';
+                const matchSearch = !search ||
+                    country.code.toLowerCase().includes(search) ||
+                    countryName.toLowerCase().includes(search);
+                const matchITC = !itcFilter ||
+                    (itcFilter === 'itc' && country.is_itc) ||
+                    (itcFilter === 'non-itc' && !country.is_itc);
+                return matchSearch && matchITC;
+            });
+
+            renderTable(filtered);
+        }
+
+        // Load data on page load
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

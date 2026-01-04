@@ -1,0 +1,797 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COST Action CA19130 - Fintech and AI in Finance</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        /* Navigation */
+        nav {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        nav .logo span {
+            color: var(--cost-orange);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 50%, var(--cost-teal) 100%);
+            color: white;
+            padding: 8rem 2rem 4rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 0.5rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .action-id {
+            font-size: 1.2rem;
+            color: var(--cost-orange);
+            font-weight: 600;
+            margin-bottom: 1rem;
+        }
+
+        .hero .subtitle {
+            font-size: 1.4rem;
+            opacity: 0.95;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            font-weight: 300;
+        }
+
+        .hero .period {
+            font-size: 1rem;
+            opacity: 0.8;
+        }
+
+        /* Stats Banner */
+        .stats-banner {
+            background: white;
+            padding: 2rem;
+            display: flex;
+            justify-content: center;
+            gap: 4rem;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: 700;
+            color: var(--cost-purple);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Sections */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: var(--cost-purple);
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 3px;
+            background: var(--cost-orange);
+            margin: 0.8rem auto 0;
+        }
+
+        /* Working Groups */
+        .wg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .wg-card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            border-left: 4px solid var(--cost-teal);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .wg-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .wg-card.wg1 { border-left-color: var(--cost-purple); }
+        .wg-card.wg2 { border-left-color: var(--cost-blue); }
+        .wg-card.wg3 { border-left-color: var(--cost-green); }
+
+        .wg-card h3 {
+            font-size: 1.1rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .wg-card .wg-id {
+            font-size: 0.8rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-bottom: 1rem;
+        }
+
+        .wg-card p {
+            color: var(--gray);
+            font-size: 0.95rem;
+        }
+
+        .wg-card .member-count {
+            display: inline-block;
+            margin-top: 1rem;
+            background: var(--light);
+            padding: 0.3rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--cost-purple);
+            font-weight: 500;
+        }
+
+        /* Charts Section */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .chart-container h3 {
+            font-size: 1rem;
+            color: var(--dark);
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .chart-wrapper {
+            height: 280px;
+            position: relative;
+        }
+
+        /* Countries Section */
+        .countries-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.5rem;
+            justify-content: center;
+            margin-top: 1.5rem;
+        }
+
+        .country-pill {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            color: var(--dark);
+            transition: all 0.3s;
+        }
+
+        .country-pill:hover {
+            background: var(--cost-purple);
+            color: white;
+            border-color: var(--cost-purple);
+        }
+
+        .country-pill.itc {
+            border-color: var(--cost-orange);
+            background: rgba(232, 119, 34, 0.1);
+        }
+
+        /* Objectives */
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .objective-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .objective-card .icon {
+            width: 50px;
+            height: 50px;
+            border-radius: 12px;
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .objective-card h4 {
+            font-size: 1rem;
+            color: var(--dark);
+            margin-bottom: 0.5rem;
+        }
+
+        .objective-card p {
+            font-size: 0.9rem;
+            color: var(--gray);
+        }
+
+        /* Timeline */
+        .timeline {
+            position: relative;
+            max-width: 800px;
+            margin: 2rem auto 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 2px;
+            height: 100%;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50%;
+            position: relative;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item:nth-child(even) {
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 50%;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            max-width: 350px;
+            margin-right: 2rem;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-right: 0;
+            margin-left: 2rem;
+        }
+
+        .timeline-date {
+            font-size: 0.85rem;
+            color: var(--cost-purple);
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .timeline-title {
+            font-size: 1rem;
+            color: var(--dark);
+        }
+
+        /* Footer */
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 3rem 2rem;
+            text-align: center;
+        }
+
+        footer .cost-logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        footer p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.9rem;
+            max-width: 600px;
+            margin: 0 auto 1.5rem;
+        }
+
+        footer .links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        footer a {
+            color: var(--cost-orange);
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            nav ul {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            .stats-banner {
+                gap: 2rem;
+            }
+
+            .timeline::before {
+                left: 20px;
+            }
+
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                padding-left: 50px;
+                padding-right: 0;
+                justify-content: flex-start;
+            }
+
+            .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="final-action-chair-report-full.html">Final Report</a></li>
+                <li><a href="midterm-action-chair-report-full.html">Mid-Term</a></li>
+                <li><a href="comparison-action-chair-full.html">Comparison</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="mc-members.html">MC</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="action-id">COST Action CA19130</div>
+        <h1>Fintech and Artificial Intelligence in Finance</h1>
+        <p class="subtitle">Towards a transparent financial industry</p>
+        <p class="period">Duration: October 2020 - October 2024</p>
+    </header>
+
+    <div class="stats-banner">
+        <div class="stat-item">
+            <div class="stat-number">426</div>
+            <div class="stat-label">Members</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">48</div>
+            <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Working Groups</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">70</div>
+            <div class="stat-label">MC Members</div>
+        </div>
+    </div>
+
+    <section id="about">
+        <h2>About the Action</h2>
+        <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <p style="font-size: 1.1rem; color: var(--gray); line-height: 1.8;">
+                This COST Action brings together researchers, practitioners, and policymakers to address
+                the challenges and opportunities arising from the rapid adoption of artificial intelligence
+                and fintech solutions in the financial industry. Our mission is to promote transparency,
+                fairness, and accountability in financial services through interdisciplinary collaboration
+                and knowledge exchange across Europe and beyond.
+            </p>
+        </div>
+    </section>
+
+    <section id="working-groups">
+        <h2>Working Groups</h2>
+        <div class="wg-grid">
+            <div class="wg-card wg1">
+                <div class="wg-id">Working Group 1</div>
+                <h3>Transparency in FinTech</h3>
+                <p>
+                    Investigating transparency requirements and solutions in fintech applications,
+                    including blockchain, digital payments, and regulatory compliance technologies.
+                </p>
+                <span class="member-count">280 Members</span>
+            </div>
+            <div class="wg-card wg2">
+                <div class="wg-id">Working Group 2</div>
+                <h3>Transparent vs Black Box Decision-Support Models</h3>
+                <p>
+                    Comparing transparent and opaque machine learning models in financial
+                    decision-making, focusing on explainability and interpretability.
+                </p>
+                <span class="member-count">253 Members</span>
+            </div>
+            <div class="wg-card wg3">
+                <div class="wg-id">Working Group 3</div>
+                <h3>Investment Product Performance Transparency</h3>
+                <p>
+                    Enhancing transparency in investment product performance reporting
+                    for retail and institutional clients.
+                </p>
+                <span class="member-count">223 Members</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="statistics">
+        <h2>Member Statistics</h2>
+        <div class="charts-grid">
+            <div class="chart-container">
+                <h3>Gender Distribution</h3>
+                <div class="chart-wrapper">
+                    <canvas id="genderChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h3>Working Group Participation</h3>
+                <div class="chart-wrapper">
+                    <canvas id="wgChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h3>ITC vs Non-ITC Countries</h3>
+                <div class="chart-wrapper">
+                    <canvas id="itcChart"></canvas>
+                </div>
+            </div>
+            <div class="chart-container">
+                <h3>Membership Types</h3>
+                <div class="chart-wrapper">
+                    <canvas id="membershipChart"></canvas>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="countries">
+        <h2>Participating Countries</h2>
+        <p style="text-align: center; color: var(--gray); margin-bottom: 1rem;">
+            48 countries across Europe, the Mediterranean, and beyond.
+            <span style="color: var(--cost-orange);">ITC countries highlighted.</span>
+        </p>
+        <div class="countries-list" id="countriesList">
+            <!-- Populated by JavaScript -->
+        </div>
+    </section>
+
+    <section id="objectives">
+        <h2>Main Objectives</h2>
+        <div class="objectives-grid">
+            <div class="objective-card">
+                <div class="icon">1</div>
+                <h4>Research Networking</h4>
+                <p>Build a pan-European research network on AI and fintech transparency.</p>
+            </div>
+            <div class="objective-card">
+                <div class="icon">2</div>
+                <h4>Knowledge Transfer</h4>
+                <p>Facilitate knowledge exchange between academia, industry, and regulators.</p>
+            </div>
+            <div class="objective-card">
+                <div class="icon">3</div>
+                <h4>Early Career Support</h4>
+                <p>Support early-career researchers through training schools and STSMs.</p>
+            </div>
+            <div class="objective-card">
+                <div class="icon">4</div>
+                <h4>Policy Impact</h4>
+                <p>Contribute to evidence-based policy recommendations on financial AI.</p>
+            </div>
+            <div class="objective-card">
+                <div class="icon">5</div>
+                <h4>Best Practices</h4>
+                <p>Develop guidelines for transparent AI in financial services.</p>
+            </div>
+            <div class="objective-card">
+                <div class="icon">6</div>
+                <h4>ITC Inclusiveness</h4>
+                <p>Promote participation from Inclusiveness Target Countries.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="timeline">
+        <h2>Action Timeline</h2>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">October 2020</div>
+                    <div class="timeline-title">Action Start - First MC Meeting</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2021</div>
+                    <div class="timeline-title">Working Groups Formation & First Training School</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2022</div>
+                    <div class="timeline-title">Multiple STSMs & Conference Organization</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">2023</div>
+                    <div class="timeline-title">Publications & International Collaborations</div>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-content">
+                    <div class="timeline-date">October 2024</div>
+                    <div class="timeline-title">Action Conclusion & Final Conference</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="cost-logo">COST Action CA19130</div>
+        <p>
+            COST (European Cooperation in Science and Technology) is a funding agency for research
+            and innovation networks. Our Actions help connect research initiatives across Europe
+            and enable scientists to grow their ideas by sharing them with their peers.
+        </p>
+        <div class="links">
+            <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Official Page</a>
+            <a href="https://github.com/Digital-AI-Finance" target="_blank">GitHub Organization</a>
+            <a href="publications.html">Publications</a>
+            <a href="midterm-report.html">Mid-Term Report</a>
+            <a href="progress-reports.html">Progress Reports</a>
+            <a href="final-report.html">Final Report</a>
+        </div>
+    </footer>
+
+    <script>
+        // Chart.js configurations
+        const chartColors = {
+            purple: '#5B2D8A',
+            blue: '#2B5F9E',
+            teal: '#00A0B0',
+            orange: '#E87722',
+            green: '#7AB800'
+        };
+
+        // Gender Chart
+        new Chart(document.getElementById('genderChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Male', 'Female'],
+                datasets: [{
+                    data: [239, 187],
+                    backgroundColor: [chartColors.blue, chartColors.purple],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        // Working Groups Chart
+        new Chart(document.getElementById('wgChart'), {
+            type: 'bar',
+            data: {
+                labels: ['WG1', 'WG2', 'WG3'],
+                datasets: [{
+                    label: 'Members',
+                    data: [280, 253, 223],
+                    backgroundColor: [chartColors.purple, chartColors.blue, chartColors.green],
+                    borderWidth: 0,
+                    borderRadius: 6
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        display: false
+                    }
+                },
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+
+        // ITC Chart
+        new Chart(document.getElementById('itcChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['ITC Countries', 'Non-ITC Countries'],
+                datasets: [{
+                    data: [222, 204],
+                    backgroundColor: [chartColors.orange, chartColors.teal],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        // Membership Chart
+        new Chart(document.getElementById('membershipChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['MC Members', 'WG Members'],
+                datasets: [{
+                    data: [70, 356],
+                    backgroundColor: [chartColors.purple, chartColors.blue],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: {
+                        position: 'bottom'
+                    }
+                }
+            }
+        });
+
+        // Countries list
+        const countries = [
+            {name: 'Albania', itc: true}, {name: 'Algeria', itc: false}, {name: 'Austria', itc: false},
+            {name: 'Belgium', itc: false}, {name: 'Bosnia and Herzegovina', itc: true}, {name: 'Bulgaria', itc: true},
+            {name: 'Croatia', itc: true}, {name: 'Cyprus', itc: true}, {name: 'Czech Republic', itc: true},
+            {name: 'Denmark', itc: false}, {name: 'Estonia', itc: true}, {name: 'France', itc: false},
+            {name: 'Germany', itc: false}, {name: 'Greece', itc: true}, {name: 'Hungary', itc: true},
+            {name: 'Iceland', itc: false}, {name: 'Ireland', itc: false}, {name: 'Israel', itc: false},
+            {name: 'Italy', itc: false}, {name: 'Latvia', itc: true}, {name: 'Lithuania', itc: true},
+            {name: 'Luxembourg', itc: false}, {name: 'Malta', itc: true}, {name: 'Montenegro', itc: true},
+            {name: 'Netherlands', itc: false}, {name: 'North Macedonia', itc: true}, {name: 'Norway', itc: false},
+            {name: 'Poland', itc: true}, {name: 'Portugal', itc: true}, {name: 'Romania', itc: true},
+            {name: 'Serbia', itc: true}, {name: 'Slovakia', itc: true}, {name: 'Slovenia', itc: true},
+            {name: 'Spain', itc: false}, {name: 'Sweden', itc: false}, {name: 'Switzerland', itc: false},
+            {name: 'Tunisia', itc: false}, {name: 'Turkey', itc: true}, {name: 'Ukraine', itc: true},
+            {name: 'United Kingdom', itc: false}
+        ];
+
+        const countriesList = document.getElementById('countriesList');
+        countries.sort((a, b) => a.name.localeCompare(b.name));
+        countries.forEach(country => {
+            const pill = document.createElement('span');
+            pill.className = 'country-pill' + (country.itc ? ' itc' : '');
+            pill.textContent = country.name;
+            countriesList.appendChild(pill);
+        });
+    </script>
+</body>
+</html>

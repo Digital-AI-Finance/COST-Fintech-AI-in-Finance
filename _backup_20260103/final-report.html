@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Achievement Report - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --cost-red: #dc3545;
+            --cost-gold: #FFD700;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+            --success: #28a745;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; text-decoration: none; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .hero { background: linear-gradient(135deg, var(--cost-green) 0%, var(--cost-teal) 50%, var(--cost-blue) 100%); color: white; padding: 8rem 2rem 4rem; text-align: center; }
+        .hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .hero .report-badge { display: inline-block; background: var(--cost-gold); color: var(--dark); padding: 0.4rem 1.2rem; border-radius: 20px; font-size: 0.9rem; font-weight: 600; margin-bottom: 1rem; }
+        .hero .subtitle { font-size: 1.2rem; opacity: 0.95; max-width: 800px; margin: 0 auto 1rem; font-weight: 300; }
+        .hero .period { font-size: 1rem; opacity: 0.8; }
+        .stats-banner { background: white; padding: 2rem; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; box-shadow: 0 4px 20px rgba(0,0,0,0.08); }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2.2rem; font-weight: 700; color: var(--cost-green); }
+        .stat-label { font-size: 0.8rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.05em; }
+        section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+        section h2 { font-size: 1.8rem; color: var(--cost-purple); margin-bottom: 1.5rem; text-align: center; }
+        section h2::after { content: ''; display: block; width: 60px; height: 3px; background: var(--cost-orange); margin: 0.8rem auto 0; }
+        .report-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; margin: 2rem 0; }
+        .report-card { background: white; border-radius: 16px; overflow: hidden; box-shadow: 0 8px 30px rgba(0,0,0,0.12); transition: transform 0.3s, box-shadow 0.3s; }
+        .report-card:hover { transform: translateY(-5px); box-shadow: 0 12px 40px rgba(0,0,0,0.18); }
+        .report-card-header { padding: 2rem; color: white; }
+        .report-card-header.green { background: linear-gradient(135deg, var(--cost-green), var(--cost-teal)); }
+        .report-card-header.purple { background: linear-gradient(135deg, var(--cost-purple), #2d1b4e); }
+        .report-card-header.blue { background: linear-gradient(135deg, var(--cost-blue), var(--cost-teal)); }
+        .report-card-header.dark { background: linear-gradient(135deg, #2d1b4e, var(--cost-purple)); }
+        .report-card-header .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 0.2rem 0.8rem; border-radius: 12px; font-size: 0.75rem; margin-bottom: 0.8rem; }
+        .report-card-header h3 { font-size: 1.4rem; margin-bottom: 0.5rem; }
+        .report-card-header p { opacity: 0.9; font-size: 0.9rem; }
+        .report-card-body { padding: 1.5rem 2rem 2rem; }
+        .report-card-body ul { list-style: none; margin: 0 0 1.5rem 0; }
+        .report-card-body li { display: flex; align-items: flex-start; gap: 0.5rem; margin-bottom: 0.6rem; font-size: 0.9rem; color: var(--gray); }
+        .report-card-body li::before { content: ""; flex-shrink: 0; width: 6px; height: 6px; background: var(--cost-green); border-radius: 50%; margin-top: 0.5rem; }
+        .report-card-body .btn { display: inline-block; background: var(--cost-green); color: white; text-decoration: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: 600; font-size: 0.9rem; transition: background 0.3s; }
+        .report-card-body .btn:hover { background: #5a9400; }
+        .summary-section { background: white; border-radius: 16px; padding: 2.5rem; box-shadow: 0 8px 30px rgba(0,0,0,0.1); margin: 2rem 0; }
+        .summary-section h3 { color: var(--cost-purple); margin-bottom: 1rem; font-size: 1.3rem; }
+        .summary-section p { color: var(--gray); font-size: 1rem; line-height: 1.8; margin-bottom: 1rem; }
+        .highlight-quote { background: linear-gradient(135deg, rgba(122,184,0,0.1), rgba(0,160,176,0.1)); border-left: 4px solid var(--cost-green); padding: 1.5rem; border-radius: 0 12px 12px 0; margin: 1.5rem 0; }
+        .highlight-quote p { color: var(--dark); font-style: italic; margin: 0; }
+        .highlight-quote .source { font-style: normal; font-size: 0.85rem; color: var(--cost-green); margin-top: 0.5rem; font-weight: 600; }
+        .key-stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .key-stat { background: white; border-radius: 12px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--cost-green); }
+        .key-stat .value { font-size: 2.5rem; font-weight: 700; color: var(--cost-green); }
+        .key-stat .label { font-size: 0.85rem; color: var(--gray); margin-top: 0.3rem; }
+        .platforms-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .platform-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 3px solid var(--cost-teal); }
+        .platform-card h4 { color: var(--cost-purple); margin-bottom: 0.5rem; }
+        .platform-card p { color: var(--gray); font-size: 0.9rem; margin-bottom: 1rem; }
+        .platform-card a { color: var(--cost-teal); font-size: 0.85rem; text-decoration: none; font-weight: 500; }
+        .platform-card a:hover { text-decoration: underline; }
+        .success-badge { display: inline-block; background: var(--success); color: white; padding: 0.3rem 0.8rem; border-radius: 12px; font-size: 0.8rem; font-weight: 600; }
+        .pdf-download { display: inline-flex; align-items: center; gap: 0.5rem; background: var(--cost-purple); color: white; text-decoration: none; padding: 0.6rem 1.2rem; border-radius: 8px; font-size: 0.85rem; font-weight: 500; margin-top: 1rem; }
+        .pdf-download:hover { background: #4a2470; }
+        footer { background: var(--dark); color: white; padding: 3rem 2rem; text-align: center; }
+        footer .footer-content { max-width: 1200px; margin: 0 auto; }
+        footer a { color: var(--cost-orange); text-decoration: none; margin: 0 1rem; }
+        @media (max-width: 768px) { nav ul { display: none; } .hero h1 { font-size: 1.8rem; } .stats-banner { gap: 1.5rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="logo">COST <span>CA19130</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="final-achievements.html">Achievements</a></li>
+                <li><a href="final-publications.html">Publications</a></li>
+                <li><a href="final-impacts.html">Impacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="report-badge">Action Complete</div>
+        <h1>Final Achievement Report</h1>
+        <div class="subtitle">Fintech and Artificial Intelligence in Finance - Towards a Transparent Financial Industry</div>
+        <div class="period">Full Action Period: 14 September 2020 - 13 September 2024 (4 Years)</div>
+    </header>
+
+    <div class="stats-banner">
+        <div class="stat-item">
+            <div class="stat-number">420+</div>
+            <div class="stat-label">Researchers</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">55</div>
+            <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">150+</div>
+            <div class="stat-label">Events</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">6,000+</div>
+            <div class="stat-label">Participants</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">300+</div>
+            <div class="stat-label">Speakers</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">10,000+</div>
+            <div class="stat-label">Citations</div>
+        </div>
+    </div>
+
+    <section>
+        <h2>Report Sections</h2>
+        <p style="text-align: center; color: var(--gray); max-width: 700px; margin: 0 auto 2rem;">The Final Achievement Report documents the complete journey and accomplishments of COST Action CA19130 over four years of operation.</p>
+
+        <div class="report-cards">
+            <div class="report-card">
+                <div class="report-card-header green">
+                    <span class="badge">100% Achieved</span>
+                    <h3>MoU Objectives & Deliverables</h3>
+                    <p>Complete achievement analysis of all MoU objectives and deliverables</p>
+                </div>
+                <div class="report-card-body">
+                    <ul>
+                        <li>8 MoU objectives - all achieved (76-100%)</li>
+                        <li>11 deliverables - all delivered (100%)</li>
+                        <li>High networking dependence demonstrated</li>
+                        <li>Comprehensive proof of achievements</li>
+                        <li>Strategic partnership outcomes</li>
+                    </ul>
+                    <a href="final-achievements.html" class="btn">View Achievements</a>
+                </div>
+            </div>
+
+            <div class="report-card">
+                <div class="report-card-header purple">
+                    <span class="badge">1000+ Papers</span>
+                    <h3>Co-authored Publications</h3>
+                    <p>Complete list of Action publications and research outputs</p>
+                </div>
+                <div class="report-card-body">
+                    <ul>
+                        <li>60+ directly co-authored publications</li>
+                        <li>1000+ network-related publications</li>
+                        <li>10,000+ citations achieved</li>
+                        <li>Open access and peer-reviewed papers</li>
+                        <li>Books, journal articles, conference papers</li>
+                    </ul>
+                    <a href="final-publications.html" class="btn">View Publications</a>
+                </div>
+            </div>
+
+            <div class="report-card">
+                <div class="report-card-header dark">
+                    <span class="badge">Lasting Impact</span>
+                    <h3>Impacts & Legacy</h3>
+                    <p>Scientific, economic, and societal impacts of the Action</p>
+                </div>
+                <div class="report-card-body">
+                    <ul>
+                        <li>Scientific breakthroughs in AI/ML for finance</li>
+                        <li>Economic impacts: 2.5M+ EUR in grants</li>
+                        <li>20+ PhD completions, 10+ professorships</li>
+                        <li>Industry partnerships established</li>
+                        <li>Sustainability plans for network continuation</li>
+                    </ul>
+                    <a href="final-impacts.html" class="btn">View Impacts</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Executive Summary</h2>
+        <div class="summary-section">
+            <h3>A Remarkable Four-Year Journey</h3>
+            <p>The COST Action on Fintech and AI in Finance has brought together an incredibly diverse network and witnessed enormous growth to <strong>420+ interdisciplinary researchers from 55 countries</strong>, with 39 of those countries being European COST countries, becoming the <strong>second largest and most active COST Action in Europe</strong>.</p>
+            <p>The academic achievements of the network are impressive. The Action organized <strong>150+ research conferences</strong> with more than <strong>6,000 participants</strong> and <strong>300+ distinguished speakers</strong>. The network's publications have been cited more than <strong>10,000 times</strong>, demonstrating the significant impact and relevance of the research conducted.</p>
+            <p>All <strong>8 MoU objectives</strong> were achieved at 76-100% level, and all <strong>11 deliverables</strong> were successfully delivered, representing a 100% completion rate for the Action.</p>
+        </div>
+
+        <div class="highlight-quote">
+            <p>"The COST Action has established an inclusive community of researchers on methodological and technological themes in Machine Learning and Artificial Intelligence, promoting Early Career Investigators and creating one of the largest research networks on Fintech and AI in Finance in all of Europe."</p>
+            <div class="source">- Final Achievement Report</div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Achievements</h2>
+        <div class="key-stats">
+            <div class="key-stat">
+                <div class="value">100%</div>
+                <div class="label">Deliverables Completed</div>
+            </div>
+            <div class="key-stat">
+                <div class="value">20+</div>
+                <div class="label">PhD Theses Completed</div>
+            </div>
+            <div class="key-stat">
+                <div class="value">10+</div>
+                <div class="label">Professorships Promotions</div>
+            </div>
+            <div class="key-stat">
+                <div class="value">2.5M+</div>
+                <div class="label">EUR in Research Grants</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Knowledge Platforms</h2>
+        <p style="text-align: center; color: var(--gray); max-width: 700px; margin: 0 auto 2rem;">The Action established several platforms for knowledge exchange, research dissemination, and community building.</p>
+        <div class="platforms-grid" id="platformsGrid">
+            <!-- Platforms loaded from JSON -->
+        </div>
+    </section>
+
+    <section>
+        <h2>Download Full Report</h2>
+        <div class="summary-section" style="text-align: center;">
+            <h3>Official Documentation</h3>
+            <p>Download the complete Final Achievement Report submitted to COST Association.</p>
+            <a href="docs/final-report/CA19130_FA_ActionChairReport.pdf" class="pdf-download" target="_blank">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>
+                Download PDF Report
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>COST Action CA19130</strong> - Fintech and AI in Finance</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">Action Period: September 2020 - September 2024</p>
+            <p style="margin-top: 1rem;">
+                <a href="index.html">Home</a>
+                <a href="leadership.html">Leadership</a>
+                <a href="publications.html">Publications</a>
+                <a href="progress-reports.html">Progress Reports</a>
+            </p>
+            <p style="margin-top: 1.5rem; font-size: 0.85rem; opacity: 0.6;">
+                Data extracted from COST e-services portal | Last updated: January 2026
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        // Load platforms from JSON
+        fetch('data/final_report.json')
+            .then(response => response.json())
+            .then(data => {
+                const grid = document.getElementById('platformsGrid');
+                data.platforms.forEach(platform => {
+                    const card = document.createElement('div');
+                    card.className = 'platform-card';
+                    card.innerHTML = `
+                        <h4>${platform.name}</h4>
+                        <p>${platform.description}</p>
+                        <a href="${platform.url}" target="_blank">${platform.url.replace('https://', '')}</a>
+                    `;
+                    grid.appendChild(card);
+                });
+            })
+            .catch(error => console.error('Error loading platforms:', error));
+    </script>
+</body>
+</html>

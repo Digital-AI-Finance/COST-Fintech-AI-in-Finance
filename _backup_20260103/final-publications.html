@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Publications - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; text-decoration: none; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .hero { background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%); color: white; padding: 7rem 2rem 3rem; text-align: center; }
+        .hero .badge { display: inline-block; background: rgba(255,255,255,0.2); padding: 0.3rem 1rem; border-radius: 15px; font-size: 0.85rem; margin-bottom: 1rem; }
+        .hero h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        .hero .subtitle { opacity: 0.9; font-size: 1rem; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid #dee2e6; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb span { color: var(--gray); font-size: 0.9rem; }
+        section { padding: 3rem 2rem; max-width: 1100px; margin: 0 auto; }
+        section h2 { font-size: 1.6rem; color: var(--cost-purple); margin-bottom: 1.5rem; }
+        section h2::after { content: ''; display: block; width: 50px; height: 3px; background: var(--cost-orange); margin-top: 0.5rem; }
+        .card { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .stat-box { background: white; border-radius: 8px; padding: 1.5rem; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 4px solid var(--cost-purple); }
+        .stat-box .value { font-size: 2rem; font-weight: 700; color: var(--cost-purple); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); margin-top: 0.3rem; }
+        .platform-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-left: 4px solid var(--cost-teal); margin-bottom: 1rem; }
+        .platform-card h4 { color: var(--cost-purple); margin-bottom: 0.5rem; }
+        .platform-card p { color: var(--gray); font-size: 0.9rem; margin-bottom: 0.5rem; }
+        .platform-card a { color: var(--cost-teal); font-size: 0.85rem; text-decoration: none; }
+        .platform-card a:hover { text-decoration: underline; }
+        .highlight { background: linear-gradient(135deg, rgba(91,45,138,0.08), rgba(43,95,158,0.08)); border-radius: 12px; padding: 2rem; margin: 2rem 0; }
+        .highlight h3 { color: var(--cost-purple); margin-bottom: 1rem; }
+        .highlight p { color: var(--gray); line-height: 1.8; }
+        .pub-categories { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem; margin: 2rem 0; }
+        .category-card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); }
+        .category-card h4 { color: var(--cost-purple); margin-bottom: 0.8rem; display: flex; align-items: center; gap: 0.5rem; }
+        .category-card ul { list-style: none; }
+        .category-card li { color: var(--gray); font-size: 0.9rem; padding: 0.4rem 0; border-bottom: 1px solid #eee; }
+        .category-card li:last-child { border-bottom: none; }
+        .btn-link { display: inline-block; background: var(--cost-purple); color: white; text-decoration: none; padding: 0.8rem 1.5rem; border-radius: 8px; font-weight: 500; font-size: 0.9rem; margin-top: 1rem; }
+        .btn-link:hover { background: #4a2470; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .hero h1 { font-size: 1.6rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="logo">COST <span>CA19130</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="final-report.html">Final Report</a></li>
+                <li><a href="final-achievements.html">Achievements</a></li>
+                <li><a href="final-impacts.html">Impacts</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="badge">Final Achievement Report</div>
+        <h1>Co-authored Publications</h1>
+        <div class="subtitle">Comprehensive list of Action publications and research outputs</div>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="final-report.html">Final Report</a> <span> / Publications</span>
+    </div>
+
+    <section>
+        <h2>Publication Statistics</h2>
+        <div class="stats-grid">
+            <div class="stat-box">
+                <div class="value">60+</div>
+                <div class="label">Co-authored Publications</div>
+            </div>
+            <div class="stat-box">
+                <div class="value">1000+</div>
+                <div class="label">Network Publications</div>
+            </div>
+            <div class="stat-box">
+                <div class="value">10,000+</div>
+                <div class="label">Total Citations</div>
+            </div>
+            <div class="stat-box">
+                <div class="value">90%+</div>
+                <div class="label">Peer-Reviewed</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Publication Categories</h2>
+        <div class="pub-categories">
+            <div class="category-card">
+                <h4>Journal Articles</h4>
+                <ul>
+                    <li>Cryptocurrency and Bitcoin research</li>
+                    <li>Machine Learning in Finance</li>
+                    <li>Blockchain technology applications</li>
+                    <li>Risk management and assessment</li>
+                    <li>Financial forecasting methods</li>
+                </ul>
+            </div>
+            <div class="category-card">
+                <h4>Book Chapters</h4>
+                <ul>
+                    <li>AI in Financial Services</li>
+                    <li>FinTech Innovation</li>
+                    <li>Explainable AI (XAI)</li>
+                    <li>Digital Currencies</li>
+                    <li>Regulatory Technology</li>
+                </ul>
+            </div>
+            <div class="category-card">
+                <h4>Conference Papers</h4>
+                <ul>
+                    <li>IJCNN Deep Learning sessions</li>
+                    <li>EURO Operational Research</li>
+                    <li>BlackSeaChain conferences</li>
+                    <li>COST FinAI workshops</li>
+                    <li>Regional symposiums</li>
+                </ul>
+            </div>
+            <div class="category-card">
+                <h4>Working Papers</h4>
+                <ul>
+                    <li>ICO evaluation methodologies</li>
+                    <li>Fraud detection frameworks</li>
+                    <li>Stress testing for AI models</li>
+                    <li>Transparency guidelines</li>
+                    <li>Policy recommendations</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Research Platforms</h2>
+        <p style="color: var(--gray); margin-bottom: 1.5rem;">The Action established several platforms to host research outputs and facilitate knowledge sharing:</p>
+        <div id="platformsList">
+            <!-- Loaded from JSON -->
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Research Areas</h2>
+        <div class="highlight">
+            <h3>Publication Themes</h3>
+            <p>The Action's publications cover a wide range of topics in Fintech and AI in Finance:</p>
+            <ul style="margin-top: 1rem; margin-left: 1.5rem; color: var(--gray);">
+                <li><strong>Cryptocurrency markets:</strong> Bitcoin, Ethereum, ICO analysis, market dynamics</li>
+                <li><strong>Machine Learning applications:</strong> Prediction models, risk assessment, fraud detection</li>
+                <li><strong>Explainable AI:</strong> Transparency in financial models, XAI tools and frameworks</li>
+                <li><strong>Blockchain technology:</strong> Smart contracts, DeFi, decentralized applications</li>
+                <li><strong>Regulatory technology:</strong> Compliance automation, policy recommendations</li>
+                <li><strong>Financial time series:</strong> Forecasting, volatility modeling, network analysis</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Access Publications</h2>
+        <div class="card" style="text-align: center;">
+            <h3 style="color: var(--cost-purple); margin-bottom: 1rem;">Complete Publication Database</h3>
+            <p style="color: var(--gray); margin-bottom: 1.5rem;">View the complete list of publications from all Action members with detailed bibliographic information.</p>
+            <a href="publications.html" class="btn-link">View Full Publications List</a>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>COST Action CA19130</strong> - Final Achievement Report</p>
+        <p style="margin-top: 0.5rem;"><a href="final-report.html">Back to Report Overview</a></p>
+    </footer>
+
+    <script>
+        fetch('data/final_report.json')
+            .then(response => response.json())
+            .then(data => {
+                const list = document.getElementById('platformsList');
+                data.platforms.forEach(platform => {
+                    const card = document.createElement('div');
+                    card.className = 'platform-card';
+                    card.innerHTML = `
+                        <h4>${platform.name}</h4>
+                        <p>${platform.description}</p>
+                        <a href="${platform.url}" target="_blank">${platform.url}</a>
+                    `;
+                    list.appendChild(card);
+                });
+            });
+    </script>
+</body>
+</html>

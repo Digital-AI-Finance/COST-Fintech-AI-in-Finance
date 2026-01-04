@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STSMs - Financial Reports - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        section { padding: 2rem; max-width: 1400px; margin: 0 auto; }
+        h1 { font-size: 2rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .stat-box { background: white; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        .stat-box .num { font-size: 1.8rem; font-weight: 700; color: var(--cost-teal); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); overflow-x: auto; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 12px 8px; text-align: left; font-size: 0.85rem; }
+        td { padding: 10px 8px; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+        tr:hover { background: rgba(91, 45, 138, 0.05); }
+        .badge { display: inline-block; padding: 2px 6px; border-radius: 10px; font-size: 0.7rem; font-weight: 500; }
+        .badge-yri { background: var(--cost-green); color: white; }
+        .badge-itc { background: rgba(232, 119, 34, 0.2); color: #b35c10; }
+        .chart-container { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin: 2rem 0; }
+        .chart-container img { width: 100%; max-width: 800px; display: block; margin: 0 auto; }
+        .amount { font-weight: 600; color: var(--cost-purple); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="meetings.html">Meetings</a></li>
+                <li><a href="participants.html">Participants</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>STSMs</span>
+    </div>
+
+    <section>
+        <h1>Short-Term Scientific Missions (STSMs)</h1>
+        <p>All 27 STSMs funded during COST Action CA19130, enabling researchers to visit institutions across Europe for collaborative research.</p>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num">27</div><div class="label">Total STSMs</div></div>
+            <div class="stat-box"><div class="num">60,082</div><div class="label">Total EUR Funded</div></div>
+            <div class="stat-box"><div class="num">12</div><div class="label">Young Researchers</div></div>
+            <div class="stat-box"><div class="num">15</div><div class="label">Countries Involved</div></div>
+            <div class="stat-box"><div class="num">2,225</div><div class="label">Average EUR/STSM</div></div>
+        </div>
+
+        <div class="chart-container">
+            <img src="charts/03_stsm_by_country/chart.png" alt="STSM by Country">
+        </div>
+
+        <div class="card">
+            <h2>All STSMs (2020-2024)</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>GP</th>
+                        <th>Grantee</th>
+                        <th>YRI</th>
+                        <th>Home</th>
+                        <th>Host</th>
+                        <th>Start</th>
+                        <th>End</th>
+                        <th>Days</th>
+                        <th>Amount</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr><td>GP1</td><td>Stjepan Picek</td><td><span class="badge badge-yri">YRI</span></td><td>HR <span class="badge badge-itc">ITC</span></td><td>NL</td><td>2021-01-11</td><td>2021-01-26</td><td>16</td><td class="amount">1,520</td></tr>
+                    <tr><td>GP1</td><td>Wei Li</td><td></td><td>NO</td><td>DE</td><td>2021-02-01</td><td>2021-05-31</td><td>120</td><td class="amount">3,500</td></tr>
+                    <tr><td>GP1</td><td>Luciana Dalla Valle</td><td></td><td>IT</td><td>UK</td><td>2021-06-14</td><td>2021-06-19</td><td>6</td><td class="amount">1,260</td></tr>
+                    <tr><td>GP1</td><td>Danial Saef</td><td></td><td>UK</td><td>DE</td><td>2021-09-24</td><td>2021-10-23</td><td>30</td><td class="amount">3,500</td></tr>
+                    <tr><td>GP1</td><td>Apostolos Chalkis</td><td></td><td>FR</td><td>EL <span class="badge badge-itc">ITC</span></td><td>2021-10-10</td><td>2021-10-23</td><td>14</td><td class="amount">2,450</td></tr>
+                    <tr><td>GP1</td><td>Jasone Ramirez-Ayerbe</td><td></td><td>DK</td><td>ES</td><td>2021-10-13</td><td>2021-10-26</td><td>14</td><td class="amount">2,540</td></tr>
+                    <tr><td>GP1</td><td>Alla Petukhina</td><td><span class="badge badge-yri">YRI</span></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2021-10-20</td><td>2021-10-31</td><td>12</td><td class="amount">1,500</td></tr>
+                    <tr><td>GP1</td><td>Ioana Coita</td><td><span class="badge badge-yri">YRI</span></td><td>DE</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2021-10-22</td><td>2021-10-31</td><td>10</td><td class="amount">2,500</td></tr>
+                    <tr><td>GP1</td><td>Galena Pisoni</td><td></td><td>NO</td><td>FR</td><td>2021-10-24</td><td>2021-10-31</td><td>8</td><td class="amount">2,030</td></tr>
+                    <tr><td>GP3</td><td>Daniel Traian Pele</td><td></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2022-09-26</td><td>2022-10-04</td><td>10</td><td class="amount">1,800</td></tr>
+                    <tr><td>GP3</td><td>Cathy Yi-Hsuan Chen</td><td></td><td>GB</td><td>HR <span class="badge badge-itc">ITC</span></td><td>2022-10-01</td><td>2022-10-31</td><td>32</td><td class="amount">3,200</td></tr>
+                    <tr><td>GP3</td><td>Luciana Dalla Valle</td><td></td><td>GB</td><td>IT</td><td>2022-07-11</td><td>2022-07-18</td><td>9</td><td class="amount">1,440</td></tr>
+                    <tr><td>GP3</td><td>Jose Muniz Martinez</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>GB</td><td>2022-09-27</td><td>2022-10-06</td><td>11</td><td class="amount">1,900</td></tr>
+                    <tr><td>GP3</td><td>Alla Petukhina</td><td><span class="badge badge-yri">YRI</span></td><td>IT</td><td>DE</td><td>2022-09-18</td><td>2022-09-26</td><td>10</td><td class="amount">2,000</td></tr>
+                    <tr><td>GP3</td><td>Ioana Coita</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2022-10-14</td><td>2022-10-23</td><td>11</td><td class="amount">2,500</td></tr>
+                    <tr><td>GP3</td><td>Stefana Belbe</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2022-10-21</td><td>2022-10-31</td><td>12</td><td class="amount">2,700</td></tr>
+                    <tr><td>GP3</td><td>Tomas Plihal</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2022-09-21</td><td>2022-10-02</td><td>13</td><td class="amount">4,000</td></tr>
+                    <tr><td>GP3</td><td>Karel Kozmik</td><td><span class="badge badge-yri">YRI</span></td><td>DE</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2022-10-10</td><td>2022-10-31</td><td>23</td><td class="amount">3,000</td></tr>
+                    <tr><td>GP3</td><td>Xinwen Ni</td><td><span class="badge badge-yri">YRI</span></td><td>GB</td><td>DE</td><td>2022-10-24</td><td>2022-10-31</td><td>9</td><td class="amount">1,600</td></tr>
+                    <tr><td>GP4</td><td>Rezarta Shkurti Perri</td><td></td><td>AL <span class="badge badge-itc">ITC</span></td><td>IT</td><td>2023-10-09</td><td>2023-10-13</td><td>6</td><td class="amount">1,000</td></tr>
+                    <tr><td>GP4</td><td>Jurgita Cerneviciene</td><td></td><td>LT <span class="badge badge-itc">ITC</span></td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2023-10-02</td><td>2023-10-06</td><td>6</td><td class="amount">1,600</td></tr>
+                    <tr><td>GP4</td><td>Luciana Dalla Valle</td><td></td><td>GB</td><td>IT</td><td>2023-07-01</td><td>2023-07-09</td><td>10</td><td class="amount">2,000</td></tr>
+                    <tr><td>GP4</td><td>Vassilios Papavassiliou</td><td></td><td>IE</td><td>PT <span class="badge badge-itc">ITC</span></td><td>2023-07-03</td><td>2023-07-12</td><td>11</td><td class="amount">2,500</td></tr>
+                    <tr><td>GP4</td><td>Esra Kabaklarli</td><td></td><td>TR <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2023-08-27</td><td>2023-08-31</td><td>6</td><td class="amount">1,500</td></tr>
+                    <tr><td>GP4</td><td>Stefana Belbe</td><td><span class="badge badge-yri">YRI</span></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2023-07-31</td><td>2023-08-08</td><td>10</td><td class="amount">1,900</td></tr>
+                    <tr><td>GP5</td><td>Ioana Coita</td><td></td><td>RO <span class="badge badge-itc">ITC</span></td><td>SK <span class="badge badge-itc">ITC</span></td><td>2024-04-06</td><td>2024-04-14</td><td>10</td><td class="amount">1,997</td></tr>
+                    <tr><td>GP5</td><td>Bekir Cetintav</td><td><span class="badge badge-yri">YRI</span></td><td>TR <span class="badge badge-itc">ITC</span></td><td>PT <span class="badge badge-itc">ITC</span></td><td>2024-07-18</td><td>2024-07-28</td><td>12</td><td class="amount">2,645</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card" style="margin-top: 2rem;">
+            <h2>STSM Statistics</h2>
+            <ul style="padding-left: 1.5rem;">
+                <li><strong>Young Researcher Investigator (YRI) STSMs:</strong> 12 (44%)</li>
+                <li><strong>ITC country involvement:</strong> 19 STSMs involved ITC countries (70%)</li>
+                <li><strong>Top host countries:</strong> Germany (6), Italy (4), Romania (3)</li>
+                <li><strong>Top home countries:</strong> Switzerland (5), UK (4), Romania (4)</li>
+                <li><strong>Longest STSM:</strong> Wei Li - 120 days (NO to DE)</li>
+                <li><strong>Highest funded:</strong> Tomas Plihal - 4,000 EUR</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Financial Reports</a> | <a href="meetings.html">Meetings</a> | <a href="participants.html">Participants</a></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Members - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        nav .logo span {
+            color: var(--cost-orange);
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%);
+            color: white;
+            padding: 6rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .header p {
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .filters {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 2rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .filters input[type="text"] {
+            flex: 1;
+            min-width: 250px;
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+        }
+
+        .filters select {
+            padding: 0.75rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.95rem;
+            background: white;
+            min-width: 150px;
+        }
+
+        .filters input:focus,
+        .filters select:focus {
+            outline: none;
+            border-color: var(--cost-purple);
+        }
+
+        .results-info {
+            margin-bottom: 1rem;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .members-table {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+
+        th {
+            background: var(--cost-purple);
+            color: white;
+            font-weight: 500;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            cursor: pointer;
+        }
+
+        th:hover {
+            background: var(--cost-blue);
+        }
+
+        tr:hover {
+            background: rgba(91, 45, 138, 0.03);
+        }
+
+        td {
+            font-size: 0.9rem;
+        }
+
+        .name-cell {
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .affiliation-cell {
+            color: var(--gray);
+            font-size: 0.85rem;
+        }
+
+        .country-cell {
+            color: var(--cost-blue);
+        }
+
+        .wg-badge {
+            display: inline-block;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.75rem;
+            font-weight: 500;
+            margin-right: 0.3rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .wg-badge.wg1 { background: rgba(91, 45, 138, 0.1); color: var(--cost-purple); }
+        .wg-badge.wg2 { background: rgba(43, 95, 158, 0.1); color: var(--cost-blue); }
+        .wg-badge.wg3 { background: rgba(122, 184, 0, 0.1); color: var(--cost-green); }
+
+        .mc-badge {
+            background: var(--cost-orange);
+            color: white;
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        .itc-badge {
+            background: rgba(232, 119, 34, 0.1);
+            color: var(--cost-orange);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.7rem;
+            font-weight: 500;
+        }
+
+        .orcid-link {
+            color: var(--cost-green);
+            text-decoration: none;
+            font-size: 0.85rem;
+        }
+
+        .orcid-link:hover {
+            text-decoration: underline;
+        }
+
+        .pagination {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 2rem;
+        }
+
+        .pagination button {
+            padding: 0.5rem 1rem;
+            border: 1px solid var(--border);
+            background: white;
+            border-radius: 6px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .pagination button:hover,
+        .pagination button.active {
+            background: var(--cost-purple);
+            color: white;
+            border-color: var(--cost-purple);
+        }
+
+        .pagination button:disabled {
+            opacity: 0.5;
+            cursor: not-allowed;
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: var(--cost-orange);
+            text-decoration: none;
+        }
+
+        @media (max-width: 900px) {
+            nav ul { display: none; }
+            .filters { flex-direction: column; }
+            .filters input[type="text"] { width: 100%; }
+            th, td { padding: 0.75rem 0.5rem; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">COST <span>CA19130</span></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="mc-members.html">MC Members</a></li>
+                <li><a href="wg-members.html">WG Members</a></li>
+                <li><a href="publications.html">Publications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Action Members</h1>
+        <p>426 researchers from 48 countries</p>
+    </header>
+
+    <div class="container">
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search by name, affiliation, or country...">
+            <select id="countryFilter">
+                <option value="">All Countries</option>
+            </select>
+            <select id="wgFilter">
+                <option value="">All Working Groups</option>
+                <option value="WG1">WG1 - Transparency in FinTech</option>
+                <option value="WG2">WG2 - Decision-Support Models</option>
+                <option value="WG3">WG3 - Investment Products</option>
+            </select>
+            <select id="roleFilter">
+                <option value="">All Roles</option>
+                <option value="MC">MC Members</option>
+                <option value="ITC">ITC Countries</option>
+            </select>
+        </div>
+
+        <div class="results-info" id="resultsInfo">Showing all members</div>
+
+        <div class="members-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th onclick="sortTable('name')">Name</th>
+                        <th onclick="sortTable('affiliation')">Affiliation</th>
+                        <th onclick="sortTable('country')">Country</th>
+                        <th>Working Groups</th>
+                        <th>ORCID</th>
+                    </tr>
+                </thead>
+                <tbody id="membersBody">
+                </tbody>
+            </table>
+        </div>
+
+        <div class="pagination" id="pagination"></div>
+    </div>
+
+    <footer>
+        <p><a href="index.html">Back to Home</a> | COST Action CA19130 - Fintech and AI in Finance</p>
+    </footer>
+
+    <script>
+        // Member data will be loaded from members.json
+        let members = [];
+        let filteredMembers = [];
+        let currentPage = 1;
+        const itemsPerPage = 25;
+        let sortColumn = 'name';
+        let sortDirection = 'asc';
+
+        // Load member data
+        fetch('data/members.json')
+            .then(response => response.json())
+            .then(data => {
+                members = data;
+                filteredMembers = [...members];
+                populateFilters();
+                renderTable();
+            })
+            .catch(err => {
+                console.error('Error loading members:', err);
+                document.getElementById('membersBody').innerHTML =
+                    '<tr><td colspan="5" style="text-align: center; padding: 2rem; color: var(--gray);">Unable to load member data. Please check back later.</td></tr>';
+            });
+
+        function populateFilters() {
+            const countries = [...new Set(members.map(m => m.country))].sort();
+            const countrySelect = document.getElementById('countryFilter');
+            countries.forEach(country => {
+                const option = document.createElement('option');
+                option.value = country;
+                option.textContent = country;
+                countrySelect.appendChild(option);
+            });
+        }
+
+        function filterMembers() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const country = document.getElementById('countryFilter').value;
+            const wg = document.getElementById('wgFilter').value;
+            const role = document.getElementById('roleFilter').value;
+
+            filteredMembers = members.filter(m => {
+                const matchesSearch = !search ||
+                    m.name.toLowerCase().includes(search) ||
+                    (m.affiliation && m.affiliation.toLowerCase().includes(search)) ||
+                    m.country.toLowerCase().includes(search);
+
+                const matchesCountry = !country || m.country === country;
+
+                const matchesWG = !wg ||
+                    (wg === 'WG1' && m.wg1) ||
+                    (wg === 'WG2' && m.wg2) ||
+                    (wg === 'WG3' && m.wg3);
+
+                const matchesRole = !role ||
+                    (role === 'MC' && m.mc) ||
+                    (role === 'ITC' && m.itc);
+
+                return matchesSearch && matchesCountry && matchesWG && matchesRole;
+            });
+
+            currentPage = 1;
+            sortMembers();
+            renderTable();
+        }
+
+        function sortTable(column) {
+            if (sortColumn === column) {
+                sortDirection = sortDirection === 'asc' ? 'desc' : 'asc';
+            } else {
+                sortColumn = column;
+                sortDirection = 'asc';
+            }
+            sortMembers();
+            renderTable();
+        }
+
+        function sortMembers() {
+            filteredMembers.sort((a, b) => {
+                let valA = a[sortColumn] || '';
+                let valB = b[sortColumn] || '';
+                if (typeof valA === 'string') valA = valA.toLowerCase();
+                if (typeof valB === 'string') valB = valB.toLowerCase();
+                if (valA < valB) return sortDirection === 'asc' ? -1 : 1;
+                if (valA > valB) return sortDirection === 'asc' ? 1 : -1;
+                return 0;
+            });
+        }
+
+        function renderTable() {
+            const tbody = document.getElementById('membersBody');
+            const start = (currentPage - 1) * itemsPerPage;
+            const end = start + itemsPerPage;
+            const pageMembers = filteredMembers.slice(start, end);
+
+            tbody.innerHTML = pageMembers.map(m => {
+                const wgBadges = [];
+                if (m.wg1) wgBadges.push('<span class="wg-badge wg1">WG1</span>');
+                if (m.wg2) wgBadges.push('<span class="wg-badge wg2">WG2</span>');
+                if (m.wg3) wgBadges.push('<span class="wg-badge wg3">WG3</span>');
+
+                const badges = [];
+                if (m.mc) badges.push('<span class="mc-badge">MC</span>');
+                if (m.itc) badges.push('<span class="itc-badge">ITC</span>');
+
+                const orcidHtml = m.orcid ?
+                    `<a href="https://orcid.org/${m.orcid}" target="_blank" class="orcid-link">${m.orcid}</a>` :
+                    '-';
+
+                return `
+                    <tr>
+                        <td class="name-cell">${m.name} ${badges.join(' ')}</td>
+                        <td class="affiliation-cell">${m.affiliation || '-'}</td>
+                        <td class="country-cell">${m.country}</td>
+                        <td>${wgBadges.join('') || '-'}</td>
+                        <td>${orcidHtml}</td>
+                    </tr>
+                `;
+            }).join('');
+
+            // Update results info
+            document.getElementById('resultsInfo').textContent =
+                `Showing ${start + 1}-${Math.min(end, filteredMembers.length)} of ${filteredMembers.length} members`;
+
+            renderPagination();
+        }
+
+        function renderPagination() {
+            const totalPages = Math.ceil(filteredMembers.length / itemsPerPage);
+            const pagination = document.getElementById('pagination');
+
+            if (totalPages <= 1) {
+                pagination.innerHTML = '';
+                return;
+            }
+
+            let html = '';
+            html += `<button onclick="goToPage(${currentPage - 1})" ${currentPage === 1 ? 'disabled' : ''}>Prev</button>`;
+
+            for (let i = 1; i <= totalPages; i++) {
+                if (i === 1 || i === totalPages || (i >= currentPage - 2 && i <= currentPage + 2)) {
+                    html += `<button onclick="goToPage(${i})" class="${i === currentPage ? 'active' : ''}">${i}</button>`;
+                } else if (i === currentPage - 3 || i === currentPage + 3) {
+                    html += '<button disabled>...</button>';
+                }
+            }
+
+            html += `<button onclick="goToPage(${currentPage + 1})" ${currentPage === totalPages ? 'disabled' : ''}>Next</button>`;
+
+            pagination.innerHTML = html;
+        }
+
+        function goToPage(page) {
+            const totalPages = Math.ceil(filteredMembers.length / itemsPerPage);
+            if (page >= 1 && page <= totalPages) {
+                currentPage = page;
+                renderTable();
+                window.scrollTo({top: 0, behavior: 'smooth'});
+            }
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', filterMembers);
+        document.getElementById('countryFilter').addEventListener('change', filterMembers);
+        document.getElementById('wgFilter').addEventListener('change', filterMembers);
+        document.getElementById('roleFilter').addEventListener('change', filterMembers);
+    </script>
+</body>
+</html>

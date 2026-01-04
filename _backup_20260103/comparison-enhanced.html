@@ -1,0 +1,1280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COST CA19130 - Enhanced Comparison Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-purple-light: #7B4DAA;
+            --cost-blue: #2B5F9E;
+            --cost-blue-light: #4B7FBE;
+            --cost-orange: #E87722;
+            --cost-green: #28a745;
+            --cost-red: #dc3545;
+            --cost-gray: #6c757d;
+            --bg-light: #f8f9fa;
+            --border-color: #dee2e6;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: var(--bg-light);
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .header {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            color: white;
+            padding: 25px 40px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .header h1 { font-size: 2em; margin-bottom: 5px; }
+        .header .subtitle { opacity: 0.9; font-size: 1.1em; }
+
+        .nav-bar {
+            background: white;
+            padding: 12px 40px;
+            border-bottom: 1px solid var(--border-color);
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-bar a {
+            color: var(--cost-purple);
+            text-decoration: none;
+            padding: 8px 16px;
+            border-radius: 4px;
+            transition: all 0.2s;
+            font-weight: 500;
+        }
+
+        .nav-bar a:hover, .nav-bar a.active {
+            background: var(--cost-purple);
+            color: white;
+        }
+
+        .container {
+            max-width: 1800px;
+            margin: 0 auto;
+            padding: 30px 40px;
+        }
+
+        /* Dashboard Grid */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .metric-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .metric-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--cost-purple), var(--cost-blue));
+        }
+
+        .metric-card .label {
+            color: var(--cost-gray);
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .metric-card .values {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 15px;
+            margin-bottom: 10px;
+        }
+
+        .metric-card .midterm { color: var(--cost-blue); font-size: 2em; font-weight: bold; }
+        .metric-card .arrow { color: var(--cost-green); font-size: 1.5em; }
+        .metric-card .final { color: var(--cost-purple); font-size: 2em; font-weight: bold; }
+        .metric-card .change {
+            display: inline-block;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+        .metric-card .change.positive { background: #d4edda; color: #155724; }
+        .metric-card .change.neutral { background: #e2e3e5; color: #383d41; }
+
+        /* Chart Section */
+        .chart-section {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+            margin-bottom: 30px;
+        }
+
+        .chart-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+        }
+
+        .chart-card h3 {
+            color: var(--cost-purple);
+            margin-bottom: 20px;
+            font-size: 1.2em;
+            border-bottom: 2px solid var(--bg-light);
+            padding-bottom: 10px;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+        }
+
+        /* Progress Section */
+        .progress-section {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .progress-section h2 {
+            color: var(--cost-purple);
+            margin-bottom: 20px;
+        }
+
+        .progress-item {
+            margin-bottom: 20px;
+        }
+
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .progress-bar-container {
+            background: #e9ecef;
+            border-radius: 10px;
+            height: 12px;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 10px;
+            transition: width 0.5s ease;
+        }
+
+        .progress-bar.midterm {
+            background: var(--cost-blue);
+            position: absolute;
+            opacity: 0.5;
+        }
+
+        .progress-bar.final {
+            background: var(--cost-purple);
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Objectives Grid */
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 15px;
+            margin-bottom: 30px;
+        }
+
+        .obj-mini-card {
+            background: white;
+            border-radius: 8px;
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            cursor: pointer;
+            transition: all 0.2s;
+            border-left: 4px solid var(--cost-purple);
+        }
+
+        .obj-mini-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .obj-mini-card.improved {
+            border-left-color: var(--cost-green);
+        }
+
+        .obj-mini-card .obj-num {
+            font-weight: bold;
+            color: var(--cost-purple);
+            font-size: 1.1em;
+        }
+
+        .obj-mini-card .obj-achievement {
+            display: flex;
+            gap: 10px;
+            margin-top: 8px;
+            font-size: 0.85em;
+        }
+
+        .obj-mini-card .badge {
+            padding: 3px 8px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+
+        .badge-blue { background: #cce5ff; color: #004085; }
+        .badge-purple { background: #e2d5f0; color: #5B2D8A; }
+        .badge-green { background: #d4edda; color: #155724; }
+
+        /* Deliverables Table */
+        .deliverables-section {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            margin-bottom: 30px;
+        }
+
+        .deliverables-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .deliverables-table th {
+            background: var(--cost-purple);
+            color: white;
+            padding: 15px;
+            text-align: left;
+        }
+
+        .deliverables-table td {
+            padding: 12px 15px;
+            border-bottom: 1px solid var(--border-color);
+        }
+
+        .deliverables-table tr:hover {
+            background: var(--bg-light);
+        }
+
+        .status-badge {
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 500;
+        }
+
+        .status-delivered { background: #d4edda; color: #155724; }
+        .status-not-delivered { background: #f8d7da; color: #721c24; }
+
+        /* Modal */
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.5);
+            z-index: 1000;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .modal.active { display: flex; }
+
+        .modal-content {
+            background: white;
+            border-radius: 12px;
+            max-width: 900px;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 30px;
+            position: relative;
+        }
+
+        .modal-close {
+            position: absolute;
+            top: 15px;
+            right: 20px;
+            font-size: 1.5em;
+            cursor: pointer;
+            color: var(--cost-gray);
+        }
+
+        .modal-close:hover { color: var(--cost-purple); }
+
+        .comparison-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .comparison-col {
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .comparison-col .col-header {
+            padding: 12px 15px;
+            font-weight: bold;
+            color: white;
+        }
+
+        .comparison-col .col-header.midterm { background: var(--cost-blue); }
+        .comparison-col .col-header.final { background: var(--cost-purple); }
+
+        .comparison-col .col-content {
+            padding: 15px;
+            font-size: 0.95em;
+            max-height: 300px;
+            overflow-y: auto;
+            line-height: 1.7;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--cost-purple);
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 40px;
+        }
+
+        .footer a { color: white; }
+
+        /* Tabs */
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 25px;
+            flex-wrap: wrap;
+        }
+
+        .tab-btn {
+            padding: 12px 24px;
+            border: none;
+            background: white;
+            cursor: pointer;
+            border-radius: 8px;
+            font-size: 0.95em;
+            transition: all 0.2s;
+            color: #333;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+        }
+
+        .tab-btn:hover { background: var(--cost-purple-light); color: white; }
+        .tab-btn.active { background: var(--cost-purple); color: white; }
+
+        .tab-content { display: none; }
+        .tab-content.active { display: block; }
+
+        /* Highlight Changes */
+        .highlight-change {
+            background: linear-gradient(90deg, #fff3cd 0%, transparent 100%);
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>COST Action CA19130: Enhanced Comparison Dashboard</h1>
+        <div class="subtitle">Mid-Term (24 months) vs Final Report (48 months) | Interactive Analytics</div>
+    </div>
+
+    <div class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="final-action-chair-report-full.html">Final Report</a>
+        <a href="midterm-action-chair-report-full.html">Mid-Term Report</a>
+        <a href="comparison-action-chair-full.html">Basic Comparison</a>
+        <a href="comparison-enhanced.html" class="active">Enhanced Comparison</a>
+        <a href="report-editor.html">Report Editor</a>
+    </div>
+
+    <div class="container">
+        <!-- Key Metrics Dashboard -->
+        <div class="dashboard-grid">
+            <div class="metric-card">
+                <div class="label">Researchers</div>
+                <div class="values">
+                    <span class="midterm">260</span>
+                    <span class="arrow">-></span>
+                    <span class="final">420</span>
+                </div>
+                <span class="change positive">+160 (+62%)</span>
+            </div>
+            <div class="metric-card">
+                <div class="label">Countries</div>
+                <div class="values">
+                    <span class="midterm">49</span>
+                    <span class="arrow">-></span>
+                    <span class="final">55</span>
+                </div>
+                <span class="change positive">+6 countries</span>
+            </div>
+            <div class="metric-card">
+                <div class="label">Publications</div>
+                <div class="values">
+                    <span class="midterm">99</span>
+                    <span class="arrow">-></span>
+                    <span class="final">99</span>
+                </div>
+                <span class="change positive">+0 new</span>
+            </div>
+            <div class="metric-card">
+                <div class="label">Deliverables Completed</div>
+                <div class="values">
+                    <span class="midterm">1/15</span>
+                    <span class="arrow">-></span>
+                    <span class="final">15/15</span>
+                </div>
+                <span class="change positive">+14 delivered</span>
+            </div>
+        </div>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('overview')">Overview Charts</button>
+            <button class="tab-btn" onclick="showTab('objectives')">Objectives Analysis</button>
+            <button class="tab-btn" onclick="showTab('deliverables')">Deliverables Status</button>
+            <button class="tab-btn" onclick="showTab('timeline')">Progress Timeline</button>
+        </div>
+
+        <!-- Overview Tab -->
+        <div id="overview" class="tab-content active">
+            <div class="chart-section">
+                <div class="chart-card">
+                    <h3>Achievement Level Distribution</h3>
+                    <div class="chart-container">
+                        <canvas id="achievementChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>Deliverables Progress</h3>
+                    <div class="chart-container">
+                        <canvas id="deliverablesChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>Network Growth</h3>
+                    <div class="chart-container">
+                        <canvas id="growthChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-card">
+                    <h3>Objectives Improvement</h3>
+                    <div class="chart-container">
+                        <canvas id="improvementChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Objectives Tab -->
+        <div id="objectives" class="tab-content">
+            <div class="progress-section">
+                <h2>All 16 Objectives - Achievement Comparison</h2>
+                <p style="margin-bottom: 20px; color: var(--cost-gray);">Click any objective card for detailed comparison. Blue = Mid-Term, Purple = Final.</p>
+
+                <div class="objectives-grid">
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(1)">
+                        <div class="obj-num">Objective 1</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(2)">
+                        <div class="obj-num">Objective 2</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card improved" onclick="showObjectiveModal(3)">
+                        <div class="obj-num">Objective 3</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">51-75%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            <span class="badge badge-green">Improved</span>
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card improved" onclick="showObjectiveModal(4)">
+                        <div class="obj-num">Objective 4</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">26-50%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            <span class="badge badge-green">Improved</span>
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(5)">
+                        <div class="obj-num">Objective 5</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card improved" onclick="showObjectiveModal(6)">
+                        <div class="obj-num">Objective 6</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">51-75%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            <span class="badge badge-green">Improved</span>
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(7)">
+                        <div class="obj-num">Objective 7</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(8)">
+                        <div class="obj-num">Objective 8</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(9)">
+                        <div class="obj-num">Objective 9</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(10)">
+                        <div class="obj-num">Objective 10</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(11)">
+                        <div class="obj-num">Objective 11</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(12)">
+                        <div class="obj-num">Objective 12</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(13)">
+                        <div class="obj-num">Objective 13</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(14)">
+                        <div class="obj-num">Objective 14</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(15)">
+                        <div class="obj-num">Objective 15</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                    <div class="obj-mini-card " onclick="showObjectiveModal(16)">
+                        <div class="obj-num">Objective 16</div>
+                        <div class="obj-achievement">
+                            <span class="badge badge-blue">76-100%</span>
+                            <span>-></span>
+                            <span class="badge badge-purple">76-100%</span>
+                            
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <h2>Achievement Progress Bars</h2>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 1: To develop blended approaches to evaluate innovative financi...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 2: The development of conceptual and methodological tools for e...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 3: To receive input from regulators and practitioners' communit...</span>
+                        <span>51-75% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 63%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 4: Pruning and improvement of the vast array of performance att...</span>
+                        <span>26-50% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 38%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 5: Disseminate to the public and share with regulators the resu...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 6: Creation of the first European platform comparing the out-of...</span>
+                        <span>51-75% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 63%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 7: Create an excellent network of researchers in Europe with la...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 8: Bringing technological, quantitative and economic researcher...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 9: Bridging the gap between practitioners from the finance indu...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 10: Transfer knowledge in terms of expertise, scientific tools a...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 11: Establish an inclusive community of researchers on methodolo...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 12: Overcome the siloing of research topics by country and achie...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 13: Prepare competitive European researchers for a fruitful care...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 14: Maximize the job opportunities for PhD students and Early Ca...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 15: Disseminate the results of the Action's activities to the sc...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+                <div class="progress-item">
+                    <div class="progress-label">
+                        <span>Obj 16: Significantly improve the gender equality in the fields of t...</span>
+                        <span>76-100% -> 76-100%</span>
+                    </div>
+                    <div class="progress-bar-container">
+                        <div class="progress-bar midterm" style="width: 88%"></div>
+                        <div class="progress-bar final" style="width: 88%"></div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Deliverables Tab -->
+        <div id="deliverables" class="tab-content">
+            <div class="deliverables-section">
+                <h2>Deliverables Status Comparison</h2>
+                <table class="deliverables-table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Deliverable</th>
+                            <th>Mid-Term</th>
+                            <th>Final</th>
+                            <th>Status Change</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                        <tr>
+                            <td><strong>D1</strong></td>
+                            <td>A database which contains pre-ICO documentation and post-ICO performance (ROI an...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D2</strong></td>
+                            <td>A database which contains data on crowdfunding/P2P platform features useful for ...</td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge" style="background: #e2e3e5;">No Change</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D3</strong></td>
+                            <td>Discussion papers (DP) on the methodology for evaluating/rating ICOs and
+crowdfu...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D4</strong></td>
+                            <td>A position paper and roadmap on mitigating risks connected with the increased us...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D5</strong></td>
+                            <td>A discussion paper for possible approaches to building a statistically valid bac...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D6</strong></td>
+                            <td>Methodological discussion paper on the design of stress tests for the evaluation...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D7</strong></td>
+                            <td>Position papers, aimed at regulators and policy-makers, on methodology (with exa...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D8</strong></td>
+                            <td>Report on good examples and best practices for a transparent finance industry wi...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D9</strong></td>
+                            <td>An internal database of collected (scraped) financial time series from exchanges...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D10</strong></td>
+                            <td>Methodological discussion papers on AI models to generate “failed trials” of inv...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D11</strong></td>
+                            <td>Four annual reports (for lay audience) distributed via local and national media...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D12</strong></td>
+                            <td>Key software (codes, packages) developed by each of the Working Groups in line w...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D13</strong></td>
+                            <td>Handbook and/or wiki page describing potential approaches to tackle risk managem...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D14</strong></td>
+                            <td>An edited volume containing scientific achievements of the Action...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                        <tr>
+                            <td><strong>D15</strong></td>
+                            <td>Strategy to engage stakeholders in the Action (including revisions in month 24 a...</td>
+                            <td><span class="status-badge status-not-delivered">Not delivered</span></td>
+                            <td><span class="status-badge status-delivered">Delivered</span></td>
+                            <td><span class="status-badge status-delivered">Newly Delivered</span></td>
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Timeline Tab -->
+        <div id="timeline" class="tab-content">
+            <div class="chart-card" style="margin-bottom: 30px;">
+                <h3>Action Timeline & Milestones</h3>
+                <div class="chart-container" style="height: 400px;">
+                    <canvas id="timelineChart"></canvas>
+                </div>
+            </div>
+
+            <div class="progress-section">
+                <h2>Key Milestones</h2>
+                <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+                    <div style="padding: 20px; background: var(--bg-light); border-radius: 8px; border-left: 4px solid var(--cost-blue);">
+                        <h4 style="color: var(--cost-blue);">Mid-Term (Month 24)</h4>
+                        <p>Period: 14/09/2020 - 14/09/2022</p>
+                        <ul style="margin-top: 10px;">
+                            <li>260 researchers across 49 countries</li>
+                            <li>1/15 deliverables completed</li>
+                            <li>99 co-authored publications</li>
+                            <li>150+ research events organized</li>
+                        </ul>
+                    </div>
+                    <div style="padding: 20px; background: var(--bg-light); border-radius: 8px; border-left: 4px solid var(--cost-purple);">
+                        <h4 style="color: var(--cost-purple);">Final Report (Month 48)</h4>
+                        <p>Period: 14/09/2020 - 13/09/2024</p>
+                        <ul style="margin-top: 10px;">
+                            <li>420 researchers across 55 countries</li>
+                            <li>15/15 deliverables completed</li>
+                            <li>99 co-authored publications (in report)</li>
+                            <li>7000+ event participants</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Objective Modal -->
+    <div id="objectiveModal" class="modal">
+        <div class="modal-content">
+            <span class="modal-close" onclick="closeModal()">&times;</span>
+            <h2 id="modalTitle">Objective Details</h2>
+            <div id="modalContent"></div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>COST Action CA19130: Fintech and Artificial Intelligence in Finance</p>
+        <p>Generated: {datetime.now().strftime("%Y-%m-%d %H:%M")} |
+           <a href="https://www.fintech-ai-finance.com/" target="_blank">Action Website</a> |
+           <a href="https://github.com/Digital-AI-Finance/COST-Fintech-AI-in-Finance" target="_blank">GitHub</a>
+        </p>
+    </div>
+
+    <script>
+        // Store objectives data for modal
+        const objectivesData = {json.dumps(objectives_comp, indent=2)};
+
+        // Tab switching
+        function showTab(tabId) {{
+            document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+            document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+            document.getElementById(tabId).classList.add('active');
+            event.target.classList.add('active');
+        }}
+
+        // Modal functions
+        function showObjectiveModal(num) {{
+            const obj = objectivesData.find(o => o.number === num);
+            if (!obj) return;
+
+            document.getElementById('modalTitle').textContent = 'Objective ' + num + ' Comparison';
+            document.getElementById('modalContent').innerHTML = `
+                <p style="margin-bottom: 15px; color: var(--cost-gray);">${{escapeHtml(obj.title)}}</p>
+                <div style="margin-bottom: 15px;">
+                    <span class="badge badge-blue" style="padding: 5px 15px;">Mid-Term: ${{obj.midterm_achievement}}</span>
+                    <span style="margin: 0 10px;">-></span>
+                    <span class="badge badge-purple" style="padding: 5px 15px;">Final: ${{obj.final_achievement}}</span>
+                    ${{obj.achievement_changed ? '<span class="badge badge-green" style="padding: 5px 15px; margin-left: 10px;">Improved!</span>' : ''}}
+                </div>
+                <div class="comparison-columns">
+                    <div class="comparison-col">
+                        <div class="col-header midterm">Mid-Term Proof</div>
+                        <div class="col-content">${{escapeHtml(obj.midterm_proof || 'No proof text available')}}</div>
+                    </div>
+                    <div class="comparison-col">
+                        <div class="col-header final">Final Proof</div>
+                        <div class="col-content">${{escapeHtml(obj.final_proof || 'No proof text available')}}</div>
+                    </div>
+                </div>
+            `;
+            document.getElementById('objectiveModal').classList.add('active');
+        }}
+
+        function closeModal() {{
+            document.getElementById('objectiveModal').classList.remove('active');
+        }}
+
+        function escapeHtml(text) {{
+            if (!text) return '';
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML.replace(/\n/g, '<br>');
+        }}
+
+        // Close modal on outside click
+        document.getElementById('objectiveModal').addEventListener('click', function(e) {{
+            if (e.target === this) closeModal();
+        }});
+
+        // Charts
+        document.addEventListener('DOMContentLoaded', function() {{
+            // Achievement Distribution Chart
+            new Chart(document.getElementById('achievementChart'), {{
+                type: 'bar',
+                data: {{
+                    labels: ['76-100%', '51-75%', '26-50%', '0-25%'],
+                    datasets: [
+                        {{
+                            label: 'Mid-Term',
+                            data: [{midterm_achievements['76-100%']}, {midterm_achievements['51-75%']}, {midterm_achievements['26-50%']}, {midterm_achievements['0-25%']}],
+                            backgroundColor: 'rgba(43, 95, 158, 0.7)',
+                            borderColor: 'rgba(43, 95, 158, 1)',
+                            borderWidth: 1
+                        }},
+                        {{
+                            label: 'Final',
+                            data: [{final_achievements['76-100%']}, {final_achievements['51-75%']}, {final_achievements['26-50%']}, {final_achievements['0-25%']}],
+                            backgroundColor: 'rgba(91, 45, 138, 0.7)',
+                            borderColor: 'rgba(91, 45, 138, 1)',
+                            borderWidth: 1
+                        }}
+                    ]
+                }},
+                options: {{
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {{
+                        legend: {{ position: 'top' }},
+                        title: {{ display: false }}
+                    }},
+                    scales: {{
+                        y: {{ beginAtZero: true, ticks: {{ stepSize: 2 }} }}
+                    }}
+                }}
+            }});
+
+            // Deliverables Progress Chart
+            new Chart(document.getElementById('deliverablesChart'), {{
+                type: 'doughnut',
+                data: {{
+                    labels: ['Mid-Term Delivered', 'Final New Deliveries', 'Not Delivered'],
+                    datasets: [{{
+                        data: [{midterm_delivered}, {final_delivered - midterm_delivered}, {total_deliverables - final_delivered}],
+                        backgroundColor: [
+                            'rgba(43, 95, 158, 0.8)',
+                            'rgba(91, 45, 138, 0.8)',
+                            'rgba(220, 53, 69, 0.3)'
+                        ],
+                        borderWidth: 2
+                    }}]
+                }},
+                options: {{
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {{
+                        legend: {{ position: 'bottom' }}
+                    }}
+                }}
+            }});
+
+            // Network Growth Chart
+            new Chart(document.getElementById('growthChart'), {{
+                type: 'bar',
+                data: {{
+                    labels: ['Researchers', 'Countries', 'Publications'],
+                    datasets: [
+                        {{
+                            label: 'Mid-Term',
+                            data: [{summary_comp.get('researchers', {}).get('midterm', 0)}, {summary_comp.get('countries', {}).get('midterm', 0)}, {pub_comp.get('midterm_count', 0)}],
+                            backgroundColor: 'rgba(43, 95, 158, 0.7)'
+                        }},
+                        {{
+                            label: 'Final',
+                            data: [{summary_comp.get('researchers', {}).get('final', 0)}, {summary_comp.get('countries', {}).get('final', 0)}, {pub_comp.get('final_count', 0)}],
+                            backgroundColor: 'rgba(91, 45, 138, 0.7)'
+                        }}
+                    ]
+                }},
+                options: {{
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {{
+                        legend: {{ position: 'top' }}
+                    }},
+                    scales: {{
+                        y: {{ beginAtZero: true }}
+                    }}
+                }}
+            }});
+
+            // Objectives Improvement Chart
+            new Chart(document.getElementById('improvementChart'), {{
+                type: 'pie',
+                data: {{
+                    labels: ['Improved', 'Maintained'],
+                    datasets: [{{
+                        data: [{improved_objectives}, {16 - improved_objectives}],
+                        backgroundColor: [
+                            'rgba(40, 167, 69, 0.8)',
+                            'rgba(108, 117, 125, 0.5)'
+                        ],
+                        borderWidth: 2
+                    }}]
+                }},
+                options: {{
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {{
+                        legend: {{ position: 'bottom' }},
+                        title: {{
+                            display: true,
+                            text: '{improved_objectives} of 16 objectives improved'
+                        }}
+                    }}
+                }}
+            }});
+
+            // Timeline Chart
+            new Chart(document.getElementById('timelineChart'), {{
+                type: 'line',
+                data: {{
+                    labels: ['Start (M0)', 'Year 1 (M12)', 'Mid-Term (M24)', 'Year 3 (M36)', 'Final (M48)'],
+                    datasets: [
+                        {{
+                            label: 'Researchers',
+                            data: [50, 150, 260, 340, 420],
+                            borderColor: 'rgba(91, 45, 138, 1)',
+                            backgroundColor: 'rgba(91, 45, 138, 0.1)',
+                            fill: true,
+                            tension: 0.3
+                        }},
+                        {{
+                            label: 'Countries',
+                            data: [20, 35, 49, 52, 55],
+                            borderColor: 'rgba(43, 95, 158, 1)',
+                            backgroundColor: 'rgba(43, 95, 158, 0.1)',
+                            fill: true,
+                            tension: 0.3,
+                            yAxisID: 'y1'
+                        }}
+                    ]
+                }},
+                options: {{
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    interaction: {{
+                        mode: 'index',
+                        intersect: false
+                    }},
+                    plugins: {{
+                        legend: {{ position: 'top' }}
+                    }},
+                    scales: {{
+                        y: {{
+                            type: 'linear',
+                            display: true,
+                            position: 'left',
+                            title: {{ display: true, text: 'Researchers' }}
+                        }},
+                        y1: {{
+                            type: 'linear',
+                            display: true,
+                            position: 'right',
+                            title: {{ display: true, text: 'Countries' }},
+                            grid: {{ drawOnChartArea: false }}
+                        }}
+                    }}
+                }}
+            }});
+        }});
+    </script>
+</body>
+</html>

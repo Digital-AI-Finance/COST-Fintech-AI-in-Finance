@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training Schools - Financial Reports - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .hero-small { background: linear-gradient(135deg, var(--cost-blue), var(--cost-purple)); color: white; padding: 3rem 2rem; text-align: center; }
+        .hero-small h1 { font-size: 2rem; }
+        .hero-small p { opacity: 0.9; margin-top: 0.5rem; }
+        section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: center; }
+        .stat-box { background: white; padding: 1.2rem 1.8rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; min-width: 140px; }
+        .stat-box .num { font-size: 1.8rem; font-weight: 700; color: var(--cost-blue); }
+        .stat-box .label { font-size: 0.8rem; color: var(--gray); }
+        .chart-container { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin: 2rem 0; }
+        .chart-container img { width: 100%; max-width: 800px; display: block; margin: 0 auto; }
+        .school-card { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; border-left: 4px solid var(--cost-blue); overflow: hidden; }
+        .school-card.itc { border-left-color: var(--cost-orange); }
+        .school-header { padding: 1.5rem; cursor: pointer; transition: background 0.2s; }
+        .school-header:hover { background: rgba(0,0,0,0.02); }
+        .school-card h3 { font-size: 1.1rem; color: var(--cost-purple); margin-bottom: 0.5rem; display: flex; align-items: center; gap: 0.5rem; flex-wrap: wrap; }
+        .school-meta { display: flex; flex-wrap: wrap; gap: 1rem; margin-bottom: 1rem; font-size: 0.85rem; color: var(--gray); }
+        .school-meta span { display: flex; align-items: center; gap: 0.3rem; }
+        .school-stats { display: flex; gap: 1.5rem; flex-wrap: wrap; }
+        .school-stat { text-align: center; padding: 0.5rem 1rem; background: var(--light); border-radius: 8px; }
+        .school-stat .value { font-size: 1.2rem; font-weight: 700; color: var(--cost-blue); }
+        .school-stat .label { font-size: 0.7rem; color: var(--gray); }
+        .badge { display: inline-block; padding: 3px 10px; border-radius: 12px; font-size: 0.75rem; font-weight: 500; }
+        .badge-itc { background: var(--cost-orange); color: white; }
+        .badge-gp { background: rgba(91, 45, 138, 0.15); color: var(--cost-purple); }
+        .toggle-btn { background: var(--cost-teal); color: white; border: none; padding: 0.5rem 1rem; border-radius: 6px; cursor: pointer; font-size: 0.8rem; margin-top: 0.5rem; }
+        .toggle-btn:hover { background: #008a99; }
+        .participants-panel { display: none; border-top: 1px solid var(--border); padding: 1rem 1.5rem; background: rgba(0,0,0,0.01); }
+        .participants-panel.open { display: block; }
+        .participants-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; }
+        .participants-table th { background: var(--cost-blue); color: white; padding: 8px 10px; text-align: left; font-weight: 500; font-size: 0.8rem; }
+        .participants-table td { padding: 8px 10px; border-bottom: 1px solid var(--border); }
+        .participants-table tr:hover { background: rgba(43, 95, 158, 0.05); }
+        .itc-badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 0.65rem; font-weight: 500; background: rgba(232, 119, 34, 0.15); color: var(--cost-orange); margin-left: 0.3rem; }
+        .amount { font-weight: 600; color: var(--cost-teal); }
+        .summary-card { background: rgba(91, 45, 138, 0.05); border-left-color: var(--cost-purple); }
+        .summary-card .school-stats { justify-content: space-around; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        .loading { text-align: center; padding: 2rem; color: var(--gray); }
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            .participants-table { font-size: 0.75rem; }
+            .participants-table th, .participants-table td { padding: 6px 4px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="meetings.html">Meetings</a></li>
+                <li><a href="stsm.html">STSMs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>Training Schools</span>
+    </div>
+
+    <header class="hero-small">
+        <h1>Training Schools</h1>
+        <p id="hero-subtitle">Loading training school data...</p>
+    </header>
+
+    <section>
+        <div class="stats" id="stats-container">
+            <div class="stat-box"><div class="num" id="stat-schools">--</div><div class="label">Training Schools</div></div>
+            <div class="stat-box"><div class="num" id="stat-participants">--</div><div class="label">Total Participants</div></div>
+            <div class="stat-box"><div class="num" id="stat-itc">--</div><div class="label">ITC Participants</div></div>
+            <div class="stat-box"><div class="num" id="stat-amount">--</div><div class="label">Total EUR</div></div>
+            <div class="stat-box"><div class="num" id="stat-countries">--</div><div class="label">Countries</div></div>
+        </div>
+
+        <div class="chart-container">
+            <img src="charts/05_training_school_costs/chart.png" alt="Training School Costs">
+        </div>
+
+        <div id="schools-container">
+            <div class="loading">Loading training school data...</div>
+        </div>
+
+        <div id="summary-card" class="school-card summary-card" style="display: none;">
+            <div class="school-header">
+                <h3>Training Schools Summary</h3>
+                <div class="school-stats" id="summary-stats"></div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Financial Reports</a> | <a href="meetings.html">Meetings</a> | <a href="stsm.html">STSMs</a> | <a href="virtual-mobility.html">Virtual Mobility</a></p>
+    </footer>
+
+    <script>
+        let tsData = [];
+        const ITC_COUNTRIES = new Set(['AL', 'BA', 'BG', 'HR', 'CY', 'CZ', 'EE', 'EL', 'HU', 'LV', 'LT', 'MT', 'MD', 'ME', 'MK', 'PL', 'PT', 'RO', 'RS', 'SK', 'SI', 'TR', 'UA']);
+
+        function formatAmount(amount) {
+            return new Intl.NumberFormat('en-EU', { minimumFractionDigits: 0, maximumFractionDigits: 0 }).format(amount);
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            const parts = dateStr.split('/');
+            if (parts.length === 3) {
+                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                return `${parseInt(parts[0])} ${months[parseInt(parts[1])-1]} ${parts[2]}`;
+            }
+            return dateStr;
+        }
+
+        function formatTitle(title) {
+            // Clean up title formatting
+            return title.replace(/([a-z])([A-Z])/g, '$1 $2')
+                       .replace(/COST\s*FinAI/gi, 'COST FinAI')
+                       .replace(/-/g, ' - ')
+                       .replace(/\s+/g, ' ')
+                       .trim();
+        }
+
+        function getLocationDisplay(school) {
+            let location = school.city || '';
+            if (school.country) {
+                location += location ? `, ${school.country}` : school.country;
+            }
+            return location || 'Location TBD';
+        }
+
+        async function loadData() {
+            try {
+                const response = await fetch('../data/training_school_attendees.json');
+                tsData = await response.json();
+
+                // Sort by grant period, then by start date
+                tsData.sort((a, b) => {
+                    if (a.grant_period !== b.grant_period) return a.grant_period - b.grant_period;
+                    return new Date(a.start_date.split('/').reverse().join('-')) - new Date(b.start_date.split('/').reverse().join('-'));
+                });
+
+                updateStats();
+                renderSchools();
+            } catch (error) {
+                console.error('Error loading TS data:', error);
+                document.getElementById('schools-container').innerHTML = '<div class="loading">Error loading data. Please try again.</div>';
+            }
+        }
+
+        function updateStats() {
+            const totalSchools = tsData.length;
+            let totalParticipants = 0;
+            let totalItc = 0;
+            let totalAmount = 0;
+            const countriesSet = new Set();
+
+            tsData.forEach(school => {
+                totalParticipants += school.participants.length;
+                school.participants.forEach(p => {
+                    if (p.is_itc || ITC_COUNTRIES.has(p.country)) totalItc++;
+                    countriesSet.add(p.country);
+                });
+                totalAmount += school.total_reimbursed + school.los_grant;
+            });
+
+            document.getElementById('stat-schools').textContent = totalSchools;
+            document.getElementById('stat-participants').textContent = totalParticipants;
+            document.getElementById('stat-itc').textContent = totalItc;
+            document.getElementById('stat-amount').textContent = formatAmount(totalAmount);
+            document.getElementById('stat-countries').textContent = countriesSet.size;
+            document.getElementById('hero-subtitle').textContent = `${totalSchools} training schools training ${totalParticipants} researchers across ${countriesSet.size} countries`;
+        }
+
+        function renderSchools() {
+            const container = document.getElementById('schools-container');
+            let html = '';
+            let currentGP = 0;
+
+            tsData.forEach((school, idx) => {
+                // Add grant period header
+                if (school.grant_period !== currentGP) {
+                    currentGP = school.grant_period;
+                    const gpPeriods = {
+                        4: '2022-2023',
+                        5: '2023-2024'
+                    };
+                    html += `<h2>Grant Period ${currentGP} (${gpPeriods[currentGP] || ''})</h2>`;
+                }
+
+                // Check if ITC-hosted (Albania in this case)
+                const isItcHosted = school.city && (school.city.includes('Tirana') || school.country === 'Albania');
+                const itcBadge = isItcHosted ? '<span class="badge badge-itc">ITC</span>' : '';
+
+                const participantCount = school.participants.length;
+                const itcParticipants = school.participants.filter(p => p.is_itc || ITC_COUNTRIES.has(p.country)).length;
+                const totalCost = school.total_reimbursed + school.los_grant;
+
+                html += `
+                <div class="school-card ${isItcHosted ? 'itc' : ''}" id="school-${idx}">
+                    <div class="school-header" onclick="toggleParticipants(${idx})">
+                        <h3>${formatTitle(school.title)} ${itcBadge} <span class="badge badge-gp">GP${school.grant_period}</span></h3>
+                        <div class="school-meta">
+                            <span>${getLocationDisplay(school)}</span>
+                            <span>${formatDate(school.start_date)} - ${formatDate(school.end_date)}</span>
+                            <span>${school.duration_days} days</span>
+                        </div>
+                        <div class="school-stats">
+                            <div class="school-stat"><div class="value">${participantCount}</div><div class="label">Participants</div></div>
+                            <div class="school-stat"><div class="value">${itcParticipants}</div><div class="label">ITC</div></div>
+                            <div class="school-stat"><div class="value">${formatAmount(school.los_grant)}</div><div class="label">LOS Grant</div></div>
+                            <div class="school-stat"><div class="value">${formatAmount(totalCost)}</div><div class="label">Total EUR</div></div>
+                        </div>
+                        <button class="toggle-btn" id="btn-${idx}">Show ${participantCount} Participants</button>
+                    </div>
+                    <div class="participants-panel" id="panel-${idx}">
+                        <table class="participants-table">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Name</th>
+                                    <th>Country</th>
+                                    <th>Travel</th>
+                                    <th>Daily</th>
+                                    <th>Other</th>
+                                    <th>Total EUR</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${school.participants.map((p, pIdx) => {
+                                    const isItc = p.is_itc || ITC_COUNTRIES.has(p.country);
+                                    const itcTag = isItc ? '<span class="itc-badge">ITC</span>' : '';
+                                    return `
+                                    <tr>
+                                        <td>${pIdx + 1}</td>
+                                        <td><strong>${p.name}</strong>${itcTag}</td>
+                                        <td>${p.country}</td>
+                                        <td>${p.travel_allowance > 0 ? formatAmount(p.travel_allowance) : '-'}</td>
+                                        <td>${p.daily_allowance > 0 ? formatAmount(p.daily_allowance) : '-'}</td>
+                                        <td>${p.other_expenses > 0 ? 'Yes' : '-'}</td>
+                                        <td class="amount">${formatAmount(p.total)}</td>
+                                    </tr>`;
+                                }).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>`;
+            });
+
+            container.innerHTML = html;
+
+            // Show summary card
+            renderSummary();
+        }
+
+        function renderSummary() {
+            let totalSchools = tsData.length;
+            let totalParticipants = 0;
+            let totalItc = 0;
+            let totalAmount = 0;
+            let totalLOS = 0;
+
+            tsData.forEach(school => {
+                totalParticipants += school.participants.length;
+                school.participants.forEach(p => {
+                    if (p.is_itc || ITC_COUNTRIES.has(p.country)) totalItc++;
+                });
+                totalAmount += school.total_reimbursed + school.los_grant;
+                totalLOS += school.los_grant;
+            });
+
+            const avgPerParticipant = totalParticipants > 0 ? Math.round(totalAmount / totalParticipants) : 0;
+
+            document.getElementById('summary-stats').innerHTML = `
+                <div class="school-stat"><div class="value">${totalSchools}</div><div class="label">Total Schools</div></div>
+                <div class="school-stat"><div class="value">${totalParticipants}</div><div class="label">Total Participants</div></div>
+                <div class="school-stat"><div class="value">${totalItc}</div><div class="label">ITC Participants</div></div>
+                <div class="school-stat"><div class="value">${formatAmount(totalLOS)}</div><div class="label">Total LOS</div></div>
+                <div class="school-stat"><div class="value">${formatAmount(totalAmount)}</div><div class="label">Total EUR</div></div>
+                <div class="school-stat"><div class="value">${formatAmount(avgPerParticipant)}</div><div class="label">EUR/Participant</div></div>
+            `;
+            document.getElementById('summary-card').style.display = 'block';
+        }
+
+        function toggleParticipants(idx) {
+            const panel = document.getElementById(`panel-${idx}`);
+            const btn = document.getElementById(`btn-${idx}`);
+            const isOpen = panel.classList.contains('open');
+
+            panel.classList.toggle('open');
+
+            const participantCount = tsData[idx].participants.length;
+            btn.textContent = isOpen ? `Show ${participantCount} Participants` : `Hide Participants`;
+        }
+
+        // Load data on page load
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

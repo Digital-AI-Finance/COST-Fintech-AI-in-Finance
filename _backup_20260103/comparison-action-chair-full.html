@@ -1,0 +1,2503 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COST CA19130 - Full Comparison: Mid-Term vs Final Report</title>
+    
+<style>
+    :root {
+        --cost-purple: #5B2D8A;
+        --cost-purple-light: #7B4DAA;
+        --cost-blue: #2B5F9E;
+        --cost-blue-light: #4B7FBE;
+        --cost-orange: #E87722;
+        --cost-green: #28a745;
+        --cost-red: #dc3545;
+        --cost-gray: #6c757d;
+        --bg-light: #f8f9fa;
+        --border-color: #dee2e6;
+    }
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: var(--bg-light);
+        color: #333;
+        line-height: 1.6;
+    }
+
+    .header {
+        background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+        color: white;
+        padding: 20px 40px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+
+    .header h1 {
+        margin: 0 0 10px 0;
+        font-size: 1.8em;
+    }
+
+    .header .subtitle {
+        opacity: 0.9;
+        font-size: 1em;
+    }
+
+    .nav-bar {
+        background: white;
+        padding: 10px 40px;
+        border-bottom: 1px solid var(--border-color);
+        display: flex;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .nav-bar a {
+        color: var(--cost-purple);
+        text-decoration: none;
+        padding: 8px 16px;
+        border-radius: 4px;
+        transition: all 0.2s;
+    }
+
+    .nav-bar a:hover {
+        background: var(--cost-purple);
+        color: white;
+    }
+
+    .container {
+        max-width: 1600px;
+        margin: 0 auto;
+        padding: 20px 40px;
+    }
+
+    /* Tab Styles */
+    .tabs {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 5px;
+        margin-bottom: 20px;
+        background: white;
+        padding: 15px;
+        border-radius: 8px;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    }
+
+    .tab-btn {
+        padding: 10px 20px;
+        border: none;
+        background: var(--bg-light);
+        cursor: pointer;
+        border-radius: 4px;
+        font-size: 0.9em;
+        transition: all 0.2s;
+        color: #333;
+    }
+
+    .tab-btn:hover {
+        background: var(--cost-purple-light);
+        color: white;
+    }
+
+    .tab-btn.active {
+        background: var(--cost-purple);
+        color: white;
+    }
+
+    .tab-content {
+        display: none;
+        background: white;
+        padding: 30px;
+        border-radius: 8px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    }
+
+    .tab-content.active {
+        display: block;
+    }
+
+    /* Stats Grid */
+    .stats-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 20px;
+        margin: 20px 0;
+    }
+
+    .stat-card {
+        background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+        color: white;
+        padding: 20px;
+        border-radius: 8px;
+        text-align: center;
+    }
+
+    .stat-card .value {
+        font-size: 2.5em;
+        font-weight: bold;
+        display: block;
+    }
+
+    .stat-card .label {
+        opacity: 0.9;
+        font-size: 0.9em;
+    }
+
+    /* Objective Cards */
+    .objective-card {
+        background: white;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .objective-header {
+        background: var(--cost-purple);
+        color: white;
+        padding: 15px 20px;
+        cursor: pointer;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .objective-header:hover {
+        background: var(--cost-purple-light);
+    }
+
+    .objective-title {
+        font-weight: bold;
+        flex: 1;
+    }
+
+    .objective-badges {
+        display: flex;
+        gap: 10px;
+    }
+
+    .badge {
+        padding: 4px 12px;
+        border-radius: 20px;
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+
+    .badge-success {
+        background: var(--cost-green);
+        color: white;
+    }
+
+    .badge-warning {
+        background: var(--cost-orange);
+        color: white;
+    }
+
+    .badge-info {
+        background: var(--cost-blue);
+        color: white;
+    }
+
+    .objective-body {
+        padding: 20px;
+        display: none;
+    }
+
+    .objective-body.expanded {
+        display: block;
+    }
+
+    .proof-text {
+        background: var(--bg-light);
+        padding: 20px;
+        border-radius: 8px;
+        margin-top: 15px;
+        border-left: 4px solid var(--cost-purple);
+        font-size: 0.95em;
+        line-height: 1.8;
+        max-height: 800px;
+        overflow-y: auto;
+    }
+
+    .proof-text p {
+        margin: 0 0 1em 0;
+    }
+
+    /* Deliverable Table */
+    .deliverables-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+    .deliverables-table th,
+    .deliverables-table td {
+        padding: 12px 15px;
+        text-align: left;
+        border-bottom: 1px solid var(--border-color);
+    }
+
+    .deliverables-table th {
+        background: var(--cost-purple);
+        color: white;
+    }
+
+    .deliverables-table tr:hover {
+        background: var(--bg-light);
+    }
+
+    /* Publications */
+    .publication-item {
+        background: white;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 15px 20px;
+        margin-bottom: 10px;
+    }
+
+    .publication-item:hover {
+        border-color: var(--cost-purple);
+    }
+
+    .pub-title {
+        font-weight: bold;
+        color: var(--cost-purple);
+        margin-bottom: 5px;
+    }
+
+    .pub-authors {
+        color: var(--cost-gray);
+        font-size: 0.9em;
+    }
+
+    .pub-doi {
+        color: var(--cost-blue);
+        font-size: 0.85em;
+    }
+
+    .pub-doi a {
+        color: inherit;
+    }
+
+    /* Page Content Display */
+    .page-section {
+        background: white;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        margin-bottom: 20px;
+        overflow: hidden;
+    }
+
+    .page-header {
+        background: var(--cost-blue);
+        color: white;
+        padding: 10px 20px;
+        font-weight: bold;
+    }
+
+    .page-content {
+        padding: 20px;
+        white-space: pre-wrap;
+        font-family: 'Courier New', monospace;
+        font-size: 0.9em;
+        max-height: 600px;
+        overflow-y: auto;
+        background: #f5f5f5;
+    }
+
+    /* Comparison Styles */
+    .comparison-row {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-bottom: 30px;
+    }
+
+    .comparison-column {
+        background: white;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    .comparison-header {
+        padding: 15px 20px;
+        font-weight: bold;
+        color: white;
+    }
+
+    .comparison-header.midterm {
+        background: var(--cost-blue);
+    }
+
+    .comparison-header.final {
+        background: var(--cost-purple);
+    }
+
+    .comparison-content {
+        padding: 20px;
+        max-height: 400px;
+        overflow-y: auto;
+    }
+
+    .change-indicator {
+        display: inline-flex;
+        align-items: center;
+        gap: 5px;
+        padding: 4px 10px;
+        border-radius: 4px;
+        font-size: 0.85em;
+        font-weight: bold;
+    }
+
+    .change-positive {
+        background: #d4edda;
+        color: #155724;
+    }
+
+    .change-negative {
+        background: #f8d7da;
+        color: #721c24;
+    }
+
+    .change-neutral {
+        background: #e2e3e5;
+        color: #383d41;
+    }
+
+    /* Search and Filter */
+    .search-box {
+        width: 100%;
+        padding: 12px 20px;
+        border: 2px solid var(--border-color);
+        border-radius: 8px;
+        font-size: 1em;
+        margin-bottom: 20px;
+    }
+
+    .search-box:focus {
+        outline: none;
+        border-color: var(--cost-purple);
+    }
+
+    /* Leadership */
+    .leadership-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 20px;
+    }
+
+    .leader-card {
+        background: white;
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        padding: 20px;
+    }
+
+    .leader-card h4 {
+        color: var(--cost-purple);
+        margin: 0 0 10px 0;
+    }
+
+    .leader-info {
+        color: var(--cost-gray);
+        font-size: 0.9em;
+    }
+
+    /* Footer */
+    .footer {
+        background: var(--cost-purple);
+        color: white;
+        text-align: center;
+        padding: 20px;
+        margin-top: 40px;
+    }
+
+    .footer a {
+        color: white;
+        text-decoration: underline;
+    }
+
+    /* Expand/Collapse All */
+    .expand-controls {
+        margin-bottom: 15px;
+    }
+
+    .expand-controls button {
+        padding: 8px 16px;
+        margin-right: 10px;
+        border: 1px solid var(--cost-purple);
+        background: white;
+        color: var(--cost-purple);
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+    .expand-controls button:hover {
+        background: var(--cost-purple);
+        color: white;
+    }
+</style>
+
+    <style>
+        .summary-comparison {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .comparison-stat {
+            background: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .comparison-stat .values {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 10px 0;
+        }
+
+        .comparison-stat .midterm-val {
+            color: var(--cost-blue);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .comparison-stat .final-val {
+            color: var(--cost-purple);
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        .comparison-stat .arrow {
+            font-size: 1.5em;
+            color: var(--cost-green);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>COST Action CA19130: Full Report Comparison</h1>
+        <div class="subtitle">Mid-Term Report (24 months) vs Final Report (48 months) | Side-by-Side Analysis</div>
+    </div>
+
+    <div class="nav-bar">
+        <a href="index.html">Home</a>
+        <a href="final-action-chair-report-full.html">Final Report</a>
+        <a href="midterm-action-chair-report-full.html">Mid-Term Report</a>
+        <a href="comparison-enhanced.html">Comparison Dashboard</a>
+        <a href="report-editor.html">Report Editor</a>
+    </div>
+
+    <div class="container">
+        <div class="tabs">
+            <button class="tab-btn active" onclick="showTab('overview')">Overview</button>
+<button class="tab-btn" onclick="showTab('obj-1')">Obj 1</button><button class="tab-btn" onclick="showTab('obj-2')">Obj 2</button><button class="tab-btn" onclick="showTab('obj-3')">Obj 3</button><button class="tab-btn" onclick="showTab('obj-4')">Obj 4</button><button class="tab-btn" onclick="showTab('obj-5')">Obj 5</button><button class="tab-btn" onclick="showTab('obj-6')">Obj 6</button><button class="tab-btn" onclick="showTab('obj-7')">Obj 7</button><button class="tab-btn" onclick="showTab('obj-8')">Obj 8</button><button class="tab-btn" onclick="showTab('obj-9')">Obj 9</button><button class="tab-btn" onclick="showTab('obj-10')">Obj 10</button><button class="tab-btn" onclick="showTab('obj-11')">Obj 11</button><button class="tab-btn" onclick="showTab('obj-12')">Obj 12</button><button class="tab-btn" onclick="showTab('obj-13')">Obj 13</button><button class="tab-btn" onclick="showTab('obj-14')">Obj 14</button><button class="tab-btn" onclick="showTab('obj-15')">Obj 15</button><button class="tab-btn" onclick="showTab('obj-16')">Obj 16</button>
+            <button class="tab-btn" onclick="showTab('deliverables-comp')">Deliverables</button>
+            <button class="tab-btn" onclick="showTab('publications-comp')">Publications</button>
+        </div>
+
+        <div id="overview" class="tab-content active">
+            <h2>Summary Comparison</h2>
+            <div class="summary-comparison">
+                <div class="comparison-stat">
+                    <div class="label">Researchers</div>
+                    <div class="values">
+                        <span class="midterm-val">260</span>
+                        <span class="arrow">-></span>
+                        <span class="final-val">420</span>
+                    </div>
+                    <div class="change-indicator change-positive">+160 researchers</div>
+                </div>
+                <div class="comparison-stat">
+                    <div class="label">Countries</div>
+                    <div class="values">
+                        <span class="midterm-val">49</span>
+                        <span class="arrow">-></span>
+                        <span class="final-val">55</span>
+                    </div>
+                    <div class="change-indicator change-positive">+6 countries</div>
+                </div>
+                <div class="comparison-stat">
+                    <div class="label">Publications</div>
+                    <div class="values">
+                        <span class="midterm-val">99</span>
+                        <span class="arrow">-></span>
+                        <span class="final-val">99</span>
+                    </div>
+                    <div class="change-indicator change-positive">+0 new</div>
+                </div>
+                <div class="comparison-stat">
+                    <div class="label">Objectives</div>
+                    <div class="values">
+                        <span class="midterm-val">16</span>
+                        <span class="arrow">-></span>
+                        <span class="final-val">16</span>
+                    </div>
+                    <div class="change-indicator change-neutral">All 16 objectives tracked</div>
+                </div>
+            </div>
+
+            <h3>All Objectives Overview</h3>
+            <table class="deliverables-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Objective Title</th>
+                        <th>Mid-Term</th>
+                        <th>Final</th>
+                        <th>Change</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>To develop blended approaches to evaluate innovative financial services and thei...</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>The development of conceptual and methodological tools for establishing when bla...</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>To receive input from regulators and practitioners&#39; communities and to validate ...</td>
+                        <td>51-75%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-success">Changed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>Pruning and improvement of the vast array of performance attribution models by
+c...</td>
+                        <td>26-50%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-success">Changed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>Disseminate to the public and share with regulators the results on investment pr...</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>Creation of the first European platform comparing the out-of-sample performance ...</td>
+                        <td>51-75%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-success">Changed</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>Create an excellent network of researchers in Europe with lasting collaboration ...</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>Bringing technological, quantitative and economic researchers together, to tackl...</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>Bridging the gap between practitioners from the finance industry, academics and
+...</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>Transfer knowledge in terms of expertise, scientific tools and human resources a...</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td>Establish an inclusive community of researchers on methodological and technologi...</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td>Overcome the siloing of research topics by country and achieve geographical and
+...</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>13</td>
+                        <td>Prepare competitive European researchers for a fruitful career in an internation...</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td>Maximize the job opportunities for PhD students and Early Career Investigators....</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td>Disseminate the results of the Action&#39;s activities to the scientific community, ...</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>16</td>
+                        <td>Significantly improve the gender equality in the fields of the Action....</td>
+                        <td>76-100%</td>
+                        <td>76-100%</td>
+                        <td><span class="badge badge-info">Same</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="obj-1" class="tab-content">
+            <h2>Objective 1 Comparison</h2>
+            <h3>To develop blended approaches to evaluate innovative financial services and their
+providers, especially in the FinTech domain, building on Machine Learning methods,
+focussing on prediction (early warning) of operational fragility, fraudulent and illegal
+behaviour ranging from appropriation of loaned funds to money-laundering activities.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 is focused on developing blended approaches to evaluate
+innovative financial services and their providers, especially in the FinTech domain. One
+of our main goals is to build on Machine Learning methods, with a focus on prediction
+(early warning) of operational fragility, fraudulent and illegal behavior ranging from
+appropriation of loaned funds to money-laundering activities.
+To achieve this goal, we have formed several strategic partnerships. One such
+partnership is with the Romanian Fintech company iFactor, which has allowed us to
+work on the research and development of AI tools for financial risk assessment. We
+have also formed a partnership with ING Group, Amsterdam Netherlands. Early
+warning systems are one of the main focus of many of our partner companies, and ING
+Group&#39;s early warning credit system is one of the leading European early warning credit
+systems. Our COST CA19130 is substantially in ongoing research to improve and
+extend their system.
+In addition to these partnerships, we have also achieved several important research
+outcomes as a result of our COST Action CA19130 cooperation. For example, the
+Swiss National Science Foundation is supporting a research project on Anomaly and
+Fraud Detection in Blockchain networks, which is being worked on by our COST Action
+members. Additionally, we have a research project with a Swiss Fintech company,
+where we are supporting them to improve the default rating of loans. These examples
+demonstrate our commitment to developing new and improved theories, models,
+methodologies, technologies, and techniques in the field of fintech and financial
+services.
+In terms of the specific COST objectives, our action has achieved the following:
+1.a - Development of a common understanding/definition of the subject matter: By
+working closely with practitioners from the finance industry and regulators, we have
+developed a shared understanding of the subject matter and the challenges facing the
+industry. This has allowed us to develop blended approaches that are tailored to meet
+the specific needs of the industry.1.e - Development of knowledge needing international
+coordination: Our action has brought together researchers from 49 countries globally,
+and 39 European COST countries, allowing for the development of knowledge that
+requires international coordination. By working together, we have been able to tackle
+complex research questions and develop new and improved theories, models,
+methodologies, technologies, and techniques. 
+Overall, our COST Action CA19130 is making significant contributions to the field of
+fintech and financial services. By forming strategic partnerships and working closely
+with practitioners, regulators, and researchers, we are able to develop blended
+approaches that are tailored to meet the specific needs of the industry, while also
+6 contributing to the development of new and improved theories, models, methodologies,
+technologies, and techniques that are necessary for the field to evolve.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 is focused on developing blended approaches to evaluate
+innovative financial services and their providers, especially in the FinTech domain. One
+of our main goals is to build on Machine Learning methods, with a focus on prediction
+(early warning) of operational fragility, fraudulent and illegal behavior ranging from
+appropriation of loaned funds to money-laundering activities.
+To achieve this goal, we have formed several strategic partnerships. One such
+partnership is with the Romanian Fintech company iFactor, which has allowed us to
+work on the research and development of AI tools for financial risk assessment. We
+have also formed a partnership with ING Group, Amsterdam Netherlands. Early
+warning systems are one of the main focus of many of our partner companies, and ING
+Group&#39;s early warning credit system is one of the leading European early warning credit
+systems. Our COST CA19130 is substantially in ongoing research to improve and
+extend their system.
+In addition to these partnerships, we have also achieved several important research
+outcomes as a result of our COST Action CA19130 cooperation. For example, the
+Swiss National Science Foundation is supporting a research project on Anomaly and
+Fraud Detection in Blockchain networks, which is being worked on by our COST Action
+members. Additionally, we have a research project with a Swiss Fintech company,
+where we are supporting them to improve the default rating of loans. These examples
+demonstrate our commitment to developing new and improved theories, models,
+methodologies, technologies, and techniques in the field of fintech and financial
+services.
+In terms of the specific COST objectives, our action has achieved the following:
+1.a - Development of a common understanding/definition of the subject matter: By
+working closely with practitioners from the finance industry and regulators, we have
+developed a shared understanding of the subject matter and the challenges facing the
+industry. This has allowed us to develop blended approaches that are tailored to meet
+the specific needs of the industry.1.e - Development of knowledge needing international
+coordination: Our action has brought together researchers from 49 countries globally,
+and 39 European COST countries, allowing for the development of knowledge that
+requires international coordination. By working together, we have been able to tackle
+complex research questions and develop new and improved theories, models,
+methodologies, technologies, and techniques. 
+Overall, our COST Action CA19130 is making significant contributions to the field of
+5 fintech and financial services. By forming strategic partnerships and working closely
+with practitioners, regulators, and researchers, we are able to develop blended
+approaches that are tailored to meet the specific needs of the industry, while also
+contributing to the development of new and improved theories, models, methodologies,
+technologies, and techniques that are necessary for the field to evolve.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-2" class="tab-content">
+            <h2>Objective 2 Comparison</h2>
+            <h3>The development of conceptual and methodological tools for establishing when black-
+box models are admissible and, to the extent possible, making them more transparent
+and/or replacing them with interpretable and explainable models.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Transparency, interpretability and explainability of black-box models has become one of
+the main research agendas of our COST Action CA19130. Our members have worked
+together on a substantial number of publications, research proposals, and various
+explainable AI tools.
+To achieve this goal, we have organized many research conferences around this topic
+with a substantial number of participants. We also disseminated the code and training
+material on this topic via quantlet.com and quantinar.com and created an extensive
+platform on Explainable AI for finance with several use cases, all papers, code
+repositories, interactive apps, see https://www.explainableaiforfinance.com/.
+We have also made significant contributions to the development of conceptual and
+methodological tools for establishing when black-box models are admissible and
+making them more transparent and/or replacing them with interpretable and explainable
+models. For example, a paper published by the Action provides insights on the early
+lapse phenomenon for the insurance contracts, exploiting interpretability algorithms
+applied to random forest. By applying interpretability to black-box instruments, the
+authors were able to show how it can give light to a phenomenon not easily explainable
+by white-box algorithms.
+Our research team has introduced different measures of local and global interpretability
+for different machine learning tasks, such as clustering, classification and regression,
+but also for different types of data such as continuous, categorical, hierarchical, and
+functional. 
+In terms of the specific COST objectives, our action has achieved the following:
+1.a - Development of a common understanding/definition of the subject matter: By
+working closely with other researchers and practitioners in the field, we have developed
+a shared understanding of the subject matter and the challenges facing the industry.
+This has allowed us to develop tools and approaches that are tailored to meet the
+specific needs of the industry.1.c - Coordination of experimentation or testing: We have
+organized research conferences and events, which have provided opportunities for
+researchers to test and experiment with the tools and approaches that have been
+developed as a result of our COST Action. Additionally, the code and training material
+that we have made available via quantlet.com, quantinar.com and our Explainable AI
+for finance platform, allows researchers and practitioners to test and experiment with
+these tools in their own work. This coordination of experimentation and testing has
+been crucial in helping us to establish when black-box models are admissible and in
+developing new methods for making these models more transparent. 
+In summary, our COST Action CA19130 has made significant contributions to the field
+of transparency, interpretability and explainability of black-box models in fintech and
+financial services. By organizing research conferences, events and developing a
+platform on Explainable AI for finance, we have created a space for the sharing of ideas
+and perspectives and the testing and experimentation of new tools and approaches.
+This has led to the development of new conceptual and methodological tools for
+establishing when black-box models are admissible and in making them more
+transparent and interpretable.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Transparency, interpretability and explainability of black-box models has become one of
+the main research agendas of our COST Action CA19130. Our members have worked
+together on a substantial number of publications, research proposals, and various
+explainable AI tools.
+To achieve this goal, we have organized many research conferences around this topic
+with a substantial number of participants. We also disseminated the code and training
+material on this topic via quantlet.com and quantinar.com and created an extensive
+platform on Explainable AI for finance with several use cases, all papers, code
+repositories, interactive apps, see https://www.explainableaiforfinance.com/.
+We have also made significant contributions to the development of conceptual and
+methodological tools for establishing when black-box models are admissible and
+making them more transparent and/or replacing them with interpretable and explainable
+models. For example, a paper published by the Action provides insights on the early
+lapse phenomenon for the insurance contracts, exploiting interpretability algorithms
+applied to random forest. By applying interpretability to black-box instruments, the
+authors were able to show how it can give light to a phenomenon not easily explainable
+by white-box algorithms.
+Our research team has introduced different measures of local and global interpretability
+for different machine learning tasks, such as clustering, classification and regression,
+but also for different types of data such as continuous, categorical, hierarchical, and
+functional. 
+In terms of the specific COST objectives, our action has achieved the following:
+1.a - Development of a common understanding/definition of the subject matter: By
+working closely with other researchers and practitioners in the field, we have developed
+a shared understanding of the subject matter and the challenges facing the industry.
+This has allowed us to develop tools and approaches that are tailored to meet the
+specific needs of the industry.1.c - Coordination of experimentation or testing: We have
+organized research conferences and events, which have provided opportunities for
+researchers to test and experiment with the tools and approaches that have been
+developed as a result of our COST Action. Additionally, the code and training material
+that we have made available via quantlet.com, quantinar.com and our Explainable AI
+for finance platform, allows researchers and practitioners to test and experiment with
+these tools in their own work. This coordination of experimentation and testing has
+been crucial in helping us to establish when black-box models are admissible and in
+developing new methods for making these models more transparent. 
+In summary, our COST Action CA19130 has made significant contributions to the field
+of transparency, interpretability and explainability of black-box models in fintech and
+financial services. By organizing research conferences, events and developing a
+platform on Explainable AI for finance, we have created a space for the sharing of ideas
+and perspectives and the testing and experimentation of new tools and approaches.
+This has led to the development of new conceptual and methodological tools for
+establishing when black-box models are admissible and in making them more
+6 transparent and interpretable.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-3" class="tab-content">
+            <h2>Objective 3 Comparison</h2>
+            <h3>To receive input from regulators and practitioners&#39; communities and to validate results
+with regard to increasing transparency of artificial intelligence applications.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 51-75%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 51-75%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has made a significant effort to receive input from
+regulators and practitioners&#39; communities and to validate results with regard to
+increasing transparency of artificial intelligence (AI) applications. 
+One of the ways in which we will achieve this objective is by organizing a high-level
+COST policy event at the premises of the COST Association in Brussels in May 2023.
+This event will bring together experts from the European Commission, industry, and
+academia to discuss the latest developments in AI and its implications for policy.
+Several high-profile speakers from the European Commission have already confirmed
+their participation, which demonstrates the level of interest and engagement with our
+work.
+Maria Moloney, has been accepted onto the CEDPO AI WG (Working Group for
+Artificial Intelligence of the Confederation of European Data Protection Organisations)
+based in Brussels. She will be working on advising policy regarding AI from the
+perspective of data protection. This is an example of how our network is engaged with
+regulators and policymakers at the highest level and how we are able to provide
+valuable input to them.
+Many of our members also work directly with industry, either through direct cooperation
+or via industry-academia relationships. For example, the Action Chair has accepted an
+associate professorship at the University of Twente, which is a joint appointment
+between the University of Twente and ING Group in Amsterdam, Netherlands. Through
+this partnership, all COST CA19130 output is regularly discussed with and challenged
+by one of the largest international groups. In turn, the bank regularly provides new
+topics and research items that are then disseminated in our network. This is an
+example of how our network is able to provide input to the objectives related to
+stakeholders (1.g) and to future market applications (1.h).
+We also have close contacts to the AI team from the European Central Bank, who is
+substantially supporting a joint COST CA19130 application to the MSCA Doctoral
+Training network. This highlights the level of cooperation and support we have with
+regulators and practitioners&#39; communities in our field.
+In summary, our COST Action CA19130 has made significant efforts to receive input
+from regulators and practitioners&#39; communities and to validate results with regard to
+increasing transparency of artificial intelligence applications. We will achieve this
+through organizing high-level policy events, engaging with regulators and policymakers
+at the highest level, and working closely with industry partners. The involvement of our
+members in organizations such as the CEDPO AI WG and the European Central Bank,
+as well as our partnerships with major companies such as ING Group, demonstrate the
+level of engagement and cooperation we have with regulators and practitioners&#39;
+communities. Through these efforts, we have been able to provide valuable input to the
+objectives related to stakeholders (1.g) and to future market applications (1.h) in our
+field. Overall, our COST Action CA19130 is at the forefront of shaping the future of AI in
+finance by working closely with regulators, practitioners, and industry to increase
+transparency and responsible use of AI.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has made a significant effort to receive input from
+regulators and practitioners&#39; communities and to validate results with regard to
+increasing transparency of artificial intelligence (AI) applications. 
+One of the ways in which we will achieve this objective is by organizing a high-level
+COST policy event at the premises of the COST Association in Brussels in May 2023.
+This event will bring together experts from the European Commission, industry, and
+academia to discuss the latest developments in AI and its implications for policy.
+Several high-profile speakers from the European Commission have already confirmed
+their participation, which demonstrates the level of interest and engagement with our
+work.
+Maria Moloney, has been accepted onto the CEDPO AI WG (Working Group for
+Artificial Intelligence of the Confederation of European Data Protection Organisations)
+based in Brussels. She will be working on advising policy regarding AI from the
+perspective of data protection. This is an example of how our network is engaged with
+regulators and policymakers at the highest level and how we are able to provide
+valuable input to them.
+Many of our members also work directly with industry, either through direct cooperation
+or via industry-academia relationships. For example, the Action Chair has accepted an
+associate professorship at the University of Twente, which is a joint appointment
+between the University of Twente and ING Group in Amsterdam, Netherlands. Through
+this partnership, all COST CA19130 output is regularly discussed with and challenged
+by one of the largest international groups. In turn, the bank regularly provides new
+topics and research items that are then disseminated in our network. This is an
+example of how our network is able to provide input to the objectives related to
+stakeholders (1.g) and to future market applications (1.h).
+We also have close contacts to the AI team from the European Central Bank, who is
+substantially supporting a joint COST CA19130 application to the MSCA Doctoral
+Training network. This highlights the level of cooperation and support we have with
+regulators and practitioners&#39; communities in our field.
+In summary, our COST Action CA19130 has made significant efforts to receive input
+from regulators and practitioners&#39; communities and to validate results with regard to
+increasing transparency of artificial intelligence applications. We will achieve this
+through organizing high-level policy events, engaging with regulators and policymakers
+at the highest level, and working closely with industry partners. The involvement of our
+members in organizations such as the CEDPO AI WG and the European Central Bank,
+as well as our partnerships with major companies such as ING Group, demonstrate the
+level of engagement and cooperation we have with regulators and practitioners&#39;
+communities. Through these efforts, we have been able to provide valuable input to the
+objectives related to stakeholders (1.g) and to future market applications (1.h) in our
+field. Overall, our COST Action CA19130 is at the forefront of shaping the future of AI in
+finance by working closely with regulators, practitioners, and industry to increase
+transparency of AI.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-4" class="tab-content">
+            <h2>Objective 4 Comparison</h2>
+            <h3>Pruning and improvement of the vast array of performance attribution models by
+contributing to the development of methodologies for reducing the false discovery rate
+in financial research and applied financial investment management.
+7</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 26-50%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 26-50%</h4>
+                        <div class="proof-text">This objective covers a large variety of acacemic research and papers. Many members
+from our network are working on closely linked and related research. The goal for the
+next two grant periods will be to consolidate all research into one unifying position and
+discussion papers, which a consortium of our network members will work on.
+Two example outputs are
+1) https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4209433 and 2) The Credit
+reform data set is at http://blockchain-research-center.com/ (WG1 leader, Prof. Härdle).</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">This objective covers a large variety of acacemic research and papers. Many members
+from our network are working on closely linked and related research. The goal for the
+next two grant periods will be to consolidate all research into one unifying position and
+discussion papers, which a consortium of our network members will work on.
+Two example outputs are 1)
+https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4209433 and 2) The Credit
+reform data set is at http://blockchain-research-center.com/ (WG1 leader, Prof. Härdle).</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-5" class="tab-content">
+            <h2>Objective 5 Comparison</h2>
+            <h3>Disseminate to the public and share with regulators the results on investment product
+performance evaluation.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA13910 has achieved the objective of disseminating the results of
+our research on investment product performance evaluation to the public and regulators
+through a comprehensive approach. One of the most significant ways in which we have
+done this is through organizing a large number of research conferences and events.
+These events have attracted a wide range of participants, including practitioners from
+the finance industry, academics, and regulators, and provide a platform for knowledge
+exchange, discussion, and collaboration. The list of all the events can be found at
+https://www.meetup.com/Fintech_AI_in_Finance/ which clearly demonstrate the extent
+of our engagement and dissemination.
+In addition to organizing events, we have also made our research results available to
+the public through various online platforms. For example, we have disseminated code
+and training material related to this topic through quantlet.com and quantinar.com,
+making it easily accessible for anyone interested in the topic. This is an important
+aspect of dissemination as it allows anyone to access and reproduce our research
+results, which is crucial for the scientific community to verify and build on our findings.
+We also have an extensive online platform on Explainable AI for finance which includes
+several use cases, all papers, code repositories, interactive apps, see
+https://www.explainableaiforfinance.com/ which can be accessed by anyone interested
+in the topic.
+Moreover, our GP3 has several dedicated Action meetings related to regulators, most
+notably the COST CA19130 meets Brussels event, hosted at the premises of the COST
+Association in Brussels. This event brings together high-level speakers from the
+European Commission and provides an opportunity for regulators and policymakers to
+learn about our research results and to engage with us in discussions.
+All of these efforts have enabled us to disseminate our research results to the general
+public (1.i) and to stakeholders such as regulators (1.j) in an effective and
+comprehensive manner. We have always been open to any feedbacks and criticisms
+that can improve our research, our findings and our methods from the industry,
+academia and regulators. Overall, our COST Action CA19130 has been effective in
+disseminating our research results to a broad audience, and we continue to work
+closely with regulators, industry and academics to share our results and improve the
+application of AI in the investment industry.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA13910 has achieved the objective of disseminating the results of
+our research on investment product performance evaluation to the public and regulators
+through a comprehensive approach. One of the most significant ways in which we have
+done this is through organizing a large number of research conferences and events.
+These events have attracted a wide range of participants, including practitioners from
+the finance industry, academics, and regulators, and provide a platform for knowledge
+exchange, discussion, and collaboration. The list of all the events can be found at
+https://www.meetup.com/Fintech_AI_in_Finance/ which clearly demonstrate the extent
+of our engagement and dissemination.
+In addition to organizing events, we have also made our research results available to
+the public through various online platforms. For example, we have disseminated code
+and training material related to this topic through quantlet.com and quantinar.com,
+making it easily accessible for anyone interested in the topic. This is an important
+aspect of dissemination as it allows anyone to access and reproduce our research
+results, which is crucial for the scientific community to verify and build on our findings.
+We also have an extensive online platform on Explainable AI for finance which includes
+several use cases, all papers, code repositories, interactive apps, see
+https://www.explainableaiforfinance.com/ which can be accessed by anyone interested
+in the topic.
+Moreover, our GP3 has several dedicated Action meetings related to regulators, most
+notably the COST CA19130 meets Brussels event, hosted at the premises of the COST
+Association in Brussels. This event brings together high-level speakers from the
+European Commission and provides an opportunity for regulators and policymakers to
+learn about our research results and to engage with us in discussions.
+All of these efforts have enabled us to disseminate our research results to the general
+public (1.i) and to stakeholders such as regulators (1.j) in an effective and
+comprehensive manner. We have always been open to any feedbacks and criticisms
+that can improve our research, our findings and our methods from the industry,
+academia and regulators. Overall, our COST Action CA19130 has been effective in
+disseminating our research results to a broad audience, and we continue to work
+closely with regulators, industry and academics to share our results and improve the
+8 application of AI in the investment industry.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-6" class="tab-content">
+            <h2>Objective 6 Comparison</h2>
+            <h3>Creation of the first European platform comparing the out-of-sample performance of
+banks&#39; investment products, insurance-linked investment products and asset
+management products available to the general public.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 51-75%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 51-75%</h4>
+                        <div class="proof-text">We are proposing to replace this objective with the following:
+Creation of a stable, transparent European platform for research on the digitalisation of
+Banks&#39; financial products, including digital assets, tokens in a reproducible framework
+available to the general public.
+This new objective would have a substantially larger impact on the outcome of our
+COST Action and would be much better in line with academic, regulatory and industry
+developments since the start of the Action.
+The initial objective has fundamentally been dependent on regulatory changes in
+Europe to make this data available. Those changes have not happened. Therefore,
+purely from a legal point of view, it is not feasible to build this platform.
+In any case, the newly proposed objective is in line with the entire Action, the needs
+and requirements of all workings groups, all stakeholders and the future direction of any
+research in that area.
+Indeed, the newly proposed objective has been and is so fundamental to our Action,
+that we have already achieved a substantial part of it.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">We are proposing to replace this objective with the following:
+Creation of a stable, transparent European platform for research on the digitalisation of
+Banks&#39; financial products, including digital assets, tokens in a reproducible framework
+available to the general public.
+This new objective would have a substantially larger impact on the outcome of our
+COST Action and would be much better in line with academic, regulatory and industry
+developments since the start of the Action.
+The initial objective has fundamentally been dependent on regulatory changes in
+Europe to make this data available. Those changes have not happened. Therefore,
+purely from a legal point of view, it is not feasible to build this platform.
+In any case, the newly proposed objective is in line with the entire Action, the needs
+and requirements of all workings groups, all stakeholders and the future direction of any
+research in that area.
+Indeed, the newly proposed objective has been and is so fundamental to our Action,
+that we have already achieved a substantial part of it.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-7" class="tab-content">
+            <h2>Objective 7 Comparison</h2>
+            <h3>Create an excellent network of researchers in Europe with lasting collaboration beyond
+the lifetime of the Action.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has become one of the largest and most active COST
+Actions in all of Europe. Our network comprises 49 countries globally, of which 39 are
+European COST countries. We have more than 260 working group members now, with
+almost all countries represented in each working group.
+Our network is cooperating in many different ways and a substantial number of
+(changing) subgroups have formed that work on joint publications, research
+applications and output. We have initiated a meetup group,
+https://www.meetup.com/Fintech_AI_in_Finance/, with now more than 2000 members
+globally. Our more than 150 events so far have been attended by more than 7000
+participants.
+To achieve this, we have implemented several strategies:
+Encouraging active participation from all members: We have made it a priority to ensure
+that all members are actively engaged in the network and have opportunities to
+contribute to research projects and events. 
+Promoting interdisciplinary collaboration: Our network brings together researchers from
+a wide range of disciplines, including computer science, economics, finance, and
+mathematics. We have encouraged these researchers to work together on
+interdisciplinary projects, which has led to a more diverse range of perspectives and
+ideas.
+10 Facilitating communication and knowledge sharing: We have set up a number of
+platforms, including the aforementioned meetup group, an email list, and a website, to
+make it easy for members to communicate and share information. This has helped to
+create a sense of community within the network.
+Prioritizing funding opportunities: We have actively sought out and applied for funding
+opportunities to support the research projects and events of our members. This has not
+only provided financial resources, but also helped to create a sense of shared
+investment in the network&#39;s success.
+Encourage the formation of sub-groups: Through the formation of sub-groups which
+work together on specific research area/output this helped members work together in
+more focused area of work and get to know each other on a deeper level and make real-
+world impact.
+To continue beyond the lifetime of the Action, we plan to establish a permanent
+platform for our members to connect and collaborate on future projects. Additionally, we
+will actively promote the continued collaboration of our subgroups, and will help
+members identify funding opportunities to support future research. We will also work to
+establish long-term partnerships with industry partners, to support the translation of our
+research into practical applications.
+ 
+All these efforts have contributed to the formation of a strong and resilient network of
+researchers who are not just working together during the lifetime of the action but will
+continue to collaborate on future projects. We are truly proud of what we have achieved
+in creating a network of excellent researchers in the field of fintech and AI in finance,
+and look forward to seeing the continued impact of our work in the years to come.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has become one of the largest and most active COST
+Actions in all of Europe. Our network comprises 49 countries globally, of which 39 are
+European COST countries. We have more than 260 working group members now, with
+almost all countries represented in each working group.
+Our network is cooperating in many different ways and a substantial number of
+(changing) subgroups have formed that work on joint publications, research
+applications and output. We have initiated a meetup group,
+https://www.meetup.com/Fintech_AI_in_Finance/, with now more than 2000 members
+globally. Our more than 150 events so far have been attended by more than 7000
+participants.
+To achieve this, we have implemented several strategies:
+Encouraging active participation from all members: We have made it a priority to ensure
+that all members are actively engaged in the network and have opportunities to
+9 contribute to research projects and events. 
+Promoting interdisciplinary collaboration: Our network brings together researchers from
+a wide range of disciplines, including computer science, economics, finance, and
+mathematics. We have encouraged these researchers to work together on
+interdisciplinary projects, which has led to a more diverse range of perspectives and
+ideas.
+Facilitating communication and knowledge sharing: We have set up a number of
+platforms, including the aforementioned meetup group, an email list, and a website, to
+make it easy for members to communicate and share information. This has helped to
+create a sense of community within the network.
+Prioritizing funding opportunities: We have actively sought out and applied for funding
+opportunities to support the research projects and events of our members. This has not
+only provided financial resources, but also helped to create a sense of shared
+investment in the network&#39;s success.
+Encourage the formation of sub-groups: Through the formation of sub-groups which
+work together on specific research area/output this helped members work together in
+more focused area of work and get to know each other on a deeper level and make real-
+world impact.
+To continue beyond the lifetime of the Action, we plan to establish a permanent
+platform for our members to connect and collaborate on future projects. Additionally, we
+will actively promote the continued collaboration of our subgroups, and will help
+members identify funding opportunities to support future research. We will also work to
+establish long-term partnerships with industry partners, to support the translation of our
+research into practical applications.
+ 
+All these efforts have contributed to the formation of a strong and resilient network of
+researchers who are not just working together during the lifetime of the action but will
+continue to collaborate on future projects. We are truly proud of what we have achieved
+in creating a network of excellent researchers in the field of fintech and AI in finance,
+and look forward to seeing the continued impact of our work in the years to come.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-8" class="tab-content">
+            <h2>Objective 8 Comparison</h2>
+            <h3>Bringing technological, quantitative and economic researchers together, to tackle future
+research that can only be done in an interdisciplinary setting, and getting actively
+involved in the blockchain and FinTech communities across Europe, to constantly
+monitor developments, get input and disseminate results.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has been designed to bring together technological,
+quantitative, and economic researchers in order to tackle future research that can only
+be done in an interdisciplinary setting. We are actively involved in the blockchain and
+Fintech communities across Europe, constantly monitoring developments, getting input,
+and disseminating results.
+Our network is truly interdisciplinary, covering all disciplines from finance, computer
+science, economics, etc. Our members are all actively involved in their national
+blockchain and Fintech communities. We are collectively working together with more
+than 20 Fintech associations across Europe, which is a testament to the significance of
+the impact of our action on those communities.
+In terms of the specific COST objectives, our COST Action CA19130 achieves the
+following:
+1.e - Development of knowledge needing international coordination: Our network
+comprises 49 countries globally, of which 39 are European COST countries. This
+international representation allows for a wide range of perspectives and ideas to be
+brought together in order to tackle complex research questions that can only be
+11 accomplished with an international coordination. 2.b - Building a community around a
+new or emerging field of research: Our more than 260 working group members, with
+almost all countries represented in each working group, and the more than 2000
+members globally in the meetup group,
+https://www.meetup.com/Fintech_AI_in_Finance/, are a testament to the strong
+community we have built around fintech and AI in finance. 2.d - Acting as a stakeholder
+platform or trans-national practice community: Our network is cooperating in many
+different ways and a substantial number of subgroups have formed that work on joint
+publications, research applications, and output. This allows us to act as a stakeholder
+platform, bringing together the different perspectives and ideas of our members to
+tackle important research questions. Additionally, our work with more than 20 Fintech
+associations across Europe allows us to act as a trans-national practice community,
+disseminating our research results and providing input to the industry stakeholders. 
+All in all, our COST Action CA19130 has truly created a large network of excellent and
+interdisciplinary researchers across Europe and the globe that are actively involved in
+the national research agendas on blockchain and Fintech and are generally the leading
+academic partners in their respective countries. This action is a unique platform that is
+continuously working towards promoting and developing knowledge, research, and
+innovation in the field of fintech and AI in finance.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has been designed to bring together technological,
+quantitative, and economic researchers in order to tackle future research that can only
+be done in an interdisciplinary setting. We are actively involved in the blockchain and
+Fintech communities across Europe, constantly monitoring developments, getting input,
+and disseminating results.
+Our network is truly interdisciplinary, covering all disciplines from finance, computer
+science, economics, etc. Our members are all actively involved in their national
+blockchain and Fintech communities. We are collectively working together with more
+than 20 Fintech associations across Europe, which is a testament to the significance of
+the impact of our action on those communities.
+10 In terms of the specific COST objectives, our COST Action CA19130 achieves the
+following:
+1.e - Development of knowledge needing international coordination: Our network
+comprises 49 countries globally, of which 39 are European COST countries. This
+international representation allows for a wide range of perspectives and ideas to be
+brought together in order to tackle complex research questions that can only be
+accomplished with an international coordination. 2.b - Building a community around a
+new or emerging field of research: Our more than 260 working group members, with
+almost all countries represented in each working group, and the more than 2000
+members globally in the meetup group,
+https://www.meetup.com/Fintech_AI_in_Finance/, are a testament to the strong
+community we have built around fintech and AI in finance. 2.d - Acting as a stakeholder
+platform or trans-national practice community: Our network is cooperating in many
+different ways and a substantial number of subgroups have formed that work on joint
+publications, research applications, and output. This allows us to act as a stakeholder
+platform, bringing together the different perspectives and ideas of our members to
+tackle important research questions. Additionally, our work with more than 20 Fintech
+associations across Europe allows us to act as a trans-national practice community,
+disseminating our research results and providing input to the industry stakeholders. 
+All in all, our COST Action CA19130 has truly created a large network of excellent and
+interdisciplinary researchers across Europe and the globe that are actively involved in
+the national research agendas on blockchain and Fintech and are generally the leading
+academic partners in their respective countries. This action is a unique platform that is
+continuously working towards promoting and developing knowledge, research, and
+innovation in the field of fintech and AI in finance.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-9" class="tab-content">
+            <h2>Objective 9 Comparison</h2>
+            <h3>Bridging the gap between practitioners from the finance industry, academics and
+regulators by setting up a common knowledge exchange platform.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has been designed to bridge the gap between practitioners
+from the finance industry, academics, and regulators by setting up a common
+knowledge exchange platform.
+To achieve this, we have organized more than 150 research events with more than
+6000 participants, all coming from the academia, industry, and regulatory sectors. This
+has provided a unique opportunity for different stakeholders to come together and
+share their perspectives, ideas and experiences.
+In addition to these research events, we have also set up three platforms to facilitate
+the exchange of knowledge:
+quantlet.com: This is a platform that houses thousands of code pieces showcasing
+academic research, making it reproducible for everyone. This platform enables
+practitioners from the industry and other stakeholders to access and understand the
+latest academic research and apply it to their work.quantinar.com: This is a knowledge,
+training, and dissemination outlet, showcasing the fundamentals of our COST CA19130
+Action as well as cutting-edge research. This platform provides a comprehensive
+overview of our Action&#39;s research agendas and enables practitioners from the industry
+and other stakeholders to learn about and stay informed of the latest developments in
+the field of fintech and AI in finance.
+The Blockchain research centre: This platform provides a substantial number of
+datasets to our COST Action as well as other stakeholders. This enables researchers to
+access a wealth of data and conduct rigorous research that can contribute to the
+understanding of blockchain and its applications in finance. 
+In terms of the specific COST objectives, our COST Action CA19130 achieves the
+following:
+1.a - Development of a common understanding/definition of the subject matter: The
+knowledge exchange platform we have set up allows for a common understanding and
+definition of the subject matter to be developed among practitioners from the finance
+12 industry, academics and regulators. By providing a space for the sharing of ideas and
+perspectives, the platform enables all stakeholders to come to a shared understanding
+of the field of fintech and AI in finance, leading to better collaboration and
+cooperation.2.c - Bridging separate fields of science/disciplines to achieve
+breakthroughs that require an interdisciplinary approach: Our network is truly
+interdisciplinary, covering all disciplines from finance, computer science, economics,
+etc. Through the knowledge exchange platform, we have set up, we bring together
+practitioners from different fields and disciplines to work together on complex research
+questions that can only be accomplished with an interdisciplinary approach. This allows
+for breakthroughs in the field of fintech and AI in finance that would not be possible with
+a single-disciplinary approach. 
+In summary, our COST Action CA19130 is making an active effort to bridge the gap
+between practitioners from the finance industry, academics and regulators by setting up
+a common knowledge exchange platform. Through the 150+ research events, the
+quantlet.com, quantinar.com, and the Blockchain research centre, we are fostering an
+environment for the exchange of ideas, perspectives and knowledge that is promoting a
+shared understanding and cooperation among all the stakeholders. This is leading to
+breakthroughs that would not be possible otherwise.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has been designed to bridge the gap between practitioners
+from the finance industry, academics, and regulators by setting up a common
+knowledge exchange platform.
+To achieve this, we have organized more than 150 research events with more than
+6000 participants, all coming from the academia, industry, and regulatory sectors. This
+has provided a unique opportunity for different stakeholders to come together and
+share their perspectives, ideas and experiences.
+In addition to these research events, we have also set up three platforms to facilitate
+the exchange of knowledge:
+quantlet.com: This is a platform that houses thousands of code pieces showcasing
+academic research, making it reproducible for everyone. This platform enables
+practitioners from the industry and other stakeholders to access and understand the
+latest academic research and apply it to their work.quantinar.com: This is a knowledge,
+training, and dissemination outlet, showcasing the fundamentals of our COST CA19130
+Action as well as cutting-edge research. This platform provides a comprehensive
+overview of our Action&#39;s research agendas and enables practitioners from the industry
+and other stakeholders to learn about and stay informed of the latest developments in
+the field of fintech and AI in finance.
+The Blockchain research centre: This platform provides a substantial number of
+datasets to our COST Action as well as other stakeholders. This enables researchers to
+access a wealth of data and conduct rigorous research that can contribute to the
+understanding of blockchain and its applications in finance. 
+11 In terms of the specific COST objectives, our COST Action CA19130 achieves the
+following:
+1.a - Development of a common understanding/definition of the subject matter: The
+knowledge exchange platform we have set up allows for a common understanding and
+definition of the subject matter to be developed among practitioners from the finance
+industry, academics and regulators. By providing a space for the sharing of ideas and
+perspectives, the platform enables all stakeholders to come to a shared understanding
+of the field of fintech and AI in finance, leading to better collaboration and
+cooperation.2.c - Bridging separate fields of science/disciplines to achieve
+breakthroughs that require an interdisciplinary approach: Our network is truly
+interdisciplinary, covering all disciplines from finance, computer science, economics,
+etc. Through the knowledge exchange platform, we have set up, we bring together
+practitioners from different fields and disciplines to work together on complex research
+questions that can only be accomplished with an interdisciplinary approach. This allows
+for breakthroughs in the field of fintech and AI in finance that would not be possible with
+a single-disciplinary approach. 
+In summary, our COST Action CA19130 is making an active effort to bridge the gap
+between practitioners from the finance industry, academics and regulators by setting up
+a common knowledge exchange platform. Through the 150+ research events, the
+quantlet.com, quantinar.com, and the Blockchain research centre, we are fostering an
+environment for the exchange of ideas, perspectives and knowledge that is promoting a
+shared understanding and cooperation among all the stakeholders.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-10" class="tab-content">
+            <h2>Objective 10 Comparison</h2>
+            <h3>Transfer knowledge in terms of expertise, scientific tools and human resources across
+the different disciplines and between academia and industry.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">The COST Action on Fintech and AI in Finance has been highly successful in
+transferring knowledge in terms of expertise, scientific tools and human resources
+across different disciplines and between academia and industry. One of the key ways in
+which this has been achieved is through the organization of more than 150 research
+events, almost all of which were in an interdisciplinary setting and involved both
+industry and academia. This has provided a platform for researchers to present their
+latest findings, share ideas and collaborate on new projects, allowing for the transfer of
+knowledge and expertise across different disciplines and between academia and
+industry.
+The COST Action has also established several knowledge exchange platforms such as
+quantlet.com, quantinar.com, and the Blockchain research center (HU Berlin) which
+provide thousands of reproducible pieces of research and extensive training material to
+transfer knowledge. These platforms provide valuable resources for researchers,
+practitioners, and students to gain access to the latest research findings, tools, and
+methodologies in the field.
+Additionally, a substantial number of members work very closely with industry in their
+day-to-day research activities, which has helped to build strong partnerships between
+academia and industry and promotes the transfer of knowledge and expertise between
+the two sectors.
+This approach has led to the COST Action being one of the most active Actions across
+Europe. The network provides an opportunity to the researchers to share ideas,
+collaborate on research, and exchange knowledge and expertise, which has helped to
+advance the field of fintech and AI in finance in research, education, and practice.
+In short, the COST Action has achieved knowledge transfer by:
+Organizing more than 150 research events, almost all of them in an interdisciplinary
+setting and with both industry and academia involved.
+Establishing several knowledge exchange platforms, such as quantlet.com,
+13 quantinar.com, and the Blockchain research center (HU Berlin) which provide
+thousands of reproducible pieces of research and extensive training material to transfer
+knowledge.
+Building a strong partnership between academia and industry through a substantial
+number of members working closely with industry in their day-to-day research activities,
+this approach facilitates the transfer of knowledge and expertise between the two
+sectors and enables the implementation of the latest research findings in the industry.
+Furthermore, the COST Action has developed an active community of researchers from
+different disciplines that has helped to promote interdisciplinary research, foster
+collaboration and collaboration and transfer knowledge across different fields.
+The COST Action&#39;s success in transferring knowledge can be seen in the significant
+amount of output that has been widely disseminated and has achieved a high citation
+count. Furthermore, the Action&#39;s active engagement with the latest research and
+developments in the field, support for early-career researchers and initiatives to ensure
+research being conducted is inclusive and responsive to the needs of diverse
+stakeholders has helped to build an inclusive community of researchers that is able to
+adapt and respond to the changes and new challenges in the field.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">The COST Action on Fintech and AI in Finance has been highly successful in
+transferring knowledge in terms of expertise, scientific tools and human resources
+across different disciplines and between academia and industry. One of the key ways in
+which this has been achieved is through the organization of more than 150 research
+events, almost all of which were in an interdisciplinary setting and involved both
+industry and academia. This has provided a platform for researchers to present their
+latest findings, share ideas and collaborate on new projects, allowing for the transfer of
+knowledge and expertise across different disciplines and between academia and
+industry.
+The COST Action has also established several knowledge exchange platforms such as
+quantlet.com, quantinar.com, and the Blockchain research center (HU Berlin) which
+provide thousands of reproducible pieces of research and extensive training material to
+transfer knowledge. These platforms provide valuable resources for researchers,
+practitioners, and students to gain access to the latest research findings, tools, and
+methodologies in the field.
+Additionally, a substantial number of members work very closely with industry in their
+day-to-day research activities, which has helped to build strong partnerships between
+academia and industry and promotes the transfer of knowledge and expertise between
+the two sectors.
+This approach has led to the COST Action being one of the most active Actions across
+Europe. The network provides an opportunity to the researchers to share ideas,
+collaborate on research, and exchange knowledge and expertise, which has helped to
+advance the field of fintech and AI in finance in research, education, and practice.
+In short, the COST Action has achieved knowledge transfer by:
+12 Organizing more than 150 research events, almost all of them in an interdisciplinary
+setting and with both industry and academia involved.
+Establishing several knowledge exchange platforms, such as quantlet.com,
+quantinar.com, and the Blockchain research center (HU Berlin) which provide
+thousands of reproducible pieces of research and extensive training material to transfer
+knowledge.
+Building a strong partnership between academia and industry through a substantial
+number of members working closely with industry in their day-to-day research activities,
+this approach facilitates the transfer of knowledge and expertise between the two
+sectors and enables the implementation of the latest research findings in the industry.
+Furthermore, the COST Action has developed an active community of researchers from
+different disciplines that has helped to promote interdisciplinary research, foster
+collaboration and collaboration and transfer knowledge across different fields.
+The COST Action&#39;s success in transferring knowledge can be seen in the significant
+amount of output that has been widely disseminated and has achieved a high citation
+count. Furthermore, the Action&#39;s active engagement with the latest research and
+developments in the field, support for early-career researchers and initiatives to ensure
+research being conducted is inclusive and responsive to the needs of diverse
+stakeholders has helped to build an inclusive community of researchers that is able to
+adapt and respond to the changes and new challenges in the field.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-11" class="tab-content">
+            <h2>Objective 11 Comparison</h2>
+            <h3>Establish an inclusive community of researchers on methodological and technological
+themes in Machine Learning and Artificial Intelligence, to promote Early Career
+Investigators and increase their visibility.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">This objective is similar to previous one. We are very likely one of the largest and most
+definitely one of the most active research networks on Fintech and AI in Finance in all
+of Europe. 
+During the first part of this Action, our members/ ECIs have received a substantial
+number of promotions, we have had more than 20 PhD thesis finished as well as more
+than 10 promotions on different levels of professorships.
+ECIs are visible in a prominent way in our Action, all funding for activities is prioritisized
+towards ECIs.
+Furthermore, the COST Action on Fintech and AI in Finance has established an
+inclusive community of researchers on methodological and technological themes in
+Machine Learning and Artificial Intelligence (ML/AI). The action has made a concerted
+effort to promote Early Career Investigators (ECIs) and increase their visibility over the
+last two years.
+To promote ECIs, the Action has taken a number of steps to ensure that they are
+represented and included in all aspects of the network&#39;s activities. For example, the
+Action has supported the connections between ECIs and more experienced colleagues,
+providing them with the support and guidance they need to develop their research and
+career. Additionally, the Action has also established a number of initiatives to support
+the participation of ECIs in conferences, workshops, and other events, and has
+provided opportunities for ECIs to present their work and receive feedback from more
+experienced researchers.
+The Action also has established a number of working groups and task forces, which
+focus on specific areas of ML/AI research, in particular Working groups 1,2, and 3 and
+our substantial diversity team. These working groups and task forces are led by
+experienced researchers and provide opportunities for ECIs to collaborate and share
+their expertise with more experienced colleagues. This approach has helped to
+increase the visibility and profile of ECIs within the network and the wider community.
+14 The Action has also made a concerted effort to ensure that the research being
+conducted is inclusive and addresses the needs of a diverse range of stakeholders. For
+example, it has established guidelines and best practices for conducting inclusive
+research, and it has also taken steps to ensure that the research being conducted is
+responsive to the needs of ECIs and under-represented groups.
+Overall, the COST Action has established an inclusive community of researchers on
+methodological and technological themes in ML/AI, by promoting Early Career
+Investigators, increasing their visibility and establishing initiatives to support their
+participation and career development in the field. Additionally, the Action has put in
+place a number of measures to ensure that the research being conducted is inclusive,
+responsive and addresses the needs of diverse range of stakeholders in the field.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">This objective is similar to previous one. We are very likely one of the largest and most
+definitely one of the most active research networks on Fintech and AI in Finance in all
+of Europe. 
+During the first part of this Action, our members/ ECIs have received a substantial
+number of promotions, we have had more than 20 PhD thesis finished as well as more
+than 10 promotions on different levels of professorships.
+ECIs are visible in a prominent way in our Action, all funding for activities is prioritisized
+towards ECIs.
+Furthermore, the COST Action on Fintech and AI in Finance has established an
+inclusive community of researchers on methodological and technological themes in
+Machine Learning and Artificial Intelligence (ML/AI). The action has made a concerted
+effort to promote Early Career Investigators (ECIs) and increase their visibility over the
+last two years.
+To promote ECIs, the Action has taken a number of steps to ensure that they are
+represented and included in all aspects of the network&#39;s activities. For example, the
+Action has supported the connections between ECIs and more experienced colleagues,
+providing them with the support and guidance they need to develop their research and
+career. Additionally, the Action has also established a number of initiatives to support
+the participation of ECIs in conferences, workshops, and other events, and has
+provided opportunities for ECIs to present their work and receive feedback from more
+experienced researchers.
+The Action also has established a number of working groups and task forces, which
+focus on specific areas of ML/AI research, in particular Working groups 1,2, and 3 and
+13 our substantial diversity team. These working groups and task forces are led by
+experienced researchers and provide opportunities for ECIs to collaborate and share
+their expertise with more experienced colleagues. This approach has helped to
+increase the visibility and profile of ECIs within the network and the wider community.
+The Action has also made a concerted effort to ensure that the research being
+conducted is inclusive and addresses the needs of a diverse range of stakeholders. For
+example, it has established guidelines and best practices for conducting inclusive
+research, and it has also taken steps to ensure that the research being conducted is
+responsive to the needs of ECIs and under-represented groups.
+Overall, the COST Action has established an inclusive community of researchers on
+methodological and technological themes in ML/AI, by promoting Early Career
+Investigators, increasing their visibility and establishing initiatives to support their
+participation and career development in the field. Additionally, the Action has put in
+place a number of measures to ensure that the research being conducted is inclusive,
+responsive and addresses the needs of diverse range of stakeholders in the field.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-12" class="tab-content">
+            <h2>Objective 12 Comparison</h2>
+            <h3>Overcome the siloing of research topics by country and achieve geographical and
+demographical diversity, with special attention to COST Inclusiveness Target countries.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">The COST Action CA19130 (FinAI) aims to overcome the siloing of research topics by
+country and achieve geographical and demographical diversity, with special attention to
+COST Inclusiveness Target countries (ITC). To achieve this, the FinAI diversity team
+promotes diversity within the COST Action and suggests improvements to the
+Management Committee (MC).
+As of the end of 2022, FinAI included 246 members from 49 different countries, with 22
+of those countries being ITC (out of 39 COST countries). Overall, the action included
+260 members, with 53% of those members being from ITC. In all the three working
+groups (WGs), ITC members are more than non-ITC members. In the MC, out of 71
+members, 17 are young researchers (24%), 39 are from ITC (55%). Out of the 4 Virtual
+Mobility Grants (VMGs) granted in the first grant period (GP1), all were for ITC
+members, and in GP2 out of the 9 VMGs granted, 5 were for ITC members.
+Young researchers represent 41.3% of all members, with 97 young researchers who
+are both female (40) and male (57). Albania and Romania (both ITC) have the highest
+number of Early Career Investigators (ECI) with 9 out of 17 Albanian members and 10
+out of 12 Romanian members.
+The WGs include researchers with diverse backgrounds including econometrics,
+statistics, mathematics, engineering, computer science, economics, banking, finance,
+business, and law. The research collaboration occurs between groups of members
+related to COST FinAI. Additionally, COST networking tools and grants provide the
+basis for collaboration on other topics and streams of research outside the scope of the
+network.
+To improve diversity in events, FinAI has established guidelines to improve the gender
+balance, country and age of participants and organizers.
+For the next GP, the following measures will be taken:
+Establish instruments to incentivize ITC members to participate in events organized by
+FinAI members by prioritizing reimbursement for young researchers for conference
+expenses such as travel and accommodation.
+Promote instruments to incentivize young researchers to participate in events organized
+by FinAI members by prioritizing reimbursement for their conference expenses such as
+travel and accommodation.
+15 Keep track of memberships to improve young researchers&#39; presence in all countries,
+but especially in those that currently have a lower presence of young researchers within
+the action.
+Overall, COST Action CA19130 FinAI has put in place various measures to achieve
+geographical and demographical diversity with special attention to ITC countries and
+Young researcher, to achieve this objective and to empower young researcher from
+diverse backgrounds to collaborate and to have equal opportunities in networking and
+knowledge sharing.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">The COST Action CA19130 (FinAI) aims to overcome the siloing of research topics by
+country and achieve geographical and demographical diversity, with special attention to
+COST Inclusiveness Target countries (ITC). To achieve this, the FinAI diversity team
+promotes diversity within the COST Action and suggests improvements to the
+Management Committee (MC).
+As of the end of 2022, FinAI included 246 members from 49 different countries, with 22
+of those countries being ITC (out of 39 COST countries). Overall, the action included
+260 members, with 53% of those members being from ITC. In all the three working
+groups (WGs), ITC members are more than non-ITC members. In the MC, out of 71
+members, 17 are young researchers (24%), 39 are from ITC (55%). Out of the 4 Virtual
+Mobility Grants (VMGs) granted in the first grant period (GP1), all were for ITC
+members, and in GP2 out of the 9 VMGs granted, 5 were for ITC members.
+Young researchers represent 41.3% of all members, with 97 young researchers who
+are both female (40) and male (57). Albania and Romania (both ITC) have the highest
+number of Early Career Investigators (ECI) with 9 out of 17 Albanian members and 10
+out of 12 Romanian members.
+The WGs include researchers with diverse backgrounds including econometrics,
+statistics, mathematics, engineering, computer science, economics, banking, finance,
+business, and law. The research collaboration occurs between groups of members
+related to COST FinAI. Additionally, COST networking tools and grants provide the
+basis for collaboration on other topics and streams of research outside the scope of the
+network.
+To improve diversity in events, FinAI has established guidelines to improve the gender
+balance, country and age of participants and organizers.
+For the next GP, the following measures will be taken:
+Establish instruments to incentivize ITC members to participate in events organized by
+FinAI members by prioritizing reimbursement for young researchers for conference
+14 expenses such as travel and accommodation.
+Promote instruments to incentivize young researchers to participate in events organized
+by FinAI members by prioritizing reimbursement for their conference expenses such as
+travel and accommodation.
+Keep track of memberships to improve young researchers&#39; presence in all countries,
+but especially in those that currently have a lower presence of young researchers within
+the action.
+Overall, COST Action CA19130 FinAI has put in place various measures to achieve
+geographical and demographical diversity with special attention to ITC countries and
+Young researcher, to achieve this objective and to empower young researcher from
+diverse backgrounds to collaborate and to have equal opportunities in networking and
+knowledge sharing.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-13" class="tab-content">
+            <h2>Objective 13 Comparison</h2>
+            <h3>Prepare competitive European researchers for a fruitful career in an international
+environment through intensive use of Short Term Scientific Missions (STSM) and joint
+educational programs with industrial partners.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has been highly successful in preparing competitive
+European researchers for a fruitful career in an international environment through the
+intensive use of Short Term Scientific Missions (STSM) and joint educational programs
+with industrial partners.
+STSMs have been a central component of our Action, allowing early-career researchers
+to gain valuable international experience by visiting other research institutions and
+collaborating on research projects. This has not only enabled them to broaden their
+expertise, but also to establish valuable connections and collaborations that have the
+potential to continue beyond the lifetime of the Action.
+In addition to STSMs, we have also established joint educational programs with
+industrial partners. This has allowed researchers to gain hands-on experience working
+on real-world projects and to develop valuable skills that are in high demand in the
+industry. Furthermore, these educational programs have provided researchers with an
+understanding of the practical applications of the research, which is essential for the
+development of a joint research agenda.
+By providing researchers with these opportunities, we have been able to build a
+community around a topic of scientific and socio-economic relevance, allowing for
+knowledge exchange and the development of a joint research agenda (2.a). Our
+community comprising of over 260 working group members now, have represented
+almost all countries, and worked on many different ways and formed a substantial
+number of (changing) subgroups, which work on joint publications, research
+applications and output.
+Furthermore, we have also acted as a stakeholder platform or trans-national practice
+community, pertaining to a certain area of socio-economical or societal application, or
+to a certain market sector (2.d). Our research focuses on the financial industry and
+the development of cutting-edge technology such as Artificial Intelligence and
+Blockchain. By bringing together researchers from various disciplines including finance,
+computer science, and economics, we have been able to address the complex
+challenges facing the industry and provide valuable insights and solutions to regulators
+and practitioners. Our members are actively involved in their national blockchain and
+Fintech communities, and we are collectively working together with more than 20
+Fintech associations across Europe.
+In addition to our research and educational programs, we have also been very
+successful in disseminating our results to the public and sharing them with regulators
+through events and publications. This has helped to promote transparency and
+understanding of the applications of artificial intelligence in the financial industry, and
+16 has provided valuable input for future market applications.
+Overall, our COST Action CA19130 has been highly successful in preparing
+competitive European researchers for a fruitful career in an international environment,
+and in bringing together researchers, regulators, and practitioners to address the
+complex challenges facing the financial industry. Our Action provides a great platform
+for researchers to share their knowledge, develop cutting-edge technologies and gain
+invaluable professional skills.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has been highly successful in preparing competitive
+European researchers for a fruitful career in an international environment through the
+intensive use of Short Term Scientific Missions (STSM) and joint educational programs
+with industrial partners.
+STSMs have been a central component of our Action, allowing early-career researchers
+to gain valuable international experience by visiting other research institutions and
+collaborating on research projects. This has not only enabled them to broaden their
+expertise, but also to establish valuable connections and collaborations that have the
+potential to continue beyond the lifetime of the Action.
+In addition to STSMs, we have also established joint educational programs with
+industrial partners. This has allowed researchers to gain hands-on experience working
+on real-world projects and to develop valuable skills that are in high demand in the
+industry. Furthermore, these educational programs have provided researchers with an
+understanding of the practical applications of the research, which is essential for the
+development of a joint research agenda.
+By providing researchers with these opportunities, we have been able to build a
+community around a topic of scientific and socio-economic relevance, allowing for
+knowledge exchange and the development of a joint research agenda (2.a). Our
+community comprising of over 260 working group members now, have represented
+almost all countries, and worked on many different ways and formed a substantial
+number of (changing) subgroups, which work on joint publications, research
+applications and output.
+Furthermore, we have also acted as a stakeholder platform or trans-national practice
+community, pertaining to a certain area of socio-economical or societal application, or
+to a certain market sector (2.d). Our research focuses on the financial industry and
+the development of cutting-edge technology such as Artificial Intelligence and
+Blockchain. By bringing together researchers from various disciplines including finance,
+computer science, and economics, we have been able to address the complex
+challenges facing the industry and provide valuable insights and solutions to regulators
+and practitioners. Our members are actively involved in their national blockchain and
+Fintech communities, and we are collectively working together with more than 20
+15 Fintech associations across Europe.
+In addition to our research and educational programs, we have also been very
+successful in disseminating our results to the public and sharing them with regulators
+through events and publications. This has helped to promote transparency and
+understanding of the applications of artificial intelligence in the financial industry, and
+has provided valuable input for future market applications.
+Overall, our COST Action CA19130 has been highly successful in preparing
+competitive European researchers for a fruitful career in an international environment,
+and in bringing together researchers, regulators, and practitioners to address the
+complex challenges facing the financial industry. Our Action provides a great platform
+for researchers to share their knowledge, develop cutting-edge technologies and gain
+invaluable professional skills.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-14" class="tab-content">
+            <h2>Objective 14 Comparison</h2>
+            <h3>Maximize the job opportunities for PhD students and Early Career Investigators.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has been highly successful in maximizing job opportunities
+for PhD students and Early Career Investigators (ECIs). We have a substantial number
+of PhD students in our network, and we are extremely inclusive and open for
+cooperation. This means that all PhD students can freely approach anyone in our
+network and receive input and guidance on their research.
+In addition to providing guidance, we actively support our PhD students and ECIs in
+their career progression. We have had a lot of successful PhD defenses and our ECIs
+and PhD students have been promoted to postdocs and different professorship levels.
+This has provided them with a great platform for them to gain invaluable professional
+skills and develop their careers in an international environment.
+Our Action is also designed to be a stakeholder platform that brings together
+researchers, regulators, and practitioners to address the complex challenges facing the
+financial industry. This multidisciplinary approach helps our PhD students and ECIs
+gain diverse perspectives, which is crucial to their professional development.
+Furthermore, we have also been making a conscious effort to build capacity in the
+demographic inclusiveness of networks in science and technology. Our network
+comprises 49 countries globally, of which 39 are European COST countries, and we
+have representation of newly established research groups, Early-Career Investigators,
+the under-represented gender and teams from countries/regions with less capacity in
+the field of the Action.
+Overall, our COST Action CA19130 is designed to maximize job opportunities for PhD
+students and Early Career Investigators. With our inclusive and open network and our
+focus on career development, we are confident that we have provided them with the
+best platform to gain valuable professional skills and develop their careers in an
+international environment.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has been highly successful in maximizing job opportunities
+for PhD students and Early Career Investigators (ECIs). We have a substantial number
+of PhD students in our network, and we are extremely inclusive and open for
+cooperation. This means that all PhD students can freely approach anyone in our
+network and receive input and guidance on their research.
+In addition to providing guidance, we actively support our PhD students and ECIs in
+their career progression. We have had a lot of successful PhD defenses and our ECIs
+and PhD students have been promoted to postdocs and different professorship levels.
+This has provided them with a great platform for them to gain invaluable professional
+skills and develop their careers in an international environment.
+Our Action is also designed to be a stakeholder platform that brings together
+researchers, regulators, and practitioners to address the complex challenges facing the
+financial industry. This multidisciplinary approach helps our PhD students and ECIs
+gain diverse perspectives, which is crucial to their professional development.
+Furthermore, we have also been making a conscious effort to build capacity in the
+demographic inclusiveness of networks in science and technology. Our network
+comprises 49 countries globally, of which 39 are European COST countries, and we
+have representation of newly established research groups, Early-Career Investigators,
+the under-represented gender and teams from countries/regions with less capacity in
+the field of the Action.
+Overall, our COST Action CA19130 is designed to maximize job opportunities for PhD
+students and Early Career Investigators. With our inclusive and open network and our
+focus on career development, we are confident that we have provided them with the
+best platform to gain valuable professional skills and develop their careers in an
+international environment.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-15" class="tab-content">
+            <h2>Objective 15 Comparison</h2>
+            <h3>Disseminate the results of the Action&#39;s activities to the scientific community, European
+institutions and to the general public.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has always placed a strong emphasis on dissemination
+and ensuring that the results of our research are made available to the widest possible
+audience. From the start of our Action, we have organized over 150 research
+17 conferences and events, with more than 6,000 participants in total, making it one of the
+most active COST Actions in Europe. These events have been designed to bring
+together researchers from academia, industry, and regulators to share their knowledge
+and insights on the latest developments in the field of Fintech and AI in finance. The list
+of all events can be found at https://www.meetup.com/Fintech_AI_in_Finance/.
+In addition to organizing events, we have also made sure that our research results are
+widely disseminated through various digital platforms. For example, we have created
+two platforms, quantlet.com and quantinar.com, where thousands of self-contained
+code pieces showcasing academic research are made available to the public, making it
+easy for anyone to reproduce and build upon our research. Furthermore, we have also
+created an extensive platform on Explainable AI for finance, which includes several use
+cases, all papers, code repositories, interactive apps, and so on. This platform can be
+accessed at https://www.explainableaiforfinance.com/
+We have also established partnerships with several European institutions and
+organizations, such as the European Commission, the Confederation of European Data
+Protection Organizations, and the European Central Bank, to ensure that our research
+results reach the widest possible audience. Additionally, many of our members are
+actively working with industry partners, and our research output is regularly discussed
+and challenged by leading international companies such as ING Group and various
+national banks.
+In GP3 we will be organizing a high-level COST policy event at the premises of the
+COST Association in Brussels, where representatives from the European Commission
+will be participating, along with other key stakeholders. This event will provide us with
+an opportunity to present our research results and receive feedback from regulators
+and policy-makers.
+Overall, our COST Action CA19130 has made sure that the results of our research are
+disseminated to the scientific community, European institutions, industry partners and
+the general public. We believe that by making our research available to everyone, it will
+have a greater impact and contribute to the advancement of knowledge in the field of
+Fintech and AI in finance.</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">Our COST Action CA19130 has always placed a strong emphasis on dissemination
+and ensuring that the results of our research are made available to the widest possible
+audience. From the start of our Action, we have organized over 150 research
+conferences and events, with more than 6,000 participants in total, making it one of the
+most active COST Actions in Europe. These events have been designed to bring
+together researchers from academia, industry, and regulators to share their knowledge
+and insights on the latest developments in the field of Fintech and AI in finance. The list
+of all events can be found at https://www.meetup.com/Fintech_AI_in_Finance/.
+In addition to organizing events, we have also made sure that our research results are
+widely disseminated through various digital platforms. For example, we have created
+two platforms, quantlet.com and quantinar.com, where thousands of self-contained
+code pieces showcasing academic research are made available to the public, making it
+easy for anyone to reproduce and build upon our research. Furthermore, we have also
+created an extensive platform on Explainable AI for finance, which includes several use
+cases, all papers, code repositories, interactive apps, and so on. This platform can be
+accessed at https://www.explainableaiforfinance.com/
+We have also established partnerships with several European institutions and
+organizations, such as the European Commission, the Confederation of European Data
+Protection Organizations, and the European Central Bank, to ensure that our research
+results reach the widest possible audience. Additionally, many of our members are
+actively working with industry partners, and our research output is regularly discussed
+and challenged by leading international companies such as ING Group and various
+national banks.
+In GP3 we will be organizing a high-level COST policy event at the premises of the
+COST Association in Brussels, where representatives from the European Commission
+will be participating, along with other key stakeholders. This event will provide us with
+an opportunity to present our research results and receive feedback from regulators
+and policy-makers.
+Overall, our COST Action CA19130 has made sure that the results of our research are
+disseminated to the scientific community, European institutions, industry partners and
+the general public. We believe that by making our research available to everyone, it will
+have a greater impact and contribute to the advancement of knowledge in the field of
+Fintech and AI in finance.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="obj-16" class="tab-content">
+            <h2>Objective 16 Comparison</h2>
+            <h3>Significantly improve the gender equality in the fields of the Action.</h3>
+
+            <div style="margin: 20px 0;">
+                <span class="badge badge-info">Mid-Term: 76-100%</span>
+                <span style="margin: 0 10px;">-></span>
+                <span class="badge badge-success">Final: 76-100%</span>
+            </div>
+
+            <div class="comparison-row">
+                <div class="comparison-column">
+                    <div class="comparison-header midterm">Mid-Term Report (24 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">The COST Action CA19130 (FinAI) aims to significantly improve gender equality in the
+fields of the action. To achieve this, the FinAI diversity team promotes diversity within
+the COST Action and suggests improvements to the Management Committee (MC).
+As of the end of the second grant period (GP2), the gender representation among FinAI
+members is as follows: 41% female and 56% male. Within the working groups (WGs),
+female presence is as follows: WG1 47%, WG2 33%; WG3 40%. In the MC, 33
+members are female (46%), which is in line with the overall membership of the action.
+This figure has increased since the end of GP1, when it was 44%.
+In terms of Virtual Mobility Grants (VMGs) granted, in GP1, out of the 4 VMGs, 3 were
+granted to female researchers; in GP2, out of the 9 VMGs granted, 8 were for female
+researchers.
+For the organization of events, FinAI has established guidelines to improve diversity in
+terms of gender balance, country, and age of participants and organizers. For example,
+guidelines state: &quot;Respect that the organizing committee and the scientific committee
+are composed according to criteria for gender balance&quot;, &quot;If there is more than one
+keynote speaker, choose a scholar belonging to the underrepresented gender in that
+specific event&quot;, &quot;Avoid involving women only in the roles of moderators or session
+18 chairs during events, workshops or conferences.&quot; &quot;Avoid assigning to women only
+duties or tasks considered as “academic households”, tasks that are time-consuming
+but do not give opportunity for women to be involved in research activities.&quot; Members of
+COST participating on the organizing committee make sure these guidelines are
+respected whenever possible.
+To improve gender equality in the field, the COST Action CA19130 FinAI is constantly
+monitoring the gender representation among its members and taking specific measures
+to increase the presence of female members in the working groups, management
+committee and in the organization of events. The virtual mobility grants is also been
+given to female researcher which is one of the important measure to empower and
+support female researcher in the field of FinAI.
+ 
+In addition to the measures mentioned above, COST Action CA19130 FinAI also
+promotes the participation and leadership of female members through various initiatives
+such as:
+Encouraging the nomination of female members for leadership roles within the action
+such as working group leaders, management committee members and coordinators.
+Offering mentorship and networking opportunities for female members to connect with
+experienced researchers in the field and to help them to develop the skills needed to
+take on leadership roles.
+Organizing training and development workshops specifically tailored to the needs of
+female members to help them to build their skills and confidence in their field.
+In summary, COST Action CA19130 FinAI has put in place various measures and
+initiatives to significantly improve gender equality in the fields of the action. The Action
+is being monitored and evaluated regularly to see the impact of the measures and to
+make necessary adjustments, with the goal of creating an inclusive and equitable
+environment for all members regardless of their gender.
+19</div>
+                    </div>
+                </div>
+                <div class="comparison-column">
+                    <div class="comparison-header final">Final Report (48 months)</div>
+                    <div class="comparison-content">
+                        <h4>Achievement Level: 76-100%</h4>
+                        <div class="proof-text">The COST Action CA19130 (FinAI) aims to significantly improve gender equality in the
+fields of the action. To achieve this, the FinAI diversity team promotes diversity within
+the COST Action and suggests improvements to the Management Committee (MC).
+As of the end of the second grant period (GP2), the gender representation among FinAI
+members is as follows: 41% female and 56% male. Within the working groups (WGs),
+female presence is as follows: WG1 47%, WG2 33%; WG3 40%. In the MC, 33
+members are female (46%), which is in line with the overall membership of the action.
+This figure has increased since the end of GP1, when it was 44%.
+In terms of Virtual Mobility Grants (VMGs) granted, in GP1, out of the 4 VMGs, 3 were
+granted to female researchers; in GP2, out of the 9 VMGs granted, 8 were for female
+17 researchers.
+For the organization of events, FinAI has established guidelines to improve diversity in
+terms of gender balance, country, and age of participants and organizers. For example,
+guidelines state: &quot;Respect that the organizing committee and the scientific committee
+are composed according to criteria for gender balance&quot;, &quot;If there is more than one
+keynote speaker, choose a scholar belonging to the underrepresented gender in that
+specific event&quot;, &quot;Avoid involving women only in the roles of moderators or session
+chairs during events, workshops or conferences.&quot; &quot;Avoid assigning to women only
+duties or tasks considered as “academic households”, tasks that are time-consuming
+but do not give opportunity for women to be involved in research activities.&quot; Members of
+COST participating on the organizing committee make sure these guidelines are
+respected whenever possible.
+To improve gender equality in the field, the COST Action CA19130 FinAI is constantly
+monitoring the gender representation among its members and taking specific measures
+to increase the presence of female members in the working groups, management
+committee and in the organization of events. The virtual mobility grants is also been
+given to female researcher which is one of the important measure to empower and
+support female researcher in the field of FinAI.
+ 
+In addition to the measures mentioned above, COST Action CA19130 FinAI also
+promotes the participation and leadership of female members through various initiatives
+such as:
+Encouraging the nomination of female members for leadership roles within the action
+such as working group leaders, management committee members and coordinators.
+Offering mentorship and networking opportunities for female members to connect with
+experienced researchers in the field and to help them to develop the skills needed to
+take on leadership roles.
+Organizing training and development workshops specifically tailored to the needs of
+female members to help them to build their skills and confidence in their field.
+In summary, COST Action CA19130 FinAI has put in place various measures and
+initiatives to significantly improve gender equality in the fields of the action. 
+18</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="deliverables-comp" class="tab-content">
+            <h2>Deliverables Comparison</h2>
+            <table class="deliverables-table">
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Deliverable</th>
+                        <th>Mid-Term Status</th>
+                        <th>Final Status</th>
+                        <th>Changed</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td>1</td>
+                        <td>A database which contains pre-ICO documentation and post-ICO performance (ROI and
+lifespan)</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>2</td>
+                        <td>A database which contains data on crowdfunding/P2P platform features useful for rating
+platform inte</td>
+                        <td>Delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-info">No</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>3</td>
+                        <td>Discussion papers (DP) on the methodology for evaluating/rating ICOs and
+crowdfunding/P2P platforms </td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>4</td>
+                        <td>A position paper and roadmap on mitigating risks connected with the increased use of
+digital assets</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>5</td>
+                        <td>A discussion paper for possible approaches to building a statistically valid back-testing
+framework</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>6</td>
+                        <td>Methodological discussion paper on the design of stress tests for the evaluation of AI
+and ML models</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>7</td>
+                        <td>Position papers, aimed at regulators and policy-makers, on methodology (with examples
+of formal crit</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>8</td>
+                        <td>Report on good examples and best practices for a transparent finance industry with
+guidelines to imp</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>9</td>
+                        <td>An internal database of collected (scraped) financial time series from exchanges and
+regional consol</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>10</td>
+                        <td>Methodological discussion papers on AI models to generate “failed trials” of investment
+product prod</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>11</td>
+                        <td>Four annual reports (for lay audience) distributed via local and national media</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>12</td>
+                        <td>Key software (codes, packages) developed by each of the Working Groups in line with
+their objectives</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>13</td>
+                        <td>Handbook and/or wiki page describing potential approaches to tackle risk management
+issues related t</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>14</td>
+                        <td>An edited volume containing scientific achievements of the Action</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                    <tr>
+                        <td>15</td>
+                        <td>Strategy to engage stakeholders in the Action (including revisions in month 24 and 36)</td>
+                        <td>Not delivered</td>
+                        <td>Delivered</td>
+                        <td><span class="badge badge-success">Yes</span></td>
+                    </tr>
+
+                </tbody>
+            </table>
+        </div>
+
+        <div id="publications-comp" class="tab-content">
+            <h2>Publications Comparison</h2>
+            <div class="summary-comparison">
+                <div class="comparison-stat">
+                    <div class="label">Mid-Term Publications</div>
+                    <span class="midterm-val" style="font-size: 3em;">99</span>
+                </div>
+                <div class="comparison-stat">
+                    <div class="label">Final Publications</div>
+                    <span class="final-val" style="font-size: 3em;">99</span>
+                </div>
+                <div class="comparison-stat">
+                    <div class="label">New Publications</div>
+                    <span style="font-size: 3em; color: var(--cost-green);">+0</span>
+                </div>
+            </div>
+
+            <h3>Publication Growth</h3>
+            <p>The Action has grown from <strong>99</strong> publications at mid-term
+               to <strong>99</strong> publications at the final report,
+               representing <strong>0</strong> new co-authored publications.</p>
+
+            <p>View full publication lists:</p>
+            <ul>
+                <li><a href="final-action-chair-report-full.html#publications">Final Report Publications (99)</a></li>
+                <li><a href="midterm-action-chair-report-full.html#publications">Mid-Term Report Publications (99)</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p>COST Action CA19130: Fintech and Artificial Intelligence in Finance</p>
+        <p>Generated: 2026-01-03 00:14 |
+           <a href="https://www.fintech-ai-finance.com/" target="_blank">Action Website</a> |
+           <a href="https://github.com/Digital-AI-Finance/COST-Fintech-AI-in-Finance" target="_blank">GitHub Repository</a>
+        </p>
+    </div>
+
+    
+<script>
+    // Tab switching
+    function showTab(tabId) {
+        document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+        document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+        document.getElementById(tabId).classList.add('active');
+        event.target.classList.add('active');
+    }
+
+    // Toggle objective expansion
+    function toggleObjective(id) {
+        const body = document.getElementById('obj-body-' + id);
+        body.classList.toggle('expanded');
+    }
+
+    // Expand/Collapse all objectives
+    function expandAll() {
+        document.querySelectorAll('.objective-body').forEach(b => b.classList.add('expanded'));
+    }
+
+    function collapseAll() {
+        document.querySelectorAll('.objective-body').forEach(b => b.classList.remove('expanded'));
+    }
+
+    // Publication search
+    function searchPublications() {
+        const query = document.getElementById('pub-search').value.toLowerCase();
+        document.querySelectorAll('.publication-item').forEach(item => {
+            const text = item.textContent.toLowerCase();
+            item.style.display = text.includes(query) ? 'block' : 'none';
+        });
+    }
+
+    // Page navigation
+    function goToPage(pageNum) {
+        document.querySelectorAll('.page-section').forEach(p => p.style.display = 'none');
+        document.getElementById('page-' + pageNum).style.display = 'block';
+    }
+</script>
+
+</body>
+</html>

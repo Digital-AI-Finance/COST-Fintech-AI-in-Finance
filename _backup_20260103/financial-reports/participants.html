@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participants Database - Financial Reports - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        section { padding: 2rem; max-width: 1600px; margin: 0 auto; }
+        h1 { font-size: 2rem; color: var(--cost-purple); margin-bottom: 0.5rem; }
+        .subtitle { color: var(--gray); margin-bottom: 1.5rem; }
+        .stats { display: flex; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .stat-box { background: white; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        .stat-box .num { font-size: 1.8rem; font-weight: 700; color: var(--cost-purple); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .filters { background: white; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .filters input, .filters select { padding: 0.5rem 1rem; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; }
+        .filters input { min-width: 250px; }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1rem; }
+        .participant-header { display: flex; justify-content: space-between; align-items: flex-start; cursor: pointer; }
+        .participant-header:hover { background: rgba(91, 45, 138, 0.02); margin: -1rem; padding: 1rem; border-radius: 8px; }
+        .participant-name { font-weight: 600; color: var(--cost-purple); font-size: 1.1rem; }
+        .participant-meta { display: flex; gap: 1.5rem; margin-top: 0.5rem; flex-wrap: wrap; }
+        .participant-meta span { font-size: 0.85rem; color: var(--gray); }
+        .participant-meta strong { color: var(--dark); }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 500; margin-left: 8px; }
+        .badge-itc { background: rgba(122, 184, 0, 0.2); color: #4a7000; }
+        .badge-meeting { background: var(--cost-purple); color: white; }
+        .badge-stsm { background: var(--cost-blue); color: white; }
+        .badge-vm { background: var(--cost-teal); color: white; }
+        .badge-ts { background: var(--cost-orange); color: white; }
+        .badge-itc-conf { background: var(--cost-green); color: white; }
+        .activities-section { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); display: none; }
+        .activities-section.open { display: block; }
+        .activity-group { margin-bottom: 1rem; }
+        .activity-group h4 { font-size: 0.9rem; color: var(--cost-blue); margin-bottom: 0.5rem; }
+        .activity-list { font-size: 0.85rem; }
+        .activity-item { padding: 0.4rem 0; border-bottom: 1px dashed var(--border); display: flex; justify-content: space-between; }
+        .activity-item:last-child { border-bottom: none; }
+        .amount { font-family: 'Monaco', monospace; color: var(--cost-blue); font-weight: 500; }
+        .total-row { background: rgba(91, 45, 138, 0.08); padding: 0.8rem; border-radius: 6px; margin-top: 1rem; display: flex; justify-content: space-between; font-weight: 600; }
+        .expand-btn { background: var(--cost-purple); color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 4px; cursor: pointer; font-size: 0.8rem; }
+        .expand-btn:hover { background: var(--cost-blue); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .participant-meta { flex-direction: column; gap: 0.3rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="meetings.html">Meetings</a></li>
+                <li><a href="stsm.html">STSMs</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>Participants Database</span>
+    </div>
+
+    <section>
+        <h1>Participants Database</h1>
+        <p class="subtitle">Complete database of all unique participants across all activities in COST Action CA19130 (2020-2024). Click on any participant to see their full activity history.</p>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num" id="totalParticipants">-</div><div class="label">Unique Participants</div></div>
+            <div class="stat-box"><div class="num" id="totalCountries">-</div><div class="label">Countries</div></div>
+            <div class="stat-box"><div class="num" id="totalITC">-</div><div class="label">From ITC Countries</div></div>
+            <div class="stat-box"><div class="num" id="totalReimbursed">-</div><div class="label">Total Reimbursed</div></div>
+        </div>
+
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search by name...">
+            <select id="countryFilter">
+                <option value="">All Countries</option>
+            </select>
+            <select id="activityFilter">
+                <option value="">All Activities</option>
+                <option value="meetings">Meetings</option>
+                <option value="stsm">STSMs</option>
+                <option value="virtual_mobility">Virtual Mobility</option>
+                <option value="training_schools">Training Schools</option>
+                <option value="itc_conferences">ITC Conferences</option>
+            </select>
+            <select id="itcFilter">
+                <option value="">All Participants</option>
+                <option value="itc">ITC Countries Only</option>
+                <option value="non-itc">Non-ITC Countries Only</option>
+            </select>
+            <button class="expand-btn" onclick="expandAll()">Expand All</button>
+            <button class="expand-btn" onclick="collapseAll()">Collapse All</button>
+        </div>
+
+        <div id="participantsContainer"></div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Financial Reports</a> | <a href="meetings.html">Meetings</a> | <a href="stsm.html">STSMs</a> | <a href="training-schools.html">Training Schools</a></p>
+    </footer>
+
+    <script>
+        let participantsData = [];
+        const ITC_COUNTRIES = ['AL', 'BA', 'BG', 'HR', 'CY', 'CZ', 'EE', 'EL', 'HU', 'LV', 'LT', 'MT', 'MD', 'ME', 'MK', 'PL', 'PT', 'RO', 'RS', 'SK', 'SI', 'TR', 'UA'];
+
+        async function loadData() {
+            try {
+                const response = await fetch('../data/participant_master.json');
+                participantsData = await response.json();
+                updateStats();
+                populateFilters();
+                renderParticipants();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('participantsContainer').innerHTML = '<p>Error loading data. Please try again.</p>';
+            }
+        }
+
+        function updateStats() {
+            const totalParticipants = participantsData.length;
+            const countries = new Set(participantsData.map(p => p.primary_country).filter(c => c));
+            const itcCount = participantsData.filter(p => p.is_itc).length;
+            const totalReimbursed = participantsData.reduce((sum, p) => sum + (p.total_reimbursed || 0), 0);
+
+            document.getElementById('totalParticipants').textContent = totalParticipants;
+            document.getElementById('totalCountries').textContent = countries.size;
+            document.getElementById('totalITC').textContent = itcCount + ' (' + Math.round(itcCount/totalParticipants*100) + '%)';
+            document.getElementById('totalReimbursed').textContent = 'EUR ' + totalReimbursed.toLocaleString('en-US', {minimumFractionDigits: 0, maximumFractionDigits: 0});
+        }
+
+        function populateFilters() {
+            const countries = new Set();
+            participantsData.forEach(p => {
+                if (p.primary_country) countries.add(p.primary_country);
+            });
+            const countrySelect = document.getElementById('countryFilter');
+            [...countries].sort().forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c;
+                opt.textContent = c + (ITC_COUNTRIES.includes(c) ? ' (ITC)' : '');
+                countrySelect.appendChild(opt);
+            });
+        }
+
+        function renderParticipants() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const countryFilter = document.getElementById('countryFilter').value;
+            const activityFilter = document.getElementById('activityFilter').value;
+            const itcFilter = document.getElementById('itcFilter').value;
+
+            let filtered = participantsData.filter(p => {
+                if (countryFilter && p.primary_country !== countryFilter) return false;
+                if (itcFilter === 'itc' && !p.is_itc) return false;
+                if (itcFilter === 'non-itc' && p.is_itc) return false;
+                if (search && !p.name.toLowerCase().includes(search)) return false;
+                if (activityFilter && (!p[activityFilter] || p[activityFilter].length === 0)) return false;
+                return true;
+            });
+
+            // Sort by total reimbursed (highest first)
+            filtered.sort((a, b) => (b.total_reimbursed || 0) - (a.total_reimbursed || 0));
+
+            const container = document.getElementById('participantsContainer');
+            container.innerHTML = filtered.map((p, idx) => {
+                const meetings = p.meetings || [];
+                const stsm = p.stsm || [];
+                const vm = p.virtual_mobility || [];
+                const ts = p.training_schools || [];
+                const itc = p.itc_conferences || [];
+
+                return `
+                    <div class="card" data-id="${idx}">
+                        <div class="participant-header" onclick="toggleActivities(${idx})">
+                            <div>
+                                <div class="participant-name">
+                                    ${p.name}
+                                    ${p.is_itc ? '<span class="badge badge-itc">ITC</span>' : ''}
+                                </div>
+                                <div class="participant-meta">
+                                    <span>Country: <strong>${p.primary_country || 'N/A'}</strong></span>
+                                    <span>Grant Periods: <strong>GP${(p.grant_periods || []).join(', GP')}</strong></span>
+                                    <span>Activities: <strong>${p.activity_count || 0}</strong></span>
+                                    <span>Total: <strong class="amount">EUR ${(p.total_reimbursed || 0).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</strong></span>
+                                </div>
+                                <div style="margin-top: 0.5rem;">
+                                    ${meetings.length > 0 ? `<span class="badge badge-meeting">${meetings.length} Meetings</span>` : ''}
+                                    ${stsm.length > 0 ? `<span class="badge badge-stsm">${stsm.length} STSMs</span>` : ''}
+                                    ${vm.length > 0 ? `<span class="badge badge-vm">${vm.length} VM</span>` : ''}
+                                    ${ts.length > 0 ? `<span class="badge badge-ts">${ts.length} TS</span>` : ''}
+                                    ${itc.length > 0 ? `<span class="badge badge-itc-conf">${itc.length} ITC Conf</span>` : ''}
+                                </div>
+                            </div>
+                            <button class="expand-btn">Details</button>
+                        </div>
+                        <div class="activities-section" id="activities-${idx}">
+                            ${meetings.length > 0 ? `
+                                <div class="activity-group">
+                                    <h4>Meetings (${meetings.length})</h4>
+                                    <div class="activity-list">
+                                        ${meetings.map(m => `
+                                            <div class="activity-item">
+                                                <span>${m.title || m.meeting_id} (${m.date || 'N/A'})</span>
+                                                <span class="amount">EUR ${(m.amount || 0).toFixed(2)}</span>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            ` : ''}
+                            ${stsm.length > 0 ? `
+                                <div class="activity-group">
+                                    <h4>STSMs (${stsm.length})</h4>
+                                    <div class="activity-list">
+                                        ${stsm.map(s => `
+                                            <div class="activity-item">
+                                                <span>Host: ${s.host} | ${s.dates} (${s.days} days)</span>
+                                                <span class="amount">EUR ${(s.amount || 0).toFixed(2)}</span>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            ` : ''}
+                            ${vm.length > 0 ? `
+                                <div class="activity-group">
+                                    <h4>Virtual Mobility (${vm.length})</h4>
+                                    <div class="activity-list">
+                                        ${vm.map(v => `
+                                            <div class="activity-item">
+                                                <span>${v.title || v.id} (${v.dates})</span>
+                                                <span class="amount">EUR ${(v.amount || 0).toFixed(2)}</span>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            ` : ''}
+                            ${ts.length > 0 ? `
+                                <div class="activity-group">
+                                    <h4>Training Schools (${ts.length})</h4>
+                                    <div class="activity-list">
+                                        ${ts.map(t => `
+                                            <div class="activity-item">
+                                                <span>${t.title || t.school_id} (${t.date || 'N/A'})</span>
+                                                <span class="amount">EUR ${(t.amount || 0).toFixed(2)}</span>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            ` : ''}
+                            ${itc.length > 0 ? `
+                                <div class="activity-group">
+                                    <h4>ITC Conferences (${itc.length})</h4>
+                                    <div class="activity-list">
+                                        ${itc.map(i => `
+                                            <div class="activity-item">
+                                                <span>${i.title || i.id} (${i.dates})</span>
+                                                <span class="amount">EUR ${(i.amount || 0).toFixed(2)}</span>
+                                            </div>
+                                        `).join('')}
+                                    </div>
+                                </div>
+                            ` : ''}
+                            <div class="total-row">
+                                <span>Total Reimbursed</span>
+                                <span class="amount">EUR ${(p.total_reimbursed || 0).toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2})}</span>
+                            </div>
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function toggleActivities(idx) {
+            const section = document.getElementById('activities-' + idx);
+            if (section) {
+                section.classList.toggle('open');
+            }
+        }
+
+        function expandAll() {
+            document.querySelectorAll('.activities-section').forEach(s => s.classList.add('open'));
+        }
+
+        function collapseAll() {
+            document.querySelectorAll('.activities-section').forEach(s => s.classList.remove('open'));
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', renderParticipants);
+        document.getElementById('countryFilter').addEventListener('change', renderParticipants);
+        document.getElementById('activityFilter').addEventListener('change', renderParticipants);
+        document.getElementById('itcFilter').addEventListener('change', renderParticipants);
+
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>

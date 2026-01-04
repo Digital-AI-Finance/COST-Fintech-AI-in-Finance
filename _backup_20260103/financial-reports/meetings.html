@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Meetings - Financial Reports - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        section { padding: 2rem; max-width: 1600px; margin: 0 auto; }
+        h1 { font-size: 2rem; color: var(--cost-purple); margin-bottom: 0.5rem; }
+        h2 { font-size: 1.3rem; color: var(--cost-blue); margin: 1.5rem 0 1rem; }
+        .subtitle { color: var(--gray); margin-bottom: 1.5rem; }
+        .stats { display: flex; gap: 1.5rem; margin-bottom: 2rem; flex-wrap: wrap; }
+        .stat-box { background: white; padding: 1rem 1.5rem; border-radius: 8px; box-shadow: 0 2px 10px rgba(0,0,0,0.08); }
+        .stat-box .num { font-size: 1.8rem; font-weight: 700; color: var(--cost-purple); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .filters { background: white; padding: 1rem; border-radius: 8px; margin-bottom: 1.5rem; display: flex; gap: 1rem; flex-wrap: wrap; align-items: center; box-shadow: 0 2px 10px rgba(0,0,0,0.05); }
+        .filters input, .filters select { padding: 0.5rem 1rem; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; }
+        .filters input { min-width: 250px; }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1rem; }
+        .meeting-header { display: flex; justify-content: space-between; align-items: flex-start; cursor: pointer; }
+        .meeting-header:hover { background: rgba(91, 45, 138, 0.02); margin: -1rem; padding: 1rem; border-radius: 8px; }
+        .meeting-title { font-weight: 600; color: var(--cost-purple); font-size: 1.1rem; }
+        .meeting-meta { display: flex; gap: 1.5rem; margin-top: 0.5rem; flex-wrap: wrap; }
+        .meeting-meta span { font-size: 0.85rem; color: var(--gray); }
+        .meeting-meta strong { color: var(--dark); }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 500; }
+        .badge-mc { background: var(--cost-purple); color: white; }
+        .badge-wg { background: var(--cost-blue); color: white; }
+        .badge-workshop { background: var(--cost-teal); color: white; }
+        .badge-conference { background: var(--cost-orange); color: white; }
+        .badge-itc { background: rgba(122, 184, 0, 0.2); color: #4a7000; margin-left: 4px; }
+        .participants-section { margin-top: 1rem; padding-top: 1rem; border-top: 1px solid var(--border); display: none; }
+        .participants-section.open { display: block; }
+        .participants-table { width: 100%; border-collapse: collapse; font-size: 0.85rem; margin-top: 0.5rem; }
+        .participants-table th { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 8px; text-align: left; font-weight: 500; }
+        .participants-table td { padding: 8px; border-bottom: 1px solid var(--border); }
+        .participants-table tr:hover { background: rgba(91, 45, 138, 0.03); }
+        .expand-btn { background: var(--cost-purple); color: white; border: none; padding: 0.4rem 0.8rem; border-radius: 4px; cursor: pointer; font-size: 0.8rem; }
+        .expand-btn:hover { background: var(--cost-blue); }
+        .amount { font-family: 'Monaco', monospace; color: var(--cost-blue); }
+        .totals-row { background: rgba(91, 45, 138, 0.08); font-weight: 600; }
+        .los-info { margin-top: 0.5rem; padding: 0.5rem; background: rgba(0, 160, 176, 0.1); border-radius: 4px; font-size: 0.85rem; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        .no-participants { color: var(--gray); font-style: italic; padding: 1rem 0; }
+        @media (max-width: 768px) { nav ul { display: none; } .meeting-meta { flex-direction: column; gap: 0.3rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="stsm.html">STSMs</a></li>
+                <li><a href="participants.html">Participants</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>All Meetings</span>
+    </div>
+
+    <section>
+        <h1>All Meetings, Workshops & Conferences</h1>
+        <p class="subtitle">Complete database of meetings with detailed participant reimbursement data from COST Action CA19130 (2020-2024)</p>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num" id="totalMeetings">-</div><div class="label">Total Meetings</div></div>
+            <div class="stat-box"><div class="num" id="totalParticipants">-</div><div class="label">Reimbursed Participants</div></div>
+            <div class="stat-box"><div class="num" id="totalAmount">-</div><div class="label">Total Reimbursed</div></div>
+            <div class="stat-box"><div class="num" id="totalLOS">-</div><div class="label">LOS Grants</div></div>
+        </div>
+
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search meetings or participants...">
+            <select id="gpFilter">
+                <option value="">All Grant Periods</option>
+                <option value="1">GP1</option>
+                <option value="2">GP2</option>
+                <option value="3">GP3</option>
+                <option value="4">GP4</option>
+                <option value="5">GP5</option>
+            </select>
+            <select id="countryFilter">
+                <option value="">All Countries</option>
+            </select>
+            <button class="expand-btn" onclick="expandAll()">Expand All</button>
+            <button class="expand-btn" onclick="collapseAll()">Collapse All</button>
+        </div>
+
+        <div id="meetingsContainer"></div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Financial Reports</a> | <a href="stsm.html">STSMs</a> | <a href="participants.html">Participants</a> | <a href="training-schools.html">Training Schools</a></p>
+    </footer>
+
+    <script>
+        let meetingsData = [];
+        const ITC_COUNTRIES = ['AL', 'BA', 'BG', 'HR', 'CY', 'CZ', 'EE', 'EL', 'HU', 'LV', 'LT', 'MT', 'MD', 'ME', 'MK', 'PL', 'PT', 'RO', 'RS', 'SK', 'SI', 'TR', 'UA'];
+
+        async function loadData() {
+            try {
+                const response = await fetch('../data/meetings_participants.json');
+                meetingsData = await response.json();
+                updateStats();
+                populateFilters();
+                renderMeetings();
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('meetingsContainer').innerHTML = '<p>Error loading data. Please try again.</p>';
+            }
+        }
+
+        function updateStats() {
+            const totalMeetings = meetingsData.length;
+            const totalParticipants = meetingsData.reduce((sum, m) => sum + (m.participants?.length || 0), 0);
+            const totalAmount = meetingsData.reduce((sum, m) => sum + (m.total_reimbursed || 0), 0);
+            const totalLOS = meetingsData.reduce((sum, m) => sum + (m.los_grant || 0), 0);
+
+            document.getElementById('totalMeetings').textContent = totalMeetings;
+            document.getElementById('totalParticipants').textContent = totalParticipants;
+            document.getElementById('totalAmount').textContent = 'EUR ' + totalAmount.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+            document.getElementById('totalLOS').textContent = 'EUR ' + totalLOS.toLocaleString('en-US', {minimumFractionDigits: 2, maximumFractionDigits: 2});
+        }
+
+        function populateFilters() {
+            const countries = new Set();
+            meetingsData.forEach(m => {
+                if (m.country) countries.add(m.country);
+            });
+            const countrySelect = document.getElementById('countryFilter');
+            [...countries].sort().forEach(c => {
+                const opt = document.createElement('option');
+                opt.value = c;
+                opt.textContent = c + (ITC_COUNTRIES.includes(c) ? ' (ITC)' : '');
+                countrySelect.appendChild(opt);
+            });
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return 'N/A';
+            const [day, month, year] = dateStr.split('/');
+            return `${year}-${month}-${day}`;
+        }
+
+        function getTypeClass(type) {
+            if (!type) return 'badge-workshop';
+            type = type.toLowerCase();
+            if (type.includes('management') || type.includes('mc')) return 'badge-mc';
+            if (type.includes('working group') || type.includes('wg')) return 'badge-wg';
+            if (type.includes('conference')) return 'badge-conference';
+            return 'badge-workshop';
+        }
+
+        function getTypeLabel(type) {
+            if (!type) return 'Workshop';
+            if (type.toLowerCase().includes('management') || type.toLowerCase().includes('mc')) return 'MC';
+            if (type.toLowerCase().includes('working group') || type.toLowerCase().includes('wg')) return 'WG';
+            if (type.toLowerCase().includes('conference')) return 'Conference';
+            return 'Workshop';
+        }
+
+        function renderMeetings() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+            const gpFilter = document.getElementById('gpFilter').value;
+            const countryFilter = document.getElementById('countryFilter').value;
+
+            let filtered = meetingsData.filter(m => {
+                if (gpFilter && m.grant_period != gpFilter) return false;
+                if (countryFilter && m.country !== countryFilter) return false;
+                if (search) {
+                    const searchIn = (m.title || '') + ' ' + (m.location || '') + ' ' +
+                        (m.participants || []).map(p => p.name).join(' ');
+                    if (!searchIn.toLowerCase().includes(search)) return false;
+                }
+                return true;
+            });
+
+            // Sort by date (most recent first)
+            filtered.sort((a, b) => {
+                const dateA = a.start_date ? new Date(a.start_date.split('/').reverse().join('-')) : new Date(0);
+                const dateB = b.start_date ? new Date(b.start_date.split('/').reverse().join('-')) : new Date(0);
+                return dateB - dateA;
+            });
+
+            const container = document.getElementById('meetingsContainer');
+            container.innerHTML = filtered.map(meeting => {
+                const isITC = ITC_COUNTRIES.includes(meeting.country);
+                const participants = meeting.participants || [];
+                const hasParticipants = participants.length > 0;
+
+                return `
+                    <div class="card" data-id="${meeting.id}">
+                        <div class="meeting-header" onclick="toggleParticipants('${meeting.id}')">
+                            <div>
+                                <div class="meeting-title">
+                                    ${meeting.title || 'Untitled Meeting'}
+                                    <span class="badge ${getTypeClass(meeting.type)}">${getTypeLabel(meeting.type)}</span>
+                                    ${isITC ? '<span class="badge badge-itc">ITC</span>' : ''}
+                                </div>
+                                <div class="meeting-meta">
+                                    <span><strong>GP${meeting.grant_period}</strong></span>
+                                    <span>${formatDate(meeting.start_date)}${meeting.end_date && meeting.end_date !== meeting.start_date ? ' - ' + formatDate(meeting.end_date) : ''}</span>
+                                    <span>${meeting.location || 'N/A'}</span>
+                                    <span>Total: <strong>${meeting.total_participants || 0}</strong> | Reimbursed: <strong>${meeting.reimbursed_count || participants.length}</strong></span>
+                                </div>
+                            </div>
+                            ${hasParticipants ? '<button class="expand-btn">Show Details</button>' : ''}
+                        </div>
+                        <div class="participants-section" id="participants-${meeting.id}">
+                            ${hasParticipants ? `
+                                <table class="participants-table">
+                                    <thead>
+                                        <tr>
+                                            <th>#</th>
+                                            <th>Name</th>
+                                            <th>Country</th>
+                                            <th>Travel</th>
+                                            <th>Daily</th>
+                                            <th>Other</th>
+                                            <th>Total</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        ${participants.map((p, i) => `
+                                            <tr>
+                                                <td>${i + 1}</td>
+                                                <td>${p.name}${p.is_itc ? ' <span class="badge badge-itc">ITC</span>' : ''}</td>
+                                                <td>${p.country}</td>
+                                                <td class="amount">${p.travel_allowance?.toFixed(2) || '0.00'}</td>
+                                                <td class="amount">${p.daily_allowance?.toFixed(2) || '0.00'}</td>
+                                                <td class="amount">${p.other_expenses?.toFixed(2) || '0.00'}</td>
+                                                <td class="amount"><strong>${p.total?.toFixed(2) || '0.00'}</strong></td>
+                                            </tr>
+                                        `).join('')}
+                                        <tr class="totals-row">
+                                            <td colspan="3">Subtotal (${participants.length} participants)</td>
+                                            <td class="amount">${meeting.total_travel?.toFixed(2) || '0.00'}</td>
+                                            <td class="amount">${meeting.total_daily?.toFixed(2) || '0.00'}</td>
+                                            <td class="amount">${meeting.total_other?.toFixed(2) || '0.00'}</td>
+                                            <td class="amount"><strong>EUR ${meeting.total_reimbursed?.toFixed(2) || '0.00'}</strong></td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                                ${meeting.los_grant > 0 ? `<div class="los-info">Local Organiser Support (LOS) Grant: <strong>EUR ${meeting.los_grant.toFixed(2)}</strong></div>` : ''}
+                            ` : '<p class="no-participants">No reimbursed participants recorded for this meeting.</p>'}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+
+        function toggleParticipants(id) {
+            const section = document.getElementById('participants-' + id);
+            if (section) {
+                section.classList.toggle('open');
+            }
+        }
+
+        function expandAll() {
+            document.querySelectorAll('.participants-section').forEach(s => s.classList.add('open'));
+        }
+
+        function collapseAll() {
+            document.querySelectorAll('.participants-section').forEach(s => s.classList.remove('open'));
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', renderMeetings);
+        document.getElementById('gpFilter').addEventListener('change', renderMeetings);
+        document.getElementById('countryFilter').addEventListener('change', renderMeetings);
+
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>

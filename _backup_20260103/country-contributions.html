@@ -1,0 +1,869 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Contributions - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+        }
+
+        nav .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        nav .nav-links a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        nav .nav-links a:hover { color: white; }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 100px 2rem 2rem;
+        }
+
+        h1 {
+            font-size: 2rem;
+            color: var(--cost-purple);
+            margin-bottom: 0.5rem;
+        }
+
+        .subtitle {
+            color: var(--gray);
+            margin-bottom: 2rem;
+        }
+
+        /* Impact Grid */
+        .impact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin: 2rem 0;
+        }
+
+        .impact-card {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            color: white;
+            padding: 1.25rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .impact-value {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--cost-orange);
+        }
+
+        .impact-label {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        /* Filter Container */
+        .filter-container {
+            display: flex;
+            gap: 1rem;
+            margin: 1.5rem 0;
+            flex-wrap: wrap;
+            align-items: center;
+            background: white;
+            padding: 1rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+        }
+
+        .search-input:focus {
+            outline: none;
+            border-color: var(--cost-orange);
+        }
+
+        .filter-select {
+            padding: 0.75rem 1rem;
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            font-size: 1rem;
+            background: white;
+            min-width: 150px;
+        }
+
+        /* Countries Grid */
+        .countries-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(380px, 1fr));
+            gap: 1.5rem;
+            margin: 1.5rem 0;
+        }
+
+        .country-card {
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            transition: all 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .country-card:hover {
+            border-color: var(--cost-orange);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.12);
+        }
+
+        .country-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 4px;
+            background: linear-gradient(90deg, var(--cost-purple), var(--cost-orange));
+        }
+
+        .country-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 0.75rem;
+        }
+
+        .country-name {
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--cost-purple);
+            margin: 0;
+        }
+
+        .country-code {
+            background: var(--cost-purple);
+            color: white;
+            padding: 0.25rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+        }
+
+        .country-region {
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 0.5rem;
+        }
+
+        .year-badges {
+            display: flex;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .year-badge {
+            background: var(--cost-orange);
+            color: white;
+            padding: 0.2rem 0.6rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .metric-item {
+            text-align: center;
+            padding: 0.5rem 0.25rem;
+            background: var(--light);
+            border-radius: 8px;
+        }
+
+        .metric-value {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--cost-purple);
+        }
+
+        .metric-label {
+            font-size: 0.65rem;
+            color: var(--gray);
+            text-transform: uppercase;
+        }
+
+        /* Country Summary Text */
+        .country-summary {
+            font-size: 0.85rem;
+            color: var(--gray);
+            margin-bottom: 0.75rem;
+            line-height: 1.5;
+        }
+
+        /* Expandable Content */
+        .expand-btn {
+            display: block;
+            width: 100%;
+            padding: 0.5rem;
+            background: var(--light);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            color: var(--cost-purple);
+            font-size: 0.85rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .expand-btn:hover {
+            background: var(--cost-purple);
+            color: white;
+        }
+
+        .country-details {
+            display: none;
+            margin-top: 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .country-details.active {
+            display: block;
+        }
+
+        .detail-section {
+            margin-bottom: 1rem;
+        }
+
+        .detail-section h5 {
+            font-size: 0.85rem;
+            color: var(--cost-purple);
+            margin-bottom: 0.5rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .detail-list {
+            font-size: 0.8rem;
+            color: var(--gray);
+            padding-left: 1rem;
+        }
+
+        .detail-list li {
+            margin-bottom: 0.25rem;
+        }
+
+        .slide-content {
+            background: var(--light);
+            padding: 0.75rem;
+            border-radius: 6px;
+            margin-bottom: 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        .slide-title {
+            font-weight: 600;
+            color: var(--cost-purple);
+            margin-bottom: 0.25rem;
+        }
+
+        .slide-text {
+            color: var(--gray);
+            line-height: 1.4;
+        }
+
+        /* Gallery */
+        h2 {
+            font-size: 1.5rem;
+            color: var(--cost-purple);
+            margin: 2rem 0 1rem;
+            padding-top: 1rem;
+            border-top: 1px solid var(--border);
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .gallery-item {
+            position: relative;
+            border-radius: 8px;
+            overflow: hidden;
+            cursor: pointer;
+            aspect-ratio: 4/3;
+            background: #e0e0e0;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.05);
+        }
+
+        .gallery-caption {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(transparent, rgba(0,0,0,0.8));
+            color: white;
+            padding: 2rem 0.5rem 0.5rem;
+            font-size: 0.8rem;
+        }
+
+        /* Lightbox */
+        .lightbox {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.9);
+            z-index: 9999;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+
+        .lightbox.active { display: flex; }
+
+        .lightbox img {
+            max-width: 90%;
+            max-height: 80%;
+            border-radius: 8px;
+        }
+
+        .lightbox-close {
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            color: white;
+            font-size: 2rem;
+            cursor: pointer;
+        }
+
+        #lightbox-caption {
+            color: white;
+            margin-top: 1rem;
+            font-size: 1rem;
+        }
+
+        /* Downloads */
+        .downloads-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin: 1rem 0;
+        }
+
+        .download-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+            background: white;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            color: inherit;
+            transition: all 0.3s;
+        }
+
+        .download-item:hover {
+            border-color: var(--cost-purple);
+            background: var(--light);
+        }
+
+        .download-icon {
+            width: 40px;
+            height: 40px;
+            background: var(--cost-purple);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: bold;
+            font-size: 0.7rem;
+        }
+
+        .download-country {
+            font-weight: 600;
+            color: var(--cost-purple);
+        }
+
+        .download-year {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem;
+            color: var(--gray);
+            border-top: 1px solid var(--border);
+            margin-top: 2rem;
+        }
+
+        @media (max-width: 768px) {
+            .filter-container { flex-direction: column; }
+            .search-input, .filter-select { width: 100%; }
+            .countries-grid { grid-template-columns: 1fr; }
+            nav .nav-links { display: none; }
+            .metrics-grid { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="logo">COST Action CA19130</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="members.html">Members</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="country-contributions.html">Country Contributions</a></li>
+                <li><a href="final-report.html">Final Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Country Contributions 2023-2024</h1>
+        <p class="subtitle">Annual progress reports from COST Action CA19130 participating countries, documenting research outputs, events, scientific missions, and collaborations.</p>
+
+        <div class="impact-grid" id="summary-stats">
+            <div class="impact-card">
+                <div class="impact-value" id="stat-countries">29</div>
+                <div class="impact-label">Countries</div>
+            </div>
+            <div class="impact-card">
+                <div class="impact-value" id="stat-publications">581</div>
+                <div class="impact-label">Publications</div>
+            </div>
+            <div class="impact-card">
+                <div class="impact-value" id="stat-acknowledgment">42</div>
+                <div class="impact-label">With Acknowledgment</div>
+            </div>
+            <div class="impact-card">
+                <div class="impact-value" id="stat-events">140</div>
+                <div class="impact-label">Events</div>
+            </div>
+            <div class="impact-card">
+                <div class="impact-value" id="stat-stsm">23</div>
+                <div class="impact-label">STSMs</div>
+            </div>
+            <div class="impact-card">
+                <div class="impact-value" id="stat-grants">11</div>
+                <div class="impact-label">Funded Grants</div>
+            </div>
+        </div>
+
+        <h2>Filter Countries</h2>
+        <div class="filter-container">
+            <input type="text" id="country-search" placeholder="Search countries..." class="search-input">
+            <select id="region-filter" class="filter-select">
+                <option value="">All Regions</option>
+                <option value="Balkans">Balkans</option>
+                <option value="Central Europe">Central Europe</option>
+                <option value="Eastern Europe">Eastern Europe</option>
+                <option value="Northern Europe">Northern Europe</option>
+                <option value="Southern Europe">Southern Europe</option>
+                <option value="Western Europe">Western Europe</option>
+            </select>
+            <select id="year-filter" class="filter-select">
+                <option value="">Both Years</option>
+                <option value="2023">2023 Only</option>
+                <option value="2024">2024 Only</option>
+            </select>
+        </div>
+
+        <div id="countries-grid" class="countries-grid"></div>
+
+        <h2>Visual Gallery</h2>
+        <p>Key slides from country presentations (click to enlarge):</p>
+        <div id="gallery-container" class="gallery-grid"></div>
+
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+            <span class="lightbox-close">&times;</span>
+            <img id="lightbox-img" src="" alt="">
+            <div id="lightbox-caption"></div>
+        </div>
+
+        <h2>Downloads</h2>
+        <p>Download original country update presentations:</p>
+        <div id="downloads-container" class="downloads-grid"></div>
+
+        <footer>
+            <p>(c) Joerg Osterrieder 2025 | COST Action CA19130: Fintech and Artificial Intelligence in Finance</p>
+        </footer>
+    </div>
+
+    <script>
+        let contributionsData = null;
+
+        async function loadContributionsData() {
+            try {
+                const response = await fetch('data/contributions.json');
+                contributionsData = await response.json();
+                renderCountries(contributionsData.countries);
+                renderGallery(contributionsData.countries);
+                renderDownloads(contributionsData.countries);
+                updateStats(contributionsData);
+            } catch (error) {
+                console.error('Error loading contributions data:', error);
+                document.getElementById('countries-grid').innerHTML = '<p>Error loading data. Please refresh the page.</p>';
+            }
+        }
+
+        function updateStats(data) {
+            document.getElementById('stat-countries').textContent = data.total_countries;
+            document.getElementById('stat-publications').textContent = data.summary_statistics.total_publications || 0;
+            document.getElementById('stat-acknowledgment').textContent = data.summary_statistics.total_with_acknowledgment || 0;
+            document.getElementById('stat-events').textContent = data.summary_statistics.total_events || 0;
+            document.getElementById('stat-stsm').textContent = data.summary_statistics.total_stsm || 0;
+            document.getElementById('stat-grants').textContent = data.summary_statistics.total_funded_grants || 0;
+        }
+
+        function escapeHtml(text) {
+            const div = document.createElement('div');
+            div.textContent = text;
+            return div.innerHTML;
+        }
+
+        function renderCountries(countries) {
+            const grid = document.getElementById('countries-grid');
+            if (!grid) return;
+
+            grid.innerHTML = countries.map((country, idx) => {
+                const stats = country.summary_stats || {};
+                const textSummary = country.text_summary || {};
+                const highlights = textSummary.highlights || [];
+                const achievements = textSummary.achievements || [];
+                const slides = (textSummary.slides || []).slice(0, 10);
+
+                // Get text content sections
+                const textContent = country.text_content || {};
+                const membersText = (textContent.members || []).slice(0, 10);
+                const pubsText = (textContent.publications || []).slice(0, 10);
+                const eventsText = (textContent.events || []).slice(0, 10);
+                const stsmText = (textContent.stsm || []).slice(0, 10);
+                const grantsText = (textContent.grants || []).slice(0, 10);
+
+                // Get events list
+                const events = (country.aggregated_metrics?.events?.events || []).slice(0, 8);
+
+                // Get grants info
+                const grants = (country.aggregated_metrics?.grants?.grants || []).slice(0, 5);
+
+                return `
+                <div class="country-card"
+                     data-country="${country.country.toLowerCase()}"
+                     data-region="${country.region}"
+                     data-years="${country.years_reported.join(',')}">
+                    <div class="country-header">
+                        <h4 class="country-name">${escapeHtml(country.country)}</h4>
+                        <span class="country-code">${country.country_code}</span>
+                    </div>
+                    <div class="country-region">${country.region}</div>
+                    <div class="year-badges">
+                        ${country.years_reported.map(y => `<span class="year-badge">${y}</span>`).join('')}
+                    </div>
+                    <div class="metrics-grid">
+                        <div class="metric-item">
+                            <div class="metric-value">${stats.total_publications || 0}</div>
+                            <div class="metric-label">Publications</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">${stats.total_events || 0}</div>
+                            <div class="metric-label">Events</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">${stats.total_stsm || 0}</div>
+                            <div class="metric-label">STSMs</div>
+                        </div>
+                        <div class="metric-item">
+                            <div class="metric-value">${stats.total_funded_grants || 0}</div>
+                            <div class="metric-label">Grants</div>
+                        </div>
+                    </div>
+                    <p class="country-summary">${escapeHtml(country.summary || '')}</p>
+                    <button class="expand-btn" onclick="toggleDetails(${idx})">
+                        Show Details
+                    </button>
+                    <div class="country-details" id="details-${idx}">
+                        ${highlights.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Highlights</h5>
+                            <ul class="detail-list">
+                                ${highlights.map(h => `<li>${escapeHtml(h)}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${events.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Events & Activities</h5>
+                            <ul class="detail-list">
+                                ${events.map(e => `<li>${escapeHtml(e.name || '')}${e.date ? ` (${e.date})` : ''}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${grants.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Grants & Projects</h5>
+                            <ul class="detail-list">
+                                ${grants.map(g => `<li>${escapeHtml(g.description || '')} ${g.status === 'funded' ? '<strong>(Funded)</strong>' : ''}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${slides.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Report Content</h5>
+                            ${slides.map(s => `
+                                <div class="slide-content">
+                                    ${s.title ? `<div class="slide-title">${escapeHtml(s.title)}</div>` : ''}
+                                    <div class="slide-text">${escapeHtml((s.content || '').substring(0, 300))}${(s.content || '').length > 300 ? '...' : ''}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                        ` : ''}
+
+                        ${achievements.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Achievements</h5>
+                            <ul class="detail-list">
+                                ${achievements.slice(0, 5).map(a => `<li>${escapeHtml(a)}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${membersText.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Team Members</h5>
+                            <ul class="detail-list">
+                                ${membersText.map(m => `<li>${escapeHtml(m)}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${pubsText.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Publications</h5>
+                            <ul class="detail-list">
+                                ${pubsText.map(p => `<li>${escapeHtml(p)}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${stsmText.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Scientific Missions (STSM)</h5>
+                            <ul class="detail-list">
+                                ${stsmText.map(s => `<li>${escapeHtml(s)}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+
+                        ${grantsText.length > 0 ? `
+                        <div class="detail-section">
+                            <h5>Grants & Funding</h5>
+                            <ul class="detail-list">
+                                ${grantsText.map(g => `<li>${escapeHtml(g)}</li>`).join('')}
+                            </ul>
+                        </div>
+                        ` : ''}
+                    </div>
+                </div>
+            `}).join('');
+        }
+
+        function toggleDetails(idx) {
+            const details = document.getElementById(`details-${idx}`);
+            const btn = details.previousElementSibling;
+            if (details.classList.contains('active')) {
+                details.classList.remove('active');
+                btn.textContent = 'Show Details';
+            } else {
+                details.classList.add('active');
+                btn.textContent = 'Hide Details';
+            }
+        }
+
+        function renderGallery(countries) {
+            const gallery = document.getElementById('gallery-container');
+            if (!gallery) return;
+
+            const allImages = [];
+            countries.forEach(country => {
+                // Show up to 5 images per country for better coverage
+                (country.gallery_images || []).slice(0, 5).forEach(img => {
+                    allImages.push({
+                        ...img,
+                        country: country.country,
+                        country_code: country.country_code
+                    });
+                });
+            });
+
+            // Show all images (no limit)
+            const displayImages = allImages;
+
+            gallery.innerHTML = displayImages.map(img => `
+                <div class="gallery-item" onclick="openLightbox('${img.path}', '${escapeHtml(img.country)} (${img.year})')">
+                    <img src="${img.path}" alt="${escapeHtml(img.country)}" loading="lazy">
+                    <div class="gallery-caption">${escapeHtml(img.country)}</div>
+                </div>
+            `).join('');
+        }
+
+        function renderDownloads(countries) {
+            const container = document.getElementById('downloads-container');
+            if (!container) return;
+
+            const downloads = [];
+            countries.forEach(country => {
+                (country.downloads || []).forEach(dl => {
+                    downloads.push({
+                        ...dl,
+                        country: country.country,
+                        country_code: country.country_code
+                    });
+                });
+            });
+
+            downloads.sort((a, b) => a.country.localeCompare(b.country) || a.year - b.year);
+
+            container.innerHTML = downloads.map(dl => `
+                <a href="downloads/contributions/${dl.country_code.toLowerCase()}/${dl.filename}"
+                   class="download-item" target="_blank">
+                    <div class="download-icon">${(dl.type || 'FILE').toUpperCase()}</div>
+                    <div>
+                        <div class="download-country">${escapeHtml(dl.country)}</div>
+                        <div class="download-year">${dl.year} Update</div>
+                    </div>
+                </a>
+            `).join('');
+        }
+
+        function openLightbox(src, caption) {
+            const lightbox = document.getElementById('lightbox');
+            document.getElementById('lightbox-img').src = src;
+            document.getElementById('lightbox-caption').textContent = caption;
+            lightbox.classList.add('active');
+        }
+
+        function closeLightbox() {
+            document.getElementById('lightbox').classList.remove('active');
+        }
+
+        function setupFilters() {
+            const searchInput = document.getElementById('country-search');
+            const regionFilter = document.getElementById('region-filter');
+            const yearFilter = document.getElementById('year-filter');
+
+            function applyFilters() {
+                const searchTerm = searchInput?.value.toLowerCase() || '';
+                const region = regionFilter?.value || '';
+                const year = yearFilter?.value || '';
+
+                document.querySelectorAll('.country-card').forEach(card => {
+                    const countryName = card.dataset.country;
+                    const cardRegion = card.dataset.region;
+                    const cardYears = card.dataset.years;
+
+                    const matchesSearch = !searchTerm || countryName.includes(searchTerm);
+                    const matchesRegion = !region || cardRegion === region;
+                    const matchesYear = !year || cardYears.includes(year);
+
+                    card.style.display = (matchesSearch && matchesRegion && matchesYear) ? '' : 'none';
+                });
+            }
+
+            searchInput?.addEventListener('input', applyFilters);
+            regionFilter?.addEventListener('change', applyFilters);
+            yearFilter?.addEventListener('change', applyFilters);
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape') closeLightbox();
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            loadContributionsData();
+            setupFilters();
+        });
+    </script>
+</body>
+</html>

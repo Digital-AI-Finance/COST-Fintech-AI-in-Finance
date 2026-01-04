@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Action Chair Report - COST Action CA19130 Mid-Term</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+            --success: #28a745;
+            --warning: #ffc107;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .hero { background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%); color: white; padding: 7rem 2rem 3rem; text-align: center; }
+        .hero h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .hero .badge { display: inline-block; background: var(--cost-orange); padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 1rem; }
+        .hero p { opacity: 0.9; max-width: 700px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        section { padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; }
+        section h2 { font-size: 1.6rem; color: var(--cost-purple); margin-bottom: 1.5rem; border-bottom: 2px solid var(--cost-orange); padding-bottom: 0.5rem; }
+        section h3 { font-size: 1.2rem; color: var(--dark); margin: 1.5rem 0 1rem; }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .card h4 { color: var(--cost-purple); margin-bottom: 0.5rem; font-size: 1rem; }
+        .card p { color: var(--gray); font-size: 0.9rem; line-height: 1.7; }
+        .progress-bar { height: 8px; background: var(--border); border-radius: 4px; margin: 0.5rem 0; overflow: hidden; }
+        .progress-bar .fill { height: 100%; border-radius: 4px; }
+        .progress-bar .fill.high { background: var(--success); }
+        .progress-bar .fill.medium { background: var(--warning); }
+        .progress-bar .fill.low { background: var(--cost-teal); }
+        .objective-grid { display: grid; gap: 1.5rem; }
+        .objective-item { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-left: 4px solid var(--cost-purple); }
+        .objective-item h4 { font-size: 0.95rem; color: var(--dark); margin-bottom: 0.5rem; }
+        .objective-item .progress-label { font-size: 0.8rem; color: var(--cost-purple); font-weight: 600; margin-bottom: 0.3rem; }
+        .objective-item .description { font-size: 0.85rem; color: var(--gray); line-height: 1.6; margin-top: 1rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .stat-box { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 1.5rem; border-radius: 12px; text-align: center; }
+        .stat-box .number { font-size: 2rem; font-weight: 700; }
+        .stat-box .label { font-size: 0.8rem; opacity: 0.9; }
+        .deliverable-table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        .deliverable-table th { background: var(--cost-purple); color: white; padding: 0.8rem; text-align: left; font-size: 0.85rem; }
+        .deliverable-table td { padding: 0.8rem; border-bottom: 1px solid var(--border); font-size: 0.85rem; }
+        .deliverable-table tr:hover { background: rgba(91,45,138,0.03); }
+        .status-badge { display: inline-block; padding: 0.2rem 0.6rem; border-radius: 12px; font-size: 0.75rem; font-weight: 600; }
+        .status-badge.delivered { background: rgba(40,167,69,0.15); color: var(--success); }
+        .status-badge.expected { background: rgba(232,119,34,0.15); color: var(--cost-orange); }
+        .publication-list { max-height: 600px; overflow-y: auto; }
+        .pub-item { display: flex; gap: 1rem; padding: 1rem; border-bottom: 1px solid var(--border); }
+        .pub-item:last-child { border-bottom: none; }
+        .pub-num { background: var(--cost-purple); color: white; width: 28px; height: 28px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 0.75rem; font-weight: 600; flex-shrink: 0; }
+        .pub-details h5 { font-size: 0.9rem; color: var(--dark); margin-bottom: 0.2rem; }
+        .pub-details .authors { font-size: 0.8rem; color: var(--gray); }
+        .pub-details .journal { font-size: 0.75rem; color: var(--cost-blue); font-style: italic; }
+        .country-tags { display: flex; gap: 0.3rem; margin-top: 0.3rem; flex-wrap: wrap; }
+        .country-tag { background: rgba(91,45,138,0.1); color: var(--cost-purple); padding: 0.1rem 0.4rem; border-radius: 8px; font-size: 0.65rem; }
+        .platform-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1rem; }
+        .platform-card { background: white; border-radius: 12px; padding: 1.2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); border-top: 3px solid var(--cost-teal); }
+        .platform-card h4 { color: var(--dark); margin-bottom: 0.3rem; font-size: 0.95rem; }
+        .platform-card p { color: var(--gray); font-size: 0.8rem; margin-bottom: 0.5rem; }
+        .platform-card a { color: var(--cost-blue); font-size: 0.8rem; text-decoration: none; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; }
+        footer a { color: var(--cost-orange); text-decoration: none; margin: 0 1rem; }
+        @media (max-width: 768px) { nav ul { display: none; } .hero h1 { font-size: 1.6rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="midterm-report.html">Mid-Term</a></li>
+                <li><a href="progress-reports.html">Progress</a></li>
+                <li><a href="final-report.html">Final</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="badge">Internal Document</div>
+        <h1>Action Chair Report</h1>
+        <p>Comprehensive Progress Report at 24 Months (September 2020 - September 2022)</p>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="midterm-report.html">Mid-Term Report</a> <span> / Action Chair Report</span>
+    </div>
+
+    <section>
+        <h2>Executive Summary</h2>
+        <div class="card">
+            <p>The COST Action on Fintech and AI in Finance has brought together an incredibly diverse network and we have witnessed an enormous growth of our Action to <strong>260 interdisciplinary researchers from 49 countries</strong>, with 39 of those countries being European COST countries, to become one of the largest and most active COST Actions in Europe.</p>
+            <p style="margin-top: 1rem;">The academic achievements of the network are impressive. The COST Action has organized <strong>150 research conferences</strong> with more than <strong>6,000 participants</strong> and <strong>300 distinguished speakers</strong>. The network's publications have been cited more than <strong>10,000 times</strong>, demonstrating the impact and relevance of the research being conducted within the network.</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box"><div class="number">260</div><div class="label">Researchers</div></div>
+            <div class="stat-box"><div class="number">49</div><div class="label">Countries</div></div>
+            <div class="stat-box"><div class="number">150+</div><div class="label">Events</div></div>
+            <div class="stat-box"><div class="number">6,000+</div><div class="label">Participants</div></div>
+            <div class="stat-box"><div class="number">300</div><div class="label">Speakers</div></div>
+            <div class="stat-box"><div class="number">10,000+</div><div class="label">Citations</div></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>MoU Objectives - Detailed Progress</h2>
+        <div class="objective-grid">
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 90%"></div></div>
+                <h4>Objective 1: Blended Approaches for Financial Services Evaluation</h4>
+                <div class="description">
+                    <p>Developing blended approaches to evaluate innovative financial services and their providers, especially in the FinTech domain, building on Machine Learning methods, focusing on prediction (early warning) of operational fragility, fraudulent and illegal behavior.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Key Achievements:</strong></p>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li>Strategic partnership with Romanian Fintech company iFactor for AI tools development</li>
+                        <li>Partnership with ING Group Amsterdam for early warning credit systems</li>
+                        <li>Swiss National Science Foundation project on Anomaly and Fraud Detection in Blockchain</li>
+                        <li>Research project with Swiss Fintech company on default rating of loans</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 90%"></div></div>
+                <h4>Objective 2: Conceptual Tools for Black-Box Model Transparency</h4>
+                <div class="description">
+                    <p>Development of conceptual and methodological tools for establishing when black-box models are admissible and making them more transparent and/or replacing them with interpretable and explainable models.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Key Achievements:</strong></p>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li>Created extensive platform: <a href="https://www.explainableaiforfinance.com/" target="_blank">explainableaiforfinance.com</a></li>
+                        <li>Disseminated code and training material via quantlet.com and quantinar.com</li>
+                        <li>Published research on interpretability algorithms applied to random forests</li>
+                        <li>Introduced measures of local and global interpretability for ML tasks</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">51-75% Complete</div>
+                <div class="progress-bar"><div class="fill medium" style="width: 65%"></div></div>
+                <h4>Objective 3: Regulator and Practitioner Input</h4>
+                <div class="description">
+                    <p>Receive input from regulators and practitioners' communities and validate results with regard to increasing transparency of artificial intelligence applications.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Key Achievements:</strong></p>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li>High-level COST policy event planned at COST Association Brussels (May 2023)</li>
+                        <li>Member accepted onto CEDPO AI Working Group in Brussels</li>
+                        <li>Action Chair joint appointment with University of Twente and ING Group</li>
+                        <li>Close contacts with AI team from European Central Bank</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">26-50% Complete</div>
+                <div class="progress-bar"><div class="fill low" style="width: 40%"></div></div>
+                <h4>Objective 4: Performance Attribution Models</h4>
+                <div class="description">
+                    <p>Pruning and improvement of performance attribution models by contributing to methodologies for reducing false discovery rate in financial research and applied financial investment management.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Key Outputs:</strong></p>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li>SSRN Paper: <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4209433" target="_blank">Data-driven Case-based Reasoning in Bankruptcy Prediction</a></li>
+                        <li>Credit reform dataset at blockchain-research-center.com (WG1 leader Prof. Hardle)</li>
+                        <li>Goal: Consolidate research into unifying position papers in next grant periods</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 95%"></div></div>
+                <h4>Objective 5: Dissemination to Public and Regulators</h4>
+                <div class="description">
+                    <p>Disseminate to the public and share with regulators the results on investment product performance evaluation.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Key Achievements:</strong></p>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li>150+ research events with 6,000+ participants from academia, industry, regulators</li>
+                        <li>Meetup group with 2,000+ members: <a href="https://www.meetup.com/Fintech_AI_in_Finance/" target="_blank">Fintech AI in Finance</a></li>
+                        <li>Code dissemination via quantlet.com and quantinar.com</li>
+                        <li>COST CA19130 meets Brussels event planned for GP3</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">51-75% Complete</div>
+                <div class="progress-bar"><div class="fill medium" style="width: 60%"></div></div>
+                <h4>Objective 6: European Platform for Investment Products (Modified)</h4>
+                <div class="description">
+                    <p><strong>Original:</strong> Creation of European platform comparing out-of-sample performance of banks' investment products.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Proposed Replacement:</strong> Creation of a stable, transparent European platform for research on the digitalisation of Banks' financial products, including digital assets, tokens in a reproducible framework.</p>
+                    <p style="margin-top: 0.5rem;"><em>Reason for change:</em> Due to changing regulatory landscape in Europe, enhanced privacy, data protection and regulatory requirements, the original objective is no longer legally feasible.</p>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 95%"></div></div>
+                <h4>Objective 7: Excellent Research Network</h4>
+                <div class="description">
+                    <p>Create an excellent network of researchers in Europe with lasting collaboration beyond the lifetime of the Action.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Key Achievements:</strong></p>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li>260+ working group members from 49 countries (39 European COST countries)</li>
+                        <li>Meetup group with 2,000+ members globally</li>
+                        <li>150+ events attended by 7,000+ participants</li>
+                        <li>Multiple subgroups formed working on joint publications and research applications</li>
+                        <li>Collaboration with 20+ Fintech associations across Europe</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 90%"></div></div>
+                <h4>Objective 8: Interdisciplinary Research Community</h4>
+                <div class="description">
+                    <p>Bringing technological, quantitative and economic researchers together for interdisciplinary research, actively involved in blockchain and FinTech communities across Europe.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Network spans:</strong> Finance, Computer Science, Economics, Mathematics, Engineering, Law, Business</p>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 90%"></div></div>
+                <h4>Objective 9: Knowledge Exchange Platform</h4>
+                <div class="description">
+                    <p>Bridging the gap between practitioners from the finance industry, academics and regulators by setting up a common knowledge exchange platform.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Platforms established:</strong></p>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li><strong>quantlet.com:</strong> Thousands of code pieces showcasing academic research</li>
+                        <li><strong>quantinar.com:</strong> Knowledge, training, and dissemination outlet</li>
+                        <li><strong>Blockchain Research Centre:</strong> Substantial datasets (HU Berlin)</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 90%"></div></div>
+                <h4>Objective 10: Knowledge Transfer</h4>
+                <div class="description">
+                    <p>Transfer knowledge in terms of expertise, scientific tools and human resources across different disciplines and between academia and industry.</p>
+                    <p style="margin-top: 0.5rem;">150+ research events in interdisciplinary settings with both industry and academia involved. Substantial members work closely with industry in day-to-day research activities.</p>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 90%"></div></div>
+                <h4>Objective 11: Inclusive ML/AI Community</h4>
+                <div class="description">
+                    <p>Establish an inclusive community of researchers on methodological and technological themes in Machine Learning and Artificial Intelligence, to promote Early Career Investigators.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Achievements:</strong> 20+ PhD theses completed, 10+ professorships achieved by members, all funding prioritized towards ECIs</p>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 90%"></div></div>
+                <h4>Objective 12: Geographical & Demographical Diversity</h4>
+                <div class="description">
+                    <p>Overcome the siloing of research topics by country and achieve geographical and demographical diversity, with special attention to COST Inclusiveness Target countries.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Statistics:</strong></p>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li>53% of members from ITC countries</li>
+                        <li>22 ITC countries represented out of 39 COST countries</li>
+                        <li>In MC: 55% from ITC, 24% young researchers</li>
+                        <li>GP1: 100% VMGs to ITC members; GP2: 56% VMGs to ITC members</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 85%"></div></div>
+                <h4>Objective 13: STSMs and Educational Programs</h4>
+                <div class="description">
+                    <p>Prepare competitive European researchers for a fruitful career in an international environment through intensive use of Short Term Scientific Missions (STSM) and joint educational programs with industrial partners.</p>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 85%"></div></div>
+                <h4>Objective 14: Job Opportunities for ECIs</h4>
+                <div class="description">
+                    <p>Maximize the job opportunities for PhD students and Early Career Investigators.</p>
+                    <p style="margin-top: 0.5rem;">Substantial PhD students in network with open cooperation. Multiple successful PhD defenses and promotions to postdocs and professorships.</p>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 95%"></div></div>
+                <h4>Objective 15: Dissemination to Scientific Community</h4>
+                <div class="description">
+                    <p>Disseminate the results of the Action's activities to the scientific community, European institutions and to the general public.</p>
+                    <p style="margin-top: 0.5rem;">150+ events, partnerships with European Commission, CEDPO, ECB, ING Group, and various national banks.</p>
+                </div>
+            </div>
+
+            <div class="objective-item">
+                <div class="progress-label">76-100% Complete</div>
+                <div class="progress-bar"><div class="fill high" style="width: 85%"></div></div>
+                <h4>Objective 16: Gender Equality</h4>
+                <div class="description">
+                    <p>Significantly improve the gender equality in the fields of the Action.</p>
+                    <p style="margin-top: 0.5rem;"><strong>Statistics:</strong></p>
+                    <ul style="margin-left: 1rem; margin-top: 0.3rem;">
+                        <li>41% female, 56% male members</li>
+                        <li>MC: 46% female members (increased from 44% in GP1)</li>
+                        <li>GP1: 75% VMGs to female researchers; GP2: 89% VMGs to female researchers</li>
+                        <li>Guidelines established for gender balance in events</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Deliverables Status</h2>
+        <table class="deliverable-table">
+            <thead>
+                <tr>
+                    <th style="width: 50%">Deliverable</th>
+                    <th>Due</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Database with pre-ICO documentation and post-ICO performance</td>
+                    <td>Month 24</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Database on crowdfunding/P2P platform features for rating integrity</td>
+                    <td>Month 24</td>
+                    <td><span class="status-badge delivered">Delivered</span></td>
+                </tr>
+                <tr>
+                    <td>Discussion papers on ICO/P2P evaluation methodology</td>
+                    <td>Month 36</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Position paper on mitigating digital assets risks</td>
+                    <td>Month 48</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Discussion paper on back-testing framework</td>
+                    <td>Month 24</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Methodological paper on AI/ML stress tests</td>
+                    <td>Month 48</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Position papers for regulators on AI testing</td>
+                    <td>Month 36</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Report on transparent finance best practices</td>
+                    <td>Month 12</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Internal database of financial time series</td>
+                    <td>Month 24</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Discussion papers on AI models for investment analysis</td>
+                    <td>Month 48</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Four annual reports for lay audience</td>
+                    <td>Month 48</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Key software by Working Groups</td>
+                    <td>Month 48</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Blockchain risk management handbook</td>
+                    <td>Month 36</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Edited volume of scientific achievements</td>
+                    <td>Month 48</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+                <tr>
+                    <td>Stakeholder engagement strategy</td>
+                    <td>Month 6</td>
+                    <td><span class="status-badge expected">Expected</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section>
+        <h2>Knowledge Exchange Platforms</h2>
+        <div class="platform-grid">
+            <div class="platform-card">
+                <h4>quantlet.com</h4>
+                <p>Thousands of self-contained code pieces showcasing academic research, making it reproducible for everyone.</p>
+                <a href="https://quantlet.com" target="_blank">Visit Platform</a>
+            </div>
+            <div class="platform-card">
+                <h4>quantinar.com</h4>
+                <p>Knowledge, training, and dissemination outlet showcasing fundamentals and cutting-edge research.</p>
+                <a href="https://quantinar.com" target="_blank">Visit Platform</a>
+            </div>
+            <div class="platform-card">
+                <h4>Blockchain Research Center</h4>
+                <p>Substantial datasets for COST Action and stakeholders. Founded by WG1 leader Prof. Hardle, HU Berlin.</p>
+                <a href="https://blockchain-research-center.com" target="_blank">Visit Platform</a>
+            </div>
+            <div class="platform-card">
+                <h4>Explainable AI for Finance</h4>
+                <p>Extensive platform with use cases, papers, code repositories, and interactive apps.</p>
+                <a href="https://www.explainableaiforfinance.com" target="_blank">Visit Platform</a>
+            </div>
+            <div class="platform-card">
+                <h4>FinAI Meetup</h4>
+                <p>2,000+ members globally. 150+ events with 7,000+ participants.</p>
+                <a href="https://www.meetup.com/Fintech_AI_in_Finance/" target="_blank">Visit Platform</a>
+            </div>
+            <div class="platform-card">
+                <h4>FinAI Wiki</h4>
+                <p>Comprehensive documentation of Action activities and research outcomes.</p>
+                <a href="https://wiki.fin-ai.eu" target="_blank">Visit Platform</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Co-authored Publications (100+)</h2>
+        <div class="card">
+            <p style="margin-bottom: 1rem;">Publications co-authored by at least two Action participants from two countries participating in the Action, with COST acknowledgment.</p>
+            <div class="publication-list">
+                <div class="pub-item"><div class="pub-num">1</div><div class="pub-details"><h5>Data Science Techniques for Cryptocurrency Blockchains</h5><div class="authors">Innar Liiv</div><div class="journal">Behaviormetrics: Quantitative Approaches to Human Behavior, Springer</div></div></div>
+                <div class="pub-item"><div class="pub-num">2</div><div class="pub-details"><h5>Shall the winning last? A study of recent bubbles and persistence</h5><div class="authors">Akanksha Jalan, Roman Matkovskyy, Valerio Poti</div><div class="journal">Finance Research Letters, Elsevier</div><div class="country-tags"><span class="country-tag">FR</span><span class="country-tag">IE</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">3</div><div class="pub-details"><h5>Demand elasticities of Bitcoin and Ethereum</h5><div class="authors">Akanksha Jalan, Roman Matkovskyy, Andrew Urquhart</div><div class="journal">Economics Letters, Elsevier</div><div class="country-tags"><span class="country-tag">FR</span><span class="country-tag">UK</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">4</div><div class="pub-details"><h5>COVID risk narratives: computational linguistic approach</h5><div class="authors">Yuting Chen, Don Bredin, Valerio Poti, Roman Matkovskyy</div><div class="journal">Digital Finance, Springer</div><div class="country-tags"><span class="country-tag">FR</span><span class="country-tag">IE</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">5</div><div class="pub-details"><h5>Tail-Risk Protection: Machine Learning Meets Modern Econometrics</h5><div class="authors">Bruno Spilak, Wolfgang Karl Hardle</div><div class="journal">Encyclopedia of Finance, Springer</div><div class="country-tags"><span class="country-tag">CZ</span><span class="country-tag">DE</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">6</div><div class="pub-details"><h5>Financial Risk Meter for emerging markets</h5><div class="authors">Souhir Ben Amor, Michael Althof, Wolfgang Karl Hardle</div><div class="journal">Research in International Business and Finance, Elsevier</div><div class="country-tags"><span class="country-tag">CZ</span><span class="country-tag">DE</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">7</div><div class="pub-details"><h5>A Data-driven Explainable Case-based Reasoning for Financial Risk Detection</h5><div class="authors">Wei Li, Florentina Paraschiv, Georgios Sermpinis</div><div class="journal">arXiv</div><div class="country-tags"><span class="country-tag">NO</span><span class="country-tag">CH</span><span class="country-tag">UK</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">8</div><div class="pub-details"><h5>Bankruptcy Prediction of Privately Held SMEs</h5><div class="authors">Florentina Paraschiv, Markus Schmid, Ranik Raaen Wahlstrom</div><div class="journal">SSRN Electronic Journal</div><div class="country-tags"><span class="country-tag">FR</span><span class="country-tag">NO</span><span class="country-tag">CH</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">9</div><div class="pub-details"><h5>Regime-based Implied Stochastic Volatility Model for Crypto Option Pricing</h5><div class="authors">Danial Saef, Yuanrong Wang, Tomaso Aste</div><div class="journal">arXiv</div><div class="country-tags"><span class="country-tag">DE</span><span class="country-tag">UK</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">10</div><div class="pub-details"><h5>Indices on cryptocurrencies: an evaluation</h5><div class="authors">Konstantin Hausler, Hongyu Xia</div><div class="journal">Digital Finance, Springer</div></div></div>
+                <div class="pub-item"><div class="pub-num">11</div><div class="pub-details"><h5>Financial Risk Meter Based on Expectiles</h5><div class="authors">Rui Ren, Meng-Jou Lu, Yingxing Li, Wolfgang K. Hardle</div><div class="journal">SSRN Electronic Journal</div><div class="country-tags"><span class="country-tag">CZ</span><span class="country-tag">DE</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">12</div><div class="pub-details"><h5>A Comparative Analysis of Parsimonious Yield Curve Models</h5><div class="authors">Ranik Raaen Wahlstrom, Florentina Paraschiv, Michael Schurle</div><div class="journal">Computational Economics, Springer</div><div class="country-tags"><span class="country-tag">NO</span><span class="country-tag">CH</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">13</div><div class="pub-details"><h5>Understanding jumps in high frequency digital asset markets</h5><div class="authors">Danial Saef, Odett Nagy, Sergej Sizov, Wolfgang Karl Hardle</div><div class="journal">arXiv</div><div class="country-tags"><span class="country-tag">DE</span><span class="country-tag">HU</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">14</div><div class="pub-details"><h5>K-expectiles clustering</h5><div class="authors">Bingling Wang, Yingxing Li, Wolfgang Karl Hardle</div><div class="journal">Journal of Multivariate Analysis, Elsevier</div><div class="country-tags"><span class="country-tag">CZ</span><span class="country-tag">DE</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">15</div><div class="pub-details"><h5>Understanding Smart Contracts: Hype or Hope?</h5><div class="authors">Elizaveta Zinovyeva, Raphael C. G. Reule, Wolfgang Karl Hardle</div><div class="journal">arXiv</div></div></div>
+                <div class="pub-item"><div class="pub-num">16</div><div class="pub-details"><h5>Forecasting: theory and practice</h5><div class="authors">Petropoulos et al. (80+ authors)</div><div class="journal">International Journal of Forecasting</div><div class="country-tags"><span class="country-tag">AT</span><span class="country-tag">BE</span><span class="country-tag">CY</span><span class="country-tag">DE</span><span class="country-tag">+11</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">17</div><div class="pub-details"><h5>Food Prices, Ethics and Forms of Speculation</h5><div class="authors">Don Bredin, Valerio Poti, Enrique Salvador</div><div class="journal">Journal of Business Ethics, Springer</div><div class="country-tags"><span class="country-tag">IE</span><span class="country-tag">ES</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">18</div><div class="pub-details"><h5>Are cryptos becoming alternative assets?</h5><div class="authors">Daniel Traian Pele, Niels Wesselhofft, W.K. Hardle, et al.</div><div class="journal">The European Journal of Finance</div><div class="country-tags"><span class="country-tag">CY</span><span class="country-tag">CZ</span><span class="country-tag">DE</span><span class="country-tag">RO</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">19</div><div class="pub-details"><h5>Can ESG Shape Cost of Capital?</h5><div class="authors">Niklas Bussmann, Alessandra Tanda, Ellen Pei-yi Yu</div><div class="journal">SSRN Electronic Journal</div><div class="country-tags"><span class="country-tag">IT</span><span class="country-tag">UK</span></div></div></div>
+                <div class="pub-item"><div class="pub-num">20</div><div class="pub-details"><h5>The role of ESG in predicting bank financial distress</h5><div class="authors">Alberto Citterio, Timothy King</div><div class="journal">Finance Research Letters, Elsevier</div><div class="country-tags"><span class="country-tag">FI</span><span class="country-tag">IT</span></div></div></div>
+            </div>
+            <p style="margin-top: 1rem; text-align: center; color: var(--gray); font-size: 0.85rem;">Showing 20 of 100+ publications. Full list available in official report.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>COST Action CA19130 - Mid-Term Report</p>
+        <div>
+            <a href="midterm-report.html">Overview</a>
+            <a href="midterm-public-report.html">Public Report</a>
+            <a href="midterm-rapporteur-review.html">Rapporteur Review</a>
+            <a href="index.html">Home</a>
+        </div>
+    </footer>
+</body>
+</html>

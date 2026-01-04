@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FFR2 - Grant Period 2 - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .hero-small { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 3rem 2rem; text-align: center; }
+        .hero-small h1 { font-size: 2rem; }
+        .hero-small .period { font-size: 1.1rem; opacity: 0.9; margin-top: 0.5rem; }
+        section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: center; }
+        .stat-box { background: white; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; min-width: 150px; }
+        .stat-box .num { font-size: 2rem; font-weight: 700; color: var(--cost-blue); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; overflow-x: auto; }
+        .card h3 { font-size: 1.1rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: var(--cost-purple); color: white; padding: 10px; text-align: left; font-size: 0.85rem; }
+        td { padding: 10px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        tr:hover { background: rgba(91, 45, 138, 0.05); }
+        .amount { font-weight: 600; color: var(--cost-blue); }
+        .progress-bar { background: #e0e0e0; border-radius: 10px; height: 20px; overflow: hidden; margin-top: 0.5rem; }
+        .progress-fill { background: linear-gradient(90deg, var(--cost-purple), var(--cost-blue)); height: 100%; border-radius: 10px; }
+        .ffr-nav { display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .ffr-nav a { padding: 0.5rem 1rem; background: white; border-radius: 8px; text-decoration: none; color: var(--cost-purple); box-shadow: 0 2px 10px rgba(0,0,0,0.08); font-weight: 500; }
+        .ffr-nav a:hover, .ffr-nav a.active { background: var(--cost-purple); color: white; }
+        .badge { display: inline-block; padding: 2px 8px; border-radius: 12px; font-size: 0.75rem; font-weight: 500; }
+        .badge-yri { background: var(--cost-green); color: white; }
+        .badge-itc { background: rgba(232, 119, 34, 0.2); color: #b35c10; }
+        .info-box { background: rgba(43, 95, 158, 0.1); border-left: 4px solid var(--cost-blue); padding: 1rem 1.5rem; border-radius: 0 8px 8px 0; margin: 1rem 0; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+                <li><a href="overview.html">Overview</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>FFR2</span>
+    </div>
+
+    <header class="hero-small">
+        <h1>Final Financial Report 2 (FFR2)</h1>
+        <p class="period">Grant Period 2: November 2021 - May 2022</p>
+    </header>
+
+    <section>
+        <div class="ffr-nav">
+            <a href="ffr1.html">FFR1</a>
+            <a href="ffr2.html" class="active">FFR2</a>
+            <a href="ffr3.html">FFR3</a>
+            <a href="ffr4.html">FFR4</a>
+            <a href="ffr5.html">FFR5</a>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num">202,607</div><div class="label">Budget EUR</div></div>
+            <div class="stat-box"><div class="num">33,770</div><div class="label">Actual EUR</div></div>
+            <div class="stat-box"><div class="num">17%</div><div class="label">Utilization</div></div>
+            <div class="stat-box"><div class="num">4</div><div class="label">Meetings</div></div>
+            <div class="stat-box"><div class="num">1</div><div class="label">VM Grants</div></div>
+        </div>
+
+        <div class="card">
+            <h3>Budget Utilization</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 17%;"></div>
+            </div>
+            <p style="text-align: center; margin-top: 0.5rem; color: var(--gray);">33,770 EUR of 202,607 EUR budget utilized</p>
+        </div>
+
+        <div class="info-box">
+            <strong>Note:</strong> Grant Period 2 was a shortened period (7 months instead of 12) due to administrative restructuring. The low utilization reflects the compressed timeline and continued post-pandemic transition to in-person events.
+        </div>
+
+        <h2>Expenditure Breakdown</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr><th>Category</th><th>Budget EUR</th><th>Actual EUR</th><th>% Used</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Meetings</td><td class="amount">123,907</td><td class="amount">29,176</td><td>23.5%</td></tr>
+                    <tr><td>Training Schools</td><td class="amount">0</td><td class="amount">0</td><td>-</td></tr>
+                    <tr><td>Short-Term Scientific Missions</td><td class="amount">39,680</td><td class="amount">0</td><td>0%</td></tr>
+                    <tr><td>Virtual Mobility</td><td class="amount">0</td><td class="amount">190</td><td>-</td></tr>
+                    <tr><td>ITC Conference Grants</td><td class="amount">7,500</td><td class="amount">0</td><td>0%</td></tr>
+                    <tr><td>Dissemination</td><td class="amount">5,093</td><td class="amount">0</td><td>0%</td></tr>
+                    <tr><td>FSAC (15%)</td><td class="amount">26,427</td><td class="amount">4,405</td><td>16.7%</td></tr>
+                    <tr style="background: rgba(91, 45, 138, 0.1); font-weight: 600;">
+                        <td>TOTAL</td><td class="amount">202,607</td><td class="amount">33,770</td><td>16.7%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Meetings in GP2</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr><th>Meeting</th><th>Location</th><th>Date</th><th>Type</th><th>Participants</th><th>Reimbursed</th><th>Cost EUR</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>ML approaches Finance and Management</td>
+                        <td>Berlin, Germany</td>
+                        <td>24-25 Mar 2022</td>
+                        <td>Workshop</td>
+                        <td>238</td>
+                        <td>4</td>
+                        <td class="amount">3,928</td>
+                    </tr>
+                    <tr>
+                        <td>WG1 Meeting</td>
+                        <td>Rennes, France</td>
+                        <td>8 Apr 2022</td>
+                        <td>Working Group</td>
+                        <td>254</td>
+                        <td>3</td>
+                        <td class="amount">3,457</td>
+                    </tr>
+                    <tr>
+                        <td>TINFIN - Technology, Innovation and Stability</td>
+                        <td>Zagreb, Croatia</td>
+                        <td>5-6 May 2022</td>
+                        <td>Workshop</td>
+                        <td>315</td>
+                        <td>7</td>
+                        <td class="amount">8,234</td>
+                    </tr>
+                    <tr>
+                        <td>COST FinAI Diversity Research Workshop</td>
+                        <td>Naples, Italy</td>
+                        <td>16-17 May 2022</td>
+                        <td>Workshop</td>
+                        <td>225</td>
+                        <td>13</td>
+                        <td class="amount">13,557</td>
+                    </tr>
+                    <tr style="background: rgba(91, 45, 138, 0.1); font-weight: 600;">
+                        <td colspan="4">TOTAL</td>
+                        <td>1,032</td>
+                        <td>27</td>
+                        <td class="amount">29,176</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Virtual Mobility Grant</h2>
+        <div class="card">
+            <table>
+                <thead>
+                    <tr><th>Grantee</th><th>Project Title</th><th>Country</th><th>Period</th><th>Amount EUR</th></tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Alessandra Tanda</td>
+                        <td>Gender differences in the knowledge and use of Fintech products: is there a role for transparency?</td>
+                        <td>IT</td>
+                        <td>1-15 May 2022</td>
+                        <td class="amount">190</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Key Activities</h2>
+        <div class="card">
+            <ul style="padding-left: 1.5rem;">
+                <li><strong>Return to In-Person Events:</strong> First major in-person workshops since the pandemic began</li>
+                <li><strong>4 International Workshops:</strong> Berlin, Rennes, Zagreb, and Naples hosted successful events</li>
+                <li><strong>1,032 Participants:</strong> Strong attendance across all meetings</li>
+                <li><strong>Diversity Focus:</strong> Naples workshop specifically addressed diversity challenges in FinTech</li>
+                <li><strong>Virtual Mobility Pilot:</strong> First VM grant in GP2 exploring gender differences in FinTech</li>
+                <li><strong>ITC Engagement:</strong> Zagreb meeting in Croatia (ITC country) engaged regional researchers</li>
+            </ul>
+        </div>
+
+        <h2>Meeting Highlights</h2>
+        <div class="card">
+            <ul style="padding-left: 1.5rem;">
+                <li><strong>Berlin Workshop (Mar 2022):</strong> Machine Learning approaches for Finance and Management - attracted 238 participants</li>
+                <li><strong>Rennes WG1 Meeting (Apr 2022):</strong> Working Group 1 focused session with 254 attendees</li>
+                <li><strong>Zagreb TINFIN (May 2022):</strong> Largest event with 315 participants; Technology, Innovation and Stability theme</li>
+                <li><strong>Naples Diversity Workshop (May 2022):</strong> 225 participants; 13 researchers reimbursed; highest per-meeting expenditure</li>
+            </ul>
+        </div>
+
+        <h2>Context</h2>
+        <div class="card">
+            <p>Grant Period 2 marked a transition period for the COST Action:</p>
+            <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>Shortened period (7 months) due to grant cycle restructuring</li>
+                <li>Resumption of in-person activities after pandemic restrictions lifted</li>
+                <li>No STSMs were awarded in this period as the focus was on re-establishing meeting activities</li>
+                <li>Strong workshop attendance (1,032 total participants) demonstrated continued interest</li>
+                <li>Unspent budget carried forward to GP3 for expanded activities</li>
+            </ul>
+            <p style="margin-top: 1rem;">The 17% utilization rate reflects the shortened period and cautious restart rather than reduced activity. The successful workshops laid groundwork for expanded programming in subsequent periods.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="ffr1.html"><- FFR1</a> | <a href="overview.html">Financial Overview</a> | <a href="index.html">Back to Financial Reports</a> | <a href="ffr3.html">FFR3 -></a></p>
+    </footer>
+</body>
+</html>

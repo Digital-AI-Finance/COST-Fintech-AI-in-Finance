@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Reports - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; text-decoration: none; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .hero { background: linear-gradient(135deg, var(--cost-blue) 0%, var(--cost-teal) 100%); color: white; padding: 8rem 2rem 4rem; text-align: center; }
+        .hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .hero .subtitle { font-size: 1.2rem; opacity: 0.95; max-width: 800px; margin: 0 auto 1rem; font-weight: 300; }
+        .hero .period { font-size: 1rem; opacity: 0.8; }
+        section { padding: 4rem 2rem; max-width: 1200px; margin: 0 auto; }
+        section h2 { font-size: 1.8rem; color: var(--cost-purple); margin-bottom: 1.5rem; text-align: center; }
+        section h2::after { content: ''; display: block; width: 60px; height: 3px; background: var(--cost-orange); margin: 0.8rem auto 0; }
+        .timeline { position: relative; padding: 2rem 0; }
+        .timeline::before { content: ''; position: absolute; left: 50%; transform: translateX(-50%); top: 0; bottom: 0; width: 4px; background: linear-gradient(to bottom, var(--cost-blue), var(--cost-teal)); border-radius: 2px; }
+        .timeline-item { display: flex; justify-content: center; margin-bottom: 3rem; position: relative; }
+        .timeline-item:nth-child(odd) .timeline-content { margin-right: calc(50% + 30px); text-align: right; }
+        .timeline-item:nth-child(even) .timeline-content { margin-left: calc(50% + 30px); text-align: left; }
+        .timeline-content { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.1); max-width: 450px; width: 100%; transition: transform 0.3s; }
+        .timeline-content:hover { transform: translateY(-3px); }
+        .timeline-dot { position: absolute; left: 50%; transform: translateX(-50%); width: 20px; height: 20px; background: var(--cost-teal); border-radius: 50%; border: 4px solid white; box-shadow: 0 0 0 3px var(--cost-teal); z-index: 1; }
+        .timeline-content h3 { color: var(--cost-purple); margin-bottom: 0.5rem; font-size: 1.2rem; }
+        .timeline-content .dates { color: var(--cost-teal); font-size: 0.85rem; font-weight: 600; margin-bottom: 0.5rem; }
+        .timeline-content .institution { color: var(--gray); font-size: 0.9rem; margin-bottom: 0.8rem; }
+        .timeline-content .highlights { list-style: none; margin: 1rem 0; }
+        .timeline-content .highlights li { color: var(--gray); font-size: 0.85rem; padding: 0.3rem 0; }
+        .timeline-content .btn { display: inline-block; background: var(--cost-blue); color: white; text-decoration: none; padding: 0.5rem 1rem; border-radius: 6px; font-size: 0.85rem; font-weight: 500; margin-top: 0.5rem; }
+        .timeline-content .btn:hover { background: #234c82; }
+        .status-badge { display: inline-block; background: var(--cost-green); color: white; padding: 0.2rem 0.6rem; border-radius: 4px; font-size: 0.75rem; font-weight: 600; margin-left: 0.5rem; }
+        .overall-timeline { background: white; border-radius: 12px; padding: 2rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin: 2rem 0; }
+        .milestone-list { display: grid; gap: 1rem; }
+        .milestone { display: flex; gap: 1rem; align-items: flex-start; padding: 1rem; background: var(--light); border-radius: 8px; }
+        .milestone-date { min-width: 100px; font-weight: 600; color: var(--cost-teal); font-size: 0.9rem; }
+        .milestone-event { font-weight: 600; color: var(--dark); }
+        .milestone-desc { color: var(--gray); font-size: 0.9rem; }
+        .stats-banner { background: white; padding: 2rem; display: flex; justify-content: center; gap: 3rem; flex-wrap: wrap; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 2rem; border-radius: 12px; }
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: 700; color: var(--cost-blue); }
+        .stat-label { font-size: 0.8rem; color: var(--gray); text-transform: uppercase; }
+        footer { background: var(--dark); color: white; padding: 3rem 2rem; text-align: center; }
+        footer a { color: var(--cost-orange); text-decoration: none; margin: 0 1rem; }
+        @media (max-width: 900px) {
+            nav ul { display: none; }
+            .timeline::before { left: 20px; }
+            .timeline-item { justify-content: flex-start; }
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content { margin-left: 50px; margin-right: 0; text-align: left; }
+            .timeline-dot { left: 20px; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="logo">COST <span>CA19130</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="final-report.html">Final Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <h1>Progress Reports</h1>
+        <div class="subtitle">Complete documentation of all five Grant Periods</div>
+        <div class="period">November 2020 - September 2024</div>
+    </header>
+
+    <section>
+        <div class="stats-banner">
+            <div class="stat-item">
+                <div class="stat-number">5</div>
+                <div class="stat-label">Grant Periods</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4</div>
+                <div class="stat-label">Years</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">2</div>
+                <div class="stat-label">Grant Holders</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">100%</div>
+                <div class="stat-label">Completion</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Grant Period Timeline</h2>
+        <div class="timeline" id="timelineContainer">
+            <!-- Loaded from JSON -->
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Milestones</h2>
+        <div class="overall-timeline">
+            <div class="milestone-list" id="milestonesList">
+                <!-- Loaded from JSON -->
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>COST Action CA19130</strong> - Fintech and AI in Finance</p>
+            <p style="margin-top: 0.5rem; opacity: 0.8;">Action Period: September 2020 - September 2024</p>
+            <p style="margin-top: 1rem;">
+                <a href="index.html">Home</a>
+                <a href="leadership.html">Leadership</a>
+                <a href="final-report.html">Final Report</a>
+                <a href="midterm-report.html">Mid-Term Report</a>
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        fetch('data/progress_reports.json')
+            .then(response => response.json())
+            .then(data => {
+                // Render timeline
+                const timeline = document.getElementById('timelineContainer');
+                data.grant_periods.forEach(gp => {
+                    const item = document.createElement('div');
+                    item.className = 'timeline-item';
+                    item.innerHTML = `
+                        <div class="timeline-dot"></div>
+                        <div class="timeline-content">
+                            <h3>${gp.title} <span class="status-badge">${gp.status}</span></h3>
+                            <div class="dates">${formatDate(gp.start_date)} - ${formatDate(gp.end_date)}</div>
+                            <div class="institution">${gp.grant_holder}, ${gp.country}</div>
+                            <ul class="highlights">
+                                ${gp.highlights.slice(0, 3).map(h => `<li>- ${h}</li>`).join('')}
+                            </ul>
+                            <a href="progress-gp${gp.period}.html" class="btn">View Details</a>
+                        </div>
+                    `;
+                    timeline.appendChild(item);
+                });
+
+                // Render milestones
+                const milestones = document.getElementById('milestonesList');
+                data.overall_timeline.forEach(m => {
+                    const item = document.createElement('div');
+                    item.className = 'milestone';
+                    item.innerHTML = `
+                        <div class="milestone-date">${formatDate(m.date)}</div>
+                        <div>
+                            <div class="milestone-event">${m.event}</div>
+                            <div class="milestone-desc">${m.description}</div>
+                        </div>
+                    `;
+                    milestones.appendChild(item);
+                });
+            });
+
+        function formatDate(dateStr) {
+            const date = new Date(dateStr);
+            return date.toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric' });
+        }
+    </script>
+</body>
+</html>

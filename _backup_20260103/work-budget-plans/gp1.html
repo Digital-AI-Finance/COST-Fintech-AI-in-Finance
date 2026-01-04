@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GP1 - Work & Budget Plans - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .hero-small { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 3rem 2rem; text-align: center; }
+        .hero-small h1 { font-size: 2rem; }
+        .hero-small .period { font-size: 1.1rem; opacity: 0.9; margin-top: 0.5rem; }
+        section { padding: 2rem; max-width: 1200px; margin: 0 auto; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: center; }
+        .stat-box { background: white; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; min-width: 150px; }
+        .stat-box .num { font-size: 2rem; font-weight: 700; color: var(--cost-blue); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .card h3 { font-size: 1.1rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: var(--cost-purple); color: white; padding: 10px; text-align: left; font-size: 0.85rem; }
+        td { padding: 10px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        tr:hover { background: rgba(91, 45, 138, 0.05); }
+        .amount { font-weight: 600; color: var(--cost-blue); }
+        .progress-bar { background: #e0e0e0; border-radius: 10px; height: 20px; overflow: hidden; margin-top: 0.5rem; }
+        .progress-fill { background: linear-gradient(90deg, var(--cost-purple), var(--cost-blue)); height: 100%; border-radius: 10px; }
+        .gp-nav { display: flex; justify-content: center; gap: 1rem; margin: 2rem 0; flex-wrap: wrap; }
+        .gp-nav a { padding: 0.5rem 1rem; background: white; border-radius: 8px; text-decoration: none; color: var(--cost-purple); box-shadow: 0 2px 10px rgba(0,0,0,0.08); font-weight: 500; }
+        .gp-nav a:hover, .gp-nav a.active { background: var(--cost-purple); color: white; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Work & Budget</a></li>
+                <li><a href="../financial-reports/index.html">Financial Reports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Work & Budget Plans</a> / <span>GP1</span>
+    </div>
+
+    <header class="hero-small">
+        <h1>Grant Period 1</h1>
+        <p class="period">November 2020 - October 2021</p>
+    </header>
+
+    <section>
+        <div class="gp-nav">
+            <a href="gp1.html" class="active">GP1</a>
+            <a href="gp2.html">GP2</a>
+            <a href="gp3.html">GP3</a>
+            <a href="gp4.html">GP4</a>
+            <a href="gp5.html">GP5</a>
+        </div>
+
+        <div class="stats">
+            <div class="stat-box"><div class="num">62,986</div><div class="label">Budget EUR</div></div>
+            <div class="stat-box"><div class="num">47,460</div><div class="label">Actual EUR</div></div>
+            <div class="stat-box"><div class="num">75%</div><div class="label">Utilization</div></div>
+            <div class="stat-box"><div class="num">9</div><div class="label">STSMs</div></div>
+        </div>
+
+        <div class="card">
+            <h3>Budget Utilization</h3>
+            <div class="progress-bar">
+                <div class="progress-fill" style="width: 75%;"></div>
+            </div>
+            <p style="text-align: center; margin-top: 0.5rem; color: var(--gray);">47,460 EUR of 62,986 EUR budget utilized</p>
+        </div>
+
+        <div class="card">
+            <h3>Expenditure Breakdown</h3>
+            <table>
+                <thead>
+                    <tr><th>Category</th><th>Amount (EUR)</th><th>% of Total</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>STSMs</td><td class="amount">20,800</td><td>43.8%</td></tr>
+                    <tr><td>Meetings</td><td class="amount">10,300</td><td>21.7%</td></tr>
+                    <tr><td>FSAC (Financial & Scientific Admin)</td><td class="amount">6,190</td><td>13.0%</td></tr>
+                    <tr><td>OERSA</td><td class="amount">5,500</td><td>11.6%</td></tr>
+                    <tr><td>Virtual Networking</td><td class="amount">4,000</td><td>8.4%</td></tr>
+                    <tr><td>ITC Grants</td><td class="amount">375</td><td>0.8%</td></tr>
+                    <tr><td>Dissemination</td><td class="amount">294</td><td>0.6%</td></tr>
+                    <tr><td><strong>Total</strong></td><td class="amount"><strong>47,460</strong></td><td><strong>100%</strong></td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="card">
+            <h3>Key Activities</h3>
+            <ul style="padding-left: 1.5rem;">
+                <li><strong>Action Launch:</strong> Official start of COST Action CA19130 on Fintech and AI in Finance</li>
+                <li><strong>Working Groups Established:</strong> WG1, WG2, WG3 each started with 30 members</li>
+                <li><strong>9 STSMs Funded:</strong> Short-term scientific missions across Europe</li>
+                <li><strong>Virtual Networking:</strong> COVID-19 adapted virtual meetings and workshops</li>
+                <li><strong>Stakeholder Engagement:</strong> Deliverable 1 - Strategy to engage stakeholders completed</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h3>STSMs in GP1</h3>
+            <table>
+                <thead>
+                    <tr><th>Grantee</th><th>Home</th><th>Host</th><th>Duration</th><th>Amount</th></tr>
+                </thead>
+                <tbody>
+                    <tr><td>Stjepan Picek</td><td>HR</td><td>NL</td><td>16 days</td><td class="amount">1,520</td></tr>
+                    <tr><td>Wei Li</td><td>NO</td><td>DE</td><td>120 days</td><td class="amount">3,500</td></tr>
+                    <tr><td>Luciana Dalla Valle</td><td>IT</td><td>UK</td><td>6 days</td><td class="amount">1,260</td></tr>
+                    <tr><td>Danial Saef</td><td>UK</td><td>DE</td><td>30 days</td><td class="amount">3,500</td></tr>
+                    <tr><td>Apostolos Chalkis</td><td>FR</td><td>EL</td><td>14 days</td><td class="amount">2,450</td></tr>
+                    <tr><td>Jasone Ramirez-Ayerbe</td><td>DK</td><td>ES</td><td>14 days</td><td class="amount">2,540</td></tr>
+                    <tr><td>Alla Petukhina</td><td>RO</td><td>DE</td><td>12 days</td><td class="amount">1,500</td></tr>
+                    <tr><td>Ioana Coita</td><td>DE</td><td>RO</td><td>10 days</td><td class="amount">2,500</td></tr>
+                    <tr><td>Galena Pisoni</td><td>NO</td><td>FR</td><td>8 days</td><td class="amount">2,030</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Context</h2>
+        <div class="card">
+            <p>Grant Period 1 was significantly impacted by the COVID-19 pandemic, which limited in-person activities. Despite these challenges, the Action successfully launched its three working groups and established virtual networking capabilities. The focus was on building the foundational network and enabling the first wave of Short-Term Scientific Missions.</p>
+            <p style="margin-top: 1rem;">The lower budget utilization (75%) reflects the pandemic-related restrictions on travel and physical meetings during this period.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Work & Budget Plans</a> | <a href="gp2.html">Next: GP2 -></a></p>
+    </footer>
+</body>
+</html>

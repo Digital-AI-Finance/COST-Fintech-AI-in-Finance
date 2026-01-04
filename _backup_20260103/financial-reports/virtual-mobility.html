@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Virtual Mobility - Financial Reports - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .hero-small { background: linear-gradient(135deg, var(--cost-teal), var(--cost-blue)); color: white; padding: 3rem 2rem; text-align: center; }
+        .hero-small h1 { font-size: 2rem; }
+        .hero-small p { opacity: 0.9; margin-top: 0.5rem; }
+        section { padding: 2rem; max-width: 1400px; margin: 0 auto; }
+        h2 { font-size: 1.3rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        .stats { display: flex; gap: 2rem; margin-bottom: 2rem; flex-wrap: wrap; justify-content: center; }
+        .stat-box { background: white; padding: 1.5rem 2rem; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.08); text-align: center; min-width: 150px; }
+        .stat-box .num { font-size: 2rem; font-weight: 700; color: var(--cost-teal); }
+        .stat-box .label { font-size: 0.85rem; color: var(--gray); }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .card h3 { font-size: 1.1rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        .filters { display: flex; gap: 1rem; margin-bottom: 1.5rem; flex-wrap: wrap; align-items: center; }
+        .filters input, .filters select { padding: 0.6rem 1rem; border: 1px solid var(--border); border-radius: 6px; font-size: 0.9rem; }
+        .filters input { flex: 1; min-width: 200px; }
+        .filters select { min-width: 120px; }
+        table { width: 100%; border-collapse: collapse; }
+        th { background: var(--cost-teal); color: white; padding: 12px 10px; text-align: left; font-weight: 500; font-size: 0.85rem; }
+        td { padding: 12px 10px; border-bottom: 1px solid var(--border); font-size: 0.85rem; vertical-align: top; }
+        tr:hover { background: rgba(0, 160, 176, 0.05); }
+        .amount { font-weight: 600; color: var(--cost-teal); white-space: nowrap; }
+        .gp-badge { display: inline-block; padding: 2px 8px; border-radius: 4px; font-size: 0.75rem; font-weight: 500; }
+        .gp-2 { background: rgba(43, 95, 158, 0.2); color: var(--cost-blue); }
+        .gp-3 { background: rgba(0, 160, 176, 0.2); color: var(--cost-teal); }
+        .gp-4 { background: rgba(122, 184, 0, 0.2); color: var(--cost-green); }
+        .gp-5 { background: rgba(232, 119, 34, 0.2); color: var(--cost-orange); }
+        .itc-badge { display: inline-block; padding: 2px 6px; border-radius: 4px; font-size: 0.7rem; font-weight: 500; background: rgba(91, 45, 138, 0.15); color: var(--cost-purple); margin-left: 0.5rem; }
+        .title-cell { max-width: 400px; line-height: 1.4; }
+        .dates { white-space: nowrap; font-size: 0.8rem; color: var(--gray); }
+        .country-flag { font-size: 0.9rem; margin-right: 0.3rem; }
+        .summary-table { margin-top: 1rem; }
+        .summary-table td { padding: 8px 12px; }
+        .summary-table tr:last-child { font-weight: 700; background: var(--light); }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 2rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        .loading { text-align: center; padding: 3rem; color: var(--gray); }
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            .filters { flex-direction: column; }
+            .filters input, .filters select { width: 100%; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../work-budget-plans/index.html">Work & Budget</a></li>
+                <li><a href="index.html">Financial Reports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Financial Reports</a> / <span>Virtual Mobility</span>
+    </div>
+
+    <header class="hero-small">
+        <h1>Virtual Mobility Grants</h1>
+        <p id="hero-subtitle">Loading virtual mobility data...</p>
+    </header>
+
+    <section>
+        <div class="stats" id="stats-container">
+            <div class="stat-box"><div class="num" id="stat-total">--</div><div class="label">Total VM Grants</div></div>
+            <div class="stat-box"><div class="num" id="stat-amount">--</div><div class="label">Total EUR Funded</div></div>
+            <div class="stat-box"><div class="num" id="stat-avg">--</div><div class="label">Average Grant EUR</div></div>
+            <div class="stat-box"><div class="num" id="stat-itc">--</div><div class="label">ITC Grantees</div></div>
+        </div>
+
+        <div class="card">
+            <h3>What is Virtual Mobility?</h3>
+            <p>Virtual Mobility (VM) Grants support remote collaboration when physical travel is not possible or practical. They enable researchers to:</p>
+            <ul style="margin-top: 1rem; padding-left: 1.5rem;">
+                <li>Conduct joint research activities remotely</li>
+                <li>Develop collaborative publications and deliverables</li>
+                <li>Participate in virtual workshops and training</li>
+                <li>Bridge geographical barriers in international research collaboration</li>
+            </ul>
+            <p style="margin-top: 1rem;">VM grants were particularly valuable during and after the COVID-19 pandemic, enabling continued collaboration when in-person meetings were restricted.</p>
+        </div>
+
+        <h2>Virtual Mobility Summary by Grant Period</h2>
+        <div class="card">
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th>Grant Period</th>
+                        <th>Number of Grants</th>
+                        <th>Total Amount (EUR)</th>
+                        <th>ITC Grantees</th>
+                        <th>Average per Grant</th>
+                    </tr>
+                </thead>
+                <tbody id="summary-tbody">
+                    <tr><td colspan="5" class="loading">Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+
+        <h2>Virtual Mobility Grants - Full Details</h2>
+        <div class="card">
+            <div class="filters">
+                <input type="text" id="search" placeholder="Search by name or title..." onkeyup="filterTable()">
+                <select id="gpFilter" onchange="filterTable()">
+                    <option value="">All Grant Periods</option>
+                    <option value="2">GP2</option>
+                    <option value="3">GP3</option>
+                    <option value="4">GP4</option>
+                    <option value="5">GP5</option>
+                </select>
+                <select id="itcFilter" onchange="filterTable()">
+                    <option value="">All Countries</option>
+                    <option value="itc">ITC Countries Only</option>
+                    <option value="non-itc">Non-ITC Countries</option>
+                </select>
+            </div>
+            <table>
+                <thead>
+                    <tr>
+                        <th>#</th>
+                        <th>Grantee</th>
+                        <th>Country</th>
+                        <th>Project Title</th>
+                        <th>Dates</th>
+                        <th>Amount EUR</th>
+                        <th>GP</th>
+                    </tr>
+                </thead>
+                <tbody id="vm-tbody">
+                    <tr><td colspan="7" class="loading">Loading virtual mobility data...</td></tr>
+                </tbody>
+            </table>
+            <p id="filter-status" style="margin-top: 1rem; font-size: 0.85rem; color: var(--gray);"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Financial Reports</a> | <a href="stsm.html">STSMs</a> | <a href="training-schools.html">Training Schools</a></p>
+    </footer>
+
+    <script>
+        let vmData = [];
+
+        // Country code to flag emoji mapping
+        const countryFlags = {
+            'AL': 'AL', 'AT': 'AT', 'BA': 'BA', 'BE': 'BE', 'BG': 'BG', 'CH': 'CH', 'CY': 'CY', 'CZ': 'CZ',
+            'DE': 'DE', 'DK': 'DK', 'EE': 'EE', 'EL': 'EL', 'ES': 'ES', 'FI': 'FI', 'FR': 'FR', 'GB': 'GB',
+            'HR': 'HR', 'HU': 'HU', 'IE': 'IE', 'IL': 'IL', 'IT': 'IT', 'KV': 'XK', 'LT': 'LT', 'LU': 'LU',
+            'LV': 'LV', 'MD': 'MD', 'ME': 'ME', 'MK': 'MK', 'MT': 'MT', 'NL': 'NL', 'NO': 'NO', 'PL': 'PL',
+            'PT': 'PT', 'RO': 'RO', 'RS': 'RS', 'SE': 'SE', 'SI': 'SI', 'SK': 'SK', 'TR': 'TR', 'UA': 'UA', 'UK': 'GB'
+        };
+
+        // ITC Countries
+        const ITC_COUNTRIES = new Set(['AL', 'BA', 'BG', 'HR', 'CY', 'CZ', 'EE', 'EL', 'HU', 'LV', 'LT', 'MT', 'MD', 'ME', 'MK', 'PL', 'PT', 'RO', 'RS', 'SK', 'SI', 'TR', 'UA']);
+
+        function cleanName(name) {
+            // Remove VM, YES, NO suffixes from names
+            return name.replace(/\s+(VM|YES|NO|Y|N)\s*$/i, '').trim();
+        }
+
+        function formatDate(dateStr) {
+            if (!dateStr) return '';
+            const parts = dateStr.split('/');
+            if (parts.length === 3) {
+                const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+                return `${parseInt(parts[0])} ${months[parseInt(parts[1])-1]} ${parts[2]}`;
+            }
+            return dateStr;
+        }
+
+        function formatAmount(amount) {
+            return new Intl.NumberFormat('en-EU').format(amount);
+        }
+
+        async function loadData() {
+            try {
+                const response = await fetch('../data/virtual_mobility_full.json');
+                vmData = await response.json();
+
+                // Clean the data
+                vmData.forEach(vm => {
+                    vm.cleanName = cleanName(vm.name);
+                    vm.is_itc = vm.is_itc || ITC_COUNTRIES.has(vm.country);
+                });
+
+                // Sort by grant period, then by start date
+                vmData.sort((a, b) => {
+                    if (a.grant_period !== b.grant_period) return a.grant_period - b.grant_period;
+                    return new Date(a.start_date.split('/').reverse().join('-')) - new Date(b.start_date.split('/').reverse().join('-'));
+                });
+
+                updateStats();
+                updateSummaryTable();
+                renderTable(vmData);
+            } catch (error) {
+                console.error('Error loading VM data:', error);
+                document.getElementById('vm-tbody').innerHTML = '<tr><td colspan="7" class="loading">Error loading data. Please try again.</td></tr>';
+            }
+        }
+
+        function updateStats() {
+            const total = vmData.length;
+            const totalAmount = vmData.reduce((sum, vm) => sum + vm.amount, 0);
+            const itcCount = vmData.filter(vm => vm.is_itc).length;
+            const avgAmount = total > 0 ? Math.round(totalAmount / total) : 0;
+
+            document.getElementById('stat-total').textContent = total;
+            document.getElementById('stat-amount').textContent = formatAmount(totalAmount);
+            document.getElementById('stat-avg').textContent = formatAmount(avgAmount);
+            document.getElementById('stat-itc').textContent = itcCount;
+            document.getElementById('hero-subtitle').textContent = `${total} Virtual Mobility grants supporting remote collaboration across ${new Set(vmData.map(v => v.country)).size} countries`;
+        }
+
+        function updateSummaryTable() {
+            const gpGroups = {};
+            vmData.forEach(vm => {
+                const gp = vm.grant_period;
+                if (!gpGroups[gp]) {
+                    gpGroups[gp] = { count: 0, amount: 0, itc: 0 };
+                }
+                gpGroups[gp].count++;
+                gpGroups[gp].amount += vm.amount;
+                if (vm.is_itc) gpGroups[gp].itc++;
+            });
+
+            const gpPeriods = {
+                2: 'Nov 2021 - May 2022',
+                3: 'Jun - Oct 2022',
+                4: 'Nov 2022 - Oct 2023',
+                5: 'Nov 2023 - Sep 2024'
+            };
+
+            let html = '';
+            let totalCount = 0, totalAmount = 0, totalItc = 0;
+
+            for (let gp = 2; gp <= 5; gp++) {
+                const data = gpGroups[gp] || { count: 0, amount: 0, itc: 0 };
+                totalCount += data.count;
+                totalAmount += data.amount;
+                totalItc += data.itc;
+                const avg = data.count > 0 ? Math.round(data.amount / data.count) : 0;
+                html += `<tr>
+                    <td><span class="gp-badge gp-${gp}">GP${gp}</span> ${gpPeriods[gp]}</td>
+                    <td>${data.count}</td>
+                    <td class="amount">${formatAmount(data.amount)}</td>
+                    <td>${data.itc}</td>
+                    <td>${formatAmount(avg)}</td>
+                </tr>`;
+            }
+
+            const totalAvg = totalCount > 0 ? Math.round(totalAmount / totalCount) : 0;
+            html += `<tr>
+                <td><strong>Total</strong></td>
+                <td><strong>${totalCount}</strong></td>
+                <td class="amount"><strong>${formatAmount(totalAmount)}</strong></td>
+                <td><strong>${totalItc}</strong></td>
+                <td><strong>${formatAmount(totalAvg)}</strong></td>
+            </tr>`;
+
+            document.getElementById('summary-tbody').innerHTML = html;
+        }
+
+        function renderTable(data) {
+            const tbody = document.getElementById('vm-tbody');
+
+            if (data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" class="loading">No matching grants found.</td></tr>';
+                document.getElementById('filter-status').textContent = '';
+                return;
+            }
+
+            let html = '';
+            data.forEach((vm, idx) => {
+                const itcBadge = vm.is_itc ? '<span class="itc-badge">ITC</span>' : '';
+                html += `<tr data-gp="${vm.grant_period}" data-itc="${vm.is_itc}">
+                    <td>${idx + 1}</td>
+                    <td><strong>${vm.cleanName}</strong>${itcBadge}</td>
+                    <td>${vm.country}</td>
+                    <td class="title-cell">${vm.title || 'Research Collaboration'}</td>
+                    <td class="dates">${formatDate(vm.start_date)}<br>to ${formatDate(vm.end_date)}</td>
+                    <td class="amount">${formatAmount(vm.amount)}</td>
+                    <td><span class="gp-badge gp-${vm.grant_period}">GP${vm.grant_period}</span></td>
+                </tr>`;
+            });
+            tbody.innerHTML = html;
+
+            const totalShown = data.length;
+            const totalAmount = data.reduce((sum, vm) => sum + vm.amount, 0);
+            document.getElementById('filter-status').textContent = `Showing ${totalShown} grants totaling EUR ${formatAmount(totalAmount)}`;
+        }
+
+        function filterTable() {
+            const search = document.getElementById('search').value.toLowerCase();
+            const gpFilter = document.getElementById('gpFilter').value;
+            const itcFilter = document.getElementById('itcFilter').value;
+
+            const filtered = vmData.filter(vm => {
+                const matchSearch = !search ||
+                    vm.cleanName.toLowerCase().includes(search) ||
+                    (vm.title && vm.title.toLowerCase().includes(search)) ||
+                    vm.country.toLowerCase().includes(search);
+                const matchGP = !gpFilter || vm.grant_period == gpFilter;
+                const matchITC = !itcFilter ||
+                    (itcFilter === 'itc' && vm.is_itc) ||
+                    (itcFilter === 'non-itc' && !vm.is_itc);
+                return matchSearch && matchGP && matchITC;
+            });
+
+            renderTable(filtered);
+        }
+
+        // Load data on page load
+        document.addEventListener('DOMContentLoaded', loadData);
+    </script>
+</body>
+</html>

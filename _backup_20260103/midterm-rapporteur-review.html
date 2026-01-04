@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rapporteur Review - COST Action CA19130 Mid-Term</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --cost-red: #dc3545;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+            --success: #28a745;
+            --warning: #ffc107;
+        }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        nav a:hover { color: white; }
+        .hero { background: linear-gradient(135deg, #2d1b4e 0%, var(--cost-purple) 100%); color: white; padding: 7rem 2rem 3rem; text-align: center; }
+        .hero h1 { font-size: 2.2rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .hero .badge { display: inline-block; background: var(--cost-red); padding: 0.3rem 1rem; border-radius: 20px; font-size: 0.85rem; margin-bottom: 1rem; }
+        .hero p { opacity: 0.9; max-width: 700px; margin: 0 auto; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        .breadcrumb span { color: var(--gray); }
+        section { padding: 3rem 2rem; max-width: 1200px; margin: 0 auto; }
+        section h2 { font-size: 1.6rem; color: var(--cost-purple); margin-bottom: 1.5rem; border-bottom: 2px solid var(--cost-purple); padding-bottom: 0.5rem; }
+        section h3 { font-size: 1.2rem; color: var(--dark); margin: 1.5rem 0 1rem; }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .card h4 { color: var(--cost-purple); margin-bottom: 0.5rem; font-size: 1rem; }
+        .card p { color: var(--gray); font-size: 0.9rem; line-height: 1.7; }
+        .highlight-box { background: linear-gradient(135deg, rgba(91,45,138,0.08), rgba(43,95,158,0.08)); border-left: 4px solid var(--cost-purple); padding: 1.5rem; border-radius: 0 12px 12px 0; margin: 1.5rem 0; }
+        .highlight-box h4 { color: var(--cost-purple); margin-bottom: 0.5rem; }
+        .highlight-box p { color: var(--dark); font-size: 0.9rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 1rem; margin: 1.5rem 0; }
+        .stat-box { background: linear-gradient(135deg, var(--cost-purple), #2d1b4e); color: white; padding: 1.5rem; border-radius: 12px; text-align: center; }
+        .stat-box .number { font-size: 2rem; font-weight: 700; }
+        .stat-box .label { font-size: 0.8rem; opacity: 0.9; }
+        .rating-grid { display: grid; gap: 1rem; }
+        .rating-card { background: white; border-radius: 12px; padding: 1.2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); display: flex; justify-content: space-between; align-items: center; }
+        .rating-card h5 { color: var(--dark); font-size: 0.9rem; flex: 1; }
+        .rating-badge { padding: 0.3rem 0.8rem; border-radius: 15px; font-size: 0.75rem; font-weight: 600; }
+        .rating-badge.excellent { background: rgba(40,167,69,0.15); color: var(--success); }
+        .rating-badge.very-good { background: rgba(0,160,176,0.15); color: var(--cost-teal); }
+        .rating-badge.medium { background: rgba(255,193,7,0.2); color: #856404; }
+        .rating-badge.high { background: rgba(91,45,138,0.15); color: var(--cost-purple); }
+        .objective-table { width: 100%; border-collapse: collapse; margin: 1rem 0; font-size: 0.85rem; }
+        .objective-table th { background: var(--cost-purple); color: white; padding: 0.8rem; text-align: left; }
+        .objective-table td { padding: 0.8rem; border-bottom: 1px solid var(--border); }
+        .objective-table tr:hover { background: rgba(91,45,138,0.03); }
+        .status-confirmed { display: inline-flex; align-items: center; gap: 0.3rem; color: var(--success); font-weight: 600; font-size: 0.8rem; }
+        .status-confirmed::before { content: ""; width: 8px; height: 8px; background: var(--success); border-radius: 50%; }
+        .status-not-confirmed { display: inline-flex; align-items: center; gap: 0.3rem; color: var(--cost-orange); font-weight: 600; font-size: 0.8rem; }
+        .status-not-confirmed::before { content: ""; width: 8px; height: 8px; background: var(--cost-orange); border-radius: 50%; }
+        .deliverable-assessment { background: white; border-radius: 12px; margin-bottom: 1rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); overflow: hidden; }
+        .deliverable-header { background: var(--cost-blue); color: white; padding: 1rem; display: flex; justify-content: space-between; align-items: center; }
+        .deliverable-header h5 { font-size: 0.9rem; flex: 1; }
+        .deliverable-header .due { font-size: 0.75rem; opacity: 0.8; }
+        .deliverable-body { padding: 1rem; }
+        .deliverable-body .status { font-size: 0.8rem; color: var(--gray); margin-bottom: 0.5rem; }
+        .deliverable-body .comment { font-size: 0.85rem; color: var(--dark); background: rgba(43,95,158,0.05); padding: 0.8rem; border-radius: 8px; border-left: 3px solid var(--cost-blue); }
+        .impact-assessment { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .impact-assessment h4 { color: var(--cost-purple); font-size: 1rem; margin-bottom: 0.5rem; }
+        .impact-assessment .description { color: var(--gray); font-size: 0.85rem; margin-bottom: 1rem; }
+        .impact-assessment .rapporteur-comment { background: rgba(91,45,138,0.05); padding: 1rem; border-radius: 8px; border-left: 3px solid var(--cost-purple); }
+        .impact-assessment .rapporteur-comment h6 { color: var(--cost-purple); font-size: 0.8rem; margin-bottom: 0.3rem; }
+        .impact-assessment .rapporteur-comment p { font-size: 0.85rem; color: var(--dark); }
+        .impact-tags { display: flex; gap: 0.3rem; margin: 0.5rem 0; flex-wrap: wrap; }
+        .impact-tag { background: rgba(0,160,176,0.15); color: var(--cost-teal); padding: 0.2rem 0.5rem; border-radius: 8px; font-size: 0.7rem; }
+        .impact-tag.achieved { background: rgba(40,167,69,0.15); color: var(--success); }
+        .summary-box { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin-bottom: 1.5rem; border-top: 4px solid var(--cost-green); }
+        .summary-box h4 { color: var(--cost-green); margin-bottom: 0.5rem; }
+        .summary-box p { color: var(--gray); font-size: 0.9rem; }
+        .assessment-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1rem; }
+        .assessment-card { background: white; border-radius: 12px; padding: 1.2rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); text-align: center; }
+        .assessment-card .category { font-size: 0.8rem; color: var(--gray); margin-bottom: 0.5rem; }
+        .assessment-card .level { font-size: 1.1rem; font-weight: 600; color: var(--cost-purple); }
+        .chart-container { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 15px rgba(0,0,0,0.08); margin: 1rem 0; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; }
+        footer a { color: var(--cost-orange); text-decoration: none; margin: 0 1rem; }
+        @media (max-width: 768px) { nav ul { display: none; } .hero h1 { font-size: 1.6rem; } .objective-table { font-size: 0.75rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="midterm-report.html">Mid-Term</a></li>
+                <li><a href="progress-reports.html">Progress</a></li>
+                <li><a href="final-report.html">Final</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="badge">External Assessment</div>
+        <h1>Rapporteur Review</h1>
+        <p>Independent External Assessment of Progress at 24 Months (14/09/2020 - 14/09/2022)</p>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="midterm-report.html">Mid-Term Report</a> <span> / Rapporteur Review</span>
+    </div>
+
+    <section>
+        <h2>Rapporteur's Executive Summary</h2>
+        <div class="highlight-box">
+            <h4>Major Outcomes, Impacts and Successes</h4>
+            <p>"The FinTech and AI in Finance Action has demonstrably been <strong>highly successful</strong> in nurturing the field, and supporting the development of a strong community of data scientists, economic and social science experts and practitioners, and a wide array of stakeholders, including regulators and policy-makers from 49 countries."</p>
+        </div>
+
+        <div class="card">
+            <p>The programme has made <strong>impressive progress</strong> throughout its first 24 months, generating over 100 peer-reviewed publications, numerous cross-national collaborative initiatives, and supporting a sizeable cohort of early career and other academic researchers.</p>
+            <p style="margin-top: 1rem;">The Action has supported the development of a vibrant and diverse scientific community through a significant number of initiatives, including academic and practitioner workshops, conferences, meetups, 'datathons' and other activities aiming to engage researchers and practitioners associated with FinTech.</p>
+        </div>
+
+        <div class="summary-box">
+            <h4>Key Rapporteur Findings</h4>
+            <p>Operating within a highly challenging field, the COST Action FinTech and AI in Finance appears to already play a <strong>significant role in promoting the state of the art</strong> in financial data science and actively support developments in <strong>Explainable and Interpretable AI</strong>, a field which is crucially important in financial services, especially with reference to end-user and citizen privacy, personal data custody and associated regulatory policy developments in Europe and beyond.</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-box"><div class="number">15/16</div><div class="label">Objectives Confirmed</div></div>
+            <div class="stat-box"><div class="number">100</div><div class="label">Publications Reviewed</div></div>
+            <div class="stat-box"><div class="number">17</div><div class="label">High Impact Outputs</div></div>
+            <div class="stat-box"><div class="number">Excellent</div><div class="label">Overall Assessment</div></div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Critical Significance Highlighted</h2>
+        <div class="card">
+            <h4>Regulatory and Policy Impact</h4>
+            <p>Of critical significance is the Action's contribution to involving, informing and educating the wider stakeholder population, especially <strong>regulators and policy decision-makers</strong> around many nascent but highly impactful technological developments in DeFi, cryptocurrencies, decentralised assets and related innovations.</p>
+        </div>
+
+        <div class="card">
+            <h4>Long-term Platform Contributions</h4>
+            <p>Of similar importance has been the Action's contribution in establishing <strong>frameworks and platforms for hosting and sharing datasets</strong> for use-case development and testing, a contribution of very high impact, particularly due to the <strong>longevity</strong> it introduces.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>MoU Objectives Assessment</h2>
+        <div class="assessment-grid">
+            <div class="assessment-card">
+                <div class="category">MoU Objectives Ambition</div>
+                <div class="level">Medium</div>
+            </div>
+            <div class="assessment-card">
+                <div class="category">Overall Progress</div>
+                <div class="level">Progressing Appropriately</div>
+            </div>
+            <div class="assessment-card">
+                <div class="category">Objectives Confirmed</div>
+                <div class="level">15 of 16 (94%)</div>
+            </div>
+        </div>
+
+        <h3>Objective-by-Objective Confirmation</h3>
+        <table class="objective-table">
+            <thead>
+                <tr>
+                    <th>MoU Objective</th>
+                    <th>Reported</th>
+                    <th>Rapporteur</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1. Blended approaches for financial services evaluation (ML methods, fraud detection, early warning)</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>2. Black-box model transparency and interpretable/explainable models</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>3. Regulator and practitioner input on AI transparency</td>
+                    <td>51-75%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>4. Performance attribution models - reducing false discovery rate</td>
+                    <td>26-50%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>5. Dissemination to public and regulators on investment performance</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr style="background: rgba(232,119,34,0.05);">
+                    <td>6. European platform for investment product performance comparison</td>
+                    <td>51-75%</td>
+                    <td><span class="status-not-confirmed">NOT CONFIRMED*</span></td>
+                </tr>
+                <tr>
+                    <td>7. Excellent research network with lasting collaboration</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>8. Interdisciplinary research in blockchain and FinTech communities</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>9. Knowledge exchange platform bridging industry, academia, regulators</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>10. Knowledge transfer across disciplines and academia-industry</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>11. Inclusive ML/AI research community, ECI promotion</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>12. Geographical/demographical diversity, ITC focus</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>13. STSM and joint educational programs with industry</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>14. PhD and ECI job opportunities maximization</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>15. Dissemination to scientific community and general public</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+                <tr>
+                    <td>16. Gender equality improvement</td>
+                    <td>76-100%</td>
+                    <td><span class="status-confirmed">CONFIRMED</span></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <div class="card" style="border-left: 4px solid var(--cost-orange);">
+            <h4>*Note on Objective 6</h4>
+            <p style="font-size: 0.85rem;"><strong>Rapporteur Explanation:</strong> "Despite providing a reasoned level of alignment, the team is proposing a new objective in replacement of the original set in the MOU; a decision as to whether the new objective is suitable or not does not fully fall into the reviewer's remit. Relevant funder agreement will need to be sought to ascertain progress. Having said that, the reported progress and documentation does fall in line with the newly proposed objective in both scope and level of achievement (51-75% as reported)."</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;"><strong>Action Response:</strong> Due to the changing regulatory landscape in Europe, enhanced privacy, data protection and regulatory requirements, the original objective is no longer feasible. A replacement objective with substantially higher impact has been proposed.</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Publications Assessment</h2>
+        <div class="rating-grid">
+            <div class="rating-card">
+                <h5>Quality of Co-authored Publications</h5>
+                <span class="rating-badge very-good">Very Good</span>
+            </div>
+            <div class="rating-card">
+                <h5>Significance of Co-authored Publications</h5>
+                <span class="rating-badge excellent">Excellent</span>
+            </div>
+            <div class="rating-card">
+                <h5>Relevance to Action</h5>
+                <span class="rating-badge excellent">Excellent</span>
+            </div>
+            <div class="rating-card">
+                <h5>Quantity of Publications</h5>
+                <span class="rating-badge excellent">Excellent</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <h4>Rapporteur's Publication Assessment</h4>
+            <p><strong>Quality:</strong> "Based on a review of the significance and requirements of publication venues, the topics and methodologies covered and publication citation indices, the vast majority of peer-reviewed outputs provided here are of significant quality and indicate concrete contribution to the associated fields."</p>
+            <p style="margin-top: 0.5rem;"><strong>Significance:</strong> "A review on the topics covered, novelty of approaches outlined and relevant citation metrics indicate high significance of the majority of peer-review publications."</p>
+            <p style="margin-top: 0.5rem;"><strong>Relevance:</strong> "The 100 publications range suitably across the entire thematic spectrum of the Action and address highly relevant topics in the FinTech AI space."</p>
+            <p style="margin-top: 0.5rem;"><strong>Quantity:</strong> "There are 100 peer-reviewed publications as outputs of the Action, which rates exceptionally high. This is also a good reflection of the collaborative nature of the work, as the vast majority is multi-author (3 or more academics)."</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Projects and Proposals Assessment</h2>
+        <div class="rating-grid">
+            <div class="rating-card">
+                <h5>Relevance of Projects and Proposals</h5>
+                <span class="rating-badge excellent">Excellent</span>
+            </div>
+            <div class="rating-card">
+                <h5>Quantity of Projects and Proposals</h5>
+                <span class="rating-badge excellent">Excellent</span>
+            </div>
+        </div>
+
+        <div class="card">
+            <p>The Action reported <strong>10 projects</strong> and <strong>10 proposals</strong> resulting from Action networking. Notable projects include:</p>
+            <ul style="margin: 1rem 0 0 1.5rem; color: var(--gray); font-size: 0.9rem;">
+                <li>Crypto Currencies and Nordic Youth (Nasdaq collaboration)</li>
+                <li>Network-based Credit Risk Models on P2P Lending (Czech Science Foundation / SNSF)</li>
+                <li>Blockchain and Fraud Detection (SNF)</li>
+                <li>XAI in Credit Risk Management</li>
+                <li>Narrative Digital Finance: Structural Breaks, Bubbles & Market Narratives</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Deliverables Assessment</h2>
+        <div class="assessment-grid">
+            <div class="assessment-card">
+                <div class="category">Deliverables Ambition</div>
+                <div class="level">Medium</div>
+            </div>
+            <div class="assessment-card">
+                <div class="category">Overall Progress</div>
+                <div class="level">Progressing Appropriately</div>
+            </div>
+        </div>
+
+        <h3>Selected Deliverable Assessments</h3>
+
+        <div class="deliverable-assessment">
+            <div class="deliverable-header">
+                <h5>Database: Crowdfunding/P2P Platform Features</h5>
+                <span class="due">Due: Month 24 | DELIVERED</span>
+            </div>
+            <div class="deliverable-body">
+                <div class="comment">"There are five such databases and the documentation provided offers a comprehensive guided description. The quality of the provision is suitable and commensurate with relevant MOU and deliverable requirements."</div>
+            </div>
+        </div>
+
+        <div class="deliverable-assessment">
+            <div class="deliverable-header">
+                <h5>Key Software (Codes, Packages) by Working Groups</h5>
+                <span class="due">Due: Month 48 | Expected</span>
+            </div>
+            <div class="deliverable-body">
+                <div class="comment">"There is a well-curated set of resources and codebase through Quantinar and Quantlet and all indications are that the requirements will be straightforwardly met within the timeline suggested."</div>
+            </div>
+        </div>
+
+        <div class="deliverable-assessment">
+            <div class="deliverable-header">
+                <h5>Discussion Papers on ICO/Crowdfunding Methodology</h5>
+                <span class="due">Due: Month 36 | Expected</span>
+            </div>
+            <div class="deliverable-body">
+                <div class="comment">"The Action has delivered a large number of academic publication outputs so far and there is solid indication of planning a significant number of forthcoming meetings to that effect. It is therefore expected that the deliverable will be complete by the end of this Action."</div>
+            </div>
+        </div>
+
+        <div class="deliverable-assessment">
+            <div class="deliverable-header">
+                <h5>Methodological Discussion Paper on AI/ML Stress Tests</h5>
+                <span class="due">Due: Month 48 | Expected</span>
+            </div>
+            <div class="deliverable-body">
+                <div class="comment">"The evidence provided demonstrates substantial AI/ML evaluation research was conducted towards the desired discussion paper; the progress outlined is sufficient to warrant completion before the end of the Action. Sufficient evidence is also available to suggest suitable datasets and other material for stress-tests is available."</div>
+            </div>
+        </div>
+
+        <div class="deliverable-assessment">
+            <div class="deliverable-header">
+                <h5>Edited Volume of Scientific Achievements</h5>
+                <span class="due">Due: Month 48 | Expected within 2 years post-Action</span>
+            </div>
+            <div class="deliverable-body">
+                <div class="comment">"This deliverable is largely down to an editorial effort leveraging work already carried out and including forthcoming outputs. The plan for dissemination and timeframe proposed is reasonable. Since the Action is well-advanced, the team should consider outlining and scoping this publication (edited volume) through, for instance, identifying themes and cross-cutting areas."</div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Other Outputs Assessment</h2>
+        <div class="card">
+            <p>"Of the <strong>17 outputs</strong> outlined, the vast majority are deemed of <strong>high impact</strong>, bringing together diverse international audiences and addressing critical novel FinTech topics."</p>
+            <p style="margin-top: 1rem;"><strong>Key Highlight:</strong> "Of particular value have been the establishment of databases and hosting of suitable datasets; such activities provide workable platforms for hosting usable data for future research and analysis, <strong>guaranteeing long-term impact</strong> for the project."</p>
+            <p style="margin-top: 1rem;">"Similarly, many dissemination activities and presentations have been instrumental in <strong>socialising otherwise previously obscure topics</strong> (particularly these associated with DeFi) to audiences that are not necessarily technology-savvy, but which are very close to policy and regulation in these areas."</p>
+        </div>
+
+        <h3>Output Significance Ratings</h3>
+        <div class="rating-grid">
+            <div class="rating-card">
+                <h5>TINFIN Conference (Zagreb, May 2022)</h5>
+                <span class="rating-badge high">High</span>
+            </div>
+            <div class="rating-card">
+                <h5>Quantlet Platform Expansion</h5>
+                <span class="rating-badge high">High</span>
+            </div>
+            <div class="rating-card">
+                <h5>Quantinar Platform Foundation</h5>
+                <span class="rating-badge high">High</span>
+            </div>
+            <div class="rating-card">
+                <h5>OTP Bank R&D Partnership (Hungary)</h5>
+                <span class="rating-badge high">High</span>
+            </div>
+            <div class="rating-card">
+                <h5>Stakeholder Engagement Strategy</h5>
+                <span class="rating-badge high">High</span>
+            </div>
+            <div class="rating-card">
+                <h5>ICO Database Construction</h5>
+                <span class="rating-badge high">High</span>
+            </div>
+            <div class="rating-card">
+                <h5>European ETF Database Project</h5>
+                <span class="rating-badge high">High</span>
+            </div>
+            <div class="rating-card">
+                <h5>Blockchain Research Center (BRC)</h5>
+                <span class="rating-badge high">High</span>
+            </div>
+            <div class="rating-card">
+                <h5>XAI Seminars and Research</h5>
+                <span class="rating-badge high">High</span>
+            </div>
+            <div class="rating-card">
+                <h5>ExplainableAIforFinance.com</h5>
+                <span class="rating-badge high">High</span>
+            </div>
+            <div class="rating-card">
+                <h5>P2P Lending Credit Information Research</h5>
+                <span class="rating-badge high">High</span>
+            </div>
+            <div class="rating-card">
+                <h5>11th European Financial Regulation Conference (Brussels)</h5>
+                <span class="rating-badge high">High</span>
+            </div>
+        </div>
+
+        <h3>Key Output Details</h3>
+        <div class="card">
+            <h4>TINFIN Conference - Zagreb, May 5-6, 2022</h4>
+            <p style="font-size: 0.85rem; margin-bottom: 0.5rem;">International Scientific Conference "Technology, Innovation and Stability: New Directions in Finance" organized by Faculty of Economics and Business, University of Zagreb, Croatian Academy of Sciences and COST Action FinAI.</p>
+            <ul style="font-size: 0.85rem; margin-left: 1.5rem; color: var(--gray);">
+                <li>Keynote: "Manifold destiny: Unsupervised machine learning for social sciences" - Prof. James Ming Chen (Michigan State)</li>
+                <li>COST session with Action overview by Action Chair Prof. Jorg Osterrieder</li>
+                <li>WG2 research presentations and panel on "FinTech in 2022 and beyond"</li>
+                <li>60 participants from 15+ countries</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h4>OTP Bank R&D Partnership</h4>
+            <p style="font-size: 0.85rem;">Research and development relationship with OTP Bank (largest Hungarian retail bank) on financial services technologies including:</p>
+            <ul style="font-size: 0.85rem; margin-left: 1.5rem; color: var(--gray);">
+                <li>Blockchain application in financial business processes</li>
+                <li>NFT (non-fungible token) research and development</li>
+                <li>Digital money, currencies, and CBDCs</li>
+                <li>Participation in Hungarian Blockchain Coalition</li>
+            </ul>
+        </div>
+
+        <div class="card">
+            <h4>Blockchain Research Center (BRC)</h4>
+            <p style="font-size: 0.85rem;">Founded by COST Action FinAI members Wolfgang Hardle, Vasile Strat, and Alla Petukhina with international researchers at <a href="https://blockchain-research-center.com" target="_blank">blockchain-research-center.com</a>. Services include:</p>
+            <ul style="font-size: 0.85rem; margin-left: 1.5rem; color: var(--gray);">
+                <li>Customized independent blockchain solutions</li>
+                <li>Scientific support for research and business operations</li>
+                <li>High-level academic lectures</li>
+                <li>Globally intertwined blockchain forums</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Impact Assessments</h2>
+
+        <div class="impact-assessment">
+            <h4>EIT Digital Summer Schools</h4>
+            <div class="description">Contributed to establishment of summer schools on AI in Financial Services and Disrupting Finance by Digital Technologies.</div>
+            <div class="impact-tags">
+                <span class="impact-tag">Scientific/Technological</span>
+                <span class="impact-tag">Economic</span>
+                <span class="impact-tag">Societal</span>
+                <span class="impact-tag achieved">Achieved</span>
+            </div>
+            <div class="rapporteur-comment">
+                <h6>Rapporteur Assessment</h6>
+                <p>"The described contribution (summer school) is considered of high S, E and S/T impact, promoting augmented knowledge and expertise in the intersection between finance and data science. The initiative further supports entrepreneurship in the field and nurtures a new generation of tech-savvy Finance professionals. Clear and significant impact is demonstrated."</p>
+            </div>
+        </div>
+
+        <div class="impact-assessment">
+            <h4>Virtual Mobility Grants Programme</h4>
+            <div class="description">12 VMGs in second grant period covering diverse topics from VC bibliometric review to gender diversity analysis.</div>
+            <div class="impact-tags">
+                <span class="impact-tag">Scientific/Technological</span>
+                <span class="impact-tag">Economic</span>
+                <span class="impact-tag">Societal</span>
+                <span class="impact-tag achieved">Achieved</span>
+            </div>
+            <div class="rapporteur-comment">
+                <h6>Rapporteur Assessment</h6>
+                <p>"The VMG initiative is considered of high impact (S/T, E, S) promoting resource and idea exchange across research communities by funding novel ideas and research mobility. There are clear tangible outputs from the initiative so far, also demonstrating the effectiveness of the initiative to date."</p>
+            </div>
+        </div>
+
+        <div class="impact-assessment">
+            <h4>Short Term Scientific Missions (STSMs)</h4>
+            <div class="description">Grants contributing to algorithmic tools for anomaly detection, computational tools for Bayesian inference of systemic risk, and sustainability evaluation research.</div>
+            <div class="impact-tags">
+                <span class="impact-tag">Scientific/Technological</span>
+                <span class="impact-tag">Economic</span>
+                <span class="impact-tag">Societal</span>
+                <span class="impact-tag achieved">Achieved</span>
+            </div>
+            <div class="rapporteur-comment">
+                <h6>Rapporteur Assessment</h6>
+                <p>"Establishment of the referenced grants as parts of the Action are considered of high impact (S/T, E, S) as they promote resource and idea exchange across research communities by funding novel ideas and research mobility. There are clear tangible documented outputs from the initiative so far."</p>
+            </div>
+        </div>
+
+        <div class="impact-assessment">
+            <h4>Machine Learning NeEDS Mathematical Optimization Seminar Series</h4>
+            <div class="description">Weekly online seminar series since January 2021 with global speakers, including YOUNG seminar for junior academics.</div>
+            <div class="impact-tags">
+                <span class="impact-tag">Scientific/Technological</span>
+                <span class="impact-tag">Economic</span>
+                <span class="impact-tag">Societal</span>
+                <span class="impact-tag achieved">Achieved</span>
+            </div>
+            <div class="rapporteur-comment">
+                <h6>Rapporteur Assessment</h6>
+                <p>"The seminar series is deemed of significant impact across all impact areas to the research community as it clearly supports and promotes a platform for dissemination and research progress on topics which are critical to FinTech areas. Given their purely online nature the seminars appear to support high accessibility for the materials and insights, further attending to the openness and breadth the Action aims to."</p>
+            </div>
+        </div>
+
+        <div class="impact-assessment">
+            <h4>Interpretable Machine Learning Workshop (Lorentz Center)</h4>
+            <div class="description">"Making Sense of Interpretable Machine Learning" - 24 sessions with 95 presentations from leading researchers.</div>
+            <div class="impact-tags">
+                <span class="impact-tag">Scientific/Technological</span>
+                <span class="impact-tag">Economic</span>
+                <span class="impact-tag">Societal</span>
+                <span class="impact-tag achieved">Achieved</span>
+            </div>
+            <div class="rapporteur-comment">
+                <h6>Rapporteur Assessment</h6>
+                <p>"The initiative carries clear and significant impact in buttressing a community of expert researchers around XAI as a critical field for FinTech especially, and in line with regulatory prerogatives in the EU. The extent and focus of the workshop indicates a highly valuable contribution and is considered of high S/T and E significance, while its importance for societal progress is equally high, given the critical role of interpretability and explainability in ML model use."</p>
+            </div>
+        </div>
+
+        <div class="impact-assessment">
+            <h4>Crypto Market Research Network</h4>
+            <div class="description">Internal research network focused on crypto-market studies, bringing together interdisciplinary researchers with focus on capacity building, knowledge transfer, and ECI inclusion.</div>
+            <div class="impact-tags">
+                <span class="impact-tag">Scientific/Technological</span>
+                <span class="impact-tag">Economic</span>
+                <span class="impact-tag">Societal</span>
+                <span class="impact-tag achieved">Achieved</span>
+            </div>
+            <div class="rapporteur-comment">
+                <h6>Rapporteur Assessment</h6>
+                <p>"Establishment of diverse research networks is critical for progress in FinTech, especially given the underlying inherent interdisciplinary nature of associated fields. The Action documentation provides ample evidence of sessions organised within such active networks. Furthermore the thematic focus on cryptocurrency research and its support for gender balance in research participants speaks to a crucial societal role in engaging stakeholders holistically. Overall, this is an outcome of high significance in all accounts (S/T, E, S)."</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Dissemination Activities</h2>
+        <div class="assessment-grid">
+            <div class="assessment-card">
+                <div class="category">Website Openness & User-friendliness</div>
+                <div class="level">Very Good</div>
+            </div>
+            <div class="assessment-card">
+                <div class="category">Website Content</div>
+                <div class="level">Very Good</div>
+            </div>
+            <div class="assessment-card">
+                <div class="category">Dissemination Activities</div>
+                <div class="level">Excellent</div>
+            </div>
+            <div class="assessment-card">
+                <div class="category">Exploitation Activities</div>
+                <div class="level">Excellent</div>
+            </div>
+        </div>
+
+        <h3>Key Dissemination Events</h3>
+        <div class="card">
+            <h4>BlackSeaChain 2022 Conference</h4>
+            <p style="font-size: 0.85rem;"><strong>Date:</strong> September 1-2, 2022 | <strong>Location:</strong> Varna, Bulgaria</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;">Topics covered: Decentralized economy and finance, regulation challenges, Web 3.0, crypto wallets, NFTs, smart contracts, blockchain/IoT/AI integrations. 43 presentations from academia, industry, and practitioners.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.3rem;"><a href="https://www.blackseachain.com/" target="_blank">blackseachain.com</a></p>
+        </div>
+
+        <div class="card">
+            <h4>IJCNN 2023 Special Session</h4>
+            <p style="font-size: 0.85rem;"><strong>Date:</strong> June 18-23, 2023 | <strong>Topic:</strong> "Deep Learning for Financial Data Analysis"</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;">Special session at International Joint Conference on Neural Networks hosted by International Neural Networks Society, featuring presentations on deep learning techniques applied to financial data.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.3rem;"><a href="https://2023.ijcnn.org/" target="_blank">2023.ijcnn.org</a></p>
+        </div>
+
+        <div class="card">
+            <h4>Environmental Finance Workshop</h4>
+            <p style="font-size: 0.85rem;"><strong>Title:</strong> "Environmental Finance for the Common Good"</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;">Co-organized by Money, Macro, and Finance Society (UK) and Birkbeck College, University of London. Featured roundtable on environmental finance challenges, public lectures by Naoyuki Yoshino and Will Goodhart, and awarded best paper by an ECI on fintech/AI topics.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.3rem;"><a href="https://efcg2022.sciencesconf.org/" target="_blank">efcg2022.sciencesconf.org</a></p>
+        </div>
+
+        <div class="card">
+            <h4>Diversity Workshop - Naples</h4>
+            <p style="font-size: 0.85rem;"><strong>Title:</strong> "Diversity Challenges and Opportunities in FinTech"</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;">Bridging academics and policymakers on FinTech/AI diversity challenges. Featured keynote "AI: Why diversity matters for an inclusive future" by R. Johri (HSBC R&D, Founder of London Women in Machine Learning). Included kickoff for "Woman in FinTech" datathon.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.3rem;"><a href="https://fin-ai.eu/diversity-workshop-naples2022/" target="_blank">fin-ai.eu/diversity-workshop-naples2022</a></p>
+        </div>
+
+        <div class="card">
+            <h4>Lake Como School on Neural Networks</h4>
+            <p style="font-size: 0.85rem;">Educational event on neural networks applied to finance providing cutting-edge methodologies. <strong>Trained 25 young researchers</strong> (PhD students and ECIs). Format included lectures, seminars, hands-on workshops, and networking.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.3rem;"><a href="https://nnnf.lakecomoschool.org/" target="_blank">nnnf.lakecomoschool.org</a></p>
+        </div>
+
+        <div class="card">
+            <h4>International Fintech Research Conference 2022</h4>
+            <p style="font-size: 0.85rem;"><strong>Date:</strong> October 27-28, 2022 | <strong>Host:</strong> Politecnico di Milano</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;">35 paper submissions, 24 accepted for presentation. Topics: ML applications, cryptocurrencies, digital currency, cybersecurity, neural networks, smart contracts, P2P finance, big data, blockchain, behavioral finance. Papers considered for Springer Digital Finance special issue.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.3rem;"><a href="https://www.fintechlab.it/fintech_conference2022/" target="_blank">fintechlab.it/fintech_conference2022</a></p>
+        </div>
+
+        <div class="card">
+            <h4>Woman in Fintech Datathon</h4>
+            <p style="font-size: 0.85rem;">Organized by Women in Fintech Conference Committee with University of Tirana and University of Naples Federico II.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;"><strong>Participants:</strong> 18 teams, 46 participants (33% male) from Albania, China, Germany, Ghana, Greece, Italy, India, Kosovo, Lithuania, Romania. Task: Quantitative analysis of financial inclusion using World Bank Global Findex database.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.3rem;"><a href="https://fin-ai.eu/datathon/" target="_blank">fin-ai.eu/datathon</a></p>
+        </div>
+
+        <h3>Exploitation Platforms</h3>
+        <div class="card">
+            <h4>Quantinar Platform</h4>
+            <p style="font-size: 0.85rem;">Data science education platform providing lecture-based learning with real-world project execution. Developed by Wolfgang Karl Hardle and team from Humboldt University Berlin. Course-lets span machine learning, fintech, cryptocurrencies, data science, blockchain, and statistics.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.3rem;"><a href="https://quantinar.com" target="_blank">quantinar.com</a></p>
+        </div>
+
+        <div class="card">
+            <h4>Quantlet Platform</h4>
+            <p style="font-size: 0.85rem;">Web-interface for freely exchanging numerical methods ("Quantlets"). Features: Open access to research/teaching codes, reproducibility of results, full GitHub integration, text mining pipeline, standardized code audits.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.3rem;"><a href="https://www.quantlet.de" target="_blank">quantlet.de</a></p>
+        </div>
+
+        <div class="card">
+            <h4>Meetup Community</h4>
+            <p style="font-size: 0.85rem;"><strong>Members:</strong> 2,080+ | <strong>Events:</strong> 150+ organized meetups</p>
+            <p style="font-size: 0.85rem; margin-top: 0.5rem;">Interactive platform providing updates on talks, paper presentations, conference events, and working group meetings. Connects researchers and interested individuals on finance and AI topics.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.3rem;"><a href="https://www.meetup.com/fintech_ai_in_finance/" target="_blank">meetup.com/fintech_ai_in_finance</a></p>
+        </div>
+
+        <div class="card">
+            <h4>Fintech.mk Community (North Macedonia)</h4>
+            <p style="font-size: 0.85rem;">First fintech community in North Macedonia, a non-profit organization providing IT and consulting services. 28 members, 13 articles published in English and Macedonian.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.3rem;"><a href="https://fintech-mk.medium.com" target="_blank">fintech-mk.medium.com</a></p>
+        </div>
+
+        <div class="card">
+            <h4>Data Juice Lab - XAI in Practice</h4>
+            <p style="font-size: 0.85rem;">Application of XAI knowledge from WG2 seminars in daily business practice. Vice CEO Marcin Chlebus applied XAI methods in FinTech projects covering Risk Modelling, Marketing campaigns, HR, and CRM.</p>
+            <p style="font-size: 0.85rem; margin-top: 0.3rem;"><a href="https://www.datajuicelab.com/" target="_blank">datajuicelab.com</a></p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Career Advancement & Promotions</h2>
+        <div class="card">
+            <p>Several researchers received promotions during the Action, demonstrating the network's significant impact on academic careers:</p>
+            <ul style="margin: 1rem 0 0 1.5rem; color: var(--gray); font-size: 0.9rem;">
+                <li><strong>Simon Trimborn</strong> - Promoted to Assistant Professor, Amsterdam School of Economics, University of Amsterdam (2022)</li>
+                <li><strong>Wolfgang Karl Hardle</strong> - Promoted to Visiting Scholar and YuShan Scholar, National Yang Ming Chiao Tung University (2022)</li>
+                <li><strong>Jorg Osterrieder</strong> - Promoted to Associate Professor (Finance/AI), University of Twente; also appointed Professor of Sustainable Business, Bern University of Applied Science</li>
+                <li><strong>Branka Hadji Misheva</strong> - Promoted to Associate Professor (Applied Data Science/Finance), Bern University of Applied Science</li>
+                <li><strong>Alla Petukhina</strong> - Promoted to Lecturer/Researcher, HTW Berlin (2021)</li>
+                <li><strong>Professor Tom Pilhal</strong> - Undergoing habilitation process to Associate Professor with COST Action support</li>
+            </ul>
+        </div>
+
+        <div class="highlight-box">
+            <h4>Rapporteur Assessment of Career Impact</h4>
+            <p>"The extent to which the Action has advanced the careers, skills and networks of researchers including ECIs is <strong>Very Good</strong>. This wider-range outcome demonstrates an effective and significant impact through its capacity to harness research and knowledge exchange to support academic career progression and promotion of a sizeable cohort of academic researchers."</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Emerging Topics & Future Directions</h2>
+        <div class="card">
+            <h4>Action-Identified Emerging Topics</h4>
+            <ul style="margin: 0.5rem 0 0 1.5rem; color: var(--gray); font-size: 0.9rem;">
+                <li>Increasing use of AI/ML in financial institutions for forecasting, portfolio management, fraud detection, customer service</li>
+                <li>Blockchain technology in finance: digital currencies, smart contracts, DeFi</li>
+                <li>Explainable AI (XAI) as regulatory and societal requirement</li>
+                <li>Privacy and data protection in financial AI and fintech</li>
+            </ul>
+        </div>
+
+        <div class="card" style="border-left: 4px solid var(--cost-orange);">
+            <h4>Rapporteur's Additional Recommendations</h4>
+            <p style="font-size: 0.9rem;">"Driven from the exponential growth in Generative AI in the past 9-12 months, it is strongly suggested that the research directions are adjusted to clearly incorporate the impacts in areas such as:"</p>
+            <ul style="margin: 0.5rem 0 0 1.5rem; color: var(--gray); font-size: 0.9rem;">
+                <li><strong>Synthetic ID fraud</strong> - GenAI-enabled identity fabrication</li>
+                <li><strong>Privacy Enhancing Technologies (PETs)</strong></li>
+                <li><strong>GenAI-resilience in KYC/CDD</strong> - Know Your Customer / Customer Due Diligence</li>
+                <li><strong>AI/ML impact on privacy and policy</strong></li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Action Chair Response to Issues</h2>
+        <div class="card">
+            <h4>Action Chair Statement</h4>
+            <p>"We are pleased to report that our Action, COST Action CA19130 Fintech and Artificial Intelligence, has experienced significant growth and success. Our collective output and achievements have exceeded our initial objectives, and we do not currently see any issues that could potentially endanger our progress."</p>
+            <p style="margin-top: 1rem;">"In the grant period, we aim to complete the majority of our objectives in GP3, and we are excited to use GP4 to extend and improve upon our work, as well as to incorporate new challenges and research topics that have arisen as a result of our research efforts."</p>
+        </div>
+
+        <div class="highlight-box">
+            <h4>Rapporteur's Assessment of Plans</h4>
+            <p>"The plan proposed is satisfactory, also given the sizeable progress recorded throughout the lifespan of the project."</p>
+        </div>
+    </section>
+
+    <section>
+        <h2>Sample Publications (from 100 Peer-Reviewed)</h2>
+        <div class="card">
+            <p style="font-size: 0.85rem; color: var(--gray); margin-bottom: 1rem;">The Action reported 100 peer-reviewed publications co-authored by at least two Action participants from two different countries. Selected highlights:</p>
+            <div style="font-size: 0.85rem;">
+                <p style="margin-bottom: 0.8rem;"><strong>Liiv, I.</strong> - "Data Science Techniques for Cryptocurrency Blockchains" - Springer Singapore, Behaviormetrics Series. <a href="https://doi.org/10.1007/978-981-16-2418-6" target="_blank">DOI</a></p>
+                <p style="margin-bottom: 0.8rem;"><strong>Jalan, A., Matkovskyy, R., Poti, V.</strong> - "Shall the winning last? A study of recent bubbles and persistence" - Finance Research Letters. <a href="https://doi.org/10.1016/j.frl.2021.102162" target="_blank">DOI</a></p>
+                <p style="margin-bottom: 0.8rem;"><strong>Jalan, A., Matkovskyy, R., Urquhart, A.</strong> - "Demand elasticities of Bitcoin and Ethereum" - Economics Letters. <a href="https://doi.org/10.1016/j.econlet.2022.110877" target="_blank">DOI</a></p>
+                <p style="margin-bottom: 0.8rem;"><strong>Chen, Y., Bredin, D., Poti, V., Matkovskyy, R.</strong> - "COVID risk narratives: a computational linguistic approach to econometric identification of narrative risk during a pandemic" - Digital Finance. <a href="https://doi.org/10.1007/s42521-021-00045-3" target="_blank">DOI</a></p>
+                <p style="margin-bottom: 0.8rem;"><strong>Spilak, B., Hardle, W.K.</strong> - "Tail-Risk Protection: Machine Learning Meets Modern Econometrics" - Encyclopedia of Finance, Springer. <a href="https://doi.org/10.1007/978-3-030-73443-5_94-1" target="_blank">DOI</a></p>
+                <p style="margin-bottom: 0.8rem;"><strong>Ben Amor, S., Althof, M., Hardle, W.K.</strong> - "Financial Risk Meter for emerging markets" - Research in International Business and Finance. <a href="https://doi.org/10.1016/j.ribaf.2021.101594" target="_blank">DOI</a></p>
+                <p style="margin-bottom: 0.8rem;"><strong>Li, W., Paraschiv, F., Sermpinis, G.</strong> - "A Data-driven Explainable Case-based Reasoning Approach for Financial Risk Detection" - arXiv. <a href="https://doi.org/10.48550/arXiv.2107.08808" target="_blank">DOI</a></p>
+                <p style="margin-bottom: 0.8rem;"><strong>Hausler, K., Xia, H.</strong> - "Indices on cryptocurrencies: an evaluation" - Digital Finance. <a href="https://doi.org/10.1007/s42521-022-00048-8" target="_blank">DOI</a></p>
+                <p style="margin-bottom: 0.8rem;"><strong>Wahlstrom, R.R., Paraschiv, F., Schurle, M.</strong> - "A Comparative Analysis of Parsimonious Yield Curve Models" - Computational Economics. <a href="https://doi.org/10.1007/s10614-021-10113-w" target="_blank">DOI</a></p>
+                <p style="margin-bottom: 0.8rem;"><strong>Ren, R., Althof, M., Hardle, W.K.</strong> - "Financial Risk Meter for Cryptocurrencies and Tail Risk Network-Based Portfolio Construction" - Singapore Economic Review. <a href="https://doi.org/10.1142/S0217590822480010" target="_blank">DOI</a></p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Overall Conclusions</h2>
+        <div class="summary-box">
+            <h4>Rapporteur's Final Assessment</h4>
+            <p>"Overall, the COST FinTech and AI in Finance Action has so far made <strong>impressive headways</strong> in mobilising a robust FinTech community and progressing the State of the Art in FinTech-related data science and successfully disseminating a large body of associated and highly consequential research."</p>
+        </div>
+
+        <div class="chart-container">
+            <h4 style="margin-bottom: 1rem;">Assessment Summary</h4>
+            <canvas id="assessmentChart" height="200"></canvas>
+        </div>
+    </section>
+
+    <footer>
+        <p>COST Action CA19130 - Fintech and Artificial Intelligence in Finance</p>
+        <div>
+            <a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a>
+            <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Website</a>
+            <a href="index.html">Main Report</a>
+        </div>
+        <p style="margin-top: 1rem; opacity: 0.9; font-size: 0.85rem;"><strong>Rapporteur:</strong> Prof. Georgios Samakovitis, University of Greenwich, United Kingdom</p>
+        <p style="margin-top: 0.5rem; opacity: 0.7; font-size: 0.8rem;">Second Progress Report submitted: 2024-03-07 | Progress at 24 Months (14/09/2020 - 14/09/2022)</p>
+    </footer>
+
+    <script>
+        // Assessment summary chart
+        const ctx = document.getElementById('assessmentChart').getContext('2d');
+        new Chart(ctx, {
+            type: 'radar',
+            data: {
+                labels: ['Publications Quality', 'Publications Significance', 'Publications Relevance', 'Publications Quantity', 'Projects Relevance', 'Projects Quantity'],
+                datasets: [{
+                    label: 'Rapporteur Assessment',
+                    data: [4, 5, 5, 5, 5, 5],
+                    backgroundColor: 'rgba(91, 45, 138, 0.2)',
+                    borderColor: 'rgba(91, 45, 138, 1)',
+                    borderWidth: 2,
+                    pointBackgroundColor: 'rgba(91, 45, 138, 1)'
+                }]
+            },
+            options: {
+                responsive: true,
+                scales: {
+                    r: {
+                        beginAtZero: true,
+                        max: 5,
+                        ticks: {
+                            stepSize: 1,
+                            callback: function(value) {
+                                const labels = ['', 'Low', 'Medium', 'Good', 'Very Good', 'Excellent'];
+                                return labels[value];
+                            }
+                        }
+                    }
+                },
+                plugins: {
+                    legend: { position: 'top' }
+                }
+            }
+        });
+    </script>
+</body>
+</html>

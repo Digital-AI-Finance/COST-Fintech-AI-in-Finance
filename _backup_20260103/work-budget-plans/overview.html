@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overview - Work & Budget Plans - COST CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; --border: #dee2e6; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', -apple-system, sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        .breadcrumb { margin-top: 60px; background: white; padding: 1rem 2rem; border-bottom: 1px solid var(--border); }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; }
+        section { padding: 3rem 2rem; max-width: 1400px; margin: 0 auto; }
+        h1 { font-size: 2rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        h2 { font-size: 1.5rem; color: var(--cost-purple); margin: 2rem 0 1rem; }
+        h2::after { content: ''; display: block; width: 40px; height: 3px; background: var(--cost-orange); margin-top: 0.5rem; }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+        th { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); color: white; padding: 12px; text-align: left; font-size: 0.9rem; }
+        td { padding: 12px; border-bottom: 1px solid var(--border); font-size: 0.9rem; }
+        tr:hover { background: rgba(91, 45, 138, 0.05); }
+        .chart-container { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin: 1.5rem 0; }
+        .chart-container img { width: 100%; max-width: 800px; display: block; margin: 0 auto; }
+        .highlight { background: rgba(232, 119, 34, 0.1); padding: 1rem; border-radius: 8px; border-left: 4px solid var(--cost-orange); margin: 1rem 0; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; margin-top: 3rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo">COST <span>CA19130</span></div>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="index.html">Work & Budget</a></li>
+                <li><a href="../financial-reports/index.html">Financial Reports</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="breadcrumb">
+        <a href="../index.html">Home</a> / <a href="index.html">Work & Budget</a> / <span>Overview</span>
+    </div>
+
+    <section>
+        <h1>Grant Periods Overview</h1>
+        <p>COST Action CA19130 ran from November 2020 to September 2024, spanning 5 grant periods with a total budget of approximately 964K EUR.</p>
+
+        <div class="card">
+            <h2>Budget Summary by Grant Period</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Period</th>
+                        <th>Dates</th>
+                        <th>Duration</th>
+                        <th>Budget (EUR)</th>
+                        <th>Actual (EUR)</th>
+                        <th>Utilization</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>GP1</strong></td>
+                        <td>Nov 2020 - Oct 2021</td>
+                        <td>12 months</td>
+                        <td>62,985.50</td>
+                        <td>47,459.83</td>
+                        <td>75.4%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GP2</strong></td>
+                        <td>Nov 2021 - May 2022</td>
+                        <td>7 months</td>
+                        <td>202,607.00</td>
+                        <td>33,770.46</td>
+                        <td>16.7%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GP3</strong></td>
+                        <td>Jun 2022 - Oct 2022</td>
+                        <td>5 months</td>
+                        <td>169,820.50</td>
+                        <td>166,262.38</td>
+                        <td>97.9%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GP4</strong></td>
+                        <td>Nov 2022 - Oct 2023</td>
+                        <td>12 months</td>
+                        <td>257,925.91</td>
+                        <td>256,854.39</td>
+                        <td>99.6%</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GP5</strong></td>
+                        <td>Nov 2023 - Sep 2024</td>
+                        <td>11 months</td>
+                        <td>270,315.26</td>
+                        <td>270,315.26</td>
+                        <td>100.0%</td>
+                    </tr>
+                    <tr style="background: rgba(91, 45, 138, 0.1); font-weight: bold;">
+                        <td><strong>TOTAL</strong></td>
+                        <td>Nov 2020 - Sep 2024</td>
+                        <td>47 months</td>
+                        <td>963,654.17</td>
+                        <td>774,662.32</td>
+                        <td>80.4%</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="chart-container">
+            <h2>Budget Visualization</h2>
+            <img src="charts/01_budget_by_year/chart.png" alt="Budget by Grant Period">
+        </div>
+
+        <div class="chart-container">
+            <h2>Expenditure by Activity Type</h2>
+            <img src="charts/02_budget_by_activity/chart.png" alt="Budget by Activity">
+        </div>
+
+        <div class="highlight">
+            <strong>Key Achievement:</strong> Budget utilization improved significantly from GP1 (75%) to GP5 (100%), demonstrating effective financial management and increased activity levels throughout the action's lifetime.
+        </div>
+
+        <div class="card">
+            <h2>Activity Summary Across All Periods</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Activity Type</th>
+                        <th>GP1</th>
+                        <th>GP2</th>
+                        <th>GP3</th>
+                        <th>GP4</th>
+                        <th>GP5</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Meetings/Workshops</td>
+                        <td>9</td>
+                        <td>4</td>
+                        <td>9</td>
+                        <td>8</td>
+                        <td>10</td>
+                        <td><strong>40</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Training Schools</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>0</td>
+                        <td>4</td>
+                        <td>3</td>
+                        <td><strong>7</strong></td>
+                    </tr>
+                    <tr>
+                        <td>STSMs</td>
+                        <td>9</td>
+                        <td>0</td>
+                        <td>10</td>
+                        <td>6</td>
+                        <td>2</td>
+                        <td><strong>27</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Countries Active</td>
+                        <td>33</td>
+                        <td>42</td>
+                        <td>42</td>
+                        <td>44</td>
+                        <td>50</td>
+                        <td><strong>50</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <div class="chart-container">
+            <h2>Working Group Membership Growth</h2>
+            <img src="charts/03_wg_membership_growth/chart.png" alt="WG Growth">
+        </div>
+
+        <div class="card">
+            <h2>Key Milestones</h2>
+            <ul style="padding-left: 1.5rem;">
+                <li><strong>Nov 2020:</strong> Action officially started, first MC meeting held online</li>
+                <li><strong>Oct 2021:</strong> First in-person annual meeting in Bucharest</li>
+                <li><strong>Sep 2022:</strong> Largest conference with 590 participants in Bern</li>
+                <li><strong>Apr 2023:</strong> First training school launched in Tirana</li>
+                <li><strong>Jun 2024:</strong> 4th Women in Fintech workshop in Rethymno</li>
+                <li><strong>Sep 2024:</strong> Final MC meeting, action conclusion</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p><a href="index.html">Back to Work & Budget Plans</a> | <a href="../financial-reports/index.html">Financial Reports</a></p>
+    </footer>
+</body>
+</html>

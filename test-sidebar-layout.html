@@ -1,0 +1,1335 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COST CA19130 - Sidebar Layout Test</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --sidebar-dark: #0f172a;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+
+            /* Sidebar Layout Variables - COMPACT */
+            --topbar-height: 36px;
+            --sidebar-width: 160px;
+            --sidebar-collapsed-width: 0px;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        /* ===== TOP BAR - COMPACT ===== */
+        .topbar {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: var(--topbar-height);
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%);
+            z-index: 1001;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 0.75rem;
+            box-shadow: 0 1px 6px rgba(0,0,0,0.12);
+        }
+
+        .topbar-logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: white;
+            font-weight: 700;
+            font-size: 0.85rem;
+        }
+
+        .topbar-logo span.action-id {
+            color: var(--cost-orange);
+            margin-left: 0.2rem;
+        }
+
+        .topbar-logo .badge {
+            font-size: 0.5rem;
+            background: rgba(255,255,255,0.2);
+            padding: 0.1rem 0.35rem;
+            border-radius: 2px;
+            margin-left: 0.5rem;
+            font-weight: 400;
+        }
+
+        .sidebar-toggle {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            padding: 0.35rem;
+            display: flex;
+            flex-direction: column;
+            gap: 3px;
+        }
+
+        .sidebar-toggle span {
+            display: block;
+            width: 18px;
+            height: 2px;
+            background: white;
+            border-radius: 1px;
+            transition: all 0.3s;
+        }
+
+        /* ===== TOPBAR TABS - COMPACT ===== */
+        .topbar-tabs {
+            display: flex;
+            align-items: center;
+            gap: 0;
+            height: 100%;
+        }
+
+        .topbar-tab {
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding: 0 0.6rem;
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            font-family: inherit;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            border-bottom: 2px solid transparent;
+            transition: all 0.15s ease;
+        }
+
+        .topbar-tab:hover {
+            background: rgba(255, 255, 255, 0.1);
+            color: white;
+        }
+
+        .topbar-tab.active {
+            color: white;
+            background: rgba(255, 255, 255, 0.12);
+            border-bottom-color: var(--cost-orange);
+        }
+
+        .topbar-tab:focus {
+            outline: none;
+        }
+
+        /* ===== SIDEBAR ===== */
+        .sidebar {
+            position: fixed;
+            top: var(--topbar-height);
+            left: 0;
+            width: var(--sidebar-width);
+            height: calc(100vh - var(--topbar-height));
+            background: var(--sidebar-dark);
+            z-index: 1000;
+            overflow-y: auto;
+            overflow-x: hidden;
+            transition: transform 0.3s ease, width 0.3s ease;
+        }
+
+        .sidebar::-webkit-scrollbar {
+            width: 6px;
+        }
+
+        .sidebar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb {
+            background: #334155;
+            border-radius: 3px;
+        }
+
+        .sidebar::-webkit-scrollbar-thumb:hover {
+            background: #475569;
+        }
+
+        /* Sidebar Section - ULTRA COMPACT */
+        .sidebar-section {
+            border-bottom: 1px solid #1e293b;
+        }
+
+        .sidebar-section-header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0.4rem 0.6rem;
+            color: #94a3b8;
+            font-size: 0.65rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.3px;
+            cursor: pointer;
+            transition: background 0.2s, color 0.2s;
+            user-select: none;
+        }
+
+        .sidebar-section-header:hover {
+            background: #1e293b;
+            color: white;
+        }
+
+        .sidebar-section.active .sidebar-section-header {
+            color: var(--cost-orange);
+            background: #1e293b;
+        }
+
+        .sidebar-section-header .toggle-icon {
+            font-size: 0.65rem;
+            transition: transform 0.2s;
+        }
+
+        .sidebar-section.active .sidebar-section-header .toggle-icon {
+            transform: rotate(180deg);
+        }
+
+        /* Sidebar Links - ULTRA COMPACT */
+        .sidebar-links {
+            display: none;
+            padding: 0 0 0.25rem 0;
+        }
+
+        .sidebar-section.active .sidebar-links {
+            display: block;
+        }
+
+        .sidebar-links a {
+            display: block;
+            padding: 0.2rem 0.5rem 0.2rem 0.8rem;
+            color: #64748b;
+            text-decoration: none;
+            font-size: 0.7rem;
+            transition: color 0.2s, background 0.2s, padding-left 0.2s;
+            border-left: 2px solid transparent;
+        }
+
+        .sidebar-links a:hover {
+            color: white;
+            background: rgba(255,255,255,0.05);
+            padding-left: 1rem;
+        }
+
+        .sidebar-links a.current {
+            color: var(--cost-orange);
+            border-left-color: var(--cost-orange);
+            background: rgba(232, 119, 34, 0.1);
+        }
+
+        /* Home Button (Special) - ULTRA COMPACT */
+        .sidebar-home {
+            display: block;
+            width: 100%;
+            padding: 0.4rem 0.6rem;
+            color: white;
+            text-decoration: none;
+            text-align: left;
+            font-family: inherit;
+            font-weight: 600;
+            font-size: 0.7rem;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #1e293b;
+            cursor: pointer;
+            transition: background 0.2s;
+        }
+
+        .sidebar-home:hover {
+            background: #1e293b;
+        }
+
+        .sidebar-home.current {
+            background: linear-gradient(90deg, var(--cost-purple), transparent);
+            border-left: 2px solid var(--cost-orange);
+        }
+
+        /* ===== MAIN CONTENT ===== */
+        .main-content {
+            margin-left: var(--sidebar-width);
+            margin-top: var(--topbar-height);
+            min-height: calc(100vh - var(--topbar-height));
+            transition: margin-left 0.3s ease;
+        }
+
+        /* Hero Section - ULTRA COMPACT */
+        .hero {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 50%, var(--cost-teal) 100%);
+            color: white;
+            padding: 1rem 1.5rem 0.75rem;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+            letter-spacing: -0.02em;
+        }
+
+        .hero .action-id {
+            font-size: 0.8rem;
+            color: var(--cost-orange);
+            font-weight: 600;
+            margin-bottom: 0.35rem;
+        }
+
+        .hero .subtitle {
+            font-size: 0.9rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin: 0 auto 0.35rem;
+            font-weight: 300;
+        }
+
+        .hero .period {
+            font-size: 0.75rem;
+            opacity: 0.8;
+        }
+
+        /* Stats Banner - ULTRA COMPACT */
+        .stats-banner {
+            background: white;
+            padding: 0.5rem;
+            display: flex;
+            justify-content: center;
+            gap: 1.25rem;
+            flex-wrap: wrap;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--cost-purple);
+        }
+
+        .stat-label {
+            font-size: 0.6rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+        }
+
+        /* Sections - ULTRA COMPACT */
+        section {
+            padding: 0.75rem 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            font-size: 1rem;
+            color: var(--cost-purple);
+            margin-bottom: 0.4rem;
+            text-align: center;
+        }
+
+        section h2::after {
+            content: '';
+            display: block;
+            width: 40px;
+            height: 2px;
+            background: var(--cost-orange);
+            margin: 0.25rem auto 0;
+        }
+
+        /* Working Groups Grid - ULTRA COMPACT */
+        .wg-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 0.5rem;
+            margin-top: 0.4rem;
+        }
+
+        .wg-card {
+            background: white;
+            border-radius: 6px;
+            padding: 0.5rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            border-left: 3px solid var(--cost-teal);
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .wg-card:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        .wg-card.wg1 { border-left-color: var(--cost-purple); }
+        .wg-card.wg2 { border-left-color: var(--cost-blue); }
+        .wg-card.wg3 { border-left-color: var(--cost-green); }
+
+        .wg-card h3 {
+            font-size: 0.8rem;
+            color: var(--dark);
+            margin-bottom: 0.2rem;
+        }
+
+        .wg-card .wg-id {
+            font-size: 0.6rem;
+            color: var(--gray);
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            margin-bottom: 0.2rem;
+        }
+
+        .wg-card p {
+            color: var(--gray);
+            font-size: 0.7rem;
+            line-height: 1.4;
+        }
+
+        .wg-card .member-count {
+            display: inline-block;
+            margin-top: 0.3rem;
+            background: var(--light);
+            padding: 0.1rem 0.4rem;
+            border-radius: 10px;
+            font-size: 0.6rem;
+            color: var(--cost-purple);
+            font-weight: 500;
+        }
+
+        /* Charts Grid - ULTRA COMPACT */
+        .charts-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 0.5rem;
+            margin-top: 0.4rem;
+        }
+
+        .chart-container {
+            background: white;
+            border-radius: 6px;
+            padding: 0.4rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        .chart-container h3 {
+            font-size: 0.65rem;
+            color: var(--dark);
+            margin-bottom: 0.25rem;
+            text-align: center;
+        }
+
+        .chart-wrapper {
+            height: 120px;
+            position: relative;
+        }
+
+        /* Countries List - ULTRA COMPACT */
+        .countries-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.2rem;
+            justify-content: center;
+            margin-top: 0.35rem;
+        }
+
+        .country-pill {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 0.1rem 0.3rem;
+            border-radius: 10px;
+            font-size: 0.55rem;
+            color: var(--dark);
+            transition: all 0.2s;
+        }
+
+        .country-pill:hover {
+            background: var(--cost-purple);
+            color: white;
+            border-color: var(--cost-purple);
+        }
+
+        .country-pill.itc {
+            border-color: var(--cost-orange);
+            background: rgba(232, 119, 34, 0.1);
+        }
+
+        /* Objectives Grid - ULTRA COMPACT */
+        .objectives-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 0.4rem;
+            margin-top: 0.35rem;
+        }
+
+        .objective-card {
+            background: white;
+            border-radius: 6px;
+            padding: 0.4rem;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        }
+
+        .objective-card .icon {
+            width: 22px;
+            height: 22px;
+            border-radius: 4px;
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 0.25rem;
+            font-size: 0.65rem;
+            color: white;
+            font-weight: 600;
+        }
+
+        .objective-card h4 {
+            font-size: 0.7rem;
+            color: var(--dark);
+            margin-bottom: 0.15rem;
+        }
+
+        .objective-card p {
+            font-size: 0.6rem;
+            color: var(--gray);
+            line-height: 1.3;
+        }
+
+        /* Timeline - ULTRA COMPACT */
+        .timeline {
+            position: relative;
+            max-width: 500px;
+            margin: 0.35rem auto 0;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 1px;
+            height: 100%;
+            background: var(--border);
+        }
+
+        .timeline-item {
+            display: flex;
+            justify-content: flex-end;
+            padding-right: 50%;
+            position: relative;
+            margin-bottom: 0.4rem;
+        }
+
+        .timeline-item:nth-child(even) {
+            justify-content: flex-start;
+            padding-right: 0;
+            padding-left: 50%;
+        }
+
+        .timeline-content {
+            background: white;
+            padding: 0.3rem 0.5rem;
+            border-radius: 6px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            max-width: 200px;
+            margin-right: 0.75rem;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-right: 0;
+            margin-left: 0.75rem;
+        }
+
+        .timeline-date {
+            font-size: 0.55rem;
+            color: var(--cost-purple);
+            font-weight: 600;
+            margin-bottom: 0.1rem;
+        }
+
+        .timeline-title {
+            font-size: 0.6rem;
+            color: var(--dark);
+            line-height: 1.3;
+        }
+
+        /* Footer - ULTRA COMPACT */
+        .sidebar-footer {
+            background: var(--dark);
+            color: white;
+            padding: 0.6rem 1rem;
+            text-align: center;
+        }
+
+        .sidebar-footer h3 {
+            font-size: 0.75rem;
+            margin-bottom: 0.2rem;
+        }
+
+        .sidebar-footer p {
+            color: rgba(255,255,255,0.7);
+            font-size: 0.6rem;
+            margin-bottom: 0.25rem;
+        }
+
+        .sidebar-footer a {
+            color: var(--cost-orange);
+            text-decoration: none;
+        }
+
+        .sidebar-footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* ===== MOBILE RESPONSIVE ===== */
+        @media (max-width: 900px) {
+            .topbar-tabs {
+                display: none;
+            }
+
+            .sidebar-toggle {
+                display: flex;
+            }
+
+            .sidebar {
+                transform: translateX(-100%);
+            }
+
+            .sidebar.open {
+                transform: translateX(0);
+            }
+
+            .main-content {
+                margin-left: 0;
+            }
+
+            /* Overlay when sidebar open */
+            .sidebar-overlay {
+                display: none;
+                position: fixed;
+                top: var(--topbar-height);
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: rgba(0,0,0,0.5);
+                z-index: 999;
+            }
+
+            .sidebar-overlay.active {
+                display: block;
+            }
+        }
+
+        @media (min-width: 901px) {
+            .topbar-tabs {
+                display: flex;
+            }
+
+            .sidebar-toggle {
+                display: none;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .hero {
+                padding: 0.75rem 1rem 0.5rem;
+            }
+
+            .hero h1 {
+                font-size: 1.1rem;
+            }
+
+            section {
+                padding: 0.5rem 0.75rem;
+            }
+
+            .timeline::before {
+                left: 15px;
+            }
+
+            .timeline-item,
+            .timeline-item:nth-child(even) {
+                padding-left: 35px;
+                padding-right: 0;
+                justify-content: flex-start;
+            }
+
+            .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-left: 0;
+                margin-right: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Top Bar -->
+    <header class="topbar">
+        <a href="index.html" class="topbar-logo">
+            COST <span class="action-id">CA19130</span>
+            <span class="badge">2020-2024</span>
+        </a>
+
+        <!-- Category Tabs -->
+        <nav class="topbar-tabs" aria-label="Main navigation categories">
+            <button class="topbar-tab active" data-category="home">HOME</button>
+            <button class="topbar-tab" data-category="impact">IMPACT</button>
+            <button class="topbar-tab" data-category="network">NETWORK</button>
+            <button class="topbar-tab" data-category="research">RESEARCH</button>
+            <button class="topbar-tab" data-category="activities">ACTIVITIES</button>
+            <button class="topbar-tab" data-category="archive">ARCHIVE</button>
+        </nav>
+
+        <button class="sidebar-toggle" aria-label="Toggle sidebar" onclick="toggleSidebar()">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+    </header>
+
+    <!-- Sidebar Overlay (mobile) -->
+    <div class="sidebar-overlay" onclick="toggleSidebar()"></div>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <button class="sidebar-home current" data-category="home" onclick="scrollToTop()">HOME</button>
+
+        <div class="sidebar-section" data-category="impact">
+            <div class="sidebar-section-header" onclick="toggleSection(this)">
+                IMPACT
+                <span class="toggle-icon">&#9660;</span>
+            </div>
+            <div class="sidebar-links">
+                <a href="#objectives">Final Achievements</a>
+                <a href="#objectives">Objectives Met (16/16)</a>
+                <a href="#objectives">Deliverables (15/15)</a>
+                <a href="#objectives">Scientific Impact</a>
+                <a href="#objectives">Legacy & Continuation</a>
+                <a href="#about">Report Comparison</a>
+            </div>
+        </div>
+
+        <div class="sidebar-section" data-category="network">
+            <div class="sidebar-section-header" onclick="toggleSection(this)">
+                NETWORK
+                <span class="toggle-icon">&#9660;</span>
+            </div>
+            <div class="sidebar-links">
+                <a href="#statistics">All Members (426)</a>
+                <a href="#statistics">Leadership Team</a>
+                <a href="#statistics">Management Committee</a>
+                <a href="#working-groups">Working Groups</a>
+                <a href="#countries">Countries (48)</a>
+                <a href="#statistics">Author Statistics</a>
+            </div>
+        </div>
+
+        <div class="sidebar-section" data-category="research">
+            <div class="sidebar-section-header" onclick="toggleSection(this)">
+                RESEARCH
+                <span class="toggle-icon">&#9660;</span>
+            </div>
+            <div class="sidebar-links">
+                <a href="#about">Publications</a>
+                <a href="#about">Preprints</a>
+                <a href="#about">Datasets</a>
+                <a href="#about">Other Outputs</a>
+                <a href="#about">Documents</a>
+            </div>
+        </div>
+
+        <div class="sidebar-section" data-category="activities">
+            <div class="sidebar-section-header" onclick="toggleSection(this)">
+                ACTIVITIES
+                <span class="toggle-icon">&#9660;</span>
+            </div>
+            <div class="sidebar-links">
+                <a href="#timeline">All Meetings</a>
+                <a href="#timeline">By Grant Period</a>
+                <a href="#statistics">Participants</a>
+                <a href="#timeline">STSMs</a>
+                <a href="#timeline">Virtual Mobility</a>
+                <a href="#countries">ITC Grants</a>
+                <a href="#timeline">Training Schools</a>
+            </div>
+        </div>
+
+        <div class="sidebar-section" data-category="archive">
+            <div class="sidebar-section-header" onclick="toggleSection(this)">
+                ARCHIVE
+                <span class="toggle-icon">&#9660;</span>
+            </div>
+            <div class="sidebar-links">
+                <a href="#about">Final Report (Full)</a>
+                <a href="#about">Mid-Term Report (Full)</a>
+                <a href="#timeline">Progress Reports</a>
+                <a href="#about">Rapporteur Review</a>
+                <a href="#statistics">Financial Overview</a>
+                <a href="#statistics">Budget Plans</a>
+                <a href="#statistics">FFR 1-5</a>
+                <a href="#about">Report Editor</a>
+            </div>
+        </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="main-content">
+        <div class="hero">
+            <div class="action-id">COST Action CA19130</div>
+            <h1>Fintech and Artificial Intelligence in Finance</h1>
+            <p class="subtitle">Towards a transparent financial industry</p>
+            <p class="period">Duration: October 2020 - October 2024</p>
+        </div>
+
+        <div class="stats-banner">
+            <div class="stat-item">
+                <div class="stat-number">426</div>
+                <div class="stat-label">Members</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">48</div>
+                <div class="stat-label">Countries</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">3</div>
+                <div class="stat-label">Working Groups</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">70</div>
+                <div class="stat-label">MC Members</div>
+            </div>
+        </div>
+
+        <section id="about">
+            <h2>About the Action</h2>
+            <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+                <p style="font-size: 1rem; color: var(--gray); line-height: 1.8;">
+                    This COST Action brings together researchers, practitioners, and policymakers to address
+                    the challenges and opportunities arising from the rapid adoption of artificial intelligence
+                    and fintech solutions in the financial industry. Our mission is to promote transparency,
+                    fairness, and accountability in financial services through interdisciplinary collaboration
+                    and knowledge exchange across Europe and beyond.
+                </p>
+            </div>
+        </section>
+
+        <section id="working-groups">
+            <h2>Working Groups</h2>
+            <div class="wg-grid">
+                <div class="wg-card wg1">
+                    <div class="wg-id">Working Group 1</div>
+                    <h3>Transparency in FinTech</h3>
+                    <p>
+                        Investigating transparency requirements and solutions in fintech applications,
+                        including blockchain, digital payments, and regulatory compliance.
+                    </p>
+                    <span class="member-count">280 Members</span>
+                </div>
+                <div class="wg-card wg2">
+                    <div class="wg-id">Working Group 2</div>
+                    <h3>Transparent vs Black Box Models</h3>
+                    <p>
+                        Comparing transparent and opaque machine learning models in financial
+                        decision-making, focusing on explainability and interpretability.
+                    </p>
+                    <span class="member-count">253 Members</span>
+                </div>
+                <div class="wg-card wg3">
+                    <div class="wg-id">Working Group 3</div>
+                    <h3>Investment Product Transparency</h3>
+                    <p>
+                        Enhancing transparency in investment product performance reporting
+                        for retail and institutional clients.
+                    </p>
+                    <span class="member-count">223 Members</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="statistics">
+            <h2>Member Statistics</h2>
+            <div class="charts-grid">
+                <div class="chart-container">
+                    <h3>Gender Distribution</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="genderChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3>Working Group Participation</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="wgChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3>ITC vs Non-ITC Countries</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="itcChart"></canvas>
+                    </div>
+                </div>
+                <div class="chart-container">
+                    <h3>Membership Types</h3>
+                    <div class="chart-wrapper">
+                        <canvas id="membershipChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="countries">
+            <h2>Participating Countries</h2>
+            <p style="text-align: center; color: var(--gray); margin-bottom: 0.75rem; font-size: 0.9rem;">
+                48 countries across Europe and beyond.
+                <span style="color: var(--cost-orange);">ITC countries highlighted.</span>
+            </p>
+            <div class="countries-list" id="countriesList">
+                <!-- Populated by JavaScript -->
+            </div>
+        </section>
+
+        <section id="objectives">
+            <h2>Main Objectives</h2>
+            <div class="objectives-grid">
+                <div class="objective-card">
+                    <div class="icon">1</div>
+                    <h4>Research Networking</h4>
+                    <p>Build a pan-European research network on AI and fintech transparency.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="icon">2</div>
+                    <h4>Knowledge Transfer</h4>
+                    <p>Facilitate knowledge exchange between academia, industry, and regulators.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="icon">3</div>
+                    <h4>Early Career Support</h4>
+                    <p>Support early-career researchers through training schools and STSMs.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="icon">4</div>
+                    <h4>Policy Impact</h4>
+                    <p>Contribute to evidence-based policy recommendations on financial AI.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="icon">5</div>
+                    <h4>Best Practices</h4>
+                    <p>Develop guidelines for transparent AI in financial services.</p>
+                </div>
+                <div class="objective-card">
+                    <div class="icon">6</div>
+                    <h4>ITC Inclusiveness</h4>
+                    <p>Promote participation from Inclusiveness Target Countries.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="timeline">
+            <h2>Action Timeline</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">October 2020</div>
+                        <div class="timeline-title">Action Start - First MC Meeting</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2021</div>
+                        <div class="timeline-title">Working Groups Formation & First Training School</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2022</div>
+                        <div class="timeline-title">Multiple STSMs & Conference Organization</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">2023</div>
+                        <div class="timeline-title">Publications & International Collaborations</div>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">October 2024</div>
+                        <div class="timeline-title">Action Conclusion & Final Conference</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="sidebar-footer">
+            <h3>COST Action CA19130 - Fintech and AI in Finance</h3>
+            <p>October 2020 - October 2024 (Completed)</p>
+            <p>
+                <a href="https://www.cost.eu/actions/CA19130/" target="_blank">COST Official</a> |
+                <a href="https://fin-ai.eu" target="_blank">fin-ai.eu</a> |
+                <a href="https://github.com/Digital-AI-Finance" target="_blank">GitHub</a>
+            </p>
+            <p style="font-size: 0.75rem; margin-top: 0.5rem;">
+                Data sourced from <a href="https://openalex.org" target="_blank">OpenAlex</a> and <a href="https://orcid.org" target="_blank">ORCID</a>
+            </p>
+        </footer>
+    </main>
+
+    <script>
+        // ===== DUAL NAVIGATION SYSTEM =====
+
+        // Initialize on DOM load
+        document.addEventListener('DOMContentLoaded', function() {
+            initDualNavigation();
+            detectCurrentPage();
+        });
+
+        // Tab-Sidebar Synchronization
+        function initDualNavigation() {
+            const tabs = document.querySelectorAll('.topbar-tab');
+
+            tabs.forEach(tab => {
+                tab.addEventListener('click', function(e) {
+                    const category = this.dataset.category;
+                    e.preventDefault();
+
+                    // Update tab active states
+                    tabs.forEach(t => t.classList.remove('active'));
+                    this.classList.add('active');
+
+                    // Update sidebar section
+                    updateSidebarSection(category);
+
+                    // HOME - scroll to top
+                    if (category === 'home') {
+                        scrollToTop();
+                    } else {
+                        // On mobile, open sidebar when non-home tab clicked
+                        if (window.innerWidth <= 900) {
+                            openSidebar();
+                        }
+                        // Scroll sidebar to show the expanded section
+                        scrollToSection(category);
+                    }
+                });
+            });
+        }
+
+        // Scroll to top of page
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+            // Close sidebar on mobile after clicking home
+            if (window.innerWidth <= 900) {
+                closeSidebar();
+            }
+        }
+
+        // Update sidebar to show specified category
+        function updateSidebarSection(category) {
+            const sections = document.querySelectorAll('.sidebar-section');
+            const sidebarHome = document.querySelector('.sidebar-home');
+
+            // Remove active from all sections
+            sections.forEach(section => {
+                section.classList.remove('active');
+            });
+
+            // Handle HOME separately
+            if (sidebarHome) {
+                sidebarHome.classList.remove('current');
+            }
+
+            if (category === 'home') {
+                if (sidebarHome) {
+                    sidebarHome.classList.add('current');
+                }
+            } else {
+                // Find and activate matching section
+                const targetSection = document.querySelector(
+                    `.sidebar-section[data-category="${category}"]`
+                );
+                if (targetSection) {
+                    targetSection.classList.add('active');
+                }
+            }
+        }
+
+        // Scroll sidebar to show active section
+        function scrollToSection(category) {
+            const sidebar = document.querySelector('.sidebar');
+            const targetSection = document.querySelector(
+                `.sidebar-section[data-category="${category}"]`
+            );
+
+            if (sidebar && targetSection) {
+                const sectionTop = targetSection.offsetTop;
+                sidebar.scrollTo({
+                    top: sectionTop - 10,
+                    behavior: 'smooth'
+                });
+            }
+        }
+
+        // Detect current page and set active tab/section
+        function detectCurrentPage() {
+            const path = window.location.pathname;
+            const page = path.split('/').pop() || 'index.html';
+
+            // Page to category mapping
+            const categoryMap = {
+                'index.html': 'home',
+                '': 'home',
+                'test-sidebar-layout.html': 'home',
+                // IMPACT
+                'final-achievements.html': 'impact',
+                'final-report.html': 'impact',
+                'final-impacts.html': 'impact',
+                'final-publications.html': 'impact',
+                'comparison-enhanced.html': 'impact',
+                // NETWORK
+                'members.html': 'network',
+                'leadership.html': 'network',
+                'mc-members.html': 'network',
+                'wg-members.html': 'network',
+                'country-contributions.html': 'network',
+                'author-stats.html': 'network',
+                // RESEARCH
+                'publications.html': 'research',
+                'preprints.html': 'research',
+                'datasets.html': 'research',
+                'other-outputs.html': 'research',
+                'documents.html': 'research',
+                // ACTIVITIES
+                'progress-reports.html': 'activities',
+                // ARCHIVE
+                'final-action-chair-report-full.html': 'archive',
+                'midterm-action-chair-report-full.html': 'archive',
+                'midterm-rapporteur-review.html': 'archive',
+                'report-editor.html': 'archive'
+            };
+
+            // Handle subdirectory pages
+            let category = categoryMap[page] || 'home';
+
+            if (path.includes('financial-reports/')) {
+                if (path.includes('meetings') ||
+                    path.includes('participants') ||
+                    path.includes('stsm') ||
+                    path.includes('virtual-mobility') ||
+                    path.includes('training-schools')) {
+                    category = 'activities';
+                } else {
+                    category = 'archive';
+                }
+            } else if (path.includes('work-budget-plans/')) {
+                if (path.includes('deliverables')) {
+                    category = 'impact';
+                } else {
+                    category = 'archive';
+                }
+            }
+
+            // Set active states
+            setActiveTab(category);
+            updateSidebarSection(category);
+        }
+
+        // Set active tab
+        function setActiveTab(category) {
+            const tabs = document.querySelectorAll('.topbar-tab');
+            tabs.forEach(tab => {
+                tab.classList.remove('active');
+                if (tab.dataset.category === category) {
+                    tab.classList.add('active');
+                }
+            });
+        }
+
+        // Sidebar Toggle (mobile)
+        function toggleSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar.classList.contains('open')) {
+                closeSidebar();
+            } else {
+                openSidebar();
+            }
+        }
+
+        function openSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) sidebar.classList.add('open');
+            if (overlay) overlay.classList.add('active');
+            document.body.style.overflow = 'hidden';
+        }
+
+        function closeSidebar() {
+            const sidebar = document.querySelector('.sidebar');
+            const overlay = document.querySelector('.sidebar-overlay');
+            if (sidebar) sidebar.classList.remove('open');
+            if (overlay) overlay.classList.remove('active');
+            document.body.style.overflow = '';
+        }
+
+        // Section Toggle (accordion) - also sync tab
+        function toggleSection(header) {
+            const section = header.parentElement;
+            const category = section.dataset.category;
+            const wasActive = section.classList.contains('active');
+
+            // Close all sections first
+            document.querySelectorAll('.sidebar-section').forEach(s => {
+                s.classList.remove('active');
+            });
+
+            // Toggle this section
+            if (!wasActive) {
+                section.classList.add('active');
+                // Sync tab state
+                setActiveTab(category);
+            } else {
+                // If closing, set home as active
+                setActiveTab('home');
+            }
+        }
+
+        // Chart.js configurations
+        const chartColors = {
+            purple: '#5B2D8A',
+            blue: '#2B5F9E',
+            teal: '#00A0B0',
+            orange: '#E87722',
+            green: '#7AB800'
+        };
+
+        // Gender Chart
+        new Chart(document.getElementById('genderChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['Male', 'Female'],
+                datasets: [{
+                    data: [239, 187],
+                    backgroundColor: [chartColors.blue, chartColors.purple],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { font: { size: 11 } } }
+                }
+            }
+        });
+
+        // Working Groups Chart
+        new Chart(document.getElementById('wgChart'), {
+            type: 'bar',
+            data: {
+                labels: ['WG1', 'WG2', 'WG3'],
+                datasets: [{
+                    label: 'Members',
+                    data: [280, 253, 223],
+                    backgroundColor: [chartColors.purple, chartColors.blue, chartColors.green],
+                    borderWidth: 0,
+                    borderRadius: 4
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: { y: { beginAtZero: true } }
+            }
+        });
+
+        // ITC Chart
+        new Chart(document.getElementById('itcChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['ITC', 'Non-ITC'],
+                datasets: [{
+                    data: [222, 204],
+                    backgroundColor: [chartColors.orange, chartColors.teal],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { font: { size: 11 } } }
+                }
+            }
+        });
+
+        // Membership Chart
+        new Chart(document.getElementById('membershipChart'), {
+            type: 'doughnut',
+            data: {
+                labels: ['MC Members', 'WG Members'],
+                datasets: [{
+                    data: [70, 356],
+                    backgroundColor: [chartColors.purple, chartColors.blue],
+                    borderWidth: 0
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { font: { size: 11 } } }
+                }
+            }
+        });
+
+        // Countries list
+        const countries = [
+            {name: 'Albania', itc: true}, {name: 'Algeria', itc: false}, {name: 'Austria', itc: false},
+            {name: 'Belgium', itc: false}, {name: 'Bosnia and Herzegovina', itc: true}, {name: 'Bulgaria', itc: true},
+            {name: 'Croatia', itc: true}, {name: 'Cyprus', itc: true}, {name: 'Czech Republic', itc: true},
+            {name: 'Denmark', itc: false}, {name: 'Estonia', itc: true}, {name: 'France', itc: false},
+            {name: 'Germany', itc: false}, {name: 'Greece', itc: true}, {name: 'Hungary', itc: true},
+            {name: 'Iceland', itc: false}, {name: 'Ireland', itc: false}, {name: 'Israel', itc: false},
+            {name: 'Italy', itc: false}, {name: 'Latvia', itc: true}, {name: 'Lithuania', itc: true},
+            {name: 'Luxembourg', itc: false}, {name: 'Malta', itc: true}, {name: 'Montenegro', itc: true},
+            {name: 'Netherlands', itc: false}, {name: 'North Macedonia', itc: true}, {name: 'Norway', itc: false},
+            {name: 'Poland', itc: true}, {name: 'Portugal', itc: true}, {name: 'Romania', itc: true},
+            {name: 'Serbia', itc: true}, {name: 'Slovakia', itc: true}, {name: 'Slovenia', itc: true},
+            {name: 'Spain', itc: false}, {name: 'Sweden', itc: false}, {name: 'Switzerland', itc: false},
+            {name: 'Tunisia', itc: false}, {name: 'Turkey', itc: true}, {name: 'Ukraine', itc: true},
+            {name: 'United Kingdom', itc: false}
+        ];
+
+        const countriesList = document.getElementById('countriesList');
+        countries.sort((a, b) => a.name.localeCompare(b.name));
+        countries.forEach(country => {
+            const pill = document.createElement('span');
+            pill.className = 'country-pill' + (country.itc ? ' itc' : '');
+            pill.textContent = country.name;
+            countriesList.appendChild(pill);
+        });
+    </script>
+</body>
+</html>

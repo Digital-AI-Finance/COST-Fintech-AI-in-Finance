@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Author Statistics - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        nav {
+            background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue));
+            padding: 1rem 2rem;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        nav .nav-content {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav .logo {
+            color: white;
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+
+        nav .logo span { color: var(--cost-orange); }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+        }
+
+        nav a:hover { color: white; }
+
+        .header {
+            background: linear-gradient(135deg, var(--cost-blue) 0%, var(--cost-purple) 100%);
+            color: white;
+            padding: 6rem 2rem 2rem;
+            text-align: center;
+        }
+
+        .header h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .header p { opacity: 0.9; }
+
+        .stats-row {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: 700; }
+        .stat-label {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .nav-pills {
+            display: flex;
+            justify-content: center;
+            gap: 0.5rem;
+            margin-top: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .nav-pills a {
+            padding: 0.4rem 1rem;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            text-decoration: none;
+            background: rgba(255,255,255,0.2);
+            color: white;
+        }
+
+        .nav-pills a:hover { background: rgba(255,255,255,0.3); }
+        .nav-pills a.active { background: white; color: var(--cost-blue); }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .filters {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            margin-bottom: 1.5rem;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            align-items: center;
+        }
+
+        .filters input[type="text"] {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.7rem 1rem;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            font-size: 0.9rem;
+        }
+
+        .filters input:focus {
+            outline: none;
+            border-color: var(--cost-blue);
+        }
+
+        .results-info {
+            margin-bottom: 1rem;
+            color: var(--gray);
+            font-size: 0.9rem;
+        }
+
+        .author-table {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th {
+            background: var(--cost-purple);
+            color: white;
+            padding: 1rem;
+            text-align: left;
+            font-weight: 600;
+            font-size: 0.85rem;
+            cursor: pointer;
+            user-select: none;
+        }
+
+        th:hover { background: var(--cost-blue); }
+
+        th.sorted-asc::after { content: ' ↑'; }
+        th.sorted-desc::after { content: ' ↓'; }
+
+        td {
+            padding: 0.8rem 1rem;
+            border-bottom: 1px solid var(--border);
+            font-size: 0.9rem;
+        }
+
+        tr:last-child td { border-bottom: none; }
+
+        tr:hover { background: rgba(91, 45, 138, 0.03); }
+
+        .rank {
+            font-weight: 600;
+            color: var(--cost-purple);
+            text-align: center;
+            width: 50px;
+        }
+
+        .author-name {
+            font-weight: 500;
+        }
+
+        .orcid-link {
+            color: var(--cost-teal);
+            text-decoration: none;
+            font-size: 0.8rem;
+            font-family: monospace;
+        }
+
+        .orcid-link:hover { text-decoration: underline; }
+
+        .pub-count {
+            font-weight: 700;
+            color: var(--cost-blue);
+            text-align: right;
+        }
+
+        .pub-bar {
+            height: 8px;
+            background: linear-gradient(90deg, var(--cost-purple), var(--cost-blue));
+            border-radius: 4px;
+            margin-top: 4px;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 3rem;
+            color: var(--gray);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 2rem;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        footer a {
+            color: var(--cost-orange);
+            text-decoration: none;
+        }
+
+        @media (max-width: 768px) {
+            nav ul { display: none; }
+            .filters { flex-direction: column; }
+            .filters input { width: 100%; }
+            .stats-row { gap: 1.5rem; }
+            th, td { padding: 0.6rem; font-size: 0.8rem; }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <div class="logo"><a href="index.html" style="color: inherit; text-decoration: none;">COST <span>CA19130</span></a></div>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="leadership.html">Leadership</a></li>
+                <li><a href="mc-members.html">MC Members</a></li>
+                <li><a href="wg-members.html">WG Members</a></li>
+                <li><a href="publications.html">Publications</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="header">
+        <h1>Author Statistics</h1>
+        <p>Publication counts by COST Action CA19130 members</p>
+        <div class="stats-row">
+            <div class="stat-item">
+                <div class="stat-number" id="totalAuthors">-</div>
+                <div class="stat-label">Authors</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="totalPubs">-</div>
+                <div class="stat-label">Publications</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number" id="avgPubs">-</div>
+                <div class="stat-label">Avg per Author</div>
+            </div>
+        </div>
+        <div class="nav-pills">
+            <a href="publications.html">Publications</a>
+            <a href="preprints.html">Preprints</a>
+            <a href="datasets.html">Datasets</a>
+            <a href="other-outputs.html">Other</a>
+            <a href="author-stats.html" class="active">Authors</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="filters">
+            <input type="text" id="searchInput" placeholder="Search author name or ORCID...">
+        </div>
+
+        <div class="results-info" id="resultsInfo">Loading...</div>
+
+        <div class="author-table">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="rank" data-sort="rank">Rank</th>
+                        <th data-sort="name">Author</th>
+                        <th data-sort="traditional" title="Articles + Book Chapters + Books + Reviews">Traditional</th>
+                        <th data-sort="article" title="Peer-reviewed articles">Articles</th>
+                        <th data-sort="dataset" title="Datasets (Zenodo, etc.)">Datasets</th>
+                        <th data-sort="count" class="sorted-desc" title="Total count including all types">Total</th>
+                    </tr>
+                </thead>
+                <tbody id="authorBody">
+                    <tr><td colspan="6" class="loading">Loading...</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <footer>
+        <p><a href="publications.html">Publications</a> | <a href="preprints.html">Preprints</a> | <a href="datasets.html">Datasets</a> | <a href="other-outputs.html">Other</a> | <a href="author-stats.html">Authors</a></p>
+        <p style="margin-top: 1rem; opacity: 0.7;">Data sourced from OpenAlex and ORCID</p>
+    </footer>
+
+    <script>
+        let authorData = [];
+        let filteredData = [];
+        let sortColumn = 'total';
+        let sortAsc = false;
+        let maxCount = 0;
+
+        fetch('data/publications_apa.json')
+            .then(r => r.json())
+            .then(data => {
+                // Use author_stats from the JSON (computed by combine_publications.py)
+                const authorStats = data.author_stats || {};
+
+                // Convert to array with type breakdown
+                authorData = Object.entries(authorStats).map(([orcid, stats]) => ({
+                    name: stats.name || 'Unknown',
+                    orcid: orcid,
+                    total: stats.total || 0,
+                    traditional: stats.traditional_pubs || 0,
+                    article: (stats.by_type || {}).article || 0,
+                    dataset: (stats.by_type || {}).dataset || 0,
+                    by_type: stats.by_type || {}
+                }));
+
+                // Sort by total descending
+                authorData.sort((a, b) => b.total - a.total);
+
+                // Add ranks
+                authorData.forEach((a, i) => a.rank = i + 1);
+
+                maxCount = authorData[0]?.total || 1;
+                filteredData = [...authorData];
+
+                // Update stats
+                const totalPubs = authorData.reduce((sum, a) => sum + a.total, 0);
+                document.getElementById('totalAuthors').textContent = authorData.length;
+                document.getElementById('totalPubs').textContent = totalPubs.toLocaleString();
+                document.getElementById('avgPubs').textContent = (totalPubs / authorData.length).toFixed(1);
+
+                renderTable();
+            })
+            .catch(err => {
+                console.error(err);
+                document.getElementById('authorBody').innerHTML = '<tr><td colspan="6" class="loading">Error loading data.</td></tr>';
+            });
+
+        function renderTable() {
+            const tbody = document.getElementById('authorBody');
+
+            if (filteredData.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="6" class="loading">No authors match your search.</td></tr>';
+                document.getElementById('resultsInfo').textContent = 'No results';
+                return;
+            }
+
+            document.getElementById('resultsInfo').textContent = `Showing ${filteredData.length} of ${authorData.length} authors`;
+
+            tbody.innerHTML = filteredData.map(a => {
+                const barWidth = (a.total / maxCount * 100).toFixed(1);
+                const nameLink = a.orcid ?
+                    `<a href="https://orcid.org/${a.orcid}" target="_blank" style="color:inherit;text-decoration:none;" title="${a.orcid}">${a.name}</a>` :
+                    a.name;
+
+                return `
+                    <tr>
+                        <td class="rank">${a.rank}</td>
+                        <td class="author-name">${nameLink}</td>
+                        <td style="text-align:center;color:var(--cost-green);font-weight:600;">${a.traditional || 0}</td>
+                        <td style="text-align:center;color:var(--cost-blue);">${a.article || 0}</td>
+                        <td style="text-align:center;color:var(--cost-orange);">${a.dataset || 0}</td>
+                        <td class="pub-count">
+                            ${a.total}
+                            <div class="pub-bar" style="width: ${barWidth}%"></div>
+                        </td>
+                    </tr>
+                `;
+            }).join('');
+        }
+
+        function sortData(column) {
+            if (sortColumn === column) {
+                sortAsc = !sortAsc;
+            } else {
+                sortColumn = column;
+                // Name sorts A-Z by default, numbers sort high-to-low
+                sortAsc = column === 'name';
+            }
+
+            // Update header classes
+            document.querySelectorAll('th').forEach(th => {
+                th.classList.remove('sorted-asc', 'sorted-desc');
+                if (th.dataset.sort === column) {
+                    th.classList.add(sortAsc ? 'sorted-asc' : 'sorted-desc');
+                }
+            });
+
+            // Map column names to data properties
+            const colMap = {
+                'count': 'total',
+                'traditional': 'traditional',
+                'article': 'article',
+                'dataset': 'dataset'
+            };
+            const sortKey = colMap[column] || column;
+
+            filteredData.sort((a, b) => {
+                let valA = a[sortKey];
+                let valB = b[sortKey];
+
+                if (typeof valA === 'string') {
+                    valA = valA.toLowerCase();
+                    valB = valB.toLowerCase();
+                }
+
+                if (valA < valB) return sortAsc ? -1 : 1;
+                if (valA > valB) return sortAsc ? 1 : -1;
+                return 0;
+            });
+
+            renderTable();
+        }
+
+        function filterAuthors() {
+            const search = document.getElementById('searchInput').value.toLowerCase();
+
+            filteredData = authorData.filter(a =>
+                a.name.toLowerCase().includes(search) ||
+                a.orcid.toLowerCase().includes(search)
+            );
+
+            renderTable();
+        }
+
+        // Event listeners
+        document.getElementById('searchInput').addEventListener('input', filterAuthors);
+
+        document.querySelectorAll('th[data-sort]').forEach(th => {
+            th.addEventListener('click', () => sortData(th.dataset.sort));
+        });
+    </script>
+</body>
+</html>

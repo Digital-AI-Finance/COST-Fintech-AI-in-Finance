@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grant Period 2 - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root { --cost-purple: #5B2D8A; --cost-blue: #2B5F9E; --cost-teal: #00A0B0; --cost-orange: #E87722; --cost-green: #7AB800; --dark: #1a1a2e; --light: #f8f9fa; --gray: #6c757d; }
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Inter', sans-serif; line-height: 1.6; color: var(--dark); background: var(--light); }
+        nav { background: linear-gradient(135deg, var(--cost-purple), var(--cost-blue)); padding: 1rem 2rem; position: fixed; width: 100%; top: 0; z-index: 1000; }
+        nav .nav-content { max-width: 1400px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        nav .logo { color: white; font-weight: 700; font-size: 1.2rem; text-decoration: none; }
+        nav .logo span { color: var(--cost-orange); }
+        nav ul { display: flex; list-style: none; gap: 2rem; }
+        nav a { color: rgba(255,255,255,0.9); text-decoration: none; font-size: 0.9rem; font-weight: 500; }
+        .hero { background: linear-gradient(135deg, var(--cost-blue), var(--cost-teal)); color: white; padding: 7rem 2rem 3rem; text-align: center; }
+        .hero .badge { display: inline-block; background: var(--cost-green); padding: 0.3rem 1rem; border-radius: 15px; font-size: 0.85rem; margin-bottom: 1rem; }
+        .hero h1 { font-size: 2.2rem; margin-bottom: 0.5rem; }
+        .hero .dates { opacity: 0.9; font-size: 1.1rem; margin-bottom: 0.5rem; }
+        .hero .institution { opacity: 0.8; font-size: 0.95rem; }
+        .breadcrumb { background: white; padding: 1rem 2rem; border-bottom: 1px solid #dee2e6; }
+        .breadcrumb a { color: var(--cost-purple); text-decoration: none; font-size: 0.9rem; }
+        section { padding: 3rem 2rem; max-width: 1000px; margin: 0 auto; }
+        section h2 { font-size: 1.5rem; color: var(--cost-purple); margin-bottom: 1rem; }
+        section h2::after { content: ''; display: block; width: 40px; height: 3px; background: var(--cost-orange); margin-top: 0.5rem; }
+        .card { background: white; border-radius: 12px; padding: 1.5rem; box-shadow: 0 4px 20px rgba(0,0,0,0.08); margin-bottom: 1.5rem; }
+        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr)); gap: 1rem; margin: 1rem 0; }
+        .stat-box { background: var(--light); border-radius: 8px; padding: 1rem; text-align: center; }
+        .stat-box .value { font-size: 1.5rem; font-weight: 700; color: var(--cost-blue); }
+        .stat-box .label { font-size: 0.75rem; color: var(--gray); }
+        .activity-list, .highlight-list { list-style: none; }
+        .activity-list li, .highlight-list li { padding: 0.6rem 0; padding-left: 1.5rem; position: relative; color: var(--gray); font-size: 0.95rem; border-bottom: 1px solid #eee; }
+        .activity-list li:last-child, .highlight-list li:last-child { border-bottom: none; }
+        .activity-list li::before { content: ''; position: absolute; left: 0; top: 1rem; width: 8px; height: 8px; background: var(--cost-teal); border-radius: 50%; }
+        .highlight-list li::before { content: ''; position: absolute; left: 0; top: 1rem; width: 8px; height: 8px; background: var(--cost-green); border-radius: 2px; }
+        .docs-grid { display: grid; gap: 1rem; margin-top: 1rem; }
+        .doc-item { display: flex; align-items: center; gap: 1rem; padding: 1rem; background: var(--light); border-radius: 8px; }
+        .doc-item .icon { width: 40px; height: 40px; background: var(--cost-purple); color: white; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-weight: 700; font-size: 0.8rem; }
+        .doc-item .info { flex: 1; }
+        .doc-item .info h4 { color: var(--dark); font-size: 0.95rem; margin-bottom: 0.2rem; }
+        .doc-item .info p { color: var(--gray); font-size: 0.8rem; }
+        .doc-item a { color: var(--cost-teal); text-decoration: none; font-size: 0.85rem; font-weight: 500; }
+        .nav-buttons { display: flex; justify-content: space-between; margin-top: 2rem; padding-top: 2rem; border-top: 1px solid #eee; }
+        .nav-btn { display: inline-flex; align-items: center; gap: 0.5rem; color: var(--cost-purple); text-decoration: none; font-weight: 500; font-size: 0.9rem; }
+        footer { background: var(--dark); color: white; padding: 2rem; text-align: center; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+        @media (max-width: 768px) { nav ul { display: none; } .hero h1 { font-size: 1.6rem; } }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="logo">COST <span>CA19130</span></a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="progress-reports.html">Progress Reports</a></li>
+                <li><a href="final-report.html">Final Report</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="badge">Closed</div>
+        <h1>Grant Period 2</h1>
+        <div class="dates">1 November 2021 - 31 May 2022</div>
+        <div class="institution">Zurich University of Applied Sciences, Switzerland</div>
+    </header>
+
+    <div class="breadcrumb">
+        <a href="progress-reports.html">Progress Reports</a> <span> / Grant Period 2</span>
+    </div>
+
+    <section>
+        <h2>Period Statistics</h2>
+        <div class="card">
+            <div class="stats-grid">
+                <div class="stat-box"><div class="value">36</div><div class="label">Countries</div></div>
+                <div class="stat-box"><div class="value">20</div><div class="label">ITC Countries</div></div>
+                <div class="stat-box"><div class="value">55.6%</div><div class="label">ITC Percentage</div></div>
+                <div class="stat-box"><div class="value">68</div><div class="label">MC Members</div></div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Key Activities</h2>
+        <div class="card">
+            <ul class="activity-list">
+                <li>Expansion of network to new countries</li>
+                <li>First Short Term Scientific Missions (STSMs)</li>
+                <li>Virtual Mobility Grants program launch</li>
+                <li>Research collaboration intensification</li>
+                <li>Quantlet.com platform enhancement</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Highlights</h2>
+        <div class="card">
+            <ul class="highlight-list">
+                <li>Network growth to 36 countries</li>
+                <li>STSM program established</li>
+                <li>Virtual Mobility Grants for remote collaboration</li>
+                <li>Major conferences: TINFIN Zagreb, Rennes WG1 meeting</li>
+                <li>Grant Awarding Coordinator appointed</li>
+            </ul>
+        </div>
+    </section>
+
+    <section>
+        <h2>Documents</h2>
+        <div class="card">
+            <div class="docs-grid">
+                <div class="doc-item">
+                    <div class="icon">PDF</div>
+                    <div class="info"><h4>Work and Budget Plan GP2</h4><p>Official work and budget planning document</p></div>
+                    <a href="docs/progress-reports/gp2/WBP-AGA-CA19130-2.pdf" target="_blank">Download</a>
+                </div>
+                <div class="doc-item">
+                    <div class="icon">PDF</div>
+                    <div class="info"><h4>Grant Agreement Annex 2</h4><p>Grant agreement annex document</p></div>
+                    <a href="docs/progress-reports/gp2/ANNEX-A-CA19130-2.pdf" target="_blank">Download</a>
+                </div>
+                <div class="doc-item">
+                    <div class="icon">PDF</div>
+                    <div class="info"><h4>Period Report Nov 2021 - May 2022</h4><p>Detailed period report</p></div>
+                    <a href="docs/progress-reports/gp2/Report-GP2.pdf" target="_blank">Download</a>
+                </div>
+                <div class="doc-item">
+                    <div class="icon">IMG</div>
+                    <div class="info"><h4>Infographic GP2</h4><p>Visual summary of achievements</p></div>
+                    <a href="docs/infographics/infographic-gp2.pdf" target="_blank">Download</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="nav-buttons">
+            <a href="progress-gp1.html" class="nav-btn">Previous: GP1</a>
+            <a href="progress-gp3.html" class="nav-btn">Next: GP3</a>
+        </div>
+    </section>
+
+    <footer>
+        <p><strong>COST Action CA19130</strong></p>
+        <p style="margin-top: 0.5rem;"><a href="progress-reports.html">Back to Progress Reports</a></p>
+    </footer>
+</body>
+</html>
