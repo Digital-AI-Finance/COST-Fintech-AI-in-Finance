@@ -445,6 +445,7 @@
                     <tr>
                         <th class="rank" data-sort="rank">#</th>
                         <th data-sort="name">Author</th>
+                        <th data-sort="finance_related" title="Finance/AI related publications">Finance</th>
                         <th data-sort="peer_reviewed" title="Peer-reviewed articles + reviews">Peer-Rev</th>
                         <th data-sort="books_chapters" title="Books + Book Chapters">Books</th>
                         <th data-sort="conference" title="Conference papers">Conf</th>
@@ -456,7 +457,7 @@
                     </tr>
                 </thead>
                 <tbody id="authorBody">
-                    <tr><td colspan="10" class="loading">Loading...</td></tr>
+                    <tr><td colspan="11" class="loading">Loading...</td></tr>
                 </tbody>
             </table>
         </div>
@@ -523,6 +524,7 @@
                         name: stats.name || 'Unknown',
                         orcid: orcid,
                         total: stats.total || 0,
+                        finance_related: stats.finance_related || 0,
                         // Grouped categories
                         peer_reviewed: bg.peer_reviewed || 0,
                         books_chapters: bg.books_chapters || 0,
@@ -557,14 +559,14 @@
             })
             .catch(err => {
                 console.error(err);
-                document.getElementById('authorBody').innerHTML = '<tr><td colspan="10" class="loading">Error loading data.</td></tr>';
+                document.getElementById('authorBody').innerHTML = '<tr><td colspan="11" class="loading">Error loading data.</td></tr>';
             });
 
         function renderTable() {
             const tbody = document.getElementById('authorBody');
 
             if (filteredData.length === 0) {
-                tbody.innerHTML = '<tr><td colspan="10" class="loading">No authors match your search.</td></tr>';
+                tbody.innerHTML = '<tr><td colspan="11" class="loading">No authors match your search.</td></tr>';
                 document.getElementById('resultsInfo').textContent = 'No results';
                 return;
             }
@@ -584,6 +586,7 @@
                     <tr>
                         <td class="rank">${a.rank}</td>
                         <td class="author-name">${nameLink}</td>
+                        <td style="text-align:center;color:var(--cost-green);font-weight:700;">${fmt(a.finance_related)}</td>
                         <td style="text-align:center;color:var(--cost-purple);font-weight:600;">${fmt(a.peer_reviewed)}</td>
                         <td style="text-align:center;color:var(--cost-blue);">${fmt(a.books_chapters)}</td>
                         <td style="text-align:center;color:var(--cost-teal);">${fmt(a.conference)}</td>

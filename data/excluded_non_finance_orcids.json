@@ -1,77 +1,13 @@
 {
-  "generated": "2026-01-03T20:02:44.654608",
-  "reason": "Authors with 0% finance/AI publication relevance",
-  "count": 14,
+  "generated": "2026-01-04T00:00:00",
+  "reason": "Authors without approved COST membership status",
+  "count": 1,
   "excluded": [
-    {
-      "orcid": "0000-0001-5237-2015",
-      "name": "Michalis Linardakis",
-      "reason": "0% finance relevance (25 non-finance publications)"
-    },
-    {
-      "orcid": "0000-0003-4116-7344",
-      "name": "Seçil Tümen Akyıldız",
-      "reason": "0% finance relevance (21 non-finance publications)"
-    },
-    {
-      "orcid": "0000-0003-2973-9098",
-      "name": "David Bevan",
-      "reason": "0% finance relevance (19 non-finance publications)"
-    },
-    {
-      "orcid": "0000-0001-9045-0694",
-      "name": "Seda AKTURK",
-      "reason": "0% finance relevance (14 non-finance publications)"
-    },
-    {
-      "orcid": "0000-0003-1375-2503",
-      "name": "Ozgur Yildirim",
-      "reason": "0% finance relevance (10 non-finance publications)"
-    },
-    {
-      "orcid": "0000-0002-9655-6825",
-      "name": "Marko Pešović",
-      "reason": "0% finance relevance (9 non-finance publications)"
-    },
-    {
-      "orcid": "0000-0002-5678-7979",
-      "name": "Eleftheria Paschalidou",
-      "reason": "0% finance relevance (3 non-finance publications)"
-    },
-    {
-      "orcid": "0000-0003-4470-0802",
-      "name": "Cenk Keskin",
-      "reason": "0% finance relevance (3 non-finance publications)"
-    },
-    {
-      "orcid": "0000-0002-2156-0942",
-      "name": "Fatmir Memaj",
-      "reason": "0% finance relevance (2 non-finance publications)"
-    },
-    {
-      "orcid": "0000-0002-9738-2791",
-      "name": "Elif Gövez",
-      "reason": "0% finance relevance (2 non-finance publications)"
-    },
-    {
-      "orcid": "0000-0003-3678-9608",
-      "name": "Manar Qamhieh",
-      "reason": "0% finance relevance (2 non-finance publications)"
-    },
-    {
-      "orcid": "0000-0003-2659-4436",
-      "name": "Pınar Nur",
-      "reason": "0% finance relevance (1 non-finance publications)"
-    },
-    {
-      "orcid": "0000-0001-6889-9006",
-      "name": "Alexios Ioannis Moukas",
-      "reason": "0% finance relevance (1 non-finance publications)"
-    },
     {
       "orcid": "0000-0001-5356-7850",
       "name": "Lazar Obradović",
-      "reason": "0% finance relevance (1 non-finance publications)"
+      "reason": "Application status not approved (N/A)"
     }
-  ]
+  ],
+  "note": "Authors with 0% finance relevance but approved COST membership are KEPT and shown with finance_related=0"
 }

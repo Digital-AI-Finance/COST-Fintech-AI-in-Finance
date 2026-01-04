@@ -19,6 +19,37 @@ from collections import Counter
 sys.stdout = io.TextIOWrapper(sys.stdout.buffer, encoding='utf-8', errors='replace')
 sys.stderr = io.TextIOWrapper(sys.stderr.buffer, encoding='utf-8', errors='replace')
 
+# Keywords indicating finance/AI relevance (COST Action CA19130 scope)
+FINANCE_KEYWORDS = [
+    'finance', 'financial', 'fintech', 'banking', 'bank', 'investment',
+    'stock', 'market', 'trading', 'portfolio', 'risk', 'credit', 'loan',
+    'cryptocurrency', 'bitcoin', 'blockchain', 'insurance', 'pension',
+    'asset', 'pricing', 'econom', 'monetary', 'fiscal', 'interest rate',
+    'hedge fund', 'derivatives', 'option', 'futures', 'bond', 'equity',
+    'forex', 'exchange rate', 'volatility', 'var ', 'value at risk', 'garch',
+    'capital', 'wealth', 'investor', 'dividend', 'profit', 'revenue',
+    'accounting', 'audit', 'tax', 'budget', 'debt', 'corporate governance',
+    'esg', 'sustainable finance', 'crowdfunding', 'robo-advisor', 'regtech',
+    'payment', 'mobile banking', 'digital currency', 'central bank',
+    'inflation', 'gdp', 'macroeconom', 'microeconom',
+    'machine learning', 'artificial intelligence', 'neural network',
+    'deep learning', 'forecasting', 'prediction', 'algorithmic',
+    'quantitative', 'time series', 'sentiment analysis', 'nlp',
+    'natural language', 'text mining', 'data mining', 'big data',
+    'classification', 'regression', 'clustering', 'anomaly detection',
+    'fraud detection', 'credit scoring', 'default prediction',
+    'econometric', 'panel data', 'causal', 'cointegration', 'granger',
+    'bayesian', 'monte carlo', 'bootstrap', 'simulation'
+]
+
+def is_finance_related(title: str, venue: str = '') -> bool:
+    """Check if publication is finance/AI related based on title and venue."""
+    text = f"{title} {venue}".lower()
+    for kw in FINANCE_KEYWORDS:
+        if kw in text:
+            return True
+    return False
+
 # Type groupings: map 33 publication types to 6 clean categories
 TYPE_GROUPS = {
     'peer_reviewed': ['article', 'review', 'journal-article'],
@@ -164,6 +195,7 @@ def compute_author_stats(publications: List[dict]) -> dict:
             author_stats[orcid] = {
                 'name': p.get('author', 'Unknown'),
                 'total': 0,
+                'finance_related': 0,
                 'by_type': Counter(),
                 'by_group': Counter(),
                 'open_access': 0,
@@ -172,6 +204,12 @@ def compute_author_stats(publications: List[dict]) -> dict:
             }
 
         author_stats[orcid]['total'] += 1
+
+        # Track finance-related publications
+        title = p.get('title', '')
+        venue = p.get('venue', '')
+        if is_finance_related(title, venue):
+            author_stats[orcid]['finance_related'] += 1
 
         # Track by individual type
         pub_type = p.get('type', 'unknown')
