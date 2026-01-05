@@ -576,6 +576,17 @@
         .sl-sidebar-home:hover { background: #1e293b !important; }
         .sl-sidebar-home.current { background: linear-gradient(90deg, #5B2D8A, transparent) !important; border-left: 2px solid #E87722 !important; }
 
+        .sl-section-link {
+            color: inherit;
+            text-decoration: none;
+            flex: 1;
+            display: block;
+        }
+        .sl-section-link:hover {
+            color: #E87722;
+        }
+
+
         .sl-section { border-bottom: 1px solid #1e293b !important; }
         .sl-section-header {
             display: flex !important;
@@ -656,7 +667,7 @@
     <aside class="sl-sidebar">
         <a href="index.html" class="sl-sidebar-home" data-category="home">HOME</a>
         <div class="sl-section" data-category="impact">
-            <div class="sl-section-header" onclick="slToggleSection(this)">IMPACT <span class="toggle">&#9660;</span></div>
+            <div class="sl-section-header"><a href="impact.html" class="sl-section-link">IMPACT</a> <span class="toggle" onclick="slToggleSection(this.parentNode)">&#9660;</span></div>
             <div class="sl-links">
                 <a href="final-achievements.html">Final Achievements</a>
                 <a href="final-report.html">Objectives Met (16/16)</a>
@@ -666,7 +677,7 @@
             </div>
         </div>
         <div class="sl-section" data-category="network">
-            <div class="sl-section-header" onclick="slToggleSection(this)">NETWORK <span class="toggle">&#9660;</span></div>
+            <div class="sl-section-header"><a href="network.html" class="sl-section-link">NETWORK</a> <span class="toggle" onclick="slToggleSection(this.parentNode)">&#9660;</span></div>
             <div class="sl-links">
                 <a href="members.html">All Members (426)</a>
                 <a href="leadership.html">Leadership Team</a>
@@ -676,7 +687,7 @@
             </div>
         </div>
         <div class="sl-section" data-category="research">
-            <div class="sl-section-header" onclick="slToggleSection(this)">RESEARCH <span class="toggle">&#9660;</span></div>
+            <div class="sl-section-header"><a href="research.html" class="sl-section-link">RESEARCH</a> <span class="toggle" onclick="slToggleSection(this.parentNode)">&#9660;</span></div>
             <div class="sl-links">
                 <a href="publications.html">Publications</a>
                 <a href="preprints.html">Preprints</a>
@@ -685,7 +696,7 @@
             </div>
         </div>
         <div class="sl-section" data-category="activities">
-            <div class="sl-section-header" onclick="slToggleSection(this)">ACTIVITIES <span class="toggle">&#9660;</span></div>
+            <div class="sl-section-header"><a href="activities.html" class="sl-section-link">ACTIVITIES</a> <span class="toggle" onclick="slToggleSection(this.parentNode)">&#9660;</span></div>
             <div class="sl-links">
                 <a href="financial-reports/meetings.html">All Meetings</a>
                 <a href="financial-reports/stsm.html">STSMs</a>
@@ -693,7 +704,7 @@
             </div>
         </div>
         <div class="sl-section" data-category="archive">
-            <div class="sl-section-header" onclick="slToggleSection(this)">ARCHIVE <span class="toggle">&#9660;</span></div>
+            <div class="sl-section-header"><a href="archive.html" class="sl-section-link">ARCHIVE</a> <span class="toggle" onclick="slToggleSection(this.parentNode)">&#9660;</span></div>
             <div class="sl-links">
                 <a href="final-action-chair-report-full.html">Final Report</a>
                 <a href="midterm-action-chair-report-full.html">Mid-Term Report</a>

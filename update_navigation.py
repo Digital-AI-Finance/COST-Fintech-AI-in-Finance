@@ -22,7 +22,7 @@ ROOT_NAV_HTML = '''    <!-- COST CA19130 Legacy Archive - Mega Menu Navigation -
             <ul class="mega-nav-menu">
                 <li><a href="index.html" data-category="home">HOME</a></li>
                 <li>
-                    <a href="#" data-category="impact">IMPACT <span class="arrow">&#9660;</span></a>
+                    <a href="impact.html" data-category="impact">IMPACT <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
                         <a href="final-achievements.html">Final Achievements</a>
                         <a href="final-report.html">Objectives Met (16/16)</a>
@@ -33,7 +33,7 @@ ROOT_NAV_HTML = '''    <!-- COST CA19130 Legacy Archive - Mega Menu Navigation -
                     </div>
                 </li>
                 <li>
-                    <a href="#" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
+                    <a href="network.html" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
                         <a href="members.html">All Members (426)</a>
                         <a href="leadership.html">Leadership Team</a>
@@ -44,7 +44,7 @@ ROOT_NAV_HTML = '''    <!-- COST CA19130 Legacy Archive - Mega Menu Navigation -
                     </div>
                 </li>
                 <li>
-                    <a href="#" data-category="research">RESEARCH <span class="arrow">&#9660;</span></a>
+                    <a href="research.html" data-category="research">RESEARCH <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
                         <a href="publications.html">Publications</a>
                         <a href="preprints.html">Preprints</a>
@@ -54,7 +54,7 @@ ROOT_NAV_HTML = '''    <!-- COST CA19130 Legacy Archive - Mega Menu Navigation -
                     </div>
                 </li>
                 <li>
-                    <a href="#" data-category="activities">ACTIVITIES <span class="arrow">&#9660;</span></a>
+                    <a href="activities.html" data-category="activities">ACTIVITIES <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-multi">
                         <div class="mega-dropdown-column">
                             <h4>Meetings</h4>
@@ -75,7 +75,7 @@ ROOT_NAV_HTML = '''    <!-- COST CA19130 Legacy Archive - Mega Menu Navigation -
                     </div>
                 </li>
                 <li>
-                    <a href="#" data-category="archive">ARCHIVE <span class="arrow">&#9660;</span></a>
+                    <a href="archive.html" data-category="archive">ARCHIVE <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-multi wide">
                         <div class="mega-dropdown-column">
                             <h4>Reports</h4>
