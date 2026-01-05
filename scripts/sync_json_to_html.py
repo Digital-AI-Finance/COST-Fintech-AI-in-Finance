@@ -260,6 +260,137 @@ def update_wbp_overview_html(budget_data):
         return False
 
 
+def update_stsm_html():
+    """
+    Update the financial-reports/stsm.html with STSM statistics.
+
+    Syncs stat-boxes from summary_statistics.json:
+    - Total STSMs (count)
+    - Total EUR Funded
+    - Average EUR/STSM
+    """
+    stsm_path = FINANCIAL_REPORTS_DIR / 'stsm.html'
+    if not stsm_path.exists():
+        print(f"  SKIP: stsm.html not found")
+        return False
+
+    # Load summary statistics
+    summary_stats_path = DATA_DIR / 'summary_statistics.json'
+    if not summary_stats_path.exists():
+        print(f"  SKIP: summary_statistics.json not found")
+        return False
+
+    with open(summary_stats_path, encoding='utf-8') as f:
+        summary_stats = json.load(f)
+
+    html_content = stsm_path.read_text(encoding='utf-8')
+    original_content = html_content
+
+    stsm_data = summary_stats['by_category']['stsm']
+    stsm_count = stsm_data['count']
+    stsm_total = stsm_data['total']
+    stsm_average = stsm_total / stsm_count if stsm_count > 0 else 0
+
+    # Update stat boxes (using same pattern as other files)
+    html_content = update_stat_box_value(html_content, 'Total STSMs', str(stsm_count))
+    html_content = update_stat_box_value(html_content, 'Total EUR Funded', format_amount(stsm_total))
+    html_content = update_stat_box_value(html_content, 'Average EUR/STSM', format_amount(stsm_average))
+
+    if html_content != original_content:
+        stsm_path.write_text(html_content, encoding='utf-8')
+        print(f"  UPDATED: stsm.html")
+        return True
+    else:
+        print(f"  NO CHANGE: stsm.html")
+        return False
+
+
+def update_stat_item_value(html_content, label_pattern, new_value):
+    """
+    Update a stat-item value in HTML content (for index.html style).
+
+    Looks for pattern: <div class="stat-number">OLD_VALUE</div>...<div class="stat-label">LABEL</div>
+    """
+    # Pattern to find stat-item with specific label
+    pattern = rf'(<div class="stat-number">)([^<]+)(</div>\s*<div class="stat-label">[^<]*{label_pattern}[^<]*</div>)'
+
+    def replacer(match):
+        return f'{match.group(1)}{new_value}{match.group(3)}'
+
+    return re.sub(pattern, replacer, html_content, flags=re.IGNORECASE | re.DOTALL)
+
+
+def update_fr_index_html():
+    """
+    Update the financial-reports/index.html with summary statistics.
+
+    Syncs stat-items from summary_statistics.json and other JSON files:
+    - Total Expenditure (EUR)
+    - Meetings count
+    - STSMs Funded count
+    - VM Grants count
+    - Training Schools count
+    - Participants count
+    """
+    index_path = FINANCIAL_REPORTS_DIR / 'index.html'
+    if not index_path.exists():
+        print(f"  SKIP: financial-reports/index.html not found")
+        return False
+
+    # Load summary statistics
+    summary_stats_path = DATA_DIR / 'summary_statistics.json'
+    if not summary_stats_path.exists():
+        print(f"  SKIP: summary_statistics.json not found")
+        return False
+
+    with open(summary_stats_path, encoding='utf-8') as f:
+        summary_stats = json.load(f)
+
+    html_content = index_path.read_text(encoding='utf-8')
+    original_content = html_content
+
+    # Get totals and category data
+    total_actual = summary_stats['totals']['actual']
+    meetings_count = summary_stats['by_category']['meetings']['count']
+    stsm_count = summary_stats['by_category']['stsm']['count']
+    training_schools_count = summary_stats['by_category']['training_schools']['count']
+
+    # Get VM grants count from virtual_mobility_full.json
+    vm_grants_count = 39  # Default from scan
+    vm_path = DATA_DIR / 'virtual_mobility_full.json'
+    if vm_path.exists():
+        with open(vm_path, encoding='utf-8') as f:
+            vm_data = json.load(f)
+            vm_grants_count = len(vm_data)
+
+    # Get participants count from participant_master.json
+    participants_count = 182  # Default from scan
+    participants_path = DATA_DIR / 'participant_master.json'
+    if participants_path.exists():
+        with open(participants_path, encoding='utf-8') as f:
+            participants_data = json.load(f)
+            participants_count = len(participants_data)
+
+    # Format total as "775K" style
+    total_k = f"{int(round(total_actual / 1000))}K"
+
+    # Update stat-items (different CSS class than other pages)
+    html_content = update_stat_item_value(html_content, 'Total Expenditure', total_k)
+    html_content = update_stat_item_value(html_content, 'Meetings', str(meetings_count))
+    html_content = update_stat_item_value(html_content, 'STSMs', str(stsm_count))
+    html_content = update_stat_item_value(html_content, 'VM Grants', str(vm_grants_count))
+    html_content = update_stat_item_value(html_content, 'Training Schools', str(training_schools_count))
+    html_content = update_stat_item_value(html_content, 'Participants', str(participants_count))
+
+    if html_content != original_content:
+        index_path.write_text(html_content, encoding='utf-8')
+        print(f"  UPDATED: financial-reports/index.html")
+        return True
+    else:
+        print(f"  NO CHANGE: financial-reports/index.html")
+        return False
+
+
 def main():
     """Main entry point."""
     print("=" * 60)
@@ -277,24 +408,32 @@ def main():
         budget_data = json.load(f)
 
     # Update FFR HTML files
-    print("\n[1/4] Updating FFR HTML files...")
+    print("\n[1/6] Updating FFR HTML files...")
     for gp_data in budget_data['grant_periods']:
         gp_num = int(gp_data['id'].replace('GP', ''))
         update_ffr_html(gp_num, gp_data)
 
     # Update FFR overview
-    print("\n[2/4] Updating financial-reports/overview.html...")
+    print("\n[2/6] Updating financial-reports/overview.html...")
     update_overview_html(budget_data)
 
     # Update Work-Budget-Plan HTML files
-    print("\n[3/4] Updating Work-Budget-Plan HTML files...")
+    print("\n[3/6] Updating Work-Budget-Plan HTML files...")
     for gp_data in budget_data['grant_periods']:
         gp_num = int(gp_data['id'].replace('GP', ''))
         update_wbp_html(gp_num, gp_data)
 
     # Update WBP overview
-    print("\n[4/4] Updating work-budget-plans/overview.html...")
+    print("\n[4/6] Updating work-budget-plans/overview.html...")
     update_wbp_overview_html(budget_data)
+
+    # Update STSM page
+    print("\n[5/6] Updating financial-reports/stsm.html...")
+    update_stsm_html()
+
+    # Update financial-reports index
+    print("\n[6/6] Updating financial-reports/index.html...")
+    update_fr_index_html()
 
     print("\n" + "=" * 60)
     print("HTML sync complete!")
