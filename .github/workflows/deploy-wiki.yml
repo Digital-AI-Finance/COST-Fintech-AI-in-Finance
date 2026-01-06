@@ -37,6 +37,8 @@ jobs:
           # Copy subdirectory pages (financial reports and work budget plans)
           cp -r financial-reports _site/ 2>/dev/null || true
           cp -r work-budget-plans _site/ 2>/dev/null || true
+          # Copy Action Chair documents archive
+          cp -r "Action Chair" _site/ 2>/dev/null || true
           # Copy wiki to /wiki/ subfolder
           mkdir -p _site/wiki
           cp -r wiki/site/* _site/wiki/
