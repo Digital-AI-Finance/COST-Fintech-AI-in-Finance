@@ -29,250 +29,112 @@
             background: var(--light);
         }
 
-        .hero {
-            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 50%, var(--cost-teal) 100%);
+        /* Compact Hero */
+        .compact-hero {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 100%);
             color: white;
-            padding: 4.5rem 2rem 2rem;
-            text-align: center;
-        }
-
-        .hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
-        .hero .subtitle { font-size: 1.2rem; opacity: 0.95; max-width: 700px; margin: 0 auto; font-weight: 300; }
-
-        .stats-banner {
-            background: white;
-            padding: 1.5rem;
+            padding: 1rem 2rem;
             display: flex;
-            justify-content: center;
-            gap: 3rem;
-            flex-wrap: wrap;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
-
-        .stat-item { text-align: center; }
-        .stat-number { font-size: 2rem; font-weight: 700; color: var(--cost-purple); }
-        .stat-label { font-size: 0.8rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.05em; }
-
-        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
-
-        .search-box {
-            background: white;
-            padding: 1rem;
-            border-radius: 10px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
-            margin-bottom: 2rem;
-        }
-
-        .search-box input {
-            width: 100%;
-            padding: 0.75rem 1rem;
-            border: 2px solid var(--border);
-            border-radius: 8px;
-            font-size: 1rem;
-            font-family: inherit;
-        }
-
-        .search-box input:focus {
-            outline: none;
-            border-color: var(--cost-purple);
-        }
-
-        .sitemap-section {
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-            margin-bottom: 1.5rem;
-            overflow: hidden;
-        }
-
-        .section-header {
-            background: linear-gradient(135deg, rgba(91,45,138,0.1), rgba(43,95,158,0.1));
-            padding: 1rem 1.25rem;
-            display: flex;
+            align-items: center;
             justify-content: space-between;
-            align-items: center;
-            cursor: pointer;
-            border-left: 4px solid var(--cost-purple);
+            flex-wrap: wrap;
+            gap: 0.5rem;
         }
 
-        .section-header:hover { background: linear-gradient(135deg, rgba(91,45,138,0.15), rgba(43,95,158,0.15)); }
-        .section-header h2 { font-size: 1.1rem; color: var(--cost-purple); margin: 0; }
-        .section-header .count { background: var(--cost-purple); color: white; padding: 0.25rem 0.75rem; border-radius: 20px; font-size: 0.8rem; }
-        .section-header .toggle { font-size: 0.8rem; color: var(--gray); transition: transform 0.3s; }
-        .section-header.collapsed .toggle { transform: rotate(-90deg); }
-
-        .section-content { padding: 0; max-height: 2000px; transition: max-height 0.3s; overflow: hidden; }
-        .section-content.collapsed { max-height: 0; }
-
-        .page-list { list-style: none; }
-        .page-item {
-            display: flex;
-            align-items: center;
-            padding: 0.6rem 1.25rem;
-            border-bottom: 1px solid var(--border);
-        }
-        .page-item:last-child { border-bottom: none; }
-        .page-item:hover { background: rgba(91,45,138,0.03); }
-
-        .page-icon {
-            width: 24px;
-            height: 24px;
-            background: var(--cost-purple);
-            color: white;
-            border-radius: 4px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-size: 0.7rem;
-            margin-right: 0.75rem;
-            flex-shrink: 0;
+        .compact-hero h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin: 0;
         }
 
-        .page-icon.folder { background: var(--cost-blue); }
-        .page-icon.data { background: var(--cost-teal); }
-
-        .page-link {
-            color: var(--cost-blue);
-            text-decoration: none;
+        .compact-hero .subtitle {
             font-size: 0.9rem;
-            flex-grow: 1;
-        }
-        .page-link:hover { text-decoration: underline; color: var(--cost-purple); }
-
-        .page-path {
-            color: var(--gray);
-            font-size: 0.75rem;
-            margin-left: auto;
-            font-family: monospace;
+            opacity: 0.9;
+            font-weight: 300;
         }
 
-        /* Folder tree */
-        .folder-tree { padding-left: 1.5rem; }
-        .folder-header {
-            display: flex;
-            align-items: center;
-            padding: 0.5rem 0;
-            cursor: pointer;
-            font-weight: 500;
-            color: var(--cost-purple);
-        }
-        .folder-header:hover { color: var(--cost-orange); }
-        .folder-header .folder-toggle { margin-right: 0.5rem; font-size: 0.7rem; }
-        .folder-children { padding-left: 1.25rem; display: none; }
-        .folder-children.open { display: block; }
-
-        /* Category colors */
-        .section-header.impact { border-left-color: var(--cost-green); }
-        .section-header.network { border-left-color: var(--cost-teal); }
-        .section-header.research { border-left-color: var(--cost-blue); }
-        .section-header.activities { border-left-color: var(--cost-orange); }
-        .section-header.archive { border-left-color: var(--cost-purple); }
-
-        /* Visualization Section */
-        .visualization-section {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 1.5rem 2rem;
+        /* Stat Cards */
+        .stat-cards {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1.5rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 1rem;
+            max-width: 900px;
+            margin: 1rem auto;
+            padding: 0 1rem;
         }
 
-        .chart-card {
+        .stat-card {
             background: white;
             border-radius: 12px;
-            padding: 1.25rem;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
-        }
-
-        .chart-card h3 {
-            font-size: 1rem;
-            color: var(--cost-purple);
-            margin-bottom: 1rem;
+            padding: 1rem;
             text-align: center;
-            font-weight: 600;
+            box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+            border-top: 3px solid var(--cost-purple);
         }
 
-        .chart-wrapper {
-            position: relative;
-            height: 220px;
-        }
+        .stat-card:nth-child(2) { border-top-color: var(--cost-blue); }
+        .stat-card:nth-child(3) { border-top-color: var(--cost-teal); }
 
-        .chart-card-full {
-            grid-column: 1 / -1;
-        }
-
-        .graph-wrapper {
-            text-align: center;
-            padding: 0.5rem;
-        }
-
-        .site-graph {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-
-        .chart-center-text {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-            pointer-events: none;
-        }
-
-        .chart-center-text .number {
-            font-size: 2rem;
+        .stat-card .number {
+            font-size: 2.25rem;
             font-weight: 700;
             color: var(--cost-purple);
             line-height: 1;
         }
 
-        .chart-center-text .label {
-            font-size: 0.75rem;
+        .stat-card:nth-child(2) .number { color: var(--cost-blue); }
+        .stat-card:nth-child(3) .number { color: var(--cost-teal); }
+
+        .stat-card .label {
+            font-size: 0.7rem;
             color: var(--gray);
             text-transform: uppercase;
+            letter-spacing: 0.05em;
+            margin-top: 0.25rem;
         }
 
-        /* Filter Pills */
-        .filter-section {
+        .stat-card .mini-chart {
+            height: 50px;
+            margin-top: 0.5rem;
+        }
+
+        /* Filter + Search Bar */
+        .filter-search-bar {
             max-width: 1200px;
             margin: 0 auto;
-            padding: 0 2rem 1rem;
+            padding: 0.75rem 1rem;
+            display: flex;
+            gap: 1rem;
+            align-items: center;
+            flex-wrap: wrap;
+            position: sticky;
+            top: 36px;
+            background: var(--light);
+            z-index: 100;
+            border-bottom: 1px solid var(--border);
         }
 
         .filter-pills {
             display: flex;
+            gap: 0.4rem;
             flex-wrap: wrap;
-            gap: 0.5rem;
-            justify-content: center;
         }
 
         .filter-pill {
-            padding: 0.4rem 0.9rem;
+            padding: 0.35rem 0.75rem;
             border: 2px solid var(--border);
-            border-radius: 20px;
+            border-radius: 16px;
             background: white;
-            font-size: 0.75rem;
+            font-size: 0.7rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.2s;
             font-family: inherit;
             text-transform: uppercase;
-            letter-spacing: 0.03em;
         }
 
-        .filter-pill:hover {
-            border-color: var(--cost-purple);
-            color: var(--cost-purple);
-        }
-
-        .filter-pill.active {
-            background: var(--cost-purple);
-            border-color: var(--cost-purple);
-            color: white;
-        }
+        .filter-pill:hover { border-color: var(--cost-purple); color: var(--cost-purple); }
+        .filter-pill.active { background: var(--cost-purple); border-color: var(--cost-purple); color: white; }
 
         .filter-pill[data-filter="impact"] { border-color: var(--cost-green); color: var(--cost-green); }
         .filter-pill[data-filter="impact"].active { background: var(--cost-green); color: white; }
@@ -282,35 +144,252 @@
         .filter-pill[data-filter="research"].active { background: var(--cost-blue); color: white; }
         .filter-pill[data-filter="activities"] { border-color: var(--cost-orange); color: var(--cost-orange); }
         .filter-pill[data-filter="activities"].active { background: var(--cost-orange); color: white; }
-        .filter-pill[data-filter="archive"] { border-color: var(--cost-purple); color: var(--cost-purple); }
-        .filter-pill[data-filter="archive"].active { background: var(--cost-purple); color: white; }
 
+        .search-input {
+            flex: 1;
+            min-width: 200px;
+            padding: 0.5rem 1rem;
+            border: 2px solid var(--border);
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-family: inherit;
+            background: white;
+        }
+
+        .search-input:focus { outline: none; border-color: var(--cost-purple); }
+
+        /* Collapsible Graph */
+        .collapsible-section {
+            max-width: 1200px;
+            margin: 1rem auto;
+            padding: 0 1rem;
+        }
+
+        .collapsible-header {
+            background: white;
+            padding: 0.75rem 1rem;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            transition: all 0.2s;
+        }
+
+        .collapsible-header:hover { box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+
+        .collapsible-header h3 {
+            font-size: 0.9rem;
+            color: var(--cost-purple);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .collapsible-header .toggle {
+            font-size: 0.8rem;
+            color: var(--gray);
+            transition: transform 0.3s;
+        }
+
+        .collapsible-section.open .toggle { transform: rotate(180deg); }
+
+        .collapsible-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+        }
+
+        .collapsible-section.open .collapsible-content {
+            max-height: 700px;
+        }
+
+        .collapsible-content img {
+            width: 100%;
+            margin-top: 1rem;
+            border-radius: 10px;
+        }
+
+        /* Sections Grid */
+        .sections-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1rem;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        .sitemap-section {
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+            overflow: hidden;
+        }
+
+        .sitemap-section.full-width {
+            grid-column: 1 / -1;
+        }
+
+        .section-header {
+            padding: 0.75rem 1rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            cursor: pointer;
+            background: linear-gradient(135deg, rgba(91,45,138,0.05), rgba(43,95,158,0.05));
+            transition: background 0.2s;
+        }
+
+        .section-header:hover { background: linear-gradient(135deg, rgba(91,45,138,0.1), rgba(43,95,158,0.1)); }
+
+        .section-header h2 {
+            font-size: 0.9rem;
+            color: var(--dark);
+            margin: 0;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-header .dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background: var(--cost-purple);
+        }
+
+        .section-header.impact .dot { background: var(--cost-green); }
+        .section-header.network .dot { background: var(--cost-teal); }
+        .section-header.research .dot { background: var(--cost-blue); }
+        .section-header.activities .dot { background: var(--cost-orange); }
+        .section-header.archive .dot { background: var(--cost-purple); }
+
+        .section-header .meta {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .section-header .count {
+            background: var(--cost-purple);
+            color: white;
+            padding: 0.15rem 0.5rem;
+            border-radius: 10px;
+            font-size: 0.7rem;
+            font-weight: 600;
+        }
+
+        .section-header .toggle {
+            font-size: 0.7rem;
+            color: var(--gray);
+            transition: transform 0.3s;
+        }
+
+        .section-header.collapsed .toggle { transform: rotate(-90deg); }
+
+        .section-content {
+            max-height: 500px;
+            overflow: hidden;
+            transition: max-height 0.3s;
+        }
+
+        .section-content.collapsed { max-height: 0; }
+
+        .page-list { list-style: none; }
+
+        .page-item {
+            display: flex;
+            align-items: center;
+            padding: 0.5rem 1rem;
+            border-bottom: 1px solid #f1f3f4;
+            font-size: 0.85rem;
+        }
+
+        .page-item:last-child { border-bottom: none; }
+        .page-item:hover { background: #f8f9fa; }
+
+        .page-item .icon {
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: var(--cost-blue);
+            margin-right: 0.75rem;
+            flex-shrink: 0;
+        }
+
+        .page-link {
+            color: var(--cost-blue);
+            text-decoration: none;
+            flex-grow: 1;
+        }
+
+        .page-link:hover { text-decoration: underline; color: var(--cost-purple); }
+
+        .page-path {
+            color: var(--gray);
+            font-size: 0.7rem;
+            font-family: monospace;
+            margin-left: auto;
+        }
+
+        /* Folder tree */
+        .folder-tree { padding: 0.5rem 1rem; }
+
+        .folder-item { margin-bottom: 0.25rem; }
+
+        .folder-header {
+            display: flex;
+            align-items: center;
+            padding: 0.35rem 0;
+            cursor: pointer;
+            font-size: 0.85rem;
+            font-weight: 500;
+            color: var(--cost-purple);
+        }
+
+        .folder-header:hover { color: var(--cost-orange); }
+
+        .folder-toggle {
+            width: 16px;
+            font-size: 0.7rem;
+            color: var(--gray);
+        }
+
+        .folder-children {
+            padding-left: 1.25rem;
+            display: none;
+        }
+
+        .folder-children.open { display: block; }
+
+        /* Footer */
         footer {
             background: var(--dark);
             color: white;
-            padding: 1.5rem 2rem;
+            padding: 1.25rem 2rem;
             text-align: center;
             margin-top: 2rem;
         }
 
-        footer p { color: rgba(255,255,255,0.7); font-size: 0.85rem; }
+        footer p { color: rgba(255,255,255,0.7); font-size: 0.8rem; margin: 0.25rem 0; }
         footer a { color: var(--cost-orange); text-decoration: none; }
 
-        @media (max-width: 768px) {
-            .hero { padding: 3.5rem 1.5rem 1.5rem; }
-            .hero h1 { font-size: 1.75rem; }
-            .stats-banner { gap: 1.5rem; padding: 1rem; }
-            .container { padding: 1.5rem 1rem; }
+        /* Responsive */
+        @media (max-width: 900px) {
+            .stat-cards { grid-template-columns: 1fr; max-width: 400px; }
+            .sections-grid { grid-template-columns: 1fr; }
+            .filter-search-bar { flex-direction: column; align-items: stretch; }
+            .search-input { min-width: 100%; }
+        }
+
+        @media (max-width: 600px) {
+            .compact-hero { padding: 0.75rem 1rem; }
+            .compact-hero h1 { font-size: 1.25rem; }
             .page-path { display: none; }
-            .visualization-section {
-                grid-template-columns: 1fr;
-                padding: 1rem;
-                gap: 1rem;
-            }
-            .chart-wrapper { height: 200px; }
-            .filter-section { padding: 0 1rem 1rem; }
-            .filter-pills { gap: 0.4rem; }
-            .filter-pill { padding: 0.35rem 0.7rem; font-size: 0.7rem; }
+            .filter-pill { padding: 0.3rem 0.6rem; font-size: 0.65rem; }
         }
     </style>
 
@@ -324,10 +403,6 @@
         .sl-topbar-logo { display: flex !important; align-items: center !important; text-decoration: none !important; color: white !important; font-weight: 700 !important; font-size: 0.85rem !important; }
         .sl-topbar-logo .action-id { color: #E87722 !important; margin-left: 0.2rem !important; }
         .sl-topbar-logo .badge { font-size: 0.5rem !important; background: rgba(255,255,255,0.2) !important; padding: 0.1rem 0.35rem !important; border-radius: 2px !important; margin-left: 0.5rem !important; }
-        .sl-topbar-tabs { display: flex !important; align-items: center !important; height: 100% !important; }
-        .sl-topbar-tab { background: transparent !important; border: none !important; cursor: pointer !important; height: 100% !important; padding: 0 0.6rem !important; color: rgba(255,255,255,0.8) !important; font-family: inherit !important; font-size: 0.65rem !important; font-weight: 600 !important; text-transform: uppercase !important; border-bottom: 2px solid transparent !important; transition: all 0.15s !important; text-decoration: none !important; display: flex !important; align-items: center !important; }
-        .sl-topbar-tab:hover { background: rgba(255,255,255,0.1) !important; color: white !important; }
-        .sl-topbar-tab.active { color: white !important; background: rgba(255,255,255,0.12) !important; border-bottom-color: #E87722 !important; }
         .sl-hamburger { display: none !important; background: none !important; border: none !important; color: white !important; cursor: pointer !important; padding: 0.35rem !important; flex-direction: column !important; gap: 3px !important; }
         .sl-hamburger span { display: block; width: 18px; height: 2px; background: white; border-radius: 1px; }
         .sl-sidebar { position: fixed !important; top: var(--sl-topbar-height) !important; left: 0 !important; width: var(--sl-sidebar-width) !important; height: calc(100vh - var(--sl-topbar-height)) !important; background: #0f172a !important; z-index: 10000 !important; overflow-y: auto !important; font-family: 'Inter', -apple-system, sans-serif !important; }
@@ -336,7 +411,7 @@
         .sl-section-link { color: inherit; text-decoration: none; flex: 1; display: block; }
         .sl-section-link:hover { color: #E87722; }
         .sl-section { border-bottom: 1px solid #1e293b !important; }
-        .sl-section-header { display: flex !important; align-items: center !important; justify-content: space-between !important; padding: 0.4rem 0.6rem !important; color: #94a3b8 !important; font-size: 0.65rem !important; font-weight: 600 !important; text-transform: uppercase !important; cursor: pointer !important; text-decoration: none !important; }
+        .sl-section-header { display: flex !important; align-items: center !important; justify-content: space-between !important; padding: 0.4rem 0.6rem !important; color: #94a3b8 !important; font-size: 0.65rem !important; font-weight: 600 !important; text-transform: uppercase !important; cursor: pointer !important; }
         .sl-section-header:hover { background: #1e293b !important; color: white !important; }
         .sl-section.active .sl-section-header { color: #E87722 !important; background: #1e293b !important; }
         .sl-section-header .toggle { font-size: 0.5rem; transition: transform 0.2s; }
@@ -348,10 +423,8 @@
         .sl-links a.current { color: #E87722 !important; border-left-color: #E87722 !important; background: rgba(232,119,34,0.1) !important; }
         .sl-overlay { display: none !important; }
         .sl-overlay.active { display: block !important; position: fixed !important; top: var(--sl-topbar-height) !important; left: 0 !important; right: 0 !important; bottom: 0 !important; background: rgba(0,0,0,0.5) !important; z-index: 9999 !important; }
-        .hero { padding-top: 1.5rem !important; margin-top: 0 !important; }
         @media (max-width: 900px) {
             body { padding-left: 0 !important; }
-            .sl-topbar-tabs { display: none !important; }
             .sl-hamburger { display: flex !important; }
             .sl-sidebar { transform: translateX(-100%); transition: transform 0.3s; }
             .sl-sidebar.open { transform: translateX(0); }
@@ -371,7 +444,7 @@
     <div class="sl-overlay" onclick="slToggleSidebar()"></div>
 
     <aside class="sl-sidebar">
-        <a href="index.html" class="sl-sidebar-home" data-category="home">HOME</a>
+        <a href="index.html" class="sl-sidebar-home">HOME</a>
         <div class="sl-section" data-category="impact">
             <div class="sl-section-header"><a href="impact.html" class="sl-section-link">IMPACT</a> <span class="toggle" onclick="slToggleSection(this.parentNode)">&#9660;</span></div>
             <div class="sl-links">
@@ -422,62 +495,33 @@
         </div>
     </aside>
 
-    <div class="hero">
+    <!-- Compact Hero -->
+    <div class="compact-hero">
         <h1>Site Map</h1>
-        <p class="subtitle">Complete inventory of all pages and resources</p>
+        <span class="subtitle">Complete inventory of all pages and resources</span>
     </div>
 
-    <div class="stats-banner" id="stats-banner">
-        <div class="stat-item">
-            <div class="stat-number" id="stat-total">-</div>
-            <div class="stat-label">Total Pages</div>
+    <!-- Stat Cards with Mini Charts -->
+    <div class="stat-cards">
+        <div class="stat-card">
+            <div class="number" id="stat-total">-</div>
+            <div class="label">Total Pages</div>
+            <div class="mini-chart"><canvas id="miniDonut"></canvas></div>
         </div>
-        <div class="stat-item">
-            <div class="stat-number" id="stat-root">-</div>
-            <div class="stat-label">Main Pages</div>
+        <div class="stat-card">
+            <div class="number" id="stat-main">-</div>
+            <div class="label">Main Pages</div>
+            <div class="mini-chart"><canvas id="miniBar"></canvas></div>
         </div>
-        <div class="stat-item">
-            <div class="stat-number" id="stat-financial">-</div>
-            <div class="stat-label">Financial Reports</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number" id="stat-archive">-</div>
-            <div class="stat-label">Archive Documents</div>
-        </div>
-        <div class="stat-item">
-            <div class="stat-number" id="stat-data">-</div>
-            <div class="stat-label">Data Files</div>
+        <div class="stat-card">
+            <div class="number" id="stat-archive">-</div>
+            <div class="label">Archive + Data</div>
+            <div class="mini-chart"><canvas id="miniPie"></canvas></div>
         </div>
     </div>
 
-    <!-- Visualization Section -->
-    <div class="visualization-section">
-        <div class="chart-card">
-            <h3>Page Distribution</h3>
-            <div class="chart-wrapper">
-                <canvas id="donutChart"></canvas>
-                <div class="chart-center-text">
-                    <div class="number" id="chart-total">-</div>
-                    <div class="label">Pages</div>
-                </div>
-            </div>
-        </div>
-        <div class="chart-card">
-            <h3>Content by Section</h3>
-            <div class="chart-wrapper">
-                <canvas id="barChart"></canvas>
-            </div>
-        </div>
-        <div class="chart-card chart-card-full">
-            <h3>Site Link Structure</h3>
-            <div class="graph-wrapper">
-                <img src="site_graph.png" alt="COST CA19130 site structure showing 217 pages across 5 categories" class="site-graph">
-            </div>
-        </div>
-    </div>
-
-    <!-- Filter Pills -->
-    <div class="filter-section">
+    <!-- Filter + Search Bar -->
+    <div class="filter-search-bar">
         <div class="filter-pills">
             <button class="filter-pill active" data-filter="all" onclick="filterByCategory('all')">All</button>
             <button class="filter-pill" data-filter="impact" onclick="filterByCategory('IMPACT')">Impact</button>
@@ -486,22 +530,28 @@
             <button class="filter-pill" data-filter="activities" onclick="filterByCategory('ACTIVITIES')">Activities</button>
             <button class="filter-pill" data-filter="archive" onclick="filterByCategory('ARCHIVE')">Archive</button>
         </div>
+        <input type="text" class="search-input" id="search-input" placeholder="Search pages..." oninput="filterPages()">
     </div>
 
-    <div class="container">
-        <div class="search-box">
-            <input type="text" id="search-input" placeholder="Search pages..." oninput="filterPages()">
+    <!-- Collapsible Graph Section -->
+    <div class="collapsible-section" id="graph-section">
+        <div class="collapsible-header" onclick="toggleGraph()">
+            <h3><span>&#128279;</span> Site Link Structure</h3>
+            <span class="toggle">&#9660;</span>
         </div>
+        <div class="collapsible-content">
+            <img src="site_graph.png" alt="COST CA19130 site structure showing 217 pages across 5 categories">
+        </div>
+    </div>
 
-        <div id="sitemap-content">
-            <!-- Populated by JavaScript -->
-            <div style="text-align: center; padding: 2rem; color: var(--gray);">Loading sitemap...</div>
-        </div>
+    <!-- Sections Grid -->
+    <div class="sections-grid" id="sitemap-content">
+        <div style="grid-column: 1 / -1; text-align: center; padding: 2rem; color: var(--gray);">Loading sitemap...</div>
     </div>
 
     <footer>
         <p>COST Action CA19130: Fintech and AI in Finance (2020-2024)</p>
-        <p>Data sourced from <a href="https://openalex.org" target="_blank">OpenAlex</a> and <a href="https://orcid.org" target="_blank">ORCID</a> | Archive maintained since 2024</p>
+        <p>Data sourced from <a href="https://openalex.org" target="_blank">OpenAlex</a> and <a href="https://orcid.org" target="_blank">ORCID</a></p>
     </footer>
 
     <script>
@@ -515,6 +565,11 @@
             section.classList.toggle('active');
         }
 
+        // Graph toggle
+        function toggleGraph() {
+            document.getElementById('graph-section').classList.toggle('open');
+        }
+
         let sitemapData = null;
 
         // Load and render sitemap
@@ -523,241 +578,94 @@
                 const response = await fetch('data/sitemap.json');
                 sitemapData = await response.json();
                 renderStats();
+                renderMiniCharts();
                 renderSitemap();
             } catch (error) {
                 console.error('Error loading sitemap:', error);
-                document.getElementById('sitemap-content').innerHTML = '<p style="color: red; text-align: center;">Error loading sitemap data</p>';
+                document.getElementById('sitemap-content').innerHTML = '<p style="color: red; text-align: center; grid-column: 1/-1;">Error loading sitemap data</p>';
             }
         }
-
-        let donutChart = null;
-        let barChart = null;
 
         function renderStats() {
             const stats = sitemapData.statistics;
             document.getElementById('stat-total').textContent = stats.total_pages;
-            document.getElementById('stat-root').textContent = stats.root_pages;
-            document.getElementById('stat-financial').textContent = stats.financial_reports + stats.work_budget_plans;
-            document.getElementById('stat-archive').textContent = stats.action_chair_documents;
-            document.getElementById('stat-data').textContent = stats.json_data_files;
-            document.getElementById('chart-total').textContent = stats.total_pages;
-
-            // Render charts
-            renderDonutChart();
-            renderBarChart();
+            document.getElementById('stat-main').textContent = stats.root_pages;
+            document.getElementById('stat-archive').textContent = stats.action_chair_documents + stats.json_data_files;
         }
 
-        function renderDonutChart() {
-            const ctx = document.getElementById('donutChart').getContext('2d');
+        function renderMiniCharts() {
             const stats = sitemapData.statistics;
 
-            // Calculate category totals from actual data
-            const categoryTotals = {};
-            for (const [cat, pages] of Object.entries(sitemapData.categories)) {
-                if (pages.length > 0) {
-                    categoryTotals[cat] = pages.length;
-                }
-            }
-
-            const data = {
-                labels: ['Archive Docs', 'Root Pages', 'Financial', 'Budget Plans'],
-                datasets: [{
-                    data: [
-                        stats.action_chair_documents,
-                        stats.root_pages,
-                        stats.financial_reports,
-                        stats.work_budget_plans
-                    ],
-                    backgroundColor: [
-                        '#00A0B0', // teal
-                        '#5B2D8A', // purple
-                        '#E87722', // orange
-                        '#2B5F9E'  // blue
-                    ],
-                    borderWidth: 0,
-                    hoverOffset: 8
-                }]
-            };
-
-            donutChart = new Chart(ctx, {
+            // Mini Donut - Page distribution
+            new Chart(document.getElementById('miniDonut'), {
                 type: 'doughnut',
-                data: data,
+                data: {
+                    labels: ['Archive', 'Main', 'Reports'],
+                    datasets: [{
+                        data: [stats.action_chair_documents, stats.root_pages, stats.financial_reports + stats.work_budget_plans],
+                        backgroundColor: ['#00A0B0', '#5B2D8A', '#E87722'],
+                        borderWidth: 0
+                    }]
+                },
                 options: {
                     responsive: true,
                     maintainAspectRatio: false,
-                    cutout: '65%',
-                    plugins: {
-                        legend: {
-                            position: 'bottom',
-                            labels: {
-                                padding: 15,
-                                usePointStyle: true,
-                                pointStyle: 'circle',
-                                font: { size: 11 }
-                            }
-                        },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    const total = context.dataset.data.reduce((a, b) => a + b, 0);
-                                    const percentage = ((context.raw / total) * 100).toFixed(1);
-                                    return `${context.label}: ${context.raw} (${percentage}%)`;
-                                }
-                            }
-                        }
-                    },
-                    onClick: (event, elements) => {
-                        if (elements.length > 0) {
-                            const index = elements[0].index;
-                            const sectionMap = ['action-chair', 'root', 'financial', 'budget'];
-                            scrollToSection(sectionMap[index]);
-                        }
-                    }
+                    cutout: '60%',
+                    plugins: { legend: { display: false } }
                 }
             });
-        }
 
-        function renderBarChart() {
-            const ctx = document.getElementById('barChart').getContext('2d');
-            const stats = sitemapData.statistics;
-
-            const data = {
-                labels: ['Action Chair', 'Data Files', 'Root Pages', 'Financial', 'Budget'],
-                datasets: [{
-                    data: [
-                        stats.action_chair_documents,
-                        stats.json_data_files,
-                        stats.root_pages,
-                        stats.financial_reports,
-                        stats.work_budget_plans
-                    ],
-                    backgroundColor: [
-                        '#00A0B0',
-                        '#6c757d',
-                        '#5B2D8A',
-                        '#E87722',
-                        '#2B5F9E'
-                    ],
-                    borderRadius: 4,
-                    barThickness: 24
-                }]
-            };
-
-            barChart = new Chart(ctx, {
+            // Mini Bar - Category breakdown
+            new Chart(document.getElementById('miniBar'), {
                 type: 'bar',
-                data: data,
+                data: {
+                    labels: ['IMP', 'NET', 'RES', 'ACT', 'ARC'],
+                    datasets: [{
+                        data: [
+                            sitemapData.categories.IMPACT?.length || 0,
+                            sitemapData.categories.NETWORK?.length || 0,
+                            sitemapData.categories.RESEARCH?.length || 0,
+                            sitemapData.categories.ACTIVITIES?.length || 0,
+                            sitemapData.categories.ARCHIVE?.length || 0
+                        ],
+                        backgroundColor: ['#7AB800', '#00A0B0', '#2B5F9E', '#E87722', '#5B2D8A'],
+                        borderRadius: 2
+                    }]
+                },
                 options: {
-                    indexAxis: 'y',
                     responsive: true,
                     maintainAspectRatio: false,
-                    plugins: {
-                        legend: { display: false },
-                        tooltip: {
-                            callbacks: {
-                                label: function(context) {
-                                    return `${context.raw} items`;
-                                }
-                            }
-                        }
-                    },
+                    plugins: { legend: { display: false } },
                     scales: {
-                        x: {
-                            beginAtZero: true,
-                            grid: { display: false },
-                            ticks: { font: { size: 10 } }
-                        },
-                        y: {
-                            grid: { display: false },
-                            ticks: { font: { size: 11 } }
-                        }
-                    },
-                    onClick: (event, elements) => {
-                        if (elements.length > 0) {
-                            const index = elements[0].index;
-                            const sectionMap = ['action-chair', 'data', 'root', 'financial', 'budget'];
-                            scrollToSection(sectionMap[index]);
-                        }
+                        x: { display: false },
+                        y: { display: false }
                     }
                 }
             });
-        }
 
-        function scrollToSection(sectionType) {
-            const sections = document.querySelectorAll('.sitemap-section');
-            let targetSection = null;
-
-            sections.forEach(section => {
-                const header = section.querySelector('.section-header h2');
-                if (!header) return;
-                const text = header.textContent.toLowerCase();
-
-                if (sectionType === 'action-chair' && text.includes('action chair')) {
-                    targetSection = section;
-                } else if (sectionType === 'data' && text.includes('json')) {
-                    targetSection = section;
-                } else if (sectionType === 'financial' && text.includes('financial')) {
-                    targetSection = section;
-                } else if (sectionType === 'budget' && text.includes('budget')) {
-                    targetSection = section;
+            // Mini Pie - Archive breakdown
+            new Chart(document.getElementById('miniPie'), {
+                type: 'pie',
+                data: {
+                    labels: ['Docs', 'Data'],
+                    datasets: [{
+                        data: [stats.action_chair_documents, stats.json_data_files],
+                        backgroundColor: ['#00A0B0', '#6c757d'],
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: { legend: { display: false } }
                 }
             });
-
-            if (targetSection) {
-                // Expand the section
-                const content = targetSection.querySelector('.section-content');
-                const header = targetSection.querySelector('.section-header');
-                if (content.classList.contains('collapsed')) {
-                    content.classList.remove('collapsed');
-                    header.classList.remove('collapsed');
-                }
-                // Scroll to it
-                targetSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
-            }
-        }
-
-        function filterByCategory(category) {
-            // Update pill active states
-            document.querySelectorAll('.filter-pill').forEach(pill => {
-                pill.classList.remove('active');
-                if (pill.getAttribute('data-filter') === category.toLowerCase() ||
-                    (category === 'all' && pill.getAttribute('data-filter') === 'all')) {
-                    pill.classList.add('active');
-                }
-            });
-
-            // Show/hide sections
-            const sections = document.querySelectorAll('.sitemap-section');
-            sections.forEach(section => {
-                const header = section.querySelector('.section-header');
-                const headerText = section.querySelector('h2')?.textContent || '';
-
-                if (category === 'all') {
-                    section.style.display = 'block';
-                } else {
-                    // Check if section matches category
-                    const categoryMap = {
-                        'IMPACT': ['impact'],
-                        'NETWORK': ['network'],
-                        'RESEARCH': ['research'],
-                        'ACTIVITIES': ['activities', 'financial', 'budget', 'work'],
-                        'ARCHIVE': ['archive', 'action chair', 'json']
-                    };
-
-                    const keywords = categoryMap[category] || [category.toLowerCase()];
-                    const matches = keywords.some(kw => headerText.toLowerCase().includes(kw));
-                    section.style.display = matches ? 'block' : 'none';
-                }
-            });
-
-            // Scroll to content
-            document.querySelector('.container').scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
 
         function renderSitemap() {
             const container = document.getElementById('sitemap-content');
             let html = '';
 
-            // Categories
             const categoryColors = {
                 'HOME': 'archive',
                 'IMPACT': 'impact',
@@ -772,10 +680,10 @@
                 if (pages.length === 0) continue;
 
                 html += `
-                <div class="sitemap-section">
+                <div class="sitemap-section" data-category="${category}">
                     <div class="section-header ${categoryColors[category] || ''}" onclick="toggleSection(this)">
-                        <h2>${category}</h2>
-                        <div>
+                        <h2><span class="dot"></span>${category}</h2>
+                        <div class="meta">
                             <span class="count">${pages.length}</span>
                             <span class="toggle">&#9660;</span>
                         </div>
@@ -784,7 +692,7 @@
                         <ul class="page-list">
                             ${pages.map(p => `
                                 <li class="page-item" data-search="${p.name} ${p.title}">
-                                    <span class="page-icon">P</span>
+                                    <span class="icon"></span>
                                     <a href="${p.path}" class="page-link">${p.title}</a>
                                     <span class="page-path">${p.path}</span>
                                 </li>
@@ -801,19 +709,19 @@
             if (subdirs['financial-reports']) {
                 const fr = subdirs['financial-reports'];
                 html += `
-                <div class="sitemap-section">
+                <div class="sitemap-section" data-category="ACTIVITIES">
                     <div class="section-header activities" onclick="toggleSection(this)">
-                        <h2>${fr.title}</h2>
-                        <div>
+                        <h2><span class="dot"></span>${fr.title}</h2>
+                        <div class="meta">
                             <span class="count">${fr.count}</span>
                             <span class="toggle">&#9660;</span>
                         </div>
                     </div>
-                    <div class="section-content">
+                    <div class="section-content collapsed">
                         <ul class="page-list">
                             ${fr.pages.map(p => `
                                 <li class="page-item" data-search="${p.name} ${p.title}">
-                                    <span class="page-icon">F</span>
+                                    <span class="icon"></span>
                                     <a href="${p.path}" class="page-link">${p.title}</a>
                                     <span class="page-path">${p.path}</span>
                                 </li>
@@ -827,19 +735,19 @@
             if (subdirs['work-budget-plans']) {
                 const wbp = subdirs['work-budget-plans'];
                 html += `
-                <div class="sitemap-section">
+                <div class="sitemap-section" data-category="ACTIVITIES">
                     <div class="section-header activities" onclick="toggleSection(this)">
-                        <h2>${wbp.title}</h2>
-                        <div>
+                        <h2><span class="dot"></span>${wbp.title}</h2>
+                        <div class="meta">
                             <span class="count">${wbp.count}</span>
                             <span class="toggle">&#9660;</span>
                         </div>
                     </div>
-                    <div class="section-content">
+                    <div class="section-content collapsed">
                         <ul class="page-list">
                             ${wbp.pages.map(p => `
                                 <li class="page-item" data-search="${p.name} ${p.title}">
-                                    <span class="page-icon">W</span>
+                                    <span class="icon"></span>
                                     <a href="${p.path}" class="page-link">${p.title}</a>
                                     <span class="page-path">${p.path}</span>
                                 </li>
@@ -849,14 +757,14 @@
                 </div>`;
             }
 
-            // Action Chair Archive
+            // Action Chair Archive + Data Files (full width)
             if (subdirs['action-chair']) {
                 const ac = subdirs['action-chair'];
                 html += `
-                <div class="sitemap-section">
+                <div class="sitemap-section full-width" data-category="ARCHIVE">
                     <div class="section-header archive" onclick="toggleSection(this)">
-                        <h2>${ac.title}</h2>
-                        <div>
+                        <h2><span class="dot"></span>${ac.title}</h2>
+                        <div class="meta">
                             <span class="count">${ac.count}</span>
                             <span class="toggle">&#9660;</span>
                         </div>
@@ -872,10 +780,10 @@
             // Data Files
             if (sitemapData.data_files && sitemapData.data_files.length > 0) {
                 html += `
-                <div class="sitemap-section">
+                <div class="sitemap-section full-width" data-category="ARCHIVE">
                     <div class="section-header" onclick="toggleSection(this)">
-                        <h2>JSON Data Files</h2>
-                        <div>
+                        <h2><span class="dot"></span>JSON Data Files</h2>
+                        <div class="meta">
                             <span class="count">${sitemapData.data_files.length}</span>
                             <span class="toggle">&#9660;</span>
                         </div>
@@ -884,7 +792,7 @@
                         <ul class="page-list">
                             ${sitemapData.data_files.map(f => `
                                 <li class="page-item" data-search="${f.name}">
-                                    <span class="page-icon data">D</span>
+                                    <span class="icon" style="background: var(--cost-teal);"></span>
                                     <span class="page-link">${f.name}</span>
                                     <span class="page-path">${f.path}</span>
                                 </li>
@@ -906,8 +814,7 @@
                     <div class="folder-item">
                         <div class="folder-header" onclick="toggleFolder(this)">
                             <span class="folder-toggle">+</span>
-                            <span class="page-icon folder">D</span>
-                            ${item.name} <span style="color: var(--gray); font-size: 0.8rem; margin-left: 0.5rem;">(${item.count || item.children?.length || 0})</span>
+                            ${item.name} <span style="color: var(--gray); font-size: 0.75rem; margin-left: 0.5rem;">(${item.count || item.children?.length || 0})</span>
                         </div>
                         <div class="folder-children">
                             ${item.children ? renderFolderTree(item.children) : ''}
@@ -917,7 +824,7 @@
                     const encodedPath = item.path.replace(/ /g, '%20');
                     return `
                     <div class="page-item" data-search="${item.name} ${item.title || ''}">
-                        <span class="page-icon">A</span>
+                        <span class="icon"></span>
                         <a href="${encodedPath}" class="page-link">${item.title || item.name}</a>
                     </div>`;
                 }
@@ -941,17 +848,33 @@
             }
         }
 
+        function filterByCategory(category) {
+            document.querySelectorAll('.filter-pill').forEach(pill => {
+                pill.classList.remove('active');
+                if (pill.getAttribute('data-filter') === category.toLowerCase() ||
+                    (category === 'all' && pill.getAttribute('data-filter') === 'all')) {
+                    pill.classList.add('active');
+                }
+            });
+
+            const sections = document.querySelectorAll('.sitemap-section');
+            sections.forEach(section => {
+                const sectionCat = section.getAttribute('data-category');
+                if (category === 'all') {
+                    section.style.display = 'block';
+                } else {
+                    section.style.display = sectionCat === category ? 'block' : 'none';
+                }
+            });
+        }
+
         function filterPages() {
             const query = document.getElementById('search-input').value.toLowerCase();
             const items = document.querySelectorAll('.page-item');
 
             items.forEach(item => {
                 const searchText = item.getAttribute('data-search')?.toLowerCase() || '';
-                if (searchText.includes(query)) {
-                    item.style.display = 'flex';
-                } else {
-                    item.style.display = 'none';
-                }
+                item.style.display = searchText.includes(query) ? 'flex' : 'none';
             });
         }
 
