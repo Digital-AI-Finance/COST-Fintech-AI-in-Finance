@@ -1,0 +1,1114 @@
+{
+  "generated": "2026-01-06T15:03:43.455997",
+  "statistics": {
+    "total_pages": 217,
+    "root_pages": 38,
+    "financial_reports": 13,
+    "work_budget_plans": 9,
+    "action_chair_documents": 157,
+    "json_data_files": 56
+  },
+  "categories": {
+    "HOME": [
+      {
+        "name": "index.html",
+        "title": "Homepage",
+        "category": "HOME",
+        "path": "index.html",
+        "type": "page"
+      }
+    ],
+    "IMPACT": [
+      {
+        "name": "comparison-enhanced.html",
+        "title": "Report Comparison",
+        "category": "IMPACT",
+        "path": "comparison-enhanced.html",
+        "type": "page"
+      },
+      {
+        "name": "final-achievements.html",
+        "title": "Final Achievements",
+        "category": "IMPACT",
+        "path": "final-achievements.html",
+        "type": "page"
+      },
+      {
+        "name": "final-impacts.html",
+        "title": "Scientific Impact",
+        "category": "IMPACT",
+        "path": "final-impacts.html",
+        "type": "page"
+      },
+      {
+        "name": "final-publications.html",
+        "title": "Legacy & Continuation",
+        "category": "IMPACT",
+        "path": "final-publications.html",
+        "type": "page"
+      },
+      {
+        "name": "final-report.html",
+        "title": "Objectives Met (16/16)",
+        "category": "IMPACT",
+        "path": "final-report.html",
+        "type": "page"
+      },
+      {
+        "name": "impact.html",
+        "title": "Impact Overview",
+        "category": "IMPACT",
+        "path": "impact.html",
+        "type": "page"
+      }
+    ],
+    "NETWORK": [
+      {
+        "name": "author-stats.html",
+        "title": "Author Statistics",
+        "category": "NETWORK",
+        "path": "author-stats.html",
+        "type": "page"
+      },
+      {
+        "name": "country-contributions.html",
+        "title": "Countries (48)",
+        "category": "NETWORK",
+        "path": "country-contributions.html",
+        "type": "page"
+      },
+      {
+        "name": "leadership.html",
+        "title": "Leadership Team",
+        "category": "NETWORK",
+        "path": "leadership.html",
+        "type": "page"
+      },
+      {
+        "name": "mc-members.html",
+        "title": "Management Committee (70)",
+        "category": "NETWORK",
+        "path": "mc-members.html",
+        "type": "page"
+      },
+      {
+        "name": "members.html",
+        "title": "All Members (426)",
+        "category": "NETWORK",
+        "path": "members.html",
+        "type": "page"
+      },
+      {
+        "name": "network.html",
+        "title": "Network Overview",
+        "category": "NETWORK",
+        "path": "network.html",
+        "type": "page"
+      },
+      {
+        "name": "wg-members.html",
+        "title": "Working Groups",
+        "category": "NETWORK",
+        "path": "wg-members.html",
+        "type": "page"
+      }
+    ],
+    "RESEARCH": [
+      {
+        "name": "datasets.html",
+        "title": "Datasets",
+        "category": "RESEARCH",
+        "path": "datasets.html",
+        "type": "page"
+      },
+      {
+        "name": "documents.html",
+        "title": "Documents Archive",
+        "category": "RESEARCH",
+        "path": "documents.html",
+        "type": "page"
+      },
+      {
+        "name": "other-outputs.html",
+        "title": "Other Outputs",
+        "category": "RESEARCH",
+        "path": "other-outputs.html",
+        "type": "page"
+      },
+      {
+        "name": "preprints.html",
+        "title": "Preprints",
+        "category": "RESEARCH",
+        "path": "preprints.html",
+        "type": "page"
+      },
+      {
+        "name": "publications.html",
+        "title": "Publications",
+        "category": "RESEARCH",
+        "path": "publications.html",
+        "type": "page"
+      },
+      {
+        "name": "research.html",
+        "title": "Research Overview",
+        "category": "RESEARCH",
+        "path": "research.html",
+        "type": "page"
+      }
+    ],
+    "ACTIVITIES": [
+      {
+        "name": "activities.html",
+        "title": "Activities Overview",
+        "category": "ACTIVITIES",
+        "path": "activities.html",
+        "type": "page"
+      },
+      {
+        "name": "progress-gp1.html",
+        "title": "Grant Period 1",
+        "category": "ACTIVITIES",
+        "path": "progress-gp1.html",
+        "type": "page"
+      },
+      {
+        "name": "progress-gp2.html",
+        "title": "Grant Period 2",
+        "category": "ACTIVITIES",
+        "path": "progress-gp2.html",
+        "type": "page"
+      },
+      {
+        "name": "progress-gp3.html",
+        "title": "Grant Period 3",
+        "category": "ACTIVITIES",
+        "path": "progress-gp3.html",
+        "type": "page"
+      },
+      {
+        "name": "progress-gp4.html",
+        "title": "Grant Period 4",
+        "category": "ACTIVITIES",
+        "path": "progress-gp4.html",
+        "type": "page"
+      },
+      {
+        "name": "progress-gp5.html",
+        "title": "Grant Period 5",
+        "category": "ACTIVITIES",
+        "path": "progress-gp5.html",
+        "type": "page"
+      },
+      {
+        "name": "progress-reports.html",
+        "title": "Progress Reports",
+        "category": "ACTIVITIES",
+        "path": "progress-reports.html",
+        "type": "page"
+      }
+    ],
+    "ARCHIVE": [
+      {
+        "name": "archive.html",
+        "title": "Archive Overview",
+        "category": "ARCHIVE",
+        "path": "archive.html",
+        "type": "page"
+      },
+      {
+        "name": "comparison-action-chair-full.html",
+        "title": "Full Comparison",
+        "category": "ARCHIVE",
+        "path": "comparison-action-chair-full.html",
+        "type": "page"
+      },
+      {
+        "name": "final-action-chair-report-full.html",
+        "title": "Final Report (Full)",
+        "category": "ARCHIVE",
+        "path": "final-action-chair-report-full.html",
+        "type": "page"
+      },
+      {
+        "name": "final-action-chair-report.html",
+        "title": "Final Action Chair Report",
+        "category": "ARCHIVE",
+        "path": "final-action-chair-report.html",
+        "type": "page"
+      },
+      {
+        "name": "midterm-action-chair-report-full.html",
+        "title": "Mid-Term Report (Full)",
+        "category": "ARCHIVE",
+        "path": "midterm-action-chair-report-full.html",
+        "type": "page"
+      },
+      {
+        "name": "midterm-action-chair-report.html",
+        "title": "Mid-Term Action Chair Report",
+        "category": "ARCHIVE",
+        "path": "midterm-action-chair-report.html",
+        "type": "page"
+      },
+      {
+        "name": "midterm-public-report.html",
+        "title": "Public Mid-Term Report",
+        "category": "ARCHIVE",
+        "path": "midterm-public-report.html",
+        "type": "page"
+      },
+      {
+        "name": "midterm-rapporteur-review.html",
+        "title": "Rapporteur Review",
+        "category": "ARCHIVE",
+        "path": "midterm-rapporteur-review.html",
+        "type": "page"
+      },
+      {
+        "name": "midterm-report.html",
+        "title": "Mid-Term Report",
+        "category": "ARCHIVE",
+        "path": "midterm-report.html",
+        "type": "page"
+      },
+      {
+        "name": "report-editor.html",
+        "title": "Report Editor",
+        "category": "ARCHIVE",
+        "path": "report-editor.html",
+        "type": "page"
+      }
+    ],
+    "OTHER": [
+      {
+        "name": "comparison-action-chair.html",
+        "title": "Comparison Action Chair",
+        "category": "OTHER",
+        "path": "comparison-action-chair.html",
+        "type": "page"
+      }
+    ]
+  },
+  "subdirectories": {
+    "financial-reports": {
+      "title": "Financial Reports",
+      "count": 13,
+      "pages": [
+        {
+          "name": "countries.html",
+          "title": "Countries",
+          "path": "financial-reports/countries.html",
+          "type": "page"
+        },
+        {
+          "name": "ffr1.html",
+          "title": "Ffr1",
+          "path": "financial-reports/ffr1.html",
+          "type": "page"
+        },
+        {
+          "name": "ffr2.html",
+          "title": "Ffr2",
+          "path": "financial-reports/ffr2.html",
+          "type": "page"
+        },
+        {
+          "name": "ffr3.html",
+          "title": "Ffr3",
+          "path": "financial-reports/ffr3.html",
+          "type": "page"
+        },
+        {
+          "name": "ffr4.html",
+          "title": "Ffr4",
+          "path": "financial-reports/ffr4.html",
+          "type": "page"
+        },
+        {
+          "name": "ffr5.html",
+          "title": "Ffr5",
+          "path": "financial-reports/ffr5.html",
+          "type": "page"
+        },
+        {
+          "name": "index.html",
+          "title": "Index",
+          "path": "financial-reports/index.html",
+          "type": "page"
+        },
+        {
+          "name": "meetings.html",
+          "title": "Meetings",
+          "path": "financial-reports/meetings.html",
+          "type": "page"
+        },
+        {
+          "name": "overview.html",
+          "title": "Overview",
+          "path": "financial-reports/overview.html",
+          "type": "page"
+        },
+        {
+          "name": "participants.html",
+          "title": "Participants",
+          "path": "financial-reports/participants.html",
+          "type": "page"
+        },
+        {
+          "name": "stsm.html",
+          "title": "Stsm",
+          "path": "financial-reports/stsm.html",
+          "type": "page"
+        },
+        {
+          "name": "training-schools.html",
+          "title": "Training Schools",
+          "path": "financial-reports/training-schools.html",
+          "type": "page"
+        },
+        {
+          "name": "virtual-mobility.html",
+          "title": "Virtual Mobility",
+          "path": "financial-reports/virtual-mobility.html",
+          "type": "page"
+        }
+      ]
+    },
+    "work-budget-plans": {
+      "title": "Work & Budget Plans",
+      "count": 9,
+      "pages": [
+        {
+          "name": "deliverables.html",
+          "title": "Deliverables",
+          "path": "work-budget-plans/deliverables.html",
+          "type": "page"
+        },
+        {
+          "name": "gp1.html",
+          "title": "Gp1",
+          "path": "work-budget-plans/gp1.html",
+          "type": "page"
+        },
+        {
+          "name": "gp2.html",
+          "title": "Gp2",
+          "path": "work-budget-plans/gp2.html",
+          "type": "page"
+        },
+        {
+          "name": "gp3.html",
+          "title": "Gp3",
+          "path": "work-budget-plans/gp3.html",
+          "type": "page"
+        },
+        {
+          "name": "gp4.html",
+          "title": "Gp4",
+          "path": "work-budget-plans/gp4.html",
+          "type": "page"
+        },
+        {
+          "name": "gp5.html",
+          "title": "Gp5",
+          "path": "work-budget-plans/gp5.html",
+          "type": "page"
+        },
+        {
+          "name": "index.html",
+          "title": "Index",
+          "path": "work-budget-plans/index.html",
+          "type": "page"
+        },
+        {
+          "name": "overview.html",
+          "title": "Overview",
+          "path": "work-budget-plans/overview.html",
+          "type": "page"
+        },
+        {
+          "name": "working-groups.html",
+          "title": "Working Groups",
+          "path": "work-budget-plans/working-groups.html",
+          "type": "page"
+        }
+      ]
+    },
+    "action-chair": {
+      "title": "Action Chair Archive",
+      "count": 157,
+      "folders": [
+        {
+          "name": "2024 COST Application",
+          "type": "folder",
+          "count": 9,
+          "children": [
+            {
+              "name": "Evaluation 2023",
+              "type": "folder",
+              "count": 5,
+              "children": [
+                {
+                  "name": "COST_Open_Call_Applicant_Guidelines_oc-2023-1 (3).html",
+                  "title": "COST_Open_Call_Applicant_Guidelines_oc-2023-1 (3)",
+                  "path": "Action Chair/2024 COST Application/Evaluation 2023/COST_Open_Call_Applicant_Guidelines_oc-2023-1 (3).html",
+                  "type": "page"
+                },
+                {
+                  "name": "Evaluation_Criteria 2023.html",
+                  "title": "Evaluation_Criteria 2023",
+                  "path": "Action Chair/2024 COST Application/Evaluation 2023/Evaluation_Criteria 2023.html",
+                  "type": "page"
+                },
+                {
+                  "name": "OC-2023-1-26347_FULLPROPOSAL_PROPOSER (13).html",
+                  "title": "OC-2023-1-26347_FULLPROPOSAL_PROPOSER (13)",
+                  "path": "Action Chair/2024 COST Application/Evaluation 2023/OC-2023-1-26347_FULLPROPOSAL_PROPOSER (13).html",
+                  "type": "page"
+                },
+                {
+                  "name": "OC-2023-1-26347_TechnicalAnnex (7).html",
+                  "title": "OC-2023-1-26347_TechnicalAnnex (7)",
+                  "path": "Action Chair/2024 COST Application/Evaluation 2023/OC-2023-1-26347_TechnicalAnnex (7).html",
+                  "type": "page"
+                },
+                {
+                  "name": "Panel_Evaluation (3).html",
+                  "title": "Panel_Evaluation (3)",
+                  "path": "Action Chair/2024 COST Application/Evaluation 2023/Panel_Evaluation (3).html",
+                  "type": "page"
+                }
+              ]
+            },
+            {
+              "name": "Evaluation Criteria 2024",
+              "type": "folder",
+              "count": 4,
+              "children": [
+                {
+                  "name": "COST-088-21-Level-A-Rules-and-Principles-for-COST-Activities.html",
+                  "title": "COST-088-21-Level-A-Rules-and-Principles-for-COST-Activities",
+                  "path": "Action Chair/2024 COST Application/Evaluation Criteria 2024/COST-088-21-Level-A-Rules-and-Principles-for-COST-Activities.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST-101-21-Submission-Evaluation-Selection-and-Approval-SESA-Level-B-.html",
+                  "title": "COST-101-21-Submission-Evaluation-Selection-and-Approval-SESA-Level-B-",
+                  "path": "Action Chair/2024 COST Application/Evaluation Criteria 2024/COST-101-21-Submission-Evaluation-Selection-and-Approval-SESA-Level-B-.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST_Open_Call_Announcement.html",
+                  "title": "COST_Open_Call_Announcement",
+                  "path": "Action Chair/2024 COST Application/Evaluation Criteria 2024/COST_Open_Call_Announcement.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST_Open_Call_Applicant_Guidelines_oc-2024-1.html",
+                  "title": "COST_Open_Call_Applicant_Guidelines_oc-2024-1",
+                  "path": "Action Chair/2024 COST Application/Evaluation Criteria 2024/COST_Open_Call_Applicant_Guidelines_oc-2024-1.html",
+                  "type": "page"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "COST GPs Annual Reports",
+          "type": "folder",
+          "count": 15,
+          "children": [
+            {
+              "name": "ANNEX-A-AGA-CA19130-3.html",
+              "title": "ANNEX-A-AGA-CA19130-3",
+              "path": "Action Chair/COST GPs Annual Reports/ANNEX-A-AGA-CA19130-3.html",
+              "type": "page"
+            },
+            {
+              "name": "ANNEX-A-R1_AGA-CA19130-1.html",
+              "title": "ANNEX-A-R1_AGA-CA19130-1",
+              "path": "Action Chair/COST GPs Annual Reports/ANNEX-A-R1_AGA-CA19130-1.html",
+              "type": "page"
+            },
+            {
+              "name": "ANNEX-A-R1_AGA-CA19130-2.html",
+              "title": "ANNEX-A-R1_AGA-CA19130-2",
+              "path": "Action Chair/COST GPs Annual Reports/ANNEX-A-R1_AGA-CA19130-2.html",
+              "type": "page"
+            },
+            {
+              "name": "ANNEX-A-R1_AGA-CA19130-4.html",
+              "title": "ANNEX-A-R1_AGA-CA19130-4",
+              "path": "Action Chair/COST GPs Annual Reports/ANNEX-A-R1_AGA-CA19130-4.html",
+              "type": "page"
+            },
+            {
+              "name": "ANNEX-A-R1_AGA-CA19130-5.html",
+              "title": "ANNEX-A-R1_AGA-CA19130-5",
+              "path": "Action Chair/COST GPs Annual Reports/ANNEX-A-R1_AGA-CA19130-5.html",
+              "type": "page"
+            },
+            {
+              "name": "CA19130-e.html",
+              "title": "CA19130-e",
+              "path": "Action Chair/COST GPs Annual Reports/CA19130-e.html",
+              "type": "page"
+            },
+            {
+              "name": "FinalInfograficG2-Nov 2021 to May2022.html",
+              "title": "FinalInfograficG2-Nov 2021 to May2022",
+              "path": "Action Chair/COST GPs Annual Reports/FinalInfograficG2-Nov 2021 to May2022.html",
+              "type": "page"
+            },
+            {
+              "name": "InfograficNovember 2022 to October 2023​.html",
+              "title": "InfograficNovember 2022 to October 2023​",
+              "path": "Action Chair/COST GPs Annual Reports/InfograficNovember 2022 to October 2023​.html",
+              "type": "page"
+            },
+            {
+              "name": "Report Nov 2021 to Mai 2022 COST Action CA19130finalfinalfinalfinal.html",
+              "title": "Report Nov 2021 to Mai 2022 COST Action CA19130finalfinalfinalfinal",
+              "path": "Action Chair/COST GPs Annual Reports/Report Nov 2021 to Mai 2022 COST Action CA19130finalfinalfinalfinal.html",
+              "type": "page"
+            },
+            {
+              "name": "second_progress_report-CA19130.html",
+              "title": "second_progress_report-CA19130",
+              "path": "Action Chair/COST GPs Annual Reports/second_progress_report-CA19130.html",
+              "type": "page"
+            },
+            {
+              "name": "WBP-AGA-CA19130-1_13682.html",
+              "title": "WBP-AGA-CA19130-1_13682",
+              "path": "Action Chair/COST GPs Annual Reports/WBP-AGA-CA19130-1_13682.html",
+              "type": "page"
+            },
+            {
+              "name": "WBP-AGA-CA19130-2_14713.html",
+              "title": "WBP-AGA-CA19130-2_14713",
+              "path": "Action Chair/COST GPs Annual Reports/WBP-AGA-CA19130-2_14713.html",
+              "type": "page"
+            },
+            {
+              "name": "WBP-AGA-CA19130-3_14714.html",
+              "title": "WBP-AGA-CA19130-3_14714",
+              "path": "Action Chair/COST GPs Annual Reports/WBP-AGA-CA19130-3_14714.html",
+              "type": "page"
+            },
+            {
+              "name": "WBP-AGA-CA19130-4_15816.html",
+              "title": "WBP-AGA-CA19130-4_15816",
+              "path": "Action Chair/COST GPs Annual Reports/WBP-AGA-CA19130-4_15816.html",
+              "type": "page"
+            },
+            {
+              "name": "WBP-AGA-CA19130-5_16959 (1).html",
+              "title": "WBP-AGA-CA19130-5_16959 (1)",
+              "path": "Action Chair/COST GPs Annual Reports/WBP-AGA-CA19130-5_16959 (1).html",
+              "type": "page"
+            }
+          ]
+        },
+        {
+          "name": "COST_Innovators_Grant",
+          "type": "folder",
+          "count": 70,
+          "children": [
+            {
+              "name": "1st_Round_Online_Application",
+              "type": "folder",
+              "count": 1,
+              "children": [
+                {
+                  "name": "COST CIG CA19130 Application 2024.01.24.html",
+                  "title": "COST CIG CA19130 Application 2024.01.24",
+                  "path": "Action Chair/COST_Innovators_Grant/1st_Round_Online_Application/COST CIG CA19130 Application 2024.01.24.html",
+                  "type": "page"
+                }
+              ]
+            },
+            {
+              "name": "2nd_Round_Hearings",
+              "type": "folder",
+              "count": 1,
+              "children": [
+                {
+                  "name": "IG19130 Evaluation report.html",
+                  "title": "IG19130 Evaluation report",
+                  "path": "Action Chair/COST_Innovators_Grant/2nd_Round_Hearings/IG19130 Evaluation report.html",
+                  "type": "page"
+                }
+              ]
+            },
+            {
+              "name": "COST Documents",
+              "type": "folder",
+              "count": 5,
+              "children": [
+                {
+                  "name": "COST-088-21-Level-A-Rules-and-Principles-for-COST-Activities.html",
+                  "title": "COST-088-21-Level-A-Rules-and-Principles-for-COST-Activities",
+                  "path": "Action Chair/COST_Innovators_Grant/COST Documents/COST-088-21-Level-A-Rules-and-Principles-for-COST-Activities.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST-094-21-Annotated-Rules-for-COST-Actions-Level-C-V1.4-Final-.html",
+                  "title": "COST-094-21-Annotated-Rules-for-COST-Actions-Level-C-V1.4-Final-",
+                  "path": "Action Chair/COST_Innovators_Grant/COST Documents/COST-094-21-Annotated-Rules-for-COST-Actions-Level-C-V1.4-Final-.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST-098-21-v.1.1-Rules-for-COST-Innovators-Grants-Level-B.html",
+                  "title": "COST-098-21-v.1.1-Rules-for-COST-Innovators-Grants-Level-B",
+                  "path": "Action Chair/COST_Innovators_Grant/COST Documents/COST-098-21-v.1.1-Rules-for-COST-Innovators-Grants-Level-B.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST-CIG-FAQ-2024-2025.html",
+                  "title": "COST-CIG-FAQ-2024-2025",
+                  "path": "Action Chair/COST_Innovators_Grant/COST Documents/COST-CIG-FAQ-2024-2025.html",
+                  "type": "page"
+                },
+                {
+                  "name": "glossary.html",
+                  "title": "glossary",
+                  "path": "Action Chair/COST_Innovators_Grant/COST Documents/glossary.html",
+                  "type": "page"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Country Updates",
+          "type": "folder",
+          "count": 11,
+          "children": [
+            {
+              "name": "2023",
+              "type": "folder",
+              "count": 10,
+              "children": [
+                {
+                  "name": "20230927_FinAI Germany update.html",
+                  "title": "20230927_FinAI Germany update",
+                  "path": "Action Chair/Country Updates/2023/20230927_FinAI Germany update.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST Action.Latvia.update.2023.pptx.html",
+                  "title": "COST Action.Latvia.update.2023.pptx",
+                  "path": "Action Chair/Country Updates/2023/COST Action.Latvia.update.2023.pptx.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST FinAI Country Update 2023 Austria.html",
+                  "title": "COST FinAI Country Update 2023 Austria",
+                  "path": "Action Chair/Country Updates/2023/COST FinAI Country Update 2023 Austria.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST-FinAI-MK.html",
+                  "title": "COST-FinAI-MK",
+                  "path": "Action Chair/Country Updates/2023/COST-FinAI-MK.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST_FinAI_Bulgaria_September_2023.pptx.html",
+                  "title": "COST_FinAI_Bulgaria_September_2023.pptx",
+                  "path": "Action Chair/Country Updates/2023/COST_FinAI_Bulgaria_September_2023.pptx.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST_FinAI_Bulgaria_September_2023_FinTech_Report.html",
+                  "title": "COST_FinAI_Bulgaria_September_2023_FinTech_Report",
+                  "path": "Action Chair/Country Updates/2023/COST_FinAI_Bulgaria_September_2023_FinTech_Report.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST_FinAI_Czechia_update_2023.html",
+                  "title": "COST_FinAI_Czechia_update_2023",
+                  "path": "Action Chair/Country Updates/2023/COST_FinAI_Czechia_update_2023.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST_FinAi_Estonia_2023.html",
+                  "title": "COST_FinAi_Estonia_2023",
+                  "path": "Action Chair/Country Updates/2023/COST_FinAi_Estonia_2023.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST_FinAi_Estonia_2023_additional_report_about_country.html",
+                  "title": "COST_FinAi_Estonia_2023_additional_report_about_country",
+                  "path": "Action Chair/Country Updates/2023/COST_FinAi_Estonia_2023_additional_report_about_country.html",
+                  "type": "page"
+                },
+                {
+                  "name": "COST_FinAI_Kosovo_2023.html",
+                  "title": "COST_FinAI_Kosovo_2023",
+                  "path": "Action Chair/Country Updates/2023/COST_FinAI_Kosovo_2023.html",
+                  "type": "page"
+                }
+              ]
+            },
+            {
+              "name": "2024",
+              "type": "folder",
+              "count": 1,
+              "children": [
+                {
+                  "name": "COST_FinAI_Czechia_update_2024.html",
+                  "title": "COST_FinAI_Czechia_update_2024",
+                  "path": "Action Chair/Country Updates/2024/COST_FinAI_Czechia_update_2024.html",
+                  "type": "page"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Progress Report",
+          "type": "folder",
+          "count": 5,
+          "children": [
+            {
+              "name": "CA19130_PR2_ActionChairReport_2023-01-12 (4) (3).html",
+              "title": "CA19130_PR2_ActionChairReport_2023-01-12 (4) (3)",
+              "path": "Action Chair/Progress Report/CA19130_PR2_ActionChairReport_2023-01-12 (4) (3).html",
+              "type": "page"
+            },
+            {
+              "name": "Final Report",
+              "type": "folder",
+              "count": 2,
+              "children": [
+                {
+                  "name": "CA19130_FA_ActionChairReport_2024-06-17.html",
+                  "title": "CA19130_FA_ActionChairReport_2024-06-17",
+                  "path": "Action Chair/Progress Report/Final Report/CA19130_FA_ActionChairReport_2024-06-17.html",
+                  "type": "page"
+                },
+                {
+                  "name": "CA19130_PR2_ActionChairReport_2024-02-19.html",
+                  "title": "CA19130_PR2_ActionChairReport_2024-02-19",
+                  "path": "Action Chair/Progress Report/Final Report/CA19130_PR2_ActionChairReport_2024-02-19.html",
+                  "type": "page"
+                }
+              ]
+            },
+            {
+              "name": "GP4 Progress Report",
+              "type": "folder",
+              "count": 1,
+              "children": [
+                {
+                  "name": "CA19130_PR2_ActionChairReport_2024-02-19.html",
+                  "title": "CA19130_PR2_ActionChairReport_2024-02-19",
+                  "path": "Action Chair/Progress Report/GP4 Progress Report/CA19130_PR2_ActionChairReport_2024-02-19.html",
+                  "type": "page"
+                }
+              ]
+            },
+            {
+              "name": "Progress Report GP1 and GP2",
+              "type": "folder",
+              "count": 1,
+              "children": [
+                {
+                  "name": "CA19130_PR2_ActionChairReport_2022-08-21 (1).html",
+                  "title": "CA19130_PR2_ActionChairReport_2022-08-21 (1)",
+                  "path": "Action Chair/Progress Report/Progress Report GP1 and GP2/CA19130_PR2_ActionChairReport_2022-08-21 (1).html",
+                  "type": "page"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "data_files": [
+    {
+      "name": "author_validation_report.json",
+      "path": "data/author_validation_report.json",
+      "type": "data"
+    },
+    {
+      "name": "budget_data.json",
+      "path": "data/budget_data.json",
+      "type": "data"
+    },
+    {
+      "name": "budget_summaries.json",
+      "path": "data/budget_summaries.json",
+      "type": "data"
+    },
+    {
+      "name": "contributions.json",
+      "path": "data/contributions.json",
+      "type": "data"
+    },
+    {
+      "name": "country_statistics.json",
+      "path": "data/country_statistics.json",
+      "type": "data"
+    },
+    {
+      "name": "country_statistics_full.json",
+      "path": "data/country_statistics_full.json",
+      "type": "data"
+    },
+    {
+      "name": "datasets.json",
+      "path": "data/datasets.json",
+      "type": "data"
+    },
+    {
+      "name": "deliverables.json",
+      "path": "data/deliverables.json",
+      "type": "data"
+    },
+    {
+      "name": "dissemination_detailed.json",
+      "path": "data/dissemination_detailed.json",
+      "type": "data"
+    },
+    {
+      "name": "dissemination_grants.json",
+      "path": "data/dissemination_grants.json",
+      "type": "data"
+    },
+    {
+      "name": "excluded_non_finance_orcids.json",
+      "path": "data/excluded_non_finance_orcids.json",
+      "type": "data"
+    },
+    {
+      "name": "final_report.json",
+      "path": "data/final_report.json",
+      "type": "data"
+    },
+    {
+      "name": "final_report_full.json",
+      "path": "data/final_report_full.json",
+      "type": "data"
+    },
+    {
+      "name": "itc_conference_grants.json",
+      "path": "data/itc_conference_grants.json",
+      "type": "data"
+    },
+    {
+      "name": "leadership.json",
+      "path": "data/leadership.json",
+      "type": "data"
+    },
+    {
+      "name": "leadership_raw.json",
+      "path": "data/leadership_raw.json",
+      "type": "data"
+    },
+    {
+      "name": "los_grants.json",
+      "path": "data/los_grants.json",
+      "type": "data"
+    },
+    {
+      "name": "mc_members.json",
+      "path": "data/mc_members.json",
+      "type": "data"
+    },
+    {
+      "name": "meetings.json",
+      "path": "data/meetings.json",
+      "type": "data"
+    },
+    {
+      "name": "meetings_detailed.json",
+      "path": "data/meetings_detailed.json",
+      "type": "data"
+    },
+    {
+      "name": "meetings_justifications.json",
+      "path": "data/meetings_justifications.json",
+      "type": "data"
+    },
+    {
+      "name": "meetings_participants.json",
+      "path": "data/meetings_participants.json",
+      "type": "data"
+    },
+    {
+      "name": "members.json",
+      "path": "data/members.json",
+      "type": "data"
+    },
+    {
+      "name": "midterm_report_full.json",
+      "path": "data/midterm_report_full.json",
+      "type": "data"
+    },
+    {
+      "name": "openalex_publications.json",
+      "path": "data/openalex_publications.json",
+      "type": "data"
+    },
+    {
+      "name": "openalex_publications_apa.json",
+      "path": "data/openalex_publications_apa.json",
+      "type": "data"
+    },
+    {
+      "name": "orcid_list.json",
+      "path": "data/orcid_list.json",
+      "type": "data"
+    },
+    {
+      "name": "orcid_publications.json",
+      "path": "data/orcid_publications.json",
+      "type": "data"
+    },
+    {
+      "name": "orcid_publications_apa.json",
+      "path": "data/orcid_publications_apa.json",
+      "type": "data"
+    },
+    {
+      "name": "other_outputs.json",
+      "path": "data/other_outputs.json",
+      "type": "data"
+    },
+    {
+      "name": "participant_master.json",
+      "path": "data/participant_master.json",
+      "type": "data"
+    },
+    {
+      "name": "participants.json",
+      "path": "data/participants.json",
+      "type": "data"
+    },
+    {
+      "name": "participants_detailed.json",
+      "path": "data/participants_detailed.json",
+      "type": "data"
+    },
+    {
+      "name": "preprints.json",
+      "path": "data/preprints.json",
+      "type": "data"
+    },
+    {
+      "name": "progress_reports.json",
+      "path": "data/progress_reports.json",
+      "type": "data"
+    },
+    {
+      "name": "publications.json",
+      "path": "data/publications.json",
+      "type": "data"
+    },
+    {
+      "name": "publications_apa.json",
+      "path": "data/publications_apa.json",
+      "type": "data"
+    },
+    {
+      "name": "publications_main.json",
+      "path": "data/publications_main.json",
+      "type": "data"
+    },
+    {
+      "name": "report_comparison.json",
+      "path": "data/report_comparison.json",
+      "type": "data"
+    },
+    {
+      "name": "stsm.json",
+      "path": "data/stsm.json",
+      "type": "data"
+    },
+    {
+      "name": "stsm_detailed.json",
+      "path": "data/stsm_detailed.json",
+      "type": "data"
+    },
+    {
+      "name": "stsm_full.json",
+      "path": "data/stsm_full.json",
+      "type": "data"
+    },
+    {
+      "name": "summary_statistics.json",
+      "path": "data/summary_statistics.json",
+      "type": "data"
+    },
+    {
+      "name": "training_school_attendees.json",
+      "path": "data/training_school_attendees.json",
+      "type": "data"
+    },
+    {
+      "name": "training_schools.json",
+      "path": "data/training_schools.json",
+      "type": "data"
+    },
+    {
+      "name": "training_schools_detailed.json",
+      "path": "data/training_schools_detailed.json",
+      "type": "data"
+    },
+    {
+      "name": "validated_orcids.json",
+      "path": "data/validated_orcids.json",
+      "type": "data"
+    },
+    {
+      "name": "virtual_mobility_detailed.json",
+      "path": "data/virtual_mobility_detailed.json",
+      "type": "data"
+    },
+    {
+      "name": "virtual_mobility_full.json",
+      "path": "data/virtual_mobility_full.json",
+      "type": "data"
+    },
+    {
+      "name": "vns_detailed.json",
+      "path": "data/vns_detailed.json",
+      "type": "data"
+    },
+    {
+      "name": "vns_grants.json",
+      "path": "data/vns_grants.json",
+      "type": "data"
+    },
+    {
+      "name": "wg1_members.json",
+      "path": "data/wg1_members.json",
+      "type": "data"
+    },
+    {
+      "name": "wg2_members.json",
+      "path": "data/wg2_members.json",
+      "type": "data"
+    },
+    {
+      "name": "wg3_members.json",
+      "path": "data/wg3_members.json",
+      "type": "data"
+    },
+    {
+      "name": "wg_members.json",
+      "path": "data/wg_members.json",
+      "type": "data"
+    },
+    {
+      "name": "working_groups.json",
+      "path": "data/working_groups.json",
+      "type": "data"
+    }
+  ]
+}
