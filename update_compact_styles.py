@@ -1,7 +1,6 @@
 """
-COST CA19130 Compact Styles Update Script
-Applies aggressive (30-40%) spacing reduction to all HTML files
-Created: 2026-01-03
+Apply site-wide compact styling (Option B: Moderate Compaction).
+Reduces vertical spacing by 20-25% while maintaining readability.
 """
 
 import re
@@ -9,119 +8,159 @@ from pathlib import Path
 
 BASE_DIR = Path(__file__).parent
 
-# CSS replacements for compact styling (old_value -> new_value)
-CSS_REPLACEMENTS = [
-    # Section and page-level spacing
-    (r'padding:\s*4rem\s+2rem', 'padding: 2rem 2rem'),
-    (r'padding:\s*3rem\s+2rem', 'padding: 1.5rem 2rem'),
-    (r'padding:\s*5rem\s+2rem', 'padding: 2.5rem 2rem'),
+# Option B: Moderate Compaction CSS overrides
+COMPACT_CSS = """
+        /* === Site-Wide Compaction (Option B: Moderate) === */
+        /* Hero: reduced padding */
+        .hero {
+            padding: 2rem 0 !important;
+        }
+        .hero h1 {
+            font-size: 2rem !important;
+        }
 
-    # Hero sections
-    (r'padding:\s*8rem\s+2rem\s+4rem', 'padding: 4.5rem 2rem 2rem'),
-    (r'padding:\s*6rem\s+2rem\s+3rem', 'padding: 4rem 2rem 2rem'),
+        /* Content sections: tighter padding */
+        .content-section {
+            padding: 1.25rem !important;
+        }
 
-    # Card padding
-    (r'padding:\s*2rem;', 'padding: 1rem;'),
-    (r'padding:\s*1\.5rem;', 'padding: 1rem;'),
+        /* Cards: reduced padding */
+        .stat-card {
+            padding: 0.875rem !important;
+        }
 
-    # Grid gaps
-    (r'gap:\s*2rem;', 'gap: 1rem;'),
-    (r'gap:\s*1\.5rem;', 'gap: 1rem;'),
-    (r'gap:\s*4rem;', 'gap: 2rem;'),
+        /* Grid gaps: tightened */
+        .stats-grid, .features-grid, .sections-grid {
+            gap: 0.75rem !important;
+        }
 
-    # Margins
-    (r'margin-top:\s*2rem;', 'margin-top: 0.75rem;'),
-    (r'margin-top:\s*3rem;', 'margin-top: 1.5rem;'),
-    (r'margin-top:\s*4rem;', 'margin-top: 1.5rem;'),
-    (r'margin-bottom:\s*2rem;', 'margin-bottom: 1rem;'),
-    (r'margin-bottom:\s*1\.5rem;', 'margin-bottom: 0.75rem;'),
-    (r'margin-bottom:\s*3rem;', 'margin-bottom: 1.5rem;'),
+        /* Sidebar: tighter spacing */
+        .sl-sidebar {
+            padding: 0.5rem !important;
+        }
+        .sl-links a {
+            padding: 0.35rem 0.75rem !important;
+        }
+        .sl-section-header {
+            padding: 0.5rem 0.75rem !important;
+        }
 
-    # Table cell padding
-    (r'padding:\s*1rem\s+1\.5rem', 'padding: 0.5rem 0.75rem'),
-    (r'padding:\s*0\.75rem\s+1rem', 'padding: 0.4rem 0.6rem'),
+        /* Tables: tighter */
+        th, td {
+            padding: 0.5rem 0.75rem !important;
+        }
 
-    # Border radius (slightly smaller)
-    (r'border-radius:\s*12px', 'border-radius: 10px'),
+        /* Reduce margins on headings */
+        h2, h3, h4 {
+            margin-top: 1rem !important;
+            margin-bottom: 0.5rem !important;
+        }
 
-    # Chart heights
-    (r'height:\s*280px', 'height: 200px'),
-    (r'height:\s*300px', 'height: 220px'),
-    (r'height:\s*250px', 'height: 180px'),
-]
+        /* Tighter list spacing */
+        ul, ol {
+            margin: 0.5rem 0 !important;
+        }
+        li {
+            margin-bottom: 0.25rem !important;
+        }
+        /* === End Compaction === */
+"""
 
-# Files to skip (already updated or special handling)
-SKIP_FILES = [
-    'index.html',  # Already manually updated
-]
+def add_compact_styles(content):
+    """Add compact styles before closing </style> tag."""
+    # Check if already has compaction styles
+    if '/* === Site-Wide Compaction' in content:
+        print("    [SKIP] Already has compact styles")
+        return content, False
 
+    # Find the last </style> tag and insert before it
+    # We want to add it to the main inline styles, not external
 
-def apply_compact_styles(file_path):
-    """Apply compact CSS replacements to a single HTML file"""
+    # Look for </style> that's not inside a template
+    pattern = r'(</style>)'
+    matches = list(re.finditer(pattern, content))
+
+    if not matches:
+        print("    [WARN] No </style> tag found")
+        return content, False
+
+    # Insert before the first </style> tag (main styles)
+    first_match = matches[0]
+    insert_pos = first_match.start()
+
+    new_content = content[:insert_pos] + COMPACT_CSS + content[insert_pos:]
+    return new_content, True
+
+def process_file(filepath, is_subdir=False):
+    """Process a single HTML file."""
     try:
-        with open(file_path, 'r', encoding='utf-8') as f:
+        with open(filepath, 'r', encoding='utf-8') as f:
             content = f.read()
 
-        original_content = content
-        changes_made = []
+        # Skip files without sidebar layout (our target pages)
+        if 'sl-sidebar' not in content and 'hero' not in content:
+            return False
 
-        for pattern, replacement in CSS_REPLACEMENTS:
-            matches = re.findall(pattern, content)
-            if matches:
-                content = re.sub(pattern, replacement, content)
-                changes_made.append(f"{pattern} -> {replacement} ({len(matches)}x)")
+        new_content, changed = add_compact_styles(content)
 
-        if content != original_content:
-            with open(file_path, 'w', encoding='utf-8') as f:
-                f.write(content)
-            return True, changes_made
-
-        return False, []
-
+        if changed:
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(new_content)
+            return True
+        return False
     except Exception as e:
-        print(f"Error processing {file_path}: {e}")
-        return False, []
-
+        print(f"    [ERROR] {e}")
+        return False
 
 def main():
-    """Update all HTML files with compact styles"""
-    html_files = []
-
-    # Root level files
-    for f in BASE_DIR.glob('*.html'):
-        if f.name not in SKIP_FILES:
-            html_files.append(f)
-
-    # Subdirectory files
-    for subdir in ['financial-reports', 'work-budget-plans']:
-        subdir_path = BASE_DIR / subdir
-        if subdir_path.exists():
-            for f in subdir_path.glob('*.html'):
-                html_files.append(f)
-
-    print(f"Found {len(html_files)} HTML files to update")
-    print(f"Skipping: {SKIP_FILES}")
-    print("-" * 60)
-
     updated_count = 0
+    skipped_count = 0
 
-    for file_path in sorted(html_files):
-        rel_path = file_path.relative_to(BASE_DIR)
-        updated, changes = apply_compact_styles(file_path)
+    print("Applying Option B: Moderate Compaction (20-25% reduction)")
+    print("=" * 60)
 
-        if updated:
+    # Root HTML files
+    print("\n[ROOT PAGES]")
+    for f in sorted(BASE_DIR.glob('*.html')):
+        if f.name.startswith('test-'):
+            continue
+        print(f"  {f.name}...", end='')
+        if process_file(f):
+            print(" [UPDATED]")
             updated_count += 1
-            print(f"[OK] {rel_path}")
-            for change in changes[:3]:  # Show first 3 changes
-                print(f"     {change}")
-            if len(changes) > 3:
-                print(f"     ... and {len(changes) - 3} more")
         else:
-            print(f"[--] {rel_path} - No changes needed")
+            print(" [skipped]")
+            skipped_count += 1
 
-    print("-" * 60)
-    print(f"Summary: {updated_count}/{len(html_files)} files updated")
+    # Financial reports
+    subdir = BASE_DIR / 'financial-reports'
+    if subdir.exists():
+        print("\n[FINANCIAL REPORTS]")
+        for f in sorted(subdir.glob('*.html')):
+            print(f"  {f.name}...", end='')
+            if process_file(f, is_subdir=True):
+                print(" [UPDATED]")
+                updated_count += 1
+            else:
+                print(" [skipped]")
+                skipped_count += 1
 
+    # Work budget plans
+    subdir = BASE_DIR / 'work-budget-plans'
+    if subdir.exists():
+        print("\n[WORK BUDGET PLANS]")
+        for f in sorted(subdir.glob('*.html')):
+            print(f"  {f.name}...", end='')
+            if process_file(f, is_subdir=True):
+                print(" [UPDATED]")
+                updated_count += 1
+            else:
+                print(" [skipped]")
+                skipped_count += 1
+
+    print("\n" + "=" * 60)
+    print(f"SUMMARY: Updated {updated_count} files, skipped {skipped_count}")
+    print("Compaction applied: ~20-25% vertical space reduction")
 
 if __name__ == '__main__':
     main()
