@@ -413,26 +413,26 @@
         "name": "Hanna Kristin Skaftadottir",
         "country": "IS",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 610.4
+        "travel_allowance": 1200.0,
+        "daily_allowance": 410.4,
+        "other_expenses": 0.0,
+        "total": 1610.4
       },
       {
         "name": "Jörg Osterrieder",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 11.15
+        "travel_allowance": 600.75,
+        "daily_allowance": 410.4,
+        "other_expenses": 0.0,
+        "total": 1011.15
       }
     ],
     "los_grant": 500.0,
-    "total_travel": 192.04,
-    "total_daily": 957.5999999999999,
-    "total_other": 2.0,
-    "total_reimbursed": 1771.19
+    "total_travel": 1992.79,
+    "total_daily": 1778.3999999999999,
+    "total_other": 0.0,
+    "total_reimbursed": 3771.19
   },
   {
     "id": "GP1_M20",
@@ -679,10 +679,10 @@
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 204.19
+        "travel_allowance": 808.59,
+        "daily_allowance": 395.6,
+        "other_expenses": 0.0,
+        "total": 1204.19
       },
       {
         "name": "Svedas, Dominykas",
@@ -695,10 +695,10 @@
       }
     ],
     "los_grant": 3000.0,
-    "total_travel": 1518.77,
-    "total_daily": 2511.2,
-    "total_other": 1.0,
-    "total_reimbursed": 4234.16
+    "total_travel": 2327.36,
+    "total_daily": 2906.7999999999997,
+    "total_other": 0.0,
+    "total_reimbursed": 5234.16
   },
   {
     "id": "GP2_M4",
@@ -754,19 +754,19 @@
         "name": "OZTURKKAL, Belma",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 140.57
+        "travel_allowance": 497.37,
+        "daily_allowance": 643.2,
+        "other_expenses": 0.0,
+        "total": 1140.57
       },
       {
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 364.17
+        "travel_allowance": 700.87,
+        "daily_allowance": 663.3,
+        "other_expenses": 0.0,
+        "total": 1364.17
       },
       {
         "name": "Paccagnini, Alessia",
@@ -824,10 +824,10 @@
       }
     ],
     "los_grant": 3000.0,
-    "total_travel": 2002.1299999999999,
-    "total_daily": 5969.7,
-    "total_other": 82.0,
-    "total_reimbursed": 8556.57
+    "total_travel": 3200.37,
+    "total_daily": 7276.2,
+    "total_other": 80.0,
+    "total_reimbursed": 10556.57
   },
   {
     "id": "GP3_M1",
@@ -943,10 +943,10 @@
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 1.19
+        "travel_allowance": 304.89,
+        "daily_allowance": 696.3,
+        "other_expenses": 0.0,
+        "total": 1001.19
       },
       {
         "name": "Chakravorti, Sujit (Bob)",
@@ -961,19 +961,19 @@
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 111.98
+        "travel_allowance": 394.58,
+        "daily_allowance": 717.4,
+        "other_expenses": 0.0,
+        "total": 1111.98
       },
       {
         "name": "Hadji Misheva, Branka",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 358.6
+        "travel_allowance": 493.5,
+        "daily_allowance": 865.1,
+        "other_expenses": 0.0,
+        "total": 1358.6
       },
       {
         "name": "Hirsa, Ali",
@@ -1024,19 +1024,19 @@
         "name": "Lameski, Petre",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 306.4
+        "travel_allowance": 589.0,
+        "daily_allowance": 717.4,
+        "other_expenses": 0.0,
+        "total": 1306.4
       },
       {
         "name": "MARE, Codruta",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 193.69
+        "travel_allowance": 286.39,
+        "daily_allowance": 907.3,
+        "other_expenses": 0.0,
+        "total": 1193.69
       },
       {
         "name": "Moloney, Maria",
@@ -1051,10 +1051,10 @@
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 163.4
+        "travel_allowance": 235.0,
+        "daily_allowance": 928.4,
+        "other_expenses": 0.0,
+        "total": 1163.4
       },
       {
         "name": "Poti, Valerio",
@@ -1067,10 +1067,10 @@
       }
     ],
     "los_grant": 6000.0,
-    "total_travel": 1460.22,
-    "total_daily": 3903.5,
-    "total_other": 6.0,
-    "total_reimbursed": 6498.98
+    "total_travel": 3763.58,
+    "total_daily": 8735.4,
+    "total_other": 0.0,
+    "total_reimbursed": 12498.98
   },
   {
     "id": "GP3_M4",
@@ -1117,10 +1117,10 @@
         "name": "MARE, Codruta",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 312.0
+        "travel_allowance": 700.0,
+        "daily_allowance": 612.0,
+        "other_expenses": 0.0,
+        "total": 1312.0
       },
       {
         "name": "OZTURKKAL, Belma",
@@ -1135,10 +1135,10 @@
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 190.41
+        "travel_allowance": 596.41,
+        "daily_allowance": 594.0,
+        "other_expenses": 0.0,
+        "total": 1190.41
       },
       {
         "name": "Sandulescu, Magda",
@@ -1162,10 +1162,10 @@
         "name": "Skaftadóttir, Hanna Kristín",
         "country": "IS",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 479.35
+        "travel_allowance": 885.35,
+        "daily_allowance": 594.0,
+        "other_expenses": 0.0,
+        "total": 1479.35
       },
       {
         "name": "Tanda, Alessandra",
@@ -1189,17 +1189,17 @@
         "name": "kabaklarli, esra",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 13.43
+        "travel_allowance": 473.43,
+        "daily_allowance": 540.0,
+        "other_expenses": 0.0,
+        "total": 1013.43
       }
     ],
     "los_grant": 3000.0,
-    "total_travel": 1682.57,
-    "total_daily": 3060.0,
-    "total_other": 4.0,
-    "total_reimbursed": 5737.76
+    "total_travel": 4337.76,
+    "total_daily": 5400.0,
+    "total_other": 0.0,
+    "total_reimbursed": 9737.76
   },
   {
     "id": "GP3_M5",
@@ -1255,10 +1255,10 @@
         "name": "Girvica, Olga",
         "country": "LV",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 104.7
+        "travel_allowance": 624.0,
+        "daily_allowance": 480.7,
+        "other_expenses": 0.0,
+        "total": 1104.7
       },
       {
         "name": "Hochreiter, Ronald",
@@ -1291,10 +1291,10 @@
         "name": "Trinh, Anh Tuan",
         "country": "HU",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 104.77
+        "travel_allowance": 624.07,
+        "daily_allowance": 480.7,
+        "other_expenses": 0.0,
+        "total": 1104.77
       },
       {
         "name": "Vojtasova, Maria",
@@ -1307,10 +1307,10 @@
       }
     ],
     "los_grant": 6000.0,
-    "total_travel": 2269.47,
-    "total_daily": 2768.8,
-    "total_other": 2.0,
-    "total_reimbursed": 5247.74
+    "total_travel": 3517.54,
+    "total_daily": 3730.2,
+    "total_other": 0.0,
+    "total_reimbursed": 7247.74
   },
   {
     "id": "GP3_M6",
@@ -1339,19 +1339,19 @@
         "name": "Atanasova - Pachemska, Tatjana",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 97.22
+        "travel_allowance": 379.82,
+        "daily_allowance": 717.4,
+        "other_expenses": 0.0,
+        "total": 1097.22
       },
       {
         "name": "Bolesta, Karolina",
         "country": "PL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 2.58
+        "travel_allowance": 496.18,
+        "daily_allowance": 506.4,
+        "other_expenses": 0.0,
+        "total": 1002.58
       },
       {
         "name": "Będowska-Sójka, Barbara",
@@ -1366,10 +1366,10 @@
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 479.0
+        "travel_allowance": 550.6,
+        "daily_allowance": 928.4,
+        "other_expenses": 0.0,
+        "total": 1479.0
       },
       {
         "name": "Deev, Oleg",
@@ -1384,10 +1384,10 @@
         "name": "Gregoriades, Andreas",
         "country": "CY",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 222.29
+        "travel_allowance": 525.99,
+        "daily_allowance": 696.3,
+        "other_expenses": 0.0,
+        "total": 1222.29
       },
       {
         "name": "Hajek, Petr",
@@ -1402,37 +1402,37 @@
         "name": "Kayis, Enis",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 308.12
+        "travel_allowance": 400.82,
+        "daily_allowance": 907.3,
+        "other_expenses": 0.0,
+        "total": 1308.12
       },
       {
         "name": "Lameski, Petre",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 333.4
+        "travel_allowance": 405.0,
+        "daily_allowance": 928.4,
+        "other_expenses": 0.0,
+        "total": 1333.4
       },
       {
         "name": "MARE, Codruta",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 206.35
+        "travel_allowance": 299.05,
+        "daily_allowance": 907.3,
+        "other_expenses": 0.0,
+        "total": 1206.35
       },
       {
         "name": "Marazzina, Daniele",
         "country": "IT",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 64.97
+        "travel_allowance": 368.67,
+        "daily_allowance": 696.3,
+        "other_expenses": 0.0,
+        "total": 1064.97
       },
       {
         "name": "Marisetty, Vijay",
@@ -1465,10 +1465,10 @@
         "name": "Mishev, Stoyan",
         "country": "BG",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 108.49
+        "travel_allowance": 391.09,
+        "daily_allowance": 717.4,
+        "other_expenses": 0.0,
+        "total": 1108.49
       },
       {
         "name": "Moloney, Maria",
@@ -1483,19 +1483,19 @@
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 530.3
+        "travel_allowance": 623.0,
+        "daily_allowance": 907.3,
+        "other_expenses": 0.0,
+        "total": 1530.3
       },
       {
         "name": "Palić, Petra",
         "country": "HR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 67.95
+        "travel_allowance": 582.65,
+        "daily_allowance": 485.3,
+        "other_expenses": 0.0,
+        "total": 1067.95
       },
       {
         "name": "Papajorgji, Petraq",
@@ -1537,10 +1537,10 @@
         "name": "Skaftadóttir, Hanna Kristín",
         "country": "IS",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 152.61
+        "travel_allowance": 435.21,
+        "daily_allowance": 717.4,
+        "other_expenses": 0.0,
+        "total": 1152.61
       },
       {
         "name": "Tarantola, Claudia",
@@ -1591,17 +1591,17 @@
         "name": "Yildirim, Ozgur",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 185.19
+        "travel_allowance": 467.79,
+        "daily_allowance": 717.4,
+        "other_expenses": 0.0,
+        "total": 1185.19
       }
     ],
     "los_grant": 6000.0,
-    "total_travel": 4969.23,
-    "total_daily": 8777.6,
-    "total_other": 13.0,
-    "total_reimbursed": 16505.3
+    "total_travel": 10895.1,
+    "total_daily": 18610.2,
+    "total_other": 0.0,
+    "total_reimbursed": 29505.3
   },
   {
     "id": "GP3_M7",
@@ -1648,10 +1648,10 @@
         "name": "Osterrieder, Jörg",
         "country": "NL",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 26.62
+        "travel_allowance": 778.32,
+        "daily_allowance": 248.3,
+        "other_expenses": 0.0,
+        "total": 1026.62
       },
       {
         "name": "Zdravevski, Eftim",
@@ -1664,10 +1664,10 @@
       }
     ],
     "los_grant": 1000.0,
-    "total_travel": 0.0,
-    "total_daily": 248.3,
-    "total_other": 1.0,
-    "total_reimbursed": 274.92
+    "total_travel": 778.32,
+    "total_daily": 496.6,
+    "total_other": 0.0,
+    "total_reimbursed": 1274.9199999999998
   },
   {
     "id": "GP3_M8",
@@ -1687,10 +1687,10 @@
         "name": "Abdul Nasir, Jamal",
         "country": "IE",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 111.81
+        "travel_allowance": 500.61,
+        "daily_allowance": 611.2,
+        "other_expenses": 0.0,
+        "total": 1111.81
       },
       {
         "name": "Petukhina, Alla",
@@ -1703,10 +1703,10 @@
       }
     ],
     "los_grant": 500.0,
-    "total_travel": 177.8,
-    "total_daily": 649.4,
-    "total_other": 1.0,
-    "total_reimbursed": 939.01
+    "total_travel": 678.4100000000001,
+    "total_daily": 1260.6,
+    "total_other": 0.0,
+    "total_reimbursed": 1939.01
   },
   {
     "id": "GP3_M9",
@@ -1771,10 +1771,10 @@
         "name": "Gavranovic, Nedim",
         "country": "BA",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 13.9
+        "travel_allowance": 583.8,
+        "daily_allowance": 430.1,
+        "other_expenses": 0.0,
+        "total": 1013.9
       },
       {
         "name": "MARE, Codruta",
@@ -1814,10 +1814,10 @@
       }
     ],
     "los_grant": 1000.0,
-    "total_travel": 2553.34,
-    "total_daily": 3124.2000000000003,
-    "total_other": 1.0,
-    "total_reimbursed": 5691.44
+    "total_travel": 3137.14,
+    "total_daily": 3554.3,
+    "total_other": 0.0,
+    "total_reimbursed": 6691.44
   },
   {
     "id": "GP4_M1",
@@ -1900,10 +1900,10 @@
         "name": "Osterrieder, Jörg",
         "country": "NL",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 405.35
+        "travel_allowance": 788.25,
+        "daily_allowance": 617.1,
+        "other_expenses": 0.0,
+        "total": 1405.35
       },
       {
         "name": "Paschalidou, Eleftheria",
@@ -1970,10 +1970,10 @@
       }
     ],
     "los_grant": 2000.0,
-    "total_travel": 3158.84,
-    "total_daily": 6152.3,
-    "total_other": 1.0,
-    "total_reimbursed": 9716.49
+    "total_travel": 3947.09,
+    "total_daily": 6769.4,
+    "total_other": 0.0,
+    "total_reimbursed": 10716.49
   },
   {
     "id": "GP4_M2",
@@ -2020,10 +2020,10 @@
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 363.3
+        "travel_allowance": 700.0,
+        "daily_allowance": 663.3,
+        "other_expenses": 0.0,
+        "total": 1363.3
       },
       {
         "name": "MARE, Codruta",
@@ -2047,10 +2047,10 @@
         "name": "OZTURKKAL, Belma",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 173.61
+        "travel_allowance": 691.21,
+        "daily_allowance": 482.4,
+        "other_expenses": 0.0,
+        "total": 1173.61
       },
       {
         "name": "Paschalidou, Eleftheria",
@@ -2108,10 +2108,10 @@
       }
     ],
     "los_grant": 1000.0,
-    "total_travel": 3801.92,
-    "total_daily": 5487.3,
-    "total_other": 2.0,
-    "total_reimbursed": 9826.13
+    "total_travel": 5193.13,
+    "total_daily": 6633.0,
+    "total_other": 0.0,
+    "total_reimbursed": 11826.13
   },
   {
     "id": "GP4_M3",
@@ -2131,37 +2131,37 @@
         "name": "Akar, Mutlu",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 124.06
+        "travel_allowance": 376.06,
+        "daily_allowance": 748.0,
+        "other_expenses": 0.0,
+        "total": 1124.06
       },
       {
         "name": "Arakelian, Veni",
         "country": "EL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 160.1
+        "travel_allowance": 852.1,
+        "daily_allowance": 308.0,
+        "other_expenses": 0.0,
+        "total": 1160.1
       },
       {
         "name": "Baals, Lennart John",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 328.2
+        "travel_allowance": 580.2,
+        "daily_allowance": 748.0,
+        "other_expenses": 0.0,
+        "total": 1328.2
       },
       {
         "name": "Bolesta, Karolina",
         "country": "PL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 304.66
+        "travel_allowance": 578.66,
+        "daily_allowance": 726.0,
+        "other_expenses": 0.0,
+        "total": 1304.66
       },
       {
         "name": "Będowska-Sójka, Barbara",
@@ -2176,10 +2176,10 @@
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 97.9
+        "travel_allowance": 349.9,
+        "daily_allowance": 748.0,
+        "other_expenses": 0.0,
+        "total": 1097.9
       },
       {
         "name": "Hadji Misheva, Branka",
@@ -2212,10 +2212,10 @@
         "name": "Liu, Yiting",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 266.72
+        "travel_allowance": 518.72,
+        "daily_allowance": 748.0,
+        "other_expenses": 0.0,
+        "total": 1266.72
       },
       {
         "name": "MARE, Codruta",
@@ -2230,10 +2230,10 @@
         "name": "Maxhelaku, Armela",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 295.0
+        "travel_allowance": 547.0,
+        "daily_allowance": 748.0,
+        "other_expenses": 0.0,
+        "total": 1295.0
       },
       {
         "name": "Moloney, Maria",
@@ -2257,19 +2257,19 @@
         "name": "OZTURKKAL, Belma",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 600.17
+        "travel_allowance": 896.17,
+        "daily_allowance": 704.0,
+        "other_expenses": 0.0,
+        "total": 1600.17
       },
       {
         "name": "Osterrieder, Jörg",
         "country": "NL",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 368.96
+        "travel_allowance": 642.96,
+        "daily_allowance": 726.0,
+        "other_expenses": 0.0,
+        "total": 1368.96
       },
       {
         "name": "Paccagnini, Alessia",
@@ -2293,28 +2293,28 @@
         "name": "Shala, Albulena",
         "country": "KV",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 80.0,
-        "other_expenses": 1.0,
-        "total": 130.98
+        "travel_allowance": 324.98,
+        "daily_allowance": 726.0,
+        "other_expenses": 80.0,
+        "total": 1130.98
       },
       {
         "name": "Silva, Catarina",
         "country": "PT",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 62.81
+        "travel_allowance": 534.81,
+        "daily_allowance": 528.0,
+        "other_expenses": 0.0,
+        "total": 1062.81
       },
       {
         "name": "Skaftadóttir, Hanna Kristín",
         "country": "IS",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 229.2
+        "travel_allowance": 701.2,
+        "daily_allowance": 528.0,
+        "other_expenses": 0.0,
+        "total": 1229.2
       },
       {
         "name": "Svetlova, Ekaterina",
@@ -2329,35 +2329,35 @@
         "name": "Thomaidis, Nikolaos S.",
         "country": "EL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 455.39
+        "travel_allowance": 751.39,
+        "daily_allowance": 704.0,
+        "other_expenses": 0.0,
+        "total": 1455.39
       },
       {
         "name": "Xhumari, Elda",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 295.0
+        "travel_allowance": 547.0,
+        "daily_allowance": 748.0,
+        "other_expenses": 0.0,
+        "total": 1295.0
       },
       {
         "name": "kabaklarli, esra",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 131.68
+        "travel_allowance": 603.68,
+        "daily_allowance": 528.0,
+        "other_expenses": 0.0,
+        "total": 1131.68
       }
     ],
     "los_grant": 0.0,
-    "total_travel": 2572.2599999999998,
-    "total_daily": 5910.0,
-    "total_other": 15.0,
-    "total_reimbursed": 12253.09
+    "total_travel": 11377.09,
+    "total_daily": 15796.0,
+    "total_other": 80.0,
+    "total_reimbursed": 27253.09
   },
   {
     "id": "GP4_M4",
@@ -2377,46 +2377,46 @@
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 332.41
+        "travel_allowance": 669.41,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1332.41
       },
       {
         "name": "Bolesta, Karolina",
         "country": "PL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 337.48
+        "travel_allowance": 674.48,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1337.48
       },
       {
         "name": "Będowska-Sójka, Barbara",
         "country": "PL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 14.99
+        "travel_allowance": 371.49,
+        "daily_allowance": 643.5,
+        "other_expenses": 0.0,
+        "total": 1014.99
       },
       {
         "name": "Cetintav, Bekir",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 173.67
+        "travel_allowance": 510.67,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1173.67
       },
       {
         "name": "Filipovska, Olivija",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 363.8
+        "travel_allowance": 720.3,
+        "daily_allowance": 643.5,
+        "other_expenses": 0.0,
+        "total": 1363.8
       },
       {
         "name": "Hadji Misheva, Branka",
@@ -2431,46 +2431,46 @@
         "name": "Hudec, Miroslav",
         "country": "SK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 236.39
+        "travel_allowance": 573.39,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1236.39
       },
       {
         "name": "MARE, Codruta",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 346.21
+        "travel_allowance": 702.71,
+        "daily_allowance": 643.5,
+        "other_expenses": 0.0,
+        "total": 1346.21
       },
       {
         "name": "Maxhelaku (Vasil), Suela",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 336.52
+        "travel_allowance": 673.52,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1336.52
       },
       {
         "name": "OZTURKKAL, Belma",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 367.59
+        "travel_allowance": 704.59,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1367.59
       },
       {
         "name": "Osterrieder, Jörg",
         "country": "NL",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 207.54
+        "travel_allowance": 544.54,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1207.54
       },
       {
         "name": "Pisoni, Galena",
@@ -2503,10 +2503,10 @@
         "name": "Xhumari, Elda",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 336.52
+        "travel_allowance": 673.52,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1336.52
       },
       {
         "name": "Zuo, RongLin",
@@ -2519,10 +2519,10 @@
       }
     ],
     "los_grant": 1000.0,
-    "total_travel": 1904.97,
-    "total_daily": 1989.0,
-    "total_other": 11.0,
-    "total_reimbursed": 6947.09
+    "total_travel": 8723.59,
+    "total_daily": 9223.5,
+    "total_other": 0.0,
+    "total_reimbursed": 17947.09
   },
   {
     "id": "GP4_M5",
@@ -2542,10 +2542,10 @@
         "name": "Bolesta, Karolina",
         "country": "PL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 201.97
+        "travel_allowance": 518.87,
+        "daily_allowance": 683.1,
+        "other_expenses": 0.0,
+        "total": 1201.97
       },
       {
         "name": "Borodenko, Vladyslav",
@@ -2560,10 +2560,10 @@
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 359.81
+        "travel_allowance": 656.01,
+        "daily_allowance": 703.8,
+        "other_expenses": 0.0,
+        "total": 1359.81
       },
       {
         "name": "DAVER, Gizay",
@@ -2578,10 +2578,10 @@
         "name": "Filipovska, Olivija",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 550.15
+        "travel_allowance": 908.45,
+        "daily_allowance": 641.7,
+        "other_expenses": 0.0,
+        "total": 1550.15
       },
       {
         "name": "Guerrero, Esteban",
@@ -2596,44 +2596,44 @@
         "name": "Lameski, Petre",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 587.8
+        "travel_allowance": 884.0,
+        "daily_allowance": 703.8,
+        "other_expenses": 0.0,
+        "total": 1587.8
       },
       {
         "name": "Liana, Stanca",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 403.36
+        "travel_allowance": 906.56,
+        "daily_allowance": 496.8,
+        "other_expenses": 0.0,
+        "total": 1403.36
       },
       {
         "name": "MARE, Codruta",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 96.22
+        "travel_allowance": 433.82,
+        "daily_allowance": 662.4,
+        "other_expenses": 0.0,
+        "total": 1096.22
       },
       {
         "name": "Osterrieder, Jörg",
         "country": "NL",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 335.92
+        "travel_allowance": 632.12,
+        "daily_allowance": 703.8,
+        "other_expenses": 0.0,
+        "total": 1335.92
       }
     ],
     "los_grant": 1141.6,
-    "total_travel": 440.4,
-    "total_daily": 600.3,
-    "total_other": 7.0,
-    "total_reimbursed": 3575.93
+    "total_travel": 5380.23,
+    "total_daily": 5195.7,
+    "total_other": 0.0,
+    "total_reimbursed": 10575.93
   },
   {
     "id": "GP4_M6",
@@ -2653,46 +2653,46 @@
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 279.08
+        "travel_allowance": 811.08,
+        "daily_allowance": 468.0,
+        "other_expenses": 0.0,
+        "total": 1279.08
       },
       {
         "name": "Bolesta, Karolina",
         "country": "PL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 248.4
+        "travel_allowance": 643.9,
+        "daily_allowance": 604.5,
+        "other_expenses": 0.0,
+        "total": 1248.4
       },
       {
         "name": "Hadji Misheva, Branka",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 64.53
+        "travel_allowance": 596.53,
+        "daily_allowance": 468.0,
+        "other_expenses": 0.0,
+        "total": 1064.53
       },
       {
         "name": "MARE, Codruta",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 805.92
+        "travel_allowance": 1142.92,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1805.92
       },
       {
         "name": "Moloney, Maria",
         "country": "IE",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 165.1
+        "travel_allowance": 502.1,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1165.1
       },
       {
         "name": "Poti, Valerio",
@@ -2705,10 +2705,10 @@
       }
     ],
     "los_grant": 930.0,
-    "total_travel": 519.08,
-    "total_daily": 200.0,
-    "total_other": 5.0,
-    "total_reimbursed": 2282.11
+    "total_travel": 4215.610000000001,
+    "total_daily": 3066.5,
+    "total_other": 0.0,
+    "total_reimbursed": 7282.11
   },
   {
     "id": "GP4_M7",
@@ -2728,37 +2728,37 @@
         "name": "Arakelian, Veni",
         "country": "EL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 62.09,
-        "other_expenses": 1.0,
-        "total": 277.36
+        "travel_allowance": 504.66,
+        "daily_allowance": 710.6,
+        "other_expenses": 62.09,
+        "total": 1277.36
       },
       {
         "name": "Będowska-Sójka, Barbara",
         "country": "PL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 241.45
+        "travel_allowance": 572.65,
+        "daily_allowance": 668.8,
+        "other_expenses": 0.0,
+        "total": 1241.45
       },
       {
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 410.6
+        "travel_allowance": 700.0,
+        "daily_allowance": 710.6,
+        "other_expenses": 0.0,
+        "total": 1410.6
       },
       {
         "name": "Dias, Joana",
         "country": "PT",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 39.13
+        "travel_allowance": 537.53,
+        "daily_allowance": 501.6,
+        "other_expenses": 0.0,
+        "total": 1039.13
       },
       {
         "name": "Hadji Misheva, Branka",
@@ -2773,19 +2773,19 @@
         "name": "Ivanisevic Hernaus, Ana",
         "country": "HR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 191.3
+        "travel_allowance": 501.6,
+        "daily_allowance": 689.7,
+        "other_expenses": 0.0,
+        "total": 1191.3
       },
       {
         "name": "Kayis, Enis",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 28.73
+        "travel_allowance": 318.13,
+        "daily_allowance": 710.6,
+        "other_expenses": 0.0,
+        "total": 1028.73
       },
       {
         "name": "Klochko, Alona",
@@ -2800,37 +2800,37 @@
         "name": "Lameski, Petre",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 27.25
+        "travel_allowance": 316.65,
+        "daily_allowance": 710.6,
+        "other_expenses": 0.0,
+        "total": 1027.25
       },
       {
         "name": "MARE, Codruta",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 410.6
+        "travel_allowance": 700.0,
+        "daily_allowance": 710.6,
+        "other_expenses": 0.0,
+        "total": 1410.6
       },
       {
         "name": "Mishev, Stoyan",
         "country": "BG",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 88.7
+        "travel_allowance": 587.1,
+        "daily_allowance": 501.6,
+        "other_expenses": 0.0,
+        "total": 1088.7
       },
       {
         "name": "OZTURKKAL, Belma",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 49.54
+        "travel_allowance": 547.94,
+        "daily_allowance": 501.6,
+        "other_expenses": 0.0,
+        "total": 1049.54
       },
       {
         "name": "Osterrieder, Jörg",
@@ -2845,55 +2845,55 @@
         "name": "Pele, Daniel Traian",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 120.59
+        "travel_allowance": 409.99,
+        "daily_allowance": 710.6,
+        "other_expenses": 0.0,
+        "total": 1120.59
       },
       {
         "name": "Peliova, Jana",
         "country": "SK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 168.61
+        "travel_allowance": 687.91,
+        "daily_allowance": 480.7,
+        "other_expenses": 0.0,
+        "total": 1168.61
       },
       {
         "name": "Pisoni, Galena",
         "country": "FR",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 106.1
+        "travel_allowance": 395.5,
+        "daily_allowance": 710.6,
+        "other_expenses": 0.0,
+        "total": 1106.1
       },
       {
         "name": "Rupeika-Apoga, Ramona",
         "country": "LV",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 8.48
+        "travel_allowance": 297.88,
+        "daily_allowance": 710.6,
+        "other_expenses": 0.0,
+        "total": 1008.48
       },
       {
         "name": "Shkurti (Perri), Rezarta",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 38.73
+        "travel_allowance": 537.13,
+        "daily_allowance": 501.6,
+        "other_expenses": 0.0,
+        "total": 1038.73
       },
       {
         "name": "Silva, Catarina",
         "country": "PT",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 94.0
+        "travel_allowance": 592.4,
+        "daily_allowance": 501.6,
+        "other_expenses": 0.0,
+        "total": 1094.0
       },
       {
         "name": "Tanda, Alessandra",
@@ -2917,71 +2917,71 @@
         "name": "Vagnerova Linnertova, Dagmar",
         "country": "CZ",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 325.03
+        "travel_allowance": 614.43,
+        "daily_allowance": 710.6,
+        "other_expenses": 0.0,
+        "total": 1325.03
       },
       {
         "name": "Vučetić, Miljan",
         "country": "RS",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 128.64
+        "travel_allowance": 418.04,
+        "daily_allowance": 710.6,
+        "other_expenses": 0.0,
+        "total": 1128.64
       },
       {
         "name": "Wójcik, Piotr",
         "country": "PL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 119.38
+        "travel_allowance": 429.68,
+        "daily_allowance": 689.7,
+        "other_expenses": 0.0,
+        "total": 1119.38
       },
       {
         "name": "Zlatošová, Silvie",
         "country": "CZ",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 327.03
+        "travel_allowance": 616.43,
+        "daily_allowance": 710.6,
+        "other_expenses": 0.0,
+        "total": 1327.03
       },
       {
         "name": "Ågotnes, Thomas",
         "country": "NO",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 100.89
+        "travel_allowance": 620.19,
+        "daily_allowance": 480.7,
+        "other_expenses": 0.0,
+        "total": 1100.89
       },
       {
         "name": "Šimurina, Nika",
         "country": "HR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 193.53
+        "travel_allowance": 503.83,
+        "daily_allowance": 689.7,
+        "other_expenses": 0.0,
+        "total": 1193.53
       },
       {
         "name": "Šutienė, Kristina",
         "country": "LT",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 204.05
+        "travel_allowance": 514.35,
+        "daily_allowance": 689.7,
+        "other_expenses": 0.0,
+        "total": 1204.05
       }
     ],
     "los_grant": 6000.0,
-    "total_travel": 253.4,
-    "total_daily": 1901.29,
-    "total_other": 23.0,
-    "total_reimbursed": 5792.32
+    "total_travel": 12177.42,
+    "total_daily": 16552.8,
+    "total_other": 62.09,
+    "total_reimbursed": 28792.32
   },
   {
     "id": "GP4_M8",
@@ -3001,19 +3001,19 @@
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 32.85
+        "travel_allowance": 380.05,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1032.85
       },
       {
         "name": "Bolesta, Karolina",
         "country": "PL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 7.55
+        "travel_allowance": 354.75,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1007.55
       },
       {
         "name": "Chis, Laviniu",
@@ -3028,10 +3028,10 @@
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 445.28
+        "travel_allowance": 792.48,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1445.28
       },
       {
         "name": "Curticapean, Cosmin",
@@ -3064,10 +3064,10 @@
         "name": "Filipovska, Olivija",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 256.68
+        "travel_allowance": 603.88,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1256.68
       },
       {
         "name": "Koenigstein, Nicole",
@@ -3217,10 +3217,10 @@
         "name": "Osterrieder, Jörg",
         "country": "NL",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 391.27
+        "travel_allowance": 779.27,
+        "daily_allowance": 612.0,
+        "other_expenses": 0.0,
+        "total": 1391.27
       },
       {
         "name": "Sauli, Gerta",
@@ -3262,19 +3262,19 @@
         "name": "Baals, Lennart John",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 814.16
+        "travel_allowance": 463.76,
+        "daily_allowance": 1350.4,
+        "other_expenses": 0.0,
+        "total": 1814.16
       },
       {
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 454.95
+        "travel_allowance": 315.55,
+        "daily_allowance": 1139.4,
+        "other_expenses": 0.0,
+        "total": 1454.95
       },
       {
         "name": "Coita, Ioana",
@@ -3298,28 +3298,28 @@
         "name": "Liana, Stanca",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 187.08
+        "travel_allowance": 511.88,
+        "daily_allowance": 675.2,
+        "other_expenses": 0.0,
+        "total": 1187.08
       },
       {
         "name": "Liu, Yiting",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 750.26
+        "travel_allowance": 399.86,
+        "daily_allowance": 1350.4,
+        "other_expenses": 0.0,
+        "total": 1750.26
       },
       {
         "name": "MATKOVSKYY, Roman",
         "country": "FR",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 370.33
+        "travel_allowance": 463.03,
+        "daily_allowance": 907.3,
+        "other_expenses": 0.0,
+        "total": 1370.33
       },
       {
         "name": "Moukas, Alexios Ioannis",
@@ -3334,55 +3334,55 @@
         "name": "Osterrieder, Jörg",
         "country": "NL",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 729.8
+        "travel_allowance": 379.4,
+        "daily_allowance": 1350.4,
+        "other_expenses": 0.0,
+        "total": 1729.8
       },
       {
         "name": "Shala, Albulena",
         "country": "KV",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 840.0
+        "travel_allowance": 489.6,
+        "daily_allowance": 1350.4,
+        "other_expenses": 0.0,
+        "total": 1840.0
       },
       {
         "name": "Temkov, Slave",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 150.04
+        "travel_allowance": 242.74,
+        "daily_allowance": 907.3,
+        "other_expenses": 0.0,
+        "total": 1150.04
       },
       {
         "name": "Thomaidis, Nikolaos S.",
         "country": "EL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 308.42
+        "travel_allowance": 591.02,
+        "daily_allowance": 717.4,
+        "other_expenses": 0.0,
+        "total": 1308.42
       },
       {
         "name": "Zhu, Laqiqige",
         "country": "IE",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 80.0,
-        "other_expenses": 1.0,
-        "total": 652.24
+        "travel_allowance": 264.04,
+        "daily_allowance": 1308.2,
+        "other_expenses": 80.0,
+        "total": 1652.24
       },
       {
         "name": "çitçi, Sadettin haluk",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 250.81
+        "travel_allowance": 343.51,
+        "daily_allowance": 907.3,
+        "other_expenses": 0.0,
+        "total": 1250.81
       },
       {
         "name": "Birlan, Ioana",
@@ -3478,10 +3478,10 @@
         "name": "Spindler, Christian",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 309.07
+        "travel_allowance": 397.47,
+        "daily_allowance": 911.6,
+        "other_expenses": 0.0,
+        "total": 1309.07
       },
       {
         "name": "Akar, Mutlu",
@@ -3496,10 +3496,10 @@
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 194.96
+        "travel_allowance": 310.56,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1194.96
       },
       {
         "name": "Będowska-Sójka, Barbara",
@@ -3523,10 +3523,10 @@
         "name": "Liana, Stanca",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 3.75
+        "travel_allowance": 139.45,
+        "daily_allowance": 864.3,
+        "other_expenses": 0.0,
+        "total": 1003.75
       },
       {
         "name": "Mirzaei, Mahsa",
@@ -3541,19 +3541,19 @@
         "name": "OZTURKKAL, Belma",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 292.33
+        "travel_allowance": 629.03,
+        "daily_allowance": 663.3,
+        "other_expenses": 0.0,
+        "total": 1292.33
       },
       {
         "name": "Skaftadóttir, Hanna Kristín",
         "country": "IS",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 557.28
+        "travel_allowance": 672.88,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1557.28
       },
       {
         "name": "Tarantola, Claudia",
@@ -3568,17 +3568,17 @@
         "name": "kabaklarli, esra",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 61.24
+        "travel_allowance": 578.84,
+        "daily_allowance": 482.4,
+        "other_expenses": 0.0,
+        "total": 1061.24
       }
     ],
     "los_grant": 1585.53,
-    "total_travel": 4608.75,
-    "total_daily": 18002.5,
-    "total_other": 22.0,
-    "total_reimbursed": 30591.6
+    "total_travel": 14711.8,
+    "total_daily": 37799.8,
+    "total_other": 80.0,
+    "total_reimbursed": 52591.6
   },
   {
     "id": "GP5_M1",
@@ -3643,10 +3643,10 @@
         "name": "Filipovska, Olivija",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 286.3
+        "travel_allowance": 669.2,
+        "daily_allowance": 617.1,
+        "other_expenses": 0.0,
+        "total": 1286.3
       },
       {
         "name": "Liana, Stanca",
@@ -3679,19 +3679,19 @@
         "name": "Nur Yilmaz, Gokce",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 286.73
+        "travel_allowance": 725.73,
+        "daily_allowance": 561.0,
+        "other_expenses": 0.0,
+        "total": 1286.73
       },
       {
         "name": "Nur, Pınar",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 241.03
+        "travel_allowance": 680.03,
+        "daily_allowance": 561.0,
+        "other_expenses": 0.0,
+        "total": 1241.03
       },
       {
         "name": "Ortiz, Cristina",
@@ -3706,10 +3706,10 @@
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 337.8
+        "travel_allowance": 702.0,
+        "daily_allowance": 635.8,
+        "other_expenses": 0.0,
+        "total": 1337.8
       },
       {
         "name": "Pele, Daniel Traian",
@@ -3749,10 +3749,10 @@
       }
     ],
     "los_grant": 2000.0,
-    "total_travel": 2151.15,
-    "total_daily": 5348.2,
-    "total_other": 4.0,
-    "total_reimbursed": 8651.21
+    "total_travel": 4928.11,
+    "total_daily": 7723.1,
+    "total_other": 0.0,
+    "total_reimbursed": 12651.21
   },
   {
     "id": "GP5_M2",
@@ -3781,28 +3781,28 @@
         "name": "Arakelian, Veni",
         "country": "EL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 90.39
+        "travel_allowance": 562.39,
+        "daily_allowance": 528.0,
+        "other_expenses": 0.0,
+        "total": 1090.39
       },
       {
         "name": "Baals, Lennart John",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 23.8
+        "travel_allowance": 275.8,
+        "daily_allowance": 748.0,
+        "other_expenses": 0.0,
+        "total": 1023.8
       },
       {
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 86.52
+        "travel_allowance": 338.52,
+        "daily_allowance": 748.0,
+        "other_expenses": 0.0,
+        "total": 1086.52
       },
       {
         "name": "Bernard, Frederik Sinan",
@@ -3817,19 +3817,19 @@
         "name": "Bolesta, Karolina",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 83.15
+        "travel_allowance": 357.15,
+        "daily_allowance": 726.0,
+        "other_expenses": 0.0,
+        "total": 1083.15
       },
       {
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 409.68
+        "travel_allowance": 661.68,
+        "daily_allowance": 748.0,
+        "other_expenses": 0.0,
+        "total": 1409.68
       },
       {
         "name": "Costea, Adrian",
@@ -3871,10 +3871,10 @@
         "name": "Hadji Misheva, Branka",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 73.73
+        "travel_allowance": 545.73,
+        "daily_allowance": 528.0,
+        "other_expenses": 0.0,
+        "total": 1073.73
       },
       {
         "name": "Hafner, Christian",
@@ -3889,10 +3889,10 @@
         "name": "Klochko, Alona",
         "country": "UA",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 4.32
+        "travel_allowance": 278.32,
+        "daily_allowance": 726.0,
+        "other_expenses": 0.0,
+        "total": 1004.32
       },
       {
         "name": "Liana, Stanca",
@@ -3916,10 +3916,10 @@
         "name": "MARE, Codruta",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 132.32
+        "travel_allowance": 428.32,
+        "daily_allowance": 704.0,
+        "other_expenses": 0.0,
+        "total": 1132.32
       },
       {
         "name": "Machado, Marcos",
@@ -3934,19 +3934,19 @@
         "name": "Maxhelaku (Vasil), Suela",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 108.67
+        "travel_allowance": 404.67,
+        "daily_allowance": 704.0,
+        "other_expenses": 0.0,
+        "total": 1108.67
       },
       {
         "name": "Maxhelaku, Armela",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 108.67
+        "travel_allowance": 404.67,
+        "daily_allowance": 704.0,
+        "other_expenses": 0.0,
+        "total": 1108.67
       },
       {
         "name": "Muniz Martinez, Jose Antonio",
@@ -3979,10 +3979,10 @@
         "name": "TAIBI, Gabin",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 45.0
+        "travel_allowance": 319.0,
+        "daily_allowance": 726.0,
+        "other_expenses": 0.0,
+        "total": 1045.0
       },
       {
         "name": "Wenzlaff, Karsten",
@@ -4004,10 +4004,10 @@
       }
     ],
     "los_grant": 161.43,
-    "total_travel": 2951.98,
-    "total_daily": 7654.73,
-    "total_other": 11.0,
-    "total_reimbursed": 11772.960000000001
+    "total_travel": 7528.23,
+    "total_daily": 15244.73,
+    "total_other": 0.0,
+    "total_reimbursed": 22772.96
   },
   {
     "id": "GP5_M3",
@@ -4140,10 +4140,10 @@
         "name": "Baals, Lennart John",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 124.97
+        "travel_allowance": 475.57,
+        "daily_allowance": 649.4,
+        "other_expenses": 0.0,
+        "total": 1124.97
       },
       {
         "name": "Belbe, Stefana",
@@ -4203,10 +4203,10 @@
         "name": "Gregoriades, Andreas",
         "country": "CY",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 61.14
+        "travel_allowance": 411.74,
+        "daily_allowance": 649.4,
+        "other_expenses": 0.0,
+        "total": 1061.14
       },
       {
         "name": "Liana, Stanca",
@@ -4221,10 +4221,10 @@
         "name": "Liu, Yiting",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 56.66,
-        "other_expenses": 1.0,
-        "total": 267.84
+        "travel_allowance": 561.78,
+        "daily_allowance": 649.4,
+        "other_expenses": 56.66,
+        "total": 1267.84
       },
       {
         "name": "MARE, Codruta",
@@ -4248,19 +4248,19 @@
         "name": "Maxhelaku (Vasil), Suela",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 119.3
+        "travel_allowance": 489.0,
+        "daily_allowance": 630.3,
+        "other_expenses": 0.0,
+        "total": 1119.3
       },
       {
         "name": "Maxhelaku, Armela",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 119.3
+        "travel_allowance": 489.0,
+        "daily_allowance": 630.3,
+        "other_expenses": 0.0,
+        "total": 1119.3
       },
       {
         "name": "Nur Yilmaz, Gokce",
@@ -4284,10 +4284,10 @@
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 67.5
+        "travel_allowance": 437.2,
+        "daily_allowance": 630.3,
+        "other_expenses": 0.0,
+        "total": 1067.5
       },
       {
         "name": "Paschalidou, Eleftheria",
@@ -4311,28 +4311,28 @@
         "name": "Silva, Catarina",
         "country": "PT",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 170.0
+        "travel_allowance": 711.6,
+        "daily_allowance": 458.4,
+        "other_expenses": 0.0,
+        "total": 1170.0
       },
       {
         "name": "Skaftadóttir, Hanna Kristín",
         "country": "IS",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 366.12
+        "travel_allowance": 716.72,
+        "daily_allowance": 649.4,
+        "other_expenses": 0.0,
+        "total": 1366.12
       },
       {
         "name": "Themistocleous, Christos",
         "country": "CY",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 37.82,
-        "other_expenses": 1.0,
-        "total": 122.96
+        "travel_allowance": 435.74,
+        "daily_allowance": 649.4,
+        "other_expenses": 37.82,
+        "total": 1122.96
       },
       {
         "name": "van Heeswijk, Wouter",
@@ -4345,10 +4345,10 @@
       }
     ],
     "los_grant": 0.0,
-    "total_travel": 4200.89,
-    "total_daily": 6926.78,
-    "total_other": 9.0,
-    "total_reimbursed": 12452.32
+    "total_travel": 8929.24,
+    "total_daily": 12428.6,
+    "total_other": 94.47999999999999,
+    "total_reimbursed": 21452.32
   },
   {
     "id": "GP5_M6",
@@ -4386,10 +4386,10 @@
         "name": "Bolesta, Karolina",
         "country": "PL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 250.25
+        "travel_allowance": 613.35,
+        "daily_allowance": 636.9,
+        "other_expenses": 0.0,
+        "total": 1250.25
       },
       {
         "name": "Będowska-Sójka, Barbara",
@@ -4404,10 +4404,10 @@
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 453.66
+        "travel_allowance": 797.46,
+        "daily_allowance": 656.2,
+        "other_expenses": 0.0,
+        "total": 1453.66
       },
       {
         "name": "Dzurovski, Anastas",
@@ -4422,10 +4422,10 @@
         "name": "Filipovska, Olivija",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 351.79
+        "travel_allowance": 695.59,
+        "daily_allowance": 656.2,
+        "other_expenses": 0.0,
+        "total": 1351.79
       },
       {
         "name": "Giantsidi, Sofia",
@@ -4440,19 +4440,19 @@
         "name": "Giordano, Sabrina",
         "country": "IT",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 131.77
+        "travel_allowance": 494.87,
+        "daily_allowance": 636.9,
+        "other_expenses": 0.0,
+        "total": 1131.77
       },
       {
         "name": "KABAKLARLI, Esra",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 74.07
+        "travel_allowance": 456.47,
+        "daily_allowance": 617.6,
+        "other_expenses": 0.0,
+        "total": 1074.07
       },
       {
         "name": "Liana, Stanca",
@@ -4476,10 +4476,10 @@
         "name": "OZTURKKAL, Belma",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 52.26
+        "travel_allowance": 589.06,
+        "daily_allowance": 463.2,
+        "other_expenses": 0.0,
+        "total": 1052.26
       },
       {
         "name": "Paschalidou, Eleftheria",
@@ -4539,17 +4539,17 @@
         "name": "Šutienė, Kristina",
         "country": "LT",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 200.2
+        "travel_allowance": 544.0,
+        "daily_allowance": 656.2,
+        "other_expenses": 0.0,
+        "total": 1200.2
       }
     ],
     "los_grant": 1000.0,
-    "total_travel": 3222.43,
-    "total_daily": 8241.1,
-    "total_other": 7.0,
-    "total_reimbursed": 12977.53
+    "total_travel": 7413.23,
+    "total_daily": 12564.300000000001,
+    "total_other": 0.0,
+    "total_reimbursed": 19977.53
   },
   {
     "id": "GP5_M7",
@@ -4569,19 +4569,19 @@
         "name": "Akar, Mutlu",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 397.53
+        "travel_allowance": 734.53,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1397.53
       },
       {
         "name": "Baals, Lennart John",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 128.84
+        "travel_allowance": 465.84,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1128.84
       },
       {
         "name": "Belbe, Stefana",
@@ -4596,10 +4596,10 @@
         "name": "Bernard, Frédérik Sinan",
         "country": "NL",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 137.4
+        "travel_allowance": 493.9,
+        "daily_allowance": 643.5,
+        "other_expenses": 0.0,
+        "total": 1137.4
       },
       {
         "name": "Coita, Ioana",
@@ -4623,10 +4623,10 @@
         "name": "Filipovska, Olivija",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 224.39
+        "travel_allowance": 795.39,
+        "daily_allowance": 429.0,
+        "other_expenses": 0.0,
+        "total": 1224.39
       },
       {
         "name": "Liana, Stanca",
@@ -4641,10 +4641,10 @@
         "name": "Liu, Yiting",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 233.35
+        "travel_allowance": 570.35,
+        "daily_allowance": 663.0,
+        "other_expenses": 0.0,
+        "total": 1233.35
       },
       {
         "name": "Maxhelaku (Vasil), Suela",
@@ -4668,10 +4668,10 @@
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 308.84
+        "travel_allowance": 684.84,
+        "daily_allowance": 624.0,
+        "other_expenses": 0.0,
+        "total": 1308.84
       },
       {
         "name": "Paschalidou, Eleftheria",
@@ -4686,17 +4686,17 @@
         "name": "Yildirim, Ozgur",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 559.27
+        "travel_allowance": 915.77,
+        "daily_allowance": 643.5,
+        "other_expenses": 0.0,
+        "total": 1559.27
       }
     ],
     "los_grant": 1500.0,
-    "total_travel": 2722.64,
-    "total_daily": 2954.5,
-    "total_other": 7.0,
-    "total_reimbursed": 7666.76
+    "total_travel": 7383.26,
+    "total_daily": 7283.5,
+    "total_other": 0.0,
+    "total_reimbursed": 14666.76
   },
   {
     "id": "GP5_M8",
@@ -4716,10 +4716,10 @@
         "name": "Baals, Lennart John",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 412.69
+        "travel_allowance": 779.09,
+        "daily_allowance": 633.6,
+        "other_expenses": 0.0,
+        "total": 1412.69
       },
       {
         "name": "Belbe, Stefana",
@@ -4752,10 +4752,10 @@
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 766.36
+        "travel_allowance": 1151.96,
+        "daily_allowance": 614.4,
+        "other_expenses": 0.0,
+        "total": 1766.36
       },
       {
         "name": "Dzurovski, Anastas",
@@ -4770,116 +4770,116 @@
         "name": "Filipovska, Olivija",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 579.79
+        "travel_allowance": 926.99,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1579.79
       },
       {
         "name": "Gómez Teijeiro, Lucía",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 152.81
+        "travel_allowance": 538.41,
+        "daily_allowance": 614.4,
+        "other_expenses": 0.0,
+        "total": 1152.81
       },
       {
         "name": "Liana, Stanca",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 554.47
+        "travel_allowance": 901.67,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1554.47
       },
       {
         "name": "Liu, Yiting",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 501.14
+        "travel_allowance": 848.34,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1501.14
       },
       {
         "name": "MARE, Codruta",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 244.94
+        "travel_allowance": 592.14,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1244.94
       },
       {
         "name": "Maxhelaku (Vasil), Suela",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 334.32
+        "travel_allowance": 681.52,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1334.32
       },
       {
         "name": "Maxhelaku, Armela",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 334.32
+        "travel_allowance": 681.52,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1334.32
       },
       {
         "name": "Moloney, Maria",
         "country": "IE",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 400.33
+        "travel_allowance": 766.73,
+        "daily_allowance": 633.6,
+        "other_expenses": 0.0,
+        "total": 1400.33
       },
       {
         "name": "OZTURKKAL, Belma",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 765.52
+        "travel_allowance": 1131.92,
+        "daily_allowance": 633.6,
+        "other_expenses": 0.0,
+        "total": 1765.52
       },
       {
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 816.06
+        "travel_allowance": 1163.26,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1816.06
       },
       {
         "name": "Rupeika-Apoga, Ramona",
         "country": "LV",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 323.22
+        "travel_allowance": 670.42,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1323.22
       },
       {
         "name": "Wenzlaff, Karsten",
         "country": "DE",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 495.19
+        "travel_allowance": 842.39,
+        "daily_allowance": 652.8,
+        "other_expenses": 0.0,
+        "total": 1495.19
       }
     ],
     "los_grant": 1694.33,
-    "total_travel": 1198.89,
-    "total_daily": 2260.27,
-    "total_other": 14.0,
-    "total_reimbursed": 10140.32
+    "total_travel": 12875.25,
+    "total_daily": 11265.07,
+    "total_other": 0.0,
+    "total_reimbursed": 24140.32
   },
   {
     "id": "GP5_M9",
@@ -4899,100 +4899,100 @@
         "name": "Akar, Mutlu",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 358.07
+        "travel_allowance": 654.27,
+        "daily_allowance": 703.8,
+        "other_expenses": 0.0,
+        "total": 1358.07
       },
       {
         "name": "Baals, Lennart John",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 523.92
+        "travel_allowance": 820.12,
+        "daily_allowance": 703.8,
+        "other_expenses": 0.0,
+        "total": 1523.92
       },
       {
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 119.88
+        "travel_allowance": 457.48,
+        "daily_allowance": 662.4,
+        "other_expenses": 0.0,
+        "total": 1119.88
       },
       {
         "name": "Bolesta, Karolina",
         "country": "PL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 230.19
+        "travel_allowance": 588.49,
+        "daily_allowance": 641.7,
+        "other_expenses": 0.0,
+        "total": 1230.19
       },
       {
         "name": "Filipovska, Olivija",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 352.6
+        "travel_allowance": 690.2,
+        "daily_allowance": 662.4,
+        "other_expenses": 0.0,
+        "total": 1352.6
       },
       {
         "name": "Kayis, Enis",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 357.26
+        "travel_allowance": 653.46,
+        "daily_allowance": 703.8,
+        "other_expenses": 0.0,
+        "total": 1357.26
       },
       {
         "name": "Liu, Yiting",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 535.93
+        "travel_allowance": 832.13,
+        "daily_allowance": 703.8,
+        "other_expenses": 0.0,
+        "total": 1535.93
       },
       {
         "name": "MARE, Codruta",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 198.44
+        "travel_allowance": 536.04,
+        "daily_allowance": 662.4,
+        "other_expenses": 0.0,
+        "total": 1198.44
       },
       {
         "name": "Muniz Martinez, Jose Antonio",
         "country": "UK",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 5.9
+        "travel_allowance": 322.8,
+        "daily_allowance": 683.1,
+        "other_expenses": 0.0,
+        "total": 1005.9
       },
       {
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 575.66
+        "travel_allowance": 871.86,
+        "daily_allowance": 703.8,
+        "other_expenses": 0.0,
+        "total": 1575.66
       },
       {
         "name": "Pisoni, Galena",
         "country": "FR",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 109.15
+        "travel_allowance": 405.35,
+        "daily_allowance": 703.8,
+        "other_expenses": 0.0,
+        "total": 1109.15
       },
       {
         "name": "Schwendner, Peter",
@@ -5007,19 +5007,19 @@
         "name": "Shkurti (Perri), Rezarta",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 276.24
+        "travel_allowance": 593.14,
+        "daily_allowance": 683.1,
+        "other_expenses": 0.0,
+        "total": 1276.24
       },
       {
         "name": "Silva, Catarina",
         "country": "PT",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 403.91
+        "travel_allowance": 720.81,
+        "daily_allowance": 683.1,
+        "other_expenses": 0.0,
+        "total": 1403.91
       },
       {
         "name": "Skaftadóttir, Hanna Kristín",
@@ -5034,17 +5034,17 @@
         "name": "van Heeswijk, Wouter",
         "country": "NL",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 20.63
+        "travel_allowance": 358.23,
+        "daily_allowance": 662.4,
+        "other_expenses": 0.0,
+        "total": 1020.63
       }
     ],
     "los_grant": 2500.0,
-    "total_travel": 794.99,
-    "total_daily": 319.01,
-    "total_other": 14.0,
-    "total_reimbursed": 5181.78
+    "total_travel": 9299.37,
+    "total_daily": 9882.41,
+    "total_other": 0.0,
+    "total_reimbursed": 19181.78
   },
   {
     "id": "GP5_M10",
@@ -5073,28 +5073,28 @@
         "name": "Cetintav, Bekir",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 194.72
+        "travel_allowance": 511.32,
+        "daily_allowance": 683.4,
+        "other_expenses": 0.0,
+        "total": 1194.72
       },
       {
         "name": "Dellaportas, Petros",
         "country": "UK",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 106.76
+        "travel_allowance": 423.36,
+        "daily_allowance": 683.4,
+        "other_expenses": 0.0,
+        "total": 1106.76
       },
       {
         "name": "MARE, Codruta",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 65.01
+        "travel_allowance": 421.81,
+        "daily_allowance": 643.2,
+        "other_expenses": 0.0,
+        "total": 1065.01
       },
       {
         "name": "Moukas, Alexios Ioannis",
@@ -5118,10 +5118,10 @@
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 552.47
+        "travel_allowance": 889.17,
+        "daily_allowance": 663.3,
+        "other_expenses": 0.0,
+        "total": 1552.47
       },
       {
         "name": "Paschalidou, Eleftheria",
@@ -5163,37 +5163,37 @@
         "name": "Baals, Lennart John",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 235.8
+        "travel_allowance": 209.8,
+        "daily_allowance": 1026.0,
+        "other_expenses": 0.0,
+        "total": 1235.8
       },
       {
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 680.52
+        "travel_allowance": 464.52,
+        "daily_allowance": 1216.0,
+        "other_expenses": 0.0,
+        "total": 1680.52
       },
       {
         "name": "Gómez Teijeiro, Lucía",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 213.75
+        "travel_allowance": 285.35,
+        "daily_allowance": 928.4,
+        "other_expenses": 0.0,
+        "total": 1213.75
       },
       {
         "name": "Hadji Misheva, Branka",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 654.6
+        "travel_allowance": 515.2,
+        "daily_allowance": 1139.4,
+        "other_expenses": 0.0,
+        "total": 1654.6
       },
       {
         "name": "Härdle, Wolfgang",
@@ -5208,28 +5208,28 @@
         "name": "Klein, Marius",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 114.7
+        "travel_allowance": 126.7,
+        "daily_allowance": 988.0,
+        "other_expenses": 0.0,
+        "total": 1114.7
       },
       {
         "name": "Liana, Stanca",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 297.87
+        "travel_allowance": 309.87,
+        "daily_allowance": 988.0,
+        "other_expenses": 0.0,
+        "total": 1297.87
       },
       {
         "name": "Liu, Yiting",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 353.95
+        "travel_allowance": 137.95,
+        "daily_allowance": 1216.0,
+        "other_expenses": 0.0,
+        "total": 1353.95
       },
       {
         "name": "MATKOVSKYY, Roman",
@@ -5244,37 +5244,37 @@
         "name": "Muniz Martinez, Jose Antonio",
         "country": "UK",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 413.87
+        "travel_allowance": 274.47,
+        "daily_allowance": 1139.4,
+        "other_expenses": 0.0,
+        "total": 1413.87
       },
       {
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 717.2
+        "travel_allowance": 366.8,
+        "daily_allowance": 1350.4,
+        "other_expenses": 0.0,
+        "total": 1717.2
       },
       {
         "name": "Pele, Daniel Traian",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 294.32
+        "travel_allowance": 365.92,
+        "daily_allowance": 928.4,
+        "other_expenses": 0.0,
+        "total": 1294.32
       },
       {
         "name": "Taibi, Gabin",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 486.05
+        "travel_allowance": 270.05,
+        "daily_allowance": 1216.0,
+        "other_expenses": 0.0,
+        "total": 1486.05
       },
       {
         "name": "Wenzlaff, Karsten",
@@ -5298,19 +5298,19 @@
         "name": "Baals, Lennart John",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 333.36
+        "travel_allowance": 448.96,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1333.36
       },
       {
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 167.51
+        "travel_allowance": 283.11,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1167.51
       },
       {
         "name": "Bernard, Frédérik Sinan",
@@ -5334,37 +5334,37 @@
         "name": "Będowska-Sójka, Barbara",
         "country": "PL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 178.36
+        "travel_allowance": 314.06,
+        "daily_allowance": 864.3,
+        "other_expenses": 0.0,
+        "total": 1178.36
       },
       {
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 304.42
+        "travel_allowance": 420.02,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1304.42
       },
       {
         "name": "Dellaportas, Petros",
         "country": "UK",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 228.24
+        "travel_allowance": 363.94,
+        "daily_allowance": 864.3,
+        "other_expenses": 0.0,
+        "total": 1228.24
       },
       {
         "name": "Filipovska, Olivija",
         "country": "MK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 260.18
+        "travel_allowance": 415.98,
+        "daily_allowance": 844.2,
+        "other_expenses": 0.0,
+        "total": 1260.18
       },
       {
         "name": "Giordano, Sabrina",
@@ -5379,28 +5379,28 @@
         "name": "Gómez Teijeiro, Lucía",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 309.8
+        "travel_allowance": 445.5,
+        "daily_allowance": 864.3,
+        "other_expenses": 0.0,
+        "total": 1309.8
       },
       {
         "name": "Hadji Misheva, Branka",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 160.39
+        "travel_allowance": 275.99,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1160.39
       },
       {
         "name": "Liu, Yiting",
         "country": "CH",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 348.23
+        "travel_allowance": 463.83,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1348.23
       },
       {
         "name": "Maxhelaku (Vasil), Suela",
@@ -5424,10 +5424,10 @@
         "name": "Nur Yilmaz, Gokce",
         "country": "TR",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 413.32
+        "travel_allowance": 951.02,
+        "daily_allowance": 462.3,
+        "other_expenses": 0.0,
+        "total": 1413.32
       },
       {
         "name": "Osterrieder, Jörg",
@@ -5442,10 +5442,10 @@
         "name": "Peliova, Jana",
         "country": "SK",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 28.22
+        "travel_allowance": 163.92,
+        "daily_allowance": 864.3,
+        "other_expenses": 0.0,
+        "total": 1028.22
       },
       {
         "name": "Pisoni, Galena",
@@ -5469,19 +5469,19 @@
         "name": "Shkurti (Perri), Rezarta",
         "country": "AL",
         "is_itc": true,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 135.12
+        "travel_allowance": 250.72,
+        "daily_allowance": 884.4,
+        "other_expenses": 0.0,
+        "total": 1135.12
       },
       {
         "name": "Skaftadóttir, Hanna Kristín",
         "country": "IS",
         "is_itc": false,
-        "travel_allowance": 0.0,
-        "daily_allowance": 0.0,
-        "other_expenses": 1.0,
-        "total": 418.72
+        "travel_allowance": 574.52,
+        "daily_allowance": 844.2,
+        "other_expenses": 0.0,
+        "total": 1418.72
       },
       {
         "name": "van Heeswijk, Wouter",
@@ -5494,9 +5494,9 @@
       }
     ],
     "los_grant": 1000.0,
-    "total_travel": 2863.8,
-    "total_daily": 12883.699999999999,
-    "total_other": 28.0,
-    "total_reimbursed": 24414.96
+    "total_travel": 13807.66,
+    "total_daily": 38607.3,
+    "total_other": 0.0,
+    "total_reimbursed": 52414.96
   }
 ]

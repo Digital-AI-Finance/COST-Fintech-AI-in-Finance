@@ -132,7 +132,11 @@ def extract_meetings_with_participants(text, grant_period):
 
         # Pattern: number name country travel_allowance daily_allowance other_expenses total
         # Example: 1 Abrol, Manmeet IE 231.94 617.10 0.00 849.04
-        participant_pattern = r'^(\d+)\s+([A-Za-z\u00C0-\u017F\s,\(\)\-\.\']+?)\s+([A-Z]{2})\s+([\d\s,\.]+)\s+([\d\s,\.]+)\s+([\d\s,\.]+)\s+([\d\s,\.]+)\s*$'
+        # Note: European format uses space as thousands separator: 1 200.00 = 1200.00
+        # Use precise number pattern to avoid matching across columns
+        # Number pattern: 1-3 digits, optional (space + 3 digits) for thousands, decimal + 2 digits
+        euro_num = r'(\d{1,3}(?:\s\d{3})*[,\.]\d{2})'
+        participant_pattern = rf'^(\d+)\s+([A-Za-z\u00C0-\u017F\s,\(\)\-\.\']+?)\s+([A-Z]{{2}})\s+{euro_num}\s+{euro_num}\s+{euro_num}\s+{euro_num}\s*$'
 
         for line in section.split('\n'):
             match = re.match(participant_pattern, line.strip())
@@ -271,7 +275,9 @@ def extract_training_schools(text, grant_period):
 
         # Extract participants
         participants = []
-        participant_pattern = r'^(\d+)\s+([A-Za-z\u00C0-\u017F\s,\(\)\-\.\']+?)\s+([A-Z]{2})\s+([\d\s,\.]+)\s+([\d\s,\.]+)\s+([\d\s,\.]+)\s+([\d\s,\.]+)\s*$'
+        # Use precise European number pattern to avoid matching across columns
+        euro_num = r'(\d{1,3}(?:\s\d{3})*[,\.]\d{2})'
+        participant_pattern = rf'^(\d+)\s+([A-Za-z\u00C0-\u017F\s,\(\)\-\.\']+?)\s+([A-Z]{{2}})\s+{euro_num}\s+{euro_num}\s+{euro_num}\s+{euro_num}\s*$'
 
         for line in section.split('\n'):
             match = re.match(participant_pattern, line.strip())

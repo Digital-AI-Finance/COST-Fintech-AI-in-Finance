@@ -7,12 +7,11 @@
     "end_date": "28/04/2023",
     "duration_days": 3,
     "location": "Department of Informatics, Faculty of Natural Sciences, University of Tirana / Tirana /",
-    "city": "Department of Informatics, Faculty of Natural Sciences, University of Tirana",
-    "country": "Tirana /",
+    "city": "Tirana",
+    "country": "",
     "title": "COSTFinAI-FintechandAIinFinance-TrainingSchoolforthelatesttechnologies",
     "participants": [
       {
-        "index": 1,
         "name": "Baka, Dea",
         "country": "AL",
         "is_itc": true,
@@ -22,7 +21,6 @@
         "total": 216.0
       },
       {
-        "index": 2,
         "name": "Bekteshi, Erisa",
         "country": "AL",
         "is_itc": true,
@@ -32,7 +30,6 @@
         "total": 216.0
       },
       {
-        "index": 3,
         "name": "Cokaj, Mentor",
         "country": "AL",
         "is_itc": true,
@@ -42,7 +39,6 @@
         "total": 216.0
       },
       {
-        "index": 4,
         "name": "Halilaj, Malvina",
         "country": "AL",
         "is_itc": true,
@@ -52,7 +48,6 @@
         "total": 216.0
       },
       {
-        "index": 5,
         "name": "Kosta, Anxhela",
         "country": "AL",
         "is_itc": true,
@@ -62,7 +57,6 @@
         "total": 216.0
       },
       {
-        "index": 6,
         "name": "Lili, Ilma",
         "country": "AL",
         "is_itc": true,
@@ -72,7 +66,6 @@
         "total": 216.0
       },
       {
-        "index": 7,
         "name": "Maxhelaku (Vasil), Suela",
         "country": "AL",
         "is_itc": true,
@@ -82,7 +75,6 @@
         "total": 216.0
       },
       {
-        "index": 8,
         "name": "Maxhelaku, Armela",
         "country": "AL",
         "is_itc": true,
@@ -92,7 +84,6 @@
         "total": 216.0
       },
       {
-        "index": 9,
         "name": "Metani, Fiona",
         "country": "AL",
         "is_itc": true,
@@ -102,7 +93,6 @@
         "total": 216.0
       },
       {
-        "index": 10,
         "name": "Metushi, Emirjan",
         "country": "AL",
         "is_itc": true,
@@ -112,7 +102,6 @@
         "total": 216.0
       },
       {
-        "index": 11,
         "name": "Osterrieder, Jörg",
         "country": "NL",
         "is_itc": false,
@@ -122,7 +111,6 @@
         "total": 1391.27
       },
       {
-        "index": 12,
         "name": "Sauli, Gerta",
         "country": "AL",
         "is_itc": true,
@@ -132,7 +120,6 @@
         "total": 216.0
       },
       {
-        "index": 13,
         "name": "Seci, Drita",
         "country": "AL",
         "is_itc": true,
@@ -142,7 +129,6 @@
         "total": 216.0
       },
       {
-        "index": 14,
         "name": "Xhina, Endrit",
         "country": "AL",
         "is_itc": true,
@@ -152,7 +138,6 @@
         "total": 216.0
       },
       {
-        "index": 15,
         "name": "Xhumari, Elda",
         "country": "AL",
         "is_itc": true,
@@ -179,7 +164,6 @@
     "title": "COSTFinAI-FintechandAIinFinance-TrainingSchooloncurrentstate-of-the-art",
     "participants": [
       {
-        "index": 1,
         "name": "Baals, Lennart John",
         "country": "CH",
         "is_itc": false,
@@ -189,7 +173,6 @@
         "total": 1814.16
       },
       {
-        "index": 2,
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
@@ -199,7 +182,6 @@
         "total": 1454.95
       },
       {
-        "index": 3,
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
@@ -209,7 +191,6 @@
         "total": 996.59
       },
       {
-        "index": 4,
         "name": "Hadji Misheva, Branka",
         "country": "CH",
         "is_itc": false,
@@ -219,7 +200,6 @@
         "total": 864.74
       },
       {
-        "index": 5,
         "name": "Liana, Stanca",
         "country": "RO",
         "is_itc": true,
@@ -229,7 +209,6 @@
         "total": 1187.08
       },
       {
-        "index": 6,
         "name": "Liu, Yiting",
         "country": "CH",
         "is_itc": false,
@@ -239,7 +218,6 @@
         "total": 1750.26
       },
       {
-        "index": 7,
         "name": "MATKOVSKYY, Roman",
         "country": "FR",
         "is_itc": false,
@@ -249,7 +227,6 @@
         "total": 1370.33
       },
       {
-        "index": 8,
         "name": "Moukas, Alexios Ioannis",
         "country": "EL",
         "is_itc": true,
@@ -259,7 +236,6 @@
         "total": 984.23
       },
       {
-        "index": 9,
         "name": "Osterrieder, Jörg",
         "country": "NL",
         "is_itc": false,
@@ -269,17 +245,15 @@
         "total": 1729.8
       },
       {
-        "index": 10,
         "name": "Shala, Albulena",
         "country": "KV",
-        "is_itc": true,
+        "is_itc": false,
         "travel_allowance": 489.6,
         "daily_allowance": 1350.4,
         "other_expenses": 0.0,
         "total": 1840.0
       },
       {
-        "index": 11,
         "name": "Temkov, Slave",
         "country": "MK",
         "is_itc": true,
@@ -289,7 +263,6 @@
         "total": 1150.04
       },
       {
-        "index": 12,
         "name": "Thomaidis, Nikolaos S.",
         "country": "EL",
         "is_itc": true,
@@ -299,7 +272,6 @@
         "total": 1308.42
       },
       {
-        "index": 13,
         "name": "Zhu, Laqiqige",
         "country": "IE",
         "is_itc": false,
@@ -309,7 +281,6 @@
         "total": 1652.24
       },
       {
-        "index": 14,
         "name": "çitçi, Sadettin haluk",
         "country": "TR",
         "is_itc": true,
@@ -336,7 +307,6 @@
     "title": "COST FinAI Training school Data science for sustainable economics and finance",
     "participants": [
       {
-        "index": 1,
         "name": "Birlan, Ioana",
         "country": "RO",
         "is_itc": true,
@@ -346,7 +316,6 @@
         "total": 670.0
       },
       {
-        "index": 2,
         "name": "D'Elia, Samuele",
         "country": "IT",
         "is_itc": false,
@@ -356,7 +325,6 @@
         "total": 600.0
       },
       {
-        "index": 3,
         "name": "Demolli, Erlind",
         "country": "CH",
         "is_itc": false,
@@ -366,7 +334,6 @@
         "total": 600.0
       },
       {
-        "index": 4,
         "name": "Frigerio, Giorgio Pietro",
         "country": "IT",
         "is_itc": false,
@@ -376,7 +343,6 @@
         "total": 600.0
       },
       {
-        "index": 5,
         "name": "Ghesini, Matteo",
         "country": "IT",
         "is_itc": false,
@@ -386,7 +352,6 @@
         "total": 600.0
       },
       {
-        "index": 6,
         "name": "Jevtic, Danijel",
         "country": "CH",
         "is_itc": false,
@@ -396,7 +361,6 @@
         "total": 600.0
       },
       {
-        "index": 7,
         "name": "Lefosse, Saverio Lorenzo",
         "country": "IT",
         "is_itc": false,
@@ -406,7 +370,6 @@
         "total": 600.0
       },
       {
-        "index": 8,
         "name": "Migliore, Federico Guido",
         "country": "IT",
         "is_itc": false,
@@ -416,7 +379,6 @@
         "total": 600.0
       },
       {
-        "index": 9,
         "name": "Popa, Diana",
         "country": "RO",
         "is_itc": true,
@@ -426,7 +388,6 @@
         "total": 911.0
       },
       {
-        "index": 10,
         "name": "Raeli, Fabrizio",
         "country": "IT",
         "is_itc": false,
@@ -436,7 +397,6 @@
         "total": 600.0
       },
       {
-        "index": 11,
         "name": "Spindler, Christian",
         "country": "CH",
         "is_itc": false,
@@ -463,7 +423,6 @@
     "title": "Advanced Statistical Modelling for Fintech, financial inclusion and inequality (AFFINE)",
     "participants": [
       {
-        "index": 1,
         "name": "Akar, Mutlu",
         "country": "TR",
         "is_itc": true,
@@ -473,7 +432,6 @@
         "total": 482.4
       },
       {
-        "index": 2,
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
@@ -483,7 +441,15 @@
         "total": 1194.96
       },
       {
-        "index": 4,
+        "name": "Będowska-Sójka, Barbara",
+        "country": "PL",
+        "is_itc": true,
+        "travel_allowance": 315.2,
+        "daily_allowance": 683.4,
+        "other_expenses": 0.0,
+        "total": 998.6
+      },
+      {
         "name": "Citterio, Alberto",
         "country": "IT",
         "is_itc": false,
@@ -493,7 +459,6 @@
         "total": 770.9
       },
       {
-        "index": 5,
         "name": "Liana, Stanca",
         "country": "RO",
         "is_itc": true,
@@ -503,7 +468,6 @@
         "total": 1003.75
       },
       {
-        "index": 6,
         "name": "Mirzaei, Mahsa",
         "country": "IE",
         "is_itc": false,
@@ -513,7 +477,6 @@
         "total": 806.62
       },
       {
-        "index": 7,
         "name": "OZTURKKAL, Belma",
         "country": "TR",
         "is_itc": true,
@@ -523,7 +486,6 @@
         "total": 1292.33
       },
       {
-        "index": 8,
         "name": "Skaftadóttir, Hanna Kristín",
         "country": "IS",
         "is_itc": false,
@@ -533,7 +495,6 @@
         "total": 1557.28
       },
       {
-        "index": 9,
         "name": "Tarantola, Claudia",
         "country": "IT",
         "is_itc": false,
@@ -543,7 +504,6 @@
         "total": 774.02
       },
       {
-        "index": 10,
         "name": "kabaklarli, esra",
         "country": "TR",
         "is_itc": true,
@@ -553,7 +513,7 @@
         "total": 1061.24
       }
     ],
-    "participant_count": 9,
+    "participant_count": 10,
     "los_grant": 1000.0,
     "total_reimbursed": 9942.1
   },
@@ -570,7 +530,15 @@
     "title": "Advances in Data Science and AI for Finance: Bridging Academia and Industry",
     "participants": [
       {
-        "index": 2,
+        "name": "Będowska-Sójka, Barbara",
+        "country": "PL",
+        "is_itc": true,
+        "travel_allowance": 299.22,
+        "daily_allowance": 683.4,
+        "other_expenses": 0.0,
+        "total": 982.62
+      },
+      {
         "name": "Cetintav, Bekir",
         "country": "TR",
         "is_itc": true,
@@ -580,7 +548,6 @@
         "total": 1194.72
       },
       {
-        "index": 3,
         "name": "Dellaportas, Petros",
         "country": "UK",
         "is_itc": false,
@@ -590,7 +557,6 @@
         "total": 1106.76
       },
       {
-        "index": 4,
         "name": "MARE, Codruta",
         "country": "RO",
         "is_itc": true,
@@ -600,7 +566,6 @@
         "total": 1065.01
       },
       {
-        "index": 5,
         "name": "Moukas, Alexios Ioannis",
         "country": "EL",
         "is_itc": true,
@@ -610,7 +575,6 @@
         "total": 731.1
       },
       {
-        "index": 6,
         "name": "Ortiz, Cristina",
         "country": "ES",
         "is_itc": false,
@@ -620,7 +584,6 @@
         "total": 698.78
       },
       {
-        "index": 7,
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
@@ -630,7 +593,6 @@
         "total": 1552.47
       },
       {
-        "index": 8,
         "name": "Paschalidou, Eleftheria",
         "country": "EL",
         "is_itc": true,
@@ -640,7 +602,6 @@
         "total": 846.0
       },
       {
-        "index": 9,
         "name": "Pisoni, Galena",
         "country": "FR",
         "is_itc": false,
@@ -650,7 +611,6 @@
         "total": 691.96
       },
       {
-        "index": 10,
         "name": "Tanda, Alessandra",
         "country": "IT",
         "is_itc": false,
@@ -660,7 +620,6 @@
         "total": 605.38
       },
       {
-        "index": 11,
         "name": "Tarantola, Claudia",
         "country": "IT",
         "is_itc": false,
@@ -670,7 +629,7 @@
         "total": 865.54
       }
     ],
-    "participant_count": 10,
+    "participant_count": 11,
     "los_grant": 1000.0,
     "total_reimbursed": 10340.34
   },
@@ -687,7 +646,6 @@
     "title": "COST FinAI PhD School on Fintech and AI in Finance",
     "participants": [
       {
-        "index": 1,
         "name": "Baals, Lennart John",
         "country": "CH",
         "is_itc": false,
@@ -697,7 +655,6 @@
         "total": 1235.8
       },
       {
-        "index": 2,
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
@@ -707,7 +664,6 @@
         "total": 1680.52
       },
       {
-        "index": 3,
         "name": "Gómez Teijeiro, Lucía",
         "country": "CH",
         "is_itc": false,
@@ -717,7 +673,6 @@
         "total": 1213.75
       },
       {
-        "index": 4,
         "name": "Hadji Misheva, Branka",
         "country": "CH",
         "is_itc": false,
@@ -727,7 +682,6 @@
         "total": 1654.6
       },
       {
-        "index": 5,
         "name": "Härdle, Wolfgang",
         "country": "DE",
         "is_itc": false,
@@ -737,7 +691,6 @@
         "total": 942.6
       },
       {
-        "index": 6,
         "name": "Klein, Marius",
         "country": "CH",
         "is_itc": false,
@@ -747,7 +700,6 @@
         "total": 1114.7
       },
       {
-        "index": 7,
         "name": "Liana, Stanca",
         "country": "RO",
         "is_itc": true,
@@ -757,7 +709,6 @@
         "total": 1297.87
       },
       {
-        "index": 8,
         "name": "Liu, Yiting",
         "country": "CH",
         "is_itc": false,
@@ -767,7 +718,6 @@
         "total": 1353.95
       },
       {
-        "index": 9,
         "name": "MATKOVSKYY, Roman",
         "country": "FR",
         "is_itc": false,
@@ -777,7 +727,6 @@
         "total": 787.34
       },
       {
-        "index": 10,
         "name": "Muniz Martinez, Jose Antonio",
         "country": "UK",
         "is_itc": false,
@@ -787,7 +736,6 @@
         "total": 1413.87
       },
       {
-        "index": 11,
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
@@ -797,7 +745,6 @@
         "total": 1717.2
       },
       {
-        "index": 12,
         "name": "Pele, Daniel Traian",
         "country": "RO",
         "is_itc": true,
@@ -807,7 +754,6 @@
         "total": 1294.32
       },
       {
-        "index": 13,
         "name": "Taibi, Gabin",
         "country": "CH",
         "is_itc": false,
@@ -817,7 +763,6 @@
         "total": 1486.05
       },
       {
-        "index": 14,
         "name": "Wenzlaff, Karsten",
         "country": "DE",
         "is_itc": false,
@@ -827,7 +772,6 @@
         "total": 801.9
       },
       {
-        "index": 15,
         "name": "van Heeswijk, Wouter",
         "country": "NL",
         "is_itc": false,
@@ -849,12 +793,11 @@
     "end_date": "07/09/2024",
     "duration_days": 3,
     "location": "Aula G4, Department of Political Science, University of Naples Federico II, Via",
-    "city": null,
+    "city": "Aula G4, Department of Political Science, University of Naples Federico II, Via",
     "country": null,
     "title": "Advanced Statistical Modelling for Fintech, Financial Inclusion and Inequality",
     "participants": [
       {
-        "index": 1,
         "name": "Baals, Lennart John",
         "country": "CH",
         "is_itc": false,
@@ -864,7 +807,6 @@
         "total": 1333.36
       },
       {
-        "index": 2,
         "name": "Belbe, Stefana",
         "country": "RO",
         "is_itc": true,
@@ -874,7 +816,6 @@
         "total": 1167.51
       },
       {
-        "index": 3,
         "name": "Bernard, Frédérik Sinan",
         "country": "NL",
         "is_itc": false,
@@ -884,7 +825,6 @@
         "total": 600.0
       },
       {
-        "index": 4,
         "name": "Bolesta, Karolina",
         "country": "PL",
         "is_itc": true,
@@ -894,7 +834,15 @@
         "total": 914.92
       },
       {
-        "index": 6,
+        "name": "Będowska-Sójka, Barbara",
+        "country": "PL",
+        "is_itc": true,
+        "travel_allowance": 314.06,
+        "daily_allowance": 864.3,
+        "other_expenses": 0.0,
+        "total": 1178.36
+      },
+      {
         "name": "Coita, Ioana",
         "country": "RO",
         "is_itc": true,
@@ -904,7 +852,6 @@
         "total": 1304.42
       },
       {
-        "index": 7,
         "name": "Dellaportas, Petros",
         "country": "UK",
         "is_itc": false,
@@ -914,7 +861,6 @@
         "total": 1228.24
       },
       {
-        "index": 8,
         "name": "Filipovska, Olivija",
         "country": "MK",
         "is_itc": true,
@@ -924,7 +870,6 @@
         "total": 1260.18
       },
       {
-        "index": 9,
         "name": "Giordano, Sabrina",
         "country": "IT",
         "is_itc": false,
@@ -934,7 +879,6 @@
         "total": 915.2
       },
       {
-        "index": 10,
         "name": "Gómez Teijeiro, Lucía",
         "country": "CH",
         "is_itc": false,
@@ -944,7 +888,6 @@
         "total": 1309.8
       },
       {
-        "index": 11,
         "name": "Hadji Misheva, Branka",
         "country": "CH",
         "is_itc": false,
@@ -954,7 +897,6 @@
         "total": 1160.39
       },
       {
-        "index": 12,
         "name": "Liu, Yiting",
         "country": "CH",
         "is_itc": false,
@@ -964,7 +906,6 @@
         "total": 1348.23
       },
       {
-        "index": 13,
         "name": "Maxhelaku (Vasil), Suela",
         "country": "AL",
         "is_itc": true,
@@ -974,7 +915,6 @@
         "total": 710.7
       },
       {
-        "index": 14,
         "name": "Maxhelaku, Armela",
         "country": "AL",
         "is_itc": true,
@@ -984,7 +924,6 @@
         "total": 710.7
       },
       {
-        "index": 15,
         "name": "Nur Yilmaz, Gokce",
         "country": "TR",
         "is_itc": true,
@@ -994,7 +933,6 @@
         "total": 1413.32
       },
       {
-        "index": 16,
         "name": "Osterrieder, Jörg",
         "country": "CH",
         "is_itc": false,
@@ -1004,7 +942,6 @@
         "total": 649.0
       },
       {
-        "index": 17,
         "name": "Peliova, Jana",
         "country": "SK",
         "is_itc": true,
@@ -1014,7 +951,6 @@
         "total": 1028.22
       },
       {
-        "index": 18,
         "name": "Pisoni, Galena",
         "country": "FR",
         "is_itc": false,
@@ -1024,7 +960,6 @@
         "total": 889.2
       },
       {
-        "index": 19,
         "name": "Rupeika-Apoga, Ramona",
         "country": "LV",
         "is_itc": true,
@@ -1034,7 +969,6 @@
         "total": 897.26
       },
       {
-        "index": 20,
         "name": "Shkurti (Perri), Rezarta",
         "country": "AL",
         "is_itc": true,
@@ -1044,7 +978,6 @@
         "total": 1135.12
       },
       {
-        "index": 21,
         "name": "Skaftadóttir, Hanna Kristín",
         "country": "IS",
         "is_itc": false,
@@ -1054,7 +987,6 @@
         "total": 1418.72
       },
       {
-        "index": 22,
         "name": "van Heeswijk, Wouter",
         "country": "NL",
         "is_itc": false,
@@ -1064,7 +996,7 @@
         "total": 600.0
       }
     ],
-    "participant_count": 21,
+    "participant_count": 22,
     "los_grant": 2000.0,
     "total_reimbursed": 23172.85
   }
