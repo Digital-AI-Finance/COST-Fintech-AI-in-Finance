@@ -360,35 +360,6 @@
             .sl-sidebar { transform: translateX(-100%); transition: transform 0.3s; }
             .sl-sidebar.open { transform: translateX(0); }
         }
-    
-        .legacy-footer-acknowledgement {
-            background: rgba(255,255,255,0.05);
-            border-radius: 8px;
-            padding: 1rem 1.5rem;
-            margin: 1.5rem auto;
-            max-width: 800px;
-            text-align: center;
-        }
-
-        .legacy-footer-acknowledgement p {
-            color: rgba(255,255,255,0.85);
-            font-size: 0.85rem;
-            margin-bottom: 0.5rem;
-            line-height: 1.6;
-        }
-
-        .legacy-footer-acknowledgement p:last-child {
-            margin-bottom: 0;
-        }
-
-        .legacy-footer-acknowledgement .officers {
-            color: rgba(255,255,255,0.7);
-            font-size: 0.8rem;
-            margin-top: 0.75rem;
-            padding-top: 0.75rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-
     </style>
 </head>
 <body>
@@ -610,7 +581,6 @@
                 <a href="../midterm-action-chair-report-full.html">Mid-Term Report</a>
                 <a href="../financial-reports/overview.html">Financial Overview</a>
                 <a href="../sitemap.html">Site Map</a>
-                <a href="../about.html">About</a>
             </div>
         </div>
     </aside>
@@ -838,12 +808,7 @@
                     <a href="https://github.com/Digital-AI-Finance" target="_blank" rel="noopener">GitHub</a>
                 </div>
             </div>
-                        <div class="legacy-footer-acknowledgement">
-                <p>This archive is based upon work from COST Action CA19130 - Fintech and Artificial Intelligence in Finance, supported by COST (European Cooperation in Science and Technology).</p>
-                <p>Funded by the Horizon 2020 Framework Programme of the European Union.</p>
-                <p class="officers"><strong>Science Officer:</strong> Dr Ralph Stuebner | <strong>Administrative Officer:</strong> Ms Rose Cruz Santos</p>
-            </div>
-<div class="legacy-footer-bottom">
+            <div class="legacy-footer-bottom">
                 <p>Data sourced from <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a> and <a href="https://orcid.org" target="_blank" rel="noopener">ORCID</a> | Archive maintained since 2024</p>
             </div>
         </div>
@@ -1104,100 +1069,5 @@
     <link rel="stylesheet" href="../css/verification-overlay.css">
     <script src="../js/verification-overlay.js"></script>
     <script src="../js/cost-data.js"></script>
-
-<!-- Meeting Thumbnail Integration - Auto-generated -->
-<script>
-const meetingPhotoMapping = {
-  "Napoli": {
-    "events": [
-      "2024_09_napoli",
-      "2023_09_napoli",
-      "2022_05_napoli"
-    ],
-    "photo": "photo_001.jpg"
-  },
-  "Reykjavik": {
-    "events": [
-      "2024_08_reykjavik"
-    ],
-    "photo": "photo_001.jpg"
-  },
-  "Istanbul": {
-    "events": [
-      "2024_05_istanbul"
-    ],
-    "photo": "photo_001.jpg"
-  },
-  "Brussels": {
-    "events": [
-      "2023_05_brussels"
-    ],
-    "photo": "photo_001.jpg"
-  },
-  "Pavia": {
-    "events": [
-      "2023_04_pavia"
-    ],
-    "photo": "photo_001.jpg"
-  },
-  "Utrecht": {
-    "events": [
-      "2022_10_utrecht"
-    ],
-    "photo": "photo_001.jpg"
-  },
-  "Tirana": {
-    "events": [
-      "2022_09_tirana"
-    ],
-    "photo": "photo_001.jpg"
-  },
-  "Bern": {
-    "events": [
-      "2022_09_bern"
-    ],
-    "photo": "photo_001.jpg"
-  },
-  "Skopje": {
-    "events": [
-      "2021_10_skopje"
-    ],
-    "photo": "photo_001.jpg"
-  }
-};
-const galleryBase = "images/gallery";
-
-function addMeetingThumbnails() {
-    const meetingCards = document.querySelectorAll('.meeting-header');
-    meetingCards.forEach(card => {
-        const titleEl = card.querySelector('.meeting-title');
-        if (!titleEl) return;
-        const title = titleEl.textContent;
-
-        for (const [location, info] of Object.entries(meetingPhotoMapping)) {
-            if (title.toLowerCase().includes(location.toLowerCase())) {
-                const event = info.events[0];
-                const photo = info.photo;
-                const thumbSrc = `../${galleryBase}/${event}/thumbs/${photo}`;
-
-                const thumb = document.createElement('img');
-                thumb.src = thumbSrc;
-                thumb.alt = location;
-                thumb.className = 'meeting-thumbnail';
-                thumb.style.cssText = 'width: 60px; height: 45px; object-fit: cover; border-radius: 4px; margin-right: 10px;';
-                thumb.onerror = function() { this.style.display = 'none'; };
-
-                titleEl.insertBefore(thumb, titleEl.firstChild);
-                break;
-            }
-        }
-    });
-}
-
-document.addEventListener('DOMContentLoaded', function() {
-    setTimeout(addMeetingThumbnails, 500);
-});
-</script>
-<!-- End Meeting Thumbnail Integration -->
 </body>
 </html>

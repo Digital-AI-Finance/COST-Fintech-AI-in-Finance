@@ -755,35 +755,6 @@
             .sl-sidebar { transform: translateX(-100%); transition: transform 0.3s; }
             .sl-sidebar.open { transform: translateX(0); }
         }
-    
-        .legacy-footer-acknowledgement {
-            background: rgba(255,255,255,0.05);
-            border-radius: 8px;
-            padding: 1rem 1.5rem;
-            margin: 1.5rem auto;
-            max-width: 800px;
-            text-align: center;
-        }
-
-        .legacy-footer-acknowledgement p {
-            color: rgba(255,255,255,0.85);
-            font-size: 0.85rem;
-            margin-bottom: 0.5rem;
-            line-height: 1.6;
-        }
-
-        .legacy-footer-acknowledgement p:last-child {
-            margin-bottom: 0;
-        }
-
-        .legacy-footer-acknowledgement .officers {
-            color: rgba(255,255,255,0.7);
-            font-size: 0.8rem;
-            margin-top: 0.75rem;
-            padding-top: 0.75rem;
-            border-top: 1px solid rgba(255,255,255,0.1);
-        }
-
     </style>
 </head>
 <body>
@@ -855,7 +826,6 @@
                 <a href="midterm-action-chair-report-full.html">Mid-Term Report</a>
                 <a href="financial-reports/overview.html">Financial Overview</a>
                 <a href="sitemap.html">Site Map</a>
-                <a href="about.html">About</a>
             </div>
         </div>
     </aside>
@@ -1017,127 +987,6 @@
         <h1>Fintech and Artificial Intelligence in Finance</h1>
         <p class="subtitle">Towards a transparent financial industry</p>
         <p class="period">Duration: October 2020 - October 2024</p>
-
-<!-- Photo Carousel - Auto-generated -->
-<div class="photo-carousel" style="height: 300px;">
-    <div class="carousel-slides">
-            <div class="carousel-slide active" data-index="0">
-                <img src="images/gallery/2024_08_reykjavik/photo_001.jpg" alt="Final Conference - Reykjavik 2024">
-                <div class="carousel-caption">Final Conference - Reykjavik 2024</div>
-            </div>
-            <div class="carousel-slide " data-index="1">
-                <img src="images/gallery/2024_09_napoli/photo_001.jpg" alt="Closing Event - Napoli 2024">
-                <div class="carousel-caption">Closing Event - Napoli 2024</div>
-            </div>
-            <div class="carousel-slide " data-index="2">
-                <img src="images/gallery/2024_05_istanbul/photo_001.jpg" alt="Istanbul Meeting 2024">
-                <div class="carousel-caption">Istanbul Meeting 2024</div>
-            </div>
-    </div>
-    <button class="carousel-prev" onclick="carouselPrev()">&lt;</button>
-    <button class="carousel-next" onclick="carouselNext()">&gt;</button>
-    <div class="carousel-indicators"><span class="carousel-indicator active" data-index="0"></span><span class="carousel-indicator " data-index="1"></span><span class="carousel-indicator " data-index="2"></span></div>
-</div>
-<style>
-.photo-carousel {
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    margin: 1rem 0;
-}
-.carousel-slides {
-    position: relative;
-    width: 100%;
-    height: 100%;
-}
-.carousel-slide {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0;
-    transition: opacity 0.5s ease;
-}
-.carousel-slide.active {
-    opacity: 1;
-}
-.carousel-slide img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.carousel-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.7));
-    color: white;
-    padding: 1rem;
-    font-size: 1rem;
-}
-.carousel-prev, .carousel-next {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(255,255,255,0.8);
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 1.5rem;
-    z-index: 10;
-    border-radius: 4px;
-}
-.carousel-prev { left: 10px; }
-.carousel-next { right: 10px; }
-.carousel-prev:hover, .carousel-next:hover {
-    background: white;
-}
-.carousel-indicators {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    gap: 8px;
-    z-index: 10;
-}
-.carousel-indicator {
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
-    background: rgba(255,255,255,0.5);
-    cursor: pointer;
-}
-.carousel-indicator.active {
-    background: white;
-}
-</style>
-<script>
-let carouselIndex = 0;
-const carouselSlides = document.querySelectorAll('.carousel-slide');
-const carouselIndicators = document.querySelectorAll('.carousel-indicator');
-
-function showSlide(index) {
-    carouselSlides.forEach(s => s.classList.remove('active'));
-    carouselIndicators.forEach(i => i.classList.remove('active'));
-    carouselIndex = (index + carouselSlides.length) % carouselSlides.length;
-    carouselSlides[carouselIndex].classList.add('active');
-    carouselIndicators[carouselIndex].classList.add('active');
-}
-
-function carouselPrev() { showSlide(carouselIndex - 1); }
-function carouselNext() { showSlide(carouselIndex + 1); }
-
-carouselIndicators.forEach((ind, i) => {
-    ind.addEventListener('click', () => showSlide(i));
-});
-
-setInterval(() => showSlide(carouselIndex + 1), 5000);
-</script>
-<!-- End Photo Carousel -->
-
     </header>
 
     <div class="stats-banner">
@@ -1282,127 +1131,7 @@ setInterval(() => showSlide(carouselIndex + 1), 5000);
         </div>
     </section>
 
-    
-<!-- Network in Action Section - Auto-generated -->
-<section id="network-in-action" class="network-photos-section">
-    <h2>Network in Action</h2>
-    <p class="section-subtitle">Moments from our COST Action meetings across Europe</p>
-    <div class="photo-grid-6">
-            <a href="images/gallery/2024_08_reykjavik/photo_010.jpg" class="grid-photo-item" data-event="2024_08_reykjavik">
-                <img src="images/gallery/2024_08_reykjavik/thumbs/photo_010.jpg" alt="Reykjavik 2024" loading="lazy">
-                <div class="grid-photo-caption">Reykjavik 2024</div>
-            </a>
-            <a href="images/gallery/2022_05_napoli/photo_015.jpg" class="grid-photo-item" data-event="2022_05_napoli">
-                <img src="images/gallery/2022_05_napoli/thumbs/photo_015.jpg" alt="Napoli 2022" loading="lazy">
-                <div class="grid-photo-caption">Napoli 2022</div>
-            </a>
-            <a href="images/gallery/2023_05_brussels/photo_005.jpg" class="grid-photo-item" data-event="2023_05_brussels">
-                <img src="images/gallery/2023_05_brussels/thumbs/photo_005.jpg" alt="Brussels 2023" loading="lazy">
-                <div class="grid-photo-caption">Brussels 2023</div>
-            </a>
-            <a href="images/gallery/2022_10_utrecht/photo_008.jpg" class="grid-photo-item" data-event="2022_10_utrecht">
-                <img src="images/gallery/2022_10_utrecht/thumbs/photo_008.jpg" alt="Utrecht 2022" loading="lazy">
-                <div class="grid-photo-caption">Utrecht 2022</div>
-            </a>
-            <a href="images/gallery/2024_05_istanbul/photo_003.jpg" class="grid-photo-item" data-event="2024_05_istanbul">
-                <img src="images/gallery/2024_05_istanbul/thumbs/photo_003.jpg" alt="Istanbul 2024" loading="lazy">
-                <div class="grid-photo-caption">Istanbul 2024</div>
-            </a>
-            <a href="images/gallery/2022_09_tirana/photo_010.jpg" class="grid-photo-item" data-event="2022_09_tirana">
-                <img src="images/gallery/2022_09_tirana/thumbs/photo_010.jpg" alt="Tirana 2022" loading="lazy">
-                <div class="grid-photo-caption">Tirana 2022</div>
-            </a>
-    </div>
-    <a href="gallery.html" class="view-gallery-btn">View Full Gallery</a>
-</section>
-<style>
-.network-photos-section {
-    padding: 2rem;
-    max-width: 1400px;
-    margin: 0 auto;
-    text-align: center;
-}
-.network-photos-section h2 {
-    font-size: 1.75rem;
-    color: var(--cost-purple);
-    margin-bottom: 0.5rem;
-}
-.network-photos-section h2::after {
-    content: '';
-    display: block;
-    width: 60px;
-    height: 3px;
-    background: var(--cost-orange);
-    margin: 0.5rem auto 0;
-}
-.section-subtitle {
-    color: var(--gray);
-    margin-bottom: 1.5rem;
-}
-.photo-grid-6 {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin-bottom: 1.5rem;
-}
-.grid-photo-item {
-    position: relative;
-    aspect-ratio: 4/3;
-    overflow: hidden;
-    border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-.grid-photo-item:hover {
-    transform: scale(1.02);
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-}
-.grid-photo-item img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    transition: transform 0.3s;
-}
-.grid-photo-item:hover img {
-    transform: scale(1.05);
-}
-.grid-photo-caption {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: linear-gradient(transparent, rgba(0,0,0,0.7));
-    color: white;
-    padding: 2rem 0.5rem 0.5rem;
-    font-size: 0.85rem;
-    opacity: 0;
-    transition: opacity 0.3s;
-}
-.grid-photo-item:hover .grid-photo-caption {
-    opacity: 1;
-}
-.view-gallery-btn {
-    display: inline-block;
-    padding: 0.75rem 1.5rem;
-    background: var(--cost-purple);
-    color: white;
-    text-decoration: none;
-    border-radius: 25px;
-    font-weight: 500;
-    transition: background 0.3s;
-}
-.view-gallery-btn:hover {
-    background: var(--cost-blue);
-}
-@media (max-width: 768px) {
-    .photo-grid-6 {
-        grid-template-columns: repeat(2, 1fr);
-    }
-}
-</style>
-<!-- End Network in Action Section -->
-
-<section id="timeline">
+    <section id="timeline">
         <h2>Action Timeline</h2>
         <div class="timeline">
             <div class="timeline-item">
@@ -1473,12 +1202,7 @@ setInterval(() => showSlide(carouselIndex + 1), 5000);
                     <a href="https://github.com/Digital-AI-Finance" target="_blank" rel="noopener">GitHub</a>
                 </div>
             </div>
-                        <div class="legacy-footer-acknowledgement">
-                <p>This archive is based upon work from COST Action CA19130 - Fintech and Artificial Intelligence in Finance, supported by COST (European Cooperation in Science and Technology).</p>
-                <p>Funded by the Horizon 2020 Framework Programme of the European Union.</p>
-                <p class="officers"><strong>Science Officer:</strong> Dr Ralph Stuebner | <strong>Administrative Officer:</strong> Ms Rose Cruz Santos</p>
-            </div>
-<div class="legacy-footer-bottom">
+            <div class="legacy-footer-bottom">
                 <p>Data sourced from <a href="https://openalex.org" target="_blank" rel="noopener">OpenAlex</a> and <a href="https://orcid.org" target="_blank" rel="noopener">ORCID</a> | Archive maintained since 2024</p>
             </div>
         </div>
