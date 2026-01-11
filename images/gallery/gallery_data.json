@@ -1,0 +1,112 @@
+[
+  {
+    "id": "2021_10_skopje",
+    "title": "Skopje - October 2021",
+    "year": 2021,
+    "month": 10,
+    "location": "Skopje",
+    "photo_count": 13,
+    "folder": "images/gallery/2021_10_skopje",
+    "thumbs": "images/gallery/2021_10_skopje/thumbs"
+  },
+  {
+    "id": "2022_05_napoli",
+    "title": "Napoli - May 2022",
+    "year": 2022,
+    "month": 5,
+    "location": "Napoli",
+    "photo_count": 46,
+    "folder": "images/gallery/2022_05_napoli",
+    "thumbs": "images/gallery/2022_05_napoli/thumbs"
+  },
+  {
+    "id": "2022_09_bern",
+    "title": "Bern - September 2022",
+    "year": 2022,
+    "month": 9,
+    "location": "Bern",
+    "photo_count": 3,
+    "folder": "images/gallery/2022_09_bern",
+    "thumbs": "images/gallery/2022_09_bern/thumbs"
+  },
+  {
+    "id": "2022_09_tirana",
+    "title": "Tirana - September 2022",
+    "year": 2022,
+    "month": 9,
+    "location": "Tirana",
+    "photo_count": 38,
+    "folder": "images/gallery/2022_09_tirana",
+    "thumbs": "images/gallery/2022_09_tirana/thumbs"
+  },
+  {
+    "id": "2022_10_utrecht",
+    "title": "Utrecht - October 2022",
+    "year": 2022,
+    "month": 10,
+    "location": "Utrecht",
+    "photo_count": 26,
+    "folder": "images/gallery/2022_10_utrecht",
+    "thumbs": "images/gallery/2022_10_utrecht/thumbs"
+  },
+  {
+    "id": "2023_04_pavia",
+    "title": "Pavia - April 2023",
+    "year": 2023,
+    "month": 4,
+    "location": "Pavia",
+    "photo_count": 15,
+    "folder": "images/gallery/2023_04_pavia",
+    "thumbs": "images/gallery/2023_04_pavia/thumbs"
+  },
+  {
+    "id": "2023_05_brussels",
+    "title": "Brussels - May 2023",
+    "year": 2023,
+    "month": 5,
+    "location": "Brussels",
+    "photo_count": 17,
+    "folder": "images/gallery/2023_05_brussels",
+    "thumbs": "images/gallery/2023_05_brussels/thumbs"
+  },
+  {
+    "id": "2023_09_napoli",
+    "title": "Napoli - September 2023",
+    "year": 2023,
+    "month": 9,
+    "location": "Napoli",
+    "photo_count": 11,
+    "folder": "images/gallery/2023_09_napoli",
+    "thumbs": "images/gallery/2023_09_napoli/thumbs"
+  },
+  {
+    "id": "2024_05_istanbul",
+    "title": "Istanbul - May 2024",
+    "year": 2024,
+    "month": 5,
+    "location": "Istanbul",
+    "photo_count": 14,
+    "folder": "images/gallery/2024_05_istanbul",
+    "thumbs": "images/gallery/2024_05_istanbul/thumbs"
+  },
+  {
+    "id": "2024_08_reykjavik",
+    "title": "Reykjavik - August 2024",
+    "year": 2024,
+    "month": 8,
+    "location": "Reykjavik",
+    "photo_count": 56,
+    "folder": "images/gallery/2024_08_reykjavik",
+    "thumbs": "images/gallery/2024_08_reykjavik/thumbs"
+  },
+  {
+    "id": "2024_09_napoli",
+    "title": "Napoli - September 2024",
+    "year": 2024,
+    "month": 9,
+    "location": "Napoli",
+    "photo_count": 40,
+    "folder": "images/gallery/2024_09_napoli",
+    "thumbs": "images/gallery/2024_09_napoli/thumbs"
+  }
+]

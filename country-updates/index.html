@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country Updates - COST Action CA19130</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/mega-menu.css">
+    <style>
+        :root {
+            --cost-purple: #5B2D8A;
+            --cost-blue: #2B5F9E;
+            --cost-teal: #00A0B0;
+            --cost-orange: #E87722;
+            --cost-green: #7AB800;
+            --dark: #1a1a2e;
+            --light: #f8f9fa;
+            --gray: #6c757d;
+            --border: #dee2e6;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--dark);
+            background: var(--light);
+        }
+
+        .hero {
+            background: linear-gradient(135deg, var(--cost-purple) 0%, var(--cost-blue) 50%, var(--cost-teal) 100%);
+            color: white;
+            padding: 2rem 2rem 1.5rem;
+            text-align: center;
+        }
+
+        .hero h1 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .hero .subtitle { font-size: 1.2rem; opacity: 0.95; max-width: 700px; margin: 0 auto; font-weight: 300; }
+
+        .stats-banner {
+            background: white;
+            padding: 1rem;
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        }
+
+        .stat-item { text-align: center; }
+        .stat-number { font-size: 2rem; font-weight: 700; color: var(--cost-purple); }
+        .stat-label { font-size: 0.8rem; color: var(--gray); text-transform: uppercase; letter-spacing: 0.05em; }
+
+        .container { max-width: 1200px; margin: 0 auto; padding: 2rem; }
+
+        .country-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .country-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            text-decoration: none;
+            color: var(--dark);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .country-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+        }
+
+        .country-flag {
+            font-size: 2.5rem;
+        }
+
+        .country-info h3 {
+            font-size: 1.1rem;
+            color: var(--cost-purple);
+            margin-bottom: 0.25rem;
+        }
+
+        .country-info p {
+            font-size: 0.85rem;
+            color: var(--gray);
+        }
+
+        footer {
+            background: var(--dark);
+            color: white;
+            padding: 1.5rem 2rem;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        footer p { color: rgba(255,255,255,0.7); font-size: 0.85rem; }
+        footer a { color: var(--cost-orange); text-decoration: none; }
+    </style>
+</head>
+<body>
+    <nav id="nav-placeholder"></nav>
+
+    <div class="hero">
+        <h1>Country Updates</h1>
+        <p class="subtitle">National contributions and activities from participating countries in COST Action CA19130</p>
+    </div>
+
+    <div class="stats-banner">
+        <div class="stat-item">
+            <div class="stat-number">22</div>
+            <div class="stat-label">Countries</div>
+        </div>
+        <div class="stat-item">
+            <div class="stat-number">23</div>
+            <div class="stat-label">Presentations</div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="country-grid">
+            <a href="belgium.html" class="country-card">
+                <span class="country-flag">🇧🇪</span>
+                <div class="country-info">
+                    <h3>Belgium</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="croatia.html" class="country-card">
+                <span class="country-flag">🇭🇷</span>
+                <div class="country-info">
+                    <h3>Croatia</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="cyprus.html" class="country-card">
+                <span class="country-flag">🇨🇾</span>
+                <div class="country-info">
+                    <h3>Cyprus</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="denmark.html" class="country-card">
+                <span class="country-flag">🇩🇰</span>
+                <div class="country-info">
+                    <h3>Denmark</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="france.html" class="country-card">
+                <span class="country-flag">🇫🇷</span>
+                <div class="country-info">
+                    <h3>France</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="greece.html" class="country-card">
+                <span class="country-flag">🇬🇷</span>
+                <div class="country-info">
+                    <h3>Greece</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="hungary.html" class="country-card">
+                <span class="country-flag">🇭🇺</span>
+                <div class="country-info">
+                    <h3>Hungary</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="iceland.html" class="country-card">
+                <span class="country-flag">🇮🇸</span>
+                <div class="country-info">
+                    <h3>Iceland</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="ireland.html" class="country-card">
+                <span class="country-flag">🇮🇪</span>
+                <div class="country-info">
+                    <h3>Ireland</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="italy.html" class="country-card">
+                <span class="country-flag">🇮🇹</span>
+                <div class="country-info">
+                    <h3>Italy</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="latvia.html" class="country-card">
+                <span class="country-flag">🇱🇻</span>
+                <div class="country-info">
+                    <h3>Latvia</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="lithuania.html" class="country-card">
+                <span class="country-flag">🇱🇹</span>
+                <div class="country-info">
+                    <h3>Lithuania</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="netherlands.html" class="country-card">
+                <span class="country-flag">🇳🇱</span>
+                <div class="country-info">
+                    <h3>Netherlands</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="north-macedonia.html" class="country-card">
+                <span class="country-flag">🇲🇰</span>
+                <div class="country-info">
+                    <h3>North Macedonia</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="portugal.html" class="country-card">
+                <span class="country-flag">🇵🇹</span>
+                <div class="country-info">
+                    <h3>Portugal</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="romania.html" class="country-card">
+                <span class="country-flag">🇷🇴</span>
+                <div class="country-info">
+                    <h3>Romania</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="serbia.html" class="country-card">
+                <span class="country-flag">🇷🇸</span>
+                <div class="country-info">
+                    <h3>Serbia</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="slovakia.html" class="country-card">
+                <span class="country-flag">🇸🇰</span>
+                <div class="country-info">
+                    <h3>Slovakia</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="spain.html" class="country-card">
+                <span class="country-flag">🇪🇸</span>
+                <div class="country-info">
+                    <h3>Spain</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="switzerland.html" class="country-card">
+                <span class="country-flag">🇨🇭</span>
+                <div class="country-info">
+                    <h3>Switzerland</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="ukraine.html" class="country-card">
+                <span class="country-flag">🇺🇦</span>
+                <div class="country-info">
+                    <h3>Ukraine</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+            <a href="unknown.html" class="country-card">
+                <span class="country-flag">🇪🇺</span>
+                <div class="country-info">
+                    <h3>Unknown</h3>
+                    <p>View country update</p>
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; COST Action CA19130 - Fintech and Artificial Intelligence in Finance (2020-2024)</p>
+        <p>Part of the <a href="https://www.cost.eu/" target="_blank">COST Association</a> | Funded by <a href="https://ec.europa.eu/info/funding-tenders/opportunities/portal/screen/opportunities/horizon-dashboard" target="_blank">Horizon Europe</a></p>
+    </footer>
+
+    <script src="../js/mobile-menu.js"></script>
+    <script>
+        fetch('../components/nav.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('nav-placeholder').outerHTML = html;
+                // Fix relative paths
+                document.querySelectorAll('.mega-nav a, .mega-mobile-menu a').forEach(a => {
+                    if (a.href && !a.href.startsWith('http') && !a.href.includes('../')) {
+                        a.href = '../' + a.getAttribute('href');
+                    }
+                });
+                if (typeof initMobileMenu === 'function') initMobileMenu();
+            });
+    </script>
+</body>
+</html>
