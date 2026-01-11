@@ -108,7 +108,7 @@
       "date": "2021-10-15",
       "participants": 137,
       "reimbursed": 7,
-      "cost": 2800,
+      "cost": 4271.19,
       "itc": true,
       "country_name": "North Macedonia"
     },
@@ -122,7 +122,7 @@
       "date": "2021-10-28",
       "participants": 198,
       "reimbursed": 9,
-      "cost": 7500,
+      "cost": 6029.11,
       "itc": true,
       "country_name": "Romania"
     },
@@ -136,7 +136,7 @@
       "date": "2022-03-24",
       "participants": 238,
       "reimbursed": 4,
-      "cost": 4000,
+      "cost": 3927.98,
       "itc": false,
       "country_name": "Germany"
     },
@@ -150,7 +150,7 @@
       "date": "2022-04-08",
       "participants": 254,
       "reimbursed": 3,
-      "cost": 3000,
+      "cost": 3456.91,
       "itc": false,
       "country_name": "France"
     },
@@ -164,7 +164,7 @@
       "date": "2022-05-05",
       "participants": 315,
       "reimbursed": 7,
-      "cost": 7000,
+      "cost": 8234.16,
       "itc": true,
       "country_name": "Croatia"
     },
@@ -178,7 +178,7 @@
       "date": "2022-05-16",
       "participants": 225,
       "reimbursed": 13,
-      "cost": 8000,
+      "cost": 13556.57,
       "itc": false,
       "country_name": "Italy"
     },
@@ -192,7 +192,7 @@
       "date": "2022-06-16",
       "participants": 313,
       "reimbursed": 3,
-      "cost": 3000,
+      "cost": 2629.1,
       "itc": true,
       "country_name": "Romania"
     },
@@ -206,7 +206,7 @@
       "date": "2022-07-06",
       "participants": 317,
       "reimbursed": 4,
-      "cost": 4000,
+      "cost": 1758.73,
       "itc": false,
       "country_name": "Finland"
     },
@@ -220,7 +220,7 @@
       "date": "2022-08-22",
       "participants": 317,
       "reimbursed": 15,
-      "cost": 15000,
+      "cost": 18498.98,
       "itc": false,
       "country_name": "Netherlands"
     },
@@ -234,7 +234,7 @@
       "date": "2022-09-21",
       "participants": 316,
       "reimbursed": 13,
-      "cost": 13000,
+      "cost": 12737.76,
       "itc": true,
       "country_name": "Albania"
     },
@@ -248,7 +248,7 @@
       "date": "2022-09-30",
       "participants": 590,
       "reimbursed": 11,
-      "cost": 11000,
+      "cost": 13247.74,
       "itc": false,
       "country_name": "Switzerland"
     },
@@ -262,7 +262,7 @@
       "date": "2022-10-05",
       "participants": 316,
       "reimbursed": 31,
-      "cost": 31000,
+      "cost": 35505.3,
       "itc": false,
       "country_name": "Netherlands"
     },
@@ -276,7 +276,7 @@
       "date": "2022-10-10",
       "participants": 612,
       "reimbursed": 6,
-      "cost": 6000,
+      "cost": 2274.92,
       "itc": true,
       "country_name": "North Macedonia"
     },
@@ -290,7 +290,7 @@
       "date": "2022-10-21",
       "participants": 613,
       "reimbursed": 3,
-      "cost": 3000,
+      "cost": 2439.01,
       "itc": true,
       "country_name": "Czech Republic"
     },
@@ -304,7 +304,7 @@
       "date": "2022-10-28",
       "participants": 290,
       "reimbursed": 11,
-      "cost": 11000,
+      "cost": 7691.44,
       "itc": true,
       "country_name": "Romania"
     },
@@ -318,7 +318,7 @@
       "date": "2023-02-01",
       "participants": 570,
       "reimbursed": 16,
-      "cost": 16000,
+      "cost": 12716.49,
       "itc": true,
       "country_name": "Romania"
     },
@@ -332,7 +332,7 @@
       "date": "2023-04-13",
       "participants": 540,
       "reimbursed": 14,
-      "cost": 14000,
+      "cost": 12826.13,
       "itc": false,
       "country_name": "Italy"
     },
@@ -346,7 +346,7 @@
       "date": "2023-05-15",
       "participants": 288,
       "reimbursed": 25,
-      "cost": 25000,
+      "cost": 27253.09,
       "itc": false,
       "country_name": "Belgium"
     },
@@ -360,7 +360,7 @@
       "date": "2023-06-01",
       "participants": 305,
       "reimbursed": 17,
-      "cost": 17000,
+      "cost": 18947.09,
       "itc": true,
       "country_name": "Portugal"
     },
@@ -374,7 +374,7 @@
       "date": "2023-07-10",
       "participants": 12,
       "reimbursed": 11,
-      "cost": 11000,
+      "cost": 11717.53,
       "itc": false,
       "country_name": "Finland"
     },
@@ -388,7 +388,7 @@
       "date": "2023-09-03",
       "participants": 318,
       "reimbursed": 7,
-      "cost": 7000,
+      "cost": 8212.11,
       "itc": true,
       "country_name": "Portugal"
     },
@@ -402,7 +402,7 @@
       "date": "2023-09-27",
       "participants": 312,
       "reimbursed": 29,
-      "cost": 29000,
+      "cost": 34792.32,
       "itc": false,
       "country_name": "Switzerland"
     },
@@ -416,7 +416,7 @@
       "date": "2023-10-30",
       "participants": 15,
       "reimbursed": 15,
-      "cost": 15000,
+      "cost": 12776.04,
       "itc": false,
       "country_name": "Spain"
     },
@@ -430,7 +430,7 @@
       "date": "2024-04-24",
       "participants": 280,
       "reimbursed": 18,
-      "cost": 18000,
+      "cost": 14651.21,
       "itc": true,
       "country_name": "Romania"
     },
@@ -444,7 +444,7 @@
       "date": "2024-05-14",
       "participants": 31,
       "reimbursed": 27,
-      "cost": 27000,
+      "cost": 22934.39,
       "itc": false,
       "country_name": "Belgium"
     },
@@ -472,7 +472,7 @@
       "date": "2024-05-17",
       "participants": 19,
       "reimbursed": 6,
-      "cost": 6000,
+      "cost": 3496.35,
       "itc": true,
       "country_name": "Romania"
     },
@@ -486,7 +486,7 @@
       "date": "2024-05-20",
       "participants": 30,
       "reimbursed": 25,
-      "cost": 25000,
+      "cost": 21452.32,
       "itc": true,
       "country_name": "Turkey"
     },
@@ -500,7 +500,7 @@
       "date": "2024-06-27",
       "participants": 39,
       "reimbursed": 21,
-      "cost": 21000,
+      "cost": 20977.53,
       "itc": true,
       "country_name": "Greece"
     },
@@ -514,7 +514,7 @@
       "date": "2024-07-10",
       "participants": 20,
       "reimbursed": 15,
-      "cost": 15000,
+      "cost": 16166.76,
       "itc": true,
       "country_name": "Portugal"
     },
@@ -528,7 +528,7 @@
       "date": "2024-07-18",
       "participants": 35,
       "reimbursed": 19,
-      "cost": 19000,
+      "cost": 25834.65,
       "itc": false,
       "country_name": "Spain"
     },
@@ -542,7 +542,7 @@
       "date": "2024-08-27",
       "participants": 20,
       "reimbursed": 17,
-      "cost": 17000,
+      "cost": 21681.78,
       "itc": false,
       "country_name": "Iceland"
     },

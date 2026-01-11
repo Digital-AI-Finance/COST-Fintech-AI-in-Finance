@@ -1,15 +1,15 @@
 {
-  "generated": "2026-01-04T17:04:16.785968",
+  "generated": "2026-01-05T08:26:51.343306",
   "total_countries": 29,
   "countries_with_both_years": 15,
   "summary_statistics": {
-    "total_publications": 619,
+    "total_publications": 723,
     "total_with_acknowledgment": 42,
-    "total_events": 165,
-    "total_stsm": 26,
-    "total_grants": 154,
-    "total_funded_grants": 7,
-    "total_members": 238,
+    "total_events": 186,
+    "total_stsm": 16,
+    "total_grants": 302,
+    "total_funded_grants": 15,
+    "total_members": 206,
     "total_images": 300
   },
   "by_region": {
@@ -20,8 +20,8 @@
         "years": [
           2023
         ],
-        "publications": 0,
-        "events": 5,
+        "publications": 4,
+        "events": 7,
         "images": 6
       },
       {
@@ -31,8 +31,8 @@
           2023,
           2024
         ],
-        "publications": 4,
-        "events": 1,
+        "publications": 2,
+        "events": 2,
         "images": 12
       },
       {
@@ -52,8 +52,8 @@
           2023,
           2024
         ],
-        "publications": 0,
-        "events": 1,
+        "publications": 2,
+        "events": 2,
         "images": 6
       },
       {
@@ -62,7 +62,7 @@
         "years": [
           2023
         ],
-        "publications": 3,
+        "publications": 1,
         "events": 9,
         "images": 1
       },
@@ -73,8 +73,8 @@
           2023,
           2024
         ],
-        "publications": 5,
-        "events": 8,
+        "publications": 3,
+        "events": 10,
         "images": 2
       },
       {
@@ -106,7 +106,7 @@
           2023,
           2024
         ],
-        "publications": 5,
+        "publications": 2,
         "events": 6,
         "images": 2
       },
@@ -117,7 +117,7 @@
           2023,
           2024
         ],
-        "publications": 3,
+        "publications": 7,
         "events": 0,
         "images": 2
       },
@@ -127,7 +127,7 @@
         "years": [
           2024
         ],
-        "publications": 2,
+        "publications": 7,
         "events": 5,
         "images": 3
       }
@@ -139,8 +139,8 @@
         "years": [
           2023
         ],
-        "publications": 1,
-        "events": 5,
+        "publications": 133,
+        "events": 7,
         "images": 97
       },
       {
@@ -149,7 +149,7 @@
         "years": [
           2024
         ],
-        "publications": 13,
+        "publications": 2,
         "events": 21,
         "images": 5
       }
@@ -162,7 +162,7 @@
           2023,
           2024
         ],
-        "publications": 15,
+        "publications": 7,
         "events": 17,
         "images": 20
       },
@@ -184,7 +184,7 @@
           2024
         ],
         "publications": 4,
-        "events": 1,
+        "events": 3,
         "images": 7
       },
       {
@@ -207,7 +207,7 @@
           2023,
           2024
         ],
-        "publications": 8,
+        "publications": 0,
         "events": 5,
         "images": 2
       },
@@ -228,8 +228,8 @@
           2023,
           2024
         ],
-        "publications": 15,
-        "events": 14,
+        "publications": 6,
+        "events": 17,
         "images": 5
       },
       {
@@ -239,7 +239,7 @@
           2023,
           2024
         ],
-        "publications": 1,
+        "publications": 2,
         "events": 8,
         "images": 15
       },
@@ -249,7 +249,7 @@
         "years": [
           2024
         ],
-        "publications": 0,
+        "publications": 1,
         "events": 0,
         "images": 2
       },
@@ -260,7 +260,7 @@
           2023,
           2024
         ],
-        "publications": 0,
+        "publications": 2,
         "events": 8,
         "images": 5
       }
@@ -284,7 +284,7 @@
           2023
         ],
         "publications": 440,
-        "events": 3,
+        "events": 8,
         "images": 32
       },
       {
@@ -293,7 +293,7 @@
         "years": [
           2023
         ],
-        "publications": 1,
+        "publications": 0,
         "events": 2,
         "images": 5
       },
@@ -303,8 +303,8 @@
         "years": [
           2024
         ],
-        "publications": 2,
-        "events": 6,
+        "publications": 0,
+        "events": 9,
         "images": 1
       },
       {
@@ -314,7 +314,7 @@
           2023,
           2024
         ],
-        "publications": 4,
+        "publications": 6,
         "events": 7,
         "images": 5
       },
@@ -325,7 +325,7 @@
           2023,
           2024
         ],
-        "publications": 4,
+        "publications": 3,
         "events": 3,
         "images": 4
       }
@@ -340,70 +340,68 @@
         2023
       ],
       "summary_stats": {
-        "total_publications": 0,
+        "total_publications": 4,
         "total_with_acknowledgment": 0,
-        "total_events": 5,
+        "total_events": 7,
         "total_stsm": 0,
-        "total_grants": 3,
+        "total_grants": 4,
         "total_funded_grants": 0,
-        "total_members": 5,
-        "total_universities": 3
+        "total_members": 2,
+        "total_universities": 0
       },
       "aggregated_metrics": {
         "members": {
-          "count": 5,
+          "count": 2,
           "names": [
-            "Organizing Conferences",
-            "Core Member",
-            "Bernhard Haslhofer",
-            "Stefan Kitzler",
-            "Industry Representative"
+            "Industry Representative",
+            "Core Member"
           ]
         },
         "publications": {
-          "total_mentioned": 0,
+          "total_mentioned": 4,
           "with_acknowledgment": 0,
           "journals": [
-            "Decentralized Finance",
-            "Journal of Financial Stability",
-            "Frontiers in Decentralized Finance",
-            "Data Science",
-            "Digital Finance"
+            "Journal Of Financial Stability"
           ]
         },
         "events": {
           "organized": 2,
-          "participated": 6,
+          "participated": 11,
           "events": [
             {
               "name": "conferences, workshops and summer schools.",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "Organizing Conferences, Workshops and Lectures.",
-              "type": "conference",
-              "role": "organized"
+              "type": "conference"
+            },
+            {
+              "name": "ESG Data Analytics Forum 2021 at Raiffeisen Bank International on",
+              "type": "forum",
+              "date": "Forum 2021"
             },
             {
               "name": "ESG Workshop at the Financial Market Authority on September 21, 2022.",
               "type": "workshop",
-              "date": "September 21, 2022",
-              "role": "participated"
+              "date": "2022"
             },
             {
               "name": "International Conference on Data Science in Finance 2022 in Vienna on",
               "type": "conference",
-              "date": "2022",
-              "role": "participated"
+              "date": "Finance 2022"
             },
             {
-              "name": "Setting up and maintaining more than 15 WordPress sites for various conferences, workshops and summer schools.",
-              "type": "conference",
-              "role": "participated"
+              "name": "Analytics Forum) forthcoming on November 9th, 2023.",
+              "type": "forum",
+              "date": "2023"
+            },
+            {
+              "name": "Setting up and maintaining more than 15 WordPress sites for various conferences, workshops and summe",
+              "type": "conference"
             }
           ],
-          "total": 4
+          "total": 7
         },
         "stsm": {
           "total": 0,
@@ -411,7 +409,7 @@
           "incoming": 0
         },
         "grants": {
-          "total": 3,
+          "total": 4,
           "funded": 0,
           "pending": 0,
           "declined": 0
@@ -420,12 +418,8 @@
           "students": 0
         },
         "collaborations": {
-          "universities": [
-            "ESG Workshop",
-            "ESG Data",
-            "ZHAW School"
-          ],
-          "total_international": 3
+          "universities": [],
+          "total_international": 0
         }
       },
       "text_summary": {
@@ -623,7 +617,7 @@
           "path": "downloads/contributions/at/COST FinAI Country Update 2023 Austria.pptx"
         }
       ],
-      "summary": "Key achievements: 5 active members, 5 events."
+      "summary": "Key achievements: 2 active members, 4 publications, 7 events."
     },
     {
       "country": "Belgium",
@@ -639,28 +633,21 @@
         "total_stsm": 0,
         "total_grants": 0,
         "total_funded_grants": 0,
-        "total_members": 6,
-        "total_universities": 5
+        "total_members": 1,
+        "total_universities": 1
       },
       "aggregated_metrics": {
         "members": {
-          "count": 6,
+          "count": 1,
           "names": [
-            "Sabrine Majeri",
-            "Mathias Dah Fienon",
-            "Lara Wautier",
-            "Bin Ling",
-            "Linqi Wang",
-            "Zhongxiu Chen"
+            "Bin Ling"
           ]
         },
         "publications": {
           "total_mentioned": 4,
           "with_acknowledgment": 0,
           "journals": [
-            "Journal of Alternative Investments",
-            "Finance Research",
-            "Digital Finance"
+            "Journal Of Alternative Investments"
           ]
         },
         "events": {
@@ -668,39 +655,33 @@
           "participated": 6,
           "events": [
             {
-              "name": "Seminar, Simone Maxand (Viadrina), A (panel) SVAR for European carbon pricing, March 17, 2023, UCLouvain",
+              "name": "Seminar, Simone Maxand (Viadrina), A (panel) SVAR for European carbon pricing, March 17, 2023, UCLou",
               "type": "seminar",
-              "date": "March 17, 2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
               "name": "COST FinAI Meets Brussels, two-day workshop, 15/16 May 2023",
               "type": "workshop",
-              "date": "2023",
-              "role": "participated"
+              "date": "May 2023"
             },
             {
               "name": "Workshop \"Recent Advances in Econometrics“, Louvain-la-Neuve, 2/3 June 2023",
               "type": "workshop",
-              "date": "2023",
-              "role": "participated"
+              "date": "June 2023"
             },
             {
               "name": "Seminar, Rahul Parhi (EPFL), Deep Learning Meets Sparse Regularization, November 10, 2023, UCLouvain",
               "type": "seminar",
-              "date": "November 10, 2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
-              "name": "Seminar, Dorothea Kuebler (WZB),  Improving AI with behavioral measures: A field experiment in hiring, ECARES, ULB",
-              "type": "seminar",
-              "role": "participated"
+              "name": "Seminar, Dorothea Kuebler (WZB),  Improving AI with behavioral measures: A field experiment in hirin",
+              "type": "seminar"
             },
             {
               "name": "COST Action Brussels meeting, two day workshop, 14/15 May, 2024",
               "type": "workshop",
-              "date": "2024",
-              "role": "participated"
+              "date": "2024"
             }
           ],
           "total": 6
@@ -721,13 +702,9 @@
         },
         "collaborations": {
           "universities": [
-            "AI Meets",
-            "Cambridge University",
-            "COST Action",
-            "COST Fin",
-            "DAI Digital"
+            "Cambridge University"
           ],
-          "total_international": 5
+          "total_international": 1
         }
       },
       "text_summary": {
@@ -819,7 +796,7 @@
           "path": "downloads/contributions/be/COST FinAI Country Update 2024 Belgium.pptx"
         }
       ],
-      "summary": "Key achievements: 6 active members, 4 publications, 6 events."
+      "summary": "Key achievements: 1 active members, 4 publications, 6 events."
     },
     {
       "country": "Bulgaria",
@@ -829,86 +806,79 @@
         2023
       ],
       "summary_stats": {
-        "total_publications": 1,
+        "total_publications": 133,
         "total_with_acknowledgment": 0,
-        "total_events": 5,
+        "total_events": 7,
         "total_stsm": 0,
-        "total_grants": 14,
+        "total_grants": 91,
         "total_funded_grants": 0,
         "total_members": 72,
-        "total_universities": 20
+        "total_universities": 11
       },
       "aggregated_metrics": {
         "members": {
           "count": 72,
           "names": [
-            "Why Bulgaria",
-            "Member \nStates",
-            "Financial \nSupervision",
-            "Total Revenue",
+            "Bulgarian Fin",
+            "Bulgarian Fintech Association",
+            "Money \nLaundering",
+            "Terrorism \nFinancing",
+            "Alternative Credit Rating Agency",
+            "Digital Euro",
+            "Iris\nSolutions",
+            "Annual Fin",
+            "The Digital Operational Resilience\nRegulation",
+            "Iris Solutions",
+            "Qualitative Research",
+            "Future Technologies",
             "Digital\nStrategy",
-            "Commercial Register",
-            "Quadruple \nHelix",
-            "Supervision \nCommission",
-            "Conclusion\nSofia",
+            "Digital Lending",
             "Enterprise \nTechnology\nProvisioning",
-            "Enterprise Technology\nProvisioning",
-            "Applied\nMacroeconomic \nAnalysis",
-            "Digital Banking",
-            "Digital\nPayments",
-            "Ivan Kolovos",
-            "Psychometric Analytics",
-            "Monetary \nAffairs",
-            "Electronic Invoicing",
-            "Easy Payment Services",
-            "Laundering Authority"
+            "Money\nLaundering",
+            "Data Act"
           ]
         },
         "publications": {
-          "total_mentioned": 1,
+          "total_mentioned": 133,
           "with_acknowledgment": 0,
           "journals": [
-            "Computer Science",
-            "Qualitative Research",
-            "Digital \nFinance",
-            "Journal of Banking and Finance\nand",
-            "Alternative\nFinance",
-            "Decentralised Finance",
-            "Market Research",
-            "Digital Finance"
+            "Journal Of Banking And Finance\nAnd Springer Verlag"
           ]
         },
         "events": {
           "organized": 0,
-          "participated": 5,
+          "participated": 7,
           "events": [
             {
               "name": "meeting rooms, 24/7 access, and the",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
             },
             {
               "name": "Fintech\" and the webinar \"Safety of",
-              "type": "webinar",
-              "role": "participated"
+              "type": "webinar"
             },
             {
               "name": "participation in the meetings of the",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
+            },
+            {
+              "name": "minimize the risk of “forum shopping”",
+              "type": "forum"
             },
             {
               "name": "with the Travel Rule. Meeting these",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
+            },
+            {
+              "name": "seminars",
+              "type": "seminar"
             },
             {
               "name": "to-peer seminars and workshops on",
-              "type": "workshop",
-              "role": "participated"
+              "type": "workshop"
             }
           ],
-          "total": 5
+          "total": 7
         },
         "stsm": {
           "total": 0,
@@ -916,7 +886,7 @@
           "incoming": 0
         },
         "grants": {
-          "total": 14,
+          "total": 91,
           "funded": 0,
           "pending": 0,
           "declined": 0
@@ -926,28 +896,19 @@
         },
         "collaborations": {
           "universities": [
-            "EURO\nThe",
-            "VIEW\nWe",
-            "VUZF University",
-            "ECONOMICS\nDeyan",
-            "SEGMENT\nSimilarly",
-            "YEARS\nIn",
-            "EU Crypto",
-            "CNP\nShare",
-            "KYC Solutions",
-            "WORKFOCE\nIn",
-            "MARKETS \nGlobal",
-            "REVENUE\nDatecs",
+            "Bulgarian university",
             "Sofia University",
-            "SEGMENT\nTotal",
-            "FIRMS\nEnter",
-            "IDEAS\nRespondents",
-            "BFA Fintech",
-            "GROUP\nWhat",
-            "EU \nAnti",
-            "HUB \nEnter"
+            "SOFIA UNIVERSITY",
+            "Goethe \nUniversity",
+            "University of Bonn",
+            "Sofia \nUniversity",
+            "the University",
+            "VUZF University",
+            "University of Cambridge",
+            "VUZF UNIVERSITY",
+            "Cambridge University"
           ],
-          "total_international": 25
+          "total_international": 11
         }
       },
       "text_summary": {
@@ -2041,7 +2002,7 @@
           "path": "downloads/contributions/bg/COST_FinAI_Bulgaria_September_2023_FinTech_Report.pdf"
         }
       ],
-      "summary": "Key achievements: 72 active members, 1 publications, 5 events."
+      "summary": "Key achievements: 72 active members, 133 publications, 7 events."
     },
     {
       "country": "Croatia",
@@ -2052,144 +2013,115 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 15,
+        "total_publications": 7,
         "total_with_acknowledgment": 0,
         "total_events": 17,
         "total_stsm": 0,
-        "total_grants": 13,
+        "total_grants": 14,
         "total_funded_grants": 0,
-        "total_members": 11,
-        "total_universities": 20
+        "total_members": 5,
+        "total_universities": 19
       },
       "aggregated_metrics": {
         "members": {
-          "count": 11,
+          "count": 5,
           "names": [
-            "Vlah Jeric",
-            "Martina\nSolenicki",
-            "Bozena\nGulija",
             "Communist Economies",
-            "Petra\nPalic",
-            "Ivanisevic Hernaus",
-            "Ming Chen",
-            "Ana\nIvanisevic Hernaus",
-            "Domagoj\nSajter",
-            "Silvija\nVlah Jeric",
-            "Nika\nSimurina"
+            "Related Challenges",
+            "Budapest\nSelected",
+            "Use Digital Banking Services",
+            "Stakeholder Perspective"
           ]
         },
         "publications": {
-          "total_mentioned": 15,
+          "total_mentioned": 7,
           "with_acknowledgment": 0,
-          "journals": [
-            "Decentralized Finance",
-            "Frontiers in Applied Mathematics and Statistics",
-            "International Review",
-            "Mathematical Finance",
-            "Data Science"
-          ]
+          "journals": []
         },
         "events": {
-          "organized": 2,
-          "participated": 31,
+          "organized": 0,
+          "participated": 37,
           "events": [
             {
               "name": "at COST FinAI Annual MC meeting",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
             },
             {
-              "name": "[Slide 3] International Scientific Conference Technology, Innovation and Stability: New Directions in Finance, May 5th -",
+              "name": "[Slide 3] International Scientific Conference Technology, Innovation and Stability: New Directions i",
               "type": "conference",
-              "date": "2022",
-              "role": "participated"
+              "date": "6th 2022"
             },
             {
-              "name": "International Scientific Conference Technology, Innovation and Stability: New Directions in Finance, May 5th - 6th 2022,",
+              "name": "International Scientific Conference Technology, Innovation and Stability: New Directions in Finance,",
               "type": "conference",
-              "date": "2022",
-              "role": "participated"
+              "date": "6th 2022"
             },
             {
               "name": "COST FinAI WG 2 meeting",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
             },
             {
-              "name": "[Slide 4] International Scientific Conference Technology, Innovation and Stability: New Directions in Finance, May 5th -",
+              "name": "[Slide 4] International Scientific Conference Technology, Innovation and Stability: New Directions i",
               "type": "conference",
-              "date": "2022",
-              "role": "participated"
+              "date": "6th 2022"
             },
             {
               "name": "Book of Abstracts and Conference Proceedings available at:",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "https://sites.google.com/net.efzg.hr/tinfinconference/programme/conference-proceedings?authuser=0",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "Event’s web: https://sites.google.com/net.efzg.hr/tinfinconference/home?authuser=0",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "Event’s publications: Book of Abstracts and Conference Proceedings (full papers)",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
-              "name": "Dzelalija, P., Ivanisevic Hernaus, A. (2023). From Perceived Mobility to the Intention to Use Mobile Payments: The Role ",
+              "name": "Dzelalija, P., Ivanisevic Hernaus, A. (2023). From Perceived Mobility to the Intention to Use Mobile",
               "type": "workshop",
-              "date": "2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
-              "name": "Ivanisevic Hernaus, A., Kristo, J., Rako, R. (2023). ESG-Related Challenges in the Insurance Industry: A Multi-Stakehold",
+              "name": "Ivanisevic Hernaus, A., Kristo, J., Rako, R. (2023). ESG-Related Challenges in the Insurance Industr",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
-              "name": "Jurcevic, J., Vlah Jeric, S., Zoricic, D. (2023) Electricity prices forecasting on the day-ahead market – performance co",
+              "name": "Jurcevic, J., Vlah Jeric, S., Zoricic, D. (2023) Electricity prices forecasting on the day-ahead mar",
               "type": "symposium",
-              "date": "2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
-              "name": "Vujeva, K., Solenicki, M. (2023) Private Money Creation in the Age of Financial Globalization. In: Druzic, G. et al. (Ed",
+              "name": "Vujeva, K., Solenicki, M. (2023) Private Money Creation in the Age of Financial Globalization. In: D",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
-              "name": "Vlah Jeric, S. - Network evolution analysis of the Croatian Stock Market (Topological dynamics of the Croatian Stock Mar",
-              "type": "conference",
-              "role": "participated"
+              "name": "Vlah Jeric, S. - Network evolution analysis of the Croatian Stock Market (Topological dynamics of th",
+              "type": "conference"
             },
             {
-              "name": "Innovative Financing and Technologies for the Inclusive Economy at the Economy of Francesco International Summer School ",
+              "name": "Innovative Financing and Technologies for the Inclusive Economy at the Economy of Francesco Internat",
               "type": "summer school",
-              "date": "2023",
-              "role": "organized"
+              "date": "Split 2023"
             },
             {
-              "name": "Gulija, B. – Speaker at the Markus Evans annual conference on Capital Management for Banking Institutions, agreed to be ",
+              "name": "Gulija, B. – Speaker at the Markus Evans annual conference on Capital Management for Banking Institu",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "December 2023"
             },
             {
-              "name": "Kencek, M., Ivanisevic Hernaus, A. (2024). Getting From Today to Tomorrow: What Determines the (Intent-to)-Use Digital B",
+              "name": "Kencek, M., Ivanisevic Hernaus, A. (2024). Getting From Today to Tomorrow: What Determines the (Inte",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "2024"
             }
           ],
-          "total": 17
+          "total": 19
         },
         "stsm": {
           "total": 0,
@@ -2197,7 +2129,7 @@
           "incoming": 0
         },
         "grants": {
-          "total": 13,
+          "total": 14,
           "funded": 0,
           "pending": 0,
           "declined": 0
@@ -2207,28 +2139,27 @@
         },
         "collaborations": {
           "universities": [
-            "Arcada University",
-            "University of Osijek",
-            "Palic\nCatholic University",
-            "Ivanisevic Hernaus\nUniversity",
+            "Sajter\nUniversity",
+            "the University",
+            "State University",
+            "Simurina\nUniversity",
+            "Jeric\nUniversity",
             "University of Croatia",
-            "Nika\nSimurina\nUniversity",
-            "University of Warwick",
             "Strossmayer University",
-            "Michigan State University",
+            "Institute of Applied",
+            "Hernaus\nUniversity",
+            "Catholic University",
+            "University of Osijek",
+            "Catholic university",
+            "Arcada University",
+            "Solenicki\nUniversity",
+            "graduate university",
+            "university of Croatia",
             "University of Zagreb",
-            "Martina\nSolenicki\nUniversity",
-            "Vlah Jeric\nUniversity",
-            "EBES Conference",
-            "COST Fin",
-            "USA\nInvited",
-            "Domagoj\nSajter\nUniversity",
-            "AI Annual",
-            "ESG Indices",
-            "COST Action",
-            "University of Applied Sciencies"
+            "University of Warwick",
+            "University of Applied"
           ],
-          "total_international": 20
+          "total_international": 19
         }
       },
       "text_summary": {
@@ -2639,7 +2570,7 @@
           "path": "downloads/contributions/hr/COST FinAI Country update_May 2024_Croatia.pptx"
         }
       ],
-      "summary": "Key achievements: 11 active members, 15 publications, 17 events."
+      "summary": "Key achievements: 5 active members, 7 publications, 17 events."
     },
     {
       "country": "Cyprus",
@@ -2650,30 +2581,31 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 8,
+        "total_publications": 0,
         "total_with_acknowledgment": 0,
         "total_events": 5,
-        "total_stsm": 0,
-        "total_grants": 2,
+        "total_stsm": 1,
+        "total_grants": 4,
         "total_funded_grants": 0,
-        "total_members": 2,
-        "total_universities": 9
+        "total_members": 5,
+        "total_universities": 4
       },
       "aggregated_metrics": {
         "members": {
-          "count": 2,
+          "count": 5,
           "names": [
-            "Planned Actions",
-            "Dr Christos Themistocleous"
+            "Christos Themistocleous",
+            "Loizos Michael",
+            "Stage Algorithm",
+            "Andreas Gregoriades",
+            "Efficient Multi"
           ]
         },
         "publications": {
-          "total_mentioned": 8,
+          "total_mentioned": 0,
           "with_acknowledgment": 0,
           "journals": [
-            "Computer Science",
-            "Frontiers in Artificial Intelligence ",
-            "Journal of Big Data"
+            "Journal Of Big Data 10"
           ]
         },
         "events": {
@@ -2681,43 +2613,38 @@
           "participated": 5,
           "events": [
             {
-              "name": "“How to Make Them Stay?”: Diverse Counterfactual Explanations of Employee Attrition, A. Artelt, A. Gregoriades,25th Inte",
-              "type": "conference",
-              "role": "participated"
+              "name": "“How to Make Them Stay?”: Diverse Counterfactual Explanations of Employee Attrition, A. Artelt, A. G",
+              "type": "conference"
             },
             {
-              "name": "A Two-Stage Algorithm for Cost-Efficient Multi-instance Counterfactual Explanations, (2024) A. Artelt, A. Gregoriades, T",
+              "name": "A Two-Stage Algorithm for Cost-Efficient Multi-instance Counterfactual Explanations, (2024) A. Artel",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "2024"
             },
             {
-              "name": "Applying Machine Learning in Personality-based Persuasion Marketing, (2023) E. Christodoulou & A. Gregoriades IEEE Inter",
+              "name": "Applying Machine Learning in Personality-based Persuasion Marketing, (2023) E. Christodoulou & A. Gr",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
-              "name": "Visual Perception of Obstacles: Do Humans and Machines Focus on the Same Image Features? (2024) C Kyriakides, M Thoma, Z",
+              "name": "Visual Perception of Obstacles: Do Humans and Machines Focus on the Same Image Features? (2024) C Ky",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "2024"
             },
             {
               "name": "Participate in WG activities and attend meetings to contribute to action’s deliverables",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
             }
           ],
           "total": 4
         },
         "stsm": {
-          "total": 0,
+          "total": 1,
           "outgoing": 0,
           "incoming": 0
         },
         "grants": {
-          "total": 2,
+          "total": 4,
           "funded": 0,
           "pending": 0,
           "declined": 0
@@ -2727,17 +2654,12 @@
         },
         "collaborations": {
           "universities": [
-            "Cyprus University",
-            "Open University",
-            "University of Technology\nAssistant",
-            "AI Country",
-            "University of Technology\nOther",
+            "University of Technology",
             "University of Nicosia",
-            "MC Members",
-            "COST Fin",
-            "IEEE International"
+            "Cyprus University",
+            "Open University"
           ],
-          "total_international": 9
+          "total_international": 4
         }
       },
       "text_summary": {
@@ -2851,7 +2773,7 @@
           "path": "downloads/contributions/cy/Cyprus Country update.pptx"
         }
       ],
-      "summary": "Key achievements: 2 active members, 8 publications, 5 events."
+      "summary": "Key achievements: 5 active members, 5 events, 1 STSMs."
     },
     {
       "country": "Czech Republic",
@@ -2862,59 +2784,52 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 4,
+        "total_publications": 2,
         "total_with_acknowledgment": 0,
-        "total_events": 1,
-        "total_stsm": 10,
-        "total_grants": 3,
-        "total_funded_grants": 1,
-        "total_members": 2,
-        "total_universities": 11
+        "total_events": 2,
+        "total_stsm": 1,
+        "total_grants": 5,
+        "total_funded_grants": 3,
+        "total_members": 0,
+        "total_universities": 6
       },
       "aggregated_metrics": {
         "members": {
-          "count": 2,
-          "names": [
-            "Oleg Deev",
-            "Funded Projects"
-          ]
+          "count": 0,
+          "names": []
         },
         "publications": {
-          "total_mentioned": 4,
+          "total_mentioned": 2,
           "with_acknowledgment": 0,
           "journals": [
-            "Operational Research",
-            "Research in International Business",
-            "Annals of Operations \nResearch",
-            "Czech Science",
-            "Applied \nScience",
-            "Journal of Operational Research",
-            "National Science",
-            "Operations \nResearch",
-            "Journal of Economics and \nFinance"
+            "Journal Of Operational Research",
+            "Journal Of Economics And \nFinance"
           ]
         },
         "events": {
           "organized": 0,
-          "participated": 2,
+          "participated": 4,
           "events": [
+            {
+              "name": "MC Meeting",
+              "type": "meeting"
+            },
             {
               "name": "FinAI COST workshop in Brno – October 21-22, 2022 (in cooperation",
               "type": "workshop",
-              "date": "October 21-22, 2022",
-              "role": "participated"
+              "date": "2022"
             }
           ],
-          "total": 1
+          "total": 2
         },
         "stsm": {
-          "total": 10,
+          "total": 1,
           "outgoing": 0,
           "incoming": 0
         },
         "grants": {
-          "total": 3,
-          "funded": 1,
+          "total": 5,
+          "funded": 3,
           "pending": 0,
           "declined": 0
         },
@@ -2923,19 +2838,14 @@
         },
         "collaborations": {
           "universities": [
-            "University of Applied \nSciences",
-            "Humboldt University",
-            "MC Meeting",
-            "COST Action",
-            "AI\nTom",
-            "Masaryk University",
-            "University of Pardubice\nLadislav",
-            "CCF Research",
             "Charles University",
-            "STSM\nTom",
+            "University of Pardubice",
+            "Humboldt University",
+            "Masaryk University",
+            "University of Applied",
             "Bern University"
           ],
-          "total_international": 11
+          "total_international": 6
         }
       },
       "text_summary": {
@@ -3230,7 +3140,7 @@
           "path": "downloads/contributions/cz/COST_FinAI_Czechia_update_2024.pdf"
         }
       ],
-      "summary": "Key achievements: 2 active members, 4 publications, 1 events, 10 STSMs, 1 funded grants."
+      "summary": "Key achievements: 2 publications, 2 events, 1 STSMs, 3 funded grants."
     },
     {
       "country": "Denmark",
@@ -3244,28 +3154,25 @@
         "total_publications": 16,
         "total_with_acknowledgment": 0,
         "total_events": 0,
-        "total_stsm": 0,
+        "total_stsm": 2,
         "total_grants": 1,
         "total_funded_grants": 0,
         "total_members": 2,
-        "total_universities": 8
+        "total_universities": 1
       },
       "aggregated_metrics": {
         "members": {
           "count": 2,
           "names": [
-            "Alexandros Iosifidis",
-            "Dolores Romero Morales"
+            "Based Classification",
+            "Term Predictions"
           ]
         },
         "publications": {
           "total_mentioned": 16,
           "with_acknowledgment": 0,
           "journals": [
-            "Journal of Operational Research",
-            "Behavioral Research",
-            "Operational Research",
-            "Operations Research"
+            "Journal Of Operational Research"
           ]
         },
         "events": {
@@ -3275,7 +3182,7 @@
           "total": 0
         },
         "stsm": {
-          "total": 0,
+          "total": 2,
           "outgoing": 0,
           "incoming": 0
         },
@@ -3290,16 +3197,9 @@
         },
         "collaborations": {
           "universities": [
-            "AU Centre",
-            "AI Country",
-            "MC Members",
-            "Aarhus University",
-            "COST Fin",
-            "STSM\n\nJasone",
-            "RISE Ne",
-            "MC Substitute"
+            "Aarhus University"
           ],
-          "total_international": 8
+          "total_international": 1
         }
       },
       "text_summary": {
@@ -3540,7 +3440,7 @@
           "path": "downloads/contributions/dk/FinAI_Denmark_September2023.pptx"
         }
       ],
-      "summary": "Key achievements: 2 active members, 16 publications."
+      "summary": "Key achievements: 2 active members, 16 publications, 2 STSMs."
     },
     {
       "country": "Estonia",
@@ -3552,69 +3452,71 @@
       "summary_stats": {
         "total_publications": 440,
         "total_with_acknowledgment": 0,
-        "total_events": 3,
+        "total_events": 8,
         "total_stsm": 0,
-        "total_grants": 23,
+        "total_grants": 43,
         "total_funded_grants": 0,
-        "total_members": 16,
-        "total_universities": 20
+        "total_members": 4,
+        "total_universities": 5
       },
       "aggregated_metrics": {
         "members": {
-          "count": 16,
+          "count": 4,
           "names": [
-            "Service Providers",
-            "Laivi Laidroo",
-            "Startup Estonia",
-            "By Egert Juuse",
-            "By Laivi Laidroo",
-            "Digital Services Act",
-            "Prevention Act",
-            "By Triinu Tapver",
-            "Southeast Asia",
-            "Travel Rule",
-            "Open Source Computing",
-            "Iryna Mihus",
-            "Industry Resilience Study",
-            "Estonian \nStartup \nLeaders",
-            "Liis Kukk",
-            "Resolution Authority",
-            "Sandeep Kumar Gupta",
-            "Triinu Tapver"
+            "Liis Kukk\nTallinn University",
+            "Innovation Hub",
+            "Liis Kukk \n \nAs",
+            "Liis Kukk"
           ]
         },
         "publications": {
           "total_mentioned": 440,
           "with_acknowledgment": 0,
           "journals": [
-            "Innovation Research",
-            "Estonian Research",
-            "Innovative Research",
-            "Journal of Asset \nManagement",
-            "Commerce Research"
+            "Journal Of Asset \nManagement 21"
           ]
         },
         "events": {
           "organized": 0,
-          "participated": 3,
+          "participated": 8,
           "events": [
             {
+              "name": "CCAF, World Bank and World Economic Forum",
+              "type": "forum"
+            },
+            {
+              "name": "meeting",
+              "type": "meeting"
+            },
+            {
+              "name": "World Bank and World Economic Forum (2022),",
+              "type": "forum",
+              "date": "2022"
+            },
+            {
               "name": "involved in meeting the standards (Moek &",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
+            },
+            {
+              "name": "CCAF, World Bank and World Economic Forum. (2022). The Global Covid-19 FinTech Market Impact and",
+              "type": "forum",
+              "date": "2022"
+            },
+            {
+              "name": "Economic Forum. Accessible:  https://www.jbs.cam.ac.uk/wp-content/uploads/2022/06/2022-",
+              "type": "forum",
+              "date": "2022"
             },
             {
               "name": "[Slide 1] COST FinAI annual meeting",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
             },
             {
               "name": "COST FinAI annual meeting",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
             }
           ],
-          "total": 2
+          "total": 6
         },
         "stsm": {
           "total": 0,
@@ -3622,7 +3524,7 @@
           "incoming": 0
         },
         "grants": {
-          "total": 23,
+          "total": 43,
           "funded": 0,
           "pending": 0,
           "declined": 0
@@ -3632,28 +3534,13 @@
         },
         "collaborations": {
           "universities": [
-            "Kukk\nTallinn University",
-            "REFERENCES \n \nAnkenbrand",
-            "PROFILE\nTriinu",
-            "MC Members",
-            "University of Cambridge",
-            "University of Technology",
-            "EU Commission",
-            "Tapver\nTallinn University",
-            "DLT Pilot",
-            "IFZ Fin",
+            "KROK University",
             "Tallinn University",
-            "PROFILE\nAll",
-            "AI Act",
-            "EU Mi",
-            "PREFACE\nTwo",
-            "EU Smart",
-            "DLT \nPilot",
-            "CONCLUSION\nThis",
-            "COST Fin",
-            "EU \nOfficial"
+            "University of Technology",
+            "Institute of Financial",
+            "University of Cambridge"
           ],
-          "total_international": 21
+          "total_international": 4
         }
       },
       "text_summary": {
@@ -4345,7 +4232,7 @@
           "path": "downloads/contributions/ee/COST_FinAi_Estonia_2023_additional_report_about_country.pdf"
         }
       ],
-      "summary": "Key achievements: 16 active members, 440 publications, 3 events."
+      "summary": "Key achievements: 4 active members, 440 publications, 8 events."
     },
     {
       "country": "Finland",
@@ -4355,34 +4242,27 @@
         2023
       ],
       "summary_stats": {
-        "total_publications": 1,
+        "total_publications": 0,
         "total_with_acknowledgment": 0,
         "total_events": 2,
         "total_stsm": 0,
         "total_grants": 2,
         "total_funded_grants": 1,
-        "total_members": 6,
-        "total_universities": 7
+        "total_members": 2,
+        "total_universities": 2
       },
       "aggregated_metrics": {
         "members": {
-          "count": 6,
+          "count": 2,
           "names": [
-            "Mikko Ylikangas",
-            "Finland\nEsteban Guerrero",
-            "Codruta Mare",
             "Florina Coita",
-            "Esteban Guerrero",
             "Pekka Ruuskanen"
           ]
         },
         "publications": {
-          "total_mentioned": 1,
+          "total_mentioned": 0,
           "with_acknowledgment": 0,
-          "journals": [
-            "Senior Science",
-            "Computer Science"
-          ]
+          "journals": []
         },
         "events": {
           "organized": 0,
@@ -4391,14 +4271,12 @@
             {
               "name": "[10-11 July 2023] Co-organization of the Fin-AI meeting Helsinki (Finland). July 10-11, 2023",
               "type": "meeting",
-              "date": "2023",
-              "role": "participated"
+              "date": "July 2023"
             },
             {
-              "name": "[06 September 2023] Seminar for conducting systematic literature reviews. Topic financial literacy and financial educati",
+              "name": "[06 September 2023] Seminar for conducting systematic literature reviews. Topic financial literacy a",
               "type": "seminar",
-              "date": "2023",
-              "role": "participated"
+              "date": "September 2023"
             }
           ],
           "total": 2
@@ -4419,15 +4297,10 @@
         },
         "collaborations": {
           "universities": [
-            "University of Vaasa",
-            "AI Country",
-            "COST Executive",
-            "SN Computer",
-            "COST National",
-            "COST Fin",
-            "Tampere University"
+            "Tampere University",
+            "University of Vaasa"
           ],
-          "total_international": 7
+          "total_international": 2
         }
       },
       "text_summary": {
@@ -4535,7 +4408,7 @@
           "path": "downloads/contributions/fi/COST_FinAI_Finland_report_20September2023.pptx"
         }
       ],
-      "summary": "Key achievements: 6 active members, 1 publications, 2 events, 1 funded grants."
+      "summary": "Key achievements: 2 active members, 2 events, 1 funded grants."
     },
     {
       "country": "France",
@@ -4546,39 +4419,31 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 5,
+        "total_publications": 2,
         "total_with_acknowledgment": 0,
         "total_events": 6,
         "total_stsm": 1,
         "total_grants": 5,
-        "total_funded_grants": 2,
-        "total_members": 7,
-        "total_universities": 10
+        "total_funded_grants": 0,
+        "total_members": 6,
+        "total_universities": 5
       },
       "aggregated_metrics": {
         "members": {
-          "count": 7,
+          "count": 6,
           "names": [
-            "Elias Tsigaridas",
-            "Erika Minarikova",
-            "Galena Pisoni",
+            "Based Business Process Management",
             "Main Proposer",
-            "Marianna Russo",
-            "Achraf Ayadi",
-            "Ethereum Foundation",
-            "Akanksha Jalan",
-            "Alexandre Boulenger",
-            "Databases\nYi Liu",
-            "Roman Matkovskyy"
+            "Based Solution"
           ]
         },
         "publications": {
-          "total_mentioned": 5,
+          "total_mentioned": 2,
           "with_acknowledgment": 0,
           "journals": [
-            "Journal of Knowledge Management",
-            "Finance Research",
-            "Digital Finance"
+            "International Journal Of Knowledge Management",
+            "Journal Of Knowledge Management",
+            "Journal Of The Knowledge Economy"
           ]
         },
         "events": {
@@ -4586,37 +4451,31 @@
           "participated": 5,
           "events": [
             {
-              "name": "Organized WG1 meeting at Rennes School of Business jointly with the Crypto-currency investment conference (April 2022) c",
+              "name": "Organized WG1 meeting at Rennes School of Business jointly with the Crypto-currency investment confe",
               "type": "conference",
-              "date": "2022",
-              "role": "organized"
+              "date": "April 2022"
             },
             {
               "name": "[Slide 4] Conference Publications in print (with FinAI acknowledgement)",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "Conference Publications in print (with FinAI acknowledgement)",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
-              "name": "Erika Minarikova, Galena Pisoni, Bálint Molnár, and Hanna Kristín Skaftadóttir, Business Intelligence Reporting by L",
-              "type": "conference",
-              "role": "participated"
+              "name": "Erika Minarikova, Galena Pisoni, Bálint Molnár, and Hanna Kristín Skaftadóttir, Business Intelli",
+              "type": "conference"
             },
             {
-              "name": "Galena Pisoni, Bálint Molnár, Szabolcs Korba, Maria Moloney. Sustainability tracing for companies: governance, regulatio",
+              "name": "Galena Pisoni, Bálint Molnár, Szabolcs Korba, Maria Moloney. Sustainability tracing for companies: g",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "Conference 2024"
             },
             {
-              "name": "Galena Pisoni, Erika Mináriková, Miroslav Hudec, Hanna Kristin Skaftadottir, Bálint Molnár, Miljan Vučetić, Denisa Sedlá",
+              "name": "Galena Pisoni, Erika Mináriková, Miroslav Hudec, Hanna Kristin Skaftadottir, Bálint Molnár, Miljan V",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "Conference 2024"
             }
           ],
           "total": 5
@@ -4628,7 +4487,7 @@
         },
         "grants": {
           "total": 5,
-          "funded": 2,
+          "funded": 0,
           "pending": 0,
           "declined": 0
         },
@@ -4637,18 +4496,13 @@
         },
         "collaborations": {
           "universities": [
-            "National University",
-            "IADIS Information",
-            "NUS Application",
-            "COST Action",
-            "AI\n\nFrance",
-            "University of Singapore",
             "Zhongnan University",
+            "Tung University",
+            "National University",
             "University of Economics",
-            "AI\nCurrently",
-            "Chiao Tung University"
+            "University of Singapore"
           ],
-          "total_international": 10
+          "total_international": 5
         }
       },
       "text_summary": {
@@ -4844,7 +4698,7 @@
           "path": "downloads/contributions/fr/COST FinAI France 24.pptx"
         }
       ],
-      "summary": "Key achievements: 7 active members, 5 publications, 6 events, 1 STSMs, 2 funded grants."
+      "summary": "Key achievements: 6 active members, 2 publications, 6 events, 1 STSMs."
     },
     {
       "country": "Germany",
@@ -4857,115 +4711,85 @@
         "total_publications": 61,
         "total_with_acknowledgment": 42,
         "total_events": 9,
-        "total_stsm": 11,
-        "total_grants": 7,
-        "total_funded_grants": 2,
-        "total_members": 11,
-        "total_universities": 20
+        "total_stsm": 6,
+        "total_grants": 14,
+        "total_funded_grants": 4,
+        "total_members": 1,
+        "total_universities": 5
       },
       "aggregated_metrics": {
         "members": {
-          "count": 11,
+          "count": 1,
           "names": [
-            "Christina Erlwein",
-            "Xinwen Ni",
-            "Bin Lin",
-            "Natalia Togobytska",
-            "Florentina Paraschiv",
-            "Techs Apps",
-            "Danial Saef",
-            "Natalie Packham",
-            "Alla Petukhina",
-            "Rui Ren",
-            "Kainat Khowaja"
+            "Bin Lin"
           ]
         },
         "publications": {
           "total_mentioned": 61,
           "with_acknowledgment": 42,
           "journals": [
-            "And Economics",
-            "Journal of Multivariate Analysis",
-            "Applied Science",
-            "Blockchain Research",
-            "Research in International Business",
-            "Sustainable Finance",
-            "Approaches Finance",
-            "Computational Economics",
-            "Quantitative finance",
-            "Journal of Econometrics",
-            "Journal of Commodity Markets",
-            "Sustainable \nFinance",
-            "Economic Review",
-            "Journal of European finance",
-            "Data Science"
+            "Journal Of Multivariate Analysis",
+            "Journal Of European Finance",
+            "Journal Of Econometrics",
+            "Journal Of Commodity Markets"
           ]
         },
         "events": {
           "organized": 0,
-          "participated": 9,
+          "participated": 18,
           "events": [
             {
               "name": "COST action FinAI Annual MC meeting, Oct 2023  WG1 Transparency in FinTech",
               "type": "meeting",
-              "date": "2023",
-              "role": "participated"
+              "date": "Oct 2023"
             },
             {
               "name": "COST action FinAI Annual MC meeting, Sep 2023, Country update Germany",
               "type": "meeting",
-              "date": "2023",
-              "role": "participated"
+              "date": "Sep 2023"
             },
             {
               "name": "⊡COST FinAI Summer School 2023 Data Science For Sustainable",
               "type": "summer school",
-              "date": "2023",
-              "role": "participated"
+              "date": "School 2023"
             },
             {
               "name": "⊡Victoria Peak Conference, 26-27.04.2021, online (together with",
               "type": "conference",
-              "date": "26-27.04",
-              "role": "participated"
+              "date": "2021"
             },
             {
               "name": "⊡The 2nd Yushan Conference: FinTech & RegTech Fundamentals",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "⊡ COST Fin AI Academic Sponsor “Quant Insights Conference”",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "COST FinAI Summer School 2023 Data Science For",
               "type": "summer school",
-              "date": "2023",
-              "role": "participated"
+              "date": "School 2023"
             },
             {
               "name": "Conference on AI in Industry and Finance in Switzerland), Bern,",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "⊡CryptoAssets and Digital Asset Investment Conference, Rennes,",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             }
           ],
-          "total": 9
+          "total": 18
         },
         "stsm": {
-          "total": 11,
-          "outgoing": 1,
-          "incoming": 5
+          "total": 6,
+          "outgoing": 0,
+          "incoming": 0
         },
         "grants": {
-          "total": 7,
-          "funded": 2,
+          "total": 14,
+          "funded": 4,
           "pending": 0,
           "declined": 0
         },
@@ -4974,28 +4798,13 @@
         },
         "collaborations": {
           "universities": [
+            "Institute of Digital",
             "University of Twente",
-            "AI Academic",
-            "AI Summer",
-            "COST \nConference",
-            "ABC Research",
-            "HTW Berlin",
-            "IDA Institute",
-            "REFIND Robust",
-            "ASE Bucharest",
-            "HU \nBerlin",
-            "MSCA \nDoctoral",
-            "DT Pele",
-            "YCH Chen",
-            "University of Applied Sciences",
-            "COST Fin",
-            "ASE Bucuresti",
-            "HWR Berlin",
-            "AI Germany",
-            "CYH Chen",
-            "AI Annual"
+            "the University",
+            "University of Applied",
+            "de \nUniversity"
           ],
-          "total_international": 24
+          "total_international": 5
         }
       },
       "text_summary": {
@@ -5309,7 +5118,7 @@
           "path": "downloads/contributions/de/20230927_FinAI Germany update.pdf"
         }
       ],
-      "summary": "Key achievements: 11 active members, 61 publications, 9 events, 11 STSMs, 2 funded grants."
+      "summary": "Key achievements: 1 active members, 61 publications, 9 events, 6 STSMs, 4 funded grants."
     },
     {
       "country": "Greece",
@@ -5325,34 +5134,37 @@
         "total_stsm": 0,
         "total_grants": 4,
         "total_funded_grants": 0,
-        "total_members": 4,
-        "total_universities": 18
+        "total_members": 12,
+        "total_universities": 12
       },
       "aggregated_metrics": {
         "members": {
-          "count": 4,
+          "count": 12,
           "names": [
-            "Eleni Anastasopoulou",
-            "Paschalis Terzis",
-            "Apostolos Chalkis",
-            "Planned Actions"
+            "Veni Arakelian\nAthens",
+            "Veni Arakelian",
+            "Elias Tsigaridas",
+            "Konstantinos Bisiotis",
+            "Dimitris Mavridis",
+            "Vissarion Fisikopoulos",
+            "Theodoros Stamatiou",
+            "Stylianos Gogos",
+            "Viki Skintzi",
+            "Dimitris Anastasiou",
+            "Mike Tsionas",
+            "Free Rates"
           ]
         },
         "publications": {
           "total_mentioned": 0,
           "with_acknowledgment": 0,
           "journals": [
-            "Markets Research",
-            "Journal of Payments Strategy",
-            "Finance Research",
-            "Journal of Finance and Economics",
-            "Sustainable Finance",
-            "Journal of Sustainable Finance",
-            "Journal of Economic\nBehavior and Organization",
-            "Financial Economics",
-            "Business Research",
-            "Journal of Business Research",
-            "Behavioral Finance"
+            "Journal Of Sustainable Finance",
+            "International Journal Of Finance And Economics",
+            "Journal Of Payments Strategy",
+            "Journal Of Finance And Economics",
+            "Journal Of Business Research",
+            "Journal Of Economic\nBehavior And Organization"
           ]
         },
         "events": {
@@ -5361,8 +5173,7 @@
           "events": [
             {
               "name": "Organize e-seminars and workshops",
-              "type": "workshop",
-              "role": "participated"
+              "type": "workshop"
             }
           ],
           "total": 1
@@ -5383,26 +5194,20 @@
         },
         "collaborations": {
           "universities": [
+            "at University",
+            "and University",
             "Cyprus University",
-            "Hellenic Open University",
-            "AI Country",
-            "AUEB\nApostolos",
-            "University of Piraeus\nProf",
-            "Lancaster University",
-            "University of East Anglia",
-            "Armenia State University",
-            "AUEB\nOther",
-            "MC Members",
-            "SME Finance",
-            "COST Fin",
-            "ATHENA Research",
-            "University of Economics",
-            "MC Substitute",
             "Athens University",
-            "University of Athens",
-            "University of Technology\nNew"
+            "State University",
+            "University of East",
+            "University of Economics",
+            "University of Technology",
+            "University of Piraeus",
+            "Open University",
+            "Lancaster University",
+            "University of Athens"
           ],
-          "total_international": 18
+          "total_international": 12
         }
       },
       "text_summary": {
@@ -5532,7 +5337,7 @@
           "path": "downloads/contributions/gr/Greece (2).pptx"
         }
       ],
-      "summary": "Key achievements: 4 active members, 1 events."
+      "summary": "Key achievements: 12 active members, 1 events."
     },
     {
       "country": "Hungary",
@@ -5543,45 +5348,44 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 0,
+        "total_publications": 2,
         "total_with_acknowledgment": 0,
-        "total_events": 1,
+        "total_events": 2,
         "total_stsm": 0,
-        "total_grants": 5,
+        "total_grants": 7,
         "total_funded_grants": 0,
-        "total_members": 3,
-        "total_universities": 11
+        "total_members": 4,
+        "total_universities": 1
       },
       "aggregated_metrics": {
         "members": {
-          "count": 3,
+          "count": 4,
           "names": [
-            "Planned Actions",
-            "Location Centre",
-            "Tuan Trinh"
+            "Artificial Intelligence Rank",
+            "International Association",
+            "Urban Studies Rank",
+            "Location Centre"
           ]
         },
         "publications": {
-          "total_mentioned": 0,
+          "total_mentioned": 2,
           "with_acknowledgment": 0,
-          "journals": [
-            "Computer Science",
-            "Service Science",
-            "Principal Research",
-            "Digital Finance"
-          ]
+          "journals": []
         },
         "events": {
           "organized": 0,
-          "participated": 2,
+          "participated": 4,
           "events": [
             {
               "name": "Courses, workshops, conferences on Financial Services Technologies",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
+            },
+            {
+              "name": "Conference",
+              "type": "conference"
             }
           ],
-          "total": 1
+          "total": 2
         },
         "stsm": {
           "total": 0,
@@ -5589,7 +5393,7 @@
           "incoming": 0
         },
         "grants": {
-          "total": 5,
+          "total": 7,
           "funded": 0,
           "pending": 0,
           "declined": 0
@@ -5599,19 +5403,9 @@
         },
         "collaborations": {
           "universities": [
-            "VGM\n\nStatistical",
-            "AI Country",
-            "SME\nCourses",
-            "IGI Global",
-            "MC Members",
-            "COST Fin",
-            "EIT Digital",
-            "NFT\nDigital",
-            "SME\nVocational",
-            "ELTE English",
-            "IADIS Press"
+            "Loránd University"
           ],
-          "total_international": 9
+          "total_international": 1
         }
       },
       "text_summary": {
@@ -5891,7 +5685,7 @@
           "path": "downloads/contributions/hu/COSTS_Action_FinAI_update_Hungary_2024_04_27.pptx"
         }
       ],
-      "summary": "Key achievements: 3 active members, 1 events."
+      "summary": "Key achievements: 4 active members, 2 publications, 2 events."
     },
     {
       "country": "Iceland",
@@ -5901,66 +5695,74 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 2,
+        "total_publications": 0,
         "total_with_acknowledgment": 0,
-        "total_events": 6,
+        "total_events": 9,
         "total_stsm": 0,
-        "total_grants": 2,
-        "total_funded_grants": 1,
+        "total_grants": 6,
+        "total_funded_grants": 3,
         "total_members": 3,
-        "total_universities": 5
+        "total_universities": 2
       },
       "aggregated_metrics": {
         "members": {
           "count": 3,
-          "names": []
+          "names": [
+            "Second Edition"
+          ]
         },
         "publications": {
-          "total_mentioned": 2,
+          "total_mentioned": 0,
           "with_acknowledgment": 0,
           "journals": []
         },
         "events": {
           "organized": 0,
-          "participated": 6,
+          "participated": 9,
           "events": [
             {
-              "name": "Advanced Statistical Modelling for Fintech, Financial Inclusion and Inequality (AFFINE - Second Edition) training school",
-              "type": "training school",
-              "role": "participated"
+              "name": "WG meetings online",
+              "type": "meeting"
+            },
+            {
+              "name": ", MC meeting Bern",
+              "type": "meeting"
+            },
+            {
+              "name": "Training schools:",
+              "type": "training school"
+            },
+            {
+              "name": "Advanced Statistical Modelling for Fintech, Financial Inclusion and Inequality (AFFINE - Second Edit",
+              "type": "training school"
             },
             {
               "name": "Workshop in Bratislava on AI - November 2023",
               "type": "workshop",
-              "date": "2023",
-              "role": "participated"
+              "date": "November 2023"
             },
             {
               "name": "Workshop in Iceland on AI - April 2024",
               "type": "workshop",
-              "date": "2024",
-              "role": "participated"
+              "date": "April 2024"
             },
             {
               "name": "Workshop in Bratislava - June 2024",
               "type": "workshop",
-              "date": "2024",
-              "role": "participated"
+              "date": "June 2024"
             },
             {
               "name": "Workshop & Conference in Iceland - August 2024",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "August 2024"
             },
             {
               "name": "Conference paper at SEC_SCIS 2024",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "SEC_SCIS 2024"
             }
           ],
-          "total": 6
+          "total": 9
         },
         "stsm": {
           "total": 0,
@@ -5968,8 +5770,8 @@
           "incoming": 0
         },
         "grants": {
-          "total": 2,
-          "funded": 1,
+          "total": 6,
+          "funded": 3,
           "pending": 0,
           "declined": 0
         },
@@ -5978,13 +5780,10 @@
         },
         "collaborations": {
           "universities": [
-            "AI Country",
-            "HED Cooperation",
-            "AI Rethymno",
-            "COST Fin",
-            "AI Tools"
+            "Reykjavík University",
+            "Bifröst University"
           ],
-          "total_international": 5
+          "total_international": 2
         }
       },
       "text_summary": {
@@ -6116,7 +5915,7 @@
           "path": "downloads/contributions/is/COSTS_Action_FinAI_update_Iceland_2024.pptx"
         }
       ],
-      "summary": "Key achievements: 3 active members, 2 publications, 6 events, 1 funded grants."
+      "summary": "Key achievements: 3 active members, 9 events, 3 funded grants."
     },
     {
       "country": "Ireland",
@@ -6127,14 +5926,14 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 3,
+        "total_publications": 7,
         "total_with_acknowledgment": 0,
         "total_events": 0,
         "total_stsm": 0,
         "total_grants": 1,
         "total_funded_grants": 0,
         "total_members": 0,
-        "total_universities": 2
+        "total_universities": 0
       },
       "aggregated_metrics": {
         "members": {
@@ -6142,15 +5941,11 @@
           "names": []
         },
         "publications": {
-          "total_mentioned": 3,
+          "total_mentioned": 7,
           "with_acknowledgment": 0,
           "journals": [
-            "Journal of International Financial Markets",
-            "Irish Finance",
-            "Digital Finance",
-            "Narrative Finance",
-            "Journal of Financial Transformation",
-            "Series Research"
+            "Journal Of International Financial Markets",
+            "Journal Of Financial Transformation 58"
           ]
         },
         "events": {
@@ -6174,11 +5969,8 @@
           "students": 0
         },
         "collaborations": {
-          "universities": [
-            "COST Action",
-            "AI Skills"
-          ],
-          "total_international": 2
+          "universities": [],
+          "total_international": 0
         }
       },
       "text_summary": {
@@ -6284,7 +6076,7 @@
           "path": "downloads/contributions/ie/COST FinAI country update Ireland.pptx"
         }
       ],
-      "summary": "Key achievements: 3 publications."
+      "summary": "Key achievements: 7 publications."
     },
     {
       "country": "Italy",
@@ -6295,122 +6087,112 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 15,
+        "total_publications": 6,
         "total_with_acknowledgment": 0,
-        "total_events": 14,
-        "total_stsm": 4,
+        "total_events": 17,
+        "total_stsm": 1,
         "total_grants": 6,
         "total_funded_grants": 0,
         "total_members": 4,
-        "total_universities": 3
+        "total_universities": 5
       },
       "aggregated_metrics": {
         "members": {
           "count": 4,
           "names": [
-            "Nial Friel",
-            "Stefan Thurner",
-            "Rita Cappariello",
-            "Juri Marcucci"
+            "Economic Planning Science Volume",
+            "Based Approaches",
+            "Second Edition",
+            "Box Sentiment Analysis"
           ]
         },
         "publications": {
-          "total_mentioned": 15,
+          "total_mentioned": 6,
           "with_acknowledgment": 0,
-          "journals": [
-            "Annals of Operations Research",
-            "Frontiers in Applied Mathematics and Statistics",
-            "Operations Research",
-            "Young Research",
-            "Fintech Research",
-            "Planning Science",
-            "Data Science"
-          ]
+          "journals": []
         },
         "events": {
           "organized": 0,
-          "participated": 14,
+          "participated": 18,
           "events": [
             {
-              "name": "Dissemination: 5 international conferences, 2 summer schools, 2 international competition (Dathathon)",
-              "type": "conference",
-              "role": "participated"
+              "name": "Dissemination: 5 international conferences, 2 summer schools, 2 international competition (Dathathon",
+              "type": "conference"
             },
             {
-              "name": "2nd workshop on Environmental finance for the common good - Fintech and AI for more sustainable societies, Pavia, 13-14 ",
+              "name": "Training school:",
+              "type": "training school"
+            },
+            {
+              "name": "Conference:",
+              "type": "conference"
+            },
+            {
+              "name": "2nd workshop on Environmental finance for the common good - Fintech and AI for more sustainable soci",
               "type": "workshop",
-              "date": "2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
               "name": "International Fintech Research Conference",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
-              "name": "The Conference aims to put together researchers working in all areas of Fintech (banking, asset management, insurance, p",
-              "type": "conference",
-              "role": "participated"
+              "name": "The Conference aims to put together researchers working in all areas of Fintech (banking, asset mana",
+              "type": "conference"
             },
             {
               "name": "https://www.disaq.uniparthenope.it/fintechlab/international-fintech-research-conference/",
+              "type": "conference"
+            },
+            {
+              "name": "Dissemination: 3 international conferences, 2 summer schools (Naples, Calabria), 1 international com",
+              "type": "conference"
+            },
+            {
+              "name": "Workshop ‘Advanced Statistical Modelling for data science in Digital Age’ (October 20; Keynote speak",
+              "type": "workshop"
+            },
+            {
+              "name": "Specialized session  'Advanced statistical modelling for artificial intelligence and finance' at CFE",
               "type": "conference",
-              "role": "participated"
+              "date": "December 2023"
             },
             {
-              "name": "Dissemination: 3 international conferences, 2 summer schools (Naples, Calabria), 1 international competition (Dathathon)",
-              "type": "conference",
-              "role": "participated"
-            },
-            {
-              "name": "Workshop ‘Advanced Statistical Modelling for data science in Digital Age’ (October 20; Keynote speaker: Nial Friel, Full",
-              "type": "workshop",
-              "role": "participated"
-            },
-            {
-              "name": "Specialized session  'Advanced statistical modelling for artificial intelligence and finance' at CFE-CMStatistics Confer",
-              "type": "conference",
-              "date": "2023",
-              "role": "participated"
-            },
-            {
-              "name": "Organization of an Invited session . 'Challenges toward Equity and Transparency in Data Processes, Algorithms, and Decis",
+              "name": "Organization of an Invited session . 'Challenges toward Equity and Transparency in Data Processes, A",
               "type": "meeting",
-              "date": "2023",
-              "role": "participated"
+              "date": "SIS 2023"
             },
             {
-              "name": "Training school: Advances in Data Science and AI for Finance: Bridging Academia and Industry, June 3-4 June, University ",
-              "type": "training school",
-              "role": "participated"
+              "name": "Training school: Advances in Data Science and AI for Finance: Bridging Academia and Industry, June 3",
+              "type": "training school"
             },
             {
-              "name": "Advanced Statistical Modelling for Fintech, Financial Inclusion and Inequality (AFFINE - Second Edition) training school",
-              "type": "training school",
-              "role": "participated"
+              "name": "Training schools GP4",
+              "type": "training school"
+            },
+            {
+              "name": "Advanced Statistical Modelling for Fintech, Financial Inclusion and Inequality (AFFINE - Second Edit",
+              "type": "training school"
             },
             {
               "name": "Workshop Maria in May?",
-              "type": "workshop",
-              "role": "participated"
+              "type": "workshop"
             },
             {
-              "name": "(2023) Colombi R., Giordano S. A two component Markov Switching Regression Model, CLAssification and Data Analysis Group",
+              "name": "(2023) Colombi R., Giordano S. A two component Markov Switching Regression Model, CLAssification and",
               "type": "meeting",
-              "date": "2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
-              "name": "(2022) Colombi R., Giordano S. Markov Switching Stereotype Logit Models with Two Latent Indicators for Longitudinal Orde",
+              "name": "(2022) Colombi R., Giordano S. Markov Switching Stereotype Logit Models with Two Latent Indicators f",
               "type": "conference",
-              "date": "2022",
-              "role": "participated"
+              "date": "2022"
             }
           ],
-          "total": 9
+          "total": 11
         },
         "stsm": {
-          "total": 4,
+          "total": 1,
           "outgoing": 0,
           "incoming": 0
         },
@@ -6425,11 +6207,13 @@
         },
         "collaborations": {
           "universities": [
-            "University of Vienna",
+            "PARTHENOPE UNIVERSITY",
             "University of Salerno",
-            "University of Calabria"
+            "University of Vienna",
+            "University of Calabria",
+            "UNIVERSITY OF NAPLES"
           ],
-          "total_international": 2
+          "total_international": 3
         }
       },
       "text_summary": {
@@ -6630,7 +6414,7 @@
           "path": "downloads/contributions/it/COST_FinAI_Italian Group_update_2024.pptx"
         }
       ],
-      "summary": "Key achievements: 4 active members, 15 publications, 14 events, 4 STSMs."
+      "summary": "Key achievements: 4 active members, 6 publications, 17 events, 1 STSMs."
     },
     {
       "country": "Kosovo",
@@ -6646,22 +6430,18 @@
         "total_stsm": 0,
         "total_grants": 2,
         "total_funded_grants": 0,
-        "total_members": 1,
-        "total_universities": 6
+        "total_members": 0,
+        "total_universities": 3
       },
       "aggregated_metrics": {
         "members": {
-          "count": 1,
-          "names": [
-            "North Macedonia"
-          ]
+          "count": 0,
+          "names": []
         },
         "publications": {
           "total_mentioned": 0,
           "with_acknowledgment": 0,
-          "journals": [
-            "Young Research"
-          ]
+          "journals": []
         },
         "events": {
           "organized": 0,
@@ -6669,8 +6449,7 @@
           "events": [
             {
               "name": "We participate in many conferences with papers, such as:",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             }
           ],
           "total": 1
@@ -6691,14 +6470,11 @@
         },
         "collaborations": {
           "universities": [
-            "IT Competitiveness",
-            "COST Actions",
-            "AI Country",
-            "COST Action",
-            "COST Fin",
-            "University of Prishtina"
+            "the University",
+            "University of Prishtina",
+            "our university"
           ],
-          "total_international": 6
+          "total_international": 3
         }
       },
       "text_summary": {
@@ -6976,7 +6752,7 @@
           "path": "downloads/contributions/xk/COST_FinAI_Kosovo_2023.pptx"
         }
       ],
-      "summary": "Key achievements: 1 active members, 1 events."
+      "summary": "Key achievements: 1 events."
     },
     {
       "country": "Latvia",
@@ -6987,31 +6763,32 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 4,
+        "total_publications": 6,
         "total_with_acknowledgment": 0,
         "total_events": 7,
         "total_stsm": 0,
         "total_grants": 9,
         "total_funded_grants": 0,
-        "total_members": 1,
-        "total_universities": 15
+        "total_members": 2,
+        "total_universities": 4
       },
       "aggregated_metrics": {
         "members": {
-          "count": 1,
+          "count": 2,
           "names": [
-            "Thomas Walker"
+            "Pierpaolo Marano",
+            "Sized Enterprises",
+            "Ramona Rupeika"
           ]
         },
         "publications": {
-          "total_mentioned": 4,
+          "total_mentioned": 6,
           "with_acknowledgment": 0,
           "journals": [
-            "Journal of Information Management Data Insights",
-            "Journal of Risk and \nFinancial Management",
-            "Literature Review",
-            "Literature \nReview",
-            "Journal of Risk and Financial Management"
+            "International Journal Of Information Management Data Insights",
+            "Journal Of Risk And \nFinancial Management 16",
+            "Journal Of Information Management Data Insights",
+            "Journal Of Risk And Financial Management 16"
           ]
         },
         "events": {
@@ -7019,43 +6796,36 @@
           "participated": 8,
           "events": [
             {
-              "name": "Rupeika-Apoga R. 7th International Scientific Conference: Protection and Security of Financial Services",
-              "type": "conference",
-              "role": "participated"
+              "name": "Rupeika-Apoga R. 7th International Scientific Conference: Protection and Security of Financial Servi",
+              "type": "conference"
             },
             {
               "name": "Market Participants in a Crisis (COVID-19) conference/ What is preventing small businesses from a",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "Rupeika-Apoga R. The 15th international scientific conference \"New Challenges in Economic and",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
-              "name": "Rupeika-Apoga R. III International Conference on Digital Economy: Modern Challenges and Real Opportunities/ Latvia's Fin",
+              "name": "Rupeika-Apoga R. III International Conference on Digital Economy: Modern Challenges and Real Opportu",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
-              "name": "1) Rupeika-Apoga R. (2024) International Conference on Hospitality Leadership, Business Operations and Management (ICHLB",
+              "name": "1) Rupeika-Apoga R. (2024) International Conference on Hospitality Leadership, Business Operations a",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "2024"
             },
             {
-              "name": "2) Rupeika-Apoga R. (2023) International Conference on Sustainability, Environment, and Social Transition in Economics a",
+              "name": "2) Rupeika-Apoga R. (2023) International Conference on Sustainability, Environment, and Social Trans",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
-              "name": "3) Rupeika-Apoga R. The 15th international scientific conference \"New Challenges in Economic and Business Development – ",
+              "name": "3) Rupeika-Apoga R. The 15th international scientific conference \"New Challenges in Economic and Bus",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "2023"
             }
           ],
           "total": 5
@@ -7077,22 +6847,11 @@
         "collaborations": {
           "universities": [
             "University of Latvia",
-            "AI Act",
-            "AI\nKeynote",
-            "AI\nPublication",
-            "COST Action",
-            "III International",
-            "AIDA Serbia",
-            "AI\nLatvia",
-            "BRICS Countries",
-            "AI\nPublications",
-            "University of Malta\nFocus",
-            "University of Latvia\nFocus",
-            "Catholic \nUniversity",
-            "SICAV Fund",
-            "AGP Model"
+            "University of Malta",
+            "University of the",
+            "Catholic \nUniversity"
           ],
-          "total_international": 11
+          "total_international": 4
         }
       },
       "text_summary": {
@@ -7311,7 +7070,7 @@
           "path": "downloads/contributions/lv/Cost_FInAI_Latvia_24.pptx"
         }
       ],
-      "summary": "Key achievements: 1 active members, 4 publications, 7 events."
+      "summary": "Key achievements: 2 active members, 6 publications, 7 events."
     },
     {
       "country": "Lithuania",
@@ -7322,27 +7081,28 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 4,
+        "total_publications": 3,
         "total_with_acknowledgment": 0,
         "total_events": 3,
         "total_stsm": 0,
         "total_grants": 0,
         "total_funded_grants": 0,
-        "total_members": 0,
-        "total_universities": 8
+        "total_members": 3,
+        "total_universities": 3
       },
       "aggregated_metrics": {
         "members": {
-          "count": 0,
-          "names": []
+          "count": 3,
+          "names": [
+            "Criteria Decision",
+            "Audrius Kaba",
+            "Making Methods"
+          ]
         },
         "publications": {
-          "total_mentioned": 4,
+          "total_mentioned": 3,
           "with_acknowledgment": 0,
-          "journals": [
-            "Frontiers in Artificial Intelligence",
-            "Digital finance"
-          ]
+          "journals": []
         },
         "events": {
           "organized": 0,
@@ -7350,18 +7110,15 @@
           "events": [
             {
               "name": "[Slide 1] COST FinAI annual meeting",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
             },
             {
               "name": "COST FinAI annual meeting",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
             },
             {
-              "name": "ECI: „Explainable Cryptocurrency Steep Price Movement Prediction Using Reddit Messages And Technical Indicators“, presen",
-              "type": "conference",
-              "role": "participated"
+              "name": "ECI: „Explainable Cryptocurrency Steep Price Movement Prediction Using Reddit Messages And Technical",
+              "type": "conference"
             }
           ],
           "total": 3
@@ -7382,16 +7139,11 @@
         },
         "collaborations": {
           "universities": [
-            "AI\nSeptember",
-            "Vilnius University",
-            "Kaunas University",
-            "COST Action",
-            "MC Members",
-            "COST Fin",
             "University of Technology",
-            "MC Substitute"
+            "Kaunas University",
+            "Vilnius University"
           ],
-          "total_international": 8
+          "total_international": 3
         }
       },
       "text_summary": {
@@ -7510,7 +7262,7 @@
           "path": "downloads/contributions/lt/COST FinAi Lithuania 2024.pptx"
         }
       ],
-      "summary": "Key achievements: 4 publications, 3 events."
+      "summary": "Key achievements: 3 active members, 3 publications, 3 events."
     },
     {
       "country": "Netherlands",
@@ -7520,31 +7272,27 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 2,
+        "total_publications": 7,
         "total_with_acknowledgment": 0,
         "total_events": 5,
         "total_stsm": 0,
-        "total_grants": 5,
+        "total_grants": 12,
         "total_funded_grants": 0,
         "total_members": 10,
-        "total_universities": 11
+        "total_universities": 4
       },
       "aggregated_metrics": {
         "members": {
           "count": 10,
-          "names": [
-            "Netherlands\nPapers"
-          ]
+          "names": []
         },
         "publications": {
-          "total_mentioned": 2,
+          "total_mentioned": 7,
           "with_acknowledgment": 0,
           "journals": [
-            "Journal of Information Management Data Insights",
-            "Alternative Finance",
-            "Faculties\nResearch",
-            "Journal of Financial Transformation",
-            "Digital Finance"
+            "Journal Of Information Management Data Insights",
+            "Journal Of Financial Transformation",
+            "International Journal Of Information Management Data Insights"
           ]
         },
         "events": {
@@ -7553,30 +7301,25 @@
           "events": [
             {
               "name": "Organization : COST FinAI Doctoral Training School and Research Workshop",
-              "type": "workshop",
-              "role": "participated"
+              "type": "workshop"
             },
             {
               "name": "[Slide 4] COST FinAI Doctoral Training School and Research Workshop - June 10 to June 14 2024",
               "type": "workshop",
-              "date": "June 14 2024",
-              "role": "participated"
+              "date": "14 2024"
             },
             {
-              "name": "The conference took place at the VIP conference room of the Ravelijn building of the University of Twente, which is loca",
-              "type": "conference",
-              "role": "participated"
+              "name": "The conference took place at the VIP conference room of the Ravelijn building of the University of T",
+              "type": "conference"
             },
             {
-              "name": "The presentations from WG1, WG2, WG3, and a Core group meeting on COST FinAI Topics were featured during the 4 day event",
-              "type": "meeting",
-              "role": "participated"
+              "name": "The presentations from WG1, WG2, WG3, and a Core group meeting on COST FinAI Topics were featured du",
+              "type": "meeting"
             },
             {
               "name": "COST FinAI Doctoral Training School and Research Workshop - June 10 to June 14 2024",
               "type": "workshop",
-              "date": "June 14 2024",
-              "role": "participated"
+              "date": "14 2024"
             }
           ],
           "total": 5
@@ -7587,7 +7330,7 @@
           "incoming": 0
         },
         "grants": {
-          "total": 5,
+          "total": 12,
           "funded": 0,
           "pending": 0,
           "declined": 0
@@ -7597,19 +7340,12 @@
         },
         "collaborations": {
           "universities": [
-            "University of Twente",
-            "AI Topics",
-            "AI Country",
-            "ICO\nCrowdfunding",
-            "MSCA Digital",
-            "Utrecht University",
-            "AI Doctoral",
-            "DN Action",
-            "MC Members",
+            "the University",
             "Delft University",
-            "COST Fin"
+            "University of Twente",
+            "Utrecht University"
           ],
-          "total_international": 11
+          "total_international": 4
         }
       },
       "text_summary": {
@@ -7775,7 +7511,7 @@
           "path": "downloads/contributions/nl/COST FinAI Netherlands 2024.pptx"
         }
       ],
-      "summary": "Key achievements: 10 active members, 2 publications, 5 events."
+      "summary": "Key achievements: 10 active members, 7 publications, 5 events."
     },
     {
       "country": "North Macedonia",
@@ -7788,18 +7524,19 @@
       "summary_stats": {
         "total_publications": 4,
         "total_with_acknowledgment": 0,
-        "total_events": 1,
+        "total_events": 3,
         "total_stsm": 0,
-        "total_grants": 1,
+        "total_grants": 3,
         "total_funded_grants": 0,
-        "total_members": 7,
-        "total_universities": 2
+        "total_members": 2,
+        "total_universities": 0
       },
       "aggregated_metrics": {
         "members": {
-          "count": 7,
+          "count": 2,
           "names": [
-            "Olivija Filiposka"
+            "Olivija Filiposka",
+            "Regulatory Fintech Strategy"
           ]
         },
         "publications": {
@@ -7809,15 +7546,22 @@
         },
         "events": {
           "organized": 0,
-          "participated": 1,
+          "participated": 3,
           "events": [
             {
+              "name": "• 1 local meeting",
+              "type": "meeting"
+            },
+            {
+              "name": "1 local meeting",
+              "type": "meeting"
+            },
+            {
               "name": "organization and active participation in online workshops",
-              "type": "workshop",
-              "role": "participated"
+              "type": "workshop"
             }
           ],
-          "total": 1
+          "total": 2
         },
         "stsm": {
           "total": 0,
@@ -7825,7 +7569,7 @@
           "incoming": 0
         },
         "grants": {
-          "total": 1,
+          "total": 3,
           "funded": 0,
           "pending": 0,
           "declined": 0
@@ -7834,11 +7578,8 @@
           "students": 0
         },
         "collaborations": {
-          "universities": [
-            "AI North",
-            "IDAS\nRegulatory"
-          ],
-          "total_international": 2
+          "universities": [],
+          "total_international": 0
         }
       },
       "text_summary": {
@@ -8057,7 +7798,7 @@
           "path": "downloads/contributions/mk/COST-FinAI-MK.pdf"
         }
       ],
-      "summary": "Key achievements: 7 active members, 4 publications, 1 events."
+      "summary": "Key achievements: 2 active members, 4 publications, 3 events."
     },
     {
       "country": "Poland",
@@ -8067,90 +7808,70 @@
         2023
       ],
       "summary_stats": {
-        "total_publications": 3,
+        "total_publications": 1,
         "total_with_acknowledgment": 0,
         "total_events": 9,
         "total_stsm": 0,
         "total_grants": 2,
         "total_funded_grants": 0,
-        "total_members": 3,
-        "total_universities": 11
+        "total_members": 1,
+        "total_universities": 7
       },
       "aggregated_metrics": {
         "members": {
-          "count": 3,
+          "count": 1,
           "names": [
-            "Policy Implications",
-            "Osowska Ewelina",
-            "Marcin Chlebus"
+            "Policy Implications\nLocal Organizer"
           ]
         },
         "publications": {
-          "total_mentioned": 3,
+          "total_mentioned": 1,
           "with_acknowledgment": 0,
-          "journals": [
-            "Frontiers in Artificial Intelligence",
-            "Blockchain Research",
-            "Bibliometric Research",
-            "Economic Science",
-            "National Science",
-            "Data Science",
-            "Quantitative Finance",
-            "Digital Finance"
-          ]
+          "journals": []
         },
         "events": {
           "organized": 0,
           "participated": 9,
           "events": [
             {
-              "name": "Osowska Ewelina, Wójcik Piotr (2023), „Predicting the reaction of financial markets to Federal Open Market Committee pos",
+              "name": "Osowska Ewelina, Wójcik Piotr (2023), „Predicting the reaction of financial markets to Federal Open ",
               "type": "meeting",
-              "date": "2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
-              "name": "Marcin Chlebus – conducting research seminar of WG2 related to “XAI Tools in Model Selection for Business Decision Model",
+              "name": "Marcin Chlebus – conducting research seminar of WG2 related to “XAI Tools in Model Selection for Bus",
               "type": "seminar",
-              "date": "16.03.2021",
-              "role": "participated"
+              "date": "2021"
             },
             {
               "name": "[Slide 7] Conferences – participation with COST related papers",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "Conferences – participation with COST related papers",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "[Slide 8] COST training schools participation",
-              "type": "training school",
-              "role": "participated"
+              "type": "training school"
             },
             {
               "name": "Barbara Będowska-Sójka – AFFINE Training School, Naples 13-15.09.2023",
               "type": "training school",
-              "date": "13-15.09",
-              "role": "participated"
+              "date": "2023"
             },
             {
               "name": "COST training schools participation",
-              "type": "training school",
-              "role": "participated"
+              "type": "training school"
             },
             {
               "name": "Brno COST seminar 21.10.2022",
               "type": "seminar",
-              "date": "21.10.2022",
-              "role": "participated"
+              "date": "2022"
             },
             {
-              "name": "Piotr Wójcik – co-organization of monthly series of open seminars conducted by Data Science Lab in cooperation with Quan",
-              "type": "seminar",
-              "role": "participated"
+              "name": "Piotr Wójcik – co-organization of monthly series of open seminars conducted by Data Science Lab in c",
+              "type": "seminar"
             }
           ],
           "total": 9
@@ -8171,19 +7892,15 @@
         },
         "collaborations": {
           "universities": [
-            "AI Country",
-            "Humboldt University",
-            "AFFINE Training",
-            "COST Fintech",
-            "MC Members",
-            "COST Action",
-            "COST Fin",
+            "at University",
             "University of Warsaw",
             "University of Economics",
-            "Economic Sciences University",
-            "XAI Tools"
+            "the University",
+            "Humboldt University",
+            "Sciences University",
+            "Poznań University"
           ],
-          "total_international": 11
+          "total_international": 7
         }
       },
       "text_summary": {
@@ -8328,7 +8045,7 @@
           "path": "downloads/contributions/pl/FinAI_Poland_in_Bern_2023.pptx"
         }
       ],
-      "summary": "Key achievements: 3 active members, 3 publications, 9 events."
+      "summary": "Key achievements: 1 active members, 1 publications, 9 events."
     },
     {
       "country": "Portugal",
@@ -8339,28 +8056,27 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 1,
+        "total_publications": 2,
         "total_with_acknowledgment": 0,
         "total_events": 8,
-        "total_stsm": 0,
+        "total_stsm": 2,
         "total_grants": 1,
         "total_funded_grants": 0,
-        "total_members": 5,
-        "total_universities": 12
+        "total_members": 3,
+        "total_universities": 5
       },
       "aggregated_metrics": {
         "members": {
-          "count": 5,
+          "count": 3,
           "names": [
-            "Contribution Topics",
-            "Main Aims",
-            "Bernardete Ribeiro",
-            "Layer Perceptron",
-            "Catarina Silva"
+            "Alessandra Tanta",
+            "Vassilios Papavassiliou",
+            "Support Models",
+            "Layer Perceptron"
           ]
         },
         "publications": {
-          "total_mentioned": 1,
+          "total_mentioned": 2,
           "with_acknowledgment": 0,
           "journals": []
         },
@@ -8371,53 +8087,45 @@
             {
               "name": "Country Updates, MC Meeting, September 28, 2023",
               "type": "meeting",
-              "date": "September 28, 2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
-              "name": "Participation on the7th European COST Conference on Artificial Intelligence in Finance with a presentation on “Algorithm",
-              "type": "conference",
-              "role": "participated"
+              "name": "Participation on the7th European COST Conference on Artificial Intelligence in Finance with a presen",
+              "type": "conference"
             },
             {
               "name": "https://conference.fin-ai.eu/AI-Conference-in-Finance/",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "International Symposium on Intelligence Technologies (June 8,15,22,29 2022): 4 sessions:",
               "type": "symposium",
-              "date": "2022",
-              "role": "participated"
+              "date": "29 2022"
             },
             {
-              "name": "Coffee Session with debate (September 21 and September 28, 2022): A series of 2 workshops in collaboration with juridica",
+              "name": "Coffee Session with debate (September 21 and September 28, 2022): A series of 2 workshops in collabo",
               "type": "workshop",
-              "date": "September 28, 2022",
-              "role": "participated"
+              "date": "2022"
             },
             {
-              "name": "The first workshop is specially targeted to juridical stakeholders, while the second is targeted for engineers.",
-              "type": "workshop",
-              "role": "participated"
+              "name": "The first workshop is specially targeted to juridical stakeholders, while the second is targeted for",
+              "type": "workshop"
             },
             {
               "name": "  Workshop on Responsible AI - technical and lawful perspectives planned for 2024",
               "type": "workshop",
-              "date": "2024",
-              "role": "participated"
+              "date": "for 2024"
             },
             {
               "name": "Participation on the meeting COST meets Istanbul, May 2024",
               "type": "meeting",
-              "date": "2024",
-              "role": "participated"
+              "date": "May 2024"
             }
           ],
           "total": 7
         },
         "stsm": {
-          "total": 0,
+          "total": 2,
           "outgoing": 0,
           "incoming": 0
         },
@@ -8432,20 +8140,13 @@
         },
         "collaborations": {
           "universities": [
-            "Substitutes\nUniversity",
-            "MC Committee",
-            "MC Substitutes",
-            "MC Meeting",
-            "UCD Michael",
-            "MC\nCatarina",
-            "UTAD\n\nContribution",
-            "University of Coimbra",
-            "SHAP Applicability",
-            "COST Conference",
+            "of University",
+            "the University",
             "University of Pavia",
-            "AI Algorithms"
+            "Substitutes\nUniversity",
+            "University of Coimbra"
           ],
-          "total_international": 11
+          "total_international": 5
         }
       },
       "text_summary": {
@@ -8676,7 +8377,7 @@
           "path": "downloads/contributions/pt/Portugal_FinAI_COST_MC_UPDATE_SEPTEMBER_2023.pptx"
         }
       ],
-      "summary": "Key achievements: 5 active members, 1 publications, 8 events."
+      "summary": "Key achievements: 3 active members, 2 publications, 8 events, 2 STSMs."
     },
     {
       "country": "Romania",
@@ -8686,186 +8387,152 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 13,
+        "total_publications": 2,
         "total_with_acknowledgment": 0,
         "total_events": 21,
-        "total_stsm": 0,
-        "total_grants": 14,
+        "total_stsm": 1,
+        "total_grants": 22,
         "total_funded_grants": 0,
         "total_members": 11,
-        "total_universities": 20
+        "total_universities": 10
       },
       "aggregated_metrics": {
         "members": {
           "count": 11,
           "names": [
-            "Napoca\nIoana Coita",
-            "Bin Lin",
-            "The Unchain Festival",
-            "Tsung Chen",
-            "Pricing Kernel Puzzles",
-            "Wen Teng",
             "Napoca\nMonica Achim",
+            "Driven Sentiments",
             "Hsuan Chen",
-            "Traian Pele",
+            "Bin Lin\nSpectral",
+            "Pele\nAssessing Network Risk",
+            "Tsung Chen\nFinancial Risk Meter",
+            "Wen Teng\nFund Investments",
+            "Textual Data",
             "Napoca\nVasile Strat",
-            "Brussels\nIstanbul\nCoimbra"
+            "Bin Lin",
+            "Napoca\nIoana Coita"
           ]
         },
         "publications": {
-          "total_mentioned": 13,
+          "total_mentioned": 2,
           "with_acknowledgment": 0,
-          "journals": [
-            "Energy Finance",
-            "Finance Research",
-            "Applied Science",
-            "International Finance",
-            "Blockchain Research",
-            "Young Research",
-            "Exploring Research",
-            "Corporate Finance",
-            "Markets Review",
-            "Data Science",
-            "Quantitative Finance",
-            "Digital Finance"
-          ]
+          "journals": []
         },
         "events": {
           "organized": 0,
           "participated": 21,
           "events": [
             {
-              "name": "2. The 17th International Conference on Computational and Financial Econometrics (CFE 2023) HTW Berlin, University of Ap",
+              "name": "2. The 17th International Conference on Computational and Financial Econometrics (CFE 2023) HTW Berl",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "CFE 2023"
             },
             {
-              "name": "3. 7th International Finance Conference & 4th Yushan Conference on Thursday and Friday, December 7-8, in Taiwan https://",
-              "type": "conference",
-              "role": "participated"
+              "name": "3. 7th International Finance Conference & 4th Yushan Conference on Thursday and Friday, December 7-8",
+              "type": "conference"
             },
             {
-              "name": "Spatial Econometrics of Crypto Currency Addresses, Codruța Mare: https://linminbin.wixsite.com/yushan-conference",
-              "type": "conference",
-              "role": "participated"
+              "name": "Spatial Econometrics of Crypto Currency Addresses, Codruța Mare: https://linminbin.wixsite.com/yusha",
+              "type": "conference"
             },
             {
-              "name": "4. Conference AI Innovations in Finance and Society (https://fin-ai.eu/conferenceai-innovations-in-finance-and-society/ ",
+              "name": "4. Conference AI Innovations in Finance and Society (https://fin-ai.eu/conferenceai-innovations-in-f",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "Oct 2023"
             },
             {
-              "name": "5. The 18th International Conference on Business Excellence Smart Solutions for a Sustainable Future, 21-23 March 2024, ",
+              "name": "5. The 18th International Conference on Business Excellence Smart Solutions for a Sustainable Future",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "March 2024"
             },
             {
-              "name": "QFRG (Quantitative Finance Research Group) and DSLab (Data Science Lab) open seminar, University of Warsaw, Faculty of E",
+              "name": "QFRG (Quantitative Finance Research Group) and DSLab (Data Science Lab) open seminar, University of ",
               "type": "seminar",
-              "date": "25.03.2024",
-              "role": "participated"
+              "date": "2024"
             },
             {
-              "name": "10. Workshop AI, Digital Assets and the future of Energy Finance, 16-17 May, 2024, Bucharest University of Economic Stud",
+              "name": "10. Workshop AI, Digital Assets and the future of Energy Finance, 16-17 May, 2024, Bucharest Univers",
               "type": "workshop",
-              "date": "2024",
-              "role": "participated"
+              "date": "2024"
             },
             {
-              "name": "11. AI Finance Insights: Pioneering the Future of Fintech, COST FINAI Conference, 20-21 May 2024, Istanbul, Turkey, http",
+              "name": "11. AI Finance Insights: Pioneering the Future of Fintech, COST FINAI Conference, 20-21 May 2024, Is",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "May 2024"
             },
             {
-              "name": "16. Monday’s seminar at the Institute of Cartography and Geoinformatics at the University of Leibniz in Hannover, German",
+              "name": "16. Monday’s seminar at the Institute of Cartography and Geoinformatics at the University of Leibniz",
               "type": "seminar",
-              "date": "2023",
-              "role": "participated"
+              "date": "August 2023"
             },
             {
-              "name": "17. The 16th Annual Euromed Academy of Business Conference, Business Transformation in Uncertain Global Environments, 27",
+              "name": "17. The 16th Annual Euromed Academy of Business Conference, Business Transformation in Uncertain Glo",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "Sept 2023"
             },
             {
               "name": "Seminar la Universitatea Leibniz - 1 august 2023, Hanovra, Germania",
               "type": "seminar",
-              "date": "2023",
-              "role": "participated"
+              "date": "august 2023"
             },
             {
               "name": "16th Annual Euromed Academy of Business Conference - 27-29 septembrie 2023, Vilnius, Lituania",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "septembrie 2023"
             },
             {
               "name": "STAT of ML Conference - 5-6 octombrie 2023, Praga, Republica Cehă",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "octombrie 2023"
             },
             {
               "name": "FinTech and AI in Finance Training School, 12-16 June 2023, Enschede, Netherlands",
               "type": "training school",
-              "date": "2023",
-              "role": "participated"
+              "date": "June 2023"
             },
             {
-              "name": "The 16th International Conference of the ERCIM WG on Computational and Methodological Statistics (CMStatistics), 16-18 D",
+              "name": "The 16th International Conference of the ERCIM WG on Computational and Methodological Statistics (CM",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "December 2023"
             },
             {
-              "name": "Workshop: \"Data Modelling, Step by Step Public P2P\" by Ștefana Belbe, Liana Stanca, Karsten Wenzlaff, Lucia Gomez",
+              "name": "Workshop: \"Data Modelling, Step by Step Public P2P\" by Ștefana Belbe, Liana Stanca, Karsten Wenzlaff",
+              "type": "workshop"
+            },
+            {
+              "name": "21. The 16th International Conference of the ERCIM WG on Computational and Methodological Statistics",
+              "type": "conference",
+              "date": "Dec  2023"
+            },
+            {
+              "name": "23. Ethical AI and Data Protection in Finance and Beyond, 3-4 Sept 2023, Horta, Azores Islands, Port",
+              "type": "conference",
+              "date": "Sept 2023"
+            },
+            {
+              "name": "24. PhD students’ session in FinTech and AI in Finance Training School, 12-16 June 2023, Enschede, N",
+              "type": "conference",
+              "date": "June 2023"
+            },
+            {
+              "name": "Workshop on Data Modelling, Step by Step Public P2P, workshop, Ștefana Belbe (presenter), Liana Stan",
+              "type": "workshop"
+            },
+            {
+              "name": "For D7 there are 2 teams working on writing 2 papers, we had several meetings and drafted a first pr",
               "type": "workshop",
-              "role": "participated"
-            },
-            {
-              "name": "21. The 16th International Conference of the ERCIM WG on Computational and Methodological Statistics 17th International ",
-              "type": "conference",
-              "date": "2023",
-              "role": "participated"
-            },
-            {
-              "name": "23. Ethical AI and Data Protection in Finance and Beyond, 3-4 Sept 2023, Horta, Azores Islands, Portugal https://confere",
-              "type": "conference",
-              "date": "2023",
-              "role": "participated"
-            },
-            {
-              "name": "24. PhD students’ session in FinTech and AI in Finance Training School, 12-16 June 2023, Enschede, Netherlands https://c",
-              "type": "conference",
-              "date": "2023",
-              "role": "participated"
-            },
-            {
-              "name": "Workshop on Data Modelling, Step by Step Public P2P, workshop, Ștefana Belbe (presenter), Liana Stanca, Karsten Wenzlaff",
-              "type": "workshop",
-              "role": "participated"
-            },
-            {
-              "name": "For D7 there are 2 teams working on writing 2 papers, we had several meetings and drafted a first proposal. We created a",
-              "type": "workshop",
-              "date": "1913",
-              "role": "participated"
+              "date": "1913"
             }
           ],
           "total": 21
         },
         "stsm": {
-          "total": 0,
+          "total": 1,
           "outgoing": 0,
           "incoming": 0
         },
         "grants": {
-          "total": 14,
+          "total": 22,
           "funded": 0,
           "pending": 0,
           "declined": 0
@@ -8875,28 +8542,18 @@
         },
         "collaborations": {
           "universities": [
-            "University of Essex",
-            "HTW Berlin",
-            "AI Git",
-            "LLM Va",
-            "University of Economic Studies",
+            "University of Applied",
             "Charles University",
-            "UBB Cluj",
-            "AI Action",
-            "ML Conference",
-            "UO Oradea",
-            "AI Tools",
-            "ML Models",
-            "Masaryk University",
-            "AI Innovations",
+            "University of Economic",
+            "University of Warsaw",
             "University of Leibniz",
-            "FRM Links",
-            "BRC Blockchain",
-            "AI Ph",
-            "University of Applied Sciences",
-            "COST Fin"
+            "the University",
+            "Institute of Cartography",
+            "Masaryk University",
+            "University of Essex",
+            "Bucharest University"
           ],
-          "total_international": 25
+          "total_international": 10
         }
       },
       "text_summary": {
@@ -9215,7 +8872,7 @@
           "path": "downloads/contributions/ro/COST FinAI Country Update 2024 Romania.pptx"
         }
       ],
-      "summary": "Key achievements: 11 active members, 13 publications, 21 events."
+      "summary": "Key achievements: 11 active members, 2 publications, 21 events, 1 STSMs."
     },
     {
       "country": "Serbia",
@@ -9232,97 +8889,84 @@
         "total_stsm": 0,
         "total_grants": 11,
         "total_funded_grants": 0,
-        "total_members": 1,
-        "total_universities": 12
+        "total_members": 2,
+        "total_universities": 6
       },
       "aggregated_metrics": {
         "members": {
-          "count": 1,
+          "count": 2,
           "names": [
-            "Western Balkan Region"
+            "Ivan Nikoli",
+            "Vladimir Simovi"
           ]
         },
         "publications": {
           "total_mentioned": 8,
           "with_acknowledgment": 0,
-          "journals": [
-            "International Review"
-          ]
+          "journals": []
         },
         "events": {
           "organized": 0,
-          "participated": 17,
+          "participated": 20,
           "events": [
             {
               "name": "Country Updates, MC Meeting, September 28th, 2023",
               "type": "meeting",
-              "date": "2023",
-              "role": "participated"
+              "date": "2023"
             },
             {
               "name": "[Slide 2] FinAI – Annual MC Meeting",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
             },
             {
               "name": "FinAI – Annual MC Meeting",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
             },
             {
               "name": "Conferences, presentations, talks and meetings:",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "International scientific conference FINIZ 2020 Belgrade",
               "type": "conference",
-              "date": "2020",
-              "role": "participated"
+              "date": "FINIZ 2020"
             },
             {
               "name": "International scientific conference FINIZ 2021 Belgrade",
               "type": "conference",
-              "date": "2021",
-              "role": "participated"
+              "date": "FINIZ 2021"
             },
             {
               "name": "International conference of economics and business",
-              "type": "conference",
-              "role": "participated"
+              "type": "conference"
             },
             {
               "name": "International scientific conference FINIZ 2023 Belgrade",
               "type": "conference",
-              "date": "2023",
-              "role": "participated"
+              "date": "FINIZ 2023"
             },
             {
               "name": "Country Updates, MC Meeting, 30th April, 2024",
               "type": "meeting",
-              "date": "2024",
-              "role": "participated"
+              "date": "2024"
             },
             {
               "name": "International scientific conference FINIZ 2022 Belgrade",
               "type": "conference",
-              "date": "2022",
-              "role": "participated"
+              "date": "FINIZ 2022"
             },
             {
               "name": "International scientific conference FINIZ 2024 Belgrade",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "FINIZ 2024"
             },
             {
-              "name": "G. Pisoni, E. Mináriková, M. Hudec, H. Skaftadottir, B. Molnár, M. Vučetić, D. Sedláková, Reducing Complexity by using L",
+              "name": "G. Pisoni, E. Mináriková, M. Hudec, H. Skaftadottir, B. Molnár, M. Vučetić, D. Sedláková, Reducing C",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "SYSTEMS 2024"
             }
           ],
-          "total": 9
+          "total": 10
         },
         "stsm": {
           "total": 0,
@@ -9340,20 +8984,14 @@
         },
         "collaborations": {
           "universities": [
-            "FINIZ\nInternational",
-            "Singidunum University",
-            "University of Economics Bratislava",
+            "Institute of economic",
+            "with University",
+            "University of Economics",
             "University of Belgrade",
-            "MC Meeting",
-            "FINIZ\nWoman",
-            "BELEX Dataset",
-            "AI Serbian",
-            "FINIZ\nEspoo",
-            "FINIZ\n\nConferences",
-            "CFA Society",
-            "MC Substitute"
+            "Institute of High",
+            "Singidunum University"
           ],
-          "total_international": 10
+          "total_international": 6
         }
       },
       "text_summary": {
@@ -9671,7 +9309,7 @@
           "path": "downloads/contributions/rs/Serbia_FinAI_COST_MC_Update_September_2023.pptx"
         }
       ],
-      "summary": "Key achievements: 1 active members, 8 publications, 12 events."
+      "summary": "Key achievements: 2 active members, 8 publications, 12 events."
     },
     {
       "country": "Slovakia",
@@ -9682,90 +9320,86 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 5,
+        "total_publications": 3,
         "total_with_acknowledgment": 0,
-        "total_events": 8,
-        "total_stsm": 0,
-        "total_grants": 4,
-        "total_funded_grants": 0,
+        "total_events": 10,
+        "total_stsm": 1,
+        "total_grants": 8,
+        "total_funded_grants": 2,
         "total_members": 8,
-        "total_universities": 11
+        "total_universities": 3
       },
       "aggregated_metrics": {
         "members": {
           "count": 8,
           "names": [
-            "Based Systems",
-            "Jana Peliova",
-            "Marek Kacer",
-            "Miroslav Hudec"
+            "Second Edition",
+            "Based Systems"
           ]
         },
         "publications": {
-          "total_mentioned": 5,
+          "total_mentioned": 3,
           "with_acknowledgment": 0,
-          "journals": [
-            "Data Science"
-          ]
+          "journals": []
         },
         "events": {
           "organized": 0,
-          "participated": 8,
+          "participated": 10,
           "events": [
             {
               "name": "WiF Coimbra workshop presentation:",
-              "type": "workshop",
-              "role": "participated"
+              "type": "workshop"
             },
             {
               "name": "WiF Napoli Workshop presentation:",
-              "type": "workshop",
-              "role": "participated"
+              "type": "workshop"
             },
             {
               "name": "Diversity group Tirana Workshop",
-              "type": "workshop",
-              "role": "participated"
+              "type": "workshop"
             },
             {
               "name": "Conference proceedings",
+              "type": "conference"
+            },
+            {
+              "name": "Hudec M., Mináriková E., Schwarz D., Fivaz J. (2022). Estimating linguistic summaries on the unit in",
               "type": "conference",
-              "role": "participated"
+              "date": "2022"
             },
             {
-              "name": "Hudec M., Mináriková E., Schwarz D., Fivaz J. (2022). Estimating linguistic summaries on the unit interval data. 2022 IE",
-              "type": "conference",
-              "date": "2022",
-              "role": "participated"
+              "name": "WG, MC meeting Bern",
+              "type": "meeting"
             },
             {
-              "name": "Advanced Statistical Modelling for Fintech, Financial Inclusion and Inequality (AFFINE - Second Edition) training school",
-              "type": "training school",
-              "role": "participated"
+              "name": "Training schools:",
+              "type": "training school"
             },
             {
-              "name": "Martin Alexy: Workshop - Models for data analysis and integration for artificial intelligence - May 16, 2024",
+              "name": "Advanced Statistical Modelling for Fintech, Financial Inclusion and Inequality (AFFINE - Second Edit",
+              "type": "training school"
+            },
+            {
+              "name": "Martin Alexy: Workshop - Models for data analysis and integration for artificial intelligence - May ",
               "type": "workshop",
-              "date": "May 16, 2024",
-              "role": "participated"
+              "date": "2024"
             },
             {
-              "name": "Vojtasová & Alexy (2024) UNVEILING RISK PATTERNS THROUGH AN IN-DEPTH ANALYSIS OF SLOVAK COMPANY DEFAULTS (2014-2018) 14t",
+              "name": "Vojtasová & Alexy (2024) UNVEILING RISK PATTERNS THROUGH AN IN-DEPTH ANALYSIS OF SLOVAK COMPANY DEFA",
               "type": "conference",
-              "date": "2024",
-              "role": "participated"
+              "date": "2024"
             }
           ],
           "total": 5
         },
         "stsm": {
-          "total": 0,
+          "total": 1,
           "outgoing": 0,
           "incoming": 0
         },
         "grants": {
-          "total": 4,
-          "funded": 0,
+          "total": 8,
+          "funded": 2,
           "pending": 0,
           "declined": 0
         },
@@ -9774,19 +9408,11 @@
         },
         "collaborations": {
           "universities": [
-            "IEEE International",
-            "Maria Ianario University",
-            "AI Country",
-            "HED Cooperation",
-            "University of Naples Federico",
-            "AI Rethymno",
-            "COST Fin",
-            "AI Tools",
-            "STSM Ioana",
             "University of Economics",
-            "BFH\nNot"
+            "Ianario University",
+            "University of Naples"
           ],
-          "total_international": 10
+          "total_international": 3
         }
       },
       "text_summary": {
@@ -9997,7 +9623,7 @@
           "path": "downloads/contributions/sk/COSTS_Action_FinAI_update_Slovakia_2024.pptx"
         }
       ],
-      "summary": "Key achievements: 8 active members, 5 publications, 8 events."
+      "summary": "Key achievements: 8 active members, 3 publications, 10 events, 1 STSMs, 2 funded grants."
     },
     {
       "country": "Spain",
@@ -10007,7 +9633,7 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 0,
+        "total_publications": 1,
         "total_with_acknowledgment": 0,
         "total_events": 0,
         "total_stsm": 0,
@@ -10022,11 +9648,9 @@
           "names": []
         },
         "publications": {
-          "total_mentioned": 0,
+          "total_mentioned": 1,
           "with_acknowledgment": 0,
-          "journals": [
-            "Commerce Research"
-          ]
+          "journals": []
         },
         "events": {
           "organized": 0,
@@ -10051,7 +9675,7 @@
         "collaborations": {
           "universities": [
             "University of Zaragoza",
-            "COST Action"
+            "from University"
           ],
           "total_international": 2
         }
@@ -10095,7 +9719,7 @@
           "path": "downloads/contributions/es/Spanish contribution to the FinAI COST Action.docx"
         }
       ],
-      "summary": "Contributing to COST Action CA19130 activities."
+      "summary": "Key achievements: 1 publications."
     },
     {
       "country": "Switzerland",
@@ -10109,40 +9733,37 @@
         "total_with_acknowledgment": 0,
         "total_events": 1,
         "total_stsm": 0,
-        "total_grants": 1,
-        "total_funded_grants": 0,
-        "total_members": 3,
-        "total_universities": 11
+        "total_grants": 3,
+        "total_funded_grants": 2,
+        "total_members": 7,
+        "total_universities": 6
       },
       "aggregated_metrics": {
         "members": {
-          "count": 3,
+          "count": 7,
           "names": [
-            "Gabin Taibi",
-            "Yiting Liu",
-            "Lennart John Baals"
+            "Dependent Explanations",
+            "Frequency Causality",
+            "Christian Hopp",
+            "Branka Hadji Misheva",
+            "Peter Schwendner",
+            "Textual Data",
+            "Based Risk Management Tools"
           ]
         },
         "publications": {
           "total_mentioned": 0,
           "with_acknowledgment": 0,
-          "journals": [
-            "Applied Science",
-            "Narrative Finance",
-            "Sustainable Finance",
-            "Data Science",
-            "Digital Finance"
-          ]
+          "journals": []
         },
         "events": {
           "organized": 0,
           "participated": 1,
           "events": [
             {
-              "name": "Editorial: Artificial intelligence in finance and industry: Highlights from 6 European COST conferences; A. Henrici, J. ",
+              "name": "Editorial: Artificial intelligence in finance and industry: Highlights from 6 European COST conferen",
               "type": "conference",
-              "date": "3389",
-              "role": "participated"
+              "date": "3389"
             }
           ],
           "total": 1
@@ -10153,8 +9774,8 @@
           "incoming": 0
         },
         "grants": {
-          "total": 1,
-          "funded": 0,
+          "total": 3,
+          "funded": 2,
           "pending": 0,
           "declined": 0
         },
@@ -10163,19 +9784,14 @@
         },
         "collaborations": {
           "universities": [
-            "ESG Scoring",
-            "University of Twente",
-            "COST Funded",
-            "AI Country",
-            "MC Member",
-            "VIX Index",
+            "at University",
             "Zurich University",
-            "COST Events",
-            "University of Applied Sciences",
-            "COST Fin",
+            "Institute of Wealth",
+            "University of Twente",
+            "University of Applied",
             "Bern University"
           ],
-          "total_international": 11
+          "total_international": 6
         }
       },
       "text_summary": {
@@ -10327,7 +9943,7 @@
           "path": "downloads/contributions/ch/FinAI_Switzerland_June_2024.pptx"
         }
       ],
-      "summary": "Key achievements: 3 active members, 1 events."
+      "summary": "Key achievements: 7 active members, 1 events, 2 funded grants."
     },
     {
       "country": "Turkey",
@@ -10338,40 +9954,33 @@
         2024
       ],
       "summary_stats": {
-        "total_publications": 0,
+        "total_publications": 2,
         "total_with_acknowledgment": 0,
         "total_events": 8,
         "total_stsm": 0,
-        "total_grants": 11,
+        "total_grants": 20,
         "total_funded_grants": 0,
         "total_members": 34,
-        "total_universities": 20
+        "total_universities": 8
       },
       "aggregated_metrics": {
         "members": {
           "count": 34,
           "names": [
-            "Future Plans",
-            "Women Editors",
-            "Other Responsibilities",
-            "Davutpasa Campus"
+            "Country Survey Study Among",
+            "Sadettin Haluk",
+            "Davutpasa Campus",
+            "Gokce Nur",
+            "Driven Newsvendor Problem",
+            "Gizay Daver",
+            "Ahead Approaches"
           ]
         },
         "publications": {
-          "total_mentioned": 0,
+          "total_mentioned": 2,
           "with_acknowledgment": 0,
           "journals": [
-            "And Economics",
-            "Business Economics",
-            "Frontiers in AI",
-            "Journal of Business Ethics in",
-            "Young Research",
-            "Sustainable Finance",
-            "Computational Economics",
-            "Related Research",
-            "Systematic Review",
-            "Data Science",
-            "Digital Finance"
+            "Journal Of Business Ethics In 2023"
           ]
         },
         "events": {
@@ -10379,47 +9988,39 @@
           "participated": 8,
           "events": [
             {
-              "name": "COST FinAI Summer School 2023, Data Science For Sustainable Finance And Economics, Role of Green Fintech in Promoting Ec",
+              "name": "COST FinAI Summer School 2023, Data Science For Sustainable Finance And Economics, Role of Green Fin",
               "type": "summer school",
-              "date": "2023",
-              "role": "participated"
+              "date": "School 2023"
             },
             {
-              "name": "COST FinAI Meets Istanbul (Core Group Meeting,Working Group Meeting) will be organized by Mutlu Akar in Istanbul, Türkiy",
+              "name": "COST FinAI Meets Istanbul (Core Group Meeting,Working Group Meeting) will be organized by Mutlu Akar",
               "type": "meeting",
-              "date": "2024",
-              "role": "organized"
+              "date": "May 2024"
             },
             {
-              "name": "COST FinAI Meets Prague (Core Group Meeting,Working Group Meeting) is planned to be held in Prague, Czech Republic, duri",
+              "name": "COST FinAI Meets Prague (Core Group Meeting,Working Group Meeting) is planned to be held in Prague, ",
               "type": "meeting",
-              "date": "2024",
-              "role": "participated"
+              "date": "August 2024"
             },
             {
-              "name": "The conference took place in Otag-i Humayun, which is located as a historical building in Yildiz Technical University-Da",
-              "type": "conference",
-              "role": "participated"
+              "name": "The conference took place in Otag-i Humayun, which is located as a historical building in Yildiz Tec",
+              "type": "conference"
             },
             {
-              "name": "The presentations from WG1, WG2, WG3, and a Core group meeting on COST FinAI Topics were featured during a two-day event",
-              "type": "meeting",
-              "role": "participated"
+              "name": "The presentations from WG1, WG2, WG3, and a Core group meeting on COST FinAI Topics were featured du",
+              "type": "meeting"
             },
             {
-              "name": "Secondly, 0.25 of a day was allocated for Core group meeting and presenting the call for publications for an edited volu",
-              "type": "meeting",
-              "role": "participated"
+              "name": "Secondly, 0.25 of a day was allocated for Core group meeting and presenting the call for publication",
+              "type": "meeting"
             },
             {
-              "name": "[Slide 5] COST FinAI Istanbul Meeting at official social media accounts of Yildiz Technical University",
-              "type": "meeting",
-              "role": "participated"
+              "name": "[Slide 5] COST FinAI Istanbul Meeting at official social media accounts of Yildiz Technical Universi",
+              "type": "meeting"
             },
             {
               "name": "COST FinAI Istanbul Meeting at official social media accounts of Yildiz Technical University",
-              "type": "meeting",
-              "role": "participated"
+              "type": "meeting"
             }
           ],
           "total": 6
@@ -10430,7 +10031,7 @@
           "incoming": 0
         },
         "grants": {
-          "total": 11,
+          "total": 20,
           "funded": 0,
           "pending": 0,
           "declined": 0
@@ -10440,28 +10041,16 @@
         },
         "collaborations": {
           "universities": [
-            "AI Summer",
-            "MC Member",
-            "CG Coordinator",
-            "Bulent Ecevit University",
-            "MC Members",
-            "AI  Book",
-            "Yildiz Technical University",
-            "IISE Transactions",
-            "ESG Application",
-            "OECD Countries",
-            "AI Topics",
-            "COST Virtual",
-            "AI Istanbul",
-            "Kadir Has University",
-            "Koc University",
-            "Ankara Medipol University",
-            "AI Country",
-            "AI Meets",
             "Ozyegin University",
-            "COST Fin"
+            "Koc University",
+            "Technical University",
+            "Has University",
+            "Ecevit University",
+            "Medipol University",
+            "TED University",
+            "Selçuk University"
           ],
-          "total_international": 23
+          "total_international": 7
         }
       },
       "text_summary": {
@@ -10778,7 +10367,7 @@
           "path": "downloads/contributions/tr/Turkey_CA19130_MC2023_SeptemberUpdate.pptx"
         }
       ],
-      "summary": "Key achievements: 34 active members, 8 events."
+      "summary": "Key achievements: 34 active members, 2 publications, 8 events."
     }
   ]
 }

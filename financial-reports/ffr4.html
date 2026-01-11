@@ -389,11 +389,11 @@
                 <li>
                     <a href="../network.html" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
-                        <a href="../members.html">All Members (426)</a>
+                        <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                         <a href="../leadership.html">Leadership Team</a>
-                        <a href="../mc-members.html">Management Committee (70)</a>
+                        <a href="../mc-members.html" data-source="summary_statistics.members.mc.total">Management Committee (70)</a>
                         <a href="../wg-members.html">Working Groups</a>
-                        <a href="../country-contributions.html">Countries (48)</a>
+                        <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                         <a href="../author-stats.html">Author Statistics</a>
                     </div>
                 </li>
@@ -478,11 +478,11 @@
             <li>
                 <button>NETWORK <span class="toggle-icon">+</span></button>
                 <div class="mega-mobile-submenu">
-                    <a href="../members.html">All Members (426)</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                     <a href="../leadership.html">Leadership Team</a>
                     <a href="../mc-members.html">Management Committee</a>
                     <a href="../wg-members.html">Working Groups</a>
-                    <a href="../country-contributions.html">Countries (48)</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                     <a href="../author-stats.html">Author Statistics</a>
                 </div>
             </li>
@@ -539,11 +539,11 @@
         <div class="sl-section" data-category="network">
             <div class="sl-section-header"><a href="../network.html" class="sl-section-link">NETWORK</a> <span class="toggle" onclick="slToggleSection(this.parentNode)">&#9660;</span></div>
             <div class="sl-links">
-                <a href="../members.html">All Members (426)</a>
+                <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                 <a href="../leadership.html">Leadership Team</a>
                 <a href="../mc-members.html">Management Committee</a>
                 <a href="../wg-members.html">Working Groups</a>
-                <a href="../country-contributions.html">Countries (48)</a>
+                <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
             </div>
         </div>
         <div class="sl-section" data-category="research">
@@ -597,11 +597,11 @@
                 <li>
                     <a href="#" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
-                        <a href="../members.html">All Members (426)</a>
+                        <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                         <a href="../leadership.html">Leadership Team</a>
-                        <a href="../mc-members.html">Management Committee (70)</a>
+                        <a href="../mc-members.html" data-source="summary_statistics.members.mc.total">Management Committee (70)</a>
                         <a href="../wg-members.html">Working Groups</a>
-                        <a href="../country-contributions.html">Countries (48)</a>
+                        <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                         <a href="../author-stats.html">Author Statistics</a>
                     </div>
                 </li>
@@ -686,11 +686,11 @@
             <li>
                 <button>NETWORK <span class="toggle-icon">+</span></button>
                 <div class="mega-mobile-submenu">
-                    <a href="../members.html">All Members (426)</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                     <a href="../leadership.html">Leadership Team</a>
                     <a href="../mc-members.html">Management Committee</a>
                     <a href="../wg-members.html">Working Groups</a>
-                    <a href="../country-contributions.html">Countries (48)</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                     <a href="../author-stats.html">Author Statistics</a>
                 </div>
             </li>
@@ -748,10 +748,10 @@
             <div class="stat-box"><div class="num">257,926</div><div class="label">Budget EUR</div></div>
             <div class="stat-box"><div class="num">256,854</div><div class="label">Actual EUR</div></div>
             <div class="stat-box"><div class="num">99.6%</div><div class="label">Utilization</div></div>
-            <div class="stat-box"><div class="num">8</div><div class="label">Meetings</div></div>
-            <div class="stat-box"><div class="num">4</div><div class="label">Training Schools</div></div>
-            <div class="stat-box"><div class="num">6</div><div class="label">STSMs</div></div>
-            <div class="stat-box"><div class="num">12</div><div class="label">VM Grants</div></div>
+            <div class="stat-box"><div class="num" data-source="meetings.meetings[7].id" data-format="currency">8</div><div class="label">Meetings</div></div>
+            <div class="stat-box"><div class="num" data-source="meetings.meetings[3].id" data-format="currency">4</div><div class="label">Training Schools</div></div>
+            <div class="stat-box"><div class="num" data-source="meetings.meetings[5].id" data-format="currency">6</div><div class="label">STSMs</div></div>
+            <div class="stat-box"><div class="num" data-source="meetings.meetings[11].id" data-format="currency">12</div><div class="label">VM Grants</div></div>
         </div>
 
         <div class="card">
@@ -774,12 +774,12 @@
                 </thead>
                 <tbody>
                     <tr><td>Meetings</td><td class="amount">117,889</td><td class="amount">139,241</td><td>118.1%</td></tr>
-                    <tr><td>Training Schools</td><td class="amount">58,594</td><td class="amount">49,401</td><td>84.3%</td></tr>
-                    <tr><td>Short-Term Scientific Missions</td><td class="amount">14,000</td><td class="amount">10,500</td><td>75.0%</td></tr>
-                    <tr><td>Virtual Mobility</td><td class="amount">29,300</td><td class="amount">22,000</td><td>61.4%</td></tr>
-                    <tr><td>Virtual Networking Support</td><td class="amount">0</td><td class="amount">4,000</td><td>-</td></tr>
-                    <tr><td>Dissemination</td><td class="amount">2,500</td><td class="amount">2,000</td><td>80.0%</td></tr>
-                    <tr><td>OERSA</td><td class="amount">0</td><td class="amount">210</td><td>-</td></tr>
+                    <tr><td>Training Schools</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.training_schools" data-format="currency">58,594</td><td class="amount">49,401</td><td>84.3%</td></tr>
+                    <tr><td>Short-Term Scientific Missions</td><td class="amount">14,000</td><td class="amount" data-source="budget_data.grant_periods[3].breakdown.stsm" data-format="currency">10,500</td><td>75.0%</td></tr>
+                    <tr><td>Virtual Mobility</td><td class="amount">29,300</td><td class="amount" data-source="budget_data.grant_periods[3].breakdown.virtual_mobility" data-format="currency">22,000</td><td>61.4%</td></tr>
+                    <tr><td>Virtual Networking Support</td><td class="amount" data-source="budget_data.grant_periods[0].budget_planned.training_schools" data-format="currency">0</td><td class="amount" data-source="budget_data.grant_periods[0].breakdown.virtual_networking" data-format="currency">4,000</td><td>-</td></tr>
+                    <tr><td>Dissemination</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.dissemination" data-format="currency">2,500</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.conference_presentations" data-format="currency">2,000</td><td>80.0%</td></tr>
+                    <tr><td>OERSA</td><td class="amount" data-source="budget_data.grant_periods[0].budget_planned.training_schools" data-format="currency">0</td><td class="amount">210</td><td>-</td></tr>
                     <tr><td>FSAC (15%)</td><td class="amount">33,643</td><td class="amount">33,503</td><td>99.6%</td></tr>
                     <tr style="background: rgba(122, 184, 0, 0.1); font-weight: 600;">
                         <td>TOTAL</td><td class="amount">257,926</td><td class="amount">256,854</td><td>99.6%</td>
@@ -833,14 +833,14 @@
                     <tr><th>Grantee</th><th>YRI</th><th>Home</th><th>Host</th><th>Period</th><th>Days</th><th>Amount</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Rezarta Shkurti (Perri)</td><td></td><td>AL <span class="badge badge-itc">ITC</span></td><td>IT</td><td>9-13 Oct 2023</td><td>6</td><td class="amount">1,000</td></tr>
-                    <tr><td>Jurgita Cerneviciene</td><td></td><td>LT <span class="badge badge-itc">ITC</span></td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2-6 Oct 2023</td><td>6</td><td class="amount">1,600</td></tr>
-                    <tr><td>Luciana Dalla Valle</td><td></td><td>GB</td><td>IT</td><td>1-9 Jul 2023</td><td>10</td><td class="amount">2,000</td></tr>
-                    <tr><td>Vassilios Papavassiliou</td><td></td><td>IE</td><td>PT <span class="badge badge-itc">ITC</span></td><td>3-12 Jul 2023</td><td>11</td><td class="amount">2,500</td></tr>
-                    <tr><td>Esra Kabaklarli</td><td></td><td>TR <span class="badge badge-itc">ITC</span></td><td>DE</td><td>27-31 Aug 2023</td><td>6</td><td class="amount">1,500</td></tr>
-                    <tr><td>Stefana Belbe</td><td><span class="badge badge-yri">YRI</span></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>31 Jul - 8 Aug 2023</td><td>10</td><td class="amount">1,900</td></tr>
+                    <tr><td>Rezarta Shkurti (Perri)</td><td></td><td>AL <span class="badge badge-itc">ITC</span></td><td>IT</td><td>9-13 Oct 2023</td><td>6</td><td class="amount" data-source="meetings.meetings[32].cost" data-format="currency">1,000</td></tr>
+                    <tr><td>Jurgita Cerneviciene</td><td></td><td>LT <span class="badge badge-itc">ITC</span></td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2-6 Oct 2023</td><td>6</td><td class="amount" data-source="stsm_detailed.[18].amount" data-format="currency">1,600</td></tr>
+                    <tr><td>Luciana Dalla Valle</td><td></td><td>GB</td><td>IT</td><td>1-9 Jul 2023</td><td>10</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.conference_presentations" data-format="currency">2,000</td></tr>
+                    <tr><td>Vassilios Papavassiliou</td><td></td><td>IE</td><td>PT <span class="badge badge-itc">ITC</span></td><td>3-12 Jul 2023</td><td>11</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.dissemination" data-format="currency">2,500</td></tr>
+                    <tr><td>Esra Kabaklarli</td><td></td><td>TR <span class="badge badge-itc">ITC</span></td><td>DE</td><td>27-31 Aug 2023</td><td>6</td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>Stefana Belbe</td><td><span class="badge badge-yri">YRI</span></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>31 Jul - 8 Aug 2023</td><td>10</td><td class="amount" data-source="stsm_detailed.[12].amount" data-format="currency">1,900</td></tr>
                     <tr style="background: rgba(91, 45, 138, 0.1); font-weight: 600;">
-                        <td colspan="5">TOTAL</td><td>49</td><td class="amount">10,500</td>
+                        <td colspan="5">TOTAL</td><td>49</td><td class="amount" data-source="budget_data.grant_periods[3].breakdown.stsm" data-format="currency">10,500</td>
                     </tr>
                 </tbody>
             </table>
@@ -853,18 +853,18 @@
                     <tr><th>Grantee</th><th>Project Title</th><th>Country</th><th>Amount</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Wolfgang Hardle</td><td>Bibliometrics of COST members</td><td>DE</td><td class="amount">1,500</td></tr>
-                    <tr><td>Albulena Shala</td><td>Fintech: a new way for women's digital financial inclusion</td><td>KV</td><td class="amount">1,500</td></tr>
-                    <tr><td>Galena Pisoni</td><td>Position paper on methodology for testing AI techniques in real-time</td><td>FR</td><td class="amount">1,500</td></tr>
-                    <tr><td>Jorg Osterrieder</td><td>Mitigating Digital Asset Risks</td><td>NL</td><td class="amount">1,500</td></tr>
-                    <tr><td>Jorg Osterrieder</td><td>Methodological discussion paper on stress tests for finAI models</td><td>NL</td><td class="amount">1,500</td></tr>
-                    <tr><td>Branka Hadji Misheva</td><td>Towards good practices for applying XAI for forecasting</td><td>CH</td><td class="amount">1,500</td></tr>
-                    <tr><td>Stanca Liana</td><td>Economic Technology: Approaching AI in the Context of Policies and GDPR</td><td>RO <span class="badge badge-itc">ITC</span></td><td class="amount">1,500</td></tr>
-                    <tr><td>Monica Violeta Achim</td><td>Fintech, regulation, and cyber crime: opportunities arising from new technologies</td><td>RO <span class="badge badge-itc">ITC</span></td><td class="amount">1,500</td></tr>
-                    <tr><td>Piotr Wojcik</td><td>Exploring Research Visibility of COST members: a Bibliometric Analysis</td><td>PL <span class="badge badge-itc">ITC</span></td><td class="amount">1,500</td></tr>
-                    <tr><td>Maria Iannario</td><td>Advanced Analytics for sustainable finance: opportunities, risks, and inequalities</td><td>IT</td><td class="amount">1,500</td></tr>
-                    <tr><td>Branka Hadji Misheva</td><td>A visual analytics tool for implementing AI-based models for finance</td><td>CH</td><td class="amount">1,500</td></tr>
-                    <tr><td>Galena Pisoni</td><td>Business Intelligence Reporting by Linguistic Summaries</td><td>FR</td><td class="amount">1,500</td></tr>
+                    <tr><td>Wolfgang Hardle</td><td>Bibliometrics of COST members</td><td>DE</td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>Albulena Shala</td><td>Fintech: a new way for women's digital financial inclusion</td><td>KV</td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>Galena Pisoni</td><td>Position paper on methodology for testing AI techniques in real-time</td><td>FR</td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>Jorg Osterrieder</td><td>Mitigating Digital Asset Risks</td><td>NL</td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>Jorg Osterrieder</td><td>Methodological discussion paper on stress tests for finAI models</td><td>NL</td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>Branka Hadji Misheva</td><td>Towards good practices for applying XAI for forecasting</td><td>CH</td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>Stanca Liana</td><td>Economic Technology: Approaching AI in the Context of Policies and GDPR</td><td>RO <span class="badge badge-itc">ITC</span></td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>Monica Violeta Achim</td><td>Fintech, regulation, and cyber crime: opportunities arising from new technologies</td><td>RO <span class="badge badge-itc">ITC</span></td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>Piotr Wojcik</td><td>Exploring Research Visibility of COST members: a Bibliometric Analysis</td><td>PL <span class="badge badge-itc">ITC</span></td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>Maria Iannario</td><td>Advanced Analytics for sustainable finance: opportunities, risks, and inequalities</td><td>IT</td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>Branka Hadji Misheva</td><td>A visual analytics tool for implementing AI-based models for finance</td><td>CH</td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>Galena Pisoni</td><td>Business Intelligence Reporting by Linguistic Summaries</td><td>FR</td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
                     <tr style="background: rgba(91, 45, 138, 0.1); font-weight: 600;">
                         <td colspan="3">TOTAL (12 grants)</td><td class="amount">18,000</td>
                     </tr>
@@ -923,8 +923,8 @@
                 </div>
                 <div class="legacy-footer-col">
                     <h4>Network</h4>
-                    <a href="../members.html">426 Members</a>
-                    <a href="../country-contributions.html">48 Countries</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">426 Members</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">48 Countries</a>
                     <a href="../leadership.html">Leadership</a>
                 </div>
                 <div class="legacy-footer-col">
@@ -1018,5 +1018,10 @@
         }
     })();
     </script>
+
+    <!-- verification-overlay -->
+    <link rel="stylesheet" href="../css/verification-overlay.css">
+    <script src="../js/verification-overlay.js"></script>
+    <script src="../js/cost-data.js"></script>
 </body>
 </html>

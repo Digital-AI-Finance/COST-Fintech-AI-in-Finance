@@ -1,0 +1,279 @@
+/**
+ * Verification Overlay Styles
+ * Adds visual indicators for number verification on HTML pages
+ */
+
+/* Toggle Button - Fixed position bottom-right */
+.verify-toggle {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 9999;
+    background: linear-gradient(135deg, #5B2D8A, #2B5F9E);
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    box-shadow: 0 4px 15px rgba(91, 45, 138, 0.3);
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.verify-toggle:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(91, 45, 138, 0.4);
+}
+
+.verify-toggle.active {
+    background: linear-gradient(135deg, #E87722, #5B2D8A);
+}
+
+.verify-toggle .badge {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 2px 8px;
+    border-radius: 12px;
+    font-size: 12px;
+}
+
+/* Number Highlighting */
+.verify-number {
+    position: relative;
+    cursor: pointer;
+    padding: 1px 3px;
+    border-radius: 3px;
+    transition: all 0.2s ease;
+}
+
+.verify-number:hover {
+    transform: scale(1.05);
+}
+
+/* Status Colors */
+.verify-number.verified {
+    background: rgba(122, 184, 0, 0.3);  /* COST Green */
+    border-bottom: 2px solid #7AB800;
+}
+
+.verify-number.unverified {
+    background: rgba(232, 119, 34, 0.3);  /* COST Orange */
+    border-bottom: 2px solid #E87722;
+}
+
+.verify-number.manual-checked {
+    background: rgba(0, 160, 176, 0.3);  /* COST Teal */
+    border-bottom: 2px solid #00A0B0;
+}
+
+/* Tooltip */
+.verify-tooltip {
+    position: fixed;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 12px 16px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    z-index: 10000;
+    min-width: 280px;
+    max-width: 400px;
+    font-size: 13px;
+    display: none;
+}
+
+.verify-tooltip.visible {
+    display: block;
+}
+
+.verify-tooltip-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+}
+
+.verify-tooltip-value {
+    font-size: 18px;
+    font-weight: 700;
+    color: #5B2D8A;
+}
+
+.verify-tooltip-type {
+    font-size: 11px;
+    text-transform: uppercase;
+    background: #f0f0f0;
+    padding: 2px 8px;
+    border-radius: 4px;
+    color: #666;
+}
+
+.verify-tooltip-status {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+}
+
+.verify-tooltip-status.verified {
+    color: #7AB800;
+}
+
+.verify-tooltip-status.unverified {
+    color: #E87722;
+}
+
+.verify-tooltip-status.manual-checked {
+    color: #00A0B0;
+}
+
+.verify-tooltip-source {
+    font-size: 11px;
+    color: #888;
+    background: #f8f8f8;
+    padding: 6px 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    word-break: break-all;
+}
+
+.verify-tooltip-context {
+    font-size: 12px;
+    color: #555;
+    background: #fafafa;
+    padding: 8px 10px;
+    border-radius: 4px;
+    margin-bottom: 12px;
+    max-height: 60px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.verify-tooltip-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 0;
+    border-top: 1px solid #eee;
+}
+
+.verify-tooltip-checkbox input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+    accent-color: #00A0B0;
+}
+
+.verify-tooltip-checkbox label {
+    cursor: pointer;
+    font-weight: 500;
+    color: #333;
+}
+
+.verify-tooltip-close {
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    color: #999;
+    cursor: pointer;
+    padding: 0;
+    line-height: 1;
+}
+
+.verify-tooltip-close:hover {
+    color: #333;
+}
+
+/* Summary Panel */
+.verify-summary {
+    position: fixed;
+    bottom: 70px;
+    right: 20px;
+    z-index: 9998;
+    background: white;
+    border-radius: 10px;
+    padding: 15px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    display: none;
+    min-width: 200px;
+}
+
+.verify-summary.visible {
+    display: block;
+}
+
+.verify-summary h4 {
+    margin: 0 0 10px 0;
+    font-size: 14px;
+    color: #5B2D8A;
+}
+
+.verify-summary-stats {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.verify-summary-stat {
+    display: flex;
+    justify-content: space-between;
+    font-size: 13px;
+}
+
+.verify-summary-stat .label {
+    color: #666;
+}
+
+.verify-summary-stat .value {
+    font-weight: 600;
+}
+
+.verify-summary-stat.verified .value {
+    color: #7AB800;
+}
+
+.verify-summary-stat.unverified .value {
+    color: #E87722;
+}
+
+.verify-summary-stat.manual .value {
+    color: #00A0B0;
+}
+
+/* Hide overlay elements by default */
+.verify-overlay-hidden .verify-number {
+    background: none !important;
+    border: none !important;
+    padding: 0 !important;
+    cursor: default !important;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+    .verify-toggle {
+        bottom: 10px;
+        right: 10px;
+        padding: 10px 16px;
+        font-size: 12px;
+    }
+
+    .verify-tooltip {
+        left: 10px !important;
+        right: 10px !important;
+        width: auto !important;
+        max-width: none;
+    }
+
+    .verify-summary {
+        bottom: 60px;
+        right: 10px;
+        left: 10px;
+    }
+}

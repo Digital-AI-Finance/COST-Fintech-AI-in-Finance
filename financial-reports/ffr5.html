@@ -391,11 +391,11 @@
                 <li>
                     <a href="../network.html" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
-                        <a href="../members.html">All Members (426)</a>
+                        <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                         <a href="../leadership.html">Leadership Team</a>
-                        <a href="../mc-members.html">Management Committee (70)</a>
+                        <a href="../mc-members.html" data-source="summary_statistics.members.mc.total">Management Committee (70)</a>
                         <a href="../wg-members.html">Working Groups</a>
-                        <a href="../country-contributions.html">Countries (48)</a>
+                        <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                         <a href="../author-stats.html">Author Statistics</a>
                     </div>
                 </li>
@@ -480,11 +480,11 @@
             <li>
                 <button>NETWORK <span class="toggle-icon">+</span></button>
                 <div class="mega-mobile-submenu">
-                    <a href="../members.html">All Members (426)</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                     <a href="../leadership.html">Leadership Team</a>
                     <a href="../mc-members.html">Management Committee</a>
                     <a href="../wg-members.html">Working Groups</a>
-                    <a href="../country-contributions.html">Countries (48)</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                     <a href="../author-stats.html">Author Statistics</a>
                 </div>
             </li>
@@ -541,11 +541,11 @@
         <div class="sl-section" data-category="network">
             <div class="sl-section-header"><a href="../network.html" class="sl-section-link">NETWORK</a> <span class="toggle" onclick="slToggleSection(this.parentNode)">&#9660;</span></div>
             <div class="sl-links">
-                <a href="../members.html">All Members (426)</a>
+                <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                 <a href="../leadership.html">Leadership Team</a>
                 <a href="../mc-members.html">Management Committee</a>
                 <a href="../wg-members.html">Working Groups</a>
-                <a href="../country-contributions.html">Countries (48)</a>
+                <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
             </div>
         </div>
         <div class="sl-section" data-category="research">
@@ -599,11 +599,11 @@
                 <li>
                     <a href="#" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
-                        <a href="../members.html">All Members (426)</a>
+                        <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                         <a href="../leadership.html">Leadership Team</a>
-                        <a href="../mc-members.html">Management Committee (70)</a>
+                        <a href="../mc-members.html" data-source="summary_statistics.members.mc.total">Management Committee (70)</a>
                         <a href="../wg-members.html">Working Groups</a>
-                        <a href="../country-contributions.html">Countries (48)</a>
+                        <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                         <a href="../author-stats.html">Author Statistics</a>
                     </div>
                 </li>
@@ -688,11 +688,11 @@
             <li>
                 <button>NETWORK <span class="toggle-icon">+</span></button>
                 <div class="mega-mobile-submenu">
-                    <a href="../members.html">All Members (426)</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                     <a href="../leadership.html">Leadership Team</a>
                     <a href="../mc-members.html">Management Committee</a>
                     <a href="../wg-members.html">Working Groups</a>
-                    <a href="../country-contributions.html">Countries (48)</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                     <a href="../author-stats.html">Author Statistics</a>
                 </div>
             </li>
@@ -750,8 +750,8 @@
         <div class="stats">
             <div class="stat-box"><div class="num">270,315</div><div class="label">Budget EUR</div></div>
             <div class="stat-box"><div class="num">270,315</div><div class="label">Actual EUR</div></div>
-            <div class="stat-box"><div class="num">100%</div><div class="label">Utilization</div></div>
-            <div class="stat-box"><div class="num">3</div><div class="label">Training Schools</div></div>
+            <div class="stat-box"><div class="num" data-source="summary_statistics.by_grant_period.GP5.utilization" data-format="percent">100%</div><div class="label">Utilization</div></div>
+            <div class="stat-box"><div class="num" data-source="meetings.meetings[2].id" data-format="currency">3</div><div class="label">Training Schools</div></div>
         </div>
 
         <div class="card">
@@ -771,11 +771,11 @@
                 <tbody>
                     <tr><td>Meetings</td><td class="amount">121,000</td><td class="amount">148,195</td><td>99.8%</td></tr>
                     <tr><td>Training Schools</td><td class="amount">59,500</td><td class="amount">59,415</td><td>99.9%</td></tr>
-                    <tr><td>Virtual Mobility</td><td class="amount">42,500</td><td class="amount">25,000</td><td>100.0%</td></tr>
-                    <tr><td>STSMs</td><td class="amount">5,000</td><td class="amount">4,642</td><td>92.8%</td></tr>
-                    <tr><td>ITC Conference Grants</td><td class="amount">3,500</td><td class="amount">3,500</td><td>100.0%</td></tr>
-                    <tr><td>Dissemination</td><td class="amount">4,250</td><td class="amount">2,000</td><td>100.0%</td></tr>
-                    <tr><td>OERSA</td><td class="amount">500</td><td class="amount">0</td><td>100.0%</td></tr>
+                    <tr><td>Virtual Mobility</td><td class="amount">42,500</td><td class="amount" data-source="budget_data.grant_periods[4].breakdown.virtual_mobility" data-format="currency">25,000</td><td>100.0%</td></tr>
+                    <tr><td>STSMs</td><td class="amount" data-source="budget_data.grant_periods[4].budget_planned.dissemination" data-format="currency">5,000</td><td class="amount" data-source="budget_data.grant_periods[4].breakdown.stsm" data-format="currency">4,642</td><td>92.8%</td></tr>
+                    <tr><td>ITC Conference Grants</td><td class="amount" data-source="stsm_detailed.[1].amount" data-format="currency">3,500</td><td class="amount" data-source="stsm_detailed.[1].amount" data-format="currency">3,500</td><td>100.0%</td></tr>
+                    <tr><td>Dissemination</td><td class="amount">4,250</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.conference_presentations" data-format="currency">2,000</td><td>100.0%</td></tr>
+                    <tr><td>OERSA</td><td class="amount" data-source="budget_data.grant_periods[4].budget_planned.oersa" data-format="currency">500</td><td class="amount" data-source="budget_data.grant_periods[0].budget_planned.training_schools" data-format="currency">0</td><td>100.0%</td></tr>
                     <tr><td>FSAC</td><td class="amount">34,065</td><td class="amount">35,259</td><td>101.8%</td></tr>
                     <tr style="background: rgba(232, 119, 34, 0.1); font-weight: 600;">
                         <td>TOTAL</td><td class="amount">270,315</td><td class="amount">270,315</td><td>100.0%</td>
@@ -814,10 +814,10 @@
                     <tr><th>Grantee</th><th>YRI</th><th>Home</th><th>Host</th><th>Start</th><th>End</th><th>Days</th><th>Amount</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Ioana Coita</td><td></td><td>RO <span class="badge badge-itc">ITC</span></td><td>SK <span class="badge badge-itc">ITC</span></td><td>2024-04-06</td><td>2024-04-14</td><td>10</td><td class="amount">1,997</td></tr>
-                    <tr><td>Bekir Cetintav</td><td><span class="badge badge-yri">YRI</span></td><td>TR <span class="badge badge-itc">ITC</span></td><td>PT <span class="badge badge-itc">ITC</span></td><td>2024-07-18</td><td>2024-07-28</td><td>12</td><td class="amount">2,645</td></tr>
+                    <tr><td>Ioana Coita</td><td></td><td>RO <span class="badge badge-itc">ITC</span></td><td>SK <span class="badge badge-itc">ITC</span></td><td>2024-04-06</td><td>2024-04-14</td><td>10</td><td class="amount" data-source="stsm_detailed.[25].amount" data-format="currency">1,997</td></tr>
+                    <tr><td>Bekir Cetintav</td><td><span class="badge badge-yri">YRI</span></td><td>TR <span class="badge badge-itc">ITC</span></td><td>PT <span class="badge badge-itc">ITC</span></td><td>2024-07-18</td><td>2024-07-28</td><td>12</td><td class="amount" data-source="stsm_detailed.[26].amount" data-format="currency">2,645</td></tr>
                     <tr style="background: rgba(232, 119, 34, 0.1); font-weight: 600;">
-                        <td colspan="6">TOTAL</td><td>22</td><td class="amount">4,642</td>
+                        <td colspan="6">TOTAL</td><td>22</td><td class="amount" data-source="budget_data.grant_periods[4].breakdown.stsm" data-format="currency">4,642</td>
                     </tr>
                 </tbody>
             </table>
@@ -893,8 +893,8 @@
                 </div>
                 <div class="legacy-footer-col">
                     <h4>Network</h4>
-                    <a href="../members.html">426 Members</a>
-                    <a href="../country-contributions.html">48 Countries</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">426 Members</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">48 Countries</a>
                     <a href="../leadership.html">Leadership</a>
                 </div>
                 <div class="legacy-footer-col">
@@ -988,5 +988,10 @@
         }
     })();
     </script>
+
+    <!-- verification-overlay -->
+    <link rel="stylesheet" href="../css/verification-overlay.css">
+    <script src="../js/verification-overlay.js"></script>
+    <script src="../js/cost-data.js"></script>
 </body>
 </html>

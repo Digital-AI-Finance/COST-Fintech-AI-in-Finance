@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-01-02T22:45:14.994070",
+  "timestamp": "2026-01-09T23:31:50.527366",
   "ffr_data": {
     "GP1": {
       "grant_period": 1,
@@ -211,6 +211,6 @@
     "total_checks": 4,
     "passed": 2,
     "failed": 2,
-    "warnings": 0
+    "warnings": 4
   }
 }

@@ -7,15 +7,15 @@
   "by_category": {
     "meetings": {
       "total": 423694.69,
-      "count": 51
+      "count": 52
     },
     "stsm": {
       "total": 60082.0,
       "count": 27
     },
     "virtual_mobility": {
-      "total": 72500.0,
-      "count": 0
+      "total": 56500.0,
+      "count": 39
     },
     "training_schools": {
       "total": 108816.05,
@@ -23,6 +23,21 @@
     },
     "fsac": {
       "total": 101042.91
+    },
+    "virtual_networking_support": {
+      "total": 16000.0
+    },
+    "oersa": {
+      "total": 5709.75
+    },
+    "dissemination_products": {
+      "total": 4294.12
+    },
+    "dissemination_conference": {
+      "total": 2343.0
+    },
+    "itc_conference": {
+      "total": 375.0
     }
   },
   "by_grant_period": {
@@ -50,6 +65,21 @@
       "budget": 270315.26,
       "actual": 270315.26,
       "utilization": 100.0
+    }
+  },
+  "members": {
+    "total": 426,
+    "countries": 48,
+    "itc": 222,
+    "young_researchers": 152,
+    "by_working_group": {
+      "WG1": 280,
+      "WG2": 253,
+      "WG3": 223
+    },
+    "mc": {
+      "total": 70,
+      "countries": 39
     }
   }
 }

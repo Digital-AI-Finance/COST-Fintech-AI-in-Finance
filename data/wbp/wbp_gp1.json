@@ -1,0 +1,65 @@
+{
+  "grant_period": 1,
+  "action_profile": {
+    "action_code": "CA19130",
+    "action_title": "Fintech and Artificial Intelligence in Finance",
+    "chair_name": "Joerg Osterrieder",
+    "chair_institution": "ZHAW",
+    "chair_country": "Switzerland",
+    "grant_period": 1,
+    "start_date": "2020-11-01",
+    "end_date": "2021-10-31",
+    "total_grant": 62985.5,
+    "participating_cost_countries": 0,
+    "participating_near_neighbour_countries": 0,
+    "participating_international_partner_countries": 0
+  },
+  "working_groups": [],
+  "mou_objectives": [],
+  "deliverables": [],
+  "gapgs": [],
+  "budget_summary": {
+    "grant_period": 1,
+    "total_grant": 62985.5,
+    "meetings": 37200.0,
+    "training_schools": 0.0,
+    "mobility": 10730.0,
+    "conference_presentations": 3000.0,
+    "dissemination": 0.0,
+    "oersa": 0.0,
+    "total_science": 0.0,
+    "fsac": 8215.5,
+    "stsm": 10730.0,
+    "itc_grants": 3000.0
+  },
+  "meetings": [
+    {
+      "meeting_number": 1,
+      "title": "The darkness of Finance - making it transparent",
+      "meeting_type": "Unknown",
+      "start_date": "2021-03-18",
+      "end_date": "2021-03-19",
+      "location": "Bukarest",
+      "country": "Romania",
+      "itc_country": true,
+      "planned_cost": 0.0,
+      "expected_participants": 0,
+      "expected_reimbursed": 0,
+      "grant_period": 1,
+      "description": "Annual Management committee meeting joint with working group and core\ngroup meetings.",
+      "expected_outputs": "Status report on the progress of the Action (diversity, deliverables, goals,\nachievements); Strategic plan for the next grant period; Working group status,\nprogress and outlook; Core group status, progress and outlook; Planning of\nnext work and budget plan; Country and leadership updates; Foundation for\nfurther joint research and joint research applications"
+    }
+  ],
+  "training_schools": [],
+  "stsm_plan": null,
+  "vm_plan": null,
+  "conference_presentations": null,
+  "dissemination_products": [],
+  "oersa_items": [],
+  "source_file": "WBP-AGA-CA19130-1_13682.txt",
+  "_metadata": {
+    "source_file": "WBP-AGA-CA19130-1_13682.txt",
+    "extraction_date": "2026-01-06",
+    "parser_version": "1.0.0"
+  }
+}

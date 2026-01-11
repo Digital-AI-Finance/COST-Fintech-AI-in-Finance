@@ -382,11 +382,11 @@
                 <li>
                     <a href="../network.html" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
-                        <a href="../members.html">All Members (426)</a>
+                        <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                         <a href="../leadership.html">Leadership Team</a>
-                        <a href="../mc-members.html">Management Committee (70)</a>
+                        <a href="../mc-members.html" data-source="summary_statistics.members.mc.total">Management Committee (70)</a>
                         <a href="../wg-members.html">Working Groups</a>
-                        <a href="../country-contributions.html">Countries (48)</a>
+                        <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                         <a href="../author-stats.html">Author Statistics</a>
                     </div>
                 </li>
@@ -471,11 +471,11 @@
             <li>
                 <button>NETWORK <span class="toggle-icon">+</span></button>
                 <div class="mega-mobile-submenu">
-                    <a href="../members.html">All Members (426)</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                     <a href="../leadership.html">Leadership Team</a>
                     <a href="../mc-members.html">Management Committee</a>
                     <a href="../wg-members.html">Working Groups</a>
-                    <a href="../country-contributions.html">Countries (48)</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                     <a href="../author-stats.html">Author Statistics</a>
                 </div>
             </li>
@@ -532,11 +532,11 @@
         <div class="sl-section" data-category="network">
             <div class="sl-section-header"><a href="../network.html" class="sl-section-link">NETWORK</a> <span class="toggle" onclick="slToggleSection(this.parentNode)">&#9660;</span></div>
             <div class="sl-links">
-                <a href="../members.html">All Members (426)</a>
+                <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                 <a href="../leadership.html">Leadership Team</a>
                 <a href="../mc-members.html">Management Committee</a>
                 <a href="../wg-members.html">Working Groups</a>
-                <a href="../country-contributions.html">Countries (48)</a>
+                <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
             </div>
         </div>
         <div class="sl-section" data-category="research">
@@ -590,11 +590,11 @@
                 <li>
                     <a href="#" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
-                        <a href="../members.html">All Members (426)</a>
+                        <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                         <a href="../leadership.html">Leadership Team</a>
-                        <a href="../mc-members.html">Management Committee (70)</a>
+                        <a href="../mc-members.html" data-source="summary_statistics.members.mc.total">Management Committee (70)</a>
                         <a href="../wg-members.html">Working Groups</a>
-                        <a href="../country-contributions.html">Countries (48)</a>
+                        <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                         <a href="../author-stats.html">Author Statistics</a>
                     </div>
                 </li>
@@ -679,11 +679,11 @@
             <li>
                 <button>NETWORK <span class="toggle-icon">+</span></button>
                 <div class="mega-mobile-submenu">
-                    <a href="../members.html">All Members (426)</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                     <a href="../leadership.html">Leadership Team</a>
                     <a href="../mc-members.html">Management Committee</a>
                     <a href="../wg-members.html">Working Groups</a>
-                    <a href="../country-contributions.html">Countries (48)</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                     <a href="../author-stats.html">Author Statistics</a>
                 </div>
             </li>
@@ -728,10 +728,10 @@
         <p>All 27 STSMs funded during COST Action CA19130, enabling researchers to visit institutions across Europe for collaborative research.</p>
 
         <div class="stats">
-            <div class="stat-box"><div class="num">27</div><div class="label">Total STSMs</div></div>
-            <div class="stat-box"><div class="num">60,082</div><div class="label">Total EUR Funded</div></div>
-            <div class="stat-box"><div class="num">12</div><div class="label">Young Researchers</div></div>
-            <div class="stat-box"><div class="num">15</div><div class="label">Countries Involved</div></div>
+            <div class="stat-box"><div class="num" data-source="summary_statistics.by_category.stsm.count" data-format="currency">27</div><div class="label">Total STSMs</div></div>
+            <div class="stat-box"><div class="num" data-source="budget_data.totals.by_category_actual.stsm" data-format="currency">60,082</div><div class="label">Total EUR Funded</div></div>
+            <div class="stat-box"><div class="num" data-source="meetings.meetings[11].id" data-format="currency">12</div><div class="label">Young Researchers</div></div>
+            <div class="stat-box"><div class="num" data-source="meetings.meetings[14].id" data-format="currency">15</div><div class="label">Countries Involved</div></div>
             <div class="stat-box"><div class="num">2,225</div><div class="label">Average EUR/STSM</div></div>
         </div>
 
@@ -756,33 +756,33 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr><td>GP1</td><td>Stjepan Picek</td><td><span class="badge badge-yri">YRI</span></td><td>HR <span class="badge badge-itc">ITC</span></td><td>NL</td><td>2021-01-11</td><td>2021-01-26</td><td>16</td><td class="amount">1,520</td></tr>
-                    <tr><td>GP1</td><td>Wei Li</td><td></td><td>NO</td><td>DE</td><td>2021-02-01</td><td>2021-05-31</td><td>120</td><td class="amount">3,500</td></tr>
-                    <tr><td>GP1</td><td>Luciana Dalla Valle</td><td></td><td>IT</td><td>UK</td><td>2021-06-14</td><td>2021-06-19</td><td>6</td><td class="amount">1,260</td></tr>
-                    <tr><td>GP1</td><td>Danial Saef</td><td></td><td>UK</td><td>DE</td><td>2021-09-24</td><td>2021-10-23</td><td>30</td><td class="amount">3,500</td></tr>
-                    <tr><td>GP1</td><td>Apostolos Chalkis</td><td></td><td>FR</td><td>EL <span class="badge badge-itc">ITC</span></td><td>2021-10-10</td><td>2021-10-23</td><td>14</td><td class="amount">2,450</td></tr>
-                    <tr><td>GP1</td><td>Jasone Ramirez-Ayerbe</td><td></td><td>DK</td><td>ES</td><td>2021-10-13</td><td>2021-10-26</td><td>14</td><td class="amount">2,540</td></tr>
-                    <tr><td>GP1</td><td>Alla Petukhina</td><td><span class="badge badge-yri">YRI</span></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2021-10-20</td><td>2021-10-31</td><td>12</td><td class="amount">1,500</td></tr>
-                    <tr><td>GP1</td><td>Ioana Coita</td><td><span class="badge badge-yri">YRI</span></td><td>DE</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2021-10-22</td><td>2021-10-31</td><td>10</td><td class="amount">2,500</td></tr>
-                    <tr><td>GP1</td><td>Galena Pisoni</td><td></td><td>NO</td><td>FR</td><td>2021-10-24</td><td>2021-10-31</td><td>8</td><td class="amount">2,030</td></tr>
-                    <tr><td>GP3</td><td>Daniel Traian Pele</td><td></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2022-09-26</td><td>2022-10-04</td><td>10</td><td class="amount">1,800</td></tr>
-                    <tr><td>GP3</td><td>Cathy Yi-Hsuan Chen</td><td></td><td>GB</td><td>HR <span class="badge badge-itc">ITC</span></td><td>2022-10-01</td><td>2022-10-31</td><td>32</td><td class="amount">3,200</td></tr>
-                    <tr><td>GP3</td><td>Luciana Dalla Valle</td><td></td><td>GB</td><td>IT</td><td>2022-07-11</td><td>2022-07-18</td><td>9</td><td class="amount">1,440</td></tr>
-                    <tr><td>GP3</td><td>Jose Muniz Martinez</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>GB</td><td>2022-09-27</td><td>2022-10-06</td><td>11</td><td class="amount">1,900</td></tr>
-                    <tr><td>GP3</td><td>Alla Petukhina</td><td><span class="badge badge-yri">YRI</span></td><td>IT</td><td>DE</td><td>2022-09-18</td><td>2022-09-26</td><td>10</td><td class="amount">2,000</td></tr>
-                    <tr><td>GP3</td><td>Ioana Coita</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2022-10-14</td><td>2022-10-23</td><td>11</td><td class="amount">2,500</td></tr>
-                    <tr><td>GP3</td><td>Stefana Belbe</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2022-10-21</td><td>2022-10-31</td><td>12</td><td class="amount">2,700</td></tr>
-                    <tr><td>GP3</td><td>Tomas Plihal</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2022-09-21</td><td>2022-10-02</td><td>13</td><td class="amount">4,000</td></tr>
-                    <tr><td>GP3</td><td>Karel Kozmik</td><td><span class="badge badge-yri">YRI</span></td><td>DE</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2022-10-10</td><td>2022-10-31</td><td>23</td><td class="amount">3,000</td></tr>
-                    <tr><td>GP3</td><td>Xinwen Ni</td><td><span class="badge badge-yri">YRI</span></td><td>GB</td><td>DE</td><td>2022-10-24</td><td>2022-10-31</td><td>9</td><td class="amount">1,600</td></tr>
-                    <tr><td>GP4</td><td>Rezarta Shkurti Perri</td><td></td><td>AL <span class="badge badge-itc">ITC</span></td><td>IT</td><td>2023-10-09</td><td>2023-10-13</td><td>6</td><td class="amount">1,000</td></tr>
-                    <tr><td>GP4</td><td>Jurgita Cerneviciene</td><td></td><td>LT <span class="badge badge-itc">ITC</span></td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2023-10-02</td><td>2023-10-06</td><td>6</td><td class="amount">1,600</td></tr>
-                    <tr><td>GP4</td><td>Luciana Dalla Valle</td><td></td><td>GB</td><td>IT</td><td>2023-07-01</td><td>2023-07-09</td><td>10</td><td class="amount">2,000</td></tr>
-                    <tr><td>GP4</td><td>Vassilios Papavassiliou</td><td></td><td>IE</td><td>PT <span class="badge badge-itc">ITC</span></td><td>2023-07-03</td><td>2023-07-12</td><td>11</td><td class="amount">2,500</td></tr>
-                    <tr><td>GP4</td><td>Esra Kabaklarli</td><td></td><td>TR <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2023-08-27</td><td>2023-08-31</td><td>6</td><td class="amount">1,500</td></tr>
-                    <tr><td>GP4</td><td>Stefana Belbe</td><td><span class="badge badge-yri">YRI</span></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2023-07-31</td><td>2023-08-08</td><td>10</td><td class="amount">1,900</td></tr>
-                    <tr><td>GP5</td><td>Ioana Coita</td><td></td><td>RO <span class="badge badge-itc">ITC</span></td><td>SK <span class="badge badge-itc">ITC</span></td><td>2024-04-06</td><td>2024-04-14</td><td>10</td><td class="amount">1,997</td></tr>
-                    <tr><td>GP5</td><td>Bekir Cetintav</td><td><span class="badge badge-yri">YRI</span></td><td>TR <span class="badge badge-itc">ITC</span></td><td>PT <span class="badge badge-itc">ITC</span></td><td>2024-07-18</td><td>2024-07-28</td><td>12</td><td class="amount">2,645</td></tr>
+                    <tr><td>GP1</td><td>Stjepan Picek</td><td><span class="badge badge-yri">YRI</span></td><td>HR <span class="badge badge-itc">ITC</span></td><td>NL</td><td>2021-01-11</td><td>2021-01-26</td><td>16</td><td class="amount" data-source="stsm_detailed.[0].amount" data-format="currency">1,520</td></tr>
+                    <tr><td>GP1</td><td>Wei Li</td><td></td><td>NO</td><td>DE</td><td>2021-02-01</td><td>2021-05-31</td><td>120</td><td class="amount" data-source="stsm_detailed.[1].amount" data-format="currency">3,500</td></tr>
+                    <tr><td>GP1</td><td>Luciana Dalla Valle</td><td></td><td>IT</td><td>UK</td><td>2021-06-14</td><td>2021-06-19</td><td>6</td><td class="amount" data-source="stsm_detailed.[2].amount" data-format="currency">1,260</td></tr>
+                    <tr><td>GP1</td><td>Danial Saef</td><td></td><td>UK</td><td>DE</td><td>2021-09-24</td><td>2021-10-23</td><td>30</td><td class="amount" data-source="stsm_detailed.[1].amount" data-format="currency">3,500</td></tr>
+                    <tr><td>GP1</td><td>Apostolos Chalkis</td><td></td><td>FR</td><td>EL <span class="badge badge-itc">ITC</span></td><td>2021-10-10</td><td>2021-10-23</td><td>14</td><td class="amount" data-source="stsm_detailed.[4].amount" data-format="currency">2,450</td></tr>
+                    <tr><td>GP1</td><td>Jasone Ramirez-Ayerbe</td><td></td><td>DK</td><td>ES</td><td>2021-10-13</td><td>2021-10-26</td><td>14</td><td class="amount" data-source="stsm_detailed.[5].amount" data-format="currency">2,540</td></tr>
+                    <tr><td>GP1</td><td>Alla Petukhina</td><td><span class="badge badge-yri">YRI</span></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2021-10-20</td><td>2021-10-31</td><td>12</td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>GP1</td><td>Ioana Coita</td><td><span class="badge badge-yri">YRI</span></td><td>DE</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2021-10-22</td><td>2021-10-31</td><td>10</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.dissemination" data-format="currency">2,500</td></tr>
+                    <tr><td>GP1</td><td>Galena Pisoni</td><td></td><td>NO</td><td>FR</td><td>2021-10-24</td><td>2021-10-31</td><td>8</td><td class="amount" data-source="stsm_detailed.[8].amount" data-format="currency">2,030</td></tr>
+                    <tr><td>GP3</td><td>Daniel Traian Pele</td><td></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2022-09-26</td><td>2022-10-04</td><td>10</td><td class="amount" data-source="stsm_detailed.[9].amount" data-format="currency">1,800</td></tr>
+                    <tr><td>GP3</td><td>Cathy Yi-Hsuan Chen</td><td></td><td>GB</td><td>HR <span class="badge badge-itc">ITC</span></td><td>2022-10-01</td><td>2022-10-31</td><td>32</td><td class="amount" data-source="stsm_detailed.[10].amount" data-format="currency">3,200</td></tr>
+                    <tr><td>GP3</td><td>Luciana Dalla Valle</td><td></td><td>GB</td><td>IT</td><td>2022-07-11</td><td>2022-07-18</td><td>9</td><td class="amount" data-source="stsm_detailed.[11].amount" data-format="currency">1,440</td></tr>
+                    <tr><td>GP3</td><td>Jose Muniz Martinez</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>GB</td><td>2022-09-27</td><td>2022-10-06</td><td>11</td><td class="amount" data-source="stsm_detailed.[12].amount" data-format="currency">1,900</td></tr>
+                    <tr><td>GP3</td><td>Alla Petukhina</td><td><span class="badge badge-yri">YRI</span></td><td>IT</td><td>DE</td><td>2022-09-18</td><td>2022-09-26</td><td>10</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.conference_presentations" data-format="currency">2,000</td></tr>
+                    <tr><td>GP3</td><td>Ioana Coita</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2022-10-14</td><td>2022-10-23</td><td>11</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.dissemination" data-format="currency">2,500</td></tr>
+                    <tr><td>GP3</td><td>Stefana Belbe</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2022-10-21</td><td>2022-10-31</td><td>12</td><td class="amount" data-source="stsm_detailed.[15].amount" data-format="currency">2,700</td></tr>
+                    <tr><td>GP3</td><td>Tomas Plihal</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2022-09-21</td><td>2022-10-02</td><td>13</td><td class="amount" data-source="budget_data.grant_periods[0].breakdown.virtual_networking" data-format="currency">4,000</td></tr>
+                    <tr><td>GP3</td><td>Karel Kozmik</td><td><span class="badge badge-yri">YRI</span></td><td>DE</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2022-10-10</td><td>2022-10-31</td><td>23</td><td class="amount" data-source="budget_data.grant_periods[0].budget_planned.itc_grants" data-format="currency">3,000</td></tr>
+                    <tr><td>GP3</td><td>Xinwen Ni</td><td><span class="badge badge-yri">YRI</span></td><td>GB</td><td>DE</td><td>2022-10-24</td><td>2022-10-31</td><td>9</td><td class="amount" data-source="stsm_detailed.[18].amount" data-format="currency">1,600</td></tr>
+                    <tr><td>GP4</td><td>Rezarta Shkurti Perri</td><td></td><td>AL <span class="badge badge-itc">ITC</span></td><td>IT</td><td>2023-10-09</td><td>2023-10-13</td><td>6</td><td class="amount" data-source="meetings.meetings[32].cost" data-format="currency">1,000</td></tr>
+                    <tr><td>GP4</td><td>Jurgita Cerneviciene</td><td></td><td>LT <span class="badge badge-itc">ITC</span></td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2023-10-02</td><td>2023-10-06</td><td>6</td><td class="amount" data-source="stsm_detailed.[18].amount" data-format="currency">1,600</td></tr>
+                    <tr><td>GP4</td><td>Luciana Dalla Valle</td><td></td><td>GB</td><td>IT</td><td>2023-07-01</td><td>2023-07-09</td><td>10</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.conference_presentations" data-format="currency">2,000</td></tr>
+                    <tr><td>GP4</td><td>Vassilios Papavassiliou</td><td></td><td>IE</td><td>PT <span class="badge badge-itc">ITC</span></td><td>2023-07-03</td><td>2023-07-12</td><td>11</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.dissemination" data-format="currency">2,500</td></tr>
+                    <tr><td>GP4</td><td>Esra Kabaklarli</td><td></td><td>TR <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2023-08-27</td><td>2023-08-31</td><td>6</td><td class="amount" data-source="stsm_detailed.[6].amount" data-format="currency">1,500</td></tr>
+                    <tr><td>GP4</td><td>Stefana Belbe</td><td><span class="badge badge-yri">YRI</span></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2023-07-31</td><td>2023-08-08</td><td>10</td><td class="amount" data-source="stsm_detailed.[12].amount" data-format="currency">1,900</td></tr>
+                    <tr><td>GP5</td><td>Ioana Coita</td><td></td><td>RO <span class="badge badge-itc">ITC</span></td><td>SK <span class="badge badge-itc">ITC</span></td><td>2024-04-06</td><td>2024-04-14</td><td>10</td><td class="amount" data-source="stsm_detailed.[25].amount" data-format="currency">1,997</td></tr>
+                    <tr><td>GP5</td><td>Bekir Cetintav</td><td><span class="badge badge-yri">YRI</span></td><td>TR <span class="badge badge-itc">ITC</span></td><td>PT <span class="badge badge-itc">ITC</span></td><td>2024-07-18</td><td>2024-07-28</td><td>12</td><td class="amount" data-source="stsm_detailed.[26].amount" data-format="currency">2,645</td></tr>
                 </tbody>
             </table>
         </div>
@@ -817,8 +817,8 @@
                 </div>
                 <div class="legacy-footer-col">
                     <h4>Network</h4>
-                    <a href="../members.html">426 Members</a>
-                    <a href="../country-contributions.html">48 Countries</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">426 Members</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">48 Countries</a>
                     <a href="../leadership.html">Leadership</a>
                 </div>
                 <div class="legacy-footer-col">
@@ -912,5 +912,10 @@
         }
     })();
     </script>
+
+    <!-- verification-overlay -->
+    <link rel="stylesheet" href="../css/verification-overlay.css">
+    <script src="../js/verification-overlay.js"></script>
+    <script src="../js/cost-data.js"></script>
 </body>
 </html>

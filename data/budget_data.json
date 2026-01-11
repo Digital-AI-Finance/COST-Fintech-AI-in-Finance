@@ -7,6 +7,17 @@
       "end": "2021-10-31",
       "budget": 62985.5,
       "actual": 47459.83,
+      "budget_planned": {
+        "meetings": 37200.00,
+        "training_schools": 0.00,
+        "stsm": 10730.00,
+        "itc_grants": 3000.00,
+        "dissemination": 3840.00,
+        "oersa": 0.00,
+        "total_science": 54770.00,
+        "fsac": 8215.50,
+        "source": "WBP-AGA-CA19130-1_13682.pdf"
+      },
       "breakdown": {
         "meetings": 10300.3,
         "training_schools": 0.0,
@@ -25,6 +36,17 @@
       "end": "2022-05-31",
       "budget": 202607.0,
       "actual": 33770.46,
+      "budget_planned": {
+        "meetings": 123906.66,
+        "training_schools": 0.00,
+        "stsm": 39680.00,
+        "itc_grants": 7500.00,
+        "dissemination": 5093.34,
+        "oersa": 0.00,
+        "total_science": 176180.00,
+        "fsac": 26427.00,
+        "source": "WBP-AGA-CA19130-2_14713.pdf"
+      },
       "breakdown": {
         "meetings": 29175.62,
         "training_schools": 0.0,
@@ -42,6 +64,17 @@
       "end": "2022-10-31",
       "budget": 169820.5,
       "actual": 166262.38,
+      "budget_planned": {
+        "meetings": 97170.00,
+        "training_schools": 0.00,
+        "stsm": 40000.00,
+        "itc_grants": 7500.00,
+        "dissemination": 3000.00,
+        "oersa": 0.00,
+        "total_science": 147670.00,
+        "fsac": 22150.50,
+        "source": "WBP-AGA-CA19130-3_14714.pdf"
+      },
       "breakdown": {
         "meetings": 96782.98,
         "training_schools": 0.0,
@@ -60,6 +93,18 @@
       "end": "2023-10-31",
       "budget": 257925.91,
       "actual": 256854.39,
+      "budget_planned": {
+        "meetings": 117889.40,
+        "training_schools": 58594.00,
+        "mobility": 43300.00,
+        "conference_presentations": 2000.00,
+        "dissemination": 2500.00,
+        "oersa": 0.00,
+        "total_science": 224283.40,
+        "fsac": 33642.51,
+        "source": "WBP-AGA-CA19130-4_15816.pdf",
+        "note": "GP4+ uses 'Mobility' combining STSM+VM, 'Conference Presentations' replaces 'ITC Conference'"
+      },
       "breakdown": {
         "meetings": 139240.8,
         "training_schools": 49401.09,
@@ -78,6 +123,18 @@
       "end": "2024-09-13",
       "budget": 270315.26,
       "actual": 270315.26,
+      "budget_planned": {
+        "meetings": 151674.75,
+        "training_schools": 40782.00,
+        "mobility": 31100.00,
+        "conference_presentations": 6000.00,
+        "dissemination": 5000.00,
+        "oersa": 500.00,
+        "total_science": 235056.75,
+        "fsac": 35258.51,
+        "source": "WBP-AGA-CA19130-5_16959.pdf",
+        "note": "GP5 uses 'Mobility' combining STSM+VM, 'Conference Presentations' replaces 'ITC Conference'"
+      },
       "breakdown": {
         "meetings": 148194.99,
         "training_schools": 59414.96,
@@ -93,7 +150,7 @@
   "totals": {
     "total_budget": 963654.17,
     "total_actual": 774662.32,
-    "by_category": {
+    "by_category_actual": {
       "meetings": 423694.69,
       "training_schools": 108816.05,
       "stsm": 60082.0,
@@ -102,6 +159,17 @@
       "dissemination": 6637.12,
       "oersa": 5709.75,
       "fsac": 101042.91
+    },
+    "by_category_planned": {
+      "meetings": 527840.81,
+      "training_schools": 99376.00,
+      "mobility_stsm": 164810.00,
+      "itc_conference_presentations": 26000.00,
+      "dissemination": 19433.34,
+      "oersa": 500.00,
+      "total_science": 837960.15,
+      "fsac": 125694.02,
+      "note": "Planned values from WBP1-WBP5. GP1-3 had separate STSM, GP4-5 combined into Mobility."
     }
   }
 }

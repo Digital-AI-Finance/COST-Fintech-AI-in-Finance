@@ -1,0 +1,643 @@
+{
+  "action_code": "CA19130",
+  "grant_periods": {
+    "GP1": {
+      "gapg_count": 12,
+      "gapgs": [
+        {
+          "gapg_number": 1,
+          "grant_period": 1,
+          "title": "Acquiring an overview of methodologies, knowledge and approaches to blockchain, ICOs and P2P lending...",
+          "description": "Acquiring an overview of methodologies, knowledge and approaches to blockchain, ICOs and P2P lending in Finance",
+          "mou_objectives": [
+            3
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 2,
+          "grant_period": 1,
+          "title": "Set up a plan for dissemination of the results",
+          "description": "Set up a plan for dissemination of the results",
+          "mou_objectives": [
+            16
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 3,
+          "grant_period": 1,
+          "title": "Comparing the efficiency of different methodological approaches in measuring transparency in Finance",
+          "description": "Comparing the efficiency of different methodological approaches in measuring transparency in Finance",
+          "mou_objectives": [
+            4
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 4,
+          "grant_period": 1,
+          "title": "Regional market studies regarding investment product vendors, product range, regulation and marketin...",
+          "description": "Regional market studies regarding investment product vendors, product range, regulation and marketing have been performed",
+          "mou_objectives": [
+            5
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 5,
+          "grant_period": 1,
+          "title": "Strategy to engage stakeholders in the Action",
+          "description": "Strategy to engage stakeholders in the Action",
+          "mou_objectives": [
+            8,
+            9
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 6,
+          "grant_period": 1,
+          "title": "Specification document for the knowledge exchange platform",
+          "description": "Specification document for the knowledge exchange platform",
+          "mou_objectives": [
+            10,
+            11
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 7,
+          "grant_period": 1,
+          "title": "Strategy to ensure and improve COST diversity (gender balance, ECI participation, ITC involvement)",
+          "description": "Strategy to ensure and improve COST diversity (gender balance, ECI participation, ITC involvement)",
+          "mou_objectives": [
+            12,
+            13,
+            14,
+            15,
+            16
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 8,
+          "grant_period": 1,
+          "title": "At least 50% of STSMs have been hosted/ orginated in ITC",
+          "description": "At least 50% of STSMs have been hosted/ orginated in ITC",
+          "mou_objectives": [
+            13
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 9,
+          "grant_period": 1,
+          "title": "Set up process for deciding on how to award STMS applications, conference support, other financial s...",
+          "description": "Set up process for deciding on how to award STMS applications, conference support, other financial support",
+          "mou_objectives": [
+            1
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 10,
+          "grant_period": 1,
+          "title": "Co-coordination of PhD programmes",
+          "description": "Co-coordination of PhD programmes",
+          "mou_objectives": [
+            12,
+            15
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 11,
+          "grant_period": 1,
+          "title": "Encouraging partnerships with private entities",
+          "description": "Encouraging partnerships with private entities",
+          "mou_objectives": [
+            10,
+            11,
+            14
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 12,
+          "grant_period": 1,
+          "title": "Strategy paper on how to obtain additional funding",
+          "description": "Strategy paper on how to obtain additional funding",
+          "mou_objectives": [
+            3,
+            4,
+            5
+          ],
+          "relates_to_primary_objective": false
+        }
+      ]
+    },
+    "GP2": {
+      "gapg_count": 8,
+      "gapgs": [
+        {
+          "gapg_number": 1,
+          "grant_period": 2,
+          "title": "Collection of software pieces into a P2P knowledge platform like quantinar.com",
+          "description": "Collection of software pieces into a P2P knowledge platform like quantinar.com",
+          "mou_objectives": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            15
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 2,
+          "grant_period": 2,
+          "title": "Design and management of an interactive exchange system for Videos, slides, quantlets",
+          "description": "Design and management of an interactive exchange system for Videos, slides, quantlets",
+          "mou_objectives": [
+            5,
+            10,
+            15
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 3,
+          "grant_period": 2,
+          "title": "Create scientific methods to improve transparency of investment processes. Apply these methods to pu...",
+          "description": "Create scientific methods to improve transparency of investment processes. Apply these methods to published investment processes and develop improved investment processes.",
+          "mou_objectives": [
+            2,
+            5,
+            6
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 4,
+          "grant_period": 2,
+          "title": "Reach out to and include researchers from sustainable investments into WG3",
+          "description": "Reach out to and include researchers from sustainable investments into WG3",
+          "mou_objectives": [
+            7,
+            8,
+            11
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 5,
+          "grant_period": 2,
+          "title": "Actively seek, encourage and promote research from researchers at different stage of their carriers ...",
+          "description": "Actively seek, encourage and promote research from researchers at different stage of their carriers and females",
+          "mou_objectives": [
+            11,
+            12,
+            13,
+            14,
+            16
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 6,
+          "grant_period": 2,
+          "title": "Increase the visibility of the network by creating video content for the wider public based on resea...",
+          "description": "Increase the visibility of the network by creating video content for the wider public based on research produced in the action",
+          "mou_objectives": [
+            5,
+            10,
+            15
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 7,
+          "grant_period": 2,
+          "title": "Increase the practial impact of the network by developing the connection with industry - (joint acad...",
+          "description": "Increase the practial impact of the network by developing the connection with industry - (joint academia - industry hybrid/online events)",
+          "mou_objectives": [
+            9
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 8,
+          "grant_period": 2,
+          "title": "Produce research on transparency of AI applications",
+          "description": "Produce research on transparency of AI applications",
+          "mou_objectives": [
+            3
+          ],
+          "relates_to_primary_objective": false
+        }
+      ]
+    },
+    "GP3": {
+      "gapg_count": 8,
+      "gapgs": [
+        {
+          "gapg_number": 1,
+          "grant_period": 3,
+          "title": "Collection of software pieces into a P2P knowledge platform like quantinar.com",
+          "description": "Collection of software pieces into a P2P knowledge platform like quantinar.com",
+          "mou_objectives": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            10,
+            15
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 2,
+          "grant_period": 3,
+          "title": "Design and management of an interactive exchange system for Videos, slides, quantlets",
+          "description": "Design and management of an interactive exchange system for Videos, slides, quantlets",
+          "mou_objectives": [
+            5,
+            10,
+            15
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 3,
+          "grant_period": 3,
+          "title": "Create scientific methods to improve transparency of investment processes. Apply these methods to pu...",
+          "description": "Create scientific methods to improve transparency of investment processes. Apply these methods to published investment processes and develop improved investment processes.",
+          "mou_objectives": [
+            2,
+            5,
+            6
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 4,
+          "grant_period": 3,
+          "title": "Reach out to and include researchers from sustainable investments into WG3",
+          "description": "Reach out to and include researchers from sustainable investments into WG3",
+          "mou_objectives": [
+            7,
+            8,
+            11
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 5,
+          "grant_period": 3,
+          "title": "Actively seek, encourage and promote research from researchers at different stage of their carriers ...",
+          "description": "Actively seek, encourage and promote research from researchers at different stage of their carriers and females",
+          "mou_objectives": [
+            11,
+            12,
+            13,
+            14,
+            16
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 6,
+          "grant_period": 3,
+          "title": "Increase the visibility of the network by creating video content for the wider public based on resea...",
+          "description": "Increase the visibility of the network by creating video content for the wider public based on research produced in the action",
+          "mou_objectives": [
+            5,
+            10,
+            15
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 7,
+          "grant_period": 3,
+          "title": "Increase the practial impact of the network by developing the connection with industry - (joint acad...",
+          "description": "Increase the practial impact of the network by developing the connection with industry - (joint academia - industry hybrid/online events)",
+          "mou_objectives": [
+            9
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 8,
+          "grant_period": 3,
+          "title": "Produce research on transparency of AI applications",
+          "description": "Produce research on transparency of AI applications",
+          "mou_objectives": [
+            3
+          ],
+          "relates_to_primary_objective": false
+        }
+      ]
+    },
+    "GP4": {
+      "gapg_count": 11,
+      "gapgs": [
+        {
+          "gapg_number": 1,
+          "grant_period": 4,
+          "title": "Research on backtesting frameworks, digital assets and evalutaion of AI models under shifting financ...",
+          "description": "Research on backtesting frameworks, digital assets and evalutaion of AI models under shifting financial conditions",
+          "mou_objectives": [
+            2,
+            10
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 2,
+          "grant_period": 4,
+          "title": "Paper on testing AI techniques",
+          "description": "Paper on testing AI techniques",
+          "mou_objectives": [
+            7,
+            8
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 3,
+          "grant_period": 4,
+          "title": "Presentations and dissemination of research results on backtesting investment strategies, performanc...",
+          "description": "Presentations and dissemination of research results on backtesting investment strategies, performance explanation/attribution and synthetic data generation",
+          "mou_objectives": [
+            2,
+            4,
+            5,
+            6,
+            15
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 4,
+          "grant_period": 4,
+          "title": "Publications on investment and hedging strategies on cryptos/digital assets and on traditional asset...",
+          "description": "Publications on investment and hedging strategies on cryptos/digital assets and on traditional assets accounting for ESG criteria",
+          "mou_objectives": [
+            5,
+            15
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 5,
+          "grant_period": 4,
+          "title": "Publications that tackle the issue of diversity in AI and Fintech",
+          "description": "Publications that tackle the issue of diversity in AI and Fintech",
+          "mou_objectives": [
+            11,
+            15,
+            16
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 6,
+          "grant_period": 4,
+          "title": "Finishing ongoing publications (datathon, financial literacy and women in editorial board of financi...",
+          "description": "Finishing ongoing publications (datathon, financial literacy and women in editorial board of financial papers)",
+          "mou_objectives": [
+            11,
+            15,
+            16
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 7,
+          "grant_period": 4,
+          "title": "Involve associations with a diversity focus",
+          "description": "Involve associations with a diversity focus",
+          "mou_objectives": [
+            9,
+            15
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 8,
+          "grant_period": 4,
+          "title": "Annual report on the COST Action",
+          "description": "Annual report on the COST Action",
+          "mou_objectives": [
+            8,
+            9,
+            10
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 9,
+          "grant_period": 4,
+          "title": "Edited volume containing achievements",
+          "description": "Edited volume containing achievements",
+          "mou_objectives": [
+            8,
+            9,
+            10
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 10,
+          "grant_period": 4,
+          "title": "Involve policy makers and disseminate results to them",
+          "description": "Involve policy makers and disseminate results to them",
+          "mou_objectives": [
+            5,
+            9,
+            15
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 11,
+          "grant_period": 4,
+          "title": "Disseminate the results of the Action's activities to the scientific community, European institution...",
+          "description": "Disseminate the results of the Action's activities to the scientific community, European institutions and to the general public",
+          "mou_objectives": [
+            16
+          ],
+          "relates_to_primary_objective": false
+        }
+      ]
+    },
+    "GP5": {
+      "gapg_count": 14,
+      "gapgs": [
+        {
+          "gapg_number": 1,
+          "grant_period": 5,
+          "title": "Write a report on good examples and best practices for a transparent finance industry with guideline...",
+          "description": "Write a report on good examples and best practices for a transparent finance industry with guidelines to improve transparency",
+          "mou_objectives": [
+            1,
+            4
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 2,
+          "grant_period": 5,
+          "title": "Write a discussion paper for possible approaches to building a statistically valid back-testing fram...",
+          "description": "Write a discussion paper for possible approaches to building a statistically valid back-testing framework",
+          "mou_objectives": [
+            2
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 3,
+          "grant_period": 5,
+          "title": "Write a discussion papers (DP) on the methodology for evaluating/rating ICOs and crowdfunding/P2P pl...",
+          "description": "Write a discussion papers (DP) on the methodology for evaluating/rating ICOs and crowdfunding/P2P platforms and for detection/early warning about fraud/illegal behaviour with emphasis on the application of AI tools",
+          "mou_objectives": [],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 4,
+          "grant_period": 5,
+          "title": "Write two position papers, aimed at regulators and policy-makers, on methodology (with examples of f...",
+          "description": "Write two position papers, aimed at regulators and policy-makers, on methodology (with examples of formal criteria) for testing AI techniques in real-time",
+          "mou_objectives": [
+            3
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 5,
+          "grant_period": 5,
+          "title": "Write a position paper and roadmap on mitigating risks connected with the increased use of digital a...",
+          "description": "Write a position paper and roadmap on mitigating risks connected with the increased use of digital assets",
+          "mou_objectives": [
+            2,
+            3
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 6,
+          "grant_period": 5,
+          "title": "Write a methodological discussion paper on the design of stress tests for the evaluation of AI and M...",
+          "description": "Write a methodological discussion paper on the design of stress tests for the evaluation of AI and ML models under shifting financial conditions to improve the robustness of models",
+          "mou_objectives": [
+            2,
+            3
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 7,
+          "grant_period": 5,
+          "title": "Write methodological discussion papers on AI models to generate “failed trials” of investment produc...",
+          "description": "Write methodological discussion papers on AI models to generate “failed trials” of investment product producers and on quantitative strategies with the usage of the promising field of network data analysis",
+          "mou_objectives": [
+            2,
+            3
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 8,
+          "grant_period": 5,
+          "title": "Write the fourth annual report",
+          "description": "Write the fourth annual report",
+          "mou_objectives": [
+            5
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 9,
+          "grant_period": 5,
+          "title": "Compile a collection of open source contributions from authors in the Action",
+          "description": "Compile a collection of open source contributions from authors in the Action",
+          "mou_objectives": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 10,
+          "grant_period": 5,
+          "title": "Open and execute call for publications for the edited volume",
+          "description": "Open and execute call for publications for the edited volume",
+          "mou_objectives": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 11,
+          "grant_period": 5,
+          "title": "Write one country report per country on the scientific achievements",
+          "description": "Write one country report per country on the scientific achievements",
+          "mou_objectives": [
+            7,
+            8,
+            9,
+            10,
+            11
+          ],
+          "relates_to_primary_objective": false
+        },
+        {
+          "gapg_number": 12,
+          "grant_period": 5,
+          "title": "Research on gender-specific aspects and dissemination",
+          "description": "Research on gender-specific aspects and dissemination",
+          "mou_objectives": [
+            12,
+            16
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 13,
+          "grant_period": 5,
+          "title": "Training for PhD students on our research topics",
+          "description": "Training for PhD students on our research topics",
+          "mou_objectives": [
+            12,
+            13,
+            14
+          ],
+          "relates_to_primary_objective": true
+        },
+        {
+          "gapg_number": 14,
+          "grant_period": 5,
+          "title": "Publish Handbook and/or wiki page describing potential approaches to tackle risk management issues r...",
+          "description": "Publish Handbook and/or wiki page describing potential approaches to tackle risk management issues related to blockchain assets and crowdfunding/P2P lending",
+          "mou_objectives": [
+            5,
+            10
+          ],
+          "relates_to_primary_objective": true
+        }
+      ]
+    }
+  }
+}

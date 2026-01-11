@@ -1,0 +1,110 @@
+{
+  "action_code": "CA19130",
+  "action_title": "Fintech and Artificial Intelligence in Finance - Towards a transparent financial industry",
+  "primary_objective": {
+    "title": "Aim/Primary Objective",
+    "description": "Establish a large and interconnected community across academia, public institutions and industry focusing on Financial Technology and Artificial Intelligence, improving transparency in financial services, especially in and through FinTech, in financial modelling and investment performance evaluation"
+  },
+  "secondary_objectives": [
+    {
+      "number": 1,
+      "title": "Blended Approaches for FinTech Evaluation",
+      "description": "To develop blended approaches to evaluate innovative financial services and their providers, especially in the FinTech domain, building on Machine Learning methods, focussing on prediction (early warning) of operational fragility, fraudulent and illegal behaviour ranging from appropriation of loaned funds to money-laundering activities.",
+      "category": "research"
+    },
+    {
+      "number": 2,
+      "title": "Black-Box Model Transparency",
+      "description": "The development of conceptual and methodological tools for establishing when black-box models are admissible and, to the extent possible, making them more transparent and/or replacing them with interpretable and explainable models.",
+      "category": "research"
+    },
+    {
+      "number": 3,
+      "title": "Regulator and Practitioner Input",
+      "description": "To receive input from regulators and practitioners' communities and to validate results with regard to increasing transparency of artificial intelligence applications.",
+      "category": "dissemination"
+    },
+    {
+      "number": 4,
+      "title": "Performance Attribution Improvement",
+      "description": "Pruning and improvement of the vast array of performance attribution models by contributing to the development of methodologies for reducing the false discovery rate in financial research and applied financial investment management.",
+      "category": "research"
+    },
+    {
+      "number": 5,
+      "title": "Public Dissemination",
+      "description": "Disseminate to the public and share with regulators the results on investment product performance evaluation.",
+      "category": "dissemination"
+    },
+    {
+      "number": 6,
+      "title": "European Performance Comparison Platform",
+      "description": "Creation of the first European platform comparing the out-of-sample performance of banks' investment products, insurance-linked investment products and asset management products available to the general public.",
+      "category": "research"
+    },
+    {
+      "number": 7,
+      "title": "Excellent Research Network",
+      "description": "Create an excellent network of researchers in Europe with lasting collaboration beyond the lifetime of the Action.",
+      "category": "capacity_building"
+    },
+    {
+      "number": 8,
+      "title": "Interdisciplinary Collaboration",
+      "description": "Bringing technological, quantitative and economic researchers together, to tackle future research that can only be done in an interdisciplinary setting, and getting actively involved in the blockchain and FinTech communities across Europe, to constantly monitor developments, get input and disseminate results.",
+      "category": "capacity_building"
+    },
+    {
+      "number": 9,
+      "title": "Knowledge Exchange Platform",
+      "description": "Bridging the gap between practitioners from the finance industry, academics and regulators by setting up a common knowledge exchange platform.",
+      "category": "capacity_building"
+    },
+    {
+      "number": 10,
+      "title": "Cross-Disciplinary Knowledge Transfer",
+      "description": "Transfer knowledge in terms of expertise, scientific tools and human resources across the different disciplines and between academia and industry.",
+      "category": "capacity_building"
+    },
+    {
+      "number": 11,
+      "title": "Inclusive Research Community",
+      "description": "Establish an inclusive community of researchers on methodological and technological themes in Machine Learning and Artificial Intelligence, to promote Early Career Investigators and increase their visibility.",
+      "category": "capacity_building"
+    },
+    {
+      "number": 12,
+      "title": "Geographic and Demographic Diversity",
+      "description": "Overcome the siloing of research topics by country and achieve geographical and demographical diversity, with special attention to COST Inclusiveness Target countries.",
+      "category": "capacity_building"
+    },
+    {
+      "number": 13,
+      "title": "STSM and Joint Programs",
+      "description": "Prepare competitive European researchers for a fruitful career in an international environment through intensive use of Short Term Scientific Missions (STSM) and joint educational programs with industrial partners.",
+      "category": "capacity_building"
+    },
+    {
+      "number": 14,
+      "title": "Career Opportunities",
+      "description": "Maximize the job opportunities for PhD students and Early Career Investigators.",
+      "category": "capacity_building"
+    },
+    {
+      "number": 15,
+      "title": "Results Dissemination",
+      "description": "Disseminate the results of the Action's activities to the scientific community, European institutions and to the general public.",
+      "category": "dissemination"
+    },
+    {
+      "number": 16,
+      "title": "Gender Equality",
+      "description": "Significantly improve the gender equality in the fields of the Action.",
+      "category": "capacity_building"
+    }
+  ],
+  "_metadata": {
+    "source": "WBP-AGA-CA19130 documents",
+    "extraction_date": "2026-01-06"
+  }
+}

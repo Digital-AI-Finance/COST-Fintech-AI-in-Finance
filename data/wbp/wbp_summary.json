@@ -1,0 +1,48 @@
+{
+  "total_meetings_planned": 36,
+  "total_training_schools_planned": 7,
+  "budgets_by_gp": {
+    "GP1": {
+      "total_grant": 62985.5,
+      "meetings": 37200.0,
+      "training_schools": 0.0,
+      "mobility": 10730.0,
+      "fsac": 8215.5
+    },
+    "GP2": {
+      "total_grant": 202607.0,
+      "meetings": 123906.66,
+      "training_schools": 0.0,
+      "mobility": 39680.0,
+      "fsac": 26427.0
+    },
+    "GP3": {
+      "total_grant": 169820.5,
+      "meetings": 97170.0,
+      "training_schools": 0.0,
+      "mobility": 40000.0,
+      "fsac": 22150.5
+    },
+    "GP4": {
+      "total_grant": 257925.91,
+      "meetings": 117889.4,
+      "training_schools": 58594.0,
+      "mobility": 43300.0,
+      "fsac": 33642.51
+    },
+    "GP5": {
+      "total_grant": 270315.26,
+      "meetings": 151674.75,
+      "training_schools": 40782.0,
+      "mobility": 31100.0,
+      "fsac": 35258.51
+    }
+  },
+  "totals": {
+    "total_grant": 963654.17,
+    "meetings": 527840.81,
+    "training_schools": 99376.0,
+    "mobility": 164810.0,
+    "fsac": 125694.02
+  }
+}

@@ -414,11 +414,11 @@
                 <li>
                     <a href="../network.html" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
-                        <a href="../members.html">All Members (426)</a>
+                        <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                         <a href="../leadership.html">Leadership Team</a>
-                        <a href="../mc-members.html">Management Committee (70)</a>
+                        <a href="../mc-members.html" data-source="summary_statistics.members.mc.total">Management Committee (70)</a>
                         <a href="../wg-members.html">Working Groups</a>
-                        <a href="../country-contributions.html">Countries (48)</a>
+                        <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                         <a href="../author-stats.html">Author Statistics</a>
                     </div>
                 </li>
@@ -503,11 +503,11 @@
             <li>
                 <button>NETWORK <span class="toggle-icon">+</span></button>
                 <div class="mega-mobile-submenu">
-                    <a href="../members.html">All Members (426)</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                     <a href="../leadership.html">Leadership Team</a>
                     <a href="../mc-members.html">Management Committee</a>
                     <a href="../wg-members.html">Working Groups</a>
-                    <a href="../country-contributions.html">Countries (48)</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                     <a href="../author-stats.html">Author Statistics</a>
                 </div>
             </li>
@@ -564,11 +564,11 @@
         <div class="sl-section" data-category="network">
             <div class="sl-section-header"><a href="../network.html" class="sl-section-link">NETWORK</a> <span class="toggle" onclick="slToggleSection(this.parentNode)">&#9660;</span></div>
             <div class="sl-links">
-                <a href="../members.html">All Members (426)</a>
+                <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                 <a href="../leadership.html">Leadership Team</a>
                 <a href="../mc-members.html">Management Committee</a>
                 <a href="../wg-members.html">Working Groups</a>
-                <a href="../country-contributions.html">Countries (48)</a>
+                <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
             </div>
         </div>
         <div class="sl-section" data-category="research">
@@ -622,11 +622,11 @@
                 <li>
                     <a href="#" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
-                        <a href="../members.html">All Members (426)</a>
+                        <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                         <a href="../leadership.html">Leadership Team</a>
-                        <a href="../mc-members.html">Management Committee (70)</a>
+                        <a href="../mc-members.html" data-source="summary_statistics.members.mc.total">Management Committee (70)</a>
                         <a href="../wg-members.html">Working Groups</a>
-                        <a href="../country-contributions.html">Countries (48)</a>
+                        <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                         <a href="../author-stats.html">Author Statistics</a>
                     </div>
                 </li>
@@ -711,11 +711,11 @@
             <li>
                 <button>NETWORK <span class="toggle-icon">+</span></button>
                 <div class="mega-mobile-submenu">
-                    <a href="../members.html">All Members (426)</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                     <a href="../leadership.html">Leadership Team</a>
                     <a href="../mc-members.html">Management Committee</a>
                     <a href="../wg-members.html">Working Groups</a>
-                    <a href="../country-contributions.html">Countries (48)</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                     <a href="../author-stats.html">Author Statistics</a>
                 </div>
             </li>
@@ -841,8 +841,8 @@
                 </div>
                 <div class="legacy-footer-col">
                     <h4>Network</h4>
-                    <a href="../members.html">426 Members</a>
-                    <a href="../country-contributions.html">48 Countries</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">426 Members</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">48 Countries</a>
                     <a href="../leadership.html">Leadership</a>
                 </div>
                 <div class="legacy-footer-col">
@@ -1125,5 +1125,10 @@
         }
     })();
     </script>
+
+    <!-- verification-overlay -->
+    <link rel="stylesheet" href="../css/verification-overlay.css">
+    <script src="../js/verification-overlay.js"></script>
+    <script src="../js/cost-data.js"></script>
 </body>
 </html>

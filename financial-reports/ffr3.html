@@ -389,11 +389,11 @@
                 <li>
                     <a href="../network.html" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
-                        <a href="../members.html">All Members (426)</a>
+                        <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                         <a href="../leadership.html">Leadership Team</a>
-                        <a href="../mc-members.html">Management Committee (70)</a>
+                        <a href="../mc-members.html" data-source="summary_statistics.members.mc.total">Management Committee (70)</a>
                         <a href="../wg-members.html">Working Groups</a>
-                        <a href="../country-contributions.html">Countries (48)</a>
+                        <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                         <a href="../author-stats.html">Author Statistics</a>
                     </div>
                 </li>
@@ -478,11 +478,11 @@
             <li>
                 <button>NETWORK <span class="toggle-icon">+</span></button>
                 <div class="mega-mobile-submenu">
-                    <a href="../members.html">All Members (426)</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                     <a href="../leadership.html">Leadership Team</a>
                     <a href="../mc-members.html">Management Committee</a>
                     <a href="../wg-members.html">Working Groups</a>
-                    <a href="../country-contributions.html">Countries (48)</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                     <a href="../author-stats.html">Author Statistics</a>
                 </div>
             </li>
@@ -539,11 +539,11 @@
         <div class="sl-section" data-category="network">
             <div class="sl-section-header"><a href="../network.html" class="sl-section-link">NETWORK</a> <span class="toggle" onclick="slToggleSection(this.parentNode)">&#9660;</span></div>
             <div class="sl-links">
-                <a href="../members.html">All Members (426)</a>
+                <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                 <a href="../leadership.html">Leadership Team</a>
                 <a href="../mc-members.html">Management Committee</a>
                 <a href="../wg-members.html">Working Groups</a>
-                <a href="../country-contributions.html">Countries (48)</a>
+                <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
             </div>
         </div>
         <div class="sl-section" data-category="research">
@@ -597,11 +597,11 @@
                 <li>
                     <a href="#" data-category="network">NETWORK <span class="arrow">&#9660;</span></a>
                     <div class="mega-dropdown mega-dropdown-single">
-                        <a href="../members.html">All Members (426)</a>
+                        <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                         <a href="../leadership.html">Leadership Team</a>
-                        <a href="../mc-members.html">Management Committee (70)</a>
+                        <a href="../mc-members.html" data-source="summary_statistics.members.mc.total">Management Committee (70)</a>
                         <a href="../wg-members.html">Working Groups</a>
-                        <a href="../country-contributions.html">Countries (48)</a>
+                        <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                         <a href="../author-stats.html">Author Statistics</a>
                     </div>
                 </li>
@@ -686,11 +686,11 @@
             <li>
                 <button>NETWORK <span class="toggle-icon">+</span></button>
                 <div class="mega-mobile-submenu">
-                    <a href="../members.html">All Members (426)</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">All Members (426)</a>
                     <a href="../leadership.html">Leadership Team</a>
                     <a href="../mc-members.html">Management Committee</a>
                     <a href="../wg-members.html">Working Groups</a>
-                    <a href="../country-contributions.html">Countries (48)</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">Countries (48)</a>
                     <a href="../author-stats.html">Author Statistics</a>
                 </div>
             </li>
@@ -748,7 +748,7 @@
             <div class="stat-box"><div class="num">169,820</div><div class="label">Budget EUR</div></div>
             <div class="stat-box"><div class="num">166,262</div><div class="label">Actual EUR</div></div>
             <div class="stat-box"><div class="num">98%</div><div class="label">Utilization</div></div>
-            <div class="stat-box"><div class="num">10</div><div class="label">STSMs</div></div>
+            <div class="stat-box"><div class="num" data-source="meetings.meetings[9].id" data-format="currency">10</div><div class="label">STSMs</div></div>
         </div>
 
         <div class="highlight">
@@ -771,10 +771,10 @@
                 </thead>
                 <tbody>
                     <tr><td>Meetings</td><td class="amount">120,000</td><td class="amount">96,783</td><td>93.0%</td></tr>
-                    <tr><td>STSMs</td><td class="amount">25,000</td><td class="amount">24,140</td><td>96.6%</td></tr>
-                    <tr><td>ITC Conference Grants</td><td class="amount">3,000</td><td class="amount">2,343</td><td>78.1%</td></tr>
-                    <tr><td>Virtual Networking Support</td><td class="amount">6,000</td><td class="amount">6,000</td><td>100.0%</td></tr>
-                    <tr><td>Dissemination</td><td class="amount">1,000</td><td class="amount">2,343</td><td>54.0%</td></tr>
+                    <tr><td>STSMs</td><td class="amount" data-source="budget_data.grant_periods[4].breakdown.virtual_mobility" data-format="currency">25,000</td><td class="amount" data-source="budget_data.grant_periods[2].breakdown.stsm" data-format="currency">24,140</td><td>96.6%</td></tr>
+                    <tr><td>ITC Conference Grants</td><td class="amount" data-source="budget_data.grant_periods[0].budget_planned.itc_grants" data-format="currency">3,000</td><td class="amount" data-source="budget_data.grant_periods[2].breakdown.dissemination" data-format="currency">2,343</td><td>78.1%</td></tr>
+                    <tr><td>Virtual Networking Support</td><td class="amount" data-source="budget_data.grant_periods[4].budget_planned.conference_presentations" data-format="currency">6,000</td><td class="amount" data-source="budget_data.grant_periods[4].budget_planned.conference_presentations" data-format="currency">6,000</td><td>100.0%</td></tr>
+                    <tr><td>Dissemination</td><td class="amount" data-source="meetings.meetings[32].cost" data-format="currency">1,000</td><td class="amount" data-source="budget_data.grant_periods[2].breakdown.dissemination" data-format="currency">2,343</td><td>54.0%</td></tr>
                     <tr><td>FSAC</td><td class="amount">14,821</td><td class="amount">21,686</td><td>146.1%</td></tr>
                     <tr style="background: rgba(0, 160, 176, 0.1); font-weight: 600;">
                         <td>TOTAL</td><td class="amount">169,821</td><td class="amount">166,262</td><td>97.9%</td>
@@ -790,18 +790,18 @@
                     <tr><th>Grantee</th><th>YRI</th><th>Home</th><th>Host</th><th>Start</th><th>End</th><th>Days</th><th>Amount</th></tr>
                 </thead>
                 <tbody>
-                    <tr><td>Daniel Traian Pele</td><td></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2022-09-26</td><td>2022-10-04</td><td>10</td><td class="amount">1,800</td></tr>
-                    <tr><td>Cathy Yi-Hsuan Chen</td><td></td><td>GB</td><td>HR <span class="badge badge-itc">ITC</span></td><td>2022-10-01</td><td>2022-10-31</td><td>32</td><td class="amount">3,200</td></tr>
-                    <tr><td>Luciana Dalla Valle</td><td></td><td>GB</td><td>IT</td><td>2022-07-11</td><td>2022-07-18</td><td>9</td><td class="amount">1,440</td></tr>
-                    <tr><td>Jose Muniz Martinez</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>GB</td><td>2022-09-27</td><td>2022-10-06</td><td>11</td><td class="amount">1,900</td></tr>
-                    <tr><td>Alla Petukhina</td><td><span class="badge badge-yri">YRI</span></td><td>IT</td><td>DE</td><td>2022-09-18</td><td>2022-09-26</td><td>10</td><td class="amount">2,000</td></tr>
-                    <tr><td>Ioana Coita</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2022-10-14</td><td>2022-10-23</td><td>11</td><td class="amount">2,500</td></tr>
-                    <tr><td>Stefana Belbe</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2022-10-21</td><td>2022-10-31</td><td>12</td><td class="amount">2,700</td></tr>
-                    <tr><td>Tomas Plihal</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2022-09-21</td><td>2022-10-02</td><td>13</td><td class="amount">4,000</td></tr>
-                    <tr><td>Karel Kozmik</td><td><span class="badge badge-yri">YRI</span></td><td>DE</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2022-10-10</td><td>2022-10-31</td><td>23</td><td class="amount">3,000</td></tr>
-                    <tr><td>Xinwen Ni</td><td><span class="badge badge-yri">YRI</span></td><td>GB</td><td>DE</td><td>2022-10-24</td><td>2022-10-31</td><td>9</td><td class="amount">1,600</td></tr>
+                    <tr><td>Daniel Traian Pele</td><td></td><td>RO <span class="badge badge-itc">ITC</span></td><td>DE</td><td>2022-09-26</td><td>2022-10-04</td><td>10</td><td class="amount" data-source="stsm_detailed.[9].amount" data-format="currency">1,800</td></tr>
+                    <tr><td>Cathy Yi-Hsuan Chen</td><td></td><td>GB</td><td>HR <span class="badge badge-itc">ITC</span></td><td>2022-10-01</td><td>2022-10-31</td><td>32</td><td class="amount" data-source="stsm_detailed.[10].amount" data-format="currency">3,200</td></tr>
+                    <tr><td>Luciana Dalla Valle</td><td></td><td>GB</td><td>IT</td><td>2022-07-11</td><td>2022-07-18</td><td>9</td><td class="amount" data-source="stsm_detailed.[11].amount" data-format="currency">1,440</td></tr>
+                    <tr><td>Jose Muniz Martinez</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>GB</td><td>2022-09-27</td><td>2022-10-06</td><td>11</td><td class="amount" data-source="stsm_detailed.[12].amount" data-format="currency">1,900</td></tr>
+                    <tr><td>Alla Petukhina</td><td><span class="badge badge-yri">YRI</span></td><td>IT</td><td>DE</td><td>2022-09-18</td><td>2022-09-26</td><td>10</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.conference_presentations" data-format="currency">2,000</td></tr>
+                    <tr><td>Ioana Coita</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2022-10-14</td><td>2022-10-23</td><td>11</td><td class="amount" data-source="budget_data.grant_periods[3].budget_planned.dissemination" data-format="currency">2,500</td></tr>
+                    <tr><td>Stefana Belbe</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>RO <span class="badge badge-itc">ITC</span></td><td>2022-10-21</td><td>2022-10-31</td><td>12</td><td class="amount" data-source="stsm_detailed.[15].amount" data-format="currency">2,700</td></tr>
+                    <tr><td>Tomas Plihal</td><td><span class="badge badge-yri">YRI</span></td><td>CH</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2022-09-21</td><td>2022-10-02</td><td>13</td><td class="amount" data-source="budget_data.grant_periods[0].breakdown.virtual_networking" data-format="currency">4,000</td></tr>
+                    <tr><td>Karel Kozmik</td><td><span class="badge badge-yri">YRI</span></td><td>DE</td><td>CZ <span class="badge badge-itc">ITC</span></td><td>2022-10-10</td><td>2022-10-31</td><td>23</td><td class="amount" data-source="budget_data.grant_periods[0].budget_planned.itc_grants" data-format="currency">3,000</td></tr>
+                    <tr><td>Xinwen Ni</td><td><span class="badge badge-yri">YRI</span></td><td>GB</td><td>DE</td><td>2022-10-24</td><td>2022-10-31</td><td>9</td><td class="amount" data-source="stsm_detailed.[18].amount" data-format="currency">1,600</td></tr>
                     <tr style="background: rgba(0, 160, 176, 0.1); font-weight: 600;">
-                        <td colspan="6">TOTAL</td><td>140</td><td class="amount">24,140</td>
+                        <td colspan="6">TOTAL</td><td>140</td><td class="amount" data-source="budget_data.grant_periods[2].breakdown.stsm" data-format="currency">24,140</td>
                     </tr>
                 </tbody>
             </table>
@@ -865,8 +865,8 @@
                 </div>
                 <div class="legacy-footer-col">
                     <h4>Network</h4>
-                    <a href="../members.html">426 Members</a>
-                    <a href="../country-contributions.html">48 Countries</a>
+                    <a href="../members.html" data-source="summary_statistics.members.total">426 Members</a>
+                    <a href="../country-contributions.html" data-source="summary_statistics.members.countries">48 Countries</a>
                     <a href="../leadership.html">Leadership</a>
                 </div>
                 <div class="legacy-footer-col">
@@ -960,5 +960,10 @@
         }
     })();
     </script>
+
+    <!-- verification-overlay -->
+    <link rel="stylesheet" href="../css/verification-overlay.css">
+    <script src="../js/verification-overlay.js"></script>
+    <script src="../js/cost-data.js"></script>
 </body>
 </html>
